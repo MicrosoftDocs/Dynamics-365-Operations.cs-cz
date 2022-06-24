@@ -1,7 +1,7 @@
 ---
 title: Vylepšení výkonu hlavního plánování
-description: V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů.
-author: ChristianRytt
+description: V tomto článku jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897596"
 ---
 # <a name="improve-master-planning-performance"></a>Vylepšení výkonu hlavního plánování
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů. Obsahuje informace o parametrech a nastaveních a o doporučených konfiguracích a akcích. Obsahuje také souhrn všech důležitých parametrů, které byste měli zvážit v případě dlouhotrvajících úloh hlavního plánování.
+V tomto článku jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů. Obsahuje informace o parametrech a nastaveních a o doporučených konfiguracích a akcích. Obsahuje také souhrn všech důležitých parametrů, které byste měli zvážit v případě dlouhotrvajících úloh hlavního plánování.
 
-Toto téma je určeno pro správce systému nebo IT uživatele, kteří mají možnost odstraňovat potíže. Je také určen pro plánovače výroby nebo dodávek, protože obsahuje informace o parametrech souvisejících s požadavky na obchodní plánování. 
+Tento článek je určeno pro správce systému nebo IT uživatele, kteří mají možnost odstraňovat potíže. Je také určen pro plánovače výroby nebo dodávek, protože obsahuje informace o parametrech souvisejících s požadavky na obchodní plánování. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parametry související s výkonem hlavního plánování
 
@@ -151,9 +151,9 @@ Před zahájením kroku disponibility se zobrazí krok předběžné disponibili
 ## <a name="performance-checklist-summary"></a>Souhrn kontrolního seznamu výkonu
 
 - **Počet vláken** – Nastavte na hodnotu, která je větší než **0** (nula).
-- **Počet úkolů v sadě úkolů pomocníka** – Nastavte na hodnotu, která je větší než **0** (nula). (Použijte vzorce uvedené dříve v tomto tématu.)
+- **Počet úkolů v sadě úkolů pomocníka** – Nastavte na hodnotu, která je větší než **0** (nula). (Použijte vzorce uvedené dříve v tomto článku.)
 - **Použití mezipaměti** – Nastavte na **Maximum**, pokud systém nemá nedostatek paměti.
-- **Počet objednávek v potvrzování sady** – Nastavte na hodnotu, která je větší než **0** (nula). (Použijte vzorec uvedený dříve v tomto tématu.)
+- **Počet objednávek v potvrzování sady** – Nastavte na hodnotu, která je větší než **0** (nula). (Použijte vzorec uvedený dříve v tomto článku.)
 - **Ochranné doby** – Přizpůsobte se potřebám svého podniku.
 - **Akce a termíny** – Deaktivujte akce a termín, pokud je nepoužíváte.
 - **Jedna těžká rutina najednou** – Nespouštějte hlavní plánování spolu s žádnou jinou těžkou rutinou.

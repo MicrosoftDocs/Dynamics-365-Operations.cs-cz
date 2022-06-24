@@ -1,6 +1,6 @@
 ---
 title: Parametry správy rabatu
-description: Toto téma popisuje stránku parametrů správy rabatu. Tato stránka obsahuje nastavení, která ovlivňují účtování, aktualizace stavu, číselné řady a další chování.
+description: Tento článek popisuje stránku parametrů správy rabatu. Tato stránka obsahuje nastavení, která ovlivňují účtování, aktualizace stavu, číselné řady a další chování.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895518"
 ---
 # <a name="rebate-management-parameters"></a>Parametry správy rabatu
 
@@ -45,11 +45,11 @@ Následující tabulka popisuje pole, která jsou k dispozici na kartě **Správ
 
 ## <a name="number-sequences-tab"></a>Karta Číselné řady
 
-Použijte kartu **Číselné řady** na stránce **Parametry správy rabatu** pro přiřazení kódů číselných řad různým číselným řadám, které používá správa rabatu. Následující tabulka popisuje účel každé z těchto číselných řad. Další informace o číselných řadách najdete v části [Přehled číselných řad](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) a souvisejících tématech.
+Použijte kartu **Číselné řady** na stránce **Parametry správy rabatu** pro přiřazení kódů číselných řad různým číselným řadám, které používá správa rabatu. Následující tabulka popisuje účel každé z těchto číselných řad. Další informace o číselných řadách najdete v části [Přehled číselných řad](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) a souvisejících článcích.
 
-| Odkaz | popis |
+| Reference | Popis |
 |---|---|
-| Nabídka správy rabatu | Číselná řada přiřadí každé nabídce rabatu jedinečnou hodnotu klíče. Tento klíč se používá při vytváření nabídek. |
+| Obchod správy rabatu | Číselná řada přiřadí každé nabídce rabatu jedinečnou hodnotu klíče. Tento klíč se používá při vytváření nabídek. |
 | Číslo správy rabatu | Číselná řada přiřadí každému rabatu jedinečnou hodnotu klíče. Tento klíč se používá k identifikaci vztahů rabatů. |
 | Číslo transakce rabatu | Číselná řada přiřadí každé transakci rabatu jedinečnou hodnotu klíče. Tento klíč se používá k identifikaci transakcí rabatů. |
 | Daňová faktura | Číselná řada přiřadí každé faktuře rabatu jedinečnou hodnotu klíče. Tento klíč se používá při automatickém zaúčtování deníků rabatů. |

@@ -1,6 +1,6 @@
 ---
 title: Přehled správy přepravy
-description: Toto téma poskytuje přehled správy přepravy v aplikaci Supply Chain Management.
+description: Tento článek poskytuje přehled správy přepravy v aplikaci Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897451"
 ---
 # <a name="transportation-management-overview"></a>Přehled správy přepravy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled správy přepravy v aplikaci Supply Chain Management.
+Tento článek poskytuje přehled správy přepravy v aplikaci Supply Chain Management.
 
 Modul Správa přepravy slouží ke správě přepravy ve vaší společnosti a zároveň určování dodavatelů a řešení trasy pro vstupní a výstupní objednávky. Můžete například určit nejrychlejší trasu nebo nejlevnější sazbu pro dodávku. V následující tabulce jsou popsány základní scénáře používání modulu Správa přepravy.
 

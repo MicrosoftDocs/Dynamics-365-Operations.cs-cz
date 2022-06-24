@@ -1,6 +1,6 @@
 ---
-title: Volba mezi Store Commerce a Cloud POS
-description: Toto téma vysvětluje klíčové rozdíly mezi Store Commerce a Cloud POS a popisuje různé faktory, které by maloobchodníci při implementaci Dynamics 365 Commerce měli zvážit, aby zvolili to nejlepší řešení pro své požadavky.
+title: Výběr mezi Store Commerce a Cloud POS
+description: Tento článek vysvětluje klíčové rozdíly mezi Store Commerce a Cloud POS a popisuje různé faktory, které by maloobchodníci při implementaci Dynamics 365 Commerce měli zvážit, aby zvolili to nejlepší řešení pro své požadavky.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853999"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Volba mezi Store Commerce a Cloud POS
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Výběr mezi Store Commerce a Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje klíčové rozdíly mezi Store Commerce a Cloud POS a popisuje různé faktory, které by maloobchodníci při implementaci Dynamics 365 Commerce měli zvážit, aby zvolili to nejlepší řešení pro své požadavky. Poskytuje také implementátorům dodatečné tipy a návody pro faktory, které je třeba při nasazení aplikace Dynamics 365 Commerce zvážit. Zrevidováním a dodržováním těchto pokynů v rámci procesu nasazení se mohou implementátoři vyhnout problémům, které by mohly ovlivnit spokojenost nebo výkon uživatele.
+Tento článek vysvětluje klíčové rozdíly mezi Store Commerce a Cloud POS a popisuje různé faktory, které by maloobchodníci při implementaci Dynamics 365 Commerce měli zvážit, aby zvolili to nejlepší řešení pro své požadavky. Poskytuje také implementátorům dodatečné tipy a návody pro faktory, které je třeba při nasazení aplikace Dynamics 365 Commerce zvážit. Zrevidováním a dodržováním těchto pokynů v rámci procesu nasazení se mohou implementátoři vyhnout problémům, které by mohly ovlivnit spokojenost nebo výkon uživatele.
 
 ## <a name="insights"></a>Přehledy
 
@@ -44,7 +44,7 @@ Commerce podporuje následující POS možnosti:
 Ve všech případech POS (Store Commerce a CPOS) sdílejí stejný základní kód aplikace. Tento bod je důležitý z následujících důvodů:
 
 - Uživatelské rozhraní je konzistentní, bez ohledu na platformu nebo provedení.
-- Většina funkčních možností je stejných, bez ohledu na platformu nebo provedení. Existují však některé důležité rozdíly. O těchto rozdílech pojednává toto téma.
+- Většina funkčních možností je stejných, bez ohledu na platformu nebo provedení. Existují však některé důležité rozdíly. O těchto rozdílech pojednává tento článek.
 - V každém obchodě lze varianty POS kombinovat a spouštět souběžně. Například pro své hlavní registrační pokladny může prodejce použít Store Commerce na počítačích se systémem Windows. Prodejce však může doplnit tyto registrační poklady o terminály založené na prohlížeči nebo o mobilní zařízení.
 - Přizpůsobení a rozšíření lze snadno použít napříč platformami a provedeními. Vzhledem k tomu, že je základní kód aplikace sdílen, většinu vlastních nastavení lze implementovat jednou, nikoliv vícekrát.
 

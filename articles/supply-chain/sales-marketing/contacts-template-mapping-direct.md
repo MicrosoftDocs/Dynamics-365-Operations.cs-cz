@@ -1,6 +1,6 @@
 ---
 title: Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management
-description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakty (Odběratelé) z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje šablony a základní úkoly, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakty (Odběratelé) z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857337"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062508"
 > [!NOTE]
 > Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci tabulek Kontakt (Kontakty) a Kontakty (Odběratelé) přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
+Tento článek popisuje šablony a základní úkoly, které se používají k synchronizaci tabulek Kontakt (Kontakty) a Kontakty (Odběratelé) přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
@@ -126,7 +126,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ![Mapování šablony kontaktu na odběratele v integrátoru dat.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Zpeněžení potenciálního zákazníka](prospect-to-cash.md)
 

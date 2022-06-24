@@ -1,6 +1,6 @@
 ---
 title: Skladový slotting
-description: Toto téma uvádí informace o skladovém slottingu. Skladový slotting umožňuje konsolidovat poptávku podle položek a měrných jednotek z objednávek, jež jsou ve stavu Objednáno, Rezervováno nebo Uvolněno. Pomáhá skladovým manažerům inteligentně plánovat výdejová skladová místa, než uvolní objednávky do skladu a vytvoří výdejní práce.
+description: Tento článek uvádí informace o skladovém slottingu. Skladový slotting umožňuje konsolidovat poptávku podle položek a měrných jednotek z objednávek, jež jsou ve stavu Objednáno, Rezervováno nebo Uvolněno. Pomáhá skladovým manažerům inteligentně plánovat výdejová skladová místa, než uvolní objednávky do skladu a vytvoří výdejní práce.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897248"
 ---
 # <a name="warehouse-slotting"></a>Skladový slotting
 
@@ -156,7 +156,7 @@ Pro každou vytvořenou šablonu prodejní objednávky dle následujících inst
 
     - **Úroveň měrné jednotky:** _EaBoxPl_
 
-        Toto pole definuje měrné jednotky poptávky, jež jsou pro daný řádek platné. (Další informace naleznete v části [Nastavení úrovní měrných jednotek pro slotting](#unit-tiers) výše v tomto tématu.)
+        Toto pole definuje měrné jednotky poptávky, jež jsou pro daný řádek platné. (Další informace naleznete v části [Nastavení úrovní měrných jednotek pro slotting](#unit-tiers) výše v tomto článku.)
 
     - **Kritéria přiřazení slotu:** _Zvážit množství_
 

@@ -1,6 +1,6 @@
 ---
 title: Profily sazeb
-description: Toto téma popisuje, jak nastavit data pro profily sazeb.
+description: Tento článek popisuje, jak nastavit data pro profily sazeb.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850460"
 ---
 # <a name="rating-profiles"></a>Profily sazeb
 
@@ -56,7 +56,7 @@ Na stránce **Profily sazeb** můžete zkontrolovat všechny dostupné profily s
 1. Přejděte do nabídky **Správa přepravy \> Nastavení \> Dopravci \> Dopravci dodávky**.
 1. V seznamu vyberte přepravce.
 1. Na záložce s náhledem **Profily sazeb** vyberte **Nový** a vytvořte profil sazeb.
-1. Nastavte pole pro nový profil sazeb. Tato pole odpovídají polím na stránce **Profily sazeb**, jak je popsáno v předchozí části tohoto tématu.
+1. Nastavte pole pro nový profil sazeb. Tato pole odpovídají polím na stránce **Profily sazeb**, jak je popsáno v předchozí části tohoto článku
 
 > [!NOTE]
 > Profily, které jsou vytvořeny na stránce **Přepravci**, se také zobrazují na stránce **Profily sazeb**.

@@ -1,6 +1,6 @@
 ---
 title: Přehled požadavků na nabídku
-description: Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit.
+description: Tento článek obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895576"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Přehled požadavků na nabídku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek.
+Tento článek obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit. V požadavku na nabídku požádejte dodavatele o zadání cen a dodacích lhůt pro zadané množství položek.
 Lze také požádat dodavatele, aby určili, zda budou účtovány vedlejší náklady, například přepravní náklady nebo slevy pro velké objednávky či včasnou platbu za fakturu dodavatele.
 
 Proces požadavků na nabídku se skládá z následujících úloh:
@@ -45,7 +45,7 @@ Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, 
 
 Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
+V tomto článku je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.
 
@@ -59,7 +59,7 @@ PO výběru nabídky nebo počtu řádků v nabídce lze přijmout všechny nebo
 
 Případ RFQ má dva stavy: nejnižší a nejvyšší. Stav záhlaví požadavku na nabídku můžete zobrazit na stránce **Všechny požadavky na nabídky**. Nejnižší stav je nejméně pokročilou fází jakékoli řádky v požadavku na nabídku a nejvyšší stav je nejpokročilejší fází jakékoli řádky v požadavku na nabídku. Dejme tomu, že případ RFQ se třemi řádky je odeslán dvěma dodavatelům, takže existují dva RFQ po třech řádcích. Všechny řádky jsou **odesláno**. Nyní je zadána nabídka od jednoho z dodavatelů a řádky požadavku na nabídku obdržely stav **přijato**. To znamená, že ze tří řádků případu RFQ jsou všechny **odesláno** pro jeden požadavek na nabídku a **přijato** pro druhý. Nejnižší stav pak bude **Odesláno** a nejvyšší **Přijato.**
 
-Tyto stavy budou popsány podrobněji dále v tomto tématu.
+Tyto stavy budou popsány podrobněji dále v tomto článku.
 
 ## <a name="setting-up-rfq-functionality"></a>Nastavení funkce RFQ
 

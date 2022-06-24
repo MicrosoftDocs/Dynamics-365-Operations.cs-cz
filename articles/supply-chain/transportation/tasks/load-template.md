@@ -1,6 +1,6 @@
 ---
 title: Šablony vytížení
-description: Toto téma popisuje způsob nastavení šablony nákladů a jak přiřadit šablonu nákladu do nového nákladu.
+description: Tento článek popisuje způsob nastavení šablony nákladů a jak přiřadit šablonu nákladu do nového nákladu.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d33e4c71680947316b540d2aef7a7220305f2054
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 47b4925c528b64b835ce3e88659ee6ab0572eb2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844173"
 ---
 # <a name="load-templates"></a>Šablony vytížení
 
@@ -27,7 +27,7 @@ ms.locfileid: "8674638"
 
 Při vytváření nového vytížení můžete přiřadit šablonu vytížení. Šablona vytížení obsahuje informace o vybavení a měrných jednotkách, jako je výška, šířka, hloubka a objem nákladu.
 
-Toto téma popisuje způsob nastavení šablony nákladů a jak přiřadit šablonu nákladu do nového nákladu.
+Tento článek popisuje způsob nastavení šablony nákladů a jak přiřadit šablonu nákladu do nového nákladu.
 
 ## <a name="set-up-a-load-template"></a>Nastavení šablony vytížení
 

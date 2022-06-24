@@ -1,6 +1,6 @@
 ---
 title: Rozhraní vybavení manipulace s materiálem (MHAX)
-description: Toto téma popisuje, jak nastavit rozhraní zařízení pro manipulaci s materiálem (MHAX), abyste se mohli připojit k externím systémům pro manipulaci s materiálem (MH).
+description: Tento článek popisuje, jak nastavit rozhraní zařízení pro manipulaci s materiálem (MHAX), abyste se mohli připojit k externím systémům pro manipulaci s materiálem (MH).
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907080"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Rozhraní vybavení manipulace s materiálem (MHAX)
 
@@ -88,7 +88,7 @@ Chcete-li vytvořit předplatné, přejděte na **Rozhraní zařízení pro mani
 
 Ke každému předplatnému lze přiřadit dotaz. Tento dotaz filtruje pracovní řádky a záhlaví, aby dále omezil práci, která bude používat předplatné ke generování událostí. Chcete-li přidat dotaz k předplatnému, vyberte zaškrtávací políčko **Spustit dotaz** pro příslušné předplatné na stránce **Předplatné** a poté vyberte **Upravit dotaz** v podokně akcí. Zobrazí se standardní editor dotazů Supply Chain Management.
 
-Předplatné navíc zahrnuje *mapu předplatného*, která mapuje pole z hlavičky práce nebo řádku práce na některá nebo všechna 10 volných datových polí odchozí události, jak je požadováno. Chcete-li vrátit informace službě MHAX, obvykle uvedete ID záznamu na řádku práce nebo *ID dvojice řádků práce*. (ID dvojice řádků práce je nová vlastnost, která umožňuje systému použít jediný návratový příkaz ke zpracování řádků výběru and vložení.) Zbývající pole závisí na případu použití. Některé příklady jsou uvedeny dále v tomto tématu.
+Předplatné navíc zahrnuje *mapu předplatného*, která mapuje pole z hlavičky práce nebo řádku práce na některá nebo všechna 10 volných datových polí odchozí události, jak je požadováno. Chcete-li vrátit informace službě MHAX, obvykle uvedete ID záznamu na řádku práce nebo *ID dvojice řádků práce*. (ID dvojice řádků práce je nová vlastnost, která umožňuje systému použít jediný návratový příkaz ke zpracování řádků výběru and vložení.) Zbývající pole závisí na případu použití. Některé příklady jsou uvedeny dále v tomto článku.
 
 Chcete-li nastavit mapu předplatného, vyberte příslušné předplatné na stránce **Předplatné** a poté vyberte **Mapa předplatného** v podokně akcí. V zobrazeném dialogovém okně **Mapa předplatného** můžete každému dostupnému datovému poli podle potřeby přiřadit tabulku a pole.
 
@@ -161,7 +161,7 @@ Pokud je zadáno ID dvojice hlavičky práce, všechny vybrané, vložené nebo 
 
 Řádky výdeje z pozic řízených registrační značkou vyžaduje, aby hodnota **data03** specifikovala registrační značku, ze které by se mělo vybírat, bez ohledu na to, zda jsou řádky označeny ID záznamu řádku práce nebo ID dvojice řádků práce. Pole **data04** musí specifikovat cílovou poznávací značku záhlaví práce pro výběr.
 
-Řádky vyskladnění nepřijímají další informace. Jsou spouštěny pouze na základě umístění aktuálního řádku práce a registrační značky cíle práce. Pokud je nutné provést vyskladnění na jiné místo, změňte umístění řádku práce podle popisu v části [Přepis událostí](#override-events) dále v tomto tématu.
+Řádky vyskladnění nepřijímají další informace. Jsou spouštěny pouze na základě umístění aktuálního řádku práce a registrační značky cíle práce. Pokud je nutné provést vyskladnění na jiné místo, změňte umístění řádku práce podle popisu v části [Přepis událostí](#override-events) dále v tomto článku.
 
 Vlastní řádky práce nevyžadují ani nepodporují žádné další informace v příchozí události.
 
@@ -220,7 +220,7 @@ Nakonec se příchozí fronta začne zaplňovat položkami fronty, které již b
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Získání rychlého přehledu pomocí správce front
 
-Chcete-li získat rychlý přehled o všech aktivitách, které souvisí s vašimi příchozími a odchozími frontami, přejděte na **Rozhraní zařízení pro práci s materiálem \> Pracovní prostory \> Správce front**. Stránka **Správce front** obsahuje sadu karet a dlaždic, které můžete použít k monitorování a prozkoumání vašich front. Poskytuje také užitečné odkazy na většinu dalších stránek zmíněných v tomto tématu.
+Chcete-li získat rychlý přehled o všech aktivitách, které souvisí s vašimi příchozími a odchozími frontami, přejděte na **Rozhraní zařízení pro práci s materiálem \> Pracovní prostory \> Správce front**. Stránka **Správce front** obsahuje sadu karet a dlaždic, které můžete použít k monitorování a prozkoumání vašich front. Poskytuje také užitečné odkazy na většinu dalších stránek zmíněných v tomto článku.
 
 ## <a name="connect-to-the-mhax-service"></a>Připojení ke službě MHAX
 

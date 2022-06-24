@@ -1,6 +1,6 @@
 ---
 title: Požadavky na prohlížeč pro weby Dynamics 365 Commerce
-description: Toto téma pokrývá požadavky prohlížeče na weby Microsoft Dynamics 365 Commerce.
+description: Tento článek pokrývá požadavky prohlížeče na weby Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 12/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f97e5800785c84d7d804c7af8bffd7bfbccc95a5951d560996f4ca586069392e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c80bec4b4e40c904ef781893b6d695eda31cce92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869191"
 ---
 # <a name="browser-requirements-for-dynamics-365-commerce-sites"></a>Požadavky na prohlížeč pro weby Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma pokrývá požadavky prohlížeče na weby Microsoft Dynamics 365 Commerce.
+Tento článek pokrývá požadavky prohlížeče na weby Microsoft Dynamics 365 Commerce.
 
 Weby Dynamics 365 Commerce jsou nejlépe podporovány následujícími webovými prohlížeči. Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru.
 

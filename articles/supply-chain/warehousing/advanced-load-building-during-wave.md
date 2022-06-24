@@ -1,6 +1,6 @@
 ---
 title: Rozšířené sestavení nákladu během vlny
-description: Toto téma uvádí informace o rozšířeném sestavení nákladu během vlny, kdy se automaticky přiřazují dodávky stávajícím vlnám během realizace vlny. Můžete proto vytvářet smysluplné náklady, jež představují kamiony, aniž byste museli používat nástroj pro plánování vytížení.
+description: Tento článek uvádí informace o rozšířeném sestavení nákladu během vlny, kdy se automaticky přiřazují dodávky stávajícím vlnám během realizace vlny. Můžete proto vytvářet smysluplné náklady, jež představují kamiony, aniž byste museli používat nástroj pro plánování vytížení.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863759"
 ---
 # <a name="advanced-load-building-during-wave"></a>Rozšířené sestavení nákladu během vlny
 
@@ -220,7 +220,7 @@ Můžete nastavit tolik šablon sestavení nákladu, kolik potřebujete. Chcete-
 
 ## <a name="scenario"></a>Scénář
 
-Tento scénář ukazuje, jak nastavení, jež bylo popsáno výše v tomto tématu, ovlivňují skladové operace prováděné při zpracování prodejní objednávky. Tento scénář používá ukázková data **USMF** a další ukázkové hodnoty uvedené v pokynech pro nastavení.
+Tento scénář ukazuje, jak nastavení, jež bylo popsáno výše v tomto článku, ovlivňují skladové operace prováděné při zpracování prodejní objednávky. Tento scénář používá ukázková data **USMF** a další ukázkové hodnoty uvedené v pokynech pro nastavení.
 
 ### <a name="create-sales-orders"></a>Vytvářet prodejní objednávky
 

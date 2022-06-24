@@ -1,6 +1,6 @@
 ---
 title: Vyhrazené platební terminály a výzvy pro tiskárnu a zásuvku s hotovostí
-description: Toto téma poskytuje informace o možnosti mít vyhrazený platební terminál a vyzvat uživatele, aby vybral zásuvku s hotovostí a tiskárnu s účtenkami.
+description: Tento článek poskytuje informace o možnosti mít vyhrazený platební terminál a vyzvat uživatele, aby vybral zásuvku s hotovostí a tiskárnu s účtenkami.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779763"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874914"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Vyhrazené platební terminály a výzvy pro tiskárnu a zásuvku s hotovostí
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje informace o možnosti mít vyhrazený platební terminál a vyzvat uživatele, aby vybral zásuvku s hotovostí a tiskárnu s účtenkami.
+Tento článek poskytuje informace o možnosti mít vyhrazený platební terminál a vyzvat uživatele, aby vybral zásuvku s hotovostí a tiskárnu s účtenkami.
 
 ## <a name="overview"></a>Přehled
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce podporuje tyto trendy tím, že umožňuje scén
 
 ## <a name="supported-pos-clients-and-devices"></a>Podporovaní klienti a zařízení POS
 
-Funkce popsaná v tomto tématu je podporována klienty Modern POS for Windows a Modern POS for Android POS.
+Funkce popsaná v tomto článku je podporována klienty Modern POS for Windows a Modern POS for Android POS.
 
 Tato funkce podporuje síťové platební terminály a tiskárny účtenek. Podporu zásuvky můžete poskytnout připojením zásuvky k tiskárně účtenek prostřednictvím portu d/k.
 

@@ -1,6 +1,6 @@
 ---
 title: Ohlášení jako dokončené ze zařízení úkolového lístku
-description: Toto téma popisuje, jak nakonfigurovat systém tak, aby uživatelé zařízení úkolového lístku mohli vykazovat hotové produkty z výrobní zakázky do zásob.
+description: Tento článek popisuje, jak nakonfigurovat systém tak, aby uživatelé zařízení úkolového lístku mohli vykazovat hotové produkty z výrobní zakázky do zásob.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857366"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ohlášení jako dokončené ze zařízení úkolového lístku
 
 [!include [banner](../includes/banner.md)]
 
-Pracovníci používají stránku **Zpráva o pokroku** v zařízení úkolového lístku k vykazování množství, která byla dokončena pro výrobní úlohu. Toto téma popisuje, jak nastavit různé možnosti, které určují, jak mohou pracovníci nahlásit, že dokončili používání stránky, a co se stane dále. K dispozici jsou následující možnosti:
+Pracovníci používají stránku **Zpráva o pokroku** v zařízení úkolového lístku k vykazování množství, která byla dokončena pro výrobní úlohu. Tento článek popisuje, jak nastavit různé možnosti, které určují, jak mohou pracovníci nahlásit, že dokončili používání stránky, a co se stane dále. K dispozici jsou následující možnosti:
 
 - Kontrola, zda a jak jsou do zásob přidána množství, která jsou hlášena jako hotová.
 - Určete, zda a jak budou generována a používána čísla dávek, když jsou hlášení dokončena.

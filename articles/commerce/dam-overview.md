@@ -1,6 +1,6 @@
 ---
-title: Přehled správy digitálního majetku
-description: Toto téma poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+title: Přehled správy digitálních aktiv
+description: Tento článek poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 03/03/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73c41d97727c461a959d05e76c27efa49e9b5775
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8e958715591c404d979d2537531476004dbcdee5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892098"
 ---
 # <a name="digital-asset-management-overview"></a>Přehled správy digitálních aktiv
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+Tento článek poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 
 Knihovna médií pro konfigurátor webu Dynamics 365 Commerce nabízí funkce správy digitálních aktiv, včetně podpory následujících funkcí:
 - Obrazové materiály

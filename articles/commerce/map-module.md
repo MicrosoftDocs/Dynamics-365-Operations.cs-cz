@@ -1,6 +1,6 @@
 ---
 title: Modul mapy
-description: Toto téma popisuje moduly mapy a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje moduly mapy a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 191d98d039dea6466eeee9a1db0835393be0a9ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894429"
 ---
 # <a name="map-module"></a>Modul mapy
 
 [!include [banner](includes/banner.md)]
 
 
-Toto téma popisuje moduly mapy a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+Tento článek popisuje moduly mapy a popisuje, jak je konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 
 Modul mapy zobrazuje umístění obchodů na interaktivní mapě, která je vykreslena pomocí [webového ovládacího prvku Bing Maps V8](/bingmaps/v8-web-control/). Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky se sdílenými parametry pro centrálu Commerce. Moduly mapy poskytují různá zobrazení, jako jsou silniční, anténní a pouliční, které si uživatelé mohou vybrat pro zobrazení polohy na mapě. Umožňují také interakce, jako je přibližování a používání polohy uživatele.
 

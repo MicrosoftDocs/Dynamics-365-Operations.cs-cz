@@ -1,6 +1,6 @@
 ---
 title: Vytvoření vztahů předmětů servisu
-description: Toto téma popisuje postup vytvoření vztahů předmětů servisu pro servisní smlouvu a zakázku.
+description: Tento článek popisuje postup vytvoření vztahů předmětů servisu pro servisní smlouvu a zakázku.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4178132b03cd146aacbcbb8bf8e1e774a161726c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890647"
 ---
 # <a name="create-service-object-relations"></a>Vytvoření vztahů předmětů servisu 
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje postup vytvoření vztahů předmětů servisu pro servisní smlouvu a zakázku. Při vytvoření vztahu předmětu servisu připojíte předmět servisu k servisní smlouvě nebo zakázce. Pokud zákazník vyžádá servis položky, která je předmět servisu, můžete vybrat předmět servisu ze seznamu vztahů předmětu servisu.
+Tento článek popisuje postup vytvoření vztahů předmětů servisu pro servisní smlouvu a zakázku. Při vytvoření vztahu předmětu servisu připojíte předmět servisu k servisní smlouvě nebo zakázce. Pokud zákazník vyžádá servis položky, která je předmět servisu, můžete vybrat předmět servisu ze seznamu vztahů předmětu servisu.
 
 ## <a name="create-a-service-object-relation-for-a-service-agreement"></a>Vytvoření vztahu předmětů služeb pro servisní smlouvu
 

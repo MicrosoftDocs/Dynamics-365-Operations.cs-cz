@@ -1,6 +1,6 @@
 ---
 title: Přidání QR kódu nebo čárového kód do transakčních a přijímacích e-mailů
-description: Toto téma vysvětluje, jak vložit QR kódy a čárové kódy, které představují ID objednávky, do transakčních a příjmových e-mailů v Microsoft Dynamics 365 Commerce.
+description: Tento článek vysvětluje, jak vložit QR kódy a čárové kódy, které představují ID objednávky, do transakčních a příjmových e-mailů v Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872877"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Přidání QR kódu nebo čárového kód do transakčních a přijímacích e-mailů
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak vložit QR kódy a čárové kódy, které představují ID objednávky, do transakčních a příjmových e-mailů v Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak vložit QR kódy a čárové kódy, které představují ID objednávky, do transakčních a příjmových e-mailů v Microsoft Dynamics 365 Commerce.
 
 Do transakčních e-mailů můžete snadno zahrnout QR kódy a čárové kódy, které vám pomohou urychlit proces vyhledávání objednávek v maloobchodním prostředí. K vkládání QR kódů a čárových kódů do e-mailů používáte HTML značku **\<img\>**, která si vyžádá obrázek QR kódu nebo čárového kódu ze služby generování a vykreslování. Společnost Microsoft tuto službu neposkytuje. Existuje však mnoho bezplatných nebo levných služeb, které mohou obsluhovat QR kódy nebo čárové kódy, které se dynamicky generují na základě hodnoty předané v řetězci dotazu.
 

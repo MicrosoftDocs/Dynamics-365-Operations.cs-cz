@@ -1,6 +1,6 @@
 ---
 title: Globální parametry mobilního zařízení
-description: Toto téma vysvětluje, jak nastavit mobilní zařízení na stránce Parametry řízení skladu.
+description: Tento článek vysvětluje, jak nastavit mobilní zařízení na stránce Parametry řízení skladu.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847752"
 ---
 # <a name="global-mobile-device-parameters"></a>Globální parametry mobilního zařízení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit parametry globální správy skladu, které ovlivňují interakci systému s mobilními zařízeními.
+Tento článek vysvětluje, jak nastavit parametry globální správy skladu, které ovlivňují interakci systému s mobilními zařízeními.
 
 Další informace o tom, jak nastavit pracovníky skladu, najdete v článku [Řízení pracovníků skladu](manage-warehouse-workers.md). Další informace týkající se zpracování registračních značek na mobilních zařízeních získáte v tématu [Příjem registrační značky prostřednictvím mobilní aplikace Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md). Další informace o procesech cyklické inventury najdete v článcích [Cyklická inventura](cycle-counting.md) a [Příkladové scénáře cyklické inventury](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Otevření stránky parametrů řízení skladu
 
-Chcete-li otevřít stránku **Parametry řízení skladu**, přejděte do nabídky **Řízení skladu \> Nastavení \> Parametry řízení skladu**. Poté můžete nastavit pole související s prací na mobilním zařízení, jak je popsáno v další části tohoto tématu.
+Chcete-li otevřít stránku **Parametry řízení skladu**, přejděte do nabídky **Řízení skladu \> Nastavení \> Parametry řízení skladu**. Poté můžete nastavit pole související s prací na mobilním zařízení, jak je popsáno v další části tohoto článku.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Záložka Mobilní zařízení na kartě Obecné
 

@@ -1,6 +1,6 @@
 ---
 title: Přehled věrnostního programu
-description: Toto téma popisuje funkce věrnostního programu v aplikaci Dynamics 365 Commerce odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
+description: Tento článek popisuje funkce věrnostního programu v aplikaci Dynamics 365 Commerce odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 author: scott-tucker
 ms.date: 07/21/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 667c30e52bae34f8ddfdc7b74f271d08612ac594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883896"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
 [!include [banner](includes/banner.md)]
 
-Věrnostní programy mohou posílit věrnost odběratele pomocí odměn odběratelům za jejich interakce se značkou maloobchodníka. V aplikaci Dynamics 365 Commerce můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné velkobchodní síti. Toto téma popisuje funkce věrnostního programu v aplikaci Commerce odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
+Věrnostní programy mohou posílit věrnost odběratele pomocí odměn odběratelům za jejich interakce se značkou maloobchodníka. V aplikaci Dynamics 365 Commerce můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné velkobchodní síti. Tento článek popisuje funkce věrnostního programu v aplikaci Commerce odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 
 Věrnostní program lze nastavit tak, aby zahrnoval následující možnosti.
 

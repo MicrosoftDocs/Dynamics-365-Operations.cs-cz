@@ -1,6 +1,6 @@
 ---
 title: Expedování prodejních objednávek bez skladování
-description: Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli.
+description: Tento článek vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli.
 author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e21bcdef22caf4f4d97ba7dd36ebf1a6e6e055
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862475"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Expedování prodejních objednávek bez skladování
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli. Průvodce lze použít pro tok plnění, který není nastaven pro správu skladu (ani základní ani rozšířené funkce skladu), a proto nevyžaduje zaregistrování výdeje produktu mají před dodávkou. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. V obou případech před spuštěním této úlohy vytvořte prodejní objednávku pro produkt na skladě s množstvím větším než 1. Abyste předešli chybě zaúčtování, je třeba zkontrolovat, že množství produktu na skladě na pracovišti a ve skladu, které jste vybrali na objednávce, zahrnuje množství objednávky.
+Tento článek vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli. Průvodce lze použít pro tok plnění, který není nastaven pro správu skladu (ani základní ani rozšířené funkce skladu), a proto nevyžaduje zaregistrování výdeje produktu mají před dodávkou. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. V obou případech před spuštěním této úlohy vytvořte prodejní objednávku pro produkt na skladě s množstvím větším než 1. Abyste předešli chybě zaúčtování, je třeba zkontrolovat, že množství produktu na skladě na pracovišti a ve skladu, které jste vybrali na objednávce, zahrnuje množství objednávky.
 
 ## <a name="post-packing-slip-for-an-order"></a>Zaúčtování dodacího listu pro objednávku
 1. V navigačním podokně přejděte na **Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.

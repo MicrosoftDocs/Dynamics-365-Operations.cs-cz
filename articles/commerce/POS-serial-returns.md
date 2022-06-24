@@ -1,6 +1,6 @@
 ---
 title: Vrácení produktů řízených sériovým číslem v POS
-description: Toto téma popisuje možnosti pro ověřování serializovaných položek jako součást procesu vrácení v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
+description: Tento článek popisuje možnosti pro ověřování serializovaných položek jako součást procesu vrácení v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860314"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>Vrácení produktů řízených sériovým číslem v POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje možnosti pro ověřování serializovaných položek jako součást procesu vrácení v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
+Tento článek popisuje možnosti pro ověřování serializovaných položek jako součást procesu vrácení v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 
 > [!NOTE]
 > Ve verzi Commerce verze 10.0.20 a novějších je k dispozici nová funkce s názvem **Sjednocené prostředí pro zpracování vrácení v POS**. Chcete-li během zpracování vratky objednávky v POS použít ověření sériového čísla, musíte tuto funkci zapnout. Informace o dalších schopnostech, které tato funkce poskytuje, když je zapnutá, najdete v tématu [Vytvoření vrácení v POS](POS-returns.md).

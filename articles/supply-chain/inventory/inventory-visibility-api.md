@@ -1,6 +1,6 @@
 ---
-title: Veřejná rozhraní API Viditelnosti zásob
-description: Toto téma popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
+title: Veřejné rozhraní API Inventory Visibility
+description: Tento článek popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786858"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902017"
 ---
-# <a name="inventory-visibility-public-apis"></a>Veřejná rozhraní API Viditelnosti zásob
+# <a name="inventory-visibility-public-apis"></a>Veřejné rozhraní API Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
+Tento článek popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
 
 Veřejné rozhraní REST API doplňku Viditelnost zásob představuje několik konkrétních koncových bodů pro integraci. Podporuje čtyři hlavní typy interakce:
 
@@ -160,7 +160,7 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
    ```
 
 > [!IMPORTANT]
-> Když použijete kolekci požadavků *Postman* k volání veřejných rozhraní API viditelnosti zásob, musíte pro každý požadavek přidat token nositele. Token nositele najdete takto: vyberte kartu **Autorizace** pod adresou URL požadavku, vyberte typ **Token nositele** a zkopírujte přístupový token, který byl načten v posledním kroku. V dalších částech tohoto tématu použijete `$access_token` jako token, který byl načten v posledním kroku.
+> Když použijete kolekci požadavků *Postman* k volání veřejných rozhraní API viditelnosti zásob, musíte pro každý požadavek přidat token nositele. Token nositele najdete takto: vyberte kartu **Autorizace** pod adresou URL požadavku, vyberte typ **Token nositele** a zkopírujte přístupový token, který byl načten v posledním kroku. V dalších částech tohoto článku použijete `$access_token` jako token, který byl načten v posledním kroku.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Vytvoření událostí změn ve skladu
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhraní API se liší od chování těch API, která jsou popsána v části [Vytvoření událostí změn ve skladu](#create-onhand-change-event) dříve v tomto tématu. V této ukázce bude množství produktu *T-shirt* nastaveno na 1.
+Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhraní API se liší od chování těch API, která jsou popsána v části [Vytvoření událostí změn ve skladu](#create-onhand-change-event) dříve v tomto článku. V této ukázce bude množství produktu *T-shirt* nastaveno na 1.
 
 ```json
 [

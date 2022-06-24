@@ -1,6 +1,6 @@
 ---
 title: Práce s fragmenty
-description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
+description: V tomto článku jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 8824a42e46d94904f50d3f95b486673c231d9828
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896814"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
+V tomto článku jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 
 Fragmenty umožňují centralizované prostředí pro vytváření konfigurací modulu, které je nutné znovu použít v celém webu. Například záhlaví, zápatí a nápisy jsou často konfigurovány jako fragmenty, protože jsou sdíleny na více stránkách. Fragmenty lze považovat za miniaturní webové stránky, které lze vložit do jiných stránek na vašem webu. Fragmenty mají vlastní životní cyklus. Jinými slovy, jsou vytvořeny, odkazovány, aktualizovány a odstraněny jako nezávislé entity ve vývojových nástrojích.
 

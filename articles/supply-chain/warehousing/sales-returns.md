@@ -1,6 +1,6 @@
 ---
 title: Prodejní vratky
-description: Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
+description: Tento článek obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860399"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
+Tento článek obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 
 Zákazníci mohou zboží vracet z různých důvodů. Například může být nějaký kus zboží vadný nebo může nesplňovat očekávání zákazníka. Proces vracení začíná tím, když zákazník vydá požadavek na vrácení zboží. Po obdržení požadavku zákazníka je vytvořena objednávka vrácení.
 
@@ -84,7 +84,7 @@ Po dokončení záhlaví vrácení můžete vytvořit řádky vrácení pomocí 
 -   Vytvoření řádku objednávky vrácení pomocí funkce **Najít prodejní objednávku**. Při vytváření objednávky vrácení doporučujeme používat tuto funkci. Funkce **Najít prodejní objednávku** založí odkaz z řádku objednávky vrácení na řádek vyfakturované prodejní objednávky a načte údaje řádku, jako například číslo zboží, množství, a hodnoty ceny, slevy a nákladů z řádku prodeje. Odkaz pomáhá zaručit, aby byl produkt po svém vrácení společnosti oceněn na stejnou hodnotu za jednotkové množství, za jakou byl prodáván. Odkaz také ověří, zda nejsou vytvořeny objednávky vracení pro množství přesahující množství prodané podle faktury.
 
 >[!NOTE] 
->Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto tématu.
+>Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto článku.
 
 ### <a name="charges"></a>Poplatky
 
@@ -179,7 +179,7 @@ Než budete moci fyzicky přijmout vrácené zboží do zásob vydáním průvod
 
 [![Proces doručení.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Proces má několik jiných variant, které nejsou probírány v tomto tématu. Zde je několik příkladů těchto variant:
+Proces má několik jiných variant, které nejsou probírány v tomto článku. Zde je několik příkladů těchto variant:
 
 -   Při vytváření Deníku doručení nepoužívejte seznam **Přehled doručení**. Namísto toho ručně vytvořte deník doručení. Objednávky vrácení budou mít jako odkaz **Prodejní objednávku**.
 -   Jestliže používáte řízení skladu, vytvořte přepravy palet. Řádek vrácení bude mít během přepravy palet stav **Doručeno**.

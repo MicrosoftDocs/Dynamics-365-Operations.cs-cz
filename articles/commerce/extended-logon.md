@@ -1,6 +1,6 @@
 ---
 title: Nastavení a používání schopnosti rozšířeného přihlášení
-description: Toto téma popisuje, jak nastavit a používat schopnost rozšířeného přihlášení v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak nastavit a používat schopnost rozšířeného přihlášení v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
 author: boycez
 ms.date: 03/18/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
-ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
+ms.openlocfilehash: e27e8d94adccc46559089928b0481442306567ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8491432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884304"
 ---
 # <a name="set-up-and-use-the-extended-logon-capability"></a>Nastavení a používání schopnosti rozšířeného přihlášení
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak nastavit a používat schopnost rozšířeného přihlášení v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak nastavit a používat schopnost rozšířeného přihlášení v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
 
 Cloud POS (CPOS) a Modern POS (MPOS) poskytují schopnost rozšířeného přihlášení, která umožňuje pracovníkům maloobchodu přihlásit se do aplikace POS naskenováním čárového kódu nebo přetažením karty na čtečce magnetických proužků (MSR).
 

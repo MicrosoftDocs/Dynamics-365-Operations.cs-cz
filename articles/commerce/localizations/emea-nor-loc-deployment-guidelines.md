@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení registračních pokladen pro Norsko (staré)
-description: Toto je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
+description: Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944781"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894455"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Pokyny k nasazení registračních pokladen pro Norsko (staré)
 
 [!include [banner](../includes/banner.md)]
 
-Toto je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent Commerce. Rozšíření vám například umožňují tisknout vlastní pole na příjemkách, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md).
+Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent Commerce. Rozšíření vám například umožňují tisknout vlastní pole na příjemkách, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md).
 
 Tato ukázka je součástí sady SDK (Software Development Kit) pro Retail. Informace o SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), Retail, Server a POS. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, Retail, Server a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Microsoft Visual Studio Online (VSO), kde žádné soubory nebyly dosud změněny.
+Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), Retail, Server a POS. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, Retail, Server a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Microsoft Visual Studio Online (VSO), kde žádné soubory nebyly dosud změněny.
 
 > [!NOTE]
-> V Commerce 10.0.8 a vyšší je Retail Server známý jako Commerce Scale Unit. Protože se toto téma týká i několika předchozích verzí aplikace, používáme v něm *Retail Server*.
+> V Commerce 10.0.8 a vyšší je Retail Server známý jako Commerce Scale Unit. Protože se tento článek týká i několika předchozích verzí aplikace, používáme v něm *Retail Server*.
 >
-> Některé procesní kroky v tomto tématu se liší v závislosti na verzi Commerce, kterou používáte. Další informace viz [Co je nového a co se změnilo v produktu Dynamics 365 Retail](../get-started/whats-new.md).
+> Některé procesní kroky v tomto článku se liší v závislosti na verzi Commerce, kterou používáte. Další informace viz [Co je nového a co se změnilo v produktu Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Použití profilů certifikátů v kanálech Commerce
 
@@ -1252,7 +1252,7 @@ Další informace naleznete v tématu [Funkce registrační pokladny pro Norsko]
 
 Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují komponenty Commerce, a použijete tyto balíčky v provozním prostředí.
 
-1. Proveďte kroky v sekci [Komponenty rozšíření Cloud POS](#cloud-pos-extension-components) nebo [Komponenty rozšíření Modern POS](#modern-pos-extension-components) výše v tomto tématu.
+1. Proveďte kroky v sekci [Komponenty rozšíření Cloud POS](#cloud-pos-extension-components) nebo [Komponenty rozšíření Modern POS](#modern-pos-extension-components) výše v tomto článku.
 2. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets**:
 
     1. V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádky do sekce **composition**:

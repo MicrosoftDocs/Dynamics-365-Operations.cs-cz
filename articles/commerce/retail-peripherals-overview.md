@@ -1,6 +1,6 @@
 ---
 title: Periferní zařízení
-description: Toto téma vysvětluje pojmy související s periferními zařízeními aplikace Obchod.
+description: Tento článek vysvětluje pojmy související s periferními zařízeními aplikace Obchod.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462234"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880074"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
 [!include[banner](includes/banner.md)]
 
-Toto téma vysvětluje pojmy související s periferními zařízeními obchodu. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.
+Tento článek vysvětluje pojmy související s periferními zařízeními obchodu. Popisuje různé způsoby, jakými mohou být periferní zařízení připojena k pokladnímu místu (POS) a komponenty odpovídající za správu připojení k POS.
 
 ## <a name="concepts"></a>Koncepty
 
@@ -55,7 +55,7 @@ Modern POS pro Android je verze programu Modern POS založená na systému Andro
 
 ### <a name="pos-peripherals"></a>Periferní položky POS
 
-Periferní položky POS jsou zařízení, která jsou explicitně podporována pro funkce POS. Tyto periferie jsou obvykle rozděleny do konkrétních tříd. Další informace o těchto třídách naleznete v části „Třídy zařízení“ tohoto tématu.
+Periferní položky POS jsou zařízení, která jsou explicitně podporována pro funkce POS. Tyto periferie jsou obvykle rozděleny do konkrétních tříd. Další informace o těchto třídách naleznete v části „Třídy zařízení“ tohoto článku.
 
 ### <a name="hardware-station"></a>Hardwarová stanice
 

@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.21.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
 ms.date: 10/28/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: a78b4c37bfca9fedbd46cd8a16b47bd4444fbfee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849525"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.21. Tato verze má číslo sestavení 10.0.960 a je k dispozici následujícím způsobem:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.21. Tato verze má číslo sestavení 10.0.960 a je k dispozici následujícím způsobem:
 
 - **Preview verze:** Srpen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Září 2021
@@ -119,9 +119,9 @@ V následující tabulce je uveden seznam funkcí, které jsou ve verzi 10.0.21 
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
-Nedávno jsme přidali nebo významně aktualizovali následující témata nápovědy. Nemusí nutně souviset s novými funkcemi přidanými pro toto vydání, jak je uvedeno v předchozí části, ale mohou vám pomoci lépe využít stávající funkce.
+Nedávno jsme přidali nebo významně aktualizovali následující články nápovědy. Nemusí nutně souviset s novými funkcemi přidanými pro toto vydání, jak je uvedeno v předchozí části, ale mohou vám pomoci lépe využít stávající funkce.
 
-| Oblast funkce | Nová nebo aktualizovaná témata |
+| Oblast funkce | Nové nebo aktualizované články |
 |---|---|
 | Hlavní plánování | [Prognózy zásob](../master-planning/inventory-forecast.md) |
 | Hlavní plánování | [Parametry, které optimalizace plánování nepoužívá](../master-planning/planning-optimization/not-used-parameters.md) |
@@ -153,12 +153,12 @@ Přečtěte si [Dynamics 365 a průmyslová cloudová řešení: Plán vlny 2 v
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
-Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+Článek [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v článku [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 

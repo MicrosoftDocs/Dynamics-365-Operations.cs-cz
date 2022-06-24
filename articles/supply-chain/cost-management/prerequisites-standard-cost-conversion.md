@@ -1,6 +1,6 @@
 ---
 title: Předpoklady pro převod standardních nákladů
-description: Toto téma popisuje úkoly prováděné před spuštěním převodu standardních nákladů.
+description: Tento článek popisuje úkoly prováděné před spuštěním převodu standardních nákladů.
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa43c8e32c4af8fc7e3ad5f3eb457dbdae1d39e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9295269c9979fb693d6f2976d4960a799d88f5ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887537"
 ---
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Předpoklady pro převod standardních nákladů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje úkoly prováděné před spuštěním převodu standardních nákladů. 
+Tento článek popisuje úkoly prováděné před spuštěním převodu standardních nákladů. 
 
 Před spuštěním standardního převodu nákladů postupujte takto:
 

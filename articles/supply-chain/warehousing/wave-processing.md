@@ -1,6 +1,6 @@
 ---
-title: Vytvoření a zpracování vlny
-description: Toto téma popisuje, jak vytvořit, zpracovat a vydat vlnu a vytvořit tak výdej nákladu, dodávku, výrobní zakázku nebo kanbanovou objednávku.
+title: Tvorba a zpracování vlny
+description: Tento článek popisuje, jak vytvořit, zpracovat a vydat vlnu a vytvořit tak výdej nákladu, dodávku, výrobní zakázku nebo kanbanovou objednávku.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851268"
 ---
-# <a name="wave-creation-and-processing"></a>Vytvoření a zpracování vlny
+# <a name="wave-creation-and-processing"></a>Tvorba a zpracování vlny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit, zpracovat a vydat vlnu a vytvořit tak výdej nákladu, dodávku, výrobní zakázku nebo kanbanovou objednávku. Můžete vytvářet vlny pro následující typy objednávek:
+Tento článek popisuje, jak vytvořit, zpracovat a vydat vlnu a vytvořit tak výdej nákladu, dodávku, výrobní zakázku nebo kanbanovou objednávku. Můžete vytvářet vlny pro následující typy objednávek:
 
 - **Prodejní objednávky** – pomocí vln expedice můžete zahrnout řádky z prodejní objednávky. Při vydání prodejní objednávky do skladu lze řádky prodejní objednávky zahrnout do vlny.
 - **Výrobní zakázky** – pomocí vln výroby můžete zahrnout řádky z kusovníku (BOM) pro produkt.

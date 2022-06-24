@@ -1,6 +1,6 @@
 ---
 title: Monitorování a správa IoT Intelligence
-description: Toto téma vysvětluje, jak monitorovat a spravovat IoT Intelligence.
+description: Tento článek vysvětluje, jak monitorovat a spravovat inteligenci IoT.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e078f1895b44ca388b75f5cd3d19e0e8f7c36630
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a640b523adac619377e19d670f932d4d85cfb6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669728"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852411"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>Monitorování a správa IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak monitorovat a spravovat IoT Intelligence.
+Tento článek vysvětluje, jak monitorovat a spravovat inteligenci IoT.
 
 ## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a>Scénáře monitorování v Microsoft Dynamics 365 Supply Chain Management
 
@@ -54,7 +54,7 @@ Když je spuštěn scénář, tyto změny jsou zakázané:
 
 ## <a name="simulation-options"></a>Možnosti simulace
 
-Můžete simulovat signály výrobního stroje. Další informace naleznete v tématech:
+Můžete simulovat signály výrobního stroje. Další informace naleznete v článcích:
 
 + [Připojení IoT DevKit AZ3166 k centru Azure IoT](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Připojení online simulátoru Raspberry Pi k centru Azure IoT (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)

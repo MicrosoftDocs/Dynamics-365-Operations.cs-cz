@@ -1,6 +1,6 @@
 ---
 title: Modul volby obchodu
-description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881676"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+Tento článek se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 Zákazníci mohou pomocí modulu pro výběr obchodu vyzvednout produkt ve vybraném obchodě po nákupu online. Ve verzi Commerce verze 10.0.13 obsahuje modul pro výběr obchodu také další funkce, které mohou zobrazit stránku **Najít obchod**, která zobrazuje obchody v okolí.
 
@@ -132,7 +132,7 @@ Pro režim **Vyzvednutí v obchodě** lze modul použít pouze na PDP a na strá
 - Informace o přidání modulu volby obchodu do modulu buy boxu naleznete v tématu [Modul buy boxu](add-buy-box.md). 
 - Informace o přidání modulu volby obchodu do modulu košíku naleznete v tématu [Modul košíku](add-cart-module.md).
 
-Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dostupné úložiště pro stránku umístění obchodu jako na obrázku, který byl zobrazen dříve v tomto tématu, postupujte takto.
+Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dostupné úložiště pro stránku umístění obchodu jako na obrázku, který byl zobrazen dříve v tomto článku, postupujte takto.
 
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona marketingu** a poté klikněte na tlačítko **OK**.

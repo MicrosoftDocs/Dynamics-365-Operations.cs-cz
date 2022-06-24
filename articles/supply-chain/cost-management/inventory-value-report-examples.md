@@ -1,6 +1,6 @@
 ---
 title: Příklady a logika sestavy hodnoty zásob
-description: Toto téma poskytuje některé příklady výsledků, které jsou uvedeny v každém typu sestavy hodnoty zásob. Sestavy hodnoty zásob poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob.
+description: Tento článek poskytuje některé příklady výsledků, které jsou uvedeny v každém typu sestavy hodnoty zásob. Sestavy hodnoty zásob poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877646"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Příklady a logika sestavy hodnoty zásob
 
 [!include [banner](../includes/banner.md)]
 
-Sestavy hodnoty zásob poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob. Toto téma poskytuje některé příklady výsledků, které jsou uvedeny v každém typu sestavy hodnoty zásob.
+Sestavy hodnoty zásob poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob. Tento článek poskytuje některé příklady výsledků, které jsou uvedeny v každém typu sestavy hodnoty zásob.
 
 Další informace o tom, jak generovat a používat jednotlivé typy sestav hodnoty zásob, viz [Sestavy hodnoty zásob](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Ukázková data použitá v těchto příkladech
 
-Příklady v tomto tématu jsou založeny na ukázkových datech skladových transakcí, které jsou popsány v této části.
+Příklady v tomto článku jsou založeny na ukázkových datech skladových transakcí, které jsou popsány v této části.
 
 ### <a name="storage-dimension-setup"></a>Nastavení dimenze úložiště
 
@@ -70,9 +70,9 @@ Ukázkový systém zahrnuje konfiguraci sestavy hodnot zásob, která má násle
 
 ## <a name="inventory-value-report-example-1"></a>Příklad 1 sestavy hodnot zásob
 
-Následující tabulka a ilustrace ukazují výsledky, když použijete ukázková data a konfiguraci sestavy, které jsou popsány dříve v tomto tématu.
+Následující tabulka a ilustrace ukazují výsledky, když použijete ukázková data a konfiguraci sestavy, které jsou popsány dříve v tomto článku.
 
-| Typ zdroje | Prostředek | Lokalita | Odkaz | Zásoby: Finanční množství | Zásoby: Finanční částka | Zásoby: Zaúčtované fyzické množství | Zásoby: Zaúčtovaná fyzická částka | Zásoby: Množství | Zásoby: Částka | Průměrné náklady na jednotku |
+| Typ zdroje | Prostředek | Web | Reference | Zásoby: Finanční množství | Zásoby: Finanční částka | Zásoby: Zaúčtované fyzické množství | Zásoby: Zaúčtovaná fyzická částka | Zásoby: Množství | Zásoby: Částka | Průměrné náklady na jednotku |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Materiál | B0001 | 1 | Konečný zůstatek | 9.00 | 908.33 | 5.00 | 375.00 | 14,00 | 1,283.33 | 91.67 |
 | Materiál | B0001 | 2 | Konečný zůstatek | 10.00 | 2,000.00 | 0,00 | 0,00 | 10.00 | 2,000.00 | 200.00 |
@@ -91,7 +91,7 @@ Následující obrázek ukazuje sestavu **Úložiště sestav Hodnota zásob** p
 
 ## <a name="inventory-value-report-example-2"></a>Příklad 2 sestavy hodnot zásob
 
-Následující tabulka a ilustrace ukazují výsledky, když použijete ukázková data, která jsou popsána dříve v tomto tématu, ale změníte hodnotu pole **Úroveň** na *Transakce* v konfiguraci sestavy a nastavíte pole **Od data** na *15. března* při spuštění sestavy.
+Následující tabulka a ilustrace ukazují výsledky, když použijete ukázková data, která jsou popsána dříve v tomto článku, ale změníte hodnotu pole **Úroveň** na *Transakce* v konfiguraci sestavy a nastavíte pole **Od data** na *15. března* při spuštění sestavy.
 
 | Typ zdroje | Prostředek | Lokalita | Datum | Číslo | Odkaz | Zásoby: Finanční množství | Zásoby: Finanční částka | Zásoby: Zaúčtované fyzické množství | Zásoby: Zaúčtovaná fyzická částka | Zásoby: Množství | Zásoby: Částka |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ V následujících podsekcích jsou uvedeny přehledy hodnoty zásob, které se 
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Příklad 3 při použití úrovně Součty
 
-Následující tabulka ukazuje výsledky, když použijete ukázková data a konfiguraci sestavy, které jsou popsány dříve v tomto tématu. (V této konfiguraci sestavy je pole **Úroveň** nastaveno na *Součty*.)
+Následující tabulka ukazuje výsledky, když použijete ukázková data a konfiguraci sestavy, které jsou popsány dříve v tomto článku. (V této konfiguraci sestavy je pole **Úroveň** nastaveno na *Součty*.)
 
 | Typ zdroje | Prostředek | Lokalita | Odkaz | Zásoby: Finanční množství | Zásoby: Finanční částka | Zásoby: Zaúčtované fyzické množství | Zásoby: Zaúčtovaná fyzická částka | Zásoby: Množství | Zásoby: Částka | Průměrné náklady na jednotku |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Následující tabulka ukazuje výsledky, když použijete ukázková data a kon
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Příklad 3 při použití úrovně Transakce
 
-Následující tabulka ukazuje výsledky, když použijete ukázková data popsaná dříve v tomto tématu, ale změníte hodnotu pole **Úroveň** na *Transakce* v konfiguraci sestavy.
+Následující tabulka ukazuje výsledky, když použijete ukázková data popsaná dříve v tomto článku, ale změníte hodnotu pole **Úroveň** na *Transakce* v konfiguraci sestavy.
 
 | Typ zdroje | Prostředek | Lokalita | Datum | Číslo | Odkaz | Zásoby: Finanční množství | Zásoby: Finanční částka | Zásoby: Zaúčtované fyzické množství | Zásoby: Zaúčtovaná fyzická částka | Zásoby: Množství | Zásoby: Částka |
 |---|---|---|---|---|---|---|---|---|---|---|---|

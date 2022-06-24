@@ -1,7 +1,7 @@
 ---
 title: Kalendáře a hlavní plánování
-description: Toto téma obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.
-author: ChristianRytt
+description: Tento článek obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.
+author: t-benebo
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c22a77e73573b4e27a81f80debf67242b95c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890966"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.  Jsou popsány různé kalendáře použité v modulu hlavní plánování, včetně jejich vlivu data expedice a příjmu v plánované objednávce. Nakonec jsou uvedena doporučení týkající se přiřazení, použití a aktualizace kalendářů.
+Tento článek obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.  Jsou popsány různé kalendáře použité v modulu hlavní plánování, včetně jejich vlivu data expedice a příjmu v plánované objednávce. Nakonec jsou uvedena doporučení týkající se přiřazení, použití a aktualizace kalendářů.
 
 ## <a name="definition-of-a-calendar"></a>Definice kalendáře
 

@@ -1,6 +1,6 @@
 ---
 title: Úprava existující webové stránky
-description: Toto téma popisuje, jak upravit existující stránku webu v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak upravit existující stránku webu v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceffb07afc8287e975f48696a059d3cd4ad20ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848856"
 ---
 # <a name="modify-an-existing-site-page"></a>Úprava existující webové stránky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak upravit existující stránku webu v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak upravit existující stránku webu v aplikaci Microsoft Dynamics 365 Commerce.
 
 Pokud je nutné upravit stránku, otevřete ji nejprve v editoru stránek. Přejděte na web, který obsahuje vaši stránku, a pak v seznamu stránek najděte požadovanou stránku. Nemůžete-li stránku najít, můžete použít funkci bohatého vyhledávání nástroje pro vytváření. Zadejte přesný název stránky nebo zadejte několik prvních písmen a potom hvězdičku (\*). Zobrazí se filtrovaný seznam stránek. Pomocí tohoto seznamu můžete vyhledat požadovanou stránku. Po nalezení správné stránky vyberte název stránky a otevřete tak stránku v editoru stránek.
 

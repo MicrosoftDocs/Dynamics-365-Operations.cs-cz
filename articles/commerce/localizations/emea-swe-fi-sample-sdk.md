@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení ukázkové integrace kontrolní jednotky pro Švédsko (starší verze)
-description: Toto téma obsahuje pokyny k nasazení ukázkové integrace kontronlí jednotky pro Švédsko ze sady Retail SDK
+description: Tento článek obsahuje pokyny k nasazení ukázkové integrace kontronlí jednotky pro Švédsko ze sady Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870540"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Pokyny k nasazení ukázkové integrace kontrolní jednotky pro Švédsko (starší verze)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje pokyny pro nasazení ukázkové integrace kontrolní jednotky pro Švédsko ze sady SDK (Software Development Kit) pro Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace kontrolní jednotky pro Švédsko](emea-swe-fi-sample.md). 
+Tento článek obsahuje pokyny pro nasazení ukázkové integrace kontrolní jednotky pro Švédsko ze sady SDK (Software Development Kit) pro Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace kontrolní jednotky pro Švédsko](emea-swe-fi-sample.md). 
 
-Ukázka fiskální integrace pro Švédsko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), hardwarovou stanici a pokladní místo (POS). Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, hardwarové stanice a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
+Ukázka fiskální integrace pro Švédsko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), hardwarovou stanici a pokladní místo (POS). Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, hardwarové stanice a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
 
 ## <a name="development-environment"></a>Vývojové prostředí
 
@@ -257,7 +257,7 @@ Proces migrace by měl sestávat z následujících kroků.
 1. Aktualizace komponent POS a hardwarové stanice, zákaz rozšíření, která jsou součástí předchozí ukázky, a povolení rozšíření aktuální ukázky.
 
     > [!NOTE]
-    > V závislosti na typu prostředí můžete najít další technické podrobnosti o procesu migrace v sekci [Migrace ve vývojovém prostředí](#migration-in-a-development-environment) nebo [Migrace v provozním prostředí](#migration-in-a-production-environment) v tomto tématu.
+    > V závislosti na typu prostředí můžete najít další technické podrobnosti o procesu migrace v sekci [Migrace ve vývojovém prostředí](#migration-in-a-development-environment) nebo [Migrace v provozním prostředí](#migration-in-a-production-environment) v tomto článku.
 
 ### <a name="migration-in-a-development-environment"></a>Migrace ve vývojovém prostředí
 

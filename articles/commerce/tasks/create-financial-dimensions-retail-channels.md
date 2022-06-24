@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b98c37ad7695e81dbbd9558217287c868e052d08415d6d5c5d6055b5f9755eac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: caf27d3a5dddae0be7029834dce692f1fbc2fee7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889335"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
 
 [!include [banner](../includes/banner.md)]
 
-Tato procedura vás provede vytvořením finanční dimenze kanálu commerce s hodnotami dimenzí a postupem pro konfiguraci hodnot finančních dimenzí v obchodech. Téma neobsahuje další související postup, jako je například vytváření sad dimenzí a účetních struktur. Tato procedura používá v ukázkových datech společnost USRT.
+Tato procedura vás provede vytvořením finanční dimenze kanálu commerce s hodnotami dimenzí a postupem pro konfiguraci hodnot finančních dimenzí v obchodech. Tento článek neobsahuje další související postup, jako je například vytváření sad dimenzí a účetních struktur. Tato procedura používá v ukázkových datech společnost USRT.
 
 1. Přejděte do části Hlavní kniha > Účtová osnova > Dimenze > Finanční dimenze.
 2. Klikněte na možnost Nový.

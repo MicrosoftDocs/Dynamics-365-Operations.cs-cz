@@ -1,6 +1,6 @@
 ---
 title: Instalace a připojení aplikace skladu
-description: Toto téma vysvětluje, jak nainstalovat aplikaci skladu na každém z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
+description: Tento článek vysvětluje, jak nainstalovat aplikaci skladu na každém z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
@@ -16,26 +16,26 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8ed770e45aa7f9909b98a92b493dd2931c6a3981
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885747"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalace a připojení aplikace skladu
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Toto téma popisuje, jak nakonfigurovat starou aplikaci skladu (která je nyní zastaralá). Pokud hledáte informace o tom, jak konfigurovat novou mobilní aplikaci Řízení skladu, pročtěte si téma [Instalace a připojení mobilní aplikace Řízení skladu](install-configure-warehouse-management-app.md).
+> Tento článek popisuje, jak nakonfigurovat starou aplikaci skladu (která je nyní zastaralá). Pokud hledáte informace o tom, jak konfigurovat novou mobilní aplikaci Řízení skladu, pročtěte si téma [Instalace a připojení mobilní aplikace Řízení skladu](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Toto téma popisuje způsob konfigurace skladové aplikace pro nasazení v cloudu. Postup konfigurace skladové aplikace pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Tento článek popisuje způsob konfigurace skladové aplikace pro nasazení v cloudu. Postup konfigurace skladové aplikace pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Aplikace skladu je k dispozici v obchodech Google Play a Microsoft Store. Poskytuje se jako samostatná komponenta. Proto ji musíte stáhnout do každého zařízení a poté ji nakonfigurovat pro připojení k prostředí Microsoft Dynamics 365 Supply Chain Management.
 
-Toto téma vysvětluje, jak nainstalovat aplikaci skladu na každém z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
+Tento článek vysvětluje, jak nainstalovat aplikaci skladu na každém z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 
 ## <a name="system-requirements"></a>Systémové požadavky
 
@@ -76,11 +76,11 @@ Pokud chcete povolit interakci aplikace skladu s konkrétním serverem Supply C
 
     ![Průvodce registrací aplikace.](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
 
-1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto tématu odkazovat jako na *ID klienta*.
+1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto článku odkazovat jako na *ID klienta*.
 
     ![ID aplikace (klienta).](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
 
-1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto tématu.)
+1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto článku.)
 
     - **Odeslat certifikát** – Odešlete certifikát, který chcete použít jako tajný klíč. Tento přístup doporučujeme, protože je bezpečnější a lze jej také zcela automatizovat. Pokud provozujete aplikaci skladu na zařízeních Windows, poznamenejte si hodnota **Kryptografický otisk**, která se zobrazí po odeslání certifikátu. Tuto hodnotu budete potřebovat při konfiguraci certifikátu na zařízeních Windows.
     - **Nový tajný klíč klienta** – Vytvořte klíč zadáním popisu klíče a jeho délky trvání do části **Hesla** a poté vyberte **Přidat**. Vytvořte kopii klíče a bezpečně ji uložte.
@@ -90,7 +90,7 @@ Pokud chcete povolit interakci aplikace skladu s konkrétním serverem Supply C
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
 - Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících tématech:
+- Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících článcích:
 
     - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -117,7 +117,7 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Ověření pomocí certifikátu nebo tajného klíče klienta
 
-Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilního zařízení k Supply Chain Management. Ověřovat můžete pomocí tajného klíče klienta nebo certifikátu. Pokud importujete nastavení připojení, doporučujeme použít certifikát místo tajného klíče klienta. Protože tajný klíč klienta musí být vždy bezpečně uložen, nemůžete ho importovat ze souboru nastavení připojení nebo z QR kódu, jak je popsáno dále v tomto tématu.
+Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilního zařízení k Supply Chain Management. Ověřovat můžete pomocí tajného klíče klienta nebo certifikátu. Pokud importujete nastavení připojení, doporučujeme použít certifikát místo tajného klíče klienta. Protože tajný klíč klienta musí být vždy bezpečně uložen, nemůžete ho importovat ze souboru nastavení připojení nebo z QR kódu, jak je popsáno dále v tomto článku.
 
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je aplikace skladu nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 

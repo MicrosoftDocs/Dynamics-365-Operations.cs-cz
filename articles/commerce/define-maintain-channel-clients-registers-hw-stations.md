@@ -1,6 +1,6 @@
 ---
 title: Připojení periferních zařízení k pokladnímu místu (POS).
-description: Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
+description: Tento článek popisuje postup připojení periferních zařízení k Retail POS.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897101"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
+Tento článek popisuje postup připojení periferních zařízení k Retail POS.
 
 > [!NOTE]
 > Konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md) a [Konfigurace, Instalace a aktivace Moderní POS (MPOS)](retail-modern-pos-device-activation.md).
@@ -157,7 +157,7 @@ Profily účtenky jsou přiřazeny k tiskárnám v rámci profilu hardwaru. Pou�
 
 #### <a name="hardware-profiles"></a>Profily hardwaru
 
-Hardwarové profily jsou popsány jako součást instalace klienta dříve v tomto tématu. Hardwarové profily jsou přiřazeny přímo pokladně POS nebo sdílené hardwarové stanici a používají se k určení typů zařízení, které konkrétní pokladna POS nebo hardwarová stanice používá. Hardwarové profily se používají také k nastavení EFT, které se používá ke komunikaci s platební sadou SDK.
+Hardwarové profily jsou popsány jako součást instalace klienta dříve v tomto článku. Hardwarové profily jsou přiřazeny přímo pokladně POS nebo sdílené hardwarové stanici a používají se k určení typů zařízení, které konkrétní pokladna POS nebo hardwarová stanice používá. Hardwarové profily se používají také k nastavení EFT, které se používá ke komunikaci s platební sadou SDK.
 
 #### <a name="visual-profiles"></a>Vizuální profily
 

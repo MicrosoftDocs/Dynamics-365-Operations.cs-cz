@@ -1,6 +1,6 @@
 ---
-title: Dopad rozšiřitelnosti u přizpůsobení funkce Katalogy Commerce pro B2B
-description: Toto téma popisuje vliv rozšiřitelnosti na funkci Katalogy Commerce pro B2B v Microsoft Dynamics 365 Commerce.
+title: Dopad na rozšiřitelnost katalogů Commerce pro přizpůsobení B2B
+description: Tento článek popisuje vliv rozšiřitelnosti na funkci Katalogy Commerce pro B2B v Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849008"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Dopad rozšiřitelnosti u přizpůsobení funkce Katalogy Commerce pro B2B
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Dopad na rozšiřitelnost katalogů Commerce pro přizpůsobení B2B
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Toto téma popisuje vliv rozšiřitelnosti na funkci **Katalogy Commerce pro B2B** v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje vliv rozšiřitelnosti na funkci **Katalogy Commerce pro B2B** v Microsoft Dynamics 365 Commerce.
 
 Pokud máte zájem o rozšíření kontextu katalogu na vlastní scénáře, možná bude nutné aktualizovat vaše přizpůsobení. Tato aktualizace se řídí standardním procesem, který musí zákazníci dodržovat, protože jejich přizpůsobení nemusí po provedení upgradu automaticky podporovat nejnovější funkce. Pokud vaše přizpůsobení zahrnují nějaké nové funkce nebo opravy chyb v jejich prostředí, doporučujeme odpovídajícím způsobem aktualizovat kód přizpůsobení. Tato aktualizace se podobá změnám, které společnost Microsoft provádí v základním kódu.
 

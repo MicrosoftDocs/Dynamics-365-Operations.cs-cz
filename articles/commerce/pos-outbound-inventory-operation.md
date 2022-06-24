@@ -1,6 +1,6 @@
 ---
-title: Odchozí skladová operace v POS
-description: Toto téma popisuje možnosti odchozí skladové operace v pokladním místě (POS).
+title: Operace odchozích zásob v POS
+description: Tento článek popisuje možnosti odchozí skladové operace v pokladním místě (POS).
 author: hhaines
 ms.date: 07/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850216"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Operace odchozích zásob v POS
 
@@ -187,7 +187,7 @@ Jakmile je dokument ve stavu **Požadováno**, je připraven pro zpracování pl
 
 Plně expedované převodní příkazy jsou přesunuty na kartu **Dokončeno** v seznamu dokumentů **Odchozí operace**. Tam po sedm dní zůstanou v režimu pouze pro čtení viditelné uživatelům ve výstupním obchodu nebo skladu.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Operace příchozích zásob v POS](pos-inbound-inventory-operation.md)
 

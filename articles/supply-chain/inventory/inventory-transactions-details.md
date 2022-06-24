@@ -1,6 +1,6 @@
 ---
 title: Podrobnosti transakce zásob
-description: Toto téma poskytuje přehled stránky Podrobnosti transakcí, která zobrazuje podrobnosti o vybrané transakci zásob.
+description: Tento článek poskytuje přehled stránky Podrobnosti transakcí, která zobrazuje podrobnosti o vybrané transakci zásob.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859380"
 ---
 # <a name="inventory-transaction-details"></a>Podrobnosti transakce zásob
 
@@ -36,8 +36,8 @@ Stránka **Podrobnosti transakce** je rozdělena do několika pevných záložek
 
 | Pevná záložka | Popis |
 |---|---|
-| Obecná | Tato pevná záložka zobrazuje základní informace o vybrané transakci zásob. Kromě polí, která se zobrazují na stránce **Transakce zásob**, obsahuje další pole, která jsou popsána dále v tomto tématu. |
-| Aktualizace | Tato pevná záložka zobrazuje informace, které souvisejí s fyzickými, finančními a zúčtovacími aspekty vybrané transakce zásob. V závislosti na aktuálním stavu transakce mohou být některá pole prázdná. Tato pole však budou automaticky nastavena při zaúčtování transakcí. Kromě polí, která se zobrazují na stránce **Transakce zásob**, obsahuje tato pevná záložka další pole, která jsou popsána dále v tomto tématu. |
+| Obecná | Tato pevná záložka zobrazuje základní informace o vybrané transakci zásob. Kromě polí, která se zobrazují na stránce **Transakce zásob**, obsahuje další pole, která jsou popsána dále v tomto článku. |
+| Aktualizace | Tato pevná záložka zobrazuje informace, které souvisejí s fyzickými, finančními a zúčtovacími aspekty vybrané transakce zásob. V závislosti na aktuálním stavu transakce mohou být některá pole prázdná. Tato pole však budou automaticky nastavena při zaúčtování transakcí. Kromě polí, která se zobrazují na stránce **Transakce zásob**, obsahuje tato pevná záložka další pole, která jsou popsána dále v tomto článku. |
 | Zaúčtování do hlavní knihy | Tato pevná záložka zobrazuje typ zaúčtování a účet hlavní knihy, které se používají pro fyzickou aktualizaci, finanční aktualizaci, fyzické příjmy, fyzické poplatky, finanční příjmy a finanční poplatky související s vybranou transakcí zásob. |
 | Odkazy | Tato pevná záložka zobrazuje další informace o zdrojové transakci, která vytvořila vybranou transakci zásob. Tyto informace mohou například zahrnovat podrobnosti z nákupní objednávky nebo prodejní objednávky. |
 | Související informace | Tato pevná záložka zobrazuje další informace o vybrané transakci zásob. Tato pole nemusejí být nastavena, pokud nepoužíváte některé funkce, jako jsou kategorie zásobování nebo projekty. |

@@ -1,6 +1,6 @@
 ---
 title: Konfigurace zásad konsolidace dodávek
-description: Toto téma vysvětluje, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
+description: Tento článek vysvětluje, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845917"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672563"
 
 Proces konsolidace dodávek, který používá zásady konsolidace dodávek, umožňuje automatizovanou konsolidaci dodávek během automatizovaného a ručního uvolnění do skladu. Po zapnutí této funkce musíte nakonfigurovat počáteční zásady. Pokud nejsou nakonfigurovány žádné zásady, vygeneruje každý řádek prodeje samostatnou dodávku, která má jeden řádek vytížení.
 
-Scénáře uvedené v tomto tématu ukazují, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
+Scénáře uvedené v tomto článku ukazují, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Zapnutí funkce zásad konsolidace dodávek
 
 > [!IMPORTANT]
-> V [prvním scénáři](#scenario-1), který je popsán v tomto tématu, nejprve nastavíte sklad tak, aby používal dřívější funkci konsolidace dodávek. Poté zpřístupníte zásady konsolidace dodávek. Tímto způsobem můžete vyzkoušet, jak scénář upgradu funguje. Pokud chcete použít prostředí s ukázkovými daty pro projití prvního scénáře, nezapínejte tuto funkci dříve, než provedete scénář.
+> V [prvním scénáři](#scenario-1), který je popsán v tomto článku, nejprve nastavíte sklad tak, aby používal dřívější funkci konsolidace dodávek. Poté zpřístupníte zásady konsolidace dodávek. Tímto způsobem můžete vyzkoušet, jak scénář upgradu funguje. Pokud chcete použít prostředí s ukázkovými daty pro projití prvního scénáře, nezapínejte tuto funkci dříve, než provedete scénář.
 
 Než budete moci používat funkci *Zásady konsolidace dodávek*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
@@ -40,7 +40,7 @@ Než budete moci používat funkci *Zásady konsolidace dodávek*, musíte ji za
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Každý scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
+Každý scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scénář 1: Konfigurace výchozích zásad konsolidace dodávek
 
@@ -339,7 +339,7 @@ Nyní, když jste vytvořili všechny své zásady, musíte stanovit pořadí, v
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Příklad scénářů použití zásad konsolidace dodávek
 
-Následující scénáře ilustrují, jak byste mohli použít zásady konsolidace dodávek, které jste vytvořili při čtení tohoto tématu. Každý scénář vás provede procesem konsolidace dodávek, který používá zásady konsolidace dodávek během automatizovaného nebo ručního uvolnění do skladu:
+Následující scénáře ilustrují, jak byste mohli použít zásady konsolidace dodávek, které jste vytvořili při čtení tohoto článku. Každý scénář vás provede procesem konsolidace dodávek, který používá zásady konsolidace dodávek během automatizovaného nebo ručního uvolnění do skladu:
 
 - Scénář 1: [Konsolidace dodávek při jejich uvolnění do skladu pomocí automatického uvolnění prodejních objednávek](../warehousing/consolidate-shipments-automatic.md)
 - Scénář 2: [Konsolidace dodávek, když je zásada konsolidace dodávek přepsána ze stránky Uvolnění do skladu](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

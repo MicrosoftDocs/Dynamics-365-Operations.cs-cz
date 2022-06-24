@@ -1,6 +1,6 @@
 ---
 title: Konfigurace produktových filtrů pro skladové transakce
-description: Toto téma popisuje, jak konfigurovat filtry pro produkty a kódy filtrů ke kategorizaci skladových položek ve skladu. Filtry lze také použít k určení, kteří odběratelé mohou objednat určité zboží a určit zboží, které lze zakoupit od určitého dodavatele.
+description: Tento článek popisuje, jak konfigurovat filtry pro produkty a kódy filtrů ke kategorizaci skladových položek ve skladu. Filtry lze také použít k určení, kteří odběratelé mohou objednat určité zboží a určit zboží, které lze zakoupit od určitého dodavatele.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850431"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurace produktových filtrů pro skladové transakce
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak konfigurovat filtry pro produkty a kódy filtrů ke kategorizaci skladových položek ve skladu. Filtry lze také použít k určení, kteří odběratelé mohou objednat určité zboží a určit zboží, které lze zakoupit od určitého dodavatele.
+Tento článek popisuje, jak konfigurovat filtry pro produkty a kódy filtrů ke kategorizaci skladových položek ve skladu. Filtry lze také použít k určení, kteří odběratelé mohou objednat určité zboží a určit zboží, které lze zakoupit od určitého dodavatele.
 
 Dále můžete nastavit a používat kódy produktů k automatickému uspořádání skladových položek ve skladu a kombinování filtrovaných položek do skupin filtrů. Filtry lze použít k zařazení položek do kategorií pro procesy manipulace, nákupu a prodeje. Možná budete chtít položky seskupit nebo je od sebe oddělit, pokud způsob manipulace s nimi závisí na hmotnosti nebo omezeních manipulace. Můžete také určit, od kterých zákazníků nebo prodejců lze položku zakoupit nebo prodat.
 
@@ -48,7 +48,7 @@ Filtry produktu poskytují až 10 vlastností **Název filtru**, což jsou hodno
 
     ![Nastavení filtru produktu.](media/Product_Filters10.png "Nastavení filtru produktu")
 
-1. Do pole **Popis** zadejte název kódu. Například *Kód 2* může představovat dodavatele. Poté můžete vytvořit produktový filtr pro konkrétního dodavatele nebo skupinu dodavatelů. Více informací naleznete v části [Nastavení kódů filtru dodavatele](#vendor-product-filters) dále v tomto tématu.
+1. Do pole **Popis** zadejte název kódu. Například *Kód 2* může představovat dodavatele. Poté můžete vytvořit produktový filtr pro konkrétního dodavatele nebo skupinu dodavatelů. Více informací naleznete v části [Nastavení kódů filtru dodavatele](#vendor-product-filters) dále v tomto článku.
 
     ![Nastavení filtrů produktu.](media/Product_Filters.png "Nastavení filtrů produktu")
 

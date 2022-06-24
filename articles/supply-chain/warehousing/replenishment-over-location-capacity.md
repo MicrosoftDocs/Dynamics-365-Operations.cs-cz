@@ -1,6 +1,6 @@
 ---
 title: Doplnění nad kapacitu místa
-description: Toto téma obsahuje informace o funkci Doplňování přes kapacitu místa. Tato funkce umožňuje veškerou doplňovací práci, která bude vyžadována na den, který má být vytvořen, a řídí dostupnost této doplňovací práce, aby bylo zajištěno, že místu vyskladnění nedojdou zásoby, ani nepřekročí kapacitu.
+description: Tento článek obsahuje informace o funkci Doplňování přes kapacitu místa. Tato funkce umožňuje veškerou doplňovací práci, která bude vyžadována na den, který má být vytvořen, a řídí dostupnost této doplňovací práce, aby bylo zajištěno, že místu vyskladnění nedojdou zásoby, ani nepřekročí kapacitu.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899230"
 ---
 # <a name="replenishment-over-location-capacity"></a>Doplnění nad kapacitu místa
 
@@ -37,7 +37,7 @@ Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Nastavení funkce pro tento vzorový scénář
 
-Tato část obsahuje pokyny a příklad, který ukazuje, jak nastavit tuto funkci a připravit ukázková data pro příkladový scénář, který je uveden dále v tomto tématu.
+Tato část obsahuje pokyny a příklad, který ukazuje, jak nastavit tuto funkci a připravit ukázková data pro příkladový scénář, který je uveden dále v tomto článku.
 
 ### <a name="enable-sample-data"></a>Povolit ukázková data
 
@@ -145,7 +145,7 @@ Povolte funkci doplňování přes kapacitu v profilu místa.
 
 ## <a name="example-scenario"></a>Příklad
 
-Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžete v rámci tohoto scénáře vyzkoušet funkci *Doplnění nad kapacitu místa*. Hodnoty zobrazené v tomto scénáři předpokládají, že pracujete se standardními ukázkovými daty, která jste vybrali v právnické osobě **USMF** a připravili jste vzorové záznamy, které jsou popsány dříve v tomto tématu. Tento scénář také slouží jako příklad, který ukazuje, jak lze funkci použít v produkčním nastavení.
+Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžete v rámci tohoto scénáře vyzkoušet funkci *Doplnění nad kapacitu místa*. Hodnoty zobrazené v tomto scénáři předpokládají, že pracujete se standardními ukázkovými daty, která jste vybrali v právnické osobě **USMF** a připravili jste vzorové záznamy, které jsou popsány dříve v tomto článku. Tento scénář také slouží jako příklad, který ukazuje, jak lze funkci použít v produkčním nastavení.
 
 ### <a name="create-replenishment-work"></a>Vytvořit práci doplnění
 

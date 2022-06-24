@@ -1,6 +1,6 @@
 ---
 title: Požadavky kategorií od dodavatelů
-description: Toto téma popisuje, jak mohou prodejci pro svůj účet požadovat kategorie nákupu. Popisuje také proces schvalování, který provádějí agenti nákupu.
+description: Tento článek popisuje, jak mohou prodejci pro svůj účet požadovat kategorie nákupu. Popisuje také proces schvalování, který provádějí agenti nákupu.
 author: GalynaFedorova
 ms.date: 04/19/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9874151a5d82cc3441741489065877b78bab7bf5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8deded1b7f908bcadf705cf992b2d97618bc28b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863876"
 ---
 # <a name="category-requests-from-vendors"></a>Požadavky kategorií od dodavatelů
 

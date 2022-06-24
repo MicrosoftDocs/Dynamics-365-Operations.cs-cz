@@ -1,6 +1,6 @@
 ---
 title: Karanténní zóny pro neshody
-description: Toto téma popisuje, jak vytvářet a používat karanténní zóny pro neshody.
+description: Tento článek popisuje, jak vytvářet a používat karanténní zóny pro neshody.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207950a2ff4057853488f75d0e302a049d228b76
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2e556d2aa078a76ff4f81b6763535c38ce1cca0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857699"
 ---
 # <a name="quarantine-zones-for-nonconformances"></a>Karanténní zóny pro neshody
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvářet a používat karanténní zóny pro neshody.
+Tento článek popisuje, jak vytvářet a používat karanténní zóny pro neshody.
 
 K definici zón, které lze neshodám přiřadit, použijte stránku **Karanténní zóny**. Když vytvoříte neshodu, můžete nastavit pole **Karanténní zóna** a **Typ karantény** na kartě **Obecné** stránky **Neshody**. Pole **Karanténní zóna** obvykle označuje oblast nebo umístění, kde se položka nachází. Pole **Typ karantény** definuje položku buď jako *Omezené použití*, nebo *Nepoužitelné*.
 

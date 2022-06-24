@@ -1,6 +1,6 @@
 ---
 title: Změnit fond práce u práce
-description: Toto téma vysvětluje, jak můžete pomocí tlačítka Změnit fond práce pro pracovní položky změnit fond práce stávající práce.
+description: Tento článek vysvětluje, jak můžete pomocí tlačítka Změnit fond práce pro pracovní položky změnit fond práce stávající práce.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900615"
 ---
 # <a name="change-work-pool-on-work"></a>Změnit fond práce u práce
 
@@ -34,14 +34,14 @@ Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypn
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Nastavte funkci Změnit fond práce pro práci
 
-Chcete-li tuto funkci používat, musíte mít nastaveny některé fondy práce. Můžete také nastavit své pracovní šablony, aby automaticky přiřadily fond. Pokud chcete využít scénář uvedený v tomto tématu jako příklad, nastavte systém podle popisu v této části.
+Chcete-li tuto funkci používat, musíte mít nastaveny některé fondy práce. Můžete také nastavit své pracovní šablony, aby automaticky přiřadily fond. Pokud chcete využít scénář uvedený v tomto článku jako příklad, nastavte systém podle popisu v této části.
 
 ### <a name="set-up-work-pools"></a>Nastavení fondů práce
 
 Fondy práce umožňují organizovat pracovní položky podle typu. Chcete-li pracovat s funkcí *Změna fondu práce pro práci*, musíte mít k dispozici alespoň dva fondy práce. Chcete-li zobrazit a přidat fondy práce, postupujte podle těchto kroků.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Práce \> Fondy práce**.
-1. Pokud pracujete s demo daty společnosti **USMF** a budete pokračovat v příkladu scénáře dále v tomto tématu, přidejte dva fondy práce, které mají následující nastavení:
+1. Pokud pracujete s demo daty společnosti **USMF** a budete pokračovat v příkladu scénáře dále v tomto článku, přidejte dva fondy práce, které mají následující nastavení:
 
     - Fond práce 1:
 
@@ -57,7 +57,7 @@ Fondy práce umožňují organizovat pracovní položky podle typu. Chcete-li pr
 
 ### <a name="set-up-work-templates"></a>Nastavit šablony práce
 
-Pro každou ze svých pracovních šablon můžete podle potřeby nastavit výchozí fond práce. Pro každou příslušnou šablonu přiřadíte fond práce ve sloupci **ID fondu práce**. V tomto případě všechny pracovní položky, které jsou generovány pomocí dané šablony, automaticky zdědí přiřazený fond práce. Pokud pracujete s demo daty společnosti **USMF** a budete pokračovat v příkladu scénáře dále v tomto tématu, postupujte podle následujících kroků.
+Pro každou ze svých pracovních šablon můžete podle potřeby nastavit výchozí fond práce. Pro každou příslušnou šablonu přiřadíte fond práce ve sloupci **ID fondu práce**. V tomto případě všechny pracovní položky, které jsou generovány pomocí dané šablony, automaticky zdědí přiřazený fond práce. Pokud pracujete s demo daty společnosti **USMF** a budete pokračovat v příkladu scénáře dále v tomto článku, postupujte podle následujících kroků.
 
 1. Přejděte do **Řízení skladu \> Nastavení \> Práce \> Pracovní šablony**.
 1. V podokně Akce vyberte možnost **Upravit**, tím přepnete stránku režimu úprav.
@@ -70,7 +70,7 @@ Pro každou ze svých pracovních šablon můžete podle potřeby nastavit vých
 
 ## <a name="example-scenario"></a>Příklad
 
-Tento scénář ukazuje, jak změnit tok zpracování pro existující pracovní položku změnou jejího fondu práce. Používá demo data společnosti **USMF** a nastavení, která byla navržena dříve v tomto tématu.
+Tento scénář ukazuje, jak změnit tok zpracování pro existující pracovní položku změnou jejího fondu práce. Používá demo data společnosti **USMF** a nastavení, která byla navržena dříve v tomto článku.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Vytvořte prodejní objednávku a uvolněte ji do skladu
 

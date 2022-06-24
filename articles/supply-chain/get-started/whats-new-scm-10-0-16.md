@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.16.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 323dde332364a26ec5b0d3f48a0d6ae831656108
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879098"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.16. Tato verze má číslo sestavení 10.0.689 a je k dispozici následujícím způsobem:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.16. Tato verze má číslo sestavení 10.0.689 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** Listopad 2020
 - **Obecně dostupné vydání (automatická aktualizace):** Leden 2021
@@ -49,11 +49,11 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
-Nedávno jsme přidali nebo významně aktualizovali následující témata nápovědy. Nemusí nutně souviset s novými funkcemi přidanými pro toto vydání, jak je uvedeno v předchozí části, ale mohou vám pomoci lépe využít stávající funkce.
+Nedávno jsme přidali nebo významně aktualizovali následující články nápovědy. Nemusí nutně souviset s novými funkcemi přidanými pro toto vydání, jak je uvedeno v předchozí části, ale mohou vám pomoci lépe využít stávající funkce.
 
 - [Prodejní ceny založené na atributech pro konfiguraci produktu založeného na omezeních](../pim/attribute-based-product-configurator.md)
 - [Automatické přidělování poplatků](../procurement/automatic-charges-allocation.md)
-- [Přehled nebezpečných materiálů](../pim/hazmat-overview.md) (a související témata)
+- [Přehled nebezpečných materiálů](../pim/hazmat-overview.md) (a související články)
 - [Migrace na optimalizaci plánování pro hlavní plánování](../master-planning/new-master-planning-engine.md)
 - [cXML rozšíření nákupu](../procurement/purchasing-cxml-enhancements.md)
 - [Seskupení vyskladnění](../warehousing/putaway-clusters.md)
@@ -63,9 +63,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.16 aplikací Finance and Operations (únor 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.16 finančních a provozních aplikací (únor 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -79,12 +79,12 @@ Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
-Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+Článek [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v článku [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 

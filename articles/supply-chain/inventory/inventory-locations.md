@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c202a679e992c562772cbf6da6e17c4b8149760f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bd5ad086cadd2e49585614e7650bb7e30a4e7328
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573938"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888579"
 ---
 # <a name="inventory-locations"></a>Skladová místa
 
@@ -29,7 +29,7 @@ ms.locfileid: "7573938"
 
 Skladová místa se používají se základní funkcí skladu (WMS I) k určení toho, kde jsou položky uskladněny, a kde se položky vybírají v rámci skladu WMS I.
 
-V tomto tématu se týká funkcí v modulu Správa zboží. Nevztahuje se na funkce v modulu Řízení skladu.
+Tento článek se týká funkcí v modulu Správa zboží. Nevztahuje se na funkce v modulu Řízení skladu.
 
 Termín skladové místo je definován jako místo, ze kterého se vybírají, a kam se ukládají položky.
 

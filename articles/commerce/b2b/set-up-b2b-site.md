@@ -1,6 +1,6 @@
 ---
-title: Nastavení webu elektronického obchodování B2B
-description: Toto téma popisuje, jak nastavit web elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
+title: Vytvoření webu elektronického obchodu B2B
+description: Tento článek popisuje, jak nastavit web elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881899"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Vytvoření webu elektronického obchodu B2B
 
 [!include [banner](../../includes/banner.md)]
 
-Weby elektronického obchodování typu business-to-business (B2B) poskytují některé klíčové funkce, které optimalizují pracovní postup pro uživatele B2B. Toto téma popisuje, jak nastavit web elektronického obchodování typu B2B v Microsoft Dynamics 365 Commerce. Prochází moduly a nastavením webů, které je nutné nakonfigurovat, aby se umožnily scénáře specifické pro B2B.
+Weby elektronického obchodování typu business-to-business (B2B) poskytují některé klíčové funkce, které optimalizují pracovní postup pro uživatele B2B. Tento článek popisuje, jak nastavit web elektronického obchodování typu B2B v Microsoft Dynamics 365 Commerce. Prochází moduly a nastavením webů, které je nutné nakonfigurovat, aby se umožnily scénáře specifické pro B2B.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-- Chcete-li nastavit web B2B elektronického obchodování, musíte povolit a nakonfigurovat konkrétní funkce v centrále Commerce, jak je popsáno v tomto tématu.
+- Chcete-li nastavit web B2B elektronického obchodování, musíte povolit a nakonfigurovat konkrétní funkce v Commerce headquarters, jak je popsáno v tomto článku.
 - Základní prostředí, jako je objevování produktů, stránky s podrobnostmi o produktu, košík a pokladna, jsou poháněny stejnými moduly, které se používají pro weby elektronického obchodování business-to-consumer (B2C). Autoři stránek by měli být obeznámeni se všemi moduly, které Dynamics 365 Commerce podporuje. Další informace viz [Přehled knihoven modulů](../starter-kit-overview.md).
-- Toto téma předpokládá, že autoři webů rozumějí základům konfigurátoru webů Commerce, šablon, fragmentů a stránek, aby mohli povolit funkce B2B pro weby elektronického obchodování.
+- Tento článek předpokládá, že autoři webů rozumějí základům konfigurátoru webů Commerce, šablon, fragmentů a stránek, aby mohli povolit funkce B2B pro weby elektronického obchodování.
 
 ## <a name="site-level-settings"></a>Nastavení na úrovni webu
 

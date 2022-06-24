@@ -1,6 +1,6 @@
 ---
 title: Práce s předvolbami stylu
-description: Toto téma popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900353"
 ---
 # <a name="work-with-style-presets"></a>Práce s předvolbami stylu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
 
 Předvolba stylu je uložená sada všech hodnot stylu, které lze tvořit napříč motivem webu. Může být použit k okamžité změně vzhledu webu od tvůrce webu. Předvolby stylů umožňují tvůrcům obchodního webu rychle měnit, zobrazovat náhledy a aktivovat sadu hodnot stylů na svém webu, aniž by museli používat Cascading Style Sheets (CSS) nebo nasazovat motivy. Styly písem, styly tlačítek a barvy webu jsou typickými příklady proměnných stylů, které lze spravovat pomocí předvoleb stylů.
 

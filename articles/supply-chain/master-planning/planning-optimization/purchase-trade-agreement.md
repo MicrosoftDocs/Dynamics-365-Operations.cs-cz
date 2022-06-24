@@ -1,6 +1,6 @@
 ---
 title: Hlavní plánování s obchodními smlouvami nákupu
-description: Toto téma popisuje, jak může optimalizace plánování najít dodavatele a / nebo doby realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve smlouvách o nákupu.
+description: Tento článek popisuje, jak může optimalizace plánování najít dodavatele a / nebo doby realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve smlouvách o nákupu.
 author: t-benebo
 ms.date: 06/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: cb790836042506ed6676ee7edbd8bba58191519b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873746"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak může optimalizace plánování najít dodavatele a / nebo doba realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve všech smlouvách o nákupu specifikovaných pro daný produkt.
+Tento článek popisuje, jak může optimalizace plánování najít dodavatele a / nebo doba realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve všech smlouvách o nákupu specifikovaných pro daný produkt.
 
 ## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Zapnutí funkce nákupu obchodních smluv pro plánování optimalizace
 

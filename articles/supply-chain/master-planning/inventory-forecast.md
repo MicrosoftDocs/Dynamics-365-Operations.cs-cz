@@ -1,6 +1,6 @@
 ---
 title: Prognózy zásob
-description: Toto téma popisuje funkčnost prognózy nabídky a poptávky, kterou lze použít k vytvoření prognózy zásob v aplikaci Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje funkčnost prognózy nabídky a poptávky, kterou lze použít k vytvoření prognózy zásob v aplikaci Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844518"
 ---
 # <a name="inventory-forecasts"></a>Prognózy zásob
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak zobrazit a vytvořit prognózy zásob. Můžete vytvářet a zobrazovat řádky prognózy nabídky a poptávky pro položky, skupiny položek, alokační klíče položek, účty zákazníků, skupiny zákazníků, účty dodavatelů a skupiny dodavatelů.
+Tento článek popisuje, jak zobrazit a vytvořit prognózy zásob. Můžete vytvářet a zobrazovat řádky prognózy nabídky a poptávky pro položky, skupiny položek, alokační klíče položek, účty zákazníků, skupiny zákazníků, účty dodavatelů a skupiny dodavatelů.
 
 Pro každý řádek prognózy můžete vybrat model prognózy, který se použije. Poté můžete určit položku nebo skupinu položek, a k tomu množství nebo částku transakce. Dále je možné nastavit časový plán přidělení předpokládaného množství.
 
@@ -60,7 +60,7 @@ Jak ukazuje tabulka v kroku 1, existují různé způsoby přístupu k použitý
     V závislosti na vašem výběru se zobrazí stránka **Prognóza nabídky** nebo **Prognóza poptávky**. Zobrazuje všechny existující řádky prognózy pro záznam, který jste vybrali před otevřením stránky.
 
 1. V podokně akcí vyberte možnost **Nový**, a přidejte tak řádek prognózy do mřížky v horní části stránky.
-1. Na novém řádku vyberte v poli **Model** ten model prognózy, který chcete použít. Poté podle potřeby zadejte další podrobnosti, například položku, skupinu položek, účet nebo skupinu zákazníka nebo dodavatele, množství položky nebo celkovou částku transakce. Úplné podrobnosti o polích, která jsou k dispozici na stránkách **Prognóza nabídky** a **Prognóza poptávky** najdete v dalších částech tohoto tématu.
+1. Na novém řádku vyberte v poli **Model** ten model prognózy, který chcete použít. Poté podle potřeby zadejte další podrobnosti, například položku, skupinu položek, účet nebo skupinu zákazníka nebo dodavatele, množství položky nebo celkovou částku transakce. Úplné podrobnosti o polích, která jsou k dispozici na stránkách **Prognóza nabídky** a **Prognóza poptávky** najdete v dalších částech tohoto článku.
 1. Chcete-li distribuovat prognózu na celé období, vyberte na kartě **Přehled** položku **Přidělit prognózu** na panelu nástrojů.
 1. V mřížce **Přidělení** zkontrolujte časový horizont a časové intervaly pro distribuci různých množství pro prognózu.
 
@@ -68,7 +68,7 @@ Jak ukazuje tabulka v kroku 1, existují různé způsoby přístupu k použitý
 
 Prognóza nabídky vám umožní vytvořit plán pro položky, které je třeba zakoupit. Říká referentům v oblasti nákupu a získávání zdrojů, co mají objednat.
 
-Prognózu nabídky můžete zadat podle položky, skupiny položek, alokačního klíče položek, dodavatele a skupiny dodavatelů. Informace o všech způsobech otevření stránky **Prognóza nabídky** pro různé entity a záznamy najdete v oddíle [Zobrazení a ruční zadání řádků prognózy](#manual-entry) dříve v tomto tématu.
+Prognózu nabídky můžete zadat podle položky, skupiny položek, alokačního klíče položek, dodavatele a skupiny dodavatelů. Informace o všech způsobech otevření stránky **Prognóza nabídky** pro různé entity a záznamy najdete v oddíle [Zobrazení a ruční zadání řádků prognózy](#manual-entry) dříve v tomto článku.
 
 Horní část stránky **Prognóza nabídky** obsahuje mřížku řádků prognózy nabídky a sadu karet, pomocí kterých můžete zobrazit a nastavit další informace pro vybraný řádek prognózy. Spodní část stránky obsahuje mřížku **Přidělení**.
 
@@ -94,9 +94,9 @@ V následující tabulce jsou popsány příkazy, které jsou k dispozici v pane
 
 | Příkaz | popis |
 |---|---|
-| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.) |
-| Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto tématu.) |
-| Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto tématu.) |
+| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto článku.) |
+| Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto článku.) |
+| Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto článku.) |
 | Vytvořit požadavek na položku | Otevřete dialogové okno, kde můžete vytvořit požadavky na položku a řádky prodejní objednávky nebo řádky deníku položky pro transakce prognózy související s projektem. I když je tento příkaz k dispozici jak pro řádky prognózy nabídky, tak pro řádky prognózy poptávky, není možné ho použít na stránce **Prognóza nabídky**. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Karta Přehled ve stránce Prognóza nabídky
@@ -173,7 +173,7 @@ Pokud používáte alokační klíč položky nebo jste zadali prognózu položk
 
 Prognóza poptávky vám umožňuje zadat nebo generovat poptávku pro zákazníka. Pomáhá prodejním a marketingovým referentům informovat hlavní plánovací referentům o očekávané poptávce během nadcházejícího prognózovaného období.
 
-Prognózu poptávky můžete zadat podle položky, skupiny položek, alokačního klíče položek, zákazníka a skupiny zákazníků. Informace o všech způsobech otevření stránky **Prognóza poptávky** pro různé entity a záznamy najdete v oddíle [Zobrazení a ruční zadání řádků prognózy](#manual-entry) dříve v tomto tématu.
+Prognózu poptávky můžete zadat podle položky, skupiny položek, alokačního klíče položek, zákazníka a skupiny zákazníků. Informace o všech způsobech otevření stránky **Prognóza poptávky** pro různé entity a záznamy najdete v oddíle [Zobrazení a ruční zadání řádků prognózy](#manual-entry) dříve v tomto článku.
 
 Horní část stránky **Prognóza poptávky** obsahuje mřížku řádků prognózy poptávky a sadu karet, pomocí kterých můžete zobrazit a nastavit další informace pro vybraný řádek prognózy. Spodní část stránky obsahuje mřížku **Přidělení**.
 
@@ -201,9 +201,9 @@ V následující tabulce jsou popsány příkazy, které jsou k dispozici v pane
 
 | Příkaz | popis |
 |---|---|
-| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.)|
-| Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto tématu.) |
-| Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto tématu.) |
+| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto článku.)|
+| Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto článku.) |
+| Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto článku.) |
 | Vytvořit požadavek na položku | Otevřete dialogové okno, kde můžete vytvořit požadavky na položku a řádky prodejní objednávky nebo řádky deníku položky pro transakce prognózy související s projektem. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Karta Přehled ve stránce Prognóza poptávky
@@ -296,7 +296,7 @@ Karta **Dimenze zásob** zobrazuje všechny hodnoty dimenze zásob pro řádek, 
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Mřížka Přidělení ve stránce Prognóza poptávky
 
-Pokud používáte alokační klíč položky nebo jste zadali prognózu položky pro jedno či více budoucích období, můžete prognózu přidělit výběrem položky **Přidělit prognózu** na panelu nástrojů na kartě **Přehled**. Množství se poté rozdělí způsobem, který je vyznačen řádky v mřížce **Přidělení**. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.)
+Pokud používáte alokační klíč položky nebo jste zadali prognózu položky pro jedno či více budoucích období, můžete prognózu přidělit výběrem položky **Přidělit prognózu** na panelu nástrojů na kartě **Přehled**. Množství se poté rozdělí způsobem, který je vyznačen řádky v mřížce **Přidělení**. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto článku.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Prognóza zásob
 

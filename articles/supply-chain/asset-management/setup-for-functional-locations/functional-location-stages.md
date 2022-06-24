@@ -1,6 +1,6 @@
 ---
-title: Stavy životního cyklu funkčních míst
-description: Toto téma popisuje, jak nastavit stavy funkčních míst a modely životního cyklu v modulu Správa majetku.
+title: Stavy životního cyklu funkčního místa
+description: Tento článek popisuje, jak nastavit stavy funkčních míst a modely životního cyklu v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360963"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934656"
 ---
-# <a name="functional-location-lifecycle-states"></a>Stavy životního cyklu funkčních míst
+# <a name="functional-location-lifecycle-states"></a>Stavy životního cyklu funkčního místa
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Toto téma popisuje, jak nastavit stavy životního cyklu funkčních míst a modely životního cyklu v modulu Správa majetku. Stavy životního cyklu funkčního místa definují stavy, ve kterých může být funkční místo, například vytvořeno, aktivní a ukončeno. Všechna funkční místa, bez ohledu na jejich stav životního cyklu, můžete zobrazit na stránce se seznamem **Všechna funkční místa**. Stav funkčního místa můžete změnit tak, že ho vyberete na stránce se seznamem **Všechna funkční místa** a vyberete možnost **Aktualizovat stav funkčního místa**.
+Tento článek popisuje, jak nastavit stavy životního cyklu funkčních míst a modely životního cyklu v modulu Správa majetku. Stavy životního cyklu funkčního místa definují stavy, ve kterých může být funkční místo, například vytvořeno, aktivní a ukončeno. Všechna funkční místa, bez ohledu na jejich stav životního cyklu, můžete zobrazit na stránce se seznamem **Všechna funkční místa**. Stav funkčního místa můžete změnit tak, že ho vyberete na stránce se seznamem **Všechna funkční místa** a vyberete možnost **Aktualizovat stav funkčního místa**.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Nastavení stavů životního cyklu funkčního místa
 
@@ -39,6 +39,7 @@ Toto téma popisuje, jak nastavit stavy životního cyklu funkčních míst a mo
 5. Na přepínacích tlačítku **Vytvořit majetek** vyberte možnost Ano, pokud má být možné automaticky vytvořit majetek se stejným názvem jako funkční místo a nainstalovat ho do funkčního místa v tomto stavu.  
 >[!NOTE]
 >Toto přepínací tlačítko se vztahuje k poli **Typ majetku** na záložce s náhledem **Obecné** ve formuláři **Typy funkčních míst** (**Správa majetku** > **Nastavení** > **Funkční místa** > **Typy funkčních míst**).
+
 6. V případě, že má být možné změnit název funkčního místa v tomto stavu, na přepínacím tlačítku **Přejmenovat místo** zvolte Ano.
 7. V případě, že má být možné přidat nová dílčí místa do funkčního místa v tomto stavu, na přepínacím tlačítku **Nová dílčí místa** zvolte Ano.
 8. V případě, že má být možné instalovat majetky na funkčního místa v tomto stavu, na přepínacím tlačítku **Instalovat majetek** zvolte Ano.

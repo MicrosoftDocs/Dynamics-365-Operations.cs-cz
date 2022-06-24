@@ -1,6 +1,6 @@
 ---
 title: Funkce a možnosti usnadnění přístupu
-description: Toto téma obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
+description: Tento článek obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f4e73ebaf6dc3fc6eb97f69df8545c9ab9fa9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853895"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funkce a možnosti usnadnění přístupu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
+Tento článek obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
 
 Funkce a možnosti usnadnění přístupu poskytují funkční prostředky pro přístup a provádění akcí, aby mohli všichni uživatelé dosáhnout svých cílů. Tato široká škála uživatelů může vyžadovat pomůcky pro usnadnění sluchu, zraku, mobility nebo neurodiverzity.
 
 Různé funkce v aplikaci Dynamics 365 Commerce umožňují vytvořit web tak, aby zahrnoval asistenční funkce. Při navrhování webu byste měli vzít v úvahu oblasti funkcí usnadnění, které jsou uvedeny v [centru pro usnadnění přístupu společnosti Microsoft](https://www.microsoft.com/accessibility) 
 
-Toto téma popisuje některé další oblasti funkcí usnadnění, které byste měli zvážit při používání Dynamics 365 Commerce.
+Tento článek popisuje některé další oblasti funkcí usnadnění, které byste měli zvážit při používání Dynamics 365 Commerce.
 
 ## <a name="image-alt-text"></a>Alternativní text obrázku
 

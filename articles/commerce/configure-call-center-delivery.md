@@ -1,6 +1,6 @@
 ---
-title: Konfigurace způsobů dodání a poplatků call centra
-description: Toto téma popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Dynamics 365 Commerce.
+title: Konfigurace způsobů dodání a poplatků kontaktního střediska
+description: Tento článek popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888291"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
@@ -35,7 +35,7 @@ Commerce obsahuje funkce, které umožňují uživatelům omezit způsoby dodán
 
 Dříve než určíte dodání, které režimy dodání lze použít pro objednávky call centra a definujete přidružené náklady a pravidla, je nutné definovat způsoby dodání. Přejděte na **Prodej a marketing\> Nastavení \> Distribuce \> Způsoby dodání**. Nový způsob dodání vytvoříte kliknutím na položku **Nový**. Nebo vyberte existující režim dodání v seznamu a pak vyberte **upravit** k provedení změn.
 
-V poli **způsob dodání**, zadejte veškeré kombinace s alfanumerickými znaky založené na vašem obchodní požadavku. Poté můžete vybrat pole **popis** pro zadání dalších kontextu. Pole **Skupina nákladů** a **urychlené zpracování** jsou volitelná a budou vysvětlena podrobněji dále v tomto tématu.
+V poli **způsob dodání**, zadejte veškeré kombinace s alfanumerickými znaky založené na vašem obchodní požadavku. Poté můžete vybrat pole **popis** pro zadání dalších kontextu. Pole **Skupina nákladů** a **urychlené zpracování** jsou volitelná a budou vysvětlena podrobněji dále v tomto článku.
 
 Na pevné záložce **Kanály Commerce** přidejte maloobchodní kanál, který by měl mít povoleno použít režim dodání, když jsou transakce vytvořeny v daném kanálu.
 

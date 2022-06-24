@@ -1,6 +1,6 @@
 ---
 title: Parametry skladu pro zpracování vlny
-description: Toto téma popisuje způsob nastavení skladových parametrů pro zpracování vlny. Zpracování vlny můžete použít k seskupení výdeje pro několik objednávek práce do podoby jedné vlny.
+description: Tento článek popisuje způsob nastavení skladových parametrů pro zpracování vlny. Zpracování vlny můžete použít k seskupení výdeje pro několik objednávek práce do podoby jedné vlny.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c259ff6c5a2f1190afb82c2ab7ecdc99e2b05846
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909605"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Parametry skladu pro zpracování vlny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje způsob nastavení skladových parametrů pro zpracování vlny. Zpracování vlny můžete použít k seskupení výdeje pro několik objednávek práce do podoby jedné vlny.
+Tento článek popisuje způsob nastavení skladových parametrů pro zpracování vlny. Zpracování vlny můžete použít k seskupení výdeje pro několik objednávek práce do podoby jedné vlny.
 
 Chcete-li použít zpracování vlny, na stránce **Parametry řízení skladu** zadejte následující:
 

@@ -1,6 +1,6 @@
 ---
 title: Nadměrné vyskladnění u prodejních objednávek a převodních příkazů
-description: Toto téma vysvětluje, jak povolit nadměrné vyskladnění u prodejních objednávek a převodních příkazů.
+description: Tento článek vysvětluje, jak povolit nadměrné vyskladnění u prodejních objednávek a převodních příkazů.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897277"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Nadměrné vyskladnění u prodejních objednávek a převodních příkazů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma představuje scénář ukazující, jak povolit výběr konkrétního pracovníka nebo všech pracovníků pro nadměrné vyskladnění. Proces nadměrného vyskladnění umožňuje řízené nadměrné vyskladnění během práce výdeje.
+Tento článek představuje scénář ukazující, jak povolit výběr konkrétního pracovníka nebo všech pracovníků pro nadměrné vyskladnění. Proces nadměrného vyskladnění umožňuje řízené nadměrné vyskladnění během práce výdeje.
 
 Nadměrné vyskladnění zboží ze skladů je jednoduchý koncept. Systém umožňuje pracovníkům vybrat více položek, než je uvedeno v objednávce. Stále však bere do úvahy limit nadměrného doručení, který je nastaven na úrovni řádku převodního příkazu nebo prodejní objednávky. Pokud je tento limit překročen, aplikace Warehouse Management upozorní pracovníky, že překračují limit nadměrného doručení.
 
@@ -41,11 +41,11 @@ Funkce nadměrného vyskladnění může pracovníkům ušetřit čas a námahu 
 > [!IMPORTANT]
 > Funkce nadměrného vyskladnění se vztahuje pouze na vyzvednutí a zpracování prodejní objednávky a převodního příkazu. U doplňování není nadměrný výběr možný. Když jsou spuštěny práce doplňování, systém nedovolí uživatelům nadměrný výběr.
 
-Scénář v tomto tématu ukazuje, jak funkci nadměrného vyskladnění nastavit a používat.
+Scénář v tomto článku ukazuje, jak funkci nadměrného vyskladnění nastavit a používat.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Předpoklad scénáře: Zpřístupnit ukázková data
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na *USMF*, než začnete.
+Scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na *USMF*, než začnete.
 
 ## <a name="scenario-setup"></a>Nastavení scénáře
 

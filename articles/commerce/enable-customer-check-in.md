@@ -1,6 +1,6 @@
 ---
 title: Povolit oznámení o přihlášení zákazníka v místě prodeje (POS)
-description: Toto téma popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
+description: Tento článek popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885138"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Povolit oznámení o přihlášení zákazníka v místě prodeje (POS)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
+Tento článek popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
 
 Ve svých e-mailech „objednávka je připravena k vyzvednutí“ mohou organizace poskytnout odkaz nebo tlačítko, které zákazníkům umožní upozornit obchod, že jsou v areálu a čekají, až jim bude doručen jejich balíček. Zákazníci poté obdrží potvrzení o přihlášení a obchod obdrží oznámení jako úkol ve své aplikaci POS. Tento úkol slouží jako výzva prodejnímu pracovníkovi k doručení objednávky do vozidla zákazníka. Zákazník tedy nemusí vstoupit do obchodu.
 
@@ -70,7 +70,7 @@ Chcete-li otestovat funkci přihlášení zákazníka, postupujte takto.
 1. Vraťte stránku se změnami, ale nepublikujte ji.
 1. Přidejte následující odkaz na šablonu e-mailu, která je vyvolána typem oznámení o dokončení balení pro způsob doručení vyzvednutí. Další informace viz [Vytvoření e-mailových šablon pro transakční události](email-templates-transactions.md).
 
-    - **Pro předprodukční (UAT) prostředí:** Přidejte fragment kódu z části [Nakonfigurujte šablonu transakčního e-mailu](#configure-the-transactional-email-template) výše v tomto tématu.
+    - **Pro předprodukční (UAT) prostředí:** Přidejte fragment kódu z části [Nakonfigurujte šablonu transakčního e-mailu](#configure-the-transactional-email-template) výše v tomto článku.
     - **Pro produkční prostředí:** Přidejte následující komentovaný kód, aby to neovlivnilo stávající zákazníky.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

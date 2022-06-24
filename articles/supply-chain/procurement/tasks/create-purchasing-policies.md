@@ -1,6 +1,6 @@
 ---
 title: Vytvoření zásad nákupu
-description: Totot téma popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup.
+description: Tento článek popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878838"
 ---
 # <a name="create-purchasing-policies"></a>Vytvoření zásad nákupu
 
 [!include [banner](../../includes/banner.md)]
 
-Totot téma popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup. Před vytvořením zásady nakupování nastavte parametry zásady nákupu. Je možné vytvořit, upravit a vyřadit zásady nákupu, ale zásady nákupu nelze odstranit. Tento proces obvykle provádí manažer nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
+Tento článek popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup. Před vytvořením zásady nakupování nastavte parametry zásady nákupu. Je možné vytvořit, upravit a vyřadit zásady nákupu, ale zásady nákupu nelze odstranit. Tento proces obvykle provádí manažer nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 
 
 ## <a name="set-up-policy-parameters"></a>Nastavení parametrů zásad

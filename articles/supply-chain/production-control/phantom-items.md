@@ -1,6 +1,6 @@
 ---
 title: Fiktivní položky
-description: Toto téma popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury v aplikaci Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury v aplikaci Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893316"
 ---
 # <a name="phantom-items"></a>Fiktivní položky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma podrobně popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury.
+Tento článek podrobně popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury.
 
 Na obrázku č. 1 je (a) kusovník pro produkt H a části F a G, a (b) je tabulka postupů pro produkty H a část F.
 

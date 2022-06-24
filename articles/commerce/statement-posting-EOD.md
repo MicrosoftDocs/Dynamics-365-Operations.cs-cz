@@ -1,6 +1,6 @@
 ---
 title: Vylepšení funkcionality zaúčtování výkazů
-description: Toto téma popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
+description: Tento článek popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886899"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje první sadu vylepšení, která byla provedena u funkce zaúčtování výkazu. Tato zlepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Tento článek popisuje první sadu vylepšení, která byla provedena u funkce zaúčtování výkazu. Tato zlepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivace
 

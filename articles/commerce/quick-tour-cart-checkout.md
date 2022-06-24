@@ -1,6 +1,6 @@
 ---
-title: Přehled stránek košíku a pokladny
-description: Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
+title: Přehled stránek košíku a pokladny
+description: Tento článek poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e911a1be1f06fcb3c2af08bab835a2b1ab5590f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853760"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
+Tento článek poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
 
 Stránka košík na webu e-Commerce zobrazuje všechny položky, které odběratel přidal do nákupního košíku. Stránka vozíku je sestavena pomocí modulu košík. Modul košíku je kontejner, který hostuje všech modulů, které jsou nutné k prezentaci položek v nákupním košíku. Modul vozík může rovněž použít jiné moduly, které zobrazují souhrn objednávek a všechny kódy speciální nabídky, které byly použity pro objednávku odběratele.
 

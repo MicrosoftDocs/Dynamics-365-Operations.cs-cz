@@ -1,6 +1,6 @@
 ---
 title: Kusovníky majetku
-description: Toto téma popisuje kusovníky majetku ve správě majetku.
+description: Tento článek popisuje kusovníky majetku ve správě majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882772"
 ---
 # <a name="asset-boms"></a>Kusovníky majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751978"
 
  
 
-Toto téma popisuje kusovníky majetku ve správě majetku. Stránka **Kusovník majetku** zobrazuje seznam všech položek (náhradních dílů a jiných položek), které jsou použity v majetku po celou dobu jeho životnosti. Při vytváření nového majetku byste měli zvážit nastavení kusovníku majetku jako součásti postupu nastavení. Tímto způsobem můžete sledovat historii položek majetku od data vytvoření.
+Tento článek popisuje kusovníky majetku ve správě majetku. Stránka **Kusovník majetku** zobrazuje seznam všech položek (náhradních dílů a jiných položek), které jsou použity v majetku po celou dobu jeho životnosti. Při vytváření nového majetku byste měli zvážit nastavení kusovníku majetku jako součásti postupu nastavení. Tímto způsobem můžete sledovat historii položek majetku od data vytvoření.
 
 Po dokončení úlohy údržby a registraci spotřeby položky na pracovním příkazu můžete sledovat spotřebu náhradních dílů a dalších položek, které jsou u majetku použity. Tato funkce umožňuje uchovávat kompletní záznam spotřeby položky pro všechny majetky. Pomocí tohoto záznamu můžete například sledovat, zda je určitý náhradní díl často vyměňován, nebo sledovat náhradní díly nebo jiné položky, které jsou u majetku aktuálně použity.
 
