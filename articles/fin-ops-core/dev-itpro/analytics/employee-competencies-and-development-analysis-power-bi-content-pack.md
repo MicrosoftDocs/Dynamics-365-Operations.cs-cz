@@ -1,6 +1,6 @@
 ---
 title: Obsah kompetencí a rozvoje zaměstnance v Power BI
-description: Toto téma popisuje obsah kompetencí a rozvoje zaměstnanců v Power BI.
+description: Tento článek popisuje obsah kompetencí a rozvoje zaměstnanců v Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 572f6bcfa202995d90080e1a31476122f7ec23d71214d5ff0dd44ed919859c57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8fee4d98a3e20fa268d6c3539db09e09a7861a2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851009"
 ---
 # <a name="employee-competencies-and-development-power-bi-content"></a>Obsah kompetencí a rozvoje zaměstnance v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah kompetencí a rozvoje zaměstnanců v Power BI. 
+Tento článek popisuje obsah kompetencí a rozvoje zaměstnanců v Power BI. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
 Po připojení balíčku obsahu k datům zobrazí sestavy dat vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.

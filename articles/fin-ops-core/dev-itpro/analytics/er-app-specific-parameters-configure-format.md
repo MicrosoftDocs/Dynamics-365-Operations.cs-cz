@@ -1,6 +1,6 @@
 ---
-title: Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu
-description: V tomto tématu je vysvětleno, jak lze konfigurovat formáty elektronického vykazování (ER) pro použití parametrů zadaných pro právnickou osobu.
+title: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
+description: V tomto článku je vysvětleno, jak lze konfigurovat formáty elektronického vykazování (ER) pro použití parametrů zadaných pro právnickou osobu.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858821"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu
 
@@ -37,13 +37,13 @@ Funkce pro specifické parametry aplikace ER umožňují uživatelům konfigurov
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Pokud chcete dokončit příklady v tomto tématu, musíte mít přístup k instanci služeb Regulatory Configuration Services (RCS), který byl zřízen pro stejného klienta jako Finance and Operations, pro jednu z následujících rolí:
+Pokud chcete dokončit příklady v tomto článku, musíte mít přístup k instanci služeb Regulatory Configuration Services (RCS), který byl zřízen pro stejného klienta jako Finance and Operations, pro jednu z následujících rolí:
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
 - Správce systému
 
-Doporučujeme dokončit kroky v tématu [Podpora parametrizovaných volání zdrojů dat ER typu VYPOčíTANé POLE](er-calculated-field-type.md). Pokud jste již tyto kroky splnili, můžete vynechat kroky v části **Import konfigurací ER do RCS**, který následuje.
+Doporučujeme dokončit kroky v článku [Podpora parametrizovaných volání zdrojů dat ER typu VYPOČÍTANÉ POLE](er-calculated-field-type.md). Pokud jste již tyto kroky splnili, můžete vynechat kroky v části **Import konfigurací ER do RCS**, který následuje.
 
 ## <a name="import-er-configurations-into-rcs"></a>Import konfigurací ER do RSC
 
@@ -58,7 +58,7 @@ Stáhněte a lokálně uložte následující konfigurace ER.
 
 Dále se přihlaste k instanci RCS.
 
-V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. K provedení kroků v tomto postupu musíte nejprve dokončit postup [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md) v RCS.
+V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. K provedení kroků v tomto postupu musíte nejprve dokončit postup v článku [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md) v RCS.
 
 1.  Na výchozím řídicím panelu vyberte **Elektronické vykazování**.
 2.  Vyberte **Konfigurace vykazování**.
@@ -300,9 +300,9 @@ Chcete-li se dozvědět, jak vyhledat formát **Formát k zjištění, jak vyhle
 -   Mapping to learn parameterized calls.xml
 -   Model to learn parameterized calls.xml
 
-Pokud chcete zjistit, jak používat konfigurovaný formát ER **Formát k zjištění, jak vyhledávat data LE** pro nastavení sad daňových kódů závislých na právnické osobě k filtrování daňových transakcí podle různých úrovní zdanění, dokončete kroky v tématu [Nastavení parametrů formátu ER podle právnické osoby](er-app-specific-parameters-set-up.md).
+Pokud chcete zjistit, jak používat konfigurovaný formát ER **Formát k zjištění, jak vyhledávat data LE** pro nastavení sad daňových kódů závislých na právnické osobě k filtrování daňových transakcí podle různých úrovní zdanění, dokončete kroky v článku [Nastavení parametrů formátu ER podle právnické osoby](er-app-specific-parameters-set-up.md).
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 

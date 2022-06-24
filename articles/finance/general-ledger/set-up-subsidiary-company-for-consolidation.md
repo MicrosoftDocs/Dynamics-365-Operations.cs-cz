@@ -1,6 +1,6 @@
 ---
-title: Nastavení dceřiné právnické osoby pro konsolidaci
-description: Toto téma vysvětluje, jak pracovat s účtovými osnovami pro konsolidační společnosti.
+title: Nastavení právnické osoby pobočky pro konsolidaci
+description: Tento článek vysvětluje, jak pracovat s účtovými osnovami pro konsolidační společnosti.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: bfa913ca1778391ce0f5a1b2fdf6e5828b30cb66
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 00a1f442edc80c6aa9e24a060cefa0f3691c5148
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849866"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>Nastavení dceřiné právnické osoby pro konsolidaci
 

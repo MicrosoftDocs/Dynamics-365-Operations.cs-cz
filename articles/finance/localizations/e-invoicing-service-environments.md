@@ -1,6 +1,6 @@
 ---
 title: Prostředí služby
-description: Toto téma obsahuje informace o prostředích služeb pro elektronickou fakturaci a vysvětluje, jak je nastavit.
+description: Tento článek obsahuje informace o prostředích služeb pro elektronickou fakturaci a vysvětluje, jak je nastavit.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8a135098f71e1413cd20ff8ad4003f090ae3407
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8c743c5b2fbc7dcc3ae04fa4d7ca0e65de6c2507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901240"
 ---
 # <a name="service-environments"></a>Prostředí služby
 
@@ -101,7 +101,7 @@ Na stránce **Číselné řady**:
 1. Na stránce **Prostředí služeb** v podokně akcí vyberte **Nové** k vytvoření prostředí služeb.
 2. Do pole **Název** zadejte název prostředí elektronické fakturace.
 3. Zadejte popis do pole **Popis**.
-4. V poli **Tajný klíč tokenu SAS úložiště** vyberte název tajného klíče účtu úložiště, který se musí použít k ověření přístupu k účtu úložiště.
+4. V poli **Tajný kód tokenu SAS úložiště** vyberte název tajného kódu účtu úložiště, který se musí použít k ověření přístupu k účtu úložiště.
 5. V části **Uživatelé** vyberte **Přidat**, chcete-li přidat uživatele, který má povoleno odesílat elektronické faktury prostřednictvím prostředí a připojit se k účtu úložiště.
 6. Do pole **ID uživatele** zadejte alias uživatele. 
 7. Do pole **E-mail** zadejte e-mailovou adresu uživatele.

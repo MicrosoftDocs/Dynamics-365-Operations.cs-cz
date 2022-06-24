@@ -1,6 +1,6 @@
 ---
 title: ID registrace
-description: Toto téma poskytuje informace o nastavení a používání ID registrace.
+description: Tento článek poskytuje informace o nastavení a používání ID registrace.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883068"
 ---
 # <a name="registration-ids"></a>ID registrace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o nastavení a používání ID registrace.
+Tento článek poskytuje informace o nastavení a používání ID registrace.
 
-Mnoho zemí a regionů má rozdílné předpisy a požadavky na evidenci daňového registračních čísel nebo ID. Toto téma obsahuje přehled požadovaných nastavení a zpracování typy podporovaných typů registrace pro účastníky v různých evropských zemích/oblastech. Všechny země/oblasti mají své požadavky na podporu různých funkcí v jednotlivých zemích týkající se registračních čísel uvedených různými státními úřady. Mezi příklady registračních čísel patří číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační číslo (EU DIČ). Tato funkce poskytuje jednotný rámec pro všechny země ve všech oblastech, přičemž v úvahu bere požadavky specifické pro některé evropské země. V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování ID registrace.
+Mnoho zemí a regionů má rozdílné předpisy a požadavky na evidenci daňového registračních čísel nebo ID. Tento článek obsahuje přehled požadovaných nastavení a zpracování typy podporovaných typů registrace pro účastníky v různých evropských zemích/oblastech. Všechny země/oblasti mají své požadavky na podporu různých funkcí v jednotlivých zemích týkající se registračních čísel uvedených různými státními úřady. Mezi příklady registračních čísel patří číslo sociálního pojištění (ČSP), daňové identifikační číslo (DIČ) a Evropské DPH identifikační číslo (EU DIČ). Tato funkce poskytuje jednotný rámec pro všechny země ve všech oblastech, přičemž v úvahu bere požadavky specifické pro některé evropské země. V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování ID registrace.
 
 ## <a name="registration-type-creation"></a>Vytvoření typu registrace
 Dříve, než budete moci zadat ID registrace, je třeba nastavit typy registrace pro různé typy registračních čísel, kterým jednotlivé smluvní strany podléhají. Přejděte na stránku **Správa organizace** &gt; **Globální adresář** &gt; **Typy registrace** &gt; **Typy registrace** a vytvořte a spravujte typy registrace dodavatelů, odběratelů, zaměstnanců a právnických osob v různých zemích.
@@ -51,7 +51,7 @@ Registrace kategorie je identifikátor registrace země/oblasti, schválený pro
 |-----------------------|----------------|
 | Typ registrace     | Typ registrace v konkrétní zemi nebo oblasti.|
 | Omezení         | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
-| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam podporovaných kategorií je uveden dále v tomto tématu. |
+| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam podporovaných kategorií je uveden dále v tomto článku. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
 
@@ -76,7 +76,7 @@ Globální adresář (GAB) obsahuje konsolidované informace o adresách zákaz
 Vyhledejte záznamy strany, které jsou založeny na ID registrace, je k dispozici ve formulářích týkající se strany, právnické osoby, dodavatele, zákazníka a pracovníka. Klepněte na tlačítko **Hledání ID registrace** k otevření stránky **Vyhledávací kritéria ID registrace**. Zadejte kritéria vyhledávání a klepněte na **najít**. Systém zobrazí vybrané záznamy z globálního seznamu adres a přidružených typů záznamu strany.
 
 ## <a name="supported-registration-categories"></a>Podporované kategorie registrací
-V následující tabulce jsou uvedeny podporované typy registrací. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje tato pole na kategorie registrace aplikace Dynamics 365 Finance.
+V následující tabulce jsou uvedeny podporované typy registrací. Pokud jste obeznámeni s poli aplikace Microsoft Dynamics AX 2012 pro ID registrace, tato tabulka také mapuje tato pole na kategorie registrace Dynamics 365 Finance.
 
 | Kategorie registrace Finance         |Země/region  | Termín / pole Dynamics AX 2012|
 |---------------------------------------------------------------|---------------------|---------------------------------|

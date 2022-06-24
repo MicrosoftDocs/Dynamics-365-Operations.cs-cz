@@ -1,6 +1,6 @@
 ---
 title: Definování platebních podmínek dodavatelů
-description: Toto téma vysvětluje, jak nastavit platební podmínky pro faktury dodavatele.
+description: Tento článek vysvětluje, jak nastavit platební podmínky pro faktury dodavatele.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2199c12e92d631d3eb058637c48b53335d779f2d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: a676856ed43bf1b78684eac0682e0fdef9c84083
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906464"
 ---
 # <a name="define-vendor-payment-terms"></a>Definování platebních podmínek dodavatelů
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit platební podmínky pro faktury dodavatele. Tento úkol využívá ukázkovou společnost USMF.
+Tento článek vysvětluje, jak nastavit platební podmínky pro faktury dodavatele. Tento úkol využívá ukázkovou společnost USMF.
 
 1. Přejděte do **Podokno navigace > Moduly > Závazky > Nastavení platby > Podmínky platby**.
 2. Zvolte **Nové**. Stránku **Podmínky platby** lze použít pro definování způsobu výpočtu data splatnosti. Nepoužívá se při definování způsobu výpočtu data platební slevy.  

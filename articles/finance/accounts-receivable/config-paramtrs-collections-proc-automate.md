@@ -1,6 +1,6 @@
 ---
 title: Konfigurace parametrů pro automatizaci procesu inkasa
-description: Toto téma popisuje parametry, které ovlivňují procesy automatizovaného inkasa, a poskytuje pokyny pro jejich nastavení, aby automatizovaný proces odrážel vaše záměry a očekávání.
+description: Tento článek popisuje parametry, které ovlivňují procesy automatizovaného inkasa, a poskytuje pokyny pro jejich nastavení, aby automatizovaný proces odrážel vaše záměry a očekávání.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734389"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900035"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Konfigurace parametrů pro automatizaci procesu inkasa
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje parametry, které ovlivňují procesy automatizovaného inkasa, a poskytuje pokyny pro jejich nastavení, aby automatizovaný proces odrážel vaše záměry a očekávání. Informace o tom, jak automatizovat procesy inkasa, najdete v tématu [Automatizace procesů inkasa](collections-process-automate.md).
+Tento článek popisuje parametry, které ovlivňují procesy automatizovaného inkasa, a poskytuje pokyny pro jejich nastavení, aby automatizovaný proces odrážel vaše záměry a očekávání. Informace o tom, jak automatizovat procesy inkasa, najdete v tématu [Automatizace procesů inkasa](collections-process-automate.md).
 
 ## <a name="general"></a>Obecný
 Zadejte číslo do pole **Procento zákazníků na dávkový úkol**, které určuje počet dávkových úloh na proces automatizace. Nastavte možnost **Automatické zaúčtování upomínek** na **Ano**, aby typ akce upomínky zaúčtoval dopis během automatizace. Nastavte možnost **Vytvářet aktivity pro automatizace** na **Ano**, aby se vytvářely a uzavíraly aktivity pro typy akcí bez aktivity a zobrazily se všechny automatizované kroky provedené na účtu. Počet dní, po které je historie inkasa uložena, se definuje v poli **Dny uchování historie automatizace procesů inkasa**. Když faktura dosáhne posledního kroku procesu inkasa, nebude použita k vytvoření typů akcí budoucí automatizace procesů, pokud je možnost **Vyloučit fakturu po aktivaci posledního kroku procesu** nastavena na **Ano**. Další nejstarší faktura určí další krok automatizace procesu, aby bylo zajištěno, že akce automatizace procesu shromažďování budou pokračovat. 

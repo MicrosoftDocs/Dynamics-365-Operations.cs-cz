@@ -1,6 +1,6 @@
 ---
 title: Připojené aplikace
-description: Toto téma vysvětluje nastavení připojených aplikací v Elektronické fakturaci.
+description: Tento článek vysvětluje nastavení připojených aplikací v Elektronické fakturaci.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59b67589139c0ce332716acf998825c6a024bded
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 7a0a9c19009c49b80ca8c182c31592c1a713a2aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906280"
 ---
 # <a name="connected-applications"></a>Připojené aplikace
 
@@ -39,7 +39,7 @@ Dostupnost parametrů aplikací Finance nebo Supply Chain Management v RCS je u�
 3. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Propojené aplikace**.
 4. Zvolte **Nový** pro vytvoření propojené aplikace.
 5. Do pole **Název** zadejte název aplikace, ke které se má provést připojení.
-6. V poli **Typ** vyberte **Dynamics 365 Finance**.
+6. V poli **Typ** zvolte **Dynamics 365 Finance**.
 7. Do pole **Aplikace** zadejte adresu URL prostředí, ke kterému se má provést připojení.
 8. V poli **Klient** zadejte klienta prostředí.
 9. Zvolte možnost **Uložit**.

@@ -1,6 +1,6 @@
 ---
 title: Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
-description: Toto téma poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii a nastavit přímou integraci italské elektronické faktury FatturaPA se systémem Exchange (SDI).
+description: Tento článek poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii a nastavit přímou integraci italské elektronické faktury FatturaPA se systémem Exchange (SDI).
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853185"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
 
@@ -24,23 +24,23 @@ ms.locfileid: "7984796"
 > [!IMPORTANT]
 > Elektronická fakturace pro Itálii nemusí aktuálně podporovat všechny funkce, které jsou k dispozici pro elektronické faktury v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 
-Toto téma poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii v aplikacích Finance a Supply Chain Management. Provede vás konfiguračními kroky, které jsou závislé na zemi/oblasti v Regulatory Configuration Services (RCS). Tyto kroky doplňují kroky popsané v části [Začínáme s elektronickou fakturací](e-invoicing-get-started.md).
+Tento článek poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii v aplikacích Finance a Supply Chain Management. Provede vás konfiguračními kroky, které jsou závislé na zemi/oblasti v Regulatory Configuration Services (RCS). Tyto kroky doplňují kroky popsané v části [Začínáme s elektronickou fakturací](e-invoicing-get-started.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Před provedením kroků v tomto tématu musí být splněny následující předpoklady:
+Před provedením kroků v tomto článku musí být splněny následující předpoklady:
 
 - Proveďte kroky v části [Začínáme s elektronickou fakturací](e-invoicing-get-started.md).
-- Z globálního úložiště importujte funkci elektronické fakturace **Italská elektronická faktura FatturaPA (IT)** do RCS. Více informací naleznete v sekci [Import funkce elektronické fakturace od poskytovatele konfigurace společnosti Microsoft](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) ve výše uvedeném tématu „Začínáme s elektronickou fakturací“.
-- Do prostředí služby přidejte odkazy z požadovaných certifikátů. Mezi požadované certifikáty patří certifikát digitálního podpisu, certifikát certifikační autority (CA) a klientský certifikát. Další informace viz sekce [Vytvoření tajného klíče digitálního certifikátu](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) v části „Začínáme se správou služby elektronické fakturace“.
+- Z globálního úložiště importujte funkci elektronické fakturace **Italská elektronická faktura FatturaPA (IT)** do RCS. Více informací naleznete v sekci [Import funkce elektronické fakturace od poskytovatele konfigurace společnosti Microsoft](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) ve výše uvedeném článku „Začínáme s elektronickou fakturací“.
+- Do prostředí služby přidejte odkazy z požadovaných certifikátů. Mezi požadované certifikáty patří certifikát digitálního podpisu, certifikát certifikační autority (CA) a klientský certifikát. Další informace viz sekce [Vytvoření tajného klíče digitálního certifikátu](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) v článku „Začínáme se správou služby elektronické fakturace“.
 
 ## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Konfigurace funkce elektronické fakturace Italská elektronická faktura FatturaPA (IT) závislé na zemi
 
 Před nasazením nastavení aplikace do připojené aplikace Finance nebo Supply Chain Management proveďte následující kroky.
 
-Tato sekce doplňuje sekci [Konfigurace nastavení aplikace specifická pro zemi](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) v tématu „Začínáme s Elektronickou fakturací“.
+Tato sekce doplňuje sekci [Konfigurace nastavení aplikace specifická pro zemi](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) v článku „Začínáme s Elektronickou fakturací“.
 
-### <a name="create-a-new-feature"></a>Vytvoření nové funkce
+### <a name="create-a-new-feature"></a>Vytvořit novou funkci
 
 1. Přihlaste se do RCS.
 2. V pracovním prostoru **Elektronické výkaznictví** v sekci **Poskytovatelé konfigurace** označte poskytovatele konfigurace vaší společnosti jako aktivního.
@@ -87,8 +87,8 @@ Tato sekce doplňuje sekci [Konfigurace nastavení aplikace specifická pro zemi
 
 ### <a name="deploy-the-feature"></a>Nasazení funkce
 
-1. Dokončete, publikujte nebo nasaďte funkci prostředí služby. Další informace viz sekce [Nasazení funkce elektronické fakturace do prostředí služby](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) v tématu „Začínáme s elektronickým fakturovánímׅ“.
-2. Nasazení funkce připojené aplikace. Další informace viz sekce [Nasazení funkce elektronické fakturace do připojené aplikace](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) v tématu „Začínáme s elektronickým fakturovánímׅ“.
+1. Dokončete, publikujte nebo nasaďte funkci prostředí služby. Další informace viz sekce [Nasazení funkce elektronické fakturace do prostředí služby](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) v článku „Začínáme s elektronickým fakturovánímׅ“.
+2. Nasazení funkce připojené aplikace. Další informace viz sekce [Nasazení funkce elektronické fakturace do připojené aplikace](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) v článku „Začínáme s elektronickým fakturovánímׅ“.
 
 ### <a name="set-up-finance"></a>Nastavení aplikace Finance
 

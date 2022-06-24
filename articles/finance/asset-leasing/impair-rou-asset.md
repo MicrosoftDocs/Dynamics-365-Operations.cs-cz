@@ -1,6 +1,6 @@
 ---
 title: Snížení hodnoty používaného majetku
-description: Toto téma popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů majetku u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842).
+description: Tento článek popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů majetku u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842).
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894106"
 ---
 # <a name="impair-right-of-use-assets"></a>Snížení hodnoty používaného majetku
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Pokud není zůstatková hodnota používaného majetku (ROU) zpětně získatelná, možná budete muset otestovat, zda je snížena hodnota daného majetku. Pokud zjistíte, že došlo ke snížení hodnoty aktiva, může leasing aktiv zaznamenat snížení hodnoty a odpovídajícím způsobem upravit odpisový plán. Toto téma popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842). Stejná metoda platí i pro leasingy podle mezinárodního standardu Financial Reporting 16 (IFRS 16).
+Pokud není zůstatková hodnota používaného majetku (ROU) zpětně získatelná, možná budete muset otestovat, zda je snížena hodnota daného majetku. Pokud zjistíte, že došlo ke snížení hodnoty aktiva, může leasing aktiv zaznamenat snížení hodnoty a odpovídajícím způsobem upravit odpisový plán. Tento článek popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842). Stejná metoda platí i pro leasingy podle mezinárodního standardu Financial Reporting 16 (IFRS 16).
 
 Zbývající zůstatek používaného majetku bude odepisován rovnoměrně po dobu zbývajících období, bez ohledu na to, zda byl leasing klasifikován jako finanční leasing podle IFRS 16 nebo operativní leasing podle ASC 842.
 
@@ -83,7 +83,7 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
 
 ### <a name="steps"></a>Kroky
 
-1. Po vytvoření pronájmu, jak je popsáno výše v tomto tématu, přejděte do knihy pronájmů a potvrďte plán plateb. Poté zaúčtujte počáteční uznání do deníku. Počáteční používaný majetek a leasingový závazek by měl být 70 235,81 USD. V tomto příkladu byl leasing klasifikován jako operativní leasing podle ASC 842.
+1. Po vytvoření pronájmu, jak je popsáno výše v tomto článku, přejděte do knihy pronájmů a potvrďte plán plateb. Poté zaúčtujte počáteční uznání do deníku. Počáteční používaný majetek a leasingový závazek by měl být 70 235,81 USD. V tomto příkladu byl leasing klasifikován jako operativní leasing podle ASC 842.
 2. Spusťte proces dávkového deníku třikrát, abyste simulovali průběh tří let pro leasingové splátky, úrokové výdaje a odpisy.
 3. Po dokončení spuštění všech tří dávkových úloh se vraťte zpět do knihy pronájmů a otevřete tabulky závazků a transakcí aktiv, abyste zobrazili aktuální účetní hodnotu používaného majetku a leasingového závazku. Po třech letech by hodnota závazku měla být přibližně -53 893,00 USD a hodnota aktiva by měla být přibližně 53 893,00 USD. 
 

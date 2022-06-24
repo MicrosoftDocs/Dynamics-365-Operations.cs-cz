@@ -1,6 +1,6 @@
 ---
 title: Přehled správy obchodních dokumentů
-description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
+description: Tento článek obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903610"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -50,7 +50,7 @@ Chcete-li použít správu obchodních dokumentů pro úpravy šablon ve formát
 
 Další sestavy budou k dispozici v budoucích verzích. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. Informace o tom, jak zkontrolovat seznam aktuálně dostupných sestav, najdete v části [Seznam konfigurací ER, které byly vydány v aplikaci Finance na podporu konfigurovatelných obchodních dokumentů](#list-of-configurations-cbd) níže.
 
-Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Chcete-li získat další informace o této funkci, vyplňte příklad tomto článku.
 
 ## <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 
@@ -231,7 +231,7 @@ Podnikoví uživatelé mají přístup k šablonám obchodních dokumentů pro �
 - Uživatelé s rolí **Správce systému**.
 - Uživatelé s libovolnou rolí s oprávněním **Správa šablon obchodních dokumentů** (název AOT **ERBDManageTemplates**).
 
-Následující postup slouží k šablon volných faktur v pracovním prostoru správy obchodních dokumentů. Před provedením tohoto postupu je nutné provést všechny předchozí postupy uvedené v tomto tématu.
+Následující postup slouží k šablon volných faktur v pracovním prostoru správy obchodních dokumentů. Před provedením tohoto postupu je nutné provést všechny předchozí postupy uvedené v tomto článku.
 
 1. Přihlaste se jako uživatel s přístupem do pracovního prostoru Řízení obchodního dokumentu.
 2. Otevřete pracovní prostor správy obchodních dokumentů.

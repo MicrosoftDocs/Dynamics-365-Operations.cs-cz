@@ -1,6 +1,6 @@
 ---
 title: Import dat z ručně vybraných souborů v dávkovém režimu
-description: Toto téma vysvětluje, jak importovat data z ručně vybraných souborů v dávkovém režimu.
+description: Tento článek vysvětluje, jak importovat data z ručně vybraných souborů v dávkovém režimu.
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.openlocfilehash: 8615b5a0623fd696c64f4ec03e481a2bcb16c0ac
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2dec838439876fd8e57ea4a7078d97267e5ea1a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890176"
 ---
 # <a name="import-data-from-manually-selected-files-in-batch-mode"></a>Import dat z ručně vybraných souborů v dávkovém režimu
 
@@ -31,11 +31,11 @@ Chcete-li použít rámec [Elektronické vykazování (ER)](general-electronic-r
 
 Nová funkce ER, která podporuje import dat v dávkovém režimu umožňuje tento proces konfigurovat jako bezobslužný. Konfigurace ER můžete použít k provedení importu dat naplánováním nové dávkové úlohy z uživatelského rozhraní (UI) ER.
 
-Toto téma vysvětluje, jak importovat data z ručně vybraného souboru v dávkovém režimu. Tyto příklady používají transakcí dodavatele jako obchodní data. Kroky těchto příkladů lze provést ve společnosti **USMF**. Není nutné žádné kódování.
+Tento článek vysvětluje, jak importovat data z ručně vybraného souboru v dávkovém režimu. Tyto příklady používají transakcí dodavatele jako obchodní data. Kroky těchto příkladů lze provést ve společnosti **USMF**. Není nutné žádné kódování.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Pro dokončení příkladů v tomto tématu musíte mít následující přístup:
+Pro dokončení příkladů v tomto článku, musíte mít následující přístup:
 
 - Jedna z následujících rolí:
 

@@ -1,6 +1,6 @@
 ---
 title: Integrovaná hlavní kniha
-description: Toto téma popisuje integraci dat hlavní knihy mezi finančními a provozními aplikacemi a ostatními aplikacemi Dynamics 365 používajícími Dataverse.
+description: Tento článek popisuje integraci dat hlavní knihy mezi finančními a provozními aplikacemi a ostatními aplikacemi Dynamics 365 používajícími Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847182"
 ---
 # <a name="integrated-ledger"></a>Integrovaná hlavní kniha
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063640"
 
 
 
-V obchodní aplikaci definují data hlavní knihy základní nastavení pro to, jak společnost podniká. Data hlavní knihy například popisují fiskální rok, podle kterého se společnost řídí, měny, ve kterých provádí transakce, a účty, které používá. Toto téma popisuje integraci těchto základních finančních dat.
+V obchodní aplikaci definují data hlavní knihy základní nastavení pro to, jak společnost podniká. Data hlavní knihy například popisují fiskální rok, podle kterého se společnost řídí, měny, ve kterých provádí transakce, a účty, které používá. Tento článek popisuje integraci těchto základních finančních dat.
 
 ## <a name="templates"></a>Šablony
 

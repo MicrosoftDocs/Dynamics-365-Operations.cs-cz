@@ -1,8 +1,8 @@
 ---
 title: Přizpůsobení uživatelského prostředí
-description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
+description: Tento článek vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845435"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602982"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma vysvětluje, jak si můžete přizpůsobit aplikaci, a pokrývá následující témata: 
+Tento článek vysvětluje, jak si můžete přizpůsobit aplikaci, a pokrývá následující témata: 
 
 - **Možnosti pro celý systém** - Tyto možnosti personalizace jsou provedeny na stránce nastavení a jsou dostupné všem uživatelům. Mezi příklady patří barevný motiv a časové pásmo. 
 - **Omezený přístup k personalizaci** - Na této úrovni přístupu aplikace automaticky ukládá uživatelské akce spojené s běžným používáním stránky a při příští návštěvě se obnoví. Například aplikace uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky. 
@@ -58,7 +58,7 @@ Zde je seznam akcí, které spadají do běžného používání stránky a na k
 
 - **Šířka sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Aplikace ukládá šířku, kterou jste pro sloupec nastavili. Při příštím otevření této stránky se pak změní velikost sloupce na tuto šířku.
 - **Součty zápatí a sloupců mřížky** – *(k dispozici pouze se zapnutým ovládacím prvkem mřížky)* Můžete se rozhodnout, zda má být součet zobrazen v dolní části libovolného číselného sloupce mřížky a také bez ohledu na to, zda má být zápatí mřížky viditelné. Aplikace ukládá tato data a použije je při příštím otevření stránky. Další informace naleznete v části [Schopnosti mřížky](grid-capabilities.md). 
-- **Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká *pevné záložky*. Aplikace ukládá informace o pevných záložkách, které jste rozbalili nebo sbalili. Když pak příště otevřete stránku, stejné pevné záložky budou buď rozbaleny nebo sbaleny, podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením pevné záložky, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. Jak je vysvětleno dále v tomto tématu, můžete také změnit pořadí pevných záložek na stránce.
+- **Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká *pevné záložky*. Aplikace ukládá informace o pevných záložkách, které jste rozbalili nebo sbalili. Když pak příště otevřete stránku, stejné pevné záložky budou buď rozbaleny nebo sbaleny, podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením pevné záložky, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. Jak je vysvětleno dále v tomto článku, můžete také změnit pořadí pevných záložek na stránce.
 - **FactBoxes** – některé stránky mají podokno **Související informace**, které obsahuje informace určené pouze pro čtení, které souvisejí s aktuálním předmětem stránky. Každý oddíl v podokně **Související informace** je známé jako *Okno s fakty*. Podokno **Související informace** můžete rozbalit nebo sbalit stejně jako jednotlivá okna s fakty. Aplikace tyto předvolby uloží. Potom se při příštím otevření stránky podokno **Související informace** a jednotlivá okna s fakty rozbalí nebo sbalí na základě vaší poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením podokna **Související informace** nebo okna s fakty, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud okno s fakty nebude rozbaleno.
 - **Podokna akcí** – *Podokno akcí* se zobrazí v horní části většiny stránek. Podokno akcí obsahuje tlačítka pro řadu akcí, které lze provést na aktuální stránce. Tato tlačítka jsou často organizována na kartách. Můžete *připnout* celé otevřené podokno akcí nebo ho můžete mít sbalené ve výchozím nastavení. Když příště otevřete stránku, podokno akcí bude otevřeno nebo sbaleno, podle poslední interakce se stránkou. Pokud jste připnuli podokno akcí v otevřeném stavu, zobrazí se poslední použitá karta.
 - **QuickFilters** – *QuickFilter* se zobrazuje nad mnohými mřížkami. QuickFilter vám umožní filtrovat mřížku na základě jednoho sloupce, který jste vybrali. Aplikace uloží sloupec, který jste vyfiltrovali. Poté při příštím otevření této stránky bude mřížka ve výchozím nastavení vyfiltrována na stejném sloupci. Poté však můžete vybrat jiný sloupec pro filtrování mřížky.
@@ -173,14 +173,14 @@ Počínaje verzí 10.0.26 funkce **Umožnit uživatelům vybrat a změnit veliko
 
 ### <a name="personalizing-your-dashboard"></a>Individuální nastavení řídicího panelu
 
-Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace. Lze jej přizpůsobit jako kteroukoli jinou stránku v systému pomocí stejných mechanismů, které byly popsány dříve v tomto tématu. 
+Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace. Lze jej přizpůsobit jako kteroukoli jinou stránku v systému pomocí stejných mechanismů, které byly popsány dříve v tomto článku. 
 
 > [!WARNING]
 > Když v současné době skrýváte obsah na hlavním panelu, je důležité, abyste přímo zacílili na dlaždici, nikoli na prostor kolem ní. Pokud skupinu skryjete kolem dlaždice, mohlo by dojít k neočekávaným výsledkům, pokud bude později přidáno více dlaždic nebo pokud je systém přepnut do jiného jazyka.
 
 Jedinou jedinečnou možností personalizace, která je k dispozici na řídicím panelu, je možnost přidat dlaždice. 
 
-- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání dlaždic, seznamů a odkazů do pracovního prostoru](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
+- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části článku [Přidání dlaždic, seznamů a odkazů do pracovního prostoru](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
 - Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat aplikaci**. V dialogovém okně vyberte, zda chcete přidat dlaždici pro nový pracovní prostor nebo dlaždici, která má obsah z Power Apps nebo webu. Poté podle pokynů nakonfigurujte vybranou možnost. V dolní části řídicího panelu se vytvoří nová dlaždice. Další informace o tom, jak tyto vložené aplikace přidávat, upravovat, mazat a sdílet, najdete v tématu [Vložit aplikace plátna z Power Apps](embed-power-apps.md) a [Vložit aplikace třetích stran](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Sdílení individuálních nastavení
@@ -236,7 +236,7 @@ Dalším způsobem, jak sdílet personalizace, je export a import. Jednotliví u
 
 #### <a name="export"></a>Export
 
-Obecně můžete exportovat jeden ze svých vlastních pohledů nebo personalizací otevřením příslušné stránky a otevřením panelu nástrojů **Individuální nastavení** a poté vyberte **Exportovat**. Další informace o panelu nástrojů najdete v části [Panel nástrojů Individuálních nastavení](#personalization-toolbar) dříve v tomto tématu. Alternativně, pokud [uložené pohledy](saved-views.md) jsou povoleny, můžete přejít v **Nastavení \> Možnosti uživatele \> Individuální nastavení** pro zobrazení seznamu všech vašich personalizací v systému. Odtud můžete vybrat zobrazení nebo přizpůsobení, která chcete exportovat, a poté vybrat **Exportovat**.
+Obecně můžete exportovat jeden ze svých vlastních pohledů nebo personalizací otevřením příslušné stránky a otevřením panelu nástrojů **Individuální nastavení** a poté vyberte **Exportovat**. Další informace o panelu nástrojů najdete v části [Panel nástrojů Individuálních nastavení](#personalization-toolbar) dříve v tomto článku. Alternativně, pokud [uložené pohledy](saved-views.md) jsou povoleny, můžete přejít v **Nastavení \> Možnosti uživatele \> Individuální nastavení** pro zobrazení seznamu všech vašich personalizací v systému. Odtud můžete vybrat zobrazení nebo přizpůsobení, která chcete exportovat, a poté vybrat **Exportovat**.
 
 Správci mohou dále exportovat personalizace ostatních uživatelů podle těchto kroků.
 
@@ -277,7 +277,7 @@ Pokud nejsou uložená zobrazení povolena, postupujte podle těchto pokynů.
 
 Stránka **Individuální nastavení** je ústředním centrem pro správu individuálních nastavení na úrovni organizace. Obsah a možnosti na této stránce závisí na tom, zda byla zapnuta funkce **Uložená zobrazení**.
 
-Zákazníci, kteří mají zapnutou funkci **Uložená zobrazení**, by si měli přečíst téma Globální správa zobrazení v tématu [Uložená zobrazení](saved-views.md).
+Zákazníci, kteří mají zapnutou funkci **Uložená zobrazení**, by si měli přečíst téma Globální správa zobrazení v článku [Uložená zobrazení](saved-views.md).
 
 U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-views.md), má tato stránka čtyři karty:
 
@@ -285,6 +285,9 @@ U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-vi
 - **Vymazat** – Můžete vymazat všechna přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejprve vyberte stránku nebo pracovní prostor, aby se zobrazil seznam uživatelů, kteří u nich provedli individuální nastavení. Poté vyberte uživatele, kteří by měli mít individuální nastavení pro tuto stránku nebo pracovní prostor odstraněno, a vyberte **Vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud však byla personalizace uložena pro stránku nebo pracovní prostor, může být tato personalizace znovu importována.
 - **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
 - **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
+
+### <a name="service-updates-and-personalization"></a>Aktualizace služeb a přizpůsobení
+Při přechodu na novou verzi produktu není nutné vymazat ani resetovat data přizpůsobení. Přizpůsobení a data uložených zobrazení budou i nadále fungovat napříč aktualizacemi. Výjimky by zahrnovaly změny samotného formuláře, které ruší platnost přizpůsobení (například odstraněný ovládací prvek) nebo změny základního dotazu formuláře, které mění jeho podstrom zdroje dat tak, že již neodpovídá podstromu zdroje dat přidruženému k dotazu zobrazení.
 
 ## <a name="personalizing-inventory-dimensions"></a>Individuální nastavení dimenzí zásob
 

@@ -1,6 +1,6 @@
 ---
 title: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
-description: Toto téma obsahuje informace o způsobu použití funkce sledování výkonu v elektronickém výkaznictví pro řešení potíží s výkonem.
+description: Tento článek obsahuje informace o způsobu použití funkce sledování výkonu v elektronickém výkaznictví pro řešení potíží s výkonem.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851944"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -305,27 +305,27 @@ Je také užitečné omezit počet volání, která jsou provedena na zdroj dat 
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Import upravené konfigurace mapování modelu elektronického výkaznictví z RCS do aplikace
 
-Opakujte kroky z části [Import konfigurace elektronického výkaznictví z RCS do Finance and Operations](#import-configuration) dříve v tomto tématu pro import verze 1.2 konfigurace **Mapování sledování výkonu**.
+Opakujte kroky z části [Import konfigurace elektronického výkaznictví z RCS do Finance and Operations](#import-configuration) dříve v tomto článku pro import verze 1.2 konfigurace **Mapování sledování výkonu**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Spuštění upraveného řešení elektronického výkaznictví pro sledování provádění
 
 ### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
 
-Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
+Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto článku, pro vygenerování nového sledování výkonu.
 
 ## <a name="work-with-the-execution-trace"></a>Práce se sledováním spuštění
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Export generovaného trasovacího programu z aplikace
 
-Zopakujte kroky v části [Exportování vygenerovaného sledování z aplikace](#export-trace) výše v tomto tématu pro místní uložení nového sledování výkonu.
+Zopakujte kroky v části [Exportování vygenerovaného sledování z aplikace](#export-trace) výše v tomto článku pro místní uložení nového sledování výkonu.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Import generovaného sledování do RCS
 
-Opakujte kroky v části [Import generovaného sledování do RCS](#import-trace) výše v tomto tématu pro import nového sledování výkonu do RCS.
+Opakujte kroky v části [Import generovaného sledování do RCS](#import-trace) výše v tomto článku pro import nového sledování výkonu do RCS.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Použití sledování výkonu pro analýzu v RCS – mapování modelu
 
-Opakujte kroky v části [Použití sledování výkonu pro analýzu v RCS – mapování modelu](#use-trace) výše v tomto tématu pro analýzu nejnovějšího sledování výkonu.
+Opakujte kroky v části [Použití sledování výkonu pro analýzu v RCS – mapování modelu](#use-trace) výše v tomto článku pro analýzu nejnovějšího sledování výkonu.
 
 Všimněte si, že úpravy provedené v mapování modelu odstranily duplicitní dotazy do databáze. Počet volání databázových tabulek a zdrojů dat pro toto mapování modelu byl také snížen. Z toho vyplývá zvýšení výkonu celého řešení elektronického výkaznictví.
 
@@ -355,7 +355,7 @@ Pokud používáte některou z těchto verzí můžete analyzovat podrobnosti ge
 
 ### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
 
-Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
+Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto článku, pro vygenerování nového sledování výkonu.
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví.
 
@@ -379,7 +379,7 @@ Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronické
 
 ### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
 
-Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
+Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto článku, pro vygenerování nového sledování výkonu.
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví. Sledování nyní zahrnuje podrobné informace o přístupu k databázi SQL během provádění formátu elektronického výkaznictví.
 

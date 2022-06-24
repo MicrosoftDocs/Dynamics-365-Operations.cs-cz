@@ -1,6 +1,6 @@
 ---
 title: Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
-description: Toto téma popisuje vylepšení funkce základní úrovně ER v Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019).
+description: Tento článek popisuje vylepšení funkce základní úrovně ER v Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847394"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je popsána první sada vylepšení, která byla provedena ve funkci směrného plánu systému elektronického výkaznictví (ER). Tato vylepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) a novějších.
+V tomto článku je popsána první sada vylepšení, která byla provedena ve funkci směrného plánu systému elektronického výkaznictví (ER). Tato vylepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) a novějších.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatizace nastavení pravidel směrného plánu
 
-Téma [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md) vysvětluje, jak konfigurovat rámec ER na shromažďování informací o spouštění formátu ER a vyhodnotit výsledky těchto spuštění. Příklad v tomto tématu obsahuje kroky, které je nutné provést.
+Článek [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md) vysvětluje, jak konfigurovat rámec ER na shromažďování informací o spouštění formátu ER a vyhodnotit výsledky těchto spuštění. Příklad v tomto článku obsahuje kroky, které je nutné provést.
 
 Tady jsou některé kroky:
 
@@ -45,7 +45,7 @@ Tady jsou některé kroky:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Příklad: Automatizace nastavení pravidel směrného plánu
 
-Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v tématu [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), a to až do části Přidání nového směrného plánu pro navržený formát ER.
+Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v článku [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), a to až do části Přidání nového směrného plánu pro navržený formát ER.
 
 ### <a name="review-added-baseline"></a>Kontrola přidaného směrného plánu
 
@@ -80,7 +80,7 @@ Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných 
 
 ### <a name="run-the-format"></a>Spuštění formátu
 
-Nyní můžete dokončit zbývající kroky v příkladu v tématu [Sledování generovaných výsledků sestavy a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), počínaje částí Spuštění navrženého formátu ER a kontrola protokolu k analýze výsledků.
+Nyní můžete dokončit zbývající kroky v příkladu v článku [Sledování generovaných výsledků sestavy a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md), počínaje částí Spuštění navrženého formátu ER a kontrola protokolu k analýze výsledků.
 
 > [!NOTE]
 > Odstraníte-li automaticky přidané pravidlo směrného plánu na pevné záložce **Směrné plány**, odkazovaná příloha nebude automaticky odstraněna.
@@ -91,7 +91,7 @@ Pokud byl formát ER navržen tak, aby obsahoval informace, které se změní p�
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Příklad: Konfigurace směrného plánu tak, aby ignoroval neustále se měnící části výstupu ER
 
-Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v tématu [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md).
+Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v příkladu v článku [Sledování generovaných výsledků sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md).
 
 ### <a name="modify-a-configured-er-format"></a>Úprava konfigurovaného formátu ER
 
@@ -142,7 +142,7 @@ Vybraná koponenta formátu ER byla přidána do seznamu komponent na pevné zá
 
 ### <a name="make-a-new-baseline-rule"></a>Vtvoření nového pravidla směrného plánu
 
-Postupujte podle kroků v části Příklad: automatizace nastavení pravidel směrného plánu dříve v tomto tématu. Zobrazí se upozornění, že výstupní soubor byl vygenerován pomocí nastavení směrného plánu a že došlo k vynucenému nahrazení vazeb formátu.
+Postupujte podle kroků v části Příklad: automatizace nastavení pravidel směrného plánu dříve v tomto článku. Zobrazí se upozornění, že výstupní soubor byl vygenerován pomocí nastavení směrného plánu a že došlo k vynucenému nahrazení vazeb formátu.
 
 ![Oznámení na stránce Konfigurace.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Snímek obrazovky oznámení na stránce Konfigurace")
 

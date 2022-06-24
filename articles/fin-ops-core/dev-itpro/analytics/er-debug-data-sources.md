@@ -1,6 +1,6 @@
 ---
 title: Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace
-description: Toto téma vysvětluje, jak můžete ladit zdroje dat prováděného formátu ER, aby bylo možné lépe porozumět nakonfigurovanému toku dat a transformaci.
+description: Tento článek vysvětluje, jak můžete ladit zdroje dat prováděného formátu ER, aby bylo možné lépe porozumět nakonfigurovanému toku dat a transformaci.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884221"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace
 
@@ -34,7 +34,7 @@ Někdy vypadají data generovaného výstupu odlišně od stejných dat v aplika
 
 Chcete-li zapnout funkci ladění zdroje dat, nastavte možnost **Povolit ladění dat při spuštění formátu** na **Ano** v uživatelských parametrech ER. Poté můžete spustit ladění zdroje dat při spuštění formátu ER pro generování odchozích dokumentů. Také můžete pomocí možnosti **Spustit ladění** zahájit ladění zdroje dat pro formát ER, který je nakonfigurován v [Návrháři operací ER](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Toto téma poskytuje pokyny k zahájení ladění zdroje dat pro spuštěné formáty ER. Vysvětluje, jak vám tyto informace mohou pomoci pochopit tok dat a jejich transformace. Příklady v tomto tématu používají obchodní proces pro zpracování plateb dodavatele.
+Tento článek poskytuje pokyny k zahájení ladění zdroje dat pro spuštěné formáty ER. Vysvětluje, jak vám tyto informace mohou pomoci pochopit tok dat a jejich transformace. Příklady v tomto článku používají obchodní proces pro zpracování plateb dodavatele.
 
 ## <a name="limitations"></a>Omezení
 
@@ -49,7 +49,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 ## <a name="prerequisites"></a>Předpoklady
 
-- Abyste mohli dokončit příklady v tomto tématu, musíte mít přístup k některé z následujících [rolí](../sysadmin/tasks/assign-users-security-roles.md):
+- Abyste mohli dokončit příklady v tomto článku, musíte mít přístup k některé z následujících [rolí](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Návrhář elektronického výkaznictví
     - Funkční konzultant elektronického výkaznictví
@@ -57,12 +57,12 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 - Společnost musí být nastavena na **DEMF**.
 
-- Podle pokynů v [příloze 1](#appendix1) tohoto tématu si stáhněte součásti řešení Microsoft ER, které jsou potřeba ke zpracování plateb dodavatele.
-- Podle pokynů v [příloze 2](#appendix2) tohoto tématu připravte pohledávky na zpracování platby dodavatele pomocí řešení ER, které si stáhnete.
+- Podle pokynů v [příloze 1](#appendix1) tohoto článku si stáhněte součásti řešení Microsoft ER, které jsou potřeba ke zpracování plateb dodavatele.
+- Podle pokynů v [příloze 2](#appendix2) tohoto článku připravte pohledávky na zpracování platby dodavatele pomocí řešení ER, které si stáhnete.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Zpracování platby dodavatele pro účely získání souboru platby
 
-1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto tématu.
+1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto článku.
 
     ![Probíhá zpracování plateb dodavatele.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Zpracovat platbu dodavatele pro ladění
 
-1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto tématu.
+1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto článku.
 2. V okně zprávy vyberte **Ano** pro potvrzení, že chcete přerušit zpracování plateb dodavatele a místo toho spustit ladění zdrojů dat na stránce **Ladit zdroje dat**.
 
     ![Pole zprávy s potvrzením.](./media/er-data-debugger-start-debugging.png)

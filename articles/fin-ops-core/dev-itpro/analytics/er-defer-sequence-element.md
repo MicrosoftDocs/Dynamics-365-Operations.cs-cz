@@ -1,6 +1,6 @@
 ---
 title: Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
-description: V tomto tématu je vysvětleno, jak odložit provádění prvku posloupnosti ve formátu elektronického výkaznictví.
+description: V tomto článku je vysvětleno, jak odložit provádění prvku posloupnosti ve formátu elektronického výkaznictví.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5d4c5395c87c7bdc874f277a691e84081f68742d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323683"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880220"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
 
@@ -32,7 +32,7 @@ Můžete použít návrháře operací architektury [elektronického výkaznictv
 
 Zapnutím možnosti <a name="DeferredSequenceExecution"></a>**odloženého provedení** pro prvek formátu posloupnosti v konfigurovaném formátu můžete odložit (pozdržet) provedení tohoto prvku. V tomto případě se prvek nespustí, dokud nejsou spuštěny všechny ostatní prvky nadřazené položky.
 
-Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Chcete-li získat další informace o této funkci, vyplňte příklad tomto článku.
 
 ## <a name="limitations"></a>Omezení
 
@@ -53,7 +53,7 @@ K dokončení tohoto příkladu v tomto tématu musíte mít přístup ke spole�
 - Funkční konzultant elektronického výkaznictví
 - Správce systému
 
-Pokud jste ještě nedokončili příklad v části [Odložení provádění prvků XML ve formátech elektronického výkaznictví](er-defer-xml-element.md#Example), stáhněte si následující [konfigurace](general-electronic-reporting.md#Configuration) ukázkového řešení elektronického výkaznictví.
+Pokud jste ještě nedokončili příklad v článku [Odložení provádění prvků XML ve formátech elektronického výkaznictví](er-defer-xml-element.md#Example), stáhněte si následující [konfigurace](general-electronic-reporting.md#Configuration) ukázkového řešení elektronického výkaznictví.
 
 | Popis obsahu            | Název souboru |
 |--------------------------------|-----------|
@@ -93,7 +93,7 @@ Než začnete, musíte také stáhnout a uložit následující konfiguraci uká
 ### <a name="activate-a-configurations-provider"></a>Aktivace zprostředkovatele konfigurací
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti Litware, Inc. (`http://www.litware.com`) a že je označen jako aktivní. Není-li tento poskytovatel konfigurace uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti Litware, Inc. (`http://www.litware.com`) a že je označen jako aktivní. Není-li tento poskytovatel konfigurace uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v článku [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Ukázková společnost Litware, Inc. na stránce konfigurace lokalizace.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Sestavy leasingu majetku
-description: Toto téma uvádí a stručně popisuje sestavy, které jsou k dispozici pro leasing majetku.
+description: Tento článek uvádí a stručně popisuje sestavy, které jsou k dispozici pro leasing majetku.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856705"
 ---
 # <a name="asset-leasing-reports"></a>Sestavy leasingu majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí a stručně popisuje sestavy, které jsou k dispozici pro leasing majetku. Většina sestav se zobrazí po provedení těchto nebo velmi podobných kroků, jak je uvedeno). 
+Tento článek uvádí a stručně popisuje sestavy, které jsou k dispozici pro leasing majetku. Většina sestav se zobrazí po provedení těchto nebo velmi podobných kroků, jak je uvedeno). 
 
 - Chcete-li zobrazit většinu sestav leasingu majetku, přejděte na **Leasing majetku > Dotazy a sestavy > Sestavy leasingu** a poté vyberte přehled, který chcete zobrazit. U sestav, které vyžadují jinou cestu výběru, jsou kroky k otevření sestavy zahrnuty do popisu této sestavy. 
 - Když vyberete sestavu k tisku, otevře se stránka s parametry, která vám umožní filtrovat informace obsažené v sestavě. Zadejte kritéria filtru a poté volbou **OK** vygenerujete sestavu. Vygenerovaná sestava zobrazí informace, které spadají do filtrů, které jste zadali.

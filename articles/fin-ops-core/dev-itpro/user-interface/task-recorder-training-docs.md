@@ -1,6 +1,6 @@
 ---
 title: Vytváření dokumentace nebo školení pomocí záznamníku úloh
-description: Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
+description: Tento článek vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 author: josaw1
 ms.date: 03/24/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891807"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070519"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
+Tento článek vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 
 > [!IMPORTANT]
 > Můžete nahrát své vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 Human Resources, ale nebude možné je uložit do knihovny modelování podnikových procesů nebo je otevřít z podokna Nápovědy. Můžete je uložit v místním počítači nebo na umístění v síti a potom je otevřít a přehrát pomocí záznamníku úkolů. 

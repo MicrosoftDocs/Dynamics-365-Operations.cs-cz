@@ -1,6 +1,6 @@
 ---
 title: Zázname čísla vratných certifikátů TDS
-description: Toto téma vysvětluje, jak pomocí stránky Vratné certifikáty zaznamenat čísla a data certifikátů pro certifikáty TDS (daň odečtená u zdroje), které jsou přijímány pro konkrétního dodavatele, zákazníka nebo hlavní knihu.
+description: Tento článek vysvětluje, jak pomocí stránky Vratné certifikáty zaznamenat čísla a data certifikátů pro certifikáty TDS (daň odečtená u zdroje), které jsou přijímány pro konkrétního dodavatele, zákazníka nebo hlavní knihu.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726483"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853249"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Zázname čísla vratných certifikátů TDS
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak pomocí stránky **Vratné certifikáty** zaznamenat čísla a data certifikátů pro certifikáty TDS (daň odečtená u zdroje), které jsou přijímány pro konkrétního dodavatele, zákazníka nebo hlavní knihu. Chcete-li aktualizovat čísla a data certifikátu TDS, která jsou zaznamenána pro transakce TDS na této stránce, použijte stránku **Aktualizovat certifikát** (**Hlavní kniha \> Periodické \> Srážková daň \> Aktualizovat certifikát**). Po dokončení aktualizace čísel certifikátů TDS je zavřete.
+Tento článek vysvětluje, jak pomocí stránky **Vratné certifikáty** zaznamenat čísla a data certifikátů pro certifikáty TDS (daň odečtená u zdroje), které jsou přijímány pro konkrétního dodavatele, zákazníka nebo hlavní knihu. Chcete-li aktualizovat čísla a data certifikátu TDS, která jsou zaznamenána pro transakce TDS na této stránce, použijte stránku **Aktualizovat certifikát** (**Hlavní kniha \> Periodické \> Srážková daň \> Aktualizovat certifikát**). Po dokončení aktualizace čísel certifikátů TDS je zavřete.
 
 Podle těchto pokynů zaznamenáte čísla a data certifikátu TDS.
 

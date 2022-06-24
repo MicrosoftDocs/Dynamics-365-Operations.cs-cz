@@ -1,6 +1,6 @@
 ---
-title: Automatizace faktur u naskenovaných dokumentů
-description: Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
+title: Automatizace faktur pro naskenované dokumenty
+description: Tento článek popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883409"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur pro naskenované dokumenty
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje datové entity, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, včetně faktur obsahujících přílohy.
+Tento článek vysvětluje datové entity, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, včetně faktur obsahujících přílohy.
 
 Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější. V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR). Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur. Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému. Nyní je možné vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.
 
@@ -46,7 +46,7 @@ Předchozí scénář umožňuje několik variant v případě, že je nutná in
 + Zpracování výjimek u faktur
 + Prohlížeč příloh faktur vedle sebe
 
-Zbývající část tohoto tématu obsahuje podrobné popisy těchto komponent řešení.
+Zbývající část tohoto článku obsahuje podrobné popisy těchto komponent řešení.
 
 ## <a name="data-entities"></a>Datové entity
 

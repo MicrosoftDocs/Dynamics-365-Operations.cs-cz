@@ -1,6 +1,6 @@
 ---
 title: Přehled konsolidace a eliminace
-description: V tomto tématu jsou obecné informace o procesu konsolidace a eliminace. Zahrnuje odpovědi na časté dotazy.
+description: V tomto článku jsou obecné informace o procesu konsolidace a eliminace. Zahrnuje odpovědi na časté dotazy.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871384"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Přehled konsolidace a eliminace
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou obecné informace o procesu konsolidace a eliminace. Zahrnuje odpovědi na časté dotazy.
+V tomto článku jsou obecné informace o procesu konsolidace a eliminace. Zahrnuje odpovědi na časté dotazy.
 
 Když konsolidujete data, finanční výsledky pro více dceřiných společností se kombinují do výsledků pro jednu konsolidovanou společnost. Dceřiné společnosti mohou pracovat na různých verzích nebo systémech, nemusí být plně vlastněny a pravděpodobně používají různé měny. Existuje několik možností pro konsolidaci dat:
 

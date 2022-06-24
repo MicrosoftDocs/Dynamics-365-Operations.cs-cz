@@ -1,6 +1,6 @@
 ---
 title: Spouštění vlastních skriptů X++ s nulovými prostoji
-description: Toto téma popisuje, jak nahrát a spustit nasaditelné balíčky, které obsahují vlastní skripty X++, aniž byste museli pozastavit váš systém.
+description: Tento článek popisuje, jak nahrát a spustit nasaditelné balíčky, které obsahují vlastní skripty X++, aniž byste museli pozastavit váš systém.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: fcd0a472fa5116ca0b3a59561b6eeb72181a9113
-ms.sourcegitcommit: 44e6875e974a3a1b3e1d7a24c1a3cff3d3697cdc
+ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867322"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Spouštění vlastních skriptů X++ s nulovými prostoji
 
@@ -122,7 +122,7 @@ Pomocí následujícího postupu nahrajete a spustíte skript.
 
 1. Ve finanční a provozní aplikaci přejděte na nabídku **Správa systému \> Periodické úkoly \> Databáze \> Vlastní skripty**.
 1. Vyberte **Odeslat**.
-1. Vyberte nasaditelný balíček, který jste vytvořili, jak je popsáno dříve v tomto tématu. Budete vyzváni k zadání účelu skriptu.
+1. Vyberte nasaditelný balíček, který jste vytvořili, jak je popsáno dříve v tomto článku. Budete vyzváni k zadání účelu skriptu.
 1. Skript nyní musí schválit jiný uživatel než ten, který jej nahrál. Schvalovatel musí postupovat takto:
 
     1. Přejděte do nabídky **Správa systému \> Periodické \> Databáze \> Vlastní skripty**.

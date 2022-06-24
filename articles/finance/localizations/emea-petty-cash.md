@@ -1,6 +1,6 @@
 ---
 title: Pokladní hotovost pro východní Evropu a Rusko
-description: Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
+description: Tento článek uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8d301cb7b16960d9f239719841516ca6354381c0011d0b2d8302f8b85012ed1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5e49f76753188ebeb39e4c14bf177b83bbb018
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871118"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Pokladní hotovost pro východní Evropu a Rusko
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
+Tento článek uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 
 Funkci pokladní hotovosti můžete používat k automatizaci provozů pro příjmy a výdaje v hotovosti, vytváření primárních dokumentů a tisku souvisejících sestav. Funkce pokladní hotovosti umožňuje provádět následující operace:
 
@@ -100,7 +100,7 @@ Pokud chcete nastavit pravidla pro kontrolu zůstatku na pokladním účtu, vybe
 <li><strong>Upozornění:</strong> – Limit může být překročen, ale uživatel obdrží zprávu s upozorněním. Pokladní doklad je potvrzen nebo schválen.</li>
 <li><strong>Chyba</strong> – Limit není možné překročit. Uživatel obdrží chybovou zprávu a pokladní doklad není potvrzen nebo schválen.</li>
 </ul>
-Další informace o procesu schvalování pokladních dokladů naleznete v části &quot;Schvalování platebních transakcí a zaúčtování&quot; dále v tomto tématu.</td>
+Další informace o procesu schvalování pokladních dokladů naleznete v části &quot;Schvalování platebních transakcí a zaúčtování&quot; dále v tomto článku.</td>
 </tr>
 <tr class="odd">
 <td>Limit salda</td>

@@ -1,6 +1,6 @@
 ---
 title: Převod dílčí hlavní knihy do hlavní knihy
-description: Toto téma popisuje funkce související s procesem převodu dílčí hlavní knihy do hlavní knihy.
+description: Tento článek popisuje funkce související s procesem převodu dílčí hlavní knihy do hlavní knihy.
 author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871239"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Převod dílčí hlavní knihy do hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsány funkce, které se vztahují k pravidlům převodu dávek položek dílčí hlavní knihy.
+V tomto článku jsou popsány funkce, které se vztahují k pravidlům převodu dávek položek dílčí hlavní knihy.
 
 Ve verzi 8.1 byly provedeny změny za účelem umožnění přenosu pravidel, na jejichž základě je **synchronní** možnost odepsána. Další informace naleznete v tématu [Odebrané nebo zastaralé funkce ve finančních a provozních aplikacích](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 

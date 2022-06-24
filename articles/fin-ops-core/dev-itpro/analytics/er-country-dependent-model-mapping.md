@@ -1,6 +1,6 @@
 ---
-title: Konfigurace mapování modelu ER závislého na kontextu podle země
-description: V tomto tématu je vysvětleno, jak můžete nastavit mapování modelu ER tak, aby závisela na kontextu země/oblasti právnické osoby, která řídí jejich použití.
+title: Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země
+description: V tomto článku je vysvětleno, jak můžete nastavit mapování modelu ER tak, aby závisela na kontextu země/oblasti právnické osoby, která řídí jejich použití.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883868"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurace mapování modelu ER závislého na kontextu podle země
 
 [!include[banner](../includes/banner.md)]
 
-Mapování modelu aplikace elektronického výkaznictví (ER) lze konfigurovat tak, aby implementovalo obecný datový model ER, ale aby bylo specifické pro Dynamics 365 Finance. V tomto tématu je vysvětleno, jak navrhnout více mapování modelů ER pro datový model ER pro řízení způsobu jejich použití odpovídajícími formáty ER, které jsou spouštěny ze společností s různými kontexty zemí nebo oblastí.
+Mapování modelu aplikace elektronického výkaznictví (ER) lze konfigurovat tak, aby implementovalo obecný datový model ER, ale aby bylo specifické pro Dynamics 365 Finance. V tomto článku je vysvětleno, jak navrhnout více mapování modelů ER pro datový model ER pro řízení způsobu jejich použití odpovídajícími formáty ER, které jsou spouštěny ze společností s různými kontexty zemí nebo oblastí.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Pro dokončení příkladů v tomto tématu musíte mít následující přístup:
+Pro dokončení příkladů v tomto článku, musíte mít následující přístup:
 
 - Přístup k Finance pro některou z následujících rolí:
     - Návrhář elektronického výkaznictví
@@ -42,11 +42,11 @@ Pro dokončení příkladů v tomto tématu musíte mít následující přístu
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-Některé kroky v tomto tématu vyžadují spuštění formátu ER. V některých případech je zpracování formátu ER ovlivněno kontextem země nebo oblasti společnosti, k níž jste aktuálně přihlášeni. V aktuální instanci RCS můžete spustit formát ER, pokud je společnost s požadovaným kontextem země/oblasti dostupná v RCS. V opačném případě je nutné odeslat dokončenou verzi konfigurace mapování modelu ER a formátu ER, které používají datový model ER pro vaši instanci Finance, a poté ve své instanci Finance spustit formát ER. Informace o tom, jak importovat konfigurace, které se nacházejí v RCS do instance Finance, naleznete [v tématu Import konfigurací z RCS](rcs-download-configurations.md).
+Některé kroky v tomto článku vyžadují spuštění formátu ER. V některých případech je zpracování formátu ER ovlivněno kontextem země nebo oblasti společnosti, k níž jste aktuálně přihlášeni. V aktuální instanci RCS můžete spustit formát ER, pokud je společnost s požadovaným kontextem země/oblasti dostupná v RCS. V opačném případě je nutné odeslat dokončenou verzi konfigurace mapování modelu ER a formátu ER, které používají datový model ER pro vaši instanci Finance, a poté ve své instanci Finance spustit formát ER. Informace o tom, jak importovat konfigurace, které se nacházejí v RCS do instance Finance, naleznete [v tématu Import konfigurací z RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Případ mapování jednoho modelu
 
-Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 1](#appendix1) tohoto tématu. Nyní máte konfiguraci mapování modelu **mapování (obecná)**, která obsahuje mapování modelu pro definici **vstupního bodu 1**.
+Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 1](#appendix1) tohoto článku. Nyní máte konfiguraci mapování modelu **mapování (obecná)**, která obsahuje mapování modelu pro definici **vstupního bodu 1**.
 
 ![Stránka konfigurací ER, formát pro naučení konfigurace mapování.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Všimněte si, že webový prohlížeč nabízí stažení textového souboru, k
 
 ## <a name="multiple-shared-model-mappings-case"></a>Několik případů mapování sdílených modelů
 
-Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 2](#appendix2) tohoto tématu. Nyní máte konfigurace mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)**, z nichž každá obsahuje mapování modelu pro definici **Vstupní bod 1**.
+Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 2](#appendix2) tohoto článku. Nyní máte konfigurace mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)**, z nichž každá obsahuje mapování modelu pro definici **Vstupní bod 1**.
 
 ![Stránka konfigurací ER, mapování obecné vlastní konfigurace.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Povšimněte si, že provedení vybraného formátu ER je úspěšné. Webový p
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Několik případů mapování kombinovaných modelů
 
-Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 3](#appendix3) tohoto tématu. Nyní máte konfigurace mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)** a **Mapování modelu (FR)**, z nichž každá obsahuje mapování modelu pro definici **Vstupní bod 1**.
+Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 3](#appendix3) tohoto článku. Nyní máte konfigurace mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)** a **Mapování modelu (FR)**, z nichž každá obsahuje mapování modelu pro definici **Vstupní bod 1**.
 
 Všimněte si, že verze 1 konfigurace mapování modelu **Mapování (FR)** platí pouze pro formáty ER modelu **Model k učení mapování**, které jsou spuštěny ve společnostech Finance, které mají kontext francouzské země/oblasti.
 
@@ -138,10 +138,10 @@ Povšimněte si, že provedení vybraného formátu ER je úspěšné. Webový p
 
 Jak jste viděli, výběr mapování modelu pro spuštění formátu ER funguje následujícím způsobem:
 
-- Definice mapování modelu, kterou formát ER používá, je zadána (**vstupní bod 1** v příkladech v tomto tématu).
-- Všechny konfigurace mapování obsahující mapování, které má zadanou definici a které splňují všechna nakonfigurovaná omezení kontextu země nebo oblasti, mohou být potenciálně použity ke spuštění formátu (**Mapování (Obecné)**, **Vlastní mapování (obecné)** a **Mapování (FR)** v příkladech v tomto tématu).
-- Jakékoli výchozí mapování modelu, které má omezení kontextu země nebo oblasti, má nejvyšší prioritu pro výběr (**Mapování (FR)** v příkladech v tomto tématu).
-- Jakékoli výchozí mapování modelu, které nemá omezení kontextu země nebo oblasti, má druhou nejvyšší prioritu pro výběr (**Vlastní mapování (obecné)** v příkladech v tomto tématu).
+- Definice mapování modelu, kterou formát ER používá, je zadána (**vstupní bod 1** v příkladech v tomto článku).
+- Všechny konfigurace mapování obsahující mapování, které má zadanou definici a které splňují všechna nakonfigurovaná omezení kontextu země nebo oblasti, mohou být potenciálně použity ke spuštění formátu (**Mapování (Obecné)**, **Vlastní mapování (obecné)** a **Mapování (FR)** v příkladech v tomto článku).
+- Jakékoli výchozí mapování modelu, které má omezení kontextu země nebo oblasti, má nejvyšší prioritu pro výběr (**Mapování (FR)** v příkladech v tomto článku).
+- Jakékoli výchozí mapování modelu, které nemá omezení kontextu země nebo oblasti, má druhou nejvyšší prioritu pro výběr (**Vlastní mapování (obecné)** v příkladech v tomto článku).
 - Jakékoli mapování modelu, které má omezení kontextu země nebo oblasti, má vyšší prioritu než mapování modelu, které nemá omezení kontextu země/oblasti.
 
 Následující tabulka obsahuje informace o výsledcích výběru mapování modelu pro všechny možné případy nastavení mapování modelu:

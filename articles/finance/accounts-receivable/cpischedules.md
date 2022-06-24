@@ -1,6 +1,6 @@
 ---
 title: Plán indexu spotřebitelských cen
-description: Toto téma vysvětluje, jak vytvořit seznam plánů indexu spotřebitelských cen (CPI), který získáte z internetu, abyste mohli určit eskalační poplatek ve fakturaci předplatného.
+description: Tento článek vysvětluje, jak vytvořit seznam plánů indexu spotřebitelských cen (CPI), který získáte z internetu, abyste mohli určit eskalační poplatek ve fakturaci předplatného.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686512"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904866"
 ---
 # <a name="consumer-price-index-schedule"></a>Plán indexu spotřebitelských cen
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit, odstranit, zkontrolovat a zpracovat plány indexu spotřebitelských cen (CPI). Plán CPI lze použít k určení cen spotřebního zboží a služeb, které přidáte jako řádky plánu fakturace. Rozvrh CPI pak lze použít s eskalačními a diskontními cenami ve fakturačním rozvrhu, nebo jej lze ručně zpracovat za účelem aktualizace fakturačních částek ve fakturačních rozvrhech. Plány CPI můžete zadat ručně nebo je můžete importovat pomocí složené entity plán CPI.
+Tento článek vysvětluje, jak vytvořit, odstranit, zkontrolovat a zpracovat plány indexu spotřebitelských cen (CPI). Plán CPI lze použít k určení cen spotřebního zboží a služeb, které přidáte jako řádky plánu fakturace. Rozvrh CPI pak lze použít s eskalačními a diskontními cenami ve fakturačním rozvrhu, nebo jej lze ručně zpracovat za účelem aktualizace fakturačních částek ve fakturačních rozvrhech. Plány CPI můžete zadat ručně nebo je můžete importovat pomocí složené entity plán CPI.
 
 Chcete-li přidat plán CPI, postupujte takto:
 

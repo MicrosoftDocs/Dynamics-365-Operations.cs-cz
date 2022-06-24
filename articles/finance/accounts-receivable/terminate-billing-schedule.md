@@ -1,6 +1,6 @@
 ---
 title: Ukončení plánů fakturace
-description: Toto téma vysvětluje, jak ukončit plány fakturace a řádky plánu fakturace ve Fakturaci předplatného.
+description: Tento článek vysvětluje, jak ukončit plány fakturace a řádky plánu fakturace ve Fakturaci předplatného.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e823ce950d6a4687dc7cda14e06bffdbb4f37f7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4fce23f3cf35ef8c388ce13fc422f268a2bd8e32
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872550"
 ---
 # <a name="terminate-billing-schedules"></a>Ukončení plánů fakturace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak ukončit plány fakturace a řádky plánu fakturace ve Fakturaci předplatného. Když ukončujete plán fakturace, musí být ve stavu **Aktivní**. Nemůže mít stav **Pozastaveno**. Obdobně když ukončujete řádek plánu fakturace, musí být ve stavu **Aktivní**. Sekce záhlaví plánu fakturace není ovlivněna, když ukončíte řádek plánu fakturace.
+Tento článek vysvětluje, jak ukončit plány fakturace a řádky plánu fakturace ve Fakturaci předplatného. Když ukončujete plán fakturace, musí být ve stavu **Aktivní**. Nemůže mít stav **Pozastaveno**. Obdobně když ukončujete řádek plánu fakturace, musí být ve stavu **Aktivní**. Sekce záhlaví plánu fakturace není ovlivněna, když ukončíte řádek plánu fakturace.
 
 Chcete-li ukončit plán fakturace nebo řádek plánu fakturace, přejděte na jedno z následujících míst:
 

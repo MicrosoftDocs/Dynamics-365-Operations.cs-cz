@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861698"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -320,7 +320,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 <td>Přístup k procesní nápovědě (průvodce úkolem) a rámcovým tématům kliknutím na tlačítko <strong>Nápověda</strong>.</td>
 <td>Systém nápovědy aplikace AX 2012 odkazuje na témata ve formátu HTML, která jsou uložena na místním webovém serveru. Zákazníci a partneři si mohou vytvářet svou vlastní nápovědu.</td>
 <td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další informace získáte v <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Systému nápovědy</a> a <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Nových průvodcích záznamem úloh (únor 2016)</a>.</td>
-<td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Téma nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
+<td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Tento článek nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
 </tr>
 </tbody>
 </table>

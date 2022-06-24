@@ -1,6 +1,6 @@
 ---
 title: Přidání nebo kopírování leasingů (Preview)
-description: Toto téma popisuje, jak vytvořit nový leasing zadáním informací o něm do leasingu majetku nebo zkopírováním informací z existujícího leasingu.
+description: Tento článek popisuje, jak vytvořit nový leasing zadáním informací o něm do leasingu majetku nebo zkopírováním informací z existujícího leasingu.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880925"
 ---
 # <a name="add-or-copy-leases-preview"></a>Přidání nebo kopírování leasingů (Preview)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit leasing od začátku v leasingu majetku, a také jak vytvořit leasing kopírováním existujícího leasingu. Proces vytváření leasingu od začátku zahrnuje zadání informací o novém leasingu a následné vytvoření plánu leasingu. Po vytvoření alespoň jednoho leasingu může být jednodušší zkopírovat informace ze stávajícího leasingu a poté tyto informace upravit podle potřeby k vytvoření nového leasingu.
+Tento článek vysvětluje, jak vytvořit leasing od začátku v leasingu majetku, a také jak vytvořit leasing kopírováním existujícího leasingu. Proces vytváření leasingu od začátku zahrnuje zadání informací o novém leasingu a následné vytvoření plánu leasingu. Po vytvoření alespoň jednoho leasingu může být jednodušší zkopírovat informace ze stávajícího leasingu a poté tyto informace upravit podle potřeby k vytvoření nového leasingu.
 
 ## <a name="create-a-lease"></a>Vytvoření leasingu
 

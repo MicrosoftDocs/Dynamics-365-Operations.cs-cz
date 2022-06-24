@@ -1,6 +1,6 @@
 ---
 title: Zřízení Human Resources
-description: Toto téma vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
+description: Tento článek vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858236"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -27,13 +27,13 @@ ms.locfileid: "8710856"
 
 
 
-Toto téma vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. 
+Tento článek vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Předpoklady
 
 Aby bylo možné zřídit nové produkční prostředí, musí být splněny následující požadavky:
 
-- Zakoupili jste si aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
+- Zakoupili jste si aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto článku, kontaktujte podporu.
 
 - Globální správce se přihlásil do služby [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) a vytvořil nový projekt aplikace Human Resources. 
 

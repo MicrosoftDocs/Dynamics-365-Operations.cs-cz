@@ -1,6 +1,6 @@
 ---
 title: Návrh ukončení leasingu
-description: Toto téma vysvětluje, jak navrhnout ukončení leasingu.
+description: Tento článek vysvětluje, jak navrhnout ukončení leasingu.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879646"
 ---
 # <a name="propose-a-lease-for-termination"></a>Navrhnout ukončení leasingu
 
 [!include [banner](../includes/banner.md)]
 
-Pokud je leasing ukončen předčasně, leasing majetku může vytvořit záznam deníku ukončení, aby odepsal závazek z leasingu, používaný majretek (ROU) a akumulované odpisy a zaúčtoval zisk nebo ztrátu. Proces předčasného ukončení ukončí leasing a související přidružené leasingové knihy. Neukončí jednotlivé leasingové knihy. Toto téma popisuje funkce, které vám umožňují navrhnout ukončení leasingu a zpracovat položku deníku ukončení leasingu.
+Pokud je leasing ukončen předčasně, leasing majetku může vytvořit záznam deníku ukončení, aby odepsal závazek z leasingu, používaný majretek (ROU) a akumulované odpisy a zaúčtoval zisk nebo ztrátu. Proces předčasného ukončení ukončí leasing a související přidružené leasingové knihy. Neukončí jednotlivé leasingové knihy. Tento článek popisuje funkce, které vám umožňují navrhnout ukončení leasingu a zpracovat položku deníku ukončení leasingu.
 
 Pokud leasing není klasifikován jako leasing s odloženými splátkami a není spojen s dlouhodobým majektem, leasing majetku vytvoří následující položku deníku ukončení.
 
@@ -121,7 +121,7 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
 
 ### <a name="steps-for-terminating-the-lease"></a>Kroky pro ukončení leasingu
 
-1. Po vytvoření pronájmu, jak je popsáno výše v tomto tématu, přejděte do knihy pronájmů a potvrďte plán plateb. Poté zaúčtujte počáteční uznání do deníku. Počáteční používaný majetek má hodnotu 71 235,81 USD a leasingový závazek by měl být 70 235,81 USD. V tomto příkladu byl leasing klasifikován jako operativní leasing podle Tématu kodifikace účetních standardů 842 (ASC 842).
+1. Po vytvoření pronájmu, jak je popsáno výše v tomto článku, přejděte do knihy pronájmů a potvrďte plán plateb. Poté zaúčtujte počáteční uznání do deníku. Počáteční používaný majetek má hodnotu 71 235,81 USD a leasingový závazek by měl být 70 235,81 USD. V tomto příkladu byl leasing klasifikován jako operativní leasing podle Tématu kodifikace účetních standardů 842 (ASC 842).
 2. Spusťte proces dávkového deníku třikrát, abyste simulovali průběh tří let pro leasingové splátky, úrokové výdaje a odpisy.
 3. Po dokončení spuštění všech tří dávkových úloh se vraťte zpět do leasingové knihy a otevřete tabulky transakcí s aktivy a pasivy, abyste zobrazili aktuální účetní hodnotu používaného majetku a leasingových závazků. Po třech letech by hodnota pasiv měla být přibližně -53 893,00 USD a hodnota aktiv by měla být přibližně 54 593,00 USD.
 

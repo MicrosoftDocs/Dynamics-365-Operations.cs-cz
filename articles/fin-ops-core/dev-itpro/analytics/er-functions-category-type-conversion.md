@@ -1,6 +1,6 @@
 ---
 title: Seznam funkcí ER v kategorii převodu typu
-description: Toto téma obsahuje informace o funkcích převodu, které jsou podporovány v elektronickém výkaznictví (ER).
+description: Tento článek obsahuje informace o funkcích převodu, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
 ms.date: 12/05/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6d678c2a38039285bd835abcbbaf13ec00298c0660c62e7496a5d7405db8f61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37516ced402e0204ebd09d5b175ff56b040b9043
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889307"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Seznam funkcí ER v kategorii převodu typu
 
 [!include [banner](../includes/banner.md)]
 
-K převodu hodnot mezi typy lze použít funkce pro převod typů elektronického výkaznictví (ER). Toto téma obsahuje souhrn těchto funkcí.
+K převodu hodnot mezi typy lze použít funkce pro převod typů elektronického výkaznictví (ER). Tento článek obsahuje souhrn těchto funkcí.
 
 ## <a name="type-conversion-functions"></a>Funkce převodu typu
 

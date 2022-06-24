@@ -1,6 +1,6 @@
 ---
 title: Datum registru DPH dodavatele
-description: Toto téma poskytuje informace o funkci pro povolení data registrace dodavatele DPH
+description: Tento článek poskytuje informace o funkci pro povolení data registrace dodavatele DPH
 author: anasyash
 ms.date: 01/15/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: anasyash
 ms.search.validFrom: 2022-01-15
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: 882d5a8718d819cff80bfa5b86e054a39e9db159
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b1368e0c7764bed42aa7549f36a6f4bcbb96eff4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7992057"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849769"
 ---
 # <a name="date-of-vendor-vat-register"></a>Datum registru DPH dodavatele
 

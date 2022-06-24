@@ -1,6 +1,6 @@
 ---
 title: Upgrade na model strany a globálního adresáře
-description: Toto téma popisuje, jak upgradovat data duálního zápisu na model strany a globálního adresáře.
+description: Tento článek popisuje, jak upgradovat data duálního zápisu na model strany a globálního adresáře.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688367"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895269"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -40,7 +40,7 @@ Na konci procesu se vygenerují následující soubory s hodnotami oddělenými 
 | ImportFONewPostalAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Poštovní adresa** ve finanční a provozní aplikaci. |
 | ImportFONewElectronicAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Elektronická adresa** ve finanční a provozní aplikaci. |
 
-Toto téma vysvětluje, jak používat šablony Data Factory a upgradovat data. Pokud nemáte žádná přizpůsobení, můžete použít šablony tak, jak jsou. Pokud máte přizpůsobení pro data **Účet**, **Kontakt** a **Prodejce**, pak musíte šablonu upravit pomocí pokynů v tomto tématu.
+Tento článek vysvětluje, jak používat šablony Data Factory a upgradovat data. Pokud nemáte žádná přizpůsobení, můžete použít šablony tak, jak jsou. Pokud máte přizpůsobení pro data **Účet**, **Kontakt** a **Prodejce**, pak musíte šablonu upravit pomocí pokynů v tomto článku.
 
 > [!IMPORTANT]
 > Pokud budete používat šablony poštovní adresy a elektronické adresy strany, existují zvláštní pokyny. Nejprve musíte spustit šablonu strany, poté šablonu poštovní adresy strany a poté šablonu elektronické adresy strany. Každá šablona je navržena pro import v samostatné datové továrně.

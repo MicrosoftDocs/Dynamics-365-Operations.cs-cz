@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 42ea8884c357bcb26ac96df8dca75e7ff449d4f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881955"
 ---
 # <a name="finance-insights-home-page"></a>Domovská stránka Finance Insights
 
@@ -43,11 +43,11 @@ Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí úro
 
 ### <a name="version-requirements"></a>Požadavky verzí
 
-Toto téma se týká Microsoft Dynamics 365 Finance verze 10.0.21 a novější.
+Tento článek se týká Microsoft Dynamics 365 Finance verze 10.0.21 a novější.
 
 ### <a name="license-requirements"></a>Požadavky na licence
 
-Finance Insights využívá kredity AI Builder pro vytváření finančních předpovědí. Všechny potřebné licence k tomu jsou součástí licence tenanta. Každý tenant Dynamics 365 Finance má 20 000 kreditů AI Builder každý měsíc. Pokud jsou pro obchodní potřeby vyžadovány další kredity, lze je zakoupit přímo od AI Builder.
+Finance Insights využívá kredity AI Builder pro vytváření finančních předpovědí. Všechny potřebné licence k tomu jsou součástí licence tenanta. Každý klient Dynamics 365 Finance má 20 000 kreditů AI Builder každý měsíc. Pokud jsou pro obchodní potřeby vyžadovány další kredity, lze je zakoupit přímo od AI Builder.
 
 ### <a name="historical-data-requirements"></a>Požadavky na historické údaje
 
@@ -59,7 +59,7 @@ Než budete moci používat Finance Insights, musíte dokončit některé konfig
 
 ## <a name="create-a-data-integrator-project"></a>Vytvořte projekt integrátora dat
 
-Budete muset vytvořit projekt integrátoru dat, aby do něj mohla proudit data, která generuje model strojového učení Dynamics 365 Finance. Kroky k vytvoření tohoto projektu najdete v části [Vytvořte projekt integrátoru dat](create-data-integrate-project.md).
+Budete muset vytvořit projekt integrátoru dat, aby do Dynamics 365 Finance mohla proudit data, která generuje model strojového učení. Kroky k vytvoření tohoto projektu najdete v části [Vytvořte projekt integrátoru dat](create-data-integrate-project.md).
 
 ## <a name="enable-finance-insights-capabilities"></a>Povolit funkce Finanční přehledy
 

@@ -1,6 +1,6 @@
 ---
 title: Pohlaví API mezd
-description: Toto téma popisuje možnost Pohlaví nastavenou v API mezd Dynamics 365 Human Resources.
+description: Tento článek popisuje možnost Pohlaví nastavenou v API mezd Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/23/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c84c0e43f149224ff5a57220c71b507c42b44e0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 024646b6b8e9a06478f24aed844219443310d589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880502"
 ---
 # <a name="payroll---gender-option-set"></a>Mzda – sada možností pohlaví
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068502"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma popisuje sadu možností typu Pohlaví pro Dynamics 365 Human Resources.
+Tento článek popisuje sadu možností typu Pohlaví pro Dynamics 365 Human Resources.
 
 ## <a name="option-set-gender-option"></a>Sada možností: možnost pohlaví
 

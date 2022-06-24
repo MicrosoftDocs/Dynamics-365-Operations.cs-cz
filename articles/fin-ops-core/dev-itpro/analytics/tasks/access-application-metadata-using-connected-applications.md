@@ -1,6 +1,6 @@
 ---
 title: Přístup k metadatům aplikace pomocí připojených aplikací
-description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat.
+description: Kroky v tomto článku vysvětlují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat.
 author: NickSelin
 ms.date: 06/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d99ca41a9a24ef8ac0fe31e703cad79d41216fa726fa1d354ac19db90706954
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906761"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Přístup k metadatům aplikace pomocí připojených aplikací
 
 [!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v aplikaci Finance and Operations. Přístup k metadatům aplikace bude probíhat online pomocí aplikace připojené k RCS. Mapování modelu ER bude konfigurováno pro přístup k transakcím zahraničního obchodu. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pokud jste nedokončili kroky uvedené v tématu [Přístup k metadatům aplikace pomocí konfigurace ER](access-application-metadata-er-configuration.md), stáhněte si [Příklady elektronického výkaznictví](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) a uložte následující konfigurace ER: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml a dokončete kroky v postupu.
+Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace Finance and Operations. Přístup k metadatům aplikace bude probíhat online pomocí aplikace připojené k RCS. Mapování modelu ER bude konfigurováno pro přístup k transakcím zahraničního obchodu. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v článku [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pokud jste nedokončili kroky uvedené v článku [Přístup k metadatům aplikace pomocí konfigurace ER](access-application-metadata-er-configuration.md), stáhněte si [Příklady elektronického výkaznictví](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) a uložte následující konfigurace ER: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml a dokončete kroky v postupu.
 
 ## <a name="prerequisites"></a>Předpoklady
 1. Přejděte na **Všechny pracovní prostory** > **Elektronické výkaznictví**. 

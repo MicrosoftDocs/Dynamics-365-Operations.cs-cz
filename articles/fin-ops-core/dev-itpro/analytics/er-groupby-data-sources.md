@@ -1,6 +1,6 @@
 ---
 title: Seskupení záznamů a agregace výpočtů pomocí zdrojů dat GROUPBY
-description: Toto téma vysvětluje, jak je možné používat datové zdroje GROUPBY mezi více společnostmi v modulu Elektronické výkaznictví (ER).
+description: Tento článek vysvětluje, jak je možné používat datové zdroje GROUPBY mezi více společnostmi v modulu Elektronické výkaznictví (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861780"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Seskupení záznamů a agregace výpočtů pomocí zdrojů dat GROUPBY
 

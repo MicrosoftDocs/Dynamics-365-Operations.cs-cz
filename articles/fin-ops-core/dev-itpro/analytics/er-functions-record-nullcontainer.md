@@ -1,6 +1,6 @@
 ---
 title: Funkce elektronického výkaznictví NULLCONTAINER
-description: Toto téma obsahuje obecné informace o použití funkce NULLCONTAINER elektronického výkaznictví.
+description: Tento článek obsahuje obecné informace o použití funkce NULLCONTAINER elektronického výkaznictví.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13159d9d7c8d1871886beb3cb1938ca8b0097e0efb6f10a9d1b229c49b9ff947
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8da2a30cf2839adabf7b5ea4916f44999aa05758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850951"
 ---
 # <a name="nullcontainer-er-function"></a>Funkce elektronického výkaznictví NULLCONTAINER
 

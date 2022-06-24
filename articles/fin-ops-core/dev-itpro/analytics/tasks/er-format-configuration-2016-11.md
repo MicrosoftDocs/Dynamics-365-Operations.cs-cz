@@ -1,6 +1,6 @@
 ---
 title: Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
-description: Toto téma vysvětluje, jak vytvořit konfiguraci formátu pro elektronické výkaznictví (ER).
+description: Tento článek vysvětluje, jak vytvořit konfiguraci formátu pro elektronické výkaznictví (ER).
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d59f0f7c914cc6d59ae441e6f6b8ff249a3e9c03c6ee4b4a75421d875f826a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2617f33293c38b7f1aaa61fda7d8de06711c6727
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902647"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví. Tato konfigurace formátu definuje formát elektronických dokumentů, které jsou použity pro zpracování plateb. V tomto příkladu budete vytvářet konfiguraci formátu pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Mapování modelu na vybrané zdroje dat".
+Tento článek popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví. Tato konfigurace formátu definuje formát elektronických dokumentů, které jsou použity pro zpracování plateb. V tomto příkladu budete vytvářet konfiguraci formátu pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Mapování modelu na vybrané zdroje dat".
 
 
 ## <a name="create-a-new-format-configuration"></a>Vytvoření nové konfigurace formátu

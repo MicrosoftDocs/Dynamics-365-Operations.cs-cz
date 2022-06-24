@@ -1,6 +1,6 @@
 ---
 title: Podpora duální měny pro daň
-description: Toto téma vysvětluje, jak rozšířit funkci účtování duálních měn v daňové doméně a dopad na výpočet a zaúčtování daně
+description: Tento článek vysvětluje, jak rozšířit funkci účtování duálních měn v daňové doméně a dopad na výpočet a zaúčtování daně
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909033"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Podpora duální měny pro DPH
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak rozšířit funkci účtování duálních měn pro DPH a dopad na výpočet, zaúčtování a vypořádání DPH.
+Tento článek vysvětluje, jak rozšířit funkci účtování duálních měn pro DPH a dopad na výpočet, zaúčtování a vypořádání DPH.
 
 Funkce duální měny pro Dynamics 365 Finance byla představena ve verzi 8.1 (říjen 2018). Mění, jakým způsobem se počítají účtovací položky v měně vykazování.
 
@@ -89,7 +89,7 @@ Tato funkce bude použita pouze pro nové transakce. V případě daňové trans
 
 Chcete-li zabránit předchozímu scénáři, doporučujeme změnit hodnotu tohoto parametru v novém (čistém) období vyrovnání daně, které neobsahuje žádné transakce nevyrovnané daně. Chcete-li tuto hodnotu změnit uprostřed období daňového vyrovnání, spusťte před změnou hodnoty tohoto parametru program "Vyrovnat a zaúčtovat DPH" pro období aktuálního vyrovnání.
 
-Tato funkce přidá účetní položky, které objasňují zisky a ztráty ze směnných kurzů. Záznamy budou provedeny na účtech realizovaných zisků a ztrát s množstvím úprav měny, když se provede přecenění během vyrovnání DPH. Další informace viz [Automatický zůstatek vypořádání daně v měně vykazování](#tax-settlement-auto-balance-in-reporting-currency) dále v tomto tématu.
+Tato funkce přidá účetní položky, které objasňují zisky a ztráty ze směnných kurzů. Záznamy budou provedeny na účtech realizovaných zisků a ztrát s množstvím úprav měny, když se provede přecenění během vyrovnání DPH. Další informace viz [Automatický zůstatek vypořádání daně v měně vykazování](#tax-settlement-auto-balance-in-reporting-currency) dále v tomto článku.
 
 > [!NOTE]
 > Během vypořádání jsou informace o finančních dimenzích převzaty z účtů DPH, což jsou účty rozvahy, a zadány do účtů zisků a ztrát s množstvím úpravy měny, což jsou účty výkazu zisků a ztrát. Protože omezení hodnoty finančních dimenzí se liší mezi účty rozvahy a účty výkazu zisku a ztráty, může během procesu vypořádání a zaúčtování DPH dojít k chybě. Chcete-li se vyhnout nutnosti upravovat struktury účtů, můžete zapnout funkci „Vyplnit finanční dimenze do realizovaných účtů zisků / ztrát z vyrovnání měny pro zúčtování DPH“. Tato funkce vynutí odvození finančních dimenzí na účty zisků / ztrát s úpravou měny. 

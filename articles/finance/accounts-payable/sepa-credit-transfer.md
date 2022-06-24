@@ -1,6 +1,6 @@
 ---
 title: Přehled převodů SEPA
-description: Toto téma poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele.
+description: Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f3f0c428d9167e9f1a7fb17a292d474448b2d4df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871442"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu.
+Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Tento článek také vysvětluje, jak nastavit a převést soubor platby platebního převodu.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co je zpráva o bezhotovostním převodu?
 Zpráva o převodu kreditu je požadavek, který odešle iniciující strana (vaše společnost) pro převod financí z vlastního účtu věřiteli. Existuje celá řada implementací specifických pro zemi/oblast a konkrétní implementace zpráv o převodu kreditu. Některé z nich se používají v rámci jedné země nebo oblasti a některé se stávají standardem. Jeden dobře zavedený globální standard je ISO 20022 a jeho iniciační zprávy, jako je například převod kreditu. Následující obrázek znázorňuje vztahy a pokrytí pro vybrané zprávy o převodu kreditu. 
@@ -53,7 +53,7 @@ Převod SEPA je platba od jedné společnosti nebo osoby pro jinou společnost n
 Formát platby platebního převodu pro evropské země je implementován pomocí funkce elektronického výkaznictví a metod plateb v aplikaci Microsoft Dynamics 365 Finance. Několik formátů převodu kreditu, které se používají v jiných regionech, již používá systém zastaralé platby. Mezi mnoha jinými formáty je dvanáct formátů převodu kreditu ISO 20022, které jsou k dispozici. Tyto formáty pro export odpovídají standardu SEPA ISO 20022 XML. Používají se ke generování platebních převodů jiného typu než euro pro země, kde se používají, a pro euro se používají platby podle určení ve verzi 8.2 pravidel přenosu, které vydává EPC. Než bude možné implementovat převody kreditu, obraťte se na vaši banku za účelem získání softwaru, který je nutný k načtení souborů elektronického bankovnictví. Tento software budete používat pro přenos souborů XML obsahujících platební příkazy do banky.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Jaké formáty převodu kreditu jsou aktuálně podporovány?
-Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
+Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na článek, který vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
 -   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).

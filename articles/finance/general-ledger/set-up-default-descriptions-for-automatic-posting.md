@@ -1,6 +1,6 @@
 ---
 title: Nastavení výchozích popisů pro automatické zaúčtování
-description: Toto téma popisuje jak nastavit výchozí text, který se používá k popisu účetních zápisů, které jsou automaticky zaúčtovány do hlavní knihy. Můžete nastavit výchozí text s popisem pomocí volného textu nebo výběrem pevných proměnných.
+description: Tento článek popisuje jak nastavit výchozí text, který se používá k popisu účetních zápisů, které jsou automaticky zaúčtovány do hlavní knihy. Můžete nastavit výchozí text s popisem pomocí volného textu nebo výběrem pevných proměnných.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 71982a7d5b1bb08d3e238646ea0b15f17260bdcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904492"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Nastavení výchozích popisů pro automatické zaúčtování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje jak nastavit výchozí text, který se používá k popisu účetních zápisů, které jsou automaticky zaúčtovány do hlavní knihy. Můžete nastavit výchozí text s popisem pomocí volného textu nebo výběrem pevných proměnných.
+Tento článek popisuje jak nastavit výchozí text, který se používá k popisu účetních zápisů, které jsou automaticky zaúčtovány do hlavní knihy. Můžete nastavit výchozí text s popisem pomocí volného textu nebo výběrem pevných proměnných.
 
 > [!NOTE]
-> U některých typů transakcí v některých zemích/oblastech lze také vložit text z polí, které se vztahují na tyto typy transakcí. Seznam typů transakcí a zemí a oblastí naleznete v části [Volitelné: Přídání dalšího textu do výchozího popisu](#optional-add-other-text-to-default-descriptions) dále v tomto tématu.
+> U některých typů transakcí v některých zemích/oblastech lze také vložit text z polí, které se vztahují na tyto typy transakcí. Seznam typů transakcí a zemí a oblastí naleznete v části [Volitelné: Přídání dalšího textu do výchozího popisu](#optional-add-other-text-to-default-descriptions) dále v tomto článku.
 
 ## <a name="set-up-default-descriptions"></a>Nastavit výchozí popisy
 
@@ -78,7 +78,7 @@ Tato možnost je k dispozici pro následující země či oblasti:
 
 ### <a name="add-text-to-default-descriptions"></a>Přidání dalšího textu do výchozích popisů
 
-Po dokončení kroků uvedených v části [Nastavení výchozích popisů](#set-up-default-descriptions) dříve v tomto tématu postupujte takto pro přidání dalšího textu do výchozích popisů.
+Po dokončení kroků uvedených v části [Nastavení výchozích popisů](#set-up-default-descriptions) dříve v tomto článku postupujte takto pro přidání dalšího textu do výchozích popisů.
 
 1. Na pevné záložce **Parametry** vyberte **Přidat**.
 2. V poli **Referenční tabulka** vyberte tabulku databáze, ze které chcete přidat data parametru do popisu.

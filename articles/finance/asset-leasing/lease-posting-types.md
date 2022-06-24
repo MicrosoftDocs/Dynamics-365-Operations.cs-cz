@@ -1,6 +1,6 @@
 ---
 title: Typy zaúčtování leasingu
-description: Toto téma popisuje typy účtování, které se používají pro transakce leasingu aktiv.
+description: Tento článek popisuje typy účtování, které se používají pro transakce leasingu aktiv.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6c06f68aebe7ed1ccc944793591202a9a221c42b
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 26917ed0017e43c2be5ee53e472ad57d12db0978
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889055"
 ---
 # <a name="lease-posting-types"></a>Typy zaúčtování leasingu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje typy účtování, které se používají pro transakce leasingu aktiv.
+Tento článek popisuje typy účtování, které se používají pro transakce leasingu aktiv.
 
 ## <a name="lease-asset"></a>Aktivum leasingu
 

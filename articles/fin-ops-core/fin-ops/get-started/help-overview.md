@@ -1,6 +1,6 @@
 ---
 title: Systém nápovědy (obsahuje video)
-description: Toto téma poskytuje přehled o systému nápovědy pro finanční a provozní aplikace.
+description: Tento článek poskytuje přehled o systému nápovědy pro finanční a provozní aplikace.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898362"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -83,7 +83,7 @@ Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní �
 
 ## <a name="contribute-to-the-documentation"></a>Přispívání do dokumentace
 
-Do dokumentace můžete přispívat a provádět v ní úpravy. Chcete-li začít, zvolte tlačítko **Upravit** (symbol tužky) na tématu. Následující video ukazuje, jak lze do dokumentace přispívat.
+Do dokumentace můžete přispívat a provádět v ní úpravy. Chcete-li začít, zvolte tlačítko **Upravit** (symbol tužky) na článku. Následující video ukazuje, jak lze do dokumentace přispívat.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Více informací najdete v části [Příručka pro přispěvatele k dokumentaci
 
 Průvodce úkolem je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) průvodce úkolem v podokně **Nápověda**. Po prvním zvolení průvodce záznamem úloh se v podokně **Nápověda** zobrazí podrobné pokyny pro úkol. K dispozici jsou lokalizovaní průvodci záznamem úloh.
 
-Společnost Microsoft vydala knihovny průvodců záznamem úloh pro verze produktů prostřednictvím vydání aplikace Dynamics 365 for Finance and Operations z prosince 2017. Část [Přístup k průvodcům úkolem z podokna Nápověda](#accessing-task-guides-from-the-help-pane) tohoto tématu popisuje, jak najít správné průvodce záznamem úloh pro daný produkt.
+Společnost Microsoft vydala knihovny průvodců záznamem úloh pro verze produktů prostřednictvím vydání aplikace Dynamics 365 for Finance and Operations z prosince 2017. Část [Přístup k průvodcům úkolem z podokna Nápověda](#accessing-task-guides-from-the-help-pane) tohoto článku popisuje, jak najít správné průvodce záznamem úloh pro daný produkt.
 
 ![Zobrazení pro čtení Průvodce záznamem úloh.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Chcete-li získat přístup k obsahu nápovědy, vyberte tlačítko **Nápověda
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Přístup k tématům nápovědy z podokna Nápověda
 
-Z podokna **Nápověda** můžete otevřít témata která se týkají klienta. Při prvním otevření podokna **Nápověda** se zobrazí karta **Nápověda** s tématy vztahujícími se ke stránce, kterou máte aktuálně otevřenou. Pokud nebyla nalezena žádná témata, můžete zadat klíčová slova pro upřesnění hledání. Když vyberete téma v podokně **Nápověda**, otevře se na nové kartě v prohlížeči.
+Z podokna **Nápověda** můžete otevřít témata která se týkají klienta. Při prvním otevření podokna **Nápověda** se zobrazí karta **Nápověda** s tématy vztahujícími se ke stránce, kterou máte aktuálně otevřenou. Pokud nebyla nalezena žádná témata, můžete zadat klíčová slova pro upřesnění hledání. Když vyberete článek v podokně **Nápověda**, otevře se na nové kartě v prohlížeči.
 
 > [!IMPORTANT]
 > Tato část se nevztahuje na Dynamics 365 Human Resources. Systém nápovědy pro aplikaci Human Resources se automaticky připojí k průvodcům záznamem úloh pro daný produkt. V aplikaci Human Resources navíc nelze vytvářet vlastní průvodce záznamem úloh.

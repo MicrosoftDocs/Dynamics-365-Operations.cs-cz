@@ -1,6 +1,6 @@
 ---
 title: Výpočet režijních nákladů
-description: Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.
+description: Tento článek popisuje typické procesy pro výpočet a přidělení režijních nákladů.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881984"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.
+Tento článek popisuje typické procesy pro výpočet a přidělení režijních nákladů.
 
 ## <a name="term-definition"></a>Definice termínu
 
@@ -1333,10 +1333,10 @@ Prvek nákladů | Objekt nákladů<br>CC099 | Objekt nákladů<br>CC001 | Objekt
 10001 Elektřina | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
 Neklasifikované | 0,00 |  |  |  |  |  |  |  |  |  |
 Pevné náklady | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variabilní náklady | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+Variabilní náklady | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Další informace naleznete v tématu [Zásady shrnutí nákladů a výpočet režijních nákladů](cost-rollup.md).
+> Tento článek popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Další informace naleznete v tématu [Zásady shrnutí nákladů a výpočet režijních nákladů](cost-rollup.md).
 
 
 

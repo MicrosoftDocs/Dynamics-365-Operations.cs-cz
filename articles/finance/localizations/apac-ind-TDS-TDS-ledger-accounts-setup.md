@@ -1,6 +1,6 @@
 ---
 title: Nastavení účtů hlavní knihy TDS
-description: Toto téma vysvětluje, jak nastavit účtu hlavní knihy pro funkci daně odečtené u zdroje (TDS).
+description: Tento článek vysvětluje, jak nastavit účtu hlavní knihy pro funkci daně odečtené u zdroje (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 329c950f31cd12faa335a2ab1c220d24f66919f4
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 227ed304c23f96cdbf4dbb4a07d028cd1e2758a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904463"
 ---
 # <a name="set-up-tds-ledger-accounts"></a>Nastavení účtů hlavní knihy TDS
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit účtu hlavní knihy pro funkci daně odečtené u zdroje (TDS). K nastavení účtů hlavní knihy pro TDS používáte stránku **Účtová osnova**.
+Tento článek vysvětluje, jak nastavit účtu hlavní knihy pro funkci daně odečtené u zdroje (TDS). K nastavení účtů hlavní knihy pro TDS používáte stránku **Účtová osnova**.
 
 1. Přejděte do části **Hlavní kniha \> Účtová osnova \> Účty \> Hlavní účty**.
 2. Na kartě **Přehled** vyberte **Alt + N** k vytvoření účtu hlavní knihy TDS a zadejte požadované údaje.

@@ -1,6 +1,6 @@
 ---
 title: Nastavení elektronických zpráv
-description: Toto téma poskytuje informace o tom, jak nastavit funkce elektronických zpráv (EM).
+description: Tento článek poskytuje informace o tom, jak nastavit funkce elektronických zpráv (EM).
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874544"
 ---
 # <a name="set-up-electronic-messages"></a>Nastavení elektronických zpráv
 
@@ -66,7 +66,7 @@ Následující tabulka popisuje pole na stránce **Stavy zprávy**.
 |---------------------|-------------|
 | Stav zprávy      | Zadejte jedinečný název stavu zprávy. Stavy zprávy slouží k určení stavu elektronická zprávy v každém okamžiku. Název, který zadáte, se zobrazí na stránce **elektronické zprávy** stránky a v protokolu, který s elektronickými zprávami souvisí. |
 | Popis         | Zadejte popis vybraného stavu zprávy. |
-| Typ odezvy       | Vyberte typ odpovědi stavu zprávy. Některé akce zpracování mohou mít více než jeden typ odezvy. Například akce typu **Webová služba** mohou vyústit buď v typ odpovědi **Úspěšně provedeno** nebo **Technická chyba** v závislosti na výsledku spuštění. V takovém případě definujte stavy zpráv pro oba typy odezvy. Další informace o typech akcí a s nimi souvisejících typech odezvy získáte v části [Typy akcí zpracování zpráv](#action-types) dále v tomto tématu. |
+| Typ odezvy       | Vyberte typ odpovědi stavu zprávy. Některé akce zpracování mohou mít více než jeden typ odezvy. Například akce typu **Webová služba** mohou vyústit buď v typ odpovědi **Úspěšně provedeno** nebo **Technická chyba** v závislosti na výsledku spuštění. V takovém případě definujte stavy zpráv pro oba typy odezvy. Další informace o typech akcí a s nimi souvisejících typech odezvy získáte v části [Typy akcí zpracování zpráv](#action-types) dále v tomto článku. |
 | Stav položky zprávy | Někdy musí mít stav elektronické zprávy ovlivňovat stav souvisejících položek zprávy. Vyberte stav zprávy položky v tomto poli, abyste ji mohli přidružit ke stavu zprávy. |
 | Odstranit vše        | Toto políčko zaškrtněte, pokud uživatelé budou moci odstranit elektronické zprávy s tímto stavem na stránce **elektronické zprávy**. |
 
@@ -240,7 +240,7 @@ Následující tabulky popisují pole na stránce **Akce zpracování zpráv**.
 
 | Pole                                     | popis |
 |-------------------------------------------|-------------|
-| Typ akce                               | Vyberte typ akce. Informace o dostupných možnostech naleznete v části [Typy akcí zpracování zpráv](#action-types) dále v tomto tématu. |
+| Typ akce                               | Vyberte typ akce. Informace o dostupných možnostech naleznete v části [Typy akcí zpracování zpráv](#action-types) dále v tomto článku. |
 | Mapování formátu                            | Vyberte formát elektronického výkaznictví, který by měl být volán pro akci. Toto pole je k dispozici pouze pro akce typu **Export elektronického výkaznictví**, **Import elektronického výkaznictví** a **Zpráva exportu elektronického výkaznictví**. |
 | Mapování formátu pro cestu URL               | Vyberte formát elektronického výkaznictví, který by měl být volán pro akci. Tento formát slouží k vytvoření cesty adresy URL, která bude přidána k základní internetové adrese zadané pro vybraný webový server. Toto pole je k dispozici pouze pro akce typu **Webová služba**. |
 | Typ položky zprávy                         | Vyberte typ záznamů, pro které by měla být akce vyhodnocována. Toto pole je k dispozici pro akce typu **Úroveň spuštění položky zprávy**, **Import elektronického výkaznictví** a **Export elektronického výkaznictví**, **Webová služba** a další typy. Necháte-li toto pole prázdné, vyhodnotí se všechny typy položek zpráv, které jsou definovány pro zpracování zpráv. |

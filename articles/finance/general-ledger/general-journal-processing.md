@@ -1,6 +1,6 @@
 ---
 title: Zpracování hlavního deníku
-description: Toto téma popisuje možnosti v aplikaci Microsoft Dynamics 365 Finance, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.
+description: Tento článek popisuje možnosti v aplikaci Microsoft Dynamics 365 Finance, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 2055c028f7bfe8edc9faec8f791fff2fbfe08bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896369"
 ---
 # <a name="general-journal-processing"></a>Zpracování hlavního deníku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje možnosti, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.  
+Tento článek popisuje možnosti, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.  
 
 ## <a name="journal-names"></a>Názvy deníků
 

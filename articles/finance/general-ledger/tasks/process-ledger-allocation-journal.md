@@ -1,6 +1,6 @@
 ---
 title: Zpracování deníku přidělení hlavní knihy
-description: Toto téma vysvětluje, jak zpracovat požadavek přidělení v aplikaci Dynamics 365 Finance.
+description: Tento článek vysvětluje, jak zpracovat požadavek přidělení v aplikaci Dynamics 365 Finance.
 author: aprilolson
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: b86f8f5d090d624e812d9e7e6c0bc0212e5e9716
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902422"
 ---
 # <a name="process-ledger-allocation-journal"></a>Zpracování deníku přidělení hlavní knihy
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak zpracovat požadavek na přidělení. Použijte stránku Požadavek na přidělení procesu k vytvoření deníku přidělování, který lze před zaúčtováním do hlavní knihy zkontrolovat a schválit nebo přímo zaúčtovat do hlavní knihy. Předtím, než budete moci vytvořit deník přidělení, je nejprve nutné mít aktivní alespoň jedno pravidlo přidělení hlavní knihy. Tento úkol využívá ukázkovou společnost USMF.
+Tento článek vysvětluje, jak zpracovat požadavek na přidělení. Použijte stránku Požadavek na přidělení procesu k vytvoření deníku přidělování, který lze před zaúčtováním do hlavní knihy zkontrolovat a schválit nebo přímo zaúčtovat do hlavní knihy. Předtím, než budete moci vytvořit deník přidělení, je nejprve nutné mít aktivní alespoň jedno pravidlo přidělení hlavní knihy. Tento úkol využívá ukázkovou společnost USMF.
 
 1. V navigačním podokně přejděte na **Hlavní kniha > Přidělení > Zpracovat požadavek na přidělení**.
 2. V poli **Pravidlo** vyberte požadovaný záznam v rozevírací nabídce.

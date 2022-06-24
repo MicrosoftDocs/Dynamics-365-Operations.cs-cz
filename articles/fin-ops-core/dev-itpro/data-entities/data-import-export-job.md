@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644452"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860157"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644452"
 Použijte pracovní prostor **Správa dat** k vytvoření a správě úloh importu a exportu dat v aplikaci . Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
 > [!NOTE]
-> V tomto tématu se předpokládá, že jste obeznámeni s [datovými entitami](data-entities.md).
+> V tomto článku se předpokládá, že jste obeznámeni s [datovými entitami](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Proces importu a exportu dat
 Import a export dat se skládá z následujících kroků.
@@ -48,7 +48,7 @@ Import a export dat se skládá z následujících kroků.
 5. Ověřte, zda úloha proběhla podle očekávání tím, že zkontrolujete historii úlohy.
 6. Vyčistěte tabulky fázování.
 
-Zbývající části tohoto tématu poskytují podrobnější informace o jednotlivých krocích postupu.
+Zbývající části tohoto článku poskytují podrobnější informace o jednotlivých krocích postupu.
 
 > [!NOTE]
 > Chcete-li obnovit formulář Import/export dat a zobrazit poslední vývoj, použijte ikonu obnovení formuláře. Obnovení úrovně prohlížeče se nedoporučuje, protože přeruší všechny úlohy importu/exportu, které nejsou spuštěny v dávce.

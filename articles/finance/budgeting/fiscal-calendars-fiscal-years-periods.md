@@ -1,6 +1,6 @@
 ---
 title: Fiskální kalendář, fiskální roky a období
-description: Toto téma popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
+description: Tento článek popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
 author: aprilolson
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d50db3a96d6267f59dd5a99c039dd8fc8b44079a
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a1583df4650d0b36ecc2cb0d3e2d3a410aa807ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909091"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Fiskální kalendář, fiskální roky a období
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
+Tento článek popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
 
 Fiskální kalendáře poskytují systém pro finanční aktivity organizace. Každý fiskální kalendář obsahuje jeden nebo více fiskálních roků a každý fiskální rok obsahuje více období. Fiskální kalendáře mohou být založeny na kalendářním roce od 1. ledna po 31. prosince nebo libovolných datech, která vyberete. V některých organizacích vyberte například fiskálního kalendář, které začíná datem 1. července jednoho roku a končí 30. června následujícího roku. 
 

@@ -1,6 +1,6 @@
 ---
 title: Odstraňování problémů s nastavením Finance Insights
-description: Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
+description: Tento článek uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846908"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Odstraňování problémů s nastavením Finance Insights
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
+Tento článek uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Příznak: Proč nemohu namapovat cílový sloupec šablony Data Integration Přehledy plateb odběratele?
 
@@ -121,4 +121,4 @@ Funkce **Návrh rozpočtu** vyžaduje minimálně tři roky rozpočtových nebo 
 
 ### <a name="resolution"></a>Řešení
 
-Prostředí dosáhlo maximálního limitu tabulky služeb Data Lake. Další informace o limitu naleznete v oddílu **Povolit změny dat téměř v reálném čase** tématu [Přehled exportu do Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+Prostředí dosáhlo maximálního limitu tabulky služeb Data Lake. Další informace o limitu naleznete v oddílu **Povolit změny dat téměř v reálném čase** článku [Přehled exportu do Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

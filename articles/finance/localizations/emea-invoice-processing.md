@@ -1,6 +1,6 @@
 ---
 title: Zpracování fakturace
-description: Toto téma obsahuje informace o zpracování faktur pro východní Evropu.
+description: Tento článek obsahuje informace o zpracování faktur pro východní Evropu.
 author: EvgenyPopovMBS
 ms.date: 02/02/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9eb4f3ace8c6295e82ba9ab44ef49baa0d10e96b
-ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
+ms.openlocfilehash: edb50ddebeca18653a318596e9c291a3f3df6d9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8087814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848442"
 ---
 # <a name="invoice-processing"></a>Zpracování fakturace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma stručně popisuje některé scénáře specifické pro určité země či oblasti, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Toto téma poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
+Tento článek stručně popisuje některé scénáře specifické pro určité země či oblasti, jako je například intrakomunitární daň z přidané hodnoty (DPH) a odložená daň. Právní požadavky pro některé evropské země mají vliv na proces fakturace. Tento článek poskytuje také informace o zpracování faktur odběratelů a dodavatelů pro tyto země. 
 <table>
 <thead>
 <tr>

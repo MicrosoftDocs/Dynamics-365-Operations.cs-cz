@@ -1,6 +1,6 @@
 ---
 title: Povolení výpočtu opožděné daně v denících
-description: Toto téma vysvětluje, jak pomocí funkce Povolit výpočet výpočet opožděné daně v deníku zvýšit výkonnost výpočtu daně, pokud je objem řádků deníku velmi velký.
+description: Tento článek vysvětluje, jak pomocí funkce Povolit výpočet výpočet opožděné daně v deníku zvýšit výkonnost výpočtu daně, pokud je objem řádků deníku velmi velký.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887912"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Povolení výpočtu opožděné daně v denících
 [!include [banner](../includes/banner.md)]
 
 
-V tomto tématu je vysvětleno, jak lze zpozdit výpočet DPH v denících. Tato schopnost pomáhá zvýšit výkon při výpočtech daně v případě, že existuje mnoho řádků deníku.
+V tomto článku je vysvětleno, jak lze zpozdit výpočet DPH v denících. Tato schopnost pomáhá zvýšit výkon při výpočtech daně v případě, že existuje mnoho řádků deníku.
 
 Ve výchozím nastavení jsou částky DPH na řádcích deníku vypočteny při aktualizaci polí vztahujících se k dani. Mezi tato pole patří pole pro skupiny DPH a skupiny DPH položky. Jakákoli aktualizace řádku deníku způsobí přepočítání částek daně pro všechny řádky deníku. Ačkoli toto chování pomáhá uživateli zobrazit částky daně vypočtené v reálném čase, může také ovlivňovat výkonnost v případě, že je počet řádků deníku velmi velký.
 

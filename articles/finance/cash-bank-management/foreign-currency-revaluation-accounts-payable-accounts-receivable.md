@@ -1,6 +1,6 @@
 ---
 title: Přecenění měny pro závazky a pohledávky
-description: Toto téma poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky.
+description: Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906377"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Přecenění měny pro závazky a pohledávky
 
 [!include [banner](../includes/banner.md)]
 
-Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Toto téma poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky. 
+Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky. 
 
 Teoretická hodnota nebo účetní hodnota otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Chcete-li aktualizovat hodnotu otevřených transakcí v modulu Závazky a pohledávky, spusťte proces přecenění cizí měny. Přecenění cizí měny lze spustit pro závazky a pohledávky. Proces používá nový směnný kurz pro přecenění otevřených částek nebo nevyrovnaných částek k určitému datu. Rozdíly mezi původními zaúčtovanými částkami a přehodnocenými částkami způsobí nerealizovaný zisk nebo ztrátu každé otevřené transakce. Dílčí knihy pro závazky a pohledávky účty jsou pak aktualizovány, aby odrážely nerealizovaný zisk nebo ztrátu a účetní položka je zaúčtována do hlavní knihy.
 

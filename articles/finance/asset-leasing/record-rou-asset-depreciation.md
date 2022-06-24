@@ -1,6 +1,6 @@
 ---
 title: Záznam odpisu používaného majetku (Preview)
-description: Toto téma vysvětluje, jak vytvořit položku deníku pro amortizaci požadovanou pro leasingy, které jsou uznány v rozvaze organizace.
+description: Tento článek vysvětluje, jak vytvořit položku deníku pro amortizaci požadovanou pro leasingy, které jsou uznány v rozvaze organizace.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ebac6c8d008babec93061071414579eec3a73223
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 93e521cf409af4c01d625f27bdd7a7564e471bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903269"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Záznam odpisu používaného majetku (Preview)
 
@@ -28,13 +28,13 @@ ms.locfileid: "8727699"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-U leasingů, které jsou vykázány v rozvaze organizace, se používaný majetek (ROU) odepisuje měsíčně. Toto téma vysvětluje, jak vytvořit položku deníku pro amortizaci. Amortizace zaúčtuje na vrub účtu hlavní knihy výdajů a připíše na účet akumulovaných odpisů na základě nastavení vašeho profilu účtování a typu pronájmu. Tyto položky lze vytvořit pro každý leasing nebo je lze vytvořit pro více leasingů pomocí funkce dávkového deníku.
+U leasingů, které jsou vykázány v rozvaze organizace, se používaný majetek (ROU) odepisuje měsíčně. Tento článek vysvětluje, jak vytvořit položku deníku pro amortizaci. Amortizace zaúčtuje na vrub účtu hlavní knihy výdajů a připíše na účet akumulovaných odpisů na základě nastavení vašeho profilu účtování a typu pronájmu. Tyto položky lze vytvořit pro každý leasing nebo je lze vytvořit pro více leasingů pomocí funkce dávkového deníku.
 
 ## <a name="asset-depreciation-schedule"></a>Plánu odpisu majetku
 
 1. Na stránce **Souhrn leasingu** vyberte leasing. Pak vyberte **Knihy \> Plán odpisu majetku** k otevření stránky **Plán odpisu majetku**.
 
-    Položka deníku výdajů na odpisy používaného majetku je založena na částce ve sloupci **Náklady na odpisy**. Příklad pokynů pro dodržování účetních standardů získáte v části [Výpočet nákladů na amortizaci používaného majetku u finančního leasingu](#calculation-of-rou-asset-amortization-expense-for-finance-leases) dále v tomto tématu.
+    Položka deníku výdajů na odpisy používaného majetku je založena na částce ve sloupci **Náklady na odpisy**. Příklad pokynů pro dodržování účetních standardů získáte v části [Výpočet nákladů na amortizaci používaného majetku u finančního leasingu](#calculation-of-rou-asset-amortization-expense-for-finance-leases) dále v tomto článku.
     
 2. Vyberte období odpisování a poté vyberte **Vytvořit deník**. Zobrazí se zpráva s oznámením, že byl vytvořen deník, který bude použit k záznamu odpisů.
 3. Vyberte **Deníky \> Deníky leasingu majetku** k otevření stránky **Deník leasingu majetku**, kde si můžete zobrazit deníkovou položku výdajů, která byla vytvořena.

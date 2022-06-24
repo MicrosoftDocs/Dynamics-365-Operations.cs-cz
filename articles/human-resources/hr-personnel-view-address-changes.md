@@ -1,6 +1,6 @@
 ---
 title: Zobrazení a správa změn adres
-description: Toto téma vysvětluje, jak si můžete prohlížet a spravovat změny adres ve službě Dynamics 365 Human Resources.
+description: Tento článek vysvětluje, jak si můžete prohlížet a spravovat změny adres ve službě Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899578"
 ---
 # <a name="view-and-manage-address-changes"></a>Zobrazení a správa změn adres
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695837"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma vysvětluje, jak si můžete prohlížet a spravovat změny adres na stránce **Upravit osobní údaje** (kterou otevřete z pracovniho prostoru **Samoobsluha pro zaměstnance**) nebo na stránce podrobností **Pracovník** v Dynamics 365 Human Resources.
+Tento článek vysvětluje, jak si můžete prohlížet a spravovat změny adres na stránce **Upravit osobní údaje** (kterou otevřete z pracovniho prostoru **Samoobsluha pro zaměstnance**) nebo na stránce podrobností **Pracovník** v Dynamics 365 Human Resources.
 
 Mnoho organizací požaduje, aby zaměstnanci sami spravovali své osobní údaje. Můžete povolit uživatelům aktualizovat svou adresu v **Zaměstnanecká samoobsluha** pracovním prostoru. Poté můžete tyto změny sledovat v **Správa zaměstnanců** pracovním prostoru. Chcete-li použít tuto funkci, musíte určit počet dní, ve kterých chcete zobrazit změny na stránce **Parametry lidských zdrojů**.
 

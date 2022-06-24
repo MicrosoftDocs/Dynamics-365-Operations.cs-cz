@@ -1,6 +1,6 @@
 ---
 title: Jeden doklad se záznamy několika odběratelů nebo dodavatelů
-description: Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 Finance, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání.
+description: Tento článek poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 Finance, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889084"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden doklad se záznamy několika odběratelů nebo dodavatelů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání. 
+Tento článek poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání. 
 
 Běžné příklady, kdy se jeden doklad se záznamy používá pro několika odběratelů nebo dodavatelů, zahrnují převody zůstatku mezi odběrateli a vzájemných zůstatků mezi odběrateli a dodavateli v rámci stejné organizace. 
 
@@ -35,7 +35,7 @@ Doklad obsahující více než jednoho odběratele nebo dodavatele lze zadat pom
 -   Používání dokladu s více řádky, kde neexistuje žádný protiúčet hlavní knihy, s více než jedním odběratelem nebo dodavatelem.
 -   Zadání dokladu s účtem a protiúčtem, ať jde o dodavatele/dodavatele, odběratele/odběratele, odběratele/dodavatele nebo odběratele/dodavatele.
 
-Toto téma popisuje, jak se zpracovává vyrovnání při zaúčtování jednoho dokladu několika odběratelů nebo dodavatelů. Toto téma dále obsahuje postupy, které vám pomohou pochopit, jak se vyhnout používání jednoho dokladu se záznamy několika odběratelů nebo dodavatelů. Zejména uvádíme příklady, které ilustrují dva běžné scénáře vyrovnání ovlivněné použitím jednoho dokladu se záznamy několika odběratelů nebo dodavatelů:
+Tento článek popisuje, jak se zpracovává vyrovnání při zaúčtování jednoho dokladu několika odběratelů nebo dodavatelů. Tento článek dále obsahuje postupy, které vám pomohou pochopit, jak se vyhnout používání jednoho dokladu se záznamy několika odběratelů nebo dodavatelů. Zejména uvádíme příklady, které ilustrují dva běžné scénáře vyrovnání ovlivněné použitím jednoho dokladu se záznamy několika odběratelů nebo dodavatelů:
 
 -   Účtování platební slevy
 -   Účtování přecenění

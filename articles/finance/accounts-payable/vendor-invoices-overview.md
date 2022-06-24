@@ -1,6 +1,6 @@
 ---
 title: Přehled faktur dodavatele
-description: V tomto tématu jsou obecné informace o fakturách dodavatele.
+description: V tomto článku jsou obecné informace o fakturách dodavatele.
 author: abruer
 ms.date: 02/25/2022
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: b88390085d86956c38c0fc167395509d0c54f860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894164"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -30,7 +30,7 @@ ms.locfileid: "8358410"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na platbu za produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
+V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na platbu za produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
 ## <a name="vendor-invoices"></a>Faktury dodavatele
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurace prostředí nápovědy pro finanční a provozní aplikace
-description: Toto téma poskytuje informace o součástech systému nápovědy pro některé aplikace Microsoft Dynamics 365.
+description: Tento článek poskytuje informace o součástech systému nápovědy pro některé aplikace Microsoft Dynamics 365.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900122"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro finanční a provozní aplikace
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071001"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-V tomto tématu najdete přehled součástí systému nápovědy pro finanční a provozní aplikace, jako je Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Human Resources. Toto téma také vysvětluje, jak tyto komponenty propojit, a poskytuje shrnutí procesu vytváření vlastní nápovědy.
+V tomto článku najdete přehled součástí systému nápovědy pro finanční a provozní aplikace, jako je Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Human Resources. Tento článek také vysvětluje, jak tyto komponenty propojit, a poskytuje shrnutí procesu vytváření vlastní nápovědy.
 
 ## <a name="help-architecture"></a>Architektura nápovědy
 

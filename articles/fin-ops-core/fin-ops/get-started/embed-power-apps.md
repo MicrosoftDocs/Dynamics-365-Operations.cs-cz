@@ -1,6 +1,6 @@
 ---
-title: Vložit aplikace plátna z Power Apps
-description: Toto téma popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
+title: Vložení aplikací plátna z Power Apps
+description: Tento článek popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898391"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
@@ -33,7 +33,7 @@ Další informace o začlenění aplikací plátna se dozvíte v krátkém videu
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Přidání vložené aplikace plátna Power Apps na stránku
 
-Před vložením aplikace plátna z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Toto téma neobsahuje podrobný popis procesu vytváření aplikací. Pokud jsou pro vás Power Apps novinkou, přečtěte si [dokumentaci Power Apps](/powerapps/).
+Před vložením aplikace plátna z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Tento článek neobsahuje podrobný popis procesu vytváření aplikací. Pokud jsou pro vás Power Apps novinkou, přečtěte si [dokumentaci Power Apps](/powerapps/).
 
 Existují tři způsoby, jak vložit aplikaci plátna do finanční a provozní aplikace. Můžete použít přístup, který nejlépe odpovídá vašemu scénáři. 
 
@@ -60,7 +60,7 @@ Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps na exis
 
     - Pokud bude do aplikace získán přístup pomocí tlačítka nabídky **Power Apps**, můžete vybrat tlačítko nabídky **Power Apps** v podokně akcí a poté vybrat **Přidat aplikaci**.
 
-3. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto tématu.
+3. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto článku.
 4. Poté, co potvrdíte, že je konfigurace správná, vyberte **Vložit**.
 
     - Pokud je funkce **Uložená zobrazení** vypnutá, budete vyzváni k obnovení prohlížeče, aby se zobrazila vložená aplikace.
@@ -76,7 +76,7 @@ Možná chcete vložit aplikaci plátna z řídicího panelu, pokud aplikace nes
 1. Otevřete řídicí panel.
 2. Vyberte a podržte (nebo klikněte pravým tlačítkem) stránku, vyberte **Přizpůsobit** a potom vyberte **Přidat stránku**.
 3. V podokně **Přidat stránku** Vyberte **Power Apps**.
-4. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto tématu.
+4. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto článku.
 5. Vyberte **Uložit** pro přidání aplikace na řídicí panel jako nové dlaždice.
 6. Vyberte novou dlaždici na řídicím panelu a potvrďte, že se aplikace plátna zobrazí podle očekávání.
 
@@ -86,7 +86,7 @@ Když vložíte aplikaci plátna, musíte nastavit následující parametry:
 
 - **Název** – Zadejte text, který by se měl zobrazit pro tlačítko nebo kartu, která bude obsahovat vloženou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
 - **ID aplikace** - označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na webu [make.powerapps.com](https://make.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
-- **Vstupní kontext pro aplikaci** - můžete volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Informace o přístupu aplikace k datům odeslaným z finančních a provozních aplikací naleznete v části tohoto tématu nazvané [Vytvoření aplikace, která využívá data z finančních a provozních aplikací](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
+- **Vstupní kontext pro aplikaci** - můžete volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Informace o přístupu aplikace k datům odeslaným z finančních a provozních aplikací naleznete v části tohoto článku nazvané [Vytvoření aplikace, která využívá data z finančních a provozních aplikací](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
 
     Počínaje verzí 10.0.19 je aktuální právnická osoba také předána jako kontext do aplikace plátna prostřednictvím parametru URL **cmp**. Toto chování neovlivní cílovou aplikaci plátna, dokud tato aplikace tyto informace nepoužije.
 
@@ -145,7 +145,7 @@ Následovně můžete upravit konfiguraci vložených aplikací:
 
 Poté, co byla vložena aplikace na stránku, existuje několik způsobů, jak ji odebrat v případě potřeby:
 
-- Přejděte do podokna **Upravit aplikaci** podle pokynů v části [Úpravy vložené aplikace](#editing-an-embedded-app) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené aplikaci, kterou chcete odebrat, a klepněte na tlačítko **Odstranit**.
+- Přejděte do podokna **Upravit aplikaci** podle pokynů v části [Úpravy vložené aplikace](#editing-an-embedded-app) dříve v tomto článku. Potvrďte, že se v podokně zobrazí informace o vložené aplikaci, kterou chcete odebrat, a klepněte na tlačítko **Odstranit**.
 - Pokud byla integrovaná aplikace přidána z řídicího panelu, otevřete řídicí panel, vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici, která je přidružena k aplikaci plátna, vyberte **Přizpůsobit** a poté vyberte **Odebrat stránku**. 
 - Vzhledem k tomu, že vložená aplikace je uložena jako údaj o individuálním nastavení, clearing přizpůsobení stránky rovněž odstraní všechny aplikace vložené na této stránce. Poznámka: zrušení zaškrtnutí přizpůsobení stránky je trvalé a nelze je vrátit zpět. Chcete-li odebrat vaše individuální nastavení na stránce, vyberte **Možnosti** a klikněte na **Přizpůsobit tuto stránku** a nakonec na **Vymazat**. Po aktualizaci prohlížeče budou odebrána všechna předchozí individuální nastavení pro tuto stránku. Další informace o optimalizaci stránek pomocí individuálního nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
@@ -153,7 +153,7 @@ Poté, co byla vložena aplikace na stránku, existuje několik způsobů, jak j
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Vývojář] Modelování aplikace plátna na formuláři
 
-I když se toto téma zaměřuje na vkládání aplikací plátna pomocí personalizace, vývojáři mají také možnost přidat aplikaci plátna do formuláře pomocí vývojářského prostředí Visual Studio. Chcete-li to provést, jednoduše do formuláře přidejte PowerAppsHostControl. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
+I když se tento článek zaměřuje na vkládání aplikací plátna pomocí personalizace, vývojáři mají také možnost přidat aplikaci plátna do formuláře pomocí vývojářského prostředí Visual Studio. Chcete-li to provést, jednoduše do formuláře přidejte PowerAppsHostControl. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurace kontrolorů výdajů
-description: Toto téma popisuje, jak pomocí kontrolorů výdajů dynamicky vybrat uživatele, kterému je přiřazen úkol pracovního postupu, schválení nebo ruční rozhodnutí.
+description: Tento článek popisuje, jak pomocí kontrolorů výdajů dynamicky vybrat uživatele, kterému je přiřazen úkol pracovního postupu, schválení nebo ruční rozhodnutí.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863216"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurace kontrolorů výdajů
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Když je vytvořena nákupní objednávka, pole **Projekt** musí být zadáno. 
 
 ## <a name="set-up-expenditure-reviewers"></a>Nastavení recenzentů výdajů
 
-V tomto příkladu můžete nakonfigurovat kontrolora výdajů nákupní žádanky. Chcete-li konfigurovat další typy kontrolorů výdajů, nahraďte navigační cestu v kroku 1 příslušnou cestou z tabulky v části [Druhy kontrolorů výdajů](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) dříve v tomto tématu.
+V tomto příkladu můžete nakonfigurovat kontrolora výdajů nákupní žádanky. Chcete-li konfigurovat další typy kontrolorů výdajů, nahraďte navigační cestu v kroku 1 příslušnou cestou z tabulky v části [Druhy kontrolorů výdajů](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) dříve v tomto článku.
 
 1. Přejděte na **Zásobování a získávání zdrojů \> Nastavení \> Zásady \> Recenzenti výdajů nákupních žádanek**.
 2. Na stránce **Recenzenti výdajů nákupní žádanky** vyberte **Nový**.

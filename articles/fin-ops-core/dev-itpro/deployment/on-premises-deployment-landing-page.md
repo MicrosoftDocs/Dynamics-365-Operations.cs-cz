@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Místní nasazení
-description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
+description: Tento článek obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867405"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
 [!include [banner](../includes/banner.md)]
 
-Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Toto téma obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
+Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozhodnete pro typ místního nasazení, budou se požadavky na systém, rozměry hardwaru a funkce lišit od cloudového nasazení. Tento článek obsahuje odkazy na obsah s informacemi specifickými pro místní nasazení.
 
 ## <a name="get-started"></a>Začínáme
 - [Přehled místního nasazení](on-premises-overview.md)

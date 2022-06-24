@@ -1,6 +1,6 @@
 ---
 title: Použití služby elektronické fakturace k importu faktur dodavatele
-description: Toto téma poskytuje informace o tom, jak importovat faktury dodavatele pomocí služby elektronické fakturace.
+description: Tento článek poskytuje informace o tom, jak importovat faktury dodavatele pomocí služby elektronické fakturace.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865577"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Použití služby elektronické fakturace k importu faktur dodavatele
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983816"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou začít s iportem faktur dodavatele pomocí služby elektronické fakturace. Provede vás kroky konfigurace v Regulatory Configuration Services (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management, které musíte dodržovat, abyste mohli přijímat elektronické faktury od dodavatelů.
+Tento článek poskytuje informace, které vám pomohou začít s iportem faktur dodavatele pomocí služby elektronické fakturace. Provede vás kroky konfigurace v Regulatory Configuration Services (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management, které musíte dodržovat, abyste mohli přijímat elektronické faktury od dodavatelů.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Nastavení importu faktur dodavatele v RCS
 Chcete -li nastavit import faktury dodavatele v RCS, postupujte takto:

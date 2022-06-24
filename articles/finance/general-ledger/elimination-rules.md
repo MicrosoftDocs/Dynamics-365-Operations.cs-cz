@@ -1,6 +1,6 @@
 ---
 title: Pravidla eliminace
-description: V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
+description: V tomto článku jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864303"
 ---
 # <a name="elimination-rules"></a>Pravidla eliminace
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
+V tomto článku jsou informace o pravidlech eliminace a různých možnostech pro vytváření sestav o eliminacích.
 
 Transakce eliminací se používají v případech, kdy nadřazená právnická osoba obchoduje s některými dceřinými právnickými osobami a přitom je používáno konsolidované finanční vykazování. Konsolidované finanční výkazy musí zahrnovat pouze transakce, které probíhají mezi konsolidovanou organizací a dalšími entitami mimo dané organizace. Transakce mezi právnickými osobami, které jsou součástí stejné organizace, je proto třeba odebrat nebo odstranit z hlavní knihy tak, aby se nezobrazily ve finančních výkazech. Existuje několik způsobů, jak vykázat eliminace:
 
@@ -34,7 +34,7 @@ Transakce eliminací se používají v případech, kdy nadřazená právnická 
 -   Finanční sestavy slouží k zobrazení účtů a dimenzí eliminací u konkrétního řádku nebo sloupce.
 -   Samostatnou právnickou osobu lze použít k zaúčtování položek transakce ke sledování eliminací.
 
-Toto téma se zaměřuje na pravidla eliminace, která jsou zpracována ve společnosti konsolidace nebo eliminace. Můžete konfigurovat pravidla eliminace pro vytvoření transakcí eliminace u právnické osoby, která je určena jako cílová právnická osoba pro eliminace. Tato cílová právnická osoba se také nazývá právnická osoba eliminace. Deníky eliminace lze vygenerovat během procesu konsolidací nebo pomocí návrhu deníku eliminace. Před nastavením pravidel eliminace se doporučuje důkladné obeznámení s následujícími termíny:
+Tento článek se zaměřuje na pravidla eliminace, která jsou zpracována ve společnosti konsolidace nebo eliminace. Můžete konfigurovat pravidla eliminace pro vytvoření transakcí eliminace u právnické osoby, která je určena jako cílová právnická osoba pro eliminace. Tato cílová právnická osoba se také nazývá právnická osoba eliminace. Deníky eliminace lze vygenerovat během procesu konsolidací nebo pomocí návrhu deníku eliminace. Před nastavením pravidel eliminace se doporučuje důkladné obeznámení s následujícími termíny:
 
 -   **Zdrojová právnická osoba** – právnická osoba, pro kterou byly zaúčtovány částky, které jsou právě eliminovány.
 -   **Cílová právnická osoba** - právnická osoba, pro kterou jsou zaúčtována pravidla eliminace.

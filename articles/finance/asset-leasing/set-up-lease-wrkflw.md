@@ -1,6 +1,6 @@
 ---
 title: Nastavení pracovních postupů schvalování leasingu
-description: V tématu je vysvětleno, jak nastavit pracovní postup schválení, který bude spuštěn při vytvoření nového leasingu.
+description: V článku je vysvětleno, jak nastavit pracovní postup schválení, který bude spuštěn při vytvoření nového leasingu.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f7781fcb643d678fed528af947efb01911899f54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0162e559f8aaec248cfb9042b0152788536c9fc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870271"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Nastavení pracovních postupů schvalování leasingu
 
 [!include [banner](../includes/banner.md)]
 
-V tématu je vysvětleno, jak nastavit pracovní postup schválení, který bude spuštěn při vytvoření nového leasingu. Informace o tom, jak používat pracovní postup, najdete v části [Použití pracovních postupů schvalování leasingu](use-create-lease-wrkflw.md). 
+V článku je vysvětleno, jak nastavit pracovní postup schválení, který bude spuštěn při vytvoření nového leasingu. Informace o tom, jak používat pracovní postup, najdete v části [Použití pracovních postupů schvalování leasingu](use-create-lease-wrkflw.md). 
 
 1. Přejděte na **Leasing majetku \> Nastavení \> Pracovní postup leasingu**.
 2. Na stránce **Pracovní postup leasingu** zvolte **Nový**.

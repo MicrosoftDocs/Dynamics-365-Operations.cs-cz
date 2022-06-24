@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (26. září 2020)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 26. září 2020.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 26. září 2020.
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1b7a89ae8a2132c8548d9451aa235d1bccb88809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874239"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (26. září 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8061377"
 
 
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
 Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -46,9 +46,9 @@ V této verzi je všeobecně dostupná následující funkce:
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem je k vám dostat tyto informace co nejdříve. Mohou existovat aktualizace tohoto tématu zahrnující opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem je k vám dostat tyto informace co nejdříve. Mohou existovat aktualizace tohoto článku zahrnující opravy chyb, které se dostaly do sestavení poté, co bylo tento článek původně publikován.
 
-| Číslo problému | Výdej | popis |
+| Číslo problému | Problém | Popis |
 | --- | --- | --- |
 | 469495 | Aktualizace výchozí mřížky a dialogového okna finančních dimenzí | Mřížka a dialogové okno finančních dimenzí jsou v aplikaci Human Resources aktualizovány. |
 | 474887 | Pracovní položka žádosti o pracovní volno otevře nesprávný odkaz v ručním rozhodnutí | Pokud konfigurace pracovního postupu obsahuje ruční rozhodnutí, přechod na žádost o pracovní volno z části **Pracovní položky přiřazené mně** otevře nesprávný odkaz a zobrazí buď prázdný formulář nebo žádost o pracovní volno vytvořenou aktuálním uživatelem namísto toho, který jim byl přidělen pro ruční rozhodnutí. |

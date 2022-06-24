@@ -1,6 +1,6 @@
 ---
 title: Obsah školení organizace v Power BI
-description: Toto téma popisuje obsah Finance and Operations – Školení organizace Power BI.
+description: Tento článek popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892414"
 ---
 # <a name="organizational-training-power-bi-content"></a>Obsah školení organizace v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah Finance and Operations – Školení organizace Power BI.
+Tento článek popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Sestavy, které jsou součástí balíčku obsahu
 Po připojení balíčku obsahu k datům zobrazí sestavy dat vaší organizace. Pokud jste aplikaci Microsoft Power BI nikdy předtím nepoužívali, vyhledejte si další informace v tématu [Řízená výuka pro Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Sestavy, které jsou součástí balíčku obsahu, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.

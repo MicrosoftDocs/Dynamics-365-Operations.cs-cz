@@ -1,8 +1,8 @@
 ---
 title: Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
-description: Toto téma obsahuje informace o způsobu použití typu vypočítaného pole pro zdroje dat ER.
+description: Tento článek obsahuje informace o způsobu použití typu vypočítaného pole pro zdroje dat ER.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934698"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak můžete vytvořit zdroj dat Elektronického vykazování (ER) pomocí typu **Vypočítaného pole**. Tento zdroj dat může obsahovat výraz ER, který po spuštění může být řízen hodnotami argumentů parametrů, které jsou nakonfigurovány ve vazbě, která volá tento zdroj dat. Konfigurací parametrizovaných volání takového zdroje dat můžete znovu použít jeden zdroj dat v mnoha vazbách, čímž snížíte celkový počet datových zdrojů, které musí být nakonfigurovány v mapování modelu ER nebo ve formátech ER. Také zjednodušuje konfigurovanou komponentu ER, která snižuje náklady na údržbu a náklady na použití ostatních odběratelů.
+V tomto článku je vysvětleno, jak můžete vytvořit zdroj dat Elektronického vykazování (ER) pomocí typu **Vypočítaného pole**. Tento zdroj dat může obsahovat výraz ER, který po spuštění může být řízen hodnotami argumentů parametrů, které jsou nakonfigurovány ve vazbě, která volá tento zdroj dat. Konfigurací parametrizovaných volání takového zdroje dat můžete znovu použít jeden zdroj dat v mnoha vazbách, čímž snížíte celkový počet datových zdrojů, které musí být nakonfigurovány v mapování modelu ER nebo ve formátech ER. Také zjednodušuje konfigurovanou komponentu ER, která snižuje náklady na údržbu a náklady na použití ostatních odběratelů.
 
 ## <a name="prerequisites"></a>Předpoklady
-Pro dokončení příkladů v tomto tématu musíte mít následující přístup:
+Pro dokončení příkladů v tomto článku, musíte mít následující přístup:
 
 - Přístup k jedné z těchto rolí:
 
@@ -46,10 +46,10 @@ Je také nutné stáhnout a lokálně uložit následující soubory.
 
 | **Obsah**                           | **Název souboru**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Vzorová konfigurace datového modelu elektronického výkaznictví    | [Model pro informace o volání s parametry calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Vzorová konfigurace metadat elektronického výkaznictví      | [Metadata pro informace o volání s parametry calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Vzorová konfigurace mapování elektronického výkaznictví | [Mapování pro informace o volání s parametry calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Vzorová konfigurace formátu elektronického výkaznictví        | [Formát pro informace o volání s parametry calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Vzorová konfigurace datového modelu elektronického výkaznictví    | [Model pro informace o volání s parametry calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Vzorová konfigurace metadat elektronického výkaznictví      | [Metadata pro informace o volání s parametry calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Vzorová konfigurace mapování elektronického výkaznictví | [Mapování pro informace o volání s parametry calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Vzorová konfigurace formátu elektronického výkaznictví        | [Formát pro informace o volání s parametry calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Přihlaste se k instanci RCS.
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Nejprve musíte v RCS dokončit krok v proceduře [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
@@ -306,7 +306,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 Chcete-li se ujistit, že nakonfigurovaná počítaná pole fungují správně, můžete spustit počáteční a vylepšené formáty ER.
 
 ### <a name="import-er-configurations"></a>Import konfigurací ER
-Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS**. Pokud jste již provedli kroky v tématu, [Import konfigurací elektronického výkaznictví (ER) z Regulatory Configuration Services (RCS)](rcs-download-configurations.md), použijte nakonfigurované úložiště ER pro import konfigurací popsaných dříve v tomto tématu do vašeho prostředí. V opačném případě postupujte takto:
+Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS**. Pokud jste již provedli kroky v článku, [Import konfigurací elektronického výkaznictví (ER) z Regulatory Configuration Services (RCS)](rcs-download-configurations.md), použijte nakonfigurované úložiště ER pro import konfigurací popsaných dříve v tomto článku do vašeho prostředí. V opačném případě postupujte takto:
 
 1. Vyberte společnost **DEMF** a na výchozím řídicím panelu vyberte možnost **Elektronické vykazování**.
 2. Vyberte **Konfigurace vykazování**.

@@ -1,6 +1,6 @@
 ---
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
-description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
+description: Tento článek popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854807"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811413"
 
 Můžete navrhnout konfiguraci formátu [elektronického výkaznictví](general-electronic-reporting.md) s komponentou formátu elektronického výkaznictví, kterou můžete nakonfigurovat tak, aby generovala odchozí dokument ve formátu sešitu Microsoft Excel. K tomuto účelu musí být použity specifické komponenty formátu elektronického výkaznictví.
 
-Chcete-li se o této funkci dozvědět více, postupujte podle kroků v tématu [Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md).
+Chcete-li se o této funkci dozvědět více, postupujte podle kroků v článku [Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Přidání nového formátu elektronického výkaznictví
 
@@ -263,7 +263,7 @@ Pro jednu komponentu **List** můžete přidat několik komponent **Zápatí**, 
 
 Pod přidanou komponentu **Zápatí** přidejte požadované vnořené komponenty **Text\\Řetězec**, **Text\\DateTime** nebo jiný typ. Nakonfigurujte vazby pro tyto komponenty a určete, jak je vyplněno vaše zápatí stránky.
 
-Můžete také použít speciální [formátovací kódy](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) ke správnému formátování obsahu vygenerovaného zápatí. Chcete-li se naučit používat tento přístup, postupujte podle pokynů v [příkladu 1](#example-1) dále v tomto tématu.
+Můžete také použít speciální [formátovací kódy](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) ke správnému formátování obsahu vygenerovaného zápatí. Chcete-li se naučit používat tento přístup, postupujte podle pokynů v [příkladu 1](#example-1) dále v tomto článku.
 
 > [!NOTE]
 > Při konfiguraci formátů elektronického výkaznictví nezapomeňte vzít v úvahu [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) Excel a maximální počet znaků pro jedno záhlaví nebo zápatí.

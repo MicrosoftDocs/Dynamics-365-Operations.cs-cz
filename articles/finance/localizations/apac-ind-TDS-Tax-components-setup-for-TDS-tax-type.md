@@ -1,6 +1,6 @@
 ---
 title: Nastavení složek daně pro typ daně TDS
-description: Toto téma vysvětluje, jak nastavit složky srážkové daně pro daňový typ se srážkou daně u zdroje (TDS). Vysvětluje také, jak definovat prahovou hranici, která se používá k výpočtu TDS pro každou složku TDS.
+description: Tento článek vysvětluje, jak nastavit složky srážkové daně pro daňový typ se srážkou daně u zdroje (TDS). Vysvětluje také, jak definovat prahovou hranici, která se používá k výpočtu TDS pro každou složku TDS.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9c86341f7528e2c85b813e4f825ae34f10680a9b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: df2eb10ce9e372bb1e984f6ae1a2e889bbd90ad0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871150"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Nastavení složek daně pro typ daně TDS
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit složky srážkové daně pro daňový typ se srážkou daně u zdroje (TDS). Složky TDS jsou TDS, příplatek, PE-Cess a SHE Cess. Toto téma vysvětluje, jak definovat prahovou hranici, která se používá k výpočtu TDS pro každou složku TDS. Dále můžete definovat prahovou hodnotu výjimky, která se používá k výpočtu TDS pro každou složku TDS.
+Tento článek vysvětluje, jak nastavit složky srážkové daně pro daňový typ se srážkou daně u zdroje (TDS). Složky TDS jsou TDS, příplatek, PE-Cess a SHE Cess. Tento článek vysvětluje, jak definovat prahovou hranici, která se používá k výpočtu TDS pro každou složku TDS. Dále můžete definovat prahovou hodnotu výjimky, která se používá k výpočtu TDS pro každou složku TDS.
 
 Chcete-li nastavit složky TDS, postupujte následujícím způsobem:
 

@@ -1,6 +1,6 @@
 ---
 title: Návrh konfigurací ER k potlačení znaků kusovníku ve vygenerovaných souborech
-description: Toto téma vysvětluje, jak nakonfigurovat formát elektronického výkaznictví (ER) pro generování sestav, které potlačují znaky značka pořadí bajtů (BOM).
+description: Tento článek vysvětluje, jak nakonfigurovat formát elektronického výkaznictví (ER) pro generování sestav, které potlačují znaky značka pořadí bajtů (BOM).
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847423"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Návrh konfigurací ER k potlačení znaků kusovníku ve vygenerovaných souborech
 
@@ -38,7 +38,7 @@ Pokud jako kódování zadáte **UTF-8**, **UTF-16**, nebo **UTF-32**, zpřístu
 
 ![Nastavení možnosti Potlačit znaky BOM na stránce Návrhář formátů.](./media/er-suppress-bom-characters-image2.gif)
 
-Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Například proveďte kroky v tématu [Odložit provedení prvků XML ve formátech ER](er-defer-xml-element.md). Po dokončení kroků v části [Úprava formátu tak, aby byl výpočet založen na generovaném výstupu](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tohoto tématu, postupujte podle těchto dalších kroků.
+Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Například proveďte kroky v článku [Odložit provedení prvků XML ve formátech ER](er-defer-xml-element.md). Po dokončení kroků v části [Úprava formátu tak, aby byl výpočet založen na generovaném výstupu](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tohoto článku, postupujte podle těchto dalších kroků.
 
 1. Zadejte kódování UTF:
 
@@ -48,12 +48,12 @@ Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Nap�
 2. Vygenerujte soubor XML, který obsahuje znak BOM:
 
     1. Nastavte možnost **Potlačit znaky BOM** na **Ne**, pokud chcete zahrnout znaky BOM do vygenerovaných souborů XML.
-    2. Proveďte kroky v části [Odložit provedení souhrnného prvku XML tak, aby se použil vypočítaný součet](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) tématu [Odložení provedení prvků XML ve formátech ER](er-defer-xml-element.md) a uložte vygenerovaný soubor jako **SampleXmlReport.xml**.
+    2. Proveďte kroky v části [Odložit provedení souhrnného prvku XML tak, aby se použil vypočítaný součet](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) článku [Odložení provedení prvků XML ve formátech ER](er-defer-xml-element.md) a uložte vygenerovaný soubor jako **SampleXmlReport.xml**.
 
 3. Vygenerujte soubor XML, který neobsahuje znak BOM:
 
     1. Nastavte možnost **Potlačit znaky BOM** na **Ano**, pokud chcete potlačit znaky BOM do vygenerovaných souborů XML.
-    2. Proveďte kroky v části [Odložit provedení souhrnného prvku XML tak, aby se použil vypočítaný součet](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) tématu [Odložení provedení prvků XML ve formátech ER](er-defer-xml-element.md) a uložte vygenerovaný soubor jako **SampleXmlReport (1).xml**.
+    2. Proveďte kroky v části [Odložit provedení souhrnného prvku XML tak, aby se použil vypočítaný součet](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) článku [Odložení provedení prvků XML ve formátech ER](er-defer-xml-element.md) a uložte vygenerovaný soubor jako **SampleXmlReport (1).xml**.
 
 4. V nástroji pro porovnávání souborů porovnejte vygenerované soubory.
 

@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Správa organizace
-description: Toto téma odkazuje na zdroje, které vám pomůžou ve vaší organizaci.
+description: Tento článek odkazuje na zdroje, které vám pomůžou ve vaší organizaci.
 author: sericks007
 ms.date: 08/18/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04d188b0bf7d7fc7064467e1e05199d0eb90b4d0276a3c0c01ad8f9be78e76e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6d4320fb22f0354b33b44e731d22f3f763789ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882042"
 ---
 # <a name="organization-administration-home-page"></a>Domovská stránka Správa organizace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma odkazuje na obsah, který uživatelům s oprávněním power user a správcům pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně.
+Tento článek odkazuje na obsah, který uživatelům s oprávněním power user a správcům pomůže nakonfigurovat systém tak, aby fungoval pro vaši organizaci a obchod hladce a efektivně.
 
 Většina zde uvedeného obsahu se použije k funkcím v modulu **Správa organizace**. Existuje však několik úlohy, jako je vytváření a používání šablony záznamu, které lze provést v kterémkoli modulu, aby vaše organizace mohla pracovat efektivněji.
 

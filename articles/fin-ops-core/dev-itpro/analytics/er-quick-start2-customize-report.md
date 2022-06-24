@@ -1,6 +1,6 @@
 ---
 title: Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
-description: Toto téma vysvětluje, jak upravit formát elektronického výkaznictví (ER) od společnosti Microsoft tak, aby generoval vlastní elektronické doklady.
+description: Tento článek vysvětluje, jak upravit formát elektronického výkaznictví (ER) od společnosti Microsoft tak, aby generoval vlastní elektronické doklady.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886784"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
 
 [!include[banner](../includes/banner.md)]
 
-Postupy v tomto tématu vysvětlují, jak může uživatel v roli administrátora systému nebo v role funkčního konzultanta elektronického výkaznictví provádět tyto úkoly:
+Postupy v tomto článku vysvětlují, jak může uživatel v roli administrátora systému nebo v role funkčního konzultanta elektronického výkaznictví provádět tyto úkoly:
 
 - Konfigurace parametrů pro [rámec elektronického výkaznictví (ER)](general-electronic-reporting.md).
 - Import konfigurace ER od společnosti Microsoft, jež se používají ke generování souboru platby, když je zpracovávána [platba dodavateli](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md).
@@ -135,7 +135,7 @@ Další informace o poskytovatelích konfigurací ER naleznete v tématu [Vytvo
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>Import standardních konfigurací ER
 
-Chcete-li přidat standardní konfigurace ER do aktuální instance systému Microsoft Dynamics 365 Finance, musíte je importovat z [úložiště](general-electronic-reporting.md#Repository) ER, jež je pro tuto instanci nakonfigurováno.
+Chcete-li přidat standardní konfigurace ER do aktuální instance Microsoft Dynamics 365 Finance, musíte je importovat z [úložiště](general-electronic-reporting.md#Repository) ER, jež je pro tuto instanci nakonfigurováno.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Chcete-li zobrazit seznam úložišť pro poskytovatele Microsoft, klikněte na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurací** na dlaždici **Microsoft** a poté vyberte možnost **Úložiště**.

@@ -1,6 +1,6 @@
 ---
 title: Přehled správy funkcí
-description: V tomto tématu je popsána funkce správy funkcí a její použití.
+description: V tomto článku je popsána funkce správy funkcí a její použití.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850044"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
@@ -41,7 +41,7 @@ Seznam funkcí obsahuje následující informace:
 - **Stav** – Symbol označuje, zda je funkce zapnutá (zaškrtnutí), vypnutá (prázdné pole), je naplánována pro zapnutí (hodiny), je povinná (zámek), vyžaduje pozornost před zapnutím (symbol upozornění), nebo ji nelze zapnout (X). Nastavení, které je zobrazeno, je použito pro všechny právnické osoby. Všimněte si, že i když byla funkce zapnuta, je stále řízena zabezpečením. Tato funkce bude proto k dispozici pouze pro uživatele, kteří k ní mají přístup, na základě své role zabezpečení. Bude také k dispozici pouze v právnických osobách, ke kterým má uživatel přístup.
 - **Datum povolení** – datum, kdy byla funkce zapnuta nebo na kdy je naplánováno zapnutí.
 - **Přidaná funkce** – Datum, kdy byla funkce přidána do vašeho prostředí. Toto datum je automaticky zadáno při aktualizaci prostředí během měsíčního vydání verze.
-- **Stav funkce** - Aktuální stav životního cyklu funkce: **Preview**, **Vydáno** (zobrazeno jako prázdné), **Ve výchozím nastavení zapnuto** a **Povinné**. Stavy jsou podrobněji popsány dále v tomto tématu. 
+- **Stav funkce** - Aktuální stav životního cyklu funkce: **Preview**, **Vydáno** (zobrazeno jako prázdné), **Ve výchozím nastavení zapnuto** a **Povinné**. Stavy jsou podrobněji popsány dále v tomto článku. 
 - **Modul** – Modul, který je touto novou funkcí ovlivněn.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Sloupec **Stav funkce** je pro tyto funkce prázdný. Funkce, které jsou původ
 
 ### <a name="on-by-default-features-optional"></a>Ve výchozím nastavení zapnuté funkce (volitelné)
 
-Funkce, které jsou aktualizovány na hodnotu **Ve výchozím nastavení zapnuto** jsou ve výchozím nastavení zapnuté, ale lze je zakázat. Když se funkce, které lze zakázat, nacházejí ve stavu **Vydáno** po dobu nejméně šesti měsíců, očekává se, že se do tohoto stavu přesunou v příštím hlavním vydání. U funkcí, které přecházejí do stavu **Ve výchozím nastavení zapnuto**, se očekává, že budou uvedeny v části [Co je nového](../whats-new-changed.md) pro dané vydání. Aktualizaci zahájí vlastnící produktový tým.
+Funkce, které jsou aktualizovány na hodnotu **Ve výchozím nastavení zapnuto** jsou ve výchozím nastavení zapnuté, ale lze je zakázat. Když se funkce, které lze zakázat, nacházejí ve stavu **Vydáno** po dobu nejméně šesti měsíců, očekává se, že se do tohoto stavu přesunou v příštím hlavním vydání. U funkcí, které přecházejí do stavu **Ve výchozím nastavení zapnuto**, se očekává, že budou uvedeny v článku [Co je nového](../whats-new-changed.md) pro dané vydání. Aktualizaci zahájí vlastnící produktový tým.
 
 > [!NOTE]
 > Protože tyto funkce budou povoleny automaticky, je důležité určit, zda je vaše organizace připravena tyto funkce převzít, nebo zda potřebujete více času. Pokud je zapotřebí více času, může být nutné dočasně tyto funkce zakázat. Všimněte si, že přechod funkce do stavu **Ve výchozím nastavení zapnuto** se obvykle provádí v hlavním vydání, než se má funkce dostat do stavu **Povinné**. Pak již nebudete mít možnost tuto funkci zakázat. 

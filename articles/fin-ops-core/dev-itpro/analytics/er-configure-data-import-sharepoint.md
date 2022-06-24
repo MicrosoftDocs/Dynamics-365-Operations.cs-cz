@@ -1,6 +1,6 @@
 ---
 title: Konfigurace importu dat z aplikace SharePoint
-description: Toto téma vysvětluje postup při importu dat z aplikace Microsoft SharePoint.
+description: Tento článek vysvětluje postup při importu dat z aplikace Microsoft SharePoint.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864771"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurace importu dat z aplikace SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Při importu dat z příchozího souboru pomocí rozhraní elektronických sestav (ER) musíte konfigurovat formát ER, který podporuje import, a spustit mapování modelu typu **cíl**, který tento formát používá jako zdroj dat. Pokud chcete provést import dat, přejděte do souboru, který chcete importovat. Vstupní soubor může ručně vybrat uživatel. S novou možností ER podporovat import dat z aplikace Microsoft SharePoint lze tento proces konfigurovat jako bezobslužný. Konfigurace ER lze použít k provádění importu dat ze souborů, které jsou uloženy ve složkách Microsoft SharePoint. Toto téma vysvětluje, jak dokončit import ze služby do SharePoint. Tyto příklady používají transakcí dodavatele jako obchodní data.
+Při importu dat z příchozího souboru pomocí rozhraní elektronických sestav (ER) musíte konfigurovat formát ER, který podporuje import, a spustit mapování modelu typu **cíl**, který tento formát používá jako zdroj dat. Pokud chcete provést import dat, přejděte do souboru, který chcete importovat. Vstupní soubor může ručně vybrat uživatel. S novou možností ER podporovat import dat z aplikace Microsoft SharePoint lze tento proces konfigurovat jako bezobslužný. Konfigurace ER lze použít k provádění importu dat ze souborů, které jsou uloženy ve složkách Microsoft SharePoint. Tento článek vysvětluje, jak dokončit import ze služby do SharePoint. Tyto příklady používají transakcí dodavatele jako obchodní data.
 
 ## <a name="prerequisites"></a>Předpoklady
-Pro dokončení příkladů v tomto tématu musíte mít následující přístup:
+Pro dokončení příkladů v tomto článku, musíte mít následující přístup:
 
 - Přístup k některé z následujících rolí:
 

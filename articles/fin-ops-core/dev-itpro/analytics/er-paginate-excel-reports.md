@@ -1,6 +1,6 @@
 ---
 title: Návrh formátu ER pro stránkování generovaného dokumentu ve formátu aplikace Excel
-description: Toto téma vysvětluje, jak navrhnout formát elektronického výkaznictví (ER), který stránkuje generovaný dokument v aplikaci Microsoft Excel.
+description: Tento článek vysvětluje, jak navrhnout formát elektronického výkaznictví (ER), který stránkuje generovaný dokument v aplikaci Microsoft Excel.
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909271"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Návrh formátu ER pro stránkování generovaného dokumentu ve formátu aplikace Excel
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak může uživatel s rolí Správce systému nebo Funkční konzultant elektronického výkaznictví konfigurovat formát [elektronického vykazování (ER)](general-electronic-reporting.md) pro generování odchozích dokumentů v aplikaci Microsoft Excel a spravovat stránkování dokumentů.
+Tento článek vysvětluje, jak může uživatel s rolí Správce systému nebo Funkční konzultant elektronického výkaznictví konfigurovat formát [elektronického vykazování (ER)](general-electronic-reporting.md) pro generování odchozích dokumentů v aplikaci Microsoft Excel a spravovat stránkování dokumentů.
 
 V tomto příkladu upravíte formát ER poskytovaný společností Microsoft, který se používá k tisku kontrolní sestavy, když je [generována](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md) deklarace Intrastat. Tato sestava vám umožňuje sledovat vykázané transakce Intrastat. Vaše úpravy vám umožní spravovat stránkování generovaných kontrolních sestav.
 
-Postupy v tomto tématu lze provést ve společnosti **DEMF**. Není nutné žádné kódování. Před přihlášením je také nutné stáhnout a uložit následující soubory.
+Postupy v tomto článku lze provést ve společnosti **DEMF**. Není nutné žádné kódování. Před přihlášením je také nutné stáhnout a uložit následující soubory.
 
 | popis       | Název souboru |
 |-------------------|-----------| 
@@ -165,7 +165,7 @@ Poté pomocí vlastního formátu ER vygenerujte kontrolní sestavu prohlášen�
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Opakujte nahrazení aktuální šablony aplikace Excel ve vlastním formátu ER
 
-1. Postupujte podle pokynů v části [Nahraďte aktuální šablonu aplikace Excel ve vlastním formátu ER](#replace-template) tohoto tématu. V kroku 7 však vyberte soubor **ERIntrastatReportDemo2.xlsx**.
+1. Postupujte podle pokynů v části [Nahraďte aktuální šablonu aplikace Excel ve vlastním formátu ER](#replace-template) tohoto článku. V kroku 7 však vyberte soubor **ERIntrastatReportDemo2.xlsx**.
 2. Na stránce **Návrhář formátu** rozbalte uzel **Intrastat**.
 3. Pojmenujte komponenty formátu [rozsahu](er-fillable-excel.md#range-component), které byly přidány do upravitelného formátu ER za účelem synchronizace struktury se strukturou použité šablony aplikace Excel:
 
@@ -406,7 +406,7 @@ Chcete-li změnit viditelnost, aktualizujte vlastnost **Povoleno** komponent **Z
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Generování kontrolní sestavy prohlášení Intrastat (aktualizováno)
 
-1. Zkontrolujte, že ve stránce **Intrastat** máte 24 transakcí. Opakujte kroky v části [Generování kontrolní sestavy prohlášení Intrastat](#generate-intrastat-control-report) tohoto tématu a zkontrolujte vygenerovanou kontrolní sestavu.
+1. Zkontrolujte, že ve stránce **Intrastat** máte 24 transakcí. Opakujte kroky v části [Generování kontrolní sestavy prohlášení Intrastat](#generate-intrastat-control-report) tohoto článku a zkontrolujte vygenerovanou kontrolní sestavu.
 
     Všechny transakce jsou uvedeny na první stránce. Součty a čítače stránky se rovnají součtům a čítačům sestavy. Záhlaví stránky na první stránce je skryté, protože záhlaví sestavy již obsahuje názvy sloupců. Záhlaví a zápatí stránky na druhé stránce jsou skryté, protože tato stránka neobsahuje žádné transakce.
 

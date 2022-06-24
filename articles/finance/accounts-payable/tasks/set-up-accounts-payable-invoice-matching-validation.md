@@ -1,6 +1,6 @@
 ---
-title: Nastavení ověřování párování faktur závazků
-description: Toto téma obsahuje informace o způsobu nastavení ověření párování faktur závazků.
+title: Nastavení ověření párování faktur závazků
+description: Tento článek obsahuje informace o způsobu nastavení ověření párování faktur závazků.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182548"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904952"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Nastavení ověřování párování faktur závazků
 
@@ -44,7 +44,7 @@ K dispozici jsou čtyři různé typy ověření párování.
 5. Zvolte nebo vymažte zaškrtávací pole **Párování součtu faktur** tak, aby skutečné součty faktur odpovídaly očekávaným součtům.
     * Určete, zda bude zobrazena ikona, je-li odchylka párování faktur vyšší než tolerance. Můžete vybrat zobrazení ikony, když je kladný rozdíl vyšší než tolerance nebo pokud kladný nebo záporný rozdíl je vyšší než tolerance.  
     * Například tolerance je 5 procent a celková částka faktury v nákupní objednávce je 100,00. Proto se bude ikona párování cen zobrazena, pokud celková částka faktury na faktuře překročí cenu 105,00. Pokud vyberete volbu **Pokud vyšší nebo nižší než tolerance**, bude ikona zobrazena také v případě, že částka faktury je nižší než 95,00.  
-6. Do pole **Tolerance součtu faktur v procentech** zadejte přijatelnou procentuální odchylku. Tato hodnota představuje výchozí hodnotu pro společnost. Tuto hodnotu lze přepsat pro určité dodavatele pomocí stránky **Tolerance součtu faktur**. Informace o tom, jak přepsat procento tolerance součtu faktur pro specifického dodavatele, naleznete v části „Nastavení tolerance párování celkových faktur pro dodavatele“ dále v tomto tématu.
+6. Do pole **Tolerance součtu faktur v procentech** zadejte přijatelnou procentuální odchylku. Tato hodnota představuje výchozí hodnotu pro společnost. Tuto hodnotu lze přepsat pro určité dodavatele pomocí stránky **Tolerance součtu faktur**. Informace o tom, jak přepsat procento tolerance součtu faktur pro specifického dodavatele, naleznete v části „Nastavení tolerance párování celkových faktur pro dodavatele“ dále v tomto článku.
 7. Nastavte **Párování ceny a množství**.
 8. V poli **Zásady párování řádků** vyberte hodnotu, která má být použita jako výchozí zásada pro právnickou osobu, se kterou pracujete. Možnost **Nevyžadovaná** znamená, že nejsou zapotřebí ověřování ceny na jednotlivých řádcích faktury podle ceny nákupní objednávky nebo množství na faktuře na dodacím listu. **Dvoucestné párování** znamená, že je požadováno ověřovací řádků faktury, ale při ověření jsou zahrnuty pouze nákupní objednávky a dokumenty s fakturou dodavatele. Příjemka produktu není promítnuta do ověření párování. **Třícestné párování** znamená, že čistá jednotková cena na faktuře se bude porovnávat s čistou jednotkovou cenou nákupní objednávky, a odpovídající množství v příjemce produktu se bude porovnávat s množstvím ve faktuře.
 9. Chcete-li povolit různé úrovně párování pro zboží, dodavatele, kombinaci dodavatele a zboží nebo řádek nákupní objednávky, vyberte hodnotu v poli **Povolit přepsání zásad párování**. Zásady párování řádku právnické osoby lze obejít pro určitého dodavatele, zboží nebo kombinaci dodavatele a zboží na stránce **Zásady párování**.

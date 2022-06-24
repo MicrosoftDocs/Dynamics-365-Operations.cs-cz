@@ -1,6 +1,6 @@
 ---
 title: Chronologické číslování dokumentů a dokladů
-description: Toto téma vysvětluje, jak nastavit a používat chronologická čísla pro příslušné dokumenty a související doklady.
+description: Tento článek vysvětluje, jak nastavit a používat chronologická čísla pro příslušné dokumenty a související doklady.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876376"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologické číslování dokumentů a dokladů
 
 [!include [banner](../includes/banner.md)]
 
 
-V některých zemích existuje zákonný požadavek na číslování dokumentů a souvisejících dokladů v chronologickém pořadí. Chronologie musí být podporována obdobími. Všechna čísla, která patří do dřívějších období, musí být menší než čísla, která patří do pozdějších období. Pro splnění tohoto požadavku byla implementována funkce chronologického číslování. Toto téma vysvětluje, jak konfigurovat a používat chronologická čísla pro příslušné dokumenty a související doklady.
+V některých zemích existuje zákonný požadavek na číslování dokumentů a souvisejících dokladů v chronologickém pořadí. Chronologie musí být podporována obdobími. Všechna čísla, která patří do dřívějších období, musí být menší než čísla, která patří do pozdějších období. Pro splnění tohoto požadavku byla implementována funkce chronologického číslování. Tento článek vysvětluje, jak konfigurovat a používat chronologická čísla pro příslušné dokumenty a související doklady.
 
 ## <a name="prerequisites"></a>Předpoklady
 

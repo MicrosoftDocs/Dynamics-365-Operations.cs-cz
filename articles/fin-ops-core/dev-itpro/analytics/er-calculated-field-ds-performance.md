@@ -1,6 +1,6 @@
 ---
 title: Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE
-description: Tohle téma popisuje, jak můžete zlepšit výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE.
+description: Tento článek popisuje, jak můžete zlepšit výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850107"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma popisuje, jak můžete použít informace ze spuštěných [sledování výkonu](trace-execution-er-troubleshoot-perf.md) z formátů [elektronického výkaznictví](general-electronic-reporting.md) ke zlepšení výkonu prostřednictvím parametrizovaných zdrojů dat typu **Počítané pole**.
+Tento článek popisuje, jak můžete použít informace ze spuštěných [sledování výkonu](trace-execution-er-troubleshoot-perf.md) z formátů [elektronického výkaznictví](general-electronic-reporting.md) ke zlepšení výkonu prostřednictvím parametrizovaných zdrojů dat typu **Počítané pole**.
 
 V rámci procesu vytváření konfigurací elektronického výkaznictví pro generování obchodních dokumentů definujete metodu, která se používá k načtení dat z aplikace a jejich zadávání do generovaného výstupu. Návrhem parametrizovaného zdroje dat elektronického výkaznictví typu **Počítané pole** můžete snížit počet volání databáze a výrazně snížit čas a náklady spojené se shromažďováním podrobností při spuštění formátu elektronického výkaznictví.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-- Abyste mohli dokončit příklady v tomto tématu, musíte mít přístup k některé z následujících [rolí](../sysadmin/tasks/assign-users-security-roles.md):
+- Abyste mohli dokončit příklady v tomto článku, musíte mít přístup k některé z následujících [rolí](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Návrhář elektronického výkaznictví
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
 - Společnost musí být nastavena na **DEMF**.
-- Podle pokynů v [příloze 1](#appendix1) tohoto tématu si stáhněte součásti ukázkového řešení elektronického výkaznictví společnosti Microsoft, které jsou potřeba k provedení příkladů v tomto tématu.
-- Podle pokynů v [příloze 2](#appendix2) v tomto tématu můžete nakonfigurovat minimální sadu parametrů elektronického výkaznictví, které jsou potřeba k použití architektury elektronického výkaznictví k zlepšení výkonu ukázkového řešení elektronického výkaznictví společnosti Microsoft.
+- Podle pokynů v [příloze 1](#appendix1) tohoto článku si stáhněte součásti ukázkového řešení elektronického výkaznictví společnosti Microsoft, které jsou potřeba k provedení příkladů v tomto článku.
+- Podle pokynů v [příloze 2](#appendix2) v tomto článku můžete nakonfigurovat minimální sadu parametrů elektronického výkaznictví, které jsou potřeba k použití architektury elektronického výkaznictví k zlepšení výkonu ukázkového řešení elektronického výkaznictví společnosti Microsoft.
 
 ## <a name="import-the-sample-er-solution"></a>Import ukázkového řešení elektronického výkaznictví
 
@@ -48,7 +48,7 @@ Představte si, že musíte navrhnout nové řešení elektronického výkaznict
 Prvním krokem je import ukázkového řešení elektronického výkaznictví k vygenerování sestavy transakcí dodavatele.
 
 1. Přihlaste se k instanci Microsoft Dynamics 365 Finance, která je zřízena pro vaši společnost.
-2. V tomto tématu vytvoříte a upravíte konfigurace pro vzorovou společnost **Litware, Inc.**. Ujistěte se, že tento poskytovatel konfigurace byl přidán do instance Finance a je označen jako aktivní. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. V tomto článku vytvoříte a upravíte konfigurace pro vzorovou společnost **Litware, Inc.**. Ujistěte se, že tento poskytovatel konfigurace byl přidán do instance Finance a je označen jako aktivní. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. Na stránce **Konfigurace** importujte konfigurace elektronického výkaznictví, které jste stáhli jako nezbytný požadavek do Finance, v následujícím pořadí: datový model, mapování modelu, formát. Pro každou konfiguraci postupujte takto:
 
@@ -220,7 +220,7 @@ Pomocí těchto kroků můžete použít ukládání zdroje dat typu **Počítan
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Spuštění upraveného řešení elektronického výkaznictví pro sledování provádění
 
-Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
+Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto článku, pro vygenerování nového sledování výkonu.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Použití sledování výkonu k analýze úprav mapování modelů 
 

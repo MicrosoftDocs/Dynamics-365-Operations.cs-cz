@@ -1,6 +1,6 @@
 ---
 title: Podpora parametrizovaných volání datových modelů ER
-description: Toto téma vysvětluje, jak implementovat parametrizovaná volání datových modelů Elektronického výkaznictví (ER).
+description: Tento článek vysvětluje, jak implementovat parametrizovaná volání datových modelů Elektronického výkaznictví (ER).
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884250"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Podpora parametrizovaných volání datových modelů ER
 
@@ -160,7 +160,7 @@ Zadat můžete každý parametr pole datového modelu, u kterého lze argument p
 > [!NOTE]
 > Výchozí hodnota není u parametru pole datového modelu podporována. Když přidáte parametr do pole v datovém modelu a verze tohoto datového modelu již byla vydána a publikována, musíte [přeskládat](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) všechna odpovídající mapování a formáty modelu na novou verzi tohoto modelu, protože tato změna datového modelu není zpětně kompatibilní.
 
-Pole parametrizovaných datových modelů můžete konfigurovat tak, aby byla volání mapování modelu závislá na formátu. Tento přístup vám pomůže snížit počet mapování modelu, která musí být konfigurována pro více formátů jednoho datového modelu. Tento přístup můžete také použít ke zlepšení výkonu svých formátů a zkrácení času potřebného k generování obchodních dokumentů. Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Pole parametrizovaných datových modelů můžete konfigurovat tak, aby byla volání mapování modelu závislá na formátu. Tento přístup vám pomůže snížit počet mapování modelu, která musí být konfigurována pro více formátů jednoho datového modelu. Tento přístup můžete také použít ke zlepšení výkonu svých formátů a zkrácení času potřebného k generování obchodních dokumentů. Chcete-li získat další informace o této funkci, vyplňte příklad tomto článku.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Příklad: Podpora parametrizovaných volání datových modelů ER
 

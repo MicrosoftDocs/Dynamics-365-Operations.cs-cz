@@ -1,6 +1,6 @@
 ---
 title: Nastavení kódů vykazování srážkové daně pro typy daně TDS
-description: Kódy vykazování srážkové daně se používají ke generování výkazů Form 26Q a Form 27Q pro daň odečtenou u zdroje (TDS). Toto téma vysvětluje, jak nastavit kroky pro kódů vykazování srážkové daně, abyste mohli nastavit kódy vykazování TDS.
+description: Kódy vykazování srážkové daně se používají ke generování výkazů Form 26Q a Form 27Q pro daň odečtenou u zdroje (TDS). Tento článek vysvětluje, jak nastavit kroky pro kódů vykazování srážkové daně, abyste mohli nastavit kódy vykazování TDS.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 769159fc10c3edfba8c2f626e7bff702e3e5cd7f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: bdd2e89d29807dc31d8f2d4684ee413470b1dbde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907791"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Nastavení kódů vykazování srážkové daně pro typy daně TDS
 
 [!include [banner](../includes/banner.md)]
 
-Kódy vykazování srážkové daně se používají ke generování výkazů Form 26Q a Form 27Q pro daň odečtenou u zdroje (TDS). Toto téma vysvětluje, jak nastavit kroky pro kódů vykazování srážkové daně, abyste mohli nastavit kódy vykazování TDS.
+Kódy vykazování srážkové daně se používají ke generování výkazů Form 26Q a Form 27Q pro daň odečtenou u zdroje (TDS). Tento článek vysvětluje, jak nastavit kroky pro kódů vykazování srážkové daně, abyste mohli nastavit kódy vykazování TDS.
 
 1. Přejděte do nabídky **Daň \> Nastavení \> Srážková daň \> Kódy vykazování srážkové daně**.
 

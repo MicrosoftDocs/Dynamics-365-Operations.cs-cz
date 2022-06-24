@@ -1,6 +1,6 @@
 ---
 title: Doklad se negeneruje
-description: Toto téma poskytuje informace o řešení potíží, které mohou pomoci, když se má generovat doklad, ale negeneruje.
+description: Tento článek poskytuje informace o řešení potíží, které mohou pomoci, když se má generovat doklad, ale negeneruje.
 author: qire
 ms.date: 04/13/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: eb45b79fa710699cfa267e7c6359ba3ce761d62d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1200fe50bf9be4c6d1ca809ad9a86da2ff3e0ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909004"
 ---
 # <a name="voucher-isnt-generated"></a>Doklad se negeneruje
 

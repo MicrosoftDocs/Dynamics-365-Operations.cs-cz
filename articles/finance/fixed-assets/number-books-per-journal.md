@@ -1,6 +1,6 @@
 ---
 title: Počet knih na deník
-description: Toto téma popisuje vztah mezi deníky a knihami majetku, když vytvoříte návrh na pořízení nebo odpis dlouhodobého majetku prostřednictvím dávkové úlohy. Můžete definovat maximální počet knih, které jsou zahrnuty pro každou akvizici a pro odpisy.
+description: Tento článek popisuje vztah mezi deníky a knihami majetku, když vytvoříte návrh na pořízení nebo odpis dlouhodobého majetku prostřednictvím dávkové úlohy. Můžete definovat maximální počet knih, které jsou zahrnuty pro každou akvizici a pro odpisy.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e37d40c30d784eea5ba097447f2b2e69920830a
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2dbd50963cf13f00e09b82e884cd8ebc0b67d424
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883322"
 ---
 # <a name="number-of-books-per-journal"></a>Počet knih na deník
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje vztah mezi deníky a knihami majetku, když vytvoříte návrh na pořízení nebo odpis dlouhodobého majetku prostřednictvím dávkové úlohy. Můžete definovat maximální počet knih, které jsou zahrnuty pro každou akvizici a pro odpisy pomocí polí v části **Počet knih na deník** na kartě **Obecné** na stránce **Parametry dlouhodobého majetku** (**Dlouhodobý majetek \> Nastavení \> Parametry dlouhodobého majetku**). Tato pole vám umožňují rozdělit počet knih majetku do deníku pořízení a deníku odpisů.
+Tento článek popisuje vztah mezi deníky a knihami majetku, když vytvoříte návrh na pořízení nebo odpis dlouhodobého majetku prostřednictvím dávkové úlohy. Můžete definovat maximální počet knih, které jsou zahrnuty pro každou akvizici a pro odpisy pomocí polí v části **Počet knih na deník** na kartě **Obecné** na stránce **Parametry dlouhodobého majetku** (**Dlouhodobý majetek \> Nastavení \> Parametry dlouhodobého majetku**). Tato pole vám umožňují rozdělit počet knih majetku do deníku pořízení a deníku odpisů.
 
 U akvizičního návrhu je výchozí hodnota alespoň 10 000 knih. U návrhu odpisů je výchozí hodnota alespoň 2 000 knih.
 

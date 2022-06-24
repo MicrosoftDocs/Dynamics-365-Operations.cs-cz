@@ -1,6 +1,6 @@
 ---
 title: Přehled časově rozlišených položek
-description: V tomto tématu jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
+description: V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904694"
 ---
 # <a name="accruals-overview"></a>Přehled časově rozlišených položek
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
+V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
 
 Časové rozlišené položky se používají v účtování časového rozlišení ke sledování výnosu, který je uznán v období, kdy je získán – nikoli při přijetí platby, a ke sledování výdajů (náklady), které jsou uznány, když k nim dojde – nikoli při provedení platby.
 

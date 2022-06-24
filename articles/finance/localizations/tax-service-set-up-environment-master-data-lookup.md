@@ -1,6 +1,6 @@
 ---
 title: Povolit vyhledávání hlavních dat pro konfiguraci výpočtu daně
-description: Toto téma vysvětluje, jak nastavit a aktivovat funkci vyhledávání hlavních dat pro výpočet daně.
+description: Tento článek vysvětluje, jak nastavit a aktivovat funkci vyhledávání hlavních dat pro výpočet daně.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879402"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Povolit vyhledávání hlavních dat pro konfiguraci výpočtu daně 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit a aktivovat funkci vyhledávání hlavních dat pro výpočet daně. K dispozici je rozevírací seznam pro výběr hodnot v konfiguraci výpočtu daně pro pole, například **Právnická osoba**, **Účet dodavatele**, **Kód položky** a **Termín doručení**. Tyto hodnoty pocházejí od připojeného prostředí Microsoft Dynamics 365 Finance s využitím zdroje dat Microsoft Dataverse.
+Tento článek vysvětluje, jak nastavit a aktivovat funkci vyhledávání hlavních dat pro výpočet daně. K dispozici je rozevírací seznam pro výběr hodnot v konfiguraci výpočtu daně pro pole, například **Právnická osoba**, **Účet dodavatele**, **Kód položky** a **Termín doručení**. Tyto hodnoty pocházejí od připojeného prostředí Microsoft Dynamics 365 Finance s využitím zdroje dat Microsoft Dataverse.
 
 > [!NOTE] 
 > Funkce vyhledávání hlavních dat výpočtu daně je volitelná. Pokud deaktivujete funkci **Podpora zdrojů dat Dataverse daňové služby** ve službě Regulatory Configuration Service (RCS), můžete přeskočit následující kroky. V takovém případě však rozevírací seznam nebude dostupný v konfiguraci výpočtu daně.

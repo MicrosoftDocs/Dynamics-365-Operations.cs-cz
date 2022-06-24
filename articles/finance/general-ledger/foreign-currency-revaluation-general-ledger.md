@@ -1,6 +1,6 @@
 ---
 title: Přecenění cizí měny pro hlavní knihu
-description: Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
+description: Tento článek obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904521"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby. 
+Tento článek obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby. 
 
 V rámci uzávěrky období vyžadují účetní konvence přecenění zůstatků účtů hlavní knihy v cizích měnách pomocí různých typů směnných kurzů (aktuální, historický, průměrný atd.). Například jedna účetní konvence vyžaduje přecenění aktiv a pasiv při aktuálním směnném kurzu, dlouhodobého majetku s historickým směnným kurzem a účty zisků a ztrát v měsíčním průměru. Přecenění cizí měny v hlavní knize může být použito k přecenění rozvahy a účtu zisků a ztrát. 
 

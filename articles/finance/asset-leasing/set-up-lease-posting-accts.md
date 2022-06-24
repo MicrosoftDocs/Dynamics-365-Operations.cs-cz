@@ -1,6 +1,6 @@
 ---
 title: Nastavení účtů pro zaúčtování leasingu
-description: Toto téma uvádí seznam účtů pro zaúčtování, které jsou vyžadovány pro transakce leasingu majetku, a vysvětluje, jak definovat účty pro zaúčtování na stránce Parametry účtování leasingu.
+description: Tento článek uvádí seznam účtů pro zaúčtování, které jsou vyžadovány pro transakce leasingu majetku, a vysvětluje, jak definovat účty pro zaúčtování na stránce Parametry účtování leasingu.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859907"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Nastavení účtů pro zaúčtování leasingu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí seznam účtů pro zaúčtování, které jsou vyžadovány pro transakce leasingu majetku, a vysvětluje, jak definovat účty pro zaúčtování na stránce **Parametry účtování leasingu**.
+Tento článek uvádí seznam účtů pro zaúčtování, které jsou vyžadovány pro transakce leasingu majetku, a vysvětluje, jak definovat účty pro zaúčtování na stránce **Parametry účtování leasingu**.
 
 Abyste vyhověli tématu Kodifikace účetních standardů 842 (ASC 842) a Mezinárodnímu standardu účetního výkaznictví 16 (IFRS 16), možná budete muset vytvořit účty ve svém účtovém rozvrhu. Účty, které vytvoříte, aby vyhovovaly standardům ASC a IFRS, však nejsou účty dlouhodobých aktiv. Podle ASC 842 se aktivum s právem na užívání (ROU) zaznamenává jak u finančního, tak u operativního leasingu. Tyto leasingy jsou oddělené od stálých aktiv. (Používaný majetek můžete stále udržovat pomocí dlouhodobého majetku.)
 

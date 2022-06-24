@@ -1,6 +1,6 @@
 ---
 title: Vyrovnání částečné platby dodavatele a plné vyrovnání konečné platby před datem slevy
-description: Toto téma vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva.
+description: Tento článek vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 90aeff9872e72950f42b6227300933d562c0a3d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716236"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889983"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby dodavatele a plné vyrovnání konečné platby před datem slevy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva.
+Tento článek vás provede scénářem, kdy jsou částečné platby provedeny pro fakturu dodavatele a je využita platební sleva.
 
 Tato společnost nakupuje zboží od dodavatele 3064. Dodavatel umožňuje společnosti Fabrikam přijmout platební slevu 1 %, pokud je faktura splacena do 14 dní. Faktury je nutné zaplatit do 30 dnů. Dodavatel dá společnosti Fabrikam také platební slevy pro částečné platby. Parametry vyrovnání se nacházejí na stránce **Parametry závazkůs**. Dne 25. dubna je zadána faktura na 1 000,00 pro dodavatele 3064.
 

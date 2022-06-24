@@ -1,6 +1,6 @@
 ---
 title: Použití pracovního postupu ke správě informací o zaměstnanci
-description: Toto téma vysvětluje, jak můžete použít funkci workflow ke správě informací o zaměstnancích.
+description: Tento článek vysvětluje, jak můžete použít funkci workflow ke správě informací o zaměstnancích.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7c416a82976bc39464006325f02f1af4d2f32ea4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fcbacc3cb891043560fabf28487bfeb12d1b77b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908794"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Použití pracovního postupu ke správě informací o zaměstnanci
 
@@ -27,7 +27,7 @@ ms.locfileid: "8691519"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma vysvětluje, jak můžete použít funkci workflowu pro lidské zdroje ke správě informací o zaměstnancích. Například můžete přidružit workflow k pozici a konfigurovat workflow pro schválení, který se zahájí, když zaměstnanec změní svůj záznam.
+Tento článek vysvětluje, jak můžete použít funkci workflowu pro lidské zdroje ke správě informací o zaměstnancích. Například můžete přidružit workflow k pozici a konfigurovat workflow pro schválení, který se zahájí, když zaměstnanec změní svůj záznam.
 
 Funkce workflowu pro lidské zdroje obsahuje velký počet workflowů pro správu aktivit lidských zdrojů. Navíc jsou k dispozici četné možnosti, abyste mohli upravit konkrétní workflowy a přidružit je k hierarchii vykazování. Workflowy pomáhají při správě změn ve více typech informací o zaměstnancích. Workflow je možné přidružit k pozici. Pokud poté zaměstnanci změní svůj záznam zaměstnance, zahájí se workflow, který vyžaduje schválení před uložením nových informací. Workflowy jsou předem definované pro následující typy informací, které vám pomohou efektivně spravovat změny a zachovat přesnost dat zaměstnanců:
 

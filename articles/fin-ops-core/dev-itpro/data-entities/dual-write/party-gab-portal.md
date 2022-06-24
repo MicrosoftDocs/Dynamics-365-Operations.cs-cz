@@ -1,6 +1,6 @@
 ---
 title: Používání portálů Microsoft Power Apps s datovým modelem strany
-description: Toto téma popisuje změny webových rolí portálu Microsoft Power Apps kvůli datovému modelu strany v duálním zápisu.
+description: Tento článek popisuje změny webových rolí portálu Microsoft Power Apps kvůli datovému modelu strany v duálním zápisu.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898939"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Používání portálů Microsoft Power Apps s datovým modelem strany
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060913"
 
 Verze řešení orchestrace aplikace s duálním zápisem 2.0.999.0 a novější zahrnuje změny datového modelu strany a globálního adresáře u tabulek Účet a Kontakt. Změny umožňují vztahy N:N, které podporují pokročilé obchodní scénáře. Tyto změny nejsou podporovány webovými rolemi portálu, včetně zákaznického portálu, které jsou dodávány jako integrované nebo které ve vašem prostředí existovaly před instalací duálního zápisu. Aby webové role fungovaly podle očekávání, musíte pomocí nového datového modelu vytvořit nové webové role. 
 
-Stručně řečeno, změnil se způsob interakce tabulek, ale oprávnění k tabulkám na zákaznickém portálu se nezměnila. Toto téma vysvětluje, jak vytvořit nové webové role, které fungují s novým rozšířeným datovým modelem.
+Stručně řečeno, změnil se způsob interakce tabulek, ale oprávnění k tabulkám na zákaznickém portálu se nezměnila. Tento článek vysvětluje, jak vytvořit nové webové role, které fungují s novým rozšířeným datovým modelem.
 
 Tento diagram ukazuje relaci tabulky **bez** datového modelu strany a globálního adresáře:
 

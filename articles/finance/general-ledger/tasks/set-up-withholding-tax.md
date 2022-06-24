@@ -1,6 +1,6 @@
 ---
 title: Nastavení srážkové daně
-description: Toto téma vysvětluje, jak nastavit srážkovou daň.
+description: Tento článek vysvětluje, jak nastavit srážkovou daň.
 author: twheeloc
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3c4992c7ab02793db3650df5624143d0ec090d0
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0cc080df587904568796a9d6794987326be3ad26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907932"
 ---
 # <a name="set-up-withholding-tax"></a>Nastavení srážkové daně
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit srážkovou daň. *Srážková daň* je daň uvalená na dodavatele, která nevytváří transakce prodejní daně. Srážková daň vypočtená pro platby dodavatelů je povinná. Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků. Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.
+Tento článek vysvětluje, jak nastavit srážkovou daň. *Srážková daň* je daň uvalená na dodavatele, která nevytváří transakce prodejní daně. Srážková daň vypočtená pro platby dodavatelů je povinná. Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků. Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.
 
 1. Přejděte na **Navigační podokno > Moduly > Daň > Nepřímé daně > Srážková daň > Kódy srážkové daně**.
 2. Zvolte **Nové**.

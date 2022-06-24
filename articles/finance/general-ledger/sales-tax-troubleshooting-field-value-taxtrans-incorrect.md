@@ -1,6 +1,6 @@
 ---
 title: Nesprávná hodnota pole v záznamu TaxTrans
-description: Toto téma poskytuje informace o řešení potíží s nesprávnými hodnotami polí v záznamu TaxTrans.
+description: Tento článek poskytuje informace o řešení potíží s nesprávnými hodnotami polí v záznamu TaxTrans.
 author: EricWangChen
 ms.date: 04/27/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6d4e7fd1bae56c5a7cb9a1a558a5344b3e555e83
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6e7329ffdc04207116c92cb42e02750b176713fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899807"
 ---
 # <a name="incorrect-field-value-in-taxtrans"></a>Nesprávná hodnota pole v záznamu TaxTrans
 
 [!include [banner](../includes/banner.md)]
 
-Pokud je hodnota pole v záznamu **TaxTrans** nesprávná, pokuste se problém vyřešit pomocí informací v tomto tématu.
+Pokud je hodnota pole v záznamu **TaxTrans** nesprávná, pokuste se problém vyřešit pomocí informací v tomto článku.
 
 ## <a name="overview-of-values"></a>Přehled hodnot
 Následující seznam ukazuje, jak jsou záznamy **TaxTrans**, **TaxUncommitted** a **TmpTaxWorkTrans** podobné datové sady, ale fungují odlišně.

@@ -1,8 +1,8 @@
 ---
 title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
-description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
+description: Tento článek vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845737"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
@@ -142,6 +142,9 @@ Pokud takto nakonfigurujete formát ER, sestava se vygeneruje pomocí odpovídaj
 
 Pokud odkazovaný štítek nemá překlad pro jazyk kontextu provádění formátu, použije se místo toho text štítku v jazyce EN-US.
 
+> [!TIP]
+> Můžete použít **SLOŽKA** a různé typy komponentů **SOUBOR** v upravitelném formátu ER k určení způsobu generování odchozího souboru. Chcete-li pojmenovat vygenerovaný soubor, nakonfigurujte [výraz](er-formula-language.md) ER pro parametr **Název souboru** komponenty. V nakonfigurovaném výrazu můžete použít štítky. Protože parametr **Název souboru** není ve výchozím nastavení závislý na jazyku, text všech štítků, na které v tomto výrazu odkazujete, je za běhu vystaven ve výchozím jazyce EN-US. Ve verzi 10.0.28 a novější však můžete povolit funkci **Použít parametr 'Jazykové předvolby' na výraz 'Název souboru'**. Výraz **Název souboru** pak zohlední parametr **Jazykové předvolby** při jeho výpočtu.
+
 ## <a name="language"></a>Jazyk
 
 ER podporuje různé způsoby, jak určit jazyk generované sestavy. V POLI **Jazykové preference** na kartě **Formát** můžete vybrat následující hodnoty:
@@ -198,7 +201,7 @@ Konfigurace komponenty ER se provádí v pracovní verzi konfigurace ER, v níž
 
 ![Stránka ER Konfigurace nabízející přístup k verzi konfigurace ve stavu Koncept.](./media/er-multilingual-labels-configurations.png)
 
-Jak bylo popsáno výše v tomto tématu, můžete do upravitelné komponenty ER přidat požadované štítky ER. Tímto způsobem můžete určit text štítků ER v jazyce EN-US. Pak můžete exportovat štítky komponenty ER pomocí vestavěné funkce ER. Vyberte pracovní verzi konfigurace ER, která obsahuje upravitelnou součást ER, a poté vyberte **Směnka \> Export štítků**.
+Jak bylo popsáno výše v tomto článku, můžete do upravitelné komponenty ER přidat požadované štítky ER. Tímto způsobem můžete určit text štítků ER v jazyce EN-US. Pak můžete exportovat štítky komponenty ER pomocí vestavěné funkce ER. Vyberte pracovní verzi konfigurace ER, která obsahuje upravitelnou součást ER, a poté vyberte **Směnka \> Export štítků**.
 
 ![Stránka Konfigurace ER umožňující exportovat štítky ER z vybrané verze pro potvrzení.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ Verze verzí ER řídí přiřazení štítku k libovolnému atributu v komponen
 
 Vestavěná funkce ER [LISTOFFIELDS](er-functions-list-listoffields.md) umožňuje přístup k štítkům ER, které byly nakonfigurovány pro některé položky součástí ER.
 
-Jak je popsáno výše v tomto tématu, atributy **Štítek** a **Popis** každé hodnoty výčtu ER [modelu](#LinkModelEnum) nebo [formátu](#LinkFormatEnum) může být spojena se štítkem ER, který je přístupný v příslušné komponentě ER. Můžete nakonfigurovat výraz ER, kde voláte funkci **LISTOFFIELDS** pomocí výčtu ER jako argumentu. Tento výraz vrací seznam, který obsahuje záznam pro každou hodnotu výčtu ER, který byl definován jako argument této funkce. Každý záznam obsahuje hodnotu štítku ER, který je spojen s hodnotou výčtu ER:
+Jak je popsáno výše v tomto článku, atributy **Štítek** a **Popis** každé hodnoty výčtu ER [modelu](#LinkModelEnum) nebo [formátu](#LinkFormatEnum) může být spojena se štítkem ER, který je přístupný v příslušné komponentě ER. Můžete nakonfigurovat výraz ER, kde voláte funkci **LISTOFFIELDS** pomocí výčtu ER jako argumentu. Tento výraz vrací seznam, který obsahuje záznam pro každou hodnotu výčtu ER, který byl definován jako argument této funkce. Každý záznam obsahuje hodnotu štítku ER, který je spojen s hodnotou výčtu ER:
 
 - Hodnota štítku ER, který je spojen s atributy **Štítek** je uložena v poli **Štítek** vráceného záznamu.
 - Hodnota štítku ER, který je spojen s atributy **Popis** je uložena v poli **Popis** vráceného záznamu.

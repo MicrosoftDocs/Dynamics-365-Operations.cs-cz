@@ -1,6 +1,6 @@
 ---
 title: Vykazování DPH pro Evropu
-description: Toto téma obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
+description: Tento článek obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
 author: ShylaThompson
 ms.date: 03/24/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: e25b01133bfaa84186faf82c80f24a119b40ac2e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856535"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
+Tento článek obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
 
-Toto téma obsahuje obecný přístup k nastavení a generování výkazu DPH. Tento přístup je společný pro uživatele v právnických osobách v těchto zemích a oblastech:
+Tento článek obsahuje obecný přístup k nastavení a generování výkazu DPH. Tento přístup je společný pro uživatele v právnických osobách v těchto zemích a oblastech:
 
 -   Rakousko
 -   Belgie
@@ -41,7 +41,7 @@ Toto téma obsahuje obecný přístup k nastavení a generování výkazu DPH. T
 -   Švédsko
 
 > [!IMPORTANT]
-> Funkce popsané v tomto tématu pro Rakousko, Českou republiku, Německo, Nizozemsko a Švédsko jsou zastaralé. Další informace naleznete v části [Odstraněné a zastaralé funkce](../get-started/removed-deprecated-features-finance.md).
+> Funkce popsané v tomto článku pro Rakousko, Českou republiku, Německo, Nizozemsko a Švédsko jsou zastaralé. Další informace naleznete v části [Odstraněné a zastaralé funkce](../get-started/removed-deprecated-features-finance.md).
 > Pomocí odkazů v následující tabulce získáte další informace o novém vzhledu přiznání k DPH v odpovídajících zemích.
 > 
 >
@@ -60,7 +60,7 @@ Toto téma obsahuje obecný přístup k nastavení a generování výkazu DPH. T
 > | Velká Británie             | [Příprava na integraci s MRD pro DPH](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>Přehled výkazu DPH
-Výkaz DPH je založený na částkách daňových transakcí. Proces generování výkazu DPH je součástí procesu platby DPH, který je implementován pomocí funkce vypořádání a zaúčtování DPH. Tato funkce se používá k výpočtu DPH splatné pro dané období. Výpočet vyrovnání zahrnuje zaúčtovanou DPH pro vybrané období vyrovnání daňových transakcí. Postup pro výpočet dat pro výkaz DPH je založen na vztahu mezi kódy DPH a kódy vykazování DPH, kde kódy vykazování daně odpovídají polím s výkazy DPH. Pro každý kód DPH by měly být nastaveny kódy vykazování DPH pro každý typ transakce, například zdanitelné prodeje zdanitelné nákupy, zdanitelný import. Tento typ transakcí je popsán v části Kódy DPH pro vykazování DPH dále v tomto tématu.
+Výkaz DPH je založený na částkách daňových transakcí. Proces generování výkazu DPH je součástí procesu platby DPH, který je implementován pomocí funkce vypořádání a zaúčtování DPH. Tato funkce se používá k výpočtu DPH splatné pro dané období. Výpočet vyrovnání zahrnuje zaúčtovanou DPH pro vybrané období vyrovnání daňových transakcí. Postup pro výpočet dat pro výkaz DPH je založen na vztahu mezi kódy DPH a kódy vykazování DPH, kde kódy vykazování daně odpovídají polím s výkazy DPH. Pro každý kód DPH by měly být nastaveny kódy vykazování DPH pro každý typ transakce, například zdanitelné prodeje zdanitelné nákupy, zdanitelný import. Tento typ transakcí je popsán v části Kódy DPH pro vykazování DPH dále v tomto článku.
 
 Pro každý kód vykazování by mělo být určeno konkrétní rozložení sestavy. Ve stejnou dobu jsou kódy DPH propojeny s konkrétním finančním úřadem prostřednictvím období vyrovnání DPH. Pro každý finanční úřad pro vykazování DPH by mělo být určeno konkrétní rozložení sestavy. Tedy pouze kódy vykazování DPH se stejným rozložením sestavy, která je nastavena pro finanční úřad k odvedení DPH v období vyrovnání DPH pro kód DPH lze vybrat v nastavení sestavy kódu DPH. Transakce DPH generované při účtování objednávky nebo deníku obsahují kód DPH, zdroj DPH, směr DPH a částky transakcí (částka základu daně a výše daně v zúčtovací měně, měně DPH a měně transakce). V závislosti na kombinaci atributů transakce DPH, částky transakce tvoří celkové částky určené pro kódy vykazování DPH určené pro kódy DPH. Následující obrázek znázorňuje vztah mezi daty.
 

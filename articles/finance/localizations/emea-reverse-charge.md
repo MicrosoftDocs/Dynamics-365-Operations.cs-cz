@@ -1,6 +1,6 @@
 ---
 title: Mechanismus přenesení daňové povinnosti pro režim DPH / GST
-description: Toto téma popisuje určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí, v Saúdské Arábii a Singapuru.
+description: Tento článek popisuje určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí, v Saúdské Arábii a Singapuru.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861255"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obecný přístup k nastavení funkce přenesení daňové povinnosti pro země / regiony, které přijímají režimy DPH nebo GST.
+Tento článek popisuje obecný přístup k nastavení funkce přenesení daňové povinnosti pro země / regiony, které přijímají režimy DPH nebo GST.
                                                                                  
 Dostupnost funkce v zemi / oblasti je řízena následujícími funkcemi v pracovním prostoru **Správa funkcí**.
 
@@ -33,7 +33,7 @@ Dostupnost funkce v zemi / oblasti je řízena následujícími funkcemi v praco
 | Zpětný poplatek za další země            | Bahrajn  </br>Kuvajt  </br>Omán  </br>Katar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Povolit mechanismus přenesení daňové povinnosti pro schéma DPH/GST | Všechny ostatní země / regiony kromě:  </br>Brazílie  </br>Indie  </br>Rusko                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Další informace viz [Povolení mechanismu zpětného účtování pro funkci schématu DPH / GST](#enable-reverse-charge) dále v tomto tématu.
+ Další informace viz [Povolení mechanismu zpětného účtování pro funkci schématu DPH / GST](#enable-reverse-charge) dále v tomto článku.
 
 Mechanismus reverse charge znamená přenesení odpovědnosti za účetnictví a vykazování DPH z prodávajícího na kupujícího. Příjemce tedy do výkazu DPH uvádí DPH na výstupu (v roli prodávajícího) i DPH na vstupu (v roli kupujícího).
 

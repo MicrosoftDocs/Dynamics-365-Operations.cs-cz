@@ -1,6 +1,6 @@
 ---
-title: Začněte s výpočtem daně
-description: Toto téma vysvětluje, jak nastavit výpočet daně.
+title: Začínáme s výpočtem daně
+description: Tento článek vysvětluje, jak nastavit výpočet daně.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855276"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o tom, jak začít pracovat s výpočtem daně. Části v tomto tématu vás provedou návrhem na vysoké úrovni a kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. 
+Tento článek poskytuje informace o tom, jak začít pracovat s výpočtem daně. Části v tomto článku vás provedou návrhem na vysoké úrovni a kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. 
 
 Nastavení se skládá ze tří hlavních kroků.
 
@@ -77,11 +77,11 @@ Po provedení těchto kroků se následující nastavení automaticky synchroniz
 - Skupiny DPH
 - Skupiny DPH položky
 
-Zbývající části tohoto tématu poskytují podrobnější informace krocích konfigurace.
+Zbývající části tohoto článku poskytují podrobnější informace krocích konfigurace.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Než budete moci provést zbývající postupy uvedené v tomto tématu, musí být splněny následující předpoklady:<!--TO HERE-->
+Než budete moci provést zbývající postupy uvedené v tomto článku, musí být splněny následující předpoklady:<!--TO HERE-->
 
 - Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.21 nebo novější.
 - Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
@@ -212,7 +212,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     | Prodej            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Pokud je výchozí skupina daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto tématu.
+    > Pokud je výchozí skupina daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto článku.
 
 22. Na kartě **Použitelnost daňové skupiny zboží** vyberte sloupce, které jsou nutné k určení správného daňového kódu, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina zboží** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina DPH zboží na řádku transakce.
 
@@ -224,7 +224,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     | D0003     | Snížené        |
 
     > [!NOTE]
-    > Pokud je výchozí skupina položek daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto tématu.
+    > Pokud je výchozí skupina položek daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto článku.
 
     Další informace o tom, jak se určují daňové kódy ve Výpočtu daně, viz [Logika určování skupiny DPH a skupiny DPH zboží](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Nastavení v této části provádí právnická osoba. Musíte jej konfigurovat
 2. Na kartě **Obecné** natavte následující pole:
 
     - **Povolit službu výpočtu daně** – Zaškrtnutím tohoto políčka povolíte výpočet daně pro právnickou osobu. Pokud není pro aktuální právnickou osobu povolen, bude právnická osoba i nadále k určení a výpočtu daně používat stávající daňový modul.
-    - **Nastavení funkce** – Vyberte publikované nastavení a verzi daňové funkce pro právnickou osobu. Další informace o tom, jak nastavit a dokončit publikovanou daňovou funkci, najdete v předchozí části tohoto tématu.
+    - **Nastavení funkce** – Vyberte publikované nastavení a verzi daňové funkce pro právnickou osobu. Další informace o tom, jak nastavit a dokončit publikovanou daňovou funkci, najdete v předchozí části tohoto článku.
     - **Obchodní proces** – Vyberte obchodní procesy, které chcete povolit.
 
 3. Na kartě **Výpočet** definujte očekávané pravidlo zaokrouhlování pro právnickou osobu. Další informace o logice zaokrouhlení viz [Pravidla zaokrouhlování výpočtu daně](https://go.microsoft.com/fwlink/?linkid=2166988).

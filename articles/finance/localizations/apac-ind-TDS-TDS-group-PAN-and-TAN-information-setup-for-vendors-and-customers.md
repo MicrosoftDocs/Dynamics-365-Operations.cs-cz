@@ -1,6 +1,6 @@
 ---
 title: Nastavení údajů skupiny TDS, PAN a TAN pro dodavatele a zákazníky
-description: Toto téma vysvětluje, jak pro dodavatele a zákazníky nastavit informace o skupině daně stržené u zdroje (TDS), trvalém čísle účtu (PAN) a čísle daňového účtu (TAN).
+description: Tento článek vysvětluje, jak pro dodavatele a zákazníky nastavit informace o skupině daně stržené u zdroje (TDS), trvalém čísle účtu (PAN) a čísle daňového účtu (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859759"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Nastavení údajů skupiny TDS, PAN a TAN pro dodavatele a zákazníky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak pro dodavatele a zákazníky nastavit informace o skupině daně stržené u zdroje (TDS), trvalém čísle účtu (PAN) a čísle daňového účtu (TAN).
+Tento článek vysvětluje, jak pro dodavatele a zákazníky nastavit informace o skupině daně stržené u zdroje (TDS), trvalém čísle účtu (PAN) a čísle daňového účtu (TAN).
 
 1. Přejděte na **Závazky \> Dodavatelé \> Všichni dodavatelé** nebo **Pohledávky \> Zákazníci \> Všichni zákazníci**.
 

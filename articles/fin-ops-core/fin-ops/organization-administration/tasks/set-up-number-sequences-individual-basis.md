@@ -1,6 +1,6 @@
 ---
 title: Nastavení číselných řad na jednotlivém základě
-description: Toto téma vysvětluje nastavení číselných řad na jednotlivém základě.
+description: Tento článek vysvětluje nastavení číselných řad na jednotlivém základě.
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904981"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nastavení číselných řad na jednotlivém základě
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje nastavení číselných řad na jednotlivém základě. Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují. Hlavní záznam dat nebo transakce, která vyžaduje identifikátor, je označován jako odkaz. Než bude možné vytvořit nové záznamy pro odkaz, musíte nastavit číselné řady a spojit je s odkazem. Můžete nastavit všechny požadované číselné řady současně pomocí průvodce **Nastavení číselných řad**, nebo můžete vytvořit nebo upravit jednotlivé číselné řady na stránce **Číselné řady**.
+Tento článek vysvětluje nastavení číselných řad na jednotlivém základě. Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují. Hlavní záznam dat nebo transakce, která vyžaduje identifikátor, je označován jako odkaz. Než bude možné vytvořit nové záznamy pro odkaz, musíte nastavit číselné řady a spojit je s odkazem. Můžete nastavit všechny požadované číselné řady současně pomocí průvodce **Nastavení číselných řad**, nebo můžete vytvořit nebo upravit jednotlivé číselné řady na stránce **Číselné řady**.
 
 1. Přejděte na **Navigační podokno > Moduly > Správa organizace > Číselné řady > Číselné řady**.
 2. Vyberte **Číselnou řadu**.

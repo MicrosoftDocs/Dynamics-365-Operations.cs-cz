@@ -1,6 +1,6 @@
 ---
 title: Mezní limit a mezní limit výjimky
-description: Toto téma popisuje mezí hodnoty a mezní hodnoty výjimek pro daň odečtenou u zdroje (TDS).
+description: Tento článek popisuje mezí hodnoty a mezní hodnoty výjimek pro daň odečtenou u zdroje (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877929"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Mezní limit a mezní limit výjimky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje mezí hodnoty a mezní hodnoty výjimek pro daň odečtenou u zdroje (TDS). TDS na fakturách a platbách se vždy počítá s ohledem na mezní hodnotu a mezní hodnotu výjimky definované pro složky daně TDS na stránce **Složky srážkové daně**. Složky daně TDS jsou připojeny k daňovým kódům TDS, které jsou zahrnuty do daňových skupin TDS. Daňové skupiny TDS jsou připojeny k dodavatelům a zákazníkům k výpočtu TDS na úrovni faktury nebo platby.
+Tento článek popisuje mezí hodnoty a mezní hodnoty výjimek pro daň odečtenou u zdroje (TDS). TDS na fakturách a platbách se vždy počítá s ohledem na mezní hodnotu a mezní hodnotu výjimky definované pro složky daně TDS na stránce **Složky srážkové daně**. Složky daně TDS jsou připojeny k daňovým kódům TDS, které jsou zahrnuty do daňových skupin TDS. Daňové skupiny TDS jsou připojeny k dodavatelům a zákazníkům k výpočtu TDS na úrovni faktury nebo platby.
 
 TDS se vypočítá, pokud částka za transakci nebo kumulativní transakce zaúčtované u konkrétní skupiny TDS u dodavatele překročí prahovou hodnotu uvedenou na stránce **Složky srážkové daně**. TDS se nepočítá, dokud kumulativní částka transakce nepřekročí stanovený limit.
 

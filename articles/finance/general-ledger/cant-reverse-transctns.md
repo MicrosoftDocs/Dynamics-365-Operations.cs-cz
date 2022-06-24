@@ -1,6 +1,6 @@
 ---
 title: Proč nemohu tuto transakci stornovat?
-description: Toto téma popisuje různé důvody, proč transakce nelze stornovat. Uvádí také řešení tohoto problému.
+description: Tento článek popisuje různé důvody, proč transakce nelze stornovat. Uvádí také řešení tohoto problému.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876175"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Proč nemohu tuto transakci stornovat?
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje různé důvody, proč transakce nelze stornovat. Uvádí také řešení tohoto problému.
+Tento článek popisuje různé důvody, proč transakce nelze stornovat. Uvádí také řešení tohoto problému.
 
 ## <a name="symptom"></a>Příznak
 
@@ -35,14 +35,14 @@ Organizace se mohou dostat do situací, kdy musí stornovat transakci, kterou za
 
 ## <a name="resolution"></a>Řešení
 
-Transakce musí před stornováním splňovat konkrétní kritéria. Zbývající části tohoto tématu poskytují ověření pro každý modul. Ačkoli se toto téma zaměřuje na transakce v Microsoft Dynamics 365 Finance, některé z konceptů a ověřování lze použít na jiné aplikace, jako například Dynamics 365 Supply Chain Management.
+Transakce musí před stornováním splňovat konkrétní kritéria. Zbývající části tohoto článku poskytují ověření pro každý modul. Ačkoli se tento článek zaměřuje na transakce v Microsoft Dynamics 365 Finance, některé z konceptů a ověřování lze použít na jiné aplikace, jako například Dynamics 365 Supply Chain Management.
 
 Místo, kde je transakce stornována, může navíc ovlivnit, zda ji lze stornovat. Například platbu dodavatele, která je zaúčtována jako šek, lze stornovat pouze ze sekce **Šeky** na stránce transakce pro bankovní účty. Nelze ji stornovat ze stránky **Transakce dokladu** v hlavní knize.
 
 Pokud funkce **Hromadné stornování pro více dokumentů** (také známá jako funkce Hromadné stornování) je zapnutá v pracovním prostoru **Správa funkcí**, ovlivňuje to, kolik transakcí lze stornovat a kde je lze stornovat. Když je tato funkce zapnutá, poskytuje dvě výhody:
 
 - U některých typů transakcí lze vybrat a stornovat více než jednu transakci z deníku, ze kterého byla zaúčtována, nebo ze stránky **Transakce dokladu**. Jednotlivé transakce však musely být před zapnutím funkce reverzibilní. Než byla tato funkce zavedena, transakce musely být stornovány po jedné.
-- *Některé* transakce dílčí hlavní knihy lze stornovat z deníku (hlavního deníku) nebo ze stránky **Transakce dokladu**. Nemusí být stornovány ze stránky dílčí hlavní knihy. Například deník faktury dodavatele mohl být dříve stornován pouze ze stránky **Transakce dodavatele**. Nyní jej však lze stornovat také ze strany hlavní knihy, z deníku nebo ze stránky **Transakce dokladu**. Každá část tohoto tématu vysvětluje typy transakcí, na které se tato výhoda nevztahuje.
+- *Některé* transakce dílčí hlavní knihy lze stornovat z deníku (hlavního deníku) nebo ze stránky **Transakce dokladu**. Nemusí být stornovány ze stránky dílčí hlavní knihy. Například deník faktury dodavatele mohl být dříve stornován pouze ze stránky **Transakce dodavatele**. Nyní jej však lze stornovat také ze strany hlavní knihy, z deníku nebo ze stránky **Transakce dokladu**. Každá část tohoto článku vysvětluje typy transakcí, na které se tato výhoda nevztahuje.
 
 Funkce hromadného stornování **neumožňuje** stornování více typů transakcí. Pokud typ transakce nemohl být dříve stornován, nelze jej ani po zapnutí funkce stornovat. Faktury dodavatele nákupních objednávek například nelze stornovat bez ohledu na to, zda je zapnutá funkce hromadného stornování.
 
@@ -189,7 +189,7 @@ Následující typy transakcí nelze stornovat:
 
 Několik typů transakcí aktualizuje dílčí hlavní knihu pohledávek. Mezi příklady patří zákaznické faktury z prodejních objednávek, zákaznické faktury zadávané prostřednictvím obecného deníku, faktury s volným textem, platby odběratelům a odpisy.
 
-Pokud je funkce hromadného stornování vypnuta, transakce lze stornovat jednotlivě buď ze stránky **Transakce odběratele** pro faktury nebo na stránce **Bankovní účty** pro vklady. Informace o zrušení platby naleznete v části [Správa hotovosti a banky](cant-reverse-transctns.md#cash-and-bank-management) dále v tomto tématu.
+Pokud je funkce hromadného stornování vypnuta, transakce lze stornovat jednotlivě buď ze stránky **Transakce odběratele** pro faktury nebo na stránce **Bankovní účty** pro vklady. Informace o zrušení platby naleznete v části [Správa hotovosti a banky](cant-reverse-transctns.md#cash-and-bank-management) dále v tomto článku.
 
 Pokud je zapnuta funkce hromadného stornování, jednu nebo více transakcí pohledávek lze též stornovat ze stránky **Transakce dokladu** a z deníku, ze kterého byly transakce zaúčtovány. Vklady však lze i nadále stornovat pouze z bankovního účtu a faktury s volným textem lze stornovat pouze z původní stránky (pokud je zapnutá funkce umožňující opravy). Navíc transakce odběratele nelze stále stornovat ze stránky **Transakce pro \<main account\>** pro hlavní knihu. Lze je však stornovat ze stránky **Transakce dokladu**.
 

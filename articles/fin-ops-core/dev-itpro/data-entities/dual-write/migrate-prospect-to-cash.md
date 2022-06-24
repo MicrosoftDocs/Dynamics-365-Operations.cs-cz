@@ -1,6 +1,6 @@
 ---
 title: Migrace potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu
-description: Toto téma popisuje, jak migrovat potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu.
+description: Tento článek popisuje, jak migrovat potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894259"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrace potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu
 
 [!include [banner](../../includes/banner.md)]
 
-Řešení Zpeněžení potenciálního zákazníka dostupné pro Integrátor dat není kompatibilní s duálním zápisem. Důvodem je index msdynce_AccountNumber v tabulce účtů, který byl součástí řešení Zpeněžení potenciálního zákazníka. Pokud tento index existuje, nemůžete vytvořit stejné číslo zákaznického účtu ve dvou různých právnických osobách. Můžete buď začít znovu s duálním zápisem migrací dat Zpeněžení potenciálního zákazníka na hotovostní data z Integrátoru dat na duální zápis, nebo můžete nainstalovat poslední „dorman“ verzi řešení Zpeněžení potenciálního zákazníka. Toto téma popisuje oba tyto scénáře.
+Řešení Zpeněžení potenciálního zákazníka dostupné pro Integrátor dat není kompatibilní s duálním zápisem. Důvodem je index msdynce_AccountNumber v tabulce účtů, který byl součástí řešení Zpeněžení potenciálního zákazníka. Pokud tento index existuje, nemůžete vytvořit stejné číslo zákaznického účtu ve dvou různých právnických osobách. Můžete buď začít znovu s duálním zápisem migrací dat Zpeněžení potenciálního zákazníka na hotovostní data z Integrátoru dat na duální zápis, nebo můžete nainstalovat poslední „dorman“ verzi řešení Zpeněžení potenciálního zákazníka. Tento článek popisuje oba tyto scénáře.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Nainstalujte poslední „dorman“ verzi řešení Integrátor dat - Zpeněžení potenciálního zákazníka
 
@@ -50,7 +50,7 @@ Pokud chcete migrovat potenciálního zákazníka na hotovostní data ze služby
 5. Vytvořte spojení s duálním zápisem mezi finanční a provozní aplikací a aplikací Customer Engagement pro jednu nebo více právnických osob.
 6. Povolte mapy tabulek s duálním zápisem a spusťte počáteční synchronizaci pro požadovaná referenční data. (Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).) Příklady požadovaných údajů zahrnují skupiny zákazníků, platební podmínky a platební plány. Nepovolujte mapy duálního zápisu pro tabulky, které vyžadují inicializaci, jako je například účet, nabídka, řádek nabídky, objednávka a tabulky řádků objednávky.
 7. V aplikaci Customer Engagement přejděte na **Pokročilé nastavení \> Nastavení systému \> správa dat \> Pravidla pro detekci duplicit** a zakažte všechna pravidla.
-8. Inicializujte tabulky uvedené v kroku 2. Pokyny najdete ve zbývajících částech tohoto tématu.
+8. Inicializujte tabulky uvedené v kroku 2. Pokyny najdete ve zbývajících částech tohoto článku.
 9. Otevřete finanční a provozní aplikaci a povolte mapy tabulek, jako je účet, nabídka, řádek nabídky, objednávka a mapy tabulky řádků objednávky. Pak spusťte počáteční synchronizaci. (Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).) Tento proces bude synchronizovat další informace z finanční a provozní aplikace, jako je stav zpracování, dodací a fakturační adresy, weby a sklady.
 
 ## <a name="account-table"></a>Tabulka účtu
@@ -98,7 +98,7 @@ Protože data z tabulky **Produkty** jsou navržena tak, aby plynula jedním sm�
 
 ## <a name="quote-and-quote-product-tables"></a>Nabídka a tabulky produktu Nabídka
 
-Pro tabulku **Nabídka** postupujte podle pokynů v části [Tabulka objednávky](#order-table) dříve v tomto tématu. Pro tabulku **Produkt nabídky** postupujte podle pokynů v části [Tabulka produktů objednávky](#order-products-table) dříve v tomto tématu.
+Pro tabulku **Nabídka** postupujte podle pokynů v části [Tabulka objednávky](#order-table) dříve v tomto článku. Pro tabulku **Produkt nabídky** postupujte podle pokynů v části [Tabulka produktů objednávky](#order-products-table) dříve v tomto tématu.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

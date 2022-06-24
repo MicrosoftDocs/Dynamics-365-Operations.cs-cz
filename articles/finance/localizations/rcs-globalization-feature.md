@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Services (RCS) - funkce globalizace
-description: Toto téma vysvětluje, jak pomocí služby Microsoft Regulatory Configuration Services  (RCS) a globálního úložiště vytvářet a používat funkce globalizace.
+description: Tento článek vysvětluje, jak pomocí služby Microsoft Regulatory Configuration Services (RCS) a globálního úložiště vytvářet a používat funkce globalizace.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888887"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) - funkce globalizace
 
@@ -40,7 +40,7 @@ Před dokončením postupů musíte provést kroky související s následujíc�
 - Přístup k instanci RCS.
 - Vytvoření a aktivace poskytovatele konfigurace. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-V instanci aplikací Finance and Operations proveďte následující postup.
+V instanci finančních a provozních aplikací postupujte takto.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Nemáte-li pro vaši společnost zřízeno žádné RCS prostředí, pro její zřízení vyberte odkaz **Regulatory Services – Konfigurace** a postupujte podle pokynů.
@@ -64,7 +64,7 @@ Chcete-li použít funkci globalizace, musíte ji nejprve naimportovat z globál
 
 ## <a name="access-globalization-features"></a>Přístup k funkcím globalizace
 
-1. Ujistěte se, že je funkce **Globalizační funkce** v okně Správa funkcí zapnutá, jak je popsáno dříve v tomto tématu.
+1. Ujistěte se, že je funkce **Globalizační funkce** v okně Správa funkcí zapnutá, jak je popsáno dříve v tomto článku.
 2. Otevřete nový pracovní prostor **Globalizační funkce** a poté v části **Funkce** vyberte dlaždici **elektronická fakturace**.
 
     ![Pracovní prostor Globální funkce.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ K dispozici jsou následující akce pro konfigurace:
 - **Zobrazení** - Prohlédněte si základní konfigurace funkcí, které nevyžadují žádnou aktualizaci.
 - **Upravit** - Vytvořte pracovní verzi vybrané konfigurace, abyste mohli upravovat formát nebo mapování formátu v Návrháři formátů.
 - **Odstranit** - Odstranění vybrané konfigurace z funkce.
-- **Přeskládat** - Přeskládejte funkci. Další informace naleznete v části [Přeskládání odvozených funkcí globalizace](#rebase) dále v tomto tématu.
+- **Přeskládat** - Přeskládejte funkci. Další informace naleznete v části [Přeskládání odvozených funkcí globalizace](#rebase) dále v tomto článku.
 
 ### <a name="setups"></a>Nastavení
 
@@ -182,7 +182,7 @@ Pro nastavení funkcí jsou k dispozici následující akce:
 
 K dispozici jsou následující akce pro prostředí:
 
-- **Povolit** - U vybrané verze funkce vyberte publikované prostředí a vyberte datum **Platnost od**, odkdy by mělo být k dispozici. Další informace naleznete v části [Konfigurace prostředí pro povolení](#configureenvironment) dále v tomto tématu.
+- **Povolit** - U vybrané verze funkce vyberte publikované prostředí a vyberte datum **Platnost od**, odkdy by mělo být k dispozici. Další informace naleznete v části [Konfigurace prostředí pro povolení](#configureenvironment) dále v tomto článku.
 - **Zrušit** - Odebere prostředí pro nastavení funkce.
 
 ### <a name="organizations"></a>Organizace

@@ -1,6 +1,6 @@
 ---
 title: Návrhář receptur v elektronickém výkaznictví
-description: Toto téma obsahuje obecné informace o použití návrháře receptur v elektronickém výkaznictví (ER).
+description: Tento článek obsahuje obecné informace o použití návrháře receptur v elektronickém výkaznictví (ER).
 author: NickSelin
 ms.date: 04/08/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 6b03613cb40c5ca718f45e69740d29059fcfb70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894288"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví. Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu. Tyto vzorce připomínají vzorce aplikace Microsoft Excel. V recepturách jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace a převod datových typů , stejně jako další funkce specifické pro danou obchodní doménu.
+Tento článek popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví. Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu. Tyto vzorce připomínají vzorce aplikace Microsoft Excel. V recepturách jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace a převod datových typů , stejně jako další funkce specifické pro danou obchodní doménu.
 
 ## <a name="formula-designer-overview"></a>Přehled návrháře vzorců
 

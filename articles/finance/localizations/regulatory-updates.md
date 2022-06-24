@@ -1,6 +1,6 @@
 ---
-title: Povinné aktualizace
-description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
+title: Aktualizace předpisů
+description: Tento článek obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: VStamberg
 ms.date: 04/18/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904274"
 ---
 # <a name="regulatory-updates"></a>Aktualizace předpisů
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v lokalizacích podporovaných Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace viz [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+V tomto článku je uveden seznam povinných aktualizací, které jsou plánovány a vydány v lokalizacích podporovaných Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace viz [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje: [Plány vydání Dynamics 365 a Power Platform](/business-applications-release-notes/index).
 

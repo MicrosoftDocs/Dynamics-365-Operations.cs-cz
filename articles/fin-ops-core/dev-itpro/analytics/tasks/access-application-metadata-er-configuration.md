@@ -1,6 +1,6 @@
 ---
 title: Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
-description: Kroky v tomto tématu popisují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví pomocí metadat.
+description: Kroky v tomto článku popisují, jak může uživatel služby Regulatory Configuration Service navrhnout nové mapování modelu elektronického výkaznictví pomocí metadat.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76e31e08cafb06cb2e8508c29f6e03d2559ebeb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754335"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883647"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
 
 [!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace. K metadatům aplikace se přistupuje pomocí konfigurace metadat ER, která obsahuje ukázkovou sadu metadat pro přístup k transakcím zahraničního obchodu. Provedení těchto kroků vyžaduje, abyste nejprve dokončili kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pak proveďte kroky uvedené v tématu [Příprava použití metadat aplikace v RCS](prepare-application-metadata-rcs.md).
+Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace. K metadatům aplikace se přistupuje pomocí konfigurace metadat ER, která obsahuje ukázkovou sadu metadat pro přístup k transakcím zahraničního obchodu. Provedení těchto kroků vyžaduje, abyste nejprve dokončili kroky v článku [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pak proveďte kroky uvedené v článku [Příprava použití metadat aplikace v RCS](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 1. Přejděte na **Všechny pracovní prostory** > **Elektronické výkaznictví**. 

@@ -1,6 +1,6 @@
 ---
 title: Přehled vyrovnání
-description: V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
+description: V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887941"
 ---
 # <a name="settlement-overview"></a>Přehled vyrovnání
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724890"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
+V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
 
 Při vyrovnání transakce z jednoho dokumentu platí pro transakce na jiném dokumentu pro zvýšení nebo snížení zůstatku z jednotlivých dokumentů. Platbu lze například použít na fakturu. Různé typy transakcí lze vyrovnat v různých časech a prostřednictvím různých metod. Proces vyrovnání může také způsobit vygenerování nových transakcí.
 

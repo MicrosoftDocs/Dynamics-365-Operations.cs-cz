@@ -1,6 +1,6 @@
 ---
 title: Konfigurace integrace s aplikací Dayforce
-description: Toto téma popisuje požadované kroky konfigurace potřebné pro integraci mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce.
+description: Tento článek popisuje požadované kroky konfigurace potřebné pro integraci mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896127"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691325"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto tématu. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
+Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto článku. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
 
 Pokud používáte službu, jako je Dayforce, pro dokončení zpracování výplat, je nutné povolit integraci v aplikaci Human Resources. Integrace vyžaduje specifická data z aplikace Human Resources. Z tohoto důvodu musí ověřit, zda data, která jsou mapována do Dayforce, jsou v aplikaci Human Resources nakonfigurována tak, aby podporovala integraci. Integrace používá následující rozsáhlé kategorie dat:
 
@@ -37,7 +37,7 @@ Pokud používáte službu, jako je Dayforce, pro dokončení zpracování výpl
 - Mzdová data, jako například mzdové cykly, mzdová období a kódy příjmů
 - Data pracovníka
 
-Toto téma popisuje kroky, které je třeba provést k povolení integrace, a vysvětluje typy dat a podrobnosti konfigurace, které integrace vyžaduje.
+Tento článek popisuje kroky, které je třeba provést k povolení integrace, a vysvětluje typy dat a podrobnosti konfigurace, které integrace vyžaduje.
 
 ## <a name="enable-the-integration"></a>Povolení integrace
 

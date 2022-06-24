@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877678"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Omezení úpravy osobních údajů
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695865"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-Toto téma popisuje, jak omezit zaměstnance v úpravách kontaktních údajů v aplikaci Dynamics 365 Human Resources. Možná budete chtít zabránit zaměstnancům v úpravách určitých kontaktních údajů, například jejich sídla firmy nebo e-mailové adresy.
+Tento článek popisuje, jak omezit zaměstnance v úpravách kontaktních údajů v aplikaci Dynamics 365 Human Resources. Možná budete chtít zabránit zaměstnancům v úpravách určitých kontaktních údajů, například jejich sídla firmy nebo e-mailové adresy.
 
 > [!NOTE]
 > Chcete-li použít tuto funkci, musíte nejprve povolit funkci **(Preview) Omezit zaměstnance v přidávání nebo úpravách adresy a kontaktních údajů pro vybrané účely** ve Správě funkcí. Další informace o povolení funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br><br>![Povolit funkci Preview.](./media/hr-employee-self-service-restrict-enable.png)
