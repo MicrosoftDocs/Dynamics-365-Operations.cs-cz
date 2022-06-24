@@ -1,6 +1,6 @@
 ---
 title: Import příchozích ASN prostřednictvím datové entity V3
-description: Toto téma vysvětluje, jak spravovat import příchozích oznámení o odeslání (ASN) prostřednictvím datové entity Příchozí ASN.
+description: Tento článek vysvětluje, jak spravovat import příchozích oznámení o odeslání (ASN) prostřednictvím datové entity Příchozí ASN.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907109"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Import příchozích ASN prostřednictvím datové entity V3
 
@@ -26,7 +26,7 @@ Pokročilá oznámení o přepravě (ASN) vás informují o dodávkách dodavate
 
 ASN mohou pracovníkům skladu pomoci zjistit, co kdy dorazí. Proto se mohou připravit. Pracovníci skladu mohou navíc pomocí ASN přiřadit podrobnosti zásilky k související nákupní objednávce, která byla dříve vytvořena.
 
-Toto téma představuje sbírku scénářů, které prostřednictvím příkladů ukazují, jak pracovat se soubory ASN.
+Tento článek představuje sbírku scénářů, které prostřednictvím příkladů ukazují, jak pracovat se soubory ASN.
 
 > [!IMPORTANT]
 > Import *Příchozí ASN* se vztahuje pouze na položky, které jsou povoleny pro pokročilou správu skladu (WMS). Než obdržíte ASN, musí být v systému zaregistrována nákupní objednávka u dodavatele, který dané ASN odesílá.

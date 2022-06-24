@@ -1,6 +1,6 @@
 ---
 title: Povolení tisku popisku registrační značky
-description: Tohle téma popisuje automatický tisk štítku Sériový nákladový kód kontejneru (SSCC) po vydání poslední položky ze skladu v procesu prodejního výdeje.
+description: Tento článek popisuje automatický tisk štítku Sériový nákladový kód kontejneru (SSCC) po vydání poslední položky ze skladu v procesu prodejního výdeje.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903659"
 ---
 # <a name="enable-license-plate-label-printing"></a>Povolení tisku popisku registrační značky
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje automatický tisk štítku Sériový nákladový kód kontejneru (SSCC) po vydání poslední položky ze skladu v procesu prodejního výdeje. Tento postup můžete projít v ukázkových datech společnosti USMF. Pokud jej používáte s použitím vlastních dat, je třeba mít k nastavenou číselnou řadu pro registračních značky vozidla. Je nutné nastavit tiskárnu štítků před zahájením této úlohy. Přejděte do nabídky Správa organizace > Nastavení > Jednotky Síťové tiskárny. V podokně akcí klikněte na Možnosti a poté klepněte na tlačítko Stáhnout instalační program agenta směrování dokumentů. Spusťte instalační program a ujistěte se, že máte nastavenu síťovou tiskárnu na hodnotu Aktivní předtím, než budete pokračovat v postupu.
+Tento článek popisuje automatický tisk štítku Sériový nákladový kód kontejneru (SSCC) po vydání poslední položky ze skladu v procesu prodejního výdeje. Tento postup můžete projít v ukázkových datech společnosti USMF. Pokud jej používáte s použitím vlastních dat, je třeba mít k nastavenou číselnou řadu pro registračních značky vozidla. Je nutné nastavit tiskárnu štítků před zahájením této úlohy. Přejděte do nabídky Správa organizace > Nastavení > Jednotky Síťové tiskárny. V podokně akcí klikněte na Možnosti a poté klepněte na tlačítko Stáhnout instalační program agenta směrování dokumentů. Spusťte instalační program a ujistěte se, že máte nastavenu síťovou tiskárnu na hodnotu Aktivní předtím, než budete pokračovat v postupu.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Nastavení předpony společnosti GS1

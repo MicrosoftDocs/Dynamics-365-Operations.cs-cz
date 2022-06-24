@@ -1,6 +1,6 @@
 ---
 title: Spravujte změny v recepturách a jejich látkách
-description: Toto téma popisuje, jak provádět správu vzorců a spravovat změny ve zpracování hlavních dat výroby.
+description: Tento článek popisuje, jak provádět správu vzorců a spravovat změny ve zpracování hlavních dat výroby.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904065"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Spravujte změny v recepturách a jejich látkách
 
@@ -29,7 +29,7 @@ Pokud používáte výrobní možnosti Microsoft Dynamics 365 Supply Chain Manag
 
 ## <a name="turn-this-feature-on-or-off"></a>Zapnutí nebo vypnutí této funkce
 
-Funkce popsané v tomto tématu vyžadují, aby byly na vašem systému zapnuty funkce *Správa technických změn* a *Správa změn v recepturách a jejich látkách*. Podrobnosti o tom, jak tyto funkce zapnout nebo vypnout, najdete v tématu [Přehled správy technických změn](product-engineering-overview.md).
+Funkce popsané v tomto článku vyžadují, aby byly na vašem systému zapnuty funkce *Správa technických změn* a *Správa změn v recepturách a jejich látkách*. Podrobnosti o tom, jak tyto funkce zapnout nebo vypnout, najdete v tématu [Přehled správy technických změn](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Konvence pojmenování funkcí
 
@@ -46,7 +46,7 @@ Následující seznam shrnuje, jak se funkce správy technických změn vztahuj�
 - **Kontrola připravenosti** - Pomocí systémových kontrol a pokynů uživatele (dotazníky a kontrolní seznamy) zajistěte, aby byla před vydáním produktu plně zadána všechna požadovaná data o produktu. Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).
 - **Vylepšená funkce vydání produktu** - Vydejte plně definované verze produktu a jeho receptury z organizace (právnické osoby) do jiných právnických osob. Můžete dokonce rozhodnout, zda musí být informace o produktu před vydáním zkontrolovány nebo upraveny. Další informace naleznete v tématu [Vydání struktur produktu](release-product-structure.md).
 
-Všimněte si, že většina témat, na která se odkazuje v předchozím seznamu, poskytuje příklady založené na kusovnících (BOM). Vzorce však fungují podobným způsobem. Zde je několik dalších konceptů, které je užitečné znát, když ke správě receptur a kusovníků používáte správu změn (nebo pouze správu změn receptur):
+Všimněte si, že většina článků, na která se odkazuje v předchozím seznamu, poskytuje příklady založené na kusovnících (BOM). Vzorce však fungují podobným způsobem. Zde je několik dalších konceptů, které je užitečné znát, když ke správě receptur a kusovníků používáte správu změn (nebo pouze správu změn receptur):
 
 - Pro každou [technockou kategorii produktů](engineering-versions-product-category.md) můžete určit typ výroby (kusovník, receptura nebo položka plánování). Můžete také určit, zda je u produktů, které tuto kategorii používají, požadována podpora hmotnosti.
 - Souběžné produkty a vedlejší produkty nejsou technické produkty. Proto nemají verzované. Pokud je musíte změnit, jednoduše vytvořte nový produkt. Tento přístup usnadňuje údržbu.

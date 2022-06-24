@@ -1,6 +1,6 @@
 ---
 title: Vzor integrace fiskální tiskárny pro Itálii
-description: V tomto tématu je uveden přehled ukázkové fiskální integrace pro Itálii v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Itálii v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 2aa1851fe5fe447ba2dd4640be9881b37e54216e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909383"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Vzor integrace fiskální tiskárny pro Itálii
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled ukázkové fiskální integrace pro Itálii v Microsoft Dynamics 365 Commerce.
+V tomto článku je uveden přehled ukázkové fiskální integrace pro Itálii v Microsoft Dynamics 365 Commerce.
 
 Funkce Commerce pro Itálii zahrnuje ukázkovou integraci pokladního místa (POS) s fiskální tiskárnou. Ukázka rozšiřuje [funkce fiskální integrace](fiscal-integration-for-retail-channel.md), aby to fungovaly s [tiskárnami Epson FP-90III](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) a umožňuje komunikaci s fiskální tiskárnou v režimu webového serveru prostřednictvím webové služby EpsonFPMate pomocí rozhraní Fiscal ePOS-Print API. Ukázka podporuje pouze režim Registratore Telematico (RT). Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
 

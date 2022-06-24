@@ -1,6 +1,6 @@
 ---
 title: Splnění rezervních zásob položek
-description: Toto téma popisuje splnění rezervních zásob a nastavení množství rezervních zásob pro položky.
+description: Tento článek popisuje splnění rezervních zásob a nastavení množství rezervních zásob pro položky.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672059"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887392"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Splnění rezervních zásob položek
 
@@ -88,7 +88,7 @@ Pokud jsou použity **Klíče minima**, zvolte zaškrtávací políčko **Obdob�
 Následující scénář zobrazuje fungování tohoto parametru a rozdíly mezi jeho hodnotami.
 
 > [!NOTE]
-> Pro všechny ilustrace v tomto tématu představuje osa X zásoby, osa Y představuje dny, pruhy představují úroveň zásob, šipky představují transakce, jako například řádky prodejní objednávky, řádky nákupní objednávky nebo plánované objednávky.
+> Pro všechny ilustrace v tomto článku představuje osa X zásoby, osa Y představuje dny, pruhy představují úroveň zásob, šipky představují transakce, jako například řádky prodejní objednávky, řádky nákupní objednávky nebo plánované objednávky.
 
 [![Běžný scénář plnění pojistných zásob.](media/Scenario1.png)](media/Scenario1.png)
 

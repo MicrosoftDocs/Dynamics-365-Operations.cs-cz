@@ -1,6 +1,6 @@
 ---
 title: Kódy Motor Freight Classification (NMFC)
-description: Toto téma popisuje, jak pracovat s kódy National Motor Freight Classification (NMFC) v Microsoft Dynamics 365 Supply Chain Management
+description: Tento článek popisuje, jak pracovat s kódy National Motor Freight Classification (NMFC) v Microsoft Dynamics 365 Supply Chain Management
 author: Weijiesa
 ms.date: 04/22/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5127e132a8c06815e9ecd11338c729cd8bb87f18
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893258"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>Kódy Motor Freight Classification (NMFC)
 
@@ -31,7 +31,7 @@ Tato funkce může pracovníkům pomoci použít kódy NMFC ke klasifikaci přep
 - Tato klasifikace může být pro vaši společnost zásadní, protože se používá k určení nákladů na danou zátěž.
 - Vaše společnost může identifikovat ziskovost logistické a přepravní společnosti LTL.
 
-Toto téma popisuje, jak pracovat s k=ody NMFC v aplikaci Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje, jak pracovat s k=ody NMFC v aplikaci Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="prerequisites"></a>Předpoklady
 

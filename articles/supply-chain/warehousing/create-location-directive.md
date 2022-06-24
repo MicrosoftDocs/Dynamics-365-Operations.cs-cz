@@ -1,6 +1,6 @@
 ---
 title: Práce se směrnicemi skladového místa
-description: Toto téma popisuje, jak pracovat se směrnicemi skladového místa. Směrnice skladového místa jsou pravidla definovaná uživatelem, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob.
+description: Tento článek popisuje, jak pracovat se směrnicemi skladového místa. Směrnice skladového místa jsou pravidla definovaná uživatelem, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903688"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103131"
 Směrnice skladového místa jsou pravidla, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob. V transakce prodejní objednávky například směrnice skladového místa určuje, které zboží bude vydáno a kam bude umístěno. Směrnice skladového místa se skládají z hlavičky a přidružených řádků. Jsou vytvořeny pro konkrétní *typy pracovních příkazů*.
 
 > [!NOTE]
-> V tomto tématu se týká funkcí v modulu **Správa skladu**. Nevztahuje se na funkce v modulu [Řízení zásob](../inventory/inventory-home-page.md).
+> V tomto článku se týká funkcí v modulu **Správa skladu**. Nevztahuje se na funkce v modulu [Řízení zásob](../inventory/inventory-home-page.md).
 
 Směrnice skladového místa lze použít k následujícím úkolům:
 
@@ -109,7 +109,7 @@ V následující tabulce jsou uvedena pole, která jsou specifická pro konkrét
 
 Pokud chcete otevřít stránku **Směrnice skladového místa**, přejděte na **Řízení skladu \> Nastavení \> Směrnice skladových míst**.
 
-Odtud můžete zobrazit, vytvořit a upravit směrnice skladového místa pomocí příkazů v podokně akcí. V ostatních částech tohoto tématu najdete informace o tom, jak používat všechna pole, která jsou na stránce k dispozici.
+Odtud můžete zobrazit, vytvořit a upravit směrnice skladového místa pomocí příkazů v podokně akcí. V ostatních částech tohoto článku najdete informace o tom, jak používat všechna pole, která jsou na stránce k dispozici.
 
 ## <a name="action-pane"></a>Podokno akcí
 
@@ -162,7 +162,7 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
 - **Příslušný dispoziční kód** - Zadejte, zda dispoziční kód směrnice skladového místa musí odpovídat dispozičnímu kódu, který je použit při přijetí položky, nebo zda mohou být směrnice skladového místa vybrány na základě libovolného dispozičního kódu. Při výběru možnosti *Přesná shoda* a ponechání prázdného pole **Dispoziční kód** budou použity pouze prázdné dispoziční kódy pro tuto směrnici skladového místa.
 
     > [!NOTE]
-    > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types) dříve v tomto tématu.
+    > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types) dříve v tomto článku.
 
 - **Vyhledat podle** - Určete, zda by odložené množství mělo být celé množství na registrační značce, nebo zda by mělo být po jednotlivých položkách. Toto pole vám pomůže zajistit, aby byl veškerý obsah registrační značky vložen na jedno místo a aby systém nenavrhoval, abyste obsah rozdělili na několik míst pro procesy příjmu **ASN** (příjem registrační značky), příjem **Smíšené registrační značky** a **Klastr**. (Proces příjmu **Klastr** vyžaduje, aby [funkce odložení klastru](putaway-clusters.md) byla zapnutá.) Chování dotazu na směrnici skladového místa řádků a akcí směrnice skladového místa se bude lišit v závislosti na hodnotě, kterou vyberete. Pevná záložka **Čáry** se používá, jen tehdy, když je **Vyhledat podle** nastavena na *Položka*.
 
@@ -254,7 +254,7 @@ Po vytvoření směrnic skladového místa můžete přiřadit každý kód smě
 ## <a name="additional-resources"></a>Další prostředky
 
 - Video: [Podrobné prozkoumání konfigurace správy skladu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Téma nápovědy [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](control-warehouse-location-directives.md)
+- Článek nápovědy [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

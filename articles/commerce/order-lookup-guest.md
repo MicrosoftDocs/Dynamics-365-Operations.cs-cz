@@ -1,6 +1,6 @@
 ---
 title: Povolit vyhledávání objednávek pro hostující pokladny
-description: Toto téma popisuje, jak povolit vyhledávání objednávek pro hostující pokladny v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak povolit vyhledávání objednávek pro hostující pokladny v Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891980"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Povolit vyhledávání objednávek pro hostující pokladny
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak povolit vyhledávání objednávek pro hostující pokladny v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak povolit vyhledávání objednávek pro hostující pokladny v Microsoft Dynamics 365 Commerce.
 
 Vyhledávání objednávek pro hostující pokladny umožňuje zákazníkům, kteří nakupují jako hostující uživatelé, vyhledávat jejich objednávky. Funkce vyhledávání objednávek je užitečná, když zákazníci chtějí provádět akce, jako je kontrola stavu plnění produktů na objednávce, ověření adresy, na kterou byla objednávka odeslána, změna pořadí produktu nebo potvrzení obchodu, ze kterého bude objednávka vyzvednuta.
 

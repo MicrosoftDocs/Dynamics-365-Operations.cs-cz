@@ -1,6 +1,6 @@
 ---
 title: Standardní uložená zobrazení pro Supply Chain Management
-description: Toto téma popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit.
+description: Tento článek popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887551"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management obsahuje několik uložených zobrazení, která můžete podle potřeby povolit a použít. Některé z těchto standardních uložených zobrazení jsou optimalizovány a pojmenovány pro konkrétní roli nebo úkol (například „Kontrola kvality“ nebo „Příjem“). Jiné jsou optimalizovány tak, aby zahrnovaly pouze pole a nastavení, která podle statistik používání společnosti Microsoft zákazníci nejčastěji používají. Tato uložená zobrazení se obvykle označují jako *zjednodušená* zobrazení. Toto téma popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit a přizpůsobit.
+Microsoft Dynamics 365 Supply Chain Management obsahuje několik uložených zobrazení, která můžete podle potřeby povolit a použít. Některé z těchto standardních uložených zobrazení jsou optimalizovány a pojmenovány pro konkrétní roli nebo úkol (například „Kontrola kvality“ nebo „Příjem“). Jiné jsou optimalizovány tak, aby zahrnovaly pouze pole a nastavení, která podle statistik používání společnosti Microsoft zákazníci nejčastěji používají. Tato uložená zobrazení se obvykle označují jako *zjednodušená* zobrazení. Tento článek popisuje standardní uložené pohledy, které jsou k dispozici, a vysvětluje, jak je povolit a přizpůsobit.
 
 Úplné podrobnosti o tom, jak pracovat s uloženými zobrazeními, včetně standardních uložených zobrazení, po jejich povolení najdete v části [Uložená zobrazení](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Další informace o tom, jak přizpůsobit a přejmenovat uložená zobrazení, 
 
 Chcete-li použít libovolné uložené zobrazení, musíte bez ohledu na to, zda použijete standardní uložené pohledy, zapnout funkci *Uložená zobrazení* ve [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (od verze 10.0.21 je tato funkce ve výchozím nastavení povolena).
 
-Zbývající části tohoto tématu obsahují tabulky, které popisují standardní uložená zobrazení, která jsou aktuálně k dispozici pro každý příslušný modul. Každá tabulka zobrazuje název každého uloženého zobrazení, stránku, kde ho najdete, a popis. Každá tabulka také zobrazuje název funkce, která zahrnuje uložené zobrazení. Chcete-li ve svém systému zobrazit standardní uložené zobrazení, musíte zapnout určenou funkci v okně [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Od verze 10.0.25 jsou všechna uvedená zobrazení ve výchozím nastavení zapnuta.
+Zbývající části tohoto článku obsahují tabulky, které popisují standardní uložená zobrazení, která jsou aktuálně k dispozici pro každý příslušný modul. Každá tabulka zobrazuje název každého uloženého zobrazení, stránku, kde ho najdete, a popis. Každá tabulka také zobrazuje název funkce, která zahrnuje uložené zobrazení. Chcete-li ve svém systému zobrazit standardní uložené zobrazení, musíte zapnout určenou funkci v okně [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Od verze 10.0.25 jsou všechna uvedená zobrazení ve výchozím nastavení zapnuta.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Uložená zobrazení pro modul řízení zásob
 

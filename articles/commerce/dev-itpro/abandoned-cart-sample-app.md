@@ -1,6 +1,6 @@
 ---
 title: Detekce opuštěných košíků a zasílání upozornění zákazníkům
-description: Toto téma popisuje přizpůsobení ukázkové aplikace konektoru opuštěného košíku Microsoft Dynamics 365 Commerce pro detekci opuštěných košíků a zasílání e-mailových upozornění s připomenutím zákazníkům.
+description: Tento článek popisuje přizpůsobení ukázkové aplikace konektoru opuštěného košíku Microsoft Dynamics 365 Commerce pro detekci opuštěných košíků a zasílání e-mailových upozornění s připomenutím zákazníkům.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899203"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Detekce opuštěných košíků a zasílání upozornění zákazníkům
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje přizpůsobení ukázkové aplikace konektoru opuštěného košíku Microsoft Dynamics 365 Commerce pro detekci opuštěných košíků a zasílání e-mailových upozornění s připomenutím zákazníkům.
+Tento článek popisuje přizpůsobení ukázkové aplikace konektoru opuštěného košíku Microsoft Dynamics 365 Commerce pro detekci opuštěných košíků a zasílání e-mailových upozornění s připomenutím zákazníkům.
 
 Schopnost získat zpět příjmy a udržet si zákazníky prostřednictvím oznámení o opuštěném košíku je důležitou schopností, kterou Dynamics 365 Commerce podporuje. Přizpůsobením ukázkové aplikace konektoru Commerce opuštěného košíku mohou maloobchodníci přistupovat k nákupním košíkům na Serveru maloobchodu, které nebyly změněny během maloobchodníky definovaného časového okna. Tyto košíky lze poté načíst, rozšířit o údaje o produktech a zákaznících a předat je poskytovateli e-mailového marketingu třetí strany, který může generovat e-mailová upozornění a odesílat je zákazníkům.
 

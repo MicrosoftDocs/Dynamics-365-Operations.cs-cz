@@ -1,6 +1,6 @@
 ---
 title: Parametry, které optimalizace plánování nepoužívá
-description: V tomto tématu jsou uvedeny parametry, které optimalizace plánování aktuálně během provozu nezvažuje.
+description: V tomto článku jsou uvedeny parametry, které optimalizace plánování aktuálně během provozu nezvažuje.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907341"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
 [!include [banner](../../includes/banner.md)]
 
-V tomto tématu jsou uvedeny parametry, které optimalizace plánování aktuálně během provozu nezvažuje. Služba plánování může přeskočit parametr, protože například související funkce ještě nejsou podporovány. Alternativně může být parametr zastaralý kvůli funkčním změnám.
+V tomto článku jsou uvedeny parametry, které optimalizace plánování aktuálně během provozu nezvažuje. Služba plánování může přeskočit parametr, protože například související funkce ještě nejsou podporovány. Alternativně může být parametr zastaralý kvůli funkčním změnám.
 
 V následujících částech je uveden seznam parametrů, které optimalizace plánování nepoužívá na konkrétních stránkách. Vysvětlují také, proč se každý parametr nepoužívá.
 

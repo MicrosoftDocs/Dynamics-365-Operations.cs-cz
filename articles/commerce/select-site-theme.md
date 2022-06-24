@@ -1,6 +1,6 @@
 ---
 title: Volba motivu webu
-description: Toto téma popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b038dc996c571d54dce3f2aec679f7af8af85074
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900379"
 ---
 # <a name="select-a-site-theme"></a>Volba motivu webu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak nastavit nebo změnit motiv webu v aplikaci Microsoft Dynamics 365 Commerce.
 
 Rozvržení a styl webu (například písma, velikosti a barvy) jsou definovány motivem, který vyberete a použijete na webu. Motiv je vytvořen a nasazen vývojářem ve vaší společnosti. Přehled motivů naleznete v tématu [Přehled motivů](e-commerce-extensibility/theming.md). Další informace o tom, jak vytvářet a nasazovat motivy, naleznete v tématu [Vytvoření nového motivu](e-commerce-extensibility/create-theme.md).
 

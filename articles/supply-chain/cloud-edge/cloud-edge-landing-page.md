@@ -1,6 +1,6 @@
 ---
 title: Jednotky škálování v distribuované hybridní topologii
-description: Toto téma poskytuje informace o cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu.
+description: Tento článek poskytuje informace o cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893664"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednotky škálování v distribuované hybridní topologii
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676321"
 > [!IMPORTANT]
 > Schopnost jednotky škálování pro Microsoft Dynamics 365 Supply Chain Management je vám k dispozici za podmínek, kterými se řídí používání služby. Další informace naleznete v [právních informacích Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Povolením cloudových a hraničních jednotek škálování potvrzujete, že chápete, že některá data související s konfigurací a zpracováním cloudových a hraničních jednotek škálování mohou být uložena v datovém centru umístěném v USA. Chcete-li se dozvědět více o zpracování dat pro jednotky škálování cloudu a edge, podívejte se na [Zpracování dat během správy jednotek škálování](#data-processing-management) dále v tomto tématu.
+> Povolením cloudových a hraničních jednotek škálování potvrzujete, že chápete, že některá data související s konfigurací a zpracováním cloudových a hraničních jednotek škálování mohou být uložena v datovém centru umístěném v USA. Chcete-li se dozvědět více o zpracování dat pro jednotky škálování cloudu a edge, podívejte se na [Zpracování dat během správy jednotek škálování](#data-processing-management) dále v tomto článku.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Návrh základní hodnoty pro distribuovanou hybridní topologii
 
@@ -48,7 +48,7 @@ Jednotky škálování poskytují odolnost, spolehlivost a škálování pro př
 
 *Úloha* je definovaná sada obchodních funkcí, kterou lze vyřadit a delegovat na jednotce škálování. Přestože byla uvolněna úloha pro správu skladu, úloha pro provádění výroby je stále v preview.
 
-Můžete nakonfigurovat prostředí centra a jednotky škálování cloudu pro vybrané úlohy pomocí [portálu správce jednotky škálování](https://sum.dynamics.com). Můžete také přiřadit více úloh na jednotku škálování. Informace o předpokladech a omezeních pro jednotky škálování cloudu v aktuální verzi najdete v části [Předpoklady a omezení pro jednotky škálování cloudu](#cloud-scale-unit-prerequisites) dále v tomto tématu.
+Můžete nakonfigurovat prostředí centra a jednotky škálování cloudu pro vybrané úlohy pomocí [portálu správce jednotky škálování](https://sum.dynamics.com). Můžete také přiřadit více úloh na jednotku škálování. Informace o předpokladech a omezeních pro jednotky škálování cloudu v aktuální verzi najdete v části [Předpoklady a omezení pro jednotky škálování cloudu](#cloud-scale-unit-prerequisites) dále v tomto článku.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Možnosti úlohy vyhrazené správy skladu v jednotce škálování
 

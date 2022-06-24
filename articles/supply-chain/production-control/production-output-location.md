@@ -1,6 +1,6 @@
 ---
 title: Výstupní místo výroby
-description: Toto téma popisuje hierarchii, která se používá k identifikaci výstupního místa výroby.
+description: Tento článek popisuje hierarchii, která se používá k identifikaci výstupního místa výroby.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4c8086e9179ff51f62ce77620af96360c6123060372dfd1c0e06dad79998b75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bfabae39d3bcb8f7fdd71ac5c93fcdbaeb9d946
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893287"
 ---
 # <a name="production-output-location"></a>Výstupní místo výroby
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje hierarchii, která se používá k identifikaci výstupního místa výroby.
+Tento článek popisuje hierarchii, která se používá k identifikaci výstupního místa výroby.
 
 Výstupní místo výroby je místo, kam se nejprve uloží hotové zboží poté, co je vyrobeno. Tohoto skladové místo je obvykle blízko výrobního procesu, který vytváří dokončené zboží. Výstupní místo výroby se používá jako dočasné úložiště pro materiál před jeho přesunutím do oblasti expedice, skladovacího místa, vstupního místa výroby pro proces výroby směrem dolů, atd. 
 

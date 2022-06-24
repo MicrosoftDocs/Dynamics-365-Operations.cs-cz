@@ -1,6 +1,6 @@
 ---
 title: Správa souborů robots.txt
-description: Toto téma popisuje správu souborů robots.txt v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje správu souborů robots.txt v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 07/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ccb09cfce00ba838cb5358afef9b7acc5c61d8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896972"
 ---
 # <a name="manage-robotstxt-files"></a>Správa souborů robots.txt
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje správu souborů robots.txt v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje správu souborů robots.txt v aplikaci Microsoft Dynamics 365 Commerce.
 
 Protokol pro zakázání přístupu robotům, neboli robots.txt, je standardem, který weby používají ke komunikaci s webovými roboty. Protokol dává pokyny webovým robotům o všech oblastech webu, které by neměly být navštíveny. Roboti často používají vyhledávací stroje k indexování webů.
 

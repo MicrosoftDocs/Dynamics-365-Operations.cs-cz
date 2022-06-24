@@ -1,6 +1,6 @@
 ---
 title: Konfigurace expresních plateb pro PayPal
-description: Toto téma popisuje, jak nakonfigurovat expresní platby pro PayPal, abyste umožnili rychlejší zaplacení v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak nakonfigurovat expresní platby pro PayPal, abyste umožnili rychlejší zaplacení v Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905275"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Konfigurace expresních plateb pro PayPal
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nakonfigurovat expresní platby pro PayPal, abyste umožnili rychlejší zaplacení v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak nakonfigurovat expresní platby pro PayPal, abyste umožnili rychlejší zaplacení v Microsoft Dynamics 365 Commerce.
 
 ## <a name="key-terms"></a>Klíčové podmínky
 
@@ -28,7 +28,7 @@ Toto téma popisuje, jak nakonfigurovat expresní platby pro PayPal, abyste umo�
 |---|---|
 | PayPal peněženka | Prostředí zákazníků a integrace, které podporuje konektor PayPal. Je také známá jako tlačítko PayPal. |
 | Peněženka | Typ platby, který nezahrnuje tradiční platební charakteristiky, jako je rozsah bankovního identifikačního čísla (BIN) a datum vypršení platnosti, které se používají k rozlišení typů kreditních a debetních karet. |
-| Expresní platba | Modul Commerce, který podporuje rychlejší zaplacení při použití podporovaných platebních metod. Toto téma se zabývá používáním modulu pro expresní platby přes PayPal. |
+| Expresní platba | Modul Commerce, který podporuje rychlejší zaplacení při použití podporovaných platebních metod. Tento článek se zabývá používáním modulu pro expresní platby přes PayPal. |
 
 Dynamics 365 Commerce nabízí okamžitou integraci pro PayPal peněženku. Když je konfigurován Dynamics 365 Payment Connector pro Paypal, zobrazí se tlačítko PayPal jako volitelná platební metoda během online rezervace objednávky. Když si uživatelé vyberou PayPal, jsou přesměrováni k dokončení platby přímo na PayPal a poté jsou vráceni do online obchodu k dokončení objednávky. Přechod nákupního košíku do PayPalu umožňuje zákazníkům použít informace o svém platebním účtu k předvyplnění formuláře rezervace, aby mohli proces platby dokončit rychleji.
 

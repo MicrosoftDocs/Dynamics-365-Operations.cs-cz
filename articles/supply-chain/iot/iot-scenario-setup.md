@@ -1,6 +1,6 @@
 ---
 title: Nastavení scénáře pro IoT Intelligence
-description: Tohle téma vysvětluje, jak konfigurovat scénáře pro IoT Intelligence v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek vysvětluje, jak konfigurovat scénáře pro inteligenci IoT v Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889599"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Nastavení scénáře pro IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma vysvětluje, jak konfigurovat scénáře pro IoT Intelligence v Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+Tento článek vysvětluje, jak konfigurovat scénáře pro inteligenci IoT v Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-V tomto tématu nakonfigurujete scénář **Výpadky zařízení** pro generování oznámení v Supply Chain Management, když přestane fungovat stroj. Tohle téma také ukazuje, jak konfigurovat scénář **Kvalita produktu**, takže je generováno oznámení, pokud je atribut položky mimo zadaný rozsah, a jak nakonfigurovat scénář **Zpoždění výroby** tak, aby se vygenerovalo oznámení, pokud výrobní kapacita klesne pod prahovou hodnotu.
+V tomto článku nakonfigurujete scénář **Výpadky zařízení** pro generování oznámení v Supply Chain Management, když přestane fungovat stroj. Tento článek také ukazuje, jak konfigurovat scénář **Kvalita produktu**, takže je generováno oznámení, pokud je atribut položky mimo zadaný rozsah, a jak nakonfigurovat scénář **Zpoždění výroby** tak, aby se vygenerovalo oznámení, pokud výrobní kapacita klesne pod prahovou hodnotu.
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Konfigurace scénáře Výpadky zařízení v Supply Chain Management
 

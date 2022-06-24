@@ -1,6 +1,6 @@
 ---
 title: Synchronizace seznamu projektů z aplikace Supply Chain Management do služby Field Service
-description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
+description: Tento článek popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 71c0580953f01c2d29e99fa2928a0b4a3937d5c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899346"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synchronizace seznamu projektů z aplikace Supply Chain Management do služby Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
+Tento článek popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
 [![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 

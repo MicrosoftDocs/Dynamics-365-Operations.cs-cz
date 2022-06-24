@@ -1,6 +1,6 @@
 ---
 title: Často kladené dotazy k doporučení produktu
-description: Toto téma obsahuje informace o procesech a nástrojích, které lze použít při řešení problémů souvisejících s doporučeními produktů nebo s jejich výsledky.
+description: Tento článek obsahuje informace o procesech a nástrojích, které lze použít při řešení problémů souvisejících s doporučeními produktů nebo s jejich výsledky.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77a5532ab1ae3b630bb335aa7cff6dc747184994
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900440"
 ---
 # <a name="product-recommendations-faq"></a>Často kladené dotazy k doporučení produktu
 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o procesech a nástrojích, které lze použít při řešení problémů souvisejících s [doporučeními produktů](product-recommendations.md) nebo s jejich výsledky.
+Tento článek obsahuje informace o procesech a nástrojích, které lze použít při řešení problémů souvisejících s [doporučeními produktů](product-recommendations.md) nebo s jejich výsledky.
 
 ## <a name="best-practices"></a>Doporučené postupy
 Je velmi důležité používat koncept základních produktů a variant. Praktické seskupení variant do nadřazeného základního produktu pomáhá vytvářet algoritmy a služby pro lepší modely. Kromě toho může služba obsloužit pouze jednu instanci produktu namísto vkládání všech úzce souvisejících variant do seznamu. Když jsou všechny úzce související varianty vloženy do seznamu, může dojít k chybám nebo duplicitním výsledkům.

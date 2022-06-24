@@ -1,6 +1,6 @@
 ---
 title: Náhled verze Dynamics 365 Supply Chain Management 10.0.28 (srpen 2022)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.28.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 306ff9be80c7a7a947b9132e3c9b4b9ec799b265
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8813042"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902046"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Náhled verze Dynamics 365 Supply Chain Management 10.0.28 (srpen 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.28. Tato verze má číslo sestavení 10.0.1264 a je k dispozici podle následujícího plánu:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.28. Tato verze má číslo sestavení 10.0.1264 a je k dispozici podle následujícího plánu:
 
 - **Náhled verze:** květen 2022
 - **Obecně dostupné vydání (automatická aktualizace):** červenec 2022
@@ -30,15 +30,14 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-V následující tabulce je uveden seznam funkcí této verze. Tohle téma můžeme aktualizovat, aby obsahovalo funkce, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+V následující tabulce je uveden seznam funkcí této verze. Tento článek můžeme aktualizovat, aby obsahoval funkce, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
 | Oblast funkce | Funkce | Další informace | Povolil/a |
 |---|---|---|---|
 | Zásoby a logistika | [Entity integrace nákladů za doručení pro spediční společnosti třetích stran](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Přehled entit nákladů na doručení](../landed-cost/landed-cost-entities-overview.md) | Ve výchozím nastavení povoleno |
-| Plánování | [Podpora Optimalizace plánování u skladovatelnosti](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Již brzy <!-- KFM: Vendor is preparing this. Expected May 20. --> | Ve výchozím nastavení povoleno |
-
-<!-- KFM: Confirm status of this feature:
-| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* | -->
+| Plánování | [Plánování materiálových požadavků řízené poptávkou (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Již brzy | Správa funkcí:<br>*(Preview) DDMRP pro optimalizaci plánování* |
+| Plánování | [Podpora optimalizace plánování řízená prioritou pro příslib na základě dostupné kapacity (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Již brzy | Správa funkcí:<br>*(Preview) CTP pro optimalizaci plánování* |
+| Plánování | [Podpora Optimalizace plánování u skladovatelnosti](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Již brzy | Ve výchozím nastavení povoleno |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze
 
@@ -56,9 +55,9 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
-Nedávno jsme přidali nebo významně aktualizovali následující témata nápovědy. Tato témata nemusí nutně souviset s novými funkcemi, které byly přidány pro toto vydání, jak je uvedeno v předchozích částech. Mohou vám však pomoci lépe využít stávající funkce.
+Nedávno jsme přidali nebo významně aktualizovali následující články nápovědy. Tento článek nemusí nutně souviset s novými funkcemi, které byly přidány pro toto vydání, jak je uvedeno v předchozích částech. Mohou vám však pomoci lépe využít stávající funkce.
 
-| Oblast funkce | Nová nebo aktualizovaná témata |
+| Oblast funkce | Nové nebo aktualizované články |
 |---|---|
 | Správa nákladů | [Pevná cena příjmu](../cost-management/fixed-receipt-price.md) |
 | Správa nákladů | [Často kladené otázky o ceně zásob](../cost-management/inventory-costing-faq.md) |
@@ -69,7 +68,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.28 finančních a provozních aplikací (červen 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.28 finančních a provozních aplikací (červen 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -83,12 +82,12 @@ Přečtěte si [Dynamics 365 a průmyslová cloudová řešení: Plán vlny 1 v
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
-Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+Článek [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v článku [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 

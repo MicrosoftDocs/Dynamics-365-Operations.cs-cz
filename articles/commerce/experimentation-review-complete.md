@@ -1,30 +1,24 @@
 ---
 title: Povýšení varianty a dokončení experimentu
-description: Toto téma popisuje, jak povýšit úspěšnou variantu a dokončit experiment v Dynamics 365 Commerce.
+description: Tento článek popisuje, jak povýšit úspěšnou variantu a dokončit experiment v Dynamics 365 Commerce.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 48d66e84ce52e77e83843853e3d528f9394a7676cadc4a4be5198065696dd10e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e9a978551622bbb14d9213f607d9dfabe42672a
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738739"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942730"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Povýšení varianty a dokončení experimentu
 
-Toto téma popisuje, jak můžete povýšit variantu, která ve vašem experimentu přinesla nejlepší výsledky, a jak experiment dokončit. Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
+Tento článek popisuje, jak můžete povýšit variantu, která ve vašem experimentu přinesla nejlepší výsledky, a jak experiment dokončit. Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných článcích.
 
 [ ![Cesta uživatele experimentováním – kontrola a dokončení.](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
@@ -48,7 +42,7 @@ Chcete-li propagovat vítěznou variantu, postupujte takto.
 ## <a name="delete-your-experiment"></a>Odstranění experimentu
 I když odstranění dokončeného experimentu v Commerce není vyžadováno, můžete ho odstranit, abyste ušetřili místo nebo vyčistili svůj pracovní prostor. 
 
-Chcete-li odstranit experiment v nástroji pro tvorbu obchodních webů, postupujte takto.
+Chcete-li odstranit dokončený experiment v nástroji pro tvorbu obchodních webů, postupujte takto.
 
 1. Vyberte **Experimenty** v levém navigačním podokně a poté vyberte experiment. 
     > [!NOTE]

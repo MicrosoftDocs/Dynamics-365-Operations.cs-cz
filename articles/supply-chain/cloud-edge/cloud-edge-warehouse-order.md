@@ -1,6 +1,6 @@
 ---
 title: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
-description: Toto téma poskytuje informace o schopnosti objednávky skladu, která se používá jako součást pracovního vytížení jednotky měřítka skladu.
+description: Tento článek poskytuje informace o schopnosti objednávky skladu, která se používá jako součást pracovního vytížení jednotky měřítka skladu.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893519"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ne všechny obchodní funkce jsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže. Pokud používáte jednotky škálování, používejte pouze takové procesy, které toto téma výslovně popisuje jako podporované.
+> Ne všechny obchodní funkce jsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže. Pokud používáte jednotky škálování, používejte pouze takové procesy, které tento článek výslovně popisuje jako podporované.
 
 ## <a name="what-are-warehouse-orders"></a>Co jsou to skladové objednávky?
 

@@ -1,6 +1,6 @@
 ---
 title: Odložené zpracování práce skladu
-description: Toto téma popisuje funkci, která umožňuje odložené zpracování operací vložení práce v aplikaci Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje funkci, která umožňuje odložené zpracování operací vložení práce v aplikaci Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f4eeea0805c2cecedbd6b42926191ab02022df9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899288"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odložené zpracování práce skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkci, která umožňuje odložené zpracování operací vložení práce u skladové práce dostupné v aplikaci Dynamics 365 Supply Chain Management.
+Tento článek popisuje funkci, která umožňuje odložené zpracování operací vložení práce u skladové práce dostupné v aplikaci Dynamics 365 Supply Chain Management.
 
 Funkce odloženého zpracování umožňují pracovníkům skladu pokračovat v práci i v době, kdy na pozadí běží operace vložení. Odložené zpracování je užitečné, pokud je nutné zpracovat mnoho řádků práce a pracovník může nechat zpracování běžet asynchronně. Je také užitečná v případě, kdy server může mít v době zpracování ad hoc nebo neplánovaný nárůst doby zpracování a ta může ovlivnit produktivitu uživatele.
 

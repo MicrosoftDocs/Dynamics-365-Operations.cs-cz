@@ -1,6 +1,6 @@
 ---
 title: Výpočty hodnoty BOM
-description: Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto tématu jsou informace o výpočtech kusovníku.
+description: Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto článku jsou informace o výpočtu BOM.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902795"
 ---
 # <a name="bom-calculations"></a>Výpočty hodnoty BOM
 
 [!include [banner](../includes/banner.md)]
 
-Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto tématu jsou informace o výpočtech kusovníku.
+Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky Výpočty. V tomto článku jsou informace o výpočtu BOM.
 
 Shrnutí nákladů a výpočty prodejní ceny jsou označovány jako výpočty kusovníku a spouštějí se ze stránky **Výpočty**. Stránka **Výpočty** slouží k provádění následujících úkolů:
 

@@ -1,6 +1,6 @@
 ---
 title: Ukázkové scénáře cyklické inventury
-description: Toto téma poskytuje kolekci scénářů, které zkoumají funkce cyklické inventury v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek poskytuje kolekci scénářů, které zkoumají funkce cyklické inventury v Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899317"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Ukázkové scénáře cyklické inventury
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje kolekci scénářů, které zkoumají funkce cyklické inventury v Microsoft Dynamics 365 Supply Chain Management. Nejprve popisuje požadavky na vaše stávající prostředí Supply Chain Management. Poté vysvětluje, jak konfigurovat cyklické inventury, a popisuje všechny fáze cyklické inventury. Po dokončení byste měli dobře rozumět cyklickým inventurám, včetně řízených cyklických inventur, cyklických inventur naslepo, místních cyklických inventur, prahových hodnot cyklické inventury a plánů cyklických inventur.
+Tento článek poskytuje kolekci scénářů, které zkoumají funkce cyklické inventury v Microsoft Dynamics 365 Supply Chain Management. Nejprve popisuje požadavky na vaše stávající prostředí Supply Chain Management. Poté vysvětluje, jak konfigurovat cyklické inventury, a popisuje všechny fáze cyklické inventury. Po dokončení byste měli dobře rozumět cyklickým inventurám, včetně řízených cyklických inventur, cyklických inventur naslepo, místních cyklických inventur, prahových hodnot cyklické inventury a plánů cyklických inventur.
 
 ## <a name="prerequisites"></a>Předpoklady
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Každý scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro Supply Chain Management. Pokud chcete při procházení scénářů použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu (společnost) na **USMF**, než začnete.
+Každý scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro Supply Chain Management. Pokud chcete při procházení scénářů použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu (společnost) na **USMF**, než začnete.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Zapněte podporu pro mobilní aplikaci Warehouse Management
 
@@ -158,7 +158,7 @@ Pomocí těchto kroků vytvořte práci cyklické inventury pro umístění polo
 
 Po vytvoření práce cyklické inventury provedete práci prostřednictvím inventury položek v umístění skladu a zadáním do Supply Chain Management pomocí mobilního zařízení. Podle těchto kroků proveďte práci cyklické inventury v mobilní aplikaci Warehouse Management.
 
-1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto tématu. V příkladu v tomto tématu je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto článku. V příkladu v tomto článku je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
 1. V hlavní nabídce vyberte **Zásoby**.
 1. V nabídce **Zásoby** vyberte **Řízená cyklická inventura**.
 1. Vyberte pole **Množství**, zadejte *9* pomocí číselné klávesnice a poté vyberte **OK** (tlačítko zaškrtnutí).
@@ -227,7 +227,7 @@ Než může dojít k cyklické inventuře naslepo, musíte vytvořit nějakou pr
 
 Po vytvoření práce cyklické inventury podle těchto kroků proveďte práci v mobilní aplikaci Warehouse Management.
 
-1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto tématu. V příkladu v tomto tématu je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto článku. V příkladu v tomto článku je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
 1. V hlavní nabídce vyberte **Zásoby**.
 1. V nabídce **Zásoby** vyberte **Cyklická inventura naslepo**.
 1. Vyberte pole **ID zóny**, zadejte *BULK06* a potom vyberte **OK** (tlačítko zaškrtnutí).
@@ -259,7 +259,7 @@ V záznamu množství na skladě se uvádí, že existuje množství položky *L
 
 Podle těchto kroků proveďte práci cyklické inventury v mobilní aplikaci Warehouse Management.
 
-1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto tématu. V příkladu v tomto tématu je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Warehouse Management jako pracovní uživatel, kterého jste nastavili v sekci [Připravit ukázková data pro scénáře](#prepare-demo-data) dříve v tomto článku. V příkladu v tomto článku je uživatel pojmenován *Julia Funderburk* a je nastaven na sklad *61*. (Demo data USMF by vám měla umožnit přihlásit se jako tento pracovní uživatel zadáním *61* jako ID uživatele a *1* jako heslo.)
 1. V hlavní nabídce vyberte **Zásoby**.
 1. V nabídce **Zásoby** vyberte **Místní inventura**.
 1. Vyberte pole **Umístění**, zadejte *01A02R2S1B* a potom vyberte **OK** (tlačítko zaškrtnutí).

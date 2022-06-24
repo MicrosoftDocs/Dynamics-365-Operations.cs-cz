@@ -1,6 +1,6 @@
 ---
 title: Subdodávky na základě aktivit
-description: Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
+description: Tento článek podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890734"
 ---
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
+Tento článek podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 
 V aplikaci Microsoft Dynamics 365 Supply Chain Management existují dva přístupy k subdodávkám: výrobní zakázky a lean manufacturing. V přístupu lean manufacturing je subdodavatelská práce modelována jako služba, která souvisí s aktivitou výrobního toku. Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby již nebudou součástí kusovníku. Nákladové účetnictví subdodavatelské práce je plně integrováno do řešení výpočtu nákladů pro lean manufacturing.
 

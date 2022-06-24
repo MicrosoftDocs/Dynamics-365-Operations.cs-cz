@@ -1,6 +1,6 @@
 ---
 title: Instalace majetku na funkčních místech
-description: Toto téma vysvětluje, jak nainstalovat majetek na funkční místa v modulu Správa majetku.
+description: Tento článek vysvětluje, jak nainstalovat majetek na funkční místa v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775740"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894494"
 ---
 # <a name="install-assets-on-functional-locations"></a>Instalace majetku na funkčních místech
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775740"
 
  
 
-Další krok po vytvoření struktur funkčních míst je instalace majetku do příslušných funkčních míst. Toto téma vysvětluje, jak nainstalovat majetek na tato funkční místa v modulu Správa majetku. Informace o způsobu vytvoření majetku naleznete v tématu [Úvod do modulu Majetek](../objects/introduction-to-objects.md).
+Další krok po vytvoření struktur funkčních míst je instalace majetku do příslušných funkčních míst. Tento článek vysvětluje, jak nainstalovat majetek na tato funkční místa v modulu Správa majetku. Informace o způsobu vytvoření majetku naleznete v tématu [Úvod do modulu Majetek](../objects/introduction-to-objects.md).
 
 Pokud jste vytvořili strukturu majetku, musí být celá struktura majetku nainstalována na funkčním místě. Proto lze na funkčním místě vybrat pouze nadřazený majetek (majetek nejvyšší úrovně, který nemá žádný nadřazený majetek). Všechny související podřízené majetky (dílčí majetky) budou také instalovány do funkčního místa. Při instalaci majetku do funkčního místa mohou být do nich automaticky převedeny finanční dimenze funkčního místa, a to v závislosti na nastavení typu funkčního místa, které je vybráno pro funkční místo. Další informace o nastavení typů funkčního místa naleznete v tématu [Typy funkčního místa](../setup-for-functional-locations/functional-location-types.md).
 

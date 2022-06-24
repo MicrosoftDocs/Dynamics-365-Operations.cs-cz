@@ -1,8 +1,8 @@
 ---
 title: Aplikace Viditelnost zásob
-description: Toto téma popisuje, jak používat aplikaci Viditelnost zásob.
+description: Tento článek popisuje, jak používat aplikaci Viditelnost zásob.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 359f89f98ca6954a0bbafd63fffa1d505a43f0c8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895750"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Použití aplikace viditelnosti zásob
+# <a name="use-the-inventory-visibility-app"></a>Použití aplikace Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak používat aplikaci Viditelnost zásob.
+Tento článek popisuje, jak používat aplikaci Viditelnost zásob.
 
 Viditelnost zásob poskytuje modelem řízenou aplikaci pro vizualizaci. Aplikace obsahuje tři stránky: **Konfigurace**, **Provozní viditelnost** a **Souhrn zásob**. Má následující funkce:
 
@@ -70,7 +70,10 @@ Chcete-li odeslat požadavek na rezervaci, musíte do těla požadavku zadat hod
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Souhrn zásob
 
-**Souhrn zásob** je přizpůsobené zobrazení pro entitu *součtu zásob na skladě*. Poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Než uvidíte data na kartě **Souhrn zásob**, musíte zapnout funkci *OnHandMostSpecificBackgroundService* na kartě **Správa funkcí**.
+**Souhrn zásob** je přizpůsobené zobrazení pro entitu *součtu zásob na skladě*. Poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob jsou pravidelně každých 15 minut synchronizována z aplikace Viditelnost zásob. Než uvidíte data na kartě **Souhrn zásob**, musíte zapnout funkci *OnHandMostSpecificBackgroundService* na kartě **Správa funkcí** a vybrat **Aktualizovat konfiguraci**.
+
+> [!NOTE]
+> Funkce *OnHandMostSpecificBackgroundService* sleduje pouze změny produktu na skladě, ke kterým došlo po zapnutí funkce. Data pro produkty, které se od zapnutí této funkce nezměnily, nebudou synchronizovány z mezipaměti služby inventáře do prostředí Dataverse. Pokud stránka **Souhrn inventáře** nezobrazuje všechny dostupné informace, které očekáváte, přejděte na **Správa zásob > Pravidelné úkoly > Integrace doplňku Viditelnost zásob**, deaktivuje dávkovou úlohu a znovu ji aktivujte. Tím se provede počáteční odeslání a všechna data se synchronizují do entity *Součet zásob na skladě* během následujících 15 minut. Chcete-li tuto funkci používat, doporučujeme vám ji zapnout před vytvořením jakýchkoli změn zásob na skladě a aktivovat dávkovou úlohu **Integrace doplňku Viditelnost zásob**.
 
 Pomocí **rozšířeného filtru**, který Dataverse nabízí, můžete vytvořit osobní zobrazení ukazující řádky, které jsou pro vás důležité. Možnosti rozšířeného filtru vám umožní vytvořit širokou škálu zobrazení, od jednoduchých po složité. Také vám umožňují přidat do filtrů seskupené a vnořené podmínky. Chcete-li se dozvědět více o tom, jak používat **rozšířený filtr**, přečtěte si téma [´´Uprava nebo vytvoření osobních zobrazení pomocí rozšířených filtrů mřížky](/powerapps/user/grid-filters-advanced).
 

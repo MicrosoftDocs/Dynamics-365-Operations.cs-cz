@@ -1,6 +1,6 @@
 ---
 title: Přehled nebezpečných materiálů
-description: Toto téma poskytuje přehled funkcí, které souvisejí s manipulací a dokumentací nebezpečných materiálů během správy informací o produktu a správy skladu.
+description: Tento článek poskytuje přehled funkcí, které souvisejí s manipulací a dokumentací nebezpečných materiálů během správy informací o produktu a správy skladu.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905798"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 
@@ -50,7 +50,7 @@ Při vývoji této funkce se počítalo s následujícími společnými předpis
 
 Každá sada předpisů poskytuje standardizované seznamy nebezpečných zboží a referenční kódy. Proto Supply Chain Management poskytuje referenční tabulku pro společné kódy v těchto seznamech. Každý seznam obsahuje také některé jedinečné kódy, které můžete definovat.
 
-Další informace, jak nastavit předpisy a hodnoty pro nebezpečné materiály a jak přiřadit hodnoty příslušným produktům, najdete v následujících tématech:
+Další informace, jak nastavit předpisy a hodnoty pro nebezpečné materiály a jak přiřadit hodnoty příslušným produktům, najdete v následujících článcích:
 
 - [Příprava nebezpečných materiálů](hazmat-setup.md)
 - [Nebezpečné materiály ve výrobcích, objednávkách, dodávkách a nákladech](hazmat-items.md)

@@ -1,6 +1,6 @@
 ---
 title: Zpětné účtování nákladů
-description: Toto téma představuje koncept zpětného účtování nákladů používané pro Lean manufacturing.
+description: Tento článek představuje koncept zpětného účtování nákladů používané pro Lean manufacturing.
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906088"
 ---
 # <a name="backflush-costing"></a>Zpětné účtování nákladů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma představuje koncept zpětného účtování nákladů používané pro Lean manufacturing. 
+Tento článek představuje koncept zpětného účtování nákladů používané pro Lean manufacturing. 
 
 Výpočet nákladů pro Lean manufacturing umožňuje výrobnímu toku použití metody akumulace nákladů, která je označována jako zpětného účtování nákladů. V metodě zpětného účtování nákladů jsou akumulovány přímé materiály, které jsou spotřebovány v účtu nákladů výrobního toku nedokončené výroby (NV). Používá se skupina modelu zásob pro standardní náklady. Produkty, které jsou přijaty z výrobního toku, jsou odečteny od nedokončené výroby na standardní náklady. Hlavní rozdíl mezi zpětným účtováním nákladů a standardními náklady spočívá v tom, že pro zpětné účtování nákladů nebudou odchylky vypočteny na kanban nebo dokončený produkt. Místo toho se odchylky vypočítávají pro výrobní tok za období. Tato metoda představuje skutečně štíhlý koncept pro vykazování spotřeby materiálu. Vyhrazená vyskladněná množství materiálu nejsou vykazována do kanbanu nebo výrobní zakázky. Místo toho jsou pro daný výrobní tok připraveny úplné dávky nebo manipulační jednotky. Po zaregistrování dávek nebo manipulačních jednotek jako prázdných jsou deklarovány jako spotřebované. Může být použita rozšířená spotřeba, v závislosti na [konfiguraci výrobního toku](../production-control/lean-manufacturing-modeling-lean-organization.md). Než budou organizace moci použít rozšířenou spotřebu, musí umožnit rozplynutí materiálu v NV výrobního toku. Periodické zpětné účtování nákladů určuje efektivní hodnotu nedokončené výroby na konci období. Toto určení vychází z manipulačních jednotek kanbanu a stavu kanbanové úlohy. Odchylky mezi hodnotami platnosti a skutečnými hodnotami NV na nákladovou skupinu a položku jsou zaúčtovány a zobrazí se jako odchylky.
 

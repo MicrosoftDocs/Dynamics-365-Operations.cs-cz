@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e3476f1f25ac01d8740cce0442ac48ef25101a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903862"
 ---
 # <a name="credit-limits-for-customers"></a>Limity úvěru pro odběratele
 
@@ -126,7 +126,7 @@ Použijte formulář **Odběratelé** k určení částky limitu úvěru pro ur�
 4.  V případě potřeby zadejte licenční číslo nebo jinou identifikaci vydané státní správou do pole **Identifikační údaje pro státní správu**.
 
 > [!NOTE]
-> Ve formuláři **Parametry pohledávek** obvykle zvolíte typ limitu úvěru. Pokud je však typ limitu úvěru nastaven na **Žádný**, je nutné vybrat také zaškrtávací políčko **Povinný limit úvěru** ve formuláři **Odběratelé** s cílem zkontrolovat limit úvěru vůči zůstatku odběratele. Další informace týkající se typů limitu úvěru naleznete v části Jaké dokumenty a procesy mohu zkontrolovat pro limity úvěru? tohoto tématu. 
+> Ve formuláři **Parametry pohledávek** obvykle zvolíte typ limitu úvěru. Pokud je však typ limitu úvěru nastaven na **Žádný**, je nutné vybrat také zaškrtávací políčko **Povinný limit úvěru** ve formuláři **Odběratelé** s cílem zkontrolovat limit úvěru vůči zůstatku odběratele. Další informace týkající se typů limitu úvěru naleznete v části Jaké dokumenty a procesy mohu zkontrolovat pro limity úvěru? v tomto článku. 
 
 **Jak ověřím limity úvěru ručně na prodejních objednávkách?**
 

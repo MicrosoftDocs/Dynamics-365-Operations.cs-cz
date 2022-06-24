@@ -1,6 +1,6 @@
 ---
 title: Výpočty pro modely konfigurace produktu - často kladené dotazy
-description: Toto téma popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
+description: Tento článek popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890937"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Výpočty pro modely konfigurace produktu - často kladené dotazy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
+Tento článek popisuje výpočty pro modely konfigurace produktu a vysvětluje, jak použít výpočty spolu s omezeními.
 
 Výpočty lze použít pro aritmetické nebo logické operace. Doplňují omezení výrazu v modelech konfigurace produktu. Je možné určit výpočty na stránce **Podrobnosti modelu produktu s konfigurací založenou na omezeních** a pak vytvořit výrazy pro výpočty v editoru výrazu. Další informace viz Vytvořit výpočty.
 

@@ -1,6 +1,6 @@
 ---
 title: Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management
-description: Toto téma popisuje, jak přiřadit ikony a názvy kroků pro nové nebo přizpůsobené toky úloh pro mobilní aplikaci Warehouse Management.
+description: Tento článek popisuje, jak přiřadit ikony a názvy kroků pro nové nebo přizpůsobené toky úloh pro mobilní aplikaci Warehouse Management.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890589"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak přiřadit ikony a názvy kroků pro nové nebo přizpůsobené toky úloh pro mobilní aplikaci Warehouse Management.
+Tento článek popisuje, jak přiřadit ikony a názvy kroků pro nové nebo přizpůsobené toky úloh pro mobilní aplikaci Warehouse Management.
 
 Následující ilustrace ukazují, jak se ikony kroků a názvy zobrazují v mobilní aplikaci Warehouse Management.
 
@@ -29,7 +29,7 @@ Následující ilustrace ukazují, jak se ikony kroků a názvy zobrazují v mob
 
 ## <a name="turn-this-feature-on-or-off"></a>Zapnutí nebo vypnutí této funkce
 
-Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnutá funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li používat funkčnost popsanou v tomto článku, musí být ve vašem systému zapnutá funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardní ID kroku, třídy a ikony
 
@@ -39,7 +39,7 @@ Každý krok v toku úlohy je identifikován ID kroku a každé ID kroku má odp
 
 V následující tabulce je uvedeno každé ID kroku, které je aktuálně k dispozici, a jeho odpovídající třída kroku. Název kroku primárního vstupního pole se používá jako ID kroku.
 
-Příklad, který ukazuje, jak se tyto ID a třídy kroků používají, najdete v implementaci metody `WHSMobileAppStepInfoBuilder.stepId()` v [Příklad: Přiřaďte ikony kroků a názvy pro vlastní tok](#example) dále v tomto tématu.
+Příklad, který ukazuje, jak se tyto ID a třídy kroků používají, najdete v implementaci metody `WHSMobileAppStepInfoBuilder.stepId()` v [Příklad: Přiřaďte ikony kroků a názvy pro vlastní tok](#example) dále v tomto článku.
 
 | ID kroku | Třída kroků |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Identifikátor ikony kroku je uložen v členu třídy `defaultStepIcon` a název kroku je uložen v členu třídy `defaultStepTitle`.
 
-Chcete-li přiřadit ikonu kroku, nastavte `defaultStepIcon` na jedno z ID ikon, které jsou uvedeny v sekci [Dostupné ikony kroků](#step-icons) dříve v tomto tématu.
+Chcete-li přiřadit ikonu kroku, nastavte `defaultStepIcon` na jedno z ID ikon, které jsou uvedeny v sekci [Dostupné ikony kroků](#step-icons) dříve v tomto článku.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Pro zadání hmotnosti použijte standardní nebo vlastní ikonu a název kroku
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Potom vytvoříte třídu kroků pro krok `NewWeight`. Kód by měl vypadat jako kód pro příklad `ContainerId`, který byl uveden dříve v tomto tématu.
+Potom vytvoříte třídu kroků pro krok `NewWeight`. Kód by měl vypadat jako kód pro příklad `ContainerId`, který byl uveden dříve v tomto článku.
 
 #### <a name="override-the-stepinfo-method"></a>Přepsat metodu stepInfo()
 

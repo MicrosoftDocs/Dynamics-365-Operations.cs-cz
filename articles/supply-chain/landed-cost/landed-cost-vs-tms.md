@@ -1,6 +1,6 @@
 ---
 title: Náklady za doručení a Správa přepravy
-description: 'Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: Správa přepravy (TMS) a Náklady za doručení. Toto téma shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi.'
+description: 'Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: Správa přepravy (TMS) a Náklady za doručení. Tento článek shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi.'
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905914"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Náklady za doručení a Správa přepravy
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: **Správa přepravy** (TMS) a **Náklady za doručení**. Toto téma shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi. Tyto informace můžete použít k rozhodnutí, který modul nejlépe vyhovuje vašim obchodním praktikám. Možná zjistíte, že některé obchodní praktiky fungují lépe v TMS, zatímco jiné fungují nejlépe v modulu Náklady za doručení. Poté, v závislosti na vašich obchodních požadavcích, se můžete rozhodnout použít výhradně jeden modul, nebo můžete oba moduly kombinovat.
+Microsoft Dynamics 365 Supply Chain Management poskytuje dva různé moduly pro práci s přepravou: **Správa přepravy** (TMS) a **Náklady za doručení**. Tento článek shrnuje funkce, které mají tyto dva moduly společné, a zdůrazňuje rozdíly mezi nimi. Tyto informace můžete použít k rozhodnutí, který modul nejlépe vyhovuje vašim obchodním praktikám. Možná zjistíte, že některé obchodní praktiky fungují lépe v TMS, zatímco jiné fungují nejlépe v modulu Náklady za doručení. Poté, v závislosti na vašich obchodních požadavcích, se můžete rozhodnout použít výhradně jeden modul, nebo můžete oba moduly kombinovat.
 
-Toto téma není komplexním přehledem všech funkcí obou modulů. Místo toho zdůrazňuje dostupné funkce, protože se týká přepravy zboží od dodavatele do skladu vašeho podniku, kde jej lze spotřebovat.
+Tento článek není komplexním přehledem všech funkcí obou modulů. Místo toho zdůrazňuje dostupné funkce, protože se týká přepravy zboží od dodavatele do skladu vašeho podniku, kde jej lze spotřebovat.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Terminologie, referenční údaje a rozdíly ve vykazování
 

@@ -1,26 +1,26 @@
 ---
 title: Kopírování webu elektronického obchodu
-description: Toto téma popisuje, jak zkopírovat existující web elektronického obchodu v rámci prostředí elektronického obchodu nebo mezi nimi v konfigurátoru webů Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak zkopírovat existující web elektronického obchodu v rámci prostředí elektronického obchodu nebo mezi nimi v konfigurátoru webů Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462319"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935737"
 ---
 # <a name="copy-an-e-commerce-site"></a>Kopírování webu elektronického obchodu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak zkopírovat existující web elektronického obchodu v rámci prostředí elektronického obchodu nebo mezi nimi v konfigurátoru webů Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak zkopírovat existující web elektronického obchodu v rámci prostředí elektronického obchodu nebo mezi nimi v konfigurátoru webů Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce podporuje kopírování nebo klonování webů jako samoobslužnou operaci v konfigurátoru webů Commerce. Weby lze kopírovat v rámci jednoho prostředí elektronického obchodu nebo mezi dvěma prostředími elektronického obchodu. Uživatel, který zahájí operaci kopírování webu, musí být správcem klienta ve zdrojovém i cílovém prostředí elektronického obchodu.
 
@@ -40,23 +40,23 @@ Chcete-li zkopírovat web v prostředí elektronického obchodu, postupujte takt
 1. Přihlaste se do konfigurátoru webů pro prostředí, kde chcete provést operaci kopírování.
 1. Otevřete zobrazení seznamu webů výběrem položky **Přepínač webů** v pravém horním rohu a poté vyberte **Spravovat weby**.
 1. Vyhledejte web, který chcete zkopírovat nebo klonovat, a vyberte ho zaškrtnutím políčka vedle názvu webu.
-1. V podokně akcí zvolte **Kopírovat web**.
-1. V dialogovém okně **Kopírovat web** zadejte v poli **Název nového webu** název nového webu. Název nového webu musí být v prostředí elektronického obchodu jedinečný. Pole **Zdrojový klient** a **Zdrojový web** se automaticky vyplní informacemi o aktuálním klientu a vybraném webu.
+1. Na příkazovém řádku vyberte možnost **Kopírovat web**.
+1. V rozbalovací nabídce **Kopírovat web** zadejte v poli **Název nového webu** název nového webu. Název nového webu musí být v prostředí elektronického obchodu jedinečný. Pole **Zdrojový klient** a **Zdrojový web** se automaticky vyplní informacemi o aktuálním klientu a vybraném webu.
 1. Vyberte příkaz **Vytvořit kopii**.
 
 Po ověření informací se zobrazí upozornění, že byla vytvořena nová úloha kopírování webu. Průběh úlohy můžete sledovat v [pravém podokně stránky **Úlohy klienta**](#monitor-the-site-copy-operation). Po úspěšném dokončení operace kopírování se nový web zobrazí v seznamu webů v zobrazení seznamu webů.
 
-Následující obrázek ukazuje příklad dialogového okna **Kopírovat web** v konfigurátoru webů.
+Následující obrázek ukazuje příklad rozbalovací nabídky **Kopírovat web** v konfigurátoru webů.
 
-![Dialogové okno Kopírovat web v konfigurátoru webů.](media/site-copy_1.png)
+![Rozbalovací nabídka Kopírovat web v konfigurátoru webů.](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Kopírování webu mezi dvěma prostředími elektronického obchodu
 
 Chcete-li zkopírovat web mezi dvěma prostředími elektronického obchodu, postupujte takto.
 
 1. Přihlaste se jako do konfigurátoru webů v cílovém prostředí elektronického obchodu.
-1. V podokně akcí zvolte **Kopírovat web**.
-1. V dialogovém okně **Kopírovat web** zadejte v poli **Název nového webu** název nového webu. Název nového webu musí být v prostředí elektronického obchodu jedinečný.
+1. Na příkazovém řádku vyberte možnost **Kopírovat web**.
+1. V rozbalovací nabídce **Kopírovat web** zadejte v poli **Název nového webu** název nového webu. Název nového webu musí být v prostředí elektronického obchodu jedinečný.
 1. V poli **Zdrojový klient** vyberte jméno zdrojového klienta.
 1. V poli **Zdrojový web** vyberte zdrojový web.
 1. Vyberte příkaz **Vytvořit kopii**.
@@ -66,6 +66,32 @@ Chcete-li zkopírovat web mezi dvěma prostředími elektronického obchodu, pos
 
 Po ověření informací se zobrazí upozornění, že byla vytvořena nová úloha kopírování webu. Průběh úlohy můžete sledovat v [pravém podokně stránky **Úlohy klienta**](#monitor-the-site-copy-operation). Po úspěšném dokončení operace kopírování se nový web zobrazí v seznamu webů v zobrazení seznamu webů.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Mapovat kanály během operace kopírování webu (volitelné)
+
+Zdrojové kanály a národní prostředí lze mapovat na cílové kanály a národní prostředí jako součást operace kopírování webu. Pokud je mapování kanálů provedeno jako součást operace kopírování webu, není vyžadována inicializace webu pomocí procesu FRE a konfigurace kanálů v nastavení webu. 
+
+Chcete-li namapovat všechny kanály a národní prostředí „tak, jak jsou“ (1 : 1) v nástroji pro tvorbu webu, postupujte takto.
+
+1. Otevřete zobrazení seznamu webů výběrem položky **Přepínač webů** v pravém horním rohu a poté vyberte **Spravovat weby**.
+1. Vyhledejte web, který chcete zkopírovat nebo klonovat, a vyberte ho zaškrtnutím políčka vedle názvu webu.
+1. Na příkazovém řádku vyberte možnost **Kopírovat web**.
+1. V rozbalovací nabídce **Kopírovat web** zadejte hodnoty pro **Název nového webu**, **Zdrojový tenant** a **Zdrojový web** (pokud již není přítomen).
+1. Vyberte **Přidat mapování kanálu**.
+1. V rozbalovací nabídce **Nakonfigurovat kanály a národní prostředí webu** vyberte **Zdrojový kanál** a poté vyberte zdrojový kanál.  
+1. Vyberte **Cílový kanál** a poté vyberte stejný kanál jako zdrojový kanál. 
+1. Vyberte **Přidat národní prostředí**.
+1. Vyberte **Zdrojové národní prostředí** a poté vyberte zdrojové národní prostředí.
+1. Vyberte **Cílové národní prostředí** a poté vyberte stejné národní prostředí jako zdrojové národní prostředí. 
+1. Jako **Cesta adresy URL** zadejte jedinečnou cestu URL, která se aktuálně v cílovém prostředí nepoužívá.
+1. Opakujte kroky 8–11 pro každé národní prostředí, které má být mapováno pro kanál.
+1. Zvolte **Použít**.
+1. Opakujte kroky 6 až 11 pro každý zdrojový kanál.
+1. Vyberte **Zavřít**.
+1. Zkontrolujte přesnost konfigurace a poté vyberte **Kopírovat web**.
+
+> [!NOTE]
+> Všechny zdrojové kanály a národní prostředí musí být namapovány a lze je namapovat pouze jednou.
+
 ## <a name="monitor-the-site-copy-operation"></a>Sledování operace kopírování webu
 
 Chcete-li sledovat průběh operace kopírování webu, postupujte takto.
@@ -74,9 +100,9 @@ Chcete-li sledovat průběh operace kopírování webu, postupujte takto.
 1. V levém podokně vyberte položku **Úlohy klienta**.
 1. Na stránce **Úlohy klienta** vyhledejte a vyberte v seznamu úlohu kopírování webu. Vpravo se zobrazí podokno ukazující stav a podrobnosti vybrané úlohy.
 
-Úlohu, která má stav **Probíhá**, můžete zrušit. Vyberte úlohu v seznamu a poté vyberte v podokně akcí příkaz **Zrušit**.
+Úlohu, která má stav **Probíhá**, můžete zrušit. Vyberte úlohu v seznamu a poté vyberte na panelu příkazů vyberte **Zrušit**.
 
-Můžete znovu zkusit provést úlohu, která má stav **Neúspěšné** nebo **Dokončeno s chybami**. Vyberte úlohu v seznamu a poté vyberte v podokně akcí příkaz **Opakovat**.
+Můžete znovu zkusit provést úlohu, která má stav **Neúspěšné** nebo **Dokončeno s chybami**. Vyberte úlohu v seznamu a poté vyberte na panelu příkazů **Opakovat**.
 
 > [!NOTE]
 > Zpracování videosouborů může pokračovat po dokončení úlohy kopírování webu.

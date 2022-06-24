@@ -1,6 +1,6 @@
 ---
 title: Práce s přednastavenými rozloženími
-description: Toto téma popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 34b9cb15dd77e6317208e6468fbfb60e804f5e8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896827"
 ---
 # <a name="work-with-preset-layouts"></a>Práce s přednastavenými rozloženími
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
 
-Před dokončením postupů uvedených v tomto tématu si přečtěte [Přednastavená a vlastní rozložení](templates-layouts-overview.md#preset-and-custom-layouts). Obecný přehled naleznete v tématu [Šablony a rozvržení – přehled](templates-layouts-overview.md).
+Před dokončením postupů uvedených v tomto článku si přečtěte [Přednastavená a vlastní rozložení](templates-layouts-overview.md#preset-and-custom-layouts). Obecný přehled naleznete v tématu [Šablony a rozvržení – přehled](templates-layouts-overview.md).
 
 ## <a name="create-a-new-preset-layout"></a>Vytvoření nového přednastaveného rozvržení
 

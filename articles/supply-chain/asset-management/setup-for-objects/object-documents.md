@@ -1,6 +1,6 @@
 ---
 title: Dokumenty majetku
-description: V tomto tématu jsou vysvětleny dokumenty majetku v modulu Správa majetku.
+description: V tomto článku jsou vysvětleny dokumenty majetku v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77b7265b1ba56dbd1cd955f5d90afea02f589ce2eebdd05a2fef3a7ddebc0ee1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2e8d72dc938c43e266c6b7c39329f827c56607a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899462"
 ---
 # <a name="asset-documents"></a>Dokumenty majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722480"
 
  
 
-V tomto tématu jsou vysvětleny dokumenty majetku v modulu Správa majetku.
+V tomto článku jsou vysvětleny dokumenty majetku v modulu Správa majetku.
 
 V modulu Správa majetku můžete vytvořit dokumenty tak, že budou automaticky spojeny např. s typy úloh, výrobci majetku, typy majetku nebo majetkem. Tato funkce je užitečná, když jsou vydány aktualizované verze dokumentů. V takovém případě stačí pouze vložit aktualizovaný dokument do standardního umístění, které používáte pro dokumenty Supply Chain Management, a připojit dokument k záznamu o majetku, který jste vytvořili. K aktualizovanému dokumentu pak lze získat přístup z položek nabídky **Všechen majetek**, **Aktivní majetek**, **Můj aktivní majetek** a **Všechny pracovní příkazy** a **Aktivní úlohy pracovního příkazu**. Proces připojování dokumentů k záznamu dokumentu aktiv používá standardní systém zpracování dokumentů.
 

@@ -1,6 +1,6 @@
 ---
-title: Začínáme s optimalizací plánování
-description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
+title: Začínáme s optimalizací plánování
+description: Tento článek vysvětluje, jak používat funkci Optimalizace plánování.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900963"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -99,7 +99,7 @@ Stav připojení označuje aktuální stav spojení mezi Supply Chain Management
 |---|---|---|
 | Připojeno | Bylo navázáno spojení mezi službou optimalizace plánování a Supply Chain Management. | Ano |
 | Povolení připojení | Požadavek na zapnutí připojení ke službě optimalizace plánování právě probíhá. | Ne |
-| Odpojeno | Neexistuje připojení ke službě optimalizace plánování. Připojení lze zapnout z LCS, jak je popsáno výše v tomto tématu. | Ne |
+| Odpojeno | Neexistuje připojení ke službě optimalizace plánování. Připojení lze zapnout z LCS, jak je popsáno výše v tomto článku. | Číslo |
 | Zakazování připojení | Požadavek na vypnutí připojení ke službě optimalizace plánování právě probíhá. | Ne |
 | Načítání stavu | Systém čeká na informace o stavu ze služby optimalizace plánování. | Ne |
 

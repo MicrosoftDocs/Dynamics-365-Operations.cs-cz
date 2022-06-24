@@ -1,6 +1,6 @@
 ---
 title: Nastavení prognózy poptávky
-description: Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky.
+description: Tento článek popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900995"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit prognózu poptávky.  
+Tento článek popisuje, jak nastavit prognózu poptávky.  
 
 ## <a name="item-allocation-keys"></a>Alokační klíče pro položky
 
@@ -245,7 +245,7 @@ Pomocí následující procedury vytvořte nový pracovní prostor strojového u
 1. Projděte průvodce podle pokynů na obrazovce. Při práci mějte na paměti následující body:
 
     - Použijte výchozí nastavení, pokud jiné body v tomto seznamu nedoporučují jiná nastavení.
-    - Ujistěte se, že jste vybrali geografickou oblast, která odpovídá oblasti, kde je nasazena vaše instance Supply Chain Management. V opačném případě by některá z vašich dat mohla procházet hranicemi regionu. Více informací naleznete v části [oznámení o ochraně osobních údajů](#privacy) dále v tomto tématu.
+    - Ujistěte se, že jste vybrali geografickou oblast, která odpovídá oblasti, kde je nasazena vaše instance Supply Chain Management. V opačném případě by některá z vašich dat mohla procházet hranicemi regionu. Více informací naleznete v části [oznámení o ochraně osobních údajů](#privacy) dále v tomto článku.
     - Používejte vyhrazené prostředky, jako jsou skupiny prostředků, účty úložiště, registry kontejnerů, trezory klíčů Azure a síťové prostředky.
     - Na stránce průvodce **Nastavte parametry připojení Azure Machine Learning Service** musíte zadat název účtu úložiště. Použijte účet, který je vyhrazený prognózování poptávky. Vstupní a výstupní data prognózy poptávky budou uložena na tomto účtu úložiště.
 

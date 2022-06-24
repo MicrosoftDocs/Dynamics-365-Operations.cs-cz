@@ -1,6 +1,6 @@
 ---
 title: Funkce registrační pokladny pro Norsko
-description: Toto téma poskytuje přehled funkcí pokladny, které je dostupné pro Norsko v Microsoft Dynamics 365 Commerce a obsahuje pokyny pro nastavení funkcí.
+description: Tento článek poskytuje přehled funkcí pokladny, které je dostupné pro Norsko v Microsoft Dynamics 365 Commerce a obsahuje pokyny pro nastavení funkcí.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906692"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Funkce registrační pokladny pro Norsko
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled funkcí pokladny, které jsou dostupné pro Norsko v Dynamics 365 Commerce. Obsahuje také pokyny pro nastavení funkcí. Funkce jsou následující:
+Tento článek poskytuje přehled funkcí pokladny, které jsou dostupné pro Norsko v Dynamics 365 Commerce. Obsahuje také pokyny pro nastavení funkcí. Funkce jsou následující:
 
 - Společné funkce pokladního místa (POS), které jsou dostupné zákazníkům ve všech zemích nebo oblastech. Jako příklad můžeme uvést možnost, která zabrání vytištění kopie příjemky více než jednou.
 - Funkce specifické pro Norsko, jako jsou digitální podpisy pro prodejní transakce.

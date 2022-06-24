@@ -1,6 +1,6 @@
 ---
 title: Nastavení mobilních zařízení pro práci ve skladu
-description: Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
+description: Tento článek popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902172"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905566"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
+Tento článek popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 
 > [!NOTE]
-> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení**. Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
+> Tento článek se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Položky nabídky, které se objevují v nabídkách mobilního zařízení pro sklad jsou nastaveny na stránce **Položky nabídky mobilního zařízení**. Vzhledem k tomu, že položky nabídky mohou být umístěny do různých nabídek, je snadné nakonfigurovat struktury nabídky tak, aby byly zveřejněny konkrétním uživatelům pouze určité typy činností. Můžete konfigurovat položky nabídky tak, aby prováděly následující úlohy:
 
 - Zpracování dotazu nebo provedení aktivity, jako je tisk štítku, generování registrační značky vozidla, spuštění výrobní zakázky nebo rychlé vyhledání informací o položkách ve skladovém místě.
 - Vytvořte práci, která se provede prostřednictvím jiného procesu. Například přijetím položky pro nákupní objednávku můžete vytvořit pracovní vyskladnění pro jiného pracovníka.
@@ -38,7 +38,7 @@ Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve 
 Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole **Režim** na **Nepřímý**. Seznam možností **Kód aktivity** potom bude zpřístupněn a vy tak můžete vybrat typ dotazu nebo aktivity, pro kterou je položka nabídky určena. Pokud chcete vytvořit položku nabídky ke generování skladu, nastavte pole **Režim** na **Práce**. Seznam možností **Proces pro vytvoření práce** bude k dispozici. Pokud chcete vytvořit položku nabídky ke zpracování existující skladové práce, nastavte pole **Režim** na **Práce** a nastavte možnost **Použít stávající práci** na **Ano**. 
 
 > [!NOTE]
-> Další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto tématu.
+> Další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto článku.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurace položek nabídky pro aktivity a dotazy
 

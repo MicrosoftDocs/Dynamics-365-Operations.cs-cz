@@ -1,6 +1,6 @@
 ---
 title: Spuštění a monitorování experimentu
-description: Toto téma popisuje, jak spustit a monitorovat experiment ve službě třetí strany. Popisuje také, jak můžete provádět změny variant po spuštění experimentu.
+description: Tento článek popisuje, jak spustit a monitorovat experiment ve službě třetí strany. Popisuje také, jak můžete provádět změny variant po spuštění experimentu.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909576"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Spuštění a monitorování experimentu
 
-Toto téma popisuje, jak můžete spustit a monitorovat experiment v aplikaci třetí strany a jak můžete v případě potřeby měnit varianty. Než provedete kroky v tomto tématu, budete nejprve muset [publikovat](experimentation-preview-publish.md) váš experiment v Commerce. 
+Tento článek popisuje, jak můžete spustit a monitorovat experiment v aplikaci třetí strany a jak můžete v případě potřeby měnit varianty. Než provedete kroky v tomto článku, budete nejprve muset [publikovat](experimentation-preview-publish.md) váš experiment v Commerce. 
 
-Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
+Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných článcích.
 
 [ ![Cesta uživatele experimentováním – spuštění a monitorování.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

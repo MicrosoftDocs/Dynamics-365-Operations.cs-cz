@@ -1,8 +1,8 @@
 ---
-title: Konfigurace viditelnosti zásob
-description: Toto téma popisuje, jak konfigurovat doplněk Viditelnost zásob.
+title: Konfigurace Inventory Visibility
+description: Tento článek popisuje, jak konfigurovat doplněk Viditelnost zásob.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895808"
 ---
-# <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
+# <a name="configure-inventory-visibility"></a>Konfigurace Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Power Apps.
+Tento článek popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Úvod
 
-Než začnete pracovat s Viditelností zásob, musíte dokončit následující konfiguraci, jak je popsáno v tomto tématu:
+Než začnete pracovat s Viditelností zásob, musíte dokončit následující konfiguraci, jak je popsáno v tomto článku:
 
 - [Konfigurace zdroje dat](#data-source-configuration)
 - [Konfigurace oddílu](#partition-configuration)
@@ -41,7 +41,7 @@ Než začnete, nainstalujte a nastavte doplněk Viditelnost inventáře podle po
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Stránka Konfigurace aplikace Viditelnost zásob
 
-V Power Apps stránka **Konfigurace** [aplikace Viditelnost zásob](inventory-visibility-power-platform.md) vám pomůže nastavit konfiguraci množství na skladě a konfiguraci předběžných rezervací. Po instalaci doplňku obsahuje výchozí konfigurace hodnotu ze softwaru Microsoft Dynamics 365 Supply Chain Management (zdroj dat `fno`). Výchozí nastavení můžete zkontrolovat. Navíc na základě vašich obchodních požadavků a požadavků na účtování zásob vašeho externího systému můžete upravit konfiguraci a standardizovat tak způsob, jakým mohou být změny v inventáři zaúčtovány, organizovány a dotazovány z různých systémů. Zbývající části tohoto tématu vysvětlují, jak používat každou část stránky **Konfigurace**.
+V Power Apps stránka **Konfigurace** [aplikace Viditelnost zásob](inventory-visibility-power-platform.md) vám pomůže nastavit konfiguraci množství na skladě a konfiguraci předběžných rezervací. Po instalaci doplňku obsahuje výchozí konfigurace hodnotu ze softwaru Microsoft Dynamics 365 Supply Chain Management (zdroj dat `fno`). Výchozí nastavení můžete zkontrolovat. Navíc na základě vašich obchodních požadavků a požadavků na účtování zásob vašeho externího systému můžete upravit konfiguraci a standardizovat tak způsob, jakým mohou být změny v inventáři zaúčtovány, organizovány a dotazovány z různých systémů. Zbývající části tohoto článku vysvětlují, jak používat každou část stránky **Konfigurace**.
 
 Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfiguraci**.
 
@@ -54,6 +54,7 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 | *OnHandReservation* | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tato volitelná funkce umožňuje plán změn na skladě a funkci Lze slíbit (ATP). Další informace najdete v tématu [Plán změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
+| *Přidělení* | Tato volitelná funkce umožňuje Viditelnosti zásob mít možnost ochrany zásob (ringfencing) a kontroly nadměrného prodeje. Další informace viz [Alokace zásob doplňku Viditelnost zásob](inventory-visibility-allocation.md). |
 | *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro pokročilé skladové procesy (položky WHS). Další informace viz [Podpora Viditelnost zásob pro položky WHS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
@@ -320,6 +321,13 @@ Chcete-li nastavit index hierarchie produktů, postupujte následujícím způso
     - **Číslo sady** – Dimenze, které patří do stejné skupiny (indexu), budou seskupeny a bude jim přiděleno stejné číslo sady.
     - **Hierarchie** – Hierarchie se používá k definování podporovaných kombinací dimenzí, které lze dotazovat ve skupině dimenzí (indexu). Pokud například nastavíte skupinu dimenzí, která má hierarchickou posloupnost *Styl*, *Barva* a *Velikost*, systém umí vrátit výsledek na tři skupiny dotazů. První skupina je pouze styl. Druhá skupina je kombinace stylu a barvy. A třetí skupina je kombinace stylu, barvy a velikosti. Ostatní kombinace nejsou podporovány.
 
+> [!TIP]
+> Zde je několik tipů, které je třeba mít na paměti při nastavování hierarchie indexu:
+>
+> - Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v konfiguracích indexu. Pokud je základní dimenze znovu definována v konfiguraci indexu, nebudete moci pomocí tohoto indexu dotazovat.
+> - Pokud se potřebujete dotazovat pouze na inventář, který je agregován všemi kombinacemi dimenzí, můžete nastavit jeden index, který obsahuje základní dimenzi `Empty`.
+> - Musíte mít alespoň jednu hierarchii indexu (například obsahující základní dimenzi `Empty`), jinak dotazy selžou s chybou „Nebyla nastavena žádná hierarchie indexu.“
+
 ### <a name="example"></a>Příklad
 
 Tato část poskytuje příklad, který ukazuje, jak hierarchie funguje.
@@ -372,11 +380,6 @@ Index vám umožňuje dotazovat se na množství na skladě následujícími zp�
     - Tričko, Červené, Malé, Normální, 6
     - Tričko, Červené, Velké, Normální, 7
 
-> [!NOTE]
-> Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v konfiguracích indexu.
-> 
-> Pokud se musíte dotazovat pouze na inventář, který je agregován všemi kombinacemi dimenzí, můžete nastavit jeden index, který obsahuje základní dimenzi `Empty`.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfigurace rezervace (volitelná)
 
 Konfigurace rezervace je vyžadována, pokud chcete používat funkci předběžné rezervace. Konfigurace se skládá ze dvou základních částí:
@@ -390,7 +393,7 @@ Když provádíte rezervaci, asi budete chtít vědět, zda je požadované mno�
 
 Nastavením mapování z fyzické míry na vypočítanou míru povolíte službě Viditelnost zásob automaticky ověřovat dostupnost rezervace na základě fyzické míry.
 
-Než nastavíte toto mapování, musí být na kartách **Zdroj dat** a **Vypočítaná míra** ve stránce **Konfigurace** v Power Apps definovány fyzické míry, vypočítané míry a jejich zdroje dat (jak je popsáno dříve v tomto tématu).
+Než nastavíte toto mapování, musí být na kartách **Zdroj dat** a **Vypočítaná míra** ve stránce **Konfigurace** v Power Apps definovány fyzické míry, vypočítané míry a jejich zdroje dat (jak je popsáno dříve v tomto článku).
 
 Chcete-li definovat mapování předběžných rezervací, postupujte takto.
 
@@ -508,7 +511,7 @@ Během své fáze inicializace nastaví Viditelnost zásob výchozí konfiguraci
 
 Tato část popisuje, jak je konfigurován zdroj dat `iv`.
 
-##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fyzické míry konfigurované pro zdroj dat iv
+##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fyzické míry konfigurované pro zdroj dat „iv“
 
 Pro zdroj dat `iv` jsou konfigurovány následující fyzické míry:
 
@@ -651,11 +654,11 @@ Vypočítaná míra `InventoryDemand` se konfiguruje pro zdroj dat `iv`, jak uka
 | Dodatek | `iv` | `ReservPhysical` |
 | Dodatek | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>Konfigurace zdroje dat fno
+#### <a name="configuration-of-the-fno-data-source"></a>Konfigurace zdroje dat „fno“
 
 Tato část popisuje, jak je konfigurován zdroj dat `fno`.
 
-##### <a name="dimension-mappings-for-the-fno-data-source"></a>Mapování dimenzí pro zdroj dat fno
+##### <a name="dimension-mappings-for-the-fno-data-source"></a>Mapování dimenzí pro zdroj dat „fno“
 
 Mapování dimenzí, která jsou uvedena v následující tabulce, jsou konfigurována pro zdroj dat `fno`.
 
@@ -687,7 +690,7 @@ Mapování dimenzí, která jsou uvedena v následující tabulce, jsou konfigur
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fyzické míry konfigurované pro zdroj dat fno
+##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fyzické míry konfigurované pro zdroj dat „fno“
 
 Pro zdroj dat `fno` jsou konfigurovány následující fyzické míry:
 
@@ -699,11 +702,11 @@ Pro zdroj dat `fno` jsou konfigurovány následující fyzické míry:
 - `ReservOrdered`
 - `OnOrder`
 
-#### <a name="configuration-of-the-pos-data-source"></a>Konfigurace zdroje dat pos
+#### <a name="configuration-of-the-pos-data-source"></a>Konfigurace zdroje dat „pos“
 
 Tato část popisuje, jak je konfigurován zdroj dat `pos`.
 
-##### <a name="physical-measures-for-the-pos-data-source"></a>Fyzické míry konfigurované pro zdroj dat pos
+##### <a name="physical-measures-for-the-pos-data-source"></a>Fyzické míry konfigurované pro zdroj dat „pos“
 
 Pro zdroj dat `pos` jsou konfigurovány následující fyzické míry:
 
@@ -720,14 +723,14 @@ Vypočítaná míra `AvailQuantity` se konfiguruje pro zdroj dat `pos`, jak ukaz
 | Dodatek | `pos` | `PosInbound` |
 | Odčítání | `pos` | `PosOutbound` |
 
-#### <a name="configuration-of-the-iom-data-source"></a>Konfigurace zdroje dat iom
+#### <a name="configuration-of-the-iom-data-source"></a>Konfigurace zdroje dat „iom“
 
 Pro zdroj dat `iom` (inteligentní správa objednávek) jsou konfigurovány následující fyzické míry:
 
 - `OnOrder`
 - `OnHand`
 
-#### <a name="configuration-of-the-erp-data-source"></a>Konfigurace zdroje dat erp
+#### <a name="configuration-of-the-erp-data-source"></a>Konfigurace zdroje dat „erp“
 
 Pro zdroj dat `erp` (plánování podnikových zdrojů) jsou konfigurovány následující fyzické míry:
 

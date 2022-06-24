@@ -1,6 +1,6 @@
 ---
 title: Vytvoření žádanky pro spotřebu
-description: Toto téma popisuje postup vytváření žádosti.
+description: Tento článek popisuje postup vytváření žádosti.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888463"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Vytvoření žádanky pro spotřebu
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje postup vytváření žádosti. Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu. Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník. Tento úkol běžně provádí zaměstnanec. Role zabezpečení **Zaměstnanec** vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako **Alicia**.
+Tento článek popisuje postup vytváření žádosti. Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu. Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník. Tento úkol běžně provádí zaměstnanec. Role zabezpečení **Zaměstnanec** vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako **Alicia**.
 
 
 ## <a name="create-a-new-requisition"></a>Vytvoření nové žádanky

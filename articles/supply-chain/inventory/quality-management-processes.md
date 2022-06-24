@@ -1,6 +1,6 @@
 ---
 title: Přehled správy kvality a neshod
-description: Toto téma představuje funkce správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management a vysvětluje, jak mohou pomoci zlepšit kvalitu produktů ve vašem dodavatelském řetězci.
+description: Tento článek představuje funkce správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management a vysvětluje, jak mohou pomoci zlepšit kvalitu produktů ve vašem dodavatelském řetězci.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907486"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Přehled správy kvality a neshod
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma představuje funkce správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management a vysvětluje, jak mohou pomoci zlepšit kvalitu produktů ve vašem dodavatelském řetězci.
+Tento článek představuje funkce správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management a vysvětluje, jak mohou pomoci zlepšit kvalitu produktů ve vašem dodavatelském řetězci.
 
 Zajištění kvality zahrnuje testování produktů a správu nevyhovujícího materiálu. Procesy řízení kvality pomáhají zajistit vysokou úroveň kvality produktu ve vašem dodavatelském řetězci. Tyto procesy také pomáhají optimalizovat procesy dodavatelského řetězce a zvýšit spokojenost zákazníků. Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Výsledky diagnostiky propojit s úlohami oprav. V systému můžete naplánovat úlohy k nápravě problémů a zabránit tak opakování těchto problémů v budoucnosti. Řízení kvality také umožňuje sledování problémů (včetně interních) podle typu problému a umožňuje určit krátkodobé nebo dlouhodobé řešení. Statistické údaje o klíčových ukazatelích výkonu (KPI) nabízí náhled na potíže s neshodami, které se dříve objevily, a řešení, která byla použita k jejich nápravě. Historická data můžete použít ke kontrole účinnosti předchozích opatření pro zajištění kvality a k rozhodnutí o tom, zda tato opatření použít i v budoucnu.
 

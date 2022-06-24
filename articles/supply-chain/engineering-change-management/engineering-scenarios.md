@@ -1,6 +1,6 @@
 ---
 title: Ukázka funkce správy technických změn
-description: Toto téma poskytuje podrobný návod, který ukazuje, jak pracovat se správou technických změn.
+description: Tento článek poskytuje podrobný návod, který ukazuje, jak pracovat se správou technických změn.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889628"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Ukázka funkce správy technických změn
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje podrobný návod, který ukazuje, jak pracovat se správou technických změn. Prochází každý z nejdůležitějších scénářů:
+Tento článek poskytuje podrobný návod, který ukazuje, jak pracovat se správou technických změn. Prochází každý z nejdůležitějších scénářů:
 
 - Konfigurace základních funkcí
 - Jak technická společnost vytváří nový technický produkt
@@ -35,13 +35,13 @@ Toto téma poskytuje podrobný návod, který ukazuje, jak pracovat se správou 
 - Jak naplánovat a implementovat požadované změny vytvořením objednávky technických změn
 - Jak uvolnit produkt, který byl změněn
 
-Všechna cvičení v tomto tématu používají standardní ukázková data, která jsou k dispozici pro Microsoft Dynamics 365 Supply Chain Management. Každé cvičení navazuje na předchozí cvičení. Proto doporučujeme, abyste prošli cvičeními v pořadí, od začátku do konce, zejména pokud jste nikdy předtím nepoužívali funkci správy technických změn. Tímto způsobem získáte úplné pochopení funkce.
+Všechna cvičení v tomto článku používají standardní ukázková data, která jsou k dispozici pro Microsoft Dynamics 365 Supply Chain Management. Každé cvičení navazuje na předchozí cvičení. Proto doporučujeme, abyste prošli cvičeními v pořadí, od začátku do konce, zejména pokud jste nikdy předtím nepoužívali funkci správy technických změn. Tímto způsobem získáte úplné pochopení funkce.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Nastavení ukázkových dat pro tento scénář
 
-Chcete-li sledovat ukázkový scénář, který je uveden v tomto tématu, musíte nejprve připravit funkci zpřístupněním ukázkových dat a přidáním několika vlastních záznamů.
+Chcete-li sledovat ukázkový scénář, který je uveden v tomto článku, musíte nejprve připravit funkci zpřístupněním ukázkových dat a přidáním několika vlastních záznamů.
 
-Než se pokusíte provést některá z cvičení ve zbytku tohoto tématu, postupujte podle pokynů ve všech následujících podsekcích. Tyto podsekce také představují několik důležitých stránek nastavení, které budete používat při nastavování správy technických změn pro vaši vlastní organizaci.
+Než se pokusíte provést některá z cvičení ve zbytku tohoto článku, postupujte podle pokynů ve všech následujících podsekcích. Tyto podsekce také představují několik důležitých stránek nastavení, které budete používat při nastavování správy technických změn pro vaši vlastní organizaci.
 
 ### <a name="make-standard-demo-data-available"></a>Zpřístupnění standardních ukázkových dat
 

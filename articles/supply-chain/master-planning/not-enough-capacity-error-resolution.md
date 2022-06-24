@@ -1,6 +1,6 @@
 ---
 title: Oprava chyby modulu plánování „Nebyla nalezena dostatečná kapacita“ a končené kapacity
-description: Toto téma poskytuje informace o důvodech a řešeních chyby „výrobní zakázky“ %1 nebylo možné naplánovat. Chyba modulu plánování „Nebyla nalezena dostatečná kapacita“
+description: Tento článek poskytuje informace o důvodech a řešeních chyby „výrobní zakázky“ %1 nebylo možné naplánovat. Chyba modulu plánování „Nebyla nalezena dostatečná kapacita“
 author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a3c08dc72c7133a2ebb148a2f88f83fee282717b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469834"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891024"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Opravte chybu modulu plánování „Nebyla nalezena dostatečná kapacita“
 
@@ -26,7 +26,7 @@ Při spuštění plánování se může zobrazit následující chybová zpráva
 
 > Výrobní zakázku %1 se nepodařilo naplánovat. Nebyla nalezena dostatečná kapacita.
 
-Existuje několik důvodů, proč může plánovací modul selhat a vydat tuto chybovou zprávu. Toto téma poskytuje pokyny, které vám pomohou najít hlavní příčinu chyby a poté ji zmírnit.
+Existuje několik důvodů, proč může plánovací modul selhat a vydat tuto chybovou zprávu. Tento článek poskytuje pokyny, které vám pomohou najít hlavní příčinu chyby a poté ji zmírnit.
 
 ## <a name="review-the-applicable-resources"></a>Zkontrolujte příslušné zdroje
 

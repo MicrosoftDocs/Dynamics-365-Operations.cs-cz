@@ -1,6 +1,6 @@
 ---
 title: Přidělení vlny
-description: Toto téma popisuje, jak vytvořit krok přidělení vlny, včetně toho, jak pro něj povolit paralelní zpracování.
+description: Tento článek popisuje, jak vytvořit krok přidělení vlny, včetně toho, jak pro něj povolit paralelní zpracování.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906944"
 ---
 # <a name="wave-allocation"></a>Přidělení vlny
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695528"
 
 Zpracování vlny může být časově náročné a většina času zpracování je věnována kroku přidělení a kroku vytvoření práce.
 
-Nyní je možné spustit každý z těchto kroků paralelně, což může zlepšit výkon zpracování vln a umožnit větší propustnost vln ve stejném skladu. Toto téma vysvětluje, jak nastavit metodu přidělování vln tak, aby běžela paralelně. Další informace, jak nastavit paralelní běh pro vytváření prací, najdete v tématu [Plánování vytváření práce během vlny](configure-wave-schedule-work-creation.md).
+Nyní je možné spustit každý z těchto kroků paralelně, což může zlepšit výkon zpracování vln a umožnit větší propustnost vln ve stejném skladu. Tento článek vysvětluje, jak nastavit metodu přidělování vln tak, aby běžela paralelně. Další informace, jak nastavit paralelní běh pro vytváření prací, najdete v tématu [Plánování vytváření práce během vlny](configure-wave-schedule-work-creation.md).
 
 Dříve bylo možné ve skladu přidělit vždy jen jednu vlnu. Toto omezení bylo odebráno a nahrazeno novým omezením, které uzamkne pouze položku a dimenze nad umístěním v hierarchii rezervací. Dimenze nad umístěním vždy zahrnují dimenze produktu. Například pokud je položka nakonfigurována pomocí *Barva*, pak varianty pro *Červená*, *Modrá* a *Žlutá* mohou být zpracovány paralelně.
 

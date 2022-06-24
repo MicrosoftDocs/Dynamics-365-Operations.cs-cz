@@ -1,6 +1,6 @@
 ---
 title: Potvrdit a převést
-description: V tomto tématu se vysvětluje, jak používat funkci Potvrdit a převést, která uživatelům umožňuje expedovat náklady ze skladu dříve, než je dokončena veškerá práce s těmito náklady spojená.
+description: V tomto článku se vysvětluje, jak používat funkci Potvrdit a převést, která uživatelům umožňuje expedovat náklady ze skladu dříve, než je dokončena veškerá práce s těmito náklady spojená.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900557"
 ---
 # <a name="confirm-and-transfer"></a>Potvrdit a převést
 
@@ -55,11 +55,11 @@ Můžete rozdělit pouze náklady, jež splňují všechna následující krité
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce potvrzení a přenosu
 
-Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Potvrdit a převést*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Potvrdit a převést* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li používat funkčnost popsanou v tomto článku, musí být ve vašem systému zapnuta funkce *Potvrdit a převést*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Potvrdit a převést* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Nastavení funkce Potvrdit a převést
 
-Chcete-li použít funkci *Potvrdit a převést*, musíte tuto funkci zapnout v každé relevantní šabloně nákladu. Navíc, v závislosti na vašich požadavcích, můžete chtít připravit šablony práce, které tuto funkci podporují. Pokud chcete využít scénář uvedený v tomto tématu jako příklad, nastavte systém podle popisu v této části. (Tento scénář je založen na ukázkových datech **USMF**.)
+Chcete-li použít funkci *Potvrdit a převést*, musíte tuto funkci zapnout v každé relevantní šabloně nákladu. Navíc, v závislosti na vašich požadavcích, můžete chtít připravit šablony práce, které tuto funkci podporují. Pokud chcete využít scénář uvedený v tomto článku jako příklad, nastavte systém podle popisu v této části. (Tento scénář je založen na ukázkových datech **USMF**.)
 
 ### <a name="prepare-your-load-templates"></a>Příprava šablon nákladů
 
@@ -69,7 +69,7 @@ Chcete-li použít funkci *Potvrdit a převést*, musíte tuto funkci zapnout v�
 
 ### <a name="prepare-your-work-templates"></a>Příprava šablon práce
 
-Toto nastavení není nezbytné ve všech situacích. Zde uvedený příklad zajišťuje, že práci lze členit podle dodávek. Díky tomu podporuje ukázkový scénář uvedený dále v tomto tématu. Tohoto výsledku lze dosáhnout i jinými způsoby.
+Toto nastavení není nezbytné ve všech situacích. Zde uvedený příklad zajišťuje, že práci lze členit podle dodávek. Díky tomu podporuje ukázkový scénář uvedený dále v tomto článku. Tohoto výsledku lze dosáhnout i jinými způsoby.
 
 1. Přejděte do **Řízení skladu \> Nastavení \> Práce \> Pracovní šablony**.
 1. V mřížce v horní části stránky vyberte existující šablonu práce, v níž chcete nastavit funkci *Potvrdit a převést*. (Pokud pracujete s ukázkovými daty **USMF**, vyberte šablonu práce **51 Výdej do přípravy**.) Další možností je vytvořit novou šablonu práce.

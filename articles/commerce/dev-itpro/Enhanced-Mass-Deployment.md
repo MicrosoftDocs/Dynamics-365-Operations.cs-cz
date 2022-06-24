@@ -1,6 +1,6 @@
 ---
 title: Hromadné nasazení zapečetěných samoobslužných komponent Commerce
-description: Toto téma vysvětluje, jak používat rámec pro samoobslužné instalační programy komponent k tiché instalaci a servisu nasazení.
+description: Tento článek vysvětluje, jak používat rámec pro samoobslužné instalační programy komponent k tiché instalaci a servisu nasazení.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898572"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Hromadné nasazení zapečetěných samoobslužných komponent Commerce
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma se týká uzavřeného rámce, instalačních programů komponent, které jsou vydávány každý měsíc, počínaje verzí 10.0.18 a které jsou dostupné v knihovně sdílených aktiv v Microsoft Dynamics Lifecycle Services (LCS). Všimněte si, že prvních několik vydání těchto nových instalačních programů je označeno jako **(Preview)**. Jediným účelem tohoto označení je však odlišit nové instalační programy, zatímco společnost Microsoft určí, zda existují nějaké další funkční požadavky na jejich použití. Neznamená to, že instalační programy nejsou platné pro výrobu. Na základě vydání těchto nových instalačních programů Microsoft plánuje ukončit podporu starých (starších) instalačních programů v říjnu 2023 nebo kolem něj. 
+Tento článek se týká uzavřeného rámce, instalačních programů komponent, které jsou vydávány každý měsíc, počínaje verzí 10.0.18 a které jsou dostupné v knihovně sdílených aktiv v Microsoft Dynamics Lifecycle Services (LCS). Všimněte si, že prvních několik vydání těchto nových instalačních programů je označeno jako **(Preview)**. Jediným účelem tohoto označení je však odlišit nové instalační programy, zatímco společnost Microsoft určí, zda existují nějaké další funkční požadavky na jejich použití. Neznamená to, že instalační programy nejsou platné pro výrobu. Na základě vydání těchto nových instalačních programů Microsoft plánuje ukončit podporu starých (starších) instalačních programů v říjnu 2023 nebo kolem něj. 
 
-Toto téma vysvětluje, jak používat nové instalační programy k provádění tiché instalace a servisu aktualizací pomocí argumentů příkazového řádku. Tyto argumenty umožňují hromadné nasazení několika různými způsoby.
+Tento článek vysvětluje, jak používat nové instalační programy k provádění tiché instalace a servisu aktualizací pomocí argumentů příkazového řádku. Tyto argumenty umožňují hromadné nasazení několika různými způsoby.
 
 > [!NOTE]
 > Nové samoobslužné, zapečetěné instalační programy nebudou k dispozici v ústředí a lze je stáhnout pouze prostřednictvím LCS.
@@ -108,7 +108,7 @@ Migrace ze starých samoobslužných instalátorů komponent architektury na nov
 
 ### <a name="before-you-begin"></a>Než začnete
 
-Je důležité, abyste odstranili starou, samoobslužnou komponentu Modern POS. Více informací naleznete v předchozích krocích migrace v tomto tématu.
+Je důležité, abyste odstranili starou, samoobslužnou komponentu Modern POS. Více informací naleznete v předchozích krocích migrace v tomto článku.
 
 ### <a name="examples-of-silent-deployment"></a>Příklady bezobslužného nasazení
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> U Modern POS není vyžadován konfigurační soubor. Instalační program má nyní parametry (uvedené dříve v tomto tématu) pro různé hodnoty, které se používají během aktivace zařízení.
+> U Modern POS není vyžadován konfigurační soubor. Instalační program má nyní parametry (uvedené dříve v tomto článku) pro různé hodnoty, které se používají během aktivace zařízení.
 
 Následující příkaz specifikuje všechny parametry, které by měly být použity během aktivace zařízení po instalaci aplikace Modern POS. Tento příklad používá pokladnu **Houston-3**, což je běžně používaná hodnota v ukázkových datech Dynamics 365 Commerce.
 
@@ -145,7 +145,7 @@ Tyto koncepty můžete kombinovat, abyste dosáhli požadovaných výsledků ins
 
 ### <a name="before-you-begin"></a>Než začnete
 
-Je důležité, abyste odstranili starou samoobslužnou komponentu hardwarové stanice. Více informací naleznete v předchozích krocích migrace v tomto tématu. Nástroj pro informace o účtu obchodníka již neexistuje. Místo toho se informace o účtu obchodníka nainstalují, když je terminál POS spárován s hardwarovou stanicí. Důrazně doporučujeme spustit následující příkaz při prvním testování instalačního programu.
+Je důležité, abyste odstranili starou samoobslužnou komponentu hardwarové stanice. Více informací naleznete v předchozích krocích migrace v tomto článku. Nástroj pro informace o účtu obchodníka již neexistuje. Místo toho se informace o účtu obchodníka nainstalují, když je terminál POS spárován s hardwarovou stanicí. Důrazně doporučujeme spustit následující příkaz při prvním testování instalačního programu.
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> U hardwarové stanice není vyžadován konfigurační soubor. Instalační program má nyní parametry (uvedené dříve v tomto tématu) pro různé povinné hodnoty.
+> U hardwarové stanice není vyžadován konfigurační soubor. Instalační program má nyní parametry (uvedené dříve v tomto článku) pro různé povinné hodnoty.
 
 Následující příkaz uvádí všechny parametry, které jsou nutné k přeskočení kontrol nezbytných požadavků během standardní instalace. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Než začnete
 
-Je důležité, abyste odstranili starou, samoobslužnou komponentu CSU (v místním prostředí). Více informací naleznete v předchozích krocích migrace v tomto tématu.
+Je důležité, abyste odstranili starou, samoobslužnou komponentu CSU (v místním prostředí). Více informací naleznete v předchozích krocích migrace v tomto článku.
 
 ### <a name="examples-of-silent-deployment"></a>Příklady bezobslužného nasazení
 

@@ -13,12 +13,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 7c2fa01a0d15142bd7a4d5f46572953706037fd6bf9638e975f75c5514293612
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9be94346c5a3b35c8331e417f70ed0013dda2772
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897030"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Retail
 
@@ -37,9 +37,9 @@ Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání inf
 | Dynamics 365 for Finance & Operations - Retail - 8.0.4 | 8.0.35.15534 | 2018. srpna | [KB 4458992 Microsoft Dynamics 365 for Finance and Operations - verze 8.0.4, (binární součást)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&bugId=239612&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff), [KB 4458993 Microsoft Dynamics 365 for Finance and Operations - verze 8.0.4. (součást X++)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&bugId=239610&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff) |
 | Dynamics 365 for Retail - 7.3.4 | 7.3.21971.64124 | 2018. srpna | [KB 4459400 Microsoft Dynamics 365 for Retail - verze 7.3.4 + balíček BugFix 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4459400&bugId=240913&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 | Dynamics 365 for Finance & Operations - Retail - 7.3.3 | 7.3.11971.64183 | Červenec 2018 | [KB 4342754 Microsoft Dynamics 365 for Finance and Operations - verze 7.3.3, (binární součást)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342754&bugId=227181&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6), [KB 4342755 Microsoft Dynamics 365 for Finance and Operations - verze 7.3.3. (součást X++)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342755&bugId=227182&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6) |
-| Dynamics 365 for Finance & Operations - Retail - 7.3.2.5 | 7.3.11971.63858 | 2018. června | [KB 4338874Microsoft Dynamics 365 for Finance and Operations - verze 7.3.2.5. (binární součást)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&bugId=215661&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2), [KB 4338783 Microsoft Dynamics 365 for Finance and Operations - verze 7.3.2.5. (část X++)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&bugId=215543&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2) |
+| Dynamics 365 for Finance & Operations - Retail - 7.3.2.5 | 7.3.11971.63858 | 2018. června | [KB 4338874Microsoft Dynamics 365 for Finance and Operations – verze 7.3.2.5. (binární část)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&bugId=215661&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2), [KB 4338783 Microsoft Dynamics 365 for Finance and Operations – verze 7.3.2.5. (část X++)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&bugId=215543&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2) |
 | Dynamics 365 for Finance & Operations - Retail - 8.0.2 | 8.0.35.15211 | 2018. června | [KB 4340414 Microsoft Dynamics 365 for Finance and Operations - verze 8.0.2, (binární součást)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&bugId=219341&qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b), [KB 4340413 Microsoft Dynamics 365 for Finance and Operations - verze 8.0.2. (součást X++)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&bugId=219344&qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3) |
-| Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | 2018. června | [KB 4342134Microsoft Dynamics 365 for Retail - verze 7.3.2.5 - balíček BugFix 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
+| Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | 2018. června | [KB 4342134Microsoft Dynamics 365 for Retail – verze 7.3.2.5 – balíček BugFix 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* Odkaz směřuje na článek znalostní báze. Chcete-li zobrazit článek znalostní báze, musíte se přihlásit ke službě Lifecycle Services (LCS).
 

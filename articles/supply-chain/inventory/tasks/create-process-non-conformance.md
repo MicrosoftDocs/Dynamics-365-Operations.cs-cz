@@ -1,6 +1,6 @@
 ---
 title: Vytvoření a zpracování neshod
-description: Toto téma popisuje provádění správy neshody na základě existující objednávky kvality.
+description: Tento článek popisuje provádění správy neshody na základě existující objednávky kvality.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901959"
 ---
 # <a name="create-and-process-nonconformances"></a>Vytvoření a zpracování neshod
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje provádění správy neshody na základě existující objednávky kvality. Řízení neshod obvykle provádí úředník pro kvalitu. Předpokladem je, že musíte mít k dispozici objednávku kvality. (Informace o tom, jak vytvořit objednávku kvality, viz [Kontrola kvality zboží](inspect-quality-goods.md) .)
+Tento článek popisuje provádění správy neshody na základě existující objednávky kvality. Řízení neshod obvykle provádí úředník pro kvalitu. Předpokladem je, že musíte mít k dispozici objednávku kvality. (Informace o tom, jak vytvořit objednávku kvality, viz [Kontrola kvality zboží](inspect-quality-goods.md) .)
 
 Než může uživatel zpracovat schválení neshody, musí mu být přiřazen pracovník v poli **Osoba** na stránce **Uživatelé**. Než bude uživatel moci používat poznámky k dokumentu, musí být navíc možnost **Povolit zpracování dokumentů** nastavena na *Ano* v uživatelských možnostech.
 

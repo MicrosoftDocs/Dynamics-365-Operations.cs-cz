@@ -1,6 +1,6 @@
 ---
 title: Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
-description: Toto téma vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů.
+description: Tento článek vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893374"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů. Tento postup můžete projít v ukázkových datech společnosti **USMF**.
+Tento článek vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů. Tento postup můžete projít v ukázkových datech společnosti **USMF**.
 
 Než začnete s tímto postupem, musíte mít požadavek na nabídku se dvěma řádky, který byl odeslán nejméně dvěma dodavatelům. Chcete-li vytvořit tento požadavek na nabídku, dokončete postup [Vytvoření požadavku na nabídku](create-request-quotation.md). Je nutné nastavit kritéria hodnocení před dokončením tohoto procesu.
 

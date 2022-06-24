@@ -1,6 +1,6 @@
 ---
 title: Příjemka produktu proti nákupním objednávkám
-description: Toto téma popisuje různé možnosti pro registraci produktů jako přijatých.
+description: Tento článek popisuje různé možnosti pro registraci produktů jako přijatých.
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904036"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Příjemka produktu proti nákupním objednávkám
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje různé možnosti pro registraci produktů jako přijatých.
+Tento článek popisuje různé možnosti pro registraci produktů jako přijatých.
 
 Příjemka produktu je procesem zaznamenávání toho, že výrobky, které byly objednány, byly přijaty, a řádky nákupní objednávky tak mohou být zpracovány pro fakturaci. V některých případech produkty procházejí předběžnou registrací, kde jsou zaznamenány další informace od dodavatele před přijetím produktů. Po příchodu produktů jsou nejprve označeny jako **Registrované**. Produkty pak mohou projít dalším zpracováním, jako je řízení kvality, než budou nakonec označeny jako **Přijato**.
 

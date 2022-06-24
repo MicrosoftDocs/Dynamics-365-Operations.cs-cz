@@ -1,6 +1,6 @@
 ---
-title: Uvolnit do skladu
-description: Toto téma poskytuje podrobnosti o procesu uvolnění do skladu. Popisuje entity, které jsou vytvořeny při uvolnění objednávky do skladu, a možnosti, které můžete použít k zahájení procesu.
+title: Uvolnění do skladu
+description: Tento článek poskytuje podrobnosti o procesu uvolnění do skladu. Popisuje entity, které jsou vytvořeny při uvolnění objednávky do skladu, a možnosti, které můžete použít k zahájení procesu.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893171"
 ---
-# <a name="release-to-warehouse"></a>Uvolnit do skladu
+# <a name="release-to-warehouse"></a>Uvolnění do skladu
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma poskytuje podrobnosti o procesu uvolnění do skladu. Popisuje entity, které jsou vytvořeny při uvolnění objednávky do skladu, a možnosti, které můžete použít k zahájení procesu.
+Tento článek poskytuje podrobnosti o procesu uvolnění do skladu. Popisuje entity, které jsou vytvořeny při uvolnění objednávky do skladu, a možnosti, které můžete použít k zahájení procesu.
 
 ## <a name="release-to-warehouse-overview"></a>Přehled uvolnění do skladu
 
-Uvolnění do skladu je proces přípravy zásob k odeslání. Když uvolníte objednávku do skladu, systém vytvoří řádky nákladů a zásilky. Pokud je nastaveno automatické zpracování ve vlnách, vytvoří se také zatížení a požadovaná práce. Konfigurace zahrnutých entit závisí na nastavení systému. Tato část tématu shrnuje entity, které jsou vytvořeny během procesu uvolnění do skladu, a systémová nastavení, která je definují.
+Uvolnění do skladu je proces přípravy zásob k odeslání. Když uvolníte objednávku do skladu, systém vytvoří řádky nákladů a zásilky. Pokud je nastaveno automatické zpracování ve vlnách, vytvoří se také zatížení a požadovaná práce. Konfigurace zahrnutých entit závisí na nastavení systému. Tato část článku shrnuje entity, které jsou vytvořeny během procesu uvolnění do skladu, a systémová nastavení, která je definují.
 
 *Dodávka* je skupina řádků prodejní objednávky nebo převodní objednávky pro stejného zákazníka nebo stejnou dodací adresu.
 
@@ -67,7 +67,7 @@ Na závěr, když je objednávka uvolněna do skladu, nejvíce automatizovaný t
 
 V závislosti na šablonách vln, pracovních šablonách a nastavení směrnic umístění mohou některé kroky v tomto toku začít být manuálními. Celkový tok však zůstává stejný.
 
-Máte několik možností, jak uvolnit objednávku do skladu. Operaci můžete provést ručně nebo můžete nastavit dávkovou úlohu. Zbývající části tohoto tématu podrobně přezkoumají různé způsoby, jak můžete provést operaci uvolnění do skladu.
+Máte několik možností, jak uvolnit objednávku do skladu. Operaci můžete provést ručně nebo můžete nastavit dávkovou úlohu. Zbývající části tohoto článku podrobně přezkoumají různé způsoby, jak můžete provést operaci uvolnění do skladu.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Ruční uvolnění do skladu ze stránek Prodejní objednávky a Přenos objednávek
 

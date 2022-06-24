@@ -1,6 +1,6 @@
 ---
-title: Nastavení různých dimenzí pro balení a skladování
-description: Toto téma ukazuje, jak určit, pro který proces (balení, skladování nebo vnořené balení) se použije každá zadaná dimenze.
+title: Nastavení různých rozměrů pro balení a skladování
+description: Tento článek ukazuje, jak určit, pro který proces (balení, skladování nebo vnořené balení) se použije každá zadaná dimenze.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905479"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Nastavení různých dimenzí pro balení a skladování
 
@@ -33,7 +33,7 @@ Některé položky jsou zabaleny nebo uloženy takovým způsobem, že budete mo
 *Dimenze úložiště* jsou podporovány, i když není funkce *Dimenze balení produktu* není povolena. Nastavíte je pomocí stránky **Fyzická dimenze** v Supply Chain Management. Tyto dimenze používají všechny procesy, kde nejsou specifikovány rozměry balení a vnořené rozměry.
 
 Dimenze *Balení* a *vnořené balení* se nastavují pomocí stránky **fyzické dimenze produktu**, která se přidá, když povolíte funkci *Dimenze balení produktu*.
-Toto téma poskytuje scénář, který ukazuje, jak používat tuto funkci.
+Tento článek poskytuje scénář, který ukazuje, jak používat tuto funkci.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Zapněte funkci dimenzí produktu balení
 

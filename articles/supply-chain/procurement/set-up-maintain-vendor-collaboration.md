@@ -1,6 +1,6 @@
 ---
 title: Nastavení a správa dodavatelské spolupráce
-description: Toto téma vysvětluje, jak nastavit spolupráci dodavatele v Dynamics 365 Supply Chain Management. Vysvětluje také, jak zřídit nové uživatele pro spolupráci s dodavateli a spravovat role zabezpečení pro tyto uživatele.
+description: Tento článek vysvětluje, jak nastavit spolupráci dodavatele v Dynamics 365 Supply Chain Management. Vysvětluje také, jak zřídit nové uživatele pro spolupráci s dodavateli a spravovat role zabezpečení pro tyto uživatele.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890821"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Nastavení a správa dodavatelské spolupráce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677555"
 
 Rozhraní pro spolupráci s dodavateli nabízí omezené informace o nákupních objednávkách, fakturách a skladových zásobách pro uživatele externích dodavatelů. Z tohoto rozhraní může dodavatel také odpovídat na žádosti o cenovou nabídku (RFQ) a zobrazovat a upravovat základní informace o společnosti.
 
-Toto téma vysvětluje, jak nastavit spolupráci dodavatele v Dynamics 365 Supply Chain Management. Vysvětluje také, jak nastavit pracovní postup ke zřízení nových uživatelů pro spolupráci s dodavateli a jak spravovat role zabezpečení pro tyto uživatele.
+Tento článek vysvětluje, jak nastavit spolupráci dodavatele v Dynamics 365 Supply Chain Management. Vysvětluje také, jak nastavit pracovní postup ke zřízení nových uživatelů pro spolupráci s dodavateli a jak spravovat role zabezpečení pro tyto uživatele.
 
 > [!NOTE]
 > Informace o nastavení rolí zabezpečení pro spolupráci s dodavateli platí pouze pro aktuální verzi Finance and Operations. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o uživatelských oprávněních pro portál dodavatele v Microsoft Dynamics AX viz [Zabezpečení uživatele portálu dodavatele](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Role **Správce dodavatele (externí)** může být použita pro externí dodava
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Nastavení rolí zabezpečení, které se použijí při začlenění potenciálních dodavatelů
 
-Chcete-li integrovat dodavatele, kteří jsou iniciováni prostřednictvím žádosti o registraci potenciálního dodavatele, musíte nastavit externí roli zabezpečení. Tato role bude přiřazena novým uživatelům během procesu zřizování, který je řízen pracovním postupem typu **Pracovní postup požadavků uživatele (platforma)**. Pro více informací viz část [Nastavení pracovních postupů pro zpracování požadavků uživatelů na spolupráci s dodavateli](#set-up-workflows-to-process-vendor-collaboration-user-requests) dále v tomto tématu.
+Chcete-li integrovat dodavatele, kteří jsou iniciováni prostřednictvím žádosti o registraci potenciálního dodavatele, musíte nastavit externí roli zabezpečení. Tato role bude přiřazena novým uživatelům během procesu zřizování, který je řízen pracovním postupem typu **Pracovní postup požadavků uživatele (platforma)**. Pro více informací viz část [Nastavení pracovních postupů pro zpracování požadavků uživatelů na spolupráci s dodavateli](#set-up-workflows-to-process-vendor-collaboration-user-requests) dále v tomto článku.
 
 Informace o tom, jak zapojit potenciální dodavatele, viz [Zapojení dodavatelů](vendor-onboarding.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
-description: V tomto tématu je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik.
+description: V tomto článku je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74fa013d44e0f113bdf0ce0ca9efeb943926e9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901695"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak upravit výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik. 
+V tomto článku je vysvětleno, jak upravit výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik. 
 
 Po povolení doporučení produktu budou výchozí nastavení účinná. Tyto parametry budou nebo mohou fungovat pro mnoho potřeb. Je nejvhodnější naplánovat strávený čas k vyhodnocení, zda výsledky odpovídají prodejnímu pohybu produktů. Před dalším provedením testování navrhujeme vyhodnocení výsledků za několik dní. 
 

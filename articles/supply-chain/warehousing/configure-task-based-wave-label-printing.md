@@ -1,6 +1,6 @@
 ---
 title: Naplánujte tisk vlnových štítků během vlny
-description: Toto téma popisuje, jak nastavit a používat funkce pro tisk štítků vln založených na úlohách.
+description: Tento článek popisuje, jak nastavit a používat funkce pro tisk štítků vln založených na úlohách.
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889450"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Naplánujte tisk vlnových štítků během vlny
 
@@ -30,7 +30,7 @@ Když používáte funkci *Tisk štítků vln na základě úkolů*, systém nej
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>Ve správě funkcí zapněte funkci tisku štítků vln na základě úkolů
 
-Chcete-li používat funkce popsané v tomto tématu, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkce v následujícím pořadí:
+Chcete-li používat funkce popsané v tomto článku, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkce v následujícím pořadí:
 
 1. *Tisk štítků vln* - Tato funkce je vyžadována k povolení metody vlnového procesu pro tisk štítků vln.
 1. *Blokování práce v celé organizaci* - Tato funkce se vyžaduje pro ruční i automatickou konfiguraci plánovaného vytváření práce. (Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)

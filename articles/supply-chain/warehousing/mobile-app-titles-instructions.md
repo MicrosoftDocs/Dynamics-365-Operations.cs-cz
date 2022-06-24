@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
-description: Toto téma popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management.
+description: Tento článek popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895489"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
 
 > [!IMPORTANT]
-> Funkce, které jsou popsány v tomto tématu, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
+> Funkce, které jsou popsány v tomto článku, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
 
-Toto téma popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management. Když skladníci obdrží dobře napsané pokyny, mohou okamžitě začít používat nové toky, aniž by museli předchozí školení. Tato funkce poskytuje následující výhody:
+Tento článek popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management. Když skladníci obdrží dobře napsané pokyny, mohou okamžitě začít používat nové toky, aniž by museli předchozí školení. Tato funkce poskytuje následující výhody:
 
 - **Zvyšte rychlost pracovníků tím, že je necháte postupovat podle jednoduchých pokynů pro každý krok úkolu.** Každý krok toku poskytuje pokyny, které umožňují pracovníkům v první linii porozumět úkolu.
 - **Poskytněte pokyny, které odpovídají vašim vlastním procesům.** Napište si vlastní pokyny, které budou odpovídat vašim obchodním a skladovým procesům. Například můžete přizpůsobit terminologii vašemu fyzickému prostoru a místním zkratkám.

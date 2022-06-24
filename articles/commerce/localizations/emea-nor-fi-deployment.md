@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení registračních pokladen pro Norsko
-description: Toto téma poskytuje návod, jak povolit funkce pokladny pro lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
+description: Tento článek poskytuje návod, jak povolit funkce pokladny pro lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899060"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Pokyny k nasazení registračních pokladen pro Norsko
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma poskytuje návod, jak povolit funkce pokladny pro lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent. Tato rozšíření vám umožňují provádět akce, například tisknout vlastní pole na příjemky, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md). Další informace o konfiguraci Commerce pro Norsko viz [Nastavení Commerce pro Norsko](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Tento článek poskytuje návod, jak povolit funkce pokladny pro lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent. Tato rozšíření vám umožňují provádět akce, například tisknout vlastní pole na příjemky, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md). Další informace o konfiguraci Commerce pro Norsko viz [Nastavení Commerce pro Norsko](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto funkci lokalizace použít. Musíte použít verzi ukázky digitálního podepisování pro Norsko v předchozí verzi sady SDK (Software Development Kit) na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení registračních pokladen pro Norsko (staré)](./emea-nor-loc-deployment-guidelines.md).

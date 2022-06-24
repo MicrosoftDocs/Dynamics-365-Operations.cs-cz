@@ -1,6 +1,6 @@
 ---
 title: Vlastníci produktů
-description: Toto téma poskytuje informace o vlastnících produktu. Vlastník produktu je skupina uživatelů, kteří odpovídají za konkrétní produkty. Tyto produkty mohou uvolňovat pouze členové skupiny. Vlastníka produktu lze také použít v pracovním postupu schválení.
+description: Tento článek poskytuje informace o vlastnících produktu. Vlastník produktu je skupina uživatelů, kteří odpovídají za konkrétní produkty. Tyto produkty mohou uvolňovat pouze členové skupiny. Vlastníka produktu lze také použít v pracovním postupu schválení.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e09fdbbe14aa5a5ffbc5f07ae90b5d307a9e155
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907515"
 ---
 # <a name="product-owners"></a>Vlastníci produktů
 

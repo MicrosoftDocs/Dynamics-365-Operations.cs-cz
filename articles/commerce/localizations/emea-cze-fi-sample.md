@@ -1,6 +1,6 @@
 ---
 title: Ukázka integrace fiskální služby pro Českou republiku
-description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910491"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
+V tomto článku je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
 
 Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Dynamics 365 Commerce pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) od [EFSTA](https://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
 

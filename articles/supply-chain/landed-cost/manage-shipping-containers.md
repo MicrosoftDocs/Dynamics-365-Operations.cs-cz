@@ -1,6 +1,6 @@
 ---
 title: Správa přepravních kontejnerů
-description: Toto téma popisuje, jak pracovat s přepravními kontejnery. Přepravní kontejnery se používají k seskupení zboží, které je seskupeno fyzicky. Používají se také v případech, kdy náklady musí být sdíleny pouze mezi tímto zbožím, obvykle proto, že jsou fyzicky pohromadě.
+description: Tento článek popisuje, jak pracovat s přepravními kontejnery. Přepravní kontejnery se používají k seskupení zboží, které je seskupeno fyzicky. Používají se také v případech, kdy náklady musí být sdíleny pouze mezi tímto zbožím, obvykle proto, že jsou fyzicky pohromadě.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac88f8e3b8cf305a5bd247e7ed6b14b23ad85499
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906146"
 ---
 # <a name="manage-shipping-containers"></a>Správa přepravních kontejnerů
 
@@ -142,7 +142,7 @@ Chcete-li otevřít zobrazení **Řádky**, otevřete přepravní kontejner a po
 
 ### <a name="information-on-the-shipping-container-fasttab"></a>Informace na záložce Přepravní kontejner
 
-Záložka **Přepravní kontejner** v zobrazení **Řádky** zobrazuje informace o přepravním kontejneru. Většina z těchto informací se také objevuje v zobrazení **Záhlaví**, jak je popsáno výše v tomto tématu.
+Záložka **Přepravní kontejner** v zobrazení **Řádky** zobrazuje informace o přepravním kontejneru. Většina z těchto informací se také objevuje v zobrazení **Záhlaví**, jak je popsáno výše v tomto článku.
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>Informace a tlačítka na záložce Řádky
 

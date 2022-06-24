@@ -1,6 +1,6 @@
 ---
 title: Konfigurace rozhraní pro provádění výrobního provozu
-description: Toto téma popisuje, jak vytvořit jednu nebo více konfigurací rozhraní pro provádění výrobního provozu. Když otevřete rozhraní pro provádění výrobního provozu, automaticky načte vybranou konfiguraci a filtr úloh, které jsou specifické pro prohlížeč a zařízení. V konfiguraci nastavíte zásady, které musí být použitelné pro konkrétní použití.
+description: Tento článek popisuje, jak vytvořit jednu nebo více konfigurací rozhraní pro provádění výrobního provozu. Když otevřete rozhraní pro provádění výrobního provozu, automaticky načte vybranou konfiguraci a filtr úloh, které jsou specifické pro prohlížeč a zařízení. V konfiguraci nastavíte zásady, které musí být použitelné pro konkrétní použití.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899404"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -31,15 +31,15 @@ Když otevřete rozhraní pro provádění výrobního provozu, automaticky nač
 - Na zařízení ve firemní hale zaměstnanci registrují příchod, když přicházejí do kanceláře, a registrují odchod při odchodu.
 - Na zařízení v dílně se operátoři strojů zaregistrují, když zahájí a dokončí práci. Rovněž registrují přestávky a nepřímé aktivity.
 
-Toto téma popisuje různé možnosti konfigurace rozhraní provedení výrobního provozu pro každé zařízení používané na vašem pracovišti.
+Tento článek popisuje různé možnosti konfigurace rozhraní provedení výrobního provozu pro každé zařízení používané na vašem pracovišti.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Zapněte rozhraní pro provádění výrobního provozu a související volitelné funkce
 
-Samotné rozhraní pro provádění výrobního provozu a několik volitelných nastavení, která jsou popsána v tomto tématu, musí být ve vašem systému zapnutá, než je budete moci používat. Použijte stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), chcete-li podle potřeby zapnout některou nebo všechny funkce popsané v následujících podkapitolách,
+Samotné rozhraní pro provádění výrobního provozu a několik volitelných nastavení, která jsou popsána v tomto článku, musí být ve vašem systému zapnutá, než je budete moci používat. Použijte stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), chcete-li podle potřeby zapnout některou nebo všechny funkce popsané v následujících podkapitolách,
 
 ### <a name="the-production-floor-execution-interface"></a>Rozhraní pro provádění výrobního provozu
 
-Toto je primární funkce popsaná v tomto tématu a je nezbytným předpokladem pro všechny ostatní funkce uvedené v této části. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Provedení výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Toto je primární funkce popsaná v tomto článku a je nezbytným předpokladem pro všechny ostatní funkce uvedené v této části. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Provedení výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generování registračních značek
 
@@ -146,7 +146,7 @@ Tato funkce přidává nastavení pro následující funkce na stránce **Konfig
 - Povolení úprav spotřeby materiálu v dialogovém okně **Průběh sestavy**. (Tato funkce vyžaduje také funkci *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*.)
 - Povolení vyhledávání podle ID projektu.
 
-Informace o použití těchto nastavení jsou uvedeny dále v tomto tématu.
+Informace o použití těchto nastavení jsou uvedeny dále v tomto článku.
 
 Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

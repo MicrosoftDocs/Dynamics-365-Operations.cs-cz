@@ -1,6 +1,6 @@
 ---
 title: Uložení, náhled a publikování stránky
-description: Toto téma popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 593c68e0934fa62d09c64b8d5d681697c3fb053ae6f4641ce2ae3104a03e0fba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54f9f99ca7f7be5da1659e3fdead6f3d08546bda
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892252"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Uložení, náhled a publikování stránky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
 
 ## <a name="save-a-page"></a>Uložení stránky
 

@@ -1,6 +1,6 @@
 ---
 title: Přehled webu elektronického obchodu
-description: Toto téma poskytuje přehled podpory pro weby elektronického obchodování v Microsoft Dynamics 365 Commerce.
+description: Tento článek poskytuje přehled podpory pro weby elektronického obchodování v Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899114"
 ---
 # <a name="e-commerce-site-overview"></a>Přehled webu elektronického obchodu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled podpory pro weby elektronického obchodování v Microsoft Dynamics 365 Commerce. Obsahuje informace, jak jsou inicializovány a spravovány online obchody elektronického obchodování v Dynamics 365 Commerce. Obsahuje také odkazy na další informace o online obchodech a informace, jak zřídit a nakonfigurovat web elektronického obchodu. Ačkoli toto téma pokrývá mnoho základních informací, nepokrývá vše, co je nutné k vytvoření produkčního webu elektronického obchodování. Pokročilejší témata najdete v dokumentaci k Dynamics 365 Commerce.
+Tento článek poskytuje přehled podpory pro weby elektronického obchodování v Microsoft Dynamics 365 Commerce. Obsahuje informace, jak jsou inicializovány a spravovány online obchody elektronického obchodování v Dynamics 365 Commerce. Obsahuje také odkazy na další informace o online obchodech a informace, jak zřídit a nakonfigurovat web elektronického obchodu. Ačkoli tento článek pokrývá mnoho základních informací, nepokrývá vše, co je nutné k vytvoření produkčního webu elektronického obchodování. Pokročilejší články najdete v dokumentaci k Dynamics 365 Commerce.
 
 ## <a name="online-store-channel"></a>Kanál online obchodu
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce používá Azure Active Directory (Azure AD) B2C pro podpo
 
 ## <a name="overview-of-the-default-site-pages"></a>Přehled výchozích webových stránek
 
-**Výchozí** a **fabrikam** weby obsahují předkonfigurované šablony, fragmenty a stránky, které vám pomohou začít. Další informace naleznete v následujících tématech:
+**Výchozí** a **fabrikam** weby obsahují předkonfigurované šablony, fragmenty a stránky, které vám pomohou začít. Další informace naleznete v následujících článcích:
 
 - [Přehled domovské stránky](quick-tour-home-page.md)
 - [Přehled stránky s podrobnostmi o produktu](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Dynamics 365 Commerce používá Azure Active Directory (Azure AD) B2C pro podpo
 
 ## <a name="manage-site-settings"></a>Správa nastavení webu
 
-Další informace o správě nastavení vašeho webu naleznete v následujících tématech:
+Další informace o správě nastavení vašeho webu naleznete v následujících článcích:
 
 - [Správa uživatelů a rolí elektronického obchodu](manage-ecommerce-users-roles.md)
 - [Zvažování optimalizace webového vyhledávače (SEO) pro váš web](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Další informace o správě nastavení vašeho webu naleznete v následujícíc
 
 ## <a name="manage-site-content"></a>Správa obsahu webu
 
-Další informace o správě obsahu webu naleznete v následujících tématech:
+Další informace o správě obsahu webu naleznete v následujících článcích:
 
 - [Glosář modelu stránky](page-elements-overview.md)
 - [Stavy dokumentu a životního cyklu](document-states-overview.md)

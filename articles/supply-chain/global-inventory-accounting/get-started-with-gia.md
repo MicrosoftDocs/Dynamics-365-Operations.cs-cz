@@ -1,6 +1,6 @@
 ---
 title: Začínáme s modulem Globální účetnictví zásob
-description: Toto téma popisuje, jak začít s globálním účetnictvím zásob.
+description: Tento článek popisuje, jak začít s globálním účetnictvím zásob.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891082"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Začínáme s modulem Globální účetnictví zásob
 
@@ -38,12 +38,18 @@ Globální účetnictví zásob je doplněk. Chcete-li zpřístupnit její funkc
 
 Globální účetnictví zásob v současné době nepodporuje všechny funkce správy nákladů, které jsou integrovány do Supply Chain Management. Proto je důležité, abyste vyhodnotili, zda sada funkcí, která je aktuálně k dispozici, bude vyhovovat vašim požadavkům.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Jak získat public preview globálního účetnictví zásob
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Jak získat doplněk globálního účetnictví zásob
 
 > [!IMPORTANT]
 > Chcete-li použít globální účetnictví zásob, musíte mít prostředí s vysokou dostupností LCS (nikoli prostředí OneBox). Kromě toho musíte používat Supply Chain Management verze 10.0.19 nebo novější.
 
-Chcete-li se zaregistrovat do public preview Globálního účetnictví zásob, odešlete své ID prostředí LCS e-mailem na adresu [Tým globálního účetnictví zásob](mailto:GlobalInvAccount@microsoft.com). Po vašech schválení do programu vám tým pošle následný e-mail, který obsahuje klíč beta globálního účetnictví zásob a vaše koncové body služby. Poté, co obdržíte klíč beta, můžete [nainstalovat doplněk](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management verze 10.0.19 až 10.0.26
+
+Chcete-li nainstalovat Globální účetnictví zásob pro Supply Chain Management verze 10.0.19 až 10.0.26, začněte [instalací doplňku](#install). Poté zašlete své ID prostředí LCS a název společnosti e-mailem na adresu [týmu Globálního účetnictví zásob](mailto:GlobalInvAccount@microsoft.com). Tým vám pošle následný e-mail, který obsahuje koncové body služby globálního účetnictví zásob.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management verze 10.0.27 a novější
+
+Chcete-li nainstalovat Globální účetnictví zásob pro Supply Chain Management verze 10.0.27 a novější, stačí [nainstalovat doplněk](#install). Pro tyto verze Supply Chain Management budou koncové body služby Globální účetnictví zásob nastaveny automaticky, takže je nemusíte hledat ručně. Pokud při nastavování doplňku narazíte na nějaké problémy, kontaktujte [tým globálního účetnictví zásob](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Licence
 
@@ -98,12 +104,7 @@ Pokud výchozí jazyk vaší instalace Dataverse není angličtina, postupujte p
 
 Podle těchto pokynů nainstalujte doplněk, abyste mohli používat Globální účetnictví zásob.
 
-1. [Zaregistrujte se](#sign-up) k public preview globálního účetnictví zásob.
 1. Přihlaste se do [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Přejděte na **Správu funkcí Preview**.
-1. Vyberte znaménko plus (**+**).
-1. Do pole **Kód** zadejte pro svůj beta klíč pro doplněk Globální účetnictví zásob. (Beta klíč jste měli obdržet e-mailem po zaregistraci.)
-1. Vyberte **Odblokovat**.
 1. Otevřete prostředí LCS, do kterého chcete službu přidat.
 1. Přejděte na **Úplné podrobnosti**.
 1. Přejděte na **Integrace Power Platform** a vyberte **Nastavit**.
@@ -124,6 +125,8 @@ Pomocí těchto kroků nastavíte integraci mezi Globálním účetnictvím zás
 1. Na kartě **Všechny** vyhledejte pojmenovanou funkci *(Preview) Globální účetnictví zásob*.
 1. Vyberte **Povolit**.
 1. Přejděte na **Globální účetnictví zásob \> Nastavit \> Parametry Globálního účetnictví zásob \> Parametry integrace**.
-1. Do pole **Koncový bod datové služby** a **Koncový bod globálního účetnictví zásob** zadejte adresy URL z e-mailu, který tým globálního účetnictví zásob poslal, když jste se přihlásili k náhledu.
+1. Proveďte jeden z následujících kroků v závislosti na verzi Supply Chain Management, kterou používáte:
+    - **Supply Chain Management verze 10.0.19 až 10.0.26** : Do polí **Koncový bod datové služby** a **Koncový bod Globálního účetnictví zásob** zadejte adresy URL, které vám byly zaslány e-mailem od týmu globálního účetnictví zásob (viz také [Jak získat doplněk Globální účetnictví zásob](#sign-up)).
+    - **Supply Chain Management verze 10.0.27 a novější**: Nemusíte zadávat koncové body, takže tento krok můžete přeskočit.
 
 Globální účetnictví zásob je nyní připraveno k použití.

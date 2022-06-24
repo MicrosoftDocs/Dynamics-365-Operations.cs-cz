@@ -1,6 +1,6 @@
 ---
 title: Pevná cena příjmu
-description: Toto téma vysvětluje, jak můžete nakonfigurovat a používat pevné ceny příjmu v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek vysvětluje, jak můžete nakonfigurovat a používat pevné ceny příjmu v Microsoft Dynamics 365 Supply Chain Management.
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907573"
 ---
 # <a name="fixed-receipt-price"></a>Pevná cena příjmu
 
 [!include [banner](../includes/banner.md)]
 
-**Pevná cena příjmu** je možnost, kterou můžete vybrat ve skupině modelů položek, když používáte jiný model zásob než *Standardní cena* nebo *Klouzavý vážený průměr*. V raných verzích Microsoft Dynamics AX byla tato možnost pojmenována **Standardní cena**. Byla přejmenována na **Pevná cena příjmu**, když byl v Dynamics AX 2012 představen nový model standardních nákladů. Toto téma vysvětluje, jak můžete nakonfigurovat a používat pevné ceny příjmu v Dynamics 365 Supply Chain Management.
+**Pevná cena příjmu** je možnost, kterou můžete vybrat ve skupině modelů položek, když používáte jiný model zásob než *Standardní cena* nebo *Klouzavý vážený průměr*. V raných verzích Microsoft Dynamics AX byla tato možnost pojmenována **Standardní cena**. Byla přejmenována na **Pevná cena příjmu**, když byl v Dynamics AX 2012 představen nový model standardních nákladů. Tento článek vysvětluje, jak můžete nakonfigurovat a používat pevné ceny příjmu v Dynamics 365 Supply Chain Management.
 
 ## <a name="about-fixed-receipt-prices"></a>Informace o Pevných cenách příjmu
 

@@ -1,6 +1,6 @@
 ---
-title: Pracovní zátěže správy skladu pro cloudové a hraniční jednotky škálování
-description: Toto téma poskytuje informace o funkci, která umožňuje jednotkám škálování spouštět vybrané procesy z vaší úlohy správy skladu.
+title: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
+description: Tento článek poskytuje informace o funkci, která umožňuje jednotkám škálování spouštět vybrané procesy z vaší úlohy správy skladu.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384477"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893490"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ne všechny obchodní funkce správy skladu jsou plně podporovány ve skladech, které provozují pracovní zátěž na škálovatelné jednotce. Používáte pouze takové procesy, které toto téma výslovně popisuje jako podporované.
+> Ne všechny obchodní funkce správy skladu jsou plně podporovány ve skladech, které provozují pracovní zátěž na škálovatelné jednotce. Používáte pouze takové procesy, které tento článek výslovně popisuje jako podporované.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Spuštění skladu v jednotkách škálování
 
@@ -184,7 +184,7 @@ V jednotkách škálování nejsou v současné době podporovány žádné jin�
 >
 > K nastavení mobilní aplikace Warehouse Management, aby fungovala proti jednotce škálování cloudu a hrany, je potřeba provést několik dalších kroků. Další informace naleznete v části [Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hrany](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Když spustíte úlohu na jednotce škálování, nemůžete spustit nepodporované procesy pro konkrétní sklad v centru. Tabulky uvedené dále v tomto tématu dokumentují podporované funkce.
+> Když spustíte úlohu na jednotce škálování, nemůžete spustit nepodporované procesy pro konkrétní sklad v centru. Tabulky uvedené dále v tomto článku dokumentují podporované funkce.
 >
 > Vybrané typy skladové práce lze vytvořit jak v centru, tak na jednotkách škálování, ale lze je udržovat pouze prostřednictvím vlastnícího centra nebo jednotky škálování (nasazení, které data vytvořilo).
 >

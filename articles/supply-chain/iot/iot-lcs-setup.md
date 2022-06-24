@@ -1,6 +1,6 @@
 ---
 title: Instalace doplňku IoT Intelligence v LCS
-description: Toto téma vysvětluje, jak nainstalovat doplněk IoT Intelligence ve službě Microsoft Dynamics Lifecycle Services (LCS).
+description: Tento článek vysvětluje, jak nainstalovat doplněk Inteligence IoT ve službě Microsoft Dynamics Lifecycle Services (LCS).
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887479"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Instalace doplňku IoT Intelligence v LCS
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak nainstalovat doplněk IoT Intelligence ve službě Microsoft Dynamics Lifecycle Services (LCS). Upozorňujeme, že doplňky nelze nainstalovat v demo / zkušebním prostředí. Před instalací doplňku musíte [vytvořit zdroje Azure](iot-azure-setup.md).
+Tento článek vysvětluje, jak nainstalovat doplněk Inteligence IoT ve službě Microsoft Dynamics Lifecycle Services (LCS). Upozorňujeme, že doplňky nelze nainstalovat v demo / zkušebním prostředí. Před instalací doplňku musíte [vytvořit zdroje Azure](iot-azure-setup.md).
 
 IoT Intelligence můžete nastavit a nakonfigurovat bez psaní kódu. Zde jsou základní kroky.
 
 1. [Nastavení prostředků Azure](iot-azure-setup.md) – Vytvořte centrum IoT, mezipaměť Redis a trezor klíčů, ke kterým lze přistupovat ze Supply Chain Management.
 2. [Formáty schématu zpráv pro IoT Hub](iot-schema-format.md) – Nakonfigurujte svá zařízení k odesílání zpráv do IoT Hub a definujte formát zpráv JavaScript Object Notation (JSON).
 3. Ve správě funkcí povolte příznak funkce IoT Intelligence.
-4. Nainstalovat doplněk Inteligence IoT do Microsoft Dynamics Lifecycle Services (LCS) – Nainstalujte doplněk do LCS a konfigurujte tajné klíče Azure (podle popisu v tomto tématu).
+4. Nainstalovat doplněk Inteligence IoT do Microsoft Dynamics Lifecycle Services (LCS) – Nainstalujte doplněk do LCS a konfigurujte tajné klíče Azure (podle popisu v tomto článku).
 5. [Nastavit metriku](iot-metrics-setup.md) – Nastavte metriku v Supply Chain Management.
 6. [Nastavení scénáře](iot-scenario-setup.md) – Nastavte scénáře v Supply Chain Management.
 

@@ -1,6 +1,6 @@
 ---
-title: Zpracování, kontrola a zaúčtování rabatu
-description: Toto téma popisuje, jak zpracovat vaše nabídky správy rabatu, vypočítat jejich slevy, zkontrolovat generované transakce, zaúčtovat transakce a zkontrolovat zaúčtování.
+title: Zpracování, kontrola a zaúčtování rabatu
+description: Tento článek popisuje, jak zpracovat vaše nabídky správy rabatu, vypočítat jejich slevy, zkontrolovat generované transakce, zaúčtovat transakce a zkontrolovat zaúčtování.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901930"
 ---
-# <a name="process-review-and-post-rebates"></a>Zpracování, kontrola a zaúčtování rabatu
+# <a name="process-review-and-post-rebates"></a>Zpracování, kontrola a zaúčtování rabatu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak zpracovat vaše nabídky správy rabatu, vypočítat jejich slevy, zkontrolovat generované transakce, zaúčtovat transakce a zkontrolovat zaúčtování.
+Tento článek popisuje, jak zpracovat vaše nabídky správy rabatu, vypočítat jejich slevy, zkontrolovat generované transakce, zaúčtovat transakce a zkontrolovat zaúčtování.
 
 ## <a name="change-the-status-of-a-deal"></a>Změna stavu nabídky
 
@@ -45,7 +45,7 @@ Přejděte na **Správa rabatu \> Periodické úkoly \> Vypočítat nákupní ce
 
 Prodejní nebo nákupní objednávky, které mají zdrojové transakce, můžete vytvořit před nebo po vytvoření příslušné nabídky správy rabatu.
 
-Každý řádek nabídky můžete nastavit tak, aby automaticky vytvořil zřízení rabatu zaúčtováním dodávky nebo faktury pro prodejní či nákupní objednávku. Pole **Typ transakce** pro řádek nabídky nastavte na *Dodávka* nebo *Faktura*, a možnost **Zpracování při zaúčtování** nastavte na *Ano*. Pokud je pole **Typ transakce** nastaveno na *Objednávka*, zpracování při zaúčtování je zakázáno. U zdrojových transakcí, které byly vytvořeny po aktivaci nabídky, můžete stále zpracovávat zřízení dle popisu v části [Zpracování nabídek správy rabatu](#process-deals) dále v tomto tématu.
+Každý řádek nabídky můžete nastavit tak, aby automaticky vytvořil zřízení rabatu zaúčtováním dodávky nebo faktury pro prodejní či nákupní objednávku. Pole **Typ transakce** pro řádek nabídky nastavte na *Dodávka* nebo *Faktura*, a možnost **Zpracování při zaúčtování** nastavte na *Ano*. Pokud je pole **Typ transakce** nastaveno na *Objednávka*, zpracování při zaúčtování je zakázáno. U zdrojových transakcí, které byly vytvořeny po aktivaci nabídky, můžete stále zpracovávat zřízení dle popisu v části [Zpracování nabídek správy rabatu](#process-deals) dále v tomto článku.
 
 ### <a name="enable-price-details"></a>Povolit podrobnosti o ceně
 
