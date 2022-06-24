@@ -1,6 +1,6 @@
 ---
 title: Nastavení platebního kalendáře s přidělením TDS
-description: Toto téma vysvětluje, jak nastavit plány plateb s alokací daně odečtené u zdroje (TDS).
+description: Tento článek vysvětluje, jak nastavit plány plateb s alokací daně odečtené u zdroje (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 63628e84da4e430df236f3afa89110b652110fcb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 48891c32f39b743ce26e265c5682dab28ecb4b27
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868305"
 ---
 # <a name="set-up-payment-schedules-with-tds-allocation"></a>Nastavení platebního kalendáře s přidělením TDS
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit plány plateb s alokací daně odečtené u zdroje (TDS).
+Tento článek vysvětluje, jak nastavit plány plateb s alokací daně odečtené u zdroje (TDS).
 
 1. Přejděte do nabídky **Závazky \> Nastavení platby \> Platební kalendáře**.
 

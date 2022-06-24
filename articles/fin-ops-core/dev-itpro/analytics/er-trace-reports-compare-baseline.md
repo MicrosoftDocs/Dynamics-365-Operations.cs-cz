@@ -1,6 +1,6 @@
 ---
-title: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
-description: Toto téma vysvětluje, jak porovnat výsledky generovaných sestav elektronického výkaznictví (ER) s hodnotami sestavy směrného plánu.
+title: Trasování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+description: Tento článek vysvětluje, jak porovnat výsledky generovaných sestav elektronického výkaznictví (ER) s hodnotami sestavy směrného plánu.
 author: NickSelin
 ms.date: 06/17/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 168060f6dee7420a496e06cc3a85f5b10239c2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847365"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
 

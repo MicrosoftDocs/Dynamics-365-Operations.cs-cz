@@ -1,6 +1,6 @@
 ---
 title: Zadání dat faktury do závazků s použitím deníku schválení
-description: Tohle téma popisuje použití registru faktur k vytvoření faktur a použití deníku schválení pro aktualizaci účtů výdajů.
+description: Tento článek popisuje použití registru faktur k vytvoření faktur a použití deníku schválení pro aktualizaci účtů výdajů.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ce66a4b92f26bcec0849accad3878aef2b2f658
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: afe1471949bbf892f4e28ed3bea830ee491a517f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909207"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Zadání dat faktury do závazků s použitím deníku schválení
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje použití registru faktur k vytvoření faktur a použití deníku schválení pro aktualizaci účtů výdajů.
+Tento článek popisuje použití registru faktur k vytvoření faktur a použití deníku schválení pro aktualizaci účtů výdajů.
 
 ## <a name="create-and-post-and-invoice"></a>Vytvoření a zaúčtování faktury
 1. V navigačním podokně přejděte na **Moduly > Závazky > Faktury > Registr faktur**.

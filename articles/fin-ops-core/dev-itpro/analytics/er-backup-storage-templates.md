@@ -1,6 +1,6 @@
 ---
-title: Úložiště záloh šablon ER
-description: V tomto tématu je vysvětleno použití úložiště zálohy elektronického vykazování (ER) pro obnovení šablon.
+title: Úložiště záloh šablon elektronického výkaznictví
+description: V tomto článku je vysvětleno použití úložiště zálohy elektronického vykazování (ER) pro obnovení šablon.
 author: NickSelin
 ms.date: 04/29/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ca847f6f11d5d849ea570cc3886e6470021e451
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880386"
 ---
 # <a name="backup-storage-of-er-templates"></a>Úložiště záloh šablon ER
 
@@ -30,7 +30,7 @@ ms.locfileid: "6767870"
 
 Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování. Každé řešení ER lze exportovat z jedné instance Finance and Operations a importovat do jiné instance.
 
-Systém ER používá možnosti [Konfigurovat správu dokumentů](../../fin-ops/organization-administration/configure-document-management.md) k ponechání požadovaných šablon pro stávající instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace systému elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
+Systém ER používá [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md), která uchovává požadované šablony pro aktuální instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace systému elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
 
 Při správě instancí Finance and Operations se můžete rozhodnout migrovat aktuální instanci do jiného umístění. Můžete například migrovat instanci výroby do nového prostředí sandbox. Pokud jste nakonfigurovali platformu ER pro ukládání šablon v úložišti objektů Blob, bude tabulka DocuValue v novém prostředí sandbox odkazovat na instanci ukládání objektů Blob v produkčním prostředí. K této instanci však nelze přistupovat z prostředí izolovaného prostoru (sandbox), protože proces migrace nepodporuje migraci artefaktů v úložišti objektů BLOB. Pokud se tedy pokusíte spustit formát ER, který používá šablonu pro generování obchodních dokumentů, dojde k výjimce a zobrazí se upozornění na chybějící šablonu. Také budete navedeni pomocí nástroje čištění ER odstranit a poté znovu importovat konfiguraci formátu ER obsahující šablonu. Vzhledem k tomu, že je možné provést několik konfigurací formátu ER, může být tento proces časově náročný.
 
@@ -58,7 +58,7 @@ Je-li pro generování odchozích dokumentů požadována šablona formátu ER, 
 
 Chcete-li nastavit parametr **Automaticky spustit proceduru obnovení poškozených šablon v dávce**, postupujte dle následujících kroků:
 
-1. V modulu Finance and Operations otevřete stránku **Správa organizace \> Elektronické výkaznictví \> Konfigurace**.
+1. V aplikaci Finance and Operations otevřete **Správa organizace \> Elektronické výkaznictví \> Stránka konfigurace**.
 2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
 3. V dialogovém okně **Uživatelské parametry** nastavte požadovanou hodnotu pro parametr **Automatické spuštění procedury obnovy poškozených šablon v dávce**.
 
@@ -83,7 +83,7 @@ Ve výchozím nastavení je proces automatického vytváření záložních kopi
 
 Nastavíte-li možnost **Zastavit vytváření záložních kopií** na **Ano** a nechcete zachovat záložní kopie, které byly dříve vytvořeny ze šablon, vyberte možnost **Vyčistit úložiště záloh** na stránce **Parametry elektronického vykazování**.
 
-Pokud jste upgradovali prostředí na Finance and Operations verze 10.0.5 (říjen 2019) a chcete migrovat do nového prostředí, které obsahuje konfigurace formátu ER, které lze spustit, vyberte možnost **Naplnit úložiště zálohy** na stránce **Parametry elektronického výkaznictví** před tím, než dojde k migraci. Toto tlačítko spustí proces vytváření záložních kopií všech dostupných šablon, aby je bylo možné uložit do umístění úložiště záloh ER pro šablony.
+Pokud jste upgradovali prostředí na Finance and Operations verze 10.0.5 (říjen 2019) a chcete migrovat do nového prostředí, které obsahuje konfigurace formátu ER, které lze spustit, vyberte možnost **Naplnit úložiště zálohy** na stránce **Parametry elektronického vykazování** před tím, než dojde k migraci. Toto tlačítko spustí proces vytváření záložních kopií všech dostupných šablon, aby je bylo možné uložit do umístění úložiště záloh ER pro šablony.
 
 ![Stránka parametrů elektronického výkaznictví.](./media/GER-BackupTemplates-5.png)
 
@@ -93,7 +93,7 @@ Přejděte na položky **Správa organizace** \> **Elektronické výkaznictví**
 
 ## <a name="supported-deployments"></a>Podporovaná nasazení
 
-V modulu Finance and Operations verze 10.0.5 je ukládání záloh šablon ER k dispozici pouze v cloudových nasazeních.
+Ve Finance and Operations verze 10.0.5 je ukládání záloh šablon ER k dispozici pouze v cloudových nasazeních.
 
 ## <a name="additional-resources"></a>Další zdroje
 

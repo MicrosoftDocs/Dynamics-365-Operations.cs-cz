@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka leasingu majetku
-description: Toto téma poskytuje přehled dokumentace leasingu majetku a odkazy na konkrétní témata.
+description: Tento článek poskytuje přehled dokumentace leasingu majetku a odkazy na konkrétní témata.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889142"
 ---
 # <a name="asset-leasing-home-page"></a>Domovská stránka leasingu majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje seznam témat nápovědy, která jsou k dispozici pro leasing majetku, a obsahuje odkazy na konkrétní témata. 
+Tento článek obsahuje seznam témat nápovědy, která jsou k dispozici pro leasing majetku, a obsahuje odkazy na konkrétní témata. 
 
 Leasing majetku je pokročilou schopností pro správu, sledování a automatizaci finančních transakcí pro pronajaté majetky (aktiva) v Microsoft Dynamics 365 Finance. Leasingu majetku vyhovuje mezinárodním účetním standardům (IFRS 16) a normám US GAAP (ASC 842). Leasing majetku zachycuje a zpracovává informace o leasinzích a pomáhá vygenerovat položky deníku v rámci celého životní cyklu leasingu od počátečního uznání, přes měsíční položky deníku, po snížení hodnoty a ukončení leasingu.
 
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. V pracovním prostoru **Správa funkcí** vyhledejte a vyberte funkci, která se jmenuje **Leasing majetku** a poté klikněte na tlačítko **Povolit nyní**.
 
 ## <a name="asset-leasing-topics"></a>Témata leasingu majetku
-Následující téma vám pomůže konfigurovat a používat leasing majetku. 
+Následující článek vám pomůže konfigurovat a používat leasing majetku. 
 
- - [Úvod do leasingu majetku](asset-leasing-quick-start.md) – Toto téma popisuje obecné možnosti leasingu majetku a uvádí a definuje pojmy používané v softwaru a dokumentaci.
+ - [Úvod do leasingu majetku](asset-leasing-quick-start.md) – Tento článek popisuje obecné možnosti leasingu majetku a uvádí a definuje pojmy používané v softwaru a dokumentaci.
  
  ### <a name="set-up-asset-leasing"></a>Nastavení leasingu majetku
  Tato skupina témat vám pomůže nakonfigurovat leasing majetku způsobem, který je optimální pro obchodní situaci vaší organizace.  
@@ -77,7 +77,7 @@ Tato skupina témat popisuje proces přidávání leasingů, vytváření plateb
  - [Správa leasingu prostřednictvím rámce importu leasingu](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Vykazování leasingu majetku
-Toto téma popisuje sestavy, které jsou k dispozici pro leasingy majetku. 
+Tento článek popisuje sestavy, které jsou k dispozici pro leasingy majetku. 
 
  - [Sestavy leasingu majetku](asset-leasing-rprts.md)
  

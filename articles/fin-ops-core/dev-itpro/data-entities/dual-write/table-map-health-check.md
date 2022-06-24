@@ -1,20 +1,20 @@
 ---
 title: Kódy chyb pro kontrolu stavu mapy tabulky
-description: Toto téma popisuje kódy chyb pro kontrolu stavu mapy tabulky.
-author: nhelgren
-ms.date: 10/04/2021
+description: Tento článek popisuje kódy chyb pro kontrolu stavu mapy tabulky.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884076"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Kódy chyb pro kontrolu stavu mapy tabulky
 
@@ -22,7 +22,7 @@ ms.locfileid: "8061271"
 
 
 
-Toto téma popisuje kódy chyb pro kontrolu stavu mapy tabulky.
+Tento článek popisuje kódy chyb pro kontrolu stavu mapy tabulky.
 
 ## <a name="error-100"></a>Chyba 100
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Chybová zpráva zní: „Tabulka: \{datasourceTable.Key.subscribedTableName\} pro entitu \{datasourceTable.Key.entityName\} je sledována pro entitu \{origTableToEntityMaps.EntityName\}. Stejné tabulky sledované pro více entit mohou ovlivnit výkon systému pro transakce živé synchronizace.“
 
 Pokud je stejná tabulka sledována více entitami, jakákoli změna tabulky spustí vyhodnocení duálního zápisu pro propojené entity. Přestože klauzule filtru pošlou pouze platné záznamy, hodnocení může způsobit problém s výkonem, pokud existují dlouhotrvající dotazy nebo neoptimalizované plány dotazů. Tento problém nemusí být z obchodního hlediska nevyhnutelný. Pokud však existuje mnoho protínajících se tabulek ve více entitách, měli byste zvážit zjednodušení entity nebo kontrolu optimalizací pro dotazy na entity.
+
+## <a name="error-1800"></a>Chyba 1800
+Chybová zpráva zní: „Zdroj dat: {} pro entitu CustCustomerV3Entity zahrnuje hodnotu rozsahu. Vložení příchozích záznamů from Dataverse do Finance and Operations mohou být ovlivněny hodnotami rozsahu na entitě. Otestujte aktualizace záznamů z Dataverse do Finance and Operations se záznamy, které neodpovídají kritériím filtru pro ověření vašich nastavení."
+
+Pokud je na entitě ve finančních a provozních aplikacích specifikován rozsah, pak by se příchozí synchronizace z Dataverse do finančních a provozních aplikací otestovat na chování aktualizací u záznamů, které neodpovídají tomuto rozsahu kritérií. Každý záznam, který neodpovídá rozsahu, bude entitou považován za operaci vložení. Pokud v podkladové tabulce existuje záznam, vložení se nezdaří. Před nasazením do produkce doporučujeme otestovat tento případ použití pro všechny scénáře.
+
+## <a name="error-1900"></a>Chyba 1900
+Chybová zpráva zní: „Entita: má zdroje dat {}, které nejsou sledovány pro odchozí duální zápis. To může ovlivnit výkon dotazu živé synchronizace. Přemodelujte entitu ve Finance and Operations, abyste odstranili nepoužívané zdroje dat a tabulky, nebo implementujte getEntityRecordIdsImpactedByTableChange k optimalizaci dotazů za běhu."
+
+Pokud existuje mnoho zdrojů dat, které se nepoužívají pro sledování ve skutečné živé synchronizaci z finančních a provozních aplikací, existuje možnost, že výkon entity může mít vliv na živou synchronizaci. Chcete-li optimalizovat sledované tabulky, použijte metodu getEntityRecordIdsImpactedByTableChange.
+
+## <a name="error-5000"></a>Chyba 5000
+Chybová zpráva zní: „Synchronní pluginy jsou registrovány pro události správy dat pro účty entit. Ty mohou ovlivnit výkon počáteční synchronizace a importu živé synchronizace do Dataverse. Pro nejlepší výkon změňte pluginy na asynchronní zpracování. Seznam registrovaných pluginů {}."
+
+Synchronní pluginy v entitě Dataverse mohou ovlivnit živou synchronizaci a výkon počáteční synchronizace, protože se zvyšuje zatížení z hlediska transakcí. Doporučený přístup je buď vypnout zásuvné moduly, nebo tyto zásuvné moduly nastavit jako asynchronní, pokud čelíte pomalému načítání při počáteční synchronizaci nebo živé synchronizaci pro konkrétní entitu.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

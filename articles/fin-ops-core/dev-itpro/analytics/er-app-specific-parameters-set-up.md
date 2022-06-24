@@ -1,6 +1,6 @@
 ---
-title: Nastavení parametrů formátu ER podle právnické osoby
-description: V tomto tématu je vysvětleno, jak nastavit parametry formátu elektronického výkaznictví (ER) podle právnické osoby.
+title: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
+description: V tomto článku je vysvětleno, jak nastavit parametry formátu elektronického výkaznictví (ER) podle právnické osoby.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890205"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Nastavení parametrů formátu ER podle právnické osoby
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644492"
 
 Chcete-li provést tento postup, musíte nejprve dokončit kroky v tématu [Nastavení formátů ER, které budou používat parametry specifikované podle právnické osoby](er-app-specific-parameters-configure-format.md).
 
-K dokončení příkladů v tomto tématu musíte mít přístup k aplikaci Microsoft Dynamics 365 Finance pro některou z následujících rolí:
+K dokončení příkladů v tomto článku musíte mít přístup k aplikaci Microsoft Dynamics 365 Finance pro některou z následujících rolí:
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -221,7 +221,7 @@ Parametry formátu ER specifické pro aplikaci jsou závislé na právnické oso
 
 Tento přístup exportu a importu lze také použít k převodu formátu ER, které jsou specifické pro konkrétní aplikace, které byly původně nakonfigurovány v jedné instanci finančního oddělení na jinou instanci modulu finance.
 
-Pokud nakonfigurujete parametry specifické pro aplikaci pro jednu verzi formátu ER a poté importujete novější verzi stejného formátu do aktuální instance Finance, stávající parametry specifické pro aplikaci se na importovanou verzi nepoužijí, pokud nepoužijete funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER**. Více informací naleznete v části [Opětovné použití stávajících parametrů](#reuse-existing-parameters) dále v tomto tématu.
+Pokud nakonfigurujete parametry specifické pro aplikaci pro jednu verzi formátu ER a poté importujete novější verzi stejného formátu do aktuální instance Finance, stávající parametry specifické pro aplikaci se na importovanou verzi nepoužijí, pokud nepoužijete funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER**. Více informací naleznete v části [Opětovné použití stávajících parametrů](#reuse-existing-parameters) dále v tomto článku.
 
 Při výběru souboru pro import bude porovnána struktura parametrů specifických pro aplikaci v tomto souboru se strukturou odpovídajících zdrojů dat typu **vyhledávání** ve formátu ER, který je vybrán pro import. Ve výchozím nastavení je import proveden pouze v případě, že struktura jednotlivých parametrů specifických pro aplikaci odpovídá struktuře odpovídajícího zdroje dat ve formátu ER vybraném pro import. Pokud se struktury neshodují, zobrazí se varovná zpráva oznamující, že import nelze provést. Pokud import vynutíte, budou vymazány stávající parametry specifické pro vybraný formát ER a bude nutné je nastavit až od začátku.
 

@@ -1,6 +1,6 @@
 ---
 title: Datový model pro výpočet daně
-description: Toto téma poskytuje informace o daňovém datovém modelu a o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
+description: Tento článek poskytuje informace o daňovém datovém modelu a o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859688"
 ---
 # <a name="tax-calculation-data-model"></a>Datový model pro výpočet daně
 
-Toto téma poskytuje informace o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
+Tento článek poskytuje informace o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
 
 *Daňový datový model* se skládá z polí, která jsou vyžadována pro daňové výpočty. Společnost Microsoft poskytuje soubor *datový model výpočtu daně*, který zahrnuje pole záhlaví a řádková pole transakčních dokumentů v aplikaci Finance a Operace. Pole, která jsou definována v datovém modelu výpočtu daně, jsou dostupné sloupce tabulek pravidel použitelnosti v konfiguraci konfigurace funkce výpočtu daně.
 
@@ -99,7 +99,7 @@ Do polí v záhlaví transakce lze zahrnout třicet dva datových modelů. Ne v�
 | Expedovat do provincie/státu          | <ul><li>**Prodejní objednávka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; Stát</li></ol></li><li>**Nákupní objednávka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; Stát</li></ol></li><li>**Převodní příkaz – expedice**<ol><li>Záhlaví &gt; Do skladu &gt; Primární adresa &gt; Stát</li><li>Záhlaví &gt; Na místo &gt; Primární adresa &gt; Stát</li></ol></li><li>**Převodní příkaz – příjem:**<ol><li>Záhlaví &gt; Do skladu &gt; Primární adresa &gt; Stát</li><li>Záhlaví &gt; Na místo &gt; Primární adresa &gt; Stát</li></ol></li><li>**Požadavek na nabídku:**<ol><li>Záhlaví &gt; Dodací adresa &gt; Stát</li></ol></li><li>**Prodejní nabídka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; Stát</li></ol></li><li>**Volná faktura:**<ol><li>Záhlaví &gt; Účet zákazníka &gt; Výchozí dodací adresa &gt; Stát</li><li>Záhlaví &gt; účet zákazníka &gt; Primární adresa &gt; Stát</li></ol></li><li>**Deník (zákazník):**<ol><li>Účet zákazníka &gt; Výchozí dodací adresa &gt; Stát</li><li>Účet zákazníka &gt; Primární adresa &gt; Stát</li></ol></li><li>**Deník (dodavatel):**<ol><li>Právnická osoba &gt; Výchozí dodací adresa &gt; Stát</li><li>Právnická osoba &gt; Primární adresa &gt; Stát</li></ol></li></ul> |
 | Expedovat na PSČ                 | <ul><li>**Prodejní objednávka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; PSČ</li></ol></li><li>**Nákupní objednávka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; PSČ</li></ol></li><li>**Převodní příkaz – expedice**<ol><li>Záhlaví &gt; Do skladu &gt; Primární adresa &gt; PSČ</li><li>Záhlaví &gt; Na místo &gt; Primární adresa &gt; PSČ</li></ol></li><li>**Převodní příkaz – příjem:**<ol><li>Záhlaví &gt; Do skladu &gt; Primární adresa &gt; PSČ</li><li>Záhlaví &gt; Na místo &gt; Primární adresa &gt; PSČ</li></ol></li><li>**Požadavek na nabídku:**<ol><li>Záhlaví &gt; Dodací adresa &gt; PSČ</li></ol></li><li>**Prodejní nabídka:**<ol><li>Záhlaví &gt; Dodací adresa &gt; PSČ</li></ol></li><li>**Volná faktura:**<ol><li>Záhlaví &gt; Účet zákazníka &gt; Výchozí dodací adresa &gt; PSČ</li><li>Záhlaví &gt; účet zákazníka &gt; Primární adresa &gt; PSČ</li></ol></li><li>**Deník (zákazník):**<ol><li>Účet zákazníka &gt; Výchozí dodací adresa &gt; PSČ</li><li>Účet zákazníka &gt; Primární adresa &gt; PSČ</li></ol></li><li>**Deník (dodavatel):**<ol><li>Právnická osoba &gt; Výchozí dodací adresa &gt; PSČ</li><li>Právnická osoba &gt; Primární adresa &gt; PSČ</li></ol></li></ul> |
 | Web                             | <ul><li>**Prodejní objednávka:** Místo</li><li>**Nákupní objednávka:** Místo</li><li>**Příkaz k převodu - expedice:** Místo ze skladu</li><li>**Příkaz k převodu - příjem:** Místo do skladu</li><li>**Požadavek na nabídku:** Místo</li><li>**Prodejní nabídka:** Místo</li></ul> |
-| Směr daně                    | <ul><li>**Prodejní objednávka:** výstup</li><li>**Nákupní objednávka:** Vstup</li><li>**Převodní příkaz - expedice:** Výstup</li><li>**Převodní příkaz – příjem:** Vstup</li><li>**Nákupní žádanka:** Vstup</li><li>**Požadavek na nabídku:** Vstup</li><li>**Prodejní nabídka:** Výstup</li><li>**Volná faktura:** Výstup</li></ul> |
+| Směr daně                    | <ul><li>**Prodejní objednávka:** výstup</li><li>**Nákupní objednávka:** Vstup</li><li>**Převodní příkaz - expedice:** Výstup</li><li>**Převodní příkaz – příjem:** Vstup</li><li>**Nákupní žádanka:** Vstup</li><li>**Požadavek na nabídku:** Vstup</li><li>**Prodejní nabídka:** Výstup</li><li>**Volná faktura:** Výstup</li><li>**Deník:** Výstup</li></ul> |
 | Účet dodavatele                   | <ul><li>**Nákupní objednávka:** Účet dodavatele</li><li>**Deník (dodavatel):** Účet dodavatele</li></ul> |
 | Účet dodavatele pro fakturaci           | <ul><li>**Nákupní objednávka:** Fakturační účet</li><li>**Deník (dodavatel):**<ol><li>Hlavní data dodavatele &gt; Účet faktury</li><li>Účet dodavatele</li></ol></li></ul> |
 | Sklad                        | <ul><li>**Prodejní objednávka:** Sklad</li><li>**Nákupní objednávka:** sklad</li><li>**Převodní příkaz - expedice:** Ze skladu</li><li>**Převodní příkaz - příjem:** Do skladu</li><li>**požadavek na nabídku:** Sklad</li><li>**Nabídka prodeje:** Sklad</li></ul> |

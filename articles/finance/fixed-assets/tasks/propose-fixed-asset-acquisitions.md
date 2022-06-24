@@ -1,6 +1,6 @@
 ---
 title: Nabídka pořízení dlouhodobého majetku
-description: Toto téma popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku.
+description: Tento článek popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku.
 author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd54642e5ec6c56fbc3a5ebb07fc8fdaf5545926
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 35d2171dc828cb0227f310e81be1d3e3359f41c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909062"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Nabídka pořízení dlouhodobého majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku. Využívá účetní role a ukázková data pro právnické osoby USMF. Chcete-li získat dlouhodobý majetek prostřednictvím deníku návrhu dlouhodobého majetku, musíte nejprve vytvořit záznam dlouhodobého majetku a poté definovat pořizovací cenu v majetkové knize.
+Tento článek popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku. Využívá účetní role a ukázková data pro právnické osoby USMF. Chcete-li získat dlouhodobý majetek prostřednictvím deníku návrhu dlouhodobého majetku, musíte nejprve vytvořit záznam dlouhodobého majetku a poté definovat pořizovací cenu v majetkové knize.
 
 ## <a name="create-an-asset-acquisition-proposal"></a>Vytvoření návrhu na pořízení majetku
 

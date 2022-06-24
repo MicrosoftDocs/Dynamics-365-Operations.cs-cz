@@ -1,6 +1,6 @@
 ---
 title: Obsah manažera školení v Power BI
-description: Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI.
+description: Tento článek popisuje, co je součástí obsahu pro manažery školení v Power BI.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 31ca2841983d972194b55d91a6789fd84d62d890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500214"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898980"
 ---
 # <a name="practice-manager-power-bi-content"></a>Obsah manažera školení v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu pro **manažery školení** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Tento článek popisuje, co je součástí obsahu **Manažer školení** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 

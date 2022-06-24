@@ -1,6 +1,6 @@
 ---
 title: Strana a globální adresář
-description: Toto téma popisuje funkci strany a globálního adresáře duálního zápisu.
+description: Tento článek popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892186"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 

@@ -1,6 +1,6 @@
 ---
 title: Práce s konfiguracemi
-description: Toto téma poskytuje přehled hlavního scénáře pro práci s konfiguracemi elektronického hlášení (ER) z pracovního prostoru Funkce globalizace.
+description: Tento článek poskytuje přehled hlavního scénáře pro práci s konfiguracemi elektronického hlášení (ER) z pracovního prostoru Funkce globalizace.
 author: dkalyuzh
 ms.date: 01/26/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4318399ee58ed54b29f8d360345b8930238ea9f2
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 359f00336811efd5f21463a325627df0e01a5f3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875935"
 ---
 # <a name="work-with-configurations"></a>Práce s konfiguracemi
 

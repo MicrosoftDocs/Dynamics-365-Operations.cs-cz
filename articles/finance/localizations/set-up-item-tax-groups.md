@@ -1,6 +1,6 @@
 ---
 title: Nastavení daňových skupin položky
-description: Toto téma vysvětluje, jak nastavit daňové skupiny položky ve službě výpočtu daně.
+description: Tento článek vysvětluje, jak nastavit daňové skupiny položky ve službě výpočtu daně.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 88dd8e2fd9d4d4e5172dcc7b1bd27a70a2f59f03
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 3bc705bc8173ad2bc8ef883e6dc80b0a187314ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846456"
 ---
 # <a name="set-up-item-tax-groups"></a>Nastavení daňových skupin položky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit daňové skupiny položky ve službě výpočtu daně. Kromě toho se dozvíte, jak nastavit matici pravidel použitelnosti daňové skupiny položky a nakonfigurovat řádky v matici.
+Tento článek vysvětluje, jak nastavit daňové skupiny položky ve službě výpočtu daně. Kromě toho se dozvíte, jak nastavit matici pravidel použitelnosti daňové skupiny položky a nakonfigurovat řádky v matici.
 
 Koncept daňových skupin položky ve službě výpočtu daně se podobá konceptu skupin DPH položky v Microsoft Dynamics 365 Finance. Jsou to skupiny daňových kódů. Služba výpočtu daně používá k určení daňových kódů průnik daňové skupiny a daňové skupiny položky.
 

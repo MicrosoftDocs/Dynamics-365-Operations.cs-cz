@@ -1,6 +1,6 @@
 ---
 title: Finanční dimenze a zaúčtování
-description: Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
+description: Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Tento článek vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910106"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
 [!include [banner](../includes/banner.md)]
 
-Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
+Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Tento článek vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Komponenty účetních osnov a finančních dimenzí
 
@@ -46,7 +46,7 @@ Volitelně můžete definovat vyrovnávací finanční dimenzi. Na stránce **Hl
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Výchozí/pevné finanční dimenze na hlavním účtu
 
-Výchozí dimenze pocházejí z různých míst, jako jsou například hlavní záznamy (například záznamy odběratele nebo dodavatele), záhlaví dokumentů a hlavní účet. Toto téma se zaměřuje na výchozí dimenze na hlavním účtu podle právnické osoby. Můžete definovat, zda má hlavní účet hodnotu **Nestanovena** nebo **Pevná** pro každou finanční dimenzi, která se používá napříč všemi účetními strukturami v hlavní knize. Pokud je finanční dimenze **Nestanovena**, použije se výchozí hodnota, ale tuto hodnotu je možné přepsat. Toto chování se vztahuje na všechny výchozí hodnoty v systému, včetně výchozích hodnot, které pocházejí z hlavních záznamů. Pokud je hodnota finanční dimenze nastavena na hodnotu **Pevná**, bude vždy použita tato hodnota, bez ohledu na to, jestli pochází odněkud jako výchozí hodnota nebo byla zadána uživatelem.
+Výchozí dimenze pocházejí z různých míst, jako jsou například hlavní záznamy (například záznamy odběratele nebo dodavatele), záhlaví dokumentů a hlavní účet. Tento článek se zaměřuje na výchozí dimenze na hlavním účtu podle právnické osoby. Můžete definovat, zda má hlavní účet hodnotu **Nestanovena** nebo **Pevná** pro každou finanční dimenzi, která se používá napříč všemi účetními strukturami v hlavní knize. Pokud je finanční dimenze **Nestanovena**, použije se výchozí hodnota, ale tuto hodnotu je možné přepsat. Toto chování se vztahuje na všechny výchozí hodnoty v systému, včetně výchozích hodnot, které pocházejí z hlavních záznamů. Pokud je hodnota finanční dimenze nastavena na hodnotu **Pevná**, bude vždy použita tato hodnota, bez ohledu na to, jestli pochází odněkud jako výchozí hodnota nebo byla zadána uživatelem.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Pořadí, ve kterém se během zaúčtování používají výchozí dimenze
 

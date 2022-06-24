@@ -1,6 +1,6 @@
 ---
 title: Funkce rozdělené faktury
-description: Toto téma popisuje nastavení a funkce pro rozdělení faktur podle doručovací adresy a čísla daňového účtu (TAN).
+description: Tento článek popisuje nastavení a funkce pro rozdělení faktur podle doručovací adresy a čísla daňového účtu (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1dac8d51c24009dcf0c4acbc49f06f32abf0dec
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7bbeb94429c2c69b7b8ea3089390db676a021b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874425"
 ---
 # <a name="split-invoice-functionality"></a>Funkce rozdělené faktury
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje nastavení a funkce pro rozdělení faktur podle doručovací adresy a čísla daňového účtu (TAN).
+Tento článek popisuje nastavení a funkce pro rozdělení faktur podle doručovací adresy a čísla daňového účtu (TAN).
 
 Na stránce **Parametry závazků** na kartě **Všeobecné** vyberte políčko **Příjem produktu** nebo **Faktura** pro zaúčtování a rozdělení dokladu o produktu nebo faktury, která má na serveru jiné doručovací adresy a čísla TAN na stránce **Nákupní objednávka**. Zaúčtovaná faktura bude poté rozdělena podle doručovací adresy a TAN.
 

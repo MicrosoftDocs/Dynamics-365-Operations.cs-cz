@@ -1,6 +1,6 @@
 ---
 title: Elektronická fakturace pro Egypt
-description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
+description: Tento článek poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661715"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904405"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronická fakturace pro Egypt
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt. Provede vás konfiguračními kroky, které jsou závislé na zemi ve službě Regulatory Configuration Service (RCS). Tyto kroky doplňují kroky popsané v části [Nastavení elektronické fakturace](e-invoicing-set-up-overview.md).
+Tento článek poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt. Provede vás konfiguračními kroky, které jsou závislé na zemi ve službě Regulatory Configuration Service (RCS). Tyto kroky doplňují kroky popsané v části [Nastavení elektronické fakturace](e-invoicing-set-up-overview.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Než začnete provádět postupy v tomto tématu, musejí být dokončeny následující předpoklady:
+Než začnete provádět postupy v tomto článku, musejí být dokončeny následující předpoklady:
 
 - Seznamte se s elektronickou fakturací, která je popsána v tématu [Přehled elektronické fakturace](e-invoicing-service-overview.md).
 - Přihlaste se do služby RCS a nastavte Elektronickou fakturaci. Další informace naleznete v následujících tématech:

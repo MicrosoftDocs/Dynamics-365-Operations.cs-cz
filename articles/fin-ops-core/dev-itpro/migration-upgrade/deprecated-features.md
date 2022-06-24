@@ -1,6 +1,6 @@
 ---
-title: Odebrané nebo zastaralé funkce v předchozích verzích
-description: Toto téma popisuje funkce, které byly odebrány, nebo byly plánovány pro odebrání z Dynamics 365 for Finance and Operations a z předchozích verzí.
+title: Odebrané nebo zastaralé funkce v předchozích verzích
+description: Tento článek popisuje funkce, které byly odebrány, nebo byly plánovány pro odebrání z Dynamics 365 for Finance and Operations a z předchozích verzí.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063230"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866178"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063230"
 
 
 > [!IMPORTANT]
-> Toto téma již není aktualizováno. Chcete-li zobrazit aktuální seznam funkcí, které byly z finančních a provozních aplikací odebrány nebo zastaraly, hledejte obsah **„Odebrané nebo zastaralé funkce“**, který se vztahuje k používané aplikaci.
+> Tento článek již není aktualizován. Chcete-li zobrazit aktuální seznam funkcí, které byly z finančních a provozních aplikací odebrány nebo zastaraly, hledejte obsah **„Odebrané nebo zastaralé funkce“**, který se vztahuje k používané aplikaci.
 
-Toto téma popisuje funkce, které byly odebrány nebo zastaraly z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
+Tento článek popisuje funkce, které byly odebrány nebo zastaraly z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.

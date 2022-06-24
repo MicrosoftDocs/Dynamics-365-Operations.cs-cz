@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (5. října 2021)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 5. říjnu 2021.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 5. říjnu 2021.
 author: marcelbf
 ms.date: 10/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cc8cd8616f1b82258fccbb2b41d5e72a90aaed63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845105"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (5. října 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -49,7 +49,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
 | Číslo problému | Problém | Popis |
 |---|---|---|

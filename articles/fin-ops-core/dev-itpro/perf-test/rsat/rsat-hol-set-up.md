@@ -1,6 +1,6 @@
 ---
 title: Nastavení a instalace kurzu pro nástroj Regression Suite Automation Tool
-description: Toto téma je kurz, který ukazuje, jak nastavit a nainstalovat nástroj Regression suite automation tool (RSAT).
+description: Tento článek je kurz, který ukazuje, jak nastavit a nainstalovat nástroj Regression suite automation tool (RSAT).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858583"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Nastavení a instalace kurzu pro nástroj Regression Suite Automation Tool
 
-Toto téma je kurz, který vám pomůže získat instalační program a začít s nástrojem RSAT a nástroji spojenými s používáním nástroje RSAT.
+Tento článek je kurz, který vám pomůže získat instalační program a začít s nástrojem RSAT a nástroji spojenými s používáním nástroje RSAT.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ V tomto kurzu budete používat Modelování podnikových procesů (BPM) k vytvo
 
 ## <a name="configure-the-lcs-project"></a>Konfigurace projektu LCS
 
-Pro vaši hlavní testovací knihovnu potřebujete projekt služby Lifecycle Services (LCS). Jako hlavní knihovnu pro testovací případy se používá služba Modelování podnikových procesů (BPM). BPM slouží ke správě a distribuci testovacích knihoven v rámci projektů LCS. Testovací případy ve formě kihoven BPM vydává například partner společnosti Microsoft nebo nezávislý dodavatel softwaru (ISV). V BPM jsou testovací případy uspořádány podle obchodního procesu. V BPM není definována objednávka nebo frekvence provádění testovacího průchodu. Tyto detaily jsou spravovány v Azure DevOps, jak je popsáno dále v tomto tématu.  
+Pro vaši hlavní testovací knihovnu potřebujete projekt služby Lifecycle Services (LCS). Jako hlavní knihovnu pro testovací případy se používá služba Modelování podnikových procesů (BPM). BPM slouží ke správě a distribuci testovacích knihoven v rámci projektů LCS. Testovací případy ve formě kihoven BPM vydává například partner společnosti Microsoft nebo nezávislý dodavatel softwaru (ISV). V BPM jsou testovací případy uspořádány podle obchodního procesu. V BPM není definována objednávka nebo frekvence provádění testovacího průchodu. Tyto detaily jsou spravovány v Azure DevOps, jak je popsáno dále v tomto článku.  
 
 Pro svůj projekt LCS můžete použít existující zákaznickou implementaci nebo projekt partnera.
 

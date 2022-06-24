@@ -1,6 +1,6 @@
 ---
-title: Intrastat pro Itálii
-description: Toto téma obsahuje informace o sestavě Intrastat v Itálii.
+title: Italský Intrastat
+description: Tento článek obsahuje informace o sestavě Intrastat v Itálii.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874356"
 ---
 # <a name="italian-intrastat"></a>Intrastat pro Itálii
 
@@ -650,7 +650,7 @@ Pomocí těchto kroků můžete nastavit možnosti specifické pro Itálii, abys
 6. Na pevné záložce **Statistická hodnota** nastavte možnost **Tiskněte a exportujte statistické údaje** na **Ano**, pokud je třeba. Toto nastavení aktivuje přenos statistické sekce. Statistická část se skládá z údajů o hmotnosti, dalších jednotkách, statistických hodnotách, dodacích podmínkách, dodacích plánech, druzích dopravy a regionech původu.
 
     > [!NOTE]
-    > U čtvrtletní deklarace nebude sestava Intrastat obsahovat statistickou část ani informace o dodacích podmínkách a způsobech dopravy. Více informací naleznete v tabulce v sekci [Přehled](#overview) v tomto tématu.
+    > U čtvrtletní deklarace nebude sestava Intrastat obsahovat statistickou část ani informace o dodacích podmínkách a způsobech dopravy. Více informací naleznete v tabulce v sekci [Přehled](#overview) v tomto článku.
 
 7. Na kartě **Vlastnosti země / regionu** jsou uvedeny všechny země nebo oblasti, se kterými vaše organizace obchoduje. U každé země nebo regionu je třeba nastavit tato pole:
 

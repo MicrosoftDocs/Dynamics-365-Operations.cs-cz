@@ -1,8 +1,8 @@
 ---
 title: Elektronické zprávy
-description: Toto téma poskytuje přehled a informace o nastavení pro elektronické zprávy v Microsoft Dynamics 365 Finance.
+description: Tento článek poskytuje přehled a informace o nastavení pro elektronické zprávy v Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934677"
 ---
 # <a name="electronic-messaging"></a>Elektronické zprávy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled a informace o nastavení pro funkci **elektronických zpráv** (EM).
+Tento článek poskytuje přehled a informace o nastavení pro funkci **elektronických zpráv** (EM).
 
 Nedávno vlády a legislativní orgány různých zemí a regionů na celém světě zavedly požadavky na podávání zpráv pro společnosti, které jsou registrovány v těchto zemích nebo regionech. Účelem požadavků je umožnit získávání údajů z těchto společností v elektronickém formátu přímo ze systémů, kde byly účtovány, uloženy a zpracovány.
 
@@ -58,6 +58,16 @@ Funkce elektronických zpráv podporuje následující situace:
 - Uložení a kontrola všech informací o protokolu, souvisejících s akcemi, které jsou spuštěny pro zprávy nebo položky zprávy.
 - Kontrola zpracování pomocí různých stavů zpráv a položek zpráv.
 
+## <a name="security-privileges"></a>Oprávnění zabezpečení
+
+Pro elektronické zprávy jsou k dispozici následující bezpečnostní oprávnění.
+
+| Bezpečnostní oprávnění           | Úroveň přístupu | Přidružení |
+|------------------------------|--------------|-------------|
+| Udržovat elektronické zprávy | Toto oprávnění poskytuje plný přístup k funkcím EM. Pokud máte toto oprávnění, můžete nastavit elektronické zasílání zpráv a spustit veškeré zpracování. | Toto oprávnění je součástí povinnosti zabezpečení **Udržovat transakce DPH**. Tato povinnost je zase zahrnuta v roli zabezpečení **Účetní**. |
+| Zobrazit elektronické zprávy     | Toto oprávnění poskytuje přístup k funkcím EM jen pro čtení. Pokud máte toto oprávnění, můžete zobrazit nastavení a zprávy pro elektronické zasílání zpráv. Nic však nemůžete nastavit ani spustit. | Toto oprávnění je součástí povinnosti zabezpečení **Dotaz na stav transakce DPH**. Tato povinnost je zase zahrnuta v následujících rolích zabezpečení:<ul><li>Manažer inkasa</li><li>Úředník pohledávek</li><li>Manažer pohledávek</li><li>Daňový účetní</li><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Manažer prodeje</li><li>Úředník závazků</li></ul> |
+| Provozování elektronických zpráv  | Toto oprávnění poskytuje přístup pouze na stránky **Elektronické zprávy** a **Položky elektronických zpráv**. Pokud máte toto oprávnění, můžete z těchto stránek spustit veškeré zpracování, které je voláno. | Toto oprávnění je součástí povinnosti zabezpečení **Provozovat elektronické zprávy**. Tato povinnost je zase zahrnuta v roli zabezpečení **Provozovatel elektronických zpráv**. |
+
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Regulační funkce specifické pro zemi podporované funkcí EM
 
 Následující tabulka poskytuje informace o některých regulačních funkcích specifických pro danou zemi, které jsou podporovány funkcí EM.
@@ -66,9 +76,9 @@ Následující tabulka poskytuje informace o některých regulačních funkcích
 |-------------|--------------|------------------------|
 | Španělsko       | [Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Maďarsko     | [Online fakturační systém](../localizations/emea-hun-online-invoicing.md) | |
-| Spojené království | [Digitalizování daní (MTD) – odeslání přiznání k DPH](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: Digitální daň Spojeného království – přiznání k DPH v Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
+| Spojené království | [Digitalizování daní (MTD) – odeslání přiznání k DPH](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: Digitální přiznání DPH ve Velké Británii v Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Litva   | [Hlášení i.SAF](../localizations/emea-ltu-isaf.md) | |
-| Polsko      | [Přiznání k DPH s registry (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: Auditní rejstříky DPH SAF/JPK](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
+| Polsko      | [Přiznání k DPH s registry (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: Registry auditu DPH SAF/JPK](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Nizozemsko | [Přiznání k DPH pro Nizozemsko](../localizations/emea-nl-vat-declaration-netherlands.md) | |
 | Česká republika | [Přiznání k DPH](../localizations/emea-cze-vat-declaration-tax-declaration-model.md) | |
 | Brazílie      | [SPED-Reinf](../localizations/latam-bra-sped-reinf-overview.md) | |
@@ -78,7 +88,13 @@ Následující tabulka poskytuje informace o některých regulačních funkcích
 | Rusko      | [Vyměřené daňové přiznání](../localizations/rus-assessed-tax-declaration.md) | |
 | Rusko      | [Přiznání přepravní daně](../localizations/rus-transport-tax-declaration.md) | |
 | Rusko      | [Přiznání daně z pozemku](../localizations/rus-land-tax-declaration.md) | |
-
+| Norsko      | [Vratka DPH s přímým odesláním do Altinn](../localizations/emea-nor-vat-return.md) | [Nová vratka DPH s přímým odesláním do Altinn v Dynamics 365 Finance](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/new-vat-return-with-direct-submission-to-altinn-in-dynamics-365-finance-december-1-2021) |
+| Francie      | [Přiznání k DPH (Francie)](../localizations/emea-fra-VAT-declaration-preview-France.md) | |
+| Rakousko     | [Přiznání k DPH (Rakousko)](../localizations/emea-aut-vat-declaration-austria.md) | |
+| Německo     | [Přiznání k DPH (Německo)](../localizations/emea-deu-vat-declaration-germany.md) | |
+| Nizozemsko | [Přiznání k DPH pro Nizozemsko](../localizations/emea-nl-vat-declaration-netherlands.md) | |
+| Švédsko      | [Přiznání k DPH (Švédsko)](../localizations/emea-swe-VAT-declaration-Sweden.md) | |
+| Švýcarsko | [Přiznání k DPH (Švýcarsko)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

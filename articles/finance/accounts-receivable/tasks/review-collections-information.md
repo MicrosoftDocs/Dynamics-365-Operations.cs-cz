@@ -1,6 +1,6 @@
 ---
-title: Kontrola inkasních informací
-description: Toto téma vysvětluje kontrolu informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa.
+title: Kontrola informací o inkasech
+description: Tento článek vysvětluje kontrolu informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa.
 author: ShivamPandey-msft
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d0cb09eb6ac455d72e9dd051065625475581416
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6a6916690b9571fcfe103506960032e19fe724df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876204"
 ---
-# <a name="review-collections-information"></a>Kontrola inkasních informací
+# <a name="review-collections-information"></a>Kontrola informací o inkasech
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje kontrolu informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa. Tato procedura používá ukázkovou společnost USMF.
+Tento článek vysvětluje kontrolu informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa. Tato procedura používá ukázkovou společnost USMF.
 
 ## <a name="create-customer-pools"></a>Vytvořte fondy odběratele
 1. V navigačním podokně přejděte na **Moduly > Kredit a inkasa > Nastavení > Fondy zákazníků**.

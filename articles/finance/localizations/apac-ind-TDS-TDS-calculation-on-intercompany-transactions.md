@@ -1,6 +1,6 @@
 ---
 title: Výpočet TDS u mezipodnikových transakcí
-description: Toto téma popisuje proces, který se používá k výpočtu daně odečtené u zdroje (TDS) u mezipodnikových transakcí ve fázích.
+description: Tento článek popisuje proces, který se používá k výpočtu daně odečtené u zdroje (TDS) u mezipodnikových transakcí ve fázích.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888966"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>Výpočet TDS u mezipodnikových transakcí
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje proces, který se používá k výpočtu daně odečtené u zdroje (TDS) u mezipodnikových transakcí ve fázích.
+Tento článek popisuje proces, který se používá k výpočtu daně odečtené u zdroje (TDS) u mezipodnikových transakcí ve fázích.
 
 Když je vytvořena mezipodniková nákupní objednávka nebo prodejní objednávka, použije se k výpočtu částky TDS výchozí skupina TDS, která je definována pro zákazníka nebo dodavatele. Po zaúčtování faktury se částka TDS zaúčtuje na vratné nebo splatné účty.
 

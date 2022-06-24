@@ -1,6 +1,6 @@
 ---
 title: Rozúčtování
-description: Toto téma obsahuje informace o rozúčtování a popisuje dostupné možnosti k jejich zpracování.
+description: Tento článek obsahuje informace o rozúčtování a popisuje dostupné možnosti k jejich zpracování.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894193"
 ---
 # <a name="accounting-distributions"></a>Rozúčtování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování. Rozúčtování se používá k přidělení peněžních částek pro zdrojový dokument konkrétním účtům hlavní knihy. 
+Tento článek obsahuje informace o rozúčtování a popisuje možnosti, které jsou k dispozici k jejich zpracování. Rozúčtování se používá k přidělení peněžních částek pro zdrojový dokument konkrétním účtům hlavní knihy. 
 
 Rozúčtování je funkce dostupná v celé aplikaci, kterou používá a rozšiřuje každý zdrojový dokument, například nákupní objednávka, faktura dodavatele, sestava vyúčtování nebo volná faktura. Ve výchozím nastavení se výchozí rozúčtování generuje pro každý řádek zdrojového dokumentu a peněžní částku a jsou u něj podmíněně povoleny úpravy. 
 

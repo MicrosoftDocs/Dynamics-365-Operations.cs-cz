@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
-description: Toto téma vysvětluje, jak přizpůsobit konfigurace elektronického výkaznictví (ER) od společnosti Microsoft, které generují vlastní elektronické doklady.
+description: Tento článek vysvětluje, jak přizpůsobit konfigurace elektronického výkaznictví (ER) od společnosti Microsoft, které generují vlastní elektronické doklady.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854691"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 
@@ -32,9 +32,9 @@ ms.locfileid: "8661651"
 
 ## <a name="overview"></a>Přehled
 
-V příkladu v tomto tématu je třeba zadat federální daňový identifikační kód jako nový vlastní atribut každého zákazníka, který elektronicky fakturujete. Proto musíte přizpůsobit strukturu faktury, která se aktuálně používá, přidáním nové položky, která musí být vyplněna daňovým kódem v každé generované e-faktuře.
+V příkladu v tomto článku je třeba zadat federální daňový identifikační kód jako nový vlastní atribut každého zákazníka, který elektronicky fakturujete. Proto musíte přizpůsobit strukturu faktury, která se aktuálně používá, přidáním nové položky, která musí být vyplněna daňovým kódem v každé generované e-faktuře.
 
-Postupy v tomto tématu vysvětlují, jak může uživatel v roli administrátora systému, vývojáře elektronických výkazů nebo funkčního konzultanta elektronického výkaznictví provádět následující úkoly ve vaší instanci Finance:
+Postupy v tomto článku vysvětlují, jak může uživatel v roli administrátora systému, vývojáře elektronických výkazů nebo funkčního konzultanta elektronického výkaznictví provádět následující úkoly ve vaší instanci Finance:
 
 - [Nakonfigurujte minimální sadu parametrů ER, která je vyžadována k zahájení používání rámce ER](#ConfigureER).
 - [Importujte počáteční verze standardních konfigurací ER, které jsou k dispozici pro generování elektronických faktur](#ImportERConfigurations1).

@@ -1,6 +1,6 @@
 ---
 title: Výpočet faktur TDS pomocí formuláře nákupní objednávky a formuláře prodejní objednávky
-description: Toto téma obsahuje kroky pro výpočet daně odečtené u zdroje (TDS) u různých typů faktur.
+description: Tento článek obsahuje kroky pro výpočet daně odečtené u zdroje (TDS) u různých typů faktur.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6a7e670c38a1bce6b8f6771b4be49e56e3aa785a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 72883741ee7eed6b0296736c80dd648c882ae53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853278"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>Výpočet faktur TDS pomocí formuláře nákupní objednávky a formuláře prodejní objednávky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje kroky pro výpočet daně odečtené u zdroje (TDS) u různých typů faktur pomocí stránek **Nákupní objednávka**, **Deník nákupů**, **Paušální objednávka** a **Prodejní objednávka**.
+Tento článek obsahuje kroky pro výpočet daně odečtené u zdroje (TDS) u různých typů faktur pomocí stránek **Nákupní objednávka**, **Deník nákupů**, **Paušální objednávka** a **Prodejní objednávka**.
 
 1. Pomocí uvedené stránky vytvoříte nákupní objednávku, deník nákupu, paušální nákupní objednávku nebo prodejní objednávku. Zadejte požadované údaje.
 

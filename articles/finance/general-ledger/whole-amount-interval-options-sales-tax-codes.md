@@ -1,6 +1,6 @@
 ---
-title: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
-description: Toto téma vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+title: Možnost Celková částka a Interval výpočtu pro kódy DPH
+description: Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f06c92f2151f54a7d9b684b9687b786d1e4cd7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5b02a0ced8b556cfc5a984d24ceaf982629fd69c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727447"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874454"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje možnosti pro pole **Metoda výpočtu** pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+Tento článek vysvětluje možnosti pro pole **Metoda výpočtu** pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 
 Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce **Kódy DPH** pomocí pole **Metoda výpočtu** na pevné záložce **Výpočet** vyberte způsob výpočtu kódu DPH.
 - Celá částka – Sazba daně se použije na celou zdanitelnou částku.

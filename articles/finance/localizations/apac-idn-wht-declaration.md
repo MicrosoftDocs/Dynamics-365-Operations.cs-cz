@@ -1,6 +1,6 @@
 ---
 title: Výkaz srážkové daně pro Indonésii
-description: Toto téma vysvětluje, jak nakonfigurovat a vygenerovat výkaz srážkové daně pro Indonésii.
+description: Tento článek vysvětluje, jak nakonfigurovat a vygenerovat výkaz srážkové daně pro Indonésii.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883174"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>Výkaz srážkové daně pro Indonésii (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit a vygenerovat soubor srážkové daně PPH, který právnické osoby v Indonésii používají k vykazování srážkové daně v aplikaci e-Bupot.
+Tento článek vysvětluje, jak nastavit a vygenerovat soubor srážkové daně PPH, který právnické osoby v Indonésii používají k vykazování srážkové daně v aplikaci e-Bupot.
 
 Indonéský daňový úřad (DGT) stanovuje, že podnikatelé povinní k dani (PKP), kteří jsou registrováni u KPP Pratama jako osoby oprávněné ke srážce daní / výběru daně z příjmu (PPh) podle článku 23 a/nebo článku 26, musí elektronicky podávat přiznání k dani z příjmu podle článku 23 a 26 pomocí aplikace e-Bupot. 
 

@@ -1,6 +1,6 @@
 ---
 title: Centralizované platby pro závazky
-description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Toto téma uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
+description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 5478a2ac61fb7304bc617f3d2614e68cda6154de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903442"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centralizované platby pro závazky
 
 [!include [banner](../includes/banner.md)]
 
-Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Toto téma uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
+Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 
 V organizaci s centralizovanými platbami existuje mnoho právnických osob pro operace a každá provozní právnická osoba spravuje své vlastní faktury dodavatele. Platby pro všechny provozní právnické osoby jsou generovány jednou právnickou osobou, která se nazývá právnická osoba platby. Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce. Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také jak mají být zpracovány transakce platebních slev, které souvisejí s platbou mezi společnostmi. Na řádku deníku centralizované platby musí být **Typ účtu** nastaven na dodavatele. **Typ protiúčtu** musí být nastaven na banku nebo deník. Bankovní účet musí být v aktuální společnosti. 
 

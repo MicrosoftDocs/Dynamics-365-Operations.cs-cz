@@ -1,6 +1,6 @@
 ---
 title: Odkazy na původní faktury v dobropisech
-description: Toto téma vysvětluje, jak nastavit a vytisknout původní čísla faktur v souvisejících dobropisech.
+description: Tento článek vysvětluje, jak nastavit a vytisknout původní čísla faktur v souvisejících dobropisech.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861524"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odkazy na původní faktury v dobropisech
 
 [!include [banner](../includes/banner.md)]
 
 
-V některých zemích a regionech existuje zákonný požadavek, aby tištěné dobropisy obsahovaly odkazy na původní faktury. Toto téma vysvětluje, jak nastavit a vytisknout původní čísla faktur v souvisejících dobropisech.
+V některých zemích a regionech existuje zákonný požadavek, aby tištěné dobropisy obsahovaly odkazy na původní faktury. Tento článek vysvětluje, jak nastavit a vytisknout původní čísla faktur v souvisejících dobropisech.
 
 ## <a name="prerequisites"></a>Předpoklady
 
 - V pracovním prostoru **Správa funkcí** zapněte funkci **Rozvržení opravné fakturace v sestavách faktur dodavatele**. Další informace naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Tiskové formáty požadovaných dokumentů musí být nakonfigurovány ve správě tisku.
 
-Funkce popsané v tomto tématu platí pro následující dokumenty:
+Funkce popsané v tomto článku platí pro následující dokumenty:
 
 **Pohledávky**
 

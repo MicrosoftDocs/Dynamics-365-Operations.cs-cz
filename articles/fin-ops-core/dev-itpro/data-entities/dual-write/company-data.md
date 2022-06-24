@@ -1,6 +1,6 @@
 ---
 title: Koncept společnosti v Dataverse
-description: Toto téma popisuje integraci dat společnosti mezi finančními a provozními aplikacemi a Dataverse.
+description: Tento článek popisuje integraci dat společnosti mezi finančními a provozními aplikacemi a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873171"
 ---
 # <a name="company-concept-in-dataverse"></a>Koncept společnosti v Dataverse
 
@@ -49,7 +49,7 @@ Z důvodu této konfigurace bude každý řádek, který se týká společnosti 
 
 Jak ukazuje předchozí ilustrace, toto mapování 1:1 mezi organizační jednotkou, společností a týmem je pouze výchozím bodem. V tomto příkladu je nová obchodní jednotka Europe vytvořena ručně v aplikaci Dataverse jako nadřazená pro DEMF i ESMF. Tato nová kořenová organizační jednotka nesouvisí s dvojím zápisem. Lze ji však použít k tomu, aby členové týmu EUR Sales měli přístup k datům obchodních vztahů v DEMF i v ESMF nastavením viditelnosti dat na **Nadřazená/podřízená OJ** v přidružené roli zabezpečení.
 
-Závěrečným tématem, které je třeba projednat, je jak dvojí zápis určuje, kterému týmu vlastníků se mají přiřadit řádky. Toto chování je řízeno sloupcem **Výchozí vlastnící tým** na řádku cdm\_Company. Je-li pro řádek cdm\_Company povolen duální zápis, modul plug-in automaticky vytvoří přidruženou organizační jednotku a tým vlastníků (pokud již neexistuje) a nastaví sloupec **Výchozí vlastnící tým**. Správce může tento sloupec změnit na jinou hodnotu. Správce však nemůže vymazat sloupec, pokud je tabulka povolena pro duální zápis.
+Závěrečným článkem, který je třeba projednat, je jak dvojí zápis určuje, kterému týmu vlastníků se mají přiřadit řádky. Toto chování je řízeno sloupcem **Výchozí vlastnící tým** na řádku cdm\_Company. Je-li pro řádek cdm\_Company povolen duální zápis, modul plug-in automaticky vytvoří přidruženou organizační jednotku a tým vlastníků (pokud již neexistuje) a nastaví sloupec **Výchozí vlastnící tým**. Správce může tento sloupec změnit na jinou hodnotu. Správce však nemůže vymazat sloupec, pokud je tabulka povolena pro duální zápis.
 
 > [!div class="mx-imgBorder"]
 ![Sloupec výchozího vlastnícího týmu.](media/dual-write-default-owning-team.jpg)

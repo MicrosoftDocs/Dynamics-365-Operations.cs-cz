@@ -1,6 +1,6 @@
 ---
 title: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
-description: Toto téma popisuje, jak vložit sestavu Power BI na kartě Analýzy v pracovním prostoru.
+description: Tento článek popisuje, jak vložit sestavu Power BI na kartě Analýzy v pracovním prostoru.
 author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884542"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tato funkce je podporována v Finance and Operations (verze 7.2 a novější).
+> Tato funkce je podporována v aplikaci Finance and Operations (verze 7.2 a novější).
 
 ## <a name="introduction"></a>Úvod
-Toto téma popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.
+Tento článek popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.
 
 ## <a name="prerequisites"></a>Požadavky
 + Přístup k prostředí pro vývojáře, kde běží aktualizace Platform 8 nebo vyšší.

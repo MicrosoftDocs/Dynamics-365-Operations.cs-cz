@@ -1,6 +1,6 @@
 ---
-title: Určení umístění vlastního úložiště pro vygenerované dokumenty
-description: Toto téma vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty, které generují formáty elektronického výkaznictví.
+title: Určení místa vlastního úložiště pro vygenerované dokumenty
+description: Tento článek vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty, které generují formáty elektronického výkaznictví.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864739"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
 [!include[banner](../includes/banner.md)]
 
-Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictví umožňuje rozšířit seznam umístění úložišť pro dokumenty, které generují ER formáty. Toto téma obsahuje přehled hlavních úkolů, které musíte dokončit, abyste mohli přidat vlastní umístění úložiště.
+Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictví umožňuje rozšířit seznam umístění úložišť pro dokumenty, které generují ER formáty. Tento článek obsahuje přehled hlavních úkolů, které musíte dokončit, abyste mohli přidat vlastní umístění úložiště.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -118,7 +118,7 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 ## <a name="configure-an-er-destination"></a>Konfigurace umístění elektronického výkaznictví
 
 1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Použijte typ dokumentu, který jste přidali dříve pro nakonfigurované umístění. (Například v tomto tématu je typ dokumentu **FileX**.)
+2. Použijte typ dokumentu, který jste přidali dříve pro nakonfigurované umístění. (Například v tomto článku je typ dokumentu **FileX**.)
 
 ![Dialogové okno nastavení cíle.](media/er-extend-file-storages-destination.png)
 

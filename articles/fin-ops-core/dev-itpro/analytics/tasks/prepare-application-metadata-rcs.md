@@ -1,6 +1,6 @@
 ---
 title: Příprava metadat aplikace k použití v RCS
-description: Toto téma popisuje, jak vytvořit novou konfiguraci sestav, která obsahuje metadata aplikace.
+description: Tento článek popisuje, jak vytvořit novou konfiguraci sestav, která obsahuje metadata aplikace.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868790"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Příprava metadat aplikace k použití v RCS
 [!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak může uživatel v roli správce systému nebo vývojáře elektronického výkaznictví vytvořit novou konfiguraci elektronického výkaznictví, která obsahuje metadata aplikace pro navrhování konfigurací mapování modelu elektronického výkaznictví v Regulatory configuration service (RCS). Tato konfigurace se použije pro návrh ukázkové konfigurace mapování modelu elektronického výkaznictví pro přístup k transakcím zahraničního obchodu. V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést v libovolné společnosti. K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md).
+Následující kroky vysvětlují, jak může uživatel v roli správce systému nebo vývojáře elektronického výkaznictví vytvořit novou konfiguraci elektronického výkaznictví, která obsahuje metadata aplikace pro navrhování konfigurací mapování modelu elektronického výkaznictví v Regulatory configuration service (RCS). Tato konfigurace se použije pro návrh ukázkové konfigurace mapování modelu elektronického výkaznictví pro přístup k transakcím zahraničního obchodu. V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést v libovolné společnosti. K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v článku [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 1.    Přejděte na **Správa organizace** > **Pracovní prostory** > **Elektronické výkaznictví**. 

@@ -1,6 +1,6 @@
 ---
 title: Poradce při potížích se synchronizací v ostrém provozu
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
+description: Tento článek obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896698"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
@@ -22,10 +22,10 @@ ms.locfileid: "8062356"
 
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
 
 > [!IMPORTANT]
-> Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Azure Active Directory (Azure AD). Každý oddíl vysvětluje, zda jsou vyžadovány určité role nebo konkrétní pověření.
+> Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Azure Active Directory (Azure AD). Každý oddíl vysvětluje, zda jsou vyžadovány určité role nebo konkrétní pověření.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Živá synchronizace ukazuje chybu při vytváření řádku
 

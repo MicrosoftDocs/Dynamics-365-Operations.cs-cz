@@ -1,6 +1,6 @@
 ---
 title: Generování formulářů FTI k tisku
-description: Toto téma vysvětluje, jak použít architekturu elektronického výkaznictví pro vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office.
+description: Tento článek vysvětluje, jak použít architekturu elektronického výkaznictví pro vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758209"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868822"
 ---
 # <a name="generate-printable-fti-forms"></a>Generovat formulářů FTI k tisku
 
 [!include[banner](../includes/banner.md)]
 
-Architektura elektronického výkaznictví vám umožní vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office. Toto téma poskytuje informace o tom, jak vytvořit vlastní konfigurace, stejně jako podrobnosti o dostupných konfiguračních šablonách.
+Architektura elektronického výkaznictví vám umožní vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office. Tento článek poskytuje informace o tom, jak vytvořit vlastní konfigurace, stejně jako podrobnosti o dostupných konfiguračních šablonách.
 
 ## <a name="overview"></a>Přehled
 
 Kromě existující funkce generování tisknutelných formulářů FTI pomocí služeb Microsoft SQL Server Reporting Services (SSRS) můžete nyní použít architekturu elektronického výkaznictví. Můžete spravovat tisknutelné FTI formuláře v aplikaci Microsoft Office Excel a Word. Rozložení, tok dat a formátování můžete také upravit tak, aby splňovaly konkrétní požadavky, aniž by došlo k změnám kódu.
 
 > [!NOTE]
-> Pokud chcete začít s přehledem stávajících konfigurací elektronického výkaznictví pro tento vzorek řešení tisknutelných formulářů FTI, lze přejít přímo do oddílu **Stažení vzorové konfigurace elektronického výkaznictví pro generování tisknutelných formulářů FTI** dále v tomto tématu.
+> Pokud chcete začít s přehledem stávajících konfigurací elektronického výkaznictví pro tento vzorek řešení tisknutelných formulářů FTI, lze přejít přímo do oddílu **Stažení vzorové konfigurace elektronického výkaznictví pro generování tisknutelných formulářů FTI** dále v tomto článku.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Vytvoření přizpůsobených konfigurací pro tisknutelné formuláře FTI
 V rámci svého přizpůsobeného řešení pro tisknutelné formuláře FTI je nutné vytvořit sadu konfigurací elektronického výkaznictví.
@@ -108,7 +108,7 @@ Můžete také generovat formuláře FTI při zaúčtování FTI zapnutím možn
 Architektura elektronického výkaznictví aktuálně podporuje následující cílová umístění pro vygenerované dokumenty:
 
 - **Stažený soubor** – vygenerované formuláře jsou k dispozici jako stažené soubory, které můžete uložit pomocí prohlížeče.
-- **Obrazovka** – Použije se Microsoft 365 Excel k zobrazení náhledu generovaných formulářů FTI ve formátu aplikace Excel.
+- **Obrazovka** – Použije se Microsoft 365 k zobrazení náhledu generovaných formulářů FTI ve formátu aplikace Excel.
 - **Složka SharePoint** – vygenerované formuláře jsou uloženy na základě nastavení architektury správy dokumentů.
 - **Archiv aplikace** – vygenerované formuláře jsou uloženy jako přílohy záznamů protokolů provádění v úložišti Microsoft Azure.
 - **E-mail** – vygenerované formuláře jsou odeslány jako e-mailové přílohy.

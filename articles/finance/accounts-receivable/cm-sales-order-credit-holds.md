@@ -1,6 +1,6 @@
 ---
 title: Blokování úvěru pro prodejní objednávky
-description: V tomto tématu je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky.
+description: V tomto článku je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky.
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856821"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Blokování úvěru pro prodejní objednávky
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-V tomto tématu je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky. Pravidla blokování správy úvěrů lze použít pro jednotlivé odběratele nebo pro skupinu odběratelů. Pravidla blokování definují odpovědi za následujících okolností:
+V tomto článku je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky. Pravidla blokování správy úvěrů lze použít pro jednotlivé odběratele nebo pro skupinu odběratelů. Pravidla blokování definují odpovědi za následujících okolností:
 
 1. Počet dnů po splatnosti
 2. Stav účtů

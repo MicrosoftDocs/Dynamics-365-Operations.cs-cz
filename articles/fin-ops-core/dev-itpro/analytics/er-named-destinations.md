@@ -1,6 +1,6 @@
 ---
-title: Nakonfigurujte cíle ER pro záznamy pro správu tisku
-description: Toto téma vysvětluje, jak konfigurovat cíle závislé záznamech správy tisku elektronického výkaznictví (ER), který je nakonfigurován pro generování odchozích dokumentů.
+title: Konfigurace cílových míst elektronického výkaznictví pro záznamy pro správu tisku
+description: Tento článek vysvětluje, jak konfigurovat cíle závislé záznamech správy tisku elektronického výkaznictví (ER), který je nakonfigurován pro generování odchozích dokumentů.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
-ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
+ms.openlocfilehash: 2972dc6a0b373cbc63b811c01ef7a5538810edbb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "8603047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872706"
 ---
-# <a name="configure-print-management-record-specific-er-destinations"></a>Nakonfigurujte cíle ER pro záznamy pro správu tisku
+# <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurace cílových míst elektronického výkaznictví pro záznamy pro správu tisku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak může uživatel v roli administrátora systému nebo v role Úředník pohledávek provádět následující úkoly:
+Tento článek vysvětluje, jak může uživatel v roli administrátora systému nebo v role Úředník pohledávek provádět následující úkoly:
 
 - Konfigurovat pojmenované cíle [Elektronického hlášení (ER)](general-electronic-reporting.md) pro řešení ER, které generuje faktury s volným textem.
 - Přiřaďte cíl ER k jednomu záznamu [správy tisku](document-reporting-services.md).

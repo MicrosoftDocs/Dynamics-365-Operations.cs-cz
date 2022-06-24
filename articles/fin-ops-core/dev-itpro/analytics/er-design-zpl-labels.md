@@ -1,6 +1,6 @@
 ---
 title: Návrh nového řešení ER pro tisk štítků ZPL
-description: Toto téma vysvětluje, jak navrhnout nové řešení elektronického výkaznictví (ER) pro tisk štítků Zebra Programming Language (ZPL).
+description: Tento článek vysvětluje, jak navrhnout nové řešení elektronického výkaznictví (ER) pro tisk štítků Zebra Programming Language (ZPL).
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845708"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Návrh nového řešení ER pro tisk štítků ZPL
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje jak může uživatel v roli administrátora systému, vývojáře elektronických zpráv nebo funkčního konzultanta pro elektronické vykazování konfigurovat parametry rámce [elektronické vykazování (ER)](general-electronic-reporting.md), navrhovat požadované [konfigurace](general-electronic-reporting.md#Configuration) ER nového řešení ER pro přístup k datům systému Warehouse Management, a vygenerovat vlastní štítky lokality skladu ve formátu Zebra Programming Language (ZPL) II. Tyto kroky lze provést v rámci společnosti **USRT**.
+Tento článek vysvětluje jak může uživatel v roli administrátora systému, vývojáře elektronických zpráv nebo funkčního konzultanta pro elektronické vykazování konfigurovat parametry rámce [elektronické vykazování (ER)](general-electronic-reporting.md), navrhovat požadované [konfigurace](general-electronic-reporting.md#Configuration) ER nového řešení ER pro přístup k datům systému Warehouse Management, a vygenerovat vlastní štítky lokality skladu ve formátu Zebra Programming Language (ZPL) II. Tyto kroky lze provést v rámci společnosti **USRT**.
 
 ## <a name="business-scenario"></a>Scénáře obchodu
 

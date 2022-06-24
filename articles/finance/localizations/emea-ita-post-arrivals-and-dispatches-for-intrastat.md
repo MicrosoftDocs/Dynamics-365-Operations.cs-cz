@@ -1,6 +1,6 @@
 ---
-title: Příchozí a odesílané poštovní zásilky pro Intrastat
-description: Toto téma ukazuje, jak zaúčtovat příchozí a odchozí zásilky pro Intrastat.
+title: Zaúčtování příchozích a odchozích zásilek pro Intrastat
+description: Tento článek ukazuje, jak zaúčtovat příchozí a odchozí zásilky pro Intrastat.
 author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862957"
 ---
-# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Příchozí a odesílané poštovní zásilky pro Intrastat
+# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Zaúčtování příchozích a odchozích zásilek pro Intrastat
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma ukazuje, jak zaúčtovat příchozí a odchozí zásilky pro Intrastat. Příklad používá právnickou osobu **ITCO**.
+Tento článek ukazuje, jak zaúčtovat příchozí a odchozí zásilky pro Intrastat. Příklad používá právnickou osobu **ITCO**.
 
 ## <a name="setup"></a>Nastavení
 

@@ -1,6 +1,6 @@
 ---
 title: Degresivní odpis 175 %
-description: Toto téma poskytuje přehled metody degresivního odpisu 175 %.
+description: Tento článek poskytuje přehled metody degresivního odpisu 175%.
 author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9424741fa50034a97e9971dcd2d7416968c964
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 68c10a1fe221731f7304fc0da92ed314b66dc13f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870184"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>Degresivní odpis 175 %
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled metody degresivního odpisu 175 %.
+Tento článek poskytuje přehled metody degresivního odpisu 175%.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 175 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. 
 
@@ -41,7 +41,7 @@ Vaše volba určí, jaké možnosti budou dostupné v poli **Frekvence období**
 
 V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**. 
 
-Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech tohoto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 

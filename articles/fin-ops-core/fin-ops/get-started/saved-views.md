@@ -1,6 +1,6 @@
 ---
 title: Uložená zobrazení
-description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
+description: V tomto článku je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845406"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -196,7 +196,7 @@ Chcete-li zobrazit seznam všech dostupných zobrazení pro tuto stránku, je k 
 
 ## <a name="managing-views-globally"></a>Globální správa zobrazení
 
-Přestože jsou na každé stránce zobrazeny některé funkce správy, jak je uvedeno v tomto tématu, **správci systému** a **správci uložených zobrazení** mohou spravovat pohledy holističtěji pro systém prostřednictvím stránky **Individuální nastavení**. Tato stránka obsahuje zejména následující oddíly a možnosti: 
+Přestože jsou na každé stránce zobrazeny některé funkce správy, jak je uvedeno v tomto článku, **správci systému** a **správci uložených zobrazení** mohou spravovat pohledy holističtěji pro systém prostřednictvím stránky **Individuální nastavení**. Tato stránka obsahuje zejména následující oddíly a možnosti: 
 
 - **Publikovaná zobrazení** - V této části jsou uvedena všechna zobrazení, která byla publikována pro vaši organizaci. Odsud můžete zobrazení znovu upravit poté, co upravíte role zabezpečení nebo právnické osoby, na které je zobrazení zaměřeno. Tato zobrazení můžete také exportovat, odstranit nebo můžete zrušit jeho publikování. Pomocí akce **Uložit jako osobní** můžete vytvořit k vytvoření osobní kopii zobrazení, abyste mohli zobrazení aktualizovat nebo získat lepší přehled o jeho obsahu. 
 - **Nepublikovaná zobrazení** - V této části jsou uvedena všechna zobrazení organizace ve vašem systému, která momentálně nejsou publikována. Tato zobrazení nejčastěji přicházejí do systému pomocí funkce importu. Tato zobrazení můžete publikovat, exportovat nebo odstranit. Akce **Rychlé publikování**, která byla přidána ve verzi 10.0.12, umožňuje publikovat více zobrazení z této sekce v jedné akci pomocí stávající konfigurace zabezpečení a konfigurace právnických osob. Pomocí akce **Uložit jako osobní** můžete vytvořit k osobní kopie těchto zobrazení, abyste mohli lépe pochopit obsah zobrazení.

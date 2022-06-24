@@ -1,6 +1,6 @@
 ---
 title: Použití zdrojů dat JOIN v mapování modelu ER k získání dat z více aplikačních tabulek
-description: Toto téma vysvětluje, jak je možné používat datové zdroje JOIN mezi více společnostmi v modulu Elektronické výkaznictví (ER).
+description: Tento článek vysvětluje, jak je možné používat datové zdroje JOIN mezi více společnostmi v modulu Elektronické výkaznictví (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845506"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Použití zdrojů dat JOIN v mapování modelu elektrického vykazování (ER) k získání dat z více aplikačních tabulek
 
@@ -40,15 +40,15 @@ V konfigurovaném zdroji dat **připojení**, když jsou všechny zdroje dat typ
 > [!NOTE]
 > Použití funkce **VALUEIN** ve výrazech ER, které určují podmínky pro spojení záznamů ve zdrojích dat typu spojení ještě není podporováno. Pro více podrobností o této funkci navštivte stránku [Návrhář receptury v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md).
 
-Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Chcete-li získat další informace o této funkci, vyplňte příklad tomto článku.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Příklad: použití zdrojů dat JOIN v mapování modelu ER
 
-Následující postup vysvětluje, jak může správce systému nebo vývojář elektronického vykazování konfigurovat mapování modelu elektronického vykazování (ER) tak, aby získal data z více aplikačních tabulek najednou pomocí datových zdrojů typu **JOIN** k vylepšení výkonu přístupu k datům. Tyto kroky lze provádět pro jakoukoliv společnost Dynamics 365 Finance nebo službu Regulatory Configuration Services (RCS).
+Následující postup vysvětluje, jak může správce systému nebo vývojář elektronického vykazování konfigurovat mapování modelu elektronického vykazování (ER) tak, aby získal data z více aplikačních tabulek najednou pomocí datových zdrojů typu **JOIN** k vylepšení výkonu přístupu k datům. Tyto kroky lze provádět ve jakékoliv společnosti Dynamics 365 Finance nebo službě Regulatory Configuration Services (RCS).
 
 ### <a name="prerequisites"></a>Předpoklady
 
-Chcete-li provést příklady uvedené v tomto tématu, musíte mít přístup k jednomu z následujících postupů v závislosti na tom, která služba je používána pro dokončení těchto kroků:
+Chcete-li provést příklady uvedené v tomto článku, musíte mít přístup k jednomu z následujících postupů v závislosti na tom, která služba je používána pro dokončení těchto kroků:
 
 **Přístup k Finance pro některou z následujících rolí:**
 
@@ -257,7 +257,7 @@ Zkontrolujte nastavení komponenty mapování modelu ER. Komponenta je nakonfigu
 
 ## <a name="limitations"></a>Omezení
 
-Jak můžete vidět z příkladu v tomto tématu, **PROPOJENÝ** zdroj dat lze sestavit z několika zdrojů dat, které popisují jednotlivé datové sady záznamů, které musí být nakonec spojeny. Tyto zdroje dat můžete nakonfigurovat pomocí vestavěné funkce ER [FILTR](er-functions-list-filter.md). Když nakonfigurujete zdroj dat tak, aby byl volán i mimo **PROPOJENÝ** zdroj dat, můžete použít firemní rozsahy jako součást podmínky pro výběr dat. První implementace **PROPOJENÉHO** zdroje dat nepodporuje zdroje dat tohoto typu. Například když voláte zdroj dat založený na [FILTRU](er-functions-list-filter.md) v rámci rozsahu provedení zdroje dat **PROPOJIT**, platí, že pokud volaný zdroj dat obsahuje rozsahy společnosti v rámci podmínky výběru dat, dojde k výjimce.
+Jak můžete vidět z příkladu v tomto článku, **PROPOJENÝ** zdroj dat lze sestavit z několika zdrojů dat, které popisují jednotlivé datové sady záznamů, které musí být nakonec spojeny. Tyto zdroje dat můžete nakonfigurovat pomocí vestavěné funkce ER [FILTR](er-functions-list-filter.md). Když nakonfigurujete zdroj dat tak, aby byl volán i mimo **PROPOJENÝ** zdroj dat, můžete použít firemní rozsahy jako součást podmínky pro výběr dat. První implementace **PROPOJENÉHO** zdroje dat nepodporuje zdroje dat tohoto typu. Například když voláte zdroj dat založený na [FILTRU](er-functions-list-filter.md) v rámci rozsahu provedení zdroje dat **PROPOJIT**, platí, že pokud volaný zdroj dat obsahuje rozsahy společnosti v rámci podmínky výběru dat, dojde k výjimce.
 
 V Microsoft Dynamics 365 Finance verze 10.0.12 (srpen 2020) můžete použít firemní rozsahy jako součást podmínky pro výběr dat ve zdrojích dat založených na funkci [FILTR](er-functions-list-filter.md), které jsou vyvolány v rámci provedení **PROPOJENÉHO** zdroje dat. Z důvodu omezení tvůrce [dotazů](../dev-ref/xpp-library-objects.md#query-object-model) aplikace jsou rozsahy společnosti podporovány pouze pro první zdroj dat **PROPOJENÉHO** zdroje dat.
 

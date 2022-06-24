@@ -1,6 +1,6 @@
 ---
 title: Vložení aplikací třetích stran
-description: Toto téma popisuje způsob vložení aplikací třetích stran pro zvýšení funkčnosti produktu.
+description: Tento článek popisuje způsob vložení aplikací třetích stran pro zvýšení funkčnosti produktu.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868601"
 ---
 # <a name="embed-third-party-apps"></a>Vložení aplikací třetích stran
 
 [!include [banner](../includes/banner.md)]
 
-Mnoho zákazníků používá k provozování svého podnikání celou řadu aplikací. Některé z těchto aplikací jsou webové aplikace třetích stran, které fungují ve spojení s aplikacemi Finance and Operations. Chcete-li zajistit plynulejší uživatelské prostředí, můžete použít funkci **Celostránkové aplikace** pro vložení těchto aplikací třetích stran přímo do aplikací Finance and Operations (za předpokladu, že aplikace třetích stran umožňují vložení). Tímto způsobem mohou uživatelé přistupovat k webům a aplikacím, které požadují, aniž by museli přepínat karty nebo okna.
+Mnoho zákazníků používá k provozování svého podnikání celou řadu aplikací. Některé z těchto aplikací jsou webové aplikace třetích stran, které fungují ve spojení s finančními a provozními aplikacemi. Chcete-li zajistit plynulejší uživatelské prostředí, můžete použít funkci **Celostránkové aplikace** pro vložení těchto aplikací třetích stran přímo do finančních a provozních aplikací (za předpokladu, že aplikace třetích stran umožňují vložení). Tímto způsobem mohou uživatelé přistupovat k webům a aplikacím, které požadují, aniž by museli přepínat karty nebo okna.
 
-Než budete moci do produktu vložit aplikace třetích stran, musíte zapnout funkci **Celostránkové aplikace** funkce ve Správě funkcí. Potom můžete použít jednu z následujících metod k vložení aplikace nebo webu třetí strany. Tyto metody jsou analogické s metodami, které se používají k vložení aplikací plátna z Microsoft Power Apps do aplikací Finance and Operations.
+Než budete moci do produktu vložit aplikace třetích stran, musíte zapnout funkci **Celostránkové aplikace** funkce ve Správě funkcí. Potom můžete použít jednu z následujících metod k vložení aplikace nebo webu třetí strany. Tyto metody jsou analogické s metodami, které se používají k vložení aplikací plátna z Microsoft Power Apps do finančních a provozních aplikací.
 
 - Vložte aplikaci nebo web na existující stránku jako stránku nové karty (kontingenční karta, rychlá karta, okno nebo část pracovního prostoru).
 - Vytvořte na řídicím panelu nové celostránkové prostředí pro aplikaci nebo web.
@@ -53,7 +53,7 @@ Tento postup použijte, pokud chcete doplnit existující stránku v systému o 
     > - Aplikace nebo web musí být nakonfigurován tak, aby umožňoval vložení.
 
 6. Vyberte **Uložit** pro vložení aplikace na stránku. Aplikace je přidána jako poslední karta nebo oddíl ve skupině.
-7. Potvrďte, že se aplikace zobrazuje podle očekávání. Pokud aplikace není vykreslena, podívejte se na část [Odstraňování problémů](#troubleshooting) dále v tomto tématu.
+7. Potvrďte, že se aplikace zobrazuje podle očekávání. Pokud aplikace není vykreslena, podívejte se na část [Odstraňování problémů](#troubleshooting) dále v tomto článku.
 8. Otevřete volič zobrazení a vyberte **Uložit** (pokud má být aplikace přidružena k aktuálnímu zobrazení) nebo **Uložit jako** (pro uložení aplikace do jiného zobrazení).
 
     Pokud stránka nemá volič zobrazení (například pokud je stránkou dialogové okno nebo pracovní prostor), můžete tento krok přeskočit.
@@ -75,7 +75,7 @@ Tento postup použijte, pokud aplikace, kterou chcete vložit, nesouvisí s exis
     > - Aplikace nebo web musí být nakonfigurován tak, aby umožňoval vložení.
 
 5. Vyberte **Uložit** pro přidání aplikace na řídicí panel jako nové dlaždice.
-6. Vyberte novou dlaždici na řídicím panelu a potvrďte, že se aplikace zobrazí podle očekávání. Pokud aplikace není vykreslena, podívejte se na část [Odstraňování problémů](#troubleshooting) dále v tomto tématu.
+6. Vyberte novou dlaždici na řídicím panelu a potvrďte, že se aplikace zobrazí podle očekávání. Pokud aplikace není vykreslena, podívejte se na část [Odstraňování problémů](#troubleshooting) dále v tomto článku.
 
 ## <a name="sharing-embedded-apps"></a>Sdílení vložených aplikací
 
@@ -89,7 +89,7 @@ Poté, co jste vložili aplikaci pomocí jedné z metod popsaných v předchozí
 
 ## <a name="viewing-embedded-apps"></a>Zobrazení vložených aplikací
 
-Chcete-li zobrazit vloženou aplikaci na stránce v aplikacích Finance and Operations, otevřete stránku s vloženou aplikací. Nezapomeňte, že na některých stránkách lze k vloženým aplikacím přistupovat pomocí tlačítka **Power Apps** ve standardním podokně akcí. Alternativně se mohou objevit přímo na stránce jako nová karta, záložku s náhledem, okno nebo nový oddíl v pracovním prostoru.
+Chcete-li zobrazit vloženou aplikaci na stránce ve finančních a provozních aplikacích, otevřete stránku s vloženou aplikací. Nezapomeňte, že na některých stránkách lze k vloženým aplikacím přistupovat pomocí tlačítka **Power Apps** ve standardním podokně akcí. Alternativně se mohou objevit přímo na stránce jako nová karta, záložku s náhledem, okno nebo nový oddíl v pracovním prostoru.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Úpravy nebo odebrání vložených aplikací
 
@@ -126,6 +126,6 @@ Pokud se web po vložení do aplikace Finance and Operation nevykreslí správn�
 
 ### <a name="developer-modeling-a-website-on-a-form"></a>[Vývojář] Modelování webu na formuláři
 
-Ačkoli je toto téma zaměřeno na vkládání aplikací nebo webů třetích stran prostřednictvím personalizace, vývojáři je také mohou vložit do formuláře pomocí vývojářského prostředí Visual Studio. Stačí přidat a do formuláře ovládací prvek **WebsiteHostControl**. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
+Ačkoli je tento článek zaměřen na vkládání aplikací nebo webů třetích stran prostřednictvím personalizace, vývojáři je také mohou vložit do formuláře pomocí vývojářského prostředí Visual Studio. Stačí přidat a do formuláře ovládací prvek **WebsiteHostControl**. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

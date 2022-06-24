@@ -1,6 +1,6 @@
 ---
 title: Konfigurace vyrovnání
-description: To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky.
+description: To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky.
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 14ed2999a9ad8ffc64815ca3f8b1556aad27ae48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910193"
 ---
 # <a name="configure-settlement"></a>Konfigurace vyrovnání
 
 [!include [banner](../includes/banner.md)]
 
-To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
+To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Tento článek popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky. 
 
 Následující parametry ovlivní způsob zpracování vyrovnání v aplikaci Microsoft Dynamics 365 Finance. Vyrovnání je proces vyrovnání faktury podle platbou nebo dobropisem. Tyto parametry jsou umístěny v oblasti **Vyrovnání** stránek **Parametry pohledávek** a **Parametry závazků**.
 

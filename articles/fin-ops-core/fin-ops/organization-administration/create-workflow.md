@@ -1,6 +1,6 @@
 ---
 title: Přehled vytvoření workflow
-description: Toto téma vysvětluje postup při vytváření workflowu.
+description: Tento článek vysvětluje postup při vytváření workflowu.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1343061ba06d13e68a98b05c013867af0a4d07a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864479"
 ---
 # <a name="create-workflows-overview"></a>Přehled vytvoření workflow
 
@@ -31,7 +31,7 @@ ms.locfileid: "8067951"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma vysvětluje postup při vytváření workflowu.
+Tento článek vysvětluje postup při vytváření workflowu.
 
 ## <a name="open-the-workflow-editor"></a>Otevřete editor workflowu
 
@@ -56,7 +56,7 @@ Nakonfigurujte vlastnosti workflowu pomocí následujících kroků.
 
 1. Klepnutím na plátno se ujistěte, že není vybrán žádný prvek workflowu.
 2. Kliknutím na **Vlastnosti** otevřete formulář **Vlastnosti** pro workflow.
-3. Postupujte podle pokynů v tématu [Konfigurace vlastností workflow](configure-workflow-properties.md).
+3. Postupujte podle pokynů v článku [Konfigurace vlastností workflow](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurace prvků workflowu
 

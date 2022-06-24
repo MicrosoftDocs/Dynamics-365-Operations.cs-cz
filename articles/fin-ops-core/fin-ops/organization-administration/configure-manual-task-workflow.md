@@ -1,6 +1,6 @@
 ---
 title: Konfigurace ručních úloh ve workflow
-description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu.
+description: Tento článek vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 265f127f948aa7425c5eb523abe18986a942cfb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889200"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurace ručních úloh ve workflow
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066461"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu.
+Tento článek vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu.
 
 Pokud budete chtít nakonfigurovat ruční úkol v editoru workflowu, klikněte pravým tlačítkem myši na úkol a kliknutím na tlačítko **Vlastnosti** otevřete stránku **Vlastnosti**. Následně nakonfigurujte vlastnosti dílčího workflowu pomocí ručního úkolu.
 

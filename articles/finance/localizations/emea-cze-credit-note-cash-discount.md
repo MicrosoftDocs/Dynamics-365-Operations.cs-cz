@@ -1,6 +1,6 @@
 ---
 title: Dobropis u hotovostní slevy
-description: Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
+description: Tento článek obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
 author: ShylaThompson
 ms.date: 04/25/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7170fa75cf80b657cc7dea83e6a38f4db5ab4c1ef61c64eb3b4d3baf681d5ede
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0f806e84cd038f7a9755cc12d71d7050378a8e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898001"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
+Tento článek obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
 
 Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům. Tyto dobropisy musí obsahovat následující informace:
 

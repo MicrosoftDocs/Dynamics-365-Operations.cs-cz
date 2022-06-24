@@ -1,6 +1,6 @@
 ---
 title: Konvence odepisování dlouhodobého majetku
-description: Toto téma popisuje konvence odpisů pro dlouhodobý majetek.
+description: Tento článek popisuje konvence odpisů pro dlouhodobý majetek.
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e151d20fbfb9aa8fca9afc5be4f112b3de13cc7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 6d791461a344611437e77514e47dd5dd9b7ddb10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858384"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konvence odepisování dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje konvence odpisů pro dlouhodobý majetek. Konvence odpisů se používají k určení, kdy a jak se vypočítá odpisu pro rok pořízení dlouhodobého majetku a v roce, kdy došlo k vyřazení dlouhodobého majetku.
+Tento článek popisuje konvence odpisů pro dlouhodobý majetek. Konvence odpisů se používají k určení, kdy a jak se vypočítá odpisu pro rok pořízení dlouhodobého majetku a v roce, kdy došlo k vyřazení dlouhodobého majetku.
 
 Konvence odepisování lze přiřadit nastavení knihy skupiny dlouhodobého majetku. Chcete-li zobrazit nebo přiřadit způsob odpisu, v oblasti nastavení dlouhodobého majetku, vyberte skupinu **Dlouhodobý majetek**. Zvolte tlačítko **Knihy**. V tomto případě se konvence odepisování, které jsou přiřazeny, používají jako výchozí hodnoty při vytváření knih dlouhodobého majetku. Lze také nastavit konvence odpisu v knize jednotlivou položku dlouhodobého majetku. To provedete volbou **Knihy** v oblasti nastavení dlouhodobého majetku a volbou tlačítka **Skupiny dlouhodobého majetku**.
 

@@ -1,6 +1,6 @@
 ---
-title: Používání sjednoceného produktu
-description: Toto téma popisuje integraci dat produktů mezi finančními a provozními aplikacemi a Dataverse.
+title: Sjednocené prostředí produktu
+description: Tento článek popisuje integraci dat produktů mezi finančními a provozními aplikacemi a Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884991"
 ---
 # <a name="unified-product-experience"></a>Používání sjednoceného produktu
 
@@ -126,7 +126,7 @@ Finanční a provozní aplikace | Aplikace Customer Engagement |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Výchozí nastavení objednávky a výchozí nastavení objednávky specifické pro produkt
 
-Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Tyto informace budou k dispozici v Dataverse pomocí výchozího nastavení objednávky a výchozí entity nastavení objednávky specifické pro produkt. Další informace o funkci naleznete v tématu [Výchozí nastavení objednávky](../../../../supply-chain/production-control/default-order-settings.md).
+Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Tyto informace budou k dispozici v Dataverse pomocí výchozího nastavení objednávky a výchozí entity nastavení objednávky specifické pro produkt. Další informace o funkci naleznete v článku [Výchozí nastavení objednávky](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finanční a provozní aplikace | Aplikace Customer Engagement |
 ---|---

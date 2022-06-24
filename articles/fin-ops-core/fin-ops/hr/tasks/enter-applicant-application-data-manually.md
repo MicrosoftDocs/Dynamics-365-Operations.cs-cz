@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735311"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909242"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ruční zadávání dat o přihlášce a uchazeči
 
 > [!NOTE]
-> Funkce náboru v tomto tématu se bude označovat jako náborové projekty a zaměří se na žadatele, žádosti a náborové projekty.  
+> Funkce náboru v tomto článku se bude označovat jako náborové projekty a zaměří se na žadatele, žádosti a náborové projekty.  
 
 
 Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich přihláškách. Můžete zadat a spravovat osobní údaje, data a časy pohovoru, odkazy, kompetence a požadavky na ubytování pro uchazeče. Také můžete aktualizovat stav uchazečových žádostí o zaměstnání a vytváření dopisů nebo e-mailových zpráv ke komunikaci s uchazeči. Při vytvoření záznamu žadatele se vytvoří osobní záznam tohoto uchazeče v globálním adresáři. K vytvoření této procedury jsou použita ukázková data společnosti **USMF**.

@@ -1,6 +1,6 @@
 ---
-title: Obsah fakturace předplatného Power BI
-description: Toto téma popisuje, co je součástí balíčku obsahu fakturace předplatného v Microsoft Power BI.
+title: Obsah Power BI fakturace předplatného
+description: Tento článek popisuje, co je součástí balíčku obsahu fakturace předplatného v Microsoft Power BI.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-04-13
-ms.openlocfilehash: fad96bdaf60e7772e9ea1ff937435b0274303505
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6cee01eb5b8bb8296b6e7f638b565c999ccc023e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849953"
 ---
-# <a name="subscription-billing-power-bi-content"></a>Obsah fakturace předplatného Power BI
+# <a name="subscription-billing-power-bi-content"></a>Obsah Power BI fakturace předplatného
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí balíčku obsahu fakturace předplatného v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu. 
+Tento článek popisuje, co je součástí balíčku obsahu fakturace předplatného v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu. 
 
 ## <a name="overview"></a>Přehled
 

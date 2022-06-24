@@ -1,6 +1,6 @@
 ---
 title: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích
-description: Toto téma popisuje způsob nastavení informací o fakturách odběratele a objednávkách prodejní vratky ve východoevropských zemích.
+description: Tento článek popisuje způsob nastavení informací o fakturách odběratele a objednávkách prodejní vratky ve východoevropských zemích.
 author: epopov
 ms.date: 10/01/2018
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 38d1708f6b113c4915b208941e1ebab70b07323f7523d742c54f3acb32b40569
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13fcdf2f939e225aa11776f4f6050490851ed7ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852763"
 ---
 # <a name="customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích
 
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje způsob nastavení informací o fakturách odběratele a objednávkách prodejní vratky ve východoevropských zemích.
+Tento článek popisuje způsob nastavení informací o fakturách odběratele a objednávkách prodejní vratky ve východoevropských zemích.
 
 Můžete nastavit následující informace pro faktury odběratelů a objednávky prodejní vratky, které jsou generovány v Retail POS.
 

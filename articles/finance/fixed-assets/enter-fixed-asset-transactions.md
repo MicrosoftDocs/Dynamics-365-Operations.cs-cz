@@ -1,6 +1,6 @@
 ---
 title: Možnosti transakce dlouhodobého majetku
-description: Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
+description: Tento článek popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 507e263e7267fe96cdf9ed78a84924839c2de982
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 402679b6f1003f14f7e277a326784edaaea719d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883351"
 ---
 # <a name="fixed-asset-transaction-options"></a>Možnosti transakce dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
+Tento článek popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
 
 Dlouhodobý majetek lze nastavit pro účely integrace se závazky, pohledávkami, zprostředkováním a zajištěním zdrojů a hlavní knihou. Položky lze rovněž převádět ve správě zásob na dlouhodobý majetek pro vnitřní použití.
 

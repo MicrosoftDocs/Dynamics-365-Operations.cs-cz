@@ -1,6 +1,6 @@
 ---
 title: Řešení PowerBI.com pro finanční výkon
-description: Toto téma popisuje řešení PowerBI.com pro finanční výkonnost.
+description: Tento článek popisuje řešení PowerBI.com pro finanční výkonnost.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910408"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767796"
 > [!NOTE]
 > Toto řešení PowerBI.com bylo vyřazeno jako zdokumentované v [odebraných nebo nepoužívaných funkcích pro modul Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Toto téma popisuje řešení PowerBI.com pro **finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení řešení.
+Tento článek popisuje řešení PowerBI.com pro **finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení řešení.
 
 ## <a name="main-account-setup"></a>Nastavení hlavního účtu
 Protože pro organizace je žádoucí, aby se závazky a částky výnosů zobrazovaly ve výkazech jako kladné částky, je důležité správně nastavit hlavní účty. Aby se tyto hlavní účty zobrazovaly jako kladné částky, musí být typ hlavního účtu nastaven na **Pasiva** nebo **Výnos**. Při použití těchto typů účtů se při vykazování pomocí nástroje Power BI změní znaménka a částky se zobrazí jako kladné.

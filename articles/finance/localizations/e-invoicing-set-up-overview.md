@@ -1,6 +1,6 @@
 ---
 title: Nastavení elektronické fakturace
-description: Toto téma poskytuje přehled procesu nastavení a konfigurace elektronické fakturace.
+description: Tento článek poskytuje přehled procesu nastavení a konfigurace elektronické fakturace.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883112"
 ---
 # <a name="electronic-invoicing-setup"></a>Nastavení elektronické fakturace
 
 [!include [banner](../includes/banner.md)]
 
-Téma poskytuje přehled procesu nastavení a konfigurace elektronické fakturace. Kroky nastavení musíte provést v pořadí, které je zde specifikováno. Pokud je krok povinný, ale vy jej přeskočíte, funkce nebude fungovat správně a během následujících kroků nebo při použití funkce dojde k více selháním. 
+Tento článek poskytuje přehled procesu nastavení a konfigurace elektronické fakturace. Kroky nastavení musíte provést v pořadí, které je zde specifikováno. Pokud je krok povinný, ale vy jej přeskočíte, funkce nebude fungovat správně a během následujících kroků nebo při použití funkce dojde k více selháním. 
 
 Než začnete, ujistěte se, že jsou všechny hlavní součásti správně nastaveny, že jste se zaregistrovali ke službě Regulatory Configuration Service (RCS) a máte instanci RCS a že je nainstalován doplněk pro elektronickou fakturaci pro vaše prostředí Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management. Více informací viz [Registrace a instalace elektronické fakturace](e-invoicing-install-add-in-microservices-lcs.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Obsah učení v Power BI
-description: Toto téma popisuje obsah učení v Power BI.
+description: Tento článek popisuje obsah učení v Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6236868dca26be8cf54ad3cf73e846f2e689af8635e212c493b65a5d1aaa62ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 05146eef92fa0ef973df832aa3431ec32ea0c297
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847304"
 ---
 # <a name="learning-power-bi-content"></a>Obsah učení v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **učení** v Microsoft Power BI.
+Tento článek popisuje obsah **učení** v Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 

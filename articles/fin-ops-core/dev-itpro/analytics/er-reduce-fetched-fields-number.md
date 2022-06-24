@@ -1,6 +1,6 @@
 ---
 title: Zlepšete výkon řešení ER snížením počtu polí tabulky, která jsou načítána za běhu
-description: Toto téma pojednává o tom, jak zlepšit výkon řešení ER snížením počtu polí tabulky, která jsou načítána za běhu.
+description: Tento článek pojednává o tom, jak zlepšit výkon řešení ER snížením počtu polí tabulky, která jsou načítána za běhu.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847444"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Zlepšete výkon řešení ER snížením počtu polí tabulky, která jsou načítána za běhu
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811951"
 
 [Formáty](er-overview-components.md#format-components-for-outgoing-electronic-documents) v modulu [Elektronické výkaznictví](general-electronic-reporting.md) (ER) můžete navrhovat pro generování odchozích dokumentů v různých formátech. Při generování dokumentu formát ER volá zdroje dat, které byly nakonfigurovány v odpovídajícím [mapování modelu](er-overview-components.md#model-mapping-component) ER. Aby bylo možné nakonfigurovat přístup k tabulkám, dotazům nebo entitám aplikace pro načtení záznamu, můžete použít zdroje dat ER typu *záznamy tabulky*. Ve výchozím nastavení zdroj dat typu *Záznamy tabulky* načte hodnoty všech polí v požadovaných záznamech. Tento typ zdroje dat však můžete nakonfigurovat tak, aby načítal pouze hodnoty polí, které jsou vyžadovány pro spouštění formátu ER. Tato konfigurace pomáhá snížit spotřebu paměti aplikačního serveru, který provádí načítání dat a další ukládání záznamů do mezipaměti.
 
-Chcete-li se dozvědět více o tom, jak omezit seznam načtených polí zdrojů dat typu *Záznamy tabulky*, doplňte příklad v tomto tématu.
+Chcete-li se dozvědět více o tom, jak omezit seznam načtených polí zdrojů dat typu *Záznamy tabulky*, doplňte příklad v tomto článku.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Příklad: Snižte počet polí tabulky, která se načítají za běhu
 
@@ -49,7 +49,7 @@ Postupujte podle kroků uvedených v části [Konfigurace architektury ER](er-qu
 
 ### <a name="import-the-sample-er-configurations"></a>Import ukázkových konfigurací elektronického výkaznictví
 
-Pokud jste ještě nedokončili příklad v tématu [Navrhněte nové řešení ER pro tisk vlastní sestavy](er-quick-start1-new-solution.md), stáhněte a lokálně uložte soubory XML pro následující konfigurace poskytovaného řešení ER.
+Pokud jste ještě nedokončili příklad v článku [Navrhněte nové řešení ER pro tisk vlastní sestavy](er-quick-start1-new-solution.md), stáhněte a lokálně uložte soubory XML pro následující konfigurace poskytovaného řešení ER.
 
 | Popis obsahu            | Název souboru |
 |--------------------------------|-----------|

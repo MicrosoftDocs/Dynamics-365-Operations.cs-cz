@@ -1,6 +1,6 @@
 ---
 title: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
-description: Toto téma obsahuje informace o tom, jak přidávat nová pole do šablony obchodního dokumentu v aplikaci Microsoft Excel pomocí funkce správy obchodních dokumentů.
+description: Tento článek obsahuje informace o tom, jak přidávat nová pole do šablony obchodního dokumentu v aplikaci Microsoft Excel pomocí funkce správy obchodních dokumentů.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767235"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869395"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767235"
 
 Můžete přidat nová pole do šablony, která se používá ke generování obchodních dokumentů ve formátu Microsoft Excel. Tato pole lze přidat jako zástupné symboly, které se používají k vyplňování vygenerovaných dokumentů s požadovanými informacemi z aplikace. U každého přidávaného pole můžete také určit vazbu na zdroje dat a určit, která data aplikace budou zadána do pole v případě, že šablona slouží ke generování obchodních dokumentů.
 
-Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu. Tento příklad ukazuje, jak aktualizovat šablonu tak, aby vyplnila pole ve vygenerovaných formulářích volných faktur.
+Chcete-li získat další informace o této funkci, vyplňte příklad tomto článku. Tento příklad ukazuje, jak aktualizovat šablonu tak, aby vyplnila pole ve vygenerovaných formulářích volných faktur.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Konfigurace správy obchodních dokumentů k úpravě šablon
 
 Vzhledem k tomu, že je Správa obchodních dokumentů (BDM) sestavena na [přehledu elektronického výkaznictví](general-electronic-reporting.md), musíte před zahájením práce s BDM nakonfigurovat požadované parametry ER a BDM.
 
 1.  Přihlaste se k instanci aplikace Microsoft Dynamics 365 Finance jako správce systému.
-2.  Proveďte následující kroky v příkladu v tématu [Přehled správy obchodních dokladů](er-business-document-management.md):
+2.  Proveďte následující kroky v příkladu v článku [Přehled správy obchodních dokladů](er-business-document-management.md):
 
     1.  Proveďte konfiguraci parametrů ER.
     2.  Zapněte BDM.
@@ -148,7 +148,7 @@ V pracovním prostoru **Správa obchodních dokumentů** se na kartě **šablona
 2.  Vyberte fakturu **FTI-00000002** a poté vyberte možnost **Správa tisku**.
 3.  V levém podokně rozbalte položky **Modul – pohledávky \> Dokumenty \> Volné faktury**.
 4.  V části **Volná textová faktura** vyberte úroveň **Původní dokument** k určení rozsahu faktur pro zpracování.
-5.  V pravém podokně v poli **Formát sestavy** vyberte pro určenou úroveň dokumentu **volnou textovou fakturu (Excel) Contoso**.
+5.  V pravém podokně v poli **Formát sestavy** vyberte pro určenou úroveň dokumentu **volnou textovou fakturu (Excel)**.
 
     ![Vybraná volná textová šablona (Excel) Contoso.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 

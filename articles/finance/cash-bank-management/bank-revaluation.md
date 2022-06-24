@@ -1,6 +1,6 @@
 ---
 title: Přecenění cizí měny banky
-description: Toto téma obsahuje přehled procesu bankovního přecenění cizí měny. Obsahuje informace o nastavení, spuštění procesu, výpočtu proces a stornování transakcí přecenění.
+description: Tento článek obsahuje přehled procesu bankovního přecenění cizí měny. Obsahuje informace o nastavení, spuštění procesu, výpočtu proces a stornování transakcí přecenění.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863094"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Přecenění cizí měny banky
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma obsahuje přehled procesu bankovního přecenění cizí měny. Popisuje, jak nastavit a spustit proces a obsahuje informace o výpočtu pro proces. Vysvětluje také, jak stornovat transakce přecenění, pokud je to nutné.
+Tento článek obsahuje přehled procesu bankovního přecenění cizí měny. Popisuje, jak nastavit a spustit proces a obsahuje informace o výpočtu pro proces. Vysvětluje také, jak stornovat transakce přecenění, pokud je to nutné.
 
 V rámci uzávěrky období vyžadují účetní konvence přecenění zůstatků účtů v cizích měnách pomocí různých typů směnných kurzů (aktuální, historický, průměrný atd.). Funkce přecenění cizí měny bankovního slouží k přecenění jednoho nebo více bankovních účtů. Tato funkce je také globální funkce. Proto můžete z jediné stránky přecenit banky napříč všemi právnickými osobami, k nimž máte přístup.
 

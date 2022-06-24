@@ -1,42 +1,42 @@
 ---
 title: Mobilní schvalování faktur
-description: Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití.
+description: Tento článek poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737348"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946267"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
 [!include [banner](../includes/banner.md)]
 
-Mobilní funkce umožňují obchodnímu uživateli navrhovat mobilní rozhraní. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
+Mobilní funkce umožňují obchodnímu uživateli navrhovat mobilní rozhraní. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Tento článek poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Tento článek by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
 
 ## <a name="prerequisites"></a>Požadavky
 
-| Předpoklad                                                                                            | popis                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Předpoklad                                                                                            | Popis                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Prostředí, které má verzi 1611 a aktualizaci Platform Update 3 (listopad 2016)                   |
 | Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace Platform Update 3 (aktualizace z listopadu 2016). |
 | Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci Platform Update 3 (aktualizace z listopadu 2016).           |
 | Nainstalujte opravu hotfix KB 3208224.                                                                              | Kód aplikace pro mobilní aplikaci schvalování faktur dodavatele je zahrnut ve verzi 7.0.1 (květen 2016).                          |
-| Zařízení se systémem Android nebo iOS nebo se systémem Windows, které má nainstalovanou mobilní aplikaci Finance and Operations. | Vyhledejte aplikaci v příslušném obchodě s aplikacemi.                                                                                                                     |
+| Zařízení se systémem Android nebo iOS nebo se systémem Windows, které má nainstalovanou mobilní aplikaci Finance and Operations. | Vyhledejte aplikaci v příslušném obchodě s aplikacemi.                            |
 
 ## <a name="introduction"></a>Úvod
 Mobilní schválení faktur dodavatele vyžadují tři opravy hotfix, které jsou uvedeny v části "Předpoklady". Tyto opravy hotfix neposkytují pracovní prostor pro schválení faktury. Chcete-li zjistit, co je pracovní prostor v souvislosti s mobilními zařízeními, přečtěte si příručku pro mobilní zařízení, která je uvedena v části "Předpoklady". Musí být navržen pracovní prostor schválení faktury. 
@@ -51,11 +51,11 @@ Každá organizace ladí a definuje svůj svůj obchodní proces pro faktury dod
     -   Mají faktury také rozúčtování v hlavičce faktury? Pokud ano, budou tato rozúčtování k dispozici v zařízení?
 
     > [!NOTE]
-    > Toto téma nevysvětluje, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
+    > Tento článek nevysvětluje, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
 
 -   Budou uživatelé chtít vidět přílohy pro fakturu na zařízení?
 
-Návrh mobilního prostředí pro schválení faktur se liší v závislosti na odpovědích na tyto otázky. Cílem je optimalizovat uživatelské prostředí pro obchodní proces na mobilních zařízeních v organizaci. Ve zbývající části tohoto tématu se podíváme na dvě varianty scénáře, které jsou založeny na různých odpovědích na předchozí dotazy. 
+Návrh mobilního prostředí pro schválení faktur se liší v závislosti na odpovědích na tyto otázky. Cílem je optimalizovat uživatelské prostředí pro obchodní proces na mobilních zařízeních v organizaci. Ve zbývající části tohoto článku se podíváme na dvě varianty scénáře, které jsou založeny na různých odpovědích na předchozí dotazy. 
 
 Platí zásada, abyste při práci s návrhářem mobilních aplikací nezapomněli publikovat změny, aby se zabránilo ztrátě aktualizací.
 

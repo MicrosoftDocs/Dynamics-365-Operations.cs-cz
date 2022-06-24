@@ -1,6 +1,6 @@
 ---
 title: Návrh formátu ER pro generování zprávy ve formátu Excel s vloženými obrázky v záhlaví nebo zápatí stránky
-description: Toto téma vysvětluje, jak používat elektronické výkaznictví (ER) ke generování obchodních dokumentů, které mají obrázky a tvary vložené do záhlaví nebo zápatí stránky.
+description: Tento článek vysvětluje, jak používat elektronické výkaznictví (ER) ke generování obchodních dokumentů, které mají obrázky a tvary vložené do záhlaví nebo zápatí stránky.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323768"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854836"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Návrh formátu ER pro generování zprávy ve formátu Excel s vloženými obrázky v záhlaví nebo zápatí stránky
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak může uživatel v roli administrátora systému nebo v role funkčního konzultanta elektronického výkaznictví provádět tyto úkoly:
+Tento článek vysvětluje, jak může uživatel v roli administrátora systému nebo v role funkčního konzultanta elektronického výkaznictví provádět tyto úkoly:
 
 - Konfigurace parametrů pro rámec [elektronického výkaznictví (ER)](general-electronic-reporting.md).
 - Importujte [konfigurace](general-electronic-reporting.md#Configuration) ER, které jsou [poskytnuty](general-electronic-reporting.md#Provider) společností Microsoft a používají se ke generování [faktur s volným textem](../../../finance/accounts-receivable/create-free-text-invoice-new.md) na základě [šablony](er-fillable-excel.md#excel-file-component) ve formátu Microsoft Excel.
 - Vytvoření [vlastní (odvozené)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) verze konfigurace standardního formátu ER od společnosti Microsoft.
 - Upravte konfiguraci vlastního formátu ER tak, aby generovala sestavu faktury s volným textem, která má v zápatí obrázek loga společnosti.
 
-Postupy v tomto tématu lze provést ve společnosti **USMF**. Není nutné žádné kódování. Před přihlášením je také nutné stáhnout a uložit následující soubor.
+Postupy v tomto článku lze provést ve společnosti **USMF**. Není nutné žádné kódování. Před přihlášením je také nutné stáhnout a uložit následující soubor.
 
 | popis        | Název souboru |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ Další informace o poskytovatelích konfigurací ER naleznete v tématu [Vytvo
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Import standardních konfigurací ER
 
-Chcete-li přidat standardní konfigurace ER do aktuální instance systému Dynamics 365 Finance, musíte je importovat z [úložiště](general-electronic-reporting.md#Repository) ER, jež je pro tuto instanci nakonfigurováno.
+Chcete-li přidat standardní konfigurace ER do aktuální instance Dynamics 365 Finance, musíte je importovat z [úložiště](general-electronic-reporting.md#Repository) ER, jež je pro tuto instanci nakonfigurováno.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Chcete-li zobrazit seznam úložišť pro poskytovatele **Microsoft**, klikněte na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurací** na dlaždici **Microsoft** a poté vyberte možnost **Úložiště**.

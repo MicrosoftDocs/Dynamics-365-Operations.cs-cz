@@ -1,6 +1,6 @@
 ---
 title: Výpočet TDS u plateb a vlastních směnek
-description: Toto téma poskytuje referenční informace o různých platebních transakcích, ze kterých se počítá daň odečtená u zdroje (TDS).
+description: Tento článek poskytuje referenční informace o různých platebních transakcích, ze kterých se počítá daň odečtená u zdroje (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f38a8c4b0416abb10bfdaf95c3379e964e9a41e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: f5e9447924a17b96b7a4a5cdd1ef1547145d6ea1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906311"
 ---
 # <a name="tds-calculation-on-payments-and-promissory-notes"></a>Výpočet TDS u plateb a vlastních směnek
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje referenční informace o různých platebních transakcích, ze kterých se počítá daň odečtená u zdroje (TDS).
+Tento článek poskytuje referenční informace o různých platebních transakcích, ze kterých se počítá daň odečtená u zdroje (TDS).
 
 | Sériové číslo | Typ transakce | Částka transakce | Název stránky a cesta | Typ účtu a typ protiúčtu |
 |---------------|------------------|--------------------|--------------------|--------------------------------------|

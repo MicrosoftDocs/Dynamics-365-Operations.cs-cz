@@ -1,6 +1,6 @@
 ---
 title: Přehled – Česká republika
-description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
+description: Tento článek poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
 author: kfend
 ms.date: 01/18/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7900adae2ae0c011d63ffaff6c3154b1cbbbe05a
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: d4ded70a9b72b691ab458ef78dfba92fbaf53b3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901264"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci pro právnické osoby s primární adresou v České republice.
+Tento článek obsahuje informace a odkazy na zdroje, které vám pomohou nastavit aplikaci pro právnické osoby s primární adresou v České republice.
 
 ## <a name="fixed-assets"></a>Dlouhodobý majetek
 Následující témata poskytují informace týkající se dlouhodobého majetku v České republice:

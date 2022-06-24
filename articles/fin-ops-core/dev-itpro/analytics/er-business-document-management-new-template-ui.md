@@ -1,6 +1,6 @@
 ---
 title: Uživatelské rozhraní ve stylu Microsoft Office v modulu Správa obchodních dokumentů (obsahuje video)
-description: Toto téma obsahuje informace o tom, jak používat nové uživatelské rozhraní ve funkci správy obchodních dokumentů v rozhraní elektronického výkaznictví (ER).
+description: Tento článek obsahuje informace o tom, jak používat nové uživatelské rozhraní ve funkci správy obchodních dokumentů v rozhraní elektronického výkaznictví (ER).
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892218"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Uživatelské rozhraní ve stylu Microsoft Office v modulu Správa obchodních dokumentů
 
@@ -32,7 +32,7 @@ Nové uživatelské rozhraní pro dokumenty je jasnější a má pohodlnější 
 
 Můžete použít tlačítko **Nový dokument** v pracovním prostoru **Správa obchodních dokumentů** k vytvoření a úpravě šablony v [konfiguraci](general-electronic-reporting.md#Configuration) formátu [Elektronické vykazování (ER)](general-electronic-reporting.md), kterou poskytuje jiný poskytovatel a nachází se v aktuální instanci Finance, nebo k nahrání nové šablony z excelového sešitu. Navíc ve verzi 10.0.25 a novějších můžete použít tlačítko **Nový dokument** pro vytvoření a úpravu šablony v konfiguraci formátu ER, která je uložena v [Globálním úložišti](general-electronic-reporting.md#Repository).
 
-V příkladech v tomto tématu je aktivním poskytovatelem Contoso a můžete jej použít k vytvoření šablony založené na šabloně poskytované společností Microsoft. Alternativně můžete vytvořit šablonu nahráním vlastní šablony ve formátu Excel.
+V příkladech v tomto článku je aktivním poskytovatelem Contoso a můžete jej použít k vytvoření šablony založené na šabloně poskytované společností Microsoft. Alternativně můžete vytvořit šablonu nahráním vlastní šablony ve formátu Excel.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

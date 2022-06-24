@@ -1,6 +1,6 @@
 ---
 title: Definice účtování
-description: Toto téma obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit. U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování.
+description: Tento článek obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit. U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování.
 author: kweekley
 ms.date: 09/03/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 056300768aa0bc5e1981e1d43de03fabba21a5fa
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f60506e039623ae7a97f6b4e835f751da15ac0c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898142"
 ---
 # <a name="posting-definitions"></a>Definice účtování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit.
+Tento článek obsahuje informace o definicích účtování a o tom, jak je lze definovat a propojit.
 U podporovaných typů zaúčtování a dokumentů můžete ke klasifikaci hlavních účtů a finančních dimenzí účetních položek použít namísto účetních profilů definice účtování. Podporované dokumenty a typy účtování můžete prohlížet na stránce **Definice účtování transakcí**. 
 
 Chcete-li začít definice účtování používat, vyberte možnost **Použít definice účtování** na stránce **Parametry hlavní knihy**. I když použijete definice účtování, stále je nutné definovat účetní profily pro původní položky a nepodporované typy zaúčtování a dokumentů. 

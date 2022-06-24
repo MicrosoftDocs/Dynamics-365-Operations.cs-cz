@@ -1,6 +1,6 @@
 ---
 title: Selhání zaúčtování deníku z důvodu nevyváženosti
-description: Toto téma vysvětluje, proč nemusí být debety a kredity v transakcích s poukázkami vyvážené, takže transakce nelze zaúčtovat. Téma také obsahuje kroky k vyřešení problému.
+description: Tento článek vysvětluje, proč nemusí být debety a kredity v transakcích s poukázkami vyvážené, takže transakce nelze zaúčtovat. Článek také obsahuje kroky k vyřešení problému.
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 07408e608496dcc19562b866449b3b27f5f80edd
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f5afded3d5c42f8dab465b668e4c1fcdaed8c215
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861322"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Selhání zaúčtování deníku z důvodu nevyváženosti
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, proč nemusí být debety a kredity v transakcích s poukázkami vyvážené, takže transakce nelze zaúčtovat. Téma také obsahuje kroky k vyřešení problému.
+Tento článek vysvětluje, proč nemusí být debety a kredity v transakcích s poukázkami vyvážené, takže transakce nelze zaúčtovat. Článek také obsahuje kroky k vyřešení problému.
 
 ## <a name="symptom"></a>Příznak
 

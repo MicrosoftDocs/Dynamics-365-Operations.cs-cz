@@ -1,6 +1,6 @@
 ---
 title: Úprava buněk definice řádku
-description: Toto téma popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
+description: Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 author: ShylaThompson
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b06c59e3ec35d0eea7fc4b81af540e0bcca144fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905105"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
+Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Určení kódu řádku v definici řádku
 

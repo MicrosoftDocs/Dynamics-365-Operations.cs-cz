@@ -1,6 +1,6 @@
 ---
 title: Správa několika odvozených mapování pro jeden kořen modelu
-description: Toto téma vysvětluje, jak spravovat několik odvozených mapování, která byla nakonfigurována pro jeden kořen modelu.
+description: Tento článek vysvětluje, jak spravovat několik odvozených mapování, která byla nakonfigurována pro jeden kořen modelu.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892472"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Správa několika odvozených mapování pro jeden kořen modelu
 
@@ -32,9 +32,9 @@ Součásti mapování modelu ER mohou být umístěny v datovém modelu ER [konf
 
 Mnoho poskytovatelů konfigurace může nabídnout konfigurace mapování modelu ER pro stejný datový model ER. Tyto konfigurace mapování modelů mohou obsahovat komponenty mapování pro různé definice kořenů. Můžete použít mapování modelu pro jednu kořenovou definici, kterou nabízí jeden [poskytovatel](general-electronic-reporting.md#Provider) a použít mapování modelu pro jinou definici kořene, kterou nabízí jiný poskytovatel.
 
-Postupy v tomto tématu vysvětlují, jak spravovat více konfigurací mapování modelu ER datového modelu ER, pokud obsahují různé komponenty mapování modelu nakonfigurované pro stejnou definici kořene. 
+Postupy v tomto článku vysvětlují, jak spravovat více konfigurací mapování modelu ER datového modelu ER, pokud obsahují různé komponenty mapování modelu nakonfigurované pro stejnou definici kořene. 
 
-Abyste mohli dokončit postupy v tomto tématu, musíte mít přiřazenou roli správce systému nebo vývojáře elektronického vykazování.
+Abyste mohli dokončit postupy v tomto článku, musíte mít přiřazenou roli správce systému nebo vývojáře elektronického vykazování.
 
 Všechny následující procedury lze provést ve společnosti USMF. Není nutné žádné kódování.
 

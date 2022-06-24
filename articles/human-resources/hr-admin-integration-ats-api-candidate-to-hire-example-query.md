@@ -1,6 +1,6 @@
 ---
 title: Příklad dotazu pro entitu Kandidát k přijetí
-description: Toto téma poskytuje ukázkový dotaz pro entitu Kandidát k přijetí v Dynamics 365 Human Resources.
+description: Tento článek poskytuje ukázkový dotaz pro entitu Kandidát k přijetí v Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edb8687b9dae0afc1bc15a3a5c197e14e7e8cf1e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2dd744665d4f0b6c64f4ee45a01c237081018514
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069214"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848335"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Příklad dotazu pro entitu Kandidát k přijetí
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069214"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma poskytuje ukázkový dotaz pro entitu Kandidát k přijetí v Dynamics 365 Human Resources.
+Tento článek poskytuje ukázkový dotaz pro entitu Kandidát k přijetí v Dynamics 365 Human Resources.
 
-Toto téma poskytuje příklad, který ukazuje, jak můžete použít *hluboké vložení* k vytvoření všech podrobností záznamu nového kandidáta v jediné operaci rozhraní API. Další informace o hlubokém vložení najdete v části [Vytvoření záznamů související entity v jedné operaci](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Tento článek poskytuje příklad, který ukazuje, jak můžete použít *hluboké vložení* k vytvoření všech podrobností záznamu nového kandidáta v jediné operaci rozhraní API. Další informace o hlubokém vložení najdete v části [Vytvoření záznamů související entity v jedné operaci](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Entita **mshr_hcmcandidatetohireentity** je jedinečná svým vztahem k entitě **mshr_dirpersonentity**. Mnoho vlastností entity **mshr_hcmcandidatetohireentity** (například **mshr_firstname**, **mshr_lastname** a **mshr_birthdate**) je odvozeno ze záznamu **mshr_dirpersonentity**. Pokud zveřejníte záznam nového kandidáta v entitě **mshr_hcmcandidatetohireentity** bez použití hlubokého vložení, můžete definovat hodnoty těchto vlastností přímo v záznamu **mshr_hcmcandidatetohireentity**. Přidružený záznam **mshr_dirpersonentity** je vytvořen implicitně s definovanými hodnotami vlastností. Poté můžete vytvořit jakékoli další záznamy souvisejících entit (například dovednosti nebo vzdělání) jako samostatná volání rozhraní API.
 

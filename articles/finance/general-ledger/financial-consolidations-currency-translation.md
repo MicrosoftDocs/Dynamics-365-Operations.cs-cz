@@ -1,6 +1,6 @@
 ---
 title: Přehled finančních konsolidací a převodu měny
-description: Toto téma popisuje finanční konsolidace a převod měny v hlavní knize.
+description: Tento článek popisuje finanční konsolidace a převod měny v hlavní knize.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846850"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vás provede přístupem, který používají Microsoft Dynamics 365 Finance a finanční výkaznictví ke konsolidacím. Popisuje scénáře, které zahrnují výkaznictví několika společností, agregace, eliminaci a minoritní podíl. Také vysvětluje, jak postupovat v určitých situacích, jako jsou například scénáře, kdy mají právnické osoby jiná fiskálního období nebo jiné účtové osnovy.
+Tento článek vás provede přístupem, který používají Microsoft Dynamics 365 Finance a finanční výkaznictví ke konsolidacím. Popisuje scénáře, které zahrnují výkaznictví několika společností, agregace, eliminaci a minoritní podíl. Také vysvětluje, jak postupovat v určitých situacích, jako jsou například scénáře, kdy mají právnické osoby jiná fiskálního období nebo jiné účtové osnovy.
 
-Toto téma bylo napsáno pro uživatele a funkční konzultanty a předpokládá, že čtenáři mají obecné znalosti aplikace Finance a finančního výkaznictví. Základní nastavení není zmíněno.
+Tento článek bylo napsáno pro uživatele a funkční konzultanty a předpokládá, že čtenáři mají obecné znalosti aplikace Finance a finančního výkaznictví. Základní nastavení není zmíněno.
 
 > [!NOTE]
-> Termín *právnická osoba* se používá v aplikaci Finance a termín *společnost* se používá ve finančním výkaznictví. V tomto tématu se používají oba termíny. Pro účely tohoto tématu je však jejich význam stejný.
+> Termín *právnická osoba* se používá v aplikaci Finance a termín *společnost* se používá ve finančním výkaznictví. V tomto článku se používají oba termíny. Pro účely tohoto článku je však jejich význam stejný.
 
 ## <a name="audience"></a>Cílová skupina
-Toto téma je určeno pro uživatele financí a účetnictví a aplikační konzultanty, kteří chtějí použít Finance and Operations a finanční výkaznictví pro konsolidaci více společností a dat více měn.
+Tento článek je určen pro uživatele financí a účetnictví a aplikační konzultanty, kteří chtějí použít Finance and Operations a finanční výkaznictví pro konsolidaci více společností a dat více měn.
 
 ## <a name="approach"></a>Přístup
 Finance používá ke zpracování konsolidace samostatnou právnickou osobu. Umožňuje konsolidace s jednou instancí, ale umožňuje přenést data z jiných zdrojů. Proces konsolidace musí být spuštěn pokaždé, když jsou ve zdrojových právnických osobách provedeny změny.

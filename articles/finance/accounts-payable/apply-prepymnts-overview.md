@@ -1,6 +1,6 @@
 ---
 title: Automatické použití záloh na faktury dodavatele
-description: Toto téma popisuje možnost automatického použití záloh na faktury dodavatele.
+description: Tento článek popisuje možnost automatického použití záloh na faktury dodavatele.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900064"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatické použití na faktury dodavatele
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje možnost automatického použití záloh na faktury dodavatele. Pro objednávku lze v rámci kupní smlouvy vytvořit platbu předem. Po obdržení faktury dodavatele lze zálohu použít k vyrovnání závazků z faktury dodavatele. Nová funkce umožňuje systému automaticky používat čísla nákupních objednávek na faktuře dodavatele k vyhledání odpovídajících záloh při importu faktury dodavatele.
+Tento článek popisuje možnost automatického použití záloh na faktury dodavatele. Pro objednávku lze v rámci kupní smlouvy vytvořit platbu předem. Po obdržení faktury dodavatele lze zálohu použít k vyrovnání závazků z faktury dodavatele. Nová funkce umožňuje systému automaticky používat čísla nákupních objednávek na faktuře dodavatele k vyhledání odpovídajících záloh při importu faktury dodavatele.
 
 Pokud jsou zálohy nalezeny a lze je použít, přidají se k existujícím řádkům faktury řádky pro uplatnění záloh. Během procesu párování faktur nejsou nikdy brány v úvahu řádky záloh.
 

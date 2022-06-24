@@ -1,6 +1,6 @@
 ---
 title: Konfigurace cílů ER závislých na akci
-description: Toto téma vysvětluje, jak konfigurovat cíle závislé na akcích formátu elektronického výkaznictví (ER), který je nakonfigurován pro generování odchozích dokumentů.
+description: Tento článek vysvětluje, jak konfigurovat cíle závislé na akcích formátu elektronického výkaznictví (ER), který je nakonfigurován pro generování odchozích dokumentů.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876827"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323972"
 
 Můžete konfigurovat [cíle](electronic-reporting-destinations.md) pro každou výstupní komponentu (složku nebo soubor) [konfigurace](general-electronic-reporting.md#Configuration) formátu [elektronického výkaznictví (ER)](general-electronic-reporting.md), která se používá pro generování odchozích dokumentů. Uživatelé, kteří používají formát tohoto typu ER a mají příslušná přístupová práva, mohou také změnit nakonfigurované nastavení cíle za běhu.
 
-V Microsoft Dynamics 365 Finance **verze 10.0.17 a novější** lze spustit formát ER pomocí [zajišťování](er-apis-app10-0-17.md) kódu akce, který uživatel provede spuštěním daného formátu ER. Například v modulu **Pohledávky** v nastavení správy tisku můžete vybrat formát ER, který generuje konkrétní obchodní dokument, například fakturu s volným textem. Poté můžete vybrat **Zobrazit** k zobrazení náhledu faktury nebo **Vytisknout** pro odeslání na tiskárnu. Pokud je za běhu předána akce uživatele pro spuštěný formát ER, můžete nakonfigurovat různé cíle ER pro různé akce uživatele. Toto téma vysvětluje, jak konfigurovat cíle ER pro tento typ formátu ER.
+V Microsoft Dynamics 365 Finance **verze 10.0.17 a novější** lze spustit formát ER pomocí [zajišťování](er-apis-app10-0-17.md) kódu akce, který uživatel provede spuštěním daného formátu ER. Například v modulu **Pohledávky** v nastavení správy tisku můžete vybrat formát ER, který generuje konkrétní obchodní dokument, například fakturu s volným textem. Poté můžete vybrat **Zobrazit** k zobrazení náhledu faktury nebo **Vytisknout** pro odeslání na tiskárnu. Pokud je za běhu předána akce uživatele pro spuštěný formát ER, můžete nakonfigurovat různé cíle ER pro různé akce uživatele. Tento článek vysvětluje, jak konfigurovat cíle ER pro tento typ formátu ER.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Zpřístupnění cílů ER závislých na akcích
 
@@ -82,7 +82,7 @@ Následující obrázek ukazuje, jak můžete dosáhnout stejné alternativní k
 
 Při spuštění formátu ER, pokud byly akce uživatelů zřízeny uživateli, kteří mají příslušné [oprávnění](electronic-reporting-destinations.md#security-considerations), chcete-li změnit nakonfigurované nastavení cíle za běhu, zobrazí se dialogové okno s možností změnit nakonfigurované nastavení cíle. Toto dialogové okno je volitelné a jeho vzhled závisí na tom, jak bylo implementováno volání ER rámce pro spuštění formátu ER. Pokud se zobrazí toto dialogové okno, budou cíle ER v něm povoleny podle poskytované akce uživatele.
 
-Následující obrázek ukazuje příklad dialogového okna **Cíle formátu elektronického výkaznictví**, které se zobrazí při [zaúčtování](../../../finance/accounts-receivable/create-free-text-invoice-new.md) volné textové faktury a je spuštěn formát ER **Volná textová faktura (Excel)** ke generování tohoto dokumentu, pokud byla zřízena akce **Tiskárna** a cíle ER byly pro tento formát nakonfigurovány, jak je uvedeno dříve v tomto tématu.
+Následující obrázek ukazuje příklad dialogového okna **Cíle formátu elektronického výkaznictví**, které se zobrazí při [zaúčtování](../../../finance/accounts-receivable/create-free-text-invoice-new.md) volné textové faktury a je spuštěn formát ER **Volná textová faktura (Excel)** ke generování tohoto dokumentu, pokud byla zřízena akce **Tiskárna** a cíle ER byly pro tento formát nakonfigurovány, jak je uvedeno dříve v tomto článku.
 
 ![Dialogové okno, které umožňuje změnit původně nakonfigurované cíle ER pro spuštěný formát ER.](./media/er-destination-action-dependent-02.gif)
 

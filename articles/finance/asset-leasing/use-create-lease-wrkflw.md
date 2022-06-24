@@ -1,6 +1,6 @@
 ---
 title: Použití pracovních postupů schvalování leasingu
-description: Toto téma vysvětluje, jak používat pracovní postupy ke schválení leasingu majetku a jak sledovat stav a historii pracovních postupů.
+description: Tento článek vysvětluje, jak používat pracovní postupy ke schválení leasingu majetku a jak sledovat stav a historii pracovních postupů.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906435"
 ---
 # <a name="use-lease-approval-workflows"></a>Použití pracovních postupů schvalování leasingu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak používat pracovní postupy ke schválení leasingu majetku a jak sledovat stav a historii pracovních postupů. Pracovní postupy pomáhají zajistit konzistenci správy schválení leasingu poskytnutím standardní sady kroků schválení a přiřazením konkrétních uživatelů, kteří schvalují každý krok procesu. Schvalovatel může schválit leasing, odmítnout ho, požádat o jeho změnu nebo ho přiřadit jinému uživateli ke schválení. Workflovy mohou také více zviditelnit proces schvalování tím, že vám umožní sledovat svůj stav a historii. Dále si můžete prohlédnout centralizovaný pracovní seznam se seznamem úkolů a schválení, která jsou přiřazena konkrétním schvalovatelům.
+Tento článek vysvětluje, jak používat pracovní postupy ke schválení leasingu majetku a jak sledovat stav a historii pracovních postupů. Pracovní postupy pomáhají zajistit konzistenci správy schválení leasingu poskytnutím standardní sady kroků schválení a přiřazením konkrétních uživatelů, kteří schvalují každý krok procesu. Schvalovatel může schválit leasing, odmítnout ho, požádat o jeho změnu nebo ho přiřadit jinému uživateli ke schválení. Workflovy mohou také více zviditelnit proces schvalování tím, že vám umožní sledovat svůj stav a historii. Dále si můžete prohlédnout centralizovaný pracovní seznam se seznamem úkolů a schválení, která jsou přiřazena konkrétním schvalovatelům.
 
 Než použijete tento postup, ujistěte se, že byl vytvořen alespoň pracovní postup schválení leasingu. Pokud neexistuje žádný pracovní postup, vytvořte jej. Informace o tom, jak nastavit pracovní postup, najdete v části [Použití pracovních postupů schvalování leasingu](set-up-lease-wrkflw.md).
 

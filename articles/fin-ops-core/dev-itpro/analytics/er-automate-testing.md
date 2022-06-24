@@ -1,6 +1,6 @@
 ---
 title: Automatizace testování s elektronickým výkaznictvím
-description: V tomto tématu je vysvětleno, jak můžete pomocí funkce směrného plánu elektronického výkaznictví (ER) automatizovat testování některých funkcí.
+description: V tomto článku je vysvětleno, jak můžete pomocí funkce směrného plánu elektronického výkaznictví (ER) automatizovat testování některých funkcí.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892762"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatizace testování s elektronickým výkaznictvím
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak můžete pomocí systému elektronického výkaznictví (ER) automatizovat testování některých funkcí. Příklad v tomto tématu ukazuje, jak automatizovat testování zpracování platby dodavatele.
+V tomto článku je vysvětleno, jak můžete pomocí systému elektronického výkaznictví (ER) automatizovat testování některých funkcí. Příklad v tomto článku ukazuje, jak automatizovat testování zpracování platby dodavatele.
 
 Aplikace používá systém ER ke generování platebních souborů a odpovídajících dokumentů během zpracování plateb dodavatele. Systém ER se skládá z datového modelu, mapování modelu a formátovacích součástí, které podporují zpracování plateb pro různé typy plateb a generování dokumentů v různých formátech. Tyto komponenty lze stáhnout ze služby Microsoft Dynamics Lifecycle Services (LCS) a importovat do instance.
 
@@ -54,15 +54,15 @@ Funkční členové skupiny Power Users mohou spustit testy přijetí a integrac
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Před provedením úkolů v tomto tématu je třeba splnit následující předpoklady:
+Před provedením úkolů v tomto článku je třeba splnit následující předpoklady:
 
 - Nasaďte topologii, která podporuje automatizaci testování. Musíte mít přístup do instance této topologie pro roli **Správce systému**. Tato topologie musí obsahovat ukázková data, která budou použita v tomto příkladu. Další informace naleznete v tématu [Nasazení a použití prostředí, které podporuje automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md).
-- Chcete-li automaticky spustit testy přijetí a integrace s uživatelem, je nutné nainstalovat RSAT do používané topologie a odpovídajícím způsobem ji nakonfigurovat. Informace o tom, jak instalovat a konfigurovat RSAT a jak je nakonfigurovat pro práci s aplikacemi Finance and Operations a Azure DevOps získáte v tématu [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Věnujte pozornost předpokladům pro používání nástroje. Následující obrázek znázorňuje příklad nastavení RSAT. Modrý obdélník ohraničuje parametry, které určují přístup do Azure DevOps. Zelený obdélník označuje parametry, které určují přístup k instanci.
+- Chcete-li automaticky spustit testy přijetí a integrace s uživatelem, je nutné nainstalovat RSAT do používané topologie a odpovídajícím způsobem ji nakonfigurovat. Informace o tom, jak instalovat RSAT pro práci s aplikacemi Finance and Operations a Azure DevOps, získáte v tématu [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Věnujte pozornost předpokladům pro používání nástroje. Následující obrázek znázorňuje příklad nastavení RSAT. Modrý obdélník ohraničuje parametry, které určují přístup do Azure DevOps. Zelený obdélník označuje parametry, které určují přístup k instanci.
 
     ![Nastavení RSAT.](media/GER-Configure.png "Snímek obrazovky dialogového okna Nastavení RSAT")
 
 - K uspořádání testovacích případů v sadách za účelem zajištění správného pořadí provádění, aby bylo možné shromáždit protokoly provádění testů pro další hlášení a vyšetřování, musíte mít přístup Azure DevOps z nasazené topologie.
-- Chcete-li dokončit příklad v tomto tématu, doporučujeme vám stáhnout [použití ER pro testy RSAT](https://go.microsoft.com/fwlink/?linkid=874684) Tento soubor zip obsahuje následující průvodce úkoly:
+- Chcete-li dokončit příklad v tomto článku, doporučujeme vám stáhnout [použití ER pro testy RSAT](https://go.microsoft.com/fwlink/?linkid=874684) Tento soubor zip obsahuje následující průvodce úkoly:
 
     | Obsah                                           | Název a umístění souboru |
     |---------------------------------------------------|------------------------|

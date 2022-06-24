@@ -1,6 +1,6 @@
 ---
 title: Snížení odpisu zůstatku po rozdělení
-description: Toto téma popisuje metodu, která se používá v dlouhodobém majetku k výpočtu odpisů po rozdělení majetku pomocí metody snížení zůstatku.
+description: Tento článek popisuje metodu, která se používá v dlouhodobém majetku k výpočtu odpisů po rozdělení majetku pomocí metody snížení zůstatku.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883293"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Snížení odpisu zůstatku po rozdělení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje metodu, která se používá v Dlouhodobém majetku k výpočtu odpisů po rozdělení majetku na jiný pomocí metody snížení zůstatku. Rok odpisování, který je nakonfigurován v knize majetku, je fiskální rok. Další informace viz [Snížení odpisu zůstatku](reduce-balance-depreciation.md) a [Rozdělení dlouhodobého majetku](tasks/split-fixed-asset.md).
+Tento článek popisuje metodu, která se používá v Dlouhodobém majetku k výpočtu odpisů po rozdělení majetku na jiný pomocí metody snížení zůstatku. Rok odpisování, který je nakonfigurován v knize majetku, je fiskální rok. Další informace viz [Snížení odpisu zůstatku](reduce-balance-depreciation.md) a [Rozdělení dlouhodobého majetku](tasks/split-fixed-asset.md).
 
 Pokud rozdělíte dlouhodobý majetek během fiskálního období, které je pozdější než období, kdy byl majetek získán, odpisy sníženého zůstatku budou představovat čistou účetní hodnotu majetku (NBV) za předchozí rok. Bude také účtovat transakce úpravy akvizic a odpisů, které byly generovány z transakce, která rozděluje majetek. Toto chování předpokládá, že majetek byl získán v jednom fiskálním roce a rozdělen v pozdějším fiskálním roce. Částka, která musí být odepsána pro původní majetek po rozdělení, odráží NBV majetku před rozdělením majetku a transakci úpravy akvizice a odpisů, která byla zaúčtována pro rozdělení.
 

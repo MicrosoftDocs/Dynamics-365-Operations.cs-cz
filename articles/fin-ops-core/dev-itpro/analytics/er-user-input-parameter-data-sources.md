@@ -1,6 +1,6 @@
 ---
 title: Pomocí zdrojů dat PARAMETR UŽIVATELSKÝ VSTUP zadejte parametry pro sestavu
-description: Toto téma vysvětluje, jak používat zdroje dat PARAMETR VSTUPU UŽIVATELE ke specifikaci parametrů pro sestavy, které generujete.
+description: Tento článek vysvětluje, jak používat zdroje dat PARAMETR VSTUPU UŽIVATELE ke specifikaci parametrů pro sestavy, které generujete.
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-ms.openlocfilehash: 4e431c9dd59080af17fa073547073037ba233288
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 62b7a8173416a1d36a2985823d186a7a0e6a7e60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872965"
 ---
 # <a name="use-user-input-parameter-data-sources-to-specify-parameters-for-a-report"></a>Pomocí zdrojů dat PARAMETR UŽIVATELSKÝ VSTUP zadejte parametry pro sestavu
 
 [!include[banner](../includes/banner.md)]
 
-Když navrhujete komponenty [Elektronické hlášení](general-electronic-reporting.md) (ER), [mapování modelu](er-overview-components.md#model-mapping-component) a ER [formát](er-overview-components.md#format-component), můžete použít zdroje dat *PARAMETR VSTUPU UŽIVATELE*, abyste získali požadované hodnoty, které lze zadat v polích pro zadávání dat v dialogovém okně za běhu, před zahájením provádění formátu ER. Toto téma popisuje zdroje dat *PARAMETR VSTUPU UŽIVATELE*, které jsou aktuálně podporovány.
+Když navrhujete komponenty [Elektronické hlášení](general-electronic-reporting.md) (ER), [mapování modelu](er-overview-components.md#model-mapping-component) a ER [formát](er-overview-components.md#format-component), můžete použít zdroje dat *PARAMETR VSTUPU UŽIVATELE*, abyste získali požadované hodnoty, které lze zadat v polích pro zadávání dat v dialogovém okně za běhu, před zahájením provádění formátu ER. Tento článek popisuje zdroje dat *PARAMETR VSTUPU UŽIVATELE*, které jsou aktuálně podporovány.
 
 ## <a name="mandatory-properties"></a><a name="mandatory-properties"></a>Povinné vlastnosti
 

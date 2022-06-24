@@ -1,6 +1,6 @@
 ---
 title: Zálohové faktury pro Commerce pro východní Evropu
-description: Toto téma vysvětluje, jak nastavit oznámení zálohách v Commerce pro východní Evropu.
+description: Tento článek vysvětluje, jak nastavit oznámení zálohách v Commerce pro východní Evropu.
 author: epopov
 ms.date: 10/23/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4433dfad61aacb41aba9cf233515460410c7260304e8e3d690b015b193ffe774
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c71f0ddb0a040202a486e63b4812ac4f84ad36aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718687"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883918"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Zálohové faktury pro Commerce pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
 
-Informace v tomto tématu platí pro východoevropskou lokalizaci a souvisí s obchodem.
+Informace v tomto článku platí pro východoevropskou lokalizaci a souvisí s obchodem.
 
 Pro Polsko, Maďarsko a Českou republiku platí, že při přijetí zálohy od odběratele pomocí pokladního místa (POS), musí být záloha zaregistrována pro daňové účely a musí být generován a vytištěn zálohový doklad obsahující částku zálohové faktury. Kromě toho pro Polsko platí, že musí být transakce zálohové faktury zaúčtovány v hlavní knize.
 

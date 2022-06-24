@@ -1,6 +1,6 @@
 ---
 title: Vytvoření kódů poplatků
-description: Toto téma vysvětluje, jak nakonfigurovat kódy poplatků pro závazky i pohledávky.
+description: Tento článek vysvětluje, jak nakonfigurovat kódy poplatků pro závazky i pohledávky.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866076"
 ---
 # <a name="create-charges-codes"></a>Vytvoření kódů poplatků
 
-Toto téma vysvětluje, jak nakonfigurovat kódy poplatků pro závazky i pohledávky. Pokud vaše organizace vyžaduje, aby byly kromě řádkových položek v prodejní objednávce nebo objednávce sledovány i částky prodeje nebo částky nákupu, můžete pro tento účel použít kódy poplatků. Například platíte přepravné a pojištění na nákupní objednávce a tyto částky jsou v nákupní objednávce rozepsány samostatně. V tomto případě můžete určit, zda se tyto částky zaúčtují na nákladové účty nebo zda se přidají k pořizovací ceně položek.
+Tento článek vysvětluje, jak nakonfigurovat kódy poplatků pro závazky i pohledávky. Pokud vaše organizace vyžaduje, aby byly kromě řádkových položek v prodejní objednávce nebo objednávce sledovány i částky prodeje nebo částky nákupu, můžete pro tento účel použít kódy poplatků. Například platíte přepravné a pojištění na nákupní objednávce a tyto částky jsou v nákupní objednávce rozepsány samostatně. V tomto případě můžete určit, zda se tyto částky zaúčtují na nákladové účty nebo zda se přidají k pořizovací ceně položek.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Nastavení kódů nákladů pro pohledávky
 

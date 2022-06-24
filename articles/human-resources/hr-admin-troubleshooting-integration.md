@@ -1,6 +1,6 @@
 ---
 title: Nejčastější dotazy týkající se integrace s aplikací Finance
-description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Human Resources a Finance.
+description: Tento článek vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Human Resources a Finance.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879272"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "8693997"
 
 
 
-Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Human Resources s Dynamics 365 Finance.
+Tento článek uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Human Resources s Dynamics 365 Finance.
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Mohu upravit uživatele aplikace Dynamics 365 Talent v Power Apps?
 

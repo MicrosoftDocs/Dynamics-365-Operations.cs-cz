@@ -1,6 +1,6 @@
 ---
-title: Úvěrové skupiny odběratele
-description: Toto téma obsahuje informace o skupinách odběratelů podle limitu úvěru.
+title: Úvěrové skupiny zákazníka
+description: Tento článek obsahuje informace o skupinách odběratelů podle limitu úvěru.
 author: JodiChristiansen
 ms.date: 04/14/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0815aa41b034d8ba5c9b09f4003ff3df7311190a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 032e92431946f0a41bf2e52c155e422d4ea0b3b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886509"
 ---
 # <a name="customer-credit-groups"></a>Úvěrové skupiny zákazníka
 

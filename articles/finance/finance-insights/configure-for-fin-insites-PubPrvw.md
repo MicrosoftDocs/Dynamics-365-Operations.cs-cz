@@ -1,6 +1,6 @@
 ---
 title: Konfigurace Finance Insights – verze 10.0.20 a pozdější
-description: Toto téma vysvětluje, jak nakonfigurovat svůj systém, aby používal funkce, které jsou k dispozici ve Finance Insights pro verze 10.0.20 a pozdější.
+description: Tento článek vysvětluje, jak nakonfigurovat svůj systém, aby používal funkce, které jsou k dispozici ve Finance Insights pro verze 10.0.20 a pozdější.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868511"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfigurace Finance Insights – verze 10.0.20 a pozdější
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711597"
 
 
 
-Finance Insights kombinují funkčnost Microsoft Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights pro public preview.
+Finance Insights kombinují funkčnost Microsoft Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Tento článek vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights pro public preview.
 
 > [!NOTE]
-> Kroky konfigurace, které jsou popsány v tomto tématu, se vztahují pouze na verzi Finance 10.0.20 a novější. Informace o nastavení Finance Insights ve verzi 10.0.19 a starší najdete v tématu [Konfigurace Finance Insights - do verze 10.0.19](configure-for-fin-insites.md).
+> Kroky konfigurace, které jsou popsány v tomto článku, se vztahují pouze na verzi Finance 10.0.20 a novější. Informace o nastavení Finance Insights ve verzi 10.0.19 a starší najdete v tématu [Konfigurace Finance Insights - do verze 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Nasazení Finance
 

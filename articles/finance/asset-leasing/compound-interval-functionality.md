@@ -1,6 +1,6 @@
 ---
 title: Funkce intervalu úročení
-description: Toto téma poskytuje informace, které vám pomohou vybrat si mezi měsíčními, čtvrtletními, pololetními a ročními intervaly úročení.
+description: Tento článek poskytuje informace, které vám pomohou vybrat si mezi měsíčními, čtvrtletními, pololetními a ročními intervaly úročení.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886401"
 ---
 # <a name="compounding-interval-functionality"></a>Funkce intervalu úročení
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou vybrat si mezi měsíčními, čtvrtletními, pololetními a ročními intervaly úročení. Funkce intervalu úročení se používá k určení počtu období úročení za rok v platebním kalendáři leasingu. Každý ze čtyř příkladů v tomto tématu ukazuje, jak bude platební kalendář leasingu vypadat pro jiný interval.
+Tento článek poskytuje informace, které vám pomohou vybrat si mezi měsíčními, čtvrtletními, pololetními a ročními intervaly úročení. Funkce intervalu úročení se používá k určení počtu období úročení za rok v platebním kalendáři leasingu. Každý ze čtyř příkladů v tomto článku ukazuje, jak bude platební kalendář leasingu vypadat pro jiný interval.
 
 Nemůžete vybrat interval úročení, který je méně častý než frekvence plateb leasingu. Například čtvrtletní interval úročení nelze použít s měsíční frekvencí plateb a roční interval úročení nelze použít s pololetní platební frekvencí. Pokud zkusíte vybrat interval úročení, který je méně častý než frekvence plateb leasingu, zobrazí se chybová zpráva.
 
 > [!NOTE]
-> Ve všech čtyřech příkladech v tomto tématu se interval úročení shoduje s frekvencí plateb.
+> Ve všech čtyřech příkladech v tomto článku se interval úročení shoduje s frekvencí plateb.
 
 ## <a name="examples"></a>Příklad
 

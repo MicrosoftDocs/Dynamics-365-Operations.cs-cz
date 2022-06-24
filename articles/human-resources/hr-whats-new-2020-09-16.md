@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (16. září 2020)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 16. září 2020.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 16. září 2020.
 author: jcart1106
 ms.date: 09/16/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 591a6f3f4aabdb164e4fde5e80259fb6872167d9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca98f4b3a1e702ed5f02bc6e09675a5861ec902a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862823"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (16. září 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8694445"
 
 
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3557. Čísla v závorkách vedle některých funkcí se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
+Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3557. Čísla v závorkách vedle některých funkcí se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
 
 ## <a name="included-in-this-release"></a>Zahrnuté do této verze
 

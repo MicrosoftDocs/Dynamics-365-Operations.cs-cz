@@ -1,6 +1,6 @@
 ---
 title: Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
-description: Toto téma popisuje, jak navrhnout konfigurace elektronického výkaznictví pro import dat do aplikace Microsoft Dynamics 365 Finance z externího souboru.
+description: Tento článek popisuje, jak navrhnout konfigurace elektronického výkaznictví pro import dat do aplikace Microsoft Dynamics 365 Finance z externího souboru.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865886"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
 
@@ -241,7 +241,7 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 19. Zavřete stránku.
 20. Klikněte na možnost Upravit.
 
-    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 Finance“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
+    Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 Finance [Enterprise Edition” (](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
 
 21. Vyberte možnost Ano v položce Výchozí pro pole mapování modelu.
 22. Ve stromové struktuře zvolte '1099 Model platby'.

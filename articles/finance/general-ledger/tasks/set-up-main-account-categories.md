@@ -1,6 +1,6 @@
 ---
 title: Nastavení kategorií hlavního účtu
-description: Toto téma vysvětluje, jak nastavit kategorie hlavního účtu v aplikaci Dynamics 365 Finance.
+description: Tento článek vysvětluje, jak nastavit kategorie hlavního účtu v aplikaci Dynamics 365 Finance.
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879556"
 ---
 # <a name="set-up-main-account-categories"></a>Nastavení kategorií hlavního účtu
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit kategorie hlavního účtu. Kategorie hlavního účtu se používají pro výchozí sestavy ve finančních výkazech a Power BI. Kategorie hlavního účtu, které jsou vytvořeny ve výchozím nastavení, lze přejmenovat, ale nelze je odstranit. Kategorie dalších účtů lze vytvořit a používat pro účely vytváření sestav a analýzy. Toto téma využívá ukázkovou společnost USMF.
+Tento článek vysvětluje, jak nastavit kategorie hlavního účtu. Kategorie hlavního účtu se používají pro výchozí sestavy ve finančních výkazech a Power BI. Kategorie hlavního účtu, které jsou vytvořeny ve výchozím nastavení, lze přejmenovat, ale nelze je odstranit. Kategorie dalších účtů lze vytvořit a používat pro účely vytváření sestav a analýzy. Tento článek používá ukázkovou společnost USMF.
 
 ## <a name="create-a-main-account-category"></a>Vytvoření kategorie hlavního účtu
 1. V navigačním podokně přejděte do části **Moduly >Hlavní kniha > Účtová osnova > Účty > Kategorie hlavního účtu**.

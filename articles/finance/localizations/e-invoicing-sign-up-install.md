@@ -1,6 +1,6 @@
 ---
 title: Přihlášení a instalace služby Elektronické fakturace
-description: Toto téma poskytuje informace o tom, jak se přihlásit ke službě elektronické fakturace a nainstalovat ji.
+description: Tento článek poskytuje informace o tom, jak se přihlásit ke službě elektronické fakturace a nainstalovat ji.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ab16652e4a50dd71a5d0b2b49b4dd79e327f7a8
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 57314058883e60599bc51d91a65b0daeae724bb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865519"
 ---
 # <a name="sign-up-for-and-install-the-electronic-invoicing-service"></a>Přihlášení a instalace služby Elektronické fakturace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o tom, jak se přihlásit ke službě elektronické fakturace a nainstalovat ji. Tento proces má čtyři kroky. Kroky 1 až 3 jsou povinné a krok 4 je volitelný.
+Tento článek poskytuje informace o tom, jak se přihlásit ke službě elektronické fakturace a nainstalovat ji. Tento proces má čtyři kroky. Kroky 1 až 3 jsou povinné a krok 4 je volitelný.
 
 ### <a name="step-1-sign-up-for-regulatory-configuration-service"></a>Krok 1: Přihlaste se ke službě Regulatory Configuration Service
 

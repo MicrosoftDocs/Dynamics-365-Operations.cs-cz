@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources 12. července 2021
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 12. červenci 2021.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 12. červenci 2021.
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870951"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources 12. července 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ V této verzi jsou všeobecně dostupné následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
-| Číslo problému | Problém |  popis |
+| Číslo problému | Problém |  Popis |
 | --- | --- | --- |
 | 595871 | Podokno Informace v Human Resources obsahuje nesprávnou terminologii Dataverse | S rebrandingem Common Data Service na Dataverse byla aktualizována terminologie v informačním podokně Microsoft Dynamics 365 Human Resources (**Nápověda a podpora > O aplikaci**). |
 | 598676 | Zjednodušený formulář pro přepsání vstupu zaměstnance může při použití se uloženým pohledem vytvořit chybu| Na stránce **Pracovník**, pokud je zapnuta funkce „Zjednodušený vstup zaměstnanců“, aplikace může selhat, pokud je možnost **Vždy otevřené pro úpravy** nastavena na uložené zobrazení. |

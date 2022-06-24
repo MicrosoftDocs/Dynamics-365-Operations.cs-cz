@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876318"
 ---
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
@@ -32,13 +32,10 @@ ms.locfileid: "8756956"
 
 Další informace naleznete zde:
 
-[Vytvořit volné faktury](../accounts-receivable/create-free-text-invoice-new.md)
-
-[Vytvoření šablony volné faktury](../accounts-receivable/create-free-text-invoice-template-new.md)
-
-[Přiřazení šablony volné faktury k odběrateli](tasks/assign-free-text-invoice-template-customer.md)
-
-[Generování a zaúčtování opakovaných volných faktur](tasks/post-recurring-free-text-invoices.md)
+[Vytvářejte faktury s volným textem](../accounts-receivable/create-free-text-invoice-new.md)
+[Vytvořte šablonu faktury s volným textem](../accounts-receivable/create-free-text-invoice-template-new.md)
+[Přiřaďte zákazníkovi šablonu faktury s volným textem](tasks/assign-free-text-invoice-template-customer.md)
+[Vytvářejte a odešlete opakující se faktury s volným textem](tasks/post-recurring-free-text-invoices.md)
 
 
 **Proforma faktura** je faktura připravená jako odhad skutečných částek faktury před zaúčtováním faktury. **Proforma fakturu** lze vytisknout buď pro fakturu odběratele u prodejní objednávky, nebo pro volnou fakturu. 
@@ -91,8 +88,8 @@ Na kartě **Souhrnná aktualizace** stránky **Parametry pohledávek** můžete 
  - Vyberte možnost **Rozdělit na základě pracoviště faktury**, pokud chcete při zaúčtování vytvořit jednu fakturu na každé pracoviště. 
  - Možnost **Rozdělit na základě informací o dodávce faktury** vyberte, chcete-li při zaúčtování vytvořit jednu fakturu na jednu adresu dodání na řádku prodejní objednávky. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky, které neobsahují cenu
-Budete moci aktualizovat účet **Výnosy** v **Hlavní knize** u těch řádků prodejních objednávek, které neobsahují žádnou cenu. Chcete-li nastavit nebo zobrazit tyto informace, přejděte na parametr **Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky s nulovou cenou** na kartě **Hlavní kniha a DPH** na stránce **Parametry pohledávek**. (**Pohledávky > Nastavení > Parametry pohledávek**). Výběrem možnosti **Ano** aktualizujete účet **Výnosy** u těch řádků faktur prodejní objednávky, které neobsahují žádnou cenu. Výnosový účet je definován na stránce parametrů **Zaúčtování skladu**, na kartě definice účtu **Prodejní objednávka**. Pokud tato možnost není vybrána, řádky, které neobsahují informace o ceně, nebudou zaúčtovány na účet **Výnosy**.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky, které neobsahují cenu ani náklady
+Budete moci aktualizovat účet **Výnosy** v **Hlavní knize** u těch řádků prodejních objednávek, které neobsahují žádnou cenu ani náklady. Chcete-li nastavit nebo zobrazit tyto informace, přejděte na parametr **Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky s nulovou cenou a náklady** na kartě **Hlavní kniha a DPH** na stránce **Parametry pohledávek**. (**Pohledávky > Nastavení > Parametry pohledávek**). Výběrem možnosti **Ano** aktualizujete účet **Výnosy** u těch řádků faktur prodejní objednávky, které neobsahují žádnou cenu ani náklady. Pokud je vybrána tato možnost, voucher bude obsahovat 0 položek pro typy účtování **Zůstatek odběratele** a **Výnosy**. Výnosový účet je definován na stránce parametrů **Zaúčtování skladu**, na kartě definice účtu **Prodejní objednávka**. Pokud tato možnost není vybrána, řádky, které neobsahují informace o ceně ani nákladech, nebudou zaúčtovány na účet **Výnosy**. Místo toho bude poukaz obsahovat vstup 0,00 pro typ účtování **Zůstatek odběratele**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Další nastavení, která mění chování zaúčtování
 Následující pole mění chování procesu zaúčtování.

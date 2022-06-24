@@ -1,6 +1,6 @@
 ---
 title: Intrastat - přehled
-description: Toto téma obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU).
+description: Tento článek obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU).
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 97c2b4068f3b8d38281e637ec80f04b19d19be61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894773"
 ---
 # <a name="intrastat-overview"></a>Intrastat - přehled
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU). Toto téma také poskytuje přehled o procesu vykazování a popisuje požadované nastavení a požadavky.
+Tento článek obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU). Tento článek také poskytuje přehled o procesu vykazování a popisuje požadované nastavení a požadavky.
 
 Intrastat je systém pro shromažďování informací a generování statistik o obchodování se zbožím mezi zeměmi/oblastmi Evropské unie (EU). Vykazování v systému Intrastat je požadováno vždy, když produkt překročí hranice jiné země nebo oblasti v rámci EU. V některých zemích či oblastech platí povinnost vykazování v systému Intrastat také pro služby. V sestavách v systému Intrastat lze shromažďovat povinné i volitelné prvky. Následující prvky jsou povinné: identifikátor pro daň z přidané hodnoty (DPH) strany zodpovědné za poskytnutí informací, referenční období, tok (doručení nebo odeslání), číselný kód zboží, členský stát partnera (členský stát dodání při příjmu a členský stát pro cíl výdeje), hodnota zboží, množství zboží (čisté hmotnosti a doplňující jednotka) a druh transakce. Země či oblasti mohou za různých podmínek shromažďovat také volitelné prvky. Mezi volitelné prvky patří země/oblast původu, dodací podmínky, způsob dopravy, podrobnější kód zboží než CN8, oblast původu pro výdej a oblast určení na příjmu, statistická hodnota, popis zboží a přístav/letiště nakládky a vykládky.
 
@@ -152,7 +152,7 @@ Stránka **Parametry zahraničního obchodu** slouží k nastavení parametrů u
 
 ### <a name="transaction-codes-and-miscellaneous-charges"></a><a name= "transaction-codes-and-miscellaneous-charges"></a>Transakční kódy a různé poplatky
 
-Toto téma pokrývá scénář, kdy společnost v Německu musí nakupovat zboží od společnosti v Itálii. K provedení tohoto nákupu musí německá společnost nastavit nové kódy transakcí a nakonfigurovat pravidla výpočtu pro fakturovanou částku a statistickou částku pro tyto kódy transakcí. Kromě toho, když společnost vytváří fakturu, musí specifikovat různé poplatky a jejich procenta. Tyto hodnoty budou brány v úvahu při výpočtu statistické hodnoty.
+Tento článek pokrývá scénář, kdy společnost v Německu musí nakupovat zboží od společnosti v Itálii. K provedení tohoto nákupu musí německá společnost nastavit nové kódy transakcí a nakonfigurovat pravidla výpočtu pro fakturovanou částku a statistickou částku pro tyto kódy transakcí. Kromě toho, když společnost vytváří fakturu, musí specifikovat různé poplatky a jejich procenta. Tyto hodnoty budou brány v úvahu při výpočtu statistické hodnoty.
 
 Tento scénář používá právnickou osobu **DEMF**.
 

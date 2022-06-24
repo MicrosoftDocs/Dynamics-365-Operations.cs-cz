@@ -1,6 +1,6 @@
 ---
 title: Nastavte pokročilý import bankovního odsouhlasení pomocí elektronického výkaznictví
-description: Toto téma vysvětluje, jak používat elektronické hlášení k nastavení pokročilého procesu importu bankovního odsouhlasení.
+description: Tento článek vysvětluje, jak používat elektronické hlášení k nastavení pokročilého procesu importu bankovního odsouhlasení.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770187"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889113"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Nastavte pokročilý import bankovního odsouhlasení pomocí elektronického výkaznictví
 
 [!include [banner](../includes/banner.md)]
 
-Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 Finance. Toto téma vysvětluje, jak nastavit funkci importu pro bankovní výpisy. Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Microsoft Dynamics 365 Finance podporuje tři formáty bankovního výpisu: ISO20022, MT940 a BAI2. 
+Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 Finance. Tento článek vysvětluje, jak nastavit funkci importu pro bankovní výpisy. Nastavení import bankovního výpisu závisí na formátu vašeho elektronického bankovního výpisu. Aplikace Microsoft Dynamics 365 Finance podporuje tři formáty bankovního výpisu: ISO20022, MT940 a BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Nastavte konfiguraci elektronického výkaznictví
 

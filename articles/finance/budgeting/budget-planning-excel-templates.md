@@ -1,6 +1,6 @@
 ---
 title: Šablony plánování rozpočtu pro Excel
-description: Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
+description: Tento článek popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872492"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
+Tento článek popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
 
-Toto téma ukazuje, jak vytvořit šablony aplikace Excel, které budou použity s plány rozpočtu pomocí standardní sady ukázkových dat a přihlášení uživatele admin. Další informace o plánování rozpočtu naleznete v tématu [Přehled plánování rozpočtu.](budget-planning-overview-configuration.md) Můžete také postupovat podle kurzu [Plánování rozpočtu](budget-plan.md) a naučit se konfiguraci základního modulu a zásady a použití.
+Tento článek ukazuje, jak vytvořit šablony aplikace Excel, které budou použity s plány rozpočtu pomocí standardní sady ukázkových dat a přihlášení uživatele admin. Další informace o plánování rozpočtu naleznete v tématu [Přehled plánování rozpočtu.](budget-planning-overview-configuration.md) Můžete také postupovat podle kurzu [Plánování rozpočtu](budget-plan.md) a naučit se konfiguraci základního modulu a zásady a použití.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Vygenerování listu pomocí rozvržení dokumentu plánu rozpočtu
 
-Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více rozvržení. Každé rozvržení může mít přidruženou šablonu dokumentu rozpočtu plánu pro zobrazení a úpravy dat plánu rozpočtu v listu aplikace Excel. V tomto tématu budou generovány šablonu dokumentu plánu rozpočtu pomocí stávající konfigurace rozvržení. 
+Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více rozvržení. Každé rozvržení může mít přidruženou šablonu dokumentu rozpočtu plánu pro zobrazení a úpravy dat plánu rozpočtu v listu aplikace Excel. V tomto článku budou generovány šablony dokumentu plánu rozpočtu pomocí stávající konfigurace rozvržení. 
 
 1. Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). 
 2. Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 

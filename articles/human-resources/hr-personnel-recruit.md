@@ -1,6 +1,6 @@
 ---
 title: Nábor uchazečů o práci
-description: Toto téma popisuje, jak najímat kandidáty v Dynamics 365 Human Resources.
+description: Tento článek popisuje, jak nabírat kandidáty v Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879243"
 ---
 # <a name="recruit-job-candidates"></a>Nábor uchazečů o práci
 
@@ -47,11 +47,12 @@ Pokud chcete podat žádosti o nábor v náboru lidských zdrojů, musíte nejpr
 
 Jakmile jsou funkce zapnuté, vyberte je pomocí následujících kroků: 
 1. Jděte na **Lidské zdroje** > **Nastavení** > **Parametry lidských zdrojů**.
-2. Na kartě  **Nábor**  nastavte pole **Nábor zakázán** na **Ne**.
-3. V rozevíracím seznamu **Zkušenosti s náborem** vyberte **Nábor HR**.   
+2. Na kartě  **Nábor**  nastavte pole **Nábor povolen** na **Ano**.
+3. V rozevíracím seznamu **Zkušenosti s náborem** vyberte **Nábor HR**.  
+4. Klikněte na tlačítko **Uložit**. 
 
 > [!Note] 
-> Po výběru **Nábor HR** bude pole **Projekty náboru** (zastaralé) jen pro čtení. 
+> Po výběru **Nábor HR** nebude pole **Projekty náboru** (zastaralé) k dispozici. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Přidání umístění žádosti o nábor

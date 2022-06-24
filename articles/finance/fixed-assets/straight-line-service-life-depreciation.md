@@ -1,6 +1,6 @@
 ---
 title: Lineární odpisování
-description: Toto téma poskytuje přehled o metodě lineárního odpisování.
+description: Tento článek poskytuje přehled o metodě odpisování Lineární.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896456"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineární odpisování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled o metodě lineárního odpisování.
+Tento článek poskytuje přehled o metodě odpisování Lineární.
 
 Když nastavíte profil odpisu dlouhodobého majetku a vyberete na stránce Odpisové profily možnost Lineární životnost v poli Metoda, majetek, který má přiřazený tento odpisový profil, bude odepsán na základě celkové době životnosti tohoto majetku. Obvykle bude tato částka ve všech obdobích odpisu stejná. 
 
@@ -41,7 +41,7 @@ V poli Odpisový rok na stránce Odpisové plány můžete vybrat buď Kalendá�
 
 Pokud vyberete Kalendář, bude použit rok od 1. ledna do 31. prosince, a to i v případě, že jste definovali fiskální kalendář odlišně. 
 
-Možnost Kalendář aktualizuje odpisový základ (což je obvykle čistá účetní hodnota minus konečná zůstatková hodnota) 1. ledna každého roku. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+Možnost Kalendář aktualizuje odpisový základ (což je obvykle čistá účetní hodnota minus konečná zůstatková hodnota) 1. ledna každého roku. V níže uvedených příkladech tohoto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Jestliže vyberete možnost Kalendářní, v poli Frekvence období jsou k dispozici následující možnosti, které definují časové rozdělení zaúčtování odpisů a částky během kalendářního roku:
 - Možnost Ročně provede zaúčtování 31 prosince.

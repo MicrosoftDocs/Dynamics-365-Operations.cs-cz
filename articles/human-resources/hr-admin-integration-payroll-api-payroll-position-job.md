@@ -1,6 +1,6 @@
 ---
 title: Práce pozice mzdy
-description: Toto téma poskytuje informace a ukázkový dotaz pro entitu pracovní pozice na výplatní listině v Dynamics 365 Human Resources.
+description: Tento článek poskytuje informace a ukázkový dotaz pro entitu pracovní pozice na výplatní listině v Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 349479d9e77861b54d879bcfd93f7af0e38cff95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fa347f4b99adc7c29d69daf62ad2bbfc14726a19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864076"
 ---
 # <a name="payroll-position-job"></a>Práce pozice mzdy
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069825"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma popisuje entitu Pracovní pozice mzdy pro Dynamics 365 Human Resources.
+Tento článek popisuje entitu Pracovní pozice mzdy pro Dynamics 365 Human Resources.
 
-### <a name="description"></a>popis
+### <a name="description"></a>Popis
 
 Tato entita poskytuje vztah mezi pozici a pracovní úlohou pro daný plán pevné kompenzace.
 

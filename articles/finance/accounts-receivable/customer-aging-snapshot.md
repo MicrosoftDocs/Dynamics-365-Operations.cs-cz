@@ -1,6 +1,6 @@
 ---
 title: 'Snímky sledování splatnosti odběratele '
-description: Toto téma obsahuje informace o časových snímcích zákazníka. Snímek sledování splatnosti vypočítá časové zůstatky skupiny zákazníků v jednom bodu v čase.
+description: Tento článek obsahuje informace o časových snímcích zákazníka. Snímek sledování splatnosti vypočítá časové zůstatky skupiny zákazníků v jednom bodu v čase.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902566"
 ---
 # <a name="customer-aging-snapshots"></a>Snímky sledování splatnosti odběratele 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o časových snímcích zákazníka. Snímek sledování splatnosti vypočítá časové zůstatky skupiny zákazníků v jednom bodu v čase. Můžete vytvořit záznamy snímků sledování splatnosti buď pro všechny zákazníky nebo pro zákazníky ve fondu zákazníků.
+Tento článek obsahuje informace o časových snímcích zákazníka. Snímek sledování splatnosti vypočítá časové zůstatky skupiny zákazníků v jednom bodu v čase. Můžete vytvořit záznamy snímků sledování splatnosti buď pro všechny zákazníky nebo pro zákazníky ve fondu zákazníků.
 
 Informace ze snímku sledování splatnosti se zobrazují na stránce se seznamem **Splatné zůstatky** a na stránce **Inkasa**. Je třeba snímek sledování splatnosti vytvořit před použitím stránky seznamu **Splatné zůstatky**. Na stránce se zobrazují informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti.
 

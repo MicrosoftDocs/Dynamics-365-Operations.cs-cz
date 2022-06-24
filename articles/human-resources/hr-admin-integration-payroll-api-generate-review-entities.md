@@ -1,6 +1,6 @@
 ---
 title: Generování a kontrola entit mzdy
-description: Toto téma popisuje, jak generovat a kontrolovat mzdové entity.
+description: Tento článek popisuje, jak generovat a kontrolovat mzdové entity.
 author: twheeloc
 ms.date: 04/07/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b69216a2b864645447f27f54319014cb166791c
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 8ad69e1e1b3cbcaeccec7cbbec3493d4244e74a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856360"
 ---
 # <a name="generate-payroll-entities"></a>Generování entit mzdy
 

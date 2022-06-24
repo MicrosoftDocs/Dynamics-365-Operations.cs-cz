@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (22. října 2020)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 22. říjnu 2020.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 22. říjnu 2020.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862794"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (22. října 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063511"
 
 
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
 Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ V této verzi jsou všeobecně dostupné následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
-| Číslo problému| Výdej  | popis|
+| Číslo problému| Problém  | Popis|
 | --- | --- | --- |
 | 437922 | Import hodin FMLA pomocí entity DMF má za následek chybu jen pro čtení. | Použití entity Hodiny FMLA k importu hodin přidružených k případu FMLA se nezdařilo. Přidali jsme logiku, abychom zajistili, že importované hodiny nepřekročí zbývající hodiny pro případ. |
 | 512019 | Nesprávné množství **Poslední převod do dalšího období**. | Na stránce **Volno** se při změně hodnoty **K datu** na první den následujícího fiskálního období zobrazila nesprávná částka **Poslední převod do dalšího období** pro typ **Řádná dovolená**. Nyní zobrazuje správnou částku. |

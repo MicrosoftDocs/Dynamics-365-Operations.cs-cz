@@ -1,6 +1,6 @@
 ---
-title: Přiznání k DPH (Česká republika)
-description: Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku.
+title: Přiznání k DPH (Česká republika)
+description: Tento článek poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku.
 author: anasyash
 ms.date: 01/04/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 54cc526cc8f8220fd8297d5fd3858ca2a55147bf
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d243ae17a33ea82447170a504fb0d69e9db0eb21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889808"
 ---
-# <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
+# <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku. Obsahuje pokyny pro nastavení a generování přiznání k DPH a kontrolního hlášení DPH.
+Tento článek poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku. Obsahuje pokyny pro nastavení a generování přiznání k DPH a kontrolního hlášení DPH.
 
 ## <a name="vat-declaration-overview"></a><a name="overview"></a>Přehled přiznání k DPH
 
@@ -33,7 +33,7 @@ Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pr
 
 Tato část popisuje sekce a řádky přiznání k DPH, jeho výpočtů a vztahů mezi přiznáním k DPH a kontrolním hlášením DPH.
 
-Chcete-li automaticky generovat přiznání k DPH a kontrolní hlášení DPH, musíte nejprve vytvořit dostatek kódů DPH, abyste mohli vést samostatné účtování DPH pro každé pole v přiznání k DPH. Navíc v parametrech specifických pro aplikaci týkajících se formátu přiznání k DPH a formátu kontrolního hlášení DPH musíte přidružit kódy DPH k výsledku vyhledávání v polích pro přiznání k DPH. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro pole přiznání](#set-up-parameters-for-declaration-fields) dále v tomto tématu.
+Chcete-li automaticky generovat přiznání k DPH a kontrolní hlášení DPH, musíte nejprve vytvořit dostatek kódů DPH, abyste mohli vést samostatné účtování DPH pro každé pole v přiznání k DPH. Navíc v parametrech specifických pro aplikaci týkajících se formátu přiznání k DPH a formátu kontrolního hlášení DPH musíte přidružit kódy DPH k výsledku vyhledávání v polích pro přiznání k DPH. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro pole přiznání](#set-up-parameters-for-declaration-fields) dále v tomto článku.
 
 V tabulce v části 1 sloupec „Výsledek vyhledávání“ zobrazuje výsledek vyhledávání, který je předkonfigurován pro konkrétní řádek přiznání k DPH ve formátu přiznání k DPH a formátu kontrolního hlášení DPH. Tyto informace použijte ke správnému přidružení kódů DPH k výsledku vyhledávání a poté k řádku přiznání k DPH.
 
@@ -142,9 +142,9 @@ Oddíl A1 zobrazuje dokumenty, které generují částku v řádku 25 přiznán�
 | Kód předmětu                                   | kod\_pred\_pl |
 | Základ daně                                       | zakl\_dane1   |
 
-Chcete-li automaticky určit kód subjektu pro dokument, nastavte dostatek skupin položek přenesení daňové povinnosti a přidružte je k položkám (produktům), skupinám položek nebo kategoriím nákupu. Další informace naleznete v části [Nastavení skupin položek přenesení daňové povinnosti](#set-up-reverse-charge-item-groups) později v tomto tématu. Další informace, jak konfigurovat přenesení daňové povinnosti, viz [Přenesení daňové povinnosti k DPH](emea-reverse-charge.md). Pokud účtujete příchozí přenesení daňové povinnosti v denících faktur dodavatele, které nejsou přidruženy k produktům, musíte mít dostatek skupin DPH položek k rozlišení kódů subjektu přenesené daňové povinnosti.
+Chcete-li automaticky určit kód subjektu pro dokument, nastavte dostatek skupin položek přenesení daňové povinnosti a přidružte je k položkám (produktům), skupinám položek nebo kategoriím nákupu. Další informace naleznete v části [Nastavení skupin položek přenesení daňové povinnosti](#set-up-reverse-charge-item-groups) později v tomto článku. Další informace, jak konfigurovat přenesení daňové povinnosti, viz [Přenesení daňové povinnosti k DPH](emea-reverse-charge.md). Pokud účtujete příchozí přenesení daňové povinnosti v denících faktur dodavatele, které nejsou přidruženy k produktům, musíte mít dostatek skupin DPH položek k rozlišení kódů subjektu přenesené daňové povinnosti.
 
-K výsledku vyhledávání **\$SubjectCodeLookup** v parametrech specifických pro aplikaci formátu **Kontrolní hlášení DPH (CZ)** musíte také přidružit dvojice skupin položek přenesení daňové povinnosti a daňových kódů. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro kódy subjektu](#set-up-parameters-for-subject-codes) dále v tomto tématu.
+K výsledku vyhledávání **\$SubjectCodeLookup** v parametrech specifických pro aplikaci formátu **Kontrolní hlášení DPH (CZ)** musíte také přidružit dvojice skupin položek přenesení daňové povinnosti a daňových kódů. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro kódy subjektu](#set-up-parameters-for-subject-codes) dále v tomto článku.
 
 Následující kódy subjektu jsou k dispozici ve formátu **Kontrolní hlášení DPH v XML (CZ)**.
 
@@ -229,7 +229,7 @@ Oddíly A4 a A5 obsahuje dokumenty, které generují částky v řádcích 1 a 2
 
 Informace o úpravách částky DPH u nedobytných pohledávek zákazníků jsou také uvedeny v řádku 33 přiznání k DPH.
 
-Chcete-li automaticky určit úpravu částky DPH u nedobytných pohledávek, vytvořte speciální kód daně a použijte jej k zaúčtování odpisu nedobytných pohledávek zákazníka. Další informace viz [Odepsání nedobytných pohledávek zákazníků pomocí funkce Odepsat](#write-off-customer-bad-debts-by-using-the-write-off-function) dále v tomto tématu. Také přidružte tento kód DPH k výsledkům vyhledávání **VATAdjustmentCustomerBadDebtsStandard**, **VATAdjustmentCustomerBadDebtsReduced** a **VATAdjustmentCustomerBadDebtsReduced2** pro **\$ReportFieldLookup** v parametrech specifických pro aplikaci ve formátu přiznání k DPH a formátu kontrolního hlášení DPH.
+Chcete-li automaticky určit úpravu částky DPH u nedobytných pohledávek, vytvořte speciální kód daně a použijte jej k zaúčtování odpisu nedobytných pohledávek zákazníka. Další informace viz [Odepsání nedobytných pohledávek zákazníků pomocí funkce Odepsat](#write-off-customer-bad-debts-by-using-the-write-off-function) dále v tomto článku. Také přidružte tento kód DPH k výsledkům vyhledávání **VATAdjustmentCustomerBadDebtsStandard**, **VATAdjustmentCustomerBadDebtsReduced** a **VATAdjustmentCustomerBadDebtsReduced2** pro **\$ReportFieldLookup** v parametrech specifických pro aplikaci ve formátu přiznání k DPH a formátu kontrolního hlášení DPH.
 
 Tento oddíl poskytuje o každém dokumentu následující informace.
 
@@ -247,7 +247,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Částka daně s druhou sníženou sazbou                                                                                                                  | dan3         |
 | <p>Příznak úpravy DPH u nedobytných pohledávek:</p><ul><li>**N** – Dokument není úpravou DPH u nedobytných pohledávek.</li><li>**P** – Dokument je úpravou DPH u nedobytných pohledávek.</li></ul> | zdph\_44      |
 
-Chcete-li automaticky určit kód režimu plnění, přidružte kódy DPH k výsledku vyhledávání **\$FulfillmentModeCodeLookup** v parametrech specifických pro aplikaci formátu kontrolního hlášení DPH. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro kódy režimu plnění](#set-up-parameters-for-fulfillment-mode-codes) dále v tomto tématu.
+Chcete-li automaticky určit kód režimu plnění, přidružte kódy DPH k výsledku vyhledávání **\$FulfillmentModeCodeLookup** v parametrech specifických pro aplikaci formátu kontrolního hlášení DPH. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů pro kódy režimu plnění](#set-up-parameters-for-fulfillment-mode-codes) dále v tomto článku.
 
 Následující kódy režimu plnění jsou k dispozici ve formátu XML kontrolního hlášení DPH.
 
@@ -263,7 +263,7 @@ Oddíly B2 a B2 obsahují dokumenty, které generují částky v řádcích 40 a
 
 Informace o úpravách částky DPH u nedobytných pohledávek dodavatelů jsou také uvedeny v řádku 34 přiznání k DPH.
 
-Chcete-li automaticky určit úpravu částky DPH u nedobytných pohledávek, vytvořte speciální kód daně a použijte jej k zaúčtování odpisu nedobytných pohledávek dodavatele. Další informace najdete v části [Ruční odpisy nedobytných pohledávek dodavatele](#manually-write-off-vendor-bad-debts) dále v tomto tématu. Přidružte tento kód DPH k výsledkům vyhledávání **VATAdjustmentVendorBadDebtsStandard**, **VATAdjustmentVendorBadDebtsReduced**, and **VATAdjustmentVendorBadDebtsReduced2** pro **\$ReportFieldLookup** v parametrech specifických pro aplikaci ve formátu přiznání k DPH a formátu kontrolního hlášení DPH.
+Chcete-li automaticky určit úpravu částky DPH u nedobytných pohledávek, vytvořte speciální kód daně a použijte jej k zaúčtování odpisu nedobytných pohledávek dodavatele. Další informace najdete v části [Ruční odpisy nedobytných pohledávek dodavatele](#manually-write-off-vendor-bad-debts) dále v tomto článku. Přidružte tento kód DPH k výsledkům vyhledávání **VATAdjustmentVendorBadDebtsStandard**, **VATAdjustmentVendorBadDebtsReduced**, and **VATAdjustmentVendorBadDebtsReduced2** pro **\$ReportFieldLookup** v parametrech specifických pro aplikaci ve formátu přiznání k DPH a formátu kontrolního hlášení DPH.
 
 Oddíl B2 poskytuje o každém dokumentu následující informace.
 
@@ -336,7 +336,7 @@ Chcete-li automaticky generovat přiznání k DPH, musíte přidružit kódy DPH
 
     | Sloupcový          | popis |
     |-----------------|-------------|
-    | Výsledek vyhledávání   | Vyberte pole sestavy pro nastavení. Další informace o polích sestavy a jejich přiřazení k řádkům přiznání k DPH najdete v části [Přehled přiznání k DPH](#overview) dříve v tomto tématu. |
+    | Výsledek vyhledávání   | Vyberte pole sestavy pro nastavení. Další informace o polích sestavy a jejich přiřazení k řádkům přiznání k DPH najdete v části [Přehled přiznání k DPH](#overview) dříve v tomto článku. |
     | Kód daně (kód) | <p>Vyberte kód DPH, který chcete přidružit k poli sestavy. Zaúčtované daňové transakce, které používají vybraný kód DPH, budou shromážděny v příslušném poli sestavy.</p><p>Doporučujeme oddělit kódy DPH tak, aby jeden kód DPH generoval částky pouze v jednom poli sestavy.</p> |
     | Jméno            | <p>Pokud jste nevytvořili dostatek kódů DPH, takže jeden kód DPH vygeneruje částky pouze v jednom poli sestavy, můžete vytvořit klasifikátor transakcí. K dispozici jsou následující klasifikátory transakcí:</p><ul><li>**Nákup**</li><li>**PurchaseExempt** (nákup osvobozený od daně)</li><li>**PurchaseReverseCharge** (daň splatná z přenesené daňové povinnosti při nákupu)</li><li>**Prodej.**</li><li>**SalesExempt** (prodej osvobozený od daně)</li><li>**SalesReverseCharge** (daň odvedená z přenesené daňové povinnosti při nákupu nebo prodeji)</li><li>**Importní DPH**</li></ul>Pro každý klasifikátor transakcí je k dispozici také klasifikátor dobropisu. Například jeden z těchto klasifikátorů je **PurchaseCreditNote** (nákupní dobropis). |
 
@@ -372,7 +372,7 @@ Chcete-li automaticky klasifikovat transakci podle kódu subjektu přenesení da
 
     | Sloupcový                              | popis |
     |-------------------------------------|-------------|
-    | Výsledek vyhledávání                       | Vyberte kód subjektu. Úplný seznam kódů subjektů naleznete v části [Oddíl A1: Prodej zboží a služeb v rámci tuzemského přenesení daňové povinnosti](#sectiona1) dříve v tomto tématu. |
+    | Výsledek vyhledávání                       | Vyberte kód subjektu. Úplný seznam kódů subjektů naleznete v části [Oddíl A1: Prodej zboží a služeb v rámci tuzemského přenesení daňové povinnosti](#sectiona1) dříve v tomto článku. |
     | Kód přenesení daňové povinnosti (kód)          | Vyberte skupinu položek přenesení daňové povinnosti, kterou chcete přidružit k vybranému kódu subjektu. U některých transakcí, pokud zaúčtujete příchozí transakce přenesení daňové povinnosti, které neobsahují odkaz na produkt, musíte přidružit skupinu DPH položky s kódem subjektu. V takovém případě vyberte v tomto poli hodnotu **\*Prázdné\***. Aby se zabránilo generování chyby při výjimce, když transakce neobsahují přenesení daňové povinnosti, parametry specifické pro aplikaci musí vždy obsahovat jeden řádek, kde pole **Výsledek vyhledávání** je nastaveno na **Ostatní** a **Kód přenesení daňové povinnosti (kód)** je nastaveno na **\*Prázdné\***. Tento řádek musí být posledním řádkem v nastavení. |
     | Skupina DPH položky (TaxItemGroup) | Vyberte skupinu DPH položky, kterou chcete přidružit k vybranému kódu subjektu. Pokud nemáte k dispozici příslušnou skupinu položky přenesení daňové povinnosti, která se použije při zaúčtování příchozích transakcí přenesení daňové povinnosti, které neobsahují odkaz na produkt (například transakce z deníku faktury dodavatele), musíte vybrat konkrétní skupinu DPH položky. Jinak můžete pro všechny řádky v tomto sloupci vybrat **\*Není prázdné\***. |
 
@@ -395,7 +395,7 @@ Chcete-li automaticky klasifikovat transakci podle kódu režimu plnění v odd�
 
     | Sloupcový          | popis |
     |-----------------|-------------|
-    | Výsledek vyhledávání   | Vyberte kód plnění. Úplný seznam kódů naleznete v části [Oddíl A4: Zdanitelný prodej s částkami nad 10 000 včetně DPH a se všemi úpravami DPH provedenými u nedobytných pohledávek zákazníků](#sectionA4) dříve v tomto tématu. |
+    | Výsledek vyhledávání   | Vyberte kód plnění. Úplný seznam kódů naleznete v části [Oddíl A4: Zdanitelný prodej s částkami nad 10 000 včetně DPH a se všemi úpravami DPH provedenými u nedobytných pohledávek zákazníků](#sectionA4) dříve v tomto článku. |
     | Kód daně (kód) | Vyberte kód DPH. |
 
 5. Pokud máte transakce, které používají pouze normální plnění, můžete v nastavení vytvořit následující řádek. Jinak vytvořte stejný řádek, který jste vytvořili jako poslední řádek v předchozím nastavení, chcete-li zabránit tomu, aby formát selhal a vyvolal chybovou zprávu o výjimce z důvodu zmeškaného nastavení.

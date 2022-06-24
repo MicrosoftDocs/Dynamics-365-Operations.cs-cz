@@ -1,6 +1,6 @@
 ---
-title: Importovat směnné kurzy měn
-description: Toto téma obsahuje informace o požadavcích na import směnných kurzů pro cizí měnu, které jsou publikovány poskytovatelům směnného kurzu.
+title: Import směnných kurzů měn
+description: Tento článek obsahuje informace o požadavcích na import směnných kurzů pro cizí měnu, které jsou publikovány poskytovatelům směnného kurzu.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27f9b06646d9ce948a6b4528c38c5df9784b24b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894928"
 ---
 # <a name="import-currency-exchange-rates"></a>Importovat směnné kurzy měn
 
 [!include [banner](../includes/banner.md)]
 
-Jestliže právnická osoba obdržela faktury v cizí měně, je nutné převést cizí měnu na místní měnu. To znamená, že jsou potřeba aktuální směnné kurzy pro různé měny. Toto téma obsahuje přehled požadovaných nastavení a zpracování nezbytných pro import referenčních směnných kurzů publikovaných prostřednictvím Internetu poskytovateli směnných kurzů, jako je Evropská centrální banka a centrální banky Ruska.
+Jestliže právnická osoba obdržela faktury v cizí měně, je nutné převést cizí měnu na místní měnu. To znamená, že jsou potřeba aktuální směnné kurzy pro různé měny. Tento článek obsahuje přehled požadovaných nastavení a zpracování nezbytných pro import referenčních směnných kurzů publikovaných prostřednictvím Internetu poskytovateli směnných kurzů, jako je Evropská centrální banka a centrální banky Ruska.
 
 V následujících částech je popsán celkový tok informací, které se používají k nastavení a zpracování importu cizích směnných kurzů.
 

@@ -1,6 +1,6 @@
 ---
-title: Povolení režimu ladění ve službě Výpočet daně
-description: Toto téma vysvětluje, jak povolit režim ladění ve službě Výpočet daně za účelem prošetření problémů.
+title: Povolení režimu ladění ve službě výpočtu daně
+description: Tento článek vysvětluje, jak povolit režim ladění ve službě Výpočet daně za účelem prošetření problémů.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2f526a2341c7ef682209ed979fe686e31ad62a37
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887770"
 ---
-# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Povolení režimu ladění ve službě Výpočet daně
+# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Povolení režimu ladění ve službě výpočtu daně
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak povolit režim ladění ve službě Výpočet daně za účelem prošetření problémů.
+Tento článek vysvětluje, jak povolit režim ladění ve službě Výpočet daně za účelem prošetření problémů.
 
 1. Přidejte **&debug=vs%2CconfirmExit&** k adrese URL Application Object Server (AOS) a poté stránku obnovte.
 2. Když vyberete **Daň z prodeje** pro výpočet daně z prodeje, otevře se textový soubor s názvem **TaxServiceTroubleshootingLog.txt**. Soubor **TaxServiceTroubleshootingLog.txt** obsahuje **TaxableDocument** a parametr výpočtu. Tyto výsledky jsou vráceny z daňové služby a informací o výjimce pro odstraňování problémů.

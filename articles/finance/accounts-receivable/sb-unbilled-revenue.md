@@ -1,6 +1,6 @@
 ---
 title: Nevyfakturované výnosy
-description: Toto téma vysvětluje, jak nastavit položky a účty pro použití funkce nevyfakturovaných výnosů ve fakturaci předplatného.
+description: Tento článek vysvětluje, jak nastavit položky a účty pro použití funkce nevyfakturovaných výnosů ve fakturaci předplatného.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a70786291822a85ec41c98ab8ce706f2ad79b08d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691238"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879675"
 ---
 # <a name="unbilled-revenue"></a>Nevyfakturované výnosy
 
-Toto téma popisuje funkci nevyfakturovaných příjmů, která umožňuje zahrnout částky za celé rozvrhy fakturace do rozvahy. Tyto částky jsou zahrnuty na účtu nevyfakturovaných výnosů a na účtu kompenzace nevyfakturovaných výnosů a smlouva je fakturována prostřednictvím splátek.
+Tento článek popisuje funkci nevyfakturovaných příjmů, která umožňuje zahrnout částky za celé rozvrhy fakturace do rozvahy. Tyto částky jsou zahrnuty na účtu nevyfakturovaných výnosů a na účtu kompenzace nevyfakturovaných výnosů a smlouva je fakturována prostřednictvím splátek.
 
 ## <a name="set-up-unbilled-revenue"></a>Nastavení nevyfakturovaných výnosů
 

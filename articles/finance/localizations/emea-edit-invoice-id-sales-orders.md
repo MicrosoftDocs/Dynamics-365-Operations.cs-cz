@@ -1,6 +1,6 @@
 ---
 title: Úprava ID faktury v prodejních objednávkách pro východní Evropu
-description: Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
+description: Tento článek obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e5c84ee88ae96a64c56be8eb81685ba64dd9345e5e5a88e3479b255cb4d10131
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5c6bc70187680cdf0599c88fe36c25bea22ed0d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880634"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Úprava ID faktury v prodejních objednávkách pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
+Tento článek obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku a Polsku umožňuje možnost **Upravit ID faktury pro prodejní objednávky** ručně zadat číslo dodacího listu a faktury na dodacím listu a faktuře odběratele. Následující možnosti jsou k dispozici na stránce **Parametry pohledávek** na pevné záložce **Faktura** na kartě **Aktualizace**.
 <table>

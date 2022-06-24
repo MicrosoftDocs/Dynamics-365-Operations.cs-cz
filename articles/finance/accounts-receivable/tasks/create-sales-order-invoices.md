@@ -1,6 +1,6 @@
 ---
 title: Vytváření faktur prodejních objednávek
-description: Toto téma popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování.
+description: Tento článek popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7976d310e9c80dfe683359f1157b85e46c758c48
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910251"
 ---
 # <a name="create-sales-order-invoices"></a>Vytváření faktur prodejních objednávek
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování. Tato procedura používá ukázkovou společnost USMF.
+Tento článek popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování. Tato procedura používá ukázkovou společnost USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Vytvoření faktury z prodejní objednávky

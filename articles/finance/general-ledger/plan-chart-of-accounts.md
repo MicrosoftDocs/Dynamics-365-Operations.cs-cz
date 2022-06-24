@@ -1,6 +1,6 @@
 ---
-title: Plánování účetní osnovy
-description: V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
+title: Plánování účtové osnovy
+description: V tomto článku jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853341"
 ---
-# <a name="plan-your-chart-of-accounts"></a>Plánování účetní osnovy
+# <a name="plan-your-chart-of-accounts"></a>Plánování účtové osnovy
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
+V tomto článku jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
 
 Pro sledování a správu finančních informací v organizaci můžete nastavit účtovou osnovu. Účtová osnova je sada účtů, které definují finanční rámec. Pokud chcete dále sledovat transakce na těchto účtech, můžete přidat segmenty. Tyto segmenty se označují jako finanční dimenze. Účet výdajů může například zahrnovat finanční dimenze s názvem Oddělení, Nákladové středisko a Účel. Pravidla definovaná uživatelem určují způsob, jakým se finanční dimenze přiřazují k hlavním účtům a ostatním finančním dimenzím a jakým se zadávají transakce pro účetní strukturu. Tato pravidla definovaná uživatelem se nazývají účetní struktury a pokročilá pravidla.
 

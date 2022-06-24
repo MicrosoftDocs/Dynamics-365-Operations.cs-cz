@@ -1,6 +1,6 @@
 ---
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
-description: Toto téma vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
+description: Tento článek vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864829"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -30,7 +30,7 @@ Každá konfigurovaná komponenta pro [formátování](er-overview-components.md
 
 Ve výchozím nastavení se v následujících případech ověření automaticky použije u konfigurace ER, která obsahuje dříve zmíněné komponenty ER:
 
-- [Importujte](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) novou [verzi](general-electronic-reporting.md#component-versioning) konfigurace ER do vaší instance Microsoftu Dynamics 365 Finance.
+- [Importujte](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) novou [verzi](general-electronic-reporting.md#component-versioning) konfigurace ER do vaší instance Microsoft Dynamics 365 Finance.
 - Změňte [stav](general-electronic-reporting.md#component-versioning) upravitelné konfigurace ER z hodnoty **Koncept** na **Dokončeno**.
 - [Přeneste změny](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) do upravitelné konfigurace ER použitím nové základní verze.
 
@@ -80,7 +80,7 @@ ER používá k seskupení inspekcí kontroly konzistence následující kategor
 
 ## <a name="list-of-inspections"></a>Seznam inspekcí
 
-Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Další informace o těchto inspekcích získáte pomocí odkazů v prvním sloupci, kterými přejdete na příslušné části tohoto tématu. Tyto oddíly vysvětlují typy komponent, u kterých ER poskytuje kontroly, a návod na rekonfiguraci komponent ER, abyste zabránili problémům.
+Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Další informace o těchto inspekcích získáte pomocí odkazů v prvním sloupci, kterými přejdete na příslušné části tohoto článku. Tyto oddíly vysvětlují typy komponent, u kterých ER poskytuje kontroly, a návod na rekonfiguraci komponent ER, abyste zabránili problémům.
 
 <table>
 <thead>

@@ -1,6 +1,6 @@
 ---
 title: Pokyny pro nastavení duálního zápisu
-description: Toto téma popisuje scénáře, které jsou podporovány pro nastavení dvojího zápisu.
+description: Tento článek popisuje scénáře, které jsou podporovány pro nastavení dvojího zápisu.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873142"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Pokyny pro nastavení duálního zápisu
 
@@ -78,11 +78,11 @@ Chcete-li synchronizovat existující data Dataverse s finanční a provozní ap
 3. [Zavedení](bootstrap-company-data.md) dat Dataverse pomocí třímístného kódu společnosti pro Mezinárodní organizaci pro normalizaci (ISO).
 4. Spusťte funkci **Počáteční synchronizace** pro tabulky, u kterých chcete synchronizovat data.
 
-Odkazy na příklad a alternativní přístup najdete v části [Příklad](#example) dále v tomto tématu.
+Odkazy na příklad a alternativní přístup najdete v části [Příklad](#example) dále v tomto článku.
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Nová instance finanční a provozní aplikace, která má data, a nová instance aplikace Customer Engagement
 
-Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která má ukázková data, a novou instanci aplikace Customer Engagement, postupujte podle kroků v části [Nová instance finanční a provozní aplikace a nová instance aplikace Customer Engagement](#new-new) výše v tomto tématu. Chcete-li v aplikaci synchronizovat data s aplikací pro zapojení zákazníků, postupujte po dokončení nastavení připojení následujícím způsobem.
+Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která má ukázková data, a novou instanci aplikace Customer Engagement, postupujte podle kroků v části [Nová instance finanční a provozní aplikace a nová instance aplikace Customer Engagement](#new-new) výše v tomto článku. Chcete-li v aplikaci synchronizovat data s aplikací pro zapojení zákazníků, postupujte po dokončení nastavení připojení následujícím způsobem.
 
 1. Otevřete finanční a provozní aplikaci ze stránky LCS, přihlaste se a pak přejděte ke **Správa dat \> Dvojí zápis**.
 2. Spusťte funkci **Počáteční synchronizace** pro tabulky, u kterých chcete synchronizovat data.
@@ -91,7 +91,7 @@ Odkazy na příklad a alternativní přístup najdete v části [Příklad](#exa
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Nová instance finanční a provozní aplikace, která má data, a stávající instance aplikace Customer Engagement
 
-Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která má ukázková data, a stávající instanci aplikace Customer Engagement, postupujte podle kroků v části [Nová instance finanční a provozní aplikace a stávající instance aplikace Customer Engagement](#new-existing) výše v tomto tématu. Chcete-li v aplikaci synchronizovat data s aplikací pro zapojení zákazníků, postupujte po dokončení nastavení připojení následujícím způsobem.
+Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která má ukázková data, a stávající instanci aplikace Customer Engagement, postupujte podle kroků v části [Nová instance finanční a provozní aplikace a stávající instance aplikace Customer Engagement](#new-existing) výše v tomto článku. Chcete-li v aplikaci synchronizovat data s aplikací pro zapojení zákazníků, postupujte po dokončení nastavení připojení následujícím způsobem.
 
 1. Otevřete finanční a provozní aplikaci ze stránky LCS, přihlaste se a pak přejděte ke **Správa dat \> Dvojí zápis**.
 2. Spusťte funkci **Počáteční synchronizace** pro tabulky, u kterých chcete synchronizovat data.

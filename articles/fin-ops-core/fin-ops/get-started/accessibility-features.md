@@ -1,6 +1,6 @@
 ---
 title: Funkce usnadnění přístupu
-description: Toto téma popisuje funkci, které je určena uživatelům, kteří mají různá postižení.
+description: Tento článek popisuje funkci, které je určena uživatelům, kteří mají různá postižení.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881044"
 ---
 # <a name="accessibility-features"></a>Funkce usnadnění přístupu
 
@@ -26,7 +26,7 @@ ms.locfileid: "8071051"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma popisuje funkci určenou uživatelům, kteří mají různá postižení, aby mohli používat tuto aplikaci. Existují například funkce pro zrakově postižené uživatele, kteří používají technologie jako je Microsoft Windows Narrator.
+Tento článek popisuje funkci určenou uživatelům, kteří mají různá postižení, aby mohli používat tuto aplikaci. Existují například funkce pro zrakově postižené uživatele, kteří používají technologie jako je Microsoft Windows Narrator.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows Narrator a přístup pouze pomocí klávesnice
 
@@ -49,7 +49,7 @@ Další informace naleznete v tématu [Hledání za účelem navigace](navigatio
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Vyhledávání akce pro uživatele s klávesnicí nebo pro zadávání dat bez ověření chybovosti
 
-Ke každé akci, kterou nabízí stránka, se lze dostat z klávesnice pomocí posloupnosti karet. Informace o posloupnosti karet jsou poskytnuty dále v tomto tématu. Abyste mohli spustit akce přímějším způsobem, můžete použít funkci vyhledávání akce.
+Ke každé akci, kterou nabízí stránka, se lze dostat z klávesnice pomocí posloupnosti karet. Informace o posloupnosti karet jsou poskytnuty dále v tomto článku. Abyste mohli spustit akce přímějším způsobem, můžete použít funkci vyhledávání akce.
 
 ### <a name="example"></a>Příklad
 

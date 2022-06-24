@@ -1,6 +1,6 @@
 ---
 title: Začínáme s Elektronickou fakturací pro Brazílii
-description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Brazílii ve Finance a Supply Chain Management.
+description: Tento článek poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Brazílii ve Finance a Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846577"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Začínáme s Elektronickou fakturací pro Brazílii 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Brazílii. Toto téma vás provede kroky konfigurace, které jsou závislé na zemi v Regulatory Configuration Services (RCS), a doplní kroky popsané v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Tento článek poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Brazílii. Tento článek vás provede kroky konfigurace, které jsou závislé na zemi v Regulatory Configuration Services (RCS), a doplní kroky popsané v článku [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Konfigurace specifické pro zemi pro funkci brazilské elektronické fakturace NF-e (BR)
 
 Některé parametry z **funkce Elektronická fakturace v Brazílii NF-e (BR)** jsou publikovány s výchozími hodnotami. Než nasadíte funkci elektronické fakturace do prostředí služby, zkontrolujte a v případě potřeby aktualizujte hodnoty, aby lépe odpovídaly vašim obchodním potřebám.
 
-Tato část doplňuje část **Konfigurace nastavení elektronické fakturace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Tato část doplňuje část **Konfigurace nastavení elektronické fakturace specifická pro zemi** v článku [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
 2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Brazilský NF-e (BR)**, kterou jste vytvořili.
@@ -51,7 +53,7 @@ Tato část doplňuje část **Konfigurace nastavení elektronické fakturace sp
 
 Před nasazením nastavení aplikace do aplikace připojené k Finance nebo Supply Chain Management proveďte tyto kroky.
 
-Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v článku [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
 2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Brazilský NF-e (BR)**.
@@ -71,7 +73,7 @@ Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro z
 
 Některé parametry z **funkce Elektronická fakturace v Brazílii NFS-e ABRASF Curitiba (BR)** jsou publikovány s výchozími hodnotami. Než nasadíte funkci elektronické fakturace do prostředí služby, zkontrolujte a v případě potřeby aktualizujte hodnoty, aby lépe odpovídaly vašim obchodním potřebám.
 
-Tato část doplňuje část **Konfigurace nastavení elektronické fakturace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Tato část doplňuje část **Konfigurace nastavení elektronické fakturace specifická pro zemi** v článku [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
 2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Brazilský NFS-e ABRASF Curitiba (BR)**, kterou jste vytvořili.
@@ -96,7 +98,7 @@ Tato část doplňuje část **Konfigurace nastavení elektronické fakturace sp
 
 Před nasazením nastavení aplikace do aplikace připojené k Finance nebo Supply Chain Management proveďte tyto kroky.
 
-Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v článku [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
 1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
 2. Na stránce **Funkce elektronické fakturace** věřte, že je vybrána funkce elektronické fakturace **Brazilský NFS-e ABRASF Curitiba (BR)**.

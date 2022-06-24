@@ -1,6 +1,6 @@
 ---
 title: Roční uzávěrka
-description: Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
+description: Tento článek popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883206"
 ---
 # <a name="year-end-close"></a>Roční uzávěrka
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
+Tento článek popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
 
 Na konci fiskálního roku je nutné spustit proces roční uzávěrky k převodu počátečních zůstatků do nového roku. Většina organizací spouští proces roční uzávěrky několikrát. První běh přesune zůstatky do nového fiskálního roku. Proces lze potom spustit znovu, a to tolikrát, kolikrát je třeba, a přesunout zůstatky z položek úprav do nového fiskálního roku.
 

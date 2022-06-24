@@ -1,6 +1,6 @@
 ---
 title: Elektronická fakturace – Často kladené otázky
-description: Toto téma poskytuje informace o často kladených otázkách týkajících se Elektronické fakturace.
+description: Tento článek poskytuje informace o často kladených otázkách týkajících se Elektronické fakturace.
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2d4e7c79c83b9d60469c2b87a7b9120e0d4c13a695badfb2254a85cee629c933
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbb43438a9da567460eb744afb64dae5274f04a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770505"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904347"
 ---
-# <a name="electronic-invoicing-faq"></a>Nejčastější dotazy k elektronické fakturaci
+# <a name="electronic-invoicing-faq"></a>Časté otázky k elektronické fakturaci
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje odpovědi na často kladené otázky týkající se služby elektronické fakturace. Elektronická fakturace rozšiřuje možnosti elektronické fakturace, které existují v aplikacích Dynamics 365 Finance, Dynamics 365 Supply Chain Management a Dynamics 365 Project Operations. 
+Tento článek poskytuje odpovědi na často kladené otázky týkající se služby elektronické fakturace. Elektronická fakturace rozšiřuje možnosti elektronické fakturace, které existují v aplikacích Dynamics 365 Finance, Dynamics 365 Supply Chain Management a Dynamics 365 Project Operations. 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>Co je důležité na elektronické fakturaci a proč by se o ni má organizace měla zajímat?
 

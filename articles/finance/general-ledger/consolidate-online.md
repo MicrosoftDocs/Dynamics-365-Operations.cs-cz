@@ -1,6 +1,6 @@
 ---
 title: Finanční konsolidace online
-description: Toto téma popisuje online finanční konsolidace v hlavní knize.
+description: Tento článek popisuje online finanční konsolidace v hlavní knize.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848542"
 ---
 # <a name="online-financial-consolidations"></a>Finanční konsolidace online
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje online finanční konsolidace v hlavní knize. Než si přečtete toto téma, seznamte se s tématem [Přehled finančních konsolidací a převodu měny](financial-consolidations-currency-translation.md).
+Tento článek popisuje online finanční konsolidace v hlavní knize. Než si přečtete tento článek, seznamte se s článkem [Přehled finančních konsolidací a převodu měny](financial-consolidations-currency-translation.md).
 
 Po dokončení nastavení zadejte podrobnosti konsolidace na stránce **Konsolidace [Online]**. Po dokončení můžete kliknout na **OK** nebo **Dávka** pro zpracování konsolidace.
 
@@ -90,7 +90,7 @@ Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnnéh
 
 ## <a name="additional-resources"></a>Další prostředky
 
-Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
+Další informace o konsolidaci a převodech měn naleznete v nadřazeném článku [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
 

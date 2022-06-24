@@ -1,6 +1,6 @@
 ---
 title: Seznam funkcí ER v kategorii konkrétní pro obchodní domény
-description: Toto téma obsahuje informace o funkcích konkrétní pro obchodní domény, které jsou podporovány v elektronickém výkaznictví (ER).
+description: Tento článek obsahuje informace o funkcích konkrétní pro obchodní domény, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9df826dcc0b672977d4d8af1feb985ab9a0ab7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879942"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Seznam funkcí ER v kategorii konkrétní pro obchodní domény
 
 [!include [banner](../includes/banner.md)]
 
-Funkce konkrétní pro domény elektronického výkaznictví lze používat k provádění výpočtů a požadavků na přístup k datům, které jsou specifické pro implementaci produktu Microsoft Dynamics 365 Finance. Toto téma obsahuje souhrn těchto funkcí.
+Funkce konkrétní pro domény elektronického výkaznictví lze používat k provádění výpočtů a požadavků na přístup k datům, které jsou specifické pro implementaci produktu Microsoft Dynamics 365 Finance. Tento článek obsahuje souhrn těchto funkcí.
 
 ## <a name="list-of-supported-functions"></a>Seznam podporovaných funkcí
 

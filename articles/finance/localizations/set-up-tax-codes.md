@@ -1,6 +1,6 @@
 ---
 title: Nastavení daňových kódů
-description: Toto téma vysvětluje, jak nastavit daňové kódy ve službě výpočtu daně.
+description: Tento článek vysvětluje, jak nastavit daňové kódy ve službě výpočtu daně.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862921"
 ---
 # <a name="set-up-tax-codes"></a>Nastavení daňových kódů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit daňové kódy ve službě výpočtu daně. Zahrnuje nastavení pro jednoduchý scénář, který zajistí funkčnost daňového kódu, a informace o některých pokročilých funkcích daňového kódu pro složité scénáře.
+Tento článek vysvětluje, jak nastavit daňové kódy ve službě výpočtu daně. Zahrnuje nastavení pro jednoduchý scénář, který zajistí funkčnost daňového kódu, a informace o některých pokročilých funkcích daňového kódu pro složité scénáře.
 
 > [!IMPORTANT]
 > Nastavení daňových kódů ve službě výpočtu daně nerozlišuje právnické osoby. Toto nastavení můžete ve službě Regulatory Configuration Service (RCS) provést pouze jednou. Daňové kódy se automaticky synchronizují se Microsoft Dynamics 365 Finance, když ve Finance povolíte službu výpočtu daně pro vybranou právnickou osobu.

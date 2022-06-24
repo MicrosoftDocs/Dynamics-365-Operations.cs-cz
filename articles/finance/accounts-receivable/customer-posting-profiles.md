@@ -1,6 +1,6 @@
 ---
 title: Účetní profily odběratele
-description: Toto téma popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
+description: Tento článek popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
 author: JodiChristiansen
 ms.date: 12/22/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ed5ab24e37c75222080bd242aa72a39ecb476bf
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891688"
 ---
 # <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
+Tento článek popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
 
 ## <a name="customer-posting-profiles"></a>Účetní profily odběratele
 

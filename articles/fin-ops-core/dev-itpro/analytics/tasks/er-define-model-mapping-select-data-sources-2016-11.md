@@ -1,6 +1,6 @@
 ---
 title: Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat
-description: Toto téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví.
+description: Tento článek popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví.
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69fb025b273aca6a0cf7733732f2849686eaa470ded6804a10b793cff9837562
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40fe0c8453aa9e22bb170bad24993c64f8a3ee78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883531"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat
 

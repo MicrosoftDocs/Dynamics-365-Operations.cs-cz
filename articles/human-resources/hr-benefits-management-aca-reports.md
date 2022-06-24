@@ -1,6 +1,6 @@
 ---
 title: Vytvářejte ve správě zaměstnaneckých výhod sestavy v rámci zákona Affordable Care Act
-description: Toto téma popisuje, jak správa zaměstnaneckých výhod sleduje informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA).
+description: Tento článek popisuje, jak správa zaměstnaneckých výhod sleduje informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA).
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 118dace557c7c8a8d101e2f2ad1d94fb14547c1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d51e16345ab18904ebe55c1ec802446fc89d46d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889715"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generujte zprávy ACA ve Správě zaměstnaneckých výhod
 

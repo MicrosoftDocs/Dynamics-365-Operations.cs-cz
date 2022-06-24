@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846948"
 ---
 # <a name="cash-discounts"></a>Platební slevy
 
@@ -30,7 +30,7 @@ Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.  Dostupn�
 
 ## <a name="cash-discounts"></a>Platební slevy
 
-Na stránce Platební slevy lze vytvořit platební slevy pro odběratele nebo dodavatele. Pomocí pole Další kód slevy lze definovat také řadu platebních slev, které budou postupně následovat vždy, když vyprší platnost předchozí platební slevy. Další informace naleznete v části „Příklad: Řada platebních slev“ dále v tomto tématu. Pokud jsou faktura, transakce akreditivu (platba nebo dobropis) nebo obě tyto možnosti zadány v jiné měně než v zúčtovací měně právnické osoby, platební sleva se vypočítá pomocí směnného kurzu na základě data platby nebo dobropisu. Pokud jsou faktura a platební doklad zadány v jiných právnických osobách a zúčtovací měny se pro právnické osoby liší, směnný kurz je převzat z právnické osoby faktury k datu dokumentu akreditivu. Další informace naleznete v části „Příklad: Směnné kurzy pro platební slevy“ dále v tomto tématu.
+Na stránce Platební slevy lze vytvořit platební slevy pro odběratele nebo dodavatele. Pomocí pole Další kód slevy lze definovat také řadu platebních slev, které budou postupně následovat vždy, když vyprší platnost předchozí platební slevy. Další informace naleznete v části „Příklad: Řada platebních slev“ dále v tomto článku. Pokud jsou faktura, transakce akreditivu (platba nebo dobropis) nebo obě tyto možnosti zadány v jiné měně než v zúčtovací měně právnické osoby, platební sleva se vypočítá pomocí směnného kurzu na základě data platby nebo dobropisu. Pokud jsou faktura a platební doklad zadány v jiných právnických osobách a zúčtovací měny se pro právnické osoby liší, směnný kurz je převzat z právnické osoby faktury k datu dokumentu akreditivu. Další informace naleznete v části „Příklad: Směnné kurzy pro platební slevy“ dále v tomto článku.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Výchozí objednávka hlavního účtu platební slevy
 

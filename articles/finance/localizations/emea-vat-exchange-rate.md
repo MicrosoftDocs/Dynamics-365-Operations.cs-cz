@@ -1,6 +1,6 @@
 ---
 title: Přehled směnného kurzu DPH
-description: Toto téma poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko.
+description: Tento článek poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko.
 author: ShylaThompson
 ms.date: 07/08/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b96c5e7c3dc32cb720f6174fb84d878a5c02f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d8ca93f4e62e07730a32d7b08546c55e584e8b21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865477"
 ---
 # <a name="vat-exchange-rate-overview"></a>Přehled směnného kurzu DPH
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
+Tento článek poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
 
 Vaše organizace může vybrat směnný kurz, který používá, pro výpočet daně z přidané hodnoty (DPH) pro výkazy DPH. Tento směnný kurz může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví společnosti. Funkce účetnictví zahrnují přípravu následujících dokumentů souvisejících s daněmi:
 

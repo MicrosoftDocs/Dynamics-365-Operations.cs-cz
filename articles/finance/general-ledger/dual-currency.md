@@ -1,6 +1,6 @@
 ---
 title: Duální měna
-description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Microsoft Dynamics 365 Finance.
+description: Tento článek obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906348"
 ---
 # <a name="dual-currency"></a>Duální měna
 
@@ -36,7 +36,7 @@ Byly navíc zdokonaleny různé moduly pro sledování, vykazování a použív�
 - Dlouhodobý majetek 
 - Konsolidace
 
-Po upgradu je třeba provést konkrétní kroky pro správu hotovosti a banky a dlouhodobý majetek. Proto si nezapomeňte přečíst a porozumět příslušné části tohoto tématu.
+Po upgradu je třeba provést konkrétní kroky pro správu hotovosti a banky a dlouhodobý majetek. Proto si nezapomeňte přečíst a porozumět příslušné části tohoto článku.
 
 ## <a name="posting-process"></a>Proces zaúčtování
 
@@ -93,7 +93,7 @@ Byly provedeny následující dodatečné změny v modulu **Hlavní kniha**:
 - V hlavní knize lze definovat samostatný typ směnného kurzu pro měnu vykazování. Pokud organizace nechce použít jiný typ směnného kurzu, můžete nechat pole pro typ směnného kurzu pro měnu vykazování prázdné. Případně můžete vybrat stejný typ směnného kurzu, jaký je použitý pro zúčtovací měnu. Pokud pole ponecháte prázdné, systém použije typ směnného kurzu pro zúčtovací měnu.
 - Nový deník, Úprava měny vykazování, umožňuje zaúčtování úprav na účty hlavní knihy pouze v měně vykazování. Tento deník umožňuje zaúčtování pouze na účty hlavní knihy. Nepodporuje mezipodnikové zaúčtování a měna musí být měna vykazování právnické osoby, u níž byl deník zaúčtován. Při zaúčtování deníku jsou částky transakční měny a zúčtovací měny 0 (nula) a částky v měně vykazování jsou zaúčtovány s částkou, která je zadána v transakci. Vzhledem k tomu, že se změnil způsob, jakým je měna vykazování použita v modulech **závazky**, **pohledávky**, a **dlouhodobý majetek**, lze tento deník použít pro úpravy po dokončení upgradu. Příklady použití tohoto deníku naleznete v částech pro tyto moduly.
 - Proces přidělení období byl aktualizován tak, aby se přidělovaly částky v měnách transakce, účtování a vykazování. V předchozích verzích bývaly přidělovány částky transakční a zúčtovací měny a potom byly částky v zúčtovací měně převedeny na měnu vykazování. Toto chování mohlo způsobit, že zůstatek byl na účtu hlavní knihy v měně vykazování. Nyní se po výpočtu a použití částek v účetní položce neuskuteční žádný převod.
-- Proces přecenění cizí měny již přecenil částky v měně vykazování. Částka v měně vykazování je však nyní vypočítána pomocí částky v měně transakce, jak je popsáno v části [Proces zaúčtování](#posting-process) dříve v tomto tématu.
+- Proces přecenění cizí měny již přecenil částky v měně vykazování. Částka v měně vykazování je však nyní vypočítána pomocí částky v měně transakce, jak je popsáno v části [Proces zaúčtování](#posting-process) dříve v tomto článku.
 - Mnoho sestav a dotazů v hlavní knize již mělo zúčtovací měnu, ale pár jich ji nemělo. Jedním příkladem je stránka se seznamem **Předvaha**. Tato stránka se seznamem nyní zahrnuje sloupce pro zúčtovací měnu i měnu vykazování. Všimněte si, že sloupce pro měnu vykazování jsou skryté, pokud je zúčtovací měna a měna vykazování stejná nebo pokud v hlavní knize nebyla definována měna vykazování.
 
 ### <a name="financial-reporting"></a>Finanční výkaznictví

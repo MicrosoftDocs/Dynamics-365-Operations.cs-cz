@@ -1,6 +1,6 @@
 ---
 title: Jak vytvořit jedinečný oddělovač účtové osnovy
-description: Toto téma vysvětluje, proč nemůžete mít stejný oddělovač pro účtovou osnovu a hodnoty dimenze. Po upgradu je třeba změnit hodnoty oddělovače.
+description: Tento článek vysvětluje, proč nemůžete mít stejný oddělovač pro účtovou osnovu a hodnoty dimenze. Po upgradu je třeba změnit hodnoty oddělovače.
 author: panolte
 ms.date: 04/13/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6081a62077f1fc6b6920991ed6faae667c25a47c
-ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
+ms.openlocfilehash: aa0092f65461b6ebeea6649f48c0cf1c07cc936d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8573611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866247"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Jak vytvořit jedinečný oddělovač účtové osnovy
 

@@ -1,6 +1,6 @@
 ---
 title: Integrace s LinkedIn Talent Hub
-description: Toto téma vysvětluje, jak nastavit integraci mezi Microsoft Dynamics 365 Human Resources a LinkedIn Talent Hub.
+description: Tento článek vysvětluje, jak nastavit integraci mezi Microsoft Dynamics 365 Human Resources a LinkedIn Talent Hub.
 author: jaredha
 ms.date: 10/20/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: df4a0a4dec078392ba835318450f5983a6e95c97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887740"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrace s LinkedIn Talent Hub
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Integrace mezi Dynamics 365 Human Resources a LinkedIn Talent Hub popsané v tomto tématu byly 31. prosince 2021 vyřazeny. Integrační služba po tomto datu již nebude k dispozici. Organizace, které dosud nepoužívají integrační službu, nebudou moci tuto službu implementovat před vyřazením.
+> Integrace mezi Dynamics 365 Human Resources a LinkedIn Talent Hub popsané v tomto článku byly 31. prosince 2021 vyřazeny. Integrační služba po tomto datu již nebude k dispozici. Organizace, které dosud nepoužívají integrační službu, nebudou moci tuto službu implementovat před vyřazením.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) je platforma pro systém sledování žadatelů (ATS). Umožňuje vám získávat, spravovat a najímat zaměstnance z jednoho místa. Integrací Microsoft Dynamics 365 Human Resources s LinkedIn Talent Hub můžete snadno vytvářet záznamy o zaměstnancích v Human Resources pro uchazeče, kteří byli najati na pozici.
 
@@ -99,7 +99,7 @@ Pro adaptér LinkedIn Talent Hub musí být vytvořen uživatel aplikace, aby by
     2. Nastavte pole **Uživatelské jméno** na **Integrace Dynamics365 HR LinkedIn HRIS**.
     3. Nastavte pole **ID aplikace** na **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
     4. Zadejte libovolnou hodnotu do polí **Křestní jméno**, **Příjmení** a **Primární e-mail**.
-    5. Na panelu nástrojů vyberte **Uložit a zavřít**.
+    5. Na panelu nástrojů vyberte **Uložit \& zavřít**.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Přiřazení role zabezpečení novému uživateli
 

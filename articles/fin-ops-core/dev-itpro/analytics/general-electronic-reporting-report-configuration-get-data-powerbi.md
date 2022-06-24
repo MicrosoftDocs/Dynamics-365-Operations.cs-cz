@@ -1,6 +1,6 @@
 ---
 title: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
-description: Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z vaší instance do služeb Power BI.
+description: Tento článek vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z vaší instance do služeb Power BI.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896727"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z vaší instance do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti v sestavě Power BI.
+Tento článek vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z vaší instance do služeb Power BI. Tento článek používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti v sestavě Power BI.
 
 ## <a name="overview"></a>Přehled
 
-Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronické výkaznictví umožňuje uživatelům snadno konfigurovat zdroje dat a převod dat z aplikace do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Sestavy Power BI se sdílí s uživateli Power BI a jsou dostupné na řídicích panelech Power BI a na stránkách aplikace. Toto téma vysvětluje následující úkoly:
+Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronické výkaznictví umožňuje uživatelům snadno konfigurovat zdroje dat a převod dat z aplikace do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Sestavy Power BI se sdílí s uživateli Power BI a jsou dostupné na řídicích panelech Power BI a na stránkách aplikace. Tento článek vysvětluje následující úkoly:
 
-- Nakonfigurujte Microsoft Dynamics 365 Finance.
+- Konfigurace Microsoft Dynamics 365 Finance.
 - Přípravu konfigurace formátu ER na získávání dat z aplikace Finance.
 - Konfiguraci prostředí ER pro přenos dat do Power BI.
 - Použití převedených dat pro vytvoření sestavy Power BI.
 - Zpřístupnění sestavy Power BI v aplikaci Finance.
 
 ## <a name="prerequisites"></a>Předpoklady
-Pro dokončení příkladu v tomto tématu, musíte mít následující přístup:
+Pro dokončení příkladu v tomto článku, musíte mít následující přístup:
 
 - Přístup pro některou z následujících rolí:
 

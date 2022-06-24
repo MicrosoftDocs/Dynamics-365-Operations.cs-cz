@@ -1,6 +1,6 @@
 ---
-title: Pokročilé filtrování a syntaxe dotazu
-description: Toto téma popisuje možnosti filtrování a dotazů v dialogovém okně Rozšířený filtr či řazení, a operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
+title: Syntax pokročilého filtrování a dotazů
+description: Tento článek popisuje možnosti filtrování a dotazů v dialogovém okně Rozšířený filtr či řazení, a operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856911"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Pokročilé filtrování a syntaxe dotazu
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070002"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shod** v podokně filtru nebo filtrech záhlaví sloupce mřížky.
+Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shody** v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 
 ## <a name="advanced-query-syntax"></a>Syntax pokročilých dotazů
 

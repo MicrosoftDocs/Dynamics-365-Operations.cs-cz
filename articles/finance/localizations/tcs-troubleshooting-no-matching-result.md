@@ -1,6 +1,6 @@
 ---
-title: Nebylo možné najít žádné odpovídající výsledky
-description: Toto téma vysvětluje, jak odstranit chybu "Nebyl nalezen žádný odpovídající výsledek" ve službě Výpočet daně.
+title: Nelze nalézt žádné odpovídající výsledky
+description: Tento článek vysvětluje, jak odstranit chybu "Nebyl nalezen žádný odpovídající výsledek" ve službě Výpočet daně.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: c1a343b0b74645d40b0a2582749968cc0a56afd7
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: d3bbc76741fdd018d1b2987538b8de7f6d92ee53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845137"
 ---
-# <a name="no-matching-result-could-be-found"></a>Nebylo možné najít žádné odpovídající výsledky
+# <a name="no-matching-result-could-be-found"></a>Nelze nalézt žádné odpovídající výsledky
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou vysvětleny kroky k odstranění problémů, které můžete provést, pokud se ve službě Výpočet daně zobrazí chyba "Nebyl nalezen žádný odpovídající výsledek".
+V tomto článku jsou vysvětleny kroky k odstranění problémů, které můžete provést, pokud se ve službě Výpočet daně zobrazí chyba "Nebyl nalezen žádný odpovídající výsledek".
 
 ## <a name="symptom"></a>Příznak
 

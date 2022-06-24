@@ -1,6 +1,6 @@
 ---
 title: Degresivní odpis 150 procent
-description: Toto téma poskytuje přehled metody degresivního odpisu 150 %.
+description: Tento článek poskytuje přehled metody degresivního odpisu 150 %.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744461fe372cc1c048fe20599ff7b078d19c0f53
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f3bccb9d64851901d43b55887bb66c9b1b4e5a70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870213"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Degresivní odpis 150 procent
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled metody degresivního odpisu 150 %.
+Tento článek poskytuje přehled metody degresivního odpisu 150 %.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 150 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Tato procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 30 procent (150 % ÷ 5). 
 
@@ -41,7 +41,7 @@ Výchozí hodnota je **Kalendářní**. Vaše volba určí, jaké možnosti budo
 
 V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**. 
 
-Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech tohoto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 

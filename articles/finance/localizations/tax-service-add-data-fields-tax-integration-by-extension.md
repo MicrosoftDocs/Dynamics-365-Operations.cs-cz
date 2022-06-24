@@ -1,6 +1,6 @@
 ---
 title: Přidání datových polí do daňové integrace pomocí rozšíření
-description: Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.
+description: Tento článek vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871042"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Přidání datových polí do daňové integrace pomocí rozšíření
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace. Tato pole lze rozšířit na daňový datový model daňové služby a použít k určení daňových kódů. Další informace najdete v tématu [Přidání datových polí do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).
+Tento článek vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace. Tato pole lze rozšířit na daňový datový model daňové služby a použít k určení daňových kódů. Další informace najdete v tématu [Přidání datových polí do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Datový model
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 V tomto kódu je `_destination` objektem obálky, který se používá ke generování požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> Definujte název pole, které se používá ve formuláři žádosti, jako **private const str**. Řetězec by měl být přesně stejný jako název uzlu (nikoli popisek) přidaný v tématu [Přidání datových polí v daňových konfiguracích](tax-service-add-data-fields-tax-configurations.md).
+> Definujte název pole, které se používá ve formuláři žádosti, jako **private const str**. Řetězec by měl být přesně stejný jako název uzlu (nikoli popisek) přidaný v článku [Přidání datových polí v daňových konfiguracích](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Nastavte pole v metodě **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** pomocí metody **SetField**. Datový typ druhého parametru by měl být **string**. Pokud datový typ není **string**, převeďte ho na řetězec.
 > Pokud je datový typ X++ **typ výčtu**, doporučujeme použít metodu **enum2Symbol** pro převod hodnoty enum na řetězec. Přidaná hodnota výčtu v konfiguraci daně by měla být přesně stejná jako název výčtu. Následuje seznam rozdílů mezi hodnotou výčtu, štítkem a názvem.

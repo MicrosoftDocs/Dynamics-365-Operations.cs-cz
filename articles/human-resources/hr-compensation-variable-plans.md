@@ -1,6 +1,6 @@
 ---
 title: Vytvoření plánů variabilní kompenzace
-description: Toto téma popisuje součásti, které je nutné nastavit před použitím variabilní kompenzace a přihlášení zaměstnance k plánu variabilní kompenzace.
+description: Tento článek popisuje součásti, které je nutné nastavit před použitím variabilní kompenzace a přihlášení zaměstnance k plánu variabilní kompenzace.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688650"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853067"
 ---
 # <a name="create-variable-compensation-plans"></a>Vytvoření plánů variabilní kompenzace
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688650"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Variabilní kompenzace tvoří nestandardní mzdu zaměstnance, jako jsou například mzdové bonusy nebo odměny v akciích. Toto téma vysvětluje, jak nastavit komponenty, které jsou potřebné pro variabilní kompenzaci a přihlášení zaměstnance k plánu variabilní kompenzace.
+Variabilní kompenzace tvoří nestandardní mzdu zaměstnance, jako jsou například mzdové bonusy nebo odměny v akciích. Tento článek vysvětluje, jak nastavit komponenty, které jsou potřebné pro variabilní kompenzaci a přihlášení zaměstnance k plánu variabilní kompenzace.
 
 Výpočet částek variabilní kompenzace pro zaměstnance lze založit na několika faktorech, například na výkonu zaměstnance, úrovni kompenzace zaměstnance nebo výkonnosti oddělení.
 

@@ -1,6 +1,6 @@
 ---
 title: Definování zásad auditu pro zdrojové dokumenty
-description: Toto téma vysvětluje způsob nastavení a spuštění pravidel zásad auditu.
+description: Tento článek vysvětluje způsob nastavení a spuštění pravidel zásad auditu.
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b8aa106cd5a5596f6b9a6663390e03ebc3f91a7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872521"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definování zásad auditu pro zdrojové dokumenty
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje způsob nastavení a spuštění pravidel zásad auditu. Příklad využívá sestavu výdajů s typem Výdaje hotelu. Tato procedura používá ukázkovou společnost USMF. Role auditora obsahuje dostatečná oprávnění k provedení těchto úloh.
+Tento článek vysvětluje způsob nastavení a spuštění pravidel zásad auditu. Příklad využívá sestavu výdajů s typem Výdaje hotelu. Tato procedura používá ukázkovou společnost USMF. Role auditora obsahuje dostatečná oprávnění k provedení těchto úloh.
 
 1. V navigačním podokně přejděte na **Moduly > Pracovní plocha auditu > Nastavení > Typ pravidla zásad**.
 2. Zvolte **Nové**.

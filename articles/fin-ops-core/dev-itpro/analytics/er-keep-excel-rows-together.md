@@ -1,6 +1,6 @@
 ---
 title: Návrh formátu elektronického výkaznictví pro udržení řádků pohromadě na stejné stránce aplikace Excel
-description: Toto téma vysvětluje, jak navrhnout formát elektronického výkaznictví (ER), který udržuje řádky pohromadě na stejné stránce Microsoft Excel.
+description: Tento článek vysvětluje, jak navrhnout formát elektronického výkaznictví (ER), který udržuje řádky pohromadě na stejné stránce Microsoft Excel.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854662"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Návrh formátu elektronického výkaznictví pro udržení řádků pohromadě na stejné stránce aplikace Excel
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak může uživatel s rolí Správce systému nebo Funkční konzultant elektronického výkaznictví konfigurovat [formát](er-overview-components.md#format-component) [elektronického vykazování (ER)](general-electronic-reporting.md) pro generování odchozích dokumentů v aplikaci Microsoft Excel a spravovat stránkování dokumentů tak, aby byly vytvořené řádky na stejné stránce.
+Tento článek vysvětluje, jak může uživatel s rolí Správce systému nebo Funkční konzultant elektronického výkaznictví konfigurovat [formát](er-overview-components.md#format-component) [elektronického vykazování (ER)](general-electronic-reporting.md) pro generování odchozích dokumentů v aplikaci Microsoft Excel a spravovat stránkování dokumentů tak, aby byly vytvořené řádky na stejné stránce.
 
 V tomto příkladu upravíte formát ER poskytovaný společností Microsoft, který se používá k tisku faktur s volným textem v aplikaci Excel. Vaše úpravy vám umožní spravovat stránkování vygenerovaného výkazu faktur s volným textem tak, aby všechny řádky jednoho řádku faktury byly pokud možno zachovány na stejné stránce.
 
-Postupy v tomto tématu lze provést ve společnosti **USMF**. Není nutné žádné kódování.
+Postupy v tomto článku lze provést ve společnosti **USMF**. Není nutné žádné kódování.
 
 V tomto příkladu vytvoříte požadované [konfigurace](general-electronic-reporting.md#Configuration) ER pro vzorovou společnost **Litware, Inc**. Ověřte, že je dostupný poskytovatel konfigurace ukázkové společnosti **Litware, Inc.** (`http://www.litware.com`) uveden pro rámec ER a že označen jako **Aktivní**. Není-li tento poskytovatel konfigurace uveden v seznamu nebo není-li označen jako **Aktivní**, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -73,7 +73,7 @@ Postupujte podle kroků v části [Konfigurace cíle formátu pro náhled na obr
 
     ![Kontrola stránkování vygenerované faktury s volným textem v desktopové aplikaci Excel.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-Zbývající postupy v tomto tématu ukazují, jak můžete vyladit standardní formát ER, abyste zlepšili vzhled a čitelnost sestavy faktury tím, že veškerý obsah jednoho řádku faktury ponecháte na stejné stránce.
+Zbývající postupy v tomto článku ukazují, jak můžete vyladit standardní formát ER, abyste zlepšili vzhled a čitelnost sestavy faktury tím, že veškerý obsah jednoho řádku faktury ponecháte na stejné stránce.
 
 ## <a name="create-a-custom-format"></a>Vytvoření vlastního formátu
 

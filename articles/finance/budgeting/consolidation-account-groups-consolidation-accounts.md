@@ -1,6 +1,6 @@
 ---
 title: Skupiny konsolidačních účtů a další konsolidační účty
-description: Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
+description: Tento článek obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5ca7a50fcac53f1636da15b2d7977174b087ac25
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 9e66190fe0bab24545bf19eba59facded63ee197
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882013"
 ---
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Skupiny konsolidačních účtů a další konsolidační účty
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
+Tento článek obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
 
 ## <a name="consolidation-account-groups"></a>Skupiny konsolidačních účtů
 

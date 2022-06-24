@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848187"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
 
@@ -79,9 +79,9 @@ Váš deník výkonnosti bude popisovat<!--note from editor: Suggested.--> aktiv
 
 Pokud chcete k cíli přiložit dokument, např. certifikát o dokončení, můžete ho přiložit v části **Přílohy** stránky **Cíle výkonnosti**. Abyste mohli rychle zobrazit obsah jakéhokoli přiloženého dokumentu, je k dispozici prohlížeč dokumentů. 
 
-Z cíle můžete vytvořit šablonu a poté ji použít k vytváření nových cílů, které ze šablony vycházejí. Při vytváření šablony z cíle se ukládá popis, témata a cílová měření. Všechna skutečná měření, data dokončení a komentáře k tématu však budou odebrány.
+Z cíle můžete vytvořit šablonu a poté ji použít k vytváření nových cílů, které ze šablony vycházejí. Při vytváření šablony z cíle se ukládá popis, témata a cílová měření. Všechna skutečná měření, data dokončení a komentáře k článku však budou odebrány.
 
-## <a name="performance-reviews"></a>Přezkoumání výkonnosti
+## <a name="performance-reviews"></a>Kontroly výkonnosti
 
 Přezkoumáním výkonnosti se formálně říká diskuse. Ty jsou v současné době dostatečně flexibilní, aby podporovaly průběžnou zpětnou vazbu, plány rozvoje a formálnější přezkoumání. Můžete rychle vytvořit malé schůzky pro dva lidi<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> nebo můžete vytvořit složitější přezkoumání, které odpovídá procesu přezkoumání vaší společnosti. 
 

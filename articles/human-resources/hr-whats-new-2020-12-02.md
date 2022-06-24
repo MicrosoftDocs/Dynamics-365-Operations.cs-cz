@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (2. prosince 2020)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 2. prosinci 2020.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 2. prosinci 2020.
 author: marcelbf
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef6d2e73b42126b1be100dca52ebd8d9270fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782652"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848100"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (2. prosince 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -52,9 +52,9 @@ V této verzi jsou všeobecně dostupné následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
-| Číslo problému | Výdej | popis |
+| Číslo problému | Problém | Popis |
 | --- | --- | --- |
 | 514087 | Entita BenefitEligibilityProcessResult by měla zahrnovat datum a čas, který byl použit při zpracování. | Výsledek zpracování BenefitEligibity nyní obsahuje značku data a času posledního zpracování, která dříve chyběla. |
 | 526903 | Registrace zaměstnaneckých výhod selže u plánů se závislými prvky, když **Automatický výběr pověřených osob** je zapnutý v části **Sdílené parametry Human Resources**. | Opravili jsme problém, kdy registrace zaměstnaneckých výhod selhala pro závislé prvky, když byla možnost **Automatický výběr pověřených osob** zapnuta pro výchozí pověřené osoby. |

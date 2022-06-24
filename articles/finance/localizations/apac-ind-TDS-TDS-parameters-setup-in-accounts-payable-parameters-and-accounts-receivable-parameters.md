@@ -1,6 +1,6 @@
 ---
 title: Nastavení parametrů TDS v závazcích a pohledávkách
-description: Toto téma vysvětluje, jak nastavit parametry v závazcích a pohledávkách na podporu odpočtů daně odečtené u zdroje (TDS).
+description: Tento článek vysvětluje, jak nastavit parametry v závazcích a pohledávkách na podporu odpočtů daně odečtené u zdroje (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d2cb434346dbbe5487522fe9f7110716c3a8c761
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e547b92f9f7e0ccc5b92df4cd991ce402369b568
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883143"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Nastavení parametrů TDS v závazcích a pohledávkách
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit parametry v závazcích a pohledávkách na podporu odpočtů daně odečtené u zdroje (TDS).
+Tento článek vysvětluje, jak nastavit parametry v závazcích a pohledávkách na podporu odpočtů daně odečtené u zdroje (TDS).
 
 1. Přejděte do **Daň \> Nastavení \> Parametry \> Parametry pohledávek**.
 2. Na kartě **Aktualizace** vyberte **Aktualizovat řádky objednávky** k otevření dialogového okna **Aktualizovat řádky objednávky**.

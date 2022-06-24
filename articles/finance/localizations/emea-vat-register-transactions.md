@@ -1,6 +1,6 @@
 ---
 title: Transakce v rejstříku DPH pro východní Evropu
-description: Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko.
+description: Tento článek obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eec31a4d4c0df1ffe693465e8e7df2367f4b39e38569c6f44241941712054f38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96552ad42456e6cab0aba503a3763d749e3e001b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865469"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakce v rejstříku DPH pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko. 
+Tento článek obsahuje informace o transakcích v rejstříku DPH pro Estonsko, Litvu, Českou republiku, Maďarsko, Lotyšsko a Polsko. 
 
 Pro právnické osoby s primární adresou v Estonsku, Litvě, Česká republice, Maďarsku, Lotyšsku a Polsku můžete zkontrolovat daňové transakce a aktualizovat pro ně **datum rejstříku DPH**. Chcete-li zobrazit transakce v rejstříku DPH, přejděte na **Daň** > **Periodické úlohy** > **Transakce v rejstříku DPH**. Tato stránka zobrazuje daňové transakce, které byly vytvořeny podle kódů DPH typu **Standardní DPH** pro který je **datum rejstříku DPH** prázdné. Můžete vyplnit **Datum rejstříku DPH** pro daňové transakce výběrem tlačítka **Datum rejstříku DPH** v **hlavní nabídce**. Pro právnické osoby s primární adresou v České republice je k dispozici další sloupec, **Odložená DPH**. Pokud je toto pole vybrané, daň z přidané hodnoty ještě nebyla pro transakci hlášena. Odložená DPH běžně platí pro dobropisy, které čekají na potvrzení od zákazníka. Toto políčko můžete vybrat během procesu zaúčtování prodejní faktury. Na stránce **Kódy DPH** (**Daň** &gt; **DPH** &gt; **Kódy DPH**) můžete zobrazit nebo aktualizovat typ kódu DPH. Další informace o kódech DPH naleznete v tématu [Nastavení kódů DPH](../general-ledger/tasks/set-up-sales-tax-codes.md).
 

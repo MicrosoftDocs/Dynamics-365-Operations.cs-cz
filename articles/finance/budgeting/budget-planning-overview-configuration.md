@@ -1,6 +1,6 @@
 ---
 title: Přehled plánování rozpočtu
-description: Toto téma popisuje plánování rozpočtu. Obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
+description: Tento článek popisuje plánování rozpočtu. Obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711736"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853547"
 ---
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje plánování rozpočtu. Obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
+Tento článek popisuje plánování rozpočtu. Obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
 
 ## <a name="overview-of-budget-planning"></a>Přehled plánování rozpočtu
 
@@ -91,7 +91,7 @@ Workflow plánování rozpočtu je tvořen uspořádanou sadou fází, kterými 
 
 Workflow plánování rozpočtu vytváříte v části **Fáze workflowu** na stránce **Konfigurace plánování rozpočtu**. Zde můžete vybrat fáze a workflowu rozpočtování, který bude použit, a vy nakonfigurujete další nastavení.
 
-Je vhodné vytvořit workflow plánování rozpočtu pro každou úroveň hierarchie rozpočtování. Poté můžete přiřadit workflow rozpočtování, který obsahuje prvky, které odpovídají fázím workflowu plánování rozpočtu. V příkladu schématu zobrazeném v tomto tématu bude jeden workflow plánování rozpočtu vytvořen pro prodejní oddělení a jiný pro ústředí. Workflow rozpočtování přesune plány rozpočtu jednotlivými fázemi.
+Je vhodné vytvořit workflow plánování rozpočtu pro každou úroveň hierarchie rozpočtování. Poté můžete přiřadit workflow rozpočtování, který obsahuje prvky, které odpovídají fázím workflowu plánování rozpočtu. V příkladu schématu zobrazeném v tomto článku bude jeden workflow plánování rozpočtu vytvořen pro prodejní oddělení a jiný pro ústředí. Workflow rozpočtování přesune plány rozpočtu jednotlivými fázemi.
 
 Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Tento proces se podobá procesu vytváření jiných workflowů. Následující obrázek znázorňuje příklad workflowu pro ústředí.
 
@@ -141,7 +141,7 @@ Fáze přidělení lze použít k automatickému přidělení řádků plánu ro
 
 Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu rozpočtu k plánu přidělení. Workflow plánování rozpočtu je nutné přiřadit k workflowu rozpočtování, který používá automatickou úlohu workflowu **Přidělení fáze plánování rozpočtu**. Když workflow dosáhne určité fáze, dojde k automatickému přidělení. Tato automatizovaná úloha slouží k vytvoření řádků plánu rozpočtu v novém scénáři.
 
-V příkladu schématu zobrazeném dříve v tomto tématu je přidělení provedeno k převodu částek z plánu rozpočtu a scénářů v "základní" fázi ústředí do jiného plánu rozpočtu a scénářů obchodních oddělení ve fázi "odhadu". Následující obrázek ukazuje příslušnou část ilustračního schématu.
+V příkladu schématu zobrazeném dříve v tomto článku je přidělení provedeno k převodu částek z plánu rozpočtu a scénářů v "základní" fázi ústředí do jiného plánu rozpočtu a scénářů obchodních oddělení ve fázi "odhadu". Následující obrázek ukazuje příslušnou část ilustračního schématu.
 
 [![Přidělení fází.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

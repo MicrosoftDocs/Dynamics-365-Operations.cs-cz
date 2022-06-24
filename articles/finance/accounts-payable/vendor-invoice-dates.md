@@ -1,6 +1,6 @@
 ---
 title: Data faktur dodavatele
-description: Toto téma popisuje data, která se objevují na fakturách dodavatele. Vysvětluje také, jak nastavit systém tak, aby automaticky upravoval datum zaúčtování.
+description: Tento článek popisuje data, která se objevují na fakturách dodavatele. Vysvětluje také, jak nastavit systém tak, aby automaticky upravoval datum zaúčtování.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105456"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876405"
 ---
 # <a name="vendor-invoice-dates"></a>Data faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje data, která se objevují na fakturách dodavatele. Vysvětluje také, jak nastavit systém tak, aby automaticky upravoval datum zaúčtování.
+Tento článek popisuje data, která se objevují na fakturách dodavatele. Vysvětluje také, jak nastavit systém tak, aby automaticky upravoval datum zaúčtování.
 
 Na stránce **Podrobnosti čekající faktury dodavatele** se v záhlaví faktury zobrazí čtyři data: datum přijetí faktury, datum faktury, datum zaúčtování a datum splatnosti. Při vytvoření faktury dodavatele se standardně zadávají následující data:
 
@@ -37,7 +37,7 @@ Na stránce **Podrobnosti čekající faktury dodavatele** se v záhlaví faktur
 
 Někdy může být faktura dodavatele v nevyřízeném stavu po dlouhou dobu po uzávěrce období. Když je připravena k zaúčtování, stále se použije staré datum zaúčtování z minulého účetního období. Toto období je však nyní uzavřeno. Proto musí úředník pro závazky (AP) ručně změnit všechna data účtování na nové účetní období pro všechny nevyřízené faktury, které byly dříve vytvořeny.
 
-Funkce popsaná v tomto tématu vám umožňuje nastavit systém tak, aby automaticky upravoval datum účtování podle obchodních požadavků.
+Funkce popsaná v tomto článku vám umožňuje nastavit systém tak, aby automaticky upravoval datum účtování podle obchodních požadavků.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parametr pro automatickou úpravu data zaúčtování dodavatelské faktury
 

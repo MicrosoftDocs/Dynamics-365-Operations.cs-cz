@@ -1,8 +1,8 @@
 ---
 title: Inicializace Commerce Scale Unit (cloud)
-description: Toto téma vysvětluje, jak inicializovat Commerce Scale Unit (cloudovou verzi) v Microsoft Dynamics 365 Commerce.
+description: Tento článek vysvětluje, jak inicializovat Commerce Scale Unit (cloudovou verzi) v Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
-ms.date: 02/04/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,18 +11,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092206"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942845"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Inicializace Commerce Scale Unit (cloud)
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak inicializovat Commerce Scale Unit (cloudovou verzi) v Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak inicializovat Commerce Scale Unit (cloudovou verzi) v Microsoft Dynamics 365 Commerce.
 
 Pokud používáte sandbox 2. úrovně nebo produkční prostředí, které má verzi aplikace 8.1.2.x nebo novější, musíte inicializovat Commerce Scale Unit (cloudovou verzi), než budete moci používat funkce maloobchodního kanálu buď pro operace pokladního místa (POS). nebo pro operace elektronického obchodování, které využívají Retail Server v cloudu. Inicializace nasadí Commerce Scale Unit (cloudovou verzi).
 
@@ -49,32 +49,34 @@ Pokud používáte sandbox 2. úrovně nebo produkční prostředí, které má 
 ## <a name="region-availability"></a>Regionální dostupnost
 Commerce Scale Unit je k dispozici pro nasazení v následujících regionech.
 
-| Globální umístění | Oblast              | Dostupnost        |
-|-----------------|---------------------|---------------------|
-| AMERIKA        | Východní USA             | Obecně dostupné |
-| AMERIKA        | Východní USA 2           | Obecně dostupné |
-| AMERIKA        | Střed USA – sever    | Obecně dostupné |
-| AMERIKA        | Střed USA – jih    | Obecně dostupné |
-| AMERIKA        | Střed USA          | Obecně dostupné |
-| AMERIKA        | USA – západ             | Obecně dostupné |
-| AMERIKA        | USA – západ 2           | Obecně dostupné |
-| AMERIKA        | Střední Kanada      | Omezená kapacita    |
-| AMERIKA        | Kanada – východ         | Omezená kapacita    |
-| AMERIKA        | Střed USA – západ     | Omezená kapacita    |
-| APAC            | Austrálie – východ      | Obecně dostupné |
-| APAC            | Jihovýchodní Asie      | Obecně dostupné |
-| APAC            | Japonsko – východ          | Obecně dostupné |
-| APAC            | Japonsko – západ          | Obecně dostupné |
-| APAC            | Austrálie – jihovýchod | Omezená kapacita    |
-| APAC            | Východní Asie           | Omezená kapacita    |
-| APAC            | Jižní Indie         | Omezená kapacita    |
-| APAC            | Střední Indie       | Omezená kapacita    |
-| EMEA            | Evropa – západ         | Obecně dostupné |
-| EMEA            | Evropa – sever        | Obecně dostupné |
-| EMEA            | Velká Británie – jih            | Omezená kapacita    |
-| EMEA            | Velká Británie – západ             | Omezená kapacita    |
+| Globální umístění | Oblast              | Dostupnost        | Komentáře                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| AMERIKA        | Východní USA             | Obecně dostupné |                           |
+| AMERIKA        | Východní USA 2           | Obecně dostupné |                           |
+| AMERIKA        | Střed USA – sever    | Omezená kapacita    |                           |
+| AMERIKA        | Střed USA – jih    | Omezená kapacita    |                           |
+| AMERIKA        | Střed USA          | Obecně dostupné |                           |
+| AMERIKA        | USA – západ             | Obecně dostupné |                           |
+| AMERIKA        | USA – západ 2           | Obecně dostupné |                           |
+| AMERIKA        | Střední Kanada      | Omezená kapacita    |                           |
+| AMERIKA        | Kanada – východ         | Omezená kapacita    |                           |
+| AMERIKA        | Střed USA – západ     | Omezená kapacita    |                           |
+| APAC            | Austrálie – východ      | Obecně dostupné |                           |
+| APAC            | Jihovýchodní Asie      | Kapacita omezena | Nejsou povolena žádná nasazení    |
+| APAC            | Japonsko – východ          | Obecně dostupné |                           |
+| APAC            | Japonsko – západ          | Obecně dostupné |                           |
+| APAC            | Austrálie – jihovýchod | Obecně dostupné |                           |
+| APAC            | Východní Asie           | Omezená kapacita    |                           |
+| APAC            | Jižní Indie         | Kapacita omezena | Nejsou povolena žádná nasazení    |
+| APAC            | Střední Indie       | Omezená kapacita    | Vyžaduje proces schválení |
+| EMEA            | Evropa – západ         | Obecně dostupné |                           |
+| EMEA            | Evropa – sever        | Obecně dostupné |                           |
+| EMEA            | Velká Británie – jih            | Omezená kapacita    |                           |
+| EMEA            | Velká Británie – západ             | Omezená kapacita    |                           |
+| Švýcarsko     | Švýcarsko - sever   | Omezená kapacita    | Vyžaduje proces schválení |
+| Spojené arabské emiráty             | Spojené arabské emiráty – sever           | Omezená kapacita    | Vyžaduje proces schválení |
 
-Kapacita nasazení v regionech s omezenou kapacitou je extrémně omezená. Požadavky na nasazení jsou vyhodnocovány případ od případu. Máte-li přesvědčivou obchodní potřebu nasazení v oblastech s omezenou kapacitou, odešlete požadavek na podporu s žádostí o přidání do pořadníku.
+Kapacita nasazení v regionech s omezenou kapacitou je extrémně omezená. Požadavky na nasazení jsou vyhodnocovány případ od případu. Máte-li přesvědčivou obchodní potřebu nasazení v oblastech s omezenou kapacitou, odešlete požadavek na podporu s žádostí o přidání do pořadníku. Oblasti s omezenou kapacitou v současné době neumožňují nasazení Commerce Scale Unit. 
 
 ![Mapa ukazující regionální dostupnost.](media/Commerce-Scale-Unit-Region-Availability.png "Mapa ukazující regionální dostupnost")
 

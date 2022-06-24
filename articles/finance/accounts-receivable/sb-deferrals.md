@@ -1,6 +1,6 @@
 ---
 title: Odložené výnosy a výdaje ve fakturaci předplatného
-description: Toto téma vysvětluje, jak nastavit odložené výnosy a výdaje ve fakturaci předplatného.
+description: Tento článek vysvětluje, jak nastavit odložené výnosy a výdaje ve fakturaci předplatného.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908089"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Odložené výnosy a výdaje ve fakturaci předplatného
 
-Toto téma vysvětluje, jak nastavit a používat odložené výnosy a výdaje ve fakturaci předplatného. Harmonogramy odkladů jsou vždy založeny na podkladovém původním dokumentu nebo rozvrhu fakturace a závisí na nich. Protože jsou vytvářeny na základě výchozích hodnot, nelze je zadávat ani vytvářet samostatně.
+Tento článek vysvětluje, jak nastavit a používat odložené výnosy a výdaje ve fakturaci předplatného. Harmonogramy odkladů jsou vždy založeny na podkladovém původním dokumentu nebo rozvrhu fakturace a závisí na nich. Protože jsou vytvářeny na základě výchozích hodnot, nelze je zadávat ani vytvářet samostatně.
 
 Proces nastavení a použití odložených příjmů a výdajů probíhá na několika stránkách:
 

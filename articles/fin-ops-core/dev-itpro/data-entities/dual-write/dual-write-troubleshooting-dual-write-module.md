@@ -1,6 +1,6 @@
 ---
 title: Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v finančních a provozních aplikacích.
+description: Tento článek obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování ve finančních a provozních aplikacích.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613875"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864565"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
 
@@ -22,10 +22,10 @@ ms.locfileid: "8613875"
 
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
 
 > [!IMPORTANT]
-> Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
+> Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Ve finanční a provozní aplikaci nelze modul dvojího zápisu načíst
 

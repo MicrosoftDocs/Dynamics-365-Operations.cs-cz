@@ -1,6 +1,6 @@
 ---
 title: Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
-description: Toto téma popisuje, jak nakonfigurovat model elektronického výkaznictví (ER) tak, aby používal finanční dimenze jako zdroj dat pro zprávy ER. (část 2)
+description: Tento článek popisuje, jak nakonfigurovat model elektronického výkaznictví (ER) tak, aby používal finanční dimenze jako zdroj dat pro zprávy ER. (část 2)
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d228ee9d393cab1c5c1592ca6570cdc91992c38c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605398"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878335"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
 
@@ -94,7 +94,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 25. Ve stromovém zobrazení vyberte LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions.
 26. Ve stromové struktuře vyberte 'Deník\Transakce\Data dimenzí'.
 27. Klikněte na možnost Vazba.
-!Stránka návrháře mapování modelu, karta Mapování, Strom zdrojů dat.](../media/er-financial-dimensions-guides-model-mapping3.png)
+!Stránka Návrhář mapování modelu, karta Mapování, strom zdrojů dat.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Ve stromovém zobrazení vyberte LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit).
 29. Ve stromovém zobrazení vyberte možnost 'Deník\Transakce\Má dáti'.
 30. Klikněte na možnost Vazba.

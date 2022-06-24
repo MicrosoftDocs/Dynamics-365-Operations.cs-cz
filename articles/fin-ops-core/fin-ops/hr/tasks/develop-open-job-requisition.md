@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876495"
 ---
 # <a name="develop-and-open-job-requisition"></a>Vytvoření a otevření požadavku na pozici
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkce náboru v tomto tématu se bude označovat jako náborové projekty a zaměří se na žadatele, žádosti a náborové projekty.  
+> Funkce náboru v tomto článku se bude označovat jako náborové projekty a zaměří se na žadatele, žádosti a náborové projekty.  
 
 
 Náborové projekty umožňují spravovat proces náboru. K jednotlivým náborovým projektům lze nastavit informace, jako například práci, na kterou probíhá nábor, název náborového pracovníka, stav projektu a oddělení, kde se práce bude nacházet. Po vytvoření náborového projektu můžete napsat inzerát na pozici projektu, publikovat inzerát na **samoobslužných stránkách zaměstnanců**, přiřadit přihlášky k zaměstnání pro projekt a sledovat aktivity pro daný projekt. K vytvoření této procedury jsou použita ukázková data společnosti **USMF**.

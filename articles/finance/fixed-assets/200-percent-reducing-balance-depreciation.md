@@ -1,6 +1,6 @@
 ---
 title: Degresivní odpis 200 procent
-description: Toto téma poskytuje přehled metody degresivního odpisu 200 %.
+description: Tento článek poskytuje přehled metody degresivního odpisu 200%.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 831a99246f0a2d5f223e3624aace1c218c3c4ff4
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7abcf26f3e658e8a6f451f26240890d183547982
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870155"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Degresivní odpis 200 procent
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled metody degresivního odpisu 200 %.
+Tento článek poskytuje přehled metody degresivního odpisu 200%.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 200 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 40 procent (200 % ÷ 5). 
 
@@ -43,7 +43,7 @@ Vaše volba určí, jaké možnosti budou dostupné v poli **Frekvence období**
 
 V poli **Odpisový rok** můžete ponechat výchozí hodnotu **Kalendářní**. 
 
-Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpis obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
+Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpis obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech tohoto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 

@@ -1,6 +1,6 @@
 ---
 title: Parametry opakované fakturace smlouvy
-description: Toto téma vysvětluje, jak nastavit výchozí hodnoty pro plány fakturace, které jsou vytvořeny v rámci opakované fakturace smlouvy. Vysvětluje také, jak vytvořit skupiny plánů fakturace.
+description: Tento článek vysvětluje, jak nastavit výchozí hodnoty pro plány fakturace, které jsou vytvořeny v rámci opakované fakturace smlouvy. Vysvětluje také, jak vytvořit skupiny plánů fakturace.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903327"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametry opakované fakturace smlouvy
 
@@ -27,7 +27,7 @@ Na stránce **Parametry opakované fakturace smlouvy** nastavíte výchozí hodn
 
 ## <a name="general-tab"></a>Karta Obecné
 
-1. Na stránce **Parametry opakované fakturace smlouvy** na kartě **Obecné** v poli **Skupina plánů fakturace** vyberte skupinu plánů fakturace. Informace, jak nastavit skupiny plánů fakturace najdete v části [Skupiny plánů fakturace](#set-up-billing-schedule-groups) dále v tomto tématu.
+1. Na stránce **Parametry opakované fakturace smlouvy** na kartě **Obecné** v poli **Skupina plánů fakturace** vyberte skupinu plánů fakturace. Informace, jak nastavit skupiny plánů fakturace najdete v části [Skupiny plánů fakturace](#set-up-billing-schedule-groups) dále v tomto článku.
 2. V poli **Typ ukončení** vyberte způsob výpočtu konečné faktury po ukončení plánu fakturace:
 
     - **Upravit plán** – Přerušte plán fakturace k datu ukončení, změňte stav plánu na **Poslední fakturace** a upravte přidružený plán odkladu zrušením částky, kterou už dále není třeba uznat. Pokud datum zahájení fakturace spadá až za datum ukončení, zbývající fakturační období se odstraní.

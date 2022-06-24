@@ -1,6 +1,6 @@
 ---
 title: Nastavit cizí směnky
-description: Toto téma popisuje kroky k nastavení směnek.
+description: Tento článek popisuje kroky k nastavení směnek.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874718"
 ---
 # <a name="set-up-bills-of-exchange"></a>Nastavit cizí směnky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje kroky k nastavení směnek.
+Tento článek popisuje kroky k nastavení směnek.
 
 Směnka představuje písemný nebo elektronický příkaz odběratele určující, že jiná strana, obvykle banka, musí společnosti zaplatit uvedenou částku. Při použití směnky k úhradě faktury prodejní objednávky nebo volné faktury účtujete na stranu Dal odběratelského účtu. Tento úvěr je zajištěn směnkou, dokud odběratel směnku neproplatí bance. Obvykle hradíte fakturu směnkou ke dni splatnosti. Po příchodu avíza z banky o zaplacení směnky můžete směnku uzavřít. Směnka může projít bankou v jednom z následujících časů:
 

@@ -1,6 +1,6 @@
 ---
 title: Vytvoření plánu volna a absence
-description: Toto téma popisuje, jak vytvořit plány dovolené v Dynamics 365 Human Resources pro různé druhy dovolené.
+description: Tento článek popisuje, jak vytvořit plány dovolené v Dynamics 365 Human Resources pro různé druhy dovolené.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad5d4b1e7b67d1148d01f393a2d548d06b84de9a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 42f7dbf53ad26107d9919d7e6ccfd6f9d3cff7c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858149"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
 
 > [!Important]
-> Funkce uvedené v tomto tématu jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
+> Funkce uvedené v tomto článku jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

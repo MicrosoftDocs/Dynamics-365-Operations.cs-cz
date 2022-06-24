@@ -1,6 +1,6 @@
 ---
 title: Opětovné použití konfigurace ER se šablonami aplikace Excel ke generování zpráv ve formátu Word
-description: Toto téma popisuje, jak lze konfigurovat formáty sestav, které byly navrženy ke generování sestav jako sešitů aplikace Excel, aby generovaly sestavy jako dokumenty Word.
+description: Tento článek popisuje, jak lze konfigurovat formáty sestav, které byly navrženy ke generování sestav jako sešitů aplikace Excel, aby generovaly sestavy jako dokumenty Word.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910379"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Opětovné použití konfigurace ER se šablonami aplikace Excel ke generování zpráv ve formátu Word
 
@@ -43,7 +43,7 @@ Tyto postupy jsou pro funkci, která byla přidána do Dynamics 365 for Operatio
 
 ## <a name="select-the-existing-er-report-configuration"></a>Volba existující konfigurace sestavy ER
 
-1. V Dynamics 365 Finance přejděte na **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+1. V aplikaci Dynamics 365 Finance přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Ujistěte se, že je poskytovatel konfigurace **Litware, Inc.** vybrán jako **Aktivní**. Pokud tomu tak není, postupujte podle pokynů v průvodci záznamem úloh [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md).
 3. Vyberte **Konfigurace vykazování**. Znovu použijete existující konfiguraci ER, která byla původně navržena ke generování výstupu sestavy ve formátu OPENXML.
 4. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně rozbalte položku **Model platby** a poté vyberte možnost **Vzorová sestava listu**.

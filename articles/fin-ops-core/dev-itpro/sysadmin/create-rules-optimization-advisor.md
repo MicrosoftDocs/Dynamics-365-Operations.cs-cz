@@ -1,6 +1,6 @@
 ---
 title: Vytvoření pravidel pro poradce při optimalizaci
-description: Toto téma popisuje postup přidání nových pravidel do poradce při optimalizaci.
+description: Tento článek popisuje postup přidání nových pravidel do poradce při optimalizaci.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850898"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Vytvoření pravidel pro poradce při optimalizaci
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje postup vytvoření nových pravidel pro **Poradce při optimalizaci**. Můžete například vytvořit nové pravidlo, které identifikuje, jaké případy požadavků na nabídku mají prázdný název. Použití názvů u případů je činí snadno identifikovatelné a vyhledávatelné. I když je to docela snadncě, tento příklad ukazuje, čeho lze s pravidly optimalizace dosáhnout. 
+Tento článek vysvětluje postup vytvoření nových pravidel pro **Poradce při optimalizaci**. Můžete například vytvořit nové pravidlo, které identifikuje, jaké případy požadavků na nabídku mají prázdný název. Použití názvů u případů je činí snadno identifikovatelné a vyhledávatelné. I když je to docela snadncě, tento příklad ukazuje, čeho lze s pravidly optimalizace dosáhnout. 
 
 *Pravidlo* je kontrola na datech aplikace. Pokud je splněna podmínka, kterou pravidlo vyhodnocuje, vytvoří se příležitosti k optimalizaci procesů nebo vylepšení dat. Na příležitosti lze reagovat a v případě potřeby můžete měřit dopad akce. 
 

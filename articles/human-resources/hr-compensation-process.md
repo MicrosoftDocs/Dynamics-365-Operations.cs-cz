@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886153"
 ---
 # <a name="process-compensation"></a>Proces kompenzace
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693857"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Zpracování kompenzace umožňuje vypočítat částky nové základní kompenzace pro zaměstnance na základě úpravy jmění, cílů zvýšení zásluh a výkonnosti. Teoto téma se věnuje základnímu zpracování toku kompenzace pro plány fixní kompenzace bez faktoringu ve výkonu zaměstnance.
+Zpracování kompenzace umožňuje vypočítat částky nové základní kompenzace pro zaměstnance na základě úpravy jmění, cílů zvýšení zásluh a výkonnosti. Tento článek se věnuje základnímu zpracování toku kompenzace pro plány fixní kompenzace bez faktoringu ve výkonu zaměstnance.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Naplánování nových částek kompenzace a rozpočtů
 Abyste zaměstnancům mohli zvýšit nastavení zásluh, je nutné nastavit pevný přírůstkový rozpočet pro každé oddělení: **Správa kompenzací** > **Odkazy** > **Zvýšení cílů zásluh**. (Případně můžete tuto stránku otevřít prostřednictvím voleb Oddělení: **Organizace** > **Oddělení**). Zde můžete dále specifikovat, zda zaměstnanci v určitém odboru nebo skladovém místě mají získat jiné procentuální zvýšení. Pole **Rozpočet** a **Měna** mají informativní charakter a umožňují zaznamenat peněžní částku rozpočtu.
@@ -41,7 +41,7 @@ Datum procesní události **Bod v čase** se používá pouze pro zpracování u
 
 Po uložení parametrů procesní události můžete klepnutím na tlačítko **Nastavení** vybrat plány, které mají být zahrnuty do daného procesu a které fixní kompenzace akce mají být provedeny pro jednotlivé plány.
 
-Kliknutím na tlačítko **Přidat** na kartě **Plány** přidejte plán kompenzace do procesní události. Sloupce **Použít jiný účinek**, **Koeficient účinku** a **Popis účinku** slouží pouze pro variabilní plány kompenzace a nejsou uvedené v tomto tématu.
+Kliknutím na tlačítko **Přidat** na kartě **Plány** přidejte plán kompenzace do procesní události. Sloupce **Použít jiný účinek**, **Koeficient účinku** a **Popis účinku** slouží pouze pro variabilní plány kompenzace a nejsou uvedené v tomto článku.
 
 Uložte záznam a kliknutím na tlačítko **Přidat** na kartě **Akce** přidejte akce fixní kompenzace pro vybraný plán. Použijte volbu **Povolit doporučení**, pokud chcete zadat jiné množství než vypočtené zvýšení směrnice pro akci. Chcete-li vypočítat akci, která vychází z výsledku předchozí akce a propojit více akcí kompenzace, zapněte možnost **Použít předchozí výsledek**. Akce fixní kompenzace jsou typy logiky kompenzace, kterým můžete dát popisná jména. Pro plány **Platová třída** a **Pásmo** můžete přidat pouze akce fixní kompenzace následujících typů:
 

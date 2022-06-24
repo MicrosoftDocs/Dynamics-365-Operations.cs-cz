@@ -1,6 +1,6 @@
 ---
 title: Přehled uznání výnosů (obsahuje video)
-description: Toto téma obsahuje informace o funkci uznání výnosů. Tato funkce poskytuje flexibilní rámec, který vaší společnosti umožňuje definovat vlastní pravidla uznání výnosové ceny a plánu výnosů pro objednávky s více složkami.
+description: Tento článek obsahuje informace o funkci uznání výnosů. Tato funkce poskytuje flexibilní rámec, který vaší společnosti umožňuje definovat vlastní pravidla uznání výnosové ceny a plánu výnosů pro objednávky s více složkami.
 author: kweekley
 ms.date: 03/15/2022
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 35ee857339a59391b048f920e8d6b13812909d76
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: acb3575d9b6371bb4a6924be1e6e2ee86b976e7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888028"
 ---
 # <a name="revenue-recognition-overview"></a>Přehled uznání výnosů
 

@@ -1,6 +1,6 @@
 ---
 title: Přiznání ke srážkové dani pro Egypt
-description: Toto téma vysvětluje, jak nakonfigurovat a vygenerovat přiznání ke srážkové dani pro Egypt.
+description: Tento článek vysvětluje, jak nakonfigurovat a vygenerovat přiznání ke srážkové dani pro Egypt.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907680"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Přiznání ke srážkové dani pro Egypt (EG-00005)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403882"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Přehled
-Toto téma vysvětluje, jak nastavit a generovat prohlášení o srážkové dani a formuláře 41 a 11 přiznání ke srážkové dani pro právnické osoby v Egyptě 
+Tento článek vysvětluje, jak nastavit a generovat prohlášení o srážkové dani a formuláře 41 a 11 přiznání ke srážkové dani pro právnické osoby v Egyptě 
 
 Všechny egyptské subjekty musí připravit formulář 41, který shrnuje všechny daně zadržené od místních dodavatelů a poskytovatelů služeb. Kromě formuláře 41 musí být generován formulář 11, který podrobně popisuje všechny zadržené daně od zahraničních poskytovatelů. 
 
@@ -58,7 +58,7 @@ Další informace o tom, jak importovat konfigurace elektronických sestav, najd
 
 Implementace formulářů přiznání k WHT pro Egypt je založena na konfiguracích elektronických přiznání (ER). Další informace o možnostech a konceptech konfigurovatelných sestav najdete v tématu [Elektronické přiznání](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-Prostředí produkčního a uživatelského akceptačního testování (UAT) najdete v pokynech v tématu [Stáhnout konfiguraci elektronických zpráv ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Prostředí produkčního a uživatelského akceptačního testování (UAT) najdete v pokynech v článku [Stáhnout konfiguraci elektronických zpráv ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Chcete-li vygenerovat přiznání ke srážkové dani v egyptské právnické osobě, musíte nahrát následující konfigurace:
 

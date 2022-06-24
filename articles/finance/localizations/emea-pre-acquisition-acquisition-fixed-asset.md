@@ -1,6 +1,6 @@
 ---
 title: Účtování předpořízení dlouhodobého majetku
-description: Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
+description: Tento článek vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa7e1dd743790d494a4b80e656ce5732c81b08bfea4da70750cd92f67b8618f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d5b6220c70a9f9e23aa413ed7f7982631789f79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894766"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Účtování předpořízení dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
+Tento článek vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
 
 **Poznámka:** Funkce pro účtování předpořízení dlouhodobého majetku je k dispozici pouze pro právnické osoby, které mají své primární adresy v Maďarsku a České republice. Předpořízení dlouhodobého majetku se neodpisuje a nemá vliv na náklady na pořízení nebo zůstatkové účetní hodnoty dlouhodobého majetku. Při účtování předpořízení, stav dlouhodobého majetku se změní na **Získáno**. Dlouhodobý majetek, který má stav **Získáno**, není odpisovatelný. Naproti tomu, při účtování pořízení se stav změní na **Otevřeno** a dlouhodobý majetek je odpisovatelný.
 

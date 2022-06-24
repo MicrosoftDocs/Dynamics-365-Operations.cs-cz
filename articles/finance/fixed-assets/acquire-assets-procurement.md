@@ -1,6 +1,6 @@
 ---
 title: Pořízení majetku pomocí zásobování
-description: Toto téma popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku.
+description: Tento článek popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712083"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891573"
 ---
 # <a name="acquire-assets-through-procurement"></a>Pořízení majetku pomocí zásobování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku. Jeden řádek nákupu vytvoří jeden majetek, bez ohledu na množství v řádku nákupu. Pokud potřebujete vytvořit několik dlouhodobých majetků, je nutné vytvořit několik řádků nákupu.
+Tento článek popisuje, jak integraci modulů Dlouhodobý majetek a Závazky nastavit tak, aby probíhalo automatické vytváření majetku z nákupních objednávek nebo faktur, případně automatické zaúčtování transakcí pořízení a opravy pořizovací ceny dlouhodobého majetku. Jeden řádek nákupu vytvoří jeden majetek, bez ohledu na množství v řádku nákupu. Pokud potřebujete vytvořit několik dlouhodobých majetků, je nutné vytvořit několik řádků nákupu.
 
  K integraci dlouhodobého majetku a závazků jsou k dispozici následující metody a pro veškerý dlouhodobý majetek je nutné použít stejnou metodu:
 -   Před přidáním čísla dlouhodobého majetku na řádek nákupní objednávky nebo faktury dodavatele vytvořte ručně dlouhodobý majetek. Transakce pořízení je automaticky zaúčtována při zaúčtování faktury dodavatele majetku. Toto je výchozí metoda.
@@ -38,7 +38,7 @@ Jestliže dáváte přednost ručnímu vytváření položek majetku, vyberte pr
 
 Ať už položky majetku vytváříte ručně nebo používáte pružnější přístup, musíte rozhodnout, zda může být transakce pořízení zaúčtována pouze v modulu majetku, nebo při zaúčtování faktury dodavatele. V některých organizacích preferují ruční pořizování a vytváření transakcí pořízení uživateli do deníku nebo pomocí návrhů v modulu majetku. 
 
-V tomto tématu jsou podrobně popsány obě metody.
+V tomto článku jsou podrobně popsány obě metody.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Metody ručního vytvoření dlouhodobého majetku
 Když zaúčtujete fakturu dodavatele, která má v řádcích uvedeno číslo majetku, a je zaškrtnuté políčko Povolit pořízení majetku v části Nakupování na stránce Parametry dlouhodobého majetku, pořízení je zaúčtováno automaticky a stav majetku se změní na hodnotu Otevřeno. 

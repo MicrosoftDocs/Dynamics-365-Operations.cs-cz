@@ -1,6 +1,6 @@
 ---
 title: Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
-description: Toto téma popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd.
+description: Tento článek popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883618"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích [elektronického výkaznictví (ER)](../general-electronic-reporting.md) voláním požadovaných metod aplikačních tříd ve výrazech ER. Hodnoty argumentů pro volání tříd lze dynamicky definovat za běhu. Hodnoty mohou být například založeny na informacích v dokumentu analýzy, aby byla zajištěna jeho správnost.
+Tento článek popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích [elektronického výkaznictví (ER)](../general-electronic-reporting.md) voláním požadovaných metod aplikačních tříd ve výrazech ER. Hodnoty argumentů pro volání tříd lze dynamicky definovat za běhu. Hodnoty mohou být například založeny na informacích v dokumentu analýzy, aby byla zajištěna jeho správnost.
 
-Jako příklad v tomto tématu navrhnete proces, který analyzuje příchozí bankovní výpisy pro aktualizaci dat aplikace. Příchozí bankovní výpisy obdržíte jako textové soubory (.txt), které obsahují kódy mezinárodních čísel bankovních účtů (IBAN). V rámci procesu importu bankovních výpisů je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici.
+Jako příklad v tomto článku navrhnete proces, který analyzuje příchozí bankovní výpisy pro aktualizaci dat aplikace. Příchozí bankovní výpisy obdržíte jako textové soubory (.txt), které obsahují kódy mezinárodních čísel bankovních účtů (IBAN). V rámci procesu importu bankovních výpisů je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Tento postup je navržen pro uživatele s přiřazenou rolí **správce systému** nebo **vývojáře elektronického vykazování**.
+Postup v tomto článku je navržen pro uživatele s přiřazenou rolí **správce systému** nebo **vývojáře elektronického vykazování**.
 
 Tyto postupy lze dokončit za použití libovolné datové sady.
 
 Pro jejich dokončení je nutné stáhnout a uložit následující soubor: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-V tomto tématu vytvoříte požadované konfigurace ER pro vzorovou společnost Litware, Inc. Před provedením procedury v tomto tématu je proto třeba provést následující kroky.
+V tomto článku vytvoříte požadované konfigurace ER pro vzorovou společnost Litware, Inc. Před provedením procedury v tomto článku je proto třeba provést následující kroky.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** ověřte, že je dostupný poskytovatel konfigurace ukázkové společnosti **Litware, Inc.** a že je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivní](er-configuration-provider-mark-it-active-2016-11.md).

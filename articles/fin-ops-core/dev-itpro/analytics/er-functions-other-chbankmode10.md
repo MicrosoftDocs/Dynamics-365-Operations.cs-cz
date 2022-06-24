@@ -1,6 +1,6 @@
 ---
 title: Funkce el. výkaznictví CH_BANK_MOD_10
-description: Toto téma obsahuje obecné informace o použití funkce CH_BANK_MOD_10 elektronického výkaznictví.
+description: Tento článek obsahuje obecné informace o použití funkce CH_BANK_MOD_10 elektronického výkaznictví.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d634f074338831c9c767697a8b6d782289f43b0f4d4a33ea4d29f81f7d71f111
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 494aa335ef170db0cd2f61a1d33391de474cd4bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885020"
 ---
 # <a name="ch_bank_mod_10-er-function"></a>Funkce el. výkaznictví CH_BANK_MOD_10
 

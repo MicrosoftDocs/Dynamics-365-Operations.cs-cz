@@ -1,6 +1,6 @@
 ---
 title: Zaměstnanci si vybírají plány pomocí samoobsluhy zaměstnanců (volitelně)
-description: Toto téma popisuje, jak si zaměstnanci mohou vybrat nebo aktualizovat své výhody.
+description: Tento článek popisuje, jak si zaměstnanci mohou vybrat nebo aktualizovat své výhody.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 21567851500f4a68e5393b16ccf2b1de00a0ca7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909955"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>Zaměstnanci si vybírají plány pomocí samoobsluhy zaměstnanců (volitelně)
 

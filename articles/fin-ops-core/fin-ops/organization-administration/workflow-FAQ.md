@@ -1,6 +1,6 @@
 ---
-title: Časté dotazy k workflow
-description: Toto téma poskytuje odpovědi na časté otázky týkající se systému workflow.
+title: Workflow – Často kladené otázky
+description: Tento článek poskytuje odpovědi na časté otázky týkající se systému workflow.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896572"
 ---
 # <a name="workflow-faq"></a>Workflow – Často kladené otázky
 
@@ -26,7 +26,7 @@ ms.locfileid: "8370873"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma poskytuje odpovědi na časté otázky týkající se systému workflow.
+Tento článek poskytuje odpovědi na časté otázky týkající se systému workflow.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Proč je při odmítnutí pracovní položky doručeno více oznámení?
 Když je pracovní položka odmítnuta, tato pracovní položka je dokončena jako odmítnutá. Jiná pracovní položka je vytvořena a přiřazena původci. To znamená, že existuje oznámení původci o odmítnuté pracovní položce, a samostatné oznámení uživateli přiřazenému k nové pracovní položce s požadovanou změnou. 

@@ -1,6 +1,6 @@
 ---
 title: Přiznání k DPH pro Egypt
-description: Toto téma vysvětluje, jak nakonfigurovat a vygenerovat formulář přiznání k DPH pro Egypt.
+description: Tento článek vysvětluje, jak nakonfigurovat a vygenerovat formulář přiznání k DPH pro Egypt.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870028"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Přiznání k DPH pro Egypt (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403941"
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit a generovat formulář přiznání k DPH a knihy o prodeji a nákupu pro právnické osoby v Egyptě.
+Tento článek vysvětluje, jak nastavit a generovat formulář přiznání k DPH a knihy o prodeji a nákupu pro právnické osoby v Egyptě.
 
 Formulář přiznání k DPH pro Egypt je oficiální dokument, který shrnuje celkovou splatnou částku DPH na výstupu, celkovou částku zpětně získané DPH na vstupu a související daňovou povinnost DPH. Formulář se používá pro všechny typy daňových poplatníků a měl by být vyplněn ručně prostřednictvím portálu daňových úřadů. Formulář přiznání k DPH se běžně označuje jako podání přiznání k DPH.
 

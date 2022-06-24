@@ -1,6 +1,6 @@
 ---
 title: Refundace odběratelům
-description: Toto téma vysvětluje, jak vytvořit transakce refundace pro skupinu odběratelů.
+description: Tento článek vysvětluje, jak lze vytvořit transakce refundace pro skupinu odběratelů.
 author: JodiChristiansen
 ms.date: 09/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47d464dd23d70e1a340211eb83828550d807a543
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 892b089edb16ba560f588c086d37faafdf16958d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891775"
 ---
 # <a name="reimburse-customers"></a>Refundace odběratelům
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit transakce refundace pro skupinu odběratelů. Jestliže u odběratele figuruje kreditní zůstatek, můžete refundovat kladné zůstatky množství zůstatku odběratele. 
+Tento článek vysvětluje, jak lze vytvořit transakce refundace pro skupinu odběratelů. Jestliže u odběratele figuruje kreditní zůstatek, můžete refundovat kladné zůstatky množství zůstatku odběratele. 
 
 Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete.
 

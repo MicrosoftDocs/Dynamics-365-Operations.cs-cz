@@ -1,6 +1,6 @@
 ---
-title: Časové rozlišení projektu na nákupních příjemkách
-description: Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 Finance.
+title: Časové rozlišení nákladů projektu na nákupních příjemkách
+description: Tento článek popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e435002bca8fd4deb58c16c50db55237a3e9053
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a138fd41269fad2e9ac489664ca81c3ee12f830d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735103"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856850"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Časové rozlišení nákladů projektu na nákupních příjemkách
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 Finance. 
+Tento článek popisuje, jak lze sledovat časově rozlišené náklady na projekt z nákupních příjemek v aplikaci Microsoft Dynamics 365 Finance. 
 
 Faktury pro projekt často přicházejí později než zboží a služby, což může mít významný dopad na projekt klíčové ukazatele výkonu (KPI). Je důležité, aby bylo možné sledovat tyto transakce ve finančních i projektových sestavách.
 

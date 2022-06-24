@@ -1,6 +1,6 @@
 ---
 title: Obsah výkonosti výroby v Power BI
-description: Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI.
+description: Tento článek popisuje, co je součástí obsahu výkonosti výroby v Power BI.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881454"
 ---
 # <a name="production-performance-power-bi-content"></a>Obsah výkonosti výroby v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **výkonnosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Tento článek popisuje, co je součástí obsahu **výkonosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
@@ -63,7 +63,7 @@ Tyto údaje se používají pro stránky sestavy v obsahu **Výkonnost výroby**
 
 Následující tabulka uvádí klíčová agregovaná opatření, která se používají jako základ obsahu Power BI.
 
-| Celek                   | Klíčová opatření agregace  | Zdroj dat pro aplikace Finance and Operations | Pole              |
+| Celek                   | Klíčová opatření agregace  | Datový zdroj pro aplikace Finance and Operations | Pole              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

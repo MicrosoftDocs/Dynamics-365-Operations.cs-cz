@@ -1,6 +1,6 @@
 ---
 title: Řešení problémů s upgrady ve finančních a provozních aplikacích
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
+description: Tento článek obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882135"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Řešení problémů s upgrady ve finančních a provozních aplikacích
 
@@ -24,10 +24,10 @@ ms.locfileid: "8062818"
 
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
 
 > [!IMPORTANT]
-> Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
+> Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
 ## <a name="database-synchronization-errors"></a>Chyby synchronizace databáze
 

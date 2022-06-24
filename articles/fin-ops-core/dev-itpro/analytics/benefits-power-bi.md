@@ -1,6 +1,6 @@
 ---
 title: Obsah zaměstnaneckých výhod v Power BI
-description: Toto téma popisuje obsah zaměstnaneckých výhod v Power BI.
+description: Tento článek popisuje obsah zaměstnaneckých výhod v Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e7cadc16c5ed6c6eab8c90090cac017221f63f466115b04a6a3b843db44b1c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c78755946c7f07e1be7a57015e6c0c15317e6b76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848802"
 ---
 # <a name="benefits-power-bi-content"></a>Obsah zaměstnaneckých výhod v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **zaměstnaneckých výhod** v Microsoft Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Tento článek popisuje obsah **zaměstnaneckých výhod** v Microsoft Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Zaměstnanecké výhody** v Power BI se zobrazuje v pracovním prostoru **Správa zaměstnaneckých výhod**, pokud používáte jeden z následujících produktů:

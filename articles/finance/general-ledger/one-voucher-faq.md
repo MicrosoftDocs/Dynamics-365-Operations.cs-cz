@@ -1,6 +1,6 @@
 ---
 title: Často kladené dotazy týkající se funkce Jeden doklad
-description: Toto téma poskytuje odpovědi na časté otázky týkající se funkce Jeden doklad. Jedno číslo dokladu pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu.
+description: Tento článek poskytuje odpovědi na časté otázky týkající se funkce Jeden doklad. Jedno číslo dokladu pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859788"
 ---
 # <a name="one-voucher-faq"></a>Často kladené dotazy týkající se funkce Jeden doklad
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje odpovědi na časté otázky týkající se funkce Jeden doklad. Jeden doklad pro finanční deníky vám umožňuje zadat více transakcí dílčí knihy v kontextu jediného dokladu. Deníky, které do tohoto dokladu můžete zahrnout, mohou být mimo jiné obecné deníky, deníky dlouhodobého majetku a deníky plateb od dodavatelů.
+Tento článek poskytuje odpovědi na časté otázky týkající se funkce Jeden doklad. Jeden doklad pro finanční deníky vám umožňuje zadat více transakcí dílčí knihy v kontextu jediného dokladu. Deníky, které do tohoto dokladu můžete zahrnout, mohou být mimo jiné obecné deníky, deníky dlouhodobého majetku a deníky plateb od dodavatelů.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Kdy bude ukončena funkce Jeden doklad?
 

@@ -1,6 +1,6 @@
 ---
 title: Prognóza cashflow
-description: Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
+description: Tento článek obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904665"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
@@ -110,7 +110,7 @@ Další informace naleznete v tématu [Externí data v prognózách cashflow](..
 
 Ve verzi 10.0.17 umožňuje nová funkce integraci s projektovým řízením a účetnictvím a prognózami cashflow. V pracovním prostoru **Správa funkcí** zapněte funkci **Projektová prognóza cashflow** a přidejte tak předpokládané náklady a výnosy do prognózy cashflow. Na kartě **Řízení projektů a účetnictví** ve stránce **Nastavení prognózy cashflow** vyberte typy projektů a typy transakcí, které mají být zahrnuty do prognózy cashflow. Poté vyberte projektový model prognózy. Dílčí model typu omezení funguje nejlépe. Účty likvidity, které byly zadány v nastavení pohledávek, se používají jako výchozí účty likvidity. Při nastavování prognózy cashflow proto nemusíte zadávat výchozí účty likvidity. Lze také použít rozpočtový model, ale na stránce **Nastavení prognózy cashflow** lze vybrat pouze jeden typ pro projektové řízení a účetnictví. Model prognózy poskytuje největší flexibilitu, když je použito Řízení projektů a účetnictví nebo Project Operations.
 
-Po zapnutí funkce projektové prognózy cashflow lze prognózu cashflow zobrazit pro každý projekt na stránce **Všechny projekty**. V podokně akcí na kartě **Plán** ve skupině **Prognóza** vyberte možnost **Prognóza cashflow**. V pracovním prostoru **Přehled hotovosti** (viz část [Vykazování](#reporting) dále v tomto tématu), zobrazuje typ transakce projektové prognózy přírůstky (výnos projektové prognózy) a úbytky (náklady projektové prognózy). Částky lze zahrnout, pouze pokud **Fáze projektu** v pracovních prostorech **Přehled hotovosti** na nastavena na hodnotu **Zpracovává se**.
+Po zapnutí funkce projektové prognózy cashflow lze prognózu cashflow zobrazit pro každý projekt na stránce **Všechny projekty**. V podokně akcí na kartě **Plán** ve skupině **Prognóza** vyberte možnost **Prognóza cashflow**. V pracovním prostoru **Přehled hotovosti** (viz část [Vykazování](#reporting) dále v tomto článku), zobrazuje typ transakce projektové prognózy přírůstky (výnos projektové prognózy) a úbytky (náklady projektové prognózy). Částky lze zahrnout, pouze pokud **Fáze projektu** v pracovních prostorech **Přehled hotovosti** na nastavena na hodnotu **Zpracovává se**.
 
 Projektové transakce jsou stále několika způsoby zahrnuty do prognózy cashflow, bez ohledu na to, zda je zapnutá funkce **Projektová prognóza cashflow**. Zaúčtované projektové faktury jsou zahrnuty do prognózy jako součást otevřených transakcí odběratele. Prodejní a nákupní objednávky iniciované projektem jsou zahrnuty do prognózy jako otevřené objednávky po jejich zadání do systému. Můžete také přenést prognózy projektu do rozpočtového modelu hlavní knihy. Tento rozpočtový model hlavní knihy je poté zahrnut do prognózy cashflow jako součást položek registru rozpočtu. Pokud jste zapnuli funkci **Projektová prognóza cashflow**, nepřenášejte projektové prognózy do rozpočtového modelu hlavní knihy, protože tato akce způsobí, že se prognózy projektu započítají dvakrát.
 

@@ -1,6 +1,6 @@
 ---
 title: Přecenění leasingových splátek vázaných na indexovou sazbu
-description: Toto téma popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby.
+description: Tento článek popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903240"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Přecenění leasingových splátek vázaných na indexovou sazbu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby. Leasingový závazek a používaný majetek budou upraveny tak, aby zohledňovaly částky platby. V rámci tématu Kodifikace účetních standardů 842 (ASC 842), což je standard v Obecně přijímaných účetních zásadách v USA (US GAAP), se mění pouze variabilní platby, když se platby zvyšují nebo snižují z důvodu změny indexové sazby, pokud neexistují další změny peněžních toků. Tyto další změny mohou zahrnovat změnu podmínek leasingu, která souvisí s úrokovými sazbami. Další informace viz ASC 842-10-55-225 a odstavec 42 (b) Mezinárodního standardu účetního výkaznictví 16 (IFRS 16).
+Tento článek popisuje úpravu leasingového závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby. Leasingový závazek a používaný majetek budou upraveny tak, aby zohledňovaly částky platby. V rámci tématu Kodifikace účetních standardů 842 (ASC 842), což je standard v Obecně přijímaných účetních zásadách v USA (US GAAP), se mění pouze variabilní platby, když se platby zvyšují nebo snižují z důvodu změny indexové sazby, pokud neexistují další změny peněžních toků. Tyto další změny mohou zahrnovat změnu podmínek leasingu, která souvisí s úrokovými sazbami. Další informace viz ASC 842-10-55-225 a odstavec 42 (b) Mezinárodního standardu účetního výkaznictví 16 (IFRS 16).
 
 ## <a name="adjust-lease-payments"></a>Úprava leasingových splátek
 

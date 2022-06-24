@@ -1,6 +1,6 @@
 ---
 title: Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
-description: Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření.
+description: Tento článek uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55f4f1e93eb45530bed886bc46acd1420160eb38
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904636"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
 

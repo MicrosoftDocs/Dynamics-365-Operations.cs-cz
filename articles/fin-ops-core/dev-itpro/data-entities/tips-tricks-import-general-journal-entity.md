@@ -1,6 +1,6 @@
 ---
 title: Import dokladů pomocí entity hlavního deníku
-description: Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
+description: Tento článek obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867604"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Import dokladů pomocí entity hlavního deníku
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065063"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
+Tento článek obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
 
 Entity obecného deníku lze použít pro import dokladů, které mají typ účtu nebo protiúčtu **Hlavní kniha**, **Odběratel**, **Dodavatel** nebo **Banka**. Doklad lze zadat jako jeden řádek, pomocí pole **Účet** i **Protiúčet** nebo jako více řádků dokladu, kde je použito pouze pole **Účet** (a pole **Protiúčet** je na každém řádku prázdné). Entita finančního deníku nepodporuje všechny typy účtů. Místo toho jsou k dispozici jiné entity pro scénáře, kde jsou vyžadovány různé kombinace typů účtů. Chcete-li importovat transakce projektu, použijte entitu deníku výdajů projektu. Každá entita je navržena pro podporu specifických scénářů. To znamená, že pro tyto scénáře mohou být k dispozici další pole v entitách. Další pole však nemusí být k dispozici v entitách pro různé scénáře.
 

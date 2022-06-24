@@ -1,6 +1,6 @@
 ---
 title: Vyhledávání aktualizací předpisů pro jednotlivé země
-description: Toto téma obsahuje odkazy na plánované a vydané aktualizace předpisů Microsoft Dynamics 365 Finance pro jednotlivé země.
+description: Tento článek obsahuje odkazy na plánované a vydané aktualizace předpisů Microsoft Dynamics 365 Finance pro jednotlivé země.
 author: AKroshkina
 ms.date: 01/20/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kfend
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c86f93ca76168e04a3152de67f40ef408bc096a6
-ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
+ms.openlocfilehash: 2a272c5310375007b65f54501b9770610504f72a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8022942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896175"
 ---
 # <a name="search-for-country-specific-regulatory-updates"></a>Vyhledávání aktualizací předpisů pro jednotlivé země
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje odkazy na plánované a vydané aktualizace předpisů Microsoft Dynamics 365 Finance pro jednotlivé země. Musíte se přihlásit do Microsoft Dynamics Lifecycle Services (LCS) pro přístup k těmto informacím.
+Tento článek obsahuje odkazy na plánované a vydané aktualizace předpisů Microsoft Dynamics 365 Finance pro jednotlivé země. Musíte se přihlásit do Microsoft Dynamics Lifecycle Services (LCS) pro přístup k těmto informacím.
 
 | Země nebo oblast    | Problém v hledání problémů LCS |
 |----------------------|---------------------------|

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858517"
 ---
 # <a name="collections-management-key-concepts"></a>Klíčové pojmy správy inkasa
 
@@ -34,7 +34,7 @@ Dříve než začnete s nastavením nebo práci s inkasem, měli byste se sezná
 - Vytvoření transakcí odpisů je možné provést v jednom kroku.
 - Zpracování plateb s nedostatečnými finančními prostředky je možné provést v jednom kroku.
 
-Toto téma popisuje jednotlivé pojmy.
+Tento článek popisuje jednotlivé pojmy.
 
 ## <a name="customer-aging-snapshots"></a>Snímky sledování splatnosti odběratele 
 
@@ -86,7 +86,7 @@ Podokno akcí obsahuje tlačítka, která umožňují zobrazení souvisejících
 
 Můžete odpustit, obnovit nebo stornovat poplatky a úroky z transakcí, které jsou součástí oznámení úroků. Na záložce **Inkasovat** v podokně Akce na stránce se seznamem **Všichni odběratelé** zvolte **Oznámení úroků**, **Úrok z transakce** nebo **Poplatek**.
 
-Tyto úpravy mají vliv pouze na oznámeních úroků a úroky a poplatky, které tyto obsahují. Informace o tom, jak odepsat všechny poplatky, které dluží odběratel, naleznete v části [Vytváření transakcí odpisů](#creating-write-off-transactions) v tomto tématu.
+Tyto úpravy mají vliv pouze na oznámeních úroků a úroky a poplatky, které tyto obsahují. Informace o tom, jak odepsat všechny poplatky, které dluží odběratel, naleznete v části [Vytváření transakcí odpisů](#creating-write-off-transactions) v tomto článku.
 
 Další informace lze najít v části Vytvoření kódu úroků s rozsahem a Zpracování úroků.
 

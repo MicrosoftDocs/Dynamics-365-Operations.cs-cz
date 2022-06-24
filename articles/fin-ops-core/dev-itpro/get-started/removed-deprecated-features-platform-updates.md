@@ -1,6 +1,6 @@
 ---
-title: Odebrané nebo zastaralé funkce platformy
-description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
+title: Odstraněné nebo zastaralé funkce platformy
+description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811239"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945793"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
+Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
@@ -40,7 +40,7 @@ Podrobné informace o objektech v finančních a provozních aplikacích lze nal
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Ukončujeme podporu mobilní aplikace Finance and Operations (Dynamics 365) a příslušné platformy za účelem konsolidace do jediné mobilní platformy, kterou je Power Apps. |
-| **Nahrazeno jinou funkcí?**   | Ano, mobilní prostředí s daty aplikace Finance and Operations lze sestavit pomocí integrace Power Platform. Více podrobností najdete v tématu [Vytváření mobilních prostředí](../power-platform/build-mobile-experiences.md). |
+| **Nahrazeno jinou funkcí?**   | Ano, mobilní prostředí s daty aplikace Finance and Operations lze sestavit pomocí integrace Power Platform. Více podrobností najdete v tomto [blogovém příspěvku](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) a článku [Vytváření mobilních prostředí](../power-platform/build-mobile-experiences.md). |
 | **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé. Datum ukončení podpory je plánováno na říjen 2024. |

@@ -1,6 +1,6 @@
 ---
 title: Vytvoření plánů fixní kompenzace
-description: Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
+description: Tento článek popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 05f4748f66f4027972aabf53e7a1c237b8dbb543
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f254afc37d5afae48c3b2b3b16bd86634ac9aa3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875735"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Vytvoření plánů fixní kompenzace
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693052"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
+Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Tento článek popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
 
 Částky fixní kompenzace lze vypočítat pro zaměstnance na základě faktorů, jako je výkon, oblast a zvýšení rozpočtu. Dynamics 365 Human Resources podporuje typy kompenzace kroku, stupně a pásma.
 

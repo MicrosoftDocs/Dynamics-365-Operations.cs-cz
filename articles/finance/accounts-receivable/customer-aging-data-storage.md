@@ -1,6 +1,6 @@
 ---
 title: Úložiště dat sledování splatnosti zákazníků
-description: Toto téma popisuje proces používání externího úložiště pro sledování splatnosti odběratelů. Můžete spustit proces ukládání sledování splatnosti odběratelů a zpřístupnit výstup pro export do externího systému.
+description: Tento článek popisuje proces používání externího úložiště pro sledování splatnosti odběratelů. Můžete spustit proces ukládání sledování splatnosti odběratelů a zpřístupnit výstup pro export do externího systému.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894135"
 ---
 # <a name="customer-aging-data-storage"></a>Úložiště dat sledování splatnosti zákazníků
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje proces používání externího úložiště pro sledování splatnosti odběratelů. V Microsoft Dynamics 365 Finance můžete spustit proces **ukládání sledování splatnosti** odběratelů a zpřístupnit výstup pro export do externího systému. Když proces spustíte, pro externí systémy jsou dostupné stejné možnosti sestavy sledování splatnosti, jaké jsou dostupné v systému. Podrobnosti jsou vždy zahrnuty v exportovaných datech.
+Tento článek popisuje proces používání externího úložiště pro sledování splatnosti odběratelů. V Microsoft Dynamics 365 Finance můžete spustit proces **ukládání sledování splatnosti** odběratelů a zpřístupnit výstup pro export do externího systému. Když proces spustíte, pro externí systémy jsou dostupné stejné možnosti sestavy sledování splatnosti, jaké jsou dostupné v systému. Podrobnosti jsou vždy zahrnuty v exportovaných datech.
 
 Může být užitečné zpřístupnit sledování splatnosti odběratelů v externím systému pro uložení v případech, kdy výstup obsahuje mnoho zákazníků a/nebo mnoho transakcí. Pokud stávající sestava **Sledování splatnosti odběratele** vyprší, protože obsahuje příliš mnoho dat k tisku, tato funkce poskytuje alternativní způsob, jak získat stejná data.
 

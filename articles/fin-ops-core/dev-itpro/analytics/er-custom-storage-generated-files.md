@@ -1,6 +1,6 @@
 ---
 title: Určení vlastních umístění úložišť pro vygenerované dokumenty
-description: Toto téma vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty generované formáty elektronického výkaznictví (ER).
+description: Tento článek vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty generované formáty elektronického výkaznictví (ER).
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898849"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Určení vlastních umístění úložišť pro vygenerované dokumenty
 
 [!include[banner](../includes/banner.md)]
 
-Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictví umožňuje rozšířit seznam umístění úložišť pro dokumenty, které generují ER formáty. Toto téma vysvětluje, jak přidat vlastní umístění úložiště pro generované dokumenty delegováním úkolu vytváření cílů ER na výchozí cílový objekt pro vytváření a následnou implementací vlastní třídy, která má vlastní logiku cíle.
+Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictví umožňuje rozšířit seznam umístění úložišť pro dokumenty, které generují ER formáty. Tento článek vysvětluje, jak přidat vlastní umístění úložiště pro generované dokumenty delegováním úkolu vytváření cílů ER na výchozí cílový objekt pro vytváření a následnou implementací vlastní třídy, která má vlastní logiku cíle.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -35,7 +35,7 @@ Nasaďte topologii, která podporuje průběžné sestavování. Další informa
 
 Také musí mít přístup k vývojovému prostředí pro tuto topologii.
 
-Všechny úkoly v tomto tématu lze dokončit ve společnosti **USMF**.
+Všechny úkoly v tomto článku lze dokončit ve společnosti **USMF**.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Import formátu ER dopředného posunutí dlouhodobého majetku
 

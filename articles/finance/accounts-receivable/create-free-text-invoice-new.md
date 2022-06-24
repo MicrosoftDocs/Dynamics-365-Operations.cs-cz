@@ -1,6 +1,6 @@
 ---
-title: Vytvoření volné faktury
-description: Toto téma vysvětluje, jak vytvořit volné faktury.
+title: Vytvořit volnou fakturu
+description: Tento článek vysvětluje, jak vytvořit volné faktury.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878153"
 ---
-# <a name="create-a-free-text-invoice"></a>Vytvoření volné faktury
+# <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte ukázkovou společnost **USMF**.
+Tento článek vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte ukázkovou společnost **USMF**.
 
 ## <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
@@ -37,7 +37,7 @@ Toto téma vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte uk
     * Pokud používáte zmocnění SEPA, bude při výběru účtu zákazníka automaticky vyplněno zmocnění.
 
 4. V poli **Popis** zadejte hodnotu.
-5. V poli **Hlavní účet** zadejte číslo účtu, které nemá dimenze. Dimenze zadáte později v tomto tématu.
+5. V poli **Hlavní účet** zadejte číslo účtu, které nemá dimenze. Dimenze zadáte později v tomto článku.
 
     Můžete také zadat jeden nebo více znaků pro hlavní účet a vyhledat účet pomocí vyhledávání.
 

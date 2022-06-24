@@ -1,6 +1,6 @@
 ---
 title: Získání podpory pro finanční a provozní aplikace nebo Lifecycle Services (LCS)
-description: Toto téma vysvětluje, jak získat nápovědu k finančním a provozním aplikacím nebo Microsoft Dynamics Lifecycle Services (LCS).
+description: Tento článek vysvětluje, jak získat nápovědu k finančním a provozním aplikacím nebo službě Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866424"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Získání podpory pro finanční a provozní aplikace nebo Lifecycle Services (LCS)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8068027"
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-Toto téma vysvětluje, jak získat nápovědu k finančním a provozním aplikacím nebo Microsoft Dynamics Lifecycle Services (LCS). 
+Tento článek vysvětluje, jak získat nápovědu k finančním a provozním aplikacím nebo službě Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>

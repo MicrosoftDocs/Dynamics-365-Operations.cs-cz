@@ -1,6 +1,6 @@
 ---
 title: Konfigurace vlastností workflow
-description: Toto téma vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
+description: Tento článek vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
 author: ChrisGarty
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ec604ed9614b80b3b24c670911b4ea480d6131e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876434"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurace vlastností workflow
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069241"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
+Tento článek vysvětluje, jak nakonfigurovat různé vlastnosti workflowu.
 
 Pokud chcete konfigurovat vlastnosti workflowu, otevřete workflow v editoru workflowu. Klikněte na plátno editoru workflowu a klepněte na tlačítko **Vlastnosti** k otevření stránky **Vlastnosti**. Pro konfiguraci vlastností workflowu můžete použít následující kroky.
 

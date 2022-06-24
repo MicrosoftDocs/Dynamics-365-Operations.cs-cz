@@ -1,6 +1,6 @@
 ---
 title: Vytváření konsolidovaných finančních výkazů
-description: Toto téma popisuje různé scénáře, jak můžete vygenerovat konsolidované finanční výkazy.
+description: Tento článek popisuje různé scénáře, jak můžete vygenerovat konsolidované finanční výkazy.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846792"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Vytváření konsolidovaných finančních výkazů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje různé scénáře, jak můžete vygenerovat konsolidované finanční výkazy.
+Tento článek popisuje různé scénáře, jak můžete vygenerovat konsolidované finanční výkazy.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Jednoúrovňové a mnohoúrovňové konsolidace mezi právnickými osobami
 Nejjednodušší metodou konsolidace prostřednictvím finančního výkaznictví je použít organizační stromy k agregaci dat ve všech společnostech, které mají stejné účtové osnovy a fiskální období. Zde jsou hlavní kroky konsolidace pomocí organizačního stromu.
@@ -153,7 +153,7 @@ Následující obrázek znázorňuje možnosti v definici sestavy, která vám u
 ![Možnosti čísla období definice sestavy.](./media/options-report-definition-period-number.png "Možnosti čísla období definice sestavy")
 
 ## <a name="business-unit-consolidations"></a>Konsolidace obchodní jednotky
-Toto téma se zaměřuje na používání definicí organizačního stromu a organizační hierarchie ve finančním výkaznictví pro účely konsolidace. Pro vytváření sestav konsolidace obchodní jednotky, jako jsou například sestavy týkající se celosvětových prodejů nebo operací, můžete použít také organizační strom. Tyto sestavy jsou běžné požadavky. Chcete-li je vytvořit, pro každou jednotku, kterou chcete konsolidovat, vyberte společnost a dimenzi. Například na následujícím obrázku je souhrnu organizační jednotky dosaženo opakováním jednotlivých společností ve sloupci **Společnost** (sloupec A) a identifikací skupiny hodnot dimenze Oddělení na společnost ve sloupci **Dimenze** (sloupec D).
+Tento článek se zaměřuje na používání definicí organizačního stromu a organizační hierarchie ve finančním výkaznictví pro účely konsolidace. Pro vytváření sestav konsolidace obchodní jednotky, jako jsou například sestavy týkající se celosvětových prodejů nebo operací, můžete použít také organizační strom. Tyto sestavy jsou běžné požadavky. Chcete-li je vytvořit, pro každou jednotku, kterou chcete konsolidovat, vyberte společnost a dimenzi. Například na následujícím obrázku je souhrnu organizační jednotky dosaženo opakováním jednotlivých společností ve sloupci **Společnost** (sloupec A) a identifikací skupiny hodnot dimenze Oddělení na společnost ve sloupci **Dimenze** (sloupec D).
 
 ![Sestavy konsolidace obchodní jednotky.](./media/business-unit-consolidation-reports.png "Sestavy konsolidace obchodní jednotky")
 
@@ -218,7 +218,7 @@ Chcete-li získat správně převedené částky při použití měn, finanční
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
+Další informace o konsolidaci a převodech měn naleznete v nadřazeném článku [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o zadání podrobností online konsolidace získáte v části [Online finanční konsolidace](./consolidate-online.md).
 

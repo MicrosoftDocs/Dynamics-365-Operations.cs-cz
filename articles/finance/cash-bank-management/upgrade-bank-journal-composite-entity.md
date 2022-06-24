@@ -1,6 +1,6 @@
 ---
 title: Aktualizace složité entity bankovního deníku
-description: Toto téma uvádí kroky potřebné k přidání dalšího pole BankTransactionType field do složitého záznamu BankJournalEntity.
+description: Tento článek uvádí kroky potřebné k přidání dalšího pole BankTransactionType field do složitého záznamu BankJournalEntity.
 author: panolte
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 730e6bd10b0cdd1587c915bb9ec8d6a4792435d9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: db5f01af6b21b4dc5ff633ee9c11bb6ed41df048
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868540"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>Aktualizace složité entity bankovního deníku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí kroky potřebné k přidání dalšího pole BankTransactionType field do složitého záznamu BankJournalEntity.
+Tento článek uvádí kroky potřebné k přidání dalšího pole BankTransactionType field do složitého záznamu BankJournalEntity.
 
 Pomocí následujících kroků přidejte další pole BankTransactionType field do složitého záznamu BankJournalEntity.
 

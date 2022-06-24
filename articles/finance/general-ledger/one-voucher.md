@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896398"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
@@ -37,7 +37,7 @@ Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhod
     [![Jeden řádek.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Definice jednoho dokladu **nepokrývá** případy, kde jsou názvy deníků nastaveny jako **Pouze číslo jednoho dokladu**, ale uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy. V tomto tématu 'Jeden doklad' znamená, že existuje jediný doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt.
+    > Definice jednoho dokladu **nepokrývá** případy, kde jsou názvy deníků nastaveny jako **Pouze číslo jednoho dokladu**, ale uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy. V tomto článku 'Jeden doklad' znamená, že existuje jediný doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt.
 
 - Zadejte víceřádkový doklad, když neexistuje protiúčet.
 
@@ -63,16 +63,16 @@ Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **
 
 Z důvodu problémů, které mohou nastat při použití jednoho dokladu, bude tato funkce nakonec zastaralá. Protože však existují funkční mezery závislé na této funkci, zastarání se nestane najednou. Místo toho se použije následující plán:
 
-- **Verze Spring 2018** – ve výchozím stavu byla tato funkce vypnuta pomocí parametru **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Parametry hlavní knihy**. Tuto funkci však můžete opět zapnout, pokud vaše organizace používá scénář, který spadá do jedné z funkčních mezer, které jsou uvedeny dále v tomto tématu.
+- **Verze Spring 2018** – ve výchozím stavu byla tato funkce vypnuta pomocí parametru **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Parametry hlavní knihy**. Tuto funkci však můžete opět zapnout, pokud vaše organizace používá scénář, který spadá do jedné z funkčních mezer, které jsou uvedeny dále v tomto článku.
 
-    - Pokud váš obchodní scénář nevyžaduje jeden doklad, doporučujeme nechat tuto funkci vypnutou. Microsoft nebude opravovat chyby v oblastech, které jsou identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
+    - Pokud váš obchodní scénář nevyžaduje jeden doklad, doporučujeme nechat tuto funkci vypnutou. Microsoft nebude opravovat chyby v oblastech, které jsou identifikovány dále v tomto článku, je-li tato funkce použita i v případě, že existuje jiné řešení.
     - Doporučujeme vám přestat používat Jeden doklad pro integrace, pokud nevyžadujete funkci pro jednu z dokumentovaných funkčních mezer.
 
 - **Pozdější verze**- Některé z obchodních požadavků lze splnit pouze pomocí jednoho dokladu. Microsoft musí zajistit, aby všechny identifikované obchodní požadavky mohly být v systému stále plněny i po ukončení podpory této funkce. Proto bude pravděpodobně nutné přidat nové funkce k vyplnění funkčních mezer. Microsoft nemůže poskytnout konkrétní řešení, protože každá mezera mezi funkcemi je jiná a musí být hodnocena na základě obchodních požadavků. Některé funkční mezery budou pravděpodobně nahrazeny funkcemi, které pomohou splnit konkrétní obchodní požadavky. Jiné mezery však mohou být vyplněny pokračováním v povolení zápisu do deníku, jako když je použit Jeden doklad, ale vylepšením systému lze podle potřeby sledovat více podrobností.
 
 Po vyplnění všech funkčních mezer společnost Microsoft sdělí, že funkce bude zastaralá. Zastarání však nebude účinné po dobu nejméně jednoho roku po tomto oznámení. Ačkoli společnost Microsoft nemůže poskytnout odhad o tom, kdy bude funkce Jeden doklad zastaralá, bude pravděpodobně trvat nejméně dva roky, než dojde k ukončení podpory. Zásadou společnosti Microsoft je ponechat mezi oznámením zastaralé funkce a skutečným ukončením podpory minimálně 12 měsíců, aby zákazníci a nezávislí dodavatelé softwaru (ISV) měli čas na změnu reagovat. Organizace možná bude muset aktualizovat své obchodní procesy, entity a integrace.
 
-Ukončení podpory Jednoho dokladu je významnou změnou, která bude široce komunikována. V rámci této komunikace společnost Microsoft bude aktualizovat toto téma a zveřejní příspěvek na blogu Microsoft Dynamics 365 Finance, aktualizuje téma „Odebrané nebo zastaralé funkce“, bude informovat o změně na příslušných konferencích společnosti Microsoft atd.
+Ukončení podpory Jednoho dokladu je významnou změnou, která bude široce komunikována. V rámci této komunikace společnost Microsoft bude aktualizovat tento článek a zveřejní příspěvek na blogu Microsoft Dynamics 365 Finance, aktualizuje článek „Odebrané nebo zastaralé funkce“, bude informovat o změně na příslušných konferencích společnosti Microsoft atd.
 
 ## <a name="why-use-one-voucher"></a>Proč používat Jeden doklad?
 

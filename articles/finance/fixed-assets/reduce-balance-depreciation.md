@@ -1,6 +1,6 @@
 ---
 title: Degresivní odpis
-description: Toto téma poskytuje přehled o metodě degresivního odpisování.
+description: Tento článek poskytuje přehled o metodě degresivního odpisování.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883264"
 ---
 # <a name="reduce-balance-depreciation"></a>Degresivní odpis
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled o metodě degresivního odpisování.
+Tento článek poskytuje přehled o metodě degresivního odpisování.
 
 Pokud nastavujete odpisový plán dlouhodobého majetku a zaškrtnete volbu Zrychleně v poli **Metoda** na stránce **Odpisové profily**, odpisy dlouhodobého majetku, který je přiřazen k tomuto odpisovému plánu, prováděny o stejný procentní podíl v každém období odpisu.
 
@@ -41,7 +41,7 @@ V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď *
 
 ### <a name="calendar"></a>Kalendář
 
-Možnost **Kalendářní** aktualizuje odpisový základ (což je obvykle čistá účetní hodnota minus konečná zůstatková hodnota) 1. ledna každého roku. V příkladu degresivního odpisu později v tomto tématu je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci kalkulací. 
+Možnost **Kalendářní** aktualizuje odpisový základ (což je obvykle čistá účetní hodnota minus konečná zůstatková hodnota) 1. ledna každého roku. V příkladu degresivního odpisu později v tomto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci kalkulací. 
 
 Jestliže vyberete možnost **Kalendářní**, v poli **Frekvence období** jsou k dispozici následující možnosti, které definují časové rozdělení zaúčtování odpisů a částky během kalendářního roku:
 

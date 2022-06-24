@@ -12,12 +12,12 @@ ms.reviewer: tfehr
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: fef3130f06cbb1d8afdbae93bdc55b47be3480b3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 626b3bbaf88f905bd167ad9eea4683ed1855eb92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860032"
 ---
 # <a name="data-validation-checklist-workspace"></a>Pracovní prostor kontrolního seznamu ověřování dat
 
@@ -26,7 +26,7 @@ ms.locfileid: "8070820"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Toto téma poskytuje přehled pracovního prostoru **Kontrolní seznam ověřování dat** a přidružené konfigurace.
+Tento článek poskytuje přehled pracovního prostoru **Kontrolní seznam ověřování dat** a přidružené konfigurace.
 
 Pracovní prostor **Kontrolní seznam ověřování dat** umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci. V závislosti na zobrazení pracovního prostoru **Kontrolní seznam ověřování dat** se zobrazí buď všechny úkoly a stavy pro projekt ověřování dat, nebo pouze úkoly, které vám byly přiřazeny.
 

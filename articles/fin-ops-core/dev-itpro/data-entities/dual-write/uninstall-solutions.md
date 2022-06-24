@@ -1,6 +1,6 @@
 ---
 title: Odinstalace řešení pro orchestraci aplikace s duálním zápisem
-description: Toto téma popisuje, jak odinstalovat řešení pro orchestraci aplikací s duálním zápisem.
+description: Tento článek popisuje, jak odinstalovat řešení pro orchestraci aplikací s duálním zápisem.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870367"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Odinstalace řešení pro orchestraci aplikace s duálním zápisem
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak odinstalovat řešení pro orchestraci aplikací s duálním zápisem.
+Tento článek popisuje, jak odinstalovat řešení pro orchestraci aplikací s duálním zápisem.
 
 Někteří zákazníci si neúmyslně nainstalují balíček pro orchestraci aplikací s duálním zápisem, který do prostředí Microsoft Dataverse nainstaluje více řešení. Instalace nadbytečných řešení v balíčku může způsobit neočekávané a nežádoucí problémy.
 

@@ -1,6 +1,6 @@
 ---
 title: Typy deníku hlavní knihy
-description: Toto téma popisuje typy deníků, které lze nastavit pro finanční deníky.
+description: Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky.
 author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 883c54b84ed31384a28c31c8b814c75d340d020e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722262"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901306"
 ---
 # <a name="ledger-journal-types"></a>Typy deníku hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje typy deníků, které lze nastavit pro finanční deníky. Stránku **Názvy deníků** lze použít k nastavení deníků, které můžete používat v aplikaci Dynamics 365 Finance.
+Tento článek popisuje typy deníků, které lze nastavit pro finanční deníky. Stránku **Názvy deníků** lze použít k nastavení deníků, které můžete používat v aplikaci Dynamics 365 Finance.
 
 | Typ deníku                      | Účel                       | Zadejte transakce na této stránce                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|

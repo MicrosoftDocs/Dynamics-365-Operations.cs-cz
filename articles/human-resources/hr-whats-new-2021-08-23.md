@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources, 23. srpna 2021
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 23. srpnu 2021.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 23. srpnu 2021.
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 21c3448c373600ffebca82be41fb5849b952dfe1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91c2cd396ca26cc78c3fd4fab40a29b98a7826c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909723"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-23-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources, 23. srpna 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -40,9 +40,9 @@ Tato verze obsahuje následující nové funkce a opravené chyby. Změny se vzt
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
-| Číslo problému | Problém | popis |
+| Číslo problému | Problém | Popis |
 | --- | --- | --- |
 | 594066 | Nelze odstranit kontaktní údaje | Při výběru odstranění záznamu o kontaktních informacích pro zaměstnance se místo toho odstraní záznam kontaktních informací jiný než vybraný záznam. |
 | 611339 | Přidání personalizace způsobí, že bankovní účet bude ignorovat filtr a načte první záznam | Přidání personalizace způsobí, že se na seznamu bankovních účtů spustí dotaz na personalizaci po spuštění dotazu zdroje dat, což má za následek, že dotaz načte nejvyšší záznam bez ohledu na pracovníka, pro kterého se zobrazují podrobnosti. |

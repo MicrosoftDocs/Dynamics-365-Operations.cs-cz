@@ -1,6 +1,6 @@
 ---
 title: Dimenze objektu nákladů
-description: Když analyzujete náklady, používáte ke stanovení, kam jsou náklady převáděny, dimenze prvku nákladů. Dimenze objektu nákladů používáte k určení, kde byste měli přiřadit náklady. V tomto tématu jsou informace o dimenzích objektu nákladů.
+description: Když analyzujete náklady, používáte ke stanovení, kam jsou náklady převáděny, dimenze prvku nákladů. Dimenze objektu nákladů používáte k určení, kde byste měli přiřadit náklady. V tomto článku jsou informace o dimenzích objektu nákladů.
 author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf9ebda3ab362112c9354595b7d554355b30f118
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3ee481b9dafe202e0a850a31b6ab036d52a20547
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874631"
 ---
 # <a name="cost-object-dimensions"></a>Dimenze objektu nákladů
 
 [!include [banner](../includes/banner.md)]
 
-Když analyzujete náklady, používáte ke stanovení, kam jsou náklady převáděny, dimenze prvku nákladů. Dimenze objektu nákladů používáte k určení, kde byste měli přiřadit náklady. V tomto tématu jsou informace o dimenzích objektu nákladů.
+Když analyzujete náklady, používáte ke stanovení, kam jsou náklady převáděny, dimenze prvku nákladů. Dimenze objektu nákladů používáte k určení, kde byste měli přiřadit náklady. V tomto článku jsou informace o dimenzích objektu nákladů.
 
 Objekt nákladů může být jakýkoliv typ objektu, který chcete odhadnout, přidělit k němu náklady nebo přímo změřit. Typické objekty nákladů zahrnují produkty, projekty, prostředky, oddělení, nákladová střediska a geografické oblasti. Vedení používá objekty nákladů, aby mohlo kvantifikovat náklady a také provést analýzu ziskovosti.
 

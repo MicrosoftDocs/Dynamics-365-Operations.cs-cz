@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 22. března 2021
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 22. březnu 2021.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 22. březnu 2021.
 author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 13520ca55c98fb1acb6185af393550b12fbc2072
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2cfdd0fc1ca7ba206b0f447ecabd801a5a4e8c57
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859481"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 22. března 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ V této verzi jsou všeobecně dostupné následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
-| Číslo problému | Výdej |  popis |
+| Číslo problému | Problém |  Popis |
 | --- | --- | --- |
 | 554239 | Vylepšení výkonu u entit souvisejících s tabulkou **BusinessProcessTaskAssignment** | Zlepšení výkonnosti entit souvisejících s tabulkou **BusinessProcessTaskAssignment** přidáním doporučených indexů do tabulky. |
 | 566061 | Odebrání záložního kódu entit V2 z noční synchronizace | Odebrání záložního kódu V2 pro noční synchronizace Dataverse. Záložní řešení již není nutné a brání filtrované synchronizaci pracovat podle očekávání. Tato změna zvyšuje konzistenci synchronizace dat Dataverse. |

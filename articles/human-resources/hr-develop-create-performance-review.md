@@ -1,6 +1,6 @@
 ---
 title: Vytvoření kontrol výkonnosti
-description: Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly.
+description: Tento článek vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67a001926c0d5021d952f9b678ec128c68511a8f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ae2de087f4e345ba826ddbe8a65f917476bd6894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872174"
 ---
 # <a name="create-performance-reviews"></a>Vytvoření kontrol výkonnosti
 
@@ -27,7 +27,7 @@ ms.locfileid: "8696033"
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF.
+Tento článek vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF.
 
 1. Na domovské stránce vyberte pracovní prostor **Samoobsluha pro zaměstnance**.
 2. Zvolte **Nová kontrola** a vytvořte novou kontrolu.

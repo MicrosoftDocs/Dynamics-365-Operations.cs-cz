@@ -1,6 +1,6 @@
 ---
 title: Podmínky přidělení
-description: Toto téma obsahuje informace o používání podmínek přidělování na hlavním účtu.
+description: Tento článek obsahuje informace o používání podmínek přidělování na hlavním účtu.
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859820"
 ---
 # <a name="allocation-terms"></a>Podmínky přidělení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o používání podmínek přidělování na hlavním účtu. Podmínky přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo výnosy účtovaly v účetnictví na správný objekt.
+Tento článek obsahuje informace o používání podmínek přidělování na hlavním účtu. Podmínky přidělení se používají k rozdělení částek mezi více kombinací účtů hlavní knihy. Díky nim lze zajistit, aby se výdaje nebo výnosy účtovaly v účetnictví na správný objekt.
 
 Každá podmínka alokace, kterou vytvoříte na hlavním účtu, definuje procento voucheru, který má být přidělen z jediného zdroje, a kombinace finančních dimenzí. Kromě toho definujete hlavní cílový účet a finanční dimenze, kam bude částka přidělena. 
 

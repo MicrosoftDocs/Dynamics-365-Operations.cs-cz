@@ -1,6 +1,6 @@
 ---
 title: Přehled správy zaměstnaneckých výhod
-description: Toto téma obsahuje přehled funkce správy zaměstnaneckých výhod v modulu Dynamics 365 Human Resources.
+description: Tento článek obsahuje přehled funkce správy zaměstnaneckých výhod v modulu Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901140"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -44,7 +44,7 @@ Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolovan
 
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 
-Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také vysvětluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí a které jsou zakázány po zapnutí správy zaměstnaneckých výhod.
+Tento článek popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také vysvětluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí a které jsou zakázány po zapnutí správy zaměstnaneckých výhod.
 
 > [!IMPORTANT]
 > Po povolení Správy zaměstnaneckých výhod v **Produkčním** prostředí ji již nelze zakázat. Doporučujeme povolit a otestovat Správu zaměstnaneckých výhod v prostředí **Sandbox** před jejím povolením v **Produkčním** prostředí. Existují významné rozdíly mezi staršími funkcemi výhod a novými funkcemi pro správu výhod, které vyžadují další nastavení a měly by být testovány před uvedením do produkce.

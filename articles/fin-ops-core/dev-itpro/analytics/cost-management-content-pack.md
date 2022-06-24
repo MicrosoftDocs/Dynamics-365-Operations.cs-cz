@@ -1,6 +1,6 @@
 ---
 title: Obsah správy nákladů v Power BI
-description: Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI.
+description: Tento článek popisuje, co je součástí obsahu správy nákladů v Power BI.
 author: ShylaThompson
 ms.date: 03/16/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 98c0097c2df25bafc842c9828d8ff282f5f683a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876856"
 ---
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
@@ -168,7 +168,7 @@ Data z aplikace se používají k naplnění stránek sestav v obsahu **Správa 
 
 Klíčová agregovaná opatření následujících objektů se používají jako základ obsahu Power BI.
 
-| Objekt                          | Klíčová opatření agregace | Zdroj dat pro Finance and Operations | Pole               |
+| Objekt                          | Klíčová opatření agregace | Datový zdroj pro Finance and Operations | Pole               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Množství                     | CostObjectStatementCache               | Množství              |
 | CostObjectStatementCacheMonthly | Množství                   | CostObjectStatementCache               | Množství                 |

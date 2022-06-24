@@ -1,6 +1,6 @@
 ---
 title: Evropa - přehled
-description: Toto téma obsahuje odkazy na zdroje dokumentace Microsoft Dynamics 365 Finance pro Evropu.
+description: Tento článek obsahuje odkazy na zdroje dokumentace Microsoft Dynamics 365 Finance pro Evropu.
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9a9fd88bde02d8ea4f6eeda5e8785366ec0d8e85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856511"
 ---
 # <a name="europe-overview"></a>Evropa - přehled
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit právnické osoby s primární adresou v Evropě. 
+Tento článek obsahuje informace a odkazy na zdroje, které vám pomohou nastavit právnické osoby s primární adresou v Evropě. 
 
 - [Přehled držitelů záloh](emea-advance-holders.md)
  - [Transakce držitelů záloh](emea-advance-holders-transactions.md)

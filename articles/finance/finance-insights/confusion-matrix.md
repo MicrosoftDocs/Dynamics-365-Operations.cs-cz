@@ -1,6 +1,6 @@
 ---
 title: Výsledky modelů strojového učení
-description: Toto téma pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML.
+description: Tento článek pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910164"
 ---
 # <a name="results-of-machine-learning-models"></a>Výsledky modelů strojového učení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML. Cílové publikum zahrnuje inženýry, analytiky a manažery, kteří chtějí rozvíjet své znalosti a dovednosti v oblasti datové vědy.
+Tento článek pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML. Cílové publikum zahrnuje inženýry, analytiky a manažery, kteří chtějí rozvíjet své znalosti a dovednosti v oblasti datové vědy.
 
 ## <a name="confusion-matrix"></a>Matice zmatku
 Poté, co je kontrolovaný problém ML vycvičen na sadě historických dat, je testován pomocí dat, která jsou zadržena z procesu školení. Tímto způsobem můžete porovnat předpovědi z trénovaného modelu se skutečnými hodnotami. Matice zmatku poskytuje prostředky k vyhodnocení toho, jak úspěšný je problém s klasifikací a kde dělá chyby (tj. kde se stává „zmateným“).
@@ -73,7 +73,7 @@ Správnost je důležitý nástroj pro komunikaci s odborníky na danou oblast, 
 
 Pro scénář předpovědi plateb můžete nastavit cíl pro model strojového učení, který zahrnuje faktory při různých platebních chováních. Cílem je, aby se model zlepšil v naivním odhadu snížením počtu nesprávných odpovědí alespoň o 50 procent. Jinými slovy chcete dosáhnout cílové správnosti, která půlí rozdíl mezi přesností naivního odhadu a 100 procenty.
 
-Následující tabulka shrnuje tento princip pro matice zmatku v tomto tématu.
+Následující tabulka shrnuje tento princip pro matice zmatku v tomto článku.
 
 | Model   | Naivní odhad | Cíl | Správnost modelu | Je dosaženo cíle?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
@@ -82,7 +82,7 @@ Následující tabulka shrnuje tento princip pro matice zmatku v tomto tématu.
 
 ## <a name="classification-f1-accuracy"></a>Správnost F1 klasifikace
 
-Konečným hlediskem v tomto tématu je pokročilejší měřítko výkonu strojového učení klasifikace, které se označuje jako správnost F1.
+Konečným hlediskem v tomto článku je pokročilejší měřítko výkonu strojového učení klasifikace, které se označuje jako správnost F1.
 
 Před definováním správnosti F1 je třeba zavést dvě další metriky: přesnost a úplnost. Přesnost označuje, kolik z celkového počtu předpovědí, které jsou zadány jako pozitivní, je správně přiřazeno. Tato metrika je také známá jako pozitivní prediktivní hodnota. Úplnost je celkový počet skutečných pozitivních případů, které byly správně předpovězeny. Tato metrika je také známá jako citlivost.
 
@@ -97,7 +97,7 @@ Míra F1 kombinuje přesnost a úplnost. Výsledkem je harmonický průměr obou
 
 - F1 = 2 × (přesnost × úplnost) ÷ (přesnost + úplnost)
 
-Podívejme se na konkrétní příklad. Dříve v tomto tématu byl příklad modelu, který předpovídal, zda je zvíře pes nebo kočka. Ilustrace se zde opakuje.
+Podívejme se na konkrétní příklad. Dříve v tomto článku byl příklad modelu, který předpovídal, zda je zvíře pes nebo kočka. Ilustrace se zde opakuje.
 
 [![Příklad předpovědi druhů (opakování).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Jak vidíte, hodnota F1 je mezi hodnotami pro přesnost a úplnost.
 
 Ačkoli správnost F1 není tak snadno pochopitelná, přidává k základnímu číslu přesnosti nuanci. Může také pomoci s nevyváženými datovými sadami, jak ukáže následující diskuse.
 
-Část [Správnost modelu](#model-accuracy) tohoto tématu porovnala následující dvě matice zmatků. I když první model měl nižší přesnost, byl považován za užitečnější model, protože vykázal větší zlepšení než výchozí odhad včasné platby.
+Část [Správnost modelu](#model-accuracy) tohoto článku porovnala následující dvě matice zmatků. I když první model měl nižší přesnost, byl považován za užitečnější model, protože vykázal větší zlepšení než výchozí odhad včasné platby.
 
 ![Příklad předpovědi platby vs. skutečných hodnot.](media/payment-prediction-matrix.png)
 

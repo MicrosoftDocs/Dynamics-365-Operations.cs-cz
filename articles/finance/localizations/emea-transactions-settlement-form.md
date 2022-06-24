@@ -1,6 +1,6 @@
 ---
 title: Zobrazení transakcí vyrovnání pro východní Evropu
-description: Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
+description: Tento článek obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ba3e168d188dfe0f808e7d7f7bab6192de25d25977023eb798a923ec97b43b82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b45dc7a8213c753491c367cef36d7dc1111270c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856546"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Zobrazení transakcí vyrovnání pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
+Tento článek obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
 
 Použijte stránku **Transakce u vyrovnání** stránce k zobrazení informací o složitých transakcích vyrovnání pro zákazníka nebo dodavatele. Tato funkce je k dispozici pouze pro právnické osoby s primární adresu v Polsku, Litvě, Lotyšsku, Estonsku, České republice nebo Maďarsku. Stránku **Transakce u vyrovnání** můžete najít v následujících umístěních:
 

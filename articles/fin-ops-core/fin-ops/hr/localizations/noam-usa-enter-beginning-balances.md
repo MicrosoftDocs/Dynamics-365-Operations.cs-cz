@@ -1,6 +1,6 @@
 ---
 title: Zadání počátečních zůstatků mezd
-description: Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně.
+description: Tento článek popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně.
 author: andreabichsel
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d14e7e0772c5b365818d3a8a230abe9f674a077e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850011"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Zadání počátečních zůstatků mezd
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně. Tyto informace jsou důležité pro partnery, kteří přenášejí data pro novou implementaci mezd z jiného systému. V rámci přípravy na zadání počátečních zůstatků mezd ověřujeme následující údaje:
+Tento článek popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně. Tyto informace jsou důležité pro partnery, kteří přenášejí data pro novou implementaci mezd z jiného systému. V rámci přípravy na zadání počátečních zůstatků mezd ověřujeme následující údaje:
 
 - Záznamy zaměstnance jsou zadané a dostupné v systému.
 - Následující údaje jsou nastaveny a přiřazeny zaměstnancům:

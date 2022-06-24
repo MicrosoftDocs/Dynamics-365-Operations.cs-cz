@@ -1,6 +1,6 @@
 ---
 title: Automatizace procesů inkasa
-description: Toto téma popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa nebo odeslání upomínky zákazníkovi.
+description: Tento článek popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa nebo odeslání upomínky zákazníkovi.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486862"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946140"
 ---
 # <a name="collections-process-automation"></a>Automatizace procesů inkasa
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa (například telefonický hovor) nebo odeslání upomínky zákazníkovi. 
+Tento článek popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa (například telefonický hovor) nebo odeslání upomínky zákazníkovi. 
 
 Organizace často tráví značné množství času zkoumáním sestav splatných zůstatků, zákaznických účtů a otevřených faktur, aby určily, které zákazníky je třeba kontaktovat ohledně otevřené faktury nebo zůstatku na účtu. Tento výzkum ubírá čas, který by inkasní agent mohl strávit komunikací se zákazníky za účelem shromažďování zůstatků po splatnosti nebo řešení sporů o faktury. Automatizace procesu inkasa vám umožňuje vytvořit strategický přístup k procesu inkasa. To vám pomůže konzistentně používat inkasní aktivity poskytnutím přizpůsobených e-mailových připomenutí nebo naprogramovaného procesu odesílání upomínek. 
 

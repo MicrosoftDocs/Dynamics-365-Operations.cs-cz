@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources 19. listopadu 2021
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v samostatné aplikaci Microsoft Dynamics 365 Human Resources k 19. listopadu 2021.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v samostatné aplikaci Microsoft Dynamics 365 Human Resources k 19. listopadu 2021.
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f28057c370b27dbdad4bfe1104e9289f7df65621
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3e08432a4ce4d73cd67ad839191abe9f6e691a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886066"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources 19. listopadu 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
+Tento článek popisuje funkce, které jsou nové, změnily se nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
 
 Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -40,7 +40,7 @@ Toto vydání obsahuje následující opravy chyb. Změny se vztahují na sestav
 Tato verze obsahuje následující opravy chyb.
 
 > [!NOTE]
-> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem dostat k vám tyto informace co nejdříve. Tento článek můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
 | Číslo problému | Problém | Popis |
 |---|---|---|

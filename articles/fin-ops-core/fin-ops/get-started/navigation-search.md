@@ -1,6 +1,6 @@
 ---
 title: Hledání za účelem navigace
-description: Hledání za účelem navigace -Toto téma vysvětluje, jak používat funkci vyhledávání při přechodu na stránky.
+description: Tento článek vysvětluje, jak používat funkci vyhledávání při přechodu na stránky.
 author: aneesmsft
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d45ad1d2a85efa561380912e82d38689fabbe119
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872671"
 ---
 # <a name="navigation-search"></a>Hledání za účelem navigace
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069977"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Hledání za účelem navigace -Toto téma vysvětluje, jak používat funkci vyhledávání při přechodu na stránky.
+Tento článek vysvětluje, jak používat funkci vyhledávání při přechodu na stránky.
 
 Aplikace obsahuje několik oblastí a stránek na pomoc s prováděním různých úloh. Pokud potřebujete rychle najít stránky, které potřebujete k dokončení úkolů, použijte vyhledávací funkce navigace.
 

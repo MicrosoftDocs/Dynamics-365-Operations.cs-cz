@@ -1,6 +1,6 @@
 ---
 title: Konfigurace prostředí služeb a připojených aplikací
-description: Toto téma poskytuje informace o tom, jak nakonfigurovat prostředí služeb a připojené aplikace.
+description: Tento článek poskytuje informace o tom, jak nakonfigurovat prostředí služeb a připojené aplikace.
 author: dkalyuzh
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c3366e75b4a6d3f33a1aac9e444236d9ae57c829
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: c1bb3f784148f04c01223ac4e280a18bacfe0e51
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853215"
 ---
 # <a name="configure-service-environments-and-connected-applications"></a>Konfigurace prostředí služeb a připojených aplikací
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o tom, jak nakonfigurovat prostředí služeb a připojené aplikace. Tento proces má tři kroky. Krok 1 je povinný, kroky 2 a 3 jsou volitelné.
+Tento článek poskytuje informace o tom, jak nakonfigurovat prostředí služeb a připojené aplikace. Tento proces má tři kroky. Krok 1 je povinný, kroky 2 a 3 jsou volitelné.
 
 ## <a name="step-1-create-a-service-environment"></a>Krok 1: Vytvoření servisního prostředí
 

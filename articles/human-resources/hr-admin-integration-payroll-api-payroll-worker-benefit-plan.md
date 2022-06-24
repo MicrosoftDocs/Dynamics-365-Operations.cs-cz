@@ -1,6 +1,6 @@
 ---
 title: Plán zaměstnaneckých výhod pracovníka na výplatní listině
-description: Toto téma poskytuje informace a ukázkový dotaz pro entitu plánu zaměstnanecké výhody pracovníka pro mzdu v Dynamics 365 Human Resources.
+description: Tento článek poskytuje informace a ukázkový dotaz pro entitu plánu zaměstnanecké výhody pracovníka pro mzdu v Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ade1c789716ea5f559a73c8551b7c1adf030b806
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: ef45855d9e60131ac065ae6e2769b71ae3f69537
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902278"
 ---
 # <a name="payroll-worker-benefit-plan"></a>Plán zaměstnaneckých výhod pracovníka na výplatní listině
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533789"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Toto téma popisuje entitu plánu zaměstnanecké výhody pracovníka pro mzdu Dynamics 365 Human Resources.
+Tento článek popisuje entitu plánu zaměstnanecké výhody pracovníka pro mzdu Dynamics 365 Human Resources.
 
 Fyzický název: mshr_payrollworkerbenefitplanentities.
 

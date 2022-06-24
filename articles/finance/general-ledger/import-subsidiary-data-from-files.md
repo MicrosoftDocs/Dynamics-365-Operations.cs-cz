@@ -1,6 +1,6 @@
 ---
-title: Import dat dceřiné společnosti ze souborů
-description: Toto téma vysvětluje, jak připravit data z externích systémů tak, aby je bylo možné importovat do Microsoft Dynamics 365 Finance.
+title: Import dat pobočky ze souborů
+description: Tento článek vysvětluje, jak připravit data z externích systémů tak, aby je bylo možné importovat do Microsoft Dynamics 365 Finance.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846763"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Import dat pobočky ze souborů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak připravit data z externích systémů tak, aby je bylo možné importovat do Microsoft Dynamics 365 Finance. Používáte stránku **Konsolidace s importem** (**Konsolidace \> Konsolidace s importem**) pro přípravu přenosu doplňkových dat z externích systémů.
+Tento článek vysvětluje, jak připravit data z externích systémů tak, aby je bylo možné importovat do Microsoft Dynamics 365 Finance. Používáte stránku **Konsolidace s importem** (**Konsolidace \> Konsolidace s importem**) pro přípravu přenosu doplňkových dat z externích systémů.
 
 1. Vytvoření dceřiné právnické osoby pro konsolidaci. Další informace, jak vytvořit právnické osoby, najdete v části [Vytvoření právnícké osoby](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Další informace viz [Připrava právnické osoby pro použití v procesu konsolidace](prepare-company-for-consolidation.md) a [Založení dceřiné právnické osoby ke konsolidaci](set-up-subsidiary-company-for-consolidation.md).
 

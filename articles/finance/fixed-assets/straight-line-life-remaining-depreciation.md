@@ -1,6 +1,6 @@
 ---
 title: Lineární odpis s vyrovnáním na konci životnosti
-description: Toto téma poskytuje přehled o metodě odpisování Lineární s vyrovnáním na konci životnosti.
+description: Tento článek poskytuje přehled o metodě odpisování Lineární s vyrovnáním na konci životnosti.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853431"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Lineární odpis s vyrovnáním na konci životnosti
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled o metodě odpisování Lineární s vyrovnáním na konci životnosti.
+Tento článek poskytuje přehled o metodě odpisování Lineární s vyrovnáním na konci životnosti.
 
 Když nastavíte odpisový plán dlouhodobého majetku a zaškrtnete políčko **Lineární s vyrovnáním na konci životnosti** v poli **Metoda** na stránce **Profily odpisů**, budou odpisy dlouhodobého majetku přiřazeného k tomuto plánu založeny na zbývající době životnosti tohoto majetku. Obvykle bude tato částka ve všech obdobích odpisu stejná. Pokud chcete nastavit odpisování podle zbývající lineární životnosti, je nutné také vybrat možnosti v polích **Odpisový rok** a **Frekvence období** na stránce **Odpisové profily**. Možnosti dostupné v poli **Frekvence období** se liší v závislosti na hodnotě vybrané v poli **Odpisový rok**.
 
@@ -35,7 +35,7 @@ V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď *
 
 ### <a name="calendar"></a>Kalendář
 
-Pokud vyberete **Kalendář** v poli **_Odpisový rok_*_, předpokládá se rok od 1. ledna do 31. prosince, i když jste fiskální kalendář definovali odlišně. Možnost _* Kalendář** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+Pokud vyberete **Kalendář** v poli **_Odpisový rok_*_, předpokládá se rok od 1. ledna do 31. prosince, i když jste fiskální kalendář definovali odlišně. Možnost _* Kalendář** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech tohoto článku je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
 - Možnost **Ročně** provede zaúčtování 31. prosince.
 - **Měsíčně** provádí zaúčtování měsíčně na konci každého kalendářního měsíce.

@@ -1,6 +1,6 @@
 ---
 title: Ke generování obrázků čárových kódů použijte zdroje dat čárového kódu
-description: Toto téma vysvětluje, jak používat zdroje dat čárového kódu pro generování obrázků čárových kódů.
+description: Tento článek vysvětluje, jak používat zdroje dat čárového kódu pro generování obrázků čárových kódů.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880305"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Ke generování obrázků čárových kódů použijte zdroje dat čárového kódu
 
@@ -77,7 +77,7 @@ Při konfiguraci zdroje dat **čárového kódu** můžete definovat specifické
 >
 > Když vážete zdroj dat **čárový kód** do buněčného prvku ve formátu a buněčný prvek představuje buď ovládací prvek obsahu Word nebo obrázek Excel, zdroj dat je prezentován v této vazbě jako funkce, která má jediný parametr typu **Řetězec**. Tento parametr musíte použít k určení textu, který by měl být převeden na obrázek čárového kódu, a číst při skenování vygenerovaného čárového kódu.
 
-Chcete-li získat další informace o této funkci, proveďte příklady tomto tématu.
+Chcete-li získat další informace o této funkci, proveďte příklady tomto článku.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Příklad: Vygenerujte platební šek, který obsahuje čárový kód, který kóduje splatnou částku
 
@@ -112,7 +112,7 @@ K dokončení tohoto příkladu v tomto tématu musíte mít přístup ke spole�
 - Funkční konzultant elektronického výkaznictví
 - Správce systému
 
-Pokud jste ještě nedokončili příklad v části [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](electronic-reporting-embed-images-shapes.md), stáhněte si následující konfigurace ukázkového řešení elektronického výkaznictví.
+Pokud jste ještě nedokončili příklad v článku [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](electronic-reporting-embed-images-shapes.md), stáhněte si následující konfigurace ukázkového řešení elektronického výkaznictví.
 
 | Popis obsahu         | Název souboru                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivace poskytovatele konfigurace
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti **Litware, Inc.** a že je označen jako aktivní. Není-li uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti **Litware, Inc.** a že je označen jako aktivní. Není-li uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v článku [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Nastavení ukázkové společnosti Litware, Inc. do aktivního stavu na stránce konfigurace lokalizace.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ Koncept verze vybraného formátu je označen jako dostupný pro použití při 
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Převést vygenerovaný šek na PDF
 
-Jak je popsáno v [Vytvářejte tisknutelné formuláře FTI](er-generate-printable-fti-forms.md#finland), můžete pomocí speciálního písma vytvořit čárové kódy v generovaném dokumentu. V tomto případě mohou další transformace generovaného dokumentu záviset na dostupnosti tohoto písma v transformačním prostředí. Pokud se například pokusíte převést dokument do formátu PDF nebo jej zobrazit v prostředí, kde písmo chybí, nebudou čárové kódy vykresleny správně.
+Jak je popsáno v článku [Vytvářejte tisknutelné formuláře FTI](er-generate-printable-fti-forms.md#finland), můžete pomocí speciálního písma vytvořit čárové kódy v generovaném dokumentu. V tomto případě mohou další transformace generovaného dokumentu záviset na dostupnosti tohoto písma v transformačním prostředí. Pokud se například pokusíte převést dokument do formátu PDF nebo jej zobrazit v prostředí, kde písmo chybí, nebudou čárové kódy vykresleny správně.
 
 Nicméně, když používáte zdroj dat **čárový kód** dat pro výrobu čárových kódů, vykreslování těchto čárových kódů nezávisí na žádném písmu. Proto můžete snadno převádět dokumenty, které obsahují čárové kódy, do formátu PDF. Následující obrázek ukazuje náhled vygenerovaného platebního šeku, který byl [převedený](electronic-reporting-destinations.md#OutputConversionToPDF) do PDF na základě nastavení nakonfigurované ER [destinace](electronic-reporting-destinations.md).
 

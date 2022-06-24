@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (6. října 2020)
-description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 6. říjnu 2020.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 6. říjnu 2020.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887711"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (6. října 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062972"
 
 
 
-Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
+Tento článek popisuje funkce, které jsou nové, změnily se nebo brzy dorazí do aplikace Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
 Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2020](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ V této verzi je všeobecně dostupná následující funkce.
 Tato verze obsahuje následující opravy chyb.
 
 >[!NOTE]
-> Naším cílem je k vám dostat tyto informace co nejdříve. Mohou existovat aktualizace tohoto tématu zahrnující opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+> Naším cílem je k vám dostat tyto informace co nejdříve. Mohou existovat aktualizace tohoto článku zahrnující opravy chyb, které se dostaly do sestavení poté, co bylo tento článek původně publikován.
 
-| Číslo problému | Výdej | popis |
+| Číslo problému | Problém | Popis |
 | --- | --- | --- |
 | 448806 | **Výchozí typ identifikace** je exportován jako **RecID** v parametrech HCM | Tato změna entity parametrů lidských zdrojů přidá další sloupec, který zobrazí **Výchozí typ identifikace**. |
 | 492923 | Záznamy úkolů se neukládají ve službě Lifecycle Services (LCS) | Záznamy úkolů lze nyní uložit v LCS. |

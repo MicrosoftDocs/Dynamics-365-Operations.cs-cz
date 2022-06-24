@@ -1,6 +1,6 @@
 ---
 title: Základy přidělení
-description: Toto téma poskytuje informace o základech přidělení. Základy přidělení jsou klíčové komponenty v nákladovém účetnictví a používají se většinou pro přidělení režijních nákladů.
+description: Tento článek poskytuje informace o základech přidělení. Základy přidělení jsou klíčové komponenty v nákladovém účetnictví a používají se většinou pro přidělení režijních nákladů.
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894077"
 ---
 # <a name="allocation-bases"></a>Základy přidělení 
 
@@ -174,7 +174,7 @@ Nákladové účetnictví podporuje kolekci statistických měření pomocí ná
 - Nástroj importu a exportu správy dat
 - Statistická měření
 
-Načtení statistických měření ze systému vyžaduje šablonu poskytovatele statistických měření. Více informací naleznete v části o šabloně poskytovatele statistického měření. (Bude přidán odkaz, jakmile bude téma napsáno.)
+Načtení statistických měření ze systému vyžaduje šablonu poskytovatele statistických měření. Více informací naleznete v části o šabloně poskytovatele statistického měření. (Bude přidán odkaz, jakmile bude článek napsán.)
 
 **Šablony poskytovatelů statistického měření**
 

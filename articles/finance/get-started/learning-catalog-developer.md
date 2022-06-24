@@ -1,6 +1,6 @@
 ---
 title: Výukový katalog pro vývojáře Dynamics 365 Finance
-description: Vyhledejte všechny možnosti školení pro vývojáře Dynamics 365 Finance.
+description: Všechny možnosti školení pro vývojáře Dynamics 365 Finance.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903092"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Výukový katalog pro vývojáře Dynamics 365 Finance
 
@@ -32,7 +32,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah | Popis | Formát | Délka |
 |---------|-------------|--------|--------|
 | [Začínáme s finančními a provozními aplikacemi](/learn/paths/get-started-finance-operations/) | Informace, jak finanční a provozní aplikace podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s finančními a provozními aplikacemi se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2.2 hodin |
-| [Začínáme s aplikací Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance umožňuje podnikovým uživatelům přizpůsobit se rychle se měnícím podnikovým prostředím. Poskytuje podnikům vše, co potřebují, pokud chtějí kontrolovat finance a kdykoli spravovat finanční prostředky se správnými informacemi pro finanční plánování a prognózy a pomáhá mít stále aktuální analýzy. Protože finance jsou jádrem každého podnikání, je důležité se seznámit s možnostmi Dynamics 365 Finance. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |
+| [Začínáme s Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance umožňuje podnikovým uživatelům přizpůsobit se rychle se měnícím podnikovým prostředím. Poskytuje podnikům vše, co potřebují, pokud chtějí kontrolovat finance a kdykoli spravovat finanční prostředky se správnými informacemi pro finanční plánování a prognózy a pomáhá mít stále aktuální analýzy. Protože finance jsou jádrem každého podnikání, je důležité se seznámit s možnostmi Dynamics 365 Finance. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |
 
 ## <a name="core-development-concepts"></a>Klíčové koncepty vývoje<a name="core-development-concepts"></a>
 

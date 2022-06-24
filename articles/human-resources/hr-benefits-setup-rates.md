@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868152"
 ---
 # <a name="configure-rates"></a>Konfigurace sazeb
 
@@ -47,7 +47,7 @@ Pomocí sazeb lze určit, kolik zaměstnanců a zaměstnavatelů platí na jedno
    | **Účinné:** | Datum, od kterého je sazba platná. Výchozí hodnotou je aktuální systémové datum. Toto datum by mělo být stejné nebo dříve než vaše období výhod. Dobrým postupem je nastavit toto datum na datum plánu dávek. |
    | **Vypršení platnosti** | Koncové datum sazby Výchozí hodnota je 12/31/2154 (což znamená nikdy). |
    | **Použít úrovně** |  Toto pole použijte, pokud máte logiku, která musí být použita k určení sazby. Pokud se například sazba musí zvýšit na základě věku, vyberte zde hodnotu. Vyberte **Jediná úroveň** pro jednu sazbu zaměstnaneckých výhod nebo **dvojitá úroveň** pro sazbu zaměstnaneckých výhod dvou úrovní. Příkladem dvojité úrovně je úroveň založená na pohlaví a věku. Po výběru hodnoty vyberte **Akce** a potom vyberte **Úrovně sazeb**. Pokud máte paušální sazbu, která se nemění, nechte toto pole prázdné. |
-   | **Četnost plateb** | Uveďte, jak často by měla být sazba pojistného na dávky vyplácena poskytovateli dávek. Sazby, které zadáte na stránce popsané dále v tomto tématu, budou založeny na frekvenci plateb, kterou zde zadáte. Například pokud zadáte **Měsíční** do tohoto pole a zadáte sazbu pro zaměstnance ve výši **100 $**, předpokládá se, že výhoda bude zaměstnance stát $100 měsíčně. Zaměstnanec však může být placen dvakrát za měsíc na základě četnosti výplat dávek, která je nastavena v záznamu zaměstnance. V tomto případě, když se zaměstnanec přihlásí k **samoobsluze zaměstnanců**, bude částka, kterou zaplatí, $50, protože sazba, kterou **samoobsluha zaměstnanců** zobrazuje, je založena na frekvenci plateb zaměstnance. |
+   | **Četnost plateb** | Uveďte, jak často by měla být sazba pojistného na dávky vyplácena poskytovateli dávek. Sazby, které zadáte na stránce popsané dále v tomto článku, budou založeny na frekvenci plateb, kterou zde zadáte. Například pokud zadáte **Měsíční** do tohoto pole a zadáte sazbu pro zaměstnance ve výši **100 $**, předpokládá se, že výhoda bude zaměstnance stát $100 měsíčně. Zaměstnanec však může být placen dvakrát za měsíc na základě četnosti výplat dávek, která je nastavena v záznamu zaměstnance. V tomto případě, když se zaměstnanec přihlásí k **samoobsluze zaměstnanců**, bude částka, kterou zaplatí, $50, protože sazba, kterou **samoobsluha zaměstnanců** zobrazuje, je založena na frekvenci plateb zaměstnance. |
    | **Zaokrouhlení sazby platební frekvence** | Metody zaokrouhlování kurzu jsou: Standardní, Zkrácené, Normální, Dolů a Zaokrouhlování nahoru. </br></br><ul><li>**Standard** - Vždy zaokrouhlit nahoru. Například 10,611 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,23. </li><li>**Zkráceno** - Vždy zaokrouhlit dolů. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,24. </li><li>**Normální** - Desetinná místa končící nebo větší než 5 se zaokrouhlují směrem od nuly. Desetinné hodnoty končící na nebo menší než 4 se zaokrouhlují na nulu. Například 10,615 se zaokrouhlí na 10,62. -10,235 se zaokrouhlí na -10,24. 10,614 se zaokrouhlí na 10,61. -10,234 se zaokrouhlí na -10,23. </li><li>**Dolů** - Zaokrouhlit na nulu. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,23. </li><li>**Zaokrouhlování nahoru** - Zaokrouhlení nahoru. Například 10,619 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,24. |
    | **Částka zaměstnance nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
    | **Částka zaměstnavatele nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |

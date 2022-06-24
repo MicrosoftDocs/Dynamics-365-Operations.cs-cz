@@ -1,6 +1,6 @@
 ---
 title: Volba technologie integrace dat
-description: Toto téma obsahuje informace o integraci s daty spravovanými oddělením lidských zdrojů.
+description: Tento článek poskytuje informace o integraci s daty spravovanými v Human resources.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98c1c56b445ae426103d19f96cbf1a77891221ef
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887783"
 ---
 # <a name="choose-a-data-integration-technology"></a>Volba technologie integrace dat
 
@@ -30,7 +30,7 @@ ms.locfileid: "8717132"
 
 
 
-Toto téma obsahuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
+Tento článek obsahuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
 
 ## <a name="data-integration-background"></a>Pozadí integrace dat
 

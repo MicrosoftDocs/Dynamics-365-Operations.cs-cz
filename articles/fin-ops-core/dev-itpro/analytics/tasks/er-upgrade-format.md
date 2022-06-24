@@ -1,6 +1,6 @@
 ---
 title: Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
-description: Toto téma popisuje, jak udržovat konfigurace formátu pro elektronické výkaznictví (ER).
+description: Tento článek popisuje, jak udržovat konfigurace formátu pro elektronické výkaznictví (ER).
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883502"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
 

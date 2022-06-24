@@ -1,6 +1,6 @@
 ---
 title: Přiznání k DPH (Dánsko)
-description: Toto téma popisuje, jak nastavit a vygenerovat předběžné přiznání k dani z přidané hodnoty (DPH) pro Dánsko.
+description: Tento článek popisuje, jak nastavit a vygenerovat předběžné přiznání k dani z přidané hodnoty (DPH) pro Dánsko.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d4a1185fa3c3b059744018b6e4e195de07126c9
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: 666dc96cb169ab28ac3938299a3f245e3b4511ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862992"
 ---
 # <a name="vat-declaration-denmark"></a>Přiznání k DPH (Dánsko)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit přiznání k dani z přidané hodnoty (DPH) pro Dánsko a zobrazit jeho náhled v aplikaci Microsoft Excel.
+Tento článek popisuje, jak nastavit přiznání k dani z přidané hodnoty (DPH) pro Dánsko a zobrazit jeho náhled v aplikaci Microsoft Excel.
 
 Chcete-li automaticky vygenerovat sestavu, vytvořte nejprve dostatek kódů DPH, aby bylo možné vést samostatné účetnictví DPH pro každé pole na předběžném přiznání k DPH. Navíc v parametrech specifických pro aplikaci ve formátu elektronického výkaznictví (ER) pro předběžné přiznání k DPH přidružte kódy DPH k výsledku vyhledávání pro pole v přiznání k DPH.
 
-Pro Dánsko musíte nakonfigurovat **Vyhledání pole sestavy**. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů specifických pro aplikaci pro pole přiznání k DPH](#set-up-application-specific-parameters) dále v tomto tématu.
+Pro Dánsko musíte nakonfigurovat **Vyhledání pole sestavy**. Další informace, jak nastavit parametry specifické pro aplikaci, najdete v části [Nastavení parametrů specifických pro aplikaci pro pole přiznání k DPH](#set-up-application-specific-parameters) dále v tomto článku.
 
 V následující tabulce sloupec „Výsledek vyhledávání“ zobrazuje výsledek vyhledávání, který je předkonfigurován pro konkrétní řádek přiznání k DPH ve formátu přiznání k DPH. Tyto informace použijte ke správnému přidružení kódů DPH k výsledku vyhledávání a poté k řádku přiznání k DPH.
 
@@ -124,7 +124,7 @@ Pomocí těchto kroků definujte, které kódy DPH generují která pole v přiz
 
     | Pole                  | Popis                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Výsledek vyhledávání          | Vyberte hodnotu pole sestavy. Další informace o hodnotách a jejich přiřazení k řádkům přiznání k DPH najdete v části [Přehled přiznání k DPH](#vat-declaration-overview) dříve v tomto tématu.                                                                                               |
+    | Výsledek vyhledávání          | Vyberte hodnotu pole sestavy. Další informace o hodnotách a jejich přiřazení k řádkům přiznání k DPH najdete v části [Přehled přiznání k DPH](#vat-declaration-overview) dříve v tomto článku.                                                                                               |
     | Kód daně               | Vyberte kód DPH, který chcete přidružit k poli sestavy. Zaúčtované daňové transakce, které používají vybraný kód DPH, budou shromážděny v příslušné kolonce přiznání. Doporučujeme oddělit kódy DPH tak, aby jeden kód DPH generoval částky pouze v jedné kolonce přiznání. |
     | Klasifikátor transakcí | Pokud jste vytvořili dostatek kódů DPH k určení kolonky přiznání, vyberte **\*Ne prázdné\***. Pokud jste nevytvořili dostatek kódů DPH, takže jeden kód DPH vygeneruje částky pouze v jedné kolonce přiznání, můžete vytvořit klasifikátor transakcí. K dispozici jsou následující klasifikátory transakcí:</br>-   **Nákup**</br>-   **PurchaseExempt** (nákup osvobozený od daně)</br>-   **PurchaseReverseCharge** (daň splatná z nákupní reverse charge)</br>-   **Prodej**</br>-   **SalesExempt** (prodej osvobozený od daně)</br>-   **SalesReverseCharge** (daň odvedená z přenesené daňové povinnosti při nákupu nebo prodeji)</br>-   **Importní DPH.** </br>Pro každý klasifikátor transakcí je k dispozici také klasifikátor dobropisu. Například jeden z těchto klasifikátorů je **PurchaseCreditNote** (nákupní dobropis).</br>Nezapomeňte vytvořit dva řádky pro každý kód DPH: jeden s hodnotou klasifikátoru transakce a jeden s klasifikátorem transakce pro hodnotu dobropisu. |
 
@@ -212,7 +212,7 @@ Datový balíček obsahuje nastavení elektronické zprávy, která slouží k n
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Generování přiznání k DPH z elektronických zpráv
 
-Když pro generování sestavy používáte elektronické zprávy, můžete shromažďovat daňové údaje od více právnických osob. Více informací naleznete v sekci [Spustit přiznání k DPH pro více právnických osob](#run-vat-declaration) dále v tomto tématu.
+Když pro generování sestavy používáte elektronické zprávy, můžete shromažďovat daňové údaje od více právnických osob. Více informací naleznete v sekci [Spustit přiznání k DPH pro více právnických osob](#run-vat-declaration) dále v tomto článku.
 
 Následující postup platí pro příklad zpracování elektronické zprávy, který jste předtím importovali z knihovny sdíleného majetku LCS.
 
@@ -224,12 +224,12 @@ Následující postup platí pro příklad zpracování elektronické zprávy, k
    > [!NOTE]
    > Kroky 5 až 7 jsou volitelné.
 
-5. Volitelné: Na záložce s náhledem **Zprávy** vyberte **Shromažďovat data** a potom vyberte **OK**. Do zprávy se přidají platby DPH, které byly vygenerovány dříve. Více informací naleznete v předchozích části [Vyrovnat a zaúčtovat DPH](#settle-and-post-sales-tax) v tomto tématu. Pokud tento krok přeskočíte, stále můžete vygenerovat přiznání k DPH pomocí pole **Verze přiznání k DPH** v dialogovém okně **Přiznání**.
+5. Volitelné: Na záložce s náhledem **Zprávy** vyberte **Shromažďovat data** a potom vyberte **OK**. Do zprávy se přidají platby DPH, které byly vygenerovány dříve. Více informací naleznete v předchozích části [Vyrovnat a zaúčtovat DPH](#settle-and-post-sales-tax) v tomto článku. Pokud tento krok přeskočíte, stále můžete vygenerovat přiznání k DPH pomocí pole **Verze přiznání k DPH** v dialogovém okně **Přiznání**.
 6. Volitelné: Na kartě s náhledem **Položky zprávy** zkontrolujte platby DPH, které jsou přeneseny ke zpracování. Ve výchozím nastavení jsou zahrnuty všechny platby DPH ve vybraném období, které nebyly zahrnuty v žádné jiné zprávě stejného zpracování.
 7. Volitelně: Vyberte **Původní dokument**, chcete-li zkontrolovat platby DPH, nebo zvolte **Odstranit**, chcete-li vyloučit ze zpracování platby DPH. Pokud tento krok přeskočíte, stále můžete vygenerovat přiznání k DPH pomocí pole **Verze přiznání k DPH** v dialogovém okně **Přiznání**.
 8. Na záložce s náhledem **Zprávy** vyberte **Aktualizovat status**. V dialogovém okně **Aktualizovat status** vyberte **Připraveno k vygenerování** a poté vyberte **OK**. Ověřte, že se stav zprávy změnil na **Připraveno k vygenerování**.
 9. Vyberte **Generovat sestavu**. Chcete-li zobrazit náhled částek přiznání k DPH, v dialogovém okně **Spustit zpracování** vyberte **Náhled sestavy** a potom vyberte **OK**.
-10. V dialogovém okně **Parametry elektronického hlášení** nastavte pole podle popisu v části [Náhled přiznání k DPH v aplikaci Excel z periodické úlohy Vykázat DPH pro období vyrovnání](#preview-vat-excel) výše v tomto tématu a poté vyberte **OK**.
+10. V dialogovém okně **Parametry elektronického hlášení** nastavte pole podle popisu v části [Náhled přiznání k DPH v aplikaci Excel z periodické úlohy Vykázat DPH pro období vyrovnání](#preview-vat-excel) výše v tomto článku a poté vyberte **OK**.
 11. Vyberte tlačítko **Příloha** (symbol sponky) v pravém horním rohu stránky, a poté výběrem příkazu **Otevřít** soubor otevřete. Zkontrolujte částky v dokumentu Excel.
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a><a name="run-vat-declaration"></a>Spuštění přiznání k DPH pro několik právnických osob

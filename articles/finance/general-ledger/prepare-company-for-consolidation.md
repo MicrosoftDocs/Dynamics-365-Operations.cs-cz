@@ -1,6 +1,6 @@
 ---
 title: Připravit právnickou osobu pro proces konsolidace
-description: Při konsolidaci shromáždíte transakce z několika sad účtů právnické osoby do jediné sady účtů právnické osoby. Toto téma vysvětluje, jak připravit právnickou osobu na konsolidaci.
+description: Při konsolidaci shromáždíte transakce z několika sad účtů právnické osoby do jediné sady účtů právnické osoby. Tento článek vysvětluje, jak připravit právnickou osobu na konsolidaci.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894019"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Připravit právnickou osobu pro proces konsolidace
 
 [!include [banner](../includes/banner.md)]
 
-Při konsolidaci shromáždíte transakce z několika sad účtů právnické osoby do jediné sady účtů právnické osoby. Toto téma vysvětluje, jak připravit právnickou osobu na konsolidaci.
+Při konsolidaci shromáždíte transakce z několika sad účtů právnické osoby do jediné sady účtů právnické osoby. Tento článek vysvětluje, jak připravit právnickou osobu na konsolidaci.
 
 > [!NOTE]
 > Doporučujeme použít Management Reporter pro Microsoft Dynamics 365 Finance, chcete-li kombinovat finanční výsledky pro více právnických osob v konsolidovaném formátu. Management Reporter vám umožňuje vytvářet konsolidované finanční výkazy napříč právnickými osobami, používat Excel k importu konsolidačních dat z jiných zdrojů a převádět částky do libovolného počtu měn vykazování, aniž byste museli spouštět proces konsolidace v Dynamics 365 Finance.

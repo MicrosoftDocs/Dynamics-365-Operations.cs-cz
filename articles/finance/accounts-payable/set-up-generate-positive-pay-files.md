@@ -1,6 +1,6 @@
 ---
-title: Nastavení a generování souborů kladné platby
-description: Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
+title: Nastavení a vygenerování souborů kladných plateb
+description: Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871413"
 ---
-# <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a generování souborů kladné platby
+# <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a vygenerování souborů kladných plateb
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb. 
+Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb. 
 
 Nastavte kladné platby pro generování elektronických seznamů šeků, které jsou dodávány bance. Poté při předložení šeku bance ho banka srovná se seznamem šeků. Pokud šek odpovídá tomu, co má banka má v záznamech v seznamu, banka jej zúčtuje. Pokud šek neodpovídá šeku v seznamu, banka předloží šek ke kontrole.
 

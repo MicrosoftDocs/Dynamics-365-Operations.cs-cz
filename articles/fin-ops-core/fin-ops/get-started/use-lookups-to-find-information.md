@@ -1,6 +1,6 @@
 ---
 title: Nalezení informací pomocí vyhledávání
-description: V tomto tématu se dozvíte o funkcích vyhledávání a najdete tu užitečné tipy k optimálnímu využití vyhledávání v systému.
+description: V tomto článku se dozvíte o funkcích vyhledávání a najdete tu užitečné tipy k optimálnímu využití vyhledávání v systému.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901516"
 ---
 # <a name="find-information-by-using-lookups"></a>Nalezení informací pomocí vyhledávání
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069291"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Mnoho polí má vyhledávací pole umožňující snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto tématu se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.
+Mnoho polí má vyhledávací pole umožňující snadné vyhledávání správných a požadovaných hodnot. Vyhledávání bylo několika způsoby vylepšeno – ovládací prvky jsou nyní užitečnější a uživatelé díky nim mohou být produktivnější. V tomto článku se dozvíte o těchto nových funkcích a užitečných tipech k optimálnímu využití vyhledávání v systému.
 
 ## <a name="responsive-lookups"></a>Lépe reagující vyhledávání
 

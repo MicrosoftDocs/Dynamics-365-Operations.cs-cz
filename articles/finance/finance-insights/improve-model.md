@@ -1,6 +1,6 @@
 ---
 title: Vylepšit model předpovědi
-description: Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů.
+description: Tento článek popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 96ba1653ea1f9a5ac1037e9ecc7e85c86a6f31c7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: cb725f4e8f7b9dd81077f5c85059a024f3146092
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719964"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846879"
 ---
 # <a name="improve-the-prediction-model"></a>Vylepšit model předpovědi
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů. Model začnete vylepšovat v pracovním prostoru **Předpovědi plateb zákazníka** v Microsoft Microsoft Dynamics 365 Finance. Kroky vylepšení jsou poté dokončeny v AI Builder.
+Tento článek popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů. Model začnete vylepšovat v pracovním prostoru **Předpovědi plateb zákazníka** v Microsoft Microsoft Dynamics 365 Finance. Kroky vylepšení jsou poté dokončeny v AI Builder.
 
 ## <a name="select-historical-outcomes"></a>Vyberte historické výsledky
 

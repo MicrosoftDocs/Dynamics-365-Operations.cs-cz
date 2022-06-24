@@ -1,6 +1,6 @@
 ---
 title: Automatické vyrovnání a stanovení priorit
-description: Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
+description: Tento článek popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855513"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priorit
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
+Tento článek popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 
 Při vyrovnání plateb pomocí faktur a ostatních transakcí, máte k dispozici dvě možnosti. Transakce pro vyrovnání je možné vybrat ručně, nebo systém tyto transakce vybere automaticky pomocí funkce automatického vyrovnání. Můžete také upravit, jak je automatické vyrovnání zpracováno, pomocí možnosti **Určit prioritu vyrovnání**. Všechny z těchto možností jsou součástí parametrů vyrovnání , které jsou definovány na stránce **Parametry pohledávek**. Způsob automatického vyrovnání transakcí se může lišit v závislosti na metodě, kterou používáte pro automatické vyrovnání. K dispozici jsou následující metody:
 

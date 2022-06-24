@@ -1,6 +1,6 @@
 ---
-title: Konfigurace parametrů Human Resources
-description: Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost v aplikaci Dynamics 365 Human Resources.
+title: Konfigurace parametrů aplikace Human Resources
+description: Tento článek vysvětluje, jak nastavit parametry specifické pro společnost v Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856273"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurace parametrů Human Resources
+# <a name="configure-human-resources-parameters"></a>Konfigurace parametrů aplikace Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
+Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
 
 K nastavení parametrů lidských zdrojů slouží dvě stránky. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**.
 

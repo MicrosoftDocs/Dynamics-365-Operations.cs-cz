@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884134"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Import konfigurací pro generování dokumentů s daty aplikace
 
@@ -25,7 +25,7 @@ ms.locfileid: "6727478"
 
 K provedení kroků v tomto postupu musíte nejprve dokončit postup "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 
-Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazování (ER) k vygenerování elektronického dokumentu. V tomto postupu naimportujete požadované konfigurace ER, které byly vytvořeny pro vzorovou společnost Litware, Inc., a poté je použijete k vygenerování elektronických dokumentů. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady DEMF. Než začnete, stáhněte a uložte si soubory uvedené v tématu nápovědy „Generování elektronických dokumentů a aktualizace dat aplikací pomocí nástroje elektronického výkaznictví“ (generate-electronic-documents-update-application-data/). Soubory jsou Intrastat (model).xml, Intrastat (mapping).xml a Intrastat (format).xml.
+Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazování (ER) k vygenerování elektronického dokumentu. V tomto postupu naimportujete požadované konfigurace ER, které byly vytvořeny pro vzorovou společnost Litware, Inc., a poté je použijete k vygenerování elektronických dokumentů. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady DEMF. Než začnete, stáhněte a uložte si soubory uvedené v článku nápovědy „Generování elektronických dokumentů a aktualizace dat aplikací pomocí nástroje elektronického výkaznictví“ (generate-electronic-documents-update-application-data/). Soubory jsou Intrastat (model).xml, Intrastat (mapping).xml a Intrastat (format).xml.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu Vytvoření poskytovatele konfigurace a jeho označení jako aktivního.  

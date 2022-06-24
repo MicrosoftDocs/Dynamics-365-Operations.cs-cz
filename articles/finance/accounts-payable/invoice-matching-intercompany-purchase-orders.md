@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879733"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Párování faktur a mezipodnikové nákupní objednávky
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109961"
 
 Nakupující právnická osoba, která se účastní mezipodnikové obchodní transakce, je pravděpodobně nastavena pro použití párování faktur závazků. Když je pole **Zaúčtovat fakturu s odchylkami** na stránce **Parametry závazků** nastaveno na **Vyžadovat schválení**, bude provedeno ověření párování faktury. V tomto případě požadavky zaúčtování pro párování mezipodnikových obchodních účtů a účtů závazků je třeba splnit dříve, než lze zaúčtovat mezipodnikové faktury dodavatele.
 
-V příkladech v tomto tématu je pro mezipodnikový obchod použito toto nastavení:
+V příkladech v tomto článku je pro mezipodnikový obchod použito toto nastavení:
 -   Fabrikam Purchase je nakupující právnická osoba.
 -   Fabrikam Sales je prodávající právnická osoba.
 -   Ve společnosti Fabrikam Sales existuje odběratel 4020.

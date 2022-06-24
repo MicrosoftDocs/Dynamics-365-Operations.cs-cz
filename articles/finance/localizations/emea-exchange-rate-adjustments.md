@@ -1,6 +1,6 @@
 ---
-title: Úpravy kurzů
-description: Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
+title: Úpravy směnných kurzů
+description: Tento článek uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 author: ShylaThompson
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 82f9d51bb882ae83c6382a424fbdff65900fd3822d70f496c0956c2e57180ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9e047872269b8fca56c702bd9599c759b0acd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889791"
 ---
-# <a name="exchange-rate-adjustments"></a>Úpravy kurzů
+# <a name="exchange-rate-adjustments"></a>Úpravy směnných kurzů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
+Tento článek uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 
 Funkce pro vyrovnání kurzových rozdílů pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko zahrnuje následující rozšíření, která jsou relevantní pro pohledávky a závazky:
 

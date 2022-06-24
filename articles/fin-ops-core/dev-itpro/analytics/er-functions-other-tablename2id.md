@@ -1,6 +1,6 @@
 ---
 title: Funkce el. výkaznictví TABLENAME2ID
-description: Toto téma obsahuje obecné informace o použití funkce TABLENAME2ID elektronického výkaznictví.
+description: Tento článek obsahuje obecné informace o použití funkce TABLENAME2ID elektronického výkaznictví.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a500eda75fbb5867f74b56753ee45016c60803b06f508340540764a6cd0399cc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5deea69d5c43be599ccf02c0344ba8d662a6e0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886842"
 ---
 # <a name="tablename2id-er-function"></a>Funkce el. výkaznictví TABLENAME2ID
 

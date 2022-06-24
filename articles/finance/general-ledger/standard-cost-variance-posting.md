@@ -1,6 +1,6 @@
 ---
 title: Účtování standardní odchylky nákladů
-description: Tohle téma poskytuje informace o nastavení profilů účtování pro standardní kalkulaci.
+description: Tento článek poskytuje informace o nastavení profilů účtování pro standardní kalkulaci.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894870"
 ---
 # <a name="standard-cost-variance-posting"></a>Účtování standardní odchylky nákladů
 
-Když používáte standardní kalkulaci u jednoho nebo více produktů ve vaší organizaci, musíte konfigurovat [předpoklady pro standardní kalkulaci](/supply-chain/cost-management/prerequisites-standard-costs.md). Toto téma vysvětluje účty pro zaúčtování, které jsou vyžadovány pro krok 3 předpokladů, „Přiřazení účtů hlavní knihy k účtování položek, které souvisejí se standardními odchylkami nákladů“.
+Když používáte standardní kalkulaci u jednoho nebo více produktů ve vaší organizaci, musíte konfigurovat [předpoklady pro standardní kalkulaci](/supply-chain/cost-management/prerequisites-standard-costs.md). Tento článek vysvětluje účty pro zaúčtování, které jsou vyžadovány pro krok 3 předpokladů, „Přiřazení účtů hlavní knihy k účtování položek, které souvisejí se standardními odchylkami nákladů“.
 
 U nákupních objednávek a výrobních zakázek mohou nastat různé typy odchylek. Příklady výrobních odchylek najdete v tématu [Běžné zdroje výrobních odchylek](/supply-chain/cost-management/common-sources-of-production-variances.md). K odchylkám v ceně nákupní objednávky dochází, když pro zakoupenou položku použijete standardní cenu a existuje rozdíl mezi standardní cenou produktu a fakturovanou částkou v nákupní objednávce.
 

@@ -1,6 +1,6 @@
 ---
 title: Nastavení a zpracování překlenovacích plateb
-description: Toto téma vysvětluje, jak nastavit a zpracovat překlenovací platby zákazníků. Překlenovací platba je platba, která se zaúčtuje do hlavní knihy ve dvou krocích.
+description: Tento článek vysvětluje, jak nastavit a zpracovat překlenovací platby zákazníků. Překlenovací platba je platba, která se zaúčtuje do hlavní knihy ve dvou krocích.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887970"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Nastavení a zpracování překlenovacích plateb
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734184"
 
 Překlenovací platba je platba, která se zaúčtuje do hlavní knihy ve dvou krocích. Obvykle se tento přístup používá, když je nastaven způsob platby **Banka** a transakce musíte zaúčtovat na bankovní účet až poté, co byla transakce zúčtována bankou. Můžete jej však použít i pro účet hlavní knihy. V tomto případě systém při zpracování překlenovacího zaúčtování přesune částku z jednoho hlavního účtu na jiný hlavní účet.
 
-Překlenovací platby můžete vytvořit ze závazků nebo pohledávek. Ačkoli toto téma vysvětluje, jak nakonfigurovat překlenovací účtování pro pohledávky, kroky pro transakce závazků jsou podobné.
+Překlenovací platby můžete vytvořit ze závazků nebo pohledávek. Ačkoli tento článek vysvětluje, jak nakonfigurovat překlenovací účtování pro pohledávky, kroky pro transakce závazků jsou podobné.
 
 ## <a name="set-up-bridging-posting"></a>Nastavení překlenovacího účtování
 

@@ -1,6 +1,6 @@
 ---
 title: Často kladené dotazy ke sloučení infrastruktiry Dynamics 365 Human Resources
-description: Toto téma odpovídá na často kladené otázky o sloučení infrastruktury pro aplikace Microsoft Dynamics 365 Human Resources a finanční a provozní aplikace.
+description: Tento článek odpovídá na často kladené otázky o sloučení infrastruktury pro aplikace Microsoft Dynamics 365 Human Resources a finanční a provozní aplikace.
 author: twheeloc
 ms.date: 08/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 8c005f677624336b4194bebea6d69667182128b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880473"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Často kladené dotazy ke sloučení infrastruktiry Dynamics 365 Human Resources
 
@@ -27,7 +27,7 @@ ms.locfileid: "8809606"
 
 
 
-Toto téma odpovídá na často kladené otázky o sloučení infrastruktury pro aplikace Microsoft Dynamics 365 Human Resources a finanční a provozní aplikace.
+Tento článek odpovídá na často kladené otázky o sloučení infrastruktury pro aplikace Microsoft Dynamics 365 Human Resources a finanční a provozní aplikace.
 
 ## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Co je sloučení infrastruktury Dynamics 365 Human Resources?
 

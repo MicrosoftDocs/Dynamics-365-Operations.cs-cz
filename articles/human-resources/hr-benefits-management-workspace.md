@@ -1,6 +1,6 @@
 ---
 title: Pracovní prostor správy zaměstnaneckých výhod
-description: Toto téma popisuje pracovní prostor správy zaměstnaneckých výhod v aplikaci Dynamics 365 Human Resources.
+description: Tento článek popisuje pracovní prostor správy zaměstnaneckých výhod v aplikaci Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39e7f606ae3c5c0a66764cc3235837380725241f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7975d1723e07ae390961d4f44e0f34f2ff2df44d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902911"
 ---
 # <a name="benefits-management-workspace"></a>Pracovní prostor správy zaměstnaneckých výhod
 
@@ -30,7 +30,7 @@ ms.locfileid: "8690020"
 
 [!include [preview feature](./includes/preview-feature.md)]
 
-Toto téma popisuje pracovní prostor **Správa zaměstnaneckých výhod** v aplikaci Dynamics 365 Human Resources.
+Tento článek popisuje pracovní prostor **správy zaměstnaneckých výhod** v aplikaci Dynamics 365 Human Resources.
 
 > [!NOTE]
 > Chcete-li zobrazit pracovní prostor **Správa zaměstnaneckých výhod**, musíte nejprve povolit funkci **(Preview) Pracovní prostor pro správu zaměstnaneckých výhod** ve Správě funkcí. Další informace o povolení funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br><br>![Povolení pracovního prostoru Správa zaměstnaneckých výhod.](./media/hr-benefits-management-workspace-enable.png)

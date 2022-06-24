@@ -1,6 +1,6 @@
 ---
 title: Výpočet a úprava DPH na faktuře dodavatele
-description: V tomto tématu je vysvětleno, jak upravit DPH u faktury dodavatele v aplikaci Dynamics 365 Finance.
+description: V tomto článku je vysvětleno, jak upravit DPH u faktury dodavatele v aplikaci Dynamics 365 Finance.
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9a1093631688351d065d6b55bc65055b6f92d256
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868351"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Výpočet a úprava DPH na faktuře dodavatele
 
 [!include [banner](../../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak upravit DPH u faktury dodavatele. Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním. Tento úkol používá ukázkovou společnost DEMF.
+V tomto článku je vysvětleno, jak upravit DPH u faktury dodavatele. Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním. Tento úkol používá ukázkovou společnost DEMF.
 
 1. Přejděte na **Závazky > Faktury > Deník faktur**.
 2. Zvolte **Nové**.

@@ -1,6 +1,6 @@
 ---
 title: Vytvoření šablony záznamu pro usnadnění zadávání dat
-description: Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
+description: Tento článek ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
 author: margoc
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43bbc790d0e3145ffc9d7cb9dda7b8b3f7048e23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767718"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880189"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Vytvoření šablony záznamu pro usnadnění zadávání dat
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam. V tomto postupu vytvoříte nový záznam pro nové laptopy, které mají být přidány do dlouhodobého majetku. Tento postup používá ukázkovou společnost USMF.
+Tento článek ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam. V tomto postupu vytvoříte nový záznam pro nové laptopy, které mají být přidány do dlouhodobého majetku. Tento postup používá ukázkovou společnost USMF.
 
 1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
 2. Zvolte **Nové**.
