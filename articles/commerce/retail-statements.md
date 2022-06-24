@@ -1,6 +1,6 @@
 ---
 title: Výkazy maloobchodu
-description: Toto téma popisuje způsob vytváření a zaúčtování výkazů.
+description: Tento článek popisuje způsob vytváření a zaúčtování výkazů.
 author: ashishmsft
 ms.date: 04/04/2017
 ms.topic: article
@@ -16,14 +16,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0717c1198171f411e3c52233200ecfcc213dc13f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878450"
 ---
-# <a name="retail-statements"></a>Příkazy maloobchodu
+# <a name="retail-statements"></a>Výkazy maloobchodu
 
 [!include [banner](includes/banner.md)]
 

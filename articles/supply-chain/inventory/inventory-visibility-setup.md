@@ -1,8 +1,8 @@
 ---
 title: Instalace doplňku Viditelnost zásob
-description: Toto téma popisuje, jak nainstalovat doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jak nainstalovat doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062643"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895692"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení viditelnosti zásob
+# <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
+Tento článek popisuje, jak nainstalovat doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management.
 
-Toto téma popisuje, jak nainstalovat doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management.
+Musíte nainstalovat doplněk Viditelnost zásob pomocí Microsoft Dynamics Lifecycle Services (LCS). LCS je portál pro spolupráci, který poskytuje prostředí a sadu pravidelně aktualizovaných služeb, které vám pomohou spravovat životní cyklus aplikace vašich finančních a provozních aplikací. Další informace naleznete v tématu [Zdroje Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-Musíte nainstalovat doplněk Viditelnost zásob pomocí Microsoft Dynamics Lifecycle Services (LCS). LCS je portál pro spolupráci, který poskytuje prostředí a sadu pravidelně aktualizovaných služeb, které vám pomohou spravovat životní cyklus aplikace vašich finančních a provozních aplikací.
-
-Další informace naleznete v tématu [Zdroje Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+> [!TIP]
+> Doporučujeme, abyste se připojili k uživatelské skupině doplňku Viditelnost zásob, kde můžete najít užitečné průvodce, získat nejnovější aktualizace a zveřejnit jakékoli dotazy týkající se používání Viditelnost zásob. Chcete-li se připojit, pošlete e-mail produktovému týmu Viditelnosti zásob na adresu [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a zahrňte své ID prostředí Supply Chain Management.
 
 ## <a name="inventory-visibility-prerequisites"></a>Předpoklady pro Viditelnost zásob
 
@@ -44,6 +44,9 @@ Máte-li jakékoli dotazy týkající se těchto předpokladů, obraťte se na p
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Instalace doplňku Viditelnost zásob
 
 Před instalací doplňku zaregistrujte aplikaci a přidejte tajný kód klienta do Azure Active Directory (Azure AD) v rámci vašeho předplatného Azure. Pokyny viz [Zaregistrujte aplikaci](/azure/active-directory/develop/quickstart-register-app) a [Přidejte tajný kód klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Nezapomeňte si poznamenat **ID aplikace (klienta)**, **Tajný kód klienta** a **ID klienta**, protože je budete později potřebovat.
+
+> [!IMPORTANT]
+> Pokud máte více než jedno prostředí LCS, vytvořte jinou aplikaci Azure AD pro každé z nich. Pokud k instalaci doplňku Viditelnost zásob pro různá prostředí použijete stejné ID aplikace a ID klienta, u starších prostředí dojde k problému s tokenem. V důsledku toho bude platný pouze ten poslední, který byl nainstalován.
 
 Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalujte doplněk Viditelnost zásob podle těchto kroků.
 
@@ -72,11 +75,18 @@ Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalu
 1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení instalace obnovte stránku. Stav by se měl změnit na **Nainstalováno**.
 1. V Dataverse vyberte oblast **Aplikace** v levém navigačním panelu a ověřte, že doplněk **Viditelnost zásob** Power Apps je úspěšně nainstalován. Pokud oblast **Aplikace** neexistuje, kontaktujte produktový tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
-> [!TIP]
-> Doporučujeme, abyste se připojili k uživatelské skupině doplňku Viditelnost zásob, kde můžete najít užitečné průvodce, získat nejnovější aktualizace a zveřejnit jakékoli dotazy týkající se používání Viditelnost zásob. Chcete-li se připojit, pošlete e-mail produktovému týmu Viditelnosti zásob na adresu [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a zahrňte své ID prostředí Supply Chain Management.
-
-> [!IMPORTANT]
-> Pokud máte více než jedno prostředí LCS, vytvořte jinou aplikaci Azure AD pro každé prostředí. Pokud k instalaci doplňku Viditelnost zásob pro různá prostředí použijete stejné ID aplikace a ID klienta, u starších prostředí dojde k problému s tokenem. Platný bude pouze ten poslední, který byl nainstalován.
+> [!NOTE]
+> Pokud instalace ze stránky LCS trvá déle než hodinu, váš uživatelský účet pravděpodobně nemá oprávnění k instalaci řešení prostředí Dataverse. Chcete-li opravit problém, postupujte následovně:
+>
+> 1. Zrušte proces instalace doplňku Viditelnost zásob ze stránky LCS.
+> 1. Přihlaste se do [centra pro správu Microsoft 365](https://admin.microsoft.com) a ujistěte se, že uživatelský účet, který chcete použít k instalaci doplňku, má přidělenou licenci „Plán Dynamics 365 Unified Operations“. V případě potřeby přidělte licenci.
+> 1. Přihlaste se do [centra pro správu Power Platform](https://admin.powerplatform.microsoft.com) pomocí příslušného uživatelského účtu. Poté nainstalujte doplněk Viditelnost zásob následujícím postupem:
+>     1. Vyberte prostředí, do kterého chcete doplněk nainstalovat.
+>     1. Vyberte **Aplikace Dynamics 365**.
+>     1. Vyberte **Nainstalovat aplikaci**.
+>     1. Vyberte **Viditelnost zásob**
+>
+> 1. Po dokončení instalace se vraťte na stránku LCS a zkuste znovu nainstalovat doplněk **Viditelnost zásob**.
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalace doplňku Viditelnost zásob
 

@@ -1,6 +1,6 @@
 ---
 title: Pravidlo pro uvolnění do skladu
-description: Toto téma uvádí informace o funkci Pravidlo pro uvolnění do skladu, jež zajišťuje určitou flexibilitu při provádění uvolnění do skladu. Doplňuje možnost konfigurovat, zda bude systém umožňovat uvolnění částečně rezervovaných řádků objednávek.
+description: Tento článek uvádí informace o funkci Pravidlo pro uvolnění do skladu, jež zajišťuje určitou flexibilitu při provádění uvolnění do skladu. Doplňuje možnost konfigurovat, zda bude systém umožňovat uvolnění částečně rezervovaných řádků objednávek.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895460"
 ---
 # <a name="release-to-warehouse-rule"></a>Pravidlo pro uvolnění do skladu
 
@@ -78,7 +78,7 @@ Tyto scénáře můžete také použít jako vodítko pro použití této funkce
 Tento scénář ukazuje, jak tato funkce funguje pro sklady, u nichž je nastavena možnost **Vyžadovat úplnou rezervaci**.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
-1. Pro sklad _62_, nastavte v poli **Požadavek na rezervaci zásob** hodnotu **Vyžadovat úplnou rezervaci**, jak se popisuje v části [Nastavení pravidla pro uvolnění do skladu pro jednotlivé sklady](#set-option-warehouse) tohoto tématu.
+1. Pro sklad _62_, nastavte v poli **Požadavek na rezervaci zásob** hodnotu **Vyžadovat úplnou rezervaci**, jak se popisuje v části [Nastavení pravidla pro uvolnění do skladu pro jednotlivé sklady](#set-option-warehouse) tohoto článku.
 1. Přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky**.
 1. Klepnutím na možnost **Nová** vytvořte novou prodejní objednávku.
 1. V dialogovém okně **Vytvoření prodejní objednávky** nastavte následující hodnoty:
@@ -112,7 +112,7 @@ Tento scénář ukazuje, jak tato funkce funguje pro sklady, u nichž je nastave
 Tento scénář ukazuje, jak tato funkce funguje pro sklady, u nichž je nastavena možnost **Povolit částečné uvolnění**.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
-1. Pro sklad _62_, nastavte v poli **Požadavek na rezervaci zásob** hodnotu **Povolit částečnou rezervaci**, jak se popisuje v části [Nastavení pravidla pro uvolnění do skladu pro jednotlivé sklady](#set-option-warehouse) tohoto tématu.
+1. Pro sklad _62_, nastavte v poli **Požadavek na rezervaci zásob** hodnotu **Povolit částečnou rezervaci**, jak se popisuje v části [Nastavení pravidla pro uvolnění do skladu pro jednotlivé sklady](#set-option-warehouse) tohoto článku.
 1. Podobně jako v [předchozím scénáři](#scenario1) přejděte na **Prodej a marketing \> Prodejní objednávky \> Všechny prodejní objednávky** a vytvořte prodejní objednávku pro účet odběratele _US-004_ ze skladu _62_. Přidejte následující dva řádky objednávky:
 
     - **Řádek 1:** Nastavte v poli **Číslo položky** hodnotu _A0001_, v poli **Množství** hodnotu _2_ a v poli **Jednotka** hodnotu _ks_.

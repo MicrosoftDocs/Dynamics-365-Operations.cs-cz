@@ -1,6 +1,6 @@
 ---
 title: Vytvoření skupiny variant
-description: V tomto tématu je popsán postup při vytvoření skupiny variant velikosti, stylu nebo barev pro produkt v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je popsán postup při vytvoření skupiny variant velikosti, stylu nebo barev pro produkt v Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a46dc9fd5cdb848818964e771d373924b217147a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874954"
 ---
 # <a name="create-a-variant-group"></a>Vytvoření skupiny variant
 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán postup při vytvoření skupiny variant velikosti, stylu nebo barev pro produkt v Microsoft Dynamics 365 Commerce.
+V tomto článku je popsán postup při vytvoření skupiny variant velikosti, stylu nebo barev pro produkt v Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
 Dynamics 365 Commerce podporuje více variant produktů. Je ideální pro nastavení skupin variant pro různé kategorie produktů. Skupinu velikostí lze například vytvořit pro trička s velikostí extra small, small, medium, large, and extra large nebo může být vytvořena skupina barev, která obsahuje všechny dostupné barvy produktu. Před přidáním produktů je třeba přidat skupiny variant.
 
-V tomto tématu bude vytvořena a konfigurována skupina velikostí. Podobné postupy lze použít pro přidání a konfiguraci skupin stylů a skupin barev.
+V tomto článku bude vytvořena a konfigurována skupina velikostí. Podobné postupy lze použít pro přidání a konfiguraci skupin stylů a skupin barev.
 
 ## <a name="create-a-size-group"></a>Vytvoření skupiny velikostí
 

@@ -1,6 +1,6 @@
 ---
 title: Povolení konzistentního zpracování způsobu doručení v kanálech elektronického obchodování
-description: Toto téma popisuje, jak povolit konzistentní zpracování způsobu doručení, aby se vyřešily možné problémy související s toky poplatků v kanálech elektronického obchodování Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak povolit konzistentní zpracování způsobu doručení, aby se vyřešily možné problémy související s toky poplatků v kanálech elektronického obchodování Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 4cecd70dacd72572afc8e6cb65530bf2be4cc93d
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: f32f1915f8f7de1d5536b69b05bc74c6149dfda6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885578"
 ---
 # <a name="enable-consistent-delivery-mode-handling-in-e-commerce-channels"></a>Povolení konzistentního zpracování způsobu doručení v kanálech elektronického obchodování 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak povolit konzistentní zpracování způsobu doručení, aby se vyřešily možné problémy související s toky poplatků v kanálech elektronického obchodování Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak povolit konzistentní zpracování způsobu doručení, aby se vyřešily možné problémy související s toky poplatků v kanálech elektronického obchodování Microsoft Dynamics 365 Commerce.
 
 V Dynamics 365 Commerce se poplatky na úrovni záhlaví bez poměrného rozdělení ve výchozím nastavení v kanálech elektronického obchodu neuplatňují. Toto chování může v kanálech elektronického obchodování způsobit jeden nebo oba následující problémy:
 

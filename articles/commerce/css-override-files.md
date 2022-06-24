@@ -1,6 +1,6 @@
 ---
-title: Práce se soubory přepisu CSS
-description: Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
+title: Práce s CSS soubory přepisující výchozí styl
+description: Tento článek vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892853"
 ---
 # <a name="work-with-css-override-files"></a>Práce s CSS soubory přepisující výchozí styl
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
 
 Trvalé styly webu by obvykle měly být zpracovávány prostřednictvím motivu webu. Motivy poskytují základní nastavení šablon CSS a stylu pro moduly na libovolné stránce webu. Motivy jsou vytvářeny pomocí sady SDK Dynamics 365 Commerce (Software Development Kit) online a jsou nasazeny na vaše weby prostřednictvím aplikace Microsoft Dynamics Lifecycle Services (LCS). Možnosti ladění motivu a konfigurace rozhraní modulu v sadě SDK usnadňují vývojářům webu vytváření upravitelných a kohezivních balíčků návrhu webu. Pokud jsou tyto balíčky návrhu nasazeny na web, mohou se autoři webu zaměřit na vytváření, úpravy a publikování obsahu namísto vývoje webu.
 

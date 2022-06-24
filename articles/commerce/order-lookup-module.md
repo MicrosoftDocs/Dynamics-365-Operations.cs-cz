@@ -1,6 +1,6 @@
 ---
 title: Modul vyhledávání objednávky
-description: Toto téma popisuje modul vyhledání objednávky a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje modul vyhledání objednávky a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c83463d9a0ece9605b0d22bee2a1c76057c8ed05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869423"
 ---
 # <a name="order-lookup-module"></a>Modul vyhledávání objednávky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje modul vyhledání objednávky a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+Tento článek popisuje modul vyhledání objednávky a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 
 Modul vyhledávání objednávek poskytuje formulář, který mohou zákazníci použít k vyhledání objednávek zadaných na webu elektronického obchodování. Používá se jako součást funkce [Povolit vyhledávání objednávek pro hostující pokladny](order-lookup-guest.md). Modul vyhledávání objednávek lze použít k vyhledání objednávek, které byly odeslány prostřednictvím webu elektronického obchodu, maloobchodního prodejního místa (POS) nebo call centra. Formulář může načíst objednávky, které byly odeslány jak hostujícími uživateli, tak registrovanými uživateli.
 

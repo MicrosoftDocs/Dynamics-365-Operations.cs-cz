@@ -1,6 +1,6 @@
 ---
 title: Vytvoření žádanky používající požadavek na nabídku
-description: Toto téma popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku.
+description: Tento článek popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku.
 author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5ecde250e3517464611b68fe3c960bfbfdf06319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846004"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Vytvoření žádanky používající požadavek na nabídku
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku. Příklad uvedený v tomto průvodci lze použít u ukázkových dat společnosti USMF, a vy musíte být k dokončení všech kroků přihlášeni jako správce. Úkoly v této příručce obvykle provádí odborníci v oblasti zásobování.
+Tento článek popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku. Příklad uvedený v tomto průvodci lze použít u ukázkových dat společnosti USMF, a vy musíte být k dokončení všech kroků přihlášeni jako správce. Úkoly v této příručce obvykle provádí odborníci v oblasti zásobování.
 
 
 ## <a name="create-a-requisition"></a>Vytvoření žádanky

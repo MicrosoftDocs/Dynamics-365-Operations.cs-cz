@@ -1,6 +1,6 @@
 ---
 title: Mezipodnikové plánování
-description: Toto téma popisuje mezipodnikové plánování a vysvětluje, jak nakonfigurovat mezipodnikové plánování pomocí optimalizace plánování v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje mezipodnikové plánování a vysvětluje, jak nakonfigurovat mezipodnikové plánování pomocí optimalizace plánování v Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850663"
 ---
 # <a name="intercompany-planning"></a>Mezipodnikové plánování
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468489"
 
 U některých organizací závisí logistické operace na jiných právnických osobách (společnostech) v organizaci. Tyto operace jsou zpracovávány pomocí mezipodnikových prodejů a nákupů, protože každá právnická osoba má samostatnou účtovou osnovu.
 
-Toto téma popisuje mezipodnikové plánování a vysvětluje, jak nakonfigurovat mezipodnikové plánování pomocí optimalizace plánování v Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje mezipodnikové plánování a vysvětluje, jak nakonfigurovat mezipodnikové plánování pomocí optimalizace plánování v Microsoft Dynamics 365 Supply Chain Management.
 
-Toto téma používá následující důležité mezipodnikové výrazy:
+Tento článek používá následující důležité mezipodnikové výrazy:
 
 - **Směrem k dodavateli** - Relativní reference ve firmě nebo dodavatelském řetězci. Indikuje pohyb ve směru k dodavateli suroviny.
 - **Směrem ke spotřebiteli** - Relativní reference ve firmě nebo dodavatelském řetězci. Indikuje pohyb ve směru k zákazníkovi.

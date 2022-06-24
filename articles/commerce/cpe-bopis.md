@@ -1,6 +1,6 @@
 ---
-title: Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce
-description: Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po jeho zřízení.
+title: Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
+description: Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po jeho zřízení.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861959"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
+Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
 
 ## <a name="prerequisite"></a>Předpoklad
 
-Postupy v tomto tématu dokončete až po zřízení a konfiguraci prostředí vyhodnocení Commerce verze Preview. Informace o zřízení a konfiguraci prostředí viz [Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](./cpe-post-provisioning.md).
+Postupy v tomto článku dokončete až po zřízení a konfiguraci prostředí vyhodnocení Commerce verze Preview. Informace o zřízení a konfiguraci prostředí viz [Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
-Po kompletním zřízení a konfiguraci prostředí Commerce můžete pomocí tohoto tématu povolit scénáře BOPIS.
+Po kompletním zřízení a konfiguraci prostředí Commerce můžete pomocí tohoto článku povolit scénáře BOPIS.
 
 ## <a name="configure-the-pos"></a>Konfigurace POS
 
 ### <a name="configure-modern-pos"></a>Konfigurace Modern POS
 
-Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarovou stanici. Hardwarová stanice je součástí klientů Modern POS pro Windows a Android. Používáte-li Cloud POS nebo Modern POS pro iOS, musí být pokladní místo (POS) spárováno se sdílenou hardwarovou stanicí. Toto téma vysvětluje, jak konfigurovat BOPIS pro klienty Windows a Android. Informace o nastavení sdílené hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](./retail-hardware-station-configuration-installation.md).
+Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarovou stanici. Hardwarová stanice je součástí klientů Modern POS pro Windows a Android. Používáte-li Cloud POS nebo Modern POS pro iOS, musí být pokladní místo (POS) spárováno se sdílenou hardwarovou stanicí. Tento článek vysvětluje, jak konfigurovat BOPIS pro klienty Windows a Android. Informace o nastavení sdílené hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](./retail-hardware-station-configuration-installation.md).
 
 1. Přejděte na **Retail a Commerce \> Instalace kanálu \> Nastavení POS \> Pokladny**.
 2. Vyberte pokladnu **SANFRAN-5** a pak vyberte možnost **Upravit**.
@@ -67,7 +67,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 5. Zobrazí se dialogové okno ověření. Vyberte účet, který používá e-mailovou adresu, která byla dříve přidružena k pracovníkovi **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Pokud jste pracovníka s vaší identitou ještě nevytvořili, nebude aktivace úspěšná. V takovém případě postupujte podle kroků v části „Přidružení pracovníka k vaší identitě“ v tématu [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Pokud jste pracovníka s vaší identitou ještě nevytvořili, nebude aktivace úspěšná. V takovém případě postupujte podle kroků v části „Přidružení pracovníka k vaší identitě“ v článku [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Když se zobrazí výzva k povolení správy zařízení vaší organizací, vyberte **Pouze tato aplikace**.
 7. Po dokončení aktivace vyberte možnost **Začít**.

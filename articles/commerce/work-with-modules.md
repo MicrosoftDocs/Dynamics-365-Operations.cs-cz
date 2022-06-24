@@ -1,6 +1,6 @@
 ---
 title: Práce s moduly
-description: V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
+description: V tomto článku jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860185"
 ---
 # <a name="work-with-modules"></a>Práce s moduly
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
+V tomto článku jsou popsány důvody, kdy a jak používat moduly v aplikaci Microsoft Dynamics 365 Commerce.
 
 Moduly jsou logické stavební bloky, které tvoří strukturu stránek a mají různé účely a zaměření. Některé moduly jsou kontejnery vysoké úrovně a jejich jediným účelem je obsahování a uspořádání dalších modulů (podřízených modulů). Ostatní moduly, jako je například jednoduchý modul umístění obrázku, mají velmi specifický účel. Mezi těmito dvěma kategoriemi patří i jiné moduly, například karuselový modul.
 
@@ -151,7 +151,7 @@ Chcete-li konfigurovat modul kontejneru na stránce, postupujte podle následuj�
 
 1. Vyberte na stránce kontejnerový modul (například modul karuselového nebo tekutého kontejneru).
 1. V podokně vlastnosti vpravo rozbalte vnořené ovládací prvky výběrem záhlaví a nastavte požadované hodnoty ovládacích prvků.
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami vedle názvu kontejneru nebo slotu uvnitř kontejneru a pak vyberte **Přidat modul**. Poté přidejte do vybraného kontejneru podřízené moduly. Další informace naleznete v oddílu [Práce s moduly](#add-a-module) dříve v tomto tématu.
+1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami vedle názvu kontejneru nebo slotu uvnitř kontejneru a pak vyberte **Přidat modul**. Poté přidejte do vybraného kontejneru podřízené moduly. Další informace naleznete v oddílu [Práce s moduly](#add-a-module) dříve v tomto článku.
 1. Pokud existuje více podřízených modulů v nadřazeném kontejneru na stejné úrovni, můžete změnit pořadí jejich zobrazení v nadřazeném kontejneru. Vyberte tlačítko se třemi tečkami pro modul a pak použijte tlačítka se šipkou nahoru a dolů.
 
 ## <a name="additional-resources"></a>Další zdroje

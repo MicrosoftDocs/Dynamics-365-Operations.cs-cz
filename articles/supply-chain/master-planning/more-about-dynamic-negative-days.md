@@ -1,6 +1,6 @@
 ---
 title: Záporné dny a dynamické záporné dny
-description: Toto téma obsahuje informace o záporných dnech a dynamických záporných dnech a o tom, jak je lze použít k usnadnění vašeho podnikání.
+description: Tento článek obsahuje informace o záporných dnech a dynamických záporných dnech a o tom, jak je lze použít k usnadnění vašeho podnikání.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846120"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Záporné dny a dynamické záporné dny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o záporných dnech a dynamických záporných dnech a o tom, jak je lze použít k usnadnění vašeho podnikání. *Ochranná doba záporných dnů* představuje počet dní, které jste ochotni čekat před objednáním nového doplnění v případě záporného množství zásob.
+Tento článek obsahuje informace o záporných dnech a dynamických záporných dnech a o tom, jak je lze použít k usnadnění vašeho podnikání. *Ochranná doba záporných dnů* představuje počet dní, které jste ochotni čekat před objednáním nového doplnění v případě záporného množství zásob.
 
-V tomto tématu se dozvíte následující operace:
+V tomto článku se dozvíte následující operace:
 
 - Jak jsou vytvářeny plánované objednávky
 - Korelace mezi ochrannou dobou záporných dnů a dobou realizace položky
 - Jak je vypočtena ochranná doba dynamických záporných dnů a jakým způsobem je doba realizace položky připočítána do výpočtu
 - Jak interpretovat [návrhy pro zlepšení doby spuštění plánování požadavků na materiál (MRP) (hlavní plánování)](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) souvisejícími se zápornými dny
 
-V tomto tématu jsou použity tři hypotetické scénáře, které vám pomohou těmto informacím porozumět. Rozdíl mezi scénáři je bod, ve kterém se získává poptávka: před, během nebo po období realizace položky.
+V tomto článku jsou použity tři hypotetické scénáře, které vám pomohou těmto informacím porozumět. Rozdíl mezi scénáři je bod, ve kterém se získává poptávka: před, během nebo po období realizace položky.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Scénář 1: Dostanete poptávku před obdobím realizace položky
 
@@ -93,7 +93,7 @@ Následující obrázek znázorňuje grafické zobrazení toho, co se stane v to
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Případ E: Použití záporných dnů, které jsou větší než doba realizace položky a ochranná doba dynamických záporných dnů.
 
-Nastavíte-li záporné dny na číslo, které je větší než doba realizace položky, a pokud používáte také ochrannou dobu dynamických záporných dnů, bude ochranná doba dynamických záporných dnů 6 + 6 + 0 = 12 dní. Tento přístup může vytvořit velmi dlouhou ochranou dobu, ve které musí MRP hledat výsledky. Informace o tom, jak souvisí případ E s situací, kdy je nutné nastavit negativní dny na dlouhou ochrannou dobu, naleznete v části [Závěr](#conclusion) tohoto tématu.
+Nastavíte-li záporné dny na číslo, které je větší než doba realizace položky, a pokud používáte také ochrannou dobu dynamických záporných dnů, bude ochranná doba dynamických záporných dnů 6 + 6 + 0 = 12 dní. Tento přístup může vytvořit velmi dlouhou ochranou dobu, ve které musí MRP hledat výsledky. Informace o tom, jak souvisí případ E s situací, kdy je nutné nastavit negativní dny na dlouhou ochrannou dobu, naleznete v části [Závěr](#conclusion) tohoto článku.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Scénář 2: Dostanete poptávku během období realizace položky
 
@@ -142,7 +142,7 @@ Pokud nastavíte záporné dny na **0** (nula) a použijete ochrannou dobu pouze
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Případ E: Použití záporných dnů, které jsou větší než doba realizace položky a ochranná doba dynamických záporných dnů.
 
-Nastavíte-li záporné dny na číslo, které je větší než doba realizace položky, a pokud používáte také ochrannou dobu dynamických záporných dnů, bude ochranná doba dynamických záporných dnů 6 + 6 - 4 = 8 dní. Tento přístup může vytvořit velmi dlouhou ochranou dobu, ve které musí MRP hledat výsledky. Informace o tom, jak souvisí případ E s situací, kdy je nutné nastavit negativní dny na dlouhou ochrannou dobu, naleznete v části [Závěr](#conclusion) tohoto tématu.
+Nastavíte-li záporné dny na číslo, které je větší než doba realizace položky, a pokud používáte také ochrannou dobu dynamických záporných dnů, bude ochranná doba dynamických záporných dnů 6 + 6 - 4 = 8 dní. Tento přístup může vytvořit velmi dlouhou ochranou dobu, ve které musí MRP hledat výsledky. Informace o tom, jak souvisí případ E s situací, kdy je nutné nastavit negativní dny na dlouhou ochrannou dobu, naleznete v části [Závěr](#conclusion) tohoto článku.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Scénář 3: Dostanete poptávku po období realizace položky
 
@@ -204,7 +204,7 @@ Tento případ je stejný jako případ E pro scénáře 1 a 2. Má v podstatě
 
 ## <a name="conclusion"></a>Závěr
 
-Tři scénáře v tomto tématu ukazují, že je vhodné nastavit záporné dny na číslo, které je větší než doba realizace položek ve skupině disponibility. Je také vhodné používat pouze dynamické záporné dny a nastavit záporné dny na počet dní, které jste ochotni čekat před objednáním nového doplnění v případě, že máte záporný sklad (jinými slovy, počet dní, o které jste ochotni dále zpozdit poptávku). Kromě toho by položky ve stejné skupině disponibility měly mít podobné doby realizace.
+Tři scénáře v tomto článku ukazují, že je vhodné nastavit záporné dny na číslo, které je větší než doba realizace položek ve skupině disponibility. Je také vhodné používat pouze dynamické záporné dny a nastavit záporné dny na počet dní, které jste ochotni čekat před objednáním nového doplnění v případě, že máte záporný sklad (jinými slovy, počet dní, o které jste ochotni dále zpozdit poptávku). Kromě toho by položky ve stejné skupině disponibility měly mít podobné doby realizace.
 
 Nastavíte-li záporné dny na **0** (nula) a nepoužijete záporné dynamické dny, MRP vždy vytvoří novou plánovanou objednávku, která má splnit poptávku. V této situaci je důležité, abyste pracovali se zprávami akce pro ujištění, že se nebudou hromadit zásoby.
 

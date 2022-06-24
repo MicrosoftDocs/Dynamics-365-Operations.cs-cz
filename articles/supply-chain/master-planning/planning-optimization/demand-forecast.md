@@ -1,6 +1,6 @@
 ---
 title: Hlavní plánování s prognózami poptávky
-description: Toto téma vysvětluje, jak zahrnout prognózy poptávky během hlavního plánování pomocí Optimalizace plánování.
+description: Tento článek vysvětluje, jak zahrnout prognózy poptávky během hlavního plánování pomocí Optimalizace plánování.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878983"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
 
@@ -42,7 +42,7 @@ Chcete-li nakonfigurovat hlavní plán tak, aby obsahoval prognózu poptávky, p
 
     - **Model prognózy** - vyberte model prognózy, který se použije. Tento model se zohlední, když se vygeneruje návrh dodávky pro aktuální hlavní plán.
     - **Zahrnout prognózu poptávky** - Tuto možnost nastavte na *Ano*, aby byla prognóza poptávky zahrnuta do aktuálního hlavního plánu. Pokud ji nastavíte na *Ne*, transakce prognózy poptávky nebudou zahrnuty do hlavního plánu.
-    - **Metoda použitá ke snížení požadavků na prognózu** - Vyberte metodu, která by měla být použita ke snížení požadavků na prognózu. Další informace naleznete v části [Redukční klíče prognózy](#reduction-keys) dále v tomto tématu.
+    - **Metoda použitá ke snížení požadavků na prognózu** - Vyberte metodu, která by měla být použita ke snížení požadavků na prognózu. Další informace naleznete v části [Redukční klíče prognózy](#reduction-keys) dále v tomto článku.
 
 1. Na pevné záložce **Ochranná doba ve dnech** můžete nastavit následující pole a určit období, během kterého je prognóza poptávky zahrnuta během:
 
@@ -61,7 +61,7 @@ Chcete-li nakonfigurovat skupinu disponibility tak, aby obsahovala prognózu pop
 1. Na pevné záložce **Jiné** nastavte následující pole:
 
     - **Ochranná doba plánu prognózy** - Zadejte počet dní (od dnešního data), na které by se měla použít prognóza poptávky. Tuto hodnotu lze přepsat pomocí možnosti **Plán prognózy** v hlavním plánu, jak je popsáno v předchozí části.
-    - **Redukční klíč** - Vyberte redukční klíč, který chcete použít. Další informace viz [Vytvoření a nastavení redukčního klíče prognózy](#create-reduction-key) a [Použití redukčního klíče](#use-reduction-key) dále v tomto tématu.
+    - **Redukční klíč** - Vyberte redukční klíč, který chcete použít. Další informace viz [Vytvoření a nastavení redukčního klíče prognózy](#create-reduction-key) a [Použití redukčního klíče](#use-reduction-key) dále v tomto článku.
     - **Snížit prognózu o** – Pro hlavní plány, kde je pole **Metoda použitá ke snížení požadavků předpovědi** nastaveno na *Transakce- redukční klíč* nebo *Transakce - dynamické období*, určete, které transakce by měly prognózu snížit. Vyberte jednu z následujících hodnot:
 
         - **Všechny transakce** - Všechny transakce by měly snížit prognózu.

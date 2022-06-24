@@ -1,6 +1,6 @@
 ---
-title: Typy funkčních míst
-description: Toto téma popisuje, jak vytvořit typy funkčních míst v modulu Správa majetku.
+title: Typy funkčního místa
+description: Tento článek popisuje, jak vytvořit typy funkčních míst v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879214"
 ---
-# <a name="functional-location-types"></a>Typy funkčních míst
+# <a name="functional-location-types"></a>Typy funkčního místa
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Toto téma popisuje, jak vytvořit typy funkčních míst v modulu Správa majetku. Typy funkčních míst se používají ke správě požadavků na funkční místa, včetně způsobu instalace majetku na funkčním místo. Můžete nastavit typy majetku, plány údržby, atributy funkčních míst a požadavky atributů majetku, které mají být použity na funkčním místě, které používá konkrétní typ funkčního místa. Pokud vytvoříte funkční místo, je typ místa funkčního místa povinný.
+Tento článek popisuje, jak vytvořit typy funkčních míst v modulu Správa majetku. Typy funkčních míst se používají ke správě požadavků na funkční místa, včetně způsobu instalace majetku na funkčním místo. Můžete nastavit typy majetku, plány údržby, atributy funkčních míst a požadavky atributů majetku, které mají být použity na funkčním místě, které používá konkrétní typ funkčního místa. Pokud vytvoříte funkční místo, je typ místa funkčního místa povinný.
 
 >[!NOTE] 
 >Chcete-li pracovat s funkčními místy, je nutné vytvořit výchozí funkční místo, které bude použito pouze pro účely vytvoření nového majetku. Pro toto výchozí funkční místo byste měli vytvořit výchozí typ funkčního místa, který je opravdu jednoduchý a umožňuje instalaci vícero majetků do výchozího funkčního místa. Viz [Vytvoření funkčních míst](../functional-locations/create-functional-locations.md) pro více informací o nastavení funkčních míst.

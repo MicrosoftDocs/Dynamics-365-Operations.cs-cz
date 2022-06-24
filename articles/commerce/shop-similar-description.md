@@ -1,6 +1,6 @@
 ---
-title: Povolení doporučení „nákupu zboží s podobným popisem“
-description: Toto téma popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.
+title: Povolení doporučení „nákupu podobného vzhledu“
+description: Tento článek popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 733b21870f9dd7ffa42fce3bccf669a59d633b14
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690996"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852001"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Povolení doporučení „nákupu podobného vzhledu“
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak povolit v doporučení „nákupu zboží s podobným popisem“ v Microsoft Dynamics 365 Commerce.
 
 Doporučení "nákupu zboží s podobným popisem" v Dynamics 365 Commerce využívá umělou inteligenci a strojové učení (AI-ML) k poskytování doporučení produkty, které mají podobný popis jako produkty, které zákazníci hledají. Poskytnutím doporučení typu „podobný popis“ pro všechny maloobchodní kanály v Commerce mohou maloobchodní prodejci pomoci zákazníkům snadno najít to, co hledají.
 

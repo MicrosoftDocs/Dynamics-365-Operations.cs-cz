@@ -1,6 +1,6 @@
 ---
 title: Rabaty dodavatele
-description: Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
+description: Tento článek poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890792"
 ---
 # <a name="vendor-rebates"></a>Rabaty dodavatele
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672955"
 
 Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
 
-Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Přehled zahrnuje následující úkoly:
+Tento článek poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Přehled zahrnuje následující úkoly:
 
 - Zkontrolujte podrobnosti smlouvy o rabatu.
 - Identifikujte objednávky, na které se rabaty vztahují, a vygenerujte nároky na rabaty.
@@ -34,7 +34,7 @@ Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít p
 
 ## <a name="audience-and-purpose"></a>Cílová skupina a účel
 
-Informace v tomto tématu jsou určeny osobám s obchodní rozhodovací pravomocí v podniku, kteří zastávají například pozice vedoucího nákupu, vedoucího finančního oddělení (CFO) nebo vedoucího účetního oddělení s těmito odpovědnostmi:
+Informace v tomto článku jsou určeny osobám s obchodní rozhodovací pravomocí v podniku, kteří zastávají například pozice vedoucího nákupu, vedoucího finančního oddělení (CFO) nebo vedoucího účetního oddělení s těmito odpovědnostmi:
 
 - Vyjednávat smlouvy o cenách dodavatele, slevách a rabatech.
 - Spravovat personál, který zpracovává nároky na rabat a shromažďuje platby.

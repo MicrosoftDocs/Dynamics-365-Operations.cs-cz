@@ -1,6 +1,6 @@
 ---
 title: Plán dodávek
-description: Toto téma obsahuje informace o stránce Plán dodávek a jejích funkcích.
+description: Tento článek obsahuje informace o stránce Plán dodávek a jejích funkcích.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851732"
 ---
 # <a name="supply-schedule"></a>Plán dodávek
 
@@ -28,7 +28,7 @@ Stránka **Plán dodávek** zobrazuje komplexní přehled nabídky a poptávky p
 
 Stránku **Plán dodávek** můžete otevřít některým z následujících způsobů:
 
-- Přejděte na **Hlavní plánování \> Hlavní plánování \> Plán dodávek**. V dialogovém okně **Upravit filtr** zadejte plán a produkt, který hledáte, zadáním hodnot filtru do příslušných polí. (Ve zbytku tohoto tématu je kolekce hodnot filtrů, které zadáte, označována jako „filtr“ nebo „aktuální filtr“.) Až budete hotovi, vyberte **OK**.
+- Přejděte na **Hlavní plánování \> Hlavní plánování \> Plán dodávek**. V dialogovém okně **Upravit filtr** zadejte plán a produkt, který hledáte, zadáním hodnot filtru do příslušných polí. (Ve zbytku tohoto článku je kolekce hodnot filtrů, které zadáte, označována jako „filtr“ nebo „aktuální filtr“.) Až budete hotovi, vyberte **OK**.
 - Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**. Vyberte nebo otevřete produkt. Poté v podokně akcí na kartě **Plán** ve skupině **Zobrazit** zvolte **Plán dodávek**.
 - Přejděte do uzlu **Hlavní plánování \> Nastavení \> Prognóza poptávky \> Alokační klíče pro položky**. Vyberte alokační klíč položky, který se používá jako produktová řada. Poté v podokně akcí vyberte možnost **Plán dodávek**.
 - Přejděte na **Hlavní plánování \> Hlavní plánování \> Plánované objednávky**. Vyberte nebo otevřete plánovanou objednávku. Poté v podokně akcí na kartě **Zobrazit** ve skupině **Zobrazit** zvolte **Plán dodávek**.

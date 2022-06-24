@@ -1,6 +1,6 @@
 ---
 title: Řazení práce řízené systémem
-description: Toto téma uvádí informace o řazení práce řízeném systémem. Tato funkce umožňuje třídit a filtrovat pracovní příkazy, které systém předává uživatelům k provádění. Hodí se v situacích, kdy se k řízení procesu vydávání ze skladu využívají další kritéria.
+description: Tento článek uvádí informace o řazení práce řízeném systémem. Tato funkce umožňuje třídit a filtrovat pracovní příkazy, které systém předává uživatelům k provádění. Hodí se v situacích, kdy se k řízení procesu vydávání ze skladu využívají další kritéria.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849119"
 ---
 # <a name="system-directed-work-sequencing"></a>Řazení práce řízené systémem
 
@@ -44,7 +44,7 @@ Než můžete použít funkci Řazení práce řízené systémem, musíte ji v�
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Chcete-li s tímto scénářem pracovat pomocí hodnot prezentovaných v tomto tématu, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dále musíte vybrat právnickou osobu **USMF**. Scénář používá sklad *51* z ukázkových dat.
+Chcete-li s tímto scénářem pracovat pomocí hodnot prezentovaných v tomto článku, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dále musíte vybrat právnickou osobu **USMF**. Scénář používá sklad *51* z ukázkových dat.
 
 > [!IMPORTANT]
 > Před vydáním objednávek do skladu zajistěte, aby skladová místa pro vyskladnění měla dostatečné množství zásob pro všechny položky objednávek.

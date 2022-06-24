@@ -1,6 +1,6 @@
 ---
 title: Potvrdit plánované objednávky
-description: Toto téma vysvětluje, jak potvrdit plánované objednávky. Při potvrzení jsou plánované objednávky transformovány do skutečných nákupních objednávek, převodních příkazů nebo výrobních zakázek.
+description: Tento článek vysvětluje, jak potvrdit plánované objednávky. Při potvrzení jsou plánované objednávky transformovány do skutečných nákupních objednávek, převodních příkazů nebo výrobních zakázek.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857511"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -29,11 +29,11 @@ Existují tři způsoby, jak plánované objednávky potvrdit:
 - **Automatické potvrzení** - Definujte výchozí časové zpoždění pro skupiny pokrytí, jednotlivé položky a kombinace položek a hlavních plánů. Poté se během běhů hlavního plánování plánované objednávky automaticky zpracují, pokud je datum objednávky ve stanovené ochranné době pro potvrzení.
 - **Potvrzení založené na dotazech** - Definujte dotaz pro výběr plánovaných objednávek na základě jejich vlastností. Můžete nastavit dávkovou úlohu pro pravidelné spouštění dotazů a pevných párovacích objednávek.
 
-Toto téma podrobně popisuje každou metodu.
+Tento článek podrobně popisuje každou metodu.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Povolte funkce popsané v tomto tématu
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Povolte funkce popsané v tomto článku
 
-Většina funkcí plánované objednávky je k dispozici ve všech standardních instalacích Microsoft Dynamics 365 Supply Chain Management které používají optimalizace plánování. Než však budete moci používat funkce, které jsou popsány v tomto tématu, musí být ve Správci funkcí zapnuté.
+Většina funkcí plánované objednávky je k dispozici ve všech standardních instalacích Microsoft Dynamics 365 Supply Chain Management které používají optimalizace plánování. Než však budete moci používat funkce, které jsou popsány v tomto článku, musí být ve Správci funkcí zapnuté.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Zapnutí nebo vypnutí paralelizovaného potvrzení plánovaných objednávek
 
@@ -97,7 +97,7 @@ Automatické potvrzení umožňuje potvrdit plánované objednávky v rámci pro
 > Odvozené objednávky (nákupní objednávky dílčí smlouvy) které jsou potvrzeny budou zobrazovat stav *Probíhá kontrola*, když je povoleno sledování změn případů.
 
 > [!IMPORTANT]
-> Předtím, než lze funkci popsanou v této části použít s Optimalizací plánování, vlastnost [*Automatické potvrzení pro optimalizaci plánování*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto tématu. Automatické potvrzování lze vždy použít s vestavěným hlavním plánovacím modulem.
+> Předtím, než lze funkci popsanou v této části použít s Optimalizací plánování, vlastnost [*Automatické potvrzení pro optimalizaci plánování*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto článku. Automatické potvrzování lze vždy použít s vestavěným hlavním plánovacím modulem.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatické potvrzování s Optimalizací plánování vs. vestavěný plánovací modul
 
@@ -130,7 +130,7 @@ Zpracování založené na dotazech umožňuje plánovat potvrzení na základě
 Můžete kombinovat automatické potvrzování se zpožděním založeným na dotazech. Například úloha potvrzení na základě dotazu má ochranné období, které je delší než ochranné období pro odpovídající konfiguraci pokrytí automatickým zpevněním. Potvrzení úlohy založené na dotazu proto zpracuje plánované objednávky před spuštěním automatického potvrzení. Toto chování můžete využít k naplánování objednávek pro konkrétní dodavatele odlišně od objednávek podobných produktů od jiných dodavatelů.
 
 > [!IMPORTANT]
-> Předtím, než lze funkci popsanou v této části použít, vlastnost [*Zpracování plánovaných objednávek s filtrováním*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto tématu.
+> Předtím, než lze funkci popsanou v této části použít, vlastnost [*Zpracování plánovaných objednávek s filtrováním*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto článku.
 
 Chcete-li naplánovanou objednávku potvrdit pomocí procesu potvrzení na základě dotazu, postupujte takto.
 

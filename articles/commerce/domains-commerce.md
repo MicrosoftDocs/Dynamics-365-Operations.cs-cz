@@ -1,6 +1,6 @@
 ---
 title: Domény v Dynamics 365 Commerce
-description: Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848947"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 
-Domény jsou webové adresy používané k navigaci na weby Dynamics 365 Commerce ve webovém prohlížeči. Správu své domény provádíte u vybraného poskytovatele serveru DNS (Domain Name Server). Na domény se odkazuje v rámci konfigurátoru webů Dynamics 365 Commerce za účelem koordinace přístupu na web, když je publikován. Toto téma popisuje, jak se s doménami zachází a jak se na ně odkazuje během celého životního cyklu vývoje a spuštění webu Commerce.
+Domény jsou webové adresy používané k navigaci na weby Dynamics 365 Commerce ve webovém prohlížeči. Správu své domény provádíte u vybraného poskytovatele serveru DNS (Domain Name Server). Na domény se odkazuje v rámci konfigurátoru webů Dynamics 365 Commerce za účelem koordinace přístupu na web, když je publikován. Tento článek popisuje, jak se s doménami zachází a jak se na ně odkazuje během celého životního cyklu vývoje a spuštění webu Commerce.
 
 > [!NOTE]
 > Od 6. května 2022 budou všechna prostředí vytvořená v Dynamics 365 Commerce zřizována s doménou `.dynamics365commerce.ms`, nahrazující dřívější vzor `.commerce.dynamics.com`. Stávající prostředí vybavená doménou `.commerce.dynamics.com` bude nadále fungovat.

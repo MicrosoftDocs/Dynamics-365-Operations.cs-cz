@@ -1,6 +1,6 @@
 ---
 title: Správa atributů a skupin atributů
-description: Toto téma popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí.
+description: Tento článek popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876657"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Správa atributů a skupin atributů
 
@@ -85,7 +85,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 
 *Metadata atributů* vám umožní vybrat možnosti k určení chování atributů pro každý produkt. Můžete například určit, zda atributy jsou požadovány, zda je lze použít pro vyhledávání a zda slouží jako filtr.
 
-Pro produkty lze nastavení metadat atributů přepsat na úrovni kanálu. Tuto funkci probereme později v tomto tématu.
+Pro produkty lze nastavení metadat atributů přepsat na úrovni kanálu. Tuto funkci probereme později v tomto článku.
 
 Jak si můžete povšimnout, stránka **Atributy** obsahuje možnosti, které souvisejí s metadaty atributů. Pod možností **Metadata atributů pro POS** jedna z možností s názvem **"Lze upřesnit"** ovlivňuje chování hodnot atributů v pokladním místě, nebo způsob, kterým systém zpracovává tyto hodnoty atributů. Pro upřesnění nebo filtrování produktů v POS se zobrazí pouze atributy, pro které lze nastavit možnost **Lze upřesnit** na **Ano**.
 

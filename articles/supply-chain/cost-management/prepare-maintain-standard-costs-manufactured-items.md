@@ -1,6 +1,6 @@
 ---
 title: Postup přípravy na správu standardních nákladů pro vyráběné položky
-description: Toto téma popisuje kroky pro přípravu správy nákladů pro vyráběné položky.
+description: Tento článek popisuje kroky pro přípravu správy nákladů pro vyráběné položky.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886008"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Postup přípravy na správu standardních nákladů pro vyráběné položky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje kroky pro přípravu správy nákladů pro vyráběné položky. Kroky pro vyrobené položky se mírně liší od kroků pro zakoupené položky.
+Tento článek popisuje kroky pro přípravu správy nákladů pro vyráběné položky. Kroky pro vyrobené položky se mírně liší od kroků pro zakoupené položky.
 
 Zásady přiřazené vyráběným položkám mohou mít vliv na výpočty nákladů pro nadřazené vyráběné položky. Chcete-li připravit na správu nákladů vyráběných položek, postupujte podle těchto kroků.
 
@@ -63,7 +63,7 @@ Zásady přiřazené vyráběným položkám mohou mít vliv na výpočty nákla
 
 Pokud chcete použít informace o postupu pro účely nákladů, jsou vyžadovány dodatečné přípravné kroky. Jako příklad lze uvést kategorie nákladů přiřazené k operacím postupu - musí být správné a úplné.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Amortizace konstantních nákladů na vyráběnou položku](amortize-constant-costs-manufactured-item.md)
 

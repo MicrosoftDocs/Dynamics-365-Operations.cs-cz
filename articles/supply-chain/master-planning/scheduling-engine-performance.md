@@ -1,6 +1,6 @@
 ---
 title: Zlepšení výkonu plánovacího modulu
-description: Toto téma poskytuje informace o plánovacím modulu a o tom, jak zlepšit výkon.
+description: Tento článek poskytuje informace o plánovacím modulu a o tom, jak zlepšit výkon.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854290"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -29,7 +29,7 @@ ms.locfileid: "8468999"
 
 Modul pro plánování zdrojů se používá při plánování tras pro plánované a vydané výrobní zakázky. Modul byl původně vydán jako součást Dynamics AX 2012 a od svého vydání prošel několika vylepšeními.
 
-[Plánování úloh v dílně](https://en.wikipedia.org/wiki/Job_shop_scheduling) je extrémně složitý kombinatorický problém, u něhož čas řešení exponenciálně roste s počtem rozhodovacích proměnných. Zákazníci často nastavují výrobní trasy a související data způsobem, který vede k problému s plánováním, který nelze vyřešit v rozumném čase ani na nejmodernějším hardwaru. Toto téma vám pomůže pochopit plánovací modul a jaký vliv může mít konkrétní nastavení na výkon.
+[Plánování úloh v dílně](https://en.wikipedia.org/wiki/Job_shop_scheduling) je extrémně složitý kombinatorický problém, u něhož čas řešení exponenciálně roste s počtem rozhodovacích proměnných. Zákazníci často nastavují výrobní trasy a související data způsobem, který vede k problému s plánováním, který nelze vyřešit v rozumném čase ani na nejmodernějším hardwaru. Tento článek vám pomůže pochopit plánovací modul a jaký vliv může mít konkrétní nastavení na výkon.
 
 Pokud jde o zlepšení výkonu plánování, obecné pokyny doporučují snížit složitost problému, který musí modul vyřešit. Mezi hlavní faktory, které můžou ovlivnit výkon, patří:
 

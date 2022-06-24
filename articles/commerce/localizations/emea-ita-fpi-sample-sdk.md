@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Itálii (starší verze)
-description: Toto téma obsahuje pokyny pro nasazení ukázky integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
+description: Tento článek obsahuje pokyny pro nasazení ukázky integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: bb07ca91c9e5bf1a79f672f9ba29b7bcc21688c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848891"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Itálii (starší verze)
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma obsahuje pokyny pro nasazení ukázkové integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md). 
+Tento článek obsahuje pokyny pro nasazení ukázkové integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md). 
 
-Ukázka fiskální integrace pro Itálii je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tato ukázka sestává z rozšíření pro CRT (Commerce Runtime) a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
+Ukázka fiskální integrace pro Itálii je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tato ukázka sestává z rozšíření pro CRT (Commerce Runtime) a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
 
 ## <a name="development-environment"></a>Vývojové prostředí
 
@@ -86,7 +86,7 @@ Komponenty rozšíření hardwarové stanice jsou součástí sady SDK pro Retai
 
 Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují komponenty Commerce, a použijete tyto balíčky v provozním prostředí.
 
-1. Proveďte kroky popsané v sekci [Vývojové prostředí](#development-environment) výše v tomto tématu.
+1. Proveďte kroky popsané v sekci [Vývojové prostředí](#development-environment) výše v tomto článku.
 2. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets**:
 
     1. V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádek do části **composition**.

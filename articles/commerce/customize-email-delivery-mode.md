@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobení transakčních e-mailů podle způsobu doručení
-description: Toto téma popisuje, jak nastavit vlastní e-mailové šablony pro konkrétní typy oznámení a způsoby doručení v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak nastavit vlastní e-mailové šablony pro konkrétní typy oznámení a způsoby doručení v Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850297"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Přizpůsobení transakčních e-mailů podle způsobu doručení
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak nastavit vlastní e-mailové šablony pro konkrétní typy oznámení a způsoby doručení v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak nastavit vlastní e-mailové šablony pro konkrétní typy oznámení a způsoby doručení v Microsoft Dynamics 365 Commerce.
 
 Transakční e-maily lze nyní přizpůsobit pro kombinaci typu oznámení (například **Objednávka byla vytvořena**, **Objednávka byla zabalena** nebo **Objednávka byla fakturována**) a způsobu doručení (například přes noc, vyzvednutí na prodejně nebo pouliční výdej). Vlastní transakční e-maily umožňují maloobchodníkům poskytnout svým zákazníkům objednávku, která je přizpůsobena způsobu jejího doručení. Například událost „objednávka byla zabalena“ lze například přizpůsobit tak, aby poskytovala pokyny pro pouliční výdej pro zákazníky, kteří si jej vybrali. Alternativně může obsahovat přepravce a informace o doručení pro zákazníky, kteří se rozhodnou nechat svou objednávku odeslat.
 

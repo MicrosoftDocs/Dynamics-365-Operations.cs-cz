@@ -1,6 +1,6 @@
 ---
 title: Plánování operací
-description: Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
+description: Tento článek obsahuje informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7b9ae31b288831d2f3b85bf1996206221e0bdbbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871884"
 ---
 # <a name="operations-scheduling"></a>Plánování operací
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
+Tento článek obsahuje informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 
 Můžete naplánovat výrobu na úrovni operací a pracovního zařazení. Na rozdíl od plánování práce se plánování operací nerozšiřuje na operace pro výrobní postup úloh. Pokud chcete zahrnout podrobnější informace o plánování, například informace o aktuální kapacitě, můžete spustit plánování úloh po provedení plánování operací. Můžete spustit také pouze plánování úlohy. Plánování práce se obvykle používá k plánováním jednotlivých úloh v dílně a obvykle je prováděno v krátkodobém až střednědobém časovém horizontu.
 

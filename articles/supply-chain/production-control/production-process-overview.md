@@ -1,6 +1,6 @@
 ---
 title: Přehled výrobního procesu
-description: Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
+description: Tento článek poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
 author: johanhoffmann
 ms.date: 09/13/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8ebf0418a7d8b93e2ac58f90a686c63fd859355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852208"
 ---
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
+Tento článek poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
 
 Výroba produktů – proces nazýván také jako výrobní cyklus, řídí konkrétní kroky, které jsou nutné k dokončení výroby položky. Životní cyklus začíná vytvořením výrobní zakázky, dávkové objednávky nebo kanbanu. Na konci je dokončená vyrobená položka připravená pro zákazníka nebo do jiné fáze výroby. Dokončení jednotlivých kroků životního cyklu vyžaduje různé druhy informací. Dokončení jednotlivých kroků se ve výrobní zakázce, dávkové objednávce nebo kanbanu odrazí zobrazením změny ve stavu výroby. Různé typy produktů vyžadují různé výrobní procesy.
 

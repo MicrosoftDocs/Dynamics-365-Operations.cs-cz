@@ -1,6 +1,6 @@
 ---
 title: Správa odpočtů pomocí pracovní plochy odpočtu
-description: Toto téma popisuje, jak můžete používat pracovní plochu odpočtu ke zpracování plateb odběratelů, které zahrnují odpočty.
+description: Tento článek popisuje, jak můžete používat pracovní plochu odpočtu ke zpracování plateb odběratelů, které zahrnují odpočty.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873601"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Správa odpočtů pomocí pracovní plochy odpočtu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak můžete používat pracovní plochu odpočtu ke zpracování plateb odběratelů, které zahrnují odpočty.
+Tento článek popisuje, jak můžete používat pracovní plochu odpočtu ke zpracování plateb odběratelů, které zahrnují odpočty.
 
 Zákazník, který má dostat rabat, se může rozhodnout nečekat na jeho vyplacení. Místo toho může zákazník odeslat platbu, která zahrnuje odpočet částky rabatu. Abyste zpracovali tento typ transakce, můžete použít pracovní plochu odpočtu ke spárování odpočtů s otevřenými kreditními transakcemi, rozdělení srážek, zamítnutí srážek a odpisu odpočtů.
 
 > [!NOTE]
-> Pracovní plocha odpočtu je již dlouhou dobu součástí prodejních a marketingových funkcí v aplikaci Microsoft Dynamics 365 Supply Chain Management. Nyní však byla vylepšena tak, aby fungovala i s novějším modulem **Správa odpočtů**. Toto téma popisuje, jak v pracovní ploše odpočtu používat starší funkce i funkce Správy odpočtů. Pokud však nemáte [ve vašem systému zapnut modul **Správa slev**](rebate-management-enable.md), některé ze zde popsaných funkcí nebudou k dispozici.
+> Pracovní plocha odpočtu je již dlouhou dobu součástí prodejních a marketingových funkcí v aplikaci Microsoft Dynamics 365 Supply Chain Management. Nyní však byla vylepšena tak, aby fungovala i s novějším modulem **Správa odpočtů**. Tento článek popisuje, jak v pracovní ploše odpočtu používat starší funkce i funkce Správy odpočtů. Pokud však nemáte [ve vašem systému zapnut modul **Správa slev**](rebate-management-enable.md), některé ze zde popsaných funkcí nebudou k dispozici.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -159,11 +159,11 @@ Chcete-li vytvořit nový odpočet na pracovní ploše odpočtu, postupujte takt
         - *Na základě množství* – Vytvoří se záporná prodejní objednávka nebo vratka.
 
     - **Datum nároku** - Vyberte datum nároku. Výchozí hodnotou je aktuální datum.
-    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto tématu.
+    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto článku.
     - **Poznámky** – Přidejte poznámky, které platí. Po schválení nároku bude moci schvalovatel upravit nebo přidat poznámky k nároku.
     - **Vytvořit deník nároků** – Nastavením této možnosti určíte, zda má být zápis do deník nároků vytvořen při vytvoření nároku nebo odpočtu:
 
-        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto tématu.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
+        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto článku.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
         - *Ne* – V tuto chvíli není vytvořen žádný deník nároků. Bude vytvořen po schválení nároku. K novému nároku lze stále připojit fakturu, přestože deník nároku není vytvořen. Vypořádání však nelze provést bez deníku nároků.
 
 1. Vyberte **OK**.
@@ -197,11 +197,11 @@ Proces vytváření odpočtu z vypořádání zákazníka se podobá procesu vyt
         - *Na základě množství* – Vytvoří se záporná prodejní objednávka nebo vratka.
 
     - **Datum nároku** - Vyberte datum nároku. Výchozí hodnotou je aktuální datum.
-    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto tématu.
+    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto článku.
     - **Poznámky** – Přidejte poznámky, které platí. Po schválení nároku bude moci schvalovatel upravit nebo přidat poznámky k nároku.
     - **Vytvořit deník nároků** – Nastavením této možnosti určíte, zda má být zápis do deník nároků vytvořen při vytvoření nároku nebo odpočtu:
 
-        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto tématu.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
+        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto článku.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
         - *Ne* – V tuto chvíli není vytvořen žádný deník nároků. Bude vytvořen po schválení nároku. K novému nároku lze stále připojit fakturu, přestože deník nároku není vytvořen. Vypořádání však nelze provést bez deníku nároků.
 
 1. Vyberte **OK**.
@@ -235,11 +235,11 @@ Proces vytváření odpočtu ze stránky zákazníka se podobá procesu vytvář
         - *Na základě množství* – Vytvoří se záporná prodejní objednávka nebo vratka.
 
     - **Datum nároku** - Vyberte datum nároku. Výchozí hodnotou je aktuální datum.
-    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto tématu.
+    - **Důvod nároku** – Vyberte kód důvodu, který platí pro aktuální odpočet. Vybraný základ nároku ovlivňuje možnosti, které platí. Další informace o tom, jak vytvořit a nakonfigurovat důvody nároku, které jsou zde k dispozici pro výběr, najdete v oddíle [Vytvořte důvody pro odpočet](#deduction-reasons) dříve v tomto článku.
     - **Poznámky** – Přidejte poznámky, které platí. Po schválení nároku bude moci schvalovatel upravit nebo přidat poznámky k nároku.
     - **Vytvořit deník nároků** – Nastavením této možnosti určíte, zda má být zápis do deník nároků vytvořen při vytvoření nároku nebo odpočtu:
 
-        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto tématu.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
+        - *Ano* – Systém vytvoří a zaúčtuje hlavní deník pomocí deníku nároku, který je nastaven na stránce **Parametry pohledávek**. (Další informace najdete v oddíle [Konfigurace pohledávek a odpočtů](#accounts-receivable-deductions) dříve v tomto článku.) Je-li k reklamaci připojena faktura, použije se deník nároku ke snížení zůstatku příslušné faktury. Pokud bude nárok později zamítnut, budou deník nároku a vypořádání (pokud byla přiložena faktura) stornovány.
         - *Ne* – V tuto chvíli není vytvořen žádný deník nároků. Bude vytvořen po schválení nároku. K novému nároku lze stále připojit fakturu, přestože deník nároku není vytvořen. Vypořádání však nelze provést bez deníku nároků.
 
 1. Vyberte **OK**.
@@ -280,7 +280,7 @@ Chcete-li spárovat odpočet s kreditem, postupujte takto.
 1. V podokně akcí vyberte položku **Udržovat \> Spárovat**. Systém spáruje odpočet s kreditem. Pokud zůstatek zůstane v odpočtu, zobrazí se v poli **Zbývající množství** na kartě **Srážky**.
 
     > [!NOTE]
-    > U odpočtů, které byly vytvořeny pomocí příkazu **Nový odpočet** na pracovní ploše odpočtu, ve vypořádání zákazníka nebo na stránce zákazníka, je příkaz **Udržovat \> Spárovat** k dispozici, pouze pokud je pole **Stav nároku** nastaveno na *Přijato*. Tento příkaz lze použít k ručnímu spárování transakce založené na ceně nebo množství k přidruženému kreditu v oddíle **Otevřené transakce**. Tento kredit se vytvoří buď při schválení odpočtu (pomocí příkazu **Udržovat \> Schválit odpočet**), nebo když je připojen ke stávajícímu kreditu, jak je popsáno v oddíle [Kredity vytvořené mimo schvalovací proces odpočtu](#credits-outside-approval) dále v tomto tématu. Periodický úkol *Vypořádat schválené odpočty* (**Prodej a marketing \> Periodické úkoly \> Vypořádat schválené odpočty**) lze také použít k automatickému spárování odpočtů a kreditů, které mají shodné hodnoty **ID odpočtu** a částky.
+    > U odpočtů, které byly vytvořeny pomocí příkazu **Nový odpočet** na pracovní ploše odpočtu, ve vypořádání zákazníka nebo na stránce zákazníka, je příkaz **Udržovat \> Spárovat** k dispozici, pouze pokud je pole **Stav nároku** nastaveno na *Přijato*. Tento příkaz lze použít k ručnímu spárování transakce založené na ceně nebo množství k přidruženému kreditu v oddíle **Otevřené transakce**. Tento kredit se vytvoří buď při schválení odpočtu (pomocí příkazu **Udržovat \> Schválit odpočet**), nebo když je připojen ke stávajícímu kreditu, jak je popsáno v oddíle [Kredity vytvořené mimo schvalovací proces odpočtu](#credits-outside-approval) dále v tomto článku. Periodický úkol *Vypořádat schválené odpočty* (**Prodej a marketing \> Periodické úkoly \> Vypořádat schválené odpočty**) lze také použít k automatickému spárování odpočtů a kreditů, které mají shodné hodnoty **ID odpočtu** a částky.
 
 ### <a name="split-a-deduction"></a>Rozdělení odpočtu
 

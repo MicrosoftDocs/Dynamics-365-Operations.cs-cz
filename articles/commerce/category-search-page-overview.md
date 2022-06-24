@@ -1,6 +1,6 @@
 ---
 title: Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání
-description: Tohle téma obsahuje přehled výchozí cílové stránky kategorie a stránky výsledků hledání v řešení Dynamics 365 Commerce.
+description: Tento článek obsahuje přehled výchozí cílové stránky kategorie a stránky výsledků hledání v řešení Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881845"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma obsahuje přehled výchozí cílové stránky kategorie a stránky výsledků hledání v elektronickém obchodu Microsoft Dynamics 365 Commerce.
+Tento článek obsahuje přehled výchozí cílové stránky kategorie a stránky výsledků hledání v elektronickém obchodu Microsoft Dynamics 365 Commerce.
 
 ## <a name="default-category-landing-page"></a>Výchozí cílová stránka kategorie
 
@@ -32,7 +32,7 @@ Výchozí cílová stránka kategorie je stránka, na kterou jsou uživatelé we
 
 ![Výchozí cílová stránka kategorie.](./media/SimpleCategoryLandingDressCategory.png)
 
-V horní části stránky se nachází záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů, jak je vytvořitl manažer prodeje. Konfigurace je součástí konfigurace hierarchie navigace kanálu. V dolní částí stránky se nachází zápatí, které obsahuje rychlé odkazy na různá témata, která by mohla zajímat nakupujícího.
+V horní části stránky se nachází záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů, jak je vytvořitl manažer prodeje. Konfigurace je součástí konfigurace hierarchie navigace kanálu. V dolní částí stránky se nachází zápatí, které obsahuje rychlé odkazy na různé články, které by mohly zajímat nakupujícího.
 
 Pro kategorii jsou nezbytné následující součásti:
 

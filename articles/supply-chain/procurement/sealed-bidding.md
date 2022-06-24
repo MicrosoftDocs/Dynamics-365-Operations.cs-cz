@@ -1,6 +1,6 @@
 ---
 title: Zapečetěné nabídky pro požadavky na nabídku
-description: Toto téma popisuje, jak nastavit zapečetěné nabídky tak, aby byly odpovědi dodavatelů na nabídky utajeny, dokud nebudou odpečetěny pracovníky nákupu.
+description: Tento článek popisuje, jak nastavit zapečetěné nabídky tak, aby byly odpovědi dodavatelů na nabídky utajeny, dokud nebudou odpečetěny pracovníky nákupu.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890879"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Zapečetěné nabídky pro požadavky na nabídku
 
@@ -148,7 +148,7 @@ Proces vytváření případu RFQ se zapečetěnými nabídkami je téměř stej
 Případy RFQ pro zapečetěné nabídky musejí mít **Typ nabídky** nastaven na *Zapečetěná*. Existují tři způsoby, jak přiřadit tuto hodnotu případu RFQ:
 
 - Poté, co vytvoříte případ RFQ, nastavte hodnotu přímo v něm.
-- Definujte zapečetěné nabízení jako výchozí typ nabídky pro všechny případy RFQ v parametrech modulu Zásobování a zdroje. (Viz část [Nastavení výchozího typu nabídky](#set-default-bid-type) dříve v tomto tématu.)
+- Definujte zapečetěné nabízení jako výchozí typ nabídky pro všechny případy RFQ v parametrech modulu Zásobování a zdroje. (Viz část [Nastavení výchozího typu nabídky](#set-default-bid-type) dříve v tomto článku.)
 - Když vytváříte nový případ RFQ, vyberte typ oslovení, který je nastaven pro zapečetěné nabídky. (Viz část [Nastavení výchozího typu nabídky](#set-default-bid-type).)
 
 U zapečetěných nabídek určuje hodnota **Datum a čas vypršení platnosti** případu RFQ, kdy lze podané nabídky odpečetit. Hodnota **Datum a čas vypršení platnosti** na každém řádku bude odpovídat hodnotě v záhlaví.

@@ -1,6 +1,6 @@
 ---
 title: Zjednodušené plánované objednávky
-description: Toto téma popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky Zjednodušené plánované objednávky.
+description: Tento článek popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky Zjednodušené plánované objednávky.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887363"
 ---
 # <a name="planned-orders-simplified"></a>Zjednodušené plánované objednávky
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky **Zjednodušené plánované objednávky**.
+Tento článek popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky **Zjednodušené plánované objednávky**.
 
 Stránka **Zjednodušené plánované objednávky** je zjednodušenou verzí stránky **Plánované objednávky**. Nabízí méně možností, ale pracuje se s ní rychleji, když potřebujete jen zkontrolovat, schválit a potvrdit své plánované objednávky.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Zjednodušené plánované objednávky*.
+Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Zjednodušené plánované objednávky*.
 
 ## <a name="view-manage-and-firm-planned-orders"></a>Prohlížení, správa a potvrzování plánovaných objednávek
 

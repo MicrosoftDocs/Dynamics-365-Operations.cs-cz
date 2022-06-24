@@ -1,6 +1,6 @@
 ---
-title: Zobrazení zůstatků dovolené v rozhraní pro provádění výrobního provozu
-description: Toto téma poskytuje příklad scénáře, který ukazuje, jak nastavit aplikaci Microsoft Dynamics 365 Supply Chain Management tak, aby na základě statistiky mezd poskytovala pracovníkům přehled o zůstatcích dovolené za aktuální rok.
+title: Zobrazení zůstatku dovolené v rozhraní pro provádění výrobního provozu
+description: Tento článek poskytuje příklad scénáře, který ukazuje, jak nastavit aplikaci Microsoft Dynamics 365 Supply Chain Management tak, aby na základě statistiky mezd poskytovala pracovníkům přehled o zůstatcích dovolené za aktuální rok.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852266"
 ---
-# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Zobrazení zůstatků dovolené v rozhraní pro provádění výrobního provozu
+# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Zobrazení zůstatku dovolené v rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje příklad scénáře, který ukazuje, jak nastavit aplikaci Microsoft Dynamics 365 Supply Chain Management tak, aby na základě statistiky mezd poskytovala všem pracovníkům přehled o zůstatcích dovolené za aktuální rok. Zaměstnanci budou moci vidět zůstatek své dovolené v dialogovém okně **Můj den** v rozhraní pro provádění výrobního provozu.
+Tento článek poskytuje příklad scénáře, který ukazuje, jak nastavit aplikaci Microsoft Dynamics 365 Supply Chain Management tak, aby na základě statistiky mezd poskytovala všem pracovníkům přehled o zůstatcích dovolené za aktuální rok. Zaměstnanci budou moci vidět zůstatek své dovolené v dialogovém okně **Můj den** v rozhraní pro provádění výrobního provozu.
 
 Tento scénář používá dánský zákon o prázdninách, kde rok dovolené trvá od 1. září do 31. srpna. V tomto scénáři vaše společnost najala nového pracovníka. kterému poskytne zůstatek 10 dnů dovolené po zbytek aktuálního roku dovolené.
 

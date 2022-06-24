@@ -1,6 +1,6 @@
 ---
-title: Povolit správu změn u stávajících produktů
-description: Toto téma vysvětluje, jak můžete povolit správu změn u stávajících produktů. Popisuje také případy, kdy je vaše schopnost povolit správu změn omezená.
+title: Povolení správy změn u stávajících produktů
+description: Tento článek vysvětluje, jak můžete povolit správu změn u stávajících produktů. Popisuje také případy, kdy je vaše schopnost povolit správu změn omezená.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893461"
 ---
-# <a name="enable-change-management-on-existing-products"></a>Povolit správu změn u stávajících produktů
+# <a name="enable-change-management-on-existing-products"></a>Povolení správy změn u stávajících produktů
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak můžete povolit správu změn u stávajících produktů. Popisuje také případy, kdy je vaše schopnost povolit správu změn omezená.
+Tento článek vysvětluje, jak můžete povolit správu změn u stávajících produktů. Popisuje také případy, kdy je vaše schopnost povolit správu změn omezená.
 
 Když povolíte správu změn pro existující produkt, můžete vytvářet verze tohoto produktu a sledovat změny, které jsou v něm provedeny po celou dobu jeho životnosti. Proto můžete tyto změny sledovat pomocí změnových příkazů. Chcete-li povolit správu změn, musíte převést příslušné produkty na *technické položky* (označované také jako technické produkty). Technické produkty jsou produkty, u kterých existují různé verze, které jsou řízeny prostřednictvím správy změn. K dispozici je průvodce, který vás provede procesem převodu.
 
 ## <a name="turn-this-feature-on-or-off"></a>Zapnutí nebo vypnutí této funkce
 
-Funkce popsané v tomto tématu vyžadují, aby byly na vašem systému zapnuty funkce *Správa technických změn* a *Povolení správy změn u stávajících produktů*. Podrobnosti o tom, jak tyto funkce zapnout nebo vypnout, najdete v tématu [Přehled správy technických změn](product-engineering-overview.md).
+Funkce popsané v tomto článku vyžadují, aby byly na vašem systému zapnuty funkce *Správa technických změn* a *Povolení správy změn u stávajících produktů*. Podrobnosti o tom, jak tyto funkce zapnout nebo vypnout, najdete v tématu [Přehled správy technických změn](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Omezení a limity
 
@@ -38,7 +38,7 @@ Ne všechny typy produktů lze převést na všechny ostatní typy. Platí násl
 - Když převedete produkt na technický produkt, zůstane *produktem*. Nestává se *základním produktem*.
 - Když převádíte základní produkt, který má určitou sadu dimenzí, tyto dimenze se po změně zachovají. Například pokud převedete základní produkt, který má dimenzi velikosti, zachová si dimenzi velikosti.
 
-Pokud tedy máte odlišný produkt, můžete jej změnit pouze na technický produkt, který nesleduje dimenzi produktu v transakcích (tj. dimenze verze se nepoužívá). Další informace o těchto záležitostech naleznete v následujících částech tohoto tématu.
+Pokud tedy máte odlišný produkt, můžete jej změnit pouze na technický produkt, který nesleduje dimenzi produktu v transakcích (tj. dimenze verze se nepoužívá). Další informace o těchto záležitostech naleznete v následujících částech tohoto článku.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Připravte se na převod vytvořením všech požadovaných kategorií technických produktů
 
@@ -81,7 +81,7 @@ Podle následujících pokynů spusťte průvodce **Převést na technický prod
 
     - **Číslo produktu** – Číslo produktu.
     - **Název produktu** – Název produktu.
-    - **Technická kategorie** – Vyberte kategorii technického produktu, do které by měl produkt po převodu patřit. Jak již bylo vysvětleno v předchozí části tohoto tématu, pro každý produkt již musí existovat příslušná kategorie. Každému produktu musíte přiřadit kategorii.
+    - **Technická kategorie** – Vyberte kategorii technického produktu, do které by měl produkt po převodu patřit. Jak již bylo vysvětleno v předchozí části tohoto článku, pro každý produkt již musí existovat příslušná kategorie. Každému produktu musíte přiřadit kategorii.
     - **Verze** – Zadejte verzi produktu, kterou chcete přiřadit k produktu po jeho převodu. Můžete například vybrat číslo, které odpovídá číselné řadě, kterou vaše kategorie již používá. Každá technická verze ukládá technická data, která jsou specifická pro tuto verzi. Více informací naleznete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
     - **Stav životního cyklu produktu** – Vyberte stav životního cyklu produktu, ve kterém by měl být produkt po převodu. Stav životního cyklu produktu vám umožňuje určit, které transakce jsou pro danou technickou verzi povoleny. Další informace viz [Stavy životního cyklu produktu a transakce](product-lifecycle-state-transactions.md).
     - **Má kusovník** – Vybrané zaškrtávací políčko označuje, že produkt má kusovník. Nastavení tohoto zaškrtávacího políčka vám může pomoci rozhodnout se, jak nastavit zaškrtávací políčko **Aktuální kusovník bude součástí technického produktu**.

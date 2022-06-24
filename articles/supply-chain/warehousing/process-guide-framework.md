@@ -1,6 +1,6 @@
 ---
 title: Architektura průvodce procesem
-description: Toto téma poskytuje informace o rámci průvodce procesem pro vývojáře, kteří rozšiřují naše skladové mobilní procesy v X++.
+description: Tento článek poskytuje informace o rámci průvodce procesem pro vývojáře, kteří rozšiřují naše skladové mobilní procesy v X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860428"
 ---
 # <a name="process-guide-framework"></a>Architektura průvodce procesem
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o rámci průvodce procesem pro vývojáře, kteří rozšiřují naše skladové mobilní procesy v X++. Mobilní procesy skladu jsou rozšiřitelné díky rozdělení procesů na malé kroky. Budování obchodní logiky a uživatelského rozhraní každého kroku bylo extrahováno do jednotlivých tříd, což umožňuje rozšiřitelnost.
+Tento článek poskytuje informace o rámci průvodce procesem pro vývojáře, kteří rozšiřují naše skladové mobilní procesy v X++. Mobilní procesy skladu jsou rozšiřitelné díky rozdělení procesů na malé kroky. Budování obchodní logiky a uživatelského rozhraní každého kroku bylo extrahováno do jednotlivých tříd, což umožňuje rozšiřitelnost.
 
 ## <a name="overview-of-the-existing-design"></a>Přehled stávajícího návrhu
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Stejný zdrojový kód pro metody X++ v tomto tématu můžete najít pomocí Průzkumníka aplikací. Filtrujte název třídy a poté klikněte pravým tlačítkem na název třídy a vyberte **Zobrazit kód**.
+> Stejný zdrojový kód pro metody X++ v tomto článku můžete najít pomocí Průzkumníka aplikací. Filtrujte název třídy a poté klikněte pravým tlačítkem na název třídy a vyberte **Zobrazit kód**.
 
 ### <a name="step-3-start-the-production-order"></a>Krok 3: Spuštění výrobní zakázky
 
@@ -421,7 +421,7 @@ Přitom požádá krok o vytvoření třídy akce pro předané jméno a připoj
 
 ### <a name="summary"></a>Souhrn
 
-Abychom shrnuli vše, co bylo v tomto tématu vysvětleno, zde je komplexní shrnutí kódu potřebného pro tento proces:
+Abychom shrnuli vše, co bylo v tomto článku vysvětleno, zde je komplexní shrnutí kódu potřebného pro tento proces:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Abychom shrnuli vše, co bylo v tomto tématu vysvětleno, zde je komplexní shr
         ```
 
         > [!NOTE]
-        > Metoda **createItemInfoForProdId()**, která se používá pro generování informačních štítků položky, je z tohoto tématu vyloučena. Tato metoda se dotazuje na několik tabulek, aby získala ID položky, popis a rozměry. Pokud chcete lépe porozumět **createItemInfoForProdId()**, podívejte se na zdrojový kód.
+        > Metoda **generateItemInfoForProdId()**, která se používá pro generování informačních štítků položky, je z tohoto článku vyloučena. Tato metoda se dotazuje na několik tabulek, aby získala ID položky, popis a rozměry. Pokud chcete lépe porozumět **createItemInfoForProdId()**, podívejte se na zdrojový kód.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Abychom shrnuli vše, co bylo v tomto tématu vysvětleno, zde je komplexní shr
 
 ### <a name="extending-a-business-process"></a>Rozšíření obchodního procesu
 
-Toto téma dosud zdůrazňovalo, jak vytvořit nový proces pomocí rámce **ProcessGuide**. V této závěrečné části najdete několik příkladů, jak lze tento obchodní proces rozšířit.
+Tento článek dosud zdůrazňoval, jak vytvořit nový proces pomocí rámce **ProcessGuide**. V této závěrečné části najdete několik příkladů, jak lze tento obchodní proces rozšířit.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Přidání kroku do toku (pomocí ProcessGuideNavigationAgentDefault)
 

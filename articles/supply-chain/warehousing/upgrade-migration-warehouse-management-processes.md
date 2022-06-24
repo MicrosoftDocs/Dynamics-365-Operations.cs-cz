@@ -1,6 +1,6 @@
 ---
 title: Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management
-description: Toto téma poskytuje přehled možností migrace produktů a řízení skladu.
+description: Tento článek poskytuje přehled možností migrace produktů a řízení skladu.
 author: perlynne
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ac8c0d8781e5146186fbf71ce619f90ca3556ccefefe7e974efded7e0eb86dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857076"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí přehled procesu upgradu z Microsoft Dynamics AX 2012 R3, s modulem WMSII do Supply Chain Management.
+Tento článek uvádí přehled procesu upgradu z Microsoft Dynamics AX 2012 R3, s modulem WMSII do Supply Chain Management.
 
 Supply Chain Management již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít modul **Řízení skladu**. V modulu WMSII by mohlo být možné vybrat dimenze Skladové místo a ID palety pro finanční zásoby, dimenzi zásob ID palety však nelze použít pro finanční zásoby v modulu Supply Chain Management.
 

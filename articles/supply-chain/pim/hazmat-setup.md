@@ -1,6 +1,6 @@
 ---
 title: Příprava nebezpečných materiálů
-description: Toto téma vysvětluje, jak nastavit data potřebná ke klasifikaci položek jako nebezpečných materiálů. Když vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
+description: Tento článek vysvětluje, jak nastavit data potřebná ke klasifikaci položek jako nebezpečných materiálů. Když vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 95d7a4d5e61b2f0ff2a9d52b7ccfa8deec1b309d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888492"
 ---
 # <a name="set-up-hazardous-materials"></a>Příprava nebezpečných materiálů
 

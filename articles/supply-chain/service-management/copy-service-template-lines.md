@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaa6c2d02077d8ee73c1fabbcd52681fc94e24d8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d0fe1c48d4f19f344262fdd2fa9f07afd8affa68
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882424"
 ---
 # <a name="copy-service-templates-lines"></a>Kopírování řádků šablon servisu 
 
@@ -52,7 +52,7 @@ ms.locfileid: "8674946"
 
 Řádky šablony servisu jsou nyní zkopírovány do nové servisní objednávky spolu s připojeným předmětem servisu a se vztahy úkolů služby. 
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Šablony servisu](service-template.md)
 

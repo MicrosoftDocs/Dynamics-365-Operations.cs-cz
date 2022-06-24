@@ -1,6 +1,6 @@
 ---
 title: Správa kvality pro procesy skladu
-description: V tématu jsou informace týkající se procesu řízení kvality pro funkci procesů skladu. Tato funkce rozšiřuje možnosti správy kvality a umožňuje uživatelům integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí pokročilé správy skladu.
+description: V tomto článku jsou informace týkající se procesu řízení kvality pro funkci procesů skladu. Tato funkce rozšiřuje možnosti správy kvality a umožňuje uživatelům integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí pokročilé správy skladu.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679044"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857830"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Správa kvality pro procesy skladu
 
@@ -69,7 +69,7 @@ Před tím, než může být automaticky vygenerována práce na skladě pro př
 1. Pro každý typ pracovního příkazu nastavte směrnice skladových míst, které používají správná pracoviště pro řízení kvality, do kterých mají být zásoby přesunuty. Po dokončení řízení kvality směrnice skladového místa pro typ pracovního příkazu _Objednávka kvality_ zajistí, aby bylo vybráno nové cílové skladové místo, aby bylo možné sklad přesunout z umístění kontroly kvality.
 1. Nastavte příslušné položky nabídky mobilního zařízení tak, aby podporovaly pohyb přijatých zásob do umístění pro řízení kvality, a pohyb zásob, které procházejí nebo selžou řízení kvality z umístění řízení kvality do nového umístění.
 
-Podrobný příklad, který ukazuje, jak dokončit toto nastavení, naleznete ve [ukázkovém scénáři](#example-scenario) na konci tohoto tématu.
+Podrobný příklad, který ukazuje, jak dokončit toto nastavení, naleznete ve [ukázkovém scénáři](#example-scenario) na konci tohoto článku.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Povolte sklad pro řízení kvality
 
@@ -188,7 +188,7 @@ Hodnota **Referenční typ** pro následující příklady je _Nákup_ a **Typ u
 | Načíst | Úplná registrační značka | Ano _(uzamčeno/nelze upravovat)_ | <p>Skladové místo: Ano</p><p>Registrační značka: Ano _(uzamčeno/nelze upravovat)_</p> | Ano | 3 | <p>**Dvě položky:**</p><ul><li>**Množství řádku objednávky pro položku A: 120 EA (4 palety)**</li><li>**Množství řádku objednávky pro položku B: 90 EA (3 palety)**</li></ul><p>**Jeden náklad, dva řádky nakládky s každým řádkem objednávky**</p><ol><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku A, 30 EA, LP1<p>Práce pro vzorkování položky kvality pro 30 EA</p><p>Objednávka kvality 1 na 30 EA</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku A, 30 EA, LP2<p>Práce s nákupní objednávkou na 30 EA (zaskladnění)</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku A, 30 EA, LP3<p>Práce s nákupní objednávkou na 30 EA (zaskladnění)</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku A, 30 EA, LP4<p>Práce pro vzorkování položky kvality pro 30 EA</p><p>Objednávka kvality 1 na 30 EA</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku B, 30 EA, LP5<p>Práce pro vzorkování položky kvality pro 30 EA</p><p>Objednávka kvality 1 na 30 EA</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku B, 30 EA, LP6<p>Práce s nákupní objednávkou na 30 EA (zaskladnění)</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku A, 30 EA, LP7<p>Práce s nákupní objednávkou na 30 EA (zaskladnění)</p></li></ol> |
 | Načíst | Procento = 10 | Ano _(uzamčeno/nelze upravovat)_ | <p>Umístění: Ne</p><p>Registrační značka: Ne</p> | Ne | Nelze použít | <p>**Množství řádku objednávky: 100 EA**</p><p>**Nejsou vytvořeny žádné Náklad. Je použit rozsah objednávky.**</p><ol><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku 50 EA, LP1<p>Práce pro vzorkování položky kvality pro 5 EA</p><p>Objednávka kvality 1 na 5 EA</p><p>Práce s nákupní objednávkou na 45 EA (zaskladnění)</p></li><li>Registrace příjmu v mobilní aplikaci Řízení skladu pro položku 50 EA, LP2<p>Práce pro vzorkování položky kvality pro 5 EA</p><p>Objednávka kvality 1 na 5 EA</p><p>Práce s nákupní objednávkou na 45 EA (zaskladnění)</p></li></ol> |
 
-Když pracovník ověří některou z objednávek kvality zobrazených v předchozí tabulce, systém automaticky vygeneruje práci objednávky kvality, která přesune zásoby z místa řízení kvality do umístění, které je definováno v direktivě skladového místa pro typ pracovního příkazu _Objednávka kvality_. Můžete nastavit libovolné skladové místo pro tento účel, jako je například vrácení nebo místo skladování, v závislosti na výsledku testu pro objednávku kvality. Příklad tohoto nastavení naleznete v [ukázkovém scénáři](#example-scenario) na konci tohoto tématu.
+Když pracovník ověří některou z objednávek kvality zobrazených v předchozí tabulce, systém automaticky vygeneruje práci objednávky kvality, která přesune zásoby z místa řízení kvality do umístění, které je definováno v direktivě skladového místa pro typ pracovního příkazu _Objednávka kvality_. Můžete nastavit libovolné skladové místo pro tento účel, jako je například vrácení nebo místo skladování, v závislosti na výsledku testu pro objednávku kvality. Příklad tohoto nastavení naleznete v [ukázkovém scénáři](#example-scenario) na konci tohoto článku.
 
 Můžete znovu otevřít objednávku kvality, která již byla ověřena, za předpokladu, že práce objednávky kvality, která souvisí s přesunutím skladu z kontroly kvality, nemá hodnotu **Stav práce** *Uzavřeno* nebo *Probíhá*.
 

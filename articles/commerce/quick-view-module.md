@@ -1,6 +1,6 @@
 ---
 title: Modul rychlého zobrazení
-description: Tohle téma se zabývá moduly rychlého zobrazení a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek se zabývá moduly rychlého zobrazení a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e9066357fda4f5d91c547622ac64d8c4eef253ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847568"
 ---
 # <a name="quick-view-module"></a>Modul rychlého zobrazení
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá moduly rychlého zobrazení a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+Tento článek se zabývá moduly rychlého zobrazení a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 Modul rychlého zobrazení umožňuje uživatelům rychle zobrazit informace o produktu při procházení produktů na stránce seznamu a přidat jeden nebo více produktů do košíku ze stránky seznamu, aniž by museli přejít na stránku s podrobnostmi o produktu (PDP). Modul rychlého zobrazení poskytuje přehled informací o produktu, které uživatelé potřebují, aby se mohli rozhodnout „přidat do košíku“. Poskytuje také odkaz na PDP, aby si uživatelé mohli prohlédnout další podrobnosti o produktu a možnosti nákupu.
 

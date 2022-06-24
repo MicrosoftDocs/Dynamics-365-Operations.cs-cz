@@ -1,6 +1,6 @@
 ---
 title: Technické atributy a vyhledávání technických atributů
-description: Toto téma vysvětluje, jak můžete pomocí technických atributů určit všechny nestandardní vlastnosti, abyste zajistili, že v systému budou zaregistrována všechna kmenová data produktu. Vysvětluje také, jak můžete pomocí vyhledávání technických atributů snadno najít produkty na základě těchto registrovaných vlastností.
+description: Tento článek vysvětluje, jak můžete pomocí technických atributů určit všechny nestandardní vlastnosti, abyste zajistili, že v systému budou zaregistrována všechna kmenová data produktu. Vysvětluje také, jak můžete pomocí vyhledávání technických atributů snadno najít produkty na základě těchto registrovaných vlastností.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4b25ab0bfda08b7aa091de8c6833007c586b9c87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852556"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technické atributy a vyhledávání technických atributů
 

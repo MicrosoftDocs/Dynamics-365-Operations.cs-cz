@@ -1,6 +1,6 @@
 ---
 title: Stavy životního cyklu produktu a transakce
-description: Toto téma vysvětluje, jak můžete ovládat, které transakce jsou povoleny pro každý stav životního cyklu, když technický produkt prochází svým životním cyklem.
+description: Tento článek vysvětluje, jak můžete ovládat, které transakce jsou povoleny pro každý stav životního cyklu, když technický produkt prochází svým životním cyklem.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867949"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stavy životního cyklu produktu a transakce
 
@@ -37,7 +37,7 @@ Chcete-li pracovat se stavy životního cyklu produktu, přejděte na **Správa 
 - Chcete-li odstranit existující stav životního cyklu, vyberte ho v podokně seznamu a poté v podokně akcí vyberte **Odstranit**.
 
 > [!NOTE]
-> Technické produkty používají stejné stavy životního cyklu produktu jako standardní (netechnické) produkty. Můžete také otevřít stránku **Stav životního cyklu produktu**, která je popsána v tomto tématu, přechodem na **Správa informací o produktu \> Nastavit \> Stav životního cyklu produktu**. Další informace o stavech životního cyklu produktu pro technické produkty i pro standardní produkty najdete v tématu [Přehled stavu životního cyklu produktu](../pim/product-lifecycle.md).
+> Technické produkty používají stejné stavy životního cyklu produktu jako standardní (netechnické) produkty. Můžete také otevřít stránku **Stav životního cyklu produktu**, která je popsána v tomto článku, přechodem na **Správa informací o produktu \> Nastavit \> Stav životního cyklu produktu**. Další informace o stavech životního cyklu produktu pro technické produkty i pro standardní produkty najdete v tématu [Přehled stavu životního cyklu produktu](../pim/product-lifecycle.md).
 
 ### <a name="header"></a>Záhlaví
 

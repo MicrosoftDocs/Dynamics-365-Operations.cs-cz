@@ -1,6 +1,6 @@
 ---
 title: Konfigurace ověřování mezi službami
-description: Toto téma popisuje, jak nakonfigurovat ověřování mezi službami v Microsoft Dynamics 365 Commerce pro bezpečné volání API služeb pro hodnocení a recenze.
+description: Tento článek popisuje, jak nakonfigurovat ověřování mezi službami v Microsoft Dynamics 365 Commerce pro bezpečné volání API služeb pro hodnocení a recenze.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871600"
 ---
 # <a name="configure-service-to-service-authentication"></a>Konfigurace ověřování mezi službami
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak nakonfigurovat ověřování mezi službami (S2S) v Microsoft Dynamics 365 Commerce pro bezpečné volání API služeb pro hodnocení a recenze.
+Tento článek popisuje, jak nakonfigurovat ověřování mezi službami (S2S) v Microsoft Dynamics 365 Commerce pro bezpečné volání API služeb pro hodnocení a recenze.
 
-Dynamics 365 Commerce nabízí [hodnocení a recenze](ratings-reviews-overview.md) jako omnikanálové řešení. Toto řešení umožňuje přístup k servisním API z místo mimo Commerce, aby šlo provádět různé úkoly. Tyto úkoly zahrnují import hodnocení a recenzí z vašeho externího systému do Commerce a export hodnocení a recenzí z Commerce. Chcete-li Commerce umožnit bezpečné volání rozhraní API pro hodnocení a recenze, musíte nejprve nakonfigurovat ověřování S2S provedením postupů v tomto tématu.
+Dynamics 365 Commerce nabízí [hodnocení a recenze](ratings-reviews-overview.md) jako omnikanálové řešení. Toto řešení umožňuje přístup k servisním API z místo mimo Commerce, aby šlo provádět různé úkoly. Tyto úkoly zahrnují import hodnocení a recenzí z vašeho externího systému do Commerce a export hodnocení a recenzí z Commerce. Chcete-li Commerce umožnit bezpečné volání rozhraní API pro hodnocení a recenze, musíte nejprve nakonfigurovat ověřování S2S provedením postupů v tomto článku.
 
 ## <a name="add-a-new-app-registration"></a>Přidání nové registrace aplikace
 

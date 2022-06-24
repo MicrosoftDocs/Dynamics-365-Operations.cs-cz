@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969224f48cdb1f12b48b9f5d839d7c88168e87d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7026453bf3a0eda2b9bc4d8538150974bd6aa634
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847897"
 ---
 # <a name="repair-management"></a>Správa oprav       
 
@@ -97,7 +97,7 @@ Po vyřešení problému s opravou můžete řádek opravy zavřít. Nastavte f�
 
 ## <a name="close-a-repair-line-for-a-resolved-issue"></a>Zavřete řádek opravy pro vyřešený problém
 
-1.  Otevřete formulář **Řádky opravy**. Pomocí postupu popsaného dříve v tomto tématu vytvořte řádek opravy.
+1.  Otevřete formulář **Řádky opravy**. Pomocí postupu popsaného dříve v tomto článku vytvořte řádek opravy.
 
 2.  Vyberte řádek opravy s položkou opravy, kterou chcete uzavřít.
 

@@ -1,6 +1,6 @@
 ---
 title: Redukční klíče prognózy
-description: Toto téma obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
+description: Tento článek obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854261"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o různých metodách používaných ke snížení požadavků prognózy. Obsahuje příklady výsledků každé metody. Také vysvětluje, jak vytvořit, nastavit a použít redukční klíč prognózy. Některé metody používají redukční klíč prognózy ke snížení požadavků prognózy.
+Tento článek obsahuje informace o různých metodách používaných ke snížení požadavků prognózy. Obsahuje příklady výsledků každé metody. Také vysvětluje, jak vytvořit, nastavit a použít redukční klíč prognózy. Některé metody používají redukční klíč prognózy ke snížení požadavků prognózy.
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Způsoby používané ke snížení požadavků prognózy
 

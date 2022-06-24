@@ -1,6 +1,6 @@
 ---
 title: Migrace na optimalizaci plánování pro hlavní plánování
-description: Toto téma poskytuje informace o novém modulu hlavního plánovací, optimalizaci plánování, a o migraci ze stávajícího modulu.
+description: Tento článek poskytuje informace o novém modulu hlavního plánovací, optimalizaci plánování, a o migraci ze stávajícího modulu.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809088"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846091"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrace na optimalizaci plánování pro hlavní plánování
 
 [!include [banner](../includes/banner.md)]
 
-Integrovaný modul hlavního plánování je naplánován tak, aby byl brzy vyřazen (zastaralý). Nahrazuje ho doplněk Optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management. Toto téma poskytuje informace o dopadu na nová a stávající nasazení. Obsahuje informace o požadovaných akcích.
+Integrovaný modul hlavního plánování je naplánován tak, aby byl brzy vyřazen (zastaralý). Nahrazuje ho doplněk Optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management. Tento článek poskytuje informace o dopadu na nová a stávající nasazení. Obsahuje informace o požadovaných akcích.
 
 Optimalizace plánování umožňuje, aby výpočty hlavního plánování byly prováděny mimo Supply Chain Management a jeho databázi Azure SQL. Výhody, které jsou přidruženy k optimalizaci plánování, zahrnují lepší výkon a minimalizovaný dopad na databázi SQL během spuštění hlavního plánování. Protože rychlé plánování lze provést i v průběhu pracovní doby, plánovači mohou ihned reagovat na požadavky nebo změny parametrů.
 
@@ -63,7 +63,7 @@ V současné době jsou výjimky pro migraci optimalizace plánování relevantn
 
 Poté, co budou k dispozici požadované funkce, poskytne Microsoft období odkladu do vypršení platnosti výjimky. Správce prostředí bude informován, až budou k dispozici požadované funkce a začne období odkladu.
 
-Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962). Za vyhodnocení a schvalování každé žádosti o výjimku je zodpovědná produktová skupina, proto pomocí uvedeného odkazu odešlete žádost přímo produktové skupině a nevytvářejte pro ni lístek podpory. Pokud bude váš požadavek zamítnut, nevytvářejte lístek podpory, protože podpora společnosti Microsoft nemůže přehodnotit ani udělit výjimky.
+Následující vývojový diagram shrnuje informace uvedené v tomto článku, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962). Za vyhodnocení a schvalování každé žádosti o výjimku je zodpovědná produktová skupina, proto pomocí uvedeného odkazu odešlete žádost přímo produktové skupině a nevytvářejte pro ni lístek podpory. Pokud bude váš požadavek zamítnut, nevytvářejte lístek podpory, protože podpora společnosti Microsoft nemůže přehodnotit ani udělit výjimky.
 
 ![Vývojový diagram výjimek.](media/exception-diagram.png "Vývojový diagram výjimek")
 

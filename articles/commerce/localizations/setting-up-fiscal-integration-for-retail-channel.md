@@ -1,6 +1,6 @@
 ---
 title: Nastavení fiskální integrace pro obchodní kanály
-description: Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
+description: Tento článek obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
 author: EvgenyPopovMBS
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 13bdbcc2d52846b8b5d04773c986cd3a4a59e7b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889392"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály. Další informace o fiskální integraci naleznete v tématu [Přehled fiskální integrace pro velkoobchodní kanály](fiscal-integration-for-retail-channel.md).
+Tento článek obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály. Další informace o fiskální integraci naleznete v tématu [Přehled fiskální integrace pro velkoobchodní kanály](fiscal-integration-for-retail-channel.md).
 
 ## <a name="enable-features-in-commerce-headquarters"></a>Povolení funkcí v centrále Commerce
 

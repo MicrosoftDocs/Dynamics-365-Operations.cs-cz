@@ -1,6 +1,6 @@
 ---
 title: Nakonfigurujte hodnoty dimenze produktu tak, aby se zobrazovaly jako vzorky
-description: Toto téma popisuje, jak konfigurovat hodnoty dimenze produktu jako vzorníky v centrále Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak konfigurovat hodnoty dimenze produktu jako vzorníky v centrále Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892645"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Nakonfigurujte hodnoty dimenze produktu tak, aby se zobrazovaly jako vzorky
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak konfigurovat hodnoty dimenze produktu jako vzorníky v centrále Microsoft Dynamics 365 Commerce. Informace o dimenzích produktů získáte v části [Dimenze produktu](../../supply-chain/pim/product-dimensions.md).
+Tento článek popisuje, jak konfigurovat hodnoty dimenze produktu jako vzorníky v centrále Microsoft Dynamics 365 Commerce. Informace o dimenzích produktů získáte v části [Dimenze produktu](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce podporuje použití rozměrů, stylu a barevných rozměrů k reprezentaci variant produktu. Rozměry produktu mají popisné názvy, které se zobrazují na stránkách s podrobnostmi o produktu (PDP), takže lze vybrat varianty produktu. Mezi příklady těchto popisných názvů patří „Malý“, „Střední“ a „Velký“ pro velikosti a „Černý“ a „Hnědý“ pro barvy. Pokud však produkt podporuje mnoho variant, k zobrazení obrázku pro každou variantu produktů je zapotřebí více výběrů. Proto může být pro zákazníky pomalé a zdlouhavé procházet a vybírat varianty produktů.
 

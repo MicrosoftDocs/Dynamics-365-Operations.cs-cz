@@ -1,6 +1,6 @@
 ---
 title: Integrace správy majetku s dlouhodobým majetkem
-description: V tomto tématu je vysvětleno, jak integrovat moduly Správa majetku a Dlouhodobý majetek tak, aby bylo možné propojit dlouhodobý majetek s objekty údržby.
+description: V tomto článku je vysvětleno, jak integrovat moduly Správa majetku a Dlouhodobý majetek tak, aby bylo možné propojit dlouhodobý majetek s objekty údržby.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874210"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrace správy majetku s dlouhodobým majetkem
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567576"
 Integrací modulů **Správa majetku** a **Dlouhodobý majetek** můžete propojit dlouhodobý majetek s objekty údržby. Uživatelé modulu Dlouhodobý majetek pak mohou vytvořit objekt údržby z nového nebo existujícího dlouhodobého majetku a uživatelé modulu Správa majetku mohou k existujícímu dlouhodobému majetku přidružit objekt údržby. Tato funkce rovněž usnadňuje uživatelům modulu Dlouhodobý majetek zobrazení nákladů, které byly zaúčtovány z pracovních příkazů pro související objekty údržby.
 
 > [!NOTE]
-> V tomto tématu *objekty údržby* odkazují na majetek z modulu **Správa majetku** a *dlouhodobý majetek* na majetek z modulu **Dlouhodobý majetek**.
+> V tomto článku *objekty údržby* odkazují na majetek z modulu **Správa majetku** a *dlouhodobý majetek* na majetek z modulu **Dlouhodobý majetek**.
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>Nastavení výchozího umístění pro nové objekty údržby vytvořené z dlouhodobého majetku (volitelné)
 

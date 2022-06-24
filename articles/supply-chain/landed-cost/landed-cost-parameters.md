@@ -1,6 +1,6 @@
 ---
 title: Nastavení parametrů nákladů za doručení
-description: Toto téma popisuje, jak nastavit obecné informace a nastavení konfigurace, které se používají v modulu Náklady za doručení pro účtování, aktualizace stavu, číselné řady a chování.
+description: Tento článek popisuje, jak nastavit obecné informace a nastavení konfigurace, které se používají v modulu Náklady za doručení pro účtování, aktualizace stavu, číselné řady a chování.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7abe8f7f9ea98e7aedb6c9d8d2603b7782194b70
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871971"
 ---
 # <a name="landed-cost-parameters-setup"></a>Nastavení parametrů nákladů za doručení
 

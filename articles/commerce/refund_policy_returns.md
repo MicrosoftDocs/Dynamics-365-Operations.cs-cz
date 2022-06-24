@@ -1,6 +1,6 @@
 ---
 title: Vytvoření a aktualizace zásady vrácení a refundace pro kanál
-description: Toto téma vysvětluje, jak nastavit zásady vrácení a refundace pro kanál.
+description: Tento článek vysvětluje, jak nastavit zásady vrácení a refundace pro kanál.
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873297"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 
@@ -27,7 +27,7 @@ ms.locfileid: "7388926"
 
 Zásada vrácení se změnami kanálu v Dynamics 365 Commerce umožňuje prodejcům nastavit vynucení, na kterých lze úhrady plateb povolit pro zpracování vrácení na pokladním místě (POS).  
 
-Toto téma vysvětluje postup nastavení zásad vrácení a refundace pro kanál.
+Tento článek vysvětluje postup nastavení zásad vrácení a refundace pro kanál.
 
 Rozsah zásady je aktuálně omezen na nastavení nabídek plateb, které lze povolit pro kanál. Seznam povolených položek vychází z metod plateb, které byly použity při nákupu. Například:
 

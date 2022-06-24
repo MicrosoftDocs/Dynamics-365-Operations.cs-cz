@@ -1,6 +1,6 @@
 ---
 title: Testovací proměnné správy kvality
-description: Toto téma popisuje, jak vytvořit testovací proměnné, které bude možné použít pro testy kvality na objednávkách kvality v softwaru Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jak vytvořit testovací proměnné, které bude možné použít pro testy kvality na objednávkách kvality v softwaru Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4495c3d3f8df9f07ec079d8e497a17979abbe3ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 10fe206b76f2e50e09cb6aaa6055614c2fe9425d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857627"
 ---
 # <a name="quality-management-test-variables"></a>Testovací proměnné správy kvality
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit testovací proměnné, které bude možné použít pro testy kvality na objednávkách kvality v softwaru Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje, jak vytvořit testovací proměnné, které bude možné použít pro testy kvality na objednávkách kvality v softwaru Microsoft Dynamics 365 Supply Chain Management.
 
 Pro každý test kvality definovaný na stránce **Testy** musíte definovat testovací proměnnou a její možné výstupy (výsledky). (U testů kvality je nutné v poli **Typ** stránce **Testy** nastavit hodnotu *Možnost*.)
 

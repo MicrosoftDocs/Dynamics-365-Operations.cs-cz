@@ -1,6 +1,6 @@
 ---
 title: Vytvoření přepravního dokladu
-description: Toto téma popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.
+description: Tento článek popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2051583ae1606c9e4c099c2029807ca04d9d076
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669901"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885776"
 ---
 # <a name="create-a-bill-of-lading"></a>Vytvoření přepravního dokladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.  
+Tento článek popisuje, jak vytvořit přepravní doklad při používání procesů pro řízení skladu.  
 
 Přepravní doklad je právním dokumentem mezi společností, která dodává položky, a dopravcem. Dokument doprovází dodané položky a slouží jako potvrzení expedice při dodání položek do cílového umístění. Jestliže používáte řízení skladu, existují dva způsoby, jak přepravní doklad generovat:
 

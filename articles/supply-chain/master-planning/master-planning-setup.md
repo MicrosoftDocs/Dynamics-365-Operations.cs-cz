@@ -1,7 +1,7 @@
 ---
 title: Nastavení hlavního plánování
-description: Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování.
-author: ChristianRytt
+description: Tento článek popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování.
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888550"
 ---
 # <a name="set-up-master-planning"></a>Nastavení hlavního plánování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování. Obsahuje přehled typů plánů, které jsou používány hlavním plánováním, a vysvětluje, jakou strategii plánování byste měli použít v závislosti na obchodních požadavcích. Popisuje také hlavní parametry ovlivňující plán a vysvětluje, jak tyto parametry ovlivňují navrhované plánované objednávky.
+Tento článek popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování. Obsahuje přehled typů plánů, které jsou používány hlavním plánováním, a vysvětluje, jakou strategii plánování byste měli použít v závislosti na obchodních požadavcích. Popisuje také hlavní parametry ovlivňující plán a vysvětluje, jak tyto parametry ovlivňují navrhované plánované objednávky.
 
 ## <a name="types-of-master-plans"></a>Typy hlavních plánů
 

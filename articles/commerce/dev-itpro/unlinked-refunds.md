@@ -1,6 +1,6 @@
 ---
 title: Zpracujte nepropojené refundace pomocí Dynamics 365 Commerce Payment Connector pro Adyen
-description: Toto téma popisuje, jak fungují nepropojené refundace , když se používá Microsoft Dynamics 365 Payment Connector pro Adyen.
+description: Tento článek popisuje, jak fungují nepropojené refundace , když se používá Microsoft Dynamics 365 Payment Connector pro Adyen.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885190"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Zpracujte nepropojené refundace pomocí Dynamics 365 Commerce Payment Connector pro Adyen
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak fungují nepropojené refundace, když se používá [Microsoft Dynamics 365 Payment Connector pro Adyen](adyen-connector.md). Zkoumá také schopnost zpracovat refundaci za novou platební metodu v podkladním místě (POS) nebo call centru.
+Tento článek popisuje, jak fungují nepropojené refundace , když se používá [Microsoft Dynamics 365 Payment Connector pro Adyen](adyen-connector.md). Zkoumá také schopnost zpracovat refundaci za novou platební metodu v podkladním místě (POS) nebo call centru.
 
 Dynamics 365 Payment Connector pro Adyen podporuje schopnost zpracovávat refundace pomocí jiné platební metody, než jaká byla použita pro původní transakci. Ačkoli doporučujeme používat [propojené refundace](linked-refunds.md) ke zpracování refundací oproti původní platební metodě, která byla poskytnuta, je v některých případech vyžadována refundace jiným způsobem. Například kartě, která byla použita k původní platbě, může nyní vypršet platnost nebo se ztratit, nebo ji mohl zrušit uživatel.
 

@@ -1,6 +1,6 @@
 ---
 title: Nastavení účtů dodavatele
-description: Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
+description: Tento článek popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875268"
 ---
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
+Tento článek popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
 
 Při vytvoření účtu dodavatele zadáváte informace o dodavateli. Tyto informace slouží k automatickému zadání dat do dokumentů a ke sledování aktivity, která zahrnuje dodavatele. Můžete například konfigurovat následující informace o dodavateli:
 
