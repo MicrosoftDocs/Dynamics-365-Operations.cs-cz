@@ -1,6 +1,6 @@
 ---
 title: Vygenerování plánu s omezeními
-description: Toto téma vysvětluje způsob vytvoření plánu, který bere v úvahu omezení materiálu a kapacity.
+description: Tento článek vysvětluje způsob vytvoření plánu, který bere v úvahu omezení materiálu a kapacity.
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8372f4e35b34ff66ef55c0961b867a1aff7a5e6
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 65884d556724cd6132fe328e95a5bec78885c174
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904007"
 ---
 # <a name="generate-a-constrained-plan"></a>Vygenerování plánu s omezeními
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje způsob vytvoření plánu, který bere v úvahu omezení materiálu a kapacity. Plán zajišťuje, aby se výroba nespustila před zajištěním dostupnosti materiálu, a aby nedošlo k přeplnění prostředků. 
+Tento článek vysvětluje způsob vytvoření plánu, který bere v úvahu omezení materiálu a kapacity. Plán zajišťuje, aby se výroba nespustila před zajištěním dostupnosti materiálu, a aby nedošlo k přeplnění prostředků. 
 
 K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro plánujícího produkce.
 

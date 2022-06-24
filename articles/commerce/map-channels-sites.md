@@ -1,6 +1,6 @@
 ---
 title: Mapování kanálů na weby elektronického obchodování
-description: Toto téma popisuje některé z běžnějších scénářů mapování kanálů v Microsoft Dynamics 365 Commerce, které lze extrapolovat pro většinu ostatních obchodních požadavků.
+description: Tento článek popisuje některé z běžnějších scénářů mapování kanálů v Microsoft Dynamics 365 Commerce, které lze extrapolovat pro většinu ostatních obchodních požadavků.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902756"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Mapování kanálů na weby elektronického obchodování
 
-Toto téma popisuje některé z běžnějších scénářů mapování kanálů v Microsoft Dynamics 365 Commerce, které lze extrapolovat pro většinu ostatních obchodních požadavků.
+Tento článek popisuje některé z běžnějších scénářů mapování kanálů v Microsoft Dynamics 365 Commerce, které lze extrapolovat pro většinu ostatních obchodních požadavků.
 
 Dynamics 365 Commerce podporuje mnoho obchodních scénářů pro mapování [online kanálů](#channels), které mají nakonfigurovanou sadu produktů, cen a slev [stránky elektronického obchodu](#e-commerce-sites) pro zákazníky.
 
-Toto téma pokrývá následující scénáře:
+Tento článek pokrývá následující scénáře:
 
 - **Jednojazyčný kanál s jedním webem elektronického obchodu.** Tento scénář může například zahrnovat web jedné značky, který je nakonfigurován pro americký anglický trh.
 - **Vícejazyčný kanál s jedním lokalizovaným webem elektronického obchodu.** Tento scénář může například zahrnovat web jedné značky, který je nakonfigurován pro Kanadu s podporou francouzštiny a angličtiny. V tomto scénáři mají uživatelé, kteří vyberou různé jazyky, stejné prostředí webu, ale je lokalizováno do jazyka zvoleného každým uživatelem.
@@ -63,7 +63,7 @@ Následující ilustrace ukazuje příklad konfigurace kanálu v centrále Comme
 
 ![Právnická osoba, měna a jazykové hodnoty pro online obchod Adventure Works zvýrazněné v centrále Commerce.](media/channel-mapping-3.png)
 
-Jediný online kanál lze v nástroji pro tvorbu webu namapovat na jeden web elektronického obchodu. Informace o tom, jak vytvořit nový web a namapovat jej na kanál, naleznete v sekci [Mapování kanálu na web v nástroji pro tvorbu webu](#map-a-channel-to-a-site-in-site-builder) tohoto tématu.
+Jediný online kanál lze v nástroji pro tvorbu webu namapovat na jeden web elektronického obchodu. Informace o tom, jak vytvořit nový web a namapovat jej na kanál, naleznete v sekci [Mapování kanálu na web v nástroji pro tvorbu webu](#map-a-channel-to-a-site-in-site-builder) tohoto článku.
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Vícejazyčný kanál s jedním lokalizovaným webem elektronického obchodu
 
@@ -73,7 +73,7 @@ Omezení tohoto scénáře spočívá v tom, že u jednoho kanálu lze konfiguro
 
 Každý jazyk v kanálu může mít konfigurován vlastní název domény. Například doména `www.adventure-works.ca` bude určena pro kanadskou anglickou verzi a doména `www.adventure-works-fr.ca` pro kanadskou francouzskou verzi. Alternativně lze v jedné doméně konfigurovat různé jazyky v kanálu a pro každý jazyk použít jinou cestu. Například doména `www.adventure-works.ca` bude určena pro kanadskou anglickou verzi a cesta `www.adventure-works.ca/fr` bude použita pro kanadskou francouzskou verzi. Je také možné povolit [geografickou detekci](geo-detection-redirection.md) a použít ji k automatickému přesměrování uživatele na správný web na základě polohy uživatele.
 
-Informace o tom, jak zákazníkům umožnit ruční přepínání mezi jazyky, naleznete v sekci [Přidání a konfigurace modulu pro výběr webu](#add-and-configure-the-site-picker-module) tohoto tématu. Informace o tom, jak přizpůsobit lokalizované stránky a fragmenty, naleznete v sekci [Správa obsahu webu, který má více kanálů a jazyků](#manage-site-content-that-has-multiple-channels-and-languages).
+Informace o tom, jak zákazníkům umožnit ruční přepínání mezi jazyky, naleznete v sekci [Přidání a konfigurace modulu pro výběr webu](#add-and-configure-the-site-picker-module) tohoto článku. Informace o tom, jak přizpůsobit lokalizované stránky a fragmenty, naleznete v sekci [Správa obsahu webu, který má více kanálů a jazyků](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Vícejazyčný kanál s více lokalizovanými weby elektronického obchodu
 
@@ -87,7 +87,7 @@ Značkový web může vyžadovat více online kanálů na jeden region, aby podp
 
 V tomto scénáři může mít každý trh nastaven vlastní názvy domén. Například doména `www.adventure-works.com` bude určena pro USA trh a doména `www.adventure-works.de` pro německý trh. Alternativně lze každý trh konfigurovat tak, aby používal jinou cestu. Například doména `www.adventure-works.com` bude určena pro USA trh a cesta `www.adventure-works.com/de` pro německý trh. Je také možné povolit [geografickou detekci](geo-detection-redirection.md) a použít ji k automatickému přesměrování uživatelů na správný web na základě regionu uživatele.
 
-Můžete také chtít, aby web obsahoval rozevírací seznam, který uživatelům umožní ručně přepnout na konkrétní trh. Další informace naleznete v sekci [Přidání a konfigurace modulu pro výběr webu](#add-and-configure-the-site-picker-module) v tomto tématu.
+Můžete také chtít, aby web obsahoval rozevírací seznam, který uživatelům umožní ručně přepnout na konkrétní trh. Další informace naleznete v sekci [Přidání a konfigurace modulu pro výběr webu](#add-and-configure-the-site-picker-module) v tomto článku.
 
 Informace o konfiguraci více kanálů na jednom webu naleznete v sekci [Konfigurace více kanálů na webu elektronického obchodu](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ Namísto ručního vytváření každé stránky a fragmentu můžete každou st
 
 Web, který má více kanálů a/nebo jazyků, ukládá jedinečnou variantu každé stránky a fragmentu pro každou kombinaci kanálu a jazyka. Toto chování umožňuje, aby varianty stránky obsahovaly lokalizovaná data, ale také vám poskytuje flexibilitu při změně vzhledu a chování stránky pro konkrétní variantu.
 
-Informace o tom, jak pracovat s variantami stránek, naleznete v sekci [Implementace variant stránek pro každý jazyk](#implement-page-variants-for-each-language) tohoto tématu.
+Informace o tom, jak pracovat s variantami stránek, naleznete v sekci [Implementace variant stránek pro každý jazyk](#implement-page-variants-for-each-language) tohoto článku.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Konfigurace více kanálů na webu elektronického obchodu
 

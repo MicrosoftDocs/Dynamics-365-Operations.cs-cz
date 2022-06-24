@@ -1,6 +1,6 @@
 ---
 title: Stavy životního cyklu majetku
-description: Toto téma vysvětluje stavy životního cyklu majetku a modely životního cyklu v modulu Správa majetku.
+description: Tento článek vysvětluje stavy životního cyklu majetku a modely životního cyklu v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722456"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901053"
 ---
 # <a name="asset-lifecycle-states"></a>Stavy životního cyklu majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722456"
 
  
 
-Toto téma vysvětluje stavy životního cyklu majetku a modely životního cyklu v modulu Správa majetku. Stavy životního cyklu majetku se používají k definování, zda je majetek aktivní nebo neaktivní. Můžete například nastavit stavy životního cyklu majetku jako **Vytvořené**, **Aktivní** a **Ukončené**.
+Tento článek vysvětluje stavy životního cyklu majetku a modely životního cyklu v modulu Správa majetku. Stavy životního cyklu majetku se používají k definování, zda je majetek aktivní nebo neaktivní. Můžete například nastavit stavy životního cyklu majetku jako **Vytvořené**, **Aktivní** a **Ukončené**.
 
 > [!NOTE]
 > - Stavy životního cyklu požadavku jsou propojeny se stavy životního cyklu majetku. Proto, pokud je požadavek změněn na nový stav životního cyklu požadavku, je majetek připojený k požadavku změněn na nový stav životního cyklu majetku. Pokud je například stav životního cyklu požadavku změněn na **Příchozí**, stav životního cyklu připojeného majetku se změní na stav životního cyklu, který je vybrán v poli **Stav aktivního cyklu příchozí** na pevné záložce **Stav životního cyklu majetku** na stránce **Modely životního cyklu majetku**. 

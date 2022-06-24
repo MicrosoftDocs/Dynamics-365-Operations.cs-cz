@@ -1,6 +1,6 @@
 ---
 title: Dodavatelská spolupráce s externími dodavateli
-description: Toto téma vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek.
+description: Tento článek vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907283"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
 [!include [banner](../includes/banner.md)]
 
-Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 Supply Chain Management. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
+Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 Supply Chain Management. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Tento článek vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
 
 Další informace o tom, co mohou externí dodavatelé provádět v rozhraní spolupráce dodavatelů, uvádí téma [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Supply Chain Management. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
+> Informace v tomto článku o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Supply Chain Management. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
 
 Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Exter
 <li>Náhrada zboží.</li>
 </ul>
 Údaje o ceně a náklady nemůže změnit dodavatel. Dodavatel však může navrhnout tyto změny pomocí poznámek.</td>
-<td>Odpověď dodavatele bude zaznamenána jako <strong>Přijato se změnami</strong> a stav nákupní objednávky zůstane <strong>Na externí kontrole</strong>. Stavy zobrazují typy změn, které navrhl dodavatel. Informace týkající se automatické spotřeby změn naleznete níže v tomto tématu v části &quot;Aktualizace nákupní objednávky, když dodavatel navrhne změny&quot;. </td>
+<td>Odpověď dodavatele bude zaznamenána jako <strong>Přijato se změnami</strong> a stav nákupní objednávky zůstane <strong>Na externí kontrole</strong>. Stavy zobrazují typy změn, které navrhl dodavatel. Informace týkající se automatické spotřeby změn naleznete níže v tomto článku v části &quot;Aktualizace nákupní objednávky, když dodavatel navrhne změny&quot;. </td>
 </tr>
 </tbody>
 </table>

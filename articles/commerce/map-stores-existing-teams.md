@@ -1,6 +1,6 @@
 ---
 title: Mapování obchodů a týmů, pokud v Microsoft Teams již existují přednastavené týmy
-description: Toto téma popisuje, jak mapovat obchody a odpovídající týmy v Dynamics 365 Commerce Headquarters, pokud vaše organizace již vytvořila týmy v Microsoft Teams před integrací s Commerce.
+description: Tento článek popisuje, jak mapovat obchody a odpovídající týmy v Dynamics 365 Commerce Headquarters, pokud vaše organizace již vytvořila týmy v Microsoft Teams před integrací s Commerce.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902730"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Mapování obchodů a týmů, pokud v Microsoft Teams již existují přednastavené týmy
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak mapovat obchody a odpovídající týmy v Dynamics 365 Commerce Headquarters, pokud vaše organizace již vytvořila týmy v Microsoft Teams před integrací s Commerce.
+Tento článek popisuje, jak mapovat obchody a odpovídající týmy v Dynamics 365 Commerce Headquarters, pokud vaše organizace již vytvořila týmy v Microsoft Teams před integrací s Commerce.
 
 Před integrací Dynamics 365 Commerce a Microsoft Teams může vaše organizace mít vytvořené týmy pro některé nebo všechny vaše obchody. Pokud tomu tak je, musíte poskytnout mapování obchodů a odpovídající tým v Commerce Headquarters, pokud chcete vytvořit synchronizaci úkolů mezi Commerce POS a Microsoft Teams .
 

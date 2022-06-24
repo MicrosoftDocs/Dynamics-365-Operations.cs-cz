@@ -1,6 +1,6 @@
 ---
-title: Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
-description: V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
+title: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
+description: V tomto článku je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906993"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
+V tomto článku je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
 
 Pomocí této funkce můžete rychle zaznamenat příjem příchozích zásob, který souvisí s avízem expedice zboží (ASN). Systém při expedici převodního příkazu procesy správy skladu automaticky vytvoří avízo expedice zboží. U procesu nákupní objednávky lze ASN zaznamenat ručně nebo je lze automaticky importovat pomocí procesu příchozí datové entity ASN.
 

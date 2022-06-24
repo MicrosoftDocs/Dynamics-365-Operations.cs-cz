@@ -1,6 +1,6 @@
 ---
 title: Typy kritičnosti majetku
-description: Téma vysvětluje typy kritičnosti majetku v modulu Správa majetku.
+description: Tento článek vysvětluje typy kritičnosti majetku v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899491"
 ---
 # <a name="asset-criticality-types"></a>Typy kritičnosti majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776913"
 
  
 
-Téma vysvětluje typy kritičnosti majetku v modulu Správa majetku. Kritičnost majetku se vztahuje k majetku a je převedena na pracovní příkazy. Nelze ji změnit v pracovním příkazu. Kritičnost majetku se používá k výpočtu kritičnosti pracovního příkazu během plánování pracovního příkazu. Jinými slovy, používá se k výpočtu míry, do jaké ovlivňuje práce údržby na majetku plán výroby a produktivitu vaší firmy. Další informace o nastavení, které souvisí s výpočtem skóre hodnocení pro plánování pracovních příkazů, naleznete v tématu [Parametry Správy majetku](../setup-for-objects/enterprise-asset-management-parameters.md).
+Tento článek vysvětluje typy kritičnosti majetku v modulu Správa majetku. Kritičnost majetku se vztahuje k majetku a je převedena na pracovní příkazy. Nelze ji změnit v pracovním příkazu. Kritičnost majetku se používá k výpočtu kritičnosti pracovního příkazu během plánování pracovního příkazu. Jinými slovy, používá se k výpočtu míry, do jaké ovlivňuje práce údržby na majetku plán výroby a produktivitu vaší firmy. Další informace o nastavení, které souvisí s výpočtem skóre hodnocení pro plánování pracovních příkazů, naleznete v tématu [Parametry Správy majetku](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 Chcete-li nastavit kritičnost, nejprve vytvořte typy kritičnosti, které by měly být použity v nastavení majetku. Potom nastavíte kritičnost majetku.
 

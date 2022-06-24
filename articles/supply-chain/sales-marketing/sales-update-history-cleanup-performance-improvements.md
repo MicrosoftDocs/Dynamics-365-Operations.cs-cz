@@ -1,6 +1,6 @@
 ---
 title: Naplánujte čištění dat historie prodeje
-description: Toto téma popisuje, jak můžete zlepšit výkon systému naplánováním pravidelné úlohy čištění historie aktualizací prodeje v pravidelných intervalech.
+description: Tento článek popisuje, jak můžete zlepšit výkon systému naplánováním pravidelné úlohy čištění historie aktualizací prodeje v pravidelných intervalech.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900818"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Naplánujte čištění dat historie prodeje
 
@@ -28,7 +28,7 @@ Pokud použijete pravidelnou úlohu *Vyčištění historie aktualizace prodeje*
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Zapněte funkce čištění historie prodeje
 
-Chcete-li nastavit a používat pravidelnou úlohu *Vyčištění historie aktualizace prodeje* spolu se všemi funkcemi, které jsou popsány v tomto tématu, musíte povolit funkce *Zlepšení výkonu čištění historie prodeje* a *Vyčistěte historii aktualizací prodeje na základě stáří* ve správě funkcí, jak je popsáno v následujících podsekcích.
+Chcete-li nastavit a používat pravidelnou úlohu *Vyčištění historie aktualizace prodeje* spolu se všemi funkcemi, které jsou popsány v tomto článku, musíte povolit funkce *Zlepšení výkonu čištění historie prodeje* a *Vyčistěte historii aktualizací prodeje na základě stáří* ve správě funkcí, jak je popsáno v následujících podsekcích.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Vylepšení výkonu čištění historie prodeje
 

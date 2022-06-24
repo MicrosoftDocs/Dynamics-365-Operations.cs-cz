@@ -1,6 +1,6 @@
 ---
 title: Vytváření servisních smluv
-description: Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení projektů a účetnictví k vytváření servisních smluv.
+description: Tento článek popisuje použití funkcí v modulech Správa servisu a Řízení projektů a účetnictví k vytváření servisních smluv.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901756"
 ---
 # <a name="create-service-agreements"></a>Vytváření servisních smluv
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení projektů a účetnictví k vytváření servisních smluv.
+Tento článek popisuje použití funkcí v modulech Správa servisu a Řízení projektů a účetnictví k vytváření servisních smluv.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Vytvoření servisní smlouvy z modulu Řízení servisu
 
@@ -51,10 +51,10 @@ Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení pro
 2. Vyberte **Všechny projekty**.
 3. Vyberte projekt ze seznamu.
 4. V **podokně akcí** vyberte **Spravovat**. Ve skupině **Nová akce** vyberte **Servis** a vyberte **Servisní smlouva**.
-5. Postupujte podle kroků v části s názvem **Vytvoření servisní smlouvy** popsané dříve v tomto tématu pro zadání odkazu na projekt.
+5. Postupujte podle kroků v části s názvem **Vytvoření servisní smlouvy** popsané dříve v tomto článku pro zadání odkazu na projekt.
 
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Přehled přípravy a zřízení servisních smluv](service-agreements.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Rozložení obrazovky ukázkových dat Modern POS (MPOS) a Cloud POS
-description: Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Dynamics 365 Commerce.
+description: Tento článek poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897218"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Rozložení obrazovky ukázkových dat Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Dynamics 365 Commerce.
+Tento článek poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Vzorová rozvržení obrazovky zahrnutá v ukázkových datech Commerce poskytují obsah, který je optimalizován pro různé maloobchodní segmenty, role pracovníků skladu a zařízení. Jedno rozvržení může obsahovat několik velikostí rozvržení a kombinací mřížek tlačítek, aby se zajistilo pokrytí pro případy, kdy se zaměstnanci obchodu pohybují mezi zařízeními a stanicemi. Toto téma zdůrazňuje rozdíly mezi těmito rozloženími, operace, které tato rozložení poskytují, a celkovou uživatelskou zkušenost.
+Vzorová rozvržení obrazovky zahrnutá v ukázkových datech Commerce poskytují obsah, který je optimalizován pro různé maloobchodní segmenty, role pracovníků skladu a zařízení. Jedno rozvržení může obsahovat několik velikostí rozvržení a kombinací mřížek tlačítek, aby se zajistilo pokrytí pro případy, kdy se zaměstnanci obchodu pohybují mezi zařízeními a stanicemi. Tento článek zdůrazňuje rozdíly mezi těmito rozloženími, operace, které tato rozložení poskytují, a celkovou uživatelskou zkušenost.
 
 ![Rozvržení ukázkových dat mezi zařízeními.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -53,7 +53,7 @@ ID rozložení obrazovky může obsahovat maximálně 10 znaků. ID je řetězec
 |--------|-----------------|
 | A      | Adventure Works |
 | F      | Fabrikam        |
-| K      | Contoso         |
+| o      | Contoso         |
 
 ### <a name="layout-version"></a>Verze rozvržení
 

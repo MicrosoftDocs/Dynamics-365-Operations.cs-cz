@@ -1,6 +1,6 @@
 ---
 title: Čárové kódy GS1
-description: Toto téma popisuje, jak nastavit čárové kódy GS1 a QR kódy, aby bylo možné ve skladu skenovat štítky.
+description: Tento článek popisuje, jak nastavit čárové kódy GS1 a QR kódy, aby bylo možné ve skladu skenovat štítky.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907138"
 ---
 # <a name="gs1-bar-codes"></a>Čárové kódy GS1
 
@@ -30,11 +30,11 @@ Podpora GS1 ve službě Supply Chain Management dramaticky zjednodušuje proces
 
 Správci logistiky musí nastavit požadovaný seznam identifikátorů aplikací a každý z nich přiřadit k příslušným položkám nabídky mobilního zařízení. Identifikátory aplikace pak lze použít napříč sklady jako globální nastavení pro účely stěhování a balení. Všechny přepravní štítky proto budou mít jednotnou formu.
 
-Pokud není uvedeno jinak, toto téma používá výraz *čárový kód* jako odkaz na lineární čárové kódy (1D) i čárové kódy 2D.
+Pokud není uvedeno jinak, tento článek používá výraz *čárový kód* jako odkaz na lineární čárové kódy (1D) i čárové kódy 2D.
 
 ## <a name="the-gs1-bar-code-format"></a>Formát čárového kódu GS1
 
-Všeobecné specifikace GS1 specifikují, které symboly lze použít pro čárové kódy GS1 a jak zakódovat data v čárovém kódu. Tato část poskytuje krátký úvod k tématu. Úplné informace viz [Obecné specifikace GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), které vydává GS1. Dokument specifikací GS1 je pravidelně aktualizován a informace, které poskytuje, jsou aktuální s vydáním GS1 General Specifications 22.0.
+Všeobecné specifikace GS1 specifikují, které symboly lze použít pro čárové kódy GS1 a jak zakódovat data v čárovém kódu. Tato část poskytuje krátký úvod k článku. Úplné informace viz [Obecné specifikace GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), které vydává GS1. Dokument specifikací GS1 je pravidelně aktualizován a informace, které poskytuje, jsou aktuální s vydáním GS1 General Specifications 22.0.
 
 Čárové kódy GS1 používají následující symboly:
 

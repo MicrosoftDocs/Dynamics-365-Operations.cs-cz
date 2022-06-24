@@ -1,6 +1,6 @@
 ---
 title: Práce se serializovanými položkami
-description: Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
+description: Tento článek vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 author: Henrikan
 ms.date: 10/31/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e53ec57a8d5c5c922f580219e4bde5338d0707
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89e9ab547d13e68ead88d76f9922d14fde4beb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901843"
 ---
 # <a name="working-with-serialized-items"></a>Práce se serializovanými položkami
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
+Tento článek vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 
 Mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání. V těchto situacích můžete registrovat sériová čísla v dodacích listech nebo fakturách při prodeji produktu. Při pozdějším vrácení produktu lze trasovat produkt k faktuře k určení, zda jste produkt prodali a zda jsou služby nebo záruční povinnosti platné.
 

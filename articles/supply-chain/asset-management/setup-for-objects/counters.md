@@ -1,6 +1,6 @@
 ---
 title: Měrný systém majetku
-description: Toto téma vysvětluje, jak vytvořit typy měrného systému majetku v modulu Správa majetku.
+description: Tento článek vysvětluje, jak vytvořit typy měrného systému majetku v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909665"
 ---
 # <a name="counters"></a>Čítače
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak vytvořit typy čítačů v modulu Správa majetku. Typy čítačů majetku se používají k provádění registrací čítačů u majetku, například pokud jde o počet hodin výroby nebo množství vyrobeného majetku. Typy majetku souvisí s typy čítačů. To znamená, že čítačů majetku lze použít u majetku použít pouze v případě, že je u typu majetku použitého pro daný majetek nastaven čítač majetku.
+Tento článek vysvětluje, jak vytvořit typy čítačů v modulu Správa majetku. Typy čítačů majetku se používají k provádění registrací čítačů u majetku, například pokud jde o počet hodin výroby nebo množství vyrobeného majetku. Typy majetku souvisí s typy čítačů. To znamená, že čítačů majetku lze použít u majetku použít pouze v případě, že je u typu majetku použitého pro daný majetek nastaven čítač majetku.
 
 Před provedením registrací čítače u majetku nejprve vytvořte typy čítače majetku, které chcete použít, v části **Čítače**. Dále můžete vytvořit registrace čítače u majetku v okně **Čítače**. 
 

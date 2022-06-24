@@ -1,6 +1,6 @@
 ---
 title: Použití nastavení zásob
-description: Toto téma se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
+description: Tento článek se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/15/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: df1d1283a7692336906550169bc77104a9118779
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909550"
 ---
 # <a name="apply-inventory-settings"></a>Použití nastavení zásob
 
 [!include [banner](includes/banner.md)]
 
-Toto téma se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
+Tento článek se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
 
 Nastavení zásob určuje, zda se mají zásoby zkontrolovat před přidáním produktů do košíku. Rovněž definují zprávy související se zásobami, například „Na skladě“ a „Zbývá jen několik“. Toto nastavení zajišťuje, že produkt nelze zakoupit, pokud není na skladě.
 

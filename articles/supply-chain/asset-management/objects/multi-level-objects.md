@@ -1,6 +1,6 @@
 ---
 title: Víceúrovňový majetek
-description: Toto téma vysvětluje, jak vytvořit a odstranit víceúrovňové majetky.
+description: Tento článek vysvětluje, jak vytvořit a odstranit víceúrovňové majetky.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908765"
 ---
 # <a name="multi-level-assets"></a>Víceúrovňový majetek
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769604"
 
  
 
-Toto téma vysvětluje, jak vytvořit a odstranit víceúrovňové majetky. Majetek a související dílčí majetek můžete vytvořit v hierarchické stromové struktuře. Tímto způsobem můžete znázornit vztahy a závislosti mezi majetky. Úlohy údržby mohou souviset se všemi úrovněmi stromové struktury. Statistiky lze vytvořit také pro jednotlivou úroveň nebo jako součet všech úrovní dílčích majetků.
+Tento článek vysvětluje, jak vytvořit a odstranit víceúrovňové majetky. Majetek a související dílčí majetek můžete vytvořit v hierarchické stromové struktuře. Tímto způsobem můžete znázornit vztahy a závislosti mezi majetky. Úlohy údržby mohou souviset se všemi úrovněmi stromové struktury. Statistiky lze vytvořit také pro jednotlivou úroveň nebo jako součet všech úrovní dílčích majetků.
 
 Na stránce se seznamem **Všechen majetek** (**Správa majetku** \> **Obecné** \> **Majetek** \> **Všechen majetek**), sloupec **Majetek** zobrazuje seznam majetku v hierarchickém pořadí. Sloupec **Nadřazený** zobrazuje související nadřazený majetek. Pokud již byl majetek a dílčí majetek vytvořen, zobrazí se v části **Strom majetku** v podokně **Související informace** majetek ve stromové struktuře.
 

@@ -1,6 +1,6 @@
 ---
 title: Tisk štítků vlny
-description: Toto téma popisuje tisk popisků vlny a vysvětluje, jak je nastavit.
+description: Tento článek popisuje tisk popisků vlny a vysvětluje, jak je nastavit.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901814"
 ---
 # <a name="wave-label-printing"></a>Tisk štítků vlny
 
@@ -49,7 +49,7 @@ Tisk popisků vlny nabízí následující vylepšení:
 Tato vylepšení zefektivňují označování kartonů před paletizací. Výhodou jsou zejména pro společnosti, které dodávají velkým maloobchodníkům, kteří automaticky potvrzují příjmy z objednávek skenováním každého kartonu samostatně.
 
 > [!NOTE]
-> Konfigurační scénáře popsané v tomto tématu můžete implementovat samostatně nebo v kombinaci, v závislosti na vašich obchodních požadavcích. Můžete navrhnout několik šablon popisků vlny, které fungují v sekvenci (jak je znázorněno ve scénáři 3). Například můžete použít scénář 1 pro tisk štítků na kartonech a scénář 2 pro tisk štítků na paletách (pokud se palety na skladě liší ve velikosti a složení).
+> Konfigurační scénáře popsané v tomto článku můžete implementovat samostatně nebo v kombinaci, v závislosti na vašich obchodních požadavcích. Můžete navrhnout několik šablon popisků vlny, které fungují v sekvenci (jak je znázorněno ve scénáři 3). Například můžete použít scénář 1 pro tisk štítků na kartonech a scénář 2 pro tisk štítků na paletách (pokud se palety na skladě liší ve velikosti a složení).
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Zapnutí funkce tisku popisků vlny
 

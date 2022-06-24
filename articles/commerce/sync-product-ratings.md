@@ -1,6 +1,6 @@
 ---
 title: Synchronizace hodnocení produktů v Dynamics 365 Commerce
-description: Toto téma popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909328"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizace hodnocení produktů v Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
 
 Chcete-li využívat hodnocení produktů v omnikanálech, jako je například na pokladním místě (POS) a v kontaktních střediscích, musí být hodnocení produktů ze služby hodnocení a recenzí importována do databáze velkoobchodní sítě. Pokud jsou hodnocení produktů k dispozici v omnikanálech, mohou zákazníkům pomoci při jejich interakci s prodejcem.
 
-Toto téma popisuje následující úkoly:
+Tento článek popisuje následující úkoly:
 
 1. Nakonfigurujte **úlohu synchronizace hodnocení produktu** jako dávkovou úlohu a synchronizujte hodnocení produktu ze **služby hodnocení a recenzí**.
 1. Ověřte, že dávková úloha synchronizace hodnocení produktu proběhla úspěšně.

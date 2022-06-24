@@ -1,6 +1,6 @@
 ---
 title: Ukotvení
-description: Toto téma vysvětluje, jak povolit a používat ukotvení.
+description: Tento článek vysvětluje, jak povolit a používat ukotvení.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903804"
 ---
 # <a name="anchoring"></a>Ukotvení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje podrobnosti o procesu ukotvení. Popisuje požadovanou konfiguraci a logiku, která je spuštěna, když pracovník skladu změní přechodné skladové místo nebo místo nakládky.
+Tento článek obsahuje podrobnosti o procesu ukotvení. Popisuje požadovanou konfiguraci a logiku, která je spuštěna, když pracovník skladu změní přechodné skladové místo nebo místo nakládky.
 
 Funkce ukotvení vám umožňuje přepsat přechodné skladové místo nebo místo nakládky. Všechna otevřená vložení budou poté přesměrována na nové zadané přechodné skladové místo nebo místo nakládky.
 
@@ -36,11 +36,11 @@ Ukotvení pro položky nabídky mobilního zařízení konfigurujete pomocí mo�
 > [!IMPORTANT]
 > Umístění pro následná otevřená vložení se změní pouze na pracovních řádcích, které jsou generovány ze stejného řádku pracovní šablony. Jinými slovy, systém ukotví řádky vložení, které pocházejí ze stejného řádku pracovní šablony.
 
-Toto téma poskytuje scénář, který ukazuje, jak funguje ukotvení. Během scénáře vytvoříte sadu prodejních objednávek a uvolníte ji do skladu. Poté přepíšete navrhované přechodné skladové místo a ověříte, že veškerá zbývající práce při vyskladnění je směrována do nového umístění.
+Tento článek poskytuje scénář, který ukazuje, jak funguje ukotvení. Během scénáře vytvoříte sadu prodejních objednávek a uvolníte ji do skladu. Poté přepíšete navrhované přechodné skladové místo a ověříte, že veškerá zbývající práce při vyskladnění je směrována do nového umístění.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Předpoklad scénáře: Zpřístupnit ukázková data
 
-Scénář v tomto tématu odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na *USMF*, než začnete.
+Scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na *USMF*, než začnete.
 
 ## <a name="scenario-setup"></a>Nastavení scénáře
 

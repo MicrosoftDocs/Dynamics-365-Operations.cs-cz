@@ -1,6 +1,6 @@
 ---
 title: Vrácení stavu výrobní zakázky
-description: Toto téma popisuje způsob stornování stavu výrobní zakázky.
+description: Tento článek popisuje způsob stornování stavu výrobní zakázky.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903949"
 ---
 # <a name="reverse-the-production-order-status"></a>Vrácení stavu výrobní zakázky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje způsob stornování stavu výrobní zakázky. 
+Tento článek popisuje způsob stornování stavu výrobní zakázky. 
 
 Při stornování stavu výrobní zakázky se vrátí zakázku včetně všech operací připojených k postupům do předchozího kroku výrobního cyklu. Například výrobní zakázka má stav **Plánováno**, a vy změníte stav zpět na **Vytvořeno**. V tomto případě musí systém nejprve stav změnit na **Odhad**, což je stav, který okamžitě předchází stavu **Plánováno**. Stav pak můžete změnit na stav, který chcete, **Vytvořeno**. **Poznámka:** Pokud vaše zakázka dosáhla stavu **Hlášeno jako dokončené**, můžete ji stále vrátit do dřívějšího stavu. Je třeba znovu spustit odhad a plánování operací, plánování úlohy, nebo oba typy plánování a aktualizovat informace na zakázce. Důvodem nutnosti tohoto kroku je, že veškeré rezervace spotřeby zbývajících položek a spotřeby provozních prostředků musí být rovněž vynulovány. Zbývající část tohoto článku vysvětluje, co se děje po stornování stavu výrobní zakázky následujícími způsoby:
 

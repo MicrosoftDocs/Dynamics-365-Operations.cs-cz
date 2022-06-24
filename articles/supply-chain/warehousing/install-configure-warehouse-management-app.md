@@ -1,6 +1,6 @@
 ---
 title: Instalace a připojení mobilní aplikace Warehouse Management
-description: Toto téma vysvětluje, jak nainstalovat aplikaci Warehouse Management Mobile App z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek vysvětluje, jak nainstalovat aplikaci Warehouse Management Mobile App z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103406"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941759"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Toto téma popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu (nyní zastaralou), přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Tento článek popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu (nyní zastaralou), přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Toto téma vysvětluje, jak stáhnout a nainstalovat mobilní aplikaci Řízení skladu na každém z vašich mobilních zařízení, a jak konfigurovat její připojování k prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
+Tento článek vysvětluje, jak stáhnout a nainstalovat mobilní aplikaci Řízení skladu na každém z vašich mobilních zařízení, a jak konfigurovat její připojování k prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 
 ## <a name="system-requirements"></a>Systémové požadavky
 
@@ -39,7 +39,7 @@ Warehouse Management Mobile App je k dispozici pro operační systémy Windows i
 - Windows 10 (Universal Windows Platform \[UWP\]) říjen 2018 aktualizace 1809 (sestavení 10.0.17763) nebo novější
 - Android 4.4 nebo novější
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Zapnutí nebo vypnutí funkce mobilní aplikace Warehouse Management v Supply Chain Management
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Zapnutí nebo vypnutí funkce mobilní aplikace Warehouse Management v Supply Chain Management
 
 Chcete-li používat mobilní aplikaci Warehouse Management, musí být ve vašem systému zapnutá funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -87,11 +87,11 @@ Pokud chcete povolit interakci aplikace Warehouse Management Mobile App s konkr
 
     ![Průvodce registrací aplikace.](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
 
-1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto tématu odkazovat jako na *ID klienta*.
+1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto článku odkazovat jako na *ID klienta*.
 
     ![ID aplikace (klienta).](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
 
-1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto tématu.)
+1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto článku.)
 
     - **Odeslat certifikát** – Odešlete certifikát, který chcete použít jako tajný klíč. Tento přístup doporučujeme, protože je bezpečnější a lze jej také zcela automatizovat. Pokud provozujete Warehouse Management mobile app na zařízeních Windows, poznamenejte si hodnota **Kryptografický otisk**, která se zobrazí po odeslání certifikátu. Tuto hodnotu budete potřebovat při konfiguraci certifikátu na zařízeních Windows.
     - **Nový tajný klíč klienta** – Vytvořte klíč zadáním popisu klíče a jeho délky trvání do části **Hesla** a poté vyberte **Přidat**. Vytvořte kopii klíče a bezpečně ji uložte.
@@ -101,7 +101,7 @@ Pokud chcete povolit interakci aplikace Warehouse Management Mobile App s konkr
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
 - Pokyny, které ukazují, jak používat Windows PowerShell k nastavení aplikací webových služeb v Azure AD naleznete v části [Postup: Použití Azure PowerShell k vytvoření hlavní služby s certifikátem](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících tématech:
+- Úplné podrobnosti o tom, jak ručně vytvořit aplikaci webové služby Azure AD naleznete v následujících článcích:
 
     - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
     ![Aplikace Azure Active Directory.](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
 
 > [!TIP]
-> Jedním ze způsobů, jak tato nastavení použít, je vytvořit ID klienta v Azure pro každé vaše fyzické zařízení a poté každé ID klienta přidat na stránku **Aplikace Azure Active Directory**. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management odstraněním ID klienta. (Tento přístup funguje, protože přihlašovací údaje pro připojení, které jsou uloženy na každém zařízení, také určují ID klienta, jak je popsáno dále v tomto tématu.)
+> Jedním ze způsobů, jak tato nastavení použít, je vytvořit ID klienta v Azure pro každé vaše fyzické zařízení a poté každé ID klienta přidat na stránku **Aplikace Azure Active Directory**. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management odstraněním ID klienta. (Tento přístup funguje, protože přihlašovací údaje pro připojení, které jsou uloženy na každém zařízení, také určují ID klienta, jak je popsáno dále v tomto článku.)
 >
 > Kromě toho je výchozí jazyk, formát čísla a nastavení časového pásma pro každé ID klienta určeno předvolbami nastavenými pro hodnotu **ID uživatele**, která je zde mapována. Proto můžete tyto předvolby použít k vytvoření výchozího nastavení pro každé zařízení nebo kolekci zařízení na základě ID klienta. Tato výchozí nastavení však budou přepsána, pokud jsou také definována pro *uživatelský účet aplikace skladu* který pracovník používá k přihlášení do zařízení. (Další informace naleznete v tématu [Nastavení uživatelských účtů mobilních zařízení](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Ověření pomocí certifikátu nebo tajného klíče klienta
 
-Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilního zařízení k Supply Chain Management. Ověřovat můžete pomocí tajného klíče klienta nebo certifikátu. Pokud importujete nastavení připojení, doporučujeme použít certifikát místo tajného klíče klienta. Protože tajný klíč klienta musí být vždy bezpečně uložen, nemůžete ho importovat ze souboru nastavení připojení nebo z QR kódu, jak je popsáno dále v tomto tématu.
+Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilního zařízení k Supply Chain Management. Ověřovat můžete pomocí tajného klíče klienta nebo certifikátu. Pokud importujete nastavení připojení, doporučujeme použít certifikát místo tajného klíče klienta. Protože tajný klíč klienta musí být vždy bezpečně uložen, nemůžete ho importovat ze souboru nastavení připojení nebo z QR kódu, jak je popsáno dále v tomto článku.
 
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je Warehouse Management mobile app nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 
@@ -266,7 +266,7 @@ Pokud nemáte soubor nebo QR kód, můžete aplikaci na zařízení nakonfigurov
 
 1. Zadejte následující informace:
 
-    - **Použít tajný klíč klienta** - Nastavte tuto možnost na _Ano_ k použití tajného klíče klienta k ověření pomocí Supply Chain Management. Nastavte možnost na _Ne_ pro použití certifikátu k ověření. (Další informace viz [Vytvoření aplikace webové služby v Azure Active Directory](#create-service) dříve v tomto tématu.)
+    - **Použít tajný klíč klienta** - Nastavte tuto možnost na _Ano_ k použití tajného klíče klienta k ověření pomocí Supply Chain Management. Nastavte možnost na _Ne_ pro použití certifikátu k ověření. (Další informace viz [Vytvoření aplikace webové služby v Azure Active Directory](#create-service) dříve v tomto článku.)
     - **Název připojení** - Zadejte název nového připojení. Toto jméno se objeví v poli **Vybrat připojení** při příštím otevření nastavení připojení. Název, který zadáte, musí být jedinečný: (Jinými slovy, musí se lišit od všech ostatních názvů připojení, které jsou uloženy v zařízení, jsou-li tam uloženy jiné názvy připojení.)
     - **ID klienta Active Directory** – Zadejte ID klienta, které jste si poznamenali při nastavování Azure AD v části Vytvoření aplikaci webové služby v [Azure Active Directory](#create-service).
     - **Tajný klíč klienta Active Directory** - Toto pole je k dispozici, pouze pokud je možnost **Použít tajný klíč klienta** nastavena na _Ano_. Zadejte tajný klíč klienta, které jste si poznamenali při nastavování Azure AD v části [Vytvoření aplikaci webové služby v Azure Active Directory](#create-service).

@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
-description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+title: Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
+description: Tento článek uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661818"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945716"
 ---
-# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
+# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20240"></a>Verze 2.0.24.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Vylepšené stránky skeneru pro zapnutí možnosti skenování na stránce **Podrobnosti**.
+- Vylepšená gesta, jako je dotyková/klepací obrazovka.
+- Vylepšené problémy s výkonem pro Android.
+- Opraveno umístění více hlaviček, aby bylo možné zobrazit více karet na stránce **Poptávka**.
+- Vylepšené posouvání, takže je aktivována menší vzdálenost pro posouvání stránkování.
+- Přidáno dlouhé stisknutí pro zobrazení dalšího textu na stránce **Poptávka**.
+- Opraveny chybějící informace ID zařízení pro Android.
+- Zvýšená stabilita.
+- Optimalizováno rozložení přihlášení.
+- Přidáno gesto přejetím prstem doprava pro zavření vyskakovacích stránek dialogu na numerické klávesnici, stránce **Podrobnosti** a stránkách pro zadávání.
 
 ## <a name="version-20220"></a>Verze 2.0.22.0
 

@@ -1,6 +1,6 @@
 ---
 title: Použití mobilního pracovního prostoru správy majetku
-description: Toto téma obsahuje informace o mobilním pracovním prostoru Správa majetku.
+description: Tento článek obsahuje informace o mobilním pracovním prostoru Správa majetku.
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902133"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Použití mobilního pracovního prostoru správy majetku
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Toto téma obsahuje informace o mobilním pracovním prostoru **Správa majetku**. Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat.
+Tento článek obsahuje informace o mobilním pracovním prostoru **Správa majetku**. Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat.
 
 ## <a name="overview"></a>Přehled
 
