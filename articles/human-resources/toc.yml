@@ -496,6 +496,8 @@
                   items:
                     - name: Řízení procesu náborových projektů
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Nastavení náborových projektů
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Vytvoření a otevření požadavků na práci
@@ -626,6 +628,10 @@
                   items:
                     - name: Nastavení plánů zaměstnaneckých výhod
                       href: hr-benefits-plans-setup.md
+                    - name: Vytvoření plánů zaměstnaneckých výhod pracovníka
+                      href: hr-benefits-plans-worker.md
+                    - name: Nastavení budoucích životních událostí
+                      href: hr-benefits-plans-future-life-events.md
                     - name: Nastavení programů flexibilních kreditů
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Zpracování plánů zaměstnaneckých výhod
@@ -836,6 +842,10 @@
               href: hr-developer-api-authentication.md
             - name: Entity
               items:
+                - name: Podrobnosti práce
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Možnost typu zaměstnání
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: Přehled MyLeaveRequests

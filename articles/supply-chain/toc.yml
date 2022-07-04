@@ -18,8 +18,6 @@
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (květen 2022)
                   href: get-started/whats-new-scm-10-0-26.md
-                - name: Supply Chain Management 10.0.25 (duben 2022)
-                  href: get-started/whats-new-scm-10-0-25.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -619,8 +617,6 @@
                   href: asset-management/asset-management-mobile-workspace.md
             - name: Integrace správy majetku s Dynamics 365 Guides
               href: asset-management/asset-management-guides-integration.md
-        - name: Správa dat
-          items:
             - name: Entity cíle
               href: asset-management/data-management/target-entities.md
         - name: Nákladové účetnictví
@@ -775,6 +771,10 @@
                   href: cost-management/physical-financial-updates.md
                 - name: Zahrnovat fyzickou hodnotu
                   href: cost-management/include-physical-value.md
+                - name: Pevná cena příjmu
+                  href: cost-management/fixed-receipt-price.md
+                - name: Princip účtování na účet poplatků
+                  href: cost-management/post-to-charge-account-accounting-principle.md
                 - name: Objekty nákladů
                   href: cost-management/cost-object.md
                 - name: Zobrazení zůstatku objektu nákladů
@@ -1651,6 +1651,8 @@
                   href: inventory/tasks/check-availability-stock.md
                 - name: Seznam zásob na skladě
                   href: inventory/inventory-on-hand-list.md
+                - name: Podrobnosti transakce zásob
+                  href: inventory/inventory-transactions-details.md
                 - name: Inicializace úrovní zásob ve skladu
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Převedení fyzických zásob ve skladu
@@ -2111,6 +2113,8 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
         - name: Zásobování a zdroje
           items:
+            - name: "Domovská stránka zásobování a\_zdrojů"
+              href: procurement/procurement-sourcing.md
             - name: Přehled zásobování a zdrojů
               href: procurement/procurement-sourcing-overview.md
             - name: Workflow zásobování a zdrojů
@@ -2167,6 +2171,8 @@
                   href: procurement/purchase-order-creation.md
                 - name: Vytvoření nákupní objednávky
                   href: procurement/tasks/create-purchase-order.md
+                - name: Vytvoření nákupní objednávky řízené rozpočtem
+                  href: cost-management/tasks/create-purchase-order-governed-by-budget.md
                 - name: "Vytvoření nákupní objednávky s\_plánem dodávek"
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Vytvoření nákupní objednávky pro jednorázového dodavatele
@@ -2383,6 +2389,8 @@
                       href: pim/tasks/create-dimension-based-configurations.md
                 - name: Vytvoření konfigurace založené na omezeních
                   items:
+                    - name: Přehled modelů konfigurace produktu
+                      href: pim/product-configuration-models.md
                     - name: Nastavení modelu konfigurace produktu
                       href: pim/set-up-maintain-product-configuration-model.md
                     - name: Výpočty modelu konfigurace produktu
@@ -2933,6 +2941,8 @@
                   href: sales-marketing/customer-portal-user-admin.md
                 - name: Přizpůsobení a použití zákaznického portálu
                   href: sales-marketing/customer-portal-customize.md
+            - name: Úvěrové limity pro zákazníky
+              href: sales-marketing/credit-limits-customers.md
             - name: Obchodní náhrady
               href: sales-marketing/trade-allowance.md
             - name: Vytvoření nové obchodní smlouvy
@@ -2951,6 +2961,8 @@
                       href: service-management/service-agreement-groups.md
                     - name: Vytváření servisních smluv
                       href: service-management/create-service-agreements.md
+                    - name: Vytvoření skupin servisních smluv
+                      href: service-management/create-service-agreement-groups.md
                     - name: Intervaly servisu
                       href: service-management/service-intervals.md
                     - name: Nastavení intervalů servisu
@@ -2972,7 +2984,7 @@
                     - name: Přehled předmětů servisu
                       href: service-management/service-objects.md
                     - name: Tvorba předmětů servisu
-                      href: service-management/create-service-task-relations.md
+                      href: service-management/create-service-objects.md
                     - name: Připojení skladových položek k servisním předmětům
                       href: service-management/attach-inventory-items-service-objects.md
                     - name: Skupiny předmětů servisu
@@ -3117,6 +3129,8 @@
                           href: service-management/create-item-requirements-service-orders.md
                         - name: Požadavky na položku servisní objednávky
                           href: service-management/service-order-item-requirements.md
+                        - name: Přidání adresy do servisní zakázky
+                          href: service-management/add-address-service-order.md
                         - name: Přehled workflowu odběru
                           href: service-management/subscription-workflow-overview.md
                         - name: Kombinace servisních zakázek
@@ -3139,6 +3153,8 @@
                           href: service-management/set-up-preferred-technician.md
                         - name: Nastavit expediční týmy
                           href: service-management/set-up-dispatch-teams.md
+                        - name: Zobrazit expediční týmy
+                          href: service-management/view-dispatch-teams.md
                         - name: Určení priorit servisních zakázek
                           href: service-management/prioritize-service-orders.md
                         - name: Zobrazení stavu servisních zakázek
@@ -3257,8 +3273,6 @@
                   href: landed-cost/landed-cost-enable.md
                 - name: Parametry nákladů za doručení
                   href: landed-cost/landed-cost-parameters.md
-                - name: Parametry zásobování a zdrojů nákladů na doručení
-                  href: landed-cost/landed-cost-procurement-parameters.md
                 - name: Nastavení stavu plavby
                   href: landed-cost/voyage-status-setup.md
                 - name: Nastavení přepravního kontejneru
@@ -3269,12 +3283,16 @@
                   href: landed-cost/multi-leg-journey-setup.md
                 - name: Nastavení informací o přepravě
                   href: landed-cost/shipping-information-setup.md
+                - name: Automatické nastavení nákladů
+                  href: landed-cost/auto-cost-setup.md
                 - name: Nastavení hodnot nákladových parametrů
                   href: landed-cost/costing-parameters-setup.md
+                - name: Parametry zásobování a zdrojů nákladů na doručení
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Přidáno nastavení dodavatele pro náklady na doručení
+                  href: landed-cost/vendors-landed-cost-settings.md
                 - name: Výchozí popisy pro hlavní knihu
                   href: landed-cost/defult-descriptions.md
-            - name: Přidáno nastavení dodavatele pro náklady na doručení
-              href: landed-cost/vendors-landed-cost-settings.md
             - name: 'Práce s plavbami, kontejnery a folii'
               items:
                 - name: Správa plaveb
@@ -3643,396 +3661,6 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Rozšíření datových entit zásob na skladě
               href: inventory/extend-on-hand-entities.md
-        - name: Řešení potíží
-          items:
-            - name: Správa nákladů
-              items:
-                - name: Nesrovnalosti sestavy stáří zásob
-                  href: troubleshooting/costing/aging-report-discrepancies.md
-                - name: Varování nebo chyby při změně stavu období hlavní knihy bez uzávěrky zásob
-                  href: troubleshooting/costing/change-ledger-period-without-closing.md
-                - name: Funkční mezery mezi sestavami o hodnotě/stárnutí zásob a jejich verzemi úložiště
-                  href: troubleshooting/costing/function-gaps-storage-reports.md
-                - name: 'Konflikt aktualizace nastane, když metoda ocenění zásob je buď standardní cena nebo klouzavý průměr'
-                  href: troubleshooting/costing/update-conflict-standard-moving.md
-                - name: Chybějící nastavení pole při kopírování skupin modelů položek do jiné právnické osoby
-                  href: troubleshooting/costing/copying-item-model-groups.md
-                - name: "Sestava Nepřímé náklady v\_procesu zahrnuje odstraněné výrobní zakázky"
-                  href: troubleshooting/costing/indirect-costs-in-pr.md
-                - name: "Časové rozlišení nákupu zaúčtováno s\_nulovou částkou pro příjemku produktu s\_nulovou hodnotou"
-                  href: troubleshooting/costing/posting-to-purchase.md
-                - name: "Fyzicky přijaté nákupní objednávky se nezobrazí v\_uzávěrce sestavy zásob"
-                  href: troubleshooting/costing/purchase-orders-rece.md
-                - name: Na kartě Aktivní ceny stránky Cena položky chybí pole Od data
-                  href: troubleshooting/costing/there-is-no-from-dat.md
-            - name: Řízení zásob
-              items:
-                - name: Nemůžete najít rozevírací dialogové okno „Workflow“ pro deníky zásob
-                  href: troubleshooting/inventory/cant-find-workflow-dropdown.md
-                - name: Workflow deníku zásob se nikdy nedokončí a deník nelze zpracovat
-                  href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: Deník zásob je uzamčen a dávková úloha workflow nefunguje
-                  href: troubleshooting/inventory/inventory-journal-locked-workflow.md
-                - name: Jednotka a množství jednotky nefungují v deníku zásob správně
-                  href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
-                - name: 'Podmínky workflow deníku zásob platí na úrovni deníku, nikoli na úrovni řádku'
-                  href: troubleshooting/inventory/journal-workflow-conditions.md
-                - name: Podokno filtru na stránce Seznamu na skladě nefunguje podle očekávání
-                  href: troubleshooting/inventory/on-hand-filter-unexpected.md
-                - name: Maximální počet desetinných míst pro skladovou jednotku je 0
-                  href: troubleshooting/inventory/sku-max-decimals-zero.md
-                - name: Několik transakcí zásob pro čísla dávek bez možnosti „Při fyzické aktualizaci“
-                  href: troubleshooting/inventory/multiple-inventory-t.md
-                - name: Stornování sestavy jako dokončené vytvoří neočekávanou otevřenou transakci
-                  href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: "Sestava výdejky nezobrazuje nové poznámky, které jsou připojeny k\_deníku"
-                  href: troubleshooting/inventory/unable-to-print-the.md
-                - name: "Množství se u\_zahájeného karanténního příkazu při rozdělení objednávky neaktualizuje"
-                  href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Pole Datum posledního testu se neaktualizuje po vytvoření více objednávek kvality
-                  href: troubleshooting/inventory/the-field-last-test.md
-                - name: 'Když je rozděleno množství skutečné hmotnosti, použije se minimální množství místo nominálního'
-                  href: troubleshooting/inventory/while-splitting-the.md
-            - name: Hlavní plánování
-              items:
-                - name: 'Systém nemůže najít plánovanou objednávku, když pracuje na více objednávkách'
-                  href: troubleshooting/planning/planned-order-not-exist.md
-                - name: U pevných a odhadovaných výrobních zakázek se rozpad kusovníku chová odlišně
-                  href: troubleshooting/planning/bom-explosion-works-differently.md
-                - name: 'Hodnota zpoždění se neaktualizuje, když přeplánujete plánovanou objednávku'
-                  href: troubleshooting/planning/delay-value-not-updated.md
-                - name: Aktualizace plánovaných objednávek trvá dlouho
-                  href: troubleshooting/planning/planned-order-long-update.md
-                - name: Plánované objednávky jsou generovány na skladě s výrobními zakázkami
-                  href: troubleshooting/planning/planned-orders-in-stock-items.md
-                - name: Plánování výroby nezohledňuje bezpečnostní rezervy
-                  href: troubleshooting/planning/prod-schedule-safety-margins.md
-                - name: 'Hlavní plánování plánuje větší množství, než je dostupná kapacita'
-                  href: troubleshooting/planning/respect-capacity-limitations.md
-                - name: Nebyla nalezena dostatečná kapacita
-                  href: troubleshooting/planning/not-enough-capacity-error.md
-                - name: Při spuštění integrovaného modulu hlavního plánování se zobrazí chyba
-                  href: troubleshooting/planning/deprecated-master-planning-error.md
-                - name: Položka nemůže mít kusovník ani recepturu
-                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
-                - name: Parametry hlavního plánu neexistují
-                  href: troubleshooting/planning/no-parameters-for-master-plan.md
-                - name: Plánovaná výrobní zakázka musí být před potvrzením naplánována
-                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
-                - name: Produkt je blokován pro transakce
-                  href: troubleshooting/planning/product-is-on-hold.md
-                - name: Vybrané číslo receptury není pro dávkovou objednávku schváleno.
-                  href: troubleshooting/planning/selected-formula-not-approved.md
-                - name: Kód prodejce není autorizován pro konkrétní produkt a datum
-                  href: troubleshooting/planning/vendor-code-not-authorized.md
-                - name: Při potvrzení plánovaných objednávek není určen dodavatel
-                  href: troubleshooting/planning/vendor-not-specified.md
-                - name: "Přímo odvozené potvrzené objednávky jsou zpracovávány v\_rámci pracovního postupu kontroly"
-                  href: troubleshooting/planning/firmed-directly-deri.md
-                - name: Položky hlavního plánování nemůžete filtrovat podle hodnot souvisejících skupin pokrytí
-                  href: troubleshooting/planning/master-planning-batc.md
-                - name: Hlavní plánování generuje plánované objednávky pro fiktivní produkty
-                  href: troubleshooting/planning/planned-orders-are-g.md
-                - name: "Plánovaná nákupní objednávka se vytvoří, když existuje nákup v\_záporných dnech"
-                  href: troubleshooting/planning/planning-optimisatio.md
-                - name: Při importu záznamů prognózy poptávky nelze aktualizovat předpokládané jednotkové náklady
-                  href: troubleshooting/planning/unable-to-upload-the.md
-                - name: "Nelze odebrat dimenzi prognózy poptávky skladu z\_řádků prognózy"
-                  href: troubleshooting/planning/warehouse-removal-fr.md
-                - name: "Zobrazí se výzva k\_uložení nastavení disponibility zboží, přestože jste neprovedli žádné změny"
-                  href: troubleshooting/planning/when-importing-to-th.md
-            - name: Zásobování
-              items:
-                - name: Nesrovnalosti v datech řádků nákupní objednávky
-                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
-                - name: Nejméně jedno rozúčtování je buď nadměrně nebo nedostatečně distribuované
-                  href: troubleshooting/procurement/accounting-over-under-distributed.md
-                - name: Akci nákupní objednávky můžete dokončit pouze pro plně distribuovaná čísla řádků
-                  href: troubleshooting/procurement/action-requires-full-distribution.md
-                - name: Nelze změnit datum účinnosti pro schváleného dodavatele
-                  href: troubleshooting/procurement/approved-vendor-effective-date.md
-                - name: Zrušené nákupní objednávky se zobrazí v seznamu konceptů v pracovním prostoru
-                  href: troubleshooting/procurement/canceled-po-in-draft-list.md
-                - name: Transakce lze zaúčtovat na pozastavený účet hlavní knihy
-                  href: troubleshooting/procurement/canceled-receipts-posted.md
-                - name: Zrušení zbytku dodávky přesune nákupní objednávku do potvrzeného stavu
-                  href: troubleshooting/procurement/change-management-canceled-remainder.md
-                - name: Nemůžete konsolidovat více příjemek produktu do jedné nákupní objednávky
-                  href: troubleshooting/procurement/consolidate-multiple-receipts.md
-                - name: Výchozí daňová skupina a platební sleva se z účtu faktury nevyplňují
-                  href: troubleshooting/procurement/default-tax-group-and-discount.md
-                - name: Po změně dodací adresy nákupní objednávky není název doručení synchronizován
-                  href: troubleshooting/procurement/delivery-name-isnt-synced.md
-                - name: Během účtování faktury dodavatele dochází k výjimce
-                  href: troubleshooting/procurement/invocation-target-exception.md
-                - name: Importované nákupní objednávky zobrazují nesprávná čísla řádků
-                  href: troubleshooting/procurement/line-number-increments.md
-                - name: Maximální limit kupní smlouvy na nákupní žádanku není účinný
-                  href: troubleshooting/procurement/max-limit-on-requisition.md
-                - name: Při potvrzování nákupní objednávky dochází k chybě „Odkaz na objekt není nastaven“
-                  href: troubleshooting/procurement/object-reference-not-set.md
-                - name: Rozúčtování jsou buď nadměrně nebo nedostatečně distribuovaná
-                  href: troubleshooting/procurement/over-under-distribution.md
-                - name: Pole Jednotka ceny nelze přidat na stránku Kupní smlouva
-                  href: troubleshooting/procurement/personalize-purchase-agreement-price.md
-                - name: Nákupní objednávky neodrážejí jazyková nastavení právnické osoby
-                  href: troubleshooting/procurement/po-language.md
-                - name: Příjemka nákupní objednávky nezahrnuje všechny poplatky
-                  href: troubleshooting/procurement/po-receipt-missing-charges.md
-                - name: Jednotkové ceny u nákupních objednávek se nevypočítávají na základě převodu jednotek
-                  href: troubleshooting/procurement/po-unit-prices-not-calculated.md
-                - name: Nastavení možnosti Zaúčtovat na účet poplatků v hlavní knize není zapnuto
-                  href: troubleshooting/procurement/post-setting-turned-off.md
-                - name: Chyba při opětovném odeslání nákupní objednávky do workflow po změně
-                  href: troubleshooting/procurement/resubmit-po-after-change.md
-                - name: Problémy převodu měny obchodní smlouvy
-                  href: troubleshooting/procurement/trade-agreement-currencies.md
-                - name: Na importované řádky objednávky se nevztahují podmínky obchodní smlouvy
-                  href: troubleshooting/procurement/trade-agreement-not-applied.md
-                - name: Obchodní smlouvy lze vytvořit z odmítnutých požadavků na cenovou nabídku
-                  href: troubleshooting/procurement/trade-agreements-from-rejected-rfq.md
-                - name: Rabat dodavatele se nesčítá na základě faktur
-                  href: troubleshooting/procurement/vendor-rebate-not-cumulated.md
-                - name: 'Číslo poukazu o přijetí produktu je spotřebováno, i když není generován poukaz'
-                  href: troubleshooting/procurement/voucher-number-consumed.md
-                - name: Prodejní objednávku zákazníka nelze fakturovat
-                  href: troubleshooting/procurement/not-able-to-invoice-.md
-                - name: "Po žádosti o\_změnu nelze přidat řádek k\_nákupní žádance"
-                  href: troubleshooting/procurement/purchase-requisition.md
-            - name: "Správa informací o\_produktech"
-              items:
-                - name: Vydaný produkt nemůžete smazat
-                  href: troubleshooting/products/cant-delete-released-prod.md
-                - name: Při výpočtu modelů konfigurace produktu jsou nesprávně zaokrouhlena celá čísla
-                  href: troubleshooting/products/integers-incorrectly-rounded.md
-                - name: 'Text položky se přepíše, když je produkt nakonfigurován na řádku prodejní objednávky'
-                  href: troubleshooting/products/text-overwritten-configured-item.md
-                - name: "Nemůžete použít šablonu k\_vytvoření uvolněného produktu"
-                  href: troubleshooting/products/apply-template-in-re.md
-                - name: "Nemůžete importovat zboží použitím entity Uvolněné produkty\_V2"
-                  href: troubleshooting/products/cannot-import-with-r.md
-                - name: Nákupní objednávky nezobrazují přeložený text produktu
-                  href: troubleshooting/products/when-the-customer-ad.md
-            - name: Řízení výroby
-              items:
-                - name: Chyba výpočtu zpětného účtování nákladů při uzávěrce zásob
-                  href: troubleshooting/production/backflush-costing-calculation-error.md
-                - name: Výrobní zakázku nelze ukončit z důvodu chyby hodnoty kusovníku spotřeby
-                  href: troubleshooting/production/bom-consumption-cost-error.md
-                - name: Při vytváření nové výrobní zakázky nelze vložit kusovník a trasu
-                  href: troubleshooting/production/cant-insert-bom-route-number.md
-                - name: Předchozí probíhající úlohy jsou ukončeny při vykazování částečného množství u poslední úlohy
-                  href: troubleshooting/production/in-progress-jobs-ended.md
-                - name: 'Položku RM nelze plně uvolnit, když je vydána výrobní zakázka'
-                  href: troubleshooting/production/item-rm-not-reserved.md
-                - name: Nahlášení dokončené aktualizace selže s chybou chybějícího množství
-                  href: troubleshooting/production/missing-report-finished-quantity.md
-                - name: Chyba při zaúčtování sestavy jako dokončeného deníku
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: Chyba při změně stavu výrobní zakázky z Vykázáno jako dokončeno na Konec
-                  href: troubleshooting/production/production-order-status-error.md
-                - name: Výrobní zakázky se nezobrazují na stránce Označení
-                  href: troubleshooting/production/production-orders-marking-page.md
-                - name: Název prostředku se neaktualizuje po změně jména pracovníka
-                  href: troubleshooting/production/resource-name-not-updated.md
-                - name: Chyba celkového množství výrobků při pokusu o ukončení výrobní zakázky
-                  href: troubleshooting/production/total-good-quantity-order-error.md
-                - name: Nelze vysledovat sériová čísla hotových výrobků proti spotřebovanému zboží
-                  href: troubleshooting/production/trace-finished-goods-consumed-goods.md
-                - name: 'Nelze rezervovat nebo uvolnit práci, protože se aktuálně používají procesy'
-                  href: troubleshooting/production/warehouse-management-processes-used.md
-                - name: Nastavení principu odhlašování na řádcích kusovníku není respektováno
-                  href: troubleshooting/production/flushing-principle-n.md
-                - name: Číslo dávky se při výběru nového ID šarže vymaže
-                  href: troubleshooting/production/when-customer-is-try.md
-                - name: Při resetování výrobních zakázek pomocí dávkové úlohy není dodržen pozdější výběr
-                  href: troubleshooting/production/late-selection-is-no.md
-                - name: "Uživatelé mohou zrušit výběr řádků materiálu u\_produktů, které byly označeny jako dokončené"
-                  href: troubleshooting/production/raw-material-lines-a.md
-                - name: Chyba při zaúčtování sestavy jako dokončeného deníku
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: "Sklad v\_deníku výdejky není na řádku kusovníku aktualizován"
-                  href: troubleshooting/production/the-warehouse-in-pic.md
-            - name: Správa rabatu
-              items:
-                - name: Kumulace zákaznických rabatů pomocí skupin rabatu pro zboží selhává
-                  href: troubleshooting/rebates/cumulating-customer-.md
-            - name: "Prodej a\_marketing"
-              items:
-                - name: Úloha čištění historie prodejů selhává nebo má problémy s výkonem
-                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
-                - name: V mezipodnikovém procesu není položka sady podporována
-                  href: troubleshooting/sales/bundle-item-intercompany-process.md
-                - name: 'Nelze zrušit mezipodnikovou nákupní objednávku, která je propojena s prodejní objednávkou'
-                  href: troubleshooting/sales/cancel-intercompany-purchase-order.md
-                - name: Při zrušení objednávky nelze rezervace zrušit
-                  href: troubleshooting/sales/cancel-order-reservations-not-removed.md
-                - name: 'Pokud pro překrývající se data existují dvě obchodní smlouvy, je vždy vybrána stejná'
-                  href: troubleshooting/sales/same-trade-agreement-selected.md
-                - name: Nelze změnit prodejní množství servisní položky na řádku nabídky prodeje
-                  href: troubleshooting/sales/service-item-sales-quantity.md
-                - name: 'Daňové informace se neaktualizují, pokud se změní umístění v hlavičce prodejní objednávky'
-                  href: troubleshooting/sales/tax-information-not-updated.md
-                - name: Množství nelze snížit při zrušení prodejní objednávky
-                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
-                - name: 'Správci systému nemohou vymazat blokování objednávky, protože nejsou autorizovaní'
-                  href: troubleshooting/sales/system-administrator.md
-            - name: Správa přepravy
-              items:
-                - name: "Hlavní účet jde přidat jako kreditní účet pouze z\_důvodů odsouhlasení"
-                  href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Řízení skladu
-              items:
-                - name: Warehouse mobile app
-                  items:
-                    - name: Neočekávaný rozdíl mezi daty požadavku a relace během testování
-                      href: troubleshooting/warehousing/request-session-data-difference.md
-                    - name: Při nastavování připojení aplikace nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Nelze zaúčtovat dodací list pro zastavený řádek prodejní objednávky
-                  href: troubleshooting/warehousing/unable-to-post-packi.md
-                - name: K problémům se zpracováním dochází po instalaci úlohy skladu škálovacích jednotek
-                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
-                - name: Výzva k automatické rezervaci čísla dávky se zobrazuje i u dostupných zásob
-                  href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
-                - name: Práce vyzvedávání nelze odblokovat kvůli nedokončeným doplňovacím pracím
-                  href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
-                - name: Po zaúčtování z prodejní objednávky nelze zrušit dodací list
-                  href: troubleshooting/warehousing/cancel-posted-packing-slip.md
-                - name: 'Pokud je sériové číslo prázdné a je povolen prázdný příjem, nelze přesunout registrační značku'
-                  href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: 'Nelze přesunout zásoby na místo, kde se kontrolují registrační značky'
-                  href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Profil seskupení nebyl nalezen
-                  href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: Opravu poznámky k dodání nelze zpracovat
-                  href: troubleshooting/warehousing/delivery-note-correction.md
-                - name: Chyba při potvrzování dodávky po vytvoření převodního příkazu pro sériové zboží
-                  href: troubleshooting/warehousing/dimension-location-left-blank.md
-                - name: Přímé doručení nelze zpracovat pro sklad s podporou WMS
-                  href: troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md
-                - name: Při používání profilu pro správu dokování se míchají typy zásob
-                  href: troubleshooting/warehousing/dock-management-inventory-mixing.md
-                - name: Možnost více SKU nevyhodnocuje více akcí direktivy umístění
-                  href: troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md
-                - name: Práce vyzvedávání se nevygeneruje okamžitě po uvolnění odchozího vytížení
-                  href: troubleshooting/warehousing/generate-work-immediately-load-release.md
-                - name: Při skenování ID registrační značky v mobilní aplikaci došlo k chybě registrační značky
-                  href: troubleshooting/warehousing/invalid-license-plate.md
-                - name: Vlastník zásob není povolen při zpracování pohybů ve skladové aplikaci
-                  href: troubleshooting/warehousing/inventory-owner-not-allowed.md
-                - name: Systém nemůže aktualizovat množství zásob z důvodu nedostatečných transakcí
-                  href: troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md
-                - name: Ve sloupci Typ práce nelze vybrat změnu stavu zásob
-                  href: troubleshooting/warehousing/inventory-status-change-work-type.md
-                - name: Při skenování v mobilní aplikaci došlo k chybě registrační značky nebo umístění
-                  href: troubleshooting/warehousing/license-plate-location-invalid.md
-                - name: Počet registračních značek není při registraci příchozích objednávek platný
-                  href: troubleshooting/warehousing/license-plate-quantity-not-valid.md
-                - name: Chyba specifikace registrační značky při potvrzování zásilky pro převodní příkaz
-                  href: troubleshooting/warehousing/license-plate-specified-location.md
-                - name: Jeden z řádků je již naložen
-                  href: troubleshooting/warehousing/line-already-on-load.md
-                - name: Chyba hmotnosti zatížení a aktualizace zrušena při zpracování práce mezi místy
-                  href: troubleshooting/warehousing/load-weight-positive-numbers.md
-                - name: Přijímání smíšených registračních značek nefunguje pro žádný dispoziční kód kromě kreditu
-                  href: troubleshooting/warehousing/mixed-license-plate-receiving.md
-                - name: K přístupu k emulátoru aplikace pro mobilní zařízení lze použít pouze roli správce
-                  href: troubleshooting/warehousing/mobile-app-emulator-administrator.md
-                - name: Problémy při přechodu ze základního skladování na rozšířené skladování
-                  href: troubleshooting/warehousing/move-basic-to-advanced-warehousing.md
-                - name: Při používání vyzvedávání seskupení řízeného systémem nebyl pro seskupení nalezen dostatek práce
-                  href: troubleshooting/warehousing/not-enough-work-for-cluster.md
-                - name: Stav objednávky zůstává částečně uvolněn i po fakturaci prodejní objednávky
-                  href: troubleshooting/warehousing/order-status-partially-released.md
-                - name: K částečnému vyzvedávání nelze použít mobilní aplikaci Warehouse Management
-                  href: troubleshooting/warehousing/partial-picking-warehouse-app.md
-                - name: Povolit změnu stavu zásob pro práci s dílčím množstvím
-                  href: troubleshooting/warehousing/partial-quantity-inventory-status.md
-                - name: Tisk poznámky k dodání nebo obsahu balení podle skladu nebo pracoviště
-                  href: troubleshooting/warehousing/print-documents-by-warehouse.md
-                - name: 'Množství není platné, pokud probíhají práce vyzvedávání s více registračními značkami na jednom místě'
-                  href: troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md
-                - name: Množství není platné při děleném výběru mezi více dávkami
-                  href: troubleshooting/warehousing/quantity-invalid-split-pick.md
-                - name: Částečně odeslaný náklad nelze uvolnit do skladu
-                  href: troubleshooting/warehousing/rerelease-partially-shipped-load.md
-                - name: 'Systém nemůže provádět rezervace, protože v zásobách je k dispozici 0,00'
-                  href: troubleshooting/warehousing/reservations-0-inventory-available.md
-                - name: Nelze vytvořit řádek vytížení pro vratku prodejní objednávky z důvodu neplatných dimenzí zásob
-                  href: troubleshooting/warehousing/return-order-invalid-dimensions.md
-                - name: Prodejní objednávku nebylo možné uvolnit s odchozími skladovými operacemi
-                  href: troubleshooting/warehousing/sales-order-not-released.md
-                - name: 'Zásilka pro nakládku byla potvrzena, ale nejsou zaúčtovány žádné řádky'
-                  href: troubleshooting/warehousing/shipment-confirmed-no-posting.md
-                - name: Šablony slotů nezohledňují zásoby na skladě pro zboží nad dávkami
-                  href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
-                - name: Nelze uvolnit zatížení pro částečné množství s hierarchií rezervací nad dávkami
-                  href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: Nepotvrzené nákupní objednávky jsou potvrzeny po spuštění aktualizace příjemek produktů
-                  href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
-                - name: Nelze zrušit rezervaci zásob na řádku prodejní objednávky
-                  href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Dodávku nemůžete potvrdit, protože je zákazník blokován'
-                  href: troubleshooting/warehousing/customer-is-on-hold.md
-                - name: 'Dodávku nemůžete potvrdit, protože řádky vytížení mají nulové množství'
-                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
-                - name: 'Nelze aktualizovat řádek vytížení, protože uvolněné množství by bylo záporné'
-                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
-                - name: Zrušené příjemky produktu neaktualizují stav transakcí na registrované
-                  href: troubleshooting/warehousing/canceled-product-receipts.md
-                - name: Desetinné zaokrouhlení fyzického aktualizovaného je nesprávné
-                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
-                - name: Fyzický zůstatek v jednotce nesmí být roven nule
-                  href: troubleshooting/warehousing/physical-remaining-q.md
-                - name: Vybrané množství není během generování dodacího listu dostatečné
-                  href: troubleshooting/warehousing/picked-quantity-is-n.md
-                - name: Množství překračuje procento nadměrné dodávky během generování dodacího listu
-                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
-                - name: 'Množství, které se pokoušíte aktualizovat, přesahuje přijaté/doručené množství'
-                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
-                - name: Množství překračuje procento nedostatečné dodávky během generování dodacího listu
-                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
-                - name: "Při výběru umístění během registrace výdejky dochází k\_chybě"
-                  href: troubleshooting/warehousing/error-cannot-update.md
-                - name: "Stanice balení nezobrazuje poznámky k\_produktu"
-                  href: troubleshooting/warehousing/packing-station-not-.md
-                - name: 'Profil umístění nepovoluje negativní zásoby, ale negativní zásoby na skladě jsou povoleny'
-                  href: troubleshooting/warehousing/location-profile-set.md
-                - name: Na jedné příjemce je vytištěn pouze jeden štítek pro několik záhlaví práce
-                  href: troubleshooting/warehousing/when-receipting-prod.md
-                - name: "Nemůžete potvrdit dodávku kvůli problému s\_kalendářem"
-                  href: troubleshooting/warehousing/load-has-active-appo.md
-                - name: Zásilku nemůžete potvrdit z důvodu nedokončené nebo chybějící práce
-                  href: troubleshooting/warehousing/open-or-no-work-exis.md
-                - name: 'Zásilku nemůžete potvrdit, protože položky nebyly vyzvednuty'
-                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
-                - name: 'Zásilku nemůžete potvrdit, protože má nulové množství'
-                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
-                - name: 'Zásilku nemůžete potvrdit, protože množství přesahuje procento navýšení dodávky'
-                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
-                - name: 'Zásilku nemůžete potvrdit, protože množství přesahuje procento snížení dodávky'
-                  href: troubleshooting/warehousing/quantity-exceeds-und.md
-                - name: Poslední uzavřený řádek práce musí být opce
-                  href: troubleshooting/warehousing/the-last-closed-work.md
-                - name: Pole hmotnosti na řádcích vytížení neodpovídají polím hmotnosti na vytížení
-                  href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: Vlna není způsobilá pro vyčištění
-                  href: troubleshooting/warehousing/wave-is-not-eligible.md
-                - name: Hmotnost musí být kladná
-                  href: troubleshooting/warehousing/weight-must-be-posit.md
-                - name: 'Práci nelze zrušit, protože je blokována'
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
-                - name: "Práci nelze zrušit z\_důvodu stavu"
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: Práce není blokována
-                  href: troubleshooting/warehousing/work-is-not-blocked.md
-                - name: Práce zůstává blokována
-                  href: troubleshooting/warehousing/work-remains-blocked.md
-                - name: 'Nemůžete zrušit práci, která je na uživateli'
-                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Vývoj a správa finančních a provozních aplikací
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

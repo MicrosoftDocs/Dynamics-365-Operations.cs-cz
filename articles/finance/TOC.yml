@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (květen)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (duben)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -462,6 +460,8 @@
                   items:
                     - name: Nastavení časového rozlišení výnosů a výdajů
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Metoda odloženého zaúčtování
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Vytvoření plánů odkladů
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Odložené výchozí transakce
@@ -1214,7 +1214,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Součásti finančních sestav
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-            - name: Možnosti měny ve Financial reporting
+            - name: Zobrazení a návrh finančních sestav
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
+            - name: Možnosti měny ve finančním výkaznictví
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Výpočet nerozděleného zisku ve Financial reporting
               href: general-ledger/retained-earnings-enhancements.md
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Nastavení čísel bankovního účtu pro Brazílii
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Převodní příkazy
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Daně
                   items:
                     - name: Přehled brazilských daní
@@ -2116,6 +2120,8 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Roční uzávěrka
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Souhrnné hlášení (EU)
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Dánsko
               items:
                 - name: "Dánsko\_–\_přehled"
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: Souhrnné hlášení (EU)
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Import konfigurací elektronické fakturace OIOUBL
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Elektronické faktury zákazníka v Dánsku
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: "Zaúčtování volné faktury s\_platebním dokladem"
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: "Zaúčtování faktury projektu s\_platebním dokladem"
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: Import konfigurace přímého debetu ve formátu ISO20022
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: Předpoklady pro formát přenosu kreditu ISO 20022
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: Import konfigurace převodu kreditu ve formátu ISO20022
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Výpočty odložené DPH
                   href: localizations/emea-hun-deferred-vat.md
+                - name: Souhrnné hlášení (EU)
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Island
               items:
                 - name: Island - přehled
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Nastavení registračních čísel TDS pro právnické osoby
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Nastavení skupin komponent srážkové daně pro typ daně TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Nastavení úřadů srážkové daně pro typ daně TDS
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Nastavení komponent daně pro typ daně TDS
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: "Konfigurace hlavních účtů pro zaúčtování povinnosti vyřazení majetku a\_sazeb slev na trhu"
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Daňová sestava spotřeby
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Souhrnné faktury
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: "Vytvoření dlouhodobého majetku s\_dodatečnými odpisy"
@@ -3416,6 +3430,8 @@
                           href: localizations/rus-register-acquisition.md
                         - name: Pořízení dlouhodobého majetku a jeho vložení do operace
                           href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Vozidla a nemovitosti jako dlouhodobý majetek
+                          href: localizations/rus-vehicles-realty.md
                         - name: Výpočet odpisů
                           href: localizations/rus-depreciation-calculation.md
                         - name: Částečná demontáž dlouhodobého majetku (likvidace)
@@ -3444,6 +3460,8 @@
                       items:
                         - name: Nehodnotný dlouhodobý majetek (NVFA) (Rusko)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Primární formuláře pro NVFA, pracovní oděvy a speciální vybavení (Rusko)'
+                          href: localizations/rus-nvfa.md
                         - name: Účetnictví pracovních oděvů/zvláštního vybavení (Rusko)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Integrace dlouhodobého majetku s modulem správy majetku
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Přiznání daně ze zisku
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Sestava o operacích se sledovatelným zbožím
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Správa organizace
                   items:
                     - name: Informace o registraci daně související s adresou

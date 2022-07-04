@@ -18,8 +18,6 @@
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (květen 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
-                - name: Commerce 10.0.25 (duben 2022)
-                  href: get-started/whats-new-commerce-10-0-25.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -70,20 +68,16 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření a automatizace akceptačních testování uživatele
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Nastavení prostředí vyhodnocení aplikace Dynamics 365 Commerce
+            - name: Nastavení sandboxového prostředí aplikace Dynamics 365 Commerce
               items:
-                - name: Přehled prostředí vyhodnocení aplikace Dynamics 365 Commerce
-                  href: cpe-overview.md
-                - name: Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
+                - name: Zřízení sandboxového prostředí aplikace Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
+                - name: Konfigurace sandboxového prostředí aplikace Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
+                - name: Konfigurace BOPIS v sandboxovém prostředí aplikace Dynamics 365 Commerce
                   href: cpe-bopis.md
-                - name: Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
+                - name: Konfigurace volitelných funkcí pro sandboxové prostředí aplikace Dynamics 365 Commerce
                   href: cpe-optional-features.md
-                - name: Nejčastější dotazy k prostředí vyhodnocení aplikace Dynamics 365 Commerce
-                  href: cpe-faq.md
             - name: Zvažování nasazení
               items:
                 - name: Možnosti nasazení
@@ -440,6 +434,8 @@
                           href: pos-healthcheck.md
                         - name: Podpora síťových periferních zařízení
                           href: dev-itpro/network-peripherals.md
+                        - name: Kompatibilita periférních zařízení
+                          href: Compatible-peripherals.md
                     - name: Rozložení obrazovky
                       items:
                         - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
@@ -1402,6 +1398,8 @@
               items:
                 - name: Ukázka registrace fiskální služby pro Rakousko
                   href: localizations/emea-aut-fi-sample.md
+                - name: Pokyny k nasazení registračních pokladen pro Rakousko
+                  href: localizations/emea-aut-deployment.md
                 - name: Pokyny k nasazení vzorku fiskální integrace pro Rakousko (starší verze)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazílie
@@ -2896,6 +2894,8 @@
                       href: dev-itpro/cloud-dev-box.md
                     - name: Kanál buildu Retail SDK
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Nastavení build agenta Visual Studio 2017 pro vytvoření MPOS
+                      href: dev-itpro/retail-sdk/mpos-build-agent.md
                     - name: Spuštění ukázek POS
                       href: dev-itpro/pos-run-samples.md
                 - name: Reference

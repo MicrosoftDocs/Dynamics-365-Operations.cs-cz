@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Platform updates for version 10.0.26 (květen 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Nástroj Platform Updates pro verzi 10.0.25 (duben 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -376,11 +374,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Plán a příprava pro místní nasazení
                       href: deployment/plan-onprem-deployment.md
-                    - name: Podporovaný software Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Místní podporovaný software
                       href: deployment/onprem-compatibility.md
                     - name: Požadavky na rozsah hardwaru
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Ověřování v Dynamics 365 Finance + Operations (on-premises)
+                    - name: Ověření v místních prostředích
                       href: deployment/authentication-onprem.md
                 - name: Nastavení a nasazení místních prostředí
                   items:
@@ -408,9 +406,9 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurace proxy pro místní prostředí
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurace aplikace skladů pro místní nasazení
+                    - name: Konfigurace aplikace Warehousing pro místní nasazení
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Povolení RSAT v prostředích Finance + Operations (on-premises).
+                    - name: Povolení RSAT v místních prostředích
                       href: deployment/onprem-rsat-configuration.md
                     - name: Instalace zařízení síťové tiskárny v místních prostředích
                       href: analytics/install-network-printer-onprem.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md
-                    - name: Upgrade systému Windows Server ve vašich prostředích Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Upgrade Windows Server v místních prostředích
                       href: deployment/onprem-upgrade-os.md
-                    - name: Upgrade instance systému SQL Server prostředí Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Upgrade nebo nahrazení instance SQL Serveru místních prostředí
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Místní agent
                   items:
@@ -982,6 +980,8 @@
                   href: lifecycle-services/configuration-manager-lcs.md
                 - name: Nastavení správce konfigurace
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: Kopírování konfigurací
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: Konfigurace služby upgradu kódu
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Vytvoření nebo aktualizace metodologií
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Kurz pro rozšíření Azure DevOps (Public Preview)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Rozšíření kódu pro Dynamics 365 Translation Service Visual Studio (Public Preview)
+                - name: Rozšíření Visual Studio (Privátní verze Preview)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Rozšíření Visual Studio Code (Public Preview)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Integrace Microsoft Power Platform
           items:
@@ -1602,13 +1604,15 @@
               href: sysadmin/implement-b2b.md
             - name: Údržba dat
               href: sysadmin/DataMaintenancePortal.md
+            - name: Správa přístupu k síťovým tiskárnám napříč právnickými osobami
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Zabezpečení
               items:
                 - name: Zabezpečení na základě rolí
                   href: sysadmin/role-based-security.md
                 - name: Architektura zabezpečení
                   href: sysadmin/security-architecture.md
-                - name: Šifrování v aplikacích Finance and Operations
+                - name: Šifrování ve finančních a provozních aplikacích
                   href: sysadmin/encryption.md
                 - name: Nastavení časového limitu nečinnosti
                   href: sysadmin/session-idle-timeout.md
