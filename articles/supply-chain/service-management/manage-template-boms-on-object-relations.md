@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 723eae906260d152a8729f91c75cd9860eca84c5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4f2b4213574a2d84089ab20ab1a584e1ab894ad9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669481"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016355"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Správa šablon kusovníku pro vztahy předmětu 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8669481"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Připojení kusovníku šablony k předmětu servisu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Dvakrát klikněte na servisní smlouvu, v níž chcete připojit šablonu kusovníku ke vztahu předmětu.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8669481"
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Odstranění servisního kusovníku z předmětu servisu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Dvakrát klikněte na servisní smlouvu, u níž chcete odstranit kusovník služby ze vztahu předmětu.
 
@@ -55,7 +55,7 @@ ms.locfileid: "8669481"
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>Přesun historie servisního kusovníku do jiné servisní smlouvy
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Poklepáním na servisní smlouvu proveďte přesun z kusovníku služby.
 

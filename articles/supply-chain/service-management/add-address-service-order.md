@@ -2,30 +2,25 @@
 title: Přidání adresy do servisní zakázky
 description: Tento článek popisuje postup přidání adresy odběratele do servisní zakázky.
 author: sorenva
-ms.date: 05/02/2018
+ms.date: 06/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c485c50bab7c2e945aa0f0fc0601008dcebd3328
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844728"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015718"
 ---
-# <a name="add-an-address-to-a-service-order"></a>Přidání adresy do servisní zakázky    
+# <a name="add-an-address-to-a-service-order"></a>Přidání adresy do servisní zakázky
 
 [!include [banner](../includes/banner.md)]
-
 
 Tento článek popisuje postup přidání adresy odběratele do servisní zakázky. Při vytváření servisní zakázky se informace o adrese přenáší z projektu, ke kterému je servisní zakázka připojena. Pro odběratele, dodavatele, pracoviště, sklady, servisní zakázky a projekty však můžete vybrat alternativní umístění z adres, které jsou již zadány v aplikaci Microsoft Dynamics AX.
 
@@ -35,43 +30,36 @@ Můžete také vytvořit adresy nové. Ve výchozím stavu je nová adresa přev
 
 Pro přidání adresy do servisní zakázky postupujte takto:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1. Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 
-2.  Otevřete servisní zakázku, pro kterou chcete vytvořit adresu.
+1. Otevřete servisní zakázku, pro kterou chcete vytvořit adresu.
 
-3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.
+1. Otevřete kartu **Hlavička**.
 
-4.  Na pevné záložce **adresy** klepněte na tlačítko **přidání adresy**.
+1. Rozbalte pevnou záložku **Adresa** a poté vyberte **Přidat adresu** z panelu nástrojů pevné záložky.
 
-5.  Ve formuláři **Nová adresa** zadejte jedinečný název adresy a vyplňte zbývající pole. 
-    
+1. Ve dialogu **Nová adresa** zadejte jedinečný název adresy a vyplňte zbývající pole. 
 
     > [!WARNING]
-    > <P>Zadáte-li stejný název, jaký používá existující adresa, informace zadané do zbývajících polí přepíší informace pro existující adresu.</P>
+    > Zadáte-li stejný název, jaký používá existující adresa, informace zadané do zbývajících polí přepíší informace pro existující adresu.
 
-
-6.  Klepnutím na tlačítko **OK** zkopírujete novou adresu do servisní zakázky.
+1. Výběrem **OK** zkopírujete novou adresu do servisní zakázky.
 
 ## <a name="specify-an-alternative-address-on-a-service-order"></a>Zadání alternativní adresy pro servisní zakázku
 
 Pro přidání alternativní adresy do servisní zakázky postupujte takto:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1. Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 
-2.  Otevřete servisní zakázku, pro kterou chcete zadat alternativní adresu.
+1. Otevřete servisní zakázku, pro kterou chcete zadat alternativní adresu.
 
-3.  V **podokně akcí** klepněte na tlačítko **Upravit** a klepněte na možnost **Zobrazení záhlaví**.
+1. Otevřete kartu **Hlavička**.
 
-4.  Na pevné záložce **adresy** klepněte na tlačítko **Jiná adresa**.
+1. Rozbalte pevnou záložku **Adresa** a poté vyberte **Další adresu** z panelu nástrojů pevné záložky.
 
-5.  Ve formuláři **výběr adresy** v poli **typ záznamu** vyberte **servisní zakázky**.
+1. V dialogu **Výběr adresy** vyberte **Servisní zakázky** z rozevíracího seznamu nad mřížkou.
 
-6.  Vyberte adresu a klepnutím na tlačítko **OK** ji zkopírujete do servisní zakázky.
-
-
-  
-
-
+1. Vyberte adresu a pak výběrem **OK** ji zkopírujete do servisní zakázky.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a76c0ecefbb8da762ac68cbdd7bb44f68a89894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a310152685f733093cc7e50404c23b6f24c40cc
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851849"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016645"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Prostoj údržby pro pracovní příkazy
 
@@ -52,7 +52,7 @@ Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můž
 
 ## <a name="create-maintenance-downtime-registrations"></a>Vytvoření registrací prostojů údržby
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Klikněte na **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz a pak na kartě **Pracovní příkaz** ve skupině **Majetek** vyberte **Prostoj údržby**.
 

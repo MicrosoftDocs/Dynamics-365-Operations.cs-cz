@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677079"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017233"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Nákladová cena vrácení a ID vrácené šarže        
 
@@ -38,7 +38,7 @@ Chcete-li použít jiné než aktuální náklady za zboží vrácené od odběr
 
 Ve výchozím nastavení při přidání položky do vratky budou položky vráceny do zásob s aktuální nákladovou cenou. Při určení jiné ceny nákladů vrácení postupujte takto.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní vratky** \> **Všechny objednávky vratky**.
 
 2.  V **podokně akcí** ve skupině **Nový** klepněte na možnost **Vratka**.
 
@@ -54,7 +54,7 @@ Ve výchozím nastavení při přidání položky do vratky budou položky vrác
 
 Toto je preferovaná metoda používaná k vytvoření řádků vratky. Pokud chcete použít náklady na produkty v době prodeje produktů odběrateli, vytvořte vratku a zadejte řádku prodeje do vratky.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní vratky** \> **Všechny objednávky vratky**.
 
 2.  V **podokně akcí** ve skupině **Nový** klepněte na možnost **Vratka**.
 

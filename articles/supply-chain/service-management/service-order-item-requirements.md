@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882395"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015165"
 ---
 # <a name="service-order-item-requirements"></a>Požadavky na položku servisní objednávky
 
@@ -36,7 +36,7 @@ Pokud je pro servisní zakázku vytvořen požadavek na položku, lze jej zobraz
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Zobrazení požadavku na položku ze servisní zakázky
 
-1. Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1. Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 1. Vyberte **Expedice** a pak vybráním možnosti **Požadavek na položku** otevřete formulář **Požadavky na položku**.
 1. Vyberte kartu **Projekt** a zkontrolujte, zda jsou v poli **Servisní zakázka** uvedeny servisní zakázky požadavků zboží.
 
@@ -44,13 +44,13 @@ Pokud je pro servisní zakázku vytvořen požadavek na položku, lze jej zobraz
 
 Pokud je pro určitou servisní zakázku vytvořen požadavek na položku, nelze danou servisní zakázku odstranit. Požadavek na servisní zakázku je nutné nejprve odstranit a teprve poté lze odstranit i servisní zakázku.
 
-1. Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1. Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 1. Vyberte **Expedice** a pak vybráním možnosti **Požadavek na položku** otevřete formulář **Požadavky na položku**. V tomto formuláři jsou všechny požadavky na zboží, které jsou pro danou servisní zakázku vytvořeny.
 1. Vyberte řádek požadavku na zboží, který má být odebrán, a pak vyberte **Odstranit**.
 
 - nebo -
 
-1. Přejděte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.
+1. Přejděte na **Řízení projektu a účetnictví** \> **Projekty** \> **Všechny projekty**.
 1. Otevřete projekt se servisní zakázkou, v níž je vytvořen požadavek na zboží.
 1. Ve formuláři **Projekty**, vyberte v pravém podokně možnost **Požadavky na položky**. Zobrazí se formulář **Požadavky položky** se seznamem požadavků na položky asociovanými s vybraným projektem.
 1. Vyberte řádek požadavku na zboží, který má být odebrán, a pak vyberte **Odstranit**.

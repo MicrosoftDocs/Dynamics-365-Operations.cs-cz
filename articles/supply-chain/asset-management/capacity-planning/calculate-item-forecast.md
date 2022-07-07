@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d0552c38ddc31ad6322e9e2e0f2c2c722c045f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25e9b00533fb183b27c1bbe616cf6f414b44b5e7
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870893"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016094"
 ---
 # <a name="calculate-item-forecast"></a>Vypočítat prognózu položky
 
@@ -36,7 +36,7 @@ Stejně jako lze provádět výpočty vytížení kapacity, které jsou popsány
 
 To je užitečné v případě, že chcete získat přehled o očekávané spotřebě položek (náhradní díly a další položky vyžadované pro dokončení pracovních příkazů) za určité období. Výpočet prognózy položek lze provést u veškerého majetku nebo vybraného majetku. Můžete také provést výpočet v aktivitě prostoje údržby (**Všechny aktivity prostoje údržby** nebo **Aktivní aktivity prostojů údržby**) nebo ve skupině pracovních příkazů (**Všechny skupiny pracovních příkazů** nebo **Aktivní skupiny pracovních příkazů**).
 
-1. Klikněte na **Správa majetku** > **Dotazy** > **Prognóza položkyy**, nebo **Správa majetku** > **Společné** > **Skupiny pracovních příkazů** > **Všechny skupiny pracovních příkazů** / **Aktivní skupiny pracovních příkazů** > zvolte skupinu pracovních příkazů v seznamu > tlačítko **Prognóza položky**, nebo **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny Aktivity prostojů údržby** / **Aktivní Aktivity prostojů údržby** > zvolte aktivitu prostoje údržby v seznamu > tlačítko **Prognóza položky**.
+1. Klikněte na **Správa majetku** > **Dotazy** > **Prognóza položky** nebo **Správa majetku** > **Skupiny pracovních příkazů** > **Všechny skupiny pracovních příkazů** / **Aktivní skupiny pracovních příkazů** > zvolte skupinu pracovních příkazů v seznamu > tlačítko **Prognóza položky** nebo **Správa majetku** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** / **Aktivní aktivity prostojů údržby** > volte aktivitu prostoje údržby v seznamu > tlačítko **Prognóza položky**.
 
 2. V dialogovém okně **Vypočítat prognóza položky** vyberte období pro výpočet v polích **Počáteční datum/čas** a **Koncové datum a čas**.
 

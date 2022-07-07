@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f999dec6639183015b1be9378dc4e8ea01c9a84
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 32a108694c11a2ebd922a71d5c82691584bbb397
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670881"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014742"
 ---
 # <a name="perform-invoice-updates-for-returns"></a>Provádění aktualizací faktur pro vrácení 
 
@@ -35,7 +35,7 @@ Při nastavení aktualizace faktury pro dávkové zpracování musí prodejní o
 
 ## <a name="post-an-invoice-for-a-return-order"></a>Zaúčtujte fakturu pro objednávku vratky
 
-1.  Klikněte na **Pohledávky** \> **Společné** \> **Prodejní objednávky** \> **všechny prodejní objednávky**.
+1.  Klikněte na možnost **Pohledávky** \> **Objednávky** \> **Všechny prodejní objednávky**.
 
 2.  Vyberte prodejní objednávku, pro kterou se v poli **Typ objednávky** zobrazí **Vratka**.
 

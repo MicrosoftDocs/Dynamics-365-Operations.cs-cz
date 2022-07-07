@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880444"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016790"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognózy, pracovní příkazy a projekty
 
@@ -60,7 +60,7 @@ Na následujícím obrázku, vzhledem ke způsobu nsatavení typu majetku **Moto
 
 ![Obrázek č. 1.](media/01-integration-to-pma.png)
 
-Účelem ID projektu na úloze pracovního příkazu a čísla související aktivity je sledování nákladů, které souvisejí s úlohou pracovního příkazu, a majetku, který je na něm vybrán, v modulu **Řízení projektů a účetnictví**. (Chcete-li zobrazit ID projektu a číslo aktivity, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** a poté vyberte požadovaný pracovní příkaz. Na pevné záložce **Podrobnosti řádku** pole **ID projektu** obsahuje ID projektu a pole **Číslo aktivity** obsahuje číslo aktivity.) Další informace o řízení nákladů v modulu Správa majetku naleznete v [Kontrola data a nákladů](../controlling-and-reporting/cost-and-date-control.md).
+Účelem ID projektu na úloze pracovního příkazu a čísla související aktivity je sledování nákladů, které souvisejí s úlohou pracovního příkazu, a majetku, který je na něm vybrán, v modulu **Řízení projektů a účetnictví**. (Chcete-li zobrazit ID projektu a číslo aktivity, vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** a poté vyberte požadovaný pracovní příkaz. Na pevné záložce **Podrobnosti řádku** pole **ID projektu** obsahuje ID projektu a pole **Číslo aktivity** obsahuje číslo aktivity.) Další informace o řízení nákladů v modulu Správa majetku naleznete v [Kontrola data a nákladů](../controlling-and-reporting/cost-and-date-control.md).
 
 Na následujícíilustraci je zobrazen grafický přehled projektů pracovních příkazů a souvisejících aktivit projektu.
 

@@ -2,7 +2,7 @@
 title: Souhrnné hlášení EU
 description: V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323469"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012493"
 ---
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
@@ -150,7 +150,7 @@ Za intrakomunitární obchodní transakce lze považovat transakce následujíc�
 -   Faktury projektu
 -   Faktury dodavatele
 
-Transakce je považována za intrakomunitární obchodní transakci, pokud je dodací adresa transakce v členském státu EU. Pro tyto země/oblasti by měl existovat záznam na kartě **Parametry země/oblasti** na stránce **Parametry zahraničního obchodu** a položku **Typ země/oblasti** je třeba nastavit na hodnotu **EU**. Intrakomunitární obchodní transakce jsou označeny v poli **Kód seznamu**. Pomocí tohoto pole lze také oddělit obecné intrakomunitární obchodní transakce od trojstranných obchodních transakcí. Můžete shromažďovat informace o intrakomunitárních obchodních transakcích na stránce **Souhrnné hlášení (EU)** (klikněte na položky **Daň** &gt; **Přiznání** &gt; **Zahraniční obchod** &gt; **Souhrnné hlášení (EU)**) pomocí funkce **Převod**. Tato funkce umožňuje zahrnout transakce, které mají částky různých typů vykazování (například zboží nebo služby), podle skupin DPH položek, které jsou určeny pro řádky transakcí. Můžete také použít jiné filtry k definování transakcí, které mají být zahrnuty. Funkce **Převod** vytvoří záznam na stránce **Souhrnné hlášení (EU)** pro každou intrakomunitární obchodní transakci, která je zahrnuta, a určí číslo účtu protistrany, zemi/oblast, číslo osvobození od daně, číslo faktury, datum a celkové částky řádků dle typu vykazování. Dále zkopíruje hodnotu **Kód seznamu** z transakce. Kód seznamu pro transakci lze ručně změnit na stránce **Souhrnné hlášení (EU)**. Funkce **Převod** vytvoří záznamy, kde je položka **Stav vykazování** nastaven na hodnotu **Zahrnuto**. Můžete ověřit informace, které jsou shromažďovány na stránce **Souhrnné hlášení (EU)** pomocí funkce **Ověřit**.
+Transakce je považována za intrakomunitární obchodní transakci, pokud je dodací adresa transakce v členském státu EU. Pro tyto země/oblasti by měl existovat záznam na kartě **Parametry země/oblasti** na stránce **Parametry zahraničního obchodu** a položku **Typ země/oblasti** je třeba nastavit na hodnotu **EU**. Intrakomunitární obchodní transakce jsou označeny v poli **Kód seznamu**. Pomocí tohoto pole lze také oddělit obecné intrakomunitární obchodní transakce od trojstranných obchodních transakcí. Můžete shromažďovat informace o intrakomunitárních obchodních transakcích na stránce **Souhrnné hlášení (EU)** (klikněte na položky **Daň** &gt; **Přiznání** &gt; **Zahraniční obchod** &gt; **Souhrnné hlášení (EU)**) pomocí funkce **Převod**. Tato funkce umožňuje zahrnout transakce, které mají částky různých typů vykazování (například zboží nebo služby), podle skupin DPH položek, které jsou určeny pro řádky transakcí. Můžete také použít jiné filtry k definování transakcí, které mají být zahrnuty. Funkce **Převod** vytvoří záznam na stránce **Souhrnné hlášení (EU)** pro každou intrakomunitární obchodní transakci, která je zahrnuta, a určí číslo účtu protistrany, zemi/oblast, číslo osvobození od daně, číslo faktury, datum a celkové částky řádků dle typu vykazování. Dále zkopíruje hodnotu **Kód seznamu** z transakce. Kód seznamu pro transakci lze ručně změnit na stránce **Souhrnné hlášení (EU)**. Funkce **Převod** vytvoří záznamy, kde je položka **Stav vykazování** nastaven na hodnotu **Zahrnuto**. Můžete ověřit informace, které jsou shromažďovány na stránce **Souhrnné hlášení (EU)** pomocí funkce **Ověřit**. Podrobné informace o faktuře (pro směr prodeje) získáte pomocí funkce **Celkem**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Vygenerování sestavy Souhrnné hlášení (EU)
 
@@ -160,8 +160,26 @@ Můžete generovat sestavu **Souhrnné hlášení (EU)** pomocí funkce **Vykazo
 
 Po dokončení procesu vykazování za určité období (například pokud finanční úřady přijaly sestavu **Souhrnné hlášení (EU)**), lze označit záznamy ESL, které jsou zahrnuty do sestavy za dané období, nastavením položky **Stav vykazování** na hodnotu **Uzavřené**. Tento stav lze nastavit použitím funkce **Označit jako uzavřené** na stránce **Souhrnné hlášení (EU)**. Pokud vrátíte uzávěrku období, můžete označit záznamy ESL nastavením položky **Stav vykazování** na hodnotu **Zahrnuto**. Tyto záznamy pak mohou být znovu zahrnuty v sestavě **Souhrnné hlášení (EU)**. Tento stav lze nastavit použitím funkce **Označit jako** **zahrnuto** na stránce **Souhrnné hlášení (EU)**.
 
+## <a name="list-of-country-specific-topics"></a>Seznam témat specifických pro jednotlivé země
 
-
+| Země          | Odkaz      |
+|------------------|-----------|
+| Rakousko          | [Souhrnné hlášení (EU) pro Rakousko](emea-aut-eu-sales-list.md)| 
+| Belgie          |[Souhrnné hlášení (EU) pro Belgii](emea-bel-eu-sales-list.md)|
+| Česká republika          |[Souhrnné hlášení (EU) pro Českou republiku](emea-cze-eu-sales-list.md)|
+| Dánsko          |[Souhrnné hlášení (EU) pro Dánsko](emea-dnk-eu-sales-list.md)|
+| Estonsko          |[Souhrnné hlášení (EU) pro Estonsko](emea-est-eu-sales-list.md)|
+| Finsko          |[Souhrnné hlášení (EU) pro Finsko](emea-fin-eu-sales-list.md)|
+| Francie          |[Souhrnné hlášení (EU) pro Francii](emea-fra-eu-sales-list.md)|
+| Německo          |[Souhrnné hlášení (EU) pro Německo](emea-deu-eu-sales-list.md)|
+| Maďarsko          |[Souhrnné hlášení (EU) pro Maďarsko](emea-hun-eu-sales-list.md)|
+| Lotyšsko          |[Souhrnné hlášení (EU) pro Lotyšsko](emea-lva-eu-sales-list.md)|
+| Litva          |[Souhrnné hlášení (EU) pro Litvu](emea-ltu-eu-sales-list.md)|
+| Nizozemsko          |[Souhrnné hlášení (EU) pro Nizozemsko](emea-nl-eu-sales-list.md)|
+| Polsko          |[Souhrnné hlášení (EU) pro Polsko](emea-pol-eu-sales-list.md)|
+| Španělsko          |[Souhrnné hlášení (EU) pro Španělsko (Sestava 349)](emea-esp-sales-list.md)|
+| Švédsko          |[Souhrnné hlášení (EU) pro Švédsko](emea-swe-eu-sales-list.md)|
+| Spojené království (Severní Irsko)          |[Souhrnné hlášení (EU) pro Spojené království (Severní Irsko)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

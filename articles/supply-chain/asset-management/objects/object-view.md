@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 495f3dbf9bab9d550ebdbb7dda52aca80d5ea635
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882714"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017109"
 ---
 # <a name="asset-view"></a>Zobrazení majetku
 
@@ -30,7 +30,7 @@ ms.locfileid: "8882714"
 
 Tento článek popisuje zobrazení majetku v modulu Správa majetku. Stránka **Zobrazení majetku** zobrazuje aktivní majetek a funkční místa ve stromovém zobrazení. Proto můžete snadno získat přehled o vztazích majetku a funkčních místech. Dále můžete zobrazit podrobné informace o funkčních místech, majetku a souvisejících kusovnících. Můžete také získat rychlý přehled o aktivních požadavcích na údržbu a pracovních příkazech, které souvisejí s majetkem.
 
-1. Vyberte **Správa majetku** \> **Společné** \> **Majetek** \> **Zobrazení majetku**.
+1. Vyberte **Správa majetku** \> **Majetek** \> **Zobrazení majetku**.
 2. Chcete-li změnit zobrazení na stránce, vyberte novou hodnotu v poli **Zobrazení**.
 
     > [!NOTE]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6592b94105777525c777950132d5099d1e8abb0e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845047"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016732"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -30,11 +30,11 @@ ms.locfileid: "8845047"
 
 Tento článek vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku. 
 
-Požadovaný počet hodin pro pracovní příkaz je definován součtem předpokládaných hodin minus zaúčtované hodiny. Je-li vyžadováno více času, musí být prognóza upravena odpovídajícím způsobem. Ve volbě **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** můžete zobrazit nebo upravit prognózy na pracovním příkazu výběrem pracovního příkazu a kliknutím na **Prognóza** na kartě **Pracovní příkaz**. Po vytvoření a odhadu pracovních příkazů je dalším krokem přidělení požadovaných pracovníků a nástrojů údržby, které dokončí pracovní příkazy.
+Požadovaný počet hodin pro pracovní příkaz je definován součtem předpokládaných hodin minus zaúčtované hodiny. Je-li vyžadováno více času, musí být prognóza upravena odpovídajícím způsobem. Ve volbě **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** můžete zobrazit nebo upravit prognózy na pracovním příkazu výběrem pracovního příkazu a kliknutím na **Prognóza** na kartě **Pracovní příkaz**. Po vytvoření a odhadu pracovních příkazů je dalším krokem přidělení požadovaných pracovníků a nástrojů údržby, které dokončí pracovní příkazy.
 
 Je možné naplánovat pouze pracovní příkazy se stavem životního cyklu pracovního příkazu, který umožňuje plánování. Možnost Povolit plánování je nastaveno ve **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Stavy životního cyklu** >  pevná záložka **Obecné** > přepínací tlačítko **Povolit plánování**.
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy**.
+1. Klikněte na **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy**.
 
 2. Ze seznamu vyberte pracovní příkazy, které chcete naplánovat. Seznam lze například seřadit podle **Aktuálního stavu životního cyklu**.
 

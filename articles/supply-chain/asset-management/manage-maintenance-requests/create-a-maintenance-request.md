@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 92f3a2bc3d2a4d5d1c3be0c6dda2674dc3e7d0bb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891227"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016819"
 ---
 # <a name="create-maintenance-requests"></a>Vytvoření požadavků na údržbu
 
@@ -32,9 +32,9 @@ Požadavky na údržbu lze použít, pokud pracovníci údržby nebo výrobní p
 
 **Příklad:** V době, kdy pracovník údržby provádí opravu, zjistí, že je nutné provést servis jiného majetku ve stejném skladovém místě. Pracovník údržby však nemá čas nebo požadované náhradní díly k provedení úlohy opravy. Z tohoto důvodu vytvoří pro majetek požadavek na údržbu a zadá krátký popis výdeje.
 
-Část **Aktivní požadavky na údržbu** v podokně **Související informace** na pravé straně stránky **Všechen majetek** nebo **Aktivní majetek** (**Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**) ukazuje aktivní požadavky na údržbu, které jsou připojeny k vybranému majetku.
+Část **Aktivní požadavky na údržbu** v podokně **Související informace** na pravé straně stránky **Všechen majetek** nebo **Aktivní majetek** (**Správa majetku** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**) ukazuje aktivní požadavky na údržbu, které jsou připojeny k vybranému majetku.
 
-1. Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
+1. Vyberte **Správa majetku** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
 2. Zvolte **Nové**.
 3. V dialogovém okně **Vytvořit požadavek** vyberte typ požadavku na údržbu v poli **Typ požadavku na údržbu**. Je navržen výchozí typ.
 4. Do pole **Popis** zadejte název nebo titul, který stručně popisuje požadavek na údržbu.

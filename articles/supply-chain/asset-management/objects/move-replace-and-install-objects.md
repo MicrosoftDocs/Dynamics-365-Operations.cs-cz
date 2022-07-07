@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872117"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015572"
 ---
 # <a name="move-replace-and-install-assets"></a>Přesun, nahrazení a instalace majetku
 
@@ -44,7 +44,7 @@ Použijte funkci **Přesunout majetek** – pro přesun majetku buď do jiné st
 > [!NOTE]
 > Tuto funkci nepoužívejte, pokud je majetek opraven nebo dočasně nahrazen. Místo toho použijte funkci **Nahradit majetek**, která je popsána dále v tomto článku.
 
-1. Zvolte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
+1. Zvolte **Správa majetku** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
 2. V seznamu vyberte majetek, který chcete přesunout. Pokud má majetek podřízený majetek, přesunete také tento majetek.
 3. Zvolte **Přesunout majetek**.
 4. Chcete-li majetek přesunout tak, aby se stal součástí struktury majetku, vyberte nový nadřazený majetek v poli **Nadřazený majetek**. Pokud přesouváte podřízený majetek a chcete jej nastavit jako samostatný majetek, který nemá žádné vztahy ke struktuře, ponechejte pole **Nadřazený majetek** prázdné.
@@ -58,7 +58,7 @@ Použijte funkci **Nahradit majetek** v souvislosti s opravami, obnovou nebo trv
 > [!NOTE]
 > Pokud dílna souvisí s výrobním oddělením, můžete vytvořit funkční místa, jako **Oprava**, **Odpad** a **Sklad** pro zpracování oprav a nahrazení majetku.
 
-1. Zvolte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
+1. Zvolte **Správa majetku** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
 2. V seznamu vyberte podřízený majetek, který chcete nahradit. Pokud má majetek podřízený majetek, nahradíte také tento majetek.
 3. Vyberte **Nahradit majetek**.
 
@@ -79,7 +79,7 @@ K instalaci struktury majetku do funkčního místa použijte funkci **Nainstalo
 > [!NOTE]
 > Vždy vyberte nadřazený majetek. Nadřazený majetek a související podřízený majetek budou přesunuty do vybraného funkčního místa.
 
-1. Zvolte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
+1. Zvolte **Správa majetku** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
 2. V seznamu vyberte nadřazený majetek, který chcete nainstalovat do jiného funkčního místa.
 3. Vyberte **Instalovat majetek**.
 

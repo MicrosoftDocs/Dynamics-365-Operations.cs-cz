@@ -12,12 +12,12 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: d4ded70a9b72b691ab458ef78dfba92fbaf53b3b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8c264f80c84374047aad0d505952efd9a9d86f7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901264"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954618"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -57,6 +57,9 @@ Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účt
 
 ## <a name="intrastat-declaration"></a>Prohlášení Intrastat
 Informace o českém hlášení Intrastat viz [Český intrastat](emea-cze-intrastat.md).
+
+## <a name="eu-sales-list"></a>Souhrnné hlášení (EU)
+Informace o souhrnném hlášení EU pro Českou republiku viz [Souhrnné hlášení EU pro Českou republiku](emea-cze-eu-sales-list.md).
 
 ## <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Dobropis na platební slevu](emea-cze-credit-note-cash-discount.md).

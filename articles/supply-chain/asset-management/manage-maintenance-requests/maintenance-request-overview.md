@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d6f7861d5c242d512c4ac984e9e9f1d0890c5dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 488b6505aba246aa3a6ea69436514a274403bf49
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848071"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015631"
 ---
 # <a name="maintenance-requests"></a>Požadavky na údržbu
 
@@ -35,9 +35,9 @@ Požadavky na údržbu mohou být vytvořeny pro libovolný majetek v modulu Spr
 - Investice
 - Oprava skladu (Tento typ se používá, když obdržíte majetek z jiného místa, aby bylo možné provést úlohu údržby nebo opravy a poté majetek vrátit po dokončení úlohy.)
 
-## <a name="view-maintenance-requests"></a>Zobrazení požadavků na údržbu
+## <a name="view-maintenance-requests"></a>Zobrazit požadavky na údržbu
 
-Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**, **Aktivní požadavky na údržbu** nebo **Moje požadavky na údržbu funkčního místa**. Na každé stránce se seznamem jsou uvedeny některé informace související s požadavkem na údržbu.
+Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**, **Aktivní požadavky na údržbu** nebo **Moje požadavky na údržbu funkčního místa**. Na každé stránce se seznamem jsou uvedeny některé informace související s požadavkem na údržbu.
 
 ![Zobrazit požadavky na údržbu.](media/01-manage-maintenance-requests.png)
 

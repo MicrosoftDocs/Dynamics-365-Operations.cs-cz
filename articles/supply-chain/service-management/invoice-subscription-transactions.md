@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4483f5bc265149f70cfbea3e63152d63205c1225
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b6ff62d5f1cb3695520f9ac0696d8b9bcedb1a6b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674862"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017311"
 ---
 # <a name="invoice-subscription-transactions"></a>Transakce faktur odběru 
 
@@ -28,7 +28,7 @@ ms.locfileid: "8674862"
 
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Všechny servisní zakázky**.
+1.  Klikněte na uzel **Správa služeb** \> **Servisní zakázky** \> **Všechny servisní zakázky**.
 
 2.  Vyberte předplatné služby a klepněte na možnost **Upravit** nebo **Předplatné** pro vytvoření předplatného služby.
 

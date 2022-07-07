@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873659"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016152"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry výroby v modulu Provádění výroby
 
@@ -63,7 +63,7 @@ Na stránce **Parametry výroby** je automatická spotřeba kusovníku nastavena
 
 Pro každou fázi můžete v poli **Automatická spotřeba kusovníku** vybrat jednu ze tří metod výběru položek pro výrobní zakázku:
 
-- **Princip vyprazdňování** – tato možnost se používá v kombinaci s možností definované v kusovníku v modulu **Výroba**. Klikněte na **Řízení výroby** &gt; **Společné** &gt; **výrobní zakázky** &gt; **Všechny výrobní zakázky**. Na stránce **Všechny výrobní zakázky** vyberte v seznamu výrobní zakázku a v podokně akcí klikněte na tlačítko **Kusovník**. Na stránce **Kusovník** na kartě **Nastavení** v poli **Princip vyprazdňování** vyberte některou z následujících možností:
+- **Princip vyprazdňování** – tato možnost se používá v kombinaci s možností definované v kusovníku v modulu **Výroba**. Klikněte na **Řízení výroby** &gt; **Výrobní zakázky** &gt; **Všechny výrobní zakázky**. Na stránce **Všechny výrobní zakázky** vyberte v seznamu výrobní zakázku a v podokně akcí klikněte na tlačítko **Kusovník**. Na stránce **Kusovník** na kartě **Nastavení** v poli **Princip vyprazdňování** vyberte některou z následujících možností:
 
   - **Spustit**
   - **Dokončit**

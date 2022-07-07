@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850547"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015399"
 ---
 # <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
 
@@ -43,20 +43,20 @@ Překlad informací o produktu můžete zobrazit v jakémkoli externím zdrojov�
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Další informace naleznete v tématu Vytvoření překladů pro informace související s produktem.
 Při vytváření překladů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+1.  Klikněte na možnosti **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty**.
 2.  Vyberte produkt a v podokně akcí ve skupině **Jazyky** klikněte na **Překlady**.
 3.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
 4.  Ve skupině **Přeložený text** Zadejte překlad do polí **Popis** d **Název produktu**.
 
 Při vytváření překladů atributů produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+1.  Klikněte na možnosti **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty**.
 2.  Ve skupinovém rámečku **Nastavení** klepněte na tlačítko **Atributy** a klepněte na tlačítko **Atributy**.
 3.  Na stránce **Atributy** klepněte na **Přeložit**.
 4.  Na stránce **Překlad textu** v poli **Jazyk** vyberte jazyk. Pokud chcete přidat více jazyků, rozbalte pole **Jazyk** a klikněte na **OK**.
 5.  Ve skupině **Přeložený text** napište překlady do polí **Popis**, **Popisný název** a **Text nápovědy**.
 
 Při vytváření překladů hodnot dimenze produktu postupujte takto:
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Uvolněné produkty**.
+1.  Klikněte na možnosti **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty**.
 2.  Vyberte produkt a klepněte na možnost **Rozměry produktu**.
 3.  Vyberte jeden z odkazů pro dimenze produktu: **Konfigurace**, **Velikosti**, **Barvy** nebo **Styl**.
 4.  Vyberte hodnotu dimenze a poté klikněte na položku **Přeložit**.

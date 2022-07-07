@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ff01a8c4ed5fb8372ff7b498d0febdcd2f1e89
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f4942e455350844ac5614e70fef21b37461540a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672759"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017282"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrace příjmu vrácených položek 
 
@@ -87,7 +87,7 @@ Lze použít formulář **Přehled doručení** k identifikaci vrácené dodávk
 
 Jako alternativu k použití formuláře **Přehled doručení** můžete použít formulář **Registrace** pro registraci doručení vráceného zboží.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**. Vytvořte novou objednávku vratky nebo otevřete objednávku vratky ze seznamu. Na pevné záložce **Řádky** vyberte řádek vratky. Klikněte na **Aktualizovat řádek** a potom na **Registrace**.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní vratky** \> **Všechny objednávky vratky**. Vytvořte novou objednávku vratky nebo otevřete objednávku vratky ze seznamu. Na pevné záložce **Řádky** vyberte řádek vratky. Klikněte na **Aktualizovat řádek** a potom na **Registrace**.
 
 2.  Přiřaďte kód dispozice v poli **Kód dispozice** a potom klikněte na tlačítko **OK**.
     

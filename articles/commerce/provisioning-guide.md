@@ -1,8 +1,8 @@
 ---
-title: Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
-description: Tento článek vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
+title: Zřízení sandboxového prostředí Dynamics 365 Commerce
+description: Tento článek vysvětluje, jak zřídit sandboxové prostředí Microsoft Dynamics 365 Commerce pro ukázku nebo použití sandboxu s vestavěnými ukázkovými daty.
 author: psimolin
-ms.date: 12/17/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,138 +15,64 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ada30fc9d86d236b71d018ef77f2ae8573f2285
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868902"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013127"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
+# <a name="provision-a-dynamics-365-commerce-sandbox-environment"></a>Zřízení sandboxového prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tento článek vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak zřídit sandboxové prostředí Microsoft Dynamics 365 Commerce pro ukázku použití s vestavěnými ukázkovými daty. Proces nastavení produkčního prostředí je podobný, ale propracovanější, protože mnohé z předpokladů prostředí sandbox jsou již uvedeny v demo datech.
 
 Než začnete, doporučujeme vám tento článek rychle prohledat, abyste získali představu o tom, co proces vyžaduje.
 
-> [!NOTE]
-> Prostředí vyhodnocení Commerce nejsou obecně dostupná a jsou poskytována partnerům a zákazníkům na základě žádosti. Podrobnější informace získáte od kontaktu společnosti Microsoft.
+Chcete-li úspěšně zřídit prostředí Commerce sandbox, musíte zadat některé parametry pro prostředí a Commerce Scale Unit (CSU), které budou použity při pozdějším zřízení Commerce. Pokyny v tomto článku popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 
-Chcete-li úspěšně zřídit prostředí pro hodnocení Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít, když se chystáte ke zřizování e-Commerce později. Pokyny v tomto článku popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
+Po úspěšném zřízení prostředí Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete používat. Volitelné kroky můžete vždy dokončit později.
 
-Po úspěšném zřízení prostředí vyhodnocení Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete vyhodnotit. Volitelné kroky můžete vždy dokončit později.
-
-Informace o konfiguraci prostředí vyhodnocení Commerce po jeho vytvoření najdete v části [konfigurace prostředí vyhodnocení Commerce](cpe-post-provisioning.md). Informace o konfiguraci volitelných funkcí prostředí vyhodnocení Commerce najdete v části [konfigurace volitelných funkcí prostředí vyhodnocení Commerce](cpe-optional-features.md).
+Informace o konfiguraci prostředí Commerce po jeho vytvoření najdete v části [konfigurace sandboxového prostředí Commerce](cpe-post-provisioning.md). Informace o konfiguraci volitelných funkcí prostředí Commerce najdete v části [konfigurace volitelných funkcí sandboxového prostředí Commerce](cpe-optional-features.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Aby bylo možné zřídit prostředí vyhodnocení Commerce, musí být zavedeny následující předpoklady:
+Aby bylo možné zřídit prostředí Commerce, musí být zavedeny následující předpoklady:
 
-- Byli jste přijati do programu hodnocení a byla vám udělena kapacita pro prostředí hodnocení.
 - Máte přístup k portálu Microsoft Dynamics Lifecycle Services (LCS).
-- Jste stávajícím partnerem Microsoft Dynamics 365 nebo odběratelem a máte možnost vytvořit projekt Dynamics 365 Commerce.
-- Máte přístup správce k vašemu předplatnému Microsoft Azure nebo jste v kontaktu se správcem předplatného, který vám může v případě potřeby pomoci.
-- Máte k dispozici ID klienta Azure Active Directory (Azure AD).
-- Vytvořili jste Skupinu zabezpečení Azure AD, kterou lze použít jako skupinu správců systému e-Commerce a máte k dispozici její ID.
-- Vytvořili jste skupinu zabezpečení Azure AD, kterou lze použít jako skupinu pro moderátory hodnocení a recenzí a máte k dispozici její ID. (Tato skupina zabezpečení může být shodná se skupinou správců systému e-commerce.)
+- Jste existující partner Microsoft Dynamics 365 nebo zákazník a máte již vytvořený implementační projekt a dostupný pro použití v LCS.  
+- Vytvořili jste skupinu zabezpečení Azure Active Directory (Azure AD), kterou lze použít jako skupinu správců systému e-Commerce a máte k dispozici její ID.
+- Vytvořili jste skupinu zabezpečení Azure AD, kterou lze použít jako skupinu pro moderátory hodnocení a recenzí a máte k dispozici její ID. (Tato skupina zabezpečení může být shodná se skupinou správců systému Commerce.)
+- Nasadili jste instanci centrály v rámci LCS. Další informace viz [Nasazení nového prostředí](/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure).
 
 Tento seznam není vyčerpávající. Pokud se objeví nějaké problémy, měli byste se obrátit na svého partnera společnosti Microsoft s žádostí o pomoc.
 
-## <a name="provision-your-commerce-evaluation-environment"></a>Zřizování prostředí vyhodnocení služby Commerce
+## <a name="provision-your-commerce-environment"></a>Zřizování prostředí služby Commerce
 
-Tyto postupy vysvětlují, jak zřídit prostředí vyhodnocení Commerce. Po úspěšném dokončení těchto nastavení bude prostředí vyhodnocení Commerce připraveno na konfiguraci. Všechny popsané aktivity se objeví na portálu LCS.
-
-### <a name="create-a-new-project"></a>Vytvořit nový projekt
-
-Chcete-li vytvořit nový projekt LCS pro projekt, postupujte následovně.
-
-1. Na domovské stránce LCS vyberte znaménko plus (**+**) pro vytvoření projektu.
-1. V pravém podokně proveďte jeden z následujících kroků:
-
-    - Pokud jste partnerem, zvolte možnost **Migrovat, vytvořit řešení a získat informace**.
-    - Pokud jste odběratel, vyberte možnost **Potenciální předprodeje**.
-
-1. Zadat název a popis šablony a odvětví.
-1. V poli **Název produktu** vyberte **Dynamics 365 Commerce**.
-1. V poli **Verze produktu** vyberte **Dynamics 365 Commerce**.
-1. V poli **Metodologie** vyberte **Metodologie implementace Dynamics Retail**.
-1. Volitelné: Můžete importovat role a uživatele z existujícího projektu.
-1. Vyberte **Vytvořit**. Zobrazí se projekt.
-
-### <a name="add-the-azure-connector"></a>Přidejte konektor Azure
-
-Chcete-li přidat Azure Connector do svého projektu LCS, postupujte podle kroků v části [Dokončení procesu integrace Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
-
-### <a name="deploy-the-environment"></a>Nasazení prostředí
-
-Pro nasazení prostředí postupujte takto.
-
-> [!NOTE]
-> Je možné, že nebudete muset dokončit kroky 6, 7 a/nebo 8, protože stránky, které mají jedinou možnost, jsou přeskočeny. V zobrazení **Parametry prostředí** potvrďte, že se text **Dynamics 365 Commerce - ukázka (10.0.* x* s aktualizací Platform *xx*)** zobrazuje přímo nad polem **Název prostředí**. Podrobnosti viz obrázek, který se zobrazí po kroku 8.
-
-1. V horní nabídce vyberte možnost **Prostředí hostovaná v cloudu**.
-1. Prostředí přidáte výběrem tlačítka **Přidat**.
-1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.14**.
-1. V poli **verze platformy** použijte verzi platformy, která je automaticky vybrána pro vybranou verzi aplikace. 
-
-    ![Výběr verze aplikace a platformy.](./media/project1.png)
-
-1. Zvolte **Další**.
-1. Výberte **Demo** jako topologii prostředí.
-
-    ![Výběr topologie prostředí 1.](./media/project2.png)
-
-1. Na stránce **Nasadit prostředí** zadejte název prostředí. Ponechte Upřesňující nastavení, jak je.
-
-    ![Stránka Nasazení prostředí.](./media/project4.png)
-
-1. Upravte velikost VM podle potřeby. (Doporučujeme skladovou jednotku VM \[SKU\] **D13 v2**.)
-1. Zkontrolujte ceny a licenční podmínky a pak zaškrtnutím políčka označte, že s nimi souhlasíte.
-1. Zvolte **Další**.
-1. Na stráncee s potvrzením nasazení ověřte správnost podrobností klikněte vyberte **Nasadit**. Vrátíte se do zobrazení **Prostředí hostovaná v cloudu** a v seznamu se zobrazí vaše prostředí.
-
-    Požadované prostředí bude zobrazeno jako zařazeno do fronty a potom nasazeno. Dokončení pracovních postupů prostředí bude trvat určitou dobu. Proto se vraťte přibližně za 6 až 9 hodin.
-
-1. Než budete pokračovat, ujistěte se, že je stav prostředí **Nasazený**.
+Následující postupy vysvětlují, jak zřídit prostředí Commerce. Po úspěšném dokončení těchto kroků bude prostředí Commerce připraveno na konfiguraci. Všechny níže popsané kroky se uskuteční na portálu LCS.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Inicializace Commerce Scale Unit (cloud)
 
 Pokud chcete inicializovat CSU, postupujte takto.
 
-1. V zobrazení **Prostředí hostovaná v cloudu** vyberte v seznamu požadované prostředí.
-1. V zobrazení prostředí napraco vyberte **úplné podrobnosti**. Zobrazí se podrobnosti o prostředí.
-1. V části **Funkce prostředí** vyberte **Spravovat**.
-1. Na kartě **Velkoobchod** vyberte **Inicializovat**. Zobrazí se zobrazení inicializačních parametrů CSU.
-1. V poli **Oblast** vyberte oblast, která je stejná nebo blízká oblasti, do které jste prostředí nasadili.
-1. Nechte pole **Verze** tak, jak je.
+1. V LCS vyberte své prostředí ze seznamu.
+1. V zobrazení **PROSTŘEDÍ** napraco vyberte **Úplné podrobnosti**. Zobrazí se podrobnosti o prostředí.
+1. V sekci **Spravovat prostředí** pod **VLASTNOSTI PROSTŘEDÍ** vyberte **Spravovat**.
+1. Na kartě **Commerce Scale Units** vyberte **Inicializovat**. Zobrazí se pohled **Přidat jednotku škálování**.
+1. V poli **OBLAST** vyberte oblast, která je stejná nebo blízká oblasti, do které jste prostředí nasadili.
+1. V rozevíracím seznamu **Verze** vyberte nejnovější dostupnou verzi.
 1. Vyberte **Inicializovat**.
-1. Na stráncee s potvrzením nasazení ověřte správnost podrobností klikněte vyberte **Ano**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **Commerce**. Vaše CSU byla zařazena do fronty pro zřizování.
-1. Než budete pokračovat, ujistěte se, že je stav CSU **Úspěch**. Inicializace trvá přibližně dvě až pět hodin.
+1. V dialogovém okně varování, které vás požádá o potvrzení inicializace jednotky Commerce Scale Unit, vyberte **Ano**. Vaše CSU byla nyní zařazena do fronty pro zřizování.
+1. Než budete pokračovat, ujistěte se, že je stav CSU **ÚSPĚCH**. Inicializace trvá přibližně dvě až pět hodin.
 
 Pokud nemůžete najít odkaz **Správa** odkaz v zobrazení podrobností o prostředí, požádejte o pomoc kontaktní osobu společnosti Microsoft.
 
-Při počátečním zpracování se může zobrazit následující chybová zpráva:
-
-> Vyhodnocovací (demo/testovací) prostředí musí registrovat aplikaci konektoru jednotky škálování \<application ID\> v centrále.
-
-Pokud se inicializace CSU nezdaří a zobrazí se tato chybová zpráva, poznamenejte si ID aplikace, což je globálně jedinečný identifikátor (GUID), a poté podle pokynů v další části zaregistrujte aplikaci nasazení CSU v centrále Commerce.
-
-### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Zaregistrujte aplikaci nasazení CSU v obchodním ústředí (je-li požadováno)
-
-Chcete-li zaregistrovat aplikaci nasazení CSU v obchodním ústředí, postupujte takto.
-
-1. V centrále Commerce přejděte na **Správa systému \> Nastavení \> Aplikace Azure Active Directory**.
-1. Ve sloupci **ID klienta** zadejte ID aplikace z chybové zprávy inicializace CSU, kterou jste obdrželi.
-1. Ve sloupci **Název** zadejte libovolný popisný text (například **CSU Eval**).
-1. Ve sloupci **ID uživatele** zadejte **RetailServiceAccount**.
-1. Opakujte inicializaci a nasazení CSU z LCS.
-
 ### <a name="initialize-e-commerce"></a>Inicializace e-Commerce
 
-Pokud chcete inicializovat e-Commerce, postupujte takto.
+Pokud chcete inicializovat Commerce, postupujte takto.
 
-1. Na kartě **e-Commerce** zkontrolujte souhlas s vyhodnocením a pak vyberte **Nastavení**.
+1. Na kartě **Elektronické obchodování** vyberte možnost **Nastavení.**
 1. V poli **Název prostředí e-Commerce** zadejte název. Uvědomte, že název bude viditelný u některých adres URL, které odkazují na vaši instanci e-Commerce.
 1. V poli **Název Commerce Scale Unit** vyberte položku CSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
 
@@ -158,7 +84,7 @@ Pokud chcete inicializovat e-Commerce, postupujte takto.
 1.  V poli **Skupina zabezpečení AAD pro moderátora hodnocení a recenzování** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít, a poté zobrazte výsledky hledání výběrem symbolu lupy. V seznamu vyberte správnou skupinu zabezpečení.
 1. Možnost **Povolit službu hodnocení a recenzování** nechte nastavenou na hodnotu **Ano**.
 1. Vyberte **Inicializovat**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **e-Commerce**. Vaše inicializace e-Commerce byla zahájena.
-1. Než budete pokračovat, počkejte, dokud nebude inicializační stav e-Commerce **Inicializace úspěšná**.
+1. Než budete pokračovat, počkejte, dokud nebude inicializační stav Commerce **INICIALIZACE ÚSPĚŠNÁ**.
 1. V **Odkazech** v pravém dolním roku si poznamenejte adresy URL následujících odkazů:
 
     * **Web e-Commerce** – odkaz na kořenový adresář webu e-Commerce.
@@ -166,19 +92,15 @@ Pokud chcete inicializovat e-Commerce, postupujte takto.
 
 ## <a name="next-steps"></a>Další kroky
 
-Chcete-li pokračovat v procesu zřizování a konfigurace prostředí vyhodnocení Commerce, přečtěte si část [Konfigurace prostředí pro náhled Commerce](cpe-post-provisioning.md).
+Chcete-li pokračovat v procesu zřizování a konfigurace prostředí Commerce, viz [Konfigurace sandboxového prostředí Commerce](cpe-post-provisioning.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled prostředí vyhodnocení Dynamics 365 Commerce](cpe-overview.md)
+[Konfigurace sandboxového prostředí Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurace prostředí vyhodnocení Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurace BOPIS v sandboxovém prostředí Dynamics 365 Commerce](cpe-bopis.md)
 
-[Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](cpe-bopis.md)
-
-[Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
-
-[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace volitelných funkcí pro sandboxové prostředí Dynamics 365 Commerce](cpe-optional-features.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e75ed6e30ece1f4807ff036d831c269774d941a7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 228b76d6f6f0bb048662c8e82df76f51b7cb3652
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670965"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017369"
 ---
 # <a name="cancel-service-orders"></a>Zrušit servisní zakázky   
 
@@ -36,11 +36,11 @@ Servisní zakázku nebo řádek servisní zakázky můžete zrušit z dané serv
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Zrušení servisní zakázky ve formuláři Servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**. Vyberte webovou servisní zakázku a v podokně akcí klikněte na **Zrušit objednávku**.
+1.  Klikněte na **Řízení služeb** \> **Servisní zakázky** \> **Servisní zakázky**. Vyberte webovou servisní zakázku a v podokně akcí klikněte na **Zrušit objednávku**.
 
 ## <a name="cancel-a-service-order-line"></a>Zrušení řádku servisní zakázky
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**. V dolním podokně dvakrát klikněte na řádek servisní zakázky, který chcete zrušit.
+1.  Klikněte na **Řízení služeb** \> **Servisní zakázky** \> **Servisní zakázky**. V dolním podokně dvakrát klikněte na řádek servisní zakázky, který chcete zrušit.
 
 2.  Vyberte řádek servisní zakázky, kterou chcete zrušit, a klepněte na tlačítko **Zrušit řádek objednávky** ke změně stavu řádku na **zrušeno**.
 

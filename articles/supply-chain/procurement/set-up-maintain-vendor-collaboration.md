@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890821"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023753"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Nastavení a správa dodavatelské spolupráce
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890821"
 Rozhraní pro spolupráci s dodavateli nabízí omezené informace o nákupních objednávkách, fakturách a skladových zásobách pro uživatele externích dodavatelů. Z tohoto rozhraní může dodavatel také odpovídat na žádosti o cenovou nabídku (RFQ) a zobrazovat a upravovat základní informace o společnosti.
 
 Tento článek vysvětluje, jak nastavit spolupráci dodavatele v Dynamics 365 Supply Chain Management. Vysvětluje také, jak nastavit pracovní postup ke zřízení nových uživatelů pro spolupráci s dodavateli a jak spravovat role zabezpečení pro tyto uživatele.
-
-> [!NOTE]
-> Informace o nastavení rolí zabezpečení pro spolupráci s dodavateli platí pouze pro aktuální verzi Finance and Operations. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o uživatelských oprávněních pro portál dodavatele v Microsoft Dynamics AX viz [Zabezpečení uživatele portálu dodavatele](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Nastavení rolí zabezpečení dodavatelské spolupráce
 
@@ -138,13 +135,7 @@ Vytvořte pracovní postup typu **Deaktivovat platformu pracovního postupu pož
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Aktivace spolupráce pro konkrétního dodavatele
 
-Před vytvořením uživatelského účtu pro někoho, kdo bude používat spolupráci dodavatele, musíte nastavit dodavatele, aby mohl používat dodavatelskou spolupráci. Na stránce **Dodavatelé** na kartě **Obecné** nastavte pole **Aktivace spolupráce**. Existují tyto možnosti:
-
-- **Aktivní (nákupní objednávky je automaticky potvrzena)** – nákupní objednávky se automaticky potvrzují poté, co je dodavatel přijme beze změn.
-- **Aktivní (nákupní objednávka není automaticky potvrzena)** – nákupní objednávky musí být ručně potvrzeny vaší organizací poté, co je dodavatel přijal.
-
-> [!NOTE]
-> Tento úkol mohou splnit i odborníci na nákup ve vaší společnosti.
+Před vytvořením uživatelského účtu pro někoho, kdo bude používat spolupráci dodavatele, musíte nastavit dodavatele, aby mohl používat dodavatelskou spolupráci. Další informace o tom, jak to provést, naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Odstraňování problémů s poskytováním nových uživatelů spolupráce s dodavateli
 

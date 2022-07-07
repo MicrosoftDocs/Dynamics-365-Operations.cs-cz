@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4424ebbf64ccdcb9bffc840520952ac915606209
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890937"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015486"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Výpočty pro modely konfigurace produktu - často kladené dotazy
 
@@ -73,7 +73,7 @@ Můžete přepsat hodnotu, která byla vypočtena pro cílový atribut, ledaže 
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Jak nastavím cílový atribut jako skrytý nebo jen pro čtení?
 Pokud chcete nastavit atribut jako skrytý nebo jen pro čtení, postupujte takto.
 
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu**.
+1.  Klikněte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Modely konfigurace produktu**.
 2.  Vyberte model konfigurace produktu a klepněte na panelu akcí na **Upravit**.
 3.  Na stránce **Podrobnosti modelu produktu s konfigurací založenou na omezeních** vyberte atribut, který má být použit jako cílový atribut.
 4.  Na pevné záložce **Atributy** vyberte **Skrytý** nebo **Jen pro čtení**.
@@ -96,7 +96,7 @@ Tato zpráva se zobrazí, když výpočet obsahuje chybu nebo v jedné nebo víc
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Proč se zobrazila chybová zpráva i v případě, že tento model výrobku byl úspěšně ověřen?
 Výpočty nejsou zahrnuty do ověření. Je nutné vyzkoušet model konfigurace produktu pro nalezení chyb při výpočtech. Následující postup umožňuje otestovat model konfigurace produktu.
 
-1.  Klikněte na **Řízení informací o produktech** &gt; **Společné** &gt; **Modely konfigurace produktu**.
+1.  Klikněte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Modely konfigurace produktu**.
 2.  Vyberte model konfigurace produktu a klepněte na panelu akcí ve skupině **Spustit** klikněte na **Test**.
 
 

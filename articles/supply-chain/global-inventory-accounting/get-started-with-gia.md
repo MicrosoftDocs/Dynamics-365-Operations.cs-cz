@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891082"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013548"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Začínáme s modulem Globální účetnictví zásob
 
@@ -69,37 +69,6 @@ Než budete moci povolit funkce doplňku, musíte jej integrovat s Microsoft Pow
 
 Další informace naleznete v tématu [Aktivace po nasazení prostředí](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Nastavit Dataverse
-
-Před nastavením Dataverse přidejte principy služby Globální účetnictví zásob do svého klienta podle těchto kroků.
-
-1. Nainstalujte Modul Azure AD pro Windows PowerShell v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-1. Spusťte následující příkaz PowerShellu:
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Dále vytvořte uživatele aplikace pro globální účetnictví zásob v Dataverse provedením těchto kroků.
-
-1. Otevřete adresu URL svého prostředí Dataverse.
-1. Přejděte do uzlu **Pokročilá nastavení \> Systém \> Zabezpečení \> Uživatelé** a vytvořte uživatele aplikace. Pomocí pole **Zobrazit** změňte zobrazení stránky na *Uživatelé aplikace*.
-1. Zvolte **Nové**.
-1. Nastavte pole **ID aplikace** na *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Vyberte příkaz **Přiřadit roli** a potom vyberte *Správce systému*. Pokud existuje role, která je pojmenována *Uživatel Common Data Service*, vyberte ji také.
-1. Opakujte předchozí kroky, ale nastavte pole **ID aplikace** na *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-Další informace naleznete v tématu [Vytvoření uživatele aplikace](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Pokud výchozí jazyk vaší instalace Dataverse není angličtina, postupujte podle těchto kroků.
-
-1. Přejděte do **Pokročilé nastavení \> Správa \> Jazyky**.
-1. Vyberte *Angličtina* (*LanguageCode = 1033*) a vyberte **Použít**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Instalace doplňku
 
 Podle těchto pokynů nainstalujte doplněk, abyste mohli používat Globální účetnictví zásob.
@@ -109,11 +78,21 @@ Podle těchto pokynů nainstalujte doplněk, abyste mohli používat Globální 
 1. Přejděte na **Úplné podrobnosti**.
 1. Přejděte na **Integrace Power Platform** a vyberte **Nastavit**.
 1. V dialogovém okně **Nastavení prostředí Power Platform** zaškrtněte políčko a poté vyberte **Založit**. Nastavení obvykle trvá 60 až 90 minut.
-1. Po nastavení prostředí Microsoft Power Platform na pevné záložce **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
+1. Po nastavení prostředí Microsoft Power Platform se přihlaste do [Centra pro správu Power Platform](https://admin.powerplatform.microsoft.com) a poté nainstalujte doplněk Global Inventory Accounting provedením následujících kroků:
+   1. Vyberte prostředí, do kterého chcete doplněk nainstalovat.
+   1. Vyberte **Aplikace Dynamics 365**.
+   1. Vyberte **Nainstalovat aplikaci**.
+   1. Vyberte **Globální účetnictví zásob Dynamics 365**.
+   1. Instalujte výběrem tlačítka **Další**.
+1. Přejděte zpět do prostředí LCS. Na pevné záložce **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
 1. Vyberte **Globální účetnictví zásob**.
 1. Postupujte podle pokynů instalační příručky a vyjádřete souhlas s podmínkami a ujednáními.
 1. Vyberte **Instalovat**.
 1. Na záložce s náhledem **Doplňky prostředí** byste měli vidět, že je instalována služba Globální účetnictví zásob. Po několika minutách by se stav měl změnit z *Probíhá instalace* na *Nainstalováno*. (Tato změna se může projevit až po aktualizaci stránky.) V tomto okamžiku je Globální účetnictví zásob připraveno k použití.
+
+Pokud výchozí jazyk vaší instalace Dataverse není angličtina, postupujte podle těchto kroků:
+1. Přejděte do **Pokročilé nastavení \> Správa \> Jazyky**.
+1. Vyberte *Angličtina* (*LanguageCode = 1033*) a vyberte **Použít**.
 
 ## <a name="set-up-the-integration"></a>Nastavení integrace
 

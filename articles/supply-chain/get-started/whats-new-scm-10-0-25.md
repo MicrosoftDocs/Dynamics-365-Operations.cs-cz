@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850779"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.25 (duben 2022)
 
@@ -155,7 +155,7 @@ Tabulka také uvádí funkce, které byly dříve ve veřejném preview, ale zm�
 | Řízení skladu | [Odložené zpracování ruční operace přesunu zásob](../warehousing/deferred-processing-manual-inventory-movement.md) | Povinné |
 | Řízení skladu | Nepovolujte vytváření nákladů, které nesplňují požadavky šablony sestavení vytížení vlny | Povinné |
 | Řízení skladu | [Vylepšené rozvržení popisků registračních značek](../warehousing/document-routing-layout-for-license-plates.md) | Povinné |
-| Řízení skladu | [Vyhodnocení všech akcí pro směrnice umístění více SKU](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Povinné |
+| Řízení skladu | [Vyhodnocení všech akcí pro směrnice umístění více SKU](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Povinné |
 | Řízení skladu | Skrýt pole Celková hodnota na stránkách Všechny náklady a Podrobnosti o nákladu | Povinné |
 | Řízení skladu | Konfigurace sestavení popisků registračních značek | Povinné |
 | Řízení skladu | Ruční oprava řádku vytížení pro správce nebo podobné důvěryhodné uživatele | Povinné |

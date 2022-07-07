@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897683"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016471"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktivity prostoje údržby
 
@@ -38,14 +38,14 @@ Pokud byly při registraci prostojů údržby vybrány položky majetku, do regi
 
 ## <a name="maintenance-downtime-activities"></a>Aktivity prostoje údržby
 
-Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** otevřete seznam všech aktivit prostojů údržby a prohlédněte si některé informace související s aktivitami. Kliknutím na odkaz ve sloupci **Aktivity prostojů údržby** otevřete podrobné zobrazení. Následující ilustrace znázorňuje příklad stránky **Aktivity prostoje údržby**.
+Kliknutím na položky **Správa majetku** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** otevřete seznam všech aktivit prostojů údržby a prohlédněte si některé informace související s aktivitami. Kliknutím na odkaz ve sloupci **Aktivity prostojů údržby** otevřete podrobné zobrazení. Následující ilustrace znázorňuje příklad stránky **Aktivity prostoje údržby**.
 
 ![Obrázek č. 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Vytvoření aktivity prostoje údržby
 
-1. Klikněte na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** nebo **Aktivní aktivity prostojů údržby**.
+1. Klikněte na položky **Správa majetku** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** nebo **Aktivní aktivity prostojů údržby**.
 
 2. Klepněte na možnost **Nový**.
 

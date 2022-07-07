@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4d9424b5678a6f37d46203e5d4e359b020fda7a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890647"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016907"
 ---
 # <a name="create-service-object-relations"></a>Vytvoření vztahů předmětů servisu 
 
@@ -33,7 +33,7 @@ Tento článek popisuje postup vytvoření vztahů předmětů servisu pro servi
 
 Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro servisní smlouvu:
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  V seznamu **Servisní smlouvy** vyberte existující servisní smlouvu nebo klepněte na tlačítko **Nová** a vytvořte novou servisní smlouvu.
 
@@ -47,7 +47,7 @@ Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro 
 
 Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro servisní objednávku:
 
-1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na **Řízení služeb** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  V seznamu **Servisní zakázky** vyberte existující servisní zakázku nebo vytvořte novou zakázku.
 

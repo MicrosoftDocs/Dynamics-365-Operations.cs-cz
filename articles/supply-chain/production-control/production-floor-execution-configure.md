@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899404"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022557"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -113,9 +113,6 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 ### <a name="enable-the-my-day-dialog"></a>Povolení dialogového okna „Můj den“
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Dialogové ono **Můj den** poskytuje pracovníkům přehled jejich denních registracích a aktuálních zůstatcích za placenou dobu, placené přesčasy, nepřítomnost a placenou nepřítomnost.
 
 Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 ### <a name="enable-teams"></a>Povolení týmů
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Když je ke stejné výrobní úloze přiděleno více pracovníků, mohou vytvořit tým. Tým může nominovat jednoho pracovníka jako pilota. Zbývající pracovníci se pak automaticky stanou asistenty tohoto pilota. Pro výsledný tým musí stav úlohy zaregistrovat pouze pilot. Časové záznamy platí pro všechny členy týmu.
 
 Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 - *Produkční týmy v rozhraní pro provádění výrobního provozu*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Povolení další konfigurace v rozhraní pro provedení výrobního provozu
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Tato funkce přidává nastavení pro následující funkce na stránce **Konfigurace provádění výrobního provozu**:
 

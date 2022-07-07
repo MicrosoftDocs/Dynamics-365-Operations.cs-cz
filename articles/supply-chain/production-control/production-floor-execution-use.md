@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860660"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022497"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -263,9 +263,6 @@ Pracovník zaregistruje přestávku výběrem **Přestávka** a poté vyberte ka
 
 ## <a name="view-the-my-day-dialog"></a>Zobrazení dialogového okna „Můj den“
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Dialogové okno **Můj den** poskytuje pracovníkům přehled jejich registrací a zůstatků. Dialog je rozdělen do následujících tří částí:
 
 - V hlavní části jsou uvedeny registrace, které aktuální pracovník provedl ke zvolenému datu. Otevře se s registracemi pro aktuální den a poskytuje výběr data, který umožňuje pracovníkovi zobrazit další dny.
@@ -275,9 +272,6 @@ Dialogové okno **Můj den** poskytuje pracovníkům přehled jejich registrací
 Správci mohou přidat tuto funkci do rozhraní umístěním tlačítka **Můj den** na panel nástrojů pro každou relevantní kartu, jak je popsáno v části [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Práce v týmech
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Když je ke stejné výrobní úloze přiděleno více pracovníků, mohou vytvořit tým. Tým může nominovat jednoho pracovníka jako pilota. Zbývající pracovníci se pak automaticky stanou asistenty tohoto pilota. Pro výsledný tým musí stav úlohy zaregistrovat pouze pilot. Časové záznamy platí pro všechny členy týmu.
 

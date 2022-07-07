@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945716"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954656"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20250"></a>Verze 2.0.25.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Zvýšený výkon.
+- Zvýšená stabilita.
+- Vylepšená stránka **Dotaz** pro podporu delších textů v podnadpisech.
+- Zavedena možnost okamžitého zrušení toku jediným klepnutím nebo kliknutím (když je **Zrušení** jedinou dostupnou akcí ve **Více akcí**).
+- Opraven problém, kdy mohlo někdy dojít ke ztrátě fokusu mezi ovládacími prvky záznamu na stránce **Upravit připojení** a vlastních stránkách.
+- Opraven problém, kdy tlačítka někdy přestala reagovat a zůstala zobrazena jako vybraná, když byla zahrnuta v rolovacím zobrazení.
+- Opraven problém, kdy mohlo být někdy na hlavní stránce použito nesprávné rozvržení.
 
 ## <a name="version-20240"></a>Verze 2.0.24.0
 

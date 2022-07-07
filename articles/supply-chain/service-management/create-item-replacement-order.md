@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57bbb8eb638b990914dc00f9700ff0c1925c48852862b02e09f3f26415d3e347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 14751fb0e0632ca986d6eddf55c93d44fbd68276
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745495"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015457"
 ---
 # <a name="create-an-item-replacement-order"></a>Vytvoření objednávky náhrady položky 
 
@@ -31,7 +31,7 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
 
 ## <a name="create-a-replacement-order-after-you-receive-an-item-that-is-returned"></a>Vytvořit objednávku náhrady po přijetí vráceného zboží
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní vratky** \> **Všechny objednávky vratky**.
 
 2.  Vytvořte novou objednávku vratky nebo vyberte objednávku vratky ze seznamu a otevřete formulář **Vratka - číslo RMA: %1, %2**.
 
@@ -45,7 +45,7 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
 
 ## <a name="create-a-replacement-order-before-you-receive-an-item-that-will-be-returned"></a>Vytvoření objednávky náhrady dříve, než je přijata vracená položka
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní vratky** \> **Všechny objednávky vratky**.
 
 2.  Vytvořte novou vratku nebo vyberte vratku ze seznamu a otevřete formulář **Vratka - číslo RMA: %1, %2**.
 

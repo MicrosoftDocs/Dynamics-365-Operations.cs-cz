@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862301"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014713"
 ---
 # <a name="set-up-cluster-picking"></a>Nastavení vyzvedávání v seskupení
 
@@ -74,9 +74,14 @@ Při použití výdeje v seskupení je velmi důležité potvrzení položek k o
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Nastavení ověření položek s výdejem v seskupení
 
-1. V položce nabídky mobilního zařízení otevřete formulář nastavení pro potvrzení práce: **Řízení skladu** \> **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
+1. Přejděte do nabídky **Řízení skladu** > **Nastavení** > **Mobilní zařízení** > **Položky nabídky mobilního zařízení**.
+1. V podokně seznamů vyberte položku nabídky, kterou chcete nastavit.
+1. Vyberte **Nastavení potvrzení práce** v podokně Akce.
+1. Proveďte některou z následujících akcí:
+    - Pokud již existuje řádek pro **Typ práce**, který chcete nastavit, vyberte jej a poté vyberte **Upravit** v podokně akcí.
+    - Pokud vhodný řádek neexistuje, vyberte **Nový** v podokně akcí a poté nastavte **Typ práce** na příslušný typ.
+1. Označte zaškrtávací políčko **Potvrzení produktu** pro váš nový nebo vybraný řádek. To umožní pracovníkům ověřit jednotlivé skladové položky pomocí mobilního zařízení.
 
-1. Z položky nabídky mobilního zařízení otevřete **Nastavení potvrzení práce**. Možnost **Potvrzení produktu** umožňuje ověřit jednotlivé skladové položky z mobilního zařízení při naskenování.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

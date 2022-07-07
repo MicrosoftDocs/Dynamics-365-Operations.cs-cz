@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902075"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015020"
 ---
 # <a name="manually-created-work-orders"></a>Ručně vytvořené pracovní příkazy
 
@@ -34,7 +34,7 @@ Pracovní příkazy lze vytvořit ručně dvěma způsoby:
 
 ## <a name="create-work-order"></a>Vytvořit pracovní příkaz
 
-1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Zvolte **Nové**.
 
@@ -82,7 +82,7 @@ Mějte na paměti následující body:
 
 Můžete vytvořit pracovní příkaz na základě stávajícího pracovního příkazu. To je užitečné třeba v případě, že chcete registrovat primární a sekundární pracovní příkazy. Nový pracovní příkaz je založen na úloze pracovního příkazu z existujícího pracovního příkazu.
 
-1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, pro který chcete vytvořit související pracovní příkaz.
 
@@ -120,7 +120,7 @@ Na následujícím obrázku je uveden příklad dialogu **Vytvořit souvisejíc�
 
 Nový pracovní příkaz lze rychle vytvořit z existujícího pracovního příkazu. Tento postup práce s pracovními příkazy se liší od vytváření pracovních příkazů na základě [plánů údržby](../preventive-and-reactive-maintenance/maintenance-plans.md). To je užitečné například v případě, že máte pracovní příkaz obsahující mnoho úloh pracovního příkazu s různými úlohami v různých majetcích, které by měly být v pravidelných intervalech dokončeny.
 
-1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, ze kterého chcete kopírovat obsah.
 
@@ -142,7 +142,7 @@ Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat p
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Vytvoření pracovního příkazu na základě požadavku na údržbu
 
-1. Vyberte **Správa majetku** > **Společné** > **Požadavky na údržbu** > **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
+1. Vyberte **Správa majetku** > **Požadavky na údržbu** > **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
 
 2. Vyberte požadavek na údržbu, pro který chcete vytvořit pracovní příkaz, a klikněte na tlačítko **Upravit**.
 

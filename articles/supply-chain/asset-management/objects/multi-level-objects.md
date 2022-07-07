@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908765"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017138"
 ---
 # <a name="multi-level-assets"></a>Víceúrovňový majetek
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908765"
 
 Tento článek vysvětluje, jak vytvořit a odstranit víceúrovňové majetky. Majetek a související dílčí majetek můžete vytvořit v hierarchické stromové struktuře. Tímto způsobem můžete znázornit vztahy a závislosti mezi majetky. Úlohy údržby mohou souviset se všemi úrovněmi stromové struktury. Statistiky lze vytvořit také pro jednotlivou úroveň nebo jako součet všech úrovní dílčích majetků.
 
-Na stránce se seznamem **Všechen majetek** (**Správa majetku** \> **Obecné** \> **Majetek** \> **Všechen majetek**), sloupec **Majetek** zobrazuje seznam majetku v hierarchickém pořadí. Sloupec **Nadřazený** zobrazuje související nadřazený majetek. Pokud již byl majetek a dílčí majetek vytvořen, zobrazí se v části **Strom majetku** v podokně **Související informace** majetek ve stromové struktuře.
+Na stránce se seznamem **Všechen majetek** (**Správa majetku** \> **Majetek** \> **Všechen majetek**), sloupec **Majetek** zobrazuje seznam majetku v hierarchickém pořadí. Sloupec **Nadřazený** zobrazuje související nadřazený majetek. Pokud již byl majetek a dílčí majetek vytvořen, zobrazí se v části **Strom majetku** v podokně **Související informace** majetek ve stromové struktuře.
 
 Informace o způsobu vytvoření majetku naleznete v tématu [Vytvoření majetku](../objects/create-an-object.md). Chcete-li vytvořit dílčí majetek, vyberte nadřazený majetek v poli **Nadřazený** na záložce s náhledem **Obecné**.
 
@@ -38,7 +38,7 @@ Informace o způsobu vytvoření majetku naleznete v tématu [Vytvoření majetk
 
 Pokud má vaše společnost několik podobných struktur majetku, můžete je rychle vytvořit pomocí funkce Kopírovat ve správě majetku.
 
-1. Vyberte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek**.
+1. Vyberte **Správa majetku** \> **Majetek** \> **Všechen majetek**.
 2. Na stránce se seznamem **Všechen majetek** vyberte majetek, který chcete kopírovat. Chcete-li například zkopírovat celou strukturu majetku včetně dílčích majetků, vyberte nadřazený majetek.
 3. Vyberte **Kopírovat majetek**. V části **Kopírovat z** je pole **Majetek** nastaveno na majetek, který jste vybrali na stránce se seznamem.
 4. V části **Kopírovat do** zadejte do pole **Majetek** název nového majetku.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678227"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015252"
 ---
 # <a name="create-service-task-relations"></a>Vytvoření relací servisních úloh    
 
@@ -30,7 +30,7 @@ Servisní úlohy lze přidružit servisním smlouvám nebo servisním zakázkám
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Vytvoření relace se servisní smlouvou
 
-1.  Přejděte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Přejděte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Vyberte existující servisní smlouvu nebo vytvořte novou smlouvu.
 
@@ -48,7 +48,7 @@ Relace servisní úlohy vytvořená na servisní smlouvě je k dispozici ve vše
 
 ## <a name="create-a-relation-with-a-service-order"></a>Vytvoření relace se servisní zakázkou
 
-1.  Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Vyberte existující servisní zakázku nebo vytvořte novou zakázku.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879214"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015776"
 ---
 # <a name="functional-location-types"></a>Typy funkčního místa
 
@@ -57,7 +57,7 @@ Nyní je vytvořen výchozí typ funkčního místa, který se použije pouze na
 7. Pole **Typ majetku** se používá v případě, že chcete automaticky vytvořit *jeden* majetek pro funkční místo se stejným ID a názvem jako vytvářené funkční místo. To může být důležité například v případě, že vytvoříte statické funkční místo, například budovu nebo potrubí. V takovém případě vyberte typ majetku, který chcete použít pro automaticky vytvořený majetek. Mějte na paměti, že pokud v tomto poli provedete výběr, musí být přepínací tlačítko nastaven na **Více majetků**.
 8. Na záložce s náhledem **Typy majetku** vyberte typy majetku, které mají souviset s typem funkčního místa. Vyberte **Přidat řádek** a vyberte typy majetku. Pokud sem přidáte typy majetku, mohou být pomocí tohoto typu funkčního místa na funkčním místě nainstalovány pouze majetky používající tyto typy majetku. Pokud nejsou na záložce s náhledem **Typy majetku** zvoleny žádné typy majetku, mohou být nainstalovány všechny typy majetku.
 9. Na záložce s náhledem **Plány údržby** vyberte plány údržby, které mají být automaticky nastaveny na nových funkčních místech pomocí tohoto typu funkčního místa. Vyberte **Přidat řádek** a vyberte plány údržby. Přidáte-li sem plány údržby, lze použít pouze tyto plány na funkčním místě s použitím tohoto typu funkčního místa.
-10. Na záložce s náhledem **Požadavky na atributy majetku** nastavte atributy majetku, které mají být automaticky nastaveny na nových funkčních místech pomocí tohoto typu funkčního místa. Vyberte **Přidat řádek** a vyberte atribut. Tyto požadavky na atributy fungují jako pokyny. Nejsou ověřeny vůči atributům, které jsou nastaveny u majetku (**Správa majetku** > **Společné** > **Majetek** > **Všechen majetek** > zvolte majetek na stránce se seznamem, karta > **Obecné** > tlačítko **Atributy**). Požadavky na atributy se zobrazí při instalaci majetků na funkční místa.
+10. Na záložce s náhledem **Požadavky na atributy majetku** nastavte atributy majetku, které mají být automaticky nastaveny na nových funkčních místech pomocí tohoto typu funkčního místa. Vyberte **Přidat řádek** a vyberte atribut. Tyto požadavky na atributy fungují jako pokyny. Nejsou ověřeny vůči atributům, které jsou nastaveny u majetku (**Správa majetku** > **Majetek** > **Všechen majetek** > zvolte majetek na stránce se seznamem, karta > **Obecné** > tlačítko **Atributy**). Požadavky na atributy se zobrazí při instalaci majetků na funkční místa.
 11. Na záložce s náhledem **Povolené typy** vyberte typy funkčních míst, které by měly být platné pro dílčí typy funkčních míst související s nadřazeným typem funkčního místa, který používá vybraný typ funkčního místa.
 12. Na záložce s náhledem **Atributy** vyberte atributy funkčního místa, které mají být automaticky nastaveny na funkčních místech pomocí tohoto typu funkčního místa. Vyberte **Přidat řádek** a vyberte atribut.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874181"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015979"
 ---
 # <a name="introduction-to-assets"></a>Úvod do majetku
 
@@ -36,7 +36,7 @@ Majetek je automaticky aktualizován o související informace. Tyto informace m
 
 ## <a name="all-assets"></a>Všechen majetek
 
-Vyberte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek**. Na stránce se seznamem **Všechen majetek** je zobrazen veškerý majetek a některé informace, které s nimi souvisejí. Chcete-li zobrazit pouze aktivní majetek, vyberte **Aktivní majetek**. Chcete-li zobrazit pouze majetek, který je nainstalován na funkčních místech, se kterými jste spojeni jako pracovník údržby, vyberte **Můj aktivní majetek**. (Tento vztah je nastaven na stránce **Pracovníci**. Další informace naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
+Vyberte **Správa majetku** \> **Majetek** \> **Všechen majetek**. Na stránce se seznamem **Všechen majetek** je zobrazen veškerý majetek a některé informace, které s nimi souvisejí. Chcete-li zobrazit pouze aktivní majetek, vyberte **Aktivní majetek**. Chcete-li zobrazit pouze majetek, který je nainstalován na funkčních místech, se kterými jste spojeni jako pracovník údržby, vyberte **Můj aktivní majetek**. (Tento vztah je nastaven na stránce **Pracovníci**. Další informace naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
 
 V zobrazení mřížky **Všechen majetek** vyberte odkaz ve sloupci **Majetek**, chcete-li zobrazit podrobnosti o vybraném záznamu. Chcete-li záznam upravit, klikněte na tlačítko **Upravit**. V zobrazení podrobností jsou uvedeny podrobné informace vztahující se k danému majetku. Podokno **Související informace** vpravo obsahuje další informace související s majetkem. Rozbalením podokna zobrazíte související informace o vybraném majetku.
 

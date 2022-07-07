@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902824"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016703"
 ---
 # <a name="introduction-to-work-orders"></a>Úvod do pracovních příkazů
 
@@ -47,15 +47,15 @@ Pracovní příkazy lze vytvořit následujícími způsoby:
 
 ## <a name="all-work-orders"></a>Všechny pracovní příkazy
 
-Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** k otevření stránky se seznamem **Všechny pracovní příkazy**. Na této stránce jsou zobrazeny všechny pracovní příkazy a některé související informace.
+Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** k otevření stránky se seznamem **Všechny pracovní příkazy**. Na této stránce jsou zobrazeny všechny pracovní příkazy a některé související informace.
 
 Na následujícím obrázku je uveden stránky se seznamem **Všechny pracovní příkazy**.
 
 ![Obrázek č. 1.](media/01-work-orders.png)
 
-Chcete-li zobrazit seznam pouze aktivních pracovních příkazů, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Aktivní pracovní příkazy**. 
+Chcete-li zobrazit seznam pouze aktivních pracovních příkazů, vyberte **Správa majetku** > **Pracovní příkazy** > **Aktivní pracovní příkazy**. 
 
-Chcete-li zobrazit seznam úloh pracovního příkazu, které obsahují majetek instalovaný ve funkčních místech, s nimiž souvisíte jako pracovník, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Moje práce údržby pracovního příkazu funkčního místa**. (Vztah mezi pracovníky a funkčními místy je nastaven na stránce **Pracovníci**. Další informace naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
+Chcete-li zobrazit seznam úloh pracovního příkazu, které obsahují majetek instalovaný ve funkčních místech, s nimiž souvisíte jako pracovník, vyberte **Správa majetku** > **Pracovní příkazy** > **Moje práce údržby pracovního příkazu funkčního místa**. (Vztah mezi pracovníky a funkčními místy je nastaven na stránce **Pracovníci**. Další informace naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
 
 Zde je několik způsobů, jak můžete použít stránku **Všechny pracovní příkazy**:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678255"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014844"
 ---
 # <a name="create-service-orders-manually"></a>Ruční vytvoření servisních objednávek    
 
@@ -34,7 +34,7 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Ruční vytvoření servisní zakázky ze servisní smlouvy
 
-1.  Vyberte **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Vyberte **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Vyberte servisní smlouvu nebo vytvořte novou servisní smlouvu.
 
@@ -42,7 +42,7 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Ruční vytvoření servisní zakázky ve formuláři Servisní zakázky
 
-1.  Vyberte uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Vyberte **Správa služeb** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Výběrem možnosti **Nový** vytvoříte novou servisní zakázku.
 
@@ -53,7 +53,7 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 ## <a name="create-a-service-order-from-a-project"></a>Vytvoření servisní zakázky z projektu
 
-1.  Přejděte na **Řízení a účetnictví projektů** \> **Společné** \> **Projekty** \> **Všechny projekty**.
+1.  Přejděte na **Řízení projektu a účetnictví** \> **Projekty** \> **Všechny projekty**.
 
 2.  Ve formuláři **Projekty** v **podokně akcí** vyberte kartu **Správa** \> a vyberte **Servis** \> **Servisní příkazy**.
 
@@ -66,7 +66,7 @@ Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo po
 
 Servisní zakázku lze vytvořit z formuláře **Prodejní objednávky** pomocí průvodce **Vytvoření nové servisní zakázky na základě prodejní objednávky**.
 
-1.  Přejděte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**.
+1.  Přejděte na **Prodej a marketing** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**.
 
 2.  Otevřete příslušnou prodejní objednávku.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869713"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015834"
 ---
 # <a name="create-functional-locations"></a>Vytvoření funkčních míst
 
@@ -41,7 +41,7 @@ Abyste mohli pracovat s funkčními místy, začněte vytvořením dvou "kategor
 
 Při použití funkčních míst začněte vytvořením jednoho výchozího umístění, které bude použito při vytváření nového majetku. Toto funkční místo je to, které vyberete v poli **Správa majetku** > **Nastavení** > **Parametry správy majetku** > **Majetek** odkaz > **Výchozí funkční umístění**. Výchozí funkční místo lze použít při vytváření nového majetku v době, kdy jste pro majetek nenastavili strukturu funkčních míst.
 
-1. Vyberte **Správa majetku** > **Společné** > **Funkční místa** > **Všechna funkční místa**.  
+1. Vyberte **Správa majetku** > **Funkční místa** > **Všechna funkční místa**.  
 2. V poli **Všechna funkční místa** vyberte možnost **Nový**.
 3. Zadejte ID do pole **Funkční místo**, například "0000" nebo "výchozí", což označuje, že se jedná o speciální funkční místo.
 4. Do pole **Název** zadejte název výchozího funkčního místa.
@@ -53,7 +53,7 @@ Při použití funkčních míst začněte vytvořením jednoho výchozího umí
 
 Následující procedura popisuje způsob vytvoření funkčních míst vyžadovaných pro správu údržby ve vaší firmě.
 
-1. Vyberte **Správa majetku** > **Společné** > **Funkční místa** > **Všechna funkční místa**. Můžete vytvořit funkční místo ze zobrazení mřížky nebo podrobností.
+1. Vyberte **Správa majetku** > **Funkční místa** > **Všechna funkční místa**. Můžete vytvořit funkční místo ze zobrazení mřížky nebo podrobností.
 2. Vyberte tlačítko **Nový**.
 3. Zadejte ID do pole **Funkční místo**.
 4. Do pole **Název** zadejte název výchozího funkčního místa.

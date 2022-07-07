@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886037"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015078"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
@@ -35,7 +35,7 @@ Když byla úloha údržby dokončena na pracovním příkazu, následující kr
 >[!NOTE]
 >Je možné nastavit automatické zaúčtování deníků ve stavu životního cyklu pracovního příkazu. Další informace najdete v části [Stavy životního cyklu pracovního příkazu](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Klikněte na **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz a klikněte na položku **Deníky**.
 
@@ -61,7 +61,7 @@ Snímek obrazovky níže ukazuje příklad registrace hodin a položek na pracov
 
 Obsahuje-li pracovní příkaz několik úloh pracovního příkazu, můžete zaregistrovat pracovní dobu pomocí funkce **Rozdělení hodin**, což znamená, že jeden řádek registrace hodin lze rovnoměrně rozložit na každé úloze pracovního příkazu.
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Klikněte na **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz a klikněte na položku **Deníky**.
 

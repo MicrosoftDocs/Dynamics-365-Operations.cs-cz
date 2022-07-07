@@ -1,8 +1,8 @@
 ---
-title: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
-description: Tento článek vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
+title: Konfigurace sandboxového prostředí Dynamics 365 Commerce
+description: Tento článek vysvětluje, jak konfigurovat sandboxové prostředí Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 author: psimolin
-ms.date: 05/12/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,34 +14,34 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 259a580981003f135e234f66e9e93ceb18605412
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892323"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013102"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
+# <a name="configure-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurace sandboxového prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tento článek vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
+Tento článek vysvětluje, jak konfigurovat sandboxové prostředí Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 
-Postupy v tomto článku dokončete až po zřízení prostředí vyhodnocení Commerce. Informace o postupu zřízení prostředí vyhodnocení Commerce najdete v části [Zřízení prostředí vyhodnocení Commerce](provisioning-guide.md).
+Postupy v tomto článku dokončete až po zřízení sandboxového prostředí Commerce. Informace o postupu zřízení sandboxového prostředí Commerce najdete v části [Zřízení sandboxového prostředí Commerce](provisioning-guide.md).
 
-Po kompletním zřízení prostředí vyhodnocení Commerce je nutné dokončit další kroky konfigurace po zřízení, aby bylo možné začít posuzovat prostředí. K dokončení těchto kroků je nutné použít prostředí Lifecycle Services (LCS) Microsoft Dynamics a Dynamics 365 Commerce.
+Po kompletním zřízení sandboxového prostředí Commerce je nutné dokončit další kroky konfigurace po zřízení, aby bylo možné začít používat prostředí. K dokončení těchto kroků je nutné použít prostředí Lifecycle Services (LCS) Microsoft Dynamics a Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Než začnete
 
 1. Přihlaste se do [portálu LCS](https://lcs.dynamics.com).
 1. Přejděte na svůj projekt.
-1. V horní nabídce vyberte možnost **Prostředí hostovaná v cloudu**.
 1. V seznamu vyberte své prostředí.
 1. V informacích o prostředí vpravo vyberte **Přihlášení k prostředí**. Budete posláni do centrály Commerce.
-1. Ujistěte se, že je v pravém horním rohu vybrána právnická osoba **USRT**.
-1. Přejděte na **Parametry Commerce \> Konfigurační parametry** a zkontrolujte, že záznam **ProductSearch.UseAzureSearch** existuje a je nastaven na **true**. Pokud tato položka chybí, můžete ji přidat, nastavit hodnotu na **true** a poté vybrat příkaz **Databáze kanálů \> Úplná synchronizace dat** pro Commerce Scale Unit spojenou s vaším webem elektronického obchodu.
+1. Ujistěte se, že je v pravém horním rohu vybrána právnická osoba **USRT**. Tato právnická osoba byla předem nakonfigurována v ukázkových datech.
+1. Přejděte na **Parametry Commerce \> Konfigurační parametry** a zkontrolujte, že záznam **ProductSearch.UseAzureSearch** existuje a je nastaven na **true**. Pokud tato položka chybí, přidejte ji a nastavte hodnotu na **true**.
 1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Plánovač velkoobchodu \> Inicializovat plánovač obchodu**. V plovoucí nabídce **Inicializovat plánovač obchodu** nastavte možnost **Odstranit existující konfiguraci** na **Ano** a pak vyberte **OK**.
-1. Chcete-li přidat kanály do jednotky Commerce Scale Unit, přejděte na **Maloobchod a obchod \> Nastavení centrály \> Plánovač obchodu \> Databáze kanálů** a poté v levém podokně vyberte jednotku Commerce Scale Unit. Na pevné záložce **Maloobchodní kanál** přidejte kanály **Internetový obchod AW**, **Internetový obchod AW Business** a **Rozšířený internetový obchod Fabrikam**. Volitelně můžete také přidat maloobchodní prodejny, pokud budete používat POS (např. **Seattle**, **San Francisco** a **San Jose**).
+1. Aby kanály obchodu a elektronického obchodu správně fungovaly, musí být přidány do Commerce Scale Unit. Přejděte na **Maloobchod a obchod \> Nastavení centrály \> Plánovač obchodu \> Databáze kanálů** a pak v levém podokně vyberte Commerce Scale Unit. Na pevné záložce **Maloobchodní kanál** přidejte kanály **Internetový obchod AW**, **Internetový obchod AW Business** a **Rozšířený internetový obchod Fabrikam**, pokud plánujete používat tyto kanály elektronického obchodování. Volitelně můžete také přidat maloobchodní prodejny, pokud budete používat pokladní místo (POS) (např. **Seattle**, **San Francisco** a/nebo **San Jose**).
+1. Chcete-li zajistit, aby byly všechny změny synchronizovány s databází kanálů, vyberte **Databáze kanálů \> Úplná synchronizace dat** pro Commerce Scale Unit..
 
 Během činností po zřízení v centrále Commerce se ujistěte, že právnická osoba **USRT** je vždy vybrána.
 
@@ -52,7 +52,7 @@ Během činností po zřízení v centrále Commerce se ujistěte, že právnick
 Chcete-li pracovníka s vaší identitou přidružit, postupujte následovně v centrále Commerce.
 
 1. Pomocí nabídky vlevo přejděte na **Moduly \> Retail and commerce \> Zaměstnanci \> Pracovníci**.
-1. V seznamu vyhledejte a vyberte následující záznam: **000713 - Andrew Collette**.
+1. V seznamu vyhledejte a vyberte následující záznam: **000713 - Andrew Collette**. Tento vzorový uživatel je přidružen k obchodu v San Franciscu, který bude použit v další sekci.
 1. V podokně akcí klikněte na možnost **Commerce**.
 1. Vyberte **Stávající identita přidružení**.
 1. Do pole **E-mail** vpravo od **Hledání pomocí e-mailu** zadejte svou e-mailovou adresu.
@@ -76,24 +76,24 @@ Chcete-li aktivovat Cloud POS, postupujte následovně v LCS.
 1. Vyberte **Aktivovat**. Jste přihlášeni a přesměrováni na přihlašovací stránku POS.
 1. Nyní se můžete přihlásit ke cloudovému POS pomocí ID operátora **000713** a hesla **123**.
 
-## <a name="set-up-your-site-in-commerce"></a>Nastavení webu v Commerce
+## <a name="set-up-your-e-commerce-sites"></a>Nastavení webů elektronického obchodování
 
-Pokud chcete začít nastavovat web vyhodnocení v Commerce, postupujte následovně.
+K dispozici jsou tři dostupné demo stránky elektronického obchodování: Fabrikam, Adventure Works a Adventure Works Business. Při konfiguraci každého ukázkového webu postupujte podle následujících kroků.
 
 1. Přihlaste se k nástroji pro tvorbu webu pomocí adresy URL, kterou jste si poznamenali při inicializaci e-Commerce během zřizování (viz [Inicializace e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Vyberte web **Fabrikam** otevřete dialogové okno nastavení webu.
-1. Vyberte doménu, kterou jste zadali při inicializaci platformy e-Commerce.
-1. Jako výchozí kanál vyberte **Rozšířený online obchod společnosti Fabrikam**. (Zkontrolujte, zda jste vybrali **rozšířený** online obchod.)
+1. Vyberte web (**Fabrikam**, **Adventure Works** nebo **Adventure Works Business**) a otevřete dialogové okno nastavení webu.
+1. Vyberte doménu, kterou jste zadali při inicializaci Commerce.
+1. V centrále vyberte předkonfigurovaný kanál internetového obchodu (**Rozšířený internetový obchod Fabrikam**, **Internetový obchod AW** nebo **Internetový obchod AW Business**), který odpovídá výchozímu kanálu.
 1. Jako výchozí jazyk vyberte **en-us**.
-1. Ponechte hodnotu pole **Cesta** tak, jak je.
+1. Nakonfigurujte pole cesty. Toto může být ponecháno prázdné pro jeden web, ale pokud používáte stejný název domény pro více webů, bude nutné jej nakonfigurovat. Například, pokud je název domény `https://www.constoso.com`, můžete použít prázdnou cestu pro Fabrikam (`https://contoso.com`) a poté použít "aw" pro Adventure Works (`https://contoso.com/aw`) a „awbusiness“ pro obchodní web Adventure Works (`https://contoso.com/awbusiness`).
 1. Vyberte **OK**. Zobrazí se seznam stránek na webu.
-1. Opakujte kroky 2-7 pro web **AdventureWorks** (který se mapuje na kanál **Internetový obchod AW**) a web **AdventureWorks Business** (který se mapuje na kanál **Internetový obchod AW Business**). Pokud je pole **Cesta** pro web Fabrikam prázdné, musíte přidat cesty ke dvěma webům AdventureWorks (například „aw“ a „awbusiness“).
+1. Volitelně opakujte kroky 2-7 pro konfiguraci dalších ukázkových webů podle potřeby.
 
 ## <a name="enable-jobs"></a>Povolit úlohy
 
 Pokud chcete povolit úlohy v Commerce, postupujte takto:
 
-1. Přihlaste se k prostředí (HQ).
+1. Přihlaste se k prostředí centrály.
 1. Pomocí nabídky vlevo přejděte na **Retail and commerce \> Dotazy a sestavy \> Dávkové úlohy**.
 
     Zbývající kroky tohoto postupu musí být dokončeny pro každou z následujících úloh:
@@ -146,12 +146,11 @@ Chcete-li provést zkušební transakce na webu, můžete použít následujíc�
 
 ## <a name="next-steps"></a>Další kroky
 
-Po dokončení postupu zřizování a konfigurace můžete začít používat prostředí vyhodnocení. Pomocí adresy URL nástroje pro tvorbu webu Commerce můžete přejít na práci s vytvářením. Pomocí adresy URL webu Commerce přejděte do prostředí webu zákazníka maloobchodu.
+Po dokončení postupu zřizování a konfigurace můžete začít používat sandboxové prostředí. Pomocí adresy URL nástroje pro tvorbu webu Commerce můžete přejít na práci s vytvářením. Pomocí adresy URL webu Commerce přejděte do prostředí webu zákazníka maloobchodu.
 
-Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení Commerce, najdete informace v části [konfigurace volitelných funkcí prostředí vyhodnocení Commerce](cpe-optional-features.md).
+Pokud chcete provést konfiguraci volitelných funkcí sandboxového prostředí Commerce, najdete informace v části [konfigurace volitelných funkcí sandboxového prostředí Commerce](cpe-optional-features.md).
 
-> [!NOTE]
-> Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure Active Directory (Azure AD) business-to-consumer (B2C) pro demonstrační účely. Konfiguace vlastního klienta Azure AD B2C není potřeba pro prostředí vyhodnocení. Pokud však konfigurujete zkušební prostředí tak, aby používalo vašeho vlastního klienta Azure AD B2C, nezapomeňte přidat ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako URL pro odpověď v aplikaci Azure AD B2C přes Azure Portal.
+Chcete-li uživatelům elektronického obchodu umožnit přihlášení k webu elektronického obchodu, je vyžadována další konfigurace umožňující ověření webu prostřednictvím Azure Active Directory business-to-consumer (B2C). Pokyny naleznete v [Nastavení klienta B2C v Commerce](set-up-b2c-tenant.md).
 
 ## <a name="troubleshooting"></a>Řešení potíží
 
@@ -177,15 +176,11 @@ Ukázková data dodávaná ve verzi Commerce 10.0.26 a dřívějších verzích
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled prostředí vyhodnocení Dynamics 365 Commerce](cpe-overview.md)
+[Zřízení sandboxového prostředí Dynamics 365 Commerce](provisioning-guide.md)
 
-[Zřízení prostředí vyhodnocení Dynamics 365 Commerce](provisioning-guide.md)
+[Konfigurace volitelných funkcí pro sandboxové prostředí Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
-
-[Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](cpe-bopis.md)
-
-[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace BOPIS v sandboxovém prostředí Dynamics 365 Commerce](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

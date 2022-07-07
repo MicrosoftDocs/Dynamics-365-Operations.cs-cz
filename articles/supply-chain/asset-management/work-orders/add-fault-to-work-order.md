@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857888"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014991"
 ---
 # <a name="add-fault-to-work-order"></a>Přidání chyby do pracovního příkazu
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857888"
 
 Můžete přidat závady nastavené v návrháři závad do pracovního příkazu. Majetek vybraný v pracovním příkazu musí obsahovat typy majetku, ke kterým je připojen jeden nebo více záznamů závad. Další informace o funkcích správy případů naleznete v tématu [Správa chyb](../setup-for-work-orders/fault-management.md).
 
-1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, u kterého chcete provést registraci chyby, a v podokně akcí na kartě **Pracovní příkaz** ve skupině **Majetek** vyberte **Chyba majetku**.
 
@@ -64,7 +64,7 @@ Na stránce seznamu **Závady majetku** můžete získat přehled o všech záva
 
 Na stránce se seznamem **Všechen majetek** můžete vytisknout sestavu závad majetku zobrazující všechny registrace závad a grafický přehled statistik závad.
 
-1. Vyberte **Správa majetku** > **Společné** > **Majetek** > **Všechen majetek**.
+1. Vyberte **Správa majetku** > **Majetek** > **Všechen majetek**.
 
 2. Vyberte majetek, pro který chcete vytisknout sestavu chyb.
 

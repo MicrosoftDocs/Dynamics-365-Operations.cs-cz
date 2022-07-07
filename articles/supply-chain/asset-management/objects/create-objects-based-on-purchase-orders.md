@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893693"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015602"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Vytvoření majetku na základě nákupních objednávek
 
@@ -45,7 +45,7 @@ Nejdříve nastavíte zboží, které bude použito pro vytváření majetku z n
 
 ## <a name="create-assets-from-pending-assets"></a>Vytvoření majetku z čekajícího majetku
 
-1. Klikněte na **Správa majetku** > **Společné** > **Majetek** > **Čekající majetek**.
+1. Klikněte na **Správa majetku** > **Majetek** > **Čekající majetek**.
 2. Zobrazí se aktualizovaný přehled nákupních objednávek na základě položek vybraných v okně **Položky majetku**.
 3. Můžete filtrovat stav nákupních objednávek a vybrat, ve kterém stavu životního cyklu má být majetek vytvořen. Můžete například chtít vytvořit majetek pouze v případě, že příjemka produktu byla zaúčtována na nákupní objednávce.
 4. Vyberte odkaz **Referenční číslo** odkaz na řádku nákupní objednávky a zobrazte detailní informace o zboží.

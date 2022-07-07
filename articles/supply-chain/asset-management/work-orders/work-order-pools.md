@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc9eaf82c2f3336f8c3400fcd3f1165ed4fa56d8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849554"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014932"
 ---
 # <a name="work-order-pools"></a>Skupiny pracovních příkazů
 
@@ -44,7 +44,7 @@ Podle potřeby lze do více skupin pracovních příkazů vložit jednu pracovn�
 
 Na stránce se seznamem **Všechny skupiny pracovních příkazů** nebo **Aktivní skupiny pracovních příkazů** můžete získat přehled o vašich skupinách pracovních příkazů a vytvořit nové skupiny.
 
-1. Vyberte **Správa majetku** > **Společné** > **Skupiny pracovních příkazů** > **Všechny skupiny pracovních příkazů** nebo **Aktivní skupiny pracovních příkazů**.
+1. Vyberte **Správa majetku** > **Skupiny pracovních příkazů** > **Všechny skupiny pracovních příkazů** nebo **Aktivní skupiny pracovních příkazů**.
 
 2. Zvolte **Nové**.
 

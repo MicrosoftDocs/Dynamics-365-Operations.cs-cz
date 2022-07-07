@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852864"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016500"
 ---
 # <a name="maintenance-rounds"></a>Pořadí údržby
 
@@ -87,7 +87,7 @@ Následující obrázek znázorňuje ukázku a příklad pořadí údržby obsah
 
 Když nastavíte pořadí údržby, spusťte úlohu plánu, která plánuje všechny úlohy související s pořadím údržby.
 
-1. Klikněte na **Správa majetku** > **Pravidelně** > **Preventivní údržba** > **Rozvrhnout pořadí údržby** nebo **Správa majetku** > **Společné** > **Rozvrh údržby** > **Všechny rozvrhy údržby** nebo **Otevřené řádky rozvrhu údržby** nebo **Otevřené fondy rozvrhu údržby** > v seznamu vyberte řádek rozvrhu údržby > tlačítko **Plány údržby**.
+1. Klikněte na **Správa majetku** > **Pravidelně** > **Preventivní údržba** > **Rozvrhnout pořadí údržby** nebo **Správa majetku** > **Rozvrh údržby** > **Všechny rozvrhy údržby** nebo **Otevřené řádky rozvrhu údržby** nebo **Otevřené fondy rozvrhu údržby** > v seznamu vyberte řádek rozvrhu údržby > tlačítko **Plány údržby**.
 
 2. V poli **Období** vyberte typ období, které se má použít pro úlohu plánování.
 
@@ -102,7 +102,7 @@ Když nastavíte pořadí údržby, spusťte úlohu plánu, která plánuje vše
 
 6. Klikněte na tlačítko **OK**.
 
-7. Nyní můete zobrazit úlohy pořadí údržby v částech **Správa majetku** > **Společné** > **Rozvrh údržby** > **Všechny rozvrhy údržby** nebo **Otevřené řádky rozvrhu údržby**. Jsou-li pořadí údržby připojena k fondu pracovních příkazů, zobrazí se také řádky rozrvhu údržby v části **Otevřené fondy rozvrhu údržby**. Řádky rozvrhu údržby vytvořené z pořadí mají typ odkazu „Rozvrhy údržby“.
+7. Nyní můete zobrazit úlohy pořadí údržby v částech **Správa majetku** > **Rozvrh údržby** > **Všechny rozvrhy údržby** nebo **Otevřené řádky rozvrhu údržby**. Jsou-li pořadí údržby připojena k fondu pracovních příkazů, zobrazí se také řádky rozrvhu údržby v části **Otevřené fondy rozvrhu údržby**. Řádky rozvrhu údržby vytvořené z pořadí mají typ odkazu „Rozvrhy údržby“.
 
 Následující dvě ilustrace zobrazují **úlohu plánování v** dialogovém okně Naplánovat pořadí údržby a řádky plánu údržby vytvořené ve **všech plánech** údržby na základě této úlohy plánu.
 

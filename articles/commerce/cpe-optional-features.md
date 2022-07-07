@@ -1,8 +1,8 @@
 ---
-title: Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
-description: Tento článek vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
+title: Konfigurace volitelných funkcí pro sandboxové prostředí Dynamics 365 Commerce
+description: Tento článek vysvětluje, jak konfigurovat volitelné funkce sandboxového prostředí Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861907"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013231"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurace volitelných funkcí pro sandboxové prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tento článek vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak konfigurovat volitelné funkce sandboxového prostředí Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Předpoklady
 
 Chcete-li vyhodnotit funkce transakčního e-mailu, musí být splněny následující předpoklady:
 
-- Máte k dispozici e-mailový server (Simple Mail Transfer Protocol \[SMTP\]), který lze použít z předplatného Microsoft Azure, kde jste zřídili prostředí vyhodnocení.
+- Máte k dispozici e-mailový server (Simple Mail Transfer Protocol \[SMTP\]), který lze použít z předplatného Microsoft Azure, kde jste zřídili sandboxové prostředí.
 - Máte k dispozici plně kvalifikovaný název domény (FQDN)/IP adresu, číslo portu SMTP a podrobnosti o ověřování.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurace back-endu bitové kopie
@@ -39,10 +39,10 @@ Chcete-li vyhodnotit funkce transakčního e-mailu, musí být splněny následu
 ### <a name="find-your-media-base-url"></a>Hledání základní adresy URL média
 
 > [!NOTE]
-> Před provedením tohoto postupu je třeba provést kroky uvedené v tématu [nastavení webu v Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
+> Před provedením tohoto postupu je třeba provést kroky uvedené v tématu [nastavení webu v Commerce](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Přihlaste se k nástroji pro tvorbu webu Commerce pomocí adresy URL, kterou jste si poznamenali při inicializaci e-Commerce během zřizování (viz [Inicializace e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Otevřete stránku **Fabrikam**.
+1. Otevřete web **Fabrikam**, **Adventure Works** nebo **Obchod Adventure Works**, se kterým chcete pracovat.
 1. V nabídce vlevo vyberte **Mediální knihovna**.
 1. Vyberte libovolný obrázek.
 1. V inspektoru vlastnosti vpravo najděte vlastnost **Veřejná adresa URL**. Hodnota je URL. Následuje příklad:
@@ -98,9 +98,9 @@ Pro každou transakční událost, pro kterou chcete odeslat e-maily, musíte ak
 
 ## <a name="customize-email-templates"></a>Přizpůsobení šablon e-mailu
 
-Šablony e-mailů je vhodné přizpůsobit tak, aby používaly různé obrázky. Nebo můžete chtít aktualizovat odkazy v šablonách tak, aby byly v prostředí vyhodnocení. Tento postup vysvětluje, jak stáhnout výchozí šablony, přizpůsobit je a aktualizovat šablony v systému.
+Šablony e-mailů je vhodné přizpůsobit tak, aby používaly různé obrázky. Nebo můžete chtít aktualizovat odkazy v šablonách tak, aby byly v sandboxovém prostředí. Tento postup vysvětluje, jak stáhnout výchozí šablony, přizpůsobit je a aktualizovat šablony v systému.
 
-1. Ve webovém prohlížeči můžete stáhnout [soubor zip vyhodnocení výchozích šablon e-mailu Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) do místního počítače. Tento soubor obsahuje následující dokumenty HTML:
+1. Ve webovém prohlížeči můžete stáhnout [soubor zip výchozích demo šablon e-mailu Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) do místního počítače. Tento soubor obsahuje následující dokumenty HTML:
 
     - Šablona potvrzení objednávky
     - Šablona dárkového poukazu
@@ -167,15 +167,11 @@ Následující tokeny jsou nahrazeny hodnotami pro každý produkt v objednávce
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled prostředí vyhodnocení Dynamics 365 Commerce](cpe-overview.md)
+[Zřízení sandboxového prostředí Dynamics 365 Commerce](provisioning-guide.md)
 
-[Zřízení prostředí vyhodnocení Dynamics 365 Commerce](provisioning-guide.md)
+[Konfigurace sandboxového prostředí Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurace prostředí vyhodnocení Dynamics 365 Commerce](cpe-post-provisioning.md)
-
-[Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](cpe-bopis.md)
-
-[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace BOPIS v sandboxovém prostředí Dynamics 365 Commerce](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

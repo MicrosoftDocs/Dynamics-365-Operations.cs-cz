@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907283"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023781"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907283"
 Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 Supply Chain Management. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Tento článek vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
 
 Další informace o tom, co mohou externí dodavatelé provádět v rozhraní spolupráce dodavatelů, uvádí téma [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Informace v tomto článku o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Supply Chain Management. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
 
 Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ Správce konfiguruje obecná nastavení pro dodavatelskou spolupráci, jako jsou
 
 Před vytvořením uživatelských účtů pro externí dodavatele nakonfigurujte účet dodavatele, aby mohl dodavatel používat dodavatelskou spolupráci. Na stránce **Dodavatelé** na kartě **Obecné** nastavte pole **Aktivace spolupráce**. Existují tyto možnosti:
 
-- **Aktivní (nákupní objednávka je automaticky potvrzena)**– nákupní objednávky se automaticky potvrzují, pokud je dodavatel přijme beze změn.
+- **Aktivní (nákupní objednávka je automaticky potvrzena)**– nákupní objednávky se automaticky potvrzují, pokud je dodavatel přijme beze změn. Pokud použijete tuto možnost, nezapomeňte naplánovat dávkovou úlohu *Potvrdit přijaté nákupní objednávky z dodavatelské spolupráce*, která zodpovídá za zpracování potvrzení. Pokyny naleznete v další části.
 - **Aktivní (nákupní objednávka není automaticky potvrzena)**– nákupní objednávky musí být ručně potvrzeny vaší organizací poté, co je dodavatel přijal.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Plánování dávkové úlohy automatického potvrzení
+
+Pokud použijete možnost **Aktivní (PO je automaticky potvrzeno)** pro jednoho nebo více vašich dodavatelů (jak je popsáno v předchozí části), musíte naplánovat dávkovou úlohu *Potvrdit přijaté nákupní objednávky z dodavatelské spolupráce*, která je zodpovědná za zpracování a potvrzení vašich OP. Jinak k automatickému potvrzení nikdy nedojde. Úlohu můžete naplánovat následujícím postupem.
+
+1. Přejděte na **Zásobování a zdroje \> Nákupní objednávky \> Potvrzení nákupní objednávky \> Potvrdit přijaté nákupní objednávky z dodavatelské spolupráce**.
+1. V dialogovém okně **Potvrdit přijaté nákupní objednávky z dodavatelské spolupráce** na pevné záložce **Spustit na pozadí** vyberte **Opakování**.
+1. V dialogovém okně **Definujte opakování** definujte plán, podle kterého má úloha běžet. Při výběru plánu zvažte následující problémy:
+
+    - Pokud váš systém zpracovává velký objem dat a spouští mnoho dávkových úloh, může být problém s výkonem. V tomto případě byste pravděpodobně neměli spouštět tuto úlohu častěji než každých 10 minut (v závislosti na vašich dalších požadavcích). Pokud pro vás výkon není problémem, můžete jej v případě potřeby spouštět tak často, jako každou 1 až 2 minuty.
+    - Pokud mají vaši prodejci tendenci dodávat zboží rychle (v rámci dne, se kterým souhlasili), mělo by to být časté (asi každých 10 až 30 minut). Skladníci tak budou moci po potvrzení přijmout zboží oproti potvrzené nákupní objednávce.
+    - Pokud mají vaši dodavatelé tendenci mít dlouhou dobu realizace (více než 24 hodin), můžete tuto úlohu nastavit tak, aby se spouštěla jen jednou denně nebo tak nějak.
+
+1. Vyberte **OK**, chcete-li použít svůj plán a vrátit se do dialogového okna **Potvrdit přijaté nákupní objednávky z dodavatelské spolupráce**.
+1. Podle potřeby nastavte další možnosti pozadí. Dialogové okno poskytuje obvyklé možnosti pro nastavení dávkových úloh v Supply Chain Management.
+
+Další informace o dávkových úlohách viz [Přehled dávkového zpracování](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Určení, zda má dodavatel vidět informace o ceně
 

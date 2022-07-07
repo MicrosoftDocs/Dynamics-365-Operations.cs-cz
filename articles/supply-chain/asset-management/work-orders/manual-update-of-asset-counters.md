@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897712"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016587"
 ---
 # <a name="manual-update-of-asset-counters"></a>Ruční aktualizace čítačů majetku
 
@@ -34,7 +34,7 @@ Typ čítače vybraný pro čítač může být nastaven tak, aby zdědil hodnot
 
 Na stránce **Všechen majetek** vytváříte hodiny nebo registrace čítačů množství na majetku na základě vašich hodnot majetku.
 
-1. Vyberte **Správa majetku** > **Společné** > **Majetek** > **Všechen majetek**.
+1. Vyberte **Správa majetku** > **Majetek** > **Všechen majetek**.
 
 2. Vyberte majetek a pak v podokně akcí na kartě **majetek** ve skupině **Preventivní** vyberte možnost **čítače**. Na stránce **Čítače majetku** se zobrazí seznam všech předchozích registrací čítačů u vybraného majetku.
 

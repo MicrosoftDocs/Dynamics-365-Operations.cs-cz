@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903862"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015311"
 ---
 # <a name="credit-limits-for-customers"></a>Limity úvěru pro odběratele
 
@@ -117,7 +117,7 @@ Použijte formulář **Parametry pohledávek** k určení, zda chcete při přek
 
 Použijte formulář **Odběratelé** k určení částky limitu úvěru pro určitého odběratele. Musíte být členem role zabezpečení, která má k sobě přiřazené funkční oprávnění Spravovat hlavní data odběratele (CustCustomersMaintain), abyste v tomto formuláři mohli provádět změny.
 
-1.  Klikněte na **Pohledávky** \> **Společné** \> **Odběratelé** \> **Všichni odběratelé**. Klikněte dvakrát na účet odběratele.
+1.  Klikněte na **Pohledávky** \> **Zákazníci** \> **Všichni zákazníci**. Klikněte dvakrát na účet odběratele.
 
 2.  Ve formuláři **Odběratelé** v podokně akcí klikněte na **Upravit**.
 
@@ -132,7 +132,7 @@ Použijte formulář **Odběratelé** k určení částky limitu úvěru pro ur�
 
 V některých případech je třeba ručně zkontrolovat limit úvěru odběratele. Například může ručně zkontrolovat limit úvěru odběratele před zahájením zadávání prodejní objednávky. K ruční kontrole limit úvěru lze použít formulář **Prodejní objednávka**. Musíte být členem role zabezpečení, která má k sobě přiřazené funkční oprávnění Spravovat prodejní objednávku (SalesOrderMaintain), abyste v tomto formuláři mohli provádět změny.
 
-1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**. Dvakrát klikněte na prodejní objednávku.
+1.  Klikněte na **Prodej a marketing** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**. Dvakrát klikněte na prodejní objednávku.
 
 2.  Ve formuláři **Prodejní objednávka** v podokně akcí na kartě **Spravovat**, klikněte na **Zkontrolovat limit úvěru**.
 

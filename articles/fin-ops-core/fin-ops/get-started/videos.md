@@ -1,8 +1,8 @@
 ---
 title: Videa
-description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
+description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikacemi Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,23 +14,23 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487984"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958131"
 ---
 # <a name="videos"></a>Videa 
 
 [!include [banner](../includes/banner.md)]
 
-V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro aplikace Finance and Operations, která jsou v tomto informačním kanálu hostovaná.
+V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro aplikace Dynamics 365 for Finance and Operations, které jsou v tomto informačním kanálu hostované.
 
 > [!Note]
 > Některá z uvedených videí byla publikována pod předchozím názvem produktu, ale stále jsou použitelná.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa pro vývoj a správu Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa o vvoji a správě pro aplikaci Finance and Operations
 
 ### <a name="data-integration"></a>Integrace dat
 
@@ -40,9 +40,8 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 - [Použití datových entit a balíčků dat](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
-### <a name="development"></a>Rozvoj
+### <a name="development"></a>Vývojový
 
-- [Jak řešit konflikty v aplikaci Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Nastavení pobočky a sestavení pro vývoj](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Nastavení počítače pro vývoj](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -51,11 +50,11 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Editace integrovaných sestav v analytickém pracovním prostoru](https://youtu.be/_8WlwmSggcQ)
-- [Postup při vkládání sestav PowerBI.com do aplikací Finance and Operations](https://youtu.be/gGWuNJDoi-M)
-- [Použití vlastní databáze (BYOD) do aplikací Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Jak vložit sestavy PowerBI.com v aplikacích Finance and Operations](https://youtu.be/gGWuNJDoi-M)
+- [Přinesení vlastní databáze (BYOD) do aplikací Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak používat obsah řízení nákladů Power BI v Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
-### <a name="lifecycle-services-lcs"></a>Služby Lifecycle Services (LCS)
+### <a name="lifecycle-services-lcs"></a>Služby  Lifecycle Services (LCS)
 
 - [Knihovna aktiv v Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Prostředí hostovaná v cloudu](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)

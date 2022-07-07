@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888405"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016942"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Vytvoření požadavků položky pro servisní zakázky
 
@@ -34,14 +34,14 @@ Požadavky zboží pro objednávky služeb jsou zpracovávány prostřednictvím
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Vytvoření požadavku položky pro servisní zakázku
 
-1. Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1. Přejděte na **Správa servisu** \> **Servisní zakázky** \> **Servisní zakázky**.
 1. Vyberte servisní zakázku, pro kterou chcete vytvořit požadavek na položky.
 1. V **podokně akcí** na kartě **Expedice** vyberte **Požadavek na položku**.
 1. Ve formuláři **Požadavky na položku** zadejte informace pro požadovanou položku. Další informace o daných polích ve formuláři lze najít v tématu [Požadavky na položku (formulář)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Vytvoření požadavku položky pro servisní smlouvu
 
-1. Přejděte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1. Přejděte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 1. Otevřete servisní smlouvu, pro kterou chcete vytvořit požadavek na položky.
 1. Na záložce **Řádky** výběrem tlačítka **Přidat** vytvořte nový řádek.
 1. V poli **Typ transakce** vyberte **Položka**.

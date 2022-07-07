@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 665c705e3ffb617fc159a1223cb3f776878d5cd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882772"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016239"
 ---
 # <a name="asset-boms"></a>Kusovníky majetku
 
@@ -57,7 +57,7 @@ Nastavení historie náhradních dílů je založeno na skupinách položek vytv
 
 Po zaúčtování spotřeby položky na pracovním příkazu můžete zobrazit registrovanou spotřebu položky na stránce **Kusovník majetku**.
 
-1. Vyberte **Správa majetku** \> **Společné** \> **Majetek** \> **Aktivní majetek**. Vyberte majetek v seznamu a pak vyberte **Kusovník majetku**.
+1. Vyberte **Správa majetku** \> **Majetek** \> **Aktivní majetek**. Vyberte majetek v seznamu a pak vyberte **Kusovník majetku**.
 
     > [!NOTE]
     > Chcete-li zobrazit všechny registrace spotřeby položek u veškerého majetku, vyberte **Správa majetku** \> **Dotazy** \> **Majetek** \> **Kusovník majetku**.

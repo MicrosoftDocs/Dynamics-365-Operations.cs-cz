@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0c73f019951460dc7cb6395d616a0f0a22fd0b91
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb54ec3466086afbd87a023a40e346a6a3464c98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909694"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017167"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Vytvoření pracovních příkazů z požadavků na údržbu
 
@@ -34,7 +34,7 @@ Po vytvoření požadavků na údržbu je lze snadno převést na pracovní př�
 > [!NOTE]
 > Každý požadavek na údržbu může souviset pouze s jedním pracovním příkazem. Do jednoho pracovního příkazu je však možné zahrnout více požadavků na údržbu, a to i v případě, že požadavky na údržbu mají různý majetek.
 
-1. Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**.
+1. Vyberte **Správa majetku** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**.
 2. Před vytvořením pracovní objednávky z požadavků na údržbu je nutné vybrat přinejmenším typ úlohy údržby pro požadavky na údržbu a také variantu typu úlohy údržby a obchod, pokud jsou tyto informace relevantní. V zobrazení mřížky můžete snadno aktualizovat informace o požadavku na údržbu.
 3. Jakmile budete připraveni vytvořit pracovní příkaz, vyberte požadavky na údržbu, které mají být do ní zahrnuty.
 
@@ -48,7 +48,7 @@ Po vytvoření požadavků na údržbu je lze snadno převést na pracovní př�
 
     Pokud navíc vytvoříte pracovní příkaz, který je založený na požadavku na údržbu, bude v případě, že je majetek související s požadavkem na údržbu zahrnut do záruční smlouvy, zobrazí se na panelu zpráv upozornění na záruční smlouvu.
 
-6. Vyberte **Správa majetku** \> **Společné** \> **Pracovní příkazy** \> **Všechny pracovní příkazy** a otevřete nový pracovní příkaz.
+6. Vyberte **Správa majetku** \> **Pracovní příkazy** \> **Všechny pracovní příkazy** a otevřete nový pracovní příkaz.
 
     ![Otevření nového pracovního příkazu.](media/05-manage-maintenance-requests.png)
 

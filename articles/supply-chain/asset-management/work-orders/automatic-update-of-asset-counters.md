@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856244"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016210"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatická aktualizace čítačů majetku
 
@@ -53,7 +53,7 @@ Jak bylo uvedeno výše, automatické čítače lze aktualizovat z registrací v
 
 5. Vyberte **OK**. 
 
-Po dokončení aktualizace automatického čítače majetku můžete zobrazit registrace čítačů, které souvisejí s majetkem na stránce **Čítače majetku**. Vyberte **Správa majetku** > **Společné** > **Majetek** > **Všechen majetek**, vyberte majetek a pak v podokně akcí na kartě **Majetek** ve skupině **Preventivní** vyberte **Čítače**.
+Po dokončení aktualizace automatického čítače majetku můžete zobrazit registrace čítačů, které souvisejí s majetkem na stránce **Čítače majetku**. Vyberte **Správa majetku** > **Majetek** > **Všechen majetek**, vyberte majetek a pak v podokně akcí na kartě **Majetek** ve skupině **Preventivní** vyberte **Čítače**.
 
 Na stránce **Souhrnná hodnota majetku** lze získat přehled o poslední registraci provedené na všech typech čítačů na veškerém majetku. Vyberte **Správa majetku** > **Dotazy** > **Majetek** > **Agregovaná hodnota majetku**. Tato stránka se podobá stránce **Čítače majetku**, ale nelze přidávat ani upravovat registrace. Zobrazení je určeno pouze pro přehled.
 

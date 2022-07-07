@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887595"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016761"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Typy úloh údržby, kategorie, varianty, obchody a kontrolní seznamy
 
@@ -243,7 +243,7 @@ Můžete nastavit dávkovou úlohu pro aktualizaci výchozích odkazů typu prá
 
 Po vytvoření požadovaných výchozích kombinací typů práce údržby můžete na stránce **Všechen majetek** získat přehled o aktuálním typu práce údržby, který souvisí s konkrétním majetkem. Přehled zobrazuje všechny výchozí kombinace typu práce údržby, které lze použít pro typ majetku vybraný pro daný majetek. Tyto kombinace zahrnují varianty typů práce údržby a obory práce údržby.
 
-1. Zvolte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
+1. Zvolte **Správa majetku** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
 2. V seznamu vyberte majetek, pro který chcete zobrazit přehled kombinací typů práce údržby.
 3. V podokně akcí na kartě **Obecné** vyberte skupinu **Související informace** a poté **Typy práce údržby**.
 

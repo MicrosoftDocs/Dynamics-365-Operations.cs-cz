@@ -1,8 +1,8 @@
 ---
-title: Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
-description: Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po jeho zřízení.
+title: Konfigurace BOPIS v sandboxovém prostředí Dynamics 365 Commerce
+description: Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) v sandboxovém prostředí Microsoft Dynamics 365 Commerce po jeho zřízení.
 author: BrianShook
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16cea7beb6ca05b5e96a9713b1217b414e27d56e
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861959"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013155"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
+# <a name="configure-bopis-in-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurace BOPIS v sandboxovém prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
+Tento článek vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) v sandboxovém prostředí Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
 
 ## <a name="prerequisite"></a>Předpoklad
 
-Postupy v tomto článku dokončete až po zřízení a konfiguraci prostředí vyhodnocení Commerce verze Preview. Informace o zřízení a konfiguraci prostředí viz [Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](./cpe-post-provisioning.md).
+Postupy v tomto článku dokončete až po zřízení a konfiguraci sandboxového prostředí Commerce. Informace o zřízení a konfiguraci prostředí viz [Zřízení sandboxového prostředí Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace sandboxového prostředí Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
 Po kompletním zřízení a konfiguraci prostředí Commerce můžete pomocí tohoto článku povolit scénáře BOPIS.
 
@@ -67,7 +67,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 5. Zobrazí se dialogové okno ověření. Vyberte účet, který používá e-mailovou adresu, která byla dříve přidružena k pracovníkovi **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Pokud jste pracovníka s vaší identitou ještě nevytvořili, nebude aktivace úspěšná. V takovém případě postupujte podle kroků v části „Přidružení pracovníka k vaší identitě“ v článku [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Pokud jste pracovníka s vaší identitou ještě nevytvořili, nebude aktivace úspěšná. V takovém případě postupujte podle kroků v části „Přidružení pracovníka k vaší identitě“ v článku [Konfigurace sandboxového prostředí Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Když se zobrazí výzva k povolení správy zařízení vaší organizací, vyberte **Pouze tato aplikace**.
 7. Po dokončení aktivace vyberte možnost **Začít**.
@@ -140,13 +140,9 @@ V případě všech obecných problémů byste jako první věc měli vždy pros
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled prostředí vyhodnocení Dynamics 365 Commerce](cpe-overview.md)
+[Zřízení sandboxového prostředí Dynamics 365 Commerce](provisioning-guide.md)
 
-[Zřízení prostředí vyhodnocení Dynamics 365 Commerce](provisioning-guide.md)
-
-[Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce](cpe-optional-features.md)
-
-[Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurace volitelných funkcí pro sandboxové prostředí Dynamics 365 Commerce](cpe-optional-features.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

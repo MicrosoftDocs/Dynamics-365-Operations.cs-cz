@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860921"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016297"
 ---
 # <a name="create-an-asset"></a>Vytvoření majetku
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860921"
 
 Tento článek popisuje, jak vytvořit majetek v modulu Správa majetku.
 
-1. Klikněte na **Správa majetku** > **Společný** > **majetek** > **Všechen majetek** nebo **Aktivní majetek**.
+1. Klikněte na **Správa majetku** > **Majetek** > **Všechen majetek** nebo **Aktivní majetek**.
 2. Klikněte na tlačítko **Nový**.
 3. V dialogovém okně **Vytvořit majetek** zadejte data týkající se **majetku** (ID majetku) a název majetku. V poli **Platnost** vyberte datum a čas majetku. Od tohoto data můžete majetek nainstalovat do funkčního umístění a také přesunout a nahradit majetek ve struktuře majetku.
 4. V poli **typ** majetku vyberte typ majetku pro majetek (povinné pole). V případě potřeby vyberte **výrobce majetku** a **model majetku**. Pokud byl nastaven pouze jeden produkt, je tento produkt automaticky vybrán v poli **výrobce majetku**. Výběry dostupné v polích **Výrobce majetku** a **Model majetku** závisí na nastavení v poli [Výrobci a modely majetku](../setup-for-objects/product-and-model.md).

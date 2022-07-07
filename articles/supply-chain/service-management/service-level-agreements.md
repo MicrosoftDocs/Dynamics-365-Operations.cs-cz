@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db12600aa47f537da6918c82ef3164c2123a8ac
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2b90618d5d283b16ac8374f3b8b2df48611ba270
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670797"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014650"
 ---
 # <a name="service-level-agreements-overview"></a>Přehled smluv o úrovni služeb       
 
@@ -50,7 +50,7 @@ Servisní zakázky, které jsou vytvořeny automaticky, nejsou připojeny ke sml
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a>Použití smlouvy o úrovni služeb na servisní smlouvu
 
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, pro kterou chcete použít SLA, a klepněte na tlačítko **upravit** v **podokně akcí**.
+1.  Klikněte na **Správa služeb** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, pro kterou chcete použít SLA, a klepněte na tlačítko **upravit** v **podokně akcí**.
 
 2.  V poli **smlouva o úrovni služeb** vyberte smlouvy o úrovni služeb, které chcete přiřadit.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851268"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014612"
 ---
 # <a name="wave-creation-and-processing"></a>Tvorba a zpracování vlny
 
@@ -60,9 +60,9 @@ Chcete-li vlnu vytvořit ručně, postupujte následovně:
 1. Ujistěte se, že relevantní [šablony vlny](wave-templates.md) nejsou nastaveny na automatické vytváření vln pro sklady a typy objednávek, kde to chcete provést ručně.
 1. V závislosti na typu vlny, kterou chcete vytvořit, proveďte jeden z následujících kroků:
 
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny expedice** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny dodávek** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
 
 1. Do pole **Popis** zadejte stručný popis vlny. Ten by měl označovat to, co chcete zpracovat ve vlně.
 
@@ -87,9 +87,9 @@ Když je vlna vytvořena, ale ještě nebyla vydána, můžete ručně určit, c
 
 1. V závislosti na typu vlny, do které chcete přidat řádky, proveďte jeden z následujících kroků:
 
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny expedice** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
-    - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny dodávek** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
 
 1. Vyberte vlnu. V podokně akcí vyberte některou z následujících možností:
 
@@ -121,9 +121,9 @@ Chcete-li ručně zpracovat vlnu, která má veškerý požadovaný obsah, postu
 
 1. V závislosti na typu vlny, kterou chcete zpracovat, proveďte jeden z následujících kroků:
 
-    - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny expedice** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
-    - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
-    - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
+    - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny dodávek** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
+    - Vyberte **Řízení skladu** \> **Výstupní vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
+    - Vyberte **Řízení skladu** \> **Výstupní vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
 
 1. Vyberte vlnu pro zpracování. V podokně akcí klikněte na možnost **Zpracovat**.
 
@@ -141,9 +141,9 @@ Chcete-li vlnu vydat ručně, postupujte následovně:
 
 1. V závislosti na typu vlny, kterou chcete uvolnit, proveďte jeden z následujících kroků:
 
-      - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny expedice** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
-      - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
-      - Vyberte **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
+      - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny dodávek** \> **Všechny vlny**. V podokně akcí vyberte **Vlna**.
+      - Vyberte **Řízení skladu** \> **Výstupní vlny** \> **Vlny výroby** \> **Všechny vlny výroby**. V podokně akcí vyberte **Vlna výroby**.
+      - Vyberte **Řízení skladu** \> **Výstupní vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**. V podokně akcí vyberte **Vytvořit vlnu**.
 
 1. Vyberte vlnu pro vydání. V podokně akcí vyberte **Uvolnit vlnu**.
 
@@ -179,9 +179,9 @@ V případě potřeby můžete zrušit vlnu, která byla zpracována. Pokud chce
 
 1. V závislosti na typu vlny, kterou chcete zrušit, proveďte jeden z následujících kroků:
 
-      - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny expedice** \> **Všechny vlny**.
-      - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny výroby** \> **Všechny vlny výroby**.
-      - Přejděte na **Řízení skladu** \> **Společné** \> **Vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**.
+      - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny dodávek** \> **Všechny vlny**.
+      - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny výroby** \> **Všechny vlny výroby**.
+      - Přejděte na **Řízení skladu** \> **Výstupní vlny** \> **Vlny kanbanu** \> **Všechny vlny kanbanu**.
 
 1. Vyberte vlnu, kterou chcete zrušit. V podokně akcí na kartě **Práce** zvolte **Zrušit**.
 

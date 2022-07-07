@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893635"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014945"
 ---
 # <a name="procurement"></a>Zásobování
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893635"
 
 V modulu Správa majetku můžete získat přehled o nákupních žádankách a nákupních objednávkách souvisejících s pracovními příkazy. Je rovněž možné vytvořit nákupní objednávku nebo nákupní žádanku z pracovního příkazu.
 
-Na stránce se seznamem **Nákupní žádanky na pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní žádanka na pracovním příkazu**) se zobrazuje seznam nákupních žádanek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní žádanka pracovního příkazu** k provádění různých akcí:
+Na stránce se seznamem **Nákupní žádanky na pracovním příkazu** (**Správa majetku** > **Zásobování** > **Nákupní žádanka na pracovním příkazu**) se zobrazuje seznam nákupních žádanek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní žádanka pracovního příkazu** k provádění různých akcí:
 
 - Chcete-li otevřít související nákupní žádanku, vyberte možnost **Nákupní žádanka**. 
 - Chcete-li otevřít související pracovní příkaz, vyberte možnost **Pracovní příkaz**.
@@ -39,7 +39,7 @@ Na následujícím obrázku je uveden příklad stránky se seznamem **Nákupní
 ![Obrázek č. 1.](media/08-work-orders.png)
 
 
-Na stránce se seznamem **Nákupní v pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní v pracovním příkazu**) se zobrazuje seznam nákupních objednávek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní objednávka pracovního příkazu** k provádění různých akcí:
+Na stránce se seznamem **Nákupní v pracovním příkazu** (**Správa majetku** > **Zásobování** > **Nákup v pracovním příkazu**) se zobrazuje seznam nákupních objednávek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní objednávka pracovního příkazu** k provádění různých akcí:
 
 - Chcete-li otevřít související nákupní objednávku, vyberte možnost **Nákupní objednávka**. 
 - Chcete-li otevřít související pracovní příkaz, vyberte možnost **Pracovní příkaz**.
@@ -69,7 +69,7 @@ Datum v poli **Požadované datum** u nákupní žádanky na pevné záložce **
 
 Na stránce se seznamem **Všechny pracovní příkazy** můžete vybrat úlohu pracovního příkazu a pak vytvořit související nákupní objednávku nebo nákupní žádanku. Tímto způsobem pomáháte zaručit, že existují vztahy projektů mezi nákupní objednávkou nebo nákupní žádankou a pracovním příkazem.
 
-1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, pro který chcete vytvořit nákupní objednávku, a pak vyberte možnost **Upravit**.
 
