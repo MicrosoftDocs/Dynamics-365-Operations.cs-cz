@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866530"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067675"
 ---
 # <a name="globalization-resources"></a>Zdroje globalizace
 
 ## <a name="local-and-regional-deployments"></a>Místní a oblastní nasazení
 Pokud vaše vládní předpisy vyžadují, aby byla data uložena odlišně nebo servisována jiným způsobem, než je požadováno pro jiné země/oblasti, mohou při nasazení existovat požadavky země/oblasti, které musíte zvážit. Zvažte následující zdroje, které pro vás mohou být relevantní:
 
-[Finanční a provozní aplikace provozované prostřednictvím 21Vianet v Číně](../deployment/china-local-deployment.md)
+[Finanční a provozní aplikace provozované společností 21Vianet v Číně](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalizace a funkce týkající se předpisů
 
 [!include [banner](../includes/banner.md)]
 
-Finanční a provozní aplikace zahrnují funkci pro zemi/oblast popsané v dokumentu [Průvodce dostupnosti lokalizace a překladu produktu](https://aka.ms/dynamics_365_international_availability_deck). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
+Finanční a provozní aplikace zahrnují funkci pro zemi/oblast popsanou v dokumentu [Průvodce dostupností lokalizace a překladu produktu](https://aka.ms/dynamics_365_international_availability_deck). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
 
 Tento článek zahrnuje zdroje, které vám pomohou: 
 - Získejte více informací o řešeních specifických pro rozvojové země/oblasti.
@@ -63,7 +63,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 [Plány vydání verzí Dynamics 365](/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co je nového ve finančních a provozních aplikacích
-Obsah [domovské stránky Co je nového a co se změnilo v aplikaci Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních finančních a provozních aplikací.
+Obsah [domovské stránky Co je nového a co se změnilo ve finančních a provozních aplikacích](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních finančních a provozních aplikací.
 
 ### <a name="electronic-reporting"></a>Elektronické výkaznictví
 Nástroj Elektronické výkaznictví slouží ke konfiguraci formátů pro elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. Elektronické výkaznictví umožňuje spravovat tyto formáty během jejich životního cyklu. Další informace naleznete v jednom z následujících témat:
@@ -133,3 +133,4 @@ Další informace naleznete v tématu [Systém nápovědy](../../fin-ops/get-sta
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d50af9deb5309a31b886441780fe6b40b8b152ae
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880809"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065329"
 ---
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
@@ -44,9 +44,9 @@ Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 finanční a provozní aplikace – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
+[Blog komunity partnerů Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 Další nápověda je k dispozici v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
@@ -63,3 +63,4 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879069"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066050"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -56,16 +56,16 @@ Pro více informací o Dynamics 365 Finance přejděte na [domovskou stránku ap
 
 ## <a name="videos"></a>Videa
 
-Toto krátké video shrnuje nové funkce správy dodavatelsko-odběratelského řetězce přidané do verze 8.0 aplikace Microsoft Dynamics 365 for Finance and Operations (duben 2018).
+Toto krátké video shrnuje nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 Finance verze 8.0 (duben 2018).
 
-- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronizace pracovního příkazu mezi aplikací Field Service a finančními a provozními aplikacemi](https://youtu.be/hAB4TDVMjxU)
 
-Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017).
+Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (prosinec 2017).
 
 - [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Použití šablony skladu pro kopírování konfigurace](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017).
+Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 Finance, Enterprise edition (červenec 2017).
 
 - [Začínáme s modulem Nákladové účetnictví](https://youtu.be/1pUDtJQZ8FU)
 - [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)
@@ -73,7 +73,7 @@ Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského 
 - [Schválení nákupních objednávek na mobilním zařízení](https://youtu.be/gZ-gOlJe7H8)
 - [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky](https://youtu.be/BtbuShkGj4I)
 
-Následující záznamy technické konference se zabývají funkcemi správy dodavatelsko-odběratelského řetězce z předchozích verzí aplikace Finance and Operations. Tato funkce je nyní součástí aplikace Dynamics 365 Supply Chain Management. V aktuální verzi platí stále stejné koncepty a postupy jsou podobné.
+Následující záznamy technické konference se zabývají funkcemi správy dodavatelsko-odběratelského řetězce z předchozích verzí finančních a provozních aplikací. Tato funkce je nyní součástí aplikace Dynamics 365 Supply Chain Management. V aktuální verzi platí stále stejné koncepty a postupy jsou podobné.
 
 - **Správa nákladů:**
   - [Přehled správy nákladů](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ Ohledně online kurzů a školení se podívejte na [Dynamics 365 Supply Chain M
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

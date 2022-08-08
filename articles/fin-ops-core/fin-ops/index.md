@@ -1,6 +1,6 @@
 ---
-title: Dokumentace pro aplikaci Finance and Operations
-description: Dokumentace pro aplikace Finance and Operations.
+title: Dokumentace pro finanční a provozní aplikace
+description: Dokumentace pro finanční a provozní aplikace.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865825"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067455"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentace pro aplikaci Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentace pro finanční a provozní aplikace
 
 [!include [banner](includes/banner.md)]
 
-Zjistěte, jak můžete pro svůj obchod využít aplikace Finance and Operations pomocí zdrojů uvedených v tomto článku. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
+Zjistěte, jak můžete pro svůj obchod využít finanční a provozní aplikace s využitím materiálů uvedených v tomto článku. Naleznete zde skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
 
 Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Commerce a Dynamics 365 Human Resources. 
 
@@ -41,11 +41,11 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Comm
 <h3><a href="get-started/before-you-buy.md">Před zakoupením</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrace ukázkového předplatného</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Výběr možnosti nasazení</a></p>
- <p><a href="get-started/purchase-on-premises.md">Zakoupení aplikace Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakoupení finančních a provozních aplikací (místních)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Životní cyklus implementace</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
-<p><a href="imp-lifecycle/onboard.md">Nábor projektu</a></p>
+<p><a href="imp-lifecycle/onboard.md">Onboarding projektu</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Příprava pro ostré nasazení</a></p>
 
 <h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Aktualizace služby One Version</a></h3>
@@ -143,3 +143,4 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Comm
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

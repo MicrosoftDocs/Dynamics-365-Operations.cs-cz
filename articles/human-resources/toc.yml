@@ -58,6 +58,12 @@
                       href: hr-whats-new-2021-01-28.md
                     - name: 21. ledna 2021
                       href: hr-whats-new-2021-01-21.md
+                - name: Odstraněné nebo zastaralé funkce
+                  items:
+                    - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                    - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Human Resources
+                      href: get-started/removed-deprecated-features-hr.md
         - name: Začínáme
           items:
             - name: Přehled
@@ -66,14 +72,18 @@
               href: hr-admin-system-requirements.md
             - name: Nastavení a správa instancí
               items:
-                - name: Zřízení Human Resources
-                  href: hr-admin-setup-provision.md
-                - name: Kopírovat instanci
-                  href: hr-admin-setup-copy-instance.md
-                - name: Odebrání instance
-                  href: hr-admin-setup-remove-instance.md
-                - name: Aktualizace procesu
-                  href: hr-admin-setup-update-process.md
+                - name: Zřízení aplikace Human Resources ve finanční a provozní infrastruktuře
+                  href: hr-admin-setup-provision-fo.md
+                - name: "Zřízení aplikace Human Resources v\_samostatné infrastruktuře"
+                  items:
+                    - name: Zřízení Human Resources
+                      href: hr-admin-setup-provision.md
+                    - name: Kopírování instance
+                      href: hr-admin-setup-copy-instance.md
+                    - name: Odebrání instance
+                      href: hr-admin-setup-remove-instance.md
+                    - name: Aktualizace procesu
+                      href: hr-admin-setup-update-process.md
             - name: Nastavení integrace dat
               items:
                 - name: Volba technologie integrace dat
@@ -99,91 +109,91 @@
                 - name: Integrace s Office
                   items:
                     - name: Kurz integrace s Office
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/human-resources
                     - name: Aktualizace dat entity v aplikaci Excel
-                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/human-resources
                     - name: Nejčastější dotazy prostředí otevření v Excelu
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/human-resources
                     - name: Řešení problémů s integrací s Office
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/human-resources
                 - name: Konfigurace správy dat
                   items:
                     - name: Přehled Data Management Framework
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?context=/dynamics365/context/human-resources
                     - name: Datové entity
                       items:
                         - name: Přehled datových entit
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?context=/dynamics365/context/human-resources
                         - name: Konfigurace datových projektů
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?context=/dynamics365/context/human-resources
                     - name: Zkopírování dat konfigurace mezi společnostmi nebo právnickými osobami
                       items:
                         - name: Přehled kopírování konfiguračních dat
-                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?context=/dynamics365/context/human-resources
                         - name: Balíčky dat konfigurace
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: Balíčky dat konfigurace (pouze vydání z července 2017)
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: Šablony dat konfigurací
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?context=/dynamics365/context/human-resources
                         - name: Sledování změn entity
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: Hledání informací o standardních datových entitách
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?context=/dynamics365/context/human-resources
                         - name: Šablony dat s více listy
-                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?context=/dynamics365/context/human-resources
                         - name: Povolení sledování změn pro entity
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: Konfigurační klíče a datové entity
-                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?context=/dynamics365/context/human-resources
                         - name: Balíčky dat konfigurace
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                     - name: "Úlohy importu a\_exportu dat"
                       items:
                         - name: "Přehled úloh importu a\_exportu dat"
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?context=/dynamics365/context/human-resources
                         - name: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
-                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?context=/dynamics365/context/human-resources
                     - name: Vývoj pro datové entity
                       items:
                         - name: Návrh principů a osvědčených postupů pro datové entity
-                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?context=/dynamics365/context/human-resources
                         - name: Vytváření nových datových entit
-                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Vlastnosti datových entit
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Vytváření vypočtených sloupců a virtuálních polí
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?context=/dynamics365/context/human-resources
                         - name: Chování napříč společnostmi
-                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?context=/dynamics365/context/human-resources
                         - name: Zpracování kódů zemí/oblastí
-                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?context=/dynamics365/context/human-resources
                         - name: Vzory dědičnosti
-                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?context=/dynamics365/context/human-resources
                         - name: Pravidla průvodce datovými entitami
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?context=/dynamics365/context/human-resources
                         - name: Vlastnosti metadat
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: 'Ověření, výchozí hodnoty a nemapovaná pole'
-                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?context=/dynamics365/context/human-resources
                         - name: "Zabezpečení a\_datové entity"
-                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Použití testovacích nástrojů služeb třetí strany
-                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?context=/dynamics365/context/human-resources
                         - name: 'Vytvoření entit pouze ke čtení, které zveřejňují pouze finanční dimenze'
-                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?context=/dynamics365/context/human-resources
                     - name: Použití vlastní databáze
-                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/human-resources
                     - name: Optimalizace dávkových úloh přinesení vlastního zařízení
                       href: hr-admin-integration-byod-batch-jobs.md
                     - name: Automatizované obnovení úložiště entit
-                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?context=/dynamics365/context/human-resources
                     - name: Automatizace datové úlohy
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/human-resources
                     - name: Pracovní prostor kontrolního seznamu ověřování dat
-                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?context=/dynamics365/context/human-resources
                     - name: Popisy chyb správy dat
-                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?context=/dynamics365/context/human-resources
                     - name: Správa funkcí
                       href: hr-admin-manage-features.md
                     - name: Konfigurace a správa protokolování databáze
@@ -234,6 +244,8 @@
                   href: hr-admin-go-live-faq.md
                 - name: Často kladené dotazy ke sloučení infrastruktury Human Resources
                   href: hr-infrastructure-merge-faq.md
+                - name: Nejčastější dotazy ohledně migrace zákazníků v Human Resources
+                  href: customer-migration.md
                 - name: Zdroje dokumentace
                   items:
                     - name: Systém nápovědy

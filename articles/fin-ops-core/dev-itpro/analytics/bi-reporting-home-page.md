@@ -7,21 +7,21 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27681"
+- intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.openlocfilehash: 119292dccc2f2d7131f0fa39aa35a8253b948d40
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906626"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206468"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Domovská stránka vytváření sestav a analýzy s Power BI
 
@@ -30,9 +30,9 @@ ms.locfileid: "8906626"
 Tento článek vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence (BI) a nástrojích pro vykazování.
 
 ## <a name="get-started"></a>Začínáme
-- [Přístup k informacím a vykazování](information-access-reporting.md)
+- [Přístup k informacím a jejich vykazování](information-access-reporting.md)
 - [Technické přednášky: Možnosti vykazování](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Blog analýz a služeb Reporting Services v Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Finanční a provozní aplikace: Blog o analýzách a službách generování sestav v Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analytické pracovní prostory
 Pracovní prostory mohou používat bohatou infografiku a vizuální ovládací prvky, které podporuje Microsoft Power BI. Tyto infografiky a vizuály obsahují mnoho ovládacích prvků, které jsou poskytovány třetími stranami. Proto mohou pracovní prostory poskytnout pro uživatele vysoce vizuální a interaktivní možnosti.

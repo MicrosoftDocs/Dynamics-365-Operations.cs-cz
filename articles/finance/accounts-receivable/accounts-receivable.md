@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef08d7880a0695527cbfb4ba4e11aae05aec7fc8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711847"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065358"
 ---
 # <a name="accounts-receivable-home-page"></a>Domovská stránka Pohledávky
 
@@ -83,9 +83,9 @@ Přejděte na [Přehled Microsoft Dynamics 365](/dynamics365/release-plans/) a z
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o pohledávkách a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace o pohledávkách a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 finanční a provozní aplikace – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
+[Blog komunity partnerů Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
@@ -103,3 +103,4 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

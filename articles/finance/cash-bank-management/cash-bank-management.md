@@ -1,7 +1,7 @@
 ---
 title: Domovská stránka Pokladna a banka
 description: Pomocí nástroje Pokladna a banka spravujte bankovní účty a finanční nástroje právnické osoby, které jsou přidruženy k těmto bankovním účtům.
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710718"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151962"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
@@ -89,9 +89,9 @@ Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 finanční a provozní aplikace – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
+[Blog komunity partnerů Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci Finance je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
@@ -102,3 +102,4 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
