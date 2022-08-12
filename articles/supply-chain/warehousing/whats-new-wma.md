@@ -10,18 +10,35 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
+ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954656"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "9188984"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20300"></a>Verze 2.0.30.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Vylepšená stabilita.
+
+## <a name="version-20280"></a>Verze 2.0.28.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Vylepšená stabilita.
+- Zavedena možnost pokračovat ve skenování, i když je na obrazovce zobrazeno chybové hlášení.
+- Přidána podpora pro ASCII 10 v čárových kódech.
+- Vylepšena použitelnost dialogů s instrukcemi kroků.
+- Opraven problém, kdy se někdy mohla zobrazovat prázdná obrazovka.
+- Opraven problém, kdy se pracovní seznamy při spuštění neposouvaly správně v Microsoft Windows.
 
 ## <a name="version-20250"></a>Verze 2.0.25.0
 

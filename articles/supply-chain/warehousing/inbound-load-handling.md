@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070312"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -56,7 +56,7 @@ Následující ilustrace znázorňuje typický tok pro zpracování příchozíc
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Registrovat množství položek, které přicházejí do příchozího nákladu
 
-Microsoft Dynamics 365 Supply Chain Management podporuje několik provozních přístupů, které zaznamená doručení objednaných produktů. Systém proto můžete nakonfigurovat tak, aby splňoval vaše konkrétní obchodní požadavky. Tento oddíl popisuje postup při registraci příchozích množství položek pomocí mobilního zařízení v případě, že v systému je zapnuta funkce rozšířené řízení skladu. Existuje však alternativní tok, který je založen na použití deníku doručení položek místo na mobilní zařízení. Další informace o tomto toku viz [Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management podporuje několik provozních přístupů, které zaznamená doručení objednaných produktů. Systém proto můžete nakonfigurovat tak, aby splňoval vaše konkrétní obchodní požadavky. Tento oddíl popisuje postup při registraci příchozích množství položek pomocí mobilního zařízení v případě, že v systému je zapnuta funkce procesů řízení skladu (WMS). Existuje však alternativní tok, který je založen na použití deníku doručení položek místo na mobilní zařízení. Další informace o tomto toku viz [Registrace položek pro položky umožňující procesy řízení skladu s použitím deníku doručení zboží](tasks/register-items-advanced-warehousing.md).
 
 Při prvním doručení příchozího břemene do skladu musí pracovníci skladu registrovat množství položek, které jsou zahrnuty v dodávce. Obvykle používají ruční skenery. Tento Workflow je k dispozici pouze v případě, že v systému existují následující položky:
 

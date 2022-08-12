@@ -1,6 +1,6 @@
 ---
 title: Videa
-description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikacemi Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
+description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s finančními a provozním aplikacemi, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958131"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124942"
 ---
 # <a name="videos"></a>Videa 
 
 [!include [banner](../includes/banner.md)]
 
-V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro aplikace Dynamics 365 for Finance and Operations, které jsou v tomto informačním kanálu hostované.
+V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro finanční a provozní aplikace, které jsou v tomto informačním kanálu hostované.
 
 > [!Note]
 > Některá z uvedených videí byla publikována pod předchozím názvem produktu, ale stále jsou použitelná.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa o vvoji a správě pro aplikaci Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videa o vývoji a správě pro finance a provoz
 
 ### <a name="data-integration"></a>Integrace dat
 
-- [Synchronizace pracovního příkazu mezi službou Dynamics 365 for Field Service a aplikacemi Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronizace pracovního příkazu mezi službou Dynamics 365 for Field Service a finančními a provozními aplikacemi](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Správa dat
 
@@ -50,8 +50,8 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Editace integrovaných sestav v analytickém pracovním prostoru](https://youtu.be/_8WlwmSggcQ)
-- [Jak vložit sestavy PowerBI.com v aplikacích Finance and Operations](https://youtu.be/gGWuNJDoi-M)
-- [Přinesení vlastní databáze (BYOD) do aplikací Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Jak vložit sestavy PowerBI.com ve finančních a provozních aplikacích](https://youtu.be/gGWuNJDoi-M)
+- [Přinesení vlastní databáze (BYOD) do finančních a provozních aplikací](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak používat obsah řízení nákladů Power BI v Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Služby  Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

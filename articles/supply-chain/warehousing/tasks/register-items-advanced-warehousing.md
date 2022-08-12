@@ -1,6 +1,6 @@
 ---
-title: Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
-description: Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
+title: Registrujte položky povolené pro procesy řízení skladu pomocí deníku příchodů položek
+description: Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete procesy řízení skladu (WMS).
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863614"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066960"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Registrujte položky povolené pro procesy řízení skladu pomocí deníku příchodů položek
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník.
+Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete procesy řízení skladu (WMS). To obvykle provádí přijímající pracovník.
 
 ## <a name="enable-sample-data"></a>Povolit ukázková data
 
@@ -36,7 +36,7 @@ Místo toho můžete projít tímto scénářem nahrazením hodnot ze svých vla
 - Musíte mít potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky.
 - Položka na řádku musí být na skladě. Nesmí používat varianty produktu a nesmí mít sledovací dimenze.
 - Položka musí být přidružena ke skupině dimenzí úložiště, která má povolen proces řízení skladu.
-- Sklad, který se používá, musí být povolen pro procesy správy skladu a umístění, které používáte pro příjem, musí být řízeno registrační značkou.
+- Sklad, který se používá, musí být povolen pro WMS a umístění, které používáte pro příjem, musí být řízeno registrační značkou.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Vytvoření záhlaví deníku pro doručení položky, které používá řízení skladu
 

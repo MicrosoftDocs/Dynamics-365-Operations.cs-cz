@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941759"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171448"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Tento článek popisuje způsob konfigurace nové mobilní aplikace skladové aplikace Řízení skladu. Pokud hledáte informace o tom, jak nakonfigurovat starou aplikaci skladu (nyní zastaralou), přečtěte si téma [Instalace a připojení aplikace skladu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Tento článek vysvětluje, jak stáhnout a nainstalovat mobilní aplikaci Řízení skladu na každém z vašich mobilních zařízení, a jak konfigurovat její připojování k prostředí Supply Chain Management. Každé zařízení můžete nakonfigurovat ručně nebo můžete importovat nastavení připojení prostřednictvím souboru nebo naskenováním QR kódu.
 

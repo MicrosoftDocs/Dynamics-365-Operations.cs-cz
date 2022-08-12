@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860102"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112105"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -29,7 +29,7 @@ V rozhraní aplikace můžete přistupovat ke stavům zpracování a informacím
 Informace o integraci zákazníků a kontaktů najdete v části [Integrovaný kmenový soubor zákazníka](customer-mapping.md). Informace o integraci produktu najdete v části [Jednotná zkušenost s produktem](product-mapping.md).
 
 > [!NOTE]
-> V Dynamics 365 Sales se potenciální zákazník i zákazník odvolávají na záznam v tabulce **Účet**, kde je sloupec **Typ vztahu** buď **potenciální zákazník** nebo **Zákazník**. Pokud vaše obchodní logika obsahuje kvalifikační proces **Účet**, kde je vytvořen záznam **Účet** a je nejprve kvalifikován jako potenciální zákazník a poté jako zákazník, tento záznam se synchronizuje s aplikací Finance and Operations pouze v případě, že se jedná o zákazníka (`RelationshipType=Customer`). Pokud chcete řádek **Účet** synchronizovat jako potenciálního zákazníka, pak potřebujete vlastní mapu pro integraci dat potenciálního zákazníka.
+> V Dynamics 365 Sales se potenciální zákazník i zákazník odvolávají na záznam v tabulce **Účet**, kde je sloupec **Typ vztahu** buď **potenciální zákazník** nebo **Zákazník**. Pokud vaše obchodní logika obsahuje kvalifikační proces **Účet**, kde je vytvořen záznam **Účet** a je nejprve kvalifikován jako potenciální zákazník a poté jako zákazník, tento záznam se synchronizuje s finanční a provozní aplikací pouze v případě, že se jedná o zákazníka (`RelationshipType=Customer`). Pokud chcete řádek **Účet** synchronizovat jako potenciálního zákazníka, pak potřebujete vlastní mapu pro integraci dat potenciálního zákazníka.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
@@ -122,7 +122,7 @@ Zpeněžení potenciálního zákazníka zahrnují kolekce map základních tabu
 [Záhlaví prodejní nabídky CDS](mapping-reference.md#215) | nabídky | |
 [Řádky prodejní nabídky CDS](mapping-reference.md#214) | quotedetails | |
 [Uvolněné produkty V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury | Tabulka záhlaví prodejní faktury V2 v aplikaci Finance and Operations obsahuje faktury za prodejní objednávky a faktury s volným textem. Je použit filtr v Dataverse pro duální zápis, který odfiltruje veškeré dokumenty s volným textem na faktuře. |
+[Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury | Tabulka záhlaví prodejní faktury V2 ve finanční a provozní aplikaci obsahuje faktury za prodejní objednávky a faktury s volným textem. Je použit filtr v Dataverse pro duální zápis, který odfiltruje veškeré dokumenty s volným textem na faktuře. |
 [Řádky prodejní faktury V2](mapping-reference.md#117) | invoicedetails | |
 [Kódy původu prodejních objednávek](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
@@ -135,3 +135,4 @@ Informace o cenících najdete v části [Jednotná zkušenost s produktem](prod
 - Je třeba nastavit finanční dimenze pro kmenová data, například zákazníka a dodavatele. Když je zákazník přidán do nabídky nebo prodejní objednávky, finanční dimenze přidružené k záznamu zákazníka se automaticky dostanou do objednávky. V současné době duální zápis nezahrnuje data finančních dimenzí pro kmenová data.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864565"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111163"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
 
@@ -22,7 +22,7 @@ ms.locfileid: "8864565"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -112,3 +112,4 @@ Při pokusu o zastavení mapování tabulky se mohou zobrazit následující chy
 Chcete-li problémy vyřešit, aktualizujte řešení dvojitého zápisu v Dataverse. Nezapomeňte upgradovat na nejnovější řešení, které odpovídá požadované verzi řešení.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66ed258ebddaadb5a306f41dea3e439e9b5a7be3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907109"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065849"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Import příchozích ASN prostřednictvím datové entity V3
 
@@ -29,7 +29,7 @@ ASN mohou pracovníkům skladu pomoci zjistit, co kdy dorazí. Proto se mohou p�
 Tento článek představuje sbírku scénářů, které prostřednictvím příkladů ukazují, jak pracovat se soubory ASN.
 
 > [!IMPORTANT]
-> Import *Příchozí ASN* se vztahuje pouze na položky, které jsou povoleny pro pokročilou správu skladu (WMS). Než obdržíte ASN, musí být v systému zaregistrována nákupní objednávka u dodavatele, který dané ASN odesílá.
+> Import *Příchozí ASN* se vztahuje pouze na položky, které jsou povoleny pro procesy správu skladu (WMS). Než obdržíte ASN, musí být v systému zaregistrována nákupní objednávka u dodavatele, který dané ASN odesílá.
 
 ## <a name="inbound-asn-v3-entity"></a>Příchozí entita ASN V3
 

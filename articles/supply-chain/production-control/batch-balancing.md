@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856041"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066539"
 ---
 # <a name="batch-balancing"></a>Vyvážení dávky
 
@@ -165,22 +165,22 @@ V dílčím procesu látek pro vyvážení dávky se množství látek pro použ
 
 ### <a name="confirm-and-release-the-formula"></a>Potvrzení a uvolnění receptury
 
-Poté, co byla vypočtena množství látek, můžete potvrdit a uvolnit recepturu. Proces uvolnění se liší v závislosti na tom, zda jsou produkty povoleny pro procesy správy skladu:
+Poté, co byla vypočtena množství látek, můžete potvrdit a uvolnit recepturu. Proces uvolnění se liší v závislosti na tom, zda jsou produkty povoleny pro procesy správy skladu (WMS):
 
-- Pokud je produkt povolen pro procesy správy skladu, je řádek receptury uvolněn do skladu podle zásad pro procesy správy skladu. Řádek receptury je uvolněn v množstvích, která odpovídají vyrovnaným množstvím, a je uvolněn pro určité dávky vybraných pro aktivní látky.
+- Pokud je produkt povolen pro WMS, je řádek receptury uvolněn do skladu podle zásad pro WMS. Řádek receptury je uvolněn v množstvích, která odpovídají vyrovnaným množstvím, a je uvolněn pro určité dávky vybraných pro aktivní látky.
 
     > [!NOTE]
     > Řádky receptury je možné uvolnit do skladu pouze jako součást procesu vyvážení dávky. I když existují další možnosti pro uvolnění materiálu pro výrobu do skladu, tyto možnosti nelze použít pro řádky receptury.
 
-- Pokud není produkt povolen pro procesy správy skladu, je vytvořena výrobní výdejka pro produkt, když potvrdíte a uvolníte recepturu.
+- Pokud není produkt povolen pro WMS, je vytvořena výrobní výdejka pro produkt, když potvrdíte a uvolníte recepturu.
 
-Do jedné receptury můžete kombinovat produkty, které jsou povoleny pro procesy správy skladu, a produkty, které nejsou povoleny pro procesy správy skladu. Když jsou v jedné receptuře zahrnuty dva typy produktů, jsou uvolněny do skladu produkty, které jsou povoleny pro procesy správy skladu. U produktů, které nejsou povoleny pro procesy správy skladu, je vytvořena výrobní výdejka, když potvrdíte a uvolníte recepturu.
+Do jedné receptury můžete kombinovat produkty, které jsou povoleny pro procesy správy skladu, a produkty, které nejsou povoleny pro procesy správy skladu. Když jsou v jedné receptuře zahrnuty dva typy produktů, jsou uvolněny do skladu produkty, které jsou povoleny pro WMS. U produktů, které nejsou povoleny pro WMS, je vytvořena výrobní výdejka, když potvrdíte a uvolníte recepturu.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Dávkové objednávky, které nejsou použitelné pro vyvážení dávky
 
 Existují dvě výjimky z pravidla, že dávkové objednávky lze použít pro vyvážení dávky, a to, pokud má receptura alespoň jeden řádek receptury s **typem látky** *Aktivní*.
 
-1. Pokud receptura obsahuje aktivní látku produktu, který je povolen pro procesy správy skladu, ale je číslo dávky je pod umístěním v hierarchii rezervací, není dávková objednávka použitelná pro vyvážení dávky.
+1. Pokud receptura obsahuje aktivní látku produktu, který je povolen pro WMS, ale je číslo dávky je pod umístěním v hierarchii rezervací, není dávková objednávka použitelná pro vyvážení dávky.
 1. Pokud se měrná jednotka vzorce liší od měrné jednotky inventáře aktivní látky, dávkové pořadí není použitelné pro vyvážení dávky.
 
 Dávková objednávka, která není použitelná pro vyvážení dávky, prochází pravidelným cyklem procesu pro dávkové objednávky.

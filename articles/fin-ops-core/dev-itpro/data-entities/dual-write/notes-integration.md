@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876708"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111449"
 ---
 # <a name="note-integration"></a>Integrace poznámek
 
@@ -64,11 +64,11 @@ Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchron
 
 Všechny aktualizace poznámky se synchronizují tam a zpět mezi finanční a provozní aplikací a aplikací Customer Engagement.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Vytvořte poznámku ve finanční a provozní aplikaci.
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Vytvořte poznámku ve finanční a provozní aplikaci
 
 Poznámku můžete vytvořit také ve finanční a provozní aplikaci a poté ji synchronizovat do aplikace pro zapojení zákazníků.
 
-Chcete-li vytvořit poznámku ve finanční a provozní aplikaci a poté ji synchronizovat do aplikace pro zapojení zákazníků, postupujte podle těchto kroků.
+Chcete-li vytvořit poznámku ve finanční a provozní aplikaci a poté ji synchronizovat do aplikace Customer Engagement, postupujte podle těchto kroků.
 
 1. Ve finanční a provozní aplikaci na stránce **Přílohy** vyberte **Nová** \> **Poznámka**.
 
@@ -121,3 +121,4 @@ Integrace poznámek zahrnuje mapy kolekce tabulek, které pracují společně b�
 Jakmile nainstalujete řešení pro poznámky, nemůžete jej odinstalovat. 
 
 Další informace viz [Odkaz na mapování duálního zápisu ](mapping-reference.md).
+

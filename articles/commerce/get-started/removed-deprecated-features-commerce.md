@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910517"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138579"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -32,6 +32,19 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Oznámení o ukončení podpory funkce od července 2022
+
+### <a name="commerce-analytics-preview"></a>Analytické nástroje Commerce (Preview)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Tým Dynamics 365 Commerce analyzoval používání a zavádění funkce Commernce analytics (Preview) a bylo přijato rozhodnutí, že již nebudeme pokračovat v uvádění této funkce do obecné dostupnosti.   |
+| **Nahrazeno jinou funkcí?**   | V současné době nebude analytika Commerce (Preview) nahrazena jinou funkcí nebo řešením. Export nezpracovaných transakcí a kmenových dat z finančních a provozních aplikací do Azure Data Lake je i nadále k dispozici, jak je vysvětleno v části [Export do Data Lake ve finančních a provozních aplikacích](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partneři a zákazníci mohou využít tento datový tok k vytváření jakýchkoli zamýšlených analytických sestav pro jejich obchodní potřeby.
+| **Ovlivněné oblasti produktu**         | Analytické nástroje Commerce (Preview) |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Deaktivaci této funkce zvážíme do 30. srpna 2022.  Od tohoto data v aktuálním stavu nedojde k žádnému obnovení zpráv Power BI poskytovaných analýzou Commerce (Preview).     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.25
 
@@ -195,3 +208,4 @@ Další informace o funkcích, které byly v předchozích verzích odebrány ne
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

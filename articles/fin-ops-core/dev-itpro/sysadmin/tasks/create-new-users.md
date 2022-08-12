@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595379"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103318"
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
 [!include [banner](../../includes/banner.md)]
 
-Než budete mít přístup do aplikací Finance and Operations, musíte být nejprve přidáni na stránku **Uživatelé** (**Správa systému \> Uživatelé \> Uživatelé**). Mezi uživatele patří interní zaměstnanci vaší organizace nebo externí zákazníci a prodejci. Uživatele lze importovat nebo přidávat ručně. Všichni uživatelé musí mít správnou licenci pro použití v souladu s předpisy.
+Než budete mít přístup do finančních a provozních aplikací, musíte být nejprve přidáni na stránku **Uživatelé** (**Správa systému \> Uživatelé \> Uživatelé**). Mezi uživatele patří interní zaměstnanci vaší organizace nebo externí zákazníci a prodejci. Uživatele lze importovat nebo přidávat ručně. Všichni uživatelé musí mít správnou licenci pro použití v souladu s předpisy.
 
-Informace o tom, jak nakupovat a licencovat pro aplikace Finance and Operations, najdete v části [Průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+Informace o tom, jak nakupovat a licencovat pro finanční a provozní aplikace, najdete v části [Průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Přiřazení licence uživateli
 Správci systému mohou [přiřazovat licence uživatelům](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) v [centru správy Microsoft 365](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Přidání externího uživatele do Azure AD a přiřazení licence 
-Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na aplikace Finance and Operations je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](/azure/active-directory/b2b/add-users-administrator).
+Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na finanční a provozní aplikace je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Import nových uživatelů ze služby Azure AD 
 1. Přejděte do nabídky **Správa systému** \> **Uživatel** \> **Uživatelé**.

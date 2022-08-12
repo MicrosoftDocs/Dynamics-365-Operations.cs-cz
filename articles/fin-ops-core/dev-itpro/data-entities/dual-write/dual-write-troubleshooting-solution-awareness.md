@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c280eef995664c640e382817dda9d6e1cde154c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6866956efcc76a7da6c3aa5fb36058de78d5472e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871488"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111291"
 ---
 # <a name="troubleshoot-issues-related-to-solution-awareness"></a>Poradce při potížích souvisejících s připraveností řešení
 
@@ -24,7 +24,7 @@ ms.locfileid: "8871488"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s připraveností řešení.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s připraveností řešení.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.

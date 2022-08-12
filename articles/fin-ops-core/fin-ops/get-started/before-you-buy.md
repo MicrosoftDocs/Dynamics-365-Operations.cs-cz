@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713269"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123975"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
@@ -26,7 +26,7 @@ ms.locfileid: "8713269"
 
 Pracujete v Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce nově? Připravili jsme podrobné pokyny, ať již aplikaci stále hodnotíte, nebo jste připravení na nákup.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok jedna: Vyzkoušejte si aplikaci Finance and Operations 30 dní zdarma
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok jedna: Vyzkoušejte si finanční a provozní aplikaci 30 dní zdarma
 
 Aplikaci Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze finančních a provozních aplikací obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte v tématu [Registrace ukázkového předplatného](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
@@ -62,7 +62,7 @@ Poskytovatele cloudového řešení Microsoft s vámi může spolupracovat, aby 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Nákup prostřednictvím partnera Dynamics (místní)
 
-Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace naleznete v tématu [Zakoupení Finance + Operations (místní)](purchase-on-premises.md).
+Pokud chcete zakoupit Finance + Operations (on-premises), je nutná spolupráce s partnerem. Další informace naleznete v tématu [Zakoupení Finance + Operations (místní)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Nákup za použití multilicence (cloud nebo místní)
 
@@ -94,3 +94,4 @@ Pokud jste zákazník, který upgraduje z aplikace Microsoft Dynamics AX 2012 ne
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

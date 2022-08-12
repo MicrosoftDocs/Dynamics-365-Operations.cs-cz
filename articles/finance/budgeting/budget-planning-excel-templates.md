@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872492"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070657"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
@@ -79,7 +79,7 @@ Vybraná skupina polí zobrazuje sloupce, které jsou k dispozici v šabloně. K
 [![Přidání a vložení sloupce.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**. Tabulka vázaná na aplikaci Finance and Operations se obvykle nazývá "AXTable1". Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].
+> Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**. Tabulka vázaná na finanční a provozní aplikaci se obvykle nazývá „AXTable1“. Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].
 
 Opakujte tyto kroky pro vložení sloupce **Úprava**. Použijte vzorec = AxTable1\[Celkový požadavek\]\*$I$ 1 pro tento sloupec. Vezme se hodnota v buňce I1 a vynásobí se hodnoty ve sloupci **Celkový požadavek** pro výpočet částek úprav.
 
@@ -129,3 +129,4 @@ Můžete také vytvořit a použít kontingenční tabulky a grafy pro další s
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

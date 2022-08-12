@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907080"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068352"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Rozhraní vybavení manipulace s materiálem (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-Můžete použít *rozhraní zařízení pro práci s materiálem* (MHAX) pro připojení externích systémů pro práci s fyzickým materiálem (MH) do skladu, který je spravován pomocí pokročilé správy skladu (WMS) v Microsoft Dynamics 365 Supply Chain Management. Rozhraní mezi systémy WMS a MH se skládá ze dvou front: jedné pro odchozí události (WMS na MH) a jedné pro příchozí události (MH na WMS). Systém WMS generuje odchozí události na základě řádků práce, které jsou vytvořeny během různých procesů vytváření a provádění prací. Systém MH poté pravidelně dotazuje systém WMS na nové události a zpracovává odpovědi. Poté, co systém MH dokončí zpracování událostí v souladu s pracovními pokyny, odešle příchozí události, jako je dokončení řádků práce a krátké vyzvednutí.
+Můžete použít *rozhraní zařízení pro práci s materiálem* (MHAX) pro připojení externích systémů pro práci s fyzickým materiálem (MH) do skladu, který je spravován pomocí procesů správy skladu (WMS) v Microsoft Dynamics 365 Supply Chain Management. Rozhraní mezi systémy WMS a MH se skládá ze dvou front: jedné pro odchozí události (WMS na MH) a jedné pro příchozí události (MH na WMS). Systém WMS generuje odchozí události na základě řádků práce, které jsou vytvořeny během různých procesů vytváření a provádění prací. Systém MH poté pravidelně dotazuje systém WMS na nové události a zpracovává odpovědi. Poté, co systém MH dokončí zpracování událostí v souladu s pracovními pokyny, odešle příchozí události, jako je dokončení řádků práce a krátké vyzvednutí.
 
 Následující obrázek ukazuje různé prvky a pořadí, ve kterém dochází k procesům při použití integrace MHAX.
 

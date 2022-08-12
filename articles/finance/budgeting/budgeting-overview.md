@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864390"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067422"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 
@@ -38,7 +38,7 @@ Cyklus plánování zdrojů pro společnost se obvykle skládá z plánování, 
 
 Procesy pro dlouhodobé strategické plánování a plánování ročního rozpočtu jsou podporovány prostřednictvím dokumentu plánu rozpočtu. Dokumenty plánu rozpočtu jsou úzce integrovány s aplikací Microsoft Excel. Uživatelé mohou konfigurovat neomezené peněžní a množstevní scénáře a také definovat rozpočtování organizační hierarchie k podpoře rozpočtování metodami shora dolů a zdola nahoru. Po stanovení a schválení rozpočtu v aplikaci převedete plán rozpočtu na položku registru rozpočtu. Položky registru rozpočtu poskytují nástroje pro správu rozpočtu a udržování přehledu o částkách prostřednictvím kódů rozpočtu. Položky registru rozpočtu umožňují opravit původní rozpočty, provést převody a přenést částky z rozpočtu z předchozího roku. Na základě stanoveného rozpočtu může společnost povolit řízení rozpočtu. Úroveň řízení závisí na kultuře organizace a úrovni vyspělosti organizace. Organizace, které mají nízkou úroveň vyspělosti, mohou ponechat rozpočet bez dalších úprav a mohou být více reaktivní než proaktivní v případě, že rozpočet neodpovídá očekávání. Jiné organizace mohou povolit zásady kontroly rozpočtu, které uživatelům zabrání v nákupech, pokud rozpočtové prostředky nejsou k dispozici.
 
-Velmi vyspělé organizace mohou vytvořit organizační kulturu, ve které se zaměstnanci vzdělávají v otázkách organizačních cílů a postupují podle cílů prostřednictvím pravidel, jako je „Zvažte online schůzky namísto cest.” Aplikace zahrnuje architekturu kontroly rozpočtu, která umožňuje vedoucím pracovníkům společnosti zvolit buď důslednou kontrolu (ta zabraňuje zaúčtování, která by překročila rozpočet), nebo uvolněnou kontrolu (ta uživatele upozorní, že překročí dostupné rozpočtové prostředky, ale oni sami určí další postup). Můžete použít také postupné prognózy. Postupná prognóza je pravidelné porovnání rozpočtu a skutečných hodnot a slouží k určení míry, do jaké společnost operuje oproti rozpočtu. Postupná prognóza se také používá k identifikaci trendů. V aplikaci Finance and Operations jsou podporovány postupné prognózy pomocí dokumentu plánu rozpočtu jako počáteční aktivity plánování. Postupné prognózy lze provádět současně s plánováním nadcházejícího rozpočtového cyklu.
+Velmi vyspělé organizace mohou vytvořit organizační kulturu, ve které se zaměstnanci vzdělávají v otázkách organizačních cílů a postupují podle cílů prostřednictvím pravidel, jako je „Zvažte online schůzky namísto cest.” Aplikace zahrnuje architekturu kontroly rozpočtu, která umožňuje vedoucím pracovníkům společnosti zvolit buď důslednou kontrolu (ta zabraňuje zaúčtování, která by překročila rozpočet), nebo uvolněnou kontrolu (ta uživatele upozorní, že překročí dostupné rozpočtové prostředky, ale oni sami určí další postup). Můžete použít také postupné prognózy. Postupná prognóza je pravidelné porovnání rozpočtu a skutečných hodnot a slouží k určení míry, do jaké společnost operuje oproti rozpočtu. Postupná prognóza se také používá k identifikaci trendů. Ve finanční a provozní aplikaci jsou podporovány postupné prognózy pomocí dokumentu plánu rozpočtu jako počáteční aktivity plánování. Postupné prognózy lze provádět současně s plánováním nadcházejícího rozpočtového cyklu.
 
 -   [Přehled rozpočtování](basic-budgeting-overview-configuration.md)
 -   [Přehled kontroly rozpočtu](budget-control-overview-configuration.md)
@@ -72,3 +72,4 @@ Například můžete definovat, kdo provádí rozpočtování, co se rozpočtuje
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

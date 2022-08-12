@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 53007504f1094b69ec6578d382c451a2bf1f9059
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891897"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108911"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak stahovat [konfigurace elektronického vykazování (ER)](general-electronic-reporting.md#Configuration) z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurační služba](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tento článek vysvětluje, jak stahovat [konfigurace elektronického vykazování (ER)](general-electronic-reporting.md#Configuration) z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 Finance – Regulatory Services, konfigurační služba](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Otevřete úložiště konfigurací
 
@@ -91,3 +91,4 @@ Tento článek vysvětluje, jak stahovat [konfigurace elektronického vykazován
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

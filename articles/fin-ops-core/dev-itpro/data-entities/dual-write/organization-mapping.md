@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884725"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112011"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organizační hierarchie v Dataverse
 
@@ -52,3 +52,4 @@ Finanční a provozní aplikace | Aplikace Customer Engagement     | Popis
 Informace o interní organizaci v Dataverse pocházejí ze dvou tabulek, **Provozní jednotka** a **Právnická osoba**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

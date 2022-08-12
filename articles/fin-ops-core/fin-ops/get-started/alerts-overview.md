@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b81eb8e0be4c7d7357a6b8b7b5f0ac025b9ab8ca
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850057"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124251"
 ---
 # <a name="alerts-overview"></a>Přehled výstrah
 
@@ -77,13 +77,13 @@ Pravidlo výstrahy obsahuje pět komponent:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Video (uvedené výše) [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) je zahrnuto v [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
+Video (uvedené výše) [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) je zahrnuto v [Playlistu financí a provozu](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
 
 ### <a name="alert-rule-options"></a>Možnosti pravidla výstrahy
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM) (zobrazené výše) je zahrnuto do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM) (zobrazené výše) je zahrnuto do [playlistu financí a provozu](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 
 

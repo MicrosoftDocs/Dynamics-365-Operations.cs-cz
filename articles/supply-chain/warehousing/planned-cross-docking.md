@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863672"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070282"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -118,7 +118,7 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **Zdroj dodávky:** *Nákupní objednávka*
 
 > [!NOTE]
-> Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony cross dockingu. Dotaz na šablony cross dockingu má pouze tabulku *InventTable* (položky) a vnitřní spojení s tabulkou *WHSInventTable* (položky WHS). Pokud chcete do dotazu přidat další tabulky, můžete se k nim připojit pouze pomocí spojení *existuje* nebo *neexistuje*. Když filtrujete záznamy na spojených tabulkách, načte se záznam z hlavní tabulky pro každý odpovídající záznam ve spojené tabulce. Pokud je typ spojení *existuje*, hledání skončí po nalezení první shody. Pokud například připojíte tabulku řádku prodejní objednávky k tabulce položek, systém ověří a vrátí položky, pro které má definovanou podmínku alespoň jeden řádek prodejní objednávky. V zásadě jsou data načítána z nadřazené tabulky (položek), nikoli z podřízené tabulky (řádek prodejní objednávky). Filtrování podle zdrojových dokumentů, jako jsou řádky prodejní objednávky nebo zákazníci, proto nelze provést ihned bez úprav.
+> Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony cross dockingu. Dotaz na šablony cross dockingu má pouze tabulku *InventTable* (položky) a vnitřní spojení s tabulkou *WHSInventTable* (položky WMS). Pokud chcete do dotazu přidat další tabulky, můžete se k nim připojit pouze pomocí spojení *existuje* nebo *neexistuje*. Když filtrujete záznamy na spojených tabulkách, načte se záznam z hlavní tabulky pro každý odpovídající záznam ve spojené tabulce. Pokud je typ spojení *existuje*, hledání skončí po nalezení první shody. Pokud například připojíte tabulku řádku prodejní objednávky k tabulce položek, systém ověří a vrátí položky, pro které má definovanou podmínku alespoň jeden řádek prodejní objednávky. V zásadě jsou data načítána z nadřazené tabulky (položek), nikoli z podřízené tabulky (řádek prodejní objednávky). Filtrování podle zdrojových dokumentů, jako jsou řádky prodejní objednávky nebo zákazníci, proto nelze provést ihned bez úprav.
 
 ### <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 

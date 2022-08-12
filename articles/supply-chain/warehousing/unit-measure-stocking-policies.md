@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714829"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069115"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Měrná jednotka a zásady uskladnění
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714829"
 
 Tento článek popisuje způsob, jakým jsou výchozí jednotky, řady jednotek a převody jednotek používány v procesech skladu.
 
-Skupiny klasifikace jednotky definují pořadí jednotek, které lze použít v operacích skladu. Jsou vytvořeny na stránce **Skupiny klasifikace jednotek**. Klasifikace ukazuje vztah různých jednotek. Například skladujete palety, které obsahují krabice, které obsahují jednotlivé položky. V takovém případě je třeba zadat tři různé jednotky a logické pořadí vrstev. Skupiny klasifikace jednotek umožňují definovat zásady pro seskupení registračních značek a výchozích jednotek, které chcete použít pro různé procesy skladu. Tento článek se vztahuje na rozšířené skladové řešení, které je k dispozici v modulu Řízení skladu, ale i jednodušší skladová řešení, která jsou k dispozici v modulu Řízení zásob.
+Skupiny klasifikace jednotky definují pořadí jednotek, které lze použít v operacích skladu. Jsou vytvořeny na stránce **Skupiny klasifikace jednotek**. Klasifikace ukazuje vztah různých jednotek. Například skladujete palety, které obsahují krabice, které obsahují jednotlivé položky. V takovém případě je třeba zadat tři různé jednotky a logické pořadí vrstev. Skupiny klasifikace jednotek umožňují definovat zásady pro seskupení registračních značek a výchozích jednotek, které chcete použít pro různé procesy skladu. Tento článek se vztahuje na procesy řízení skladu (WMS), které jsou k dispozici v modulu Řízení skladu, ale i jednodušší skladová řešení, která jsou k dispozici v modulu Řízení zásob.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Skupiny klasifikace jednotek pro uvolněné produkty
 Pokud chcete použít uvolněné produkty v pracovních procesech skladu, skupina klasifikace jednotek musí být k nim přiřazena. Pokud ověřujete produkt, který je přidružen ke skupině dimenzí úložiště a možnost **Používat procesy správy skladu** pro skupinu dimenzí úložiště je nastavena na **Ano**, zobrazí se chybová zpráva, pokud není ID skupiny klasifikace jednotek definováno pro produkt. Pokud skupina klasifikace jednotek, kterou používáte, obsahuje více řádků (a tedy více jednotek), musíte nastavit převod jednotek mezi jednotkami. K dokončení tohoto nastavení použijte stránku **Převody jednotek**. Nejmenší jednotkou v rámci skupiny klasifikace, kterou přidružíte k vydanému produktu, se musí shodovat se skladovou jednotkou, která je definována pro odpovídající produkt. Skladová jednotka je jednotka, která je použita pro základní výpočty množství na skladě. Převody měrné jednotky pro varianty produktu u základních produktů lze nastavit také pomocí možnosti **Povolit převody měrné jednotky**.

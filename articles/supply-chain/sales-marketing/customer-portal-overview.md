@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901901"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103823"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Přehled zákaznického portálu pro Dynamics 365 Supply Chain Management
 
@@ -42,7 +42,7 @@ Zákaznický portál je šablona [portálů Power Apps](/powerapps/maker/portals
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-Video [Přehled šablony zákaznického portálu v Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (viz výše) je součástí [seznamu skladeb Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) k dispozici na YouTube.
+Video [Přehled šablony zákaznického portálu v Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (viz výše) je součástí [seznamu skladeb financí a provozu](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) k dispozici na YouTube.
 
 ## <a name="who-should-use-it"></a>Kdo by to měl použít?
 

@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 75c044d1133e1c4765cd97f4ab7e2a08ba998c35
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851645"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112143"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8851645"
 
 Tento článek obsahuje informace o mobilním pracovním prostoru **Spolupráce dodavatele**. Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations (Dynamics 365).
+Tento mobilní pracovní prostor je určen k použití s finanční a provozní mobilní aplikací (Dynamics 365).
 
 ## <a name="overview"></a>Přehled 
 Mobilní pracovní prostor **Dodavatelská spolupráce** informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta pracovní prostor. 
@@ -110,7 +110,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
+Stáhněte a nainstalujte finanční a provozní mobilní aplikaci (Dynamics 365):
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -171,3 +171,4 @@ Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

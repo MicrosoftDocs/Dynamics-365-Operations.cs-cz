@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771865"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108757"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
@@ -42,7 +42,7 @@ Při plánování hierarchií je také třeba uvážit vztah mezi organizační 
 
 Je nutné mít alespoň jednu právnickou osobu reprezentující vaše podnikání. Právnická osoba může uzavírat právní smlouvy a jsou po ní vyžadovány finanční výkazy s informacemi o jejím výkonu.
 
-Právnické osoby slouží k transakčnímu podnikání nebo pro konsolidaci. To znamená, že právnická osoba ve Finance and Operations nepředstavuje nutně skutečnou entitu ve vašem podnikání. Společnost, která se účastní transakcí, může například vlastnit dceřiné právnické osoby. V tomto scénáři je právnická osoba vyžadována pro transakce a virtuální právnická osoba je vyžadována pro konsolidaci výsledků a zůstatků dceřiných právnických osob.
+Právnické osoby slouží k transakčnímu podnikání nebo pro konsolidaci. To znamená, že právnická osoba ve financích a provozu nepředstavuje nutně skutečnou entitu ve vašem podnikání. Společnost, která se účastní transakcí, může například vlastnit dceřiné právnické osoby. V tomto scénáři je právnická osoba vyžadována pro transakce a virtuální právnická osoba je vyžadována pro konsolidaci výsledků a zůstatků dceřiných právnických osob.
 
 Interní organizace ve společnosti, jako jsou například místní pobočky, lze znázornit jako další právnické osoby nebo provozní jednotky hlavní právnické osoby. Provozní jednotka nemusí být zákonem definovaná organizace. Provozní jednotky se používají k řízení ekonomických zdrojů a provozních procesů v podnikání. Například oddělení a nákladová střediska jsou provozní jednotky.
 
@@ -171,7 +171,7 @@ Pro země nebo oblasti, které jsou podporovány, lze vytvořit většinu povinn
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Pokud organizace modelována jako provozní jednotka
 
-Statutární zprávy musí být vytvořeny jinou aplikací. Je nutné zajistit, že data zachycená v aplikacích Finance and Operations podporují požadavky jednotlivých provozních jednotek, kde se liší od požadavků ústředí.
+Statutární zprávy musí být vytvořeny jinou aplikací. Je nutné zajistit, že data zachycená ve finančních a provozních aplikacích podporují požadavky jednotlivých provozních jednotek, kde se liší od požadavků ústředí.
 
 ### <a name="currency"></a>Měna
 
@@ -242,3 +242,4 @@ Při implementaci organizační hierarchie berte v úvahu následující doporu�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

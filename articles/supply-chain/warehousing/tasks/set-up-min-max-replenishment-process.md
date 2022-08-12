@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577761"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069719"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Vytvoření procesu minimálního nebo maximálního doplňování
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup popisuje, jak nastavit nový proces doplnění využívající strategii doplnění metodou min/max. Pokud zásoby klesnou pod minimální úroveň, vytvoří se práce pro doplnění skladového místa. Postup také popisuje, jak používat pevná výdejní skladová místa a povolit tak doplnění i v případě, že zásoby klesnou pod minimální úroveň, a jak povolit pravidelné spuštění doplnění za pomoci dávkové úlohy. Tyto úkoly obvykle provádějí vedoucí skladu. Tento postup lze spustit s ukázkovými daty společnosti USMF základě vzorových hodnot níže nebo při použití vlastních dat. Jestliže používáte vlastní data, ujistěte se, že používáte sklad, který je povolen pro procesy správy skladu.
+Tento postup popisuje, jak nastavit nový proces doplnění využívající strategii doplnění metodou min/max. Pokud zásoby klesnou pod minimální úroveň, vytvoří se práce pro doplnění skladového místa. Postup také popisuje, jak používat pevná výdejní skladová místa a povolit tak doplnění i v případě, že zásoby klesnou pod minimální úroveň, a jak povolit pravidelné spuštění doplnění za pomoci dávkové úlohy. Tyto úkoly obvykle provádějí vedoucí skladu. Tento postup lze spustit s ukázkovými daty společnosti USMF základě vzorových hodnot níže nebo při použití vlastních dat. Jestliže používáte vlastní data, ujistěte se, že používáte sklad, který je povolen pro procesy správy skladu (WMS).
 
 
 ## <a name="create-a-fixed-picking-location"></a>Vytvoření pevně stanoveného výdejního skladového místa

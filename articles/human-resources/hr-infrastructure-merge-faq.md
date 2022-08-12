@@ -14,222 +14,97 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c005f677624336b4194bebea6d69667182128b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd71d728f9c97dc9e2c44a7e7a0e773be891b818
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880473"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203192"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Často kladené dotazy ke sloučení infrastruktiry Dynamics 365 Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+## <a name="what-is-dynamics-365-human-resources"></a>Co je Dynamics 365 Human Resources?
 
+Microsoft Dynamics 365 Human Resources poskytuje nástroje, které pomáhají personálním týmům zvýšit organizační agilitu, transformovat prostředí zaměstnanců a optimalizovat personální programy tak, aby se vytvořilo pracoviště, kde mohou lidé i firma prosperovat. Další informace o Dynamics 365 Human Resources viz [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/).
 
-Tento článek odpovídá na často kladené otázky o sloučení infrastruktury pro aplikace Microsoft Dynamics 365 Human Resources a finanční a provozní aplikace.
-
-## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Co je sloučení infrastruktury Dynamics 365 Human Resources?
-
-Dynamics 365 Human Resources je samostatná aplikace, která používá jinou infrastrukturu než ostatní finanční a provozní aplikace, například Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Project Operations. Sloučení infrastruktury přenese Dynamics 365 Human Resources do stejné infrastruktury jako ostatní finanční a provozní aplikace.
+- **Transformace prostředí pro zaměstnance.** Udržte si špičkové výkony tím, že zmocníte manažery a zaměstnance prostřednictvím propojených samoobslužných prostředí, která podporují zapojení a růst.
+- **Optimalizace personálních programů.** Snižte provozní náklady a vytvořte programy řízení dovolené a nepřítomnosti, času, benefitů a odměn zaměřené na lidi.
+- **Zvýšení organizační agility.** Umožněte personálnímu oddělení pracovat s obratností, kterou firma vyžaduje, využitím Dataverse a Microsoft Power Platform k centralizaci dat o lidech a snadno rozšiřte Dynamics 365 Human Resources.
+- **Objevte informace o pracovnících.** Rozhodujte se na základě dat prostřednictvím schopnosti analyzovat a vizualizovat data lidí na bohatých řídicích panelech, které jsou dostupné na jakémkoli zařízení.
 
 ## <a name="value-and-benefits-of-the-infrastructure-merge"></a>Hodnota a výhody sloučení infrastruktury
 
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-what-benefits-will-we-see-from-these-changes"></a>Moje organizace používá Dynamics 365 Human Resources pro řízení svých HR operací. Jaké výhody uvidíme z těchto změn?
+### <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Co je sloučení infrastruktury Dynamics 365 Human Resources?
 
-- Tyto změny vylučují zmatky vzniklé přítomností několika sad možností lidských zdrojů (HR) v Dynamics 365.
-- Poskytují rozšiřitelnost Microsoft Power Platform i způsob, jak rozšířit obchodní logiku a možnosti funkcí.
-- Přinášejí soulad mezi Dynamics 365 Human Resources a dalšími finančními a provozními aplikacemi z hlediska správy životního cyklu aplikací (ALM), Microsoft Dynamics Lifecycle Services (LCS), geografické dostupnosti, rozšiřitelnosti a další.
-- Umožní vám využívat sdílené služby a nástroje a pomáhají snižovat náklady.
+V současné době existují dvě samostatné sady funkcí HR na dvou různých infrastrukturách v Dynamics 365:
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Moje organizace používá modul Human Resources v Dynamics 365 Finance, Supply Chain Management, Commerce či Project Operations. Jaké výhody uvidíme z těchto změn?
+- **Dynamics 365 Human Resources** – Samostatná aplikace, která běží na nezávislé infrastruktuře. Když byla tato aplikace spuštěna, infrastruktura byla oddělena od ostatních provozních aplikací Dynamics 365. Naši zákazníci používají tuto aplikaci ke zvýšení organizační agility, optimalizaci personálních programů, transformaci prostředí zaměstnanců a získání přehledu o pracovnících.
+- **Modul HR** – Starší sada funkcí, která byla dříve součástí skladové položky (SKU) licence Unified Operations. Modul HR běží na finanční a provozní infrastruktuře, která je stejná ve všech provozních aplikacích. Tyto aplikace zahrnují Dynamics 365 Finance, Dynamics 365 Project Operations a Dynamics 365 Supply Chain Management. Zákazníci získali funkce HR v rámci Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management.
 
-Možnosti a investice, které byly dostupné v Dynamics 365 Human Resources, budou nyní k dispozici zákazníkům, kteří používají HR modul v aplikaci Dynamics 365 Finance. Některé z těchto funkcí zahrnují správu dovolené a nepřítomnosti, správu výhod a správu úkolů.
+Během posledních tří let společnost Microsoft nepřidala do modulu HR žádné nové funkce ani vylepšení. Místo toho se naše investice do plánu zaměřily na aplikace Dynamics 365 Human Resources.
 
-### <a name="will-i-lose-any-features-or-capabilities-that-i-currently-use"></a>Ztratím nějaké funkce nebo funkce, které aktuálně používám?
+Začleněním těchto dvou sad funkcí do stejné infrastruktury pomůžeme zákazníkům získat následující výhody:
 
-Mezi Dynamics 365 Human Resources a HR modulem ve finančních a provozních aplikacích bude funkční parita. Dynamics 365 Human Resources bude mít přednost u podobných funkcí. Další informace naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Vylepšení, která byla přidána do Dynamics 365 Human Resources za poslední tři roky, včetně rozšířené dovolené a nepřítomnosti, správy dávek a výkaznictví.
+- Vylepšená rozšiřitelnost díky Microsoft Power Platform a schopnost rozšířit obchodní logiku o personalizaci stránek.
+- Vylepšené nasazení, aplikace a údržba, které jsou konzistentní z hlediska správy životního cyklu aplikací (ALM), Lifecycle Services, geografické dostupnosti, rozšiřitelnosti a další.
+- Více technologických inovací, protože náš technický tým využívá sdílené služby, nástroje a snížené náklady na platformu.
 
-### <a name="will-the-experience-change-for-my-users"></a>Změní se prostředí pro mé uživatele?
+Tento přechod se dotkne zákazníků, kteří aktuálně využívají Dynamics 365 Human Resources nebo starší modul HR.
 
-Nové funkce HR budou spravovány prostřednictvím správy funkcí. Zákazníci se rozhodnou, zda je chtějí převzít. V některých případech mohou být možnosti upraveny. V těchto případech bude poskytnuta dokumentace.
+## <a name="glossary-of-terms-used-in-this-faq"></a>Slovníček termínů použitých v těchto častých otázkách
 
-### <a name="how-does-this-change-affect-me-if-i-am-an-existing-customer-and-i-use-both-the-hr-module-on-the-finance-and-operations-infrastructure-and-dynamics-365-human-resources-through-custom-integrations"></a>Jak na mě tato změna zapůsobí, pokud jsem stávající zákazník a používám jak HR modul v infrastruktuře Finance and Operations, tak i v Dynamics 365 Human Resources prostřednictvím vlastních integrací?
+- **Dynamics 365 Human Resources** – Náš současný a budoucí produkt, který nabízí funkce personalistiky na trhu.
+- **Modul HR** – Starší sada funkcí, která byla dříve součástí nabídky licence Unified Operations. Funkce jsou aktivní, když zákazník vlastní Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management.
+- **Finanční a provozní infrastruktura** – Vývojová architektura, kterou používá provozní portfolio, včetně Dynamics 365 Finance, Dynamics 365 Supply Chain Management a Dynamics 365 Project Operations. Tato infrastruktura bude v budoucnu využívána. V těchto častých otázkách termín *sloučená infrastruktura* odkazuje na finanční a provozní prostředí.
+- **Infrastruktura Human Resources** – Vývojová architektura, která byla historicky používána pro aplikace Dynamics 365 Human Resources. Projekt sloučení infrastruktury přináší Dynamics 365 Human Resources do finanční a provozní infrastruktury. Samostatná infrastruktura bude ukončena.
 
-Vlastní integrace mezi Dynamics 365 Human Resources a HR modulem v Dynamics 365 Finance již nebude vyžadována. Všechna data o lidských zdrojích budou umístěna ve stejné databázi jako ostatní finanční a provozní aplikace.
+## <a name="general-questions-about-the-infrastructure-merge"></a>Obecné otázky týkající se sloučení infrastruktury
 
-## <a name="migration-from-dynamics-365-human-resources-to-finance-and-operations-apps"></a>Migrace z aplikace Dynamics 365 Human Resources do finančních a provozních aplikací
+### <a name="will-customers-lose-any-features-or-capabilities"></a>Přijdou zákazníci o nějaké funkce nebo funkce?
 
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-hr-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Moje organizace používá Dynamics 365 Human Resources pro řízení HR operací. Co musíme naplánovat pro migraci na nové prostředí?
+Naším cílem je minimalizovat dopad, který má tento přechod na zákazníky. Nebudeme odstraňovat žádné funkce ani schopnosti. Mezi Dynamics 365 Human Resources a modulem HR bude funkční parita. V případech, kdy funkce existuje v obou infrastrukturách, bude využito prostředí Dynamics 365 Human Resources.
 
-Pokud vaše organizace používá Dynamics 365 Human Resources, ale nepoužívá žádné jiné finanční a provozní aplikace, vaše prostředí Human Resources bude migrováno na novou infrastrukturu. Velká část tohoto procesu migrace bude automatizována. Budou zavedeny procesy pro migraci vaší databáze a její synchronizaci s novou infrastrukturou.
+### <a name="will-the-user-experience-change"></a>Změní se prostředí?
 
-Kromě toho budou k dispozici nástroje, abyste mohli před migrací produkčního prostředí otestovat proces migrace a ověřit svá data a zkušenosti.
+Uživatelské prostředí bude konzistentní se standardní platformou Dynamics 365. Přestože obecné prostředí pro řídicí panel a nabídky zůstane podobné, bude sladěno se standardním prostředím aplikace Dynamics 365 Finance. Navigace bude zahrnovat moduly i pracovní plochy, umožní oblíbené položky a další. Pracovní prostory Dynamics 365 Human Resources, jako např. **Personální management** a **Lidé**, se začlení do finanční a provozní infrastruktury. V budoucnu budou nové funkce poskytovány prostřednictvím správy funkcí, která zákazníkům umožní zobrazit nové funkce a rozhodnout se, které z nich chtějí používat. Více informací viz [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a [Dokumentace uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json).
 
-Pokud vaše organizace používá Dynamics 365 Human Resources a další finanční a provozní aplikace, měli byste si naplánovat více času na ověření, abyste zajistili, že jsou vaše data správně migrována do nového prostředí. Migrace na novou infrastrukturu sloučí data z vašeho prostředí lidských zdrojů s prostředím Finance and Operations. Konfliktní data budou vyžadovat vstup uživatele, který musí určit, jak má být konflikt vyřešen. Uživatelé a správci budou muset spravovat mapování dat tam, kde dochází ke konfliktům, a před migrací produkčního prostředí otestovat migraci v produkčních prostředích.
+### <a name="when-will-the-dynamics-365-human-resources-infrastructure-merge-be-completed"></a>Kdy bude sloučení infrastruktury Dynamics 365 Human Resources provedeno?
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Moje organizace používá modul Human Resources v Dynamics 365 Finance, Supply Chain Management, Commerce či Project Operations. Co musíme naplánovat pro migraci na nové prostředí?
+Sloučení infrastruktury bude probíhat ve fázích, aby zákazníci měli čas na plánování a provedení nezbytných kroků. Začali jsme zavádět funkce ve vlně 2 vydání Dynamics 2021. Plánujeme dokončit veškerý vývoj produktu pro tento projekt do konce 2. vlny vydání v roce 2022. Upozorňujeme, že časové osy se mohou změnit. Pro nejaktuálnější informace viz [plány vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
-Pro organizace, které používají modul HR ve finančních a provozních aplikacích, nová funkce z Dynamics 365 Human Resources bude aplikována na vaše prostředí prostřednictvím standardního procesu aktualizace One Version. Můžete očekávat, že se nová funkce ve vašem prostředí zobrazí, jakmile bude k dispozici v každé aktualizaci. Chcete-li zapnout nové funkce, můžete použít správu funkcí, ale měli byste si tyto funkce naplánovat. Postupujte podle procesů, které máte zavedeny pro ověřování dalších aktualizací vašeho prostředí. Další informace o způsobu použití aktualizací na finanční a provozní aplikace viz [Přehled One Version](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+### <a name="what-training-and-resources-will-be-available-to-help-with-the-infrastructure-merge"></a>Jaké školení a zdroje budou k dispozici na pomoc se sloučením infrastruktury?
 
-### <a name="when-will-my-organization-be-migrated"></a>Kdy bude moje organizace migrována?
+Poskytneme dokumentaci, která bude podrobně popisovat každý krok sloučení infrastruktury. Podle potřeby poskytneme další školicí zdroje, jako jsou videa a workshopy, abychom pomohli zákazníkům a partnerům s hladkým přechodem.
 
-Migrace pro každou organizaci bude záviset na její aktuální konfiguraci a připravenosti k migraci na novou infrastrukturu. Tato data se mohou změnit.
+### <a name="will-there-be-changes-in-development-capabilities-after-the-infrastructure-merge-is-completed"></a>Dojde ke změnám ve vývojových schopnostech po dokončení sloučení infrastruktury?
 
-- Organizace, které aktuálně používají modul HR ve finančních a provozních aplikacích, obdrží funkci HR pro Dynamics 365 Human Resources jako součást běžného procesu aktualizace One Version. Nové funkce by měly být obecně dostupné začátkem ledna 2022.
-- Organizace, které používají pouze Dynamics 365 Human Resources, budou mít přístup k nástrojům pro migraci, aby mohli začít testovat a zahájit migraci od poloviny roku 2022. Datum, do kterého musí být dokončena migrace na novou infrastrukturu, ještě nebylo stanoveno. Bude to však alespoň jeden rok po datu, kdy budou k dispozici nástroje pro migraci.
-- Organizace, které aktuálně používají Dynamics 365 Human Resources i další finanční a provozní aplikace, budou mít přístup k nástrojům pro migraci, aby mohli začít testovat a zahájit migraci od podzimu roku 2022. Datum, do kterého musí být dokončena migrace na novou infrastrukturu, ještě nebylo stanoveno. Bude to však alespoň jeden rok po datu, kdy budou k dispozici nástroje pro migraci.
+Chcete-li se dozvědět více o možnostech vývoje, viz [Vývoj a přizpůsobení domovské stránky](../fin-ops-core/dev-itpro/dev-tools/developer-home-page.md).
 
-Další informace o nových funkcích pro Dynamics 365 Human Resources viz [Co je nového nebo se změnilo v Human Resources](./hr-admin-whats-new.md).
+## <a name="feature-availability-questions"></a>Otázky na dostupnost funkcí
 
-### <a name="my-organization-has-not-yet-gone-live-on-dynamics-365-human-resources-should-we-go-live-with-the-human-resources-module-in-the-finance-and-operations-apps-or-with-the-dynamics-365-human-resources-app-on-the-legacy-infrastructure"></a>Moje organizace ještě nebyla v Dynamics 365 Human Resources spuštěna. Měli bychom spustit modul Human Resources ve finančních a provozních aplikacích nebo aplikaci Dynamics 365 Human Resources na starší infrastruktuře?
+### <a name="will-the-linkedin-talent-hub-integration-work-on-the-finance-and-operations-infrastructure"></a>Bude integrace LinkedIn Talent Hub fungovat ve finanční a provozní infrastruktuře?
 
-Je důležité si dobře rozmyslet, jaké funkce HR jsou potřebné a kdy bude tato funkce v nové infrastruktuře k dispozici. Zda organizace potřebuje základní funkce pro správu personálu, které jsou aktuálně k dispozici v HR modulu finančních a provozních aplikací na nové infrastruktuře. Parita funkcí mezi modulem HR finančních a provozních aplikací a aplikací Dynamics 365 Human Resources se očekává ve verzi 10.0.25, která má být obecně dostupná v březnu 2022. Integrační funkce, jako je aplikace Teams a integrace entit Dataverse, budou k dispozici v pozdějších verzích.
+Ne, integrace LinkedIn Talent Hub nebude součástí sloučené infrastruktury. Veřejná rozhraní pro programování aplikací (API) jsou k dispozici pro vytváření integrací s řešeními pro nábor a sledování uchazečů. Zákazníci, kteří plánují používat LinkedIn Talent Hub, by měli spolupracovat se svým partnerem Microsoft na integraci pomocí poskytovaných rozhraní API. Další informace o rozhraní API pro integraci systému sledování žadatelů (ATS) naleznete v tématu [Představení API pro integraci systému sledování žadatelů](./hr-admin-integration-ats-api-introduction.md).
 
-Pokud budou na nové infrastruktuře k dispozici potřebné funkce HR organizace v časovém rámci, ve kterém bude organizace uvedena do provozu, může být jednodušší spustit modul Human Resources ve finančních a provozních aplikacích. Výsledkem bude snazší migrace, protože se bude jednat o standardní upgrade aplikace na aplikaci Dynamics 365 Human Resources a zákazník již bude na nové infrastruktuře. Pokud se organizace rozhodne spustit aplikaci Dynamics 365 Human Resources na starší infrastruktuře, pak bude k přechodu na novou infrastrukturu potřeba migrace prostředí. Tomu lze zabránit spuštěním nové infrastruktury.
+### <a name="will-the-capabilities-that-are-currently-available-only-in-dynamics-365-human-resources-for-example-leave-management-and-benefits-management-be-available-after-the-merge-is-completed"></a>Budou funkce, které jsou aktuálně dostupné pouze v Dynamics 365 Human Resources (například správa dovolené a správa výhod), k dispozici po dokončení sloučení?
 
-### <a name="i-am-using-new-capabilities-that-are-available-only-in-dynamics-365-human-resources-such-as-leave-and-absence-and-benefits-management-will-these-capabilities-now-be-available-in-the-human-resources-module-on-the-finance-and-operations-infrastructure-too"></a>Používám nové funkce, které jsou k dispozici pouze v systému Dynamics 365 Human Resources (jako **Dovolená a nepřítomnost** a **Správa výhod**). Budou tyto funkce nyní k dispozici v modulu Human Resources také v infrastruktuře Finance and Operations?
+Ano. Všechny funkce aplikace Dynamics 365 Human Resources se zavádějí do finanční a provozní infrastruktury. Funkce budou zpřístupněny ve fázích. Chcete-li získat aktuální informace o dostupnosti funkcí pro sloučenou infrastrukturu, pravidelně kontrolujte [plány vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
-Ano, všechny moduly z Dynamics 365 Human Resources budou fungovat tak, jako ve finančních a provozních aplikacích a bude existovat 100% parita funkcí. V rámci celkové migrační strategie pro zákazníky, kteří v současnosti tyto funkce v HR využívají, budou data zákazníků migrována tak, aby i nadále fungovala v infrastruktuře Finance and Operations.
+### <a name="will-ceridian-integrations-with-dynamics-365-human-resources-be-available-after-the-infrastructure-merge-is-completed"></a>Budou integrace Ceridian s Dynamics 365 Human Resources k dispozici i po dokončení sloučení infrastruktury?
 
-### <a name="i-use-the-new-dynamics-365-human-resources-benefits-management-capabilities-ive-built-custom-integrations-with-the-hr-module-on-the-finance-and-operations-infrastructure-so-that-i-can-take-advantage-of-the-payroll-capabilities-by-using-benefits-data-will-these-custom-integrations-be-required-going-forward"></a>Používám nové možnosti správy zaměstnaneckých výhod Dynamics 365 Human Resources. Postavil jsem vlastní integraci s HR modulem v infrastruktuře Finance and Operations, abych mohl využívat možnosti mezd pomocí údajů o zaměstnaneckých výhodách. Budou tyto vlastní integrace vyžadovány i nadále?
+Ceridian je v procesu vytváření integrace V2 s Dynamics 365 Human Resources, který využívá rozhraní API mezd. Integrace založená na souborech, která aktuálně existuje v Dynamics 365 Human Resources, nebude migrována do finanční a provozní infrastruktury. Další informace viz [Úvod k Payroll API](./hr-admin-integration-payroll-api-introduction.md).
 
-V rámci sloučení infrastruktury jsou HR data přenesena do stejné databáze jako ostatní finanční a provozní aplikace. Integrace mezi moduly ve finančních a provozních aplikacích již nebudou vyžadovány.
+### <a name="will-applicant-tracking-or-onboardingoffboarding-of-employees-functionality-be-included"></a>Bude zahrnuto sledování žadatelů nebo onboarding/offboarding funkcí zaměstnance?
 
-### <a name="my-organization-uses-one-or-more-isv-solutions-with-dynamics-365-human-resources-will-our-isv-solutions-be-migrated-automatically"></a>Moje organizace používá jedno nebo více řešení ISV s Dynamics 365 Human Resources. Budou naše řešení ISV migrována automaticky?
+V předchozích verzích jsme vytvořili ATS Integration API, abychom partnerům a zákazníkům umožnili vytvářet integrace ATS s Human Resources. Další funkce související s ATS byly k dispozici ve vlně 1 2022. V budoucích verzích budeme tato rozhraní API nadále vylepšovat.
 
-Migrace pro každé nezávislé řešení dodavatele softwaru (ISV) se bude lišit v závislosti na integrační metodě řešení. Microsoft bude úzce spolupracovat s nezávislými dodavateli softwaru, aby zajistil hladký přechod na novou infrastrukturu.
+Funkce HR, která v současnosti existuje ve finanční a provozní infrastruktuře, zahrnuje některé funkce pro řízení náboru, které neexistují v Dynamics 365 Human Resources. Po dokončení sloučení infrastruktury, budou tyto funkce dostupné pro všechny zákazníky Human Resources. Tato funkce poskytuje odlehčenou funkcionalitu ATS. V budoucnu však neplánujeme tuto funkci rozšiřovat. Zákazníci, kteří vyžadují pokročilejší funkce, mohou využít výhod partnerských integrací ATS. Další informace o rozhraní API pro integraci ATS naleznete v tématu [Představení API pro integraci systému sledování žadatelů](./hr-admin-integration-ats-api-introduction.md).
 
-### <a name="my-organization-uses-linkedin-talent-hub-integration-with-dynamics-365-human-resources-will-this-integration-continue-to-work-after-the-infrastructure-change-is-completed"></a>Moje organizace používá integraci LinkedIn Talent Hub s Dynamics 365 Human Resources. Bude tato integrace fungovat i po dokončení změny infrastruktury?
+### <a name="will-the-dynamics-ax-2012-upgrade-tools-be-used-to-upgrade-the-hr-module-in-ax-2012-to-the-dynamics-365-human-resources-app"></a>Budou použity nástroje pro upgrade Dynamics AX 2012 k upgradu modulu HR v AX 2012 do aplikace Dynamics 365 Human Resources?
 
-Ne, integrace LinkedIn Talent Hub nebude fungovat i po migraci na novou infrastrukturu. Služba pro integraci LinkedIn Talent Hub bude ukončena spolu se starší infrastrukturou Dynamics 365 Human Resources.
+Ano. Upgrade z Dynamics AX 2012 na Dynamics 365 Human Resources využije stejnou cestu k upgradu a nástroje, které se používají k upgradu na nejnovější verzi ostatních provozních aplikací Dynamics 365, jako je Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management.
 
-### <a name="my-organization-uses-the-human-resources-app-for-teams-will-the-app-continue-to-work-after-the-infrastructure-change-is-completed"></a>Moje organizace používá aplikaci Human Resources pro Teams. Bude tato aplikace fungovat i po dokončení změny infrastruktury?
-
-Ano, Human Resources pro Teams bude fungovat i po migraci na novou infrastrukturu.
-
-### <a name="my-organization-has-configured-custom-security-in-dynamics-365-human-resources-will-our-custom-security-still-be-applied-after-the-infrastructure-change-is-completed"></a>Moje organizace nakonfigurovala vlastní zabezpečení v Dynamics 365 Human Resources. Bude naše vlastní zabezpečení použito i po dokončení změny infrastruktury?
-
-Ano, do konfigurace migrace dat na novou infrastrukturu budou zahrnuty vlastní konfigurace zabezpečení.
-
-### <a name="we-are-using-data-integrator-to-move-data-between-dynamics-365-human-resources-and-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected"></a>Používáme integrátor dat pro přesun dat mezi aplikacemi Dynamics 365 Human Resources a finančními a provozními aplikacemi. Jak to ovlivní data, která se aktuálně integrují?
-
-Data HR, která jsou aktuálně v Dynamics 365 Human Resources, jsou synchronizována s Dataverse. Integrátor dat lze poté použít pro jednosměrnou synchronizaci s finančními a provozními aplikacemi. Po migraci na novou infrastrukturu budou data HR nativním formátem pro finanční a provozní aplikace. K synchronizaci dat mezi finančními a provozními aplikacemi a Human Resources již nebude vyžadován datový integrátor.
-
-Aktuální nativní datové tabulky Dataverse pro Human Resources budou i nadále synchronizovat data z prostředí na nové infrastruktuře. Entity budou převedeny na podporu duálního zápisu. Jakékoli další integrace dat, které jsou konfigurovány pomocí integrátoru dat proti těmto tabulkám pro jiné aplikace Dynamics 365, budou i nadále fungovat tak, jak jsou aktuálně nakonfigurovány.
-
-### <a name="we-are-using-dual-write-to-move-hr-data-between-dataverse-and-other-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected-by-the-migration-to-the-new-infrastructure"></a>K přenosu dat HR mezi Dataverse a dalšími finančními a provozními aplikacemi používáme duální zápis. Jak migrace na novou infrastrukturu ovlivní data, která se aktuálně integrují?
-
-Data HR budou nativní pro finanční a provozní aplikace v prostředí v nové infrastruktuře. K přesunu dat HR mezi novým prostředím a prostředím Dataverse bude použit duální zápis.
-
-### <a name="we-have-built-custom-integrations-from-dynamics-365-human-resources-to-one-or-more-external-systems-will-we-have-to-develop-new-integrations-after-the-infrastructure-change-is-completed"></a>Vytvořili jsme vlastní integrace z Dynamics 365 Human Resources do jednoho nebo více externích systémů. Budeme muset vyvíjet nové integrace i po dokončení změny infrastruktury?
-
-Záleží na koncovém bodě integrace. Další informace o integračních technologiích, které jsou k dispozici ve finančních a provozních aplikacích a o tom, jak vybrat nejlepší integrační technologii, viz [Přehled integrace](../fin-ops-core/dev-itpro/data-entities/integration-overview.md).
-
-### <a name="we-have-extended-dataverse-for-dynamics-365-human-resources-will-these-extensions-be-migrated-automatically"></a>Rozšířili jsme Dataverse pro Dynamics 365 Human Resources. Budou tato rozšíření migrována automaticky?
-
-Pokud jsou prostředí Dynamics 365 Human Resources a Finance and Operations, která budou spojena v prostředí na nové infrastruktuře, připojena ke stejnému prostředí Dataverse, budou obě aplikace nadále připojeny ke stejnému prostředí Dataverse po migraci. U žádného rozšíření Dataverse proto není nutná žádná migrace.
-
-Pokud jsou však prostředí Dynamics 365 Human Resources a Finance and Operations aktuálně spojena do oddělených prostředí Dataverse, obě prostředí Dataverse bude třeba zkombinovat, aby byly připojeny k jednomu prostředí na nové infrastruktuře. Pro tuto migraci Dataverse mohou být tabulky Dataverse, které jsou standardem řešení Human Resources, připojeny a znovu synchronizovány s novým prostředím Dataverse. Žádná rozšíření prostředí Dataverse nebudou migrována automaticky, ale musí být znovu nasazena v novém prostředí. Ke správě svých rozšíření Dataverse doporučujeme použít spravovaná řešení. Další informace viz [Úvod do řešení](/powerapps/developer/data-platform/introduction-solutions).
-
-### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Využili jsme funkce vlastního pole v rámci Dynamics 365 Human Resources, budou tato vlastní pole migrovat automaticky?
-Ano, vlastní pole, která byla přidána, migrují do nové infrastruktury.
-
-### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Nakonfigurovali jsme toky Microsoft Power Automate a/nebo Microsoft Power Apps pro práci s Dynamics 365 Human Resources. Budou tyto komponenty Microsoft Power Platform migrovány a fungují automaticky po dokončení změny infrastruktury?
-
-Power Apps, toky Power Automate a další přizpůsobení Microsoft Power Platform se podobají rozšířením Dataverse. Zda fungují automaticky po migraci na novou infrastrukturu, závisí na tom, zda jsou aplikace Human Resources a finanční a provozní aplikace připojeny ke stejnému prostředí Power Apps před migrací.
-
-Pokud jsou aplikace aktuálně připojeny ke stejnému prostředí Power Apps, budou s tímto prostředím Power Apps i nadále spojeny po migraci na novou infrastrukturu. V tomto případě Power Apps, toky Power Automate a další přizpůsobení Microsoft Power Platform budou i nadále fungovat bez jakékoli další konfigurace. Ke správě svých rozšíření aplikací v Dataverse doporučujeme použít spravovaná řešení. Další informace viz [Úvod do řešení](/powerapps/developer/data-platform/introduction-solutions).
-
-Pokud však finanční a provozní aplikace a aplikace Human Resources jsou připojeny k samostatným prostředím Power Apps, bude nutné je v rámci migrace kombinovat. Tento úkol bude vyžadovat, aby byla jakákoliv přizpůsobení Power Apps a další přizpůsobení znovu nasazena v novém prostředí.
-
-### <a name="we-have-enabled-dataverse-virtual-tables-for-dynamics-365-human-resources-what-will-happen-to-these-tables-during-the-migration"></a>Povolili jsme virtuální tabulky Dataverse pro Dynamics 365 Human Resources. Co se stane s těmito tabulkami během migrace?
-
-Po migraci, pokud prostředí na nové infrastruktuře zůstane připojeno k prostředí Dataverse, které je aktuálně připojeno k Dynamics 365 Human Resources, vitruální tabulky Dataverse, které byly vygenerovány v tomto prostředí, budou i nadále fungovat bez jakékoli další konfigurace.
-
-Pokud je však prostředí na nové infrastruktuře připojeno k jinému prostředí Dataverse po migraci, bude nutné virtuální tabulky znovu vygenerovat v novém prostředí Dataverse.
-
-### <a name="we-have-developed-an-integration-by-using-the-applicant-tracking-system-ats-api-payroll-api-dataverse-virtual-tables-for-dynamics-365-human-resources-or-other-entities-in-the-dataverse-web-api-will-these-integrations-continue-to-work-after-the-infrastructure-change-is-completed"></a>Integraci jsme vyvinuli pomocí API Applicant Tracking System (ATS), Payroll API, virtuálních tabulek Dataverse pro Dynamics 365 Human Resources nebo jiných entit v Dataverse Web API. Budou tyto integrace fungovat i po dokončení změny infrastruktury?
-
-Po migraci, pokud prostředí na nové infrastruktuře zůstane připojeno k prostředí Dataverse, které je aktuálně připojeno k Dynamics 365 Human Resources, jakékoliv integrace, které byly vyvinuty pomocí Dataverse Web API, budou i nadále fungovat po dokončení migrace.
-
-Pokud je však prostředí na nové infrastruktuře po migraci připojeno k jinému prostředí Dataverse, jakékoliv integrace, které byly vyvinuty pomocí Dataverse Web API, bude třeba znovu nakonfigurovat, aby se mohly připojit k novému prostředí Dataverse.
-
-### <a name="is-there-an-impact-on-the-azure-region-when-my-environment-is-migrated"></a>Existuje při migraci mého prostředí dopad na oblast Azure?
-
-Očekává se, že vaše prostředí Human Resources během migrace obvykle zůstane ve stejné oblasti Azure. Jedinou výjimku je situace, kdy bude prostředí Human Resources sloučeno s prostředím Finance and Operations, které je v jiné oblasti. V tomto případě bude prostředí Human Resources migrováno do oblasti Azure, kde je prostředí Finance and Operations.
-
-### <a name="my-organization-depends-on-workflows-in-dynamics-365-human-resources-for-one-or-more-business-processes-will-the-workflows-be-migrated-automatically"></a>Moje organizace závisí na pracovních postupech v Dynamics 365 Human Resources pro jeden nebo více obchodních procesů. Budou pracovní postupy migrovány automaticky?
-
-Ano, budou migrovány konfigurace pracovního postupu, historie pracovního postupu a aktuální pracovní postupy v procesu.
-
-### <a name="what-training-and-resources-will-be-available-to-help-with-the-migration-process"></a>Jaké školení a zdroje budou k dispozici na pomoc s procesem migrace?
-
-K podrobnému popisu každého kroku procesu migrace bude poskytnuta úplná dokumentace. Podle potřeby mohou být k dispozici také další zdroje pro školení, jako jsou videa a workshopy.
-
-### <a name="my-organization-has-created-saved-views-in-dynamics-365-human-resources-to-improve-the-usability-of-the-interface-will-the-saved-views-be-migrated-automatically"></a>Moje organizace vytvořila Uložená zobrazení v Dynamics 365 Human Resources, aby zlepšila použitelnost rozhraní. Budou Uložená zobrazení migrována automaticky?
-
-Ano, uložená zobrazení budou migrována do nové infrastruktury.
-
-### <a name="we-are-using-ceridian-with-dynamics-365-human-resources-will-the-ceridian-integration-be-available-after-the-infrastructure-change-is-completed"></a>Používáme Ceridian s Dynamics 365 Human Resources. Budou integrace Ceridian k dispozici i po dokončení změny infrastruktury? 
-
-Integrace s Ceridianem bude migrována na integraci založenou na mzdovém API. Integrace založená na souborech, která aktuálně existuje v Dynamics 365 Human Resources, nebude migrována do infrastruktury Finance and Operations. Další informace viz [Úvod k Payroll API](./hr-admin-integration-payroll-api-introduction.md).
-
-### <a name="how-will-the-migration-affect-the-service-update-process"></a>Jak ovlivní migrace proces aktualizace služby?
-
-Po migraci budou mít zákazníci mnohem větší flexibilitu, pokud jde o ALM a aktualizace služeb. Aktualizace služeb již nebudou automaticky použity v prostředích Human Resources. Místo toho bude služba sledovat procesy a funkce aktualizace služby One Version. Proto budou možnosti konfigurace aktualizací dostupné prostřednictvím LCS. Další informace naleznete v tématu [Přehled One Version](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="how-will-the-migration-affect-my-lcs-project-for-dynamics-365-human-resources"></a>Jak ovlivní migrace můj projekt LCS pro Dynamics 365 Human Resources?
-
-Migrace na novou infrastrukturu přesune správu vašich prostředí Dynamics 365 Human Resources do projektu implementace Finance and Operations v LCS. Pokud migrace slučuje Dynamics 365 Human Resources se stávajícím prostředím Finance and Operations, bude váš projekt LCS Human Resources sloučen do projektu implementace LCS pro finanční a provozní aplikaci. Pokud aktuálně používáte pouze Dynamics 365 Human Resources, bude vytvořen nový projekt implementace LCS a váš stávající projekt LCS Human Resources bude migrován do nového projektu.
-
-Nový projekt bude mít stejný typ projektu, který používají finanční a provozní aplikace. Bude mít stejné funkce pro správu prostředí. Další informace naleznete v tématu [Zdroje Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
-
-### <a name="we-have-linked-our-task-recordings-to-the-business-process-modeler-in-human-resources-how-will-the-business-process-modeler-be-migrated-and-merged-into-lcs"></a>Propojili jsme naše záznamy úkolů s Business Process Modeler v Human Resources. Jak bude produkt Business Process Modeler migrován a sloučen do LCS?
-
-Knihovny obchodních procesů pro projekt LCS budou migrovány do nového projektu LCS pro Human Resources.
-
-### <a name="my-organization-currently-uses-only-dynamics-365-human-resources-what-resources-are-available-so-that-we-can-learn-more-about-the-development-capabilities-after-the-infrastructure-change-is-completed"></a>Moje organizace aktuálně používá pouze Dynamics 365 Human Resources. Jaké zdroje jsou k dispozici, abychom se mohli po dokončení změny infrastruktury dozvědět více o možnostech vývoje?
-
-Možnosti rozšiřitelnosti Microsoft Power Platform a možnosti rozšiřitelnosti Finance and Operations budou k dispozici a lze je použít pro vývoj. Další informace viz [Vytvořte a přizpůsobte domovskou stránku](../fin-ops-core/dev-itpro/dev-tools/developer-home-page.md).
-
-### <a name="we-have-enabled-features-in-dynamics-365-human-resources-will-these-features-be-enabled-automatically-during-the-migration"></a>Povolili jsme funkce v Dynamics 365 Human Resources. Budou tyto funkce během migrace povoleny automaticky?
-
-Zda je funkce v nové infrastruktuře povolena automaticky, bude pro každou funkci určeno samostatně. Tyto informace budou zahrnuty v dokumentaci funkcí.
-
-### <a name="what-happens-to-my-byod-database-during-the-migration"></a>Co se stane s mojí databází BYOD během migrace?
-
-Konfigurace importu a exportu pro přenesení vlastní databáze (BYOD) budou migrovány do nové infrastruktury.
-
-### <a name="what-happens-to-my-azure-data-lake-during-the-migration"></a>Co se stane s mojí Azure Data Lake během migrace?
-
-Jakýkoli export, který je aktuálně nakonfigurován pro Azure Data Lake Storage ve finančních a provozních aplikacích, bude po migraci udržovat stejnou konfiguraci.
-
-### <a name="we-are-currently-using-dynamics-ax-2012-will-the-upgrade-tools-that-are-currently-available-be-used-to-upgrade-the-hr-module-in-ax-2012-to-dynamics-365-human-resources"></a>Momentálně používáme Dynamics AX 2012. Budou použity nástroje pro upgrade, které jsou aktuálně k dispozici, k upgradu modulu HR v AX 2012 na Dynamics 365 Human Resources?
-
-Ano. Dynamics 365 Human Resources bude zahrnuto do sloučené databáze a infrastruktury pro finanční a provozní aplikace. Upgrade z Dynamics AX 2012 na Dynamics 365 Human Resources použije stejnou cestu k upgradu a nástroje, které se používají k upgradu na nejnovější verzi finančních a provozních aplikací.
-
-### <a name="we-use-document-handling-with-dynamics-365-human-resources-what-will-happen-to-the-documents-during-the-migration"></a>Používáme zpracování dokumentů s Dynamics 365 Human Resources. Co se stane s dokumenty během migrace?
-
-Dokumenty zůstanou ve stávajícím úložišti dokumentů. Budou přemapovány do prostředí v nové infrastruktuře.
-
-### <a name="what-happens-to-the-batch-jobs-that-we-have-configured-in-dynamics-365-human-resources-after-the-migration"></a>Co se stane s dávkovými úlohami, které jsme nakonfigurovali v Dynamics 365 Human Resources po migraci?
-
-Příslušné dávkové úlohy budou automaticky přeneseny do nové infrastruktury.
-
-## <a name="licensing-impact"></a>Dopad licencování
-
-Tato dokumentace nenahrazuje ani nenahrazuje žádnou právní dokumentaci pokrývající užívací práva.
-
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-does-our-licensing-or-cost-change"></a>Moje organizace používá Dynamics 365 Human Resources pro řízení svých HR operací. Mění se naše licence nebo náklady?
-
-Zákazníci, kteří zakoupili licence Dynamics 365 Human Resources, nebudou ovlivněni. U těchto zákazníků neexistuje migrace licencí. Dodatečná sandboxová skladová jednotka (SKU), která byla specifická pro Human Resources, již nebude použitelná. Místo toho se zákazníci mohou rozhodnout koupit sandbox vrstvy 2 finančních a provozních aplikací za mírně nižší cenu. Stávající zákazníci, kteří si zakoupili sandbox Human Resources, budou migrováni na sandbox vrstvy 2 finančních a provozních aplikací bez dalších nákladů.
-
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Moje organizace používá modul Human Resources v Dynamics 365 Finance, Supply Chain Management, Commerce či Project Operations. Mění se moje licence nebo náklady?
-
-Stávající uživatelé aplikací Dynamics 365 a uživatelé samostatných aplikací Dynamics 365 Finance, Supply Chain Management, Commerce a Project Operations, mají přístup k Human Resources jakožto součást těchto licencí do února 2025 nebo do vypršení platnosti stávající licenční smlouvy podle toho, co nastane dříve. Můžete se rozhodnout přejít na licence Human Resources dříve, pokud vám to pomůže dosáhnout lepších úspor nákladů. Od února 2025 musí všichni stávající zákazníci CSP a EA nasadit modul HR a zakoupit si licence Human Resources, aby mohli využívat výhod nových funkcí, které přinášejí finanční a provozní aplikace.
-
-### <a name="my-organization-is-live-with-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-will-we-be-required-to-purchase-an-additional-environment-to-support-the-infrastructure-merge"></a>Moje organizace používá Dynamics 365 Finance, Supply Chain Management, Commerce či Project Operations. Budeme povinni zakoupit další prostředí na podporu sloučení infrastruktury?
-
-K podpoře změny infrastruktury se nevyžadují další prostředí.
-
+Další informace o migraci na finanční a provozní infrastrukturu viz [Časté otázky týkající se migrace zákazníků Human Resouces](./customer-migration.md).

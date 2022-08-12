@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1211f7da15686f1c55a4c942f04c73d671e0ba6b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896698"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111419"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
@@ -22,7 +22,7 @@ ms.locfileid: "8896698"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Azure Active Directory (Azure AD). Každý oddíl vysvětluje, zda jsou vyžadovány určité role nebo konkrétní pověření.
@@ -47,7 +47,7 @@ Chcete-li tento problém vyřešit, je nutné zajistit, aby ve finanční a prov
 
 Pokud existují data na obou místech a potvrdili jste, že problém není související s daty, postupujte následujícím způsobem.
 
-1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku finance a provoz pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
 3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
 
@@ -90,14 +90,14 @@ K této chybě dojde, pokud je prostředí Dataverse nesprávně resetováno, kd
 > [!IMPORTANT]
 > Pokud jste prostředí znovu propojili, musíte zastavit všechny mapy entit, než budete pokračovat kroky zmírnění.
 
-Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i Finance a Operace.
+Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i finanční a provozní aplikaci.
 
 1. Ve finanční a provozní aplikaci postupujte takto:
 
-    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku finance a provoz pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
     2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
     3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
-    4. Abyste předešli chybám při opětovném propojení prostředí Finance a Operace nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
+    4. Abyste předešli chybám při opětovném propojení prostředí financí a provozu nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
 
 2. V Dataverse postupujte následovně:
 
@@ -110,10 +110,10 @@ Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i Fina
 
 3. Ve finanční a provozní aplikaci postupujte takto:
 
-    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku finance a provoz pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
     2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
     3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
-    4. Abyste předešli chybám při opětovném propojení prostředí Finance a Operace nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
+    4. Abyste předešli chybám při opětovném propojení prostředí financí a provozu nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Chyba živé synchronizace po provedení úplné kopie databáze
 
@@ -222,7 +222,7 @@ Než začnete problém řešit, přečtěte si následující předpoklady:
 
 V finančních a provozních aplikacích existuje aktualizace adresy pro záznam kontaktu, ale změna adresy není synchronizována s Dataverse. K tomuto scénáři dochází, protože žádný záznam v tabulce **BusinessEventsDefinice** neobsahuje kombinaci ovlivněné tabulky a entity. Konkrétně tabulka **LogistikaPostalAddress** není přímým zdrojem dat pro entitu **smmContactpersonCDSV2Entity**. Entita **smmContactpersonCDSV2Entity** má **smmContactPersonV2Entity** jako zdroj dat a entita **smmContactPersonV2Entity** zase má jako zdroj dat **LogisticsPostalAddressBaseEntity**. Tabulka **LogistikaPostalAddress** je zdrojem dat pro **LogisticsPostalAddressBaseEntity**.
 
-Podobná situace může nastat u některých nestandardních vzorů, například v případech, kdy tabulka upravovaná ve Finance a Operace není zjevně propojena s entitou, která ji obsahuje. Například data primární adresy se vypočítají v entitě **smmContactPersonCDSV2Entity**. Rámec duálního zápisu se pokouší určit, jak je změna podkladové tabulky mapována zpět na entity. Obvykle je tento přístup dostačující. V některých případech je však odkaz tak složitý, že musíte být konkrétní. Musíte se ujistit, že **RecId** související tabulky je přímo k dispozici v účetní jednotce. Poté přidejte statickou metodu ke sledování změn v tabulce.
+Podobná situace může nastat u některých nestandardních vzorů, například v případech, kdy tabulka upravovaná ve finančních a provozních aplikacích není zjevně propojena s entitou, která ji obsahuje. Například data primární adresy se vypočítají v entitě **smmContactPersonCDSV2Entity**. Rámec duálního zápisu se pokouší určit, jak je změna podkladové tabulky mapována zpět na entity. Obvykle je tento přístup dostačující. V některých případech je však odkaz tak složitý, že musíte být konkrétní. Musíte se ujistit, že **RecId** související tabulky je přímo k dispozici v účetní jednotce. Poté přidejte statickou metodu ke sledování změn v tabulce.
 
 Například si prohlédněte metodu **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping ()**. **CustCustomerV3entity** a **VendVendorV2Entity** byly upraveny tak, aby tuto situaci zvládly.
 
@@ -256,13 +256,13 @@ U jakékoli transakce finanční a provozní aplikace vytváří data v dávce a
 
 *Nelze zapisovat data do entity aaa_fundingsources. Nelze vyhledat ebecsfs_contracts s hodnotami {PC00...}. Nelze vyhledat aaa_fundingsources s hodnotami {PC00...}. Zápisy do aaa_fundingsources se nezdařily s chybovou zprávou Zpráva o výjimce: Vzdálený server vrátil chybu: (400) Chybný požadavek.*
 
-Chcete -li problém vyřešit, vytvořte vztahy entit ve finanční a provozní aplikaci k označení, že tyto dvě entity spolu souvisejí a že související záznamy jsou zpracovávány ve stejné transakci.
+Chcete-li problém vyřešit, vytvořte vztahy entit ve finanční a provozní aplikaci k označení, že tyto dvě entity spolu souvisejí a že související záznamy jsou zpracovávány ve stejné transakci.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Povolit podrobné protokolování chybových zpráv
 
-Ve finanční a provozní aplikaci můžete narazit na chyby související s prostředím Dataverse. Chybová zpráva nemusí obsahovat plný text zprávy nebo jiná relevantní data. Chcete -li získat další informace, můžete povolit podrobné protokolování nastavením příznaku **IsDebugMode**, který je přítomen v entitě **DualWriteProjectConfigurationEntity** ve všech konfiguracích projektu ve finanční a provozní aplikaci.
+Ve finanční a provozní aplikaci můžete narazit na chyby související s prostředím Dataverse. Chybová zpráva nemusí obsahovat plný text zprávy nebo jiná relevantní data. Chcete-li získat další informace, můžete povolit podrobné protokolování nastavením příznaku **IsDebugMode**, který je přítomen v entitě **DualWriteProjectConfigurationEntity** ve všech konfiguracích projektu ve finanční a provozní aplikaci.
 
-1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku finance a provoz pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 2. Nastavte příznak **IsDebugMode** na **Ano** v projektu.
 3. Spusťte scénář.
 4. Podrobné protokoly jsou k dispozici v tabulce **DualWriteErrorLog**. Chcete -li vyhledat data pomocí prohlížeče tabulek, použijte následující adresu URL: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`.
@@ -300,7 +300,7 @@ Při pokusu o vytvoření nového zákazníka, dodavatele nebo kontakt v Dataver
 
 *Nelze aktualizovat typ strany z 'DirOrganization' na 'DirPerson', místo toho by mělo být provedeno odstranění stávající strany následované vložením s novým typem.*
 
-V Dataverse je číselná sekvence v tabulce **msdyn_party**. Když je účet vytvořen v Dataverse, vytvoří se nová strana (např. **Party-001** typu **Organizace**). Tato data se odesílají do finanční a provozní aplikace. Pokud se prostředí Dataverse resetuje nebo je prostředí Finance a Operace spojeno s jiným prostředím Dataverse a poté se vytvoří nový záznam kontaktu v Dataverse, vytvoří se nová hodnota strany, která začíná **Party-001**. Tentokrát bude vytvořen záznam strany **Party-001** typu **Osoba**. Když jsou tato data synchronizována, finanční a provozní aplikace zobrazují předchozí chybovou zprávu, protože záznam **Party-001** typu **Organizace** již existuje.
+V Dataverse je číselná sekvence v tabulce **msdyn_party**. Když je účet vytvořen v Dataverse, vytvoří se nová strana (např. **Party-001** typu **Organizace**). Tato data se odesílají do finanční a provozní aplikace. Pokud se prostředí Dataverse resetuje nebo je finanční a provozní prostředí spojeno s jiným prostředím Dataverse a poté se vytvoří nový záznam kontaktu v Dataverse, vytvoří se nová hodnota strany, která začíná **Party-001**. Tentokrát bude vytvořen záznam strany **Party-001** typu **Osoba**. Když jsou tato data synchronizována, finanční a provozní aplikace zobrazují předchozí chybovou zprávu, protože záznam **Party-001** typu **Organizace** již existuje.
 
 Chcete -li problém vyřešit, změňte automatickou sekvenci čísel pro pole **msdyn_partynumber** tabulky **msdyn_party** v Dataverse na jinou automatickou číselnou sekvenci.
 
@@ -355,3 +355,4 @@ Po aktualizaci metod proveďte následující kroky.
 3. Spusťte mapy. Měli byste vidět méně záznamů v entitách **smmContactPersonCDSV2Entity** a **CustCustomerV3Entity** a v tabulce **BusinessEventsDefinition** a výkon by se měl nepatrně zlepšit.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

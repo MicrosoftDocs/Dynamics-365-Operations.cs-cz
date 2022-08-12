@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 335bdc9690b3111f4a04adc7e82d62de36ff4caf
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857424"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065981"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Kombinovaný režim plánování – Kombinování zdrojů samostatné výroby, zpracování a štíhlé výroby
 
@@ -33,7 +33,7 @@ Můžete vybrat celkové strategie pro dodávání produktu bez ohledu na strukt
 
 Například máte ovládací prvek kanbanu ve shromáždění, kde jsou odebírány materiály pro oblasti sestavení podle výrobních zakázek, kanbanů, přenosů, dávkových objednávek, nebo libovolných kombinaci, které odpovídají vlastnostem vašeho dodavatelsko-odběratelského řetězce, ale stále můžete mít úplný přehled v dodávkách. Tato schopnost vede k optimalizaci a rozšířenou viditelnost do dodavatelsko-odběratelského řetězce.  
 
-Rozlišovací schopnost zásad dodávek, které jsou použity při hlavním plánování závisí na dimenzích uskladnění, které jsou povoleny jako dimenze disponibility. K povolení hlavního plánování za účelem řízení doplňování a dodávání z různých typů skladových míst, (například oddělením dílenské výroby pro jiné výrobní jednotky, nebo rozdělením různých typů skladů materiálu a hotových výrobků) doporučujeme, abyste povolili pracoviště a sklad jako dimenze disponibility. Případně lze jako dimenzi disponibility vynechat sklad. V takovém případě při použití rozšířené správy skladu budou všechny přesuny ve skladu řízeny prací ve skladu, zatímco všech přesuny mezi sklady budou řízeny příslušnými kanbany.
+Rozlišovací schopnost zásad dodávek, které jsou použity při hlavním plánování závisí na dimenzích uskladnění, které jsou povoleny jako dimenze disponibility. K povolení hlavního plánování za účelem řízení doplňování a dodávání z různých typů skladových míst, (například oddělením dílenské výroby pro jiné výrobní jednotky, nebo rozdělením různých typů skladů materiálu a hotových výrobků) doporučujeme, abyste povolili pracoviště a sklad jako dimenze disponibility. Případně lze jako dimenzi disponibility vynechat sklad. V takovém případě při použití procesů správy skladu (WMS) budou všechny přesuny ve skladu řízeny prací ve skladu, zatímco všech přesuny mezi sklady budou řízeny příslušnými kanbany.
 
 ## <a name="supply-policies"></a>Zásady zásobování
 Smíšený způsob plánování řídí způsob dodávání výrobku na základě toho, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\]). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  

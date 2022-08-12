@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894259"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111887"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrace potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu
 
@@ -102,3 +102,4 @@ Pro tabulku **Nabídka** postupujte podle pokynů v části [Tabulka objednávky
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

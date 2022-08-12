@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9adbf8f5baa829fb28977d618a4f8beee31ef080
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4d423b149957e624269231aede510190f0c14c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068773"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Sestava dopředného posunutí dlouhodobého majetku
 
@@ -30,7 +30,7 @@ ms.locfileid: "8870126"
 
 Setava **dopředného posunutí dlouhodobého majetku** používá architekturu elektronického výkaznictví. Před spuštěním sestavy je nutné importovat model dlouhodobého majetku a konfigurace dopředného posunutí dlouhodobého majetku ze služby Microsoft Dynamics Lifecycle Services. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Tato sestava je k dispozici v Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, nebo jako oprava hotfix pro Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017). Pro prostředí verze z července 2017 musí být aplikovány tři opravy hotfix:
+Tato sestava je k dispozici v Microsoft Dynamics 365 Finance, Enterprise Edition 7.3, nebo jako oprava hotfix pro Microsoft Dynamics 365 Finance, Enterprise Edition (červenec 2017). Pro prostředí verze z července 2017 musí být aplikovány tři opravy hotfix:
 
 - **KB 4041754:** Konfiguraci elektronického výkaznictví stáhnout z LCS jako použitelnou pro aktuální verzi po použití balíčku aktualizace platformy
 - **KB 4056107:** Kumulativní aktualizace 5 elektronického výkaznictví
@@ -67,3 +67,4 @@ V následující tabulce jsou popsána pole, která jsou k dispozici v sestavě.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

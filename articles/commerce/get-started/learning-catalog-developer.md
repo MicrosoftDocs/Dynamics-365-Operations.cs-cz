@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5372d91a757416933f225411ed0f55347e25df12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4ac123bea3b3cc2c6c0645a4ecc8cf119119408
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892012"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066180"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Výukový katalog pro vývojáře Dynamics 365 Commerce
 
@@ -25,7 +25,7 @@ Potřebujete napsat kód pro integraci s jinými zdroji dat, rozšíření funk�
 
 Následující katalog je uspořádán od základních znalostí do konkrétních domén a od nejzákladnějších k nejpokročilejším. Pokud obsah existuje ve více formátech, dáme vám vědět, abyste mohli vybrat formát výuky, který nejlépe vyhovuje vašim potřebám.
 
-Školení na funkce sdílené s ostatními aplikacemi Finance and Operations uvádí [katalog kurzů Dynamics 365 Finance](../../finance/get-started/learning-catalog-developer.md).
+Školení na funkce sdílené s ostatními finančními a provozními aplikacemi uvádí [katalog kurzů Dynamics 365 Finance](../../finance/get-started/learning-catalog-developer.md).
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
@@ -43,3 +43,4 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 title: Konfigurace účetních struktur
 description: Tento článek obsahuje informace o účetní struktuře a finančních dimenzích.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0a3febf8d269caec847ad879f60ac042e5fec9e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
+ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907973"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9141271"
 ---
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
@@ -91,6 +91,8 @@ Chcete-li přidat další kritéria, klepněte na tlačítko **duplicitní v seg
 Při nastavování účetních struktur existují doporučené postupy, které můžete následovat. Jde však pouze o pokyny, takže by měla být v rámci takové diskuse zvážena holistická diskuse o vaší firmě, plánu rozvoje a údržbě.
 
 - Hlavní účet vytvořte jako první nebo co nejbližší účetní struktuře, aby uživatelé měli při vytváření účtu co nejlepší možnosti vedení.
+  
+  - Ověřte, že všechna řešení třetích stran, která hodláte používat, podporují hlavní účet na první pozici.
 
 - Znovu použijte účetní struktury co nejvíce je možné, aby se snížila údržba mezi právnickými osobami.
 

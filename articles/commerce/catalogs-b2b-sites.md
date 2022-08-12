@@ -2,19 +2,19 @@
 title: Vytvoření katalogů Commerce pro B2B weby
 description: Tento článek popisuje, jak vytvořit katalogy Commerce pro weby elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 2cc9014d273b4ab6f23a38140d0cfcd3ffa4d630
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 7d4ed3e2a76924c2c3c0ba55e21ba648e8da7b76
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027025"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136819"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Vytvoření katalogů Commerce pro B2B weby
 
@@ -25,10 +25,13 @@ Tento článek popisuje, jak vytvořit katalogy produktů Commerce pro weby elek
 > [!NOTE]
 > Tento článek se týká Microsoft Dynamics 365 Commerce verze 10.0.27 a novějších vydání.
 
-Pomocí katalogů Commerce můžete identifikovat produkty, které chcete nabídnout na vašich internetových obchodech B2B. Když vytváříte katalog, identifikujete online obchody, ve kterých jsou produkty nabízeny, přidáte produkty, které chcete zahrnout, a rozšíříte nabídku produktů přidáním podrobností o merchandisingu. Pro každý B2B online obchod můžete vytvořit více katalogů.
+Pomocí katalogů Commerce můžete identifikovat produkty, které chcete nabídnout na vašich internetových obchodech B2B. Když vytváříte katalog, identifikujete online obchody, ve kterých jsou produkty nabízeny, přidáte produkty, které chcete zahrnout, a rozšíříte nabídku produktů přidáním podrobností o merchandisingu. Pro každý online obchod B2B můžete vytvořit více katalogů, jak ukazuje následující obrázek.
+
+![Náhled katalogů produktů Commerce.](./media/Commerce_Catalogs.png)
 
 Katalogy produktů Commerce vám umožňují definovat následující informace:
 
+- **Typ katalogu** – Nakonfigurujte hodnotu jako **B2B**. Můžete definovat vlastnosti specifické pro katalog B2B, jako je hierarchie navigace, hierarchie zákazníků a metadata atributů pro katalog. 
 - **Hierarchie navigace specifická pro katalog** – Organizace mohou vytvořit odlišnou strukturu kategorií pro svůj konkrétní katalog.
 - **Metadata atributů specifická pro katalog** – Atributy obsahují podrobnosti o produktu. Přiřazením atributů ke kategorii navigační hierarchie můžete definovat hodnoty pro tyto atributy na úrovni produktů, které jsou přiřazeny k dané kategorii. Organizace pak mohou provádět tyto úlohy:
 
@@ -41,11 +44,14 @@ Katalogy produktů Commerce vám umožňují definovat následující informace:
 - **Cenové skupiny** – Můžete nakonfigurovat ceny a akce, které jsou specifické pro daný katalog. Tato schopnost je hlavním důvodem pro definování katalogu pro B2B kanál. Cenové skupiny pro katalogy umožňují organizacím zpřístupnit produkty jejich zamýšleným B2B organizacím a uplatnit preferované ceny a slevy. B2B zákazníci, kteří si objednají zboží z konfigurovaného katalogu, mohou těžit ze speciálních cen a akcí poté, co se přihlásí na web Commerce B2B. Abyste mohli konfigurovat katalogové ceny, vyberte možnost **Cenové skupiny** na kartě **Katalogy** a propojte nejméně jednu cenovou skupinu s katalogem. Všechny obchodní smlouvy, deníky úprav cen a rozšířené slevy, které byly propojeny se stejnou cenovou skupinou, budou použity, když si zákazníci objednají z tohoto katalogu. (Pokročilé slevy zahrnují prahové, množstevní a kombinační slevy.) Další informace o cenových skupinách viz [Cenové skupiny](price-management.md#price-groups).
 
 > [!NOTE]
-> Tato funkce je k dispozici v aplikaci Dynamics 365 Commerce od verze 10.0.27. Chcete-li nastavit konfigurace specifické pro katalog, jako je hierarchie navigace a hierarchie zákazníků, otevřete v centrále Commerce pracovní prostor **Správa funkcí** (**Správa systému \> Pracovní prostory \> Správa funkcí**), zapněte funkci **Povolit použití více katalogů na maloobchodních kanálech** a poté spusťte úlohu **1110 CDX**.
+> Tato funkce je k dispozici od Dynamics 365 Commerce verze 10.0.27. Chcete-li nastavit konfigurace specifické pro katalog, jako je hierarchie navigace a hierarchie zákazníků, přejděte v Commerce headquarters na pracovní prostor **Správa funkcí** (**Správa systému \> Pracovní prostory \> Správa funkcí**), zapněte funkci **Povolit použití více katalogů na maloobchodních kanálech** a poté spusťte úlohu **1110 CDX**. Když tuto funkci povolíte, všechny existující katalogy, které se používají pro POS obchody nebo call centrum, budou označeny jako **Typ katalogu = B2C** na stránce **Katalogy**. Pouze stávající a nové katalogy, které jsou označeny jako **Typ katalogu = B2C**, jsou použitelné pro POS obchody a call centrum. 
 
-## <a name="catalog-process-flow"></a>Tok procesu katalogu
+## <a name="b2b-catalog-process-flow"></a>Tok procesu katalogu B2B
 
 Proces tvorby a zpracování katalogu má čtyři obecné kroky. Každý krok je podrobně vysvětlen v další části.
+
+> [!NOTE]
+> Než budete pokračovat, ujistěte se, že je katalog označen jako **Typ katalogu = B2B**.
 
 1. **[Konfigurace](#configure-the-catalog)**
 
@@ -73,7 +79,7 @@ K nastavení katalogu použijte informace v této části.
 
 V centrále Commerce přejděte na **Maloobchod a obchod \> Katalogy a sortimenty \> Všechny katalogy** a konfigurujte katalog.
 
-Když vytvoříte nový katalog, je nutné ho nejprve přiřadit k jednomu či více kanálům. Při vytváření katalogu lze použít pouze položky připojené k [sortimentu](/dynamics365/unified-operations/retail/assortments) vybraného kanálu. Chcete-li katalog přiřadit k jednomu nebo více kanálům, vyberte **Přidat** na záložce **Kanály Commerce** umístěné ve stránce **Nastavení katalogu**.
+Když vytvoříte nový katalog, je nutné ho nejprve přiřadit k jednomu či více kanálům. Při vytváření katalogu lze použít pouze položky připojené k [sortimentu](/dynamics365/unified-operations/retail/assortments) vybraného kanálu. Chcete-li katalog přiřadit k jednomu nebo více kanálům, vyberte **Přidat** na záložce **Kanály Commerce** umístěné ve stránce **Nastavení katalogu**. Ujistěte se, že je katalog označen jako **Typ katalogu = B2B**.
 
 #### <a name="associate-the-navigation-hierarchy"></a>Přiřazení hierarchie navigace
 
@@ -90,6 +96,17 @@ Chcete-li konfigurovat produkty k přidání do katalogu, přejděte v centrále
 Případně vyberte uzel v hierarchii navigace. Poté budete moci přidávat produkty přímo do kategorie v katalogu.
 
 #### <a name="associate-price-groups"></a>Přiřazení cenových skupin
+
+Chcete-li konfigurovat produkty k přidání do katalogu, přejděte v centrále Commerce na **Maloobchod a obchod \> Katalogy a sortimenty \> Všechny katalogy**. Poté na kartě **Katalogy** vyberte **Přidat produkty**. 
+
+Produkty, které byly přidány do katalogu z kořenového uzlu navigační hierarchie výběrem **Přidat produkty** na podokně akcí, zdědí své kategorie, pokud je zdrojová navigační hierarchie také přidružena ke katalogu. Změny kategorií provedené ve zdrojové navigační hierarchii se okamžitě projeví v katalozích. Chcete-li aktualizovat kanály, musíte katalogy znovu publikovat.
+
+Případně můžete vybrat uzel v hierarchii navigace a přidat produkty přímo do vybrané kategorie v katalogu. 
+
+Když přidáte produkty, bude k dispozici možnost **Automaticky zahrnout všechny varianty, když je vybrán pouze hlavní produkt**. Chcete-li zabránit zahrnutí všech variant, vyberte alespoň jednu variantu pro hlavní produkt. 
+
+> [!NOTE]
+> Pokud se rozhodnete automaticky zahrnout všechny varianty do velkého výběru hlavních produktů, můžete zaznamenat delší dobu zpracování. Pro velký výběr doporučujeme vybrat **Zahrnout všechny varianty** na podokně akcí na stránce katalogů, abyste spustili operaci v dávkovém režimu. Pokud jste do katalogu zahrnuli pouze hlavní produkt a nezahrnuli jste žádné varianty, nemusí být výběr varianty dostupný, když přejdete na stránku s podrobnostmi o produktu. 
 
 Chcete-li konfigurovat ceny specifické pro katalog, musíte s katalogem propojit jednu nebo více cenových skupin. Chcete-li propojit cenové skupiny s katalogem, přejděte v centrále Commerce na **Maloobchod a obchod \> Katalogy a sortimenty \> Všechny katalogy**. Poté na kartě **Katalogy** v části **Cenová kalkulace** vyberte **Cenové skupiny**. Všechny obchodní smlouvy, deníky úprav cen a maloobchodní rozšířené slevy (prahová hodnota, množství, kombinace a shoda), které byly propojeny se stejnou cenovou skupinou, budou použity, když si zákazníci objednají z tohoto katalogu.
 
@@ -122,6 +139,9 @@ Katalog ověříte takto.
 1. Na kartě **Katalogy** ve stránce **Všechny katalogy** v části **Ověřit** vyberte možnost **Ověřit katalog** a spusťte ověření. Tento krok je povinný. Ověří, zda je požadované nastavení přesné.
 1. Chcete-li zobrazit detaily ověření, vyberte možnost **Zobrazit výsledky**. Pokud budou nalezeny chyby, musíte opravit data a znovu spustit ověření, dokud nebude úspěšné.
 
+> [!NOTE]
+> Pokud je **Typ katalogu = B2B**, ověření se nezdaří, pokud jste do katalogu přidali POS obchody nebo call centrum. Katalogy B2B musí mít spojené pouze B2B online kanály. Ověření se také nezdaří, pokud není ke katalogu B2B přidružena žádná zákaznická hierarchie. 
+
 ### <a name="approve-the-catalog"></a>Schválit katalog
 
 Po ověření katalogu je nutné ho schválit.
@@ -143,3 +163,5 @@ Poté, co je katalog ve stavu **Schváleno**, můžete jej publikovat výběrem 
 [Dopad rozšiřitelnosti u přizpůsobení funkce Katalogy Commerce pro B2B](catalogs-b2b-sites-dev.md)
 
 [Nejčastější dotazy k obchodním katalogům pro B2B](catalogs-b2b-sites-FAQ.md)
+
+[Modul pro výběr katalogu](catalog-picker.md)

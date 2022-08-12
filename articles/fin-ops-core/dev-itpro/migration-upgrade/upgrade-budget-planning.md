@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890399"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124021"
 ---
 # <a name="upgrade-budget-planning"></a>Upgrade plánování rozpočtu
 
@@ -30,7 +30,7 @@ Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft D
 Plánování rozpočtu v aplikaci Finance obsahuje mnoho vylepšení, která nebyla k dispozici v aplikaci Dynamics AX 2012. Tento článek vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto článku. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
 
 ## <a name="overview-of-changes"></a>Přehled změn
-V modulu rozpočtování pro Finance and Operations bylo provedeno mnoho významných změn. Tyto změny mají za cíl usnadnit konfiguraci a opětovné použití plánování rozpočtu a snížit každoroční údržbu a nastavování. Následující oblasti z aplikace AX 2012 se již v aplikaci Finance nevyskytují:
+V modulu rozpočtování pro finance a provoz bylo provedeno mnoho významných změn. Tyto změny mají za cíl usnadnit konfiguraci a opětovné použití plánování rozpočtu a snížit každoroční údržbu a nastavování. Následující oblasti z aplikace AX 2012 se již v aplikaci Finance nevyskytují:
 
 -   Šablony plánu rozpočtu (konfigurace plánování rozpočtu)
 -   Složky plánu rozpočtu (konfigurace plánování rozpočtu)
@@ -47,7 +47,7 @@ Sloupce jsou nový koncept nahrazující části šablon aplikace Excel a také 
 
 ### <a name="layouts"></a>Rozvržení
 
-Rozvržení jsou nový koncept, který nahrazuje šablonu aplikace Excel. Rozvržení obsahují sloupce, které určují, jaký rozpočet nebo skutečné hodnoty a období se mají zobrazit. Rozvržení jsou též sdílena mezi klientem a doplňkem aplikace Excel. Díky tomu jsou možnosti uživatele při zadání nebo zobrazení dat v klientovi aplikace Finance and Operations lepší oproti aplikaci AX 2012. Pokud chcete zadat data do klienta aplikace Finance, nejste již omezeni na zobrazení a zadávání jediného scénáře do zobrazení transakcí. Místo toho vám zobrazení srovnání umožní snadno zobrazovat a zadávat částky pro vícero období a účtů současně. Rozvržení lze definovat také tak, že můžete zadat a zobrazit měny, komentáře a další volitelná data. Rozvržení vám rovněž umožní definovat, které dimenze hlavní knihy a popisy dimenze mají být zobrazeny. Rozvržení také zahrnuje omezení scénáře, která určují, jaké sloupce v šabloně lze upravovat a jaké sloupce by měly být k dispozici v aplikaci Excel. Po definování rozvržení se pro něj vytvoří šablona. Tato šablona pak vytvoří odpovídající šablonu aplikace Excel. Můžete potom upravovat šablonu aplikace Excel, abyste začlenili více vzorců a formátování, než ji znovu odešlete. Rozvržení poté budou přiřazena ke každému pravidlu fáze na stránce **Proces plánování rozpočtu**. Rozvržení tedy nahrazují šablony, které byly přiřazeny a použity podobným způsobem.
+Rozvržení jsou nový koncept, který nahrazuje šablonu aplikace Excel. Rozvržení obsahují sloupce, které určují, jaký rozpočet nebo skutečné hodnoty a období se mají zobrazit. Rozvržení jsou též sdílena mezi klientem a doplňkem aplikace Excel. Díky tomu jsou možnosti uživatele při zadání nebo zobrazení dat v klientovi finanční a provozní aplikace lepší oproti aplikaci AX 2012. Pokud chcete zadat data do klienta aplikace Finance, nejste již omezeni na zobrazení a zadávání jediného scénáře do zobrazení transakcí. Místo toho vám zobrazení srovnání umožní snadno zobrazovat a zadávat částky pro vícero období a účtů současně. Rozvržení lze definovat také tak, že můžete zadat a zobrazit měny, komentáře a další volitelná data. Rozvržení vám rovněž umožní definovat, které dimenze hlavní knihy a popisy dimenze mají být zobrazeny. Rozvržení také zahrnuje omezení scénáře, která určují, jaké sloupce v šabloně lze upravovat a jaké sloupce by měly být k dispozici v aplikaci Excel. Po definování rozvržení se pro něj vytvoří šablona. Tato šablona pak vytvoří odpovídající šablonu aplikace Excel. Můžete potom upravovat šablonu aplikace Excel, abyste začlenili více vzorců a formátování, než ji znovu odešlete. Rozvržení poté budou přiřazena ke každému pravidlu fáze na stránce **Proces plánování rozpočtu**. Rozvržení tedy nahrazují šablony, které byly přiřazeny a použity podobným způsobem.
 
 ### <a name="budget-planning-processes"></a>Procesy plánování rozpočtu
 
@@ -69,7 +69,7 @@ Abychom vám pomohli určit, jak konfigurovat upgradovaný systém, použijeme v
    -   Scénáře plánu rozpočtu: Skutečné hodnoty, Základ, Žádost o rozpočet, Rozpočet schválen
    -   Řádky plánu rozpočtu pro všechny scénáře v roce 2017 a skutečné hodnoty pro roky 2017 a 2016
 
-   V aplikaci Finance and Operations budou vytvořeny následující sloupce:
+   V aplikaci finance a provoz budou vytvořeny následující sloupce:
 
    | Název sloupce    | Scénář plánu rozpočtu | Časové období sloupce | Posun roku |
    |----------------|----------------------|--------------------|-------------|

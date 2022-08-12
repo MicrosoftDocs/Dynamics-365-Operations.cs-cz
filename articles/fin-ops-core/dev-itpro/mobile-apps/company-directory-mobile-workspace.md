@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3cfdb98f9f0f05e046784cc77c85cd4a045868c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868720"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069370"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868720"
 
 Tento článek obsahuje informace o mobilním pracovním prostoru **Adresář společnosti**. Tento pracovní prostor uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance organizace.
 
-Tento mobilní pracovní prostor lze použít s mobilní aplikací Finance and Operations.
+Tento mobilní pracovní prostor lze použít s finanční a provozní mobilní aplikací.
 
 ## <a name="overview"></a>Přehled
 Mobilní pracovní prostor **Adresář společnosti** uživatelům umožňuje provádění těchto úloh:
@@ -50,12 +50,12 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 <tbody>
 <tr class="odd">
 <td>Jeden z následujících produktů musí být nasazen ve vaší organizaci:
-<ul><li>Aplikace Finance and Operations</li>
+<ul><li>Finanční a provozní aplikace</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Správce systému</td>
-<td>Pokud nemáte ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již &#39;ve své organizaci nasazenou aplikaci Human Resources, správce systému může přistupovat ke zkušební verzi z <a href="https://dynamics.microsoft.com/human-resources/overview/">webové stránky Human Resources</a>.
+<td>Pokud nemáte ve své organizaci nasazenou finanční a provozní aplikaci, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již &#39;ve své organizaci nasazenou aplikaci Human Resources, správce systému může přistupovat ke zkušební verzi z <a href="https://dynamics.microsoft.com/human-resources/overview/">webové stránky Human Resources</a>.
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte finanční a provozní mobilní aplikaci:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -91,3 +91,4 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

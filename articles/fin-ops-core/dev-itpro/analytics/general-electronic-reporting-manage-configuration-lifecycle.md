@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906790"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109075"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Správa životního cyklu konfigurace elektronického vykazování
 
@@ -73,7 +73,7 @@ Následující role a související aktivity jsou přidruženy k životním cykl
 | Úředník plateb závazků            | Použijte artefakty elektronického výkaznictví v určitém obchodním procesu.                | Například role **Úředník pro platby závazků**, která umožňuje vygenerovat zprávy elektronických plateb pro zpracování faktur na základě formátu elektronického výkaznictví nastaveného pro konkrétní způsob platby. |
 
 ## <a name="er-configuration-development-lifecycle"></a>Životní cyklus vývoje konfigurace elektronického výkaznictví
-Z následujících důvodů doporučujeme navrhovat konfigurace elektronického výkaznictví ve vývojovém prostředí v oddělené instanci aplikace Finance and Operations:
+Z následujících důvodů doporučujeme navrhovat konfigurace elektronického výkaznictví ve vývojovém prostředí v oddělené instanci finanční a provozní aplikace:
 
 - Uživatelé mají buď role **Vývojáře elektronického vykazování** nebo **Funkčního konzultanta elektronického výkaznictví**, kteří mohou upravovat konfigurace a spouštět je pro účely testování. To může způsobit volání metod tříd a tabulek, které mohou být potenciálně škodlivé pro obchodní data a výkon použití instance.
 - Volání metod tříd a tabulek jako zdroje dat elektronického výkaznictví nejsou omezeny vstupními body a jsou zaznamenány do obsahu společnosti. Proto citlivá obchodná data mohou zobrazovat uživatelé mající buď roli **Vývojáře elektronického vykazování** nebo **Funkčního konzultanta elektronického výkaznictví**.
@@ -113,3 +113,4 @@ V některých případech můžete vyžadovat, aby systém při importu nových 
 [Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

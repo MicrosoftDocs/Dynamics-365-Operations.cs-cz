@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016152"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070372"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry výroby v modulu Provádění výroby
 
@@ -71,7 +71,7 @@ Pro každou fázi můžete v poli **Automatická spotřeba kusovníku** vybrat j
   - Prázdné (žádná možnost není vybrána.)
   - **K dispozici na skladě**
 
-    V modulu Provádění výroby, pokud je vybraný **Princip vyprazdňování** v poli **Automatická spotřeba Kusovníku** na kartě **Spustit**, jsou všechny materiály, které jsou nastaveny na kartě **Spustit** v kusovníku, odečteny ze skladu při zahájení operace. Možnost **K dispozici ve skladovém místě** se používá pro produkty, které jsou povoleny pro pokročilé skladové procesy. Pokud vyberete tento princip vyprazdňování, je materiál vyprázdněn po dokončení skladové práce pro vyskladnění surovin. Materiál je vyprázdněn také v případě, kdy je řádka kusovníku, která používá tento princip vyskladnění, uvolněn do skladu a materiál je dostupný ve vstupním místě výroby.
+    V modulu Provádění výroby, pokud je vybraný **Princip vyprazdňování** v poli **Automatická spotřeba Kusovníku** na kartě **Spustit**, jsou všechny materiály, které jsou nastaveny na kartě **Spustit** v kusovníku, odečteny ze skladu při zahájení operace. Možnost **K dispozici ve skladovém místě** se používá pro produkty, které jsou povoleny pro procesy řízení skladu (WMS). Pokud vyberete tento princip vyprazdňování, je materiál vyprázdněn po dokončení skladové práce pro vyskladnění surovin. Materiál je vyprázdněn také v případě, kdy je řádka kusovníku, která používá tento princip vyskladnění, uvolněn do skladu a materiál je dostupný ve vstupním místě výroby.
 
     > [!NOTE]
     > Pokud je **Princip vyprazdňování** nastaven na kartě **Počáteční** v Provádění výroby, je nutné vybrat stejný princip buď na kartě **Operace** nebo na kartě **Ohlásit jako dokončené**. Tento požadavek umožňuje zajistit, že se odečtou materiály ze zásob u kusovníků, které používají **Dokončit** jako princip vyprazdňování na výrobní zakázce. Pokud není vybraný stejný princip vyprazdňování na kartě **Operace** nebo **Vykázat jako dokončené**, mohou být materiály odpočteny ze zásob dvakrát.

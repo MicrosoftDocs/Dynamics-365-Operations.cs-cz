@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851944"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108849"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -98,7 +98,7 @@ Předpokládejme, že jste začali navrhovat nové řešení elektronického vý
 
 Předpokládejme, že jste dokončili návrh první verze řešení elektronického výkaznictví. Nyní ji chcete vyzkoušet ve své instanci a analyzovat výkon provedení.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do financí a provozu
 
 1. Přihlaste se k instanci aplikace.
 2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](rcs-download-configurations.md).
@@ -305,7 +305,7 @@ Je také užitečné omezit počet volání, která jsou provedena na zdroj dat 
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Import upravené konfigurace mapování modelu elektronického výkaznictví z RCS do aplikace
 
-Opakujte kroky z části [Import konfigurace elektronického výkaznictví z RCS do Finance and Operations](#import-configuration) dříve v tomto článku pro import verze 1.2 konfigurace **Mapování sledování výkonu**.
+Opakujte kroky z části [Import konfigurace elektronického výkaznictví z RCS do financí a provozu](#import-configuration) dříve v tomto článku pro import verze 1.2 konfigurace **Mapování sledování výkonu**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Spuštění upraveného řešení elektronického výkaznictví pro sledování provádění
 
@@ -363,7 +363,7 @@ Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tent
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Použití externích nástrojů ke kontrole sledování provádění, které obsahuje databázové dotazy
 
-Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronického výkaznictví, nabízí sledování výkonu generované ve formátu PerfView nyní více podrobnostmi o provádění formátu elektronického výkaznictví. V aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.4 (červenec 2019) může toto sledování také zahrnovat podrobnosti o provedených dotazech SQL do aplikační databáze.
+Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronického výkaznictví, nabízí sledování výkonu generované ve formátu PerfView nyní více podrobnostmi o provádění formátu elektronického výkaznictví. V aplikaci Microsoft Dynamics 365 Finance verze 10.0.4 (červenec 2019) může toto sledování také zahrnovat podrobnosti o provedených dotazech SQL do aplikační databáze.
 
 ### <a name="configure-user-parameters"></a>Konfigurace parametrů uživatele
 
@@ -392,3 +392,4 @@ Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tent
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

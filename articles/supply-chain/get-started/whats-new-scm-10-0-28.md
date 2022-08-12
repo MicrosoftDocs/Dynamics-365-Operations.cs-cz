@@ -1,5 +1,5 @@
 ---
-title: Náhled verze Dynamics 365 Supply Chain Management 10.0.28 (srpen 2022)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.28. (srpen 2022)
 description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902046"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186512"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Náhled verze Dynamics 365 Supply Chain Management 10.0.28 (srpen 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.28. (srpen 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.28. Tato verze má číslo sestavení 10.0.1264 a je k dispozici podle následujícího plánu:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.28. Tato verze má číslo sestavení 10.0.1264 a je k dispozici podle následujícího plánu:
 
 - **Náhled verze:** květen 2022
 - **Obecně dostupné vydání (automatická aktualizace):** červenec 2022
@@ -35,7 +34,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Oblast funkce | Funkce | Další informace | Povolil/a |
 |---|---|---|---|
 | Zásoby a logistika | [Entity integrace nákladů za doručení pro spediční společnosti třetích stran](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Přehled entit nákladů na doručení](../landed-cost/landed-cost-entities-overview.md) | Ve výchozím nastavení povoleno |
-| Plánování | [Plánování materiálových požadavků řízené poptávkou (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Již brzy | Správa funkcí:<br>*(Preview) DDMRP pro optimalizaci plánování* |
+| Plánování | [Plánování materiálových požadavků řízené poptávkou (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Plánování materiálových požadavků řízené poptávkou – přehled](../master-planning/planning-optimization/ddmrp-overview.md) | Správa funkcí:<br>*(Preview) DDMRP pro optimalizaci plánování* |
 | Plánování | [Podpora optimalizace plánování řízená prioritou pro příslib na základě dostupné kapacity (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Již brzy | Správa funkcí:<br>*(Preview) CTP pro optimalizaci plánování* |
 | Plánování | [Podpora Optimalizace plánování u skladovatelnosti](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Již brzy | Ve výchozím nastavení povoleno |
 
@@ -92,3 +91,4 @@ Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

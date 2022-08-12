@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710350"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067201"
 ---
 # <a name="collections-in-accounts-receivable"></a>Inkasa v modulu Pohledávky
 
@@ -65,7 +65,7 @@ Následující stránky se seznamem umožňují uspořádání informací o inka
 
 > [!NOTE]
 > Snímek sledování splatnosti musí být vytvořen dříve, než je možné zobrazit informace na těchto stránkách se seznamem. Zobrazí se informace pouze pro odběratele, pro které byl vytvořen snímek sledování splatnosti. Záznamy, které se zobrazí na stránce seznamu, lze dále filtrovat následujícím způsobem:
-> <li>Podle výchozího nastavení uživatel aplikace Finance and Operations má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
+> <li>Podle výchozího nastavení uživatel finanční a provozní aplikace má přístup ke všem zákazníkům, kteří mají snímek sledování splatnosti.</li>
 > <li>Existují-li fondy zákazníků, uživatel musí být nastaven jako inkasní agent, aby mohl použít fondy pro filtrování informací na stránkách se seznamem inkasa. Informace jsou omezeny na odběratele, kteří jsou zahrnuti ve vybraném fondu odběratelů.</li>
 > <li>Pokud je uživatel nastaven jako inkasní agent, pouze skupiny, které jsou vybrány pro daného inkasního agenta, jsou k dispozici na stránce se seznamem. Pokud vyberte možnost Povolit agentovi zobrazit všechny fondy zákazníků na stránce Inkasní agent pro inkasního agenta, všechny fondy budou k dispozici pro tohoto agenta.</li>
 
@@ -110,3 +110,4 @@ Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inka
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

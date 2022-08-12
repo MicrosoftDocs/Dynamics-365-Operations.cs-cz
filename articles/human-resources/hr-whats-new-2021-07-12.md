@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7fb922a35504b69aa8cc3d92cb981e8fb060290
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870951"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067579"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Human Resources 12. července 2021
 
@@ -92,3 +92,4 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 [Správa funkcí](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

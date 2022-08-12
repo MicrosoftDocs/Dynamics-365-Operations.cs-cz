@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2c32ef546a5bc74e090591c0ac9d51529299041
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905308"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112187"
 ---
 # <a name="integrated-vendor-master"></a>Integrovaná hlavní data dodavatelů
 
@@ -57,3 +57,4 @@ Finanční a provozní aplikace | Aplikace Customer Engagement     | popis
 [Platební metoda dodavatele](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Tato šablona slouží k synchronizaci informací o způsobu platby dodavatele.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

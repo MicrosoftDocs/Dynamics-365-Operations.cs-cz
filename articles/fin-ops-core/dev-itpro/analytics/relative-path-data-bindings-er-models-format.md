@@ -13,18 +13,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: be2c0f921fde13598685553ea01bfcf3f8255362
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313560"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108664"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Použití relativní cesty v datových vazbách modelů a formátů elektronického výkaznictví
 
 [!include[banner](../includes/banner.md)]
 
-Nástroj elektronické výkaznictví umožňuje uživatelům definovat struktury elektronického formátu a pak popsat, jak by tyto struktury měly být vyplněny pomocí dat a algoritmů, které existují. Další informace získáte v tématu [Vytvoření konfigurací elektronického výkaznictví](electronic-reporting-configuration.md). Chcete-li určit datový tok pro načítání dat aplikace Finance and Operations a použít jej k vygenerování elektronického dokumentu, je nutné provést následující kroky:
+Nástroj elektronické výkaznictví umožňuje uživatelům definovat struktury elektronického formátu a pak popsat, jak by tyto struktury měly být vyplněny pomocí dat a algoritmů, které existují. Další informace získáte v tématu [Vytvoření konfigurací elektronického výkaznictví](electronic-reporting-configuration.md). Chcete-li určit datový tok pro načítání dat financí a provozu a použít jej k vygenerování elektronického dokumentu, je nutné provést následující kroky:
 
 - Navažte nakonfigurované zdroje dat na prvky navrženého datového modelu specifického pro určitou doménu. Struktura modelu a vybrané zdroje dat mohou být součástí komplexní hierarchické struktury. Z tohoto důvodu mohou být konečné vazby poměrně velké a obsahovat mnoho prvků různých typů (například vztahy, tabulky a metody). Vazby mohou být méně čitelné a poměrně složité pro kontrolu a pochopení, zejména pro nevlastníky. 
 - Provažte prvky datového modelu s komponentami formátu pro definování toho, jaká data budou naplněna z datového modelu do výstupu generovaného formátu.
@@ -58,3 +58,4 @@ Tato funkce neruší zpětnou kompatibilitu architektury elektronického výkazn
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

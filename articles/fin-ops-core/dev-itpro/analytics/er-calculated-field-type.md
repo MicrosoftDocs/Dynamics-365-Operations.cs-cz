@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934698"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108322"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
@@ -36,7 +36,7 @@ Pro dokončení příkladů v tomto článku, musíte mít následující přís
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-- Přístup k službám Regulatory Configuration Services (RCS), které byly zřízeny pro stejného klienta jako Finance and Operations, pro jednu z následujících rolí:
+- Přístup k službám Regulatory Configuration Services (RCS), které byly zřízeny pro stejného klienta jako finance a provoz, pro jednu z následujících rolí:
 
     - Návrhář elektronického výkaznictví
     - Funkční konzultant elektronického výkaznictví
@@ -84,7 +84,7 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
             - Součet hodnot daně.
             - Minimální hodnota uplatněné sazby daně.
 
-    Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty ER vytvořené pro tento model a prováděné ve Finance and Operations. V důsledku toho je obsah zdrojů dat **Daň** a **Gr** vystaven pro formáty ER, jako jsou například abstraktní zdroje dat.
+    Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty ER vytvořené pro tento model a prováděné ve financích a provozu. V důsledku toho je obsah zdrojů dat **Daň** a **Gr** vystaven pro formáty ER, jako jsou například abstraktní zdroje dat.
 
     ![Stránka Návrhář mapování modelu zobrazující zdroje dat Daň a Gr.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS*
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

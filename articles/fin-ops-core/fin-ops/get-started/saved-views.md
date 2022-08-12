@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845406"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125143"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -215,7 +215,7 @@ Seznam známých problémů s uloženými zobrazeními naleznete na stránce [Vy
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak povolím uložená zobrazení v mém prostředí?
 
 > [!NOTE]
-> Funkce **Uložená zobrazení** vyžaduje povolení systému přizpůsobení ve Finance and Operations. Pokud je individuální nastavení pro celé prostředí vypnuto, zobrazení budou zakázána i v případě, že provedete níže uvedené kroky. 
+> Funkce **Uložená zobrazení** vyžaduje povolení systému přizpůsobení ve finančních a provozních aplikacích. Pokud je individuální nastavení pro celé prostředí vypnuto, zobrazení budou zakázána i v případě, že provedete níže uvedené kroky. 
 
 Můžete zapínat a vypínat funkci **Uložená zobrazení** prostřednictvím správy funkcí v libovolném prostředí. Po zapnutí budou uložená zobrazení povolena ve všech následujících relacích uživatele.
 
@@ -255,3 +255,4 @@ Při publikování zobrazení konkrétní právnické osobě, ale ne jako výcho
 - **Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, volič zobrazení vždy zobrazí pouze zobrazení pro konkrétní právnické osoby. K tomuto chování dochází, protože funkce umožňuje propojení zobrazení (včetně osobních pohledů) s konkrétními právnickými osobami.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

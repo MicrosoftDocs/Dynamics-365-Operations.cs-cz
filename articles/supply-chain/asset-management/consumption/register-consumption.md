@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015078"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111747"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
@@ -90,7 +90,7 @@ Při provádění registrace spotřeby se do registrací v určitém pořadí p�
 - *Registrace položek:* nejprve se přidají finanční dimenze ze záhlaví deníku, pokud existují. Potom se přidají finanční dimenze z souvisejícího projektu pracovního příkazu. Dále budou přidány finanční dimenze z pracoviště. Nakonec se přidají finanční dimenze z položky.
 
 >[!NOTE]
->Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení v ostatních aplikacích Finance and Operations.
+>Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení v ostatních finančních a provozních aplikacích.
 
 
 

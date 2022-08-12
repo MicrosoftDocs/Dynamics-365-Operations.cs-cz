@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013548"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177141"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Začínáme s modulem Globální účetnictví zásob
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Globální účetnictví zásob umožňuje provádět účetnictví pro více skladů ve vámi vytvořených hlavních knihách globálního účetnictví zásob. Jednotlivé hlavní knihy globálního účetnictví zásob je nutné přidružit ke *konvencím*. Konvence je kolekce následujících typů zásad účetnictví:
 
@@ -69,28 +67,34 @@ Než budete moci povolit funkce doplňku, musíte jej integrovat s Microsoft Pow
 
 Další informace naleznete v tématu [Aktivace po nasazení prostředí](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Instalace doplňku
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Nainstalujte nebo aktualizujte doplněk a řešení
 
-Podle těchto pokynů nainstalujte doplněk, abyste mohli používat Globální účetnictví zásob.
+K instalaci nebo aktualizaci doplňku a řešení Globální účetnictví zásob použijte následující postup. Část postupu, kterou byste měli dodržovat, závisí na tom, zda instalujete poprvé, nebo jen potřebujete aktualizovat řešení pro stávající instalaci.
+
+- Pokud jste doplněk nikdy předtím neinstalovali, nainstalujte doplněk i řešení podle úplného postupu.
+- Pokud již používáte Globální účetnictví zásob, ale potřebujete aktualizovat řešení v [centru pro správu Power Platform](https://admin.powerplatform.microsoft.com), pak proveďte pouze krok 6 a přeskočte všechny ostatní kroky.
+
+Instalace nebo aktualizace doplňku a řešení:
 
 1. Přihlaste se do [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Otevřete prostředí LCS, do kterého chcete službu přidat.
 1. Přejděte na **Úplné podrobnosti**.
 1. Přejděte na **Integrace Power Platform** a vyberte **Nastavit**.
 1. V dialogovém okně **Nastavení prostředí Power Platform** zaškrtněte políčko a poté vyberte **Založit**. Nastavení obvykle trvá 60 až 90 minut.
-1. Po nastavení prostředí Microsoft Power Platform se přihlaste do [Centra pro správu Power Platform](https://admin.powerplatform.microsoft.com) a poté nainstalujte doplněk Global Inventory Accounting provedením následujících kroků:
-   1. Vyberte prostředí, do kterého chcete doplněk nainstalovat.
+1. Po nastavení prostředí Microsoft Power Platform se přihlaste do [Centra pro správu Power Platform](https://admin.powerplatform.microsoft.com) a poté nainstalujte nebo aktualizujte doplněk Globální účetnictví zásob provedením následujících kroků:
+   1. Vyberte prostředí, do kterého chcete doplněk nainstalovat nebo aktualizovat řešení.
    1. Vyberte **Aplikace Dynamics 365**.
    1. Vyberte **Nainstalovat aplikaci**.
    1. Vyberte **Globální účetnictví zásob Dynamics 365**.
    1. Instalujte výběrem tlačítka **Další**.
-1. Přejděte zpět do prostředí LCS. Na pevné záložce **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
+1. Po úplné instalaci řešení se vraťte do prostředí LCS. Na pevné záložce **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
 1. Vyberte **Globální účetnictví zásob**.
 1. Postupujte podle pokynů instalační příručky a vyjádřete souhlas s podmínkami a ujednáními.
 1. Vyberte **Instalovat**.
 1. Na záložce s náhledem **Doplňky prostředí** byste měli vidět, že je instalována služba Globální účetnictví zásob. Po několika minutách by se stav měl změnit z *Probíhá instalace* na *Nainstalováno*. (Tato změna se může projevit až po aktualizaci stránky.) V tomto okamžiku je Globální účetnictví zásob připraveno k použití.
 
 Pokud výchozí jazyk vaší instalace Dataverse není angličtina, postupujte podle těchto kroků:
+
 1. Přejděte do **Pokročilé nastavení \> Správa \> Jazyky**.
 1. Vyberte *Angličtina* (*LanguageCode = 1033*) a vyberte **Použít**.
 

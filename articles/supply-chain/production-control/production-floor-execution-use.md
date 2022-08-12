@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022497"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069779"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -217,7 +217,7 @@ Pracovníci mohou upravit spotřebu materiálu pro položky skutečné hmotnosti
 
 V dialogu **Upravit materiál** může pracovník provádět a upravovat rezervace materiálů výběrem příkazu **Rezervovat materiál**. Dialogové okno **Rezervovat materiál**, které se objeví, ukazuje fyzicky dostupné zásoby položky pro každou skladovací a sledovací dimenzi.
 
-Pokud je materiál možné používat v rozšířených skladových procesech, seznam zobrazuje pouze fyzicky dostupné zásoby pro umístění výrobního vstupu pro materiál. Umístění výrobního vstupu je definováno u zdroje, kde je plánována výrobní úloha. Pokud je číslo položky řízeno šarží nebo sériovým číslem, zobrazí se úplný seznam fyzicky dostupných čísel šarží a sériových čísel. Chce-li pracovník zadat množství k rezervaci, vybere příkaz **Rezervovat materiál**. Chce-li pracovník odstranit existující rezervaci, vybere příkaz **Odebrat rezervaci**.
+Pokud je materiál možné používat v procesech řízení skladu (WMS), seznam zobrazuje pouze fyzicky dostupné zásoby pro umístění výrobního vstupu pro materiál. Umístění výrobního vstupu je definováno u zdroje, kde je plánována výrobní úloha. Pokud je číslo položky řízeno šarží nebo sériovým číslem, zobrazí se úplný seznam fyzicky dostupných čísel šarží a sériových čísel. Chce-li pracovník zadat množství k rezervaci, vybere příkaz **Rezervovat materiál**. Chce-li pracovník odstranit existující rezervaci, vybere příkaz **Odebrat rezervaci**.
 
 Další informace o tom, jak nastavit umístění výrobního vstupu, najdete v následujícím příspěvku na blogu: [Nastavení umístění výrobního vstupu](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

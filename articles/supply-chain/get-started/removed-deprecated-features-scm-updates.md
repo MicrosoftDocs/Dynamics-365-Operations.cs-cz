@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865259"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171508"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -48,11 +48,11 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.18
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – sklady (aplikace skladu)
+### <a name="supply-chain-management--warehousing-the-warehouse-app"></a><a name="wma"></a>Supply Chain Management – řízení skladu (aplikace skladu)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | S platností od dubna 2021 je aplikace *Dynamics 365 for Finance and Operations – sklady* (aplikace skladu) označena jako zastaralá a od dubna 2022 nebude podporována. Nyní je nahrazena *mobilní aplikací Řízení skladu*, která byla vydán s verzí 10.0.17 aplikace Supply Chain Management. Nová aplikace je úplnou náhradou, ale používá stejný základní rámec, což usnadňuje migraci. V případě potřeby lze tyto dvě aplikace použít vedle sebe, aby si uživatelé postupně zvykli používat novou aplikaci.<br><br>Další informace, jak konfigurovat novou mobilní aplikaci Řízení skladu, viz témata [Mobilní aplikace Řízení skladu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) a [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md). |
+| **Důvod pro zrušení/odstranění** | S platností od dubna 2021 je aplikace *Supply Chain Management – řízení skladu* (aplikace skladu) zastaralá a po dubnu 2022 nebude podporována. Nyní je nahrazena *mobilní aplikací Řízení skladu*, která byla vydán s verzí 10.0.17 aplikace Supply Chain Management. Nová aplikace je úplnou náhradou, ale používá stejný základní rámec, což usnadňuje migraci. V případě potřeby lze tyto dvě aplikace použít vedle sebe, aby si uživatelé postupně zvykli používat novou aplikaci.<br><br>Další informace, jak konfigurovat novou mobilní aplikaci Řízení skladu, viz témata [Mobilní aplikace Řízení skladu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) a [Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md). |
 | **Nahrazeno jinou funkcí?**   | Ano, nahrazeno novou mobilní aplikací Řízení skladu. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management – aplikace skladu |
 | **Možnost nasazení**              | Cloudové a místní nasazení |
@@ -98,3 +98,4 @@ Další informace o funkcích, které byly v předchozích verzích odebrány ne
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

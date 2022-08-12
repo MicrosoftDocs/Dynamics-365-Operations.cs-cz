@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef5ed6c3c99d62010643940f3e2f158963ff0dc2
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868601"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123711"
 ---
 # <a name="embed-third-party-apps"></a>Vložení aplikací třetích stran
 
@@ -60,7 +60,7 @@ Tento postup použijte, pokud chcete doplnit existující stránku v systému o 
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Vložení webu jako celostránkového prostředí z řídicího panelu
 
-Tento postup použijte, pokud aplikace, kterou chcete vložit, nesouvisí s existující stránkou nebo pokud chcete pouze celostránkové prostředí pro aplikaci uvnitř aplikace Finance and Operations.
+Tento postup použijte, pokud aplikace, kterou chcete vložit, nesouvisí s existující stránkou nebo pokud chcete pouze celostránkové prostředí pro aplikaci uvnitř finanční a provozní aplikace.
 
 1. Otevřete řídicí panel.
 2. Vyberte a podržte (nebo klikněte pravým tlačítkem) na řídicím panelu, vyberte **Přizpůsobit** a potom vyberte **Přidat stránku**.
@@ -129,3 +129,4 @@ Pokud se web po vložení do aplikace Finance and Operation nevykreslí správn�
 Ačkoli je tento článek zaměřen na vkládání aplikací nebo webů třetích stran prostřednictvím personalizace, vývojáři je také mohou vložit do formuláře pomocí vývojářského prostředí Visual Studio. Stačí přidat a do formuláře ovládací prvek **WebsiteHostControl**. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

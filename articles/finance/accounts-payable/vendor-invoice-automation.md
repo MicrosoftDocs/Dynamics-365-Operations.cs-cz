@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070687"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur pro naskenované dokumenty
 
@@ -86,7 +86,7 @@ Faktury importované pomocí datových balíčků lze přidružit k právnické 
 
 ## <a name="exception-processing"></a>Zpracování výjimky
 
-V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Operations prostřednictvím integrace, musí existovat jednoduchý způsob zpracování výjimek nebo neúspěšných faktur členem týmu modulu Závazky a k vytvoření čekajících faktur mimo neúspěšné faktury. Toto zpracování výjimek pro faktury dodavatele je nyní součástí modulu Finance and Operations.
+V situacích, kdy faktury dodavatele přecházejí do finanční a provozní aplikace prostřednictvím integrace, musí existovat jednoduchý způsob zpracování výjimek nebo neúspěšných faktur členem týmu modulu Závazky a k vytvoření čekajících faktur mimo neúspěšné faktury. Toto zpracování výjimek pro faktury dodavatele je nyní součástí financí a provozu.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Stránka se seznamem faktur dodavatele, které se nepodařilo importovat
 
@@ -225,3 +225,4 @@ Pokud role uživatele poskytuje práva pro úpravy na jakékoli stránce, bude m
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

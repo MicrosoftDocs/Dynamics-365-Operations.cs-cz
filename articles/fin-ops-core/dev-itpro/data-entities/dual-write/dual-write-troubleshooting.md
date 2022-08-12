@@ -1,6 +1,6 @@
 ---
 title: Obecné řešení potíží
-description: Tento článek obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
+description: Tento článek obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853648"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112357"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853648"
 
 
 
-Tento článek obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
+Tento článek obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -62,7 +62,7 @@ Můžete zkopírovat obsah protokolů trasování a vložit je do jiné aplikace
 Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou objevit ve finanční a provozní aplikaci. Pomocí následujících kroků můžete zapnout podrobné protokolování chyb:
 
 1. Všechny konfigurace projektu ve finanční a provozní aplikaci mají příznak **IsDebugMode** v tabulce **DualWriteProjectConfiguration**.
-2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku financí a operací pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 3. Nastavte **IsDebugMode** na **Ano** v projektu.
 4. Spuštění scénáře generujících chyby.
 5. Podrobné protokoly jsou uloženy v tabulce **DualWriteErrorLog**.
@@ -174,3 +174,4 @@ Tým podpory možná bude muset zkontrolovat trasování sítě, aby vyřešil n
 4. Vyberte **Uložit**, chcete-li exportovat výsledky jako HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

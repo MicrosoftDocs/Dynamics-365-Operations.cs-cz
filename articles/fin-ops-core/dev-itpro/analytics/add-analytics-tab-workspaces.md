@@ -7,24 +7,24 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b06821f02e6a80f2e15db7d0dd95ef6c9a30d5bc
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884542"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206409"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tato funkce je podporována v aplikaci Finance and Operations (verze 7.2 a novější).
+> Tato funkce je podporována ve finanční a provozní aplikaci (verze 7.2 a novější).
 
 ## <a name="introduction"></a>Úvod
 Tento článek popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862475"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069145"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Expedování prodejních objednávek bez skladování
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli. Průvodce lze použít pro tok plnění, který není nastaven pro správu skladu (ani základní ani rozšířené funkce skladu), a proto nevyžaduje zaregistrování výdeje produktu mají před dodávkou. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. V obou případech před spuštěním této úlohy vytvořte prodejní objednávku pro produkt na skladě s množstvím větším než 1. Abyste předešli chybě zaúčtování, je třeba zkontrolovat, že množství produktu na skladě na pracovišti a ve skladu, které jste vybrali na objednávce, zahrnuje množství objednávky.
+Tento článek vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli. Průvodce lze použít pro tok plnění, který není nastaven pro správu skladu (ani základní ani procesy řízení skladu (WMS)), a proto nevyžaduje zaregistrování výdeje produktu mají před dodávkou. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. V obou případech před spuštěním této úlohy vytvořte prodejní objednávku pro produkt na skladě s množstvím větším než 1. Abyste předešli chybě zaúčtování, je třeba zkontrolovat, že množství produktu na skladě na pracovišti a ve skladu, které jste vybrali na objednávce, zahrnuje množství objednávky.
 
 ## <a name="post-packing-slip-for-an-order"></a>Zaúčtování dodacího listu pro objednávku
 1. V navigačním podokně přejděte na **Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.

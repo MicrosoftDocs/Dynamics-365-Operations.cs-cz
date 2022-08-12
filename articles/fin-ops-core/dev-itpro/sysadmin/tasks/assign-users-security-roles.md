@@ -1,6 +1,6 @@
 ---
-title: Přiřazení uživatelů k rolím zabezpečení
-description: Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikacím Finance and Operations.
+title: Přiřadit uživatelů k rolím zabezpečení
+description: Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k finančním a provozním aplikacím.
 author: Peakerbl
 ms.date: 02/09/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: b5e69a79f123daff3f85d0100647615ad818288e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105531"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103861"
 ---
 # <a name="manage-users-and-security-roles"></a>Správa uživatelů a rolí zabezpečení
 
@@ -73,3 +73,4 @@ Uživatelé, kteří jsou ručně přiřazeni k rolím zabezpečení, musí být
    4. V **podokně akcí** vyberte možnost **Vyloučit z role**. Sloupec **Režim přiřazení** se nyní aktualizuje na **Ruční** a uživatelé jsou odebráni z role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

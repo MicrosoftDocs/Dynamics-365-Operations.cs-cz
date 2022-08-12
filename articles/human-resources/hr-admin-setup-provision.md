@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015339"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178496"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Platí pro:** Human Resources na samostatné infrastruktuře_ 
 
-
+> [!NOTE]
+> Od června 2022 lze prostředí Human Resources nasadit pouze na infrastrukturu finančních a provozních aplikací. Více informací viz [Zřízení Human Resources ve finanční a provozní infrastruktuře](hr-admin-setup-provision-fo.md).
 
 Tento článek vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. 
 
@@ -40,12 +41,12 @@ Aby bylo možné zřídit nové produkční prostředí, musí být splněny ná
 ## <a name="provision-a-human-resources-trial-environment"></a>Zřídit zkušební prostředí Human Resources
 
 >[!NOTE]
-> Od dubna 2022 nebudou zkušební prostředí Human Resources dostupná v samostatné aplikaci. Potenciální zákazníci, kteří mají zájem o vyhodnocení schopností Human Resources v rámci finančních a provozních aplikací, tak mohou učinit pomocí bezplatné 30denní zkušební verze spolu s ukázkovými daty. Dynamics 365 Finance bude zahrnovat funkce Human Resources přenesené do infrastruktury Finance sloučením samostatné aplikace. Více informací viz [Sloučení nabídek HR přináší zákazníkům možnosti](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Další informace o zkušebních verzích Dynamics 365 Finance najdete v podrobném [průvodci](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Od dubna 2022 nebudou zkušební prostředí Human Resources dostupná v samostatné aplikaci. Potenciální zákazníci, kteří mají zájem o vyhodnocení schopností Human Resources v rámci finančních a provozních aplikací, tak mohou učinit pomocí bezplatné 30denní zkušební verze spolu s ukázkovými daty. Dynamics 365 Finance bude zahrnovat funkce Human Resources přenesené do infrastruktury Finance sloučením samostatné aplikace. Více informací viz [Sloučení nabídek HR přináší zákazníkům funkce](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Další informace o zkušebních verzích Dynamics 365 Finance naleznete v [průvodci krok za krokem](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Před zřízením prvního sandboxu nebo produkčního prostředí můžete zřídit [Zkušební prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) k ověření funkčnosti Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. 
 
-Zkušební prostředí poskytují možnost vyhodnotit funkce lidských zdrojů u jednotlivců, kteří ještě nemají přístup k prostředí lidských zdrojů. Pokud zřizujete zkušební prostředí a ověřený uživatel již má přístup k jednomu nebo více existujícím prostředím lidských zdrojů, bude uživatel přesměrován do stávajícího prostředí nebo seznamu prostředí.
+Zkušební prostředí pomáhají vyhodnotit funkce lidských zdrojů u jednotlivců, kteří ještě nemají přístup k prostředí lidských zdrojů. Pokud zřizujete zkušební prostředí a ověřený uživatel již má přístup k jednomu nebo více existujícím prostředím lidských zdrojů, bude uživatel přesměrován do stávajícího prostředí nebo seznamu prostředí.
 
 Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 30denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
@@ -56,14 +57,14 @@ Při vytváření zkušebního prostředí pro lidské zdroje je v klientovi tak
 
 ## <a name="plan-human-resources-environments"></a>Plánování prostředí Human Resources
 
-Než vytvoříte své první prostředí Human Resources, měli byste pečlivě naplánovat potřeby prostředí pro váš projekt. Základní předplatné Human Resources zahrnuje dvě prostředí: produkční prostředí a prostředí karantény. V závislosti na složitosti vašeho projektu možná budete muset zakoupit další prostředí izolovaného prostoru pro podporu projektových aktivit. 
+Než vytvoříte své první prostředí Human Resources, měli byste pečlivě naplánovat potřeby prostředí pro váš projekt. Základní předplatné Human Resources zahrnuje dvě prostředí: produkční prostředí a prostředí karantény. V závislosti na složitosti vašeho projektu možná budete možná muset zakoupit další prostředí izolovaného prostoru pro podporu projektových aktivit. 
 
 Doporučení pro další prostředí:
 
-- **Migrace dat**: Možná budete muset zvážit další prostředí pro aktivity migrace dat, aby bylo možné vaše prostředí karantény použít pro účely testování v celém projektu. Mít další prostředí umožňuje, aby aktivity migrace dat pokračovaly, zatímco aktivity testování a konfigurace probíhají současně v jiném prostředí.
-- **Integrace**: Možná budete muset zvážit další prostředí pro konfiguraci a testování integrace. To by mohlo zahrnovat nativní integrace, jako jsou integrace Ceridian Dayforce nebo LinkedIn Talent Hub, nebo vlastní integrace, jako jsou integrace pro mzdy, systémy sledování žadatelů nebo systémy a poskytovatele výhod.
-- **Výcvik**: Abyste mohli své zaměstnance vyškolit v používání nového systému, možná budete potřebovat samostatné prostředí, které je nakonfigurováno se sadou tréninkových dat. 
-- **Vícefázový projekt** : Možná budete potřebovat další prostředí pro podporu konfigurace, migrace dat, testování nebo jiných aktivit ve fázi projektu, která je plánována po počátečním uvedení projektu do provozu.
+- **Migrace dat**: Aktivity migrace dat umožňují vaše prostředí karantény použít pro účely testování v celém projektu. Mít další prostředí umožňuje, aby aktivity migrace dat pokračovaly, zatímco aktivity testování a konfigurace probíhají současně v jiném prostředí.
+- **Integrace**: Konfigurace a testování integrací, které mohou zahrnovat nativní integrace, jako je Ceridian Dayforce, nebo vlastní integrace.
+- **Školení**: Abyste mohli své zaměstnance vyškolit v používání nového systému, možná budete potřebovat samostatné prostředí, které je nakonfigurováno se sadou tréninkových dat. 
+- **Vícefázový projekt**: Podpora konfigurace, migrace dat, testování nebo jiných aktivit ve fázi projektu, která je plánována po počátečním uvedení projektu do provozu.
 
  > [!IMPORTANT]
  > Při návrhu vašeho prostředí doporučujeme:
@@ -111,7 +112,7 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
 
 6. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
 
-   Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení aktualizován na **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.
+   Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.
 
 7. Chcete-li začít používat své nové prostředí, zvolte **Přihlásit se do aplikace Human Resources**.
 
@@ -140,7 +141,7 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
    
     - **Nepodporované zeměpisné oblasti** – Prostředí musí být v podporované geografii. Další informace viz [Podporované zeměpisné oblasti](hr-admin-setup-provision.md#supported-geographies).
 
-6. Možnosti duálního zápisu pro integraci dat lidských zdrojů s prostředím Power Apps lze použít pouze v případě, kdy je vybrána možnost **Povolit aplikace Dynamics 365** pro prostředí. V tématu [Domovská stránka pro duální zápis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) získáte více informací o duálním zápisu.
+6. Možnosti duálního zápisu pro integraci dat lidských zdrojů s prostředím Power Apps lze použít pouze v případě, kdy je vybrána možnost **Povolit aplikace Dynamics 365** pro prostředí. Další informace naleznete v tématu [Úvodní stránka dvojího zápisu](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Možnost **Povolit aplikace Dynamics 365** musí být vybrána během vytváření prostředí Power Apps. Pokud tato možnost není v době zřízení vybrána, nebudete moci používat duální zápis k integraci dat mezi Dynamics 365 Human Resources a prostředím Power Apps ani instalovat do prostředí aplikace Dynamics 365, jako je Dynamics 365 Sales a Field Service. Tato možnost není reverzibilní. 
@@ -175,3 +176,4 @@ Ve výchozím nastavení má k prostředí přístup globální správce, který
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

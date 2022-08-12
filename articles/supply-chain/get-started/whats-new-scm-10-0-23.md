@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849467"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124521"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
@@ -83,7 +83,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující články ná
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.23 aplikací Finance a Operace (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.23 finančních a provozních aplikací (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -107,3 +107,4 @@ Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

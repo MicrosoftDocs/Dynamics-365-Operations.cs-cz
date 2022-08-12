@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895808"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066663"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace Inventory Visibility
 
@@ -55,7 +55,7 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 | *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tato volitelná funkce umožňuje plán změn na skladě a funkci Lze slíbit (ATP). Další informace najdete v tématu [Plán změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
 | *Přidělení* | Tato volitelná funkce umožňuje Viditelnosti zásob mít možnost ochrany zásob (ringfencing) a kontroly nadměrného prodeje. Další informace viz [Alokace zásob doplňku Viditelnost zásob](inventory-visibility-allocation.md). |
-| *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro pokročilé skladové procesy (položky WHS). Další informace viz [Podpora Viditelnost zásob pro položky WHS](inventory-visibility-whs-support.md). |
+| *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro procesy správy skladu (WMS). Další informace viz [Podpora Viditelnost zásob pro položky WMS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
 
@@ -809,3 +809,4 @@ Následující tabulka ukazuje výchozí hierarchii rezervace.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

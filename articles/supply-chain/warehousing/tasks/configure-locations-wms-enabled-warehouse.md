@@ -1,6 +1,6 @@
 ---
 title: Konfigurace umístění ve skladu s povolenými procesy řízení skladu
-description: Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy rozšířené správy skladu).
+description: Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy správy skladu (WMS)).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599341"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067266"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurace umístění ve skladu s povolenými procesy řízení skladu
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy rozšířené správy skladu). Proces obvykle provádějí vedoucí skladu. Tohoto průvodce můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Předpokladem je, že máte nakonfigurován alespoň jeden site.
+Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy správy skladu (WMS)). Proces obvykle provádějí vedoucí skladu. Tohoto průvodce můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Předpokladem je, že máte nakonfigurován alespoň jeden site.
 
 
 ## <a name="create-a-new-warehouse"></a>Vytvoření nového skladu
@@ -35,7 +35,7 @@ Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (skl
 4. Zadejte hodnotu do pole **Název**.
 5. V poli **Web** vyberte nebo zadejte existující hodnotu webu.
 6. Rozbalte sekci **Sklad**.
-7. Nastavte **Použít procesy řízení skladu** na Ano. Toto nastavení umožňuje spustit rozšířené skladové procesy prostřednictvím skladové práce a mobilních zařízení.
+7. Nastavte **Použít procesy řízení skladu** na Ano. Toto nastavení umožňuje spustit procesy správy skladu (WMS) prostřednictvím skladové práce a mobilních zařízení.
 8. Zavřete stránku.
 
 ## <a name="define-a-location-format"></a>Definování formátu skladového místa
@@ -68,7 +68,7 @@ Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (skl
 5. Zavřete stránku.
 
 ## <a name="define-location-profile"></a>Definování profilu skladového místa
-1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Nastavení > Sklad > rofily umístění**. Definování profilů skladových míst je velmi důležité. Zde lze spravovat kapacitu seskupených skladových míst a také zásady týkající se toho, jaké zásoby budou uloženy a jak jsou uloženy. Profily skladového místa lze použít jako možnosti filtrování k řízení různých procesů správy skladu. Je nutné vytvořit profil skladového místa uživatele, chcete-li povolit procesy správy skladu.
+1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Nastavení > Sklad > rofily umístění**. Definování profilů skladových míst je velmi důležité. Zde lze spravovat kapacitu seskupených skladových míst a také zásady týkající se toho, jaké zásoby budou uloženy a jak jsou uloženy. Profily skladového místa lze použít jako možnosti filtrování k řízení různých procesů správy skladu. Je nutné vytvořit profil skladového místa uživatele, chcete-li povolit WMS.
 2. Klepněte na možnost **Nový**.
 3. Zadejte hodnotu do pole **ID profilu skladového místa**.
 4. Zadejte hodnotu do pole **Název**.

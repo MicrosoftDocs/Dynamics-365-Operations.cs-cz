@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849924"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151025"
 ---
 # <a name="purchase-order-posting"></a>Zaúčtování nákupní objednávky
 
@@ -93,10 +93,10 @@ Následující tabulka ukazuje příklady výchozích typů účtování s ukáz
 
 | Typ zaúčtování | Příklad hlavního účtu | Příklad názvu hlavního účtu | Typ účtu | Má dáti/Dal? | Clearingový účet | P/F | Sledovat | Popis |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Náklady na nákup přijatého materiálu | 140100</br>140101 | Zásoby materiálů</br>Expedované nefakturované materiály | Materiál | Debet | Ano | P | Fakturované náklady na nákup materiálu | Používá se, když je zaúčtována příjemka produktu nákupní objednávky. Protiúčet je Nákupní výdaj, bez faktury. Částka na tomto účtu je stornována při zaúčtování faktury nákupní objednávky. |
+| Náklady na nákup přijatého materiálu | 140100</br>140101 | Zásoby materiálů</br>Expedované nefakturované materiály | Materiál | Debet | Ano | P | Fakturované náklady na nákup materiálu | Používá se, když je zaúčtován příjem produktu nákupní objednávky, kompenzace na účet je Nákupní výdaje, nevyfakturované. Částka na tomto účtu je stornována při zaúčtování faktury nákupní objednávky. |
 | Nákupní výdaj, bez faktury | 600180 | Příjemky materiálů | Výdaje | Debet | Ano | P | |Používá se, když je zaúčtována příjemka produktu nákupní objednávky. Pro příjem jsou vytvořeny dva doklady pro sledování odchylek nákupní ceny při použití standardních nákladů. Protiúčtem k účtu na prvním dokladu je Časové rozlišení nákupu. Protiúčtem k účtu na druhém dokladu je součet účtů Náklady na nákup přijatého materiálu a Odchylka nákupní ceny. Částky na zaúčtované na tomto účtu jsou stornovány při zaúčtování faktury nákupní objednávky. |
 | Fakturované náklady na nákup materiálu | 140100 | Zásoby materiálů | Materiál | Debet | Číslo | F  |Náklady na nákup přijatého materiálu | Používá se, když je zaúčtována faktura nákupní objednávky. Protiúčtem k tomuto účtu je Nákupní výdaj pro produkt. Tento účet představuje zásoby ve vaší rozvaze. Použitý účet je obvykle stejný účet, který se používá pro náklady na dodané jednotky a náklady na fakturované jednotky u prodejní objednávky. |
-| Nákupní výdaj pro produkt | 600180 | Příjemka materiálu | Výdaje | Kredit | Číslo | F  | |Používá se, když je zaúčtována faktura nákupní objednávky. Protiúčtem jsou Náklady na nákup materiálu. Tento účet představuje zásoby ve vaší rozvaze. |
+| Nákupní výdaj pro produkt | 600180 | Příjemka materiálu | Výdaje | Kredit | Ano | F  | |Používá se, když je zaúčtována faktura nákupní objednávky. Pro fakturu jsou vytvořeny dva doklady pro sledování odchylek nákupní ceny při použití standardních nákladů. Zápočet na tento účet je nákupní výdaj, nevyfakturovaný účet, který se používá při účtování příjemky a stornuje se při účtování faktury. Představuje náklady na zásoby nakoupené při fakturaci, které nejsou zohledněny na účtu zásob v rozvaze. Jedná se o účtování zisků a ztrát pro rozptyl nákupní ceny, který se nejčastěji vyskytuje u nákupů standardních nákladových položek.|
 | Zisk pevné ceny příjmu (Nákup, zisk pevné ceny příjmu*) | 510310 | Odchylka nákupní ceny | Výdaje | Kredit | Číslo | F | Ztráta pevné ceny příjmu | Používá se, když je zaúčtována faktura nákupní objednávky a existuje rozdíl mezi fakturovanou cenou a výchozí cenou položky. Tento účet se používá, když je rozdíl vyšší. Protiúčtem je Protiúčet pevné ceny příjmu. |
 | Ztráta pevné ceny příjmu (Nákup, ztráta pevné ceny příjmu*) | 510310 | Odchylka nákupní ceny | Výdaje | Debet | Číslo | F | Zisk pevné ceny příjmu | Používá se, když je zaúčtována faktura nákupní objednávky a existuje rozdíl mezi fakturovanou cenou a výchozí cenou položky. Tento účet se používá, když je rozdíl nižší. Protiúčtem je Protiúčet pevné ceny příjmu. |
 | Protiúčet pevné ceny příjmu (Nákup, protiúčet pevné ceny příjmu*) | 140900 | Skladová odchylka | Materiál | Oboje | Číslo | F  | |Používá se, když je zaúčtována faktura nákupní objednávky a existuje rozdíl mezi fakturovanou cenou a výchozí cenou položky. Tento účet je protiúčtem účtů Zisk pevné ceny příjmu a Ztráta pevné ceny příjmu. |

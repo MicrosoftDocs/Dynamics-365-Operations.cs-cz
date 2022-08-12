@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b75034cbc8ca7a24472cfec1ad93d3dfef4a8fdc
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882135"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111133"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Řešení problémů s upgrady ve finančních a provozních aplikacích
 
@@ -24,7 +24,7 @@ ms.locfileid: "8882135"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.

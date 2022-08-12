@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844757"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103173"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobilní pracovní prostor prodejních objednávek
 
@@ -29,7 +29,7 @@ ms.locfileid: "8844757"
 
 Tento článek obsahuje informace o mobilním pracovním prostoru **Prodejní objednávky**. Tento pracovní prostor vám pomáhá mít aktuální přehled o prodejních objednávkách kdekoliv a kdykoliv. 
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations (Dynamics 365).
+Tento mobilní pracovní prostor je určen k použití s finanční a provozní mobilní aplikací (Dynamics 365).
 
 ## <a name="overview"></a>Přehled
 Mobilní pracovní prostor **Prodejní objednávky** umožňuje zobrazit podrobné informace o jednotlivých prodejních objednávkách. Tyto informace zahrnují stav objednávky, kontaktní informace odběratele a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor **prodejních objednávek** poskytuje okamžitý přehled o prodejních objednávkách. Můžete zobrazit všechny prodejní objednávky, prodejní objednávky podle zákazníka nebo informace o konkrétní prodejní objednávce. 
@@ -118,7 +118,7 @@ Pokud je ve vaší organizaci nasazena aplikace Dynamics 365 for Operations verz
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
+Stáhněte a nainstalujte finanční a provozní mobilní aplikaci (Dynamics 365):
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 36
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

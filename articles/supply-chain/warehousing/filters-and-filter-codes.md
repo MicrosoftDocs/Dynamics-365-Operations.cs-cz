@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850431"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067521"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurace produktových filtrů pro skladové transakce
 
@@ -95,7 +95,7 @@ Chcete-li nastavit kódy filtrů pro skupiny zboží postupujte takto.
     Například pokud jsou zaškrtnutá políčka **Použít kód 1 filtru** a **Použít kód filtru 2**, kód filtru 1 i 2 pro zboží se bude muset shodovat s nastavením skupiny filtrů pro vybranou skupinu položek před tím, než bude možné vybrat skupinu filtrů. Když vytvoříte novou položku, vybraná skupina filtrů bude výchozí skupinou filtrů **Skupina 1** a **Skupina 2** na záložce s náhledem **Sklad** podokna **Podrobnosti o vydaném produktu**.
 
 > [!IMPORTANT]
-> Kódy filtrů produktů jsou povoleny pouze pro položky, které používají pokročilou správu skladu.
+> Kódy filtrů produktů jsou povoleny pouze pro položky, které používají procesy správu skladu (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Zadání kódů filtrů pro uvolněné produkty
 
@@ -158,7 +158,7 @@ Chcete-li nastavit kódy filtru dodavatele, postupujte podle následujících kr
 1. V poli **Kód 1** až **Kód 10** vyberte kódy filtrů, které chcete použít jako kritéria k omezení položek, které jsou k dispozici dodavatelům ve vybrané skupině položek. Musíte provést výběr pro každý kód filtru, který je nastaven pro skupinu položek.
 
 > [!NOTE]
-> Nastavení filtrů produktů dodavatele se vztahuje na vydané produkty, kde jsou pro příslušnou skupinu dimenzí úložiště povoleny procesy správy skladu. Kódy filtru se používají k určení, zda systém umožní uživatelům koupit danou položku od daného dodavatele, když vytvoří řádky nákupní objednávky. Microsoft Dynamics 365 Supply Chain Management má dvě metody pro zacházení se schválením dodavatele. Pokud existuje jeden nebo více vydaných produktů, kde je pole **Schválená metoda kontroly dodavatele** nastaveno na *Pouze varování* nebo *Nepovoleno*, pro tyto položky lze povolit obě metody schválení dodavatele. Tato situace může způsobit problémy, když uživatelé vytvoří řádky nákupní objednávky.
+> Nastavení filtrů produktů dodavatele se vztahuje na vydané produkty, kde jsou pro příslušnou skupinu dimenzí úložiště povoleny procesy správy skladu (WMS). Kódy filtru se používají k určení, zda systém umožní uživatelům koupit danou položku od daného dodavatele, když vytvoří řádky nákupní objednávky. Microsoft Dynamics 365 Supply Chain Management má dvě metody pro zacházení se schválením dodavatele. Pokud existuje jeden nebo více vydaných produktů, kde je pole **Schválená metoda kontroly dodavatele** nastaveno na *Pouze varování* nebo *Nepovoleno*, pro tyto položky lze povolit obě metody schválení dodavatele. Tato situace může způsobit problémy, když uživatelé vytvoří řádky nákupní objednávky.
 
 ## <a name="see-also"></a>Viz také
 

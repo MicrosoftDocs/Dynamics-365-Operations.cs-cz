@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876117"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135836"
 ---
 # <a name="posting-profiles-overview"></a>Přehled účetních profilů
 
-V aplikacích Finance a Operace se termín *profily účtování* používá k popisu konfigurací, které řídí, jak se účty vedlejší knihy převádějí na hlavní účty, aby je bylo možné použít v transakcích zaúčtovaných do hlavní knihy. Řídí například, jak se zákazník při zaúčtování faktury převede na hlavní účet pohledávek.
+Ve finančních a provozních aplikacích se termín *profily účtování* používá k popisu konfigurací, které řídí, jak se účty vedlejší knihy převádějí na hlavní účty, aby je bylo možné použít v transakcích zaúčtovaných do hlavní knihy. Řídí například, jak se zákazník při zaúčtování faktury převede na hlavní účet pohledávek.
 
 Některé moduly a funkce mají stránku, která v názvu obsahuje slova „profil účtování“ (např. **Profil účtování zákazníka** nebo **Profil účtování dodavatele**). Některé moduly mají navíc více možností pro konfiguraci účtování v hlavní knize pro transakce, které jsou generovány z vedlejší knihy. Například v modulu **Kontrola produkce** můžete nastavit účtování podle produkční skupiny, zdroje nebo skupiny zdrojů.
 
@@ -34,7 +34,7 @@ Než budete moci nakonfigurovat profily odesílání, definice odesílání nebo
 
 ## <a name="posting-types"></a>Typ zaúčtování
 
-V aplikacích Finance a Operace se typ účtování používá k definování obecné kategorie pro debet nebo kredit. Tato kategorie je nezávislá na hlavním účtu v hlavní knize. V hlavní knize existují typy účtování pro každý debet nebo kredit.
+Ve finančních a provozních aplikacích se typ účtování používá k definování obecné kategorie pro debet nebo kredit. Tato kategorie je nezávislá na hlavním účtu v hlavní knize. V hlavní knize existují typy účtování pro každý debet nebo kredit.
 
 Jeden doklad může mít jeden nebo více typů zaúčtování. Například transakce, která je zaúčtována prostřednictvím obecného deníku, kde jsou nastaveny účet a kompenzační účet na **Hlavní kniha**, bude mít typ účtování **Hlavní deník** pro debet i kredit. Naproti tomu faktura dodavatele bude mít více typů účtování. Tyto typy účtování budou zahrnovat jeden řádek pro zůstatek dodavatele a další řádky pro kompenzační záznam, jako je např. **Hlavní deník**.
 
@@ -111,13 +111,14 @@ Mnohé moduly v Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 - Účtování správy výdajů (již brzy)
 - [Účetní profil dlouhodobého majetku](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Účtování mezipodnikového účetnictví (již brzy)
-- Profil účtování zásob (již brzy)
+- [Zaúčtování zásob](inventory-posting.md)
 - [Účtování nákladů s doručením](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Přehled definic účtování](posting-definitions.md)
-- Účtování řízení výroby (již brzy)
+- [Zaúčtování výroby](production-posting.md)
 - Účtování projektového řízení a účetnictví (již brzy)
 - Účtování správy služeb (již brzy)
 - Účtování daní (již brzy)
 - Účtování času a účasti (již brzy)
 - Účtování správy dopravy (již brzy)
 - Profily zaúčtování správy rabatu (již brzy)
+

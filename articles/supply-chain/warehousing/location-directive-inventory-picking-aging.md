@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885689"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068663"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Prodlení výdeje zásob směrnice místa
 
@@ -82,7 +82,7 @@ Ukázková data vyžadují nastavení a inventarizaci, aby podpořila scénáře
 
 1. Vyberte **OK**, pokud chcete použít své nastavení a zavřete dialogové okno dotazu.
 1. Změny směrnice skladového místa uložíte výběrem možnosti **Uložit**.
-1. Na mobilním zařízení nebo v aplikaci *Dynamics 365 for Finance and Operations - Warehousing* na vašem PC, proveďte následující kroky k odstranění existujícího inventáře z umístění skladu a podpořte scénáře:
+1. Na mobilním zařízení nebo v aplikaci *Dynamics 365 Supply Chain Management - Warehousing* na vašem PC, proveďte následující kroky k odstranění existujícího inventáře z umístění skladu a podpořte scénáře:
 
     1. Přihlaste se ke skladu *63* pomocí příslušného ID uživatele a hesla.
     1. V hlavní nabídce vyberte **Kvalita**.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464902"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109105"
 ---
 # <a name="financial-analysis"></a>Finanční analýza
 
@@ -78,7 +78,7 @@ V současné době data v integrovaných sestavách Power BI nelze omezit na pr�
 | Funkční oprávnění                                    | Role | popis |
 |-----------------------------------------|-------|------------|
 | Zobrazit finanční analýzu aktuální společnosti | <ul><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Auditor</li><li>Správce rozpočtu</li><li>Výkonný ředitel</li><li>Vedoucí finančního oddělení</li><li>Finanční kontrolor</li></ul> | Toto funkční oprávnění poskytuje přístup k finanční analýze. Standardně slouží aktivní společnost jako filtr. Nelze přidat další právnické osoby. |
-| Zobrazit finanční analýzu celé společnosti   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
+| Zobrazit finanční analýzu celé společnosti   | V Microsoft Dynamics 365 Finance, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Finanční výkaznictví versus Finanční analýza
@@ -96,7 +96,7 @@ Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
 | **Podpora hierarchie vykazování/organizační hierarchie**   | Ano                                                               | Ne |
 | **Vykázat data dílčí knihy**                             | Ano omezeno pouze na dodavatele, zákazníka                              | Ano dodavatel, odběratel, skupiny odběratelů nebo dodavatelů, adresy odběratele nebo dodavatele, atd. |
 | **Měna vykazování**                                   | Ano Zúčtovací měna a Převést na měnu vykazování       | Ne Pouze v zúčtovací měně |
-| **Zabezpečení**                                             | Ano odpovídá Finance a vykazování stromového zabezpečení | Omezené zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení Finance and Operations) nebo jen aktivní společnost |
+| **Zabezpečení**                                             | Ano odpovídá Finance a vykazování stromového zabezpečení | Omezené zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení financí a provozu) nebo jen aktivní společnost |
 | **Podporuje různé účtové osnovy a fiskální roky** | Ano                                                               | Ne |
 | **vykázat externí data**                              | Ne                                                                | Ne |
 | **Podpora konsolidací**                               | Ano                                                               | Omezené Lze vykázat více společností, ale používat pouze zúčtovací měnu |
@@ -244,3 +244,4 @@ Informace v následujících zdrojích není vyžadována, aby bylo možné povo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

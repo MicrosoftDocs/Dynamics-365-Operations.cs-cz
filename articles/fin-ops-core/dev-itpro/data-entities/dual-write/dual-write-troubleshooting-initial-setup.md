@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882077"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111193"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -22,7 +22,7 @@ ms.locfileid: "8882077"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
 
 > [!IMPORTANT]
 > Některé problémy, které tento článek řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -35,7 +35,7 @@ Chyby na stránce **Nastavení odkazu na Dataverse** jsou obvykle způsobeny ne�
 
 ![Úspěšná kontrola stavu.](media/health_check.png)
 
-Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance a Operace a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
+Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí financí a provozu a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Najít limit počtu právnických osob nebo společností, které lze propojit s dvojím zapisováním
 
@@ -77,7 +77,7 @@ K této chybě dojde v případě, že nedojde k dokončení kroku souhlasu apli
 > [!NOTE]
 > Pokud to nefunguje, spusťte URL v soukromém režimu Microsoft Edge nebo inkognito režimu Chrome.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Prostředí Finance a Operace není zjistitelné
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Prostředí financí a provozu není zjistitelné
 
 Může se zobrazit následující chybová zpráva:
 
@@ -85,7 +85,8 @@ Může se zobrazit následující chybová zpráva:
 
 Existují dvě věci, které mohou způsobit problém s tím, že prostředí nelze zjistit:
 
-+ Uživatel použitý pro přihlášení není ve stejném klientovi jako instance Finance a Operace.
-+ Existují určité starší instance Finance a Operace hostované společností Microsoft, které měly problém se zjišťováním. Chcete-li to opravit, aktualizujte instanci Finance a Operace. Prostředí se stane zjistitelným po každé aktualizaci.
++ Uživatel použitý pro přihlášení není ve stejném klientovi jako instance financí a provozu.
++ Existují určité starší instance financí a provozu hostované společností Microsoft, které měly problém se zjišťováním. Chcete-li to opravit, aktualizujte instanci financí a provozu. Prostředí se stane zjistitelným po každé aktualizaci.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

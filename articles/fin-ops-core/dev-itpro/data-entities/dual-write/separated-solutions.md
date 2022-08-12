@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874805"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111653"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Oddělený balíček pro orchestraci aplikace s duálním zápisem
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874805"
 Dříve byl balíček pro orchestraci aplikace s duálním zápisem jediný balíček, který obsahoval následující řešení:
 
 - Dynamics 365 – poznámky
-- Dynamics 365 Finance and Operations - společná kotva
-- Dynamics 365 Finance and Operations - mapy entit s dvojím zápisem
+- Dynamics 365 finance a provoz – společná kotva
+- Dynamics 365 finance a provoz – mapy entit s dvojím zápisem
 - Aplikace Dynamics 365 – správa majetku
 - Dynamics 365 – správa majetku
 - Společné HCM
 - Dynamics 365 – rozšířený dodavatelský řetězec
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations - společné
+- Dynamics 365 finance a provoz – společné
 - Dynamics 365 – společnost
 - Směnné kurzy měny
 - Field Service Common
@@ -247,7 +247,7 @@ Balíček Poznámky s duálním zápisem obsahuje řešení a mapy, které jsou 
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Finance and Operations                     | Customer Engagement |
+| Finance a provoz                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Přílohy dokumentu záhlaví prodejní objednávky    | anotace         |
 | Přílohy zákazníků                       | anotace         |
@@ -344,3 +344,4 @@ K dispozici pro tento balíček jsou následující mapy.
 - Balíček Základ aplikace s duálním zápisem
 - Balíček Finance s duálním zápisem
 - Balíček Dodavatelský řetězec s duálním zápisem
+

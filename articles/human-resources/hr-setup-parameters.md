@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856273"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065637"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurace parametrů aplikace Human Resources
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856273"
 
 Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
 
-K nastavení parametrů lidských zdrojů slouží dvě stránky. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**.
+K nastavení parametrů lidských zdrojů slouží dvě stránky. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost, použijete stránku **Parametry Human Resources** strana.
 
 ![Přechod na parametry lidských zdrojů.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ V aplikaci Dynamics 365 Finance definuje nastavení na kartě **Kompenzace**, zd
 
 V Human Resources můžete na kartě **Kompenzace** omezit přístup k plánům kompenzace a nastavit výchozí měnu.
 
-Další informace o kompenzacích naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
+> [!NOTE]
+> Ve sloučené infrastruktuře je výchozí parametr **Měna** na kartě **Kompenzace** stránky **Parametry Human Resources** odstraněn. V budoucnu bude měnu zpracovávat parametr **Měna hlavní knihy**, aby se zajistilo, že nedojde ke konfliktům pro stávající finanční a provozní funkčnost a zabrání se duplicitě. Další informace, jak použít funkci měny hlavní knihy, naleznete v části [Konfigurace hlavních knih](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Karta Kompenzace.](./media/hr-setup-parameters-compensation.png)
+Další informace o kompenzacích naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Číselné řady
 

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960165"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065590"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -56,7 +56,7 @@ Do prognózy poptávky jsou implementovány tři hlavní motivy:
 - **Modulární struktura** – prognóza poptávky je modulární a lze ji snadno konfigurovat. Funkci lze zapnout nebo vypnout změnou konfiguračního klíče v nabídce **Obchod** &gt; **Prognóza zásob** &gt; **Prognóza poptávky**.
 - **Opakované použití Microsoft stack** - Strojové učení, které je nyní součástí Microsoft Cortana Analytics Suite, umožňuje rychle a snadno vytvářet experimenty prediktivní analýzy, jako jsou pokusy o odhad poptávky, pomocí programovacích jazyků algoritmů R nebo Python a jednoduché rozhraní přetažení.
   - Pokusy prognózy poptávky můžete stáhnout, změnit je tak, aby odpovídaly obchodním požadavkům, publikovat je jako webové služby pro platformu Azure, a použít je pro generování prognóz poptávky. Pokud jste si zakoupili předplatné aplikace Supply Chain Management pro plánovač výroby na úrovni podnikového uživatele, jsou experimenty dostupné ke stažení.
-  - Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Používání experimentů z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) proto není tak přímočaré jako u experimentů s prognózou poptávky aplikace Finance and Operations. Kód experimentů je třeba upravit tak, aby používaly rozhraní API aplikace Finance and Operations.
+  - Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Používání experimentů z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) proto není tak přímočaré jako u experimentů s prognózou poptávky finanční a provozní aplikace. Kód experimentů je třeba upravit tak, aby používaly rozhraní API finanční a provozní aplikace.
   - Můžete vytvořit vlastní pokusy v aplikaci studia strojového učení Microsoft Azure (klasické), publikovat je jako služby Azure a použít je pro generování prognóz poptávky.
   - Pokud nevyžadujete vysoký výkon, nebo nechcete-li zpracovat velké množství dat, můžete používat bezplatnou verzi služby Machine Learning. Doporučujeme vždy začínat od této verze, zejména během implementace a testování. Chcete-li dosáhnout vyššího výkonu a dalšího úložiště, můžete začít používat standardní verzi Machine Learning. Tato verze vyžaduje odběr služby Azure a zahrnuje dodatečné náklady. Podrobnosti o cenách produktu Machine Learning naleznete v tématu [ceny Machine Learning Studio](https://aka.ms/machine-learning-price-info).
 - **Snížení prognózy v libovolném z oddělovacích bodů** – prognóza poptávky staví na této funkci, která umožňuje vytvářet závislé i nezávislé prognózy poptávky v libovolném oddělovacím bodě.
@@ -101,3 +101,4 @@ Upozorňujeme, že UOM prognózy poptávky nemusí mít žádný konkrétní vý
 - [Webinář: seriál Prognóza poptávky s Azure Machine Learning](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

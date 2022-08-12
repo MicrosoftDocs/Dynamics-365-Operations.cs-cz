@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403834"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109425"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Synchronizace data a času v úlohách importu
 
@@ -27,7 +27,7 @@ Je důležité nastavit časové pásmo pro vaši úlohu importu na koordinovan�
 
 Tato duální konverze způsobí změnu dat mezi aplikacemi. Například duální konverze může způsobit, že se počáteční datum zaměstnance bude lišit mezi Dynamics 365 Human Resources a Dynamics 365 Finance kvůli rozdílům v místních časových pásmech. Nastavení úlohy importu na UTC tento problém řeší.
 
-1. V Dynamics 365 Finance and Operations vyberte **Správa dat**.
+1. V části Dynamics 365 finance a provoz vyberte **Správa dat**.
 
 2. Vyberte **Importovat projekty** a poté vyberte projekt.
 
@@ -41,3 +41,4 @@ Tato duální konverze způsobí změnu dat mezi aplikacemi. Například duáln�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

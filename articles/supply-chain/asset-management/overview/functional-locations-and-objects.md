@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d8d155b8bbf981408f6f15e914fc3bb1da25c9c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875648"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111069"
 ---
 # <a name="functional-locations-and-assets"></a>Funkční místa a majetek
 
@@ -32,7 +32,7 @@ Tento článek popisuje funkční místa a majetek v modulu Správa majetku. Spr
 
 ## <a name="overview"></a>Přehled
 
-Správa majetku je bezproblémově integrována s několika moduly v dalších aplikacích Finance and Operations. Následující ilustrace znázorňuje rozhraní s jinými moduly.
+Správa majetku je bezproblémově integrována s několika moduly v dalších finančních a provozních aplikacích. Následující ilustrace znázorňuje rozhraní s jinými moduly.
 
 ![Diagram znázorňující způsob, jakým jsou rozhraní správy majetku s jinými moduly.](media/01-overview-image.png)
 

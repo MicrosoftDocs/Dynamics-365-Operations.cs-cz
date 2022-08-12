@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853341"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070627"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Plánování účtové osnovy
 
@@ -43,7 +43,7 @@ Zde je několik faktorů, které je třeba brát v potaz při plánování struk
 Na stránce **Účtová osnova** vytvořte účtovou osnovu. Hlavní účty lze vytvořit na stránce **Účtové osnovy** nebo **Hlavní účty**. V hlavních účtech nepoužívejte zvláštní znaky, které se používají jako oddělovače účtové osnovy. V opačném případě může dojít k nestabilitě nebo je třeba vždy použít vyhledávání, resp. při zadávání kombinací účtů a dimenzí. Další informace naleznete v tématu [Vytvoření hlavního účtu](tasks/create-main-account.md).
 
 > [!NOTE]
-> V aplikaci Dynamics 365 for Finance and Operations verze 8.0 (duben 2018) můžete změnit oddělovač účtové osnovy ze stránky **Parametry hlavní knihy**.
+> V aplikaci Dynamics 365 Finance verze 8.0 (duben 2018) můžete změnit oddělovač účtové osnovy ze stránky **Parametry hlavní knihy**.
 
 Je vhodné propojit hlavní účty s kategoriemi hlavních účtů, abyste mohli využít výhody výchozích finančních sestav bez nutnosti provádět změny. Můžete proto rychleji a snáze navrhovat a spravovat sestavy.
 
@@ -60,3 +60,4 @@ Další informace naleznete v následujících tématech:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857366"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070462"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ohlášení jako dokončené ze zařízení úkolového lístku
 
@@ -50,7 +50,7 @@ Více informací o tom, jak pracovat se stránkou **Výchozí hodnoty výrobníh
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Hlášení dávek kontrolovaných položek jako dokončených
 
-Zařízení úkolového lístku podporuje tři scénáře pro vykazování položek dávek. Tyto scénáře platí jak pro položky, které jsou povoleny pro pokročilé skladové procesy, tak pro položky, které nejsou povoleny pro pokročilé skladové procesy.
+Zařízení úkolového lístku podporuje tři scénáře pro vykazování položek dávek. Tyto scénáře platí jak pro položky, které jsou povoleny pro procesy řízení skladu (WMS), tak pro položky, které nejsou povoleny pro WMS.
 
 - **Ručně přiřazená čísla dávek:** Pracovníci zadají vlastní číslo dávky. Toto číslo dávky může pocházet z externího zdroje, který systém nezná.
 - **Předdefinovaná čísla dávek:** Pracovníci vyberou číslo dávky ze seznamu čísel dávek, které systém automaticky vygeneruje před uvolněním výrobního příkazu do zařízení úkolového lístku.
@@ -129,7 +129,7 @@ Při použití tohoto scénáře pole **Číslo dávky**, které poskytuje strá
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Hlášení sériově kontrolovaných položek jako dokončených
 
-Zařízení úkolového lístku podporuje tři scénáře pro vykazování sériově kontrolovaných položek. Tyto scénáře platí jak pro položky, které jsou povoleny pro pokročilé skladové procesy, tak pro položky, které nejsou povoleny pro pokročilé skladové procesy.
+Zařízení úkolového lístku podporuje tři scénáře pro vykazování sériově kontrolovaných položek. Tyto scénáře platí jak pro položky, které jsou povoleny pro procesy řízení skladu (WMS), tak pro položky, které nejsou povoleny pro WMS.
 
 - **Ručně přiřazená sériová čísla:** Pracovníci zadají vlastní sériové číslo. Toto sériové číslo může pocházet z externího zdroje, který systém nezná.
 - **Předdefinovaná sériová čísla:** Pracovníci vyberou sériové číslo ze seznamu sériových čísel, které systém automaticky vygeneruje před uvolněním výrobního příkazu do zařízení úkolového lístku.
@@ -212,7 +212,7 @@ Při použití tohoto scénáře pole **Sériové číslo**, které poskytuje st
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Nahlášení jako dokončené do registrační značky
 
-Pokročilé skladové procesy mohou pomocí rozměru registrační značky sledovat zásoby ve skladovacích místech, která byla pro tento účel nastavena. V tomto případě je registrační značka vyžadována, když pracovník nahlásí množství jako dokončená.
+Procesy řízení skladu (WMS) mohou pomocí rozměru registrační značky sledovat zásoby ve skladovacích místech, která byla pro tento účel nastavena. V tomto případě je registrační značka vyžadována, když pracovník nahlásí množství jako dokončená.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Povolení vykazování registrační značky a tisku štítku
 

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873171"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205929"
 ---
 # <a name="company-concept-in-dataverse"></a>Koncept společnosti v Dataverse
 
@@ -29,9 +29,11 @@ Dataverse nemá ekvivalentní koncepci. Nejbližší koncept je *organizační j
 
 Vzhledem k tomu, že organizační jednotka a společnost nejsou rovnocennými koncepty, není možné vynutit mapování mezi nimi (1:1) pro účely integrace Dataverse. Protože však uživatelé musí mít ve výchozím nastavení možnost zobrazit stejné řádky v aplikaci a Dataverse, společnost Microsoft zavedla novou tabulku v aplikaci Dataverse s názvem cdm\_Company. Tato tabulku je ekvivalentní s tabulkou společnosti v aplikaci. Chcete-li zajistit, aby viditelnost řádků byla ekvivalentní mezi aplikací a Dataverse, doporučujeme následující nastavení dat v aplikaci Dataverse:
 
-+ Pro každý řádek společnosti Finance a Operace, který je povolen pro duální zápis, je vytvořen přidružený řádek cdm\_Company.
-+ Když je vytvořen řádek cdm\_Company a je povolen pro duální zápis, je vytvořena výchozí organizační jednotka se stejným názvem. Přestože je pro tuto organizační jednotku automaticky vytvořen výchozí tým, není tato organizační jednotka použita.
-+ Je vytvořen samostatný tým vlastníků se stejným názvem. Je také spojen s organizační jednotkou.
++ Pro každý řádek společnosti finance a provoz, který je povolen pro duální zápis, je vytvořen přidružený řádek cdm\_Company.
+
++ Když je vytvořen řádek cdm\_Company a je povolen pro duální zápis, je vytvořena výchozí organizační jednotka se stejným názvem. Přestože je pro tuto organizační jednotku automaticky vytvořen výchozí tým vlastníka, není tato organizační jednotka použita.
++ Je vytvořen samostatný tým vlastníků se stejným názvem s příponou duálního zápisu. Je také spojen s organizační jednotkou.
+
 + Ve výchozím nastavení je vlastník libovolného řádku vytvořeného a dvojitě zapsaného do Dataverse nastaven na tým "DW Owner", který je propojen s přidruženou organizační jednotkou.
 
 Následující obrázek znázorňuje příklad nastavení dat v Dataverse.

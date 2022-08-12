@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869250"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109573"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -66,7 +66,7 @@ Eelektronické výkaznictví v současné době podporuje formáty listů TEXT, 
 
 Modul EV má následující možnosti:
 
-- S jedním společným nástrojem pro elektronické výkaznictví v různých doménách nahrazuje 20 různých modulů pro provádění určitého typu elektronického výkaznictví pro Finance and Operations.
+- S jedním společným nástrojem pro elektronické výkaznictví v různých doménách nahrazuje 20 různých modulů pro provádění určitého typu elektronického výkaznictví pro finance a provoz.
 - Izoluje formát výkazu od aktuální implementace. Jinými slovy, formát je použitelný pro různé verze.
 - Podporuje vytváření vlastního formátu, který je založen na původním formátu. Nabízí také funkce pro automatické upgradování vlastního formátu při změně původního formátu kvůli požadavkům na lokalizaci nebo přizpůsobení.
 - Stane se primárním standardním nástrojem pro podporu lokalizace požadavků v elektronických sestavách – pro společnost Microsoft i pro její partnery.
@@ -126,7 +126,7 @@ Konfigurace EV je sdílená pro společnosti aplikace.
 
 #### <a name="provider"></a><a name="Provider"></a>Zprostředkovatel
 
-Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení Finance and Operations jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
+Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení financí a provozu jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
 
 Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si průvodce záznamem úloh **Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního** (součást obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
@@ -143,7 +143,7 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 
 Úložiště **sdílené knihovny LCS** poskytuje přístup k seznamu konfigurací v rámci knihovny sdíleného majetku ve službě Lifecycle Services (LCS). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z knihovny sdíleného majetku LCS můžete importovat poslední verze konfigurace ER do aktuální instance.
 
-Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán při registraci úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikací Finance a Operace.
+Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán při registraci úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance finančních a provozních aplikací.
 
 Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance. 
 
@@ -270,3 +270,4 @@ Seznam konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globáln
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

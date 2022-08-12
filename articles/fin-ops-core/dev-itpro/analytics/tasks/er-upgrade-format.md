@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c4c2a0954c8554da0b4c859d837ab6ca4839b36
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883502"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111921"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
 
@@ -119,7 +119,7 @@ Změňte stav navržené konfigurace formátu z Návrh na Dokončeno, aby byla k
     Všimněte si, že je vytvořená konfigurace uložena jako dokončená verze 1.1.1. To znamená, že se jedná o 1. verzi vlastního formátu BACS (Velká Británie – fiktivní vlastní), která je založena na 1. verzi formátu BACS (Velká Británie – fiktivní), která je založena na 1. verzi datového modelu Platby (zjednodušený model).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Test vlastního formátu pro generování souborů plateb
-Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Finance and Operations. Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.  
+Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace financí a provozu. Vyberte formát BACS (Velká Británie – fiktivní vlastní) v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML představující kód IBAN v souladu s místními požadavky.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualizace existující konfigurace specifické pro zemi
 Litware, Inc. musí aktualizovat konfiguraci BACS (Velká Británie – fiktivní) a přijmout nové požadavky země, aby mohla spravovat formát elektronického dokumentu. Později se toto stane součástí nové verze této konfigurace, která bude nabízena odběratelům služby, včetně společnosti Proseware, Inc.  
@@ -239,7 +239,7 @@ Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace 
     Všimněte si, že vytvořená konfigurace je uložena jako dokončená verze 1.2.2: 2. verze základního formátu BACS (Velká Británie – fiktivní vlastní), který je založen na 2. verzi základního formátu BACS (Velká Británie – fiktivní), která je založena na modelu dat 1. verze plateb (zjednodušený model).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Test vlastního formátu pro generování souborů plateb
-Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Finance and Operations. Vyberte vytvořený formát 'BACS (Velká Británie – fiktivní vlastní)' v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
+Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní finanční a provozní relace. Vyberte vytvořený formát 'BACS (Velká Británie – fiktivní vlastní)' v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
 
 
 

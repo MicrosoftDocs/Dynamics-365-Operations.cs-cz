@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692415"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178526"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Platí pro:** Human Resources na samostatné infrastruktuře_ 
 
+> [!NOTE]
+> Od června 2022 lze prostředí Human Resources nasadit pouze na infrastrukturu finančních a provozních aplikací. Více informací viz [Zřízení Human Resources ve finanční a provozní infrastruktuře](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Finanční a provozní infrastruktura nepodporuje funkci instance kopírování. Můžete nasadit nová prostředí a používat databázové pohyby k vytváření kopií. Další informace o samoobslužných nasazení viz [Přehled samoobslužného nastavení](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Další informace o pohybech databáze na finanční a provozní infrastruktuře viz [Úvodní stránka operací pohybu databáze](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox). Máte-li jiné prostředí izolovaného prostoru (sandbox), můžete také zkopírovat databázi z prostředí do cíleného prostředí sandbox.
 
@@ -50,7 +55,7 @@ Při kopírování databáze aplikace Human Resources dojde k následujícím ud
 
 - Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Ve výsledku nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
 
-- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, a dalších uživatelských účtů interní služby, nebudou k dispozici. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
+- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, a dalších uživatelských účtů interní služby, nebudou k dispozici. Správce může odstranit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
 
 - Každý uživatel s rolí zabezpečení „Správce systému“ musí provést požadované změny konfigurace, například znovu připojit koncové body integrace ke konkrétním službám nebo adresám URL.
 
@@ -67,7 +72,7 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
 3. Vyberte instanci, kterou chcete zkopírovat, a pak vyberte **Kopírovat**.
 
-4. V podokně úloh **Kopírovat instanci** vyberte instanci, kterou chcete přepsat, a poté vyberte možnost **kopírovat**. Počkejte, až bude hodnota pole **Kopírovat stav** aktualizována na hodnotu **dokončeno**.
+4. V podokně úloh **Kopírovat instanci** vyberte instanci, kterou chcete přepsat, a poté vyberte možnost **kopírovat**. Počkejte, až bude pole **Kopírovat stav** aktualizováno na hodnotu **dokončeno**.
 
    ![[Vyberte instanci, která má být přepsána.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -76,6 +81,8 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
    ![[Vyberte Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vyberte prostředí Power Apps, ke zkopírování a pak vyberte **Kopírovat**.
+
+Další informace o kopírování prostředí Power Apps naleznete v části [Kopírování prostředí](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Dataverse. Další informace a pokyny naleznete v části [Konfigurace integrace Dataverse](./hr-admin-integration-common-data-service.md).
 

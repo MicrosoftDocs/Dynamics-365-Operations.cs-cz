@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 42d00f570403af6e7a6a39a6643eec1f59ccdc20
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ec7d8dbc73dce57d3968c4d239a51d27673a2493
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687917"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066276"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (18. února 2020)
 

@@ -1,6 +1,6 @@
 ---
-title: Ověření konfigurace duálního zápisu ve Finance and Operations a Dataverse
-description: Tento článek vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v finančních a provozních aplikacích a Dataverse.
+title: Ověření konfigurace duálního zápisu ve finančních a provozních aplikacích a Dataverse
+description: Tento článek vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v finančních a provozních aplikacích a v Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d5191f5dd9c3a286abac622aede07d04fb72a8f7
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884452"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111385"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Ověření konfigurace duálního zápisu ve Finance and Operations a Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Ověření konfigurace duálního zápisu ve finančních a provozních aplikacích a Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8884452"
 
 
 
-Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v finančních a provozních aplikacích a Dataverse.
+Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně vysvětluje, jak můžete určit, zda je dvojí zápis konfigurován v finančních a provozních aplikacích a v Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Ověření konfigurace duálního zápisu ve finanční a provozní aplikaci
 

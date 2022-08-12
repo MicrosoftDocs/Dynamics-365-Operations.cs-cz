@@ -1,6 +1,6 @@
 ---
 title: Správa kvality pro procesy skladu
-description: V tomto článku jsou informace týkající se procesu řízení kvality pro funkci procesů skladu. Tato funkce rozšiřuje možnosti správy kvality a umožňuje uživatelům integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí pokročilé správy skladu.
+description: V tomto článku jsou informace týkající se procesu řízení kvality pro funkci procesů skladu. Tato funkce rozšiřuje možnosti správy kvality a umožňuje uživatelům integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí procesů správy skladu (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857830"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069235"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Správa kvality pro procesy skladu
 
 [!include [banner](../includes/banner.md)]
 
-Funkce _Správa kvality pro procesy skladu_ umožňuje integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí pokročilé správy skladu. Skladová práce může být automaticky generována pro přesunutí zásob do skladového místa řízení kvality, na základě procentuálního nebo fixního množství nebo na základě každé *n-té* registrační značky. Po dokončení objednávky kvality lze automaticky vygenerovat práci, aby bylo možné přesunout zásoby do dalšího místa v procesu v závislosti na výsledcích kvality.
+Funkce _Správa kvality pro procesy skladu_ umožňuje integrovat ovládací prvky vzorkování položek do skladového procesu příjmu pomocí procesy správy skladu (WMS). Skladová práce může být automaticky generována pro přesunutí zásob do skladového místa řízení kvality, na základě procentuálního nebo fixního množství nebo na základě každé *n-té* registrační značky. Po dokončení objednávky kvality lze automaticky vygenerovat práci, aby bylo možné přesunout zásoby do dalšího místa v procesu v závislosti na výsledcích kvality.
 
 Funkce _Správa kvality pro procesy skladu_ rozšiřuje možnosti základní správy kvality. Poskytuje možnost vytvořit objednávky kvality pro zásoby, které jsou odesílány do skladového místa řízení kvality, ačkoliv objednávky kvality nejsou vždy požadovány. Proto umožňuje lehký proces řízení kvality, který je založen na práci ve skladu.
 
@@ -77,7 +77,7 @@ Dříve, než bude možné použít funkci _Správa kvality pro procesy skladu_ 
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
 1. Vyberte sklad pro povolení řízení kvality.
-1. Na pevné záložce **Sklad** nastavte možnost **Povolit objednávku kvality pro skladové procesy** na _Ano_. (Tato možnost může být nastavena na hodnotu _Ano_ pouze u skladů, které používají procesy správy skladu.)
+1. Na pevné záložce **Sklad** nastavte možnost **Povolit objednávku kvality pro skladové procesy** na _Ano_. (Tato možnost může být nastavena na hodnotu _Ano_ pouze u skladů, které používají procesy správy skladu (WMS).)
 
 Pokud je možnost **Povolit objednávku kvality pro skladové procesy** nastavena na hodnotu _Ano_, nastavení přiřazení kvality určuje, zda je pro vybraný sklad skutečně použita funkce _Správa kvality pro procesy skladu_. Kdykoli můžete změnit nastavení možnosti na _Ne_. V takovém případě se funkce nebude nadále používat pro sklad bez ohledu na nastavení přiřazení kvality.
 
@@ -97,7 +97,7 @@ Každý [záznam o přidružení kvality](enable-quality-management.md) určuje 
     - **Všechny** – deaktivujte funkci _Správa kvality pro procesy skladu_. Tuto hodnotu vyberte pro všechny typy odkazů s výjimkou *Nákupu* a *Výroby*.
 
 > [!NOTE]
-> Funkce _Správa kvality pro procesy skladu_ se uplatní pouze v případě, že položka na řádku zdrojového dokumentu používá pokročilé procesy správy skladu a pokud je možnost **Povolit objednávku kvality pro skladové procesy** nastavena na _Ano_ pro sklad v řádku zdrojového dokument.
+> Funkce _Správa kvality pro procesy skladu_ se uplatní pouze v případě, že položka na řádku zdrojového dokumentu používá procesy správy skladu (WMS) a pokud je možnost **Povolit objednávku kvality pro skladové procesy** nastavena na _Ano_ pro sklad v řádku zdrojového dokument.
 
 Jak je každá položka registrována (nebo hlášena jako dokončená), systém určí, která přiřazení kvality použije.
 

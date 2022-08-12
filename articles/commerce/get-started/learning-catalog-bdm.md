@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 130c11320df56c2963653181d00dbf0005b31b69
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cca34e28ebee1863cbc97b0ed518f84b900a4019
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881809"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070754"
 ---
 # <a name="learning-catalog-for-business-and-technical-decision-makers-considering-dynamics-365-commerce"></a>Vzdělávací katalog pro osoby rozhodující v obchodní a technické oblasti týkající se Dynamics 365 Commerce
 
@@ -25,7 +25,7 @@ Rozhodujete se, zda investovat do nových technologií?
 
 Následující katalog je uspořádán od základních znalostí do konkrétních domén a od nejzákladnějších k nejpokročilejším. Pokud obsah existuje ve více formátech, dáme vám vědět, abyste mohli vybrat formát výuky, který nejlépe vyhovuje vašim potřebám.
 
-Školení na funkce sdílené s ostatními aplikacemi Finance and Operations uvádí [katalog kurzů Dynamics 365 Finance](../../finance/get-started/learning-catalog-bdm.md).
+Školení na funkce sdílené s ostatními finančními a provozními aplikacemi uvádí [katalog kurzů Dynamics 365 Finance](../../finance/get-started/learning-catalog-bdm.md).
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
@@ -37,3 +37,4 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

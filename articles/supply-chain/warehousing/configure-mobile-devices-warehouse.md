@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905566"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070342"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -123,13 +123,13 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 <td>Příjem zboží převodního příkazu</td>
 <td>Zaregistrujte příjem množství zboží a vytvořte pracovní vyskladnění pro jiného zaměstnance.
 
-<strong>Poznámka:</strong> Tuto možnost použijte pouze v případě, že položky byly dodány ze skladu, který není v rámci správy skladu povolen.</td>
+<strong>Poznámka:</strong> Tuto možnost použijte pouze v případě, že položky byly dodány ze skladu, který není v rámci správy skladu (WMS) povolen.</td>
 </tr>
 <tr>
 <td>Přijetí a odložení zboží převodního příkazu</td>
 <td>Zaregistrujte příjem množství zboží a položky vyskladněte. Obě akce provede stejný pracovník.
 
-<strong>Poznámka:</strong> Tuto možnost použijte pouze v případě, že položky byly dodány ze skladu, který není v rámci správy skladu povolen.</td>
+<strong>Poznámka:</strong> Tuto možnost použijte pouze v případě, že položky byly dodány ze skladu, který není v rámci správy skladu (WMS) povolen.</td>
 </tr>
 <tr>
 <td>Příjem řádku převodního příkazu</td>

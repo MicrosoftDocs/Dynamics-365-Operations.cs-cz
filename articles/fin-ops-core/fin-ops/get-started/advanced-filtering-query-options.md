@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856911"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123941"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Pokročilé filtrování a syntaxe dotazu
 
@@ -122,9 +122,9 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td>Dvě po sobě jdoucí dvojité uvozovky (<strong>""</strong>) naleznou řádky bez hodnoty pro aktuální sloupec.</td>
 </tr>
 <tr>
-<td>(<span class="code">Dotaz Finance a Operace</span>) (Dotaz Finance a Operace v závorkách)</td>
+<td>(<span class="code">Dotaz financí a provozu</span>) (Dotaz financí a provozu v závorkách)</td>
 <td>Nalezení definovaného dotazu</td>
-<td>Pomocí dotazovacího jazyka Finance a Operace zadejte dotaz jako příkaz SQL mezi závorky.</td>
+<td>Pomocí dotazovacího jazyka financí a provozu zadejte dotaz jako příkaz SQL mezi závorky.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        Jako příklad syntaxe pro podmínku filtru v poli z kořenového zdroje dat a také pro pole z jiného zdroje dat (pro stránku Všichni odběratelé)</td>
 </tr>

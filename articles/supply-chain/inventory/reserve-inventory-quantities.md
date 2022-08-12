@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899433"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201859"
 ---
 # <a name="reserve-inventory-quantities"></a>Rezervace skladových množství
 

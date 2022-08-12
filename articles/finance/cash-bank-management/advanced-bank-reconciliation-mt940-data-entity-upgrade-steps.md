@@ -1,7 +1,7 @@
 ---
 title: Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity
 description: Pořadové číslo musí být přidáno k importu bankovního výpisu entity pro podporu MT940 formátu.
-author: panolte
+author: angelad116
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: kfend
 ms.custom: 221594
 ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ddd4c2f932ea30945ce26f25bd0c1df57939c959
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e0cf603e04be4f8f784a32b9ef98d748d4d28e5b
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711429"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151463"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Rozšířené odsouhlasení bankovního výpisu MT940 Import – Aktualizace kombinované datové entity
 

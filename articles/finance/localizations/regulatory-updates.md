@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904274"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206160"
 ---
 # <a name="regulatory-updates"></a>Aktualizace předpisů
 
@@ -39,27 +39,19 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 |Země|Datum vydání|Verze vydání  |Povinná aktualizace|
 |--------------------|---------------|-------|-------| 
-|      Brazílie         |   2021. prosince         | 10.0.25         |    Fiskální SPED – rozložení 2022  |
-|      Brazílie         |   2022. březen    | 10.0.25HF, 10.0.26HF, 10.0.27        |    Inkaso ICMS-DIFAL v operacích zaměřených na nedaňové poplatníky (doplňkový zákon č. 190/22)  |
-|      Brazílie         |   2022. březen         | 10.0.26HF         |    Sped Fiscal – Nová pole v záznamu C500 (34-40) pro příchozí fiskální dokumenty  |
+|      Brazílie         |   2022. březen    | 10.0.27        |    Inkaso ICMS-DIFAL v operacích zaměřených na nedaňové poplatníky (doplňkový zákon č. 190/22)  |
 |      Brazílie         |   2022. březen         | 10.0.27         |    NF-e NT2021.004 v1.00 – Aktualizace pravidel pro rozložení a ověření  |
 |      Brazílie         |   2022. březen         | 10.0.27         |    NF-e NT2021.004 v1.00 – Aktualizace pravidel pro rozložení a ověření – maloobchod  |
-|      Dánsko         |   2022. leden  | 10.0.25HF         |    Náhled přiznání k DPH v Excelu |
-|      Finsko         |   2022. leden  | 10.0.26         |    Přiznání k DPH v XML a náhled v Excelu |
-|      Francie   |   Listopad 2021 | 10.0.25         |    Export archivace francouzských dat (FEC) – příloha „Odůvodnění chybějících čísel“ |
-|      Itálie         |   2022. únor | 10.0.25HF, 10.0.26| Jedinečná certifikace – 2022 v Dynamics 365 Finance  |
-|      Litva|   2022. únor | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF se mění z 2022-01-01 v Dynamics 365 Finance  |
-|      Malajsie|   2022. únor |10.0.26HF | Daňové přiznání SST-02. Změny polí  |
-|      Mexiko         |   2022. leden      | 10.0.26      |   MX – CFDI verze 4.0 (zrušení)  |
-|      Mexiko         |   2022. březen      | 10.0.25, 10.0.26, 10.0.26      |   Formáty CFDI verze 4.0 (faktury a platby)  |
+|      Brazílie         |   2022. duben         | 10.0.27HF, 10.0.28         |    SPED ECF - LAYOUT 8  |
+|      Východní Evropa         |   Červenec 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Výpis z hlavní knihy podle hlavního účtu  |
+|      Litva|   2022. únor | 10.0.27 | i.SAF se mění z 2022-01-01 v Dynamics 365 Finance  |
+|      Mexiko         |   2022. březen      | 10.0.27      |   Formáty CFDI verze 4.0 (faktury a platby)  |
 |      Mexiko         |   2022. únor      | 10.0.27      |   Od 1. ledna 2022 vstupuje v platnost verze 4.0 CFDI s obdobím koexistence mezi verzí 3.3 a verzí 4.0, která trvá od 1. ledna do 30. června 2022.  |
-|      Mexiko         |   2022. březen      | 10.0.25, 10.0.26, 10.0.27      |   Formáty CFDI verze 4.0 (srážková daň)  |
-|      Polsko          |   2022. duben     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA verze 4 od 1. dubna 2022JPK_V7M – nová verze schématu od ledna 2022 |
-|      Rusko          |   2022. leden     | 10.0.25    |   Povolení cílového umístění pro elektronické výkaznictví (ER) pro ukládání ruských účetních dokumentů (primárních dokumentů a účetních sestav)|
-|      Rusko          |   2021. prosince     | 10.0.25    |   Modul Integrace dlouhodobého majetku (Rusko) s modulem Správa majetku|
-|      Rusko          |   Březen-duben 2022     | 10.0.25, 10.0.26    |  Nový formát faktury za přepravu (nařízení vlády N 2116 30.11.2021)|
-|      Španělsko      |   2022. březen| 10.0.25HF, 10.0.26HF, 10.0.27 | Model 303 přiznání k DPH se mění 1. ledna 2022 v Dynamics 365 Finance|
-
+|      Mexiko         |   2022. březen      | 10.0.27      |   Formáty CFDI verze 4.0 (srážková daň)  |
+|      Polsko          |   2022. duben     | 10.0.27HF, 10.0.28     |   JPK_FA verze 4 od 1. dubna 2022JPK_V7M – nová verze schématu od ledna 2022 |
+|      Rusko          |   2022. června     | 10.0.27    |  Zpráva o operacích s sledovatelnými produkty (v rámci odepisování zakoupeného sledovatelného zboží jako jsou monitory, ledničky a kancelářský nábytek pro vlastní potřebu)|
+|      Singapur      |   Červenec 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | Soubor auditu IRAS (IAF) ve formátu TXT|
+|      Španělsko      |   2022. březen| 10.0.27 | Model 303 přiznání k DPH se mění 1. ledna 2022 v Dynamics 365 Finance|
 
 
 ## <a name="additional-resources"></a>Další prostředky

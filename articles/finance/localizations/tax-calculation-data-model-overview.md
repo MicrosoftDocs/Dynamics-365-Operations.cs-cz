@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859688"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068841"
 ---
 # <a name="tax-calculation-data-model"></a>Datový model pro výpočet daně
 
 Tento článek poskytuje informace o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
 
-*Daňový datový model* se skládá z polí, která jsou vyžadována pro daňové výpočty. Společnost Microsoft poskytuje soubor *datový model výpočtu daně*, který zahrnuje pole záhlaví a řádková pole transakčních dokumentů v aplikaci Finance a Operace. Pole, která jsou definována v datovém modelu výpočtu daně, jsou dostupné sloupce tabulek pravidel použitelnosti v konfiguraci konfigurace funkce výpočtu daně.
+*Daňový datový model* se skládá z polí, která jsou vyžadována pro daňové výpočty. Společnost Microsoft poskytuje soubor *datový model výpočtu daně*, který zahrnuje pole záhlaví a řádková pole transakčních dokumentů ve finančních a provozních aplikacích. Pole, která jsou definována v datovém modelu výpočtu daně, jsou dostupné sloupce tabulek pravidel použitelnosti v konfiguraci konfigurace funkce výpočtu daně.
 
 > [!NOTE] 
 > Některé uzly, které jsou definovány v datovém modelu, jako například **ID záznamu** a **ID tabulky**, slouží pro technické účely. Nejsou k dispozici sloupce v konfiguraci funkce výpočtu daně.
@@ -54,7 +54,7 @@ Můžete si také zobrazit datový model výpočtu daně a dostupné sloupce v t
 
     [![Správa sloupců.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datový model výpočtu daně je integrován s aplikacemi Finance a Operace. Při každé transakci, která souvisí s výpočtem daně, se shromažďují hodnoty polí definovaných v tabulkách pravidel použitelnosti a odesílají se službě výpočtu daně k výpočtu. Ve verzi 40.46 je k dispozici 57 předdefinovaných datových modelů pro následující typy transakcí: nákupní objednávky, prodejní objednávky, převodní objednávky, nákupní požadavky, žádosti o cenové nabídky a prodejní nabídky.
+Datový model výpočtu daně je integrován s finančními a provozními aplikacemi. Při každé transakci, která souvisí s výpočtem daně, se shromažďují hodnoty polí definovaných v tabulkách pravidel použitelnosti a odesílají se službě výpočtu daně k výpočtu. Ve verzi 40.46 je k dispozici 57 předdefinovaných datových modelů pro následující typy transakcí: nákupní objednávky, prodejní objednávky, převodní objednávky, nákupní požadavky, žádosti o cenové nabídky a prodejní nabídky.
 
 ## <a name="version-updates-and-restrictions"></a>Aktualizace verzí a omezení
 
@@ -134,3 +134,4 @@ Do polí na řádku transakce lze zahrnout dvacet šest datových modelů. Pokud
 | Jednotka                          | <ul><li>**Prodejní objednávka:** Jednotka</li><li>**Nákupní objednávka:** Jednotka</li><li>**Převodní příkaz – expedice:** Jednotka</li><li>**Převodní příkaz – příjem:** jednotka</li><li>**Nákupní žádanka:** Jednotka</li><li>**Požadavek na nabídku:** Jednotka</li><li>**Prodejní nabídka:** Jednotka</li></ul> |
 | Číslo varianty                | <ul><li>**Prodejní objednávka:** Číslo varianty</li><li>**Nákupní objednávka:** Číslo varianty</li><li>**Prodejní nabídka:** Číslo varianty</li></ul> |
 | Sklad                     | <ul><li>**Prodejní objednávka:**<ol><li>Řádek &gt; Sklad</li><li>Produkt &gt; Sklad</li></ol></li><li>**Nákupní objednávka:**<ol><li>Řádek &gt; Sklad</li><li>Produkt &gt; Sklad</li></ol></li><li>**Převodní příkaz - expedice:** Ze skladu</li><li>**Převodní příkaz - příjem:** Do skladu</li><li>**Nákupní žádanka:** řádek &gt; sklad</li><li>**požadavek na nabídku**: řádek &gt; Sklad</li><li>**Prodejní nabídka:**<ol><li>Řádek &gt; Sklad</li><li>Produkt &gt; Sklad</li></ol></li></ul> |
+

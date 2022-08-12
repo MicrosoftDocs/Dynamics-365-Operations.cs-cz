@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0154faec8a9f3e968ea1b665e2a815cc9ec02379
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45155dba5063981eb3aeeed4dda1d79a57b7c8af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899723"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067091"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
@@ -121,10 +121,10 @@ Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Po
 
 4. V **Centru stavu řešení** vyberte ikonu **Rozšířené hledání** v pravém horním rohu stránky aplikace.
 
-5. Na stránce **Rozšířené hledání** vyberte v rozevíracím seznamu **Hledat** položku **Konfigurace zdrojů virtuálních dat ve Finance a Operace**.
+5. Na stránce **Rozšířené hledání** vyberte v rozevíracím seznamu **Hledat** položku **Konfigurace zdrojů virtuálních dat ve Financích a provozu**.
 
    > [!NOTE]
-   > Instalace aplikace virtuální tabulky z předchozího kroku instalace může trvat několik minut. Pokud **Konfigurace virtuálního datového zdroje Finance a Operace** nejsou k dispozici v seznamu, počkejte minutu a obnovte seznam.
+   > Instalace aplikace virtuální tabulky z předchozího kroku instalace může trvat několik minut. Pokud **Konfigurace virtuálního datového zdroje finance a provoz** nejsou k dispozici v seznamu, počkejte minutu a obnovte seznam.
 
 6. Vyberte **Výsledky**
 
@@ -218,3 +218,4 @@ V posuvném podokně se zobrazují nejnovější výsledky provádění procesu.
 [Přehled vytváření aplikací v Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900499"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065112"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Úloha vyčištění položek zásob na skladě v řízení skladu
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900499"
 
 Výkon dotazů, které se používají k výpočtu zásob na skladě, je ovlivněn počtem záznamů v příslušných tabulkách. Jedním ze způsobů, jak zlepšit výkon, je snížení počtu záznamů, které musí databáze zvážit.
 
-Tento článek popisuje úlohu vyčištění položek, která odstraní nepotřebné záznamy v tabulkách InventSum a WHSInventReserve. Tyto tabulky ukládají informace o množství na skladě pro položky, které jsou povoleny pro zpracování správy skladu. (Tyto položky se označují jako položky WHS.) Vymazání těchto záznamů může výrazně zlepšit výkon výpočtů na skladě.
+Tento článek popisuje úlohu vyčištění položek, která odstraní nepotřebné záznamy v tabulkách `InventSum` a `WHSInventReserve`. Tyto tabulky ukládají informace o množství na skladě pro položky, které jsou povoleny pro zpracování správy skladu. (Tyto položky se označují jako položky WMS.) Vymazání těchto záznamů může výrazně zlepšit výkon výpočtů na skladě.
 
 ## <a name="what-the-cleanup-job-does"></a>Co dělá úklidová práce
 
-Úloha na vyčištění položek odstraní všechny záznamy v tabulkách WHSInventReserve a InventSum, kde jsou všechny hodnoty pole *0* (nula). Tyto záznamy mohou být odstraněny, protože nepřispívají k informacím na skladě. Úloha odstraní pouze záznamy, které jsou pod úrovní **Umístění**.
+Úloha na vyčištění položek odstraní všechny záznamy v tabulkách `WHSInventReserve` a `InventSum`, kde jsou všechny hodnoty pole *0* (nula). Tyto záznamy mohou být odstraněny, protože nepřispívají k informacím na skladě. Úloha odstraní pouze záznamy, které jsou pod úrovní **Umístění**.
 
 Je-li povolen negativní fyzický stav zásob, nemusí být úloha čištění schopna odstranit všechny relevantní položky. Důvodem tohoto omezení je, že úloha musí umožňovat zvláštní scénář, kde registrační značka má více sériových čísel a jedno z těchto sériových čísel je negativní. Například systém bude mít po ruce na úrovni registrační značky nulovou hodnotu, pokud bude mít registrační značk +1 ks sériového čísla 1 a –1 ks sériového čísla 2. U tohoto zvláštního scénáře úloha provede první odstranění, kde se nejprve pokusí odstranit z nižších úrovní.
 

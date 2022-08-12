@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891024"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135592"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Opravte chybu modulu plánování „Nebyla nalezena dostatečná kapacita“
 
@@ -111,5 +111,41 @@ Chcete-li zkontrolovat dostupnou kapacitu skupiny zdrojů, postupujte následovn
 Při použití plánování operací bude hlavní plánování plánovat kapacitu podle kalendáře primární skupiny zdrojů. Rezervuje sekundární operaci současně s primární operací a nebere v úvahu kalendáře ani kapacitu sekundární operace. To může mít za následek naplánování výrobní zakázky v uzavřeném kalendáři nebo v době, kdy sekundární operace není k dispozici (kalendář uzavřen, není kapacita).
 
 Při použití plánování úloh bude hlavní plánování při plánování zakázky brát v úvahu kapacitu a kalendář primární i sekundární operace. Aby mohla být objednávka naplánována, musí být kalendáře zdrojů obou operací otevřené a mít volnou kapacitu.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Maximální doba realizace je příliš krátká
+
+Plánovací modul nebude schopen naplánovat objednávku, pokud je **Maximální doba realizace** nastavená pro váš web je kratší než doba realizace určená pro položku ve výchozím nastavení objednávky nebo nastavení disponibility.
+
+Chcete-li zobrazit nebo upravit nastavení **Maximální doba realizace** pro váš web, přejděte na **Kontrola produkce \> Nastavení \> Parametry řízení produkce** a otevřete kartu **Obecné**.
+
+Chcete-li zobrazit nebo upravit výchozí nastavení objednávky pro položku, postupujte takto:
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. Vyhledejte a vyberte příslušný produkt na seznamu.
+1. V podokně akcí otevřete kartu **Spravovat sklad** a vyberte **Výchozí nastavení objednávky**.
+1. Rozbalte záložku **Skladová zásoba** a zobrazte nebo upravte nastavení **Dodací lhůta zásob** podle potřeby.
+
+Chcete-li zobrazit nebo upravit disponibilitu objednávky pro položku, postupujte takto:
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. Vyhledejte a vyberte příslušný produkt na seznamu.
+1. V podokně akcí otevřete kartu **Plán** a vyberte **Disponibilita položky**.
+1. Otevřete kartu **Doba realizace** a zobrazte nebo upravte hodnotu **Doba produkce** podle potřeby.
+
+## <a name="excessive-quantity-of-required-resources"></a>Nadměrné množství požadovaných zdrojů
+
+Během plánování se stroj pokusí přiřadit požadované množství zdrojů nastavené pro operaci trasy k použitelným zdrojům podle požadavků na provozní zdroje. Nastavení příliš vysokého množství zdrojů může vést k neproveditelnosti trasy, což způsobí chybu plánování.
+
+Pomocí následujícího postupu zkontrolujte zadané množství a příslušné zdroje pro vybraný produkt, trasu a operaci trasy:
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Uvolněné produkty**.
+1. Najděte a vyberte relevantní produkt v mřížce.
+1. V podokně akcí otevřete kartu **Navrhnout** a vyberte **Trasa**.
+1. Najděte a vyberte relevantní trasu v mřížce.
+1. Otevřete kartu **Přehled** v dolní části stránky.
+1. Vyberte operaci ze seznamu vybraných operací na trase.
+1. Vyberte **Použitelné zdroje** a otevřete dialogové okno, kde můžete zobrazit použitelné zdroje pro vybranou operaci trasy.
+1. Otevřete kartu **Zatížení zdrojů**. Pole **Množství** zde zobrazuje množství zdrojů požadované pro vybranou operaci trasy. Zobrazte nebo upravte podle potřeby.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

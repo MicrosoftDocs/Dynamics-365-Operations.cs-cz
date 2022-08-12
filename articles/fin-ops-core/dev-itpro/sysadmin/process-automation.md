@@ -2,7 +2,7 @@
 title: Automatizace procesů
 description: Tento článek uvádí podrobnosti o automatizace procesů, jež umožňuje jednoduše plánovat procesy, které budou spouštěny dávkovým serverem.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898602"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114928"
 ---
 # <a name="process-automation"></a>Automatizace procesů
 
@@ -30,7 +30,7 @@ Automatizace procesů umožňuje jednoduše plánovat procesy, které budou spou
 
 Centrální administrační stránka pro veškerou automatizaci procesů se nachází v modulu správy systému v nabídce **Nastavení**. Na této stránce najdete všechny automatizované procesy (řady), které jsou v systému nastaveny. Přímo z této stránky je též možné přidávat nové automatizace procesů. Po nastavení řady můžete z tohoto seznamu každou jednotlivou řadu spravovat. Můžete upravit celou řadu, smazat ji, zobrazit všechny výskyty jako seznam nebo řadu zakázat, chcete-li plánovanou práci na určitou dobu pozastavit. 
 
-Všechny procesy, které jsou zakázány ve správě prvků, se po deaktivaci funkce nezobrazí. Navíc plánovací modul automatizace procesů nebude plánovat žádné události ani procesy na pozadí pro zakázanou funkci. Opětovné povolení funkce způsobí okamžité spuštění všech minulých naplánovaných událostí nebo procesů na pozadí. Proces plánování automatizace procesů se potřebuje mít spuštěnou dávkovou úlohu systému **Úloha systému dotazování na automatizaci procesů**. Úloha by neměla být nikdy měněna nebo upravována. 
+Všechny procesy, které jsou zakázány ve správě prvků, se po deaktivaci funkce nezobrazí. Navíc plánovací modul automatizace procesů nebude plánovat žádné události ani procesy na pozadí pro zakázanou funkci. Opětovné povolení funkce způsobí okamžité spuštění všech minulých naplánovaných událostí nebo procesů na pozadí. Proces plánování automatizace procesů se potřebuje mít spuštěnou dávkovou úlohu systému **Úloha systému dotazování na automatizaci procesů**. Úloha by neměla být nikdy měněna nebo upravována. Pokud tato dávková úloha neběží nebo je v chybovém stavu, vyberte **Inicializovat automatizaci procesů** k resetování dávkové úlohy. Tento reset zajišťuje, že všechny nové automatizace vydané v novější verzi aplikace budou inicializovány. 
 
 ## <a name="calendar-view"></a>Kalendářové zobrazení
 

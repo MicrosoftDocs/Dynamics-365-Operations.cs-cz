@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022614"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124093"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.27 (červenec 2022)
 
@@ -92,3 +92,4 @@ Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

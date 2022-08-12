@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876318"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129505"
 ---
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
@@ -90,6 +90,14 @@ Na kartě **Souhrnná aktualizace** stránky **Parametry pohledávek** můžete 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky, které neobsahují cenu ani náklady
 Budete moci aktualizovat účet **Výnosy** v **Hlavní knize** u těch řádků prodejních objednávek, které neobsahují žádnou cenu ani náklady. Chcete-li nastavit nebo zobrazit tyto informace, přejděte na parametr **Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky s nulovou cenou a náklady** na kartě **Hlavní kniha a DPH** na stránce **Parametry pohledávek**. (**Pohledávky > Nastavení > Parametry pohledávek**). Výběrem možnosti **Ano** aktualizujete účet **Výnosy** u těch řádků faktur prodejní objednávky, které neobsahují žádnou cenu ani náklady. Pokud je vybrána tato možnost, voucher bude obsahovat 0 položek pro typy účtování **Zůstatek odběratele** a **Výnosy**. Výnosový účet je definován na stránce parametrů **Zaúčtování skladu**, na kartě definice účtu **Prodejní objednávka**. Pokud tato možnost není vybrána, řádky, které neobsahují informace o ceně ani nákladech, nebudou zaúčtovány na účet **Výnosy**. Místo toho bude poukaz obsahovat vstup 0,00 pro typ účtování **Zůstatek odběratele**.
+
+## <a name="line-creation-sequence-number-information"></a>Informace o pořadovém čísle vytvoření řádku
+Když zaúčtujete řádky zákaznických faktur, budete mít možnost vytvořit sekvenční čísla vytváření řádků. Pořadová čísla vytváření řádků jsou přiřazena během procesu účtování. Povolením nesekvenčního číslování můžete pomoci zlepšit výkon účtování faktur zákazníků. Sekvenční čísla vytváření řádků mohou používat integrace třetích stran, které očekávají sekvenční řazení. Poraďte se se svým IT oddělením o všech rozšířeních, která by se mohla integrovat s pořadovými čísly vytváření řádků.
+
+Chcete-li nastavit nebo zobrazit tyto údaje, na stránce **Parametry pohledávek**, na kartě **Aktualizace** nastavte možnost **Při účtování řádků faktur zákazníků přiřadit sekvenční čísla řádků**:
+
+- Nastavte možnost na **Ne**, pokud chcete použít nesekvenční číslování pro pořadová čísla vytváření řádků.
+- Nastavte možnost na **Ano**, chcete-li použít sekvenční číslování. Musíte nastavit možnost na **Ano** pro právnické osoby, které mají primární adresu v Itálii. Musíte to také nastavit na **Ano**, pokud je běh **CustInvoiceTransRandLineCreationSeqNumFlight** neaktivní.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Další nastavení, která mění chování zaúčtování
 Následující pole mění chování procesu zaúčtování.

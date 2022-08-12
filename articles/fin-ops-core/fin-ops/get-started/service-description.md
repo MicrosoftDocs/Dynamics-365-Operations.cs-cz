@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847153"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124918"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro finanční a provozní aplikace
 
 [!include[banner](../includes/banner.md)]
 
-Finanční a provozní aplikace jsou nabídky softwaru jako služby (SaaS) pro plánování podnikových zdrojů (ERP), které jsou postaveny na a pro [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). Služba Finance and Operations poskytuje organizacím funkce ERP, které podporují jejich jedinečné požadavky a pomáhají jim přizpůsobit se neustále se měnícím podnikatelským prostředím, aniž by museli spravovat infrastrukturu. Finanční a provozní aplikace mohou zahrnovat jednu nebo více z následujících oblastí řešení:
+Finanční a provozní aplikace jsou nabídky softwaru jako služby (SaaS) pro plánování podnikových zdrojů (ERP), které jsou postaveny na a pro [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). Finanční a provozní služba poskytuje organizacím funkce ERP, které podporují jejich jedinečné požadavky a pomáhají jim přizpůsobit se neustále se měnícím podnikatelským prostředím, aniž by museli spravovat infrastrukturu. Finanční a provozní aplikace mohou zahrnovat jednu nebo více z následujících oblastí řešení:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -37,7 +37,7 @@ Společně s [business intelligence](/power-bi/fundamentals/power-bi-service-ove
 
 Na základě požadavků si zákazníci zvolí svůj přístup k řešení. Spolupracují se svým implementačním partnerem na definování, vývoji a testování svého řešení pomocí nástrojů a osvědčených postupů, které jsou součástí [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). Existují čtyři běžné scénáře:
 
-- Standardní konfigurace finančních a provozních operací "po vybalení z krabice" (bez rozšíření)
+- Standardní konfigurace finančních a provozních aplikací „po vybalení z krabice“ (bez rozšíření)
 - Konfigurace finančních a provozních aplikací, která zahrnuje jedno nebo více řešení ISV
 - Konfigurace finančních a provozních aplikací, která zahrnuje jedno nebo více rozšíření specifická pro zákazníka
 - Konfigurace finančních a provozních aplikací, která zahrnuje kombinaci rozšíření specifických pro zákazníka a jedno nebo více řešení ISV
@@ -61,7 +61,7 @@ Zákazníci pracují se svým partnerem a [Microsoft FastTrack](/dynamics365/fas
 
 ### <a name="microsoft-responsibilities"></a>Odpovědnost společnosti Microsoft
 
-Microsoft spravuje službu Finance and Operations a provozních aplikací nasazením, aktivním monitorováním a servisem zákaznických sandboxů a provozních prostředí v rámci předplatného Microsoft SaaS. Tato správa zahrnuje přidělení požadované systémové infrastruktury pro spuštění služby a proaktivní komunikaci se zákazníky o stavu služby. Mezi odpovědnosti patří:
+Microsoft spravuje finanční a provozní službu a provozních aplikací nasazením, aktivním monitorováním a servisem zákaznických sandboxů a provozních prostředí v rámci předplatného Microsoft SaaS. Tato správa zahrnuje přidělení požadované systémové infrastruktury pro spuštění služby a proaktivní komunikaci se zákazníky o stavu služby. Mezi odpovědnosti patří:
 
 **Správa infrastruktury**
 - Zabezpečení a izolace
@@ -122,7 +122,7 @@ finanční a provozní aplikace jsou obsluhovány z několika oblastí Azure po 
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Obecné nařízení o ochraně osobních údajů (GDPR)
 
-U finančních a provozních aplikací vystupuje společnost Microsoft jako zpracovatel. Jako zpracovatel údajů poskytují Finance a provoz procesy a funkce, které zákazníkům pomáhají plnit povinnosti GDPR jako správce údajů. Další informace naleznete v tématu [přehled GDPR](../../dev-itpro/gdpr/gdpr-guide.md).
+U finančních a provozních aplikací vystupuje společnost Microsoft jako zpracovatel. Jako zpracovatel údajů poskytují finance a provoz procesy a funkce, které zákazníkům pomáhají plnit povinnosti GDPR jako správce údajů. Další informace naleznete v tématu [přehled GDPR](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## <a name="environment-and-data-management"></a>Prostředí a správa dat
 
@@ -182,7 +182,7 @@ LCS poskytuje [samoobslužné zřizování](../../dev-itpro/deployment/infrastru
 
 ## <a name="data-backup-and-retention"></a>Zálohování a uchovávání dat
 
-Databáze pro prostředí financí a provozů v předplatném SaaS jsou chráněny automatickými zálohami. Pro provozní prostředí jsou automatické zálohy uchovávány po dobu 28 dnů, pokud společnost Microsoft neprovede vrácení zpět. U sandboxového prostředí (úroveň 2+) jsou uchovávány po dobu sedmi dnů. Vrácení provozního prostředí zpět lze provést, pokud během jakékoli plánované aktualizace údržby dojde k chybě.
+Databáze pro prostředí financí a provozu v předplatném SaaS jsou chráněny automatickými zálohami. Pro provozní prostředí jsou automatické zálohy uchovávány po dobu 28 dnů, pokud společnost Microsoft neprovede vrácení zpět. U sandboxového prostředí (úroveň 2+) jsou uchovávány po dobu sedmi dnů. Vrácení provozního prostředí zpět lze provést, pokud během jakékoli plánované aktualizace údržby dojde k chybě.
 
 Další informace o automatickém zálohování viz [Automatizované zálohování - Azure SQL Database a spravovaná instance SQL](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -264,7 +264,7 @@ Správce klienta zákazníka má přístup k provozním nebo neprovozním instan
 | Typ prostředí | Účel | Úroveň přístupu zákazníka |
 |---|---|---|
 | **Neprovozní**<br>Sandboxové prostředí 1. úrovně | Neprovozní prostředí, které zákazníci nasazují pro účely vývoje, ukázek nebo školení. | Sandbox 1. úrovně (označovaný také jako cloudové prostředí) je virtuální počítač spravovaný zákazníkem, který je nasazen do předplatného Azure zákazníka od LCS. Protože se jedná o virtuální počítač v zákazníkově předplatném Azure, má zákazník plný přístup pro správce k prostředí prostřednictvím vzdálené plochy. |
-| **Neprovozní**<br>Sandbox 2. úrovně (nebo vyšší) | Neprovozní prostředí, které zákazníci nasazují pro testování přijatelnosti uživatelem, integrační testování, školení, fázování nebo jakýkoli jiný scénář před provozem. | Sandboxy úrovně 2 a vyšší jsou nasazeny v předplatném SaaS Finance a provoz. Přístup k databázím Azure SQL database, které jsou přidruženy k neprovoznímu prostředí, je udělován prostřednictvím [přístupu za běhu](../../dev-itpro/database/database-just-in-time-jit-access.md). Přístup ke vzdálené ploše není k dispozici. |
+| **Neprovozní**<br>Sandbox 2. úrovně (nebo vyšší) | Neprovozní prostředí, které zákazníci nasazují pro testování přijatelnosti uživatelem, integrační testování, školení, fázování nebo jakýkoli jiný scénář před provozem. | Sandboxy úrovně 2 a vyšší jsou nasazeny v předplatném SaaS finance a provoz. Přístup k databázím Azure SQL database, které jsou přidruženy k neprovoznímu prostředí, je udělován prostřednictvím [přístupu za běhu](../../dev-itpro/database/database-just-in-time-jit-access.md). Přístup ke vzdálené ploše není k dispozici. |
 | **Výrobní** | Provozní prostředí je nasazeno, když je projekt [připraven k počátečnímu spuštění](../imp-lifecycle/environment-planning.md#production-system-readiness). | Do předplatného SaaS jsou nasazena provozní prostředí. Veškerý přístup je prostřednictvím prohlížeče, koncových bodů služby nebo LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Přístup pro správu společnosti Microsoft
@@ -311,7 +311,7 @@ Plány a postupy zotavení po havárii společnosti Microsoft jsou pravidelně p
 
 ## <a name="finance-and-operations-support-offerings"></a>Podpora pro finanční a provozní aplikace
 
-Technická podpora je k dispozici na trzích, kde jsou nabízeny finanční a provozní služby. [Zkušenosti s podporou](../../dev-itpro/lifecycle-services/lcs-support.md) jsou poskytovány v LCS nebo finančních a provozních aplikacích. Několik příkladů:
+Technická podpora je k dispozici na trzích, kde jsou nabízeny finanční a provozní služby. [Prostředí podpory](../../dev-itpro/lifecycle-services/lcs-support.md) jsou poskytována v LCS nebo finančních a provozních aplikacích. Několik příkladů:
 
 - [Hledání problémů](../../dev-itpro/lifecycle-services/issue-search-lcs.md) v LCS
 - [Integrovaná technická podpora](../../dev-itpro/lifecycle-services/support-experience.md) ve finančních a provozních aplikacích
@@ -428,3 +428,4 @@ Rámec, který systematicky vede implementaci řadou hodnocení v kritických f�
 ### <a name="user"></a>Uživatel
 
 Jedna osoba, která používá prostředí pro finance a provoz a která je spojena s klientem zákazníka.
+

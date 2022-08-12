@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022557"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167754"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -92,9 +92,9 @@ Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení
 
 Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, organizace musí také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu.
 
-Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *nemají* povoleno používat pokročilé skladové procesy (WMS). Druhý podporuje položky, které *mají* povoleno používat WMS. Chcete-li použít tuto funkci, zapněte jednu nebo obě z následujících funkcí v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí), v závislosti na tom, zda máte položky, které jsou povoleny pro WMS:
+Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *nemají* povoleno používat procesy řízení skladu (WMS). Druhý podporuje položky, které *mají* povoleno používat WMS. Chcete-li použít tuto funkci, zapněte jednu nebo obě z následujících funkcí v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí), v závislosti na tom, zda máte položky, které jsou povoleny pro WMS:
 
-- *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*
+- *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*
 - *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
 
 > [!IMPORTANT]

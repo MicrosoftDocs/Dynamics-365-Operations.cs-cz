@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6254d15d13e40007396c9f2a36a8cd3122dc2609
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892762"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109333"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatizace testování s elektronickým výkaznictvím
 
@@ -57,7 +57,7 @@ Funkční členové skupiny Power Users mohou spustit testy přijetí a integrac
 Před provedením úkolů v tomto článku je třeba splnit následující předpoklady:
 
 - Nasaďte topologii, která podporuje automatizaci testování. Musíte mít přístup do instance této topologie pro roli **Správce systému**. Tato topologie musí obsahovat ukázková data, která budou použita v tomto příkladu. Další informace naleznete v tématu [Nasazení a použití prostředí, které podporuje automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md).
-- Chcete-li automaticky spustit testy přijetí a integrace s uživatelem, je nutné nainstalovat RSAT do používané topologie a odpovídajícím způsobem ji nakonfigurovat. Informace o tom, jak instalovat RSAT pro práci s aplikacemi Finance and Operations a Azure DevOps, získáte v tématu [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Věnujte pozornost předpokladům pro používání nástroje. Následující obrázek znázorňuje příklad nastavení RSAT. Modrý obdélník ohraničuje parametry, které určují přístup do Azure DevOps. Zelený obdélník označuje parametry, které určují přístup k instanci.
+- Chcete-li automaticky spustit testy přijetí a integrace s uživatelem, je nutné nainstalovat RSAT do používané topologie a odpovídajícím způsobem ji nakonfigurovat. Informace o tom, jak instalovat RSAT pro práci s finančními a provozními aplikacemi a Azure DevOps, získáte v tématu [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Věnujte pozornost předpokladům pro používání nástroje. Následující obrázek znázorňuje příklad nastavení RSAT. Modrý obdélník ohraničuje parametry, které určují přístup do Azure DevOps. Zelený obdélník označuje parametry, které určují přístup k instanci.
 
     ![Nastavení RSAT.](media/GER-Configure.png "Snímek obrazovky dialogového okna Nastavení RSAT")
 

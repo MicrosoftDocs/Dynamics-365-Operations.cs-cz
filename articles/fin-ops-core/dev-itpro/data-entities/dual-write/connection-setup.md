@@ -2,19 +2,19 @@
 title: Pokyny pro nastavení duálního zápisu
 description: Tento článek popisuje scénáře, které jsou podporovány pro nastavení dvojího zápisu.
 author: RamaKrishnamoorthy
-ms.date: 10/12/2020
+ms.date: 06/28/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 15dfb609b5e25b4faf2b913cc2310df71c88a74d
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873142"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111242"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Pokyny pro nastavení duálního zápisu
 
@@ -24,10 +24,11 @@ ms.locfileid: "8873142"
 
 
 
-Můžete nastavit připojení dvojího zápisu mezi prostředím Finance a Operace a Dataverse.
+Můžete nastavit připojení dvojího zápisu mezi finančním a provozním prostředím a Dataverse.
 
-+ Prostředí **Finance a Operace** poskytuje základní platformu pro **finanční a provozní aplikace** (například Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Human Resources).
++ **Finanční a provozní prostředí** poskytuje základní platformu pro **finanční a provozní aplikace** (například Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Human Resources).
 + Prostředí **Dataverse** poskytuje základní platformu pro **aplikace Customer Engagement** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing a Dynamics 365 Project Service Automation).
+
 
 > [!IMPORTANT]
 > Modul personalistiky v aplikaci Dynamics 365 Finance podporuje připojení pro duální zápis, ale aplikace Dynamics 365 Human Resources ne.
@@ -35,7 +36,7 @@ Můžete nastavit připojení dvojího zápisu mezi prostředím Finance a Opera
 Nastavení mechanismu se liší v závislosti na vašem předplatném a prostředí:
 
 + U nových instancí finančních a provozních aplikací začíná nastavení připojení dvojího zapisování v Microsoft Dynamics Lifecycle Services (LCS). Máte-li licenci pro Microsoft Power Platform, obdržíte nové prostředí Dataverse, pokud je váš klient neobsahuje.
-+ U stávajících instancí finančních a provozních aplikací začíná nastavení připojení dvojího zapisování v prostředí Finance a Operace.
++ U stávajících instancí finančních a provozních aplikací začíná nastavení připojení dvojího zapisování ve finančním a provozním prostředí.
 
 Než začnete s duálním zápisem na entitě, můžete spustit počáteční synchronizaci pro zpracování existujících dat na obou stranách: u finančních a provozních aplikací a aplikací Customer Engagement. Pokud nepotřebujete synchronizovat data mezi dvěma prostředími, můžete počáteční synchronizaci přeskočit.
 
@@ -54,7 +55,7 @@ Podporovány jsou následující scénáře registrace:
 
 Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která neobsahuje žádná data a novou instanci aplikace Customer Engagement, postupujte podle kroků v nastavení [dvojího zápisu z Lifecycle Services](lcs-setup.md). Po dokončení nastavení připojení dojde k automatickému provedení následujících akcí:
 
-- Je zřízeno nové prázdné prostředí Finance a Operace.
+- Je zřízeno nové prázdné finanční a provozní prostředí.
 - Je zřízena nová prázdná instance aplikace pro zapojení zákazníků, kde je nainstalováno základní řešení CRM.
 - Pro data společnosti DAT je vytvořeno připojení s dvojím zapisováním.
 - Mapování tabulek je povoleno u živé synchronizace.
@@ -65,7 +66,7 @@ Obě prostředí jsou připravena k synchronizaci dat živého vysílání.
 
 Chcete-li nastavit připojení dvojího zapisování mezi novou instancí finanční a provozní aplikace, která neobsahuje žádná data a stávající instanci aplikace Customer Engagement, postupujte podle kroků v nastavení [dvojího zápisu z Lifecycle Services](lcs-setup.md). Po dokončení nastavení připojení dojde k automatickému provedení následujících akcí:
 
-- Je zřízeno nové prázdné prostředí Finance a Operace.
+- Je zřízeno nové prázdné finanční a provozní prostředí.
 - Pro data společnosti DAT je vytvořeno připojení s dvojím zapisováním.
 - Mapování tabulek je povoleno u živé synchronizace.
 

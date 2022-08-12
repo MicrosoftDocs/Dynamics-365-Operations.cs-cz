@@ -1,7 +1,7 @@
 ---
 title: Poradce při potížích s importem souboru bankovního výpisu
 description: Tento článek vysvětluje, jak opravit problémy, které jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711166"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151753"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Poradce při potížích s importem souboru bankovního výpisu
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Tato funkce bude v září 2022 ukončena, noví uživatelé by měli používat elektronické hlášení.
 
 Je důležité, aby se soubor s bankovním výpisem z banky shodoval s rozvržením podporovaným v aplikaci Microsoft Dynamics 365 Finance. Díky přísným standardům pro bankovní výpisy bude většina integrací fungovat správně. Někdy však soubor s prohlášením nemusí být možné importovat, nebo bude obsahovat nesprávné výsledky. Tyto problémy jsou obvykle způsobeny drobnými rozdíly v souboru s bankovním výpisem. V tomto článku je popsán postup pro vyřešení těchto rozdílů a potíží.
 
@@ -39,7 +42,7 @@ Při pokusu o import souboru s bankovním výpisem přejděte při hledání chy
 Srovnejte definici rozvržení bankovního souboru s definicí importu v aplikaci Finance a poznamenejte si všechny rozdíly v polích a prvcích. Porovnejte soubor bankovního výpisu s příslušným vzorovým souborem aplikace Finance. V souborech ISO20022 by mělo být možné snadno zjistit rozdíly.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Rozdíly v časových pásmech u importovaných bankovních výpisů
-Hodnoty data a času v importním souboru se mohou lišit od hodnot data a času zobrazených ve Finance and Operations. Chcete-li zabránit této nesrovnalosti, zadejte prioritu časového pásma na stránce **Konfigurovat zdroje dat**. Informace o zadání předvoleb pro časové pásmo najdete v tématu [Nastavení procesu importu pokročilého odsouhlasení banky](set-up-advanced-bank-reconciliation-import-process.md).
+Hodnoty data a času v importním souboru se mohou lišit od hodnot data a času zobrazených ve financích a provozu. Chcete-li zabránit této nesrovnalosti, zadejte prioritu časového pásma na stránce **Konfigurovat zdroje dat**. Informace o zadání předvoleb pro časové pásmo najdete v tématu [Nastavení procesu importu pokročilého odsouhlasení banky](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Transformace
 Obvykle je nutné provést změny v jedné ze tří transformací. Každá transformace je sestavena pro konkrétní standard.
@@ -109,3 +112,4 @@ V následující tabulce jsou uvedeny příklady technických definic rozložen�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

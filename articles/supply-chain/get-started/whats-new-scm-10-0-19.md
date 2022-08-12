@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1ea0f2dae2f558f1ee5c0d2b94a4b926263b7de7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: de9d20ba7ffc0bc5201ccafc2157a13983923249
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893403"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125015"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -97,3 +97,4 @@ U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

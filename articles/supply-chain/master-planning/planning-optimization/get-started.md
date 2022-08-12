@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900963"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112173"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -40,7 +40,7 @@ Než zapnete optimalizaci plánování, důrazně doporučujeme, abyste vyhodnot
 
 ## <a name="availability"></a>Dostupnost
 
-Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Brazílie, Evropa, Spojené království, Austrálie, Asie a Tichomoří, Japonsko a Indie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována. Další informace o geografických oblastech Azure a souvisejících oblastech najdete v tématu [Geografické oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Brazílie, Evropa, Francie, Spojené království, Austrálie, Asie a Tichomoří, Japonsko a Indie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována. Další informace o geografických oblastech Azure a souvisejících oblastech najdete v tématu [Geografické oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Všimněte si, že optimalizace plánování nepodporuje místní nasazení Dynamics 365 Supply Chain Management.
 
@@ -135,3 +135,4 @@ Je-li zapnuta optimalizace plánování, hlavní plánování se provede pomocí
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

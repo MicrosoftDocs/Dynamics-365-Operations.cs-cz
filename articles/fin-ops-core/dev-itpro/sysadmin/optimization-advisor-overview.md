@@ -1,6 +1,6 @@
 ---
 title: Přehled poradce při optimalizaci
-description: Tento článek popisuje, jak můžete použít poradce při optimalizaci pro zajištění optimální konfigurace Finance and Operations.
+description: Tento článek popisuje, jak můžete použít poradce při optimalizaci pro zajištění optimální konfigurace financí a provozu.
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865854"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109033"
 ---
 # <a name="optimization-advisor-overview"></a>Přehled poradce při optimalizaci
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak můžete použít poradce při optimalizaci pro zajištění optimální konfigurace Finance and Operations.
+Tento článek popisuje, jak můžete použít poradce při optimalizaci pro zajištění optimální konfigurace financí a provozu.
 
 ## <a name="overview"></a>Přehled
 
@@ -44,7 +44,7 @@ Na příležitosti optimalizace se vztahují standardní zásady zabezpečení. 
 
 Pokud provedete akci týkající se některých možností optimalizace, systém vypočítá dopad příležitosti z hlediska snížení času spuštění obchodních procesů. Bohužel tato funkce není dostupná pro všechny příležitosti optimalizace.
 
-Další informace o poradci při optimalizaci naleznete v krátkém videu [Poradce při optimalizaci v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Další informace o poradci při optimalizaci naleznete v krátkém videu [Poradce při optimalizaci v Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Pravidla optimalizace
 
@@ -90,7 +90,7 @@ Chcete-li deaktivovat vyhodnocení konkrétních pravidel, zvolte příležitost
 
 [Vytvoření pravidel pro poradce při optimalizaci](./create-rules-optimization-advisor.md)
 
-[Poradce při optimalizaci v Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Poradce pro optimalizaci v Dynamics 365 Finance (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

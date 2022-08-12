@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903775"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067904"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatická dodávka prodejní dodávky pro cross docking
 
@@ -40,8 +40,8 @@ Tato funkce cross dockingu má dvě výhody:
 
 | Předpoklad | Popis |
 |---|---|
-| Zboží | Položky musí být povoleny pro procesy správy skladu.<p>**Poznámka:** položky s povolenou skutečnou hmotností nelze zahrnout do procesů cross dockingu.</p> |
-| Sklad | Sklad musí být povolen pro procesy správy skladu. |
+| Zboží | Položky musí být povoleny pro procesy správy skladu (WMS).<p>**Poznámka:** položky s povolenou skutečnou hmotností nelze zahrnout do procesů cross dockingu.</p> |
+| Sklad | Sklad musí být povolen pro procesy správy skladu (WMS). |
 | Šablony cross dockingu | Pro daný sklad musí být nastavena alespoň jedna šablona pro cross dockingu, která používá zásady **Při potvrzení dodávky**. |
 | Pracovní třída | Pro typ pracovního příkazu **Cross docking** musí být vytvořeno ID pracovní třídy cross dockingu. |
 | Šablony práce | K vytvoření práce vyzvednutí a vložení jsou vyžadovány šablony práce typu pracovního příkazu **Cross docking**. |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879272"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067609"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -150,7 +150,7 @@ Pokud je entita podporovaná a data jsou v Dataverse k dispozici, ověřte, zda 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance správné. Co mám dělat?
 
-Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Human Resources i Finance. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z Dataverse do Finance and Operations.
+Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Human Resources i Finance. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z Dataverse do financí a provozu.
 
 Při implementaci aplikace Human Resources ověřte, zda číselné řady v aplikaci Human Resources a Finance nejsou stejné. Ověřte, zda nejsou všechny číselné řady stejné, když lze udržovat data v obou systémech.
 
@@ -184,3 +184,4 @@ Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

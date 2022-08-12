@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cc813ba4bafb526c16445eecaed9f1be68a8d726
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 27c8e44a43e7bc1b0ed1e759c963b8685a34e623
+ms.sourcegitcommit: de1ac28d9441146d5d91b1f13ab6d8c8a0f7387b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859974"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9187138"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>Úvodní stránka Odstraněné nebo zastaralé funkce
 
@@ -30,6 +30,7 @@ Následující témata poskytují informace o odstraněných nebo zastaralých f
 - [Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce](../../../commerce/get-started/removed-deprecated-features-commerce.md)
 - [Odstraněné nebo zastaralé funkce v Dynamics 365 Finance](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
+- [Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Human Resources](../../../human-resources/get-started/removed-deprecated-features-hr.md)
 - [Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Project Operations](/dynamics365/project-operations/whats-new/removed-depreciated-features-project)
 - [Odstraněné nebo zastaralé funkce platformy](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
 - [Odebrané nebo zastaralé funkce v předchozích verzích](../../dev-itpro/migration-upgrade/deprecated-features.md)
@@ -38,3 +39,4 @@ Následující témata poskytují informace o odstraněných nebo zastaralých f
 Další informace o zastaralých funkcích v Microsoft Power Platform jsou uvedeny v následujícím článku:
 
 - [Důležité změny (zastárání) v Power Apps, Power Automate a aplikacích Customer Engagement](/power-platform/important-changes-coming)
+

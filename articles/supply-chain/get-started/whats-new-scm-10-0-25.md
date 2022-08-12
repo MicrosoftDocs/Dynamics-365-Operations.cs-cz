@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954484"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167724"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.25 (duben 2022)
 
@@ -36,8 +36,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Zásoby&nbsp;a&nbsp;logistika | [Vylepšení nebezpečných materiálů](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Již brzy | Správa funkcí:<br>*Vylepšení nebezpečných materiálů* |
 | Zásoby&nbsp;a&nbsp;logistika | [Práce balení pro balicí stanice](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Již brzy | Správa funkcí:<br>*Práce balení pro balicí stanice* |
 | Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) | Správa funkcí:<br>*Naskenovat čárové kódy GS1* |
-| Výroba | [Spotřeba materiálu a rezervace v rozhraní pro provádění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*<br><br>Nebo:<br><br>Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)* |
-| Výroba | [Registrovat spotřebu materiálu v jednotce škálování](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-manufacturing.md) | Správa funkcí:<br>*Registrovat spotřebu materiálu v mobilní aplikaci na jednotce škálování* |
+| Výroba | [Spotřeba materiálu a rezervace v rozhraní pro provádění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*<br><br>Nebo:<br><br>Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)* |
 | Plánování | [Centralizovaná údržba kalendáře Optimalizace plánování](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendáře a hlavní plánování](../master-planning/supply-chain-calendars-master-planning.md) | Ve výchozím nastavení povoleno |
 | Plánování | [Návrhy optimalizace plánování pro optimalizaci stávající nabídky](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Zprávy akce](../master-planning/action-messages.md) | Ve výchozím nastavení povoleno |
 | Plánování | Zjednodušené plánované objednávky | [Zjednodušené plánované objednávky](../master-planning/planning-optimization/planned-orders-simplified.md ) | Správa funkcí:<br>*Zjednodušené plánované objednávky* |
@@ -209,3 +208,4 @@ Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

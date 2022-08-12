@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890051"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124703"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -168,7 +168,7 @@ Pokud jste se z používání nové mřížky odhlásili pro jednotlivou stránk
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Vývojář] Odhlášení jednotlivých mřížek z funkce Zadávání před systémem
 Objevily se některé scénáře, které se dobře nehodí pro funkci mřížky *Zadávání před systémem*. (Například nějaký kód, který se spustí při ověření řádku, způsobí spuštění průzkumu zdroje dat a průzkum pak může poškodit neprovedené úpravy na existujících řádcích.) Pokud vaše organizace takový scénář objeví, je k dispozici rozhraní API, které umožňuje vývojáři odhlásit jednotlivou mřížku z asynchronního ověřování řádků a vrátit se ke staršímu chování.
 
-Když je asynchronní ověřování řádků v mřížce zakázáno, uživatelé nemohou vytvořit nový řádek nebo se přesunout do jiného existujícího řádku v mřížce, pokud jsou na aktuálním řádku problémy s ověřením. Jako vedlejší efekt této akce nelze vložit tabulky z Excelu do mřížek Finance a Operace.
+Když je asynchronní ověřování řádků v mřížce zakázáno, uživatelé nemohou vytvořit nový řádek nebo se přesunout do jiného existujícího řádku v mřížce, pokud jsou na aktuálním řádku problémy s ověřením. Jako vedlejší efekt této akce nelze vložit tabulky z Excelu do mřížek finance a provoz.
 
 Chcete-li jednotlivou mřížku odhlásit z asynchronního ověřování řádku, přidejte následující volání po `super()` v metodě formuláře `run()`.
 
@@ -200,3 +200,4 @@ Tato část udržuje seznam známých problémů pro nový ovládací prvek mř�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

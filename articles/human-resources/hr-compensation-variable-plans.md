@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853067"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070551"
 ---
 # <a name="create-variable-compensation-plans"></a>Vytvoření plánů variabilní kompenzace
 
@@ -42,7 +42,11 @@ Výpočet částek variabilní kompenzace pro zaměstnance lze založit na něko
 V případě potřeby mohou společnosti nastavit **Pravidla připsání**. **Pravidla připsání** popisují, jak má být časově přidělena variabilní odměna. Pravidlo připsání může například uvádět, že zaměstnanec získá 25 procent své celkové odměny každoročně příští čtyři roky. Pravidla připsání mají pouze informativní charakter.
 
 ## <a name="variable-compensation-plans"></a>Plány variabilní kompenzace
-**Plán variabilní kompenzace** obsahuje pravidla, metody výpočtu a výchozí hodnoty pro výpočet variabilní kompenzace pro přihlášené zaměstnance. Při vytváření plánu variabilní kompenzace je nutné nastavit typ variabilní kompenzace. Typ variabilní kompenzace určuje, zda systém vypočítá jako odměnu měnovou částku nebo počet jednotek. Dále je nutné nastavit způsob výpočtu:
+**Plán variabilní kompenzace** obsahuje pravidla, metody výpočtu a výchozí hodnoty pro výpočet variabilní kompenzace pro přihlášené zaměstnance. Při vytváření plánu variabilní kompenzace je nutné nastavit typ variabilní kompenzace. Typ variabilní kompenzace určuje, zda systém vypočítá jako odměnu měnovou částku nebo počet jednotek. 
+
+Parametr **Omezit přístup k vybraným rolím** omezuje přístup k plánu odměňování na vybrané role zabezpečení, které byly tomuto plánu přiřazeny v Human Resources. Když například vytváříte plány odměňování, které jsou pro vedoucí pracovníky a neměly by být viditelné pro všechny specifické role HR, můžete tento parametr použít k omezení přístupu k těmto plánům odměňování. 
+
+Dále je nutné nastavit způsob výpočtu:
 
 -   **Časový okamžik** – výpočet variabilní odměny na základě fixní kompenzace, kterou zaměstnanec měl k určitému datu. Toto datum je určeno v procesu události, když se nové částky kompenzace zpracovávají.
 -   **Složený** – částka odměny se vypočítá pro každou jedinečnou sazbu mzdy fixní kompenzace, kterou zaměstnanec měl mezi počátečním a koncovým datem cyklu v rámci události procesu. Sazby se poté sečtou k určení výsledné odměny. Během cyklu například zaměstnanec přejde na jiné místo, které má jinou mzdovou sazbu. V takovém případě se variabilní odměna upraví pro délku doby, po kterou byl zaměstnanec v každé mzdové sazbě.

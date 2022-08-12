@@ -1,6 +1,6 @@
 ---
 title: Přehled rozpočtování
-description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
+description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů ve finanční a provozní aplikaci nebo pro jejich načítání z programu třetích stran.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48fcfec7126b4835b7d05e431bbc6ad7b9176bbe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 380afc399a050215bb2d7b1e5ddb20088226f654
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710406"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068953"
 ---
-# <a name="budgeting-overview"></a>Přehled rozpočtování 
+# <a name="budgeting-overview"></a>Přehled rozpočtování
 
 [!include [banner](../includes/banner.md)]
 
-Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
+Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů ve finanční a provozní aplikaci nebo pro jejich načítání z programu třetích stran.
 
 ## <a name="overview"></a>Přehled
 
@@ -89,3 +89,4 @@ Společnost, která používá funkci plánování rozpočtu může vytvořit a 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

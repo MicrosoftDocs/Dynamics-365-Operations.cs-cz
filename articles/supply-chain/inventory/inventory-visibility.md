@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897625"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066633"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Přehled doplňku Viditelnost zásob
 
@@ -61,9 +61,9 @@ Viditelnost vašich předpokládaných zásob v blízké budoucnosti (včetně n
 
 Funkci ATP lze snadno zařadit do vašeho každodenního procesu vyřizování objednávek. A co je nejdůležitější, stejně jako ostatní funkce Viditelnosti zásob je i ATP *globální a v reálném čase*. Proto můžete nastavit více vzorců pro výpočet ATP, abyste měli úplné dotazy na dostupnost zásob, které pokrývají všechny vaše obchodní kanály a zdroje dat. Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilita s položkami pokročilé správy skladu
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Kompatibilita s položkami procesů správy skladu (WMS)
 
-Cílem společnosti Microsoft je poskytnout okamžitou integraci s pokročilou správou skladu (WHS), aby zákazníci WHS mohli také využívat výhod služby Viditelnost zásob. Ve vlně 1 vydání 2022 (veřejné preview v březnu) služba zásob podporuje dotazy na položky WHS a ATP. Funkce předběžné rezervace a přidělování bude pro zákazníky WHS podporována v příští vlně. Další informace viz [Podpora Viditelnost zásob pro položky WHS](inventory-visibility-whs-support.md).
+Cílem společnosti Microsoft je poskytnout okamžitou integraci s procesy správy skladu (WMS), aby zákazníci WMS mohli také využívat výhod služby Viditelnost zásob. Ve vlně 1 vydání 2022 (veřejné preview v březnu) služba zásob podporuje dotazy na položky WMS a ATP. Funkce předběžné rezervace a přidělování bude pro zákazníky WMS podporována v příští vlně. Další informace viz [Podpora Viditelnost zásob pro položky WMS](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licence
 

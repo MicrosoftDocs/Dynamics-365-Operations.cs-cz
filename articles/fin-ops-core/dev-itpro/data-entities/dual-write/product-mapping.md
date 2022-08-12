@@ -2,21 +2,21 @@
 title: Sjednocené prostředí produktu
 description: Tento článek popisuje integraci dat produktů mezi finančními a provozními aplikacemi a Dataverse.
 author: t-benebo
-ms.date: 12/12/2019
+ms.date: 06/23/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1546cdaf3c63a7ff9a330ae8609595aaf48fbc48
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884991"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111479"
 ---
-# <a name="unified-product-experience"></a>Používání sjednoceného produktu
+# <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
 [!include [banner](../../includes/banner.md)]
 
@@ -30,7 +30,7 @@ Zde je datový model produktu z aplikace Sales.
 
 Zde je datový model produktů z finančních a provozních aplikací.
 
-![Datový model pro produkty ve Finance and Operations.](media/dual-write-products-5.jpg)
+![Datový model pro produkty ve financích a provozu.](media/dual-write-products-5.jpg)
 
 Tyto dva modely datových modelů produktů byly integrovány do Dataverse, jak je uvedeno níže.
 
@@ -52,7 +52,7 @@ Finanční a provozní aplikace | Jiné aplikace Dynamics 365 | Popis
 [Kategorie produktu](mapping-reference.md#166) | msdyn_productcategories | Každá z kategorií produktů a informace o její struktuře a vlastnostech je obsažena v tabulce kategorie produktu.
 [Přiřazení kategorií produktů](mapping-reference.md#167) | msdyn_productcategoryassignments | Chcete-li přiřadit produkt do kategorie, lze použít tabulku přiřazení kategorie produktu.
 [Hierarchie kategorií produktů](mapping-reference.md#168) | msdyn_productcategoryhierarchies | Hierarchie produktů můžete použít k uspořádání produktů do kategorií nebo k jejich seskupení. Hierarchie kategorií jsou k dispozici v Dataverse prostřednictvím tabulky Hierarchie kategorií produktu.
-[Role hierarchie kategorií produktů](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá tabulka role kategorie produktu.
+[Role hierarchie kategorií produktů](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Hierarchie produktů lze použít pro různé role v D365 finance a provoz. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá tabulka role kategorie produktu.
 [Výchozí nastavení pořadí produktů V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 [Skupiny dimenzí produktu](mapping-reference.md#173) | msdyn\_productdimensiongroups | Skupina dimenzí produktu definuje, které dimenze produktu definují produkt.
 [Barvy základního produktu](mapping-reference.md#187) | msdyn_sharedproductcolors | Tabulka **Sdílená barva produktu** označuje barvy, které může mít určitý základní produkt k dispozici. Účelem migrace tohoto konceptu do Dataverse je zachování konzistence dat.
@@ -64,7 +64,7 @@ Finanční a provozní aplikace | Jiné aplikace Dynamics 365 | Popis
 [Uvolněné produkty V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Tabulka **msdyn\_Sharedproductdetails** obsahuje sloupce z finančních a provozních aplikací, které definují produkt a obsahují finanční a řídící informace o produktu.
 [Velikosti](mapping-reference.md#174) | msdyn\_productsizes
 [Skupiny dimenze úložiště](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Skupina dimenze úložiště produktů představuje metodu, která se používá k definování umístění produktu ve skladu.
-[Styly](mapping-reference.md#178) | msdyn\_productsytles
+[Styly](mapping-reference.md#178) | msdyn\_productstyles
 [Skupiny sledovací dimenze](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | Skupina sledovací dimenze produktů představuje metodu použitou ke sledování produktu v zásobách.
 [Jednotky](mapping-reference.md#219) | uoms
 [Převody jednotek](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
@@ -81,7 +81,7 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 
 ![Datový model pro produkty.](media/dual-write-product.png)
 
-V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Jsou přidány do prvního ceníku se stejnou měnou, jaká byla použita v aplikaci pro zapojení zákazníků, a používají abecední řazení v názvu ceníku. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn ve finanční a provozní aplikaci. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt.
+V případě povolené funkce dvojího zápisu budou produkty z financí a provozu synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Jsou přidány do prvního ceníku se stejnou měnou, jaká byla použita v aplikaci pro zapojení zákazníků, a používají abecední řazení v názvu ceníku. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn ve finanční a provozní aplikaci. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt.
 
 Aktuální implementace pluginů pro duální zápis, které přidružují výchozí ceník k jednotce, vyhledá měnu přidruženou k finanční a provozní aplikaci a najde první ceník v aplikaci Customer Engagement pomocí abecedního řazení názvu ceníku. Chcete-li nastavit výchozí ceník pro konkrétní měnu, pokud máte pro tuto měnu více ceníků, musíte aktualizovat název ceníku na název, který je v abecedním pořadí dříve než jakékoli jiné ceníky pro stejnou měnu. Pokud pro danou měnu nemá žádný ceník, vytvoří se nový.
 
@@ -109,7 +109,7 @@ Finanční a provozní aplikace | Aplikace Customer Engagement |
 ---|---
 [Barvy](mapping-reference.md#170) | msdyn\_productcolors
 [Velikosti](mapping-reference.md#174) | msdyn\_productsizes
-[Styly](mapping-reference.md#178) | msdyn\_productsytles
+[Styly](mapping-reference.md#178) | msdyn\_productstyles
 [Konfigurace](mapping-reference.md#171) | msdyn\_productconfigurations
 
 Pokud má produkt jiné dimenze produktu (například velikost a barvu základního produktu jako dimenze produktu), je každý jedinečný produkt (tj. každá varianta produktu) definován jako kombinace těchto dimenzí produktů. Například číslo produktu B0001 je velmi malé černé triko a číslo produktu B0002 je malé černé triko. V tomto případě jsou definovány existující kombinace dimenzí produktů. Například tričko z předchozího příkladu může být velmi malé a černé, malé a černé, střední a černé nebo velké a černé, ale nemůže být navíc velmi velké a černé. Jinými slovy se specifikují dimenze produktu, které může základní produkt, a varianty mohou být uvolněny na základě těchto hodnot.
@@ -190,14 +190,14 @@ Finanční a provozní aplikace | Aplikace Customer Engagement |
 
 ## <a name="integration-key-for-products"></a>Klíč integrace pro produkty
 
-Pro jednoznačnou identifikaci produktů mezi Dynamics 365 for Finance and Operations a produktů v Dataverse se používá klíč integrace.
-U produktů je **(productnumber)** jedinečným klíčem, který identifikuje produkt v Dataverse. Je tvořen zřetězením: **(company, msdyn_productnumber)**. **Company** označuje právnickou osobu v Finance and Operations a **msdyn_productnumber** označuje číslo produktu pro specifický produkt ve finanční a provozní aplikaci.
+Pro jednoznačnou identifikaci produktů mezi Dynamics 365 Finance a produktů v Dataverse se používá klíč integrace.
+U produktů je **(productnumber)** jedinečným klíčem, který identifikuje produkt v Dataverse. Je tvořen zřetězením: **(company, msdyn_productnumber)**. **Company** označuje právnickou osobu ve financích a provozu a **msdyn_productnumber** označuje číslo produktu pro specifický produkt ve finanční a provozní aplikaci.
 
 Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek sloupce je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. Ve sloupci (productnumber) však není zobrazen jedinečný klíč produktu.
 
 Pokud vytváříte aplikace v Dataverse, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber**, protože není jedinečné.
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Počáteční synchronizace produktů a migrace dat z Dataverse do Finance and Operations
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Počáteční synchronizace produktů a migrace dat z Dataverse do financí a provozu
 
 ### <a name="initial-synchronization-of-products"></a>Počáteční synchronizace produktů
 
@@ -206,7 +206,7 @@ Když je povolen dvojí zápis, jsou produkty z finančních a provozních aplik
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Párování dat produktu z finančních a provozních aplikací a dalších aplikací Dynamics 365
 
 Pokud jsou stejné produkty uchovávány (překrývání a spárování) ve finanční a provozní aplikaci a Dataverse a v jiných aplikacích Dynamics 365 při povolování dvojího zápisu, dojde k provedení synchronizace produktů z finančních a provozních aplikací a duplicitní řádky se zobrazí v Dataverse pro stejný produkt.
-Chcete-li se vyhnout předchozí situaci, pokud ostatní aplikace Dynamics 365 obsahují produkty, které se překrývají a shodují s Finance and Operations, musí správce povolující dvojí zapisování spustit sloupce **Společnost** (například: "USMF") a **msdyn_productnumber** (příklad: 1234:Black:S) před tím, než dojde k synchronizaci produktů. Jinými slovy, tyto dva sloupce v produktu v Dataverse musejí být vyplněny příslušnou společností ve finanční a provozní aplikaci, se kterou musí být výrobek spárován, a se svým číslem produktu.
+Chcete-li se vyhnout předchozí situaci, pokud ostatní aplikace Dynamics 365 obsahují produkty, které se překrývají a shodují s financemi a provozem, musí správce povolující dvojí zapisování spustit sloupce **Společnost** (například: "USMF") a **msdyn_productnumber** (příklad: 1234:Black:S) před tím, než dojde k synchronizaci produktů. Jinými slovy, tyto dva sloupce v produktu v Dataverse musejí být vyplněny příslušnou společností ve finanční a provozní aplikaci, se kterou musí být výrobek spárován, a se svým číslem produktu.
 
 Pokud je synchronizace povolena a probíhá, budou produkty z finančních a provozních aplikací synchronizovány se spárovanými produkty v aplikaci Dataverse a v dalších aplikacích Dynamics 365. To platí pro jedinečné produkty i varianty produktu.
 
@@ -215,3 +215,4 @@ Pokud je synchronizace povolena a probíhá, budou produkty z finančních a pro
 Pokud jiné aplikace Dynamics 365 obsahují produkty, které nejsou přítomny ve finanční a provozní aplikaci, může správce nejprve použít **EcoResReleasedProductCreationV2Entity** pro import těchto produktů ve finanční a provozní aplikaci. A za druhé, spárujte data produktu z finanční a provozní aplikace a dalších aplikací Dynamics 365, jak je popsáno výše.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860631"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068024"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrace s výrobními informačními systémy třetích stran
 
@@ -252,9 +252,10 @@ Poté, co MES odešle zprávu do aplikace Supply Chain Management, může být d
 V těchto případech můžete využít standardní funkci výstrahy v Supply Chain Management. Informace o tom, jak fungují standardní výstrahy, naleznete v následujících zdrojích:
 
 - Článek nápovědy: [Přehled výstrah](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- Video: [Možnosti pravidla výstrahy v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- Video: [Možnosti pravidel výstrah ve financích a provozu](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Můžete například nastavit následující výstrahy, abyste poskytli zpětnou vazbu o stavu zprávy:
 
 - Vytvořte obchodní událost ("Odeslat externě"), která se použije, když zpráva obsahuje text *Chyba*.
 - Odešlete oznámení a e-mail správci IT nebo vedoucímu výroby.
+

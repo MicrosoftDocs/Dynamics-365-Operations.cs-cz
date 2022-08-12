@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a6b9cf8327f65371f8362a5729bb32746d900cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed83450592d85205743c9ff1aefd0e66e5d2b90c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885979"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111952"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Pracovní příkazy a dlouhodobý majetek
 
 [!include [banner](../../includes/banner.md)]
 
 
-V modulu Správa majetku mohou být majetky spojeny v dlouhodobý majetek a pro tyto majetky můžete vytvořit pracovní příkazy. Pokud použijete tuto funkci, můžete získat úplný přehled o dlouhodobém majetku, souvisejících investičních projektech a nákladech registrovaných u investičních projektů v modulu **Řízení projektů a účetnictví** a v modulu **Dlouhodobý majetek** v Microsoft Dynamics 365 for Finance and Operations.
+V modulu Správa majetku mohou být majetky spojeny v dlouhodobý majetek a pro tyto majetky můžete vytvořit pracovní příkazy. Pokud použijete tuto funkci, můžete získat úplný přehled o dlouhodobém majetku, souvisejících investičních projektech a nákladech registrovaných u investičních projektů v modulech **Řízení projektů a účetnictví** a **Dlouhodobý majetek** finančních a provozních aplikací.
 
 >[!NOTE]
 >Pole **Číslo dlouhodobého majetku** je vyplněno v projektu úlohy pracovního příkazu pouze v případě, že jako typ projektu v projektu pracovního příkazu je vybrán typ **Investice**.

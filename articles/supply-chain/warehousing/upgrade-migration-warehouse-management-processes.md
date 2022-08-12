@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857076"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065801"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -37,11 +37,11 @@ Během upgradu jsou všechny produkty, které jsou přiřazeny ke skupině dimen
 Po upgradu však můžete možnosti sady migrace v procesu **změnit skupinu dimenzí úložiště položek** použít k odblokování produktů, které byly zablokovány během upgradu, a následně zpracovat transakce pro tyto produkty.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Povolení položek v Supply Chain Management 
-V aplikaci Supply Chain Management je tato změna potřeba, protože sledování položky je součástí procesů řízení skladu. Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat procesy řízení skladů, je nutné nakonfigurovat následující:
--   Existují sklady musí být povoleny, aby bylo možné používat procesy správy skladu. 
--   Existující uvolněné produkty musí mít přiřazenu skupinu dimenzí úložiště, která používá procesy správy skladu. 
+V aplikaci Supply Chain Management je tato změna potřeba, protože sledování položky je součástí procesů řízení skladu (WMS). Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat WMS, je nutné nakonfigurovat následující:
+-   Existují sklady musí být povoleny, aby bylo možné používat WMS 
+-   Existující uvolněné produkty musí mít přiřazenu skupinu dimenzí úložiště, která používá WMS 
 
-Pokud zdrojové skupiny dimenze úložiště používají dimenzi zásob ID palety, musí být umístění stávajících zásob na skladě, které používají dimenzi skladu ID palety přidružené k profilu umístění, kde je vybrán parametr **Použít sledování registrační značky**. Pokud nemusí být stávající sklady povoleny, aby mohly používat procesy řízení skladů, můžete změnit skupiny dimenzí úložiště ze stávajících zásob na skladě do skupin, které zpracovávají pouze dimenze Pracoviště, Sklad a Umístění zásob. 
+Pokud zdrojové skupiny dimenze úložiště používají dimenzi zásob ID palety, musí být umístění stávajících zásob na skladě, které používají dimenzi skladu ID palety přidružené k profilu umístění, kde je vybrán parametr **Použít sledování registrační značky**. Pokud nemusí být stávající sklady povoleny, aby mohly používat WMS, můžete změnit skupiny dimenzí úložiště ze stávajících zásob na skladě do skupin, které zpracovávají pouze dimenze Pracoviště, Sklad a Umístění zásob. 
 
 > [!NOTE] 
 >  Můžete změnit skupinu dimenze úložiště i v případě, že existují otevřené skladové transakce.
@@ -56,12 +56,12 @@ Položky, které budou použity jako součást procesů správy skladu, musí b�
 Pokud chcete odblokovat produkty, které byly zablokovány během upgradu, musíte vybrat novou skupinu dimenzí úložiště pro produkty. Mějte na paměti, že můžete změnit skupinu dimenze úložiště i v případě, že existují otevřené skladové transakce. Chcete-li používat položky, které byly zablokovány během upgradu, jsou k dispozici dvě možnosti:
 
 -   Změňte skupinu dimenze úložiště pro položku na skupinu dimenzí úložiště, která používá pouze dimenze Pracoviště, Sklad a Místo. Výsledkem této změny je, že se přestane používat dimenze zásob ID palety.
--   Změňte skupinu dimenze úložiště pro položku na skupinu dimenzí úložiště, která používá proces řízení skladů. Výsledkem této změny je, že se nyní začne používat dimenze Registrační značka.
+-   Změňte skupinu dimenze úložiště pro položku na skupinu dimenzí úložiště, která používá WMS. Výsledkem této změny je, že se nyní začne používat dimenze Registrační značka.
 
-## <a name="configure-warehouse-management-processes"></a>Konfigurovat procesy řízení skladu
+## <a name="configure-wms"></a>Nakonfigurovat WMS
 Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí produkty používat skupinu dimenze úložiště, ve které je vybraný parametr **Používat procesy řízení skladu**.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Povolení skladům používat procesy řízení skladu
+### <a name="enable-warehouses-to-use-wms"></a>Umožnění skladům používat WMS
 
 1.  Vytvořte alespoň jeden nový profil skladového místa
 2.  Klikněte na **řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Povolit nastavení skladu**.
@@ -70,7 +70,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 5.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 6.  Zpracujte změny.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Změňte skupinu dimenzí úložiště pro položky tak, aby používaly procesy řízení skladu.
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Změňte skupinu dimenzí úložiště pro položky tak, aby používaly WMS
 
 1.  Vytvořte novou hodnotu **Stav zásob** a přiřaďte ji jako **výchozí ID stavu zásob** v nastavení **parametry správy skladu**.
 2.  Vytvořte novou skupinu dimenzí úložiště, kde je vybrán parametr **používat procesy správy skladu**.

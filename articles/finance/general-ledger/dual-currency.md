@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906348"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065739"
 ---
 # <a name="dual-currency"></a>Duální měna
 
 [!include [banner](../includes/banner.md)]
 
-Funkce, jež byla představena v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 8.1 (říjen 2018) umožňuje změnu účelu zúčtovací měny a její použití jako druhé zúčtovací měny. Tato funkce je někdy označována jako *duální měna*. Změny pro duální měnu nelze vypnout pomocí konfiguračního klíče nebo parametru. Vzhledem k tomu, že se měna vykazování používá jako druhá zúčtovací měna, způsob výpočtu zúčtovací měny v logice zaúčtování byl změněn.
+Funkce, jež byla představena v aplikaci Microsoft Dynamics 365 Finance verze 8.1 (říjen 2018) umožňuje změnu účelu zúčtovací měny a její použití jako druhé zúčtovací měny. Tato funkce je někdy označována jako *duální měna*. Změny pro duální měnu nelze vypnout pomocí konfiguračního klíče nebo parametru. Vzhledem k tomu, že se měna vykazování používá jako druhá zúčtovací měna, způsob výpočtu zúčtovací měny v logice zaúčtování byl změněn.
 
 Byly navíc zdokonaleny různé moduly pro sledování, vykazování a používání měny vykazování v různých procesech. Mezi ovlivněné moduly patří:
 
@@ -209,3 +209,4 @@ V konsolidaci hlavní knihy byla přidána nová možnost pro konsolidaci část
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

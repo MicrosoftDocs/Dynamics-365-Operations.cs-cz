@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853610"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124217"
 ---
 # <a name="create-alert-rules"></a>Vytváření pravidel výstrah
 
@@ -75,7 +75,7 @@ Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit prav
 
 ## <a name="alerts-as-business-events"></a>Výstrahy jako obchodní události
 
-Výstrahy lze externě odesílat pomocí architektury obchodních událostí. Při vytváření výstrahy nastavte **Pro celou organizaci** na **Ne** a **Odeslat externě** na **Ano**. Po aktivaci obchodní události pomocí výstrahy můžete spustit tok vestavěný v Power Automate pomocí spouštěče **Při výskytu obchodní události** v konektoru Finance and Operations nebo explicitně odeslat událost do koncového bodu obchodních událostí prostřednictvím **Katalogu obchodních událostí**.
+Výstrahy lze externě odesílat pomocí architektury obchodních událostí. Při vytváření výstrahy nastavte **Pro celou organizaci** na **Ne** a **Odeslat externě** na **Ano**. Po aktivaci obchodní události pomocí výstrahy můžete spustit tok vestavěný v Power Automate pomocí spouštěče **Při výskytu obchodní události** v konektoru financí a provozu nebo explicitně odeslat událost do koncového bodu obchodních událostí prostřednictvím **Katalogu obchodních událostí**.
 
 ## <a name="create-an-alert-rule"></a>Vytvoření pravidla výstrahy
 

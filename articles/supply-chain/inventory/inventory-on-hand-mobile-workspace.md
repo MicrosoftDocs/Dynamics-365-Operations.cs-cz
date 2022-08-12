@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d493164b754b86a9df9ce4dcf9df8b20eeb55c5c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 640a45e29627ffe56535c7d05419309688e8ecb6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859423"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069809"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilní pracovní prostor zásob na skladě
 
@@ -29,7 +29,7 @@ ms.locfileid: "8859423"
 
 Tento článek obsahuje informace o mobilním pracovním prostoru **Zásoby na skladě**. Díky tomuto pracovnímu prostor získáte přehled o rezervovaných a dostupných zásobách, a to kdykoli a kdekoli.
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations (Dynamics 365).
+Tento mobilní pracovní prostor je určen k použití s finanční a provozní mobilní aplikací (Dynamics 365).
 
 ## <a name="overview"></a>Přehled
 Firmy mají obvykle více dodávek a příjmů zásob každý den. Tyto pohyby neustále mění stav zásob na skladě. Mobilní pracovní prostor **Zásoby na skladě** umožňuje zobrazit stav zásob na skladě ve společnosti. Můžete tak získat nejnovější informace o skladových zásobách na mobilních zařízeních vašeho výběru. Bez ohledu na to, zda pracujete ve skladu, nákupu, prodeji, výrobě nebo řízení nebo mají jiné role, můžete přistupovat k datům na skladě kdykoli a kdekoli. 
@@ -94,7 +94,7 @@ Pokud je ve vaší organizaci nasazena Platform Update 3 nebo novější, správ
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
+Stáhněte a nainstalujte finanční a provozní mobilní aplikaci (Dynamics 365):
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -131,3 +131,4 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 36
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

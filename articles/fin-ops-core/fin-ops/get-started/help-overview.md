@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898362"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124187"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -98,7 +98,7 @@ Více informací najdete v části [Příručka pro přispěvatele k dokumentaci
 
 Průvodce úkolem je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) průvodce úkolem v podokně **Nápověda**. Po prvním zvolení průvodce záznamem úloh se v podokně **Nápověda** zobrazí podrobné pokyny pro úkol. K dispozici jsou lokalizovaní průvodci záznamem úloh.
 
-Společnost Microsoft vydala knihovny průvodců záznamem úloh pro verze produktů prostřednictvím vydání aplikace Dynamics 365 for Finance and Operations z prosince 2017. Část [Přístup k průvodcům úkolem z podokna Nápověda](#accessing-task-guides-from-the-help-pane) tohoto článku popisuje, jak najít správné průvodce záznamem úloh pro daný produkt.
+Společnost Microsoft vydala knihovny průvodců záznamem úloh pro verze produktů prostřednictvím vydání Dynamics 365 Finance a provoz z prosince 2017. Část [Přístup k průvodcům úkolem z podokna Nápověda](#accessing-task-guides-from-the-help-pane) tohoto článku popisuje, jak najít správné průvodce záznamem úloh pro daný produkt.
 
 ![Zobrazení pro čtení Průvodce záznamem úloh.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9e6472fa9024f19b5c35e91b3c7c36eb311bc31
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861698"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125075"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -1026,11 +1026,12 @@ Nebyly přidány následující nové funkce.
 |------------------|------------------|-----------------|------------------------|
 | Stáhnout, nainstalovat a nakonfigurovat Portál skladu pro mobilní zařízení. | Portál můžete stáhnout, nainstalovat a nakonfigurovat při instalaci aplikace Microsoft Dynamics AX pomocí standardního nastavení. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Prostřednictvím položky nabídky v modulu Řízení skladu si můžete stáhnout samostatný instalační program. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Pokud nastavíte možnost použití funkce mobilního zařízení, je nutné Portál skladu pro mobilní zařízení nainstalovat a nakonfigurovat místně a připojit se k aplikaci Dynamics AX v cloudu. |
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations](whats-new-changed.md)
+[Domovská stránka Co je nového a co se změnilo ve finanční a provozní aplikaci](whats-new-changed.md)
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

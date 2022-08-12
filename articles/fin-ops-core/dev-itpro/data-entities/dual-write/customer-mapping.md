@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890449"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111717"
 ---
 # <a name="integrated-customer-master"></a>Integrovaná hlavní data odběratelů
 
@@ -57,3 +57,4 @@ Finanční a provozní aplikace | Aplikace Customer Engagement         | popis
 [Platební podmínky](mapping-reference.md#161) | msdyn_paymentterms | Tato šablona synchronizuje referenční data platebních podmínek (podmínek platby) pro odběratele a dodavatele.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: Nastavení mobilního pracovního prostoru správy majetku
-description: Tento článek popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a Finance a provoz (Dynamics 365) ke správě mobilního pracovního prostoru Správa majetku, který mohou pracovníci používat k provádění úkolů správy majetku.
+description: Tento článek popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a finance a provoz (Dynamics 365) ke správě mobilního pracovního prostoru Správa majetku, který mohou pracovníci používat k provádění úkolů správy majetku.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870835"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070046"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Nastavení mobilního pracovního prostoru správy majetku
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a Finance a provoz (Dynamics 365) ke správě mobilního pracovního prostoru **Správa majetku**, který mohou pracovníci používat k provádění úkolů správy majetku.
+Tento článek popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a finance a provoz (Dynamics 365) ke správě mobilního pracovního prostoru **Správa majetku**, který mohou pracovníci používat k provádění úkolů správy majetku.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Nastavení uživatelů pracovníků údržby v Supply Chain Management
 
@@ -41,7 +41,7 @@ Pro každého uživatele, který vyžaduje přístup do mobilního pracovního p
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Publikování mobilního pracovního prostoru správy majetku
 
-Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Operations (Dynamics 365) musíte publikovat mobilní pracovní prostor **Správa majetku**.
+Pro zpřístupnění funkcí správy aktiv ve finanční a provozní mobilní aplikaci (Dynamics 365) musíte publikovat mobilní pracovní prostor **Správa majetku**.
 
 1. V části Supply Chain Management vyberte tlačítko **Nastavení** (symbol ozubeného kola v pravém horním rohu) a poté v nabídce vyberte **Mobilní aplikace**.
 1. V dialogovém okně **Spravovat mobilní aplikaci** najděte dlaždici **Správa majetku**. Pokud obsahuje text „V metadatech - nepublikováno,“ pracovní prostor ještě nebyl publikován. Pokud obsahuje text „V metadatech - publikováno,“ pracovní prostor již byl publikován a zbytek tohoto postupu můžete přeskočit.
@@ -50,14 +50,14 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 
 1. Vyberte dlaždici **Správa majetku** a poté vyberte **Publikovat** na panelu nástrojů. Po několika sekundách byste měli obdržet oznámení, které uvádí, že pracovní prostor byl úspěšně publikován. Text na dlaždici by se měl navíc změnit na „V metadatech - publikováno“.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Nainstalujte a nastavte mobilní aplikaci Finance and Operations (Dynamics 365)
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Nainstalujte a nastavte finanční a provozní mobilní aplikaci (Dynamics 365)
 
-1. Chcete-li nainstalovat **Microsoft Finance and Operations (Dynamics 365)**, přejděte do jednoho z následujících obchodů s aplikacemi na vašem mobilním zařízení:
+1. Chcete-li nainstalovat **Microsoft finance a provoz (Dynamics 365)**, přejděte do jednoho z následujících obchodů s aplikacemi na vašem mobilním zařízení:
 
     - [Pro zařízení Google Android](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Pro zařízení Apple iOS](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Otevřete aplikaci Finance and Operations (Dynamics 365). Měla by se zobrazit přihlašovací stránka. Do pole **Přihlásit se** zadejte adresu URL pro správu dodavatelského řetězce nebo vyberte poslední adresu URL v seznamu **Nedávná prostředí** a potom klepněte na **Připojit**.
+1. Otevřete finanční a provozní aplikaci (Dynamics 365). Měla by se zobrazit přihlašovací stránka. Do pole **Přihlásit se** zadejte adresu URL pro správu dodavatelského řetězce nebo vyberte poslední adresu URL v seznamu **Nedávná prostředí** a potom klepněte na **Připojit**.
 
     ![Přihlašovací stránka.](media/mobile-app-sign-in.png "Přihlašovací stránka")
 
@@ -80,7 +80,7 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 
 Další informace o tom, jak pracovat s mobilním pracovním prostorem **Správa majetku**, získáte v tématu [Použití mobilního pracovního prostoru Správa majetku](asset-management-mobile-workspace.md).
 
-Více informací o mobilní aplikaci Finance and Operations (Dynamics 365) získáte v tématu [Domovská stránka mobilní aplikace](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Více informací o finanční a provozní mobilní aplikaci (Dynamics 365) získáte v tématu [Domovská stránka mobilní aplikace](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

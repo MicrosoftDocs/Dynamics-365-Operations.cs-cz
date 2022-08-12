@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670433"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135562"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>Metoda LIFO s fyzickou hodnotou a označením
 
@@ -128,7 +128,7 @@ Následující obrázek znázorňuje tyto transakce:
 - 6a. Fyzický výdej ze skladu pro množství 1 při ceně 23,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí)
 - 7\. Je provedena uzávěrka skladu. Na základě principu značení, které využívá metodu LIFO, jsou označené transakce vzájemně vyrovnány. V tomto příkladu se 3b vyrovná proti 2b a úprava pro 6,00 USD se zaúčtuje do 3b, aby se hodnota dostala na 22,00 USD. V tomto příkladu nejsou prováděna žádná další vyrovnání, protože uzavření vytváří vyrovnání pouze pro finančně aktualizované transakce.
 
-Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč.
+Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 17,50 Kč.
 
 Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849293"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065547"
 ---
 # <a name="flushing-principles"></a>Principy vyprazdňování
 
@@ -50,7 +50,7 @@ Zásady spotřeby se konfigurují v hierarchii výchozích hodnot. Hierarchie za
 ## <a name="description-of-the-flushing-principles"></a>Popis zásad vyprázdnění
 
 ### <a name="manual"></a>Ruční
-Princip ručního vyprazdňování označuje, že registrace spotřeby materiálu je ruční operace. Tento princip je relevantní, pokud například chcete mít možnost sledování času a musí být vzato v úvahu množství spotřebovaných dávkových nebo sériových čísel pro účely sledování. Ruční spotřeba je registrována v deníku výrobních výdejek. Pro položky, které jsou povoleny pro rozšířené skladové procesy lze použít ručního tok.
+Princip ručního vyprazdňování označuje, že registrace spotřeby materiálu je ruční operace. Tento princip je relevantní, pokud například chcete mít možnost sledování času a musí být vzato v úvahu množství spotřebovaných dávkových nebo sériových čísel pro účely sledování. Ruční spotřeba je registrována v deníku výrobních výdejek. Pro položky, které jsou povoleny pro procesy řízení skladu (WMS), lze použít ručního tok.
 
 ### <a name="start"></a>Spuštění
 Počáteční princip vyprazdňování určuje, že materiály budou automaticky spotřebovávány při zahájení výrobní zakázky. Množství materiálu, který je spotřebován, je úměrné počátečnímu množství. Když je počáteční princip vyprazdňování použit společně s principem provedení výroby, lze ho použít také k vyprázdnění materiálů při zahájení operace nebo úlohy procesu. Tento princip je relevantní, pokud je například odchylka spotřeby kusovníku nízká, materiály jsou s nízkou hodnotou, neexistují žádné požadavky na sledování a na operace je krátká doba zpracování. 

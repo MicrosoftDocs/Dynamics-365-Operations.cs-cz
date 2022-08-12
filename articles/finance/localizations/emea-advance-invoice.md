@@ -2,7 +2,7 @@
 title: Zálohové faktury pro východní Evropu
 description: Tento článek obsahuje informace o zálohových fakturách pro východní Evropu. Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce.
 author: EvgenyPopovMBS
-ms.date: 05/25/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c722d8215c2b65e24008042c9a4d65bb419ad46a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcf8424b311b595a114d3429fa7a3252e47e643d
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886286"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135925"
 ---
 # <a name="advance-invoices-for-eastern-europe"></a>Zálohové faktury pro východní Evropu
 
@@ -38,6 +38,26 @@ Funkce zálohové faktury umožňuje provádět následující činnosti:
 - Propojení záloh přijatých od odběratelů k zálohovým fakturám (před nebo po zaúčtování zálohy).
 - Změna zaúčtování DPH do zaúčtované zálohy (tj. převést zálohu na platbu nebo platbu na zálohu, nebo změnit datum zaúčtování, sazby daně nebo částky).
 - *Pouze pro Českou republiku:* Vytvořte daňový doklad pro dodávku podléhající DPH.
+
+Tento článek obsahuje následující části:
+
+- [Zálohové faktury pro Polsko](#advance-invoices-for-poland)
+- [Nastavení parametrů modulu Pohledávky pro zálohové faktury](#set-up-accounts-receivable-for-advance-invoices)
+- [Vytvoření zálohové faktury odběratele](#create-a-customer-advance-invoice)
+- [DPH na zálohových fakturách](#vat-on-advance-invoices)
+- [Propojení zálohové faktury s prodejní objednávkou nebo volnou fakturou](#link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice)
+- [Vytvoření zálohové faktury odběratele z prodejní objednávky](#create-a-customer-advance-invoice-from-a-sales-order)
+- [Vytvoření zálohové faktury odběratele z faktury s volným textem](#create-a-customer-advance-invoice-from-a-free-text-invoice)
+- [Tisk zálohové faktury](#print-an-advance-invoice)
+- [Vytvoření návrhu platby ze zálohové faktury](#create-a-payment-proposal-from-an-advance-invoice)
+- [Připojení zálohy k zálohové faktuře](#link-a-prepayment-to-an-advance-invoice)
+- [Připojení zálohové faktury k záloze](#link-an-advance-invoice-to-a-prepayment)
+- [Dobropisy zálohových faktur](#advance-invoice-credit-notes)
+- [Daňové doklady pro Českou republiku](#tax-documents-for-the-czech-republic)
+- [Nastavení parametrů modulu Závazky pro zálohové faktury](#set-up-accounts-payable-for-advance-invoices)
+- [Tvorba zálohové faktury dodavatele](#create-a-vendor-advance-invoice)
+- [Použití funkce zpracování zálohové faktury a zálohy](#use-the-advance-invoice-and-prepayment-handling-functionality)
+- [Vrácení částek DPH pro Česko](#reversing-sales-tax-amounts-for-czech-republic)
 
 ## <a name="advance-invoices-for-poland"></a>Zálohové faktury pro Polsko
 
@@ -243,5 +263,33 @@ Pro propojení zálohové faktury s nákupní objednávkou postupujte takto.
     | Procento | Zadejte procento zálohy pro nákupní objednávku. |
     | Aktualizovat nákup | Vyberte možnost. Částka zálohové faktury se vypočítá na základě částky nákupní objednávky pro položky. |
     | Účetní profil se zálohovým dokladem deníku | Zadejte účetní profil pro zálohu. |
+
+## <a name="use-the-advance-invoice-and-prepayment-handling-functionality"></a>Použití funkce zpracování zálohové faktury a zálohy
+
+Můžete použít funkce **Zálohová faktura** a **Zpracování plateb předem** v obchodním procesu. Následuje příklad:
+
+1. Uživatel odešle zákazníkovi zálohovou fakturu s DPH k platbě předem. Zálohová faktura se v účetní knize neúčtuje.
+2. Uživatel vytvoří a zaúčtuje zálohu bez DPH.
+3. Uživatel vytvoří zpracování zálohy a propojí ji se zálohovou fakturou. Uživatel následně zaúčtuje zpracování zálohy a vytvoří daňový doklad. Systém zaúčtuje DPH do účetní knihy a přiřadí DPH k platbě předem.
+
+> [!NOTE]
+> Vymažte hodnotu v poli **Účetní profil** na pevné záložce **Zálohová faktura** na kartě **Aktualizace** **parametrů pohledávek**. Při vytváření zálohové faktury nastavte možnost **Po zdanění** na **Ano**.
+
+Chcete-li vytvořit zpracování záloh a propojit ho se zálohovou fakturou, postupujte takto.
+
+1. Přejděte na **Pohledávky** \> **Zákazníci** a vyhledejte a otevřete záznam zákazníka.
+2. V podokně akcí vyberte **Zákazník** \> **Transakce**, vyberte zálohovou transakci a poté vyberte **Zpracování záloh**.
+3. Nastavte možnost **Transformovat na platbu** na **Ne**.
+4. Vyberte **Zálohová faktura** k propojení zpracování zálohy se zálohovou fakturou. Systém automaticky vytvoří řádky DPH ze zálohové faktury.
+5. Zaúčtujte zpracování zálohy. Systém automaticky vytvoří transakce DPH pro zálohu.
+
+## <a name="reversing-sales-tax-amounts-for-czech-republic"></a>Vrácení částek DPH pro Česko
+
+Chcete-li ručně definovat stornování částek DPH na základě zpracování platby předem, aktivujte funkci **(Česky) Aktivovat ruční částky DPH na vstupu**. Informace o aktivaci funkcí naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+> [!NOTE]
+> Tato funkce je k dispozici pouze pro závazky.
+
+Když označíte fakturační transakci k úhradě proti platbě, můžete aktualizovat částky DPH pro zrušení na kartě **Částky DPH** stránky **Uhradit transakci**. Podle potřeby můžete aktualizovat částky daně v poli **Částka daně pro vypořádání**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

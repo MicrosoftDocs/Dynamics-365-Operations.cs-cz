@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8cfbcfea3c6056d87eb600c9a2f9e0d1727c30ff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f73f7189ad82d85169a4e0df573dd26dab8bb009
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894736"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070593"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Vytvoření konfigurací v Regulatory Configuration Services (RCS) a jejich odeslání do globálního úložiště
 
@@ -37,7 +37,7 @@ Než budete moci tyto kroky dokončit, je nutné nejprve splnit následující p
 
 Musíte se ujistit, že je pro vaši organizaci zajištěno prostředí RCS. Pokud pro vaši organizaci nemáte zřízenou instanci RCS, můžete tak učinit pomocí následujících kroků:
 
-1. V aplikaci Finance a Operace přejděte na **Správa organizace** \> **Pracovní prostory** \> **Elektronické vykazování**.
+1. Ve finanční a provozní aplikaci přejděte na **Správa organizace** \> **Pracovní prostory** \> **Elektronické vykazování**.
 2. V části **Související odkazy / Externí odkazy** vyberte **Regulatory services – Konfigurace** a poté postupujte podle pokynů k **přihlášení** k jejímu ustanovení.
 
 Pokud již bylo pro vaši organizaci zřízeno prostředí RCS, přistupte k ní pomocí adresy URL a vyberte možnost **přihlásit**.
@@ -105,3 +105,4 @@ Verze konfigurace je odstraněna a zobrazí se potvrzovací zpráva.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

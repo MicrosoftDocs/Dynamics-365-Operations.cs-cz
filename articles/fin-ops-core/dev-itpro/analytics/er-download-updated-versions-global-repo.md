@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dac106a592a6a70aae6b245bce74d21c98cad10
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847539"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108432"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Import aktualizovaných verzí konfigurací ER
 
@@ -28,7 +28,7 @@ ms.locfileid: "8847539"
 
 [Úložiště](general-electronic-reporting.md#Repository) elektronického výkaznictví (ER) se používají ke sdílení [konfigurací ER](general-electronic-reporting.md#Configuration). Můžete [importovat](download-electronic-reporting-configuration-lcs.md) konfigurace ER z různých úložišť do vaší instance Microsoft Dynamics 365 Finance. Při importu konfigurací ER mohou [poskytovatelé konfigurací](general-electronic-reporting.md#Provider) publikovat nové [verze](general-electronic-reporting.md#component-versioning) v úložištích, aby bylo možné je sdílet.
 
-Tento článek vysvětluje, jak importovat aktualizované verze konfigurací ER z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurační služba](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tento článek vysvětluje, jak importovat aktualizované verze konfigurací ER z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 Finance – Regulatory Services, konfigurační služba](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Kontrola dostupných aktualizovaných verzí
 

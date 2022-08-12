@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909605"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067844"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Parametry skladu pro zpracování vlny
 
@@ -52,7 +52,7 @@ Pro nastavení parametrů skladu při zpracování vlny postupujte následujíc�
 > [!NOTE]
 > V šabloně vlny používané pro zpracování vlny můžete zadat nastavení automatizace zpracování vlny. Je-li nastaven plán pro dávkovou úlohu, je třeba koordinovat časování v rámci nastavení automatizace v šabloně vlny. Další informace naleznete v tématu [Vytvoření šablony vlny](wave-templates.md).
 >
-> Pokud používáte *Správa přepravy* a *Pokročilé řízení skladu*, můžete určit, zda chcete konsolidovat vytížení při zpracování vlny. To je například užitečné v případě, že lze několik malých nákladů expedovat současně. Chcete-li konsolidovat vytížení při zpracování vlny, na kartě **Vytížení** zaškrtněte políčko **Konsolidovat vytížení během zpracování vlny**.</P>
+> Pokud používáte *Správa přepravy* a *procesy řízení skladu* (WMS), můžete určit, zda chcete konsolidovat vytížení při zpracování vlny. To je například užitečné v případě, že lze několik malých nákladů expedovat současně. Chcete-li konsolidovat vytížení při zpracování vlny, na kartě **Vytížení** zaškrtněte políčko **Konsolidovat vytížení během zpracování vlny**.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Nastavení úplné nebo částečné rezervace pro vlny výroby
 

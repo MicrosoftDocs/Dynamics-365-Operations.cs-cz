@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879797"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111963"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
@@ -29,7 +29,7 @@ Tento článek vysvětluje, jak povolit duální zápis z Microsoft Dynamics Lif
 Zákazníci musejí vyplnit integraci Power Platform, jak je popsáno v následujících tématech:
 
 - Pokud ještě nepoužíváte Microsoft Power Platform a chcete rozšířit své prostředí finančních a provozních aplikací přidáním možností platformy, přečtěte si téma [Integrace Power Platform – Aktivace po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Pokud již máte prostředí Dataverse a Power Platform a chcete je propojit s prostředím finančních a provozních aplikací, viz[Integrace Power Platform – Aktivace po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Pokud již máte prostředí Dataverse a Power Platform a chcete je propojit s prostředím finančních a provozních aplikací, viz [Integrace Power Platform – Aktivace po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Nastavení duálního zápisu pro nová nebo existující prostředí Dataverse
 
@@ -53,7 +53,7 @@ Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Odkaz na prostředí Power Platform.":::
 
-8. Po dokončení propojení se zobrazí hypertextový odkaz. Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí Finance and Operations. Odtud můžete nastavit mapování entit.
+8. Po dokončení propojení se zobrazí hypertextový odkaz. Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí financí a provozu. Odtud můžete nastavit mapování entit.
 
 ## <a name="linking-mismatch"></a>Nesoulad propojení
 
@@ -71,3 +71,4 @@ Pokud se zobrazí toto varování, zkuste jedno z následujících řešení:
 V minulosti byla k dispozici možnost ručního lístku podpory, ale to bylo předtím, než existovala možnost 1 výše.  Společnost Microsoft již nepodporuje požadavky na ruční opětovné propojení prostřednictvím lístků podpory.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

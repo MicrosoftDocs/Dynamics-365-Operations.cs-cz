@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849438"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166868"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.24. (únor 2022)
 
@@ -46,7 +46,7 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 | Modul | Název funkce ve správě funkcí | Další informace |
 |---|---|---|
 | Řízení výroby | Kontrola dostupnosti materiálu na vyžádání pro výrobní zakázky | Tato funkce umožňuje rychlejší otevření stránky **Výrobní zakázky pro uvolnění**, která je dostupná v pracovním prostoru **Správa výrobního provozu**. Bez této funkce systém automaticky zkontroluje, zda jsou dostupné materiály pro všechny uvedené výrobní zakázky, jakmile stránku otevřete, což může trvat velice dlouho, pokud máte velký počet zakázek. Pokud je tato funkce povolena, systém místo toho poskytuje tlačítko na panelu nástrojů, které můžete použít ke spuštění kontroly materiálu pouze u vybraných zakázek a v případě potřeby. |
-| Řízení výroby | (Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS) | Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Tato funkce podporuje pouze položky, které nemají povoleno používat pokročilé skladové procesy (WMS). Podpora pro položky s podporou WMS je naplánována na budoucí vydání.<p>Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, musí tyto organizace také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu. |
+| Řízení výroby | Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS) | Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Tato funkce podporuje pouze položky, které nemají povoleno používat procesy řízení skladu (WMS). Podpora pro položky s podporou WMS je naplánována na budoucí vydání.<p>Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, musí tyto organizace také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu. |
 | Řízení výroby | Vykázání jako dokončeno v úlohách správy skladu pro jednotky škálování cloudu a hraniční sítě | Tato funkce umožňuje pracovníkům používat mobilní aplikaci Warehouse Management k nahlášení výrobní nebo dávkové zakázky jako dokončené, když aplikace běží spolu s úlohou pro správu skladu v jednotce škálování cloudu a hraniční sítě. Další informace viz [Vykázání jako dokončené a odložené na jednotce škálování](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Řízení skladu | Nové stránky pracovní plochy plánování vytížení | Aktivuje dvě nové stránky pracovní plochy pro plánování vytížení: **Pracovní plocha pro plánování příchozího vytížení** a **Pracovní plocha pro plánování odchozího vytížení**. |
 
@@ -94,3 +94,4 @@ Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

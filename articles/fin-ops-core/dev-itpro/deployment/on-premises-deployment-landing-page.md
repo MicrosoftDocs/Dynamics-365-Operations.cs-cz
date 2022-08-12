@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867405"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103965"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -53,7 +53,7 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Import konfigurací elektronického výkaznictví](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generování dokumentů, publikování a tisk v nasazeních on-premises](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurace proxy pro místní prostředí](onprem-reverseproxy.md)
-- [Nastavení technické podpory pro aplikace Finance and Operations](../lifecycle-services/support-experience.md)
+- [Nastavení technické podpory pro finanční a provozní aplikace](../lifecycle-services/support-experience.md)
 - [Připojení klienta k internetu](../user-interface/client-disconnected.md)
 - [Použití aktualizací na místní nasazení](apply-updates-on-premises.md)
 - [Opětovné nasazení místních prostředí](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Skripty pro řešení problémů v místních prostředích](onprem-tsg-implementations.md)
 - [Rotace certifikátů](certificate-rotation-on-prem.md)
 - [Místní diagnostika](on-premises-diagnostics.md)
-- [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Odebrané nebo zastaralé funkce pro finance a provoz](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

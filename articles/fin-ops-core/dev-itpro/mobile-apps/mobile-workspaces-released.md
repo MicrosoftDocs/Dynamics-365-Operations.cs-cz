@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 79abd22bab9ec88358fa039060a67006fc53cb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3c9b97d02532b05aac2b02851f1b7b705a047726
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868633"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068128"
 ---
 # <a name="available-mobile-workspaces"></a>Dostupné mobilní pracovní prostory
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Tento článek uvádí seznam mobilních pracovních prostorů, které jsou k použití pro mobilní aplikaci Finance and Operations (Dynamics 365). Níže uvedená tabulka uvádí plán ukončení podpory pro každý z těchto mobilních pracovních prostorů, s údaji o tom, zda se plánuje výměna nebo ne.  
+Tento článek uvádí seznam mobilních pracovních prostorů, které jsou k použití pro finanční a provozní mobilní aplikaci (Dynamics 365). Níže uvedená tabulka uvádí plán ukončení podpory pro každý z těchto mobilních pracovních prostorů, s údaji o tom, zda se plánuje výměna nebo ne.  
 
 
 | Mobilní pracovní prostor     | Popis   | Plán ukončení podpory   |
@@ -43,3 +43,4 @@ Tento článek uvádí seznam mobilních pracovních prostorů, které jsou k po
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

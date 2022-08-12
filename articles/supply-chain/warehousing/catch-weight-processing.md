@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070402"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -82,7 +82,7 @@ Pokud je během procesů balení kontejneru zaznamenána skutečná hmotnost na 
 > [!NOTE]
 > Vzhledem k tomu, že možnost **Balení** způsobí aktualizaci zásob pomocí průměrné vydané hmotnosti, může dojít k nesrovnalosti, která by mohla vést k úpravě zisku/ztráty skutečné hmotnosti nebo k rozdílu mezi hmotností zásob na skladě a hmotností štítku skutečné hmotnosti.
 
-Pro interní procesy správy skladu, jako je inventura a opravy, je možné určit, zda by měla být zaznamenána hmotnost či nikoli. Pokud není zaznamenána, bude použita nominální hmotnost. Další možnosti umožňují zachytit hmotnost za jednotku skutečné hmotnosti a podle množství inventury.
+Pro interní procesy, jako je inventura a opravy, je možné určit, zda by měla být zaznamenána hmotnost či nikoli. Pokud není zaznamenána, bude použita nominální hmotnost. Další možnosti umožňují zachytit hmotnost za jednotku skutečné hmotnosti a podle množství inventury.
 
 Můžete také definovat, jakým způsobem je hmotnost zaznamenána. V jednom ze dvou hlavní toků jsou štítky skutečné hmotnosti sledovány a používány k záznamu hmotnosti. V druhém toku nejsou štítky skutečné hmotnosti sledovány.
 
@@ -183,7 +183,7 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Další omezení a chování pro zpracování produktů se skutečnou hmotností se správou skladu
 
 - Během procesů výdeje, kde není uživatel vyzván k identifikaci sledovacích dimenzí, se provádí přiřazení hmotnosti na základě průměrné hmotnosti. K tomuto chování dochází například v případě, že je ve stejném umístění použita kombinace sledovacích dimenzí a poté, co uživatel zpracuje výdej, zůstane v umístění pouze jedna hodnota sledovací dimenze.
-- Pokud jsou zásoby rezervovány pro produkt se skutečnou hmotností, který je konfigurován pro procesy správy skladu, rezervace se provádí na základě definované minimální hmotnosti, a to i v případě, že je toto množství naposledy zpracovávané množství zásob na skladě. Toto chování se liší od chování pro položky, které nejsou nakonfigurovány pro procesy správy skladu. V tomto omezení existuje jedna výjimka. U výrobního výdeje se při výběru posledního manipulačního množství produktu se skutečnou hmotností, které je řízeno sériovým číslem, použije skutečná hmotnost.
+- Pokud jsou zásoby rezervovány pro produkt se skutečnou hmotností, který je konfigurován pro procesy správy skladu (WMS), rezervace se provádí na základě definované minimální hmotnosti, a to i v případě, že je toto množství naposledy zpracovávané množství zásob na skladě. Toto chování se liší od chování pro položky, které nejsou nakonfigurovány pro WMS. V tomto omezení existuje jedna výjimka. U výrobního výdeje se při výběru posledního manipulačního množství produktu se skutečnou hmotností, které je řízeno sériovým číslem, použije skutečná hmotnost.
 - Procesy, které používají hmotnost jako součást výpočtů kapacity (prahové hodnoty vln, maximální pracovní přestávky, maxima kontejnerů, kapacit vytížení místa atd.) nepoužívají skutečnou hmotnost zásob. Místo toho jsou procesy založeny na fyzické hmotnosti zpracování definované pro produkt.
 - Obecně není funkce Commerce podporována pro produkty se skutečnou hmotností.
 - U produktů se skutečnou hmotností nelze stav zásob aktualizovat ze **Změny stavu skladu**.

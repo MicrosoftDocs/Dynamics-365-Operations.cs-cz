@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859659"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065286"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Vytváření odkazů z aplikace Human Resources do jiného prostředí Finance
 
@@ -53,7 +53,7 @@ Každý vytvořený odkaz má definovány následující informace:
 
    Chcete-li najít požadovanou položku nabídky:
    1. Přejděte do prostředí Finance a otevřete stránku, která je cílem navigace. 
-   2. Zkopírujte položku nabídky z adresy URL. Například pokud chcete, aby vás odkaz navedl na seznam zaměstnanců v aplikaci Finance and Operations, zadejte hodnotu, které se objeví v URL adrese za „&mi“. 
+   2. Zkopírujte položku nabídky z adresy URL. Například pokud chcete, aby vás odkaz navedl na seznam zaměstnanců ve finanční a provozní aplikaci, zadejte hodnotu, které se objeví v URL adrese za „&mi“. 
    3. Položka nabídky pro navigaci na stránku se seznamem zaměstnanců v tomto příkladu je: HcmWorkerListPage_Employees.
 
  - **Odkaz na zdroj dat**: Vyberte zdroj dat, na který odkaz ukazuje. Nejběžnější zdroje, jako je například **Pracovník** a **Pozice**, jsou k dispozici.
@@ -63,4 +63,5 @@ Každý vytvořený odkaz má definovány následující informace:
 Správci systému uvidí nově vytvořené odkazy na definovaných stránkách, i když je možnost **Povolit tento odkaz** nastavena na **Ne**. To lze použít k testování odkazů předtím, než budou vystaveny k použití pro jiné zaměstnance. Všechny ostatní role uvidí pouze konfigurované odkazy poté, co bude možnost **Povolit teto odkaz** nastavena na **Ano**. Zaměstnanci, kteří mají přístup ke stránkám, na kterých jsou odkazy k dispozici, budou mít přístup k odkazům.
 
 Uživatelé musí mít v sekundárním prostředí také bezpečnostní práva definovaná pro přístup ke stránkám v tomto prostředí. Pokud ne, zobrazí se při použití odkazu dialogové okno zabezpečení.
+
 
