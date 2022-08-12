@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b6fb9643873178f1cb93e3da15e83598af51de0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910408"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109543"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Toto řešení PowerBI.com bylo vyřazeno jako zdokumentované v [odebraných nebo nepoužívaných funkcích pro modul Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Toto řešení PowerBI.com bylo vyřazeno jako zdokumentované v [odebraných nebo nepoužívaných funkcích pro finanční a provozní modul](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tento článek popisuje řešení PowerBI.com pro **finanční výkonnost**. Popisuje příslušné sestavy a řídicí panel a obsahuje informace o datovém modelu a entitách, které byly použity k sestavení řešení.
 

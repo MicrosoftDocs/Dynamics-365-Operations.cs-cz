@@ -2,7 +2,7 @@
 title: Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
 description: Tento článek poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii a nastavit přímou integraci italské elektronické faktury FatturaPA se systémem Exchange (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853185"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203162"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
 
@@ -69,10 +69,13 @@ Tato sekce doplňuje sekci [Konfigurace nastavení aplikace specifická pro zemi
     - Pro akci **Podepsat dokument** v poli **Název certifikátu** zadejte certifikát digitálního podpisu.
     - Pro akci **Odeslat** nastavte pole **Adresa URL** a **Certifikáty**. Hodnota pole **Certifikáty** je řetěz certifikátů, z nichž první je kořenový certifikát CA (caentrate.cer) a druhý je certifikát klienta.
 
-4. Vyberte **Ověřit**, abyste se ujistili, že byla nastavena všechna požadovaná pole.
-5. Uložte změny a zavřete stránku.
-6. Na kartě **Nastavení** vyberte **Projektové faktury** a poté vyberte **Upravit**.
-7. Opakujte kroky 3 až 5 pro projektové faktury.
+4. V části **Pravidla použitelnosti** si projděte klauzule a zkontrolujte nebo nastavte požadovaná pole:
+    - Zkontrolujte klauzuli **LegalEntityID** a aktualizujte na správnou hodnotu od vaší právnické osoby.
+
+5. Vyberte **Ověřit**, abyste se ujistili, že byla nastavena všechna požadovaná pole.
+6. Uložte změny a zavřete stránku.
+7. Na kartě **Nastavení** vyberte **Projektové faktury** a poté vyberte **Upravit**.
+8. Opakujte kroky 3 až 6 pro projektové faktury.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Konfigurace zpracování kanálu pro import
 

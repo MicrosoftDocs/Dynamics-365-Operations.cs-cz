@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895269"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111811"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -387,7 +387,7 @@ Tato část vás provede kroky v každé šabloně Data Factory.
 3. Krok 3 odstraní duplicitu a sloučí údaje o adrese účtu, kontaktu a dodavatele z aplikace pro zapojení zákazníků.
 4. Krok 4 vytvoří soubory .csv pro finanční a provozní aplikaci k vytvoření nových údajů o adrese založených na adresách účtu, kontaktu a prodejce.
 5. Krok 5-1 vytvoří soubory .csv pro aplikaci pro zapojení zákazníků, aby se vytvořila všechna data adres na základě finanční a provozní aplikace a aplikace pro zapojení zákazníků.
-6. Krok 5-2 převede soubory .csv na formát importu Finance and Operations pro ruční import.
+6. Krok 5-2 převede soubory .csv na formát importu finance a provoz pro ruční import.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -425,3 +425,4 @@ Tato část vás provede kroky v každé šabloně Data Factory.
 ## <a name="learn-more-about-the-template"></a>Další informace o šabloně
 
 Další informace o šabloně najdete v [Komentářích k readme šablony Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+

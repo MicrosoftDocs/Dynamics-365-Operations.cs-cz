@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857221"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103587"
 ---
 # <a name="prospect-to-cash"></a>Zpeněžení potenciálního zákazníka
 
@@ -43,13 +43,13 @@ V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka 
 ## <a name="system-requirements-for-supply-chain-management"></a>Systémové požadavky pro Supply Chain Management
 Integrace zpeněžení potenciálního zákazníka je podporována v následujících verzích:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 Finance a provoz, Enterprise Edition 7.3 (prosinec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (prosinec 2017) - sestavení aplikace 7.3.11971.56116 s aktualizací platformy 12 (7.0.4709.41129)
+- Dynamics 365 Finance a provoz, Enterprise Edition (prosinec 2017) – sestavení aplikace 7.3.11971.56116 s aktualizací Platform Update 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance, Enterprise Edition (červenec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017) - s aktualizací platformy 8 (sestavení aplikace 7.2.11792.56024 se sestavením platformy 7.0.4565.16212).
+- Dynamics 365 Finance a provoz, Enterprise Edition (červenec 2017) – s aktualizací Platform update 8 (sestavení aplikace 7.2.11792.56024 se sestavením platformou 7.0.4565.16212).
 - Následující opravy hotfix jsou vyžadovány:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Sales do aplikace Supply Chain Management. Poskytuje několik různých vylepšení.
@@ -59,9 +59,9 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
     > [!NOTE]
     > Musíte pouze nainstalovat KB4045570, protože instalace obsahuje změny z jiných oprav hotfix. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations verze 1611 (listopad 2016)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 Finance a provoz verze 1611 (listopad 2016)
 
-- Dynamics 365 for Finance and Operations verze 1611 (listopad 2016) s aktualizací platformy 8 nebo vyšší
+- Dynamics 365 Finance a provoz, verze 1611, s aktualizací platformy 8 nebo vyšší (listopad 2016)
 
 - Následující opravy hotfix jsou vyžadovány:
 

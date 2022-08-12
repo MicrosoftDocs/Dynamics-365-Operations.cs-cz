@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16c79a788b66830b77b2cdfb33fd2416c530f7d2
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884076"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111559"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Kódy chyb pro kontrolu stavu mapy tabulky
 
@@ -26,13 +26,13 @@ Tento článek popisuje kódy chyb pro kontrolu stavu mapy tabulky.
 
 ## <a name="error-100"></a>Chyba 100
 
-Chybová zpráva zní: „Požadována minimální verze platformy Finance and Operations je PU 43 ke spuštění doporučení Finance and Operations.“
+Chybová zpráva zní: „Požadována minimální verze finanční a provozní platformy je PU 43 ke spuštění doporučení financí a provozu.“
 
 Tato funkce vyžaduje aktualizace platformy pro verzi finanční a provozní aplikace 10.0.19 nebo novější.
 
 ## <a name="error-400"></a>Chyba 400
 
-Chybová zpráva zní: „Pro entitu \{Finance and Operations UniqueEntityName\} nebyla nalezena žádná registrační data obchodních událostí, což znamená, že buď mapa neběží, nebo jsou všechna mapování polí jednosměrná.“
+Chybová zpráva zní: „Pro entitu \{finance and operations UniqueEntityName\} nebyla nalezena žádná registrační data obchodních událostí, což znamená, že buď mapa neběží, nebo jsou všechna mapování polí jednosměrná.“
 
 ## <a name="error-500"></a>Chyba 500
 
@@ -42,21 +42,21 @@ Zkontrolujte mapování pro mapu tabulky. Pokud jsou jednosměrná z aplikací C
 
 ## <a name="error-900"></a>Chyba 900
 
-Chybová zpráva je „Neplatný formát zdrojového filtru \{sourceFilter\} pro entitu \{Finance and Operations UniqueEntityName\}.“
+Chybová zpráva je „Neplatný formát zdrojového filtru \{sourceFilter\} pro entitu \{finance and operations UniqueEntityName\}.“
 
 Zdrojový filtr, který je zadán na mapě tabulky pro finanční a provozní aplikace, není syntakticky správný. Chcete-li ověřit kritéria filtru, viz [Odstraňování problémů se synchronizací v reálném čase](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## <a name="error-1000"></a>Chyba 1000
 
-Chybová zpráva je „Dotaz entity \{Finance and Operations UniqueEntityName\} používaný pro živou synchronizaci s duálním zápisem je \{Finance and Operations EntityFilterQueryString\}. Záznamy, které splňují kritéria dotazu, budou vybrány pro živou synchronizaci.“
+Chybová zpráva je „Dotaz entity \{finance and operations UniqueEntityName\} používaný pro živou synchronizaci s duálním zápisem je \{EntityFilterQueryString financí a provozu\}. Záznamy, které splňují kritéria dotazu, budou vybrány pro živou synchronizaci.“
 
 Dotaz entity, který byl vrácen, je podpůrným dotazem SQL pro entitu. Zkontrolujte vnitřní spojení nebo filtry v dotazu, které určují obchodní data, která se sbírají pro živou synchronizaci. Vnitřní spojení a filtry jsou povinné podmínky, které musí být splněny pro každý záznam, který je sbírán pro živou synchronizaci s duálním zápisem.
 
 ## <a name="error-1300"></a>Chyba 1300
 
-Chybová zpráva je „Virtuální pole \{s.EntityFieldName\} pro entitu \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} nemusí být sledováno pro duální zápis.“
+Chybová zpráva je „Virtuální pole \{s.EntityFieldName\} pro entitu \{finance and operations EntityMetadata.EntityProperties.LogicalEntityName\} nemusí být sledováno pro duální zápis.“
 
-Virtuální pole z tabulek Finance and Operations nejsou povolena pro sledování. Živá synchronizace může synchronizovat data, ale nebude schopna zachytit změny provedené ve sloupcích.
+Virtuální pole z tabulek financí a provozu nejsou povolena pro sledování. Živá synchronizace může synchronizovat data, ale nebude schopna zachytit změny provedené ve sloupcích.
 
 ## <a name="error-1500"></a>Chyba 1500
 
@@ -66,7 +66,7 @@ Zdroj dat z entity nemá žádné pole mapované pro duální zápis. Změny v p
 
 ## <a name="error-1600"></a>Chyba 1600
 
-Chybová zpráva zní: „Zdroj dat: \{datasource.DataSourceName\} pro entitu \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} má rozsah. Pro odchozí komunikaci jsou vyzvednuty pouze záznamy, které splňují podmínku rozsahu.“
+Chybová zpráva zní: „Zdroj dat: \{datasource.DataSourceName\} pro entitu \{finance and operations EntityMetadata.EntityProperties.LogicalEntityName\} má rozsah. Pro odchozí komunikaci jsou vyzvednuty pouze záznamy, které splňují podmínku rozsahu.“
 
 Entity ve finančních a provozních aplikacích mohou mít zdroje dat, kde jsou povoleny rozsahy filtrů. Tyto rozsahy definují záznamy, které jsou sbírány jako součást živé synchronizace. Pokud jsou některé záznamy přeskočeny z finančních a provozních aplikací do Dataverse, zkontrolujte, zda záznamy splňují kritéria rozsahu na entitě. Jednoduchý způsob, jak provést tuto kontrolu, je spustit dotaz SQL, který se podobá následujícímu příkladu.
 
@@ -81,12 +81,12 @@ Chybová zpráva zní: „Tabulka: \{datasourceTable.Key.subscribedTableName\} p
 Pokud je stejná tabulka sledována více entitami, jakákoli změna tabulky spustí vyhodnocení duálního zápisu pro propojené entity. Přestože klauzule filtru pošlou pouze platné záznamy, hodnocení může způsobit problém s výkonem, pokud existují dlouhotrvající dotazy nebo neoptimalizované plány dotazů. Tento problém nemusí být z obchodního hlediska nevyhnutelný. Pokud však existuje mnoho protínajících se tabulek ve více entitách, měli byste zvážit zjednodušení entity nebo kontrolu optimalizací pro dotazy na entity.
 
 ## <a name="error-1800"></a>Chyba 1800
-Chybová zpráva zní: „Zdroj dat: {} pro entitu CustCustomerV3Entity zahrnuje hodnotu rozsahu. Vložení příchozích záznamů from Dataverse do Finance and Operations mohou být ovlivněny hodnotami rozsahu na entitě. Otestujte aktualizace záznamů z Dataverse do Finance and Operations se záznamy, které neodpovídají kritériím filtru pro ověření vašich nastavení."
+Chybová zpráva zní: „Zdroj dat: {} pro entitu CustCustomerV3Entity zahrnuje hodnotu rozsahu. Vložení příchozích záznamů from Dataverse do financí a provozu mohou být ovlivněny hodnotami rozsahu na entitě. Otestujte aktualizace záznamů z Dataverse do financí a provozu se záznamy, které neodpovídají kritériím filtru pro ověření vašich nastavení.“
 
 Pokud je na entitě ve finančních a provozních aplikacích specifikován rozsah, pak by se příchozí synchronizace z Dataverse do finančních a provozních aplikací otestovat na chování aktualizací u záznamů, které neodpovídají tomuto rozsahu kritérií. Každý záznam, který neodpovídá rozsahu, bude entitou považován za operaci vložení. Pokud v podkladové tabulce existuje záznam, vložení se nezdaří. Před nasazením do produkce doporučujeme otestovat tento případ použití pro všechny scénáře.
 
 ## <a name="error-1900"></a>Chyba 1900
-Chybová zpráva zní: „Entita: má zdroje dat {}, které nejsou sledovány pro odchozí duální zápis. To může ovlivnit výkon dotazu živé synchronizace. Přemodelujte entitu ve Finance and Operations, abyste odstranili nepoužívané zdroje dat a tabulky, nebo implementujte getEntityRecordIdsImpactedByTableChange k optimalizaci dotazů za běhu."
+Chybová zpráva zní: „Entita: má zdroje dat {}, které nejsou sledovány pro odchozí duální zápis. To může ovlivnit výkon dotazu živé synchronizace. Přemodelujte entitu ve financích a provozu, abyste odstranili nepoužívané zdroje dat a tabulky, nebo implementujte getEntityRecordIdsImpactedByTableChange k optimalizaci dotazů za běhu.“
 
 Pokud existuje mnoho zdrojů dat, které se nepoužívají pro sledování ve skutečné živé synchronizaci z finančních a provozních aplikací, existuje možnost, že výkon entity může mít vliv na živou synchronizaci. Chcete-li optimalizovat sledované tabulky, použijte metodu getEntityRecordIdsImpactedByTableChange.
 
@@ -96,3 +96,4 @@ Chybová zpráva zní: „Synchronní pluginy jsou registrovány pro události s
 Synchronní pluginy v entitě Dataverse mohou ovlivnit živou synchronizaci a výkon počáteční synchronizace, protože se zvyšuje zatížení z hlediska transakcí. Doporučený přístup je buď vypnout zásuvné moduly, nebo tyto zásuvné moduly nastavit jako asynchronní, pokud čelíte pomalému načítání při počáteční synchronizaci nebo živé synchronizaci pro konkrétní entitu.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

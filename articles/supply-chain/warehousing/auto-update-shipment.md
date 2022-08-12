@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903746"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067874"
 ---
 # <a name="shipment-auto-updates"></a>Automatické aktualizace dodávek
 
@@ -30,7 +30,7 @@ Funkce Automatické aktualizace dodávky automaticky aktualizuje množství (zvy
 
 Není-li použita funkce automatické aktualizace dodávky, množství pouze automaticky snižuje tok do doby, než bude vytvořena práce ve skladu. Uživatelé musí řádky aktualizovat nebo odstranit ručně a musí tyto řádky znovu uvolnit, pokud dojde ke zvýšení množství objednávky nebo k přidání nových řádků objednávky. Díky funkci automatické dodávky aktualizací mohou podniky bezproblémově poskytovat aktualizace do skladu, aniž by se museli obávat, že související dodávky a vytížení neodráží aktualizace řádku objednávky.
 
-Funkce automatické aktualizace dodávky se použije pro řádky prodejní objednávky i pro řádky převodního příkazu a je zapnuta pro určitý sklad. Z toho vyplývá, že společnosti mohou použít různé zásady dodávek s automatickou aktualizací v různých skladech tak, jak to vyžadují. Ve výchozím nastavení je pro všechny sklady, které používají procesy správy skladu, použita zásada automaticky aktualizovat dodávky pro snížení množství. Je-li použito toto výchozí nastavení, množství automaticky snižuje tok do dodávky a vytížení do doby, než bude vytvořena práce ve skladu. Toto chování se podobá chování, které bylo použito před zavedením funkce Automatické aktualizace dodávky.
+Funkce automatické aktualizace dodávky se použije pro řádky prodejní objednávky i pro řádky převodního příkazu a je zapnuta pro určitý sklad. Z toho vyplývá, že společnosti mohou použít různé zásady dodávek s automatickou aktualizací v různých skladech tak, jak to vyžadují. Ve výchozím nastavení je pro všechny sklady, které používají procesy správy skladu (WMS), použita zásada automaticky aktualizovat dodávky pro snížení množství. Je-li použito toto výchozí nastavení, množství automaticky snižuje tok do dodávky a vytížení do doby, než bude vytvořena práce ve skladu. Toto chování se podobá chování, které bylo použito před zavedením funkce Automatické aktualizace dodávky.
 
 ## <a name="main-elements-of-the-functionality"></a>Hlavní prvky funkce
 

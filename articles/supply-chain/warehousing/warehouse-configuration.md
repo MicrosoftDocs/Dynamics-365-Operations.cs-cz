@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982992"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065175"
 ---
 # <a name="warehouse-configuration-overview"></a>Přehled konfigurace skladu
 
@@ -31,10 +31,10 @@ ms.locfileid: "7982992"
 Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 
 > [!NOTE]
-> Tento článek se vztahuje k funkcím v modulu **Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
+> V tomto článku se týká funkcí v modulu **Správa skladu**. Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
 
 ## <a name="warehouse-layout"></a>Rozvržení skladu
-Systému správy skladu v aplikaci Supply Chain Management umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
+Procesy správy skladu (WMS) v aplikaci Supply Chain Management umožňují flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
 
 -   Je možné vytvořit úložné prostory vysoké a nízké priority pro optimální umístění zboží.
 -   Sklad lze rozdělit do zón a přizpůsobit je různým požadavkům na skladování, jako je například teplota či různé sazby obratu pro zboží.
@@ -42,7 +42,7 @@ Systému správy skladu v aplikaci Supply Chain Management umožňuje flexibiln�
 -   Umístění lze seskupit pomocí nastavení fyzických omezení kapacity.
 -   Můžete řídit způsob skladování a výdeje zboží podle pravidel definovaných dotazem.
 
-Chcete-li použít správu skladu v aplikaci Supply Chain Management, musíte vytvořit skladu a povolit jej pro pokročilejší nebo specializovanější aktivity správy skladu. Na stránce **Sklady** vyberte možnost **Použít procesy správy skladu**.
+Chcete-li používat WMS v Supply Chain Management, musíte vytvořit sklad a povolit jej pro WMS. Na stránce **Sklady** vyberte možnost **Použít procesy správy skladu**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Skupiny zón, zóny, typy skladových míst a skladová místa
 
