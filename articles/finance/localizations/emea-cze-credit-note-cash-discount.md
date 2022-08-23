@@ -1,25 +1,25 @@
 ---
 title: Dobropis u hotovostní slevy
 description: Tento článek obsahuje informace, které pomohou právnickým osobám v rámci České republiky vytvořit, zaúčtovat a tisknout dobropisy pro hotovostní slevy, které jsou přiřazeny odběratelům.
-author: ShylaThompson
+author: mrolecki
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 273063
 ms.search.region: Czech Republic
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c0f806e84cd038f7a9755cc12d71d7050378a8e6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Version 1611
+ms.custom: 273063
+ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
+ms.openlocfilehash: e062fba49c1419abfcd0d82b907126f979ecdd84
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898001"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287853"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 

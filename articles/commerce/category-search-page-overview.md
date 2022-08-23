@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881845"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276366"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání
 
@@ -46,6 +46,12 @@ Pro kategorii jsou nezbytné následující součásti:
     - Název produktu – \[Z–A\]
     - Hodnocení – od nejnižšího po nejvyšší
     - Hodnocení – od nejvyššího po nejnižší
+
+- **Pokročilé možnosti řazení** slouží návštěvníkům webu k řazení produktů pomocí inteligentních kritérií. Aktivací [Doporučení produktu](product-recommendations.md) jsou dostupné následující možnosti řazení. Další informace naleznete v článku [Typy doporučení produktů](product-recommendations.md#types-of-product-recommendations).
+
+    - Nové
+    - Nejprodávanější
+    - Trendy
 
 - **Stránkování** umožňuje návštěvníkům webu přesun z jedné stránky výsledků kategorizovaného produktu na jinou stránku.
 - **Celkový počet** udává celkový počet produktů, které jsou definovány v kategorii.
@@ -78,7 +84,7 @@ Pro stránku výsledků hledání jsou nezbytné následující součásti:
 
 - **Dlaždice umístění produktu** zobrazí produkty pro hledání uživatele. Ve výchozím nastavení jsou tyto dlaždice řazeny podle skóre relevantnosti cloudového vyhledávání uživatele.
 - **Souhr zpřesnění a voleb** jsou filtry, které poskytují počty a které lze je použít k upřesnění položek. Manažer prodeje je konfiguruje jako součást konfigurace metadat „kategorie kanálu a atributy produktu“.
-- **Možnosti řazení** slouží návštěvníkům webu k třídění produktů. Ve výchozím nastavení jsou k dispozici následující možnosti řazení:
+- **Standardní možnosti řazení** slouží návštěvníkům webu k řazení produktů. Ve výchozím nastavení jsou k dispozici následující možnosti řazení:
 
     - Cena – od nejnižší po nejvyšší
     - Cena – od nejvyšší po nejnižší
@@ -86,7 +92,16 @@ Pro stránku výsledků hledání jsou nezbytné následující součásti:
     - Název produktu – \[Z–A\]
     - Hodnocení – od nejnižšího po nejvyšší
     - Hodnocení – od nejvyššího po nejnižší
-    - Výchozí
+    - Výchozí 
+    
+    > [!NOTE]
+    > Pokud jsou hodnoty **Pořadí zobrazení** definovány pro produkty v hierarchii navigace, řazení ve výchozím nastavení na stránce kategorie respektuje hodnoty definované v **Pořadí zobrazení**. V opačném případě bude řazení provedeno pomocí **Číslo produktu**.)
+    
+- **Pokročilé možnosti řazení** slouží návštěvníkům webu k řazení produktů pomocí inteligentních kritérií. Aktivací [Doporučení produktu](product-recommendations.md) jsou dostupné následující možnosti řazení. Další informace naleznete v článku [Typy doporučení produktů](product-recommendations.md#types-of-product-recommendations).
+
+    - Nové
+    - Nejprodávanější
+    - Trendy
 
 - **Stránkování** umožňuje návštěvníkům webu přesun z jedné stránky výsledků kategorizovaného produktu na jinou stránku.
 - **Celkový počet** udává celkový počet produktů, které jsou definovány v kategorii a odpovídají kritériím hledání.
@@ -94,6 +109,8 @@ Pro stránku výsledků hledání jsou nezbytné následující součásti:
 >[!NOTE]
 >Tyto vyhledávací funkce využívající cloud jsou k dispozici od verze 10.0.8. Ujistěte se, že v části **Parametry velkoobchodu> Konfigurační parametry** je u položky ProductSearch.UseAzureSearch nastavena hodnota „true“. 
 ![Konfigurační parametry pro cloudové vyhledávání.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Chcete-li navíc používat pokročilé možnosti řazení, jako jsou nové, nejprodávanější a trendy, musíte aktivovat [Doporučení k produktu](product-recommendations.md) pro své prostředí. Pokročilé možnosti řazení jsou dostupné s Commerce SDK verze 9.35+ a Commerce verze 10.0.20.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -1,25 +1,25 @@
 ---
 title: Symboly bank pro bankovní účty
 description: Tento článek obsahuje informace o bankovních symbolech pro bankovní účty.
-author: anasyash
+author: AdamTrukawka
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 265124
 ms.search.region: Czech Republic
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8fc862b91b64ab404f230850346103ac4e359b05
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 265124
+ms.search.form: ''
+ms.openlocfilehash: b4fbefac203f286b24fa6245664929570d2e6f3e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865499"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286652"
 ---
 # <a name="bank-symbols-for-bank-accounts"></a>Symboly bank pro bankovní účty
 

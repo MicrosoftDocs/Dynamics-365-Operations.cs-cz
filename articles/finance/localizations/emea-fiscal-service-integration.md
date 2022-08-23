@@ -1,24 +1,24 @@
 ---
 title: Integrace fiskální služby (ESR)
 description: Tento článek obsahuje informace o integraci fiskální služby pro Rakousko a Českou republiku.
-author: Anasyash
+author: AdamTrukawka
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CashRegister_W
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Austria, Czech Republic
-ms.author: Anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: e91445121fd36b67b93cbbaaf713ce56f0014e61
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: CashRegister_W
+ms.openlocfilehash: 5148cc895eaf32c1559894b8ecfde2c82dc87e23
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871127"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286644"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 

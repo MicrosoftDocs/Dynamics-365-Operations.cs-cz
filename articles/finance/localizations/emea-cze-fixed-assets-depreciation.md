@@ -1,25 +1,25 @@
 ---
 title: Metody odpisu dlouhodobého majetku pro Českou republiku
 description: Tento článek obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 264314
 ms.search.region: Czech Republic
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3e0db01ef708e0efdbcf202d8ba4a314073238f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 264314
+ms.search.form: AssetDepreciationGroup_W
+ms.openlocfilehash: 59f8c09e62923409b1edd704001be4d8c0620f94
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906265"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292303"
 ---
 # <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a>Metody odpisu dlouhodobého majetku pro Českou republiku
 

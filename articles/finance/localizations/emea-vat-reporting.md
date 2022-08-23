@@ -1,25 +1,25 @@
 ---
 title: Vykazování DPH pro Evropu
 description: Tento článek obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
-author: ShylaThompson
+author: mrolecki
 ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
-ms.author: kfend
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e25b01133bfaa84186faf82c80f24a119b40ac2e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 266844
+ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
+ms.openlocfilehash: 54be8844fadf744cc5527001737ab470fcec46d5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856535"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283410"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 

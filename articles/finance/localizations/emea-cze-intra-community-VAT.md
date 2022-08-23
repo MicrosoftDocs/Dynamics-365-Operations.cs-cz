@@ -1,7 +1,7 @@
 ---
 title: DPH intrakomunitárního plnění
 description: Tento článek uvádí informace o tom, jak se vypočítává a zaúčtovává daň z přidané hodnoty (DPH) pro Českou republiku.
-author: anasyash
+author: AdamTrukawka
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Czech Republic
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2caa645895084daddd579e01b24919c20980ee8c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1dbad270010fecc3b3f2148dd2efd841ef4cd75c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880642"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283036"
 ---
 # <a name="intra-community-vat"></a>DPH intrakomunitárního plnění
 

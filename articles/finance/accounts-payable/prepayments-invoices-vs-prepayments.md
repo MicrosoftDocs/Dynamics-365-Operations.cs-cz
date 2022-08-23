@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895189"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227767"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 
@@ -78,6 +78,8 @@ Zálohu lze z nákupní objednávky odebrat, pokud jste již nezúčtovali platb
 Chcete-li zaznamenat zálohovou fakturu dodavatele, přejděte na stránku **Faktura dodavatele** výběrem možnosti **Zálohová faktura** na stránce **Nákupní objednávky** (**Závazky \> Běžné \> Nákupní objednávky \> Všechny nákupní objednávky \> karta Faktura\> Zálohová faktura**). Zadejte informace o zálohové faktuře, včetně čísla faktury. Množství nelze na zálohové faktuře změnit. Pokud dodavatel fakturoval částečnou částku hodnoty zálohy, která je definována v nákupní objednávce, můžete aktualizovat jednotkovou cenu tak, aby odrážela částečnou hodnotu.
 
 Po zaúčtování zálohové faktury bude aktualizován zůstatek dodavatele a účet záloh. Hodnota **Aplikace zálohy** v definici zálohy obsažené v nákupní objednávce bude také aktualizována. Výchozí položky finanční dimenze pro zaúčtovaný doklad o záloze budou převzaty z informací v záhlaví nákupní objednávky.
+
+Pokud je zapnutá funkce **Uzamknout finanční dimenze na řádcích faktury na faktuře se zálohou dodavatele** na stránce **Správa funkcí**, nelze aktualizovat dimenze v záhlaví nebo řádcích platby předem. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Zaúčtování a vyrovnání plateb za zálohovou fakturu
 Následně bude zálohová faktura zaplacena na stránce **Deník plateb**. Chcete-li zobrazit deníky plateb, klikněte na **Závazky \> Deníky \> Platby \> Deník plateb**. Po zaúčtování vypořádání platby na zálohovou fakturu bude aktualizována hodnota **Aplikace zbývající zálohy** nákupní objednávky.

@@ -1,24 +1,24 @@
 ---
 title: Správa několika odvozených mapování pro jeden kořen modelu
 description: Tento článek vysvětluje, jak spravovat několik odvozených mapování, která byla nakonfigurována pro jeden kořen modelu.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892472"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277501"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Správa několika odvozených mapování pro jeden kořen modelu
 
@@ -106,7 +106,7 @@ Tato část vysvětluje, jak [přizpůsobit](er-quick-start3-customize-report.md
 3. V rozevíracím dialogovém okně **Vytvořit konfiguraci** v poli **Nový** vyberte **Odvodit z názvu: mapování modelu faktury, Microsoft**.
 4. V poli **Název** zadejte **Mapování modelu faktury Litware**.
 5. Vyberte **Vytvořit konfiguraci**.
-6. [Označte](er-quick-start2-customize-report.md#MarkFormatRunnable) [návrh](general-electronic-reporting.md#component-versioning) verze odvozeného mapování, která je k dispozici pro použití za běhu:
+6. [Označte](er-quick-start2-customize-report.md#MarkFormatRunnable) [návrh](general-electronic-reporting.md) verze odvozeného mapování, která je k dispozici pro použití za běhu:
 
     1. V podokně akcí na kartě **Konfigurace** ve skupině **Upřesnit nastavení** vyberte **Parametry uživatele**.
     2. V dialogovém okně **Uživatelské parametry** nastavte u možnosti **Spustit nastavení** hodnotu **Ano** a poté stiskněte **OK**.

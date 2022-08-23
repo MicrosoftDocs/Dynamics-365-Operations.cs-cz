@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068915"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219561"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Skladové převodní příkazy s daní na mezipodnikové ceně
+
+[Skladové převodní příkazy s daní na mezipodnikové ceně](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Důvod pro zrušení/odstranění** | Nahrazeno vylepšenou funkcí [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu** | Aplikace |
+| **Možnost nasazení** | Vše |
+| **Stav** | Zastaralé: Po dubnu 2023 funkce **Příkazy k převodu akcií, které mají daň z převodní ceny** již nebude podporována opravami chyb a bezpečnostními opravami. Zákazníci budou požádáni, aby používali vylepšenou funkci [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md). Po říjnu 2023 nebude funkce **Příkazy k převodu akcií, které mají daň z převodní ceny** již k dispozici a zákazníci budou požádáni, aby přešli na vylepšenou funkci. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.26
 

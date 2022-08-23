@@ -1,7 +1,7 @@
 ---
 title: Zpracování vyzvednutí objednávek zákazníků v POS
 description: Tento článek vysvětluje funkci, která je k dispozici v aplikaci POS (Point of Sale) pro zpracování vyzvednutí objednávky zákazníka.
-author: Hhainesms
+author: hhainesms
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0a886f156fff96f3b7e6026c405d3c8700d57f62
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7fd7d08ac59f6fe7381b79d854160188ef1c325a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910462"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286350"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Zpracování vyzvednutí objednávek zákazníků v POS
 

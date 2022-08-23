@@ -1,21 +1,21 @@
 ---
 title: Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
 description: Tento článek poskytuje informace, které vám pomohou začít s elektronickou fakturací pro Itálii a nastavit přímou integraci italské elektronické faktury FatturaPA se systémem Exchange (SDI).
-author: abaryshnikov
-ms.date: 07/27/2022
+author: gionoder
+ms.date: 01/15/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: abaryshnikov
+ms.author: gionoder
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
-ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
+ms.openlocfilehash: e050d3896b2ba10433e166995d6fc405996cf0b2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9203162"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267149"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Nastavení přímé integrace italské elektronické faktury FatturaPA s SDI
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878479"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292128"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Nastavení profilu oznámení e-mailem
 
@@ -31,17 +31,9 @@ Při vytváření kanálů můžete nastavit e-mailový oznamovací profil. Prof
 
 Další informace o konfiguraci e-mailu naleznete v tématu [Konfigurace a odesílání e-mailu](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Vytvoření profilu oznámení e-mailem
 
-Chcete-li vytvořit profil oznámení e-mailem, postupujte následujícím způsobem.
 
-1. V navigačním podokně přejděte na **Moduly \> Maloobchodní a velkoobchodní prodej \> Nastavení centrály \> Profil oznámení e-mailem aplikace Commerce**.
-1. V podokně akcí klikněte na možnost **Nový**.
-1. Do pole **Profil oznámení e-mailem** zadejte název pro identifikaci profilu.
-1. Zadejte příslušný popis do pole **Popis**.
-1. Nastavení přepínač **Aktivní** na **Ano**.
-
-### <a name="create-an-email-template"></a>Vytvoření šablonu e-mailu
+## <a name="create-an-email-template"></a>Vytvoření šablonu e-mailu
 
 Než bude možné povolit typ e-mailového oznámení, musíte vytvořit šablonu e-mailu organizace v centrále Commerce pro každý typ oznámení, který chcete podporovat. Tato šablona definuje předmět e-mailu, odesílatele, výchozí jazyk a tělo e-mailu pro každý podporovaný jazyk.
 
@@ -63,29 +55,37 @@ Následující obrázek ukazuje několik příkladů nastavení šablony e-mailu
 
 Další informace, jak vytvořit a nahrát e-mailové šablony, najdete v části [Vytvoření e-mailových šablon pro transakční události](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>Vytvoření e-mailové události
+## <a name="create-an-email-notification-profile"></a>Vytvoření profilu oznámení e-mailem
+
+Chcete-li vytvořit profil oznámení e-mailem v centrále, postupujte následujícím způsobem.
+
+1. V navigačním podokně přejděte na **Moduly \> Maloobchodní a velkoobchodní prodej \> Nastavení centrály \> Profil oznámení e-mailem aplikace Commerce**.
+1. V podokně akcí zvolte **Nový**.
+1. Do pole **Profil oznámení e-mailem** zadejte název pro identifikaci profilu.
+1. Zadejte příslušný popis do pole **Popis**.
+1. Nastavení přepínač **Aktivní** na **Ano**.
+
+## <a name="add-a-notification-type"></a>Přidání typu oznámení
 
 E-mailovou událost vytvoříte takto.
 
 1. V navigačním podokně přejděte na **Moduly \> Maloobchodní a velkoobchodní prodej \> Nastavení centrály \> Profil oznámení e-mailem aplikace Commerce**.
-1. Vyhledejte na seznamu požadovaný záznam a vyberte ho. 
-1. Z rozevíracího seznamu **ID e-mailu** vyberte e-mailovou šablonu.
+1. V části **Nastavení e-mailových upozornění Retail** vyberte **Nové**.
 1. Z rozevíracího seznamu vyberte **Typ oznámení e-mailem**.
+1. Vyberte šablonu e-mailu, kterou jste vytvořili výše, z rozevíracího seznamu **ID e-mailu**.
 1. Zaškrtněte políčko **Aktivní**.
-1. V podokně akcí vyberte **Uložit**.
+1. V podokně akcí vyberte **Uložit**.
 
 Následující obrázek ukazuje několik příkladů nastavení oznámení události.
 
 ![Nastavení oznámení události.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Zákazníkem vytvořený typ oznámení vyžaduje provedení přizpůsobení, než bude možné odeslat e-mailové oznámení.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Naplánování úlohy opakujícího se procesu oznamování e-mailem
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Naplánování úlohy opakujícího se procesu oznamování e-mailem
 
 Chcete-li zasílat e-mailová upozornění, musíte mít spuštěnou úlohu **Zpracovat maloobchodní oznámení objednávky e-mailem**.
 
-Chcete-li nastavit úlohu **Zpracovat maloobchodní oznámení objednávky e-mailem** v centrále Commerce, pokud jste to ještě neudělali, postupujte podle těchto kroků.
+Chcete-li nastavit dávkovou úlohu v centrále pro odesílání transakčních e-mailů, postupujte takto.
 
 1. Přejděte do nabídky **Maloobchod a obchod \> IT pro maloobchod a velkoobchod \> E-mail a upozornění \> Odeslat upozornění e-mailem**.
 1. V dialogu **Zpracovat maloobchodní oznámení objednávky e-mailem** vyberte **Opakování**.
@@ -94,9 +94,9 @@ Chcete-li nastavit úlohu **Zpracovat maloobchodní oznámení objednávky e-mai
 1. Výběrem **OK** se vraťte do dialogu **Zpracovat maloobchodní oznámení objednávky e-mailem**.
 1. Nastavení úlohy dokončíte tlačítkem **OK**.
 
-### <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další kroky
 
-Před odesláním e-mailu je nutné nakonfigurovat službu odchozí pošty a nastavit dávkovou úlohu. Další informace naleznete v tématu [Konfigurace a odesílání e-mailu](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Před odesláním e-mailů je nutné nakonfigurovat službu odchozí pošty. Další informace naleznete v tématu [Konfigurace a odesílání e-mailu](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Další prostředky
 

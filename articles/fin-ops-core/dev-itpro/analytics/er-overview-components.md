@@ -1,26 +1,26 @@
 ---
 title: Komponenty elektronického výkaznictví
 description: Tento článek popisuje komponenty elektronického výkaznictví (ER).
-author: nselin
+author: kfend
 ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.topic: overview
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b8b197fdea0cd49fc5161a12b8f547cc1a27bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 4851374ca4943a84d35f063e0ee65b537ec3b6cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892443"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285024"
 ---
 # <a name="electronic-reporting-components"></a>Komponenty elektronického výkaznictví
 
@@ -113,7 +113,7 @@ Chcete-li spustit jednu konfiguraci formátu ER při importu dat z příchozíh
 
 Komponenty EV podporují správu verzí je podporována. Následující workflow je určen pro správu změn v komponentách ER:
 
-1. Původně vytvořená verze je označena jako verze **Koncept**. Tato verze může být upravena a je k dispozici pro zkušební běh.
+1. Původně vytvořená verze byla označena jako verze **Koncept**. Tato verze může být upravena a je k dispozici pro zkušební běh.
 2. Verzi **Koncept** lze převést na verzi **Dokončeno**. Tuto verzi lze použít v místních procesů vykazování.
 3. Verzi **Dokončeno** lze převést na verzi **Sdíleno**. Tato verze je publikována ve službě Microsoft Dynamics Lifecycle Services (LCS) a lze ji použít v globálních procesech vykazování.
 4. Verzi **Sdíleno** lze převést na verzi **Vyřazeno**. Tuto verzi můžete odstranit.
@@ -123,15 +123,37 @@ Verze ve stavu **Dokončeno** nebo **Sdíleno** jsou k dispozici pro další v�
 - Komponentu lze serializovat do formátu XML a exportovat jako soubor ve formátu XML.
 - Komponentu lze reserializovat ze souboru XML a importovat do aplikace jako novou verzi komponenty ER.
 
+Více informací viz [Import nové konfigurace datového modelu](er-quick-start1-new-solution.md#ImportDataModel) a [Export dokončené verze odvozeného formátu](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### <a name="draft-versions-at-runtime"></a>Verze konceptu za běhu
+
+V osobních uživatelských parametrech pro rámec ER můžete povolit možnost, která vám umožní určit, zda se musí za běhu použít verze konceptu konfigurace ER. Informace o tom, jak vytvořit možnost **Spustit koncept** dostupnou pro vaše konfigurace ER, viz [Označení vlastního formátu jako spustitelného](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> Parametry uživatele ER jsou specifické pro uživatele a konkrétní společnost.
+
+### <a name="draft-format-versions-at-runtime"></a>Verze formátu konceptu za běhu
+
+Ve výchozím nastavení, když spustíte řešení ER, jsou koncepty jeho součástí formátu ignorovány. Místo toho se používá pouze relevantní verze, která má jiný status než **Návrh**. Někdy můžete chtít vynutit ER, aby za běhu používala verzi konceptu vaší konfigurace formátu ER. Například poté, co do své pracovní verze zavedete nezbytné změny, můžete tuto pracovní verzi použít k provedení zkušebního provozu. Tímto způsobem můžete ověřit správnost svých změn. Chcete-li začít používat verzi formátu konceptu, musíte [nastavit](er-quick-start2-customize-report.md#MarkFormatRunnable) možnost **Spustit koncept** příslušné konfigurace ER na **Ano**.
+
+### <a name="draft-model-mapping-versions-at-runtime"></a>Verze konceptu mapování modelu za běhu
+
+Ve výchozím nastavení, když spustíte řešení ER, jsou vždy použity verze konceptů komponent mapování modelu. Někdy můžete chtít vynutit ER, aby za běhu ignoroval verzi konceptu konfigurace mapování modelu ER. Ve **verzi 10.0.29 a novější** můžete aktivovat funkci **Vždy brát v úvahu možnost „Spustit koncept“ pro mapování modelu ER** pro ovládání verze mapování modelu, která se používá za běhu. Aktivace této funkce způsobí následující jevy:
+
+- Když je možnost **Spustit koncept** nastavena na **Ne** pro konfiguraci mapování modelu, za běhu se použije nejvyšší verze této konfigurace bez konceptu. Pokud konfigurace není k dispozici v aktuální instanci Finance, je vyvolána výjimka.
+- Když je možnost **Spustit koncept** nastavena na **Ano** pro konfiguraci mapování modelu, za běhu se použije verze konceptu této konfigurace.
+
 ## <a name="component-date-effectivity"></a>Datum platnosti komponenty
 
-Verze komponent ER platí k určitému datu. Určením hodnoty data „Platné od“ lze u komponenty ER určit datum, kdy komponenta začne platit v procesech vykazování. Datum relace aplikace slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
+Verze komponent formátu ER platí k určitému datu. Určením hodnoty data „Platné od“ lze u komponenty formátu ER určit datum, kdy komponenta začne platit v procesech vykazování. Datum relace aplikace slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
 
 ## <a name="component-access"></a>Přístup komponent
 
-Přístup ke komponentám formátu ER závisí na nastavení kódu země/oblasti Mezinárodní organizace pro normalizaci (ISO). Pokud je toto nastavení pro vybranou verzi konfigurace formátu prázdné, k součásti formátu lze přistupovat z libovolné společnosti v době běhu. Pokud toto nastavení obsahuje ISO kódy země/oblasti, je komponenta formátu přístupná pouze ze společností, jejichž primární adresa je definována pro jednu komponentu formátu ISO kódu země/oblasti.
+Přístup ke komponentám formátu ER a mapování modelu za běhu závisí na nastavení kódu země/oblasti Mezinárodní organizace pro normalizaci (ISO). Pokud je toto nastavení pro vybranou verzi konfigurace formátu nebo mapování modelu prázdné, k součásti formátu nebo mapování modelu lze za běhu přistupovat z libovolné společnosti. Pokud toto nastavení obsahuje ISO kódy země/oblasti, je komponenta formátu nebo mapování modelu přístupná pouze ze společností, jejichž primární adresa je definována pro jednu komponentu formátu ISO kódu země/oblasti.
 
-Různé verze součástí formátu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
+Různé verze součástí formátu nebo mapování modelu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
+
+Další informace viz [Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
