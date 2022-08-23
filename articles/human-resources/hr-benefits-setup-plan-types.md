@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687100"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228953"
 ---
 # <a name="plan-type-overview"></a>Přehled typů plánů
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687100"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Typ plánu je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu. Například typ **základního životního** plánu bude mít kód typu plánu **Životní**, protože se jedná o typ plánu životního pojištění a musí vyhovovat pravidlům stanoveným pro kód typu plánu **životního** pojištění. Jiný typ plánu může být **Doplňkové životní**. Tento typ plánu bude mít také **Životní** kód typu plánu.
 
@@ -67,14 +69,14 @@ Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definov�
    | --- | --- |
    | **Typ plánu** | Typ plánu pro konfiguraci možností životní události. |
    | **ID typu životních událostí** | ID typu životní události. |
-   | **Povolit zrušení** | Určuje, zda zaměstnanec může během životní události zrušit plán zaměstnaneckých výhod. |
    | **Změnit možnost pokrytí** | Určuje, zda zaměstnanec může během životní události změnit možnosti pokrytí. |
    | **Změnit na nový plán** | Určuje, zda zaměstnanec může během životní události změnit plány. |
-   | **Automaticky zrušit plán** | Určuje, zda má být během životní události plán automaticky zrušen. |
    | **Automaticky znovu otevřít kontrolu způsobilosti** | Určuje, zda se má automaticky znovu otevřít kontrola způsobilosti registrace k zaměstnaneckým výhodám během životní události. |
-   | **Časový úsek pro vykazování** | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
+   | **Období registrace životní události** | Určuje časový úsek pro vykazování životní události ve dnech. **Poznámka**: Pokud nezadáte částku, systém předpokládá okno sestavy jako nulové a nezpracuje životní událost. |
+   | **Upravitelné pouze správci** | Určuje, zda správci mohou zrušit nebo upravit plán zaměstnaneckých výhod během životní události. Zaměstnanec nemůže provádět žádné změny v pracovním prostoru **Zaměstnanecká samoobsluha**. |
+   | **Automaticky zrušit plán** | Určuje, zda má být plán během životní události automaticky zrušen. Po zpracování změn životních událostí možnost **Automaticky zrušit plán** zachová výběr plánu. Odstraněn bude pouze stav **Potvrzeno** nebo **Rezervováno**. Plán zůstává vybraný. Zaměstnanci, kteří si nevyberou plán během období registrace životní události, tedy o výběr plánu nepřijdou. 
 
-5. Zvolte **Uložit**. 
+5. Zvolte možnost **Uložit**. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

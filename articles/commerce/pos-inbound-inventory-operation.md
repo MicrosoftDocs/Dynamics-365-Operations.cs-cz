@@ -1,27 +1,27 @@
 ---
 title: Operace příchozích zásob v POS
 description: Tento článek popisuje možnosti příchozí skladové operace v pokladním místě (POS).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858875"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288345"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operace příchozích zásob v POS
 
@@ -141,7 +141,7 @@ Procenta tolerance snížených dodávek pro řádek nákupní objednávky lze p
 
 Poté co organizace dokončí konfigurace snížení dodávky u nákupních objednávek, uvidí uživatelé POS novou možnost **Zavřít zbývající množství** v podokně **Podrobnosti**, když vybere řádek nákupní objednávky v operaci **Příchozí zásoby**. Pokud uživatel uzavře zbývající množství, POS provede ověření, jestli množství, které je zavřeno, je v rámci procentuální tolerance podlimitu, která je definována na řádku nákupní objednávky. Pokud dojde k překročení tolerance podlimitního doručení, zobrazí se chybová zpráva a uživatel nebude schopen uzavřít zbývající množství, dokud dříve přijaté množství plus **Probíhá příjem** nesplní nebo nepřekročí minimální množství, které je třeba přijmout na základě procenta tolerance podlimitního dodání. 
 
-Se zapnutou možností **Zavřít zbývající množství** pro řádek nákupní objednávky, když uživatel dokončí příjem pomocí akce **Dokončit příjem**, odešle se žádost o uzavření také do centrály Commerce a veškeré nepřijaté množství tohoto řádku objednávky bude zrušeno. V tomto bodě je řádek považován za plně přijatý. 
+Se zapnutou možností **Zavřít zbývající množství** pro řádek nákupní objednávky, když uživatel dokončí příjem pomocí akce **Dokončit příjem**, odešle se žádost o uzavření také do Commerce headquarters a veškeré nepřijaté množství tohoto řádku objednávky bude zrušeno. V tomto bodě je řádek považován za plně přijatý. 
 
 ### <a name="receiving-location-controlled-items"></a>Příjem položek na základě umístění
 
@@ -155,15 +155,13 @@ Podle potřeby můžete výběrem možnosti **Přijmout vše** na panelu aplikac
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Příjem neplánovaných položek na nákupních objednávkách
 
-V aplikaci Commerce verze 10.0.14 a novější mohou uživatelé obdržet produkt, který původně nebyl součástí nákupní objednávky. Chcete-li tuto funkci povolit, zapněte volbu **Přidat řádky na nákupní objednávku během příjmu pokladního místa**.  
-
-Tato funkce funguje pouze pro příjem nákupní objednávky. Není možné přijímat položky proti převodním příkazům, pokud položky nebyly dříve objednány a odeslány z odchozího skladu.
+V aplikaci Commerce verze 10.0.14 a novější mohou uživatelé obdržet produkt, který původně nebyl součástí nákupní objednávky. Tato funkce funguje pouze pro příjem nákupní objednávky. Není možné přijímat položky proti převodním příkazům, pokud položky nebyly dříve objednány a odeslány z odchozího skladu.
 
 Uživatelé nemohou do nákupní objednávky přidávat nové produkty během přijímání POS, pokud není zapnut [pracovní postup správy změn](../supply-chain/procurement/purchase-order-approval-confirmation.md) nákupní objednávky v centrále Commerce. Chcete-li povolit správu změn, musí být všechny změny nákupní objednávky nejprve schváleny, než bude povoleno přijetí. Protože tento proces umožňuje příjemci přidávat do objednávky nové řádky, přijímání se nezdaří, pokud je povolen pracovní postup správy změn. Pokud je povolena správa změn pro všechny nákupní objednávky nebo pro dodavatele propojeného s aktivní objednávkou objednávky v POS, nemůže uživatel během přijímání v POS přidat do objednávky nové produkty.
 
 Funkci, která umožňuje přidávání řádků, nelze použít jako řešení pro příjem dalších množství produktů, které jsou již na nákupní objednávce. Nadměrný příjem je spravován standardním nastavením [nadměrného příjmu](#over-receiving-validations) produktové řady na nákupní objednávce.
 
-Pokud je povolena volba **Přidat řádky na nákupní objednávku během příjmu pokladního místa** a uživatel přijímá pomocí **Příchozí operace** v POS, pokud uživatel naskenuje čárový kód produktu nebo číslo produktu, které není rozpoznáno jako položka v aktuální nákupní objednávce, ale je rozpoznáno jako platná položka, obdrží uživatel zprávu o přidání položky do nákupní objednávky. Pokud uživatel přidá položku do nákupní objednávky, zadané množství v poli **Probíhá příjem** se považuje za objednané množství pro řádek nákupní objednávky.
+Když uživatel přijímá pomocí **Příchozí operace** v POS, pokud uživatel naskenuje čárový kód produktu nebo číslo produktu, který je rozpoznán jako platná položka, ale není rozpoznán jako položka v aktuální nákupní objednávce, obdrží uživatel zprávu s výzvou k přidání položky do nákupní objednávky. Pokud uživatel přidá položku do nákupní objednávky, zadané množství v poli **Probíhá příjem** se považuje za objednané množství pro řádek nákupní objednávky.
 
 Když je dokončen příjem nákupní objednávky a odeslán do centrály ke zpracování, přidané řádky se vytvoří v hlavním dokumentu nákupní objednávky. Na řádku nákupní objednávky v centrále bude příznak **Přidalo POS** na kartě **Obecné** na řádku nákupní objednávky. Příznak **Přidalo POS** označuje, že řádek nákupní objednávky byl přidán procesem přijímání POS a nejedná se o řádek, který byl na nákupní objednávce před přijetím.
 

@@ -2,49 +2,61 @@
 title: Asynchronní režim vytváření zákazníka
 description: Tento článek popisuje režim asynchronního vytváření zákazníků v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ac1bc842d5d12ece8951ffed18157e6f9b50d14
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880133"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228716"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchronní režim vytváření zákazníka
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tento článek popisuje režim asynchronního vytváření zákazníků v Microsoft Dynamics 365 Commerce.
 
-V Commerce existují dva režimy vytváření zákazníků: synchronní (nebo sync) a asynchronní (nebo async). Ve výchozím nastavení jsou zákazníci vytvářeni synchronně. Jinými slovy jsou vytvářeni v ústředí Commerce v reálném čase. Režim vytváření zákazníků sync je výhodný, protože noví zákazníci jsou okamžitě prohledatelní napříč kanály. Má to však také nevýhodu. Protože to generuje volání [Commerce Data Exchange: služba v reálném čase](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) volání do centrály Commerce, výkon může být ovlivněn, pokud se uskuteční mnoho souběžných volání vytváření zákazníků.
+V Commerce existují dva režimy vytváření zákazníků: synchronní (nebo sync) a asynchronní (nebo async). Ve výchozím nastavení jsou zákazníci vytvářeni synchronně. Jinými slovy jsou vytvářeni v Commerce headquarters v reálném čase. Režim vytváření zákazníků sync je výhodný, protože noví zákazníci jsou okamžitě prohledatelní napříč kanály. Má to však také nevýhodu. Protože to generuje volání [Commerce Data Exchange: služba v reálném čase](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) volání do centrály Commerce, výkon může být ovlivněn, pokud se uskuteční mnoho souběžných volání vytváření zákazníků.
 
 Pokud je možnost **Vytvořit zákazníka v asynchronním režimu** je nastavena na **Ano** v profilu funkce obchodu (**Retail a Commerce \> Nastavení kanálu \> Nastavení internetového obchodu \> Profily funkčnosti**), volání služby v reálném čase se nepoužívají k vytváření záznamů o zákaznících v databázi kanálů. Asynchronní režim vytváření zákazníků nemá vliv na výkon centrály Commerce. Každému novému záznamu zákazníka async je přiřazen dočasný globálně jedinečný identifikátor (GUID), který se použije jako ID zákaznického účtu. Tento identifikátor GUID se uživatelům pokladního místa (POS) nezobrazuje. Místo toho se těmto uživatelům zobrazí **Čeká se na synchronizaci** jako ID zákaznického účtu.
 
 > [!IMPORTANT]
-> Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto bez ohledu na váš výběr mezi synchronním a asynchronním vytvářením zákazníků musí správci centrály Commerce vytvořit a naplánovat opakující se dávkovou úlohu pro **P-práci**, úlohy **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** (dříve nazvanou **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu**) a úlohu **1010**, aby byli všichni asynchronní zákazníci převedeni na synchronní zákazníky v centrále Commerce.
+> Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto, bez ohledu na váš výběr synchronního a asynchronního vytváření zákazníků musí správci Commerce headquarters vytvořit a naplánovat opakovanou dávkovou úlohu pro **P-úlohu** **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** a úlohu **1010**, aby byli všichni zákazníci Async převedeni na zákazníky Sync v Commerce headquarters.
 
 ## <a name="async-customer-limitations"></a>Omezení asynchronních zákazníků
 
 Funkce asynchronních zákazníků má v současné době následující omezení:
 
-- Asynchronní záznamy o zákaznících nelze upravovat, pokud nebyl zákazník vytvořen v ústředí Commerce a nové ID zákaznického účtu nebylo synchronizováno zpět do kanálu.
 - Věrnostní karty nelze vydat zákazníkům async, pokud nebylo nové ID zákaznického účtu synchronizováno zpět do kanálu.
 
 ## <a name="async-customer-enhancements"></a>Vylepšení asynchronních zákazníků
 
-Od verze Commerce 10.0.24 můžete aktivovat funkci **Povolit vylepšené asynchronní vytváření zákazníků** v pracovním prostoru **Správa funkcí**. Tato funkce překlenuje propast mezi asynchronními a synchronizovanými režimy vytváření zákazníků v POS a elektronickém obchodování následujícími způsoby:
+Aby organizace pomohly používat asynchronní režim vytváření zákazníků ke správě zákazníků a aby se snížila komunikace s Commerce headquarters v reálném čase, byla zavedena následující vylepšení, která zajistí paritu mezi synchronizačními a asynchronními režimy v kanálech. 
 
-- Přidružení nelze spojit se zákazníky async.
-- Tituly lze přidat k asynchronním zákazníkům.
-- Sekundární e-mailové adresy a telefonní čísla nelze pro zákazníky async zachytit.
+| Vylepšení funkcí | Verze Commerce | Podrobnosti funkce |
+|---|---|---|
+| Zlepšení výkonu při načítání informací o zákaznících z databáze kanálů | 10.0.20 a novější | Aby se zlepšil výkon, je entita zákazníka rozdělena na menší entity. Systém pak získá pouze požadované informace z databáze kanálů. |
+| Schopnost vytvořit adresu asynchronně během pokladny | 10.0.22 a novější | <p>Přepínač funkce: **Povolit asynchronní vytváření pro adresy zákazníků**</p><p>Podrobnosti funkce:</p><ul><li>Schopnost přidávat adresy bez volání služeb v reálném čase do Commerce headquarters</li><li>Schopnost jednoznačně identifikovat adresy v databázi kanálů bez použití ID záznamu (hodnota **RecId**)</li><li>Sledování časových razítek pro vytvoření adresy</li><li>Synchronizace adres v Commerce headquarters</li></ul><p>Tato funkce ovlivňuje synchronní i asynchronní zákazníky. Chcete-li kromě asynchronního vytváření adres upravovat adresy asynchronně, musíte aktivovat funkci **Úprava zákazníků v asynchronním režimu**.</p> |
+| Aktivujte paritu mezi synchronním a asynchronním vytvářením zákazníků. | 10.0.24 a novější | <p>Přepínač funkce: **Aktivovat vylepšené vytváření asynchronního zákazníka**</p><p>Podrobnosti funkce: Schopnost zachytit další informace, jako je titul, přidružení od výchozího zákazníka a sekundární kontaktní informace (telefonní číslo a e-mailová adresa), zatímco vytváříte zákazníky asynchronně</p> |
+| Uživatelsky přívětivé chybové zprávy | 10.0.28 a novější | Tato vylepšení pomáhají zlepšit uživatelsky přívětivé chybové zprávy, pokud uživatel nemůže okamžitě upravovat informace, když probíhá synchronizace. Tato vylepšení aktivujte pomocí nastavení **Aktivovat, aby některé prvky uživatelského rozhraní nemohly být modifikovány asynchronním zákazníkem** na **Nastavení webu \> Rozšíření** v konfigurátoru webů Commerce. |
+| Schopnost asynchronně upravovat informace o zákaznících | 10.0.29 a novější | <p>Přepínač funkce: **Povolit úpravy zákazníků v asynchronním režimu**</p><p>Podrobnosti funkce: Schopnost asynchronně upravovat zákaznická data</p><p>Odpovědi na běžné otázky týkající se problémů souvisejících s asynchronní úpravou informací o zákaznících naleznete v části [Nejčastější dotazy k asynchronnímu režimu vytváření zákazníků](async-customer-mode-faq.md).</p> |
 
-Od verze Commerce 10.0.22 můžete aktivovat funkci **Povolit asynchronní vytváření adres zákazníků** v pracovním prostoru **Správa funkcí**. Tato funkce umožňuje asynchronně ukládat nově vytvořené adresy zákazníků pro synchronizované i asynchronní zákazníky.
+### <a name="feature-switch-hierarchy"></a>Hierarchie přepínání funkcí
+
+Z důvodu hierarchie přepínačů funkcí, než aktivujete funkci **Povolit úpravy zákazníků v asynchronním režimu**, musíte aktivovat následující funkce: 
+
+- **Zlepšení výkonu zákaznických objednávek a zákaznických transakcí** – Tato funkce je povinná od verze Commerce 10.0.28. 
+- **Aktivovat vylepšené vytváření asynchronního zákazníka**
+- **Povolit asynchronní vytváření pro adresy zákazníků**
+
+Odpovědi na běžné otázky týkající se odstraňování problémů viz [Nejčastější dotazy k asynchronnímu režimu vytváření zákazníků](async-customer-mode-faq.md). 
 
 Pokud aktivujete výše uvedené funkce, musíte naplánovat opakovanou dávkovou úlohu pro **P-úlohu**, úlohu **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** a úlohu **1010**, aby byli všichni zákazníci async převedeni na zákazníky sync v centrále Commerce.
 

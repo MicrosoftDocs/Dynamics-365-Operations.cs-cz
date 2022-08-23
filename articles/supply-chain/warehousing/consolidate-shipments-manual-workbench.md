@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 388066b9c81ecb63ac1f81b70dc4b168f3f4a71d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888318"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218611"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
 
@@ -41,7 +41,7 @@ Než budete moci používat funkci *Ruční konsolidace dodávek*, musíte ji za
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Ruční konsolidace dodávek*
 
-Jak bylo uvedeno v [zásadách konfigurace konsolidace dodávek](configure-shipment-consolidation-policies.md), musíte také zapnout funkci *Konsolidovat dodávku* před vytvořením zásad. Tento krok byste však již měli dokončit.
+Musíte také zapnout funkci *Konsolidovat zásilku*, než budete moci vytvářet zásady. Další informace viz [Konfigurace zásad konsolidace dodávky](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Vytvoření prodejních objednávek pro tento scénář
 

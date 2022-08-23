@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065547"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266421"
 ---
 # <a name="flushing-principles"></a>Principy vyprazdňování
 
@@ -56,7 +56,10 @@ Princip ručního vyprazdňování označuje, že registrace spotřeby materiál
 Počáteční princip vyprazdňování určuje, že materiály budou automaticky spotřebovávány při zahájení výrobní zakázky. Množství materiálu, který je spotřebován, je úměrné počátečnímu množství. Když je počáteční princip vyprazdňování použit společně s principem provedení výroby, lze ho použít také k vyprázdnění materiálů při zahájení operace nebo úlohy procesu. Tento princip je relevantní, pokud je například odchylka spotřeby kusovníku nízká, materiály jsou s nízkou hodnotou, neexistují žádné požadavky na sledování a na operace je krátká doba zpracování. 
 
 ### <a name="finish"></a>Dokončit
-Princip vyprazdňování Dokončit určuje, že materiál bude automaticky spotřebován, když je výrobní zakázka hlášena jako dokončená a operace, která je nastavena na spotřebu materiálu je registrovaná jako dokončená. Množství materiálu, který je spotřebován, je úměrné počátečnímu množství, které je nahlášeno jako dokončené. Když je konečný princip vyprazdňování použit společně s principem provedení výroby, lze ho použít také k vyprázdnění materiálů při dokončení operace nebo úlohy procesu. Tento princip je relevantní ve stejných situacích jako počáteční princip. Princip dokončení je však určen pro operace, které jste mají delší dobu zpracování, kdy by materiály neměly být nastaveny na hodnotu nedokončené výroby před dokončením této operace. 
+Princip vyprazdňování Dokončit určuje, že materiál bude automaticky spotřebován, když je výrobní zakázka hlášena jako dokončená a operace, která je nastavena na spotřebu materiálu je registrovaná jako dokončená. Množství materiálu, který je spotřebován, je úměrné počátečnímu množství, které je nahlášeno jako dokončené. Když je konečný princip vyprazdňování použit společně s principem provedení výroby, lze ho použít také k vyprázdnění materiálů při dokončení operace nebo úlohy procesu. Tento princip je relevantní ve stejných situacích jako počáteční princip. Princip dokončení je však určen pro operace, které jste mají delší dobu zpracování, kdy by materiály neměly být nastaveny na hodnotu nedokončené výroby před dokončením této operace.
+
+> [!NOTE]
+> Princip Dokončit vyprazdňování nelze použít společně s plánovacími položkami. Doporučujeme namísto toho používat princip Zahájit vyprazdňování. Položky plánování mají typ výroby *položka plánování* a jako dokončené lze vykázat pouze vedlejší produkty u dávkových úloh, které jsou vytvořeny pro položky plánování.
 
 ### <a name="available-at-location"></a>K dispozici na skladě
 Princip vyprazdňování K dispozici ve skladovém místě určuje, že materiál bude automaticky spotřebovávaný po registraci jako výdeje pro výrobu. Materiál je registrován jako vyskladněný ze skladového místa po dokončení výdeje surovin, případně když je k dispozici na vstupním místě výroby a uvolnění řádku kusovníku do skladu. Výdejka vytvořená během procesu je zaúčtována v dávkové úloze. Tento princip je relevantní, pokud například máte mnoho aktivit výdeje pro jednu výrobní zakázku. V takovém případě není nutné ručně aktualizovat výdejku a lze získat aktuální zobrazení zůstatku nedokončené výroby.

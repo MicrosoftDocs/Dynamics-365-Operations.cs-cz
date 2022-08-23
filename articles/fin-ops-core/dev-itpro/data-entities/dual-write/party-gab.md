@@ -2,19 +2,19 @@
 title: Strana a globální adresář
 description: Tento článek popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892186"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228983"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -119,11 +119,11 @@ Mřížka obsahuje následující sloupce:
 
 Můžete použít tlačítko **Nová adresa** nad mřížkou k vytvoření tolika poštovních adres, kolik chcete.
 
-Pole **Adresa 1** a **Adresa 2** na kartě **Souhrn** stránky **Účet** odpovídají adresám **Dodávka** a **Faktura**.
+V aplikacích Customer Engagement, když uživatel zadá adresy na kartě **Souhrn** stránky **Účty**, pole **Adresa 1** a **Adresa 2** odpovídají adresám **Dodání** a **Faktura**. Když však uživatel vytvoří poštovní adresu ve finančních a provozních aplikacích, první dvě adresy ze záznamu zákazníka se objeví v polích **Adresa 1** a **Adresa 2** a uživatel má možnost změnit účel adresy na **Dodání** a **Faktura**.
 
 ![Karta Souhrn pro poštovní adresy.](media/party-gab-image5.png)
 
-Pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **Kontakt** odpovídají adresám **Podnik**, **Dodávka** a **Faktura**.
+Podobně pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **Kontakt** odpovídají adresám **Podnik**, **Dodávka** a **Faktura**.
 
 ## <a name="electronic-addresses"></a>Elektronické adresy
 

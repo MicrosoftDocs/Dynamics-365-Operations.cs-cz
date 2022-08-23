@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění v Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171508"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218795"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Skladové převodní příkazy s daní na mezipodnikové ceně
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Důvod pro zrušení/odstranění** | Funkce [Příkazy k převodu akcií, které mají daň z převodní ceny](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) je nahrazena funkcí [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Nahrazeno jinou funkcí?**   | Ano, funkce [Příkazy k převodu akcií, které mají daň z převodní ceny](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) je nahrazena funkcí [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Ovlivněné oblasti produktu** | Supply Chain Management – zásoby |
+| **Možnost nasazení** | Cloudové a místní nasazení |
+| **Stav** | <p>Probíhá zastarávání. Funkce *Příkazy k převodu akcií, které mají daň z převodní ceny* nebude podporována opravami chyb a bezpečnostními opravami.</p><p>Po dubnu 2023 budou zákazníci požádáni, aby používali ve výchozím stavu vylepšenou funkci *Příkazy k převodu akcií pro Indii*. Po říjnu 2023 nebude funkce *Příkazy k převodu akcií, které mají daň z převodní ceny* již k dispozici a zákazníci budou požádáni, aby přešli na vylepšenou funkci *Příkazy k převodu akcií pro Indii*.</p><p>Více informací viz [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.19
 

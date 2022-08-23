@@ -1,26 +1,26 @@
 ---
 title: Návrh formátu ER pro generování zprávy ve formátu Excel s vloženými obrázky v záhlaví nebo zápatí stránky
 description: Tento článek vysvětluje, jak používat elektronické výkaznictví (ER) ke generování obchodních dokumentů, které mají obrázky a tvary vložené do záhlaví nebo zápatí stránky.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854836"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281805"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Návrh formátu ER pro generování zprávy ve formátu Excel s vloženými obrázky v záhlaví nebo zápatí stránky
 
@@ -196,7 +196,7 @@ V tomto případě musíte jako zástupce společnosti Litware, Inc., vytvořit
 
 ![Vytvoření konfigurace pro vlastní formát platby v rozevíracím dialogovém okně Vytvořit konfiguraci.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Verze 240.112.1 formátu ER **Faktura s volným textem (Excel) vlastní** je vytvořena. Tato verze je ve [stavu](general-electronic-reporting.md#component-versioning) **Konceptu** a je editovatelná. Aktuální obsah vašeho vlastního formátu ER odpovídá obsahu formátu poskytnutého společností Microsoft.
+Verze 240.112.1 formátu ER **Faktura s volným textem (Excel) vlastní** je vytvořena. Tato verze je ve stavu **Koncept** a je editovatelná. Aktuální obsah vašeho vlastního formátu ER odpovídá obsahu formátu poskytnutého společností Microsoft.
 
 ![Nová vytvořená verze konfigurace formátu ER na stránce Konfigurace.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Nakonfigurujte svůj vlastní formát tak, aby byl obrázek loga společnosti vl
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Označení vlastního formátu jako spustitelného
 
-Protože máte vytvořenou první verzi vlastního formátu a ten je ve stavu **Koncept**, můžete formát pro testovací účely spustit. Chcete-li sestavu spustit, zpracujte platbu dodavateli pomocí způsobu platby, která odkazuje na váš vlastní formát ER. Ve výchozím nastavení jsou při volání formátu ER z aplikace [zvažovány](general-electronic-reporting.md#component-versioning) pouze verze se stavem **Dokončeno** nebo **Sdíleno**. Toto chování pomáhá zabránit použití formátů ER s nedokončenými návrhy. Pro zkušební účely však můžete aplikaci přinutit, aby použila verzi formátu ER ve stavu **Koncept**. Pokud při testu zjistíte, že je třeba provést nějaké změny, můžete následně aktuální verzi formátu upravit. Další informace naleznete v tématu [Použitelnost](electronic-reporting-destinations.md#applicability).
+Protože máte vytvořenou první verzi vlastního formátu a ten je ve stavu **Koncept**, můžete formát pro testovací účely spustit. Chcete-li sestavu spustit, zpracujte platbu dodavateli pomocí způsobu platby, která odkazuje na váš vlastní formát ER. Ve výchozím nastavení jsou při volání formátu ER z aplikace zvažovány pouze verze se stavem **Dokončeno** nebo **Sdíleno**. Toto chování pomáhá zabránit použití formátů ER s nedokončenými návrhy. Pro zkušební účely však můžete aplikaci přinutit, aby použila verzi formátu ER ve stavu **Koncept**. Pokud při testu zjistíte, že je třeba provést nějaké změny, můžete následně aktuální verzi formátu upravit. Další informace naleznete v tématu [Použitelnost](electronic-reporting-destinations.md#applicability).
 
 Chcete-li použít koncept formátu ER, musíte příslušný formát ER explicitně označit.
 

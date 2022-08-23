@@ -1,58 +1,79 @@
 ---
-title: Pokyny k nasazení registračních pokladen pro Norsko (staré)
-description: Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
-author: EvgenyPopovMBS
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b17bd56f9f3e4def341658626915adbd7f5aada6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894455"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281531"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Pokyny k nasazení registračních pokladen pro Norsko (staré)
+---
 
-[!include [banner](../includes/banner.md)]
+název: Pokyny k nasazení registračních pokladen pro Norsko (staré) [!include [banner](../includes/banner.md)]
+popis: Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko.
 
-Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent Commerce. Rozšíření vám například umožňují tisknout vlastní pole na příjemkách, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md).
+autor: EvgenyPopovMBS Tento článek je průvodce nasazením, který popisuje, jak povolit lokalizaci Microsoft Dynamics 365 Commerce pro Norsko. Lokalizace se skládá z několika rozšíření komponent Commerce. Rozšíření vám například umožňují tisknout vlastní pole na příjemkách, registrovat dodatečné události auditu, prodejní transakce a platební transakce v pokladním místě (POS), digitálně podepisovat prodejní transakce a tisknout sestavy X a Z v místních formátech. Další informace o lokalizaci pro Norsko viz [Funkce registrační pokladny pro Norsko](./emea-nor-cash-registers.md).
+ms.date: 20.12.2021
 
-Tato ukázka je součástí sady SDK (Software Development Kit) pro Retail. Informace o SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+ms.topic: article Tato ukázka je součástí sady SDK (Software Development Kit) pro Retail. Informace o SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+publikum: Uživatel aplikace, vývojář, IT profesionál
 
-Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), Retail, Server a POS. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, Retail, Server a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Microsoft Visual Studio Online (VSO), kde žádné soubory nebyly dosud změněny.
+ms.reviewer: v-chgriffin Tento příklad sestává z rozšíření pro Commerce Runtime (CRT), Retail, Server a POS. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, Retail, Server a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Microsoft Visual Studio Online (VSO), kde žádné soubory nebyly dosud změněny.
+ms.search.region: Globální
 
+ms.author: josaw
 > [!NOTE]
-> V Commerce 10.0.8 a vyšší je Retail Server známý jako Commerce Scale Unit. Protože se tento článek týká i několika předchozích verzí aplikace, používáme v něm *Retail Server*.
+ms.search.validFrom: 2018-02-28 V Commerce 10.0.8 a vyšší je Retail Server známý jako Commerce Scale Unit. Protože se tento článek týká i několika předchozích verzí aplikace, používáme v něm *Retail Server*.
 >
+---
 > Některé procesní kroky v tomto článku se liší v závislosti na verzi Commerce, kterou používáte. Další informace viz [Co je nového a co se změnilo v produktu Dynamics 365 Retail](../get-started/whats-new.md).
 
+
+6. Aktualizujte konfigurační soubor pro Retail Server. V souboru **RetailSDK\\Packages\\RetailServer\\Code\\web.config** přidejte následující řádky do sekce **extensionComposition**.
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Použití profilů certifikátů v kanálech Commerce
 
-Ve verzích Commerce 10.0.15 a novějších můžete použít funkci [Profily certifikátů definovaných uživatelem pro maloobchodní prodejny](./certificate-profiles-for-retail-stores.md), která podporuje převzetí služeb při selhání do režimu offline, když není k dispozici ústředí Key Vault nebo Commerce. Tato funkce rozšiřuje funkci [Správa tajných kódů pro kanály Retail](../dev-itpro/manage-secrets.md).
 
+    ``` xml
+Ve verzích Commerce 10.0.15 a novějších můžete použít funkci [Profily certifikátů definovaných uživatelem pro maloobchodní prodejny](./certificate-profiles-for-retail-stores.md), která podporuje převzetí služeb při selhání do režimu offline, když není k dispozici ústředí Key Vault nebo Commerce. Tato funkce rozšiřuje funkci [Správa tajných kódů pro kanály Retail](../dev-itpro/manage-secrets.md).
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+
+    ```
 Chcete-li používat tuto funkci v rozšíření CRT, postupujte takto.
 
+
+7. Spuštěním příkazu **msbuild** pro celou sadu Retail SDK vytvořte nasaditelné balíčky.
 1. Vytvořte nový projekt rozšíření CRT (typ projektu knihovny třídy C#). Použijte vzorové šablony ze sady SDK (Software Development Kit) pro Retail (RetailSDK\SampleExtensions\CommerceRuntime).
+8. Balíčky použijte pomocí služby Microsoft Dynamics Lifecycle Services (LCS) nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
 
 2. Přidejte vlastní obslužnou rutinu pro CertificateSignatureServiceRequest v projektu SequentialSignatureRegister.
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Povolení digitálního podpisu v režimu offline pro moderní POS
+
 
 3. Chcete-li přečíst tajné volání, použijte `GetUserDefinedSecretCertificateServiceRequest` s pomocí konstruktoru s parametrem profileId. Tím se spustí funkce pracující s nastaveními z profilů certifikátů. Na základě nastavení se certifikát načte buď z Azure Key Vault nebo z místního úložiště počítače.
+Chcete-li povolit digitální podpis v režimu offline pro Modern POS, musíte po aktivaci Modern POS na novém zařízení postupovat podle těchto kroků.
+
 
     ```csharp
+1. Sign in to POS.
     GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
+2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
     GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+3. Sign out of POS.
 
+4. Wait a while for the offline database to be fully synchronized.
     X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+5. Sign in to POS.
     ```
+6. Na stránce **Stav připojení databáze** zkontrolujte, zda je offline databáze plně synchronizována. Když hodnota pole **Čekající transakce v offline databázi** je **0** (nula), databáze je plně synchronizována.
 
+7. Restartujte Modern POS.
 4. Po načtení certifikátu pokračujte podepisováním dat.
 
+
+
 5. Sestavte projekt rozšíření CRT.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 6. Zkopírujte výstupní knihovnu třídy a vložte ji do ...\RetailServer\webroot\bin\Ext pro ruční testování.
 
@@ -1612,27 +1633,3 @@ Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují k
     Soubor má název **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** a nachází se v umístění **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 
     ---
-
-6. Aktualizujte konfigurační soubor pro Retail Server. V souboru **RetailSDK\\Packages\\RetailServer\\Code\\web.config** přidejte následující řádky do sekce **extensionComposition**.
-
-    ``` xml
-    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
-    ```
-
-7. Spuštěním příkazu **msbuild** pro celou sadu Retail SDK vytvořte nasaditelné balíčky.
-8. Balíčky použijte pomocí služby Microsoft Dynamics Lifecycle Services (LCS) nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Povolení digitálního podpisu v režimu offline pro moderní POS
-
-Chcete-li povolit digitální podpis v režimu offline pro Modern POS, musíte po aktivaci Modern POS na novém zařízení postupovat podle těchto kroků.
-
-1. Přihlaste se do POS.
-2. Na stránce **Stav připojení databáze** zkontrolujte, zda je offline databáze plně synchronizována. Když hodnota pole **Položky čekající na stažení** je **0** (nula), databáze je plně synchronizována.
-3. Odhlaste se ze systému POS.
-4. Chvíli počkejte, než bude offline databáze plně synchronizována.
-5. Přihlaste se do POS.
-6. Na stránce **Stav připojení databáze** zkontrolujte, zda je offline databáze plně synchronizována. Když hodnota pole **Čekající transakce v offline databázi** je **0** (nula), databáze je plně synchronizována.
-7. Restartujte Modern POS.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

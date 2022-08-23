@@ -1,25 +1,25 @@
 ---
 title: Nastavení a spuštění zpracování pro volání jednoduchého formátu elektronického výkaznictví pro vygenerování sestavy v aplikaci Excel
 description: Tento článek poskytuje příklad, který ukazuje, jak nastavit a používat elektronické zprávy.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 07/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
 ms.search.region: Global
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9894aabde854189e6fc1b6bb62051747f190e3ec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.search.form: ''
+ms.openlocfilehash: 6090c45a98b672f718f89fc1d2e1c060498bb8a0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904579"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279327"
 ---
 # <a name="set-up-and-run-processing-to-call-a-simple-exporting-er-format-to-generate-an-excel-report"></a>Nastavení a spuštění zpracování pro volání jednoduchého formátu elektronického výkaznictví pro vygenerování sestavy v aplikaci Excel
 

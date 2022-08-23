@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aae3d53c1005f096551b107c46ddafb37357f03c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868152"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219831"
 ---
 # <a name="configure-rates"></a>Konfigurace sazeb
 
@@ -84,7 +84,7 @@ Můžete také používat dvojí úrovně. Pokud pro hodnotu **Použít úrovně
    | **Popis** | Hodnota pole **Popis** je použita z popisu v záznamu nastavení sazby. To vám pomůže identifikovat nastavení sazby, ke kterému jsou připojeny sazby úrovně. |
    | **Kód úrovní** | Vyberte kód úrovně. Kódy úrovní se definují na stránce **Kódy úrovní**. Systém automaticky zobrazí popis kódu úrovně v mřížce vlevo. |
    | **Typ úrovně** | Určuje, jaké pole má být použito jako kritérium výběru pro proces výpočtu sazby úrovně. Například:</br></br><ul><li>Pokud se použije **Věk**, systém použije datum narození zaměstnance v procesu výpočtu sazby zaměstnaneckých výhod.</li><li>Pokud se použije **Plat**, systém použije roční plat zaměstnaneckých výhod v procesu výpočtu sazby zaměstnaneckých výhod.</li><li>Je-li použit **Typ práce**, použije se aktuální aktivní záznam pozice zaměstnance k určení typu úlohy podle záznamu úlohy, který je spojený s danou pozicí.</li></ul></br></br>Typy úrovní jsou **Věk**, **Plat**, **Fyzické**, **Pohlaví**, **Plný časový ekvivalent**, **Typ práce**, **Oblast kompenzace** a **Úroveň**. | 
-   | **Úroveň** | Hodnota, která má být použita s typem vrstvy během procesu výpočtu sazby zaměstnaneckých výhod. Například:</br></br><ul><li>Je-li typem úrovně **Věk**, jedná se o hodnotu stáří.</li><li>Je-li typem úrovně **Plat**, jedná se o částku platu.</li><li> Je-li typem úrovně **Typ práce**, jedná se o typ práce.</li></ul></br></br>Je-li typem úrovně **Věk** nebo **Plat**, hodnota v poli **Úroveň** představuje horní hranici úrovně. S typem úrovně **Typ práce** se používá při výběru sazby úrovně přístup přesné shody. |
+   | **Úroveň** | Hodnota, která má být použita s typem vrstvy během procesu výpočtu sazby zaměstnaneckých výhod. Například:</br></br><ul><li>Je-li typem úrovně **Věk**, jedná se o hodnotu stáří.</li><li>Je-li typem úrovně **Plat**, jedná se o částku platu.</li><li> Je-li typem úrovně **Typ práce**, jedná se o typ práce.</li></ul></br></br>Je-li typem úrovně **Věk** nebo **Plat**, hodnota v poli **Úroveň** představuje dolní hranici úrovně. S typem úrovně **Typ práce** se používá při výběru sazby úrovně přístup přesné shody. |
    | **Typ výpočtu** | Určuje způsob použití částky v poli Částka výpočtu a jaký matematický výpočet bude v případě potřeby proveden. Je-li typem výpočtu paušální částka, systém použije pole s částkami tak, jak je. Je-li typ výpočtu podle částky platu nebo disponibility v USD, systém ve svém matematickém výpočtu použije částku výpočtu a směr výpočtu.</br></br>Je-li typ výpočtu podle částky platu v USD, se použije následující matematická rovnice:</br></br>Roční mzda za zaměstnanecké výhody děleno částkou výpočtu (zaokrouhleně nahoru nebo dolů) krát částky pro kuřáky nebo nekuřáky pro zaměstnance nebo zaměstnavatele.</br></br>Je-li typ výpočtu podle částky pokrytí v USD, se použije následující matematická rovnice:</br></br>Částka pokrytí děleno částkou výpočtu (zaokrouhleně nahoru nebo dolů) krát částky pro kuřáky nebo nekuřáky pro zaměstnance nebo zaměstnavatele.</br></br>V obou výpočtech se použije způsob výpočtu, který určuje, zda se má zaokrouhlit roční mzda nebo částka disponibility dělená částkou výpočtu nahoru nebo dolů. |
    | **Výpočet částky** | Částka, která má být použita během procesu výpočtu sazby zaměstnaneckých výhod. Tato částka bude dělitelem při matematickém výpočtu sazby úrovně. |
    | **Směr výpočtu** | Směr, kterým by měla být výsledná částka zaokrouhlena. Systém podporuje tři směry výpočtu: prázdný (přesná metoda), **zvýšení** a **snížení**.</br></br><ul><li>Je-li toto pole prázdné, systém použije přesný výpočet částky mzdy nebo pokrytí vydělené částkou výpočtu. Pokud má tato hodnota zlomek, použije se při výpočtu.</li><li>Pokud je nastaveno **Zvýšení**, zvýší se matematický výpočet částky mzdy nebo pokrytí vydělený částkou výpočtu na další celé číslo, což znamená, že 12,25 se zvýší na 13.</li><li>Pokud je nastaveno **Snížení**, sníží se matematický výpočet částky mzdy nebo pokrytí vydělený částkou výpočtu na aktuální celé číslo, což znamená, že 12,25 se sníží na 12.</li></ul> |

@@ -2,7 +2,7 @@
 title: Uložená zobrazení
 description: V tomto článku je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125143"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220325"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -46,7 +46,12 @@ Po zpřístupnění zobrazení pro prostředí bude horní část libovolné str
 Výběr zobrazení obsahuje dvě varianty velikosti: 
 
 - **Selektory velkého zobrazení** - Stránky, které výrazně vyplní seznam, budou mít větší výběr zobrazení z několika důvodů. Nejdůležitější je, že větší selektor zobrazení označuje stránky, jejichž zobrazení může zahrnovat uživatelem definované filtry a řazení. Vzhledem k tomu, že filtry a řazení jsou zahrnuty v zobrazeních, je rovněž odůvodněna větší velikost selektoru, protože zobrazené názvy jsou často nejlepším popisem dat zobrazených na obrazovce a očekávání je, že uživatelé budou pro tyto typy stránek častěji přepínat mezi zobrazeními. Seskupení v mřížce lze také uložit do zobrazení na stránce s výběrem velkých zobrazení. 
+    
+    [![Velký výběr zobrazení, který podporuje úpravy dotazů v zobrazení.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Selektory malého zobrazení** - všechny ostatní stránky přes celou obrazovku (s výjimkou pracovních prostorů a řídicích panelů) mají menší výběr zobrazení, který se zobrazí vedle titulku stránky. Zobrazení na těchto stránkách zahrnují pouze přizpůsobení a ne uživatelem definované filtry. Na těchto stránkách se často jedná o nejdůležitější informace v horní části stránky. Menší velikost selektoru zobrazení také odráží nižší očekávanou frekvenci přepínání zobrazení na těchto stránkách. 
+    
+    [![Malý výběr zobrazení, který nepodporuje úpravy dotazů v zobrazení.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Vyberte-li název zobrazení, otevře se výběr zobrazení a zobrazí se seznam dostupných zobrazení pro tuto stránku.
 
@@ -64,6 +69,8 @@ Chcete-li přepnout do jiného zobrazení, otevřete nejprve selektor zobrazení
 Na rozdíl od tradičního přizpůsobení se zobrazení automaticky neuloží, když uživatel přizpůsobí stránku nebo použije filtr na seznam nebo seřadí. Chcete-li uložit tyto změny do zobrazení, je nutné zadat explicitní akci. Tento požadavek uživatelům poskytuje flexibilitu k vytvoření zobrazení před nebo po provedení změn souvisejících s tímto zobrazením. Rovněž zajišťuje, aby definice zobrazení nebyly neúmyslně změněny jednorázovými filtry nebo personalizacemi. Všimněte si, že položky typického využití stránky (například šířky sloupců nebo rozbalený nebo sbalený stav sekcí) se automaticky uloží v současném zobrazení, a to i u zamčených zobrazení.
 
 Chcete-li zajistit, aby byl znám aktuální stav zobrazení, když začnete měnit zobrazení personalizací nebo filtrováním, vedle aktuálního názvu zobrazení se zobrazí hvězdička (\*). Tento symbol označuje, že se díváte na neuloženou, upravenou verzi tohoto zobrazení.
+
+[![Neuložené změny v zobrazení.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Chcete-li tyto změny uložit, postupujte podle následujících kroků.
 
@@ -225,7 +232,7 @@ Jsou-li povolena zobrazení, budou všechna existující individuální nastaven
 
 ### <a name="what-pages-support-views"></a>Které stránky podporují zobrazení? 
 
-Zobrazení jsou k dispozici ve většině, ale ne na všech stránkách. Zobrazení jsou aktuálně k dispozici na všech stránkách na celé obrazovce s výjimkou řídicích panelů a pracovních prostorů. Neúplné stránky obrazovky, které obsahují dialogová okna, rozevírací dialogová okna, vyhledávání, rozšířené náhledy, v současné době nepodporují zobrazení. Zobrazení podpory pro další typy stránek, jako jsou například pracovní prostory a dialogová okna, může být vzato v úvahu pro budoucí aktualizaci.
+Zobrazení jsou k dispozici ve většině, ale ne na všech stránkách. Zobrazení jsou aktuálně k dispozici na všech stránkách na celé obrazovce s výjimkou řídicích panelů. Podpora zobrazení pro pracovní prostory je k dispozici prostřednictvím funkce **Podpora uložených pohledů pro pracovní prostory**. Většina stránek, které nejsou na celou obrazovku, které obsahují rozevírací dialogová okna, vyhledávání a rozšířené náhledy, v současné době nepodporují zobrazení. Podpora zobrazení pro dialogové okna je k dispozici prostřednictvím funkce **Podpora uložených pohledů pro dialogová okna**.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kdo smí publikovat zobrazení?
 

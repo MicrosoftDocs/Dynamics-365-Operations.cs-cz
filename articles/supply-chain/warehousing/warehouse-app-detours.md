@@ -4,19 +4,19 @@ description: Tento článek popisuje, jak nakonfigurovat obcházení pro položk
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863585"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218997"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 
@@ -34,20 +34,8 @@ Obcházení je samostatná položka nabídky, kterou lze otevřít z kroku v hla
 Než budete moci nakonfigurovat obcházení pro kroky v položkách nabídky mobilního zařízení, musíte provést následující postup, abyste povolili požadované funkce a vygenerovali požadované názvy polí v mobilní aplikaci Warehouse Management.
 
 1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
-1. V [pracovním prostoru **Správa funkcí**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivujte funkci, která je uvedena následovně:
-
-    - **Modul:** *Řízení skladu*
-    - **Název funkce:** *pokyny ke krokům aplikace Warehouse*
-
-    Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Obcházení aplikace Warehouse Management*.
-
-1. Aktivujte funkci, která je zde uvedena, následujícím způsobem:
-
-    - **Modul:** *Řízení skladu*
-    - **Název funkce:** *Obcházení aplikace Warehouse Management*
-
-    Tato funkce je funkce popsaná v tomto článku.
-
+1. Ujistěte se, že je funkce *Pokyny pro krok aplikace Warehouse* pro váš systém zapnutá. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Obcházení aplikace Warehouse Management*.
+1. Zapněte funkci *Obcházení aplikace Warehouse Management*. Tato funkce je funkce popsaná v tomto článku.
 1. Aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
 
@@ -65,7 +53,7 @@ Tento scénář ukazuje, jak nakonfigurovat dotaz na umístění jako obcházen�
 
 ### <a name="enable-sample-data"></a>Povolit ukázková data
 
-Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
+Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Vytvoření přepsání specifického pro nabídku a konfigurace obcházení pro scénář 1
 
@@ -118,7 +106,7 @@ Dotaz na umístění můžete podle potřeby nahradit dotazem na registrační z
 
 ### <a name="enable-sample-data"></a>Povolit ukázková data
 
-Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
+Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Vytvoření přepsání specifického pro nabídku a konfigurace obcházení pro scénář 2
 

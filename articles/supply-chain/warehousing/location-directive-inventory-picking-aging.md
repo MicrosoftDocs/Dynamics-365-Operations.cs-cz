@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068663"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219465"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Prodlení výdeje zásob směrnice místa
 
@@ -34,8 +34,8 @@ Při prvním přijetí nebo vytvoření inventáře ve skladu systém aktualizuj
 
 Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) v tomto pořadí:
 
-1. Stav umístění ve skladu
-1. Stáří vyskladnění zásob směrnice skladového místa
+1. *Stav umístění skladu* (Od verze 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Další informace viz [Stav skladového místa](warehouse-location-status.md).)
+1. *Stáří vyskladnění zásob směrnice skladového místa*
 
 ## <a name="feature-requirements"></a>Požadavky funkcí
 
@@ -50,7 +50,7 @@ Tato část obsahuje příklady, které ukazují, jak nastavit a používat stra
 
 ### <a name="make-sample-data-available"></a>Příprava ukázkových dat
 
-Chcete-li s těmito scénáři pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Kromě toho musíte dříve, než začnete, také vybrat právnickou osobu **USMF**.
+Chcete-li s těmito scénáři pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Kromě toho musíte dříve, než začnete, také vybrat právnickou osobu **USMF**.
 
 Tyto scénáře můžete také použít jako vodítko pro použití této funkce v produkčním systému. V takovém případě však musíte každé vlastní nastavení, které je zde popsáno, nahradit vlastními hodnotami.
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910543"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279561"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -117,7 +117,29 @@ Typ oznámení *zrušení objednávky* se spustí při zrušení objednávky v c
 
 ### <a name="customer-created"></a>Zákazník byl vytvořen.
 
-Typ oznámení *zákazník byl vytvořen* se spustí při vytvoření nové entity zákazníka v centrále Commerce.
+Typ oznámení *zákazník byl vytvořen* se spustí při vytvoření nové entity zákazníka v centrále Commerce. 
+
+Chcete-li povolit upozornění vytvořená zákazníkem, přejděte v Commerce headquarters na **Retail a Commerce \> Nastavení ústředí \> Parametry \> Parametry Commerce \> Obecné**. V rozevíracím seznamu **Profil e-mailových upozornění** vyberte profil upozornění e-mailem, který obsahuje typ upozornění vytvořený zákazníkem. 
+
+Ve výchozím nastavení jsou události vytvořené zákazníkem nahrány do centrály pomocí dávkové úlohy **Synchronizovat požadavky zákazníků a kanálů**. Pokud chcete k odeslání těchto událostí použít volání služby v reálném čase, nastavte e-mailové ID šablony vytvořené zákazníkem na **newCust**. To se však nedoporučuje, protože volání služby v reálném čase jsou voláním typu „vyvolej a zapomeň“ a nemají logiku nouzových nebo opakujících se pokusů, kterou poskytují dávkové úlohy.
+
+> [!NOTE] 
+> Když aktivujete oznámení vytvořená zákazníkem, zákazníci, kteří jsou vytvořeni ve všech kanálech v rámci právnické osoby, obdrží e-mail vytvořený zákazníkem. V současné době nelze oznámení vytvořená zákazníkem omezit na jeden kanál.  
+
+Při vyvolání prostřednictvím dávkové úlohy podporuje typ oznámení vytvořený zákazníkem následující zástupný symbol.
+
+| Název zástupného textu | Popis                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | Jméno a příjmení zákazníka, který si vytvořil účet. |
+
+Při vyvolání prostřednictvím volání služby v reálném čase podporuje typ oznámení vytvořený zákazníkem následující zástupné symboly.
+
+| Název zástupného textu | Popis                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Jméno             | Jméno a příjmení zákazníka, který si vytvořil účet. |
+| E-mail            | E-mailová adresa zákazníka, který si vytvořil účet.    |
+| Telefon            | Telefonní číslo zákazníka, který si vytvořil účet.      |
+| Adresa URL              | Adresa URL poskytnutá zákazníkem při vytváření účtu. |
 
 ### <a name="b2b-prospect-approved"></a>Potenciální zákazník B2B schválen
 

@@ -1,24 +1,24 @@
 ---
 title: Přehled výpočtu daně
 description: Tento článek vysvětluje celkový rozsah a funkce výpočtu daně.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166832"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270658"
 ---
 # <a name="tax-calculation-overview"></a>Přehled výpočtu daně
 
@@ -54,10 +54,15 @@ Výpočet daně je nasazen v následujících geografických oblastech Azure. Bu
 
 - Asie a Tichomoří
 - Austrálie
+- Brazílie
 - Kanada
 - Evropa
+- Francie
+- Indie
 - Japonsko
+- Jižní Afrika
 - Švýcarsko
+- Spojené arabské emiráty
 - Spojené království
 - Spojené státy
 
@@ -149,11 +154,15 @@ Ve verzi 10.0.28 jsou podporovány následující transakce:
 - Platební deník dodavatele
 - Deník plateb odběratele
 
+Ve verzi 10.0.29 jsou podporovány následující transakce: 
+
+- Periodický deník
+
 ## <a name="supported-countriesregions"></a>Podporované země/oblasti
 
-Výpočet daně lze povolit dle právnické osoby. 
+Výpočet daně lze spustit s podporovanými funkcemi lokalizace v následujících zemích/oblastech pro primární adresu právnické osoby: 
 
-Ve verzi 10.0.21 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+Podporováno ve verzi 10.0.21:
 
 - Rakousko
 - Belgie
@@ -174,9 +183,9 @@ Ve verzi 10.0.21 jsou podporovány následující země/oblasti pro primární a
 - Švédsko
 - Švýcarsko
 - Spojené království
-- USA
+- Spojené státy
 
-Ve verzi 10.0.22 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+Podporováno ve verzi 10.0.22:
 
 - Austrálie
 - Bahrajn
@@ -191,22 +200,24 @@ Ve verzi 10.0.22 jsou podporovány následující země/oblasti pro primární a
 - Jižní Afrika
 - Spojené arabské emiráty
 
-Ve verzi 10.0.23 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+Podporováno ve verzi 10.0.23:
 
 - Thajsko
 - Japonsko
 - Malajsie
 - Singapur
 
-Ve verzi 10.0.24 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+Podporováno ve verzi 10.0.24:
 
 - Mexiko
 
-Ve verzi 10.0.26 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+Podporováno ve verzi 10.0.26:
 
 - Čína
 - Česká republika
 - Španělsko
+
+Pro libovolnou zemi/oblast, která není lokalizována společností Microsoft, lze také povolit a spustit výpočet daně s dalšími globálními funkcemi.
 
 ## <a name="related-resources"></a>Související prostředky
 

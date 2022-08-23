@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845917"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219525"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -61,7 +61,6 @@ Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodáve
 1. Na záložce s náhledem **Sklad** nastavte možnost **Konsolidovat dodávku při uvolnění do skladu** na *Ano*.
 1. Opakujte kroky 2 až 4 pro všechny ostatní sklady, kde je vyžadována konsolidace.
 1. Zavřete stránku.
-1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek*. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
 1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**. Možná budete muset obnovit svůj prohlížeč, abyste mohli zobrazit novou položku **Zásad konsolidace dodávek** po zapnutí funkce.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 
@@ -81,7 +80,6 @@ Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodáve
 
 Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek ve zcela novém prostředí.
 
-1. Použijte [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí funkce *Zásady konsolidace dodávek*, pokud jste ji již nezapnuli. V pracovním prostoru **Správa funkcí** je funkce pojmenována jako *Konsolidace dodávek*.
 1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 

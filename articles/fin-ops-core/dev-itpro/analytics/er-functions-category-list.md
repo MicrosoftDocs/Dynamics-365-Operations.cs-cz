@@ -1,25 +1,25 @@
 ---
 title: Seznam funkcí ER v kategorii seznamu
 description: Tento článek obsahuje informace o funkcích seznamu, které jsou podporovány v elektronickém výkaznictví (ER).
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869048"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277685"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Seznam funkcí ER v kategorii seznamu
 
@@ -47,6 +47,7 @@ Funkce seznamu elektronického výkaznictví (ER) lze používat k extrahování
 | [ListOfFields](er-functions-list-listoffields.md)         | Tato funkce vrací hodnotu typu *seznam záznamů*, která je vytvořena na základě struktury zadaného argumentu typu *výčet* nebo *kontejner (záznam)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Tato funkce vrací hodnotu typu *seznam záznamů*, která obsahuje pouze první záznam zadaného seznamu.|
 | [OrderBy](er-functions-list-orderby.md)                   | Tato funkce vrací vrátí zadaný seznam jako hodnotu typu *seznam záznamů* poté, co byl seřazen podle zadaných argumentů. Tyto argumenty lze definovat jako výrazy. |
+| [Opakovat](er-functions-list-repeat.md)                     | Tato funkce vytvoří záznam, který obsahuje pole, které má hodnotu odpovídající zadanému vstupu. Poté vrátí nový *Seznam záznamů* záznamu, který se zadaný počet opakování opakuje. |
 | [Stornovat](er-functions-list-reverse.md)                   | Tato funkce vrací zadaný seznam jako hodnotu typu *seznam záznamů* v obráceném pořadí. |
 | [Rozdělit](er-functions-list-split.md)                       | Tato funkce rozdělí zadaný vstupní řetězec do podřetězců a vrátí výsledek jako novou hodnotu typu *seznam záznamů*. |
 | [SplitList](er-functions-list-splitlist.md)               | Tato funkce rozdělí zadaný seznam na podseznamy (neboli dávky), přičemž každá z nich obsahuje zadaný počet záznamů. Funkce potom vrátí výsledek jako novou hodnotu typu *seznam záznamů*, která se skládá z dávek. |

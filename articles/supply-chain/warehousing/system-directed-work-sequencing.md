@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849119"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219681"
 ---
 # <a name="system-directed-work-sequencing"></a>Řazení práce řízené systémem
 
@@ -44,7 +44,7 @@ Než můžete použít funkci Řazení práce řízené systémem, musíte ji v�
 
 ### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-Chcete-li s tímto scénářem pracovat pomocí hodnot prezentovaných v tomto článku, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dále musíte vybrat právnickou osobu **USMF**. Scénář používá sklad *51* z ukázkových dat.
+Chcete-li s tímto scénářem pracovat pomocí hodnot prezentovaných v tomto článku, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dále musíte vybrat právnickou osobu **USMF**. Scénář používá sklad *51* z ukázkových dat.
 
 > [!IMPORTANT]
 > Před vydáním objednávek do skladu zajistěte, aby skladová místa pro vyskladnění měla dostatečné množství zásob pro všechny položky objednávek.

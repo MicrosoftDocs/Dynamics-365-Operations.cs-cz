@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 741377a43e2bfe702b213647cc6460a3d6ad93fb
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068624"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218675"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Vydání dávky částečně rezervovaných převodních příkazů
 
@@ -42,25 +42,22 @@ Než může být objednávka částečně uvolněna do skladu v dávce, musí b�
 
 Zásady plnění pro převodní příkazy a prodejní objednávky jsou určené na úrovni společnosti. V závislosti na nastavení zásad plnění bude vydání objednávek v dávce přijato nebo zamítnuto. Objednávky budou poté podle toho zpracovány.
 
--   Chcete-li vytvořit zásady plnění pro převodní příkazy a prodejní objednávky, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a pak vytvořte zásadu plnění zadáním názvu a popisu.
-
--   Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, klikněte na **Řízení skladu** \> **Nastavení** \> **Uvolnit do skladu** \> **Zásady plnění** a následně nastavte pole **Sazba plnění**, **Typ hodnoty** a **Zprávy porušení plnění**.
+- Chcete-li vytvořit zásady plnění pro převodní příkazy a prodejní objednávky, přejděte na **Řízení skladu \> Nastavení \> Uvolnit do skladu \> Zásady plnění** a vytvořte zásadu plnění zadáním názvu a popisu.
+- Chcete-li určit sazbu plnění, typ hodnoty a zprávu, která se zobrazí v případě porušení zásady plnění, přejděte na **Řízení skladu \> Nastavení \> Uvolnit do skladu \> Zásady plnění** a následně nastavte pole **Sazba plnění**, **Typ hodnoty** a **Zprávy porušení plnění**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Nastavení zásad plnění pro převodní příkazy a prodejní objednávky
 
--   Chcete-li nastavit zásady plnění pro převodní příkazy, klikněte **Řízení zásob** \> **Nastavení** \> **Parametry modulu Řízení zásob a skladu** \> **Převodní příkazy** \> **Řízení skladu** a poté vyberte zásadu plnění převodních příkazů.
+- Chcete-li nastavit zásady plnění pro převodní příkazy, přejděte na **Řízení zásob \> Nastavení \> Parametry modulu Řízení zásob a skladu** a pak na kartě **Převodní příkazy** v části **Řízení skladu** vyberte zásadu plnění převodních příkazů.
+- Chcete-li nastavit zásady plnění pro prodejní objednávky, přejděte na **Pohledávky \> Nastavení \> Parametry pohledávek** a pak na kartě **Řízení skladu** vyberte zásadu plnění prodejní objednávky.
 
--   Chcete-li nastavit zásady plnění pro prodejní objednávky, klikněte na **Pohledávky** \> **Nastavení** \> **Parametry pohledávek** \> **Řízení skladu** a poté vyberte zásadu plnění prodejní objednávky.
-
-## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Povolení vydání v dávce a určení množství, které je třeba uvolnit v dávce
+## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-released-in-a-batch"></a>Povolení vydání v dávce a určení množství, které je třeba uvolnit v dávce
 
 Dávková úloha se používá k uvolnění objednávek do skladu v dávce. Parametry rozlišující objednávky, které mají být spuštěny v dávkové úloze, se nastavují na samotné dávkové úloze.
 
 Parametr **Množství** určuje, zda má být v dávce uvolněné fyzicky rezervované množství nebo celé množství. Parametr **Povolit uvolnění částečně uvolněných objednávek** určuje, zda by objednávky v dávce měly být přijaty nebo zamítnuty, pokud byly částečně uvolněny dříve.
 
--   Chcete-li nastavit **množství** a **Povolit uvolnění částečně uvolněných objednávek** pro převodní příkazy, klikněte na **Řízení skladu** \> **Uvolnit do skladu** \> **Automaticky uvolnit převodní příkazy**.
-
--   Chcete-li nastavit **množství** a **Povolit uvolnění částečně uvolněných objednávek** pro prodejní objednávky, klikněte na **Řízení skladu** \> **Uvolnit do skladu** \> **Automaticky uvolnit prodejní objednávky**.
+- Chcete-li nastavit parametry **Množství** a **Povolit uvolnění částečně uvolněných objednávek** pro převodní příkazy, přejděte na **Řízení skladu \> Uvolnit do skladu \> Automaticky uvolnit převodní příkazy**.
+- Chcete-li nastavit parametry **Množství** a **Povolit uvolnění částečně uvolněných objednávek** pro prodejní objednávky, přejděte na **Řízení skladu \> Uvolnit do skladu \> Automaticky uvolnit prodejní objednávky**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

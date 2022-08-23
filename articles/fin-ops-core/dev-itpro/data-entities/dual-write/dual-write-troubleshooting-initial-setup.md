@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111193"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289507"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Tento článek obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi finančními a provozními aplikacemi a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
 
@@ -87,6 +85,19 @@ Existují dvě věci, které mohou způsobit problém s tím, že prostředí ne
 
 + Uživatel použitý pro přihlášení není ve stejném klientovi jako instance financí a provozu.
 + Existují určité starší instance financí a provozu hostované společností Microsoft, které měly problém se zjišťováním. Chcete-li to opravit, aktualizujte instanci financí a provozu. Prostředí se stane zjistitelným po každé aktualizaci.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>Chyba 403 (Zakázáno) při vytváření připojení
+
+V rámci procesu propojení s duálním zápisem jsou vytvořena dvě připojení Power Apps (také označovaná jako připojení *Apihub*) jménem uživatele v propojeném prostředí Dataverse. Pokud zákazník nemá licenci pro prostředí Power Apps, vytvoření připojení ApiHub se nezdaří a zobrazí se chyba 403 (Zakázáno). Následuje příklad chybové zprávy:
+
+> MSG=\[Nepodařilo se nastavit prostředí pro duální zápis. Podrobnosti chyby:Stavový kód odpovědi neoznačuje úspěch: 403 (Zakázáno). - Stavový kód odpovědi neoznačuje úspěch: 403 (Zakázáno)\] STACKTRACE=\[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- End of stack trace from previous location where exception was thrown --- at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+K této chybě dochází z důvodu chybějící licence Power Apps. Přiřaďte příslušnou licenci (např. Power Apps Trial 2 Plan) uživateli, aby měl uživatel oprávnění vytvářet připojení. Pro ověření licence může zákazník přejít na web [Můj účet](https://portal.office.com/account/?ref=MeControl#subscriptions) pro zobrazení licencí, které jsou aktuálně přiřazeny uživateli.
+
+Další informace o licenci Power Apps naleznete v následujících článcích:
+
+- [Přiřazení licencí uživatelům](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Nákup Power Apps pro vaši organizaci](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

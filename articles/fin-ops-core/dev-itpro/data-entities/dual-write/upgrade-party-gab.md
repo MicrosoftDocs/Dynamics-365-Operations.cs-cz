@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111811"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242975"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -274,7 +274,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
     ![Import záznamů Strany Dataverse.](media/data-factory-import-party.png)
 
-9. V datové továrně spusťte šablony Poštovní adresy strany a Elektronické adresy strany jednu po druhé.
+9. V datové továrně spusťte šablony elektronické adresy strany a poštovní adresy strany jednu po druhé.
 
     + Šablona Poštovní adresy strany vloží všechny záznamy poštovní adresy v aplikaci pro zapojení zákazníků a přiřadí je k odpovídajícím záznamům **Účet**, **Kontakt** a **Prodejce**. Vygeneruje také tři soubory .csv: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv a ImportFONewPostalAddress.csv.
     + Šablona Eletronické adresy strany vloží všechny záznamy elektronických adres v aplikaci pro zapojení zákazníků a přiřadí je k odpovídajícím záznamům **Účet**, **Kontakt** a **Prodejce**. Vygeneruje také jeden soubor .csv: ImportFONewElectronicAddress.csv.

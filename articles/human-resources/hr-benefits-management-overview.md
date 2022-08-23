@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901140"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227890"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -147,6 +147,16 @@ Než bude možné zpracovat životní události, musí být v průběhu doby ná
 - [Zpracování životních událostí](hr-benefits-process-life-events.md)
 - [Zpracování změn životních událostí](hr-benefits-process-life-event-changes.md)
 - [Zpracování způsobilosti k životním událostem](hr-benefits-process-life-event-eligibility.md)
+
+Po dokončení zpracování životní události a po dobu, kdy je otevřeno období registrace životní události, mohou zaměstnanci provádět změny možností plánu, které jsou ovlivněny životní událostí. Správci mohou provádět změny jménem zaměstnanců. Poté, co skončí období registrace a s transakcí životní události nesouvisí žádné nepotvrzené typy plánu, je transakce uzavřena.
+
+Všechny plány, které jsou ovlivněny životní událostí, musí být buď vybrány, nebo vzdány a následně potvrzeny. Pokud plán není vybrán, není vzdán, a proto není potvrzen, transakce životní události se neuzavře.
+
+Správci mohou transakci životní události podle potřeby ručně uzavřít tak, že ji vyberou a poté vyberou **Zavřít**. Pokud transakce obsahuje nepotvrzené plány a správce ji chce uzavřít, uzavření životní události může omezit úpravy těchto plánů.
+
+Uzavřené životní události nelze smazat.
+
+Správci mohou transakci životní události podle potřeby znovu otevřít tak, že ji vyberou a poté vyberou **Znovu otevřít**.
 
 ## <a name="rate-updates-optional"></a>Aktualizace sazeb (volitelné)
 

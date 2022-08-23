@@ -1,28 +1,26 @@
 ---
 title: Přehled elektronického výkaznictví
 description: Tento článek poskytuje přehled o nástroji Elektronické výkaznictví. Popisuje klíčové koncepty, podporované scénáře a formáty, které jsou součástí řešení.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109573"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269684"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -78,7 +76,7 @@ Modul EV má následující možnosti:
 
 [![Hlavní tok dat elektronického výkaznictví.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponenty
+### <a name="component"></a>Komponenta
 
 Elektronické výkaznictví podporuje následující typy komponent:
 
@@ -89,32 +87,7 @@ Elektronické výkaznictví podporuje následující typy komponent:
 
 Další informace získáte v tématu [Komponenty elektronického výkaznictví](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Správa verzí komponent
-
-Komponenty EV podporují správu verzí je podporována. Následující workflow je určen pro správu změn v komponentách ER:
-
-1. Původně vytvořená verze je označena jako verze **Koncept**. Tato verze může být upravena a je k dispozici pro zkušební běh.
-2. Verzi **Koncept** lze převést na verzi **Dokončeno**. Tuto verzi lze použít v místních procesů vykazování.
-3. Verzi **Dokončeno** lze převést na verzi **Sdíleno**. Tato verze je publikována v LCS a lze ji použít v globálních procesech vykazování.
-4. Verzi **Sdíleno** lze převést na verzi **Vyřazeno**. Tuto verzi můžete potom odstranit.
-
-Verze ve stavu **Dokončeno** nebo **Sdíleno** jsou k dispozici pro další výměnu dat. U komponenty s těmito stavy můžete provádět následující akce:
-
-- Komponentu lze serializovat do formátu XML a exportovat jako soubor ve formátu XML.
-- Komponentu lze reserializovat ze souboru XML a importovat do aplikace jako novou verzi komponenty ER.
-
-#### <a name="component-date-effectivity"></a>Datum platnosti komponenty
-
-Verze komponent ER platí k určitému datu. Určením hodnoty data **Platné od** lze u komponenty ER určit datum, kdy komponenta začne platit v procesech vykazování. Datum relace aplikace slouží k definování, zda komponenta je platná pro spuštění. Poslední verze slouží k procesu vykazování při více než jedné platné verzi pro konkrétní datum.
-
-#### <a name="component-access"></a>Přístup komponent
-
-Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/oblasti. Pokud je toto nastavení pro vybranou verzi konfigurace formátu prázdné, k součásti formátu lze přistupovat z libovolné společnosti v době běhu. Pokud toto nastavení obsahuje ISO kódy země/oblasti, je komponenta formátu přístupná pouze ze společností, jejichž primární adresa je definována pro jednu komponentu formátu ISO kódu země/oblasti.
-
-Různé verze součástí formátu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfigurace
+### <a name="configuration"></a><a name="Configuration"></a>Konfigurace
 
 Konfigurace ER představuje obálku určité komponenty ER. Komponenta může být komponentou datového modelu nebo formátu. Konfigurace může obsahovat různé verze komponenty ER. Každá konfigurace je označena jako vlastněná určitou konfigurací poskytovatele. Verze **Návrh** komponent z konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení EV v aplikaci.
 
@@ -124,13 +97,13 @@ Vytvořená konfigurace formátu obsahuje komponentu formátu. Komponenta datov�
 
 Konfigurace EV je sdílená pro společnosti aplikace.
 
-#### <a name="provider"></a><a name="Provider"></a>Zprostředkovatel
+### <a name="provider"></a><a name="Provider"></a>Zprostředkovatel
 
 Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení financí a provozu jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
 
 Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si průvodce záznamem úloh **Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního** (součást obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Úložiště
+### <a name="repository"></a><a name="Repository"></a>Úložiště
 
 Úložiště EV obsahuje konfigurace EV. Následující typy úložiště ER jsou aktuálně podporovány: 
 
@@ -265,6 +238,7 @@ Seznam konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globáln
 
 ## <a name="additional-resources"></a>Další prostředky
 
+- [Komponenty elektronického výkaznictví](er-overview-components.md)
 - [Vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
 

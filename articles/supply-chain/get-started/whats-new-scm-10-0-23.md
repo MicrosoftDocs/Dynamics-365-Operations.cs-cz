@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124521"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219117"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
@@ -55,7 +55,7 @@ Pokud chcete některou z těchto funkcí zapnout nebo vypnout, musíte tak učin
 | Řízení zásob a skladu | (Rusko) Použít překlady do místního jazyka v primárních formulářích specifických pro danou zemi nebo oblast v řízení zásob | V ruských lokalizacích Supply Chain Management tato funkce umožňuje použití ruských překladů pro názvy produktů či položek a měrných jednotek v následujících výtiscích zásob specifických pro Rusko:Inventurní seznam (INV-3),Inventurní seznam (INV-5),Inventurní seznam (INV-6). |
 | Hlavní plánování | Služba Azure Machine Learning Service pro prognózy poptávky | Tato funkce umožňuje službě Azure Machine Learning Service generovat prognózy poptávky na základě historických dat. Další informace viz [Nastavení prognózy poptávky](../master-planning/demand-forecasting-setup.md). |
 | Zásobování a zdroje | Vyčistit historii aktualizace nákupní objednávky | Tato funkce vám umožňuje vyčistit dočasné historické záznamy související s aktualizacemi nákupních objednávek. Přidává nové tlačítko s názvem **Vyčistit historii aktualizací nákupů** do podokna akcí na stránce **Všechny nákupní objednávky**. Tato funkce je povolena ve výchozím nastavení. |
-| Řízení výroby | (Preview) Automatické vyskladňování materiálů s povoleným skladem pro automaticky účtované výdejky | Tato funkce vám umožňuje automaticky vydávat a řešit dimenze zásob pro automaticky zaúčtované, odvozené a zpětně účtované deníky výdejek. |
+| Řízení výroby | Automatické vyskladňování materiálů s povoleným skladem pro automaticky účtované výdejky | Tato funkce vám umožňuje automaticky vydávat a řešit dimenze zásob pro automaticky zaúčtované, odvozené a zpětně účtované deníky výdejek. |
 | Řízení výroby | Potvrdit expiraci surovin oproti plánovanému datu spotřeby | Tato funkce mění způsob, jakým se ověřují data expirace šarže při rezervaci šarže suroviny, která má být použita během výroby. Když je tato funkce povolena, datum vypršení šarže se ověřuje proti datu plánované spotřeby (datum suroviny), jak je stanoveno na řádku výrobního kusovníku nebo řádku vzorce dávkové objednávky. Když je tato funkce zakázána, je datum vypršení šarže ověřeno oproti plánovanému datu dodání výrobní nebo dávkové zakázky (jako dříve). |
 | Prodej a marketing | Vyčistění historie aktualizace prodejů na základě stáří | Tato funkce umožňuje nastavit maximální stáří záznamů, které se mají uchovávat při spuštění periodické úlohy **Vyčištění historie aktualizace prodeje**. Starší záznamy budou smazány. To je užitečné, když nastavíte pravidelné spouštění úlohy, protože stáří se vždy počítá vzhledem k datu spuštění úlohy. Bez této funkce můžete nastavit pouze konkrétní datum pro uchování nejstarších záznamů. Další informace viz [Vymazání historických dat plánu prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Prodej a marketing | Zlepšit výkonnost sestavy „Prvních 100“ zákazníků | Tato funkce zlepšuje výkon sestavy zákazníků **Top 100** tím, že se sestava vždy spouští u všech zákazníků (což je její zamýšlené použití) místo umožnění vlastních dotazů. Když je tato funkce povolena, všechna nastavení **Záznamy k zahrnutí** jsou zakázána v dialogovém okně sestavy **Top 100**. |

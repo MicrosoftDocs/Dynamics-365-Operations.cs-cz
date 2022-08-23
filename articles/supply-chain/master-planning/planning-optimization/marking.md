@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844460"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219930"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Značení zásob s optimalizací plánování
 
@@ -43,9 +43,15 @@ Doložení začíná zahrnutím příslušného značení, rezervací zásob na 
 
 Když zpracujete plánovanou objednávku, dialogové okno **Potvrzení** poskytuje pole **Aktualizovat označení**, které používáte k nastavení možností značení pro objednávky, které jsou vytvářeny během potvrzování. Vyberte jednu z následujících hodnot:
 
-- **Ne** - Není použito žádné označení zásob.
-- **Standardní** – Označení zásob se aktualizuje podle doložení. Objednávka požadavku (poptávka) se označí podle objednávky splnění (nabídka). Pokud na objednávce plnění zůstane nějaké množství, není označeno a referenční informace zůstanou prázdné. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny pouze k prodejní objednávce.
-- **Rozšířený** – Označí se objednávka požadavku (poptávka) i objednávka splnění (nabídka) bez ohledu na to, zda v objednávce splnění zůstane nějaké množství nebo ne. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny jak k prodejní objednávce, tak k nákupní objednávce.
+- *Ne* - Není použito žádné označení zásob.
+- *Standardní* – Označení zásob se aktualizuje podle doložení. Objednávka požadavku (poptávka) se označí podle objednávky splnění (nabídka). Pokud na objednávce plnění zůstane nějaké množství, není označeno a referenční informace zůstanou prázdné. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny pouze k prodejní objednávce.
+- *Rozšířený* – Označí se objednávka požadavku (poptávka) i objednávka splnění (nabídka) bez ohledu na to, zda v objednávce splnění zůstane nějaké množství nebo ne. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny jak k prodejní objednávce, tak k nákupní objednávce.
+- *Jednoúrovňový standard* – Používá se jednoúrovňové značení. Jednoúrovňové značení označuje pouze hlavní položku, nikoli její součásti kusovníku. Proto můžete po potvrzení zachovat flexibilní přiřazení komponent pro výrobní zakázky. Jednoúrovňové značení umožňuje systému optimalizovat změny poptávky na poslední chvíli. Ve *standardním* jednoúrovňovém značení jsou objednávky požadavků označeny proti jejich objednávkám plnění, ale objednávky plnění nejsou označeny, pokud mají zbývající množství.
+- *Jednoúrovňové rozšířené* – Používá se jednoúrovňové značení. V *rozšířeném* jednoúrovňovém značení jsou objednávky požadavků označeny proti jejich objednávkám plnění a objednávky plnění jsou vždy označeny bez ohledu na zbývající množství.
 
+Chcete-li nastavit výchozí možnost označení pro váš systém, přejděte na **Hlavní plánování \> Nastavení \> Parametry hlavního plánování**. Poté na kartě **Standardní aktualizace** nastavte pole **Aktualizovat označení** na vámi preferovanou možnost.
+
+> [!NOTE]
+> Možnosti *Jednoúrovňový standard* a *Jedna úroveň rozšířená* jsou dostupné pouze v případě, že je v systému aktivní *Automatizace dodávek na zakázku*. Další informace o této funkci a o tom, jak ji aktivovat, naleznete v části [Automatizace dodávek na zakázku](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

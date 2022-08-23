@@ -1,32 +1,32 @@
 ---
 title: Správa životního cyklu konfigurace elektronického vykazování
 description: Tento článek popisuje způsob správy životního cyklu konfigurací elektronického výkaznictví pro Dynamics 365 Finance.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109075"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271576"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Správa životního cyklu konfigurace elektronického vykazování
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje způsob správy životního cyklu konfigurací elektronického výkaznictví pro Dynamics 365 Finance.
+Tento článek popisuje způsob správy životního cyklu [konfigurací](general-electronic-reporting.md#Configuration) [elektronického výkaznictví](general-electronic-reporting.md) (ER) pro Dynamics 365 Finance.
 
 ## <a name="overview"></a>Přehled
 
@@ -105,6 +105,41 @@ V některých případech můžete vyžadovat, aby systém při importu nových 
 
     > [!NOTE]
     > Tento parametr je specifický pro uživatele a konkrétní společnost.
+
+## <a name="dependencies-on-other-components"></a>Závislosti na jiných komponentách
+
+Konfigurace ER lze konfigurovat jako [závislé](er-download-configurations-global-repo.md#import-filtered-configurations) na jiných konfiguracích. Například můžete [importovat](er-download-configurations-global-repo.md) konfiguraci [datového modelu](er-overview-components.md#data-model-component) ER z globálního úložiště do instance [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) nebo Dynamics 365 Finance a poté vytvořit novou konfiguraci [formátu](er-overview-components.md#format-component) ER, která je [odvozená](er-quick-start2-customize-report.md#DeriveProvidedFormat) z importované konfigurace datového modelu ER. Odvozená konfigurace formátu ER bude záviset na konfiguraci základního datového modelu ER.
+
+![Odvozená konfigurace formátu ER na stránce Konfigurace.](./media/ger-configuration-lifecycle-img1.png)
+
+Po dokončení návrhu formátu můžete změnit stav úvodní [verze](general-electronic-reporting.md#component-versioning) konfigurace formátu ER z **Koncept** na **Dokončeno**. Poté můžete sdílet dokončenou verzi konfigurace formátu ER jejím [publikováním](../../../finance/localizations/rcs-global-repo-upload.md) do globálního úložiště. Dále můžete přistupovat ke globálnímu úložišti z libovolné cloudové instance RCS nebo Finance. Poté můžete importovat jakoukoli verzi konfigurace ER, která je použitelná pro aplikaci, z globálního úložiště do této aplikace.
+
+![Publikovaná konfigurace formátu ER na stránce úložiště konfigurace.](./media/ger-configuration-lifecycle-img2.png)
+
+Na základě závislosti na konfiguraci, když vyberete konfiguraci formátu ER v globálním úložišti pro import do nově nasazené instance RCS nebo Finance, bude základní konfigurace datového modelu ER automaticky nalezena v globálním úložišti a importována spolu s vybranou konfigurací formátu ER jako základní konfigurace.
+
+Verzi konfigurace formátu ER můžete také exportovat ze své aktuální instance RCS nebo Finance a uložit ji lokálně jako soubor XML.
+
+![Export verze konfigurace formátu ER jako XML na stránce Konfigurace.](./media/ger-configuration-lifecycle-img3.png)
+
+Ve verzích Finance **před verzí 10.0.29**, když se pokusíte importovat verzi konfigurace formátu ER z tohoto souboru XML nebo z jakéhokoli úložiště jiného než globálního úložiště do nově nasazené instance RCS nebo Finance, která ještě neobsahuje žádné konfigurace ER, bude vyvolána následující výjimka, která informuje, že nelze získat základní konfiguraci:
+
+> Zbývají nevyřešené odkazy<br>
+Odkaz objektu „\<imported configuration name\>“ na objekt „Base“ (\<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) nelze navázat
+
+![Import verze konfigurace formátu ER na stránce úložiště konfigurace.](./media/ger-configuration-lifecycle-img4.gif)
+
+Ve verzi **10.0.29 a novější**, když se pokusíte provést stejný import konfigurace a nelze-li základní konfiguraci nalézt v aktuální instanci aplikace nebo ve zdrojovém úložišti, které aktuálně používáte (pokud existuje), rámec ER se automaticky pokusí najít název chybějící základní konfigurace v globální mezipaměti úložiště. Poté v textu vyvolané výjimky představí název a globálně jedinečný identifikátor (GUID) chybějící základní konfigurace.
+
+> Zbývají nevyřešené odkazy<br>
+Odkaz objektu „\<imported configuration name\>“ na objekt „Base“ (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) nelze navázat
+
+![Výjimka na stránce úložiště konfigurace, když nelze nalézt základní konfiguraci.](./media/ger-configuration-lifecycle-img5.png)
+
+Zadaný název můžete použít k nalezení základní konfigurace a poté ji ručně importovat.
+
+> [!NOTE]
+> Tato nová možnost funguje pouze v případě, že se alespoň jeden uživatel již přihlásil do globálního úložiště pomocí stránky [Úložiště konfigurace](er-download-configurations-global-repo.md#open-configurations-repository) nebo jednoho z polí [vyhledávání](er-extended-format-lookup.md) globálního úložiště v aktuální instanci Finance, a když byl obsah globálního úložiště uložen do mezipaměti.
 
 ## <a name="additional-resources"></a>Další prostředky
 

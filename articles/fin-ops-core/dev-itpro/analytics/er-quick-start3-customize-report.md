@@ -1,28 +1,26 @@
 ---
 title: Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 description: Tento článek vysvětluje, jak přizpůsobit konfigurace elektronického výkaznictví (ER) od společnosti Microsoft, které generují vlastní elektronické doklady.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854691"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278939"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 
@@ -310,7 +308,7 @@ Jako uživatel v roli konzultanta funkčních elektronických zpráv můžete na
 5. V poli **Název** zadejte **Model faktury (Litware)**.
 6. Vyberte **Vytvořit konfiguraci** pro přidání nové konfigurace ER.
 
-Nyní můžete použít návrháře datových modelů ER k úpravě verze 50.1 konfigurace ER **Model faktury (Litware)** v **Návrhu** [stavu](general-electronic-reporting.md#component-versioning).
+Nyní můžete použít návrháře datových modelů ER k úpravě verze 50.1 konfigurace ER **Model faktury (Litware)** ve stavu **Návrh**.
 
 ![Verze 50.1 konfigurace ER na stránce Konfigurace.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Musíte upravit svůj vlastní datový model přidáním nového pole a poskytno
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Dokončete vlastní konfigurace datového modelu
 
-Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci s verzí 50.1 vaší vlastní konfigurace datového modelu ER, abyste ji zpřístupnili, aby bylo možné přidat další vlastní konfigurace ER.
+Musíte dokončit práci s verzí 50.1 vaší vlastní konfigurace datového modelu ER, abyste ji zpřístupnili, aby bylo možné přidat další vlastní konfigurace ER.
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
 2. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně rozbalte položku **Model faktury** a vyberte možnost **Model faktury (Litware)**.
@@ -394,7 +392,7 @@ Musíte upravit mapování vlastního modelu a určit, jak by mělo vlastní pol
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Dokončete vlastní konfigurace mapování datového modelu
 
-Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci s verzí 50.19.1 vaší vlastní konfigurace mapování modelu ER, aby byla k dispozici pro použití.
+Musíte dokončit práci s verzí 50.19.1 vaší vlastní konfigurace mapování modelu ER, aby byla k dispozici pro použití.
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
 2. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně rozbalte položku **Model faktury zákazníka** \> **Mapování modelu faktury zákazníka** a vyberte **Mapování modelu faktury (Litware)**.
@@ -428,7 +426,7 @@ Jako uživatel v roli konzultanta funkčních elektronických zpráv můžete na
 
 ![Přidání vlastní konfigurace formátu na stránce Konfigurace.](./media/er-quick-start3-adding-custom-format.png)
 
-Nyní můžete použít návrháře operací ER k úpravě verze 11.2.2.1 konfigurace ER **Prodejní faktury Peppol (Litware)** v **Koncept** [stavu](general-electronic-reporting.md#component-versioning).
+Nyní můžete použít návrháře operací ER k úpravě verze 11.2.2.1 konfigurace ER **Prodejní faktury Peppol (Litware)** ve stavu **Koncept**.
 
 ![Verze 11.2.2.1 konfigurace ER na stránce Konfigurace.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Svůj vlastní formát musíte upravit přidáním nového prvku formátu, kter�
 
 #### <a name="complete-a-custom-format-configuration"></a>Dokončete vlastní konfigurace formátu
 
-Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci s verzí 11.2.2.1 vaší vlastní konfigurace formátu ER, aby byla k dispozici pro použití.
+Musíte dokončit práci s verzí 11.2.2.1 vaší vlastní konfigurace formátu ER, aby byla k dispozici pro použití.
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
 2. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně rozbalte položku **Model faktury zákazníka** \> **Prodejní faktura UBL** \> **Prodejní faktura Peppol** a vyberte možnost **Prodejní faktura Peppol (Litware)**.
@@ -650,7 +648,7 @@ Stav verze 32.6.7.2 se změní z **Koncept** na **Dokončeno** a verze se změn�
 3. V podokně akcí ve skupině **Dokument** vyberte **Poslat** \> **Originál**.
 
     > [!NOTE] 
-    > Protože nyní máte dvě verze **Prodejní faktura Peppol (Litware)** konfigurace formátu ER a žádná verze nemá [datum účinnosti](general-electronic-reporting.md#component-date-effectivity), k vygenerování e-faktury se použije nejnovější verze.
+    > Protože nyní máte dvě verze konfigurace formátu ER **Prodejní faktura Peppol (Litware)** a žádná verze nemá datum účinnosti, k vygenerování e-faktury se použije nejnovější verze.
 
 4. Zavřete stránku **Volná faktura**.
 

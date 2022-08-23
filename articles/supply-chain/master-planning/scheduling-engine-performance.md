@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854290"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219900"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -295,6 +295,8 @@ Alternativou k použití paralelních operací je buď modelování těchto pár
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Trasa s počtem zdrojů vyšším než 1
 
 Pokud množství zdrojů potřebných pro operaci nastavíte na hodnotu vyšší než 1, pak to bude mít v podstatě stejný výsledek jako použití primárních/sekundárních operací, protože do modulu se bude odesílat více paralelních úloh. V tomto případě však neexistuje možnost přiřazení konkrétních prostředků, protože množství vyšší než 1 vyžaduje, aby byl pro operaci použitelný více než 1 zdroj.
+
+Sekundární operace, která má zatížení zdroje větší než jedna, znamená, že pro každý zdroj primární operace je potřeba zadané množství sekundárních zdrojů. Pokud má například primární operace množství zdrojů nastaveno na dva a sekundární operace má množství zdrojů nastaveno na tři, pak je pro sekundární operaci potřeba celkem šest zdrojů.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Nadměrné používání omezené kapacity
 

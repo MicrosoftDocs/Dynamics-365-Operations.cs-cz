@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124487"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219057"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.26. (květen 2022)
 
@@ -35,7 +35,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 |---|---|---|---|
 | Zásoby a logistika | [Přímý dotaz k viditelnosti zásob na podporu položek pokročilou správu skladu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Podpora Inventory Visibility pro položky WMS](../inventory/inventory-visibility-whs-support.md) | Správa funkcí:<br>*Povolte skladové položky ve viditelnosti zásob* |
 | Zásoby a logistika | [Dostupné jako příslib pro doplněk viditelnosti skladu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](../inventory/inventory-visibility-available-to-promise.md) | Aktivováno konfigurací služeb |
-| Výroba | [Položky skutečné hmotnosti pro rozhraní ke spuštění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*(Preview) Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu* |
+| Výroba | [Položky skutečné hmotnosti pro rozhraní ke spuštění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu* |
 | Výroba | Karta Moje úlohy v rozhraní pro provádění výrobního provozu <!-- KFM: Add link to release plan when available --> | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*Karta Moje úlohy v rozhraní pro provádění výrobního provozu* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze

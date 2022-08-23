@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce platformy
 description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069915"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262291"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
@@ -31,6 +31,50 @@ Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="feature-deprecation-effective-august-2022"></a>Oznámení o ukončení podpory funkce od srpna 2022
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>Funkce Lifecycle Services (LCS) byly ukončeny v srpnu 2022
+
+Jako součást pracovního úsilí [platformy One Dynamics One](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) jsou následující funkce LCS zastaralé.
+
+| Název funkce | Používá se s AX 2012? | Používá se s finančními a provozními aplikacemi? | Nahrazeno jinou funkcí? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Hlášení | Ano | Ano | Ano: Na stránkách jednotlivých projektů a prostředí existují bannery pro upozornění. |
+| Správce konfigurace | Ano | Číslo | Číslo |
+| Analýza výpisu stavu systému | Ano | Číslo | Číslo |
+| Zpětná vazba a chyby | Ano | Ano | Číslo |
+| Moje předplatné | Ano | Ano | Číslo |
+| Office 365 | Ano | Ano | Ano: Portál pro správu Azure Active Directory nebo Microsoft. |
+| Analýza dopadů | Číslo | Ano | Číslo |
+| Odhad celkového ekonomického dopadu | Číslo | Ano | Číslo |
+| Servisní požadavky | Číslo | Ano | Ano: [Samoobslužná nasazení](../deployment/infrastructure-stack.md) |
+| Integrace SharePoint | Ano | Ano | Číslo |
+| Správce konfigurace a dat | Číslo | Ano | Číslo |
+| Datové balíčky procesu | Číslo | Ano | Ano: Platforma importu a exportu dat (DIXF) |
+| Upgrade prostředí | Číslo | Ano | Ano: Jsou k dispozici aktualizace služby [Jedna verze](../lifecycle-services/oneversion-overview.md). |
+| Odhad infrastruktury | Ano | Číslo | Číslo |
+| Stanovení velikosti licence | Ano | Číslo | Číslo |
+| Analýza rozsahu užívání | Ano | Číslo | Číslo |
+| Analýza úprav | Ano | Číslo | Číslo |
+| Diagnostika systému | Ano | Ano | Číslo |
+| Správa Visio k modelování podnikových procesů | Ano | Ano | Číslo |
+| Správa cloudového prostředí AX 2012 | Ano | Číslo | Číslo |
+| Konektory RDFE Azure | Ano | Ano | Číslo |
+| Verze AX 2012 | Ano | Číslo | Číslo |
+| Pracovní položky uložené v úložišti LCS | Ano | Ano | Číslo |
+| Požadavky na opravu hotfix | Ano | Ano | Číslo |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Šifrovací sady RSA Transport Layer Security (TLS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Abychom vyhověli našim aktuálním bezpečnostním protokolům, odstraňujeme následující seznam šifrovacích sad.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Nahrazeno jinou funkcí?**   | Od 30. listopadu 2022 mohou zákazníci využívat pouze naše [standardní šifrovací sady](/power-platform/admin/server-cipher-tls-requirements). Tato změna ovlivní vaše klienty a servery, které komunikují s našimi servery, například může mít dopad na vaše integrace třetích stran, které nejsou v souladu s našimi standardními šifrovacími sadami. |
+| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace |
+| **Možnost nasazení**              | Nasazení v cloudu |
+| **Stav**                         | Zastaralé. Zákazníci musí upgradovat své servery do 30. listopadu 2022. Další informace o konfiguraci pořadí šifrovací sady TLS viz [Správa Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Oznámení o ukončení podpory funkce od června 2022

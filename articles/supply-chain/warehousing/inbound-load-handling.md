@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070312"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219495"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -279,7 +279,7 @@ Tyto scénáře vyžadují funkci _Více zaúčtování příjemek produktů na 
 
 #### <a name="enable-sample-data"></a>Povolit ukázková data
 
-Chcete-li s těmito scénáři pracovat pomocí zadaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
+Chcete-li s těmito scénáři pracovat pomocí zadaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Přidání položky nabídky pro příjem položek nákladu při použití mobilního zařízení
 

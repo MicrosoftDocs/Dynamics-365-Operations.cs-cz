@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3dd9f4930303b1e3506e613d5437613138944430
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1017527419acc2e4cb42b2bcb83131339d82b665
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877298"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218875"
 ---
 # <a name="work-line-details"></a>Podrobnosti řádku práce
 
@@ -52,7 +52,7 @@ Tato část obsahuje ukázku složenou ze tří částí, jež demonstruje, jak 
 
 ### <a name="make-sample-data-available"></a>Příprava ukázkových dat
 
-Chcete-li s touto ukázkou pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Kromě toho musíte dříve, než začnete, také vybrat právnickou osobu **USMF**.
+Chcete-li s touto ukázkou pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Kromě toho musíte dříve, než začnete, také vybrat právnickou osobu **USMF**.
 
 Tuto ukázku můžete také použít jako vodítko při práci na produkčním systému. Musíte však nahradit uvedené hodnoty vlastními hodnotami. Také možná budete postrádat některé typy požadovaných záznamů, jež jsou součástí standardních ukázkových dat.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167754"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220355"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -87,29 +87,23 @@ Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení
 
 ### <a name="enable-registering-of-material-consumption"></a>Zapnutí registrace spotřeby materiálu
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, organizace musí také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu.
 
 Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *nemají* povoleno používat procesy řízení skladu (WMS). Druhý podporuje položky, které *mají* povoleno používat WMS. Chcete-li použít tuto funkci, zapněte jednu nebo obě z následujících funkcí v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí), v závislosti na tom, zda máte položky, které jsou povoleny pro WMS:
 
 - *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*
-- *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
+- *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
 
 > [!IMPORTANT]
 > Funkci mimo WMS můžete používat samostatně. Pokud však používáte WMS, musíte povolit obě funkce.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Povolit hlášení o položkách skutečné hmotnosti
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek pro položky skutečné hmotnosti. Dávkové příkazy se vytvářejí ze vzorců, které lze definovat tak, aby měly položky skutečné hmotnosti jako položky vzorce, koprodukty a vedlejší produkty. Vzorec lze také definovat tak, aby obsahoval řádky vzorce pro přísady, které jsou definovány pro skutečnou hmotnost. Položky skutečné hmotnosti používají ke sledování inventáře dvě měrné jednotky: množství skutečné hmotnosti a množství inventáře. Například v potravinářském průmyslu lze maso v krabicích definovat jako položku skutečné hmotnosti, kde se množství skutečné hmotnosti používá ke sledování počtu krabic a množství v inventáři se používá ke sledování hmotnosti krabic.
 
 Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Preview) Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu*
+- *Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu*
 
 ### <a name="enable-the-my-day-dialog"></a>Povolení dialogového okna „Můj den“
 

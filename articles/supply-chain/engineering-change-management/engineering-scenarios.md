@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889628"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220020"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Ukázka funkce správy technických změn
 
@@ -45,7 +45,7 @@ Než se pokusíte provést některá z cvičení ve zbytku tohoto článku, post
 
 ### <a name="make-standard-demo-data-available"></a>Zpřístupnění standardních ukázkových dat
 
-Pracujte na systému, kde [jsou nainstalována standardní ukázková data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Standardní ukázková data přidávají data pro několik ukázkových právnických osob (společností a organizací). Během cvičení budete přepínat mezi jednou společností pomocí nástroje pro výběr společnosti na pravé straně navigačního panelu (*DEMF*), který je nastaven jako *technická organizace* a další společnost (*USMF*), který je nastaven jako *provozní organizace*.
+Pracujte na systému, kde jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Standardní ukázková data přidávají data pro několik ukázkových právnických osob (společností a organizací). Během cvičení budete přepínat mezi jednou společností pomocí nástroje pro výběr společnosti na pravé straně navigačního panelu (*DEMF*), který je nastaven jako *technická organizace* a další společnost (*USMF*), který je nastaven jako *provozní organizace*.
 
 ### <a name="set-up-an-engineering-organization"></a>Vytvoření technické organizace
 

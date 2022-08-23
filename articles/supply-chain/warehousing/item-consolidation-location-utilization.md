@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849177"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219435"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidace zboží - Využití skladového místa
 
@@ -30,10 +30,10 @@ Tento článek poskytuje informace o funkcích, které usnadňují vedoucím skl
 
 Než budete moci používat funkce popsané v tomto článku, musíte je v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Zapněte obě následující funkce v pořadí, v jakém jsou uvedeny v seznamu. (Obě funkce jsou pro modul **Správa skladu**.)
 
-1. Stav umístění ve skladu
-2. Využití skladového místa pro konsolidaci zboží
+1. *Stav umístění skladu* (Od verze 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Další informace viz [Stav skladového místa](warehouse-location-status.md).)
+2. *Využití skladového místa pro konsolidaci zboží*
 
-## <a name="warehouse-location-status"></a>Stav umístění ve skladu
+## <a name="warehouse-location-status"></a>Stav skladového místa
 
 Funkce *Stav umístění skladu* přidá čtyři nová pole na stránku **Místa** pro sledování dalších informace o aktuálním stavu místa:
 

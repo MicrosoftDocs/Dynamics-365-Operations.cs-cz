@@ -1,21 +1,21 @@
 ---
 title: Jazyk receptur v elektronickém výkaznictví
 description: Tento článek obsahuje obecné informace o použití jazyka receptury v elektronickém výkaznictví (ER).
-author: NickSelin
+author: kfend
 ms.date: 05/04/2020
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86dcbee30ec4c260f7c035f92e343e4b2389f8db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 7df29c74b2a430ed9d974cad709b975e4fd9cd35
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905221"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283276"
 ---
 # <a name="electronic-reporting-formula-language"></a>Jazyk receptur v elektronickém výkaznictví
 

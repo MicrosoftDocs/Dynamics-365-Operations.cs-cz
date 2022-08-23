@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857047"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218967"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurace propagovaných polí pro kroky v mobilní aplikaci Warehouse Management
 
@@ -32,13 +32,7 @@ Tento článek popisuje, jak propagovat a zvýraznit konkrétní informace pro l
 Než budete moci nastavit propagovaná pole, musíte provést následující postup, abyste povolili požadované funkce a vygenerovali požadované názvy polí v mobilní aplikaci Warehouse Management.
 
 1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
-1. V [pracovním prostoru **Správa funkcí**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivujte funkci, která je uvedena následovně:
-
-    - **Modul:** *Řízení skladu*
-    - **Název funkce:** *pokyny ke krokům aplikace Warehouse*
-
-    Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Propagovaná pole Warehouse Management*.
-
+1. Ujistěte se, že je funkce *Pokyny pro krok aplikace Warehouse* pro váš systém zapnutá. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Propagovaná pole Warehouse Management*.
 1. Aktivujte funkci, která je zde uvedena, následujícím způsobem:
 
     - **Modul:** *Řízení skladu*
@@ -67,7 +61,7 @@ Pomocí následujícího postupu nastavte propagovaná pole.
 
 ### <a name="enable-sample-data"></a>Povolit ukázková data
 
-Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data. Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
+Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení tohoto scénáře, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dříve než začnete, musíte také vybrat právnickou osobu **USMF**.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfigurace vychystávání pomocí propagovaných kroků na kroku registrační značky
 

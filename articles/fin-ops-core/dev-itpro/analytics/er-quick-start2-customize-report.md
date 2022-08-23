@@ -1,28 +1,26 @@
 ---
 title: Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
 description: Tento článek vysvětluje, jak upravit formát elektronického výkaznictví (ER) od společnosti Microsoft tak, aby generoval vlastní elektronické doklady.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886784"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283551"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
 
@@ -271,7 +269,7 @@ V tomto případě musíte jako zástupce společnosti Litware, Inc. vytvořit 
 
 6. Vyberte **Vytvořit konfiguraci**.
 
-Vytvoří se verze 1.1.1 **BACS (Velká Británie – vlastní)** konfigurace formátu ER. Tato verze je ve [stavu](general-electronic-reporting.md#component-versioning) **Konceptu** a je editovatelná. Aktuální obsah vašeho vlastního formátu ER odpovídá obsahu formátu poskytnutého společností Microsoft.
+Vytvoří se verze 1.1.1 **BACS (Velká Británie – vlastní)** konfigurace formátu ER. Tato verze je ve stavu **Koncept** a je editovatelná. Aktuální obsah vašeho vlastního formátu ER odpovídá obsahu formátu poskytnutého společností Microsoft.
 
 ![Stránka konfigurace s verzi 1.1.1 BACS (Spojené království – vlastní) konfigurace formátu ER.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Vlastní formát musíte nakonfigurovat, aby splňoval konkrétní požadavky ba
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Označení vlastního formátu jako spustitelného
 
-Nyní, když máte vytvořenou první verzi vlastního formátu a ten je ve stavu **Koncept**, můžete jej pro testovací účely spustit. Chcete-li sestavu spustit, musíte zpracovat platbu dodavateli pomocí způsobu platby, která odkazuje na váš vlastní formát ER. Ve výchozím nastavení jsou při volání formátu ER z aplikace [zvažovány](general-electronic-reporting.md#component-versioning) pouze verze se stavem **Dokončeno** nebo **Sdíleno**. Toto chování pomáhá zabránit použití formátů ER s nedokončenými návrhy. Pro zkušební účely však můžete aplikaci přinutit, aby použila verzi formátu ER ve stavu **Koncept**. Pokud při testu zjistíte, že je třeba provést nějaké změny, můžete následně aktuální verzi formátu upravit. Další informace naleznete v tématu [Použitelnost](electronic-reporting-destinations.md#applicability).
+Nyní, když máte vytvořenou první verzi vlastního formátu a ten je ve stavu **Koncept**, můžete jej pro testovací účely spustit. Chcete-li sestavu spustit, musíte zpracovat platbu dodavateli pomocí způsobu platby, která odkazuje na váš vlastní formát ER. Ve výchozím nastavení jsou při volání formátu ER z aplikace zvažovány pouze verze se stavem **Dokončeno** nebo **Sdíleno**. Toto chování pomáhá zabránit použití formátů ER s nedokončenými návrhy. Pro zkušební účely však můžete aplikaci přinutit, aby použila verzi formátu ER ve stavu **Koncept**. Pokud při testu zjistíte, že je třeba provést nějaké změny, můžete následně aktuální verzi formátu upravit. Další informace naleznete v tématu [Použitelnost](electronic-reporting-destinations.md#applicability).
 
 Chcete-li použít koncept formátu ER, musíte příslušný formát ER explicitně označit.
 

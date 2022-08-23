@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887682"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220415"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Účet za údržbu na majetku ve vlastnictví zákazníka
 
@@ -49,7 +49,7 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
 
 Pokud se chcete dozvědět, jak tato funkce funguje, projděte si následující ukázkový scénář.
 
-Chcete-li s tímto scénářem pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dříve než začnete, musíte vybrat právnickou osobu **USMF**.
+Chcete-li s tímto scénářem pracovat pomocí zde specifikovaných ukázkových záznamů a hodnot, musíte používat systém, ve kterém jsou nainstalována standardní [ukázková data](../../../fin-ops-core/fin-ops/get-started/demo-data.md). Dříve než začnete, musíte vybrat právnickou osobu **USMF**.
 
 Tento scénář můžete také použít jako vodítko pro použití této funkce při práci na produkčním systému. V takovém případě však musíte nahradit uvedené hodnoty vlastními hodnotami. Také možná budete postrádat některé typy požadovaných záznamů, jež jsou součástí standardních ukázkových dat.
 

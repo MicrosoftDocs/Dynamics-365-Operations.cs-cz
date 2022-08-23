@@ -1,26 +1,26 @@
 ---
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 description: Tento článek vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864829"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277843"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -30,8 +30,8 @@ Každá konfigurovaná komponenta pro [formátování](er-overview-components.md
 
 Ve výchozím nastavení se v následujících případech ověření automaticky použije u konfigurace ER, která obsahuje dříve zmíněné komponenty ER:
 
-- [Importujte](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) novou [verzi](general-electronic-reporting.md#component-versioning) konfigurace ER do vaší instance Microsoft Dynamics 365 Finance.
-- Změňte [stav](general-electronic-reporting.md#component-versioning) upravitelné konfigurace ER z hodnoty **Koncept** na **Dokončeno**.
+- [Importujte](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) novou verzi konfigurace ER do vaší instance Microsoft Dynamics 365 Finance.
+- Změňte stav upravitelné konfigurace ER z hodnoty **Koncept** na **Dokončeno**.
 - [Přeneste změny](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) do upravitelné konfigurace ER použitím nové základní verze.
 
 Toto ověření můžete explicitně spustit. Vyberte jednu z následujících tří možností a postupujte podle uvedených kroků:
@@ -770,7 +770,7 @@ Upravte konfigurovaný formát odebráním vazby pro prvek formátu **Statement\
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Nepropojená šablona
 
-Když [ručně](er-fillable-excel.md#manual-entry) nakonfigurujete komponentu formátu ER tak, aby pomocí šablony generovala odchozí dokument, musíte ručně přidat prvek **Excel\\File**, přidat požadovanou šablonu jako přílohu upravitelné komponenty, a vybrat tuto přílohu v přidaném prvku **Excel\\File**. Tímto způsobem dáváte najevo, že přidaný prvek za běhu vyplní vybranou šablonu. Při konfiguraci verze komponenty formátu ve [stavu](general-electronic-reporting.md#component-versioning) **Návrh** můžete do upravitelné komponenty přidat několik šablon a poté vybrat každou šablonu v prvku **Excel\\File**, aby spustila formát ER. Tímto způsobem můžete vidět, jak jsou různé šablony vyplněny za běhu. Pokud máte šablony, které nejsou vybrány v žádném prvku **Excel\\File**, návrhář formátu ER vás upozorní, že tyto šablony budou odstraněny z upravitelné verze komponenty formátu ER, když se jeho stav změní z **Návrh** na **Dokončeno**.
+Když [ručně](er-fillable-excel.md#manual-entry) nakonfigurujete komponentu formátu ER tak, aby pomocí šablony generovala odchozí dokument, musíte ručně přidat prvek **Excel\\File**, přidat požadovanou šablonu jako přílohu upravitelné komponenty, a vybrat tuto přílohu v přidaném prvku **Excel\\File**. Tímto způsobem dáváte najevo, že přidaný prvek za běhu vyplní vybranou šablonu. Při konfiguraci verze komponenty formátu ve stavu **Koncept** můžete do upravitelné komponenty přidat několik šablon a poté vybrat každou šablonu v prvku **Excel\\File**, aby spustila formát ER. Tímto způsobem můžete vidět, jak jsou různé šablony vyplněny za běhu. Pokud máte šablony, které nejsou vybrány v žádném prvku **Excel\\File**, návrhář formátu ER vás upozorní, že tyto šablony budou odstraněny z upravitelné verze komponenty formátu ER, když se jeho stav změní z **Návrh** na **Dokončeno**.
 
 Následující kroky ukazují, jak může k tomuto problému dojít.
 

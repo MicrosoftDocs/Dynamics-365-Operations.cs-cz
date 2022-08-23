@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123801"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219147"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.20. (srpen 2021)
 
@@ -49,7 +49,7 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 | Modul | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
 | Hlavní plánování | Paralelní autorizace upravené prognózy poptávky | Tato funkce umožňuje paralelní autorizaci upravené prognózy poptávky ze stránky **Upravená předpověď poptávky**. Záměrem této funkce je zvýšit výkon při autorizaci vysokého počtu prognóz. Při autorizaci může uživatel zadat **Počet vláken** v autorizačním dialogu. |
-| Hlavní plánování | (Preview) Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Tato funkce umožňuje používat dávkové úlohy k potvrzení a konsolidaci plánovaných hromadných a balíkových objednávek. |
+| Hlavní plánování | Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Tato funkce umožňuje používat dávkové úlohy k potvrzení a konsolidaci plánovaných hromadných a balíkových objednávek. |
 | Řízení výroby | Zkopírujte obecné postupy | Tato funkce vylepšuje funkci kopírování trasy a umožňuje uživatelům kopírovat trasy, které nejsou specifické pro jednotlivé položky. Umožňuje systému aktualizovat všechny relevantní informace (například web, skupinu tras, požadavky na zdroje a různé časy) poté, co byla funkce kopírování trasy použita k přepsání trasy, která ještě není přiřazena k položce. |
 | Řízení výroby | Aktualizovat související požadavky na zdroje při změně operace postupu | Tato funkce umožňuje systému aktualizovat související požadavky na zdroje po změně operace existujícího kroku postupu uživatelem. |
 | Řízení informací o produktech | Kusovník předzpracovává zprávu, aby se zabránilo vypršení časového limitu | Tato funkce způsobí, že zpráva o kusovníku bude předběžně zpracována. Tím se vyhnete problémům s časovým limitem při velkém načtení dat pro sestavu. |

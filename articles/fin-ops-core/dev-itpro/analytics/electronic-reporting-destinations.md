@@ -1,26 +1,26 @@
 ---
 title: Místa určení elektronického výkaznictví
 description: Tento článek obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851070"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281960"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -118,7 +118,7 @@ Když konfigurujete cíle souboru pro vybraný formát, nakonfigurujete je pro c
 
 [![Odkaz na konfiguraci.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Zároveň můžete mít více [verzí](general-electronic-reporting.md#component-versioning) formátu, které byly importovány do aktuální instance Finance. Můžete je zobrazit, pokud vyberete odkaz **Konfigurace**, který je nabídnutý při výběru pole **Odkaz**.
+Zároveň můžete mít více verzí formátu, které byly importovány do aktuální instance Finance. Můžete je zobrazit, pokud vyberete odkaz **Konfigurace**, který je nabídnutý při výběru pole **Odkaz**.
 
 [![Verze konfigurace.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Vtvořený dokument PDF je omezen na maximální počet 300 stránek.
 Ve Finance **verze 10.0.9**, vytvořeném z výstupu z aplikace Excel, je podporována pouze orientace stránky na šířku. Počínaje verzí Finance **10.0.10** můžete [určit orientaci stránky](#SelectPdfPageOrientation) v dokumentu PDF, který je vytvořen z výstupu aplikace Excel při konfiguraci cíle ER.
 
 Pro převod výstupu, který neobsahuje žádná vložená písma, se používají pouze běžná systémová písma operačního systému Windows.
+
+### <a name="resources"></a>Prostředky
+
+Před verzí Finance 10.0.29 bylo možné převod PDF provést pouze mimo aktuální instanci Finance. Vygenerovaný soubor byl odeslán z Finance do konverzní služby a tato služba pak vrátila převedený dokument. Nicméně ve verzi **10.0.29 a pozdější** navíc k funkcí **Převést odchozí dokumenty elektronického vykazování z formátů Microsoft Office do PDF** můžete aktivovat funkci **Využít prostředky aplikace k provedení převodu dokumentů CBD z Wordu do formátu PDF**. Tato funkce umožňuje převádět vygenerované dokumenty Wordu do formátu PDF lokálně pomocí prostředků aplikačního serveru v aktuální instanci Finance. 
+
+Zde jsou výhody místního převodu PDF, když je aktivní funkce **Využít prostředky aplikace k provedení převodu dokumentů CBD z Wordu do formátu PDF**.
+
+- Vytvořený dokument PDF není [omezen](#limitations) na maximální počet stránek.
+- Dokument aplikace Word, který je převeden, může obsahovat [velké množství ovládacích prvků obsahu](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- V místním nasazení není vyžadováno připojení k internetu.
 
 ### <a name="use-the-pdf-conversion-option"></a>Použití možnosti převodu do PDF
 

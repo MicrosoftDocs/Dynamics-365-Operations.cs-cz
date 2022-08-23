@@ -2,7 +2,7 @@
 title: Změna pořadí řazení pro maloobchodní entity
 description: Tento článek vysvětluje koncepty, které se vztahují k řízení pořadí zobrazení pro různé entity související s podporou prodeje v aplikaci Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847647"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265829"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Změna pořadí řazení pro maloobchodní entity
 
 
 [!Include [banner](includes/banner.md)]
 
-Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech. Různé funkce mohou zákazníkům pomoci snadno objevit produkty. Mohou například procházet kategorie, vyhledávat a filtrovat.
+Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech. Existuje několik funkcí, které mohou zákazníkům pomoci snadno najít produkty. Zákazníci mohou například procházet kategorie, vyhledávat a filtrovat.
 
 Tento článek vysvětluje koncepty, které se vztahují k řízení pořadí zobrazení pro různé entity související s podporou prodeje. Dále je zde vysvětleno, jak změnit pořadí řazení.
 
 ## <a name="overview"></a>Přehled
 
-Podpora třídění různých entit souvisejících s podporou prodeje byla vylepšena. Tato podpora je nyní lépe sladěna se stávajícími scénáři odběratele, které dříve vyžadovaly rozšíření od implementačních partnerů.
+V Commerce je třídění různých entit souvisejících s merchadisingem v souladu se stávajícími scénáři zákazníků a již nevyžaduje rozšíření od implementačních partnerů.
 
-Ve verzích Retail starších než 10.0.5 bylo pořadí řazení kategorií v navigační hierarchii abecední. Nová funkce vlastního pořadí řazení umožňuje manažerům podpory prodeje konfigurovat pořadí řazení pro různé entity související s podporou prodeje napříč všemi klienty koncových uživatelů. Mezi tyto klienty patří centrála (HQ) a kontaktní střediska.
+Ve verzích Commerce 10.0.5 a starších bylo pořadí řazení kategorií v navigační hierarchii abecední. Aktuální funkce vlastního pořadí řazení umožňuje manažerům podpory prodeje konfigurovat pořadí řazení pro různé entity související s podporou prodeje napříč všemi klienty koncových uživatelů. Mezi tyto klienty patří centrála (HQ) a kontaktní střediska.
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>Konfigurace pořadí zobrazení pro kategorie v hierarchii produktů
 
@@ -67,7 +67,7 @@ Před provedením tohoto postupu je nutné, aby byla v prostředí nainstalován
 6. Zadejte číslo do pole **Pořadí zobrazení**.
 7. Ve stromové struktuře vyberte **Móda \> Dámské oděvy \> Halenky**.
 
-    Obdobně můžete definovat pořadí řazení pro dílčí kategorie.
+Obdobně můžete definovat pořadí řazení pro dílčí kategorie.
 
 8. Ve stromové struktuře vyberte **Móda \> Pánské oděvy \> Košile pro volný čas**.
 9. Zadejte číslo do pole **Pořadí zobrazení**.
@@ -84,7 +84,7 @@ Pořadí zobrazení hierarchie navigace kanálu se odráží v centrále, katalo
 ![POS s vlastním řazením kategorií.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Ve výchozím nastavení je funkce vlastního řazení vypnutá. Informace o zapnutí této funkce a dalších funkcí naleznete v tématu [Správa funkcí](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> Ve výchozím nastavení je funkce **Povolit zobrazení objednávky pro entity merchandisingu** vypnutá. Použijte [Správu funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k jejímu zapnutí. Po zapnutí funkce spusťte úlohu CDX **Globální konfigurace – 1110** z distribučního seznamu.
+> Pokud se vaše pořadí kategorií v POS neaktualizuje, znovu zařízení aktivujte. Informace o kategorii se načítají, když dojde k aktivaci zařízení, takže zařízení může potřebovat znovu načíst informace o kategorii s aktualizovanými objednávkami zobrazení. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

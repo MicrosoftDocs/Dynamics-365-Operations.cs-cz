@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865114"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219960"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerance zpoždění (záporné dny)
 
 [!include [banner](../../includes/banner.md)]
 
-Funkce tolerance zpoždění umožňuje Optimalizaci plánování zohlednit hodnotu **Negativní dny**, která je nastavena pro skupiny pokrytí. Používá se k prodloužení doby tolerance zpoždění, která se použije během hlavního plánování. Tímto způsobem se můžete vyhnout vytváření nových objednávek dodávek, pokud stávající nabídka bude schopna pokrýt poptávku po krátké prodlevě. Účelem této funkce je určit, zda má smysl vytvořit novou objednávku dodávky pro danou poptávku.
+Funkce tolerance zpoždění umožňuje Optimalizaci plánování zohlednit hodnotu **Negativní dny**, která je nastavena pro skupiny pokrytí, pokrytí položky nebo hlavní plány. Používá se k prodloužení doby tolerance zpoždění, která se použije během hlavního plánování. Tímto způsobem se můžete vyhnout vytváření nových objednávek dodávek, pokud stávající nabídka bude schopna pokrýt poptávku po krátké prodlevě. Účelem této funkce je určit, zda má smysl vytvořit novou objednávku dodávky pro danou poptávku.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
 
-Chcete-li funkci tolerance zpoždění ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Záporné dny pro optimalizaci plánování*.
+Chcete-li funkci tolerance zpoždění ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce:
+
+- *Záporné dny pro optimalizaci plánování* – Tato funkce umožňuje nastavení záporných dnů pro skupiny pokrytí a pokrytí položek.
+- *Automatizace dodávek na zakázku* – Tato funkce umožňuje nastavení záporných dnů pro hlavní plány. (Další informace viz [Automatizace dodávek na zakázku](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Tolerance zpoždění v Optimalizaci plánování
 
 Tolerance zpoždění představuje počet dní po dodací lhůtě, kterou jste ochotni počkat, než si objednáte nové doplnění, když je již plánovaná stávající dodávka. Tolerance zpoždění je definována pomocí kalendářních dnů, nikoli pracovních dnů.
 
-Když systém v době hlavního plánování vypočítá toleranci zpoždění, vezme v úvahu nastavení **Záporné dny**. Hodnotu **Záporné dny** lze zadat na stránce **Skupiny disponibility** nebo **Disponibilita položky**.
+Když systém v době hlavního plánování vypočítá toleranci zpoždění, vezme v úvahu nastavení **Záporné dny**. Hodnotu **Záporné dny** lze zadat na stránce **Skupiny disponibility**, **Disponibilita položky** nebo **Hlavní plány**. Pokud jsou záporné dny přiřazeny na více než jedné úrovni, systém rozhodne, které nastavení použít, na základě následující hierarchie:
+
+- Pokud jsou záporné dny aktivovány na stránce **Hlavní plány**, toto nastavení přepíše všechna ostatní nastavení záporných dnů, když plán běží.
+- Pokud jsou záporné dny nakonfigurovány na stránce **Pokrytí položky**, toto nastavení přepíše nastavení skupiny pokrytí.
+- Negativní dny, které jsou nakonfigurovány na stránce **Skupiny pokrytí**, se použijí pouze v případě, že pro relevantní položku nebo plán nebyly nakonfigurovány záporné dny.
 
 Systém spojuje výpočet tolerance zpoždění s *nejbližším datem doplnění*, což se rovná dnešnímu datu plus dodací lhůta. Tolerance zpoždění se vypočítá pomocí následujícího vzorce, kde *max()* najde větší ze dvou hodnot:
 
