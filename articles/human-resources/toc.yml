@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
               items:
+                - name: Human Resources 10.0.29 (sloučená infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sloučená infrastruktura)
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (sloučená infrastruktura)
@@ -604,6 +606,10 @@
                   href: hr-benefits-setup-parameters-per-company.md
                 - name: Nastavení parametrů správy zaměstnaneckých výhod a samoobslužných parametrů zaměstnanců pro všechny společnosti
                   href: hr-benefits-setup-parameters.md
+                - name: Konfigurace práv správce pro životní události
+                  href: admin-life-events.md
+                - name: Konfigurace e-mailových upozornění pro výhody
+                  href: hr-email-notifications.md
                 - name: Konfigurace možností a pravidel způsobilosti
                   href: hr-benefits-setup-eligibility-rules.md
                 - name: Konfigurace možností způsobilosti osobních kontaktů

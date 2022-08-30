@@ -1,24 +1,24 @@
 ---
 title: Opětovné přidělení uznání výnosů – scénář 1
 description: Tento článek se zabývá scénářem opětovného přidělení uznání výnosů, když jsou zadány dvě prodejní objednávky, ale ty jsou pouze potvrzeny. K podobným výsledkům dojdete, když jsou potvrzeny více než dvě prodejní objednávky.
-author: kweekley
+author: bking
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 597c83388937cff689748889eff29d6be1b8341a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 92af49d9446fd9ed3310d8d0d50af902e7a7e693
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876261"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348310"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Opětovné přidělení uznání výnosů – scénář 1
 

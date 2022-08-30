@@ -10,8 +10,10 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/commerce
             - name: "Co je nového a\_co se změnilo v\_aplikaci Commerce"
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Commerce"
+                - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (říjen 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (červenec 2022)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (červenec 2022)
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Získání upozornění na aktualizace služeb
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktivní aktualizace kvality
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Automatizace datové úlohy
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
@@ -232,7 +236,7 @@
                   href: commerce-architecture.md
                 - name: Toky ověřování Dynamics 365 Commerce
                   href: arch-auth-flow.md
-                - name: Bezobslužná architektura obchodu
+                - name: Bezobslužná architektura Commerce
                   href: dev-itpro/retail-server-architecture.md
                 - name: Výběr topologie v obchodu
                   href: dev-itpro/retail-in-store-topology.md
@@ -422,6 +426,8 @@
                       href: hide-non-carrier-modes.md
                     - name: Záznamník úloh a nápověda pro MPOS a Cloud POS
                       href: task-recorder-retail-pos.md
+                    - name: 'Konfigurace CPOS tak, aby používal vlastní aplikaci Azure AD'
+                      href: cpos-custom-aad.md
                     - name: Hardwarová periferní zařízení
                       items:
                         - name: Periferní zařízení
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Slevy založené na úhradě
                   href: tender_based_discounts.md
-                - name: Přehled slev při dodání
-                  href: retail-shipping-discount.md
+                - name: Sleva expedice
+                  href: shipping-discount.md
                 - name: Konfigurace dárku pomocí propagačních akcí k nákupu
                   href: gift-with-purchase.md
                 - name: Nastavení kupónů
@@ -714,6 +720,10 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Odložení přesné kalkulace ceny a slevy
                   href: delayed-price-calculation.md
+                - name: Cenové funkce v POS
+                  href: pos-pricing-functions.md
+                - name: Rozhraní API pro naceňování v Commerce
+                  href: pricing-apis.md
             - name: Doporučení
               items:
                 - name: Přehled doporučení produktu
@@ -872,11 +882,13 @@
               href: async-customer-mode.md
             - name: Převod asynchronních zákazníků na synchronní zákazníky
               href: convert-async-to-sync.md
+            - name: Nejčastější dotazy pro režim vytváření asynchronních zákazníků
+              href: async-customer-mode-faq.md
             - name: Clienteling
               items:
                 - name: Přehled clientelingu
                   href: clienteling-overview.md
-            - name: Loajalita
+            - name: Věrnostní program
               items:
                 - name: Přehled věrnostního programu
                   href: set-up-customer-loyalty-program.md
@@ -1252,6 +1264,10 @@
                       href: product-collection-module-overview.md
                     - name: Modul rychlého zobrazení
                       href: quick-view-module.md
+                - name: Moduly pro porovnání produktů
+                  items:
+                    - name: Moduly pro porovnání produktů
+                      href: product-comparison-modules.md
                 - name: Navigační moduly
                   items:
                     - name: Modul popisu cesty
@@ -1272,6 +1288,10 @@
                   items:
                     - name: Modul souhlasu se soubory cookie
                       href: cookie-consent-module.md
+                - name: Moduly chatu
+                  items:
+                    - name: Modul chatu Commerce
+                      href: commerce-chat-module.md
             - name: Hledání
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
@@ -1404,8 +1424,6 @@
               items:
                 - name: Ukázka registrace fiskální služby pro Rakousko
                   href: localizations/emea-aut-fi-sample.md
-                - name: Pokyny k nasazení registračních pokladen pro Rakousko
-                  href: localizations/emea-aut-deployment.md
                 - name: Pokyny k nasazení vzorku fiskální integrace pro Rakousko (starší verze)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazílie
@@ -1464,7 +1482,7 @@
                   href: localizations/emea-fra-fiscal-archive.md
                 - name: Migrace ze starších funkcí pro Francii
                   href: localizations/emea-fra-fi-migration.md
-                - name: "Pokyny k\_nasazení registračních pokladen (staré)"
+                - name: "Pokyny k\_nasazení registračních pokladen (starší verze)"
                   href: localizations/emea-fra-deployment.md
             - name: Německo
               items:
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: "Pokyny k\_nasazení registračních pokladen"
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Migrace ze starších funkcí pro Norsko
+                  href: localizations/emea-nor-fi-migration.md
                 - name: "Pokyny k\_nasazení registračních pokladen (starší verze)"
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rusko
@@ -1764,6 +1784,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
                         - name: Split
@@ -2476,13 +2498,13 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/commerce
             - name: Údaje data a času a časová pásma
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/commerce
-        - name: Vývoj
+        - name: Rozvoj
           items:
             - name: Využití více řešení
               items:
                 - name: Přehled Commerce SDK
                   items:
-                    - name: Ukázky a referenční balíčky
+                    - name: Stáhněte si ukázky Commerce SDK a referenční balíčky
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Migrace starší verze sady Retail SDK
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

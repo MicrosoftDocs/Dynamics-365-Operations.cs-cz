@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.29 (říjen 2022)
+                  href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (srpen 2022)
                   href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (červenec 2022)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
                 - name: Získání upozornění na aktualizace služeb
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+                - name: Proaktivní aktualizace kvality
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
                 - name: Automatizace datové úlohy
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
                 - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
@@ -328,8 +332,10 @@
                           href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md?context=/dynamics365/context/supply-chain
                         - name: "Začínáme s\_elektronickou fakturací pro Brazílii"
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
-                        - name: "Začínáme s\_elektronickou fakturací pro Egypt"
+                        - name: Začínáme s elektronickou fakturací pro Egypt
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                        - name: Začínáme s elektronickou fakturací pro Francii
+                          href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
                         - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
@@ -1053,6 +1059,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
                         - name: Split
@@ -1763,6 +1771,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Plánování výroby
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Hlavní plánování pro produkty s omezenou životností
+                  href: master-planning/planning-optimization/shelf-life.md
                 - name: Plánování s nekonečnou kapacitou
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Plánování s výběrem prostředků na základě schopností
@@ -1809,6 +1819,8 @@
                   href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: Zprávy akce
                   href: master-planning/action-messages.md
+                - name: Výpočet dat dodání prodejní objednávky pomocí CTP
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Řešení potíží s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Rozšiřitelnost optimalizace plánování
@@ -1879,6 +1891,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: "Čisté požadavky a\_informace o\_doložení u\_integrovaného hlavního plánování"
                   href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Automatizace dodávek na zakázku
+                  href: master-planning/make-to-order-supply-automation.md
             - name: Prognózování
               items:
                 - name: "Prognóza poptávky a\_nabídky"
@@ -2467,6 +2481,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Správa subdodavatelské práce ve výrobě
               href: production-control/manage-subcontract-work-production.md
+            - name: Před odesláním do deníků zpřístupněte hotové výrobky fyzicky
+              href: production-control/deferred-posting.md
             - name: Sjednocená číselná řada pro ID úloh
               href: production-control/unified-job-ids.md
             - name: "Vyvolání toků automatizace procesů k\_vytvoření objednávek kvality"
@@ -2809,6 +2825,8 @@
               items:
                 - name: Příslib objednávky
                   href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Výpočet dat dodání prodejní objednávky pomocí CTP
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Konečné termíny zadání objednávek
                   href: sales-marketing/order-entry-deadlines.md
                 - name: Alternativní dodání
@@ -2945,6 +2963,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Vytvoření nové obchodní smlouvy
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Opětovný výpočet čistých částek řádku při importu
+              href: sales-marketing/calc-line-net-amounts-import.md
             - name: Plánování vyčištění dat historie prodeje
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Správa služeb
@@ -3387,8 +3407,10 @@
                       href: warehousing/piece-picking-confirmation.md
                     - name: Obalové materiály a poplatky
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: "Nastavení ručního balení (jen ve verzi z\_února 2016 a\_května 2016)"
-                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Kontejnery balení pro dodávku
+                      href: warehousing/packing-containers.md
+                    - name: Balicí práce pro balení odchozích kontejnerů a zpracování zásilek
+                      href: warehousing/packing-work.md
                     - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Zrušení práce skladu pro zpracování výjimek
@@ -3545,6 +3567,8 @@
                       href: warehousing/warehouse-app-promoted-fields.md
                     - name: Konfigurace náhradního procesu pro kroky v položkách nabídky mobilního zařízení
                       href: warehousing/warehouse-app-detours.md
+                    - name: Dotazování na data pomocí obcházení mobilní aplikace Warehouse Management
+                      href: warehousing/warehouse-app-data-inquiry.md
                     - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"

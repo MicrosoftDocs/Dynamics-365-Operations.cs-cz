@@ -10,13 +10,15 @@
           items:
             - name: Co je nového a co se změnilo ve finančních a provozních aplikacích
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Co je nového a co se změnilo v aktualizacích Platform Update
+            - name: Co je nového a co se změnilo v aktualizacích platformy
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aktualizacích Platform Update"
+                - name: "Domovská stránka Co je nového a\_co se změnilo v aktualizacích platformy"
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizace Platform Update pro verzi 10.0.28 (srpen 2022)
+                - name: Aktualizace platformy pro verzi 10.0.29 (říjen 2022)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
+                - name: Aktualizace platformy pro verzi 10.0.28 (srpen 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Aktualizace Platform Update pro verzi 10.0.27 (červenec 2022)
+                - name: Aktualizace platformy pro verzi 10.0.27 (červenec 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Odstraněné nebo zastaralé funkce
               items:
@@ -382,9 +384,9 @@
                   items:
                     - name: Nastavení místních projektů v LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Nastavení a nasazení místních prostředí (Platform Update 41 a novější)
+                    - name: Nastavení a nasazení místních prostředí (Platform Updates 41 a novější)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Nastavení a nasazení místních prostředí (Platform Update 12 až 40)
+                    - name: Nastavení a nasazení místních prostředí (Platform Updates 12 až 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Povolení mapování entit pro duální zápis
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Povolení pětiminutového časového limitu relace pro relace s duálním zápisem
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: Oddělený balíček pro orchestraci aplikace s duálním zápisem
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Migrace datového typu měny pro duální zápis

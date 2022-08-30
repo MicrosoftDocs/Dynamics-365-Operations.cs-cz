@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.29 (říjen)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (srpen)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (červenec)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: Získání upozornění na aktualizace služeb
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: Proaktivní aktualizace kvality
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: Automatizace datové úlohy
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: Zobrazení položek nebo transakcí deníku
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Povolit úpravy interních dat v dokladech hlavní knihy
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Publikování řádek deníku a dokumentů z Excelu
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: Začínáme s elektronickou fakturací pro Egypt
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: Začínáme s elektronickou fakturací pro Francii
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: Začínáme s elektronickou fakturací pro Polsko
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Onboarding elektronické fakturace v Saúdské Arábii
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Nastavení přímé integrace italské FatturaPA s SDI
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Použití služby elektronické fakturace k importu faktur dodavatele
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: "Časté otázky k\_elektronické fakturaci"
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Výpočet daně
@@ -1648,6 +1660,10 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: Výkaznictví v Polsku
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: Výkaznictví ve Španělsku
                           items:
                             - name: 'Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)'
@@ -1714,6 +1730,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Upravená DPH prostřednictvím hlavních deníků
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Povolit opožděný výpočet daně v deníku
                       href: general-ledger/enable-delayed-tax-calculation.md
                     - name: Vytvoření platby DPH
@@ -1770,6 +1788,8 @@
                           href: general-ledger/global-withholding-tax-overview.md
                         - name: Nastavení globální srážkové daně
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Aktivace nastavení typu směnného kurzu měny globální srážkové daně a typu data
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: Srážková daň v nákupních transakcích
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: Srážková daň v prodejních transakcích
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: Přesunutí souborů NF-e XML jako příloh
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 – Aktualizace rozvržení a ověření v elektronickém fiskálním dokumentu (NF-e)
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 – Aktualizace rozvržení a ověření v elektronickém fiskálním dokumentu (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 - Zprostředkující prodejní digitální platforma pro NF-e
@@ -2552,6 +2574,8 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: "Záznam pro audit a\_úpravy protokolů pro účetní software"
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: Elektronické faktury v Indii
+                  href: localizations/apac-ind-e-invoices.md
                 - name: Nepřímé daně
                   items:
                     - name: Indická daň GST
@@ -3548,6 +3572,10 @@
                           href: localizations/rus-set-up-inventory-profile.md
                         - name: Použití profilu zásob v dokumentech a dotazech
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Celní odbavení
+                      items:
+                        - name: Práce s celním odbavením
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
@@ -3576,6 +3604,8 @@
                       href: localizations/rus-company-divisions.md
                     - name: Ruské formáty adres a import z FIAS
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+                    - name: Import ze státního rejstříku adres (GAR)
+                      href: localizations/rus-russian-address-format-import-gar.md
                 - name: Časově rozlišené položky
                   items:
                     - name: Nastavení časově rozlišených položek
@@ -4069,6 +4099,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
                         - name: Split
