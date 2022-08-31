@@ -2,7 +2,7 @@
 title: Naplánujte čištění dat historie prodeje
 description: Tento článek popisuje, jak můžete zlepšit výkon systému naplánováním pravidelné úlohy čištění historie aktualizací prodeje v pravidelných intervalech.
 author: myvakalo
-ms.date: 03/21/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e9a4dd5372afa8a0452449d1cb9121107e6e1610
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900818"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335496"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Naplánujte čištění dat historie prodeje
 
@@ -51,10 +51,7 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
 
 Funkce *Vyčistění historie aktualizace prodejů na základě stáří* umožňuje nastavit maximální stáří záznamů, které se mají uchovávat při spuštění periodické úlohy *Vyčištění historie aktualizace prodeje*. Starší záznamy budou smazány. Tato funkce je užitečná, když nastavíte pravidelné spouštění úlohy, protože stáří se vždy počítá vzhledem k datu spuštění úlohy. Pokuf tuto funkci nepoužijete, můžete nastavit pouze konkrétní datum pro uchování nejstarších záznamů.
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Přehled prodeje a marketingu*
-- **Název funkce:** *Vyčistění historie aktualizace prodejů na základě stáří*
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Vyčistění historie aktualizace prodejů na základě stáří* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-and-schedule-the-sales-history-cleanup-periodic-task"></a>Nastavte a naplánujte pravidelnou úlohu čištění historie prodeje
 

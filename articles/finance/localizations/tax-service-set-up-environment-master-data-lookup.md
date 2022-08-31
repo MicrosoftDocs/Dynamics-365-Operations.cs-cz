@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181117"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306196"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Povolit vyhledávání hlavních dat pro konfiguraci výpočtu daně 
 
@@ -108,7 +108,7 @@ Dataverse používá aplikaci Azure AD, kterou jste vytvořili pro volání fina
     - **Poskytovatel** – Nastavte toto pole na **NonAAD**.
     - **E-mail** – Zadejte **dataverseintegration** nebo jinou hodnotu. (Hodnota nemusí být platný e-mailový účet.)
 
-3. Přiřaďte uživateli roli zabezpečení **Aplikace virtuální entity CDS**.
+3. Přiřaďte uživateli roli zabezpečení **Aplikace integrace virtuální entity Dataverse**.
 4. Odeberte všechny ostatní role, včetně **Uživatel systému**.
 5. Přejděte do nabídky **Správa systému** \> **Nastavení** \> **Aplikace Azure Active Directory** pro registraci Dataverse. 
 6. Přidejte řádek a poté v poli **ID klienta** zadejte hodnotu **ID aplikace (klienta)**, kterou jste si poznamenali dříve.
@@ -199,17 +199,11 @@ Další informace viz [Povolení virtuálních entit Microsoft Dataverse](../../
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Nastavte připojenou aplikaci pro výpočet daně
 
-1. V RCS otevřete pracovní prostor **Správa funkcí** a zapněte následující funkce:
-
-    - Podpora datových zdrojů Dataverse elektronického vykazování
-    - Podpora datových zdrojů Dataverse daňové služby
-    - Globalizační funkce
-
-2. Přejděte na **Elektronické výkaznictví** v části **Související odkazy** vyberte **Propojené aplikace**.
+1. Přejděte na **Elektronické výkaznictví** v části **Související odkazy** vyberte **Propojené aplikace**.
 
     [![Připojené aplikace.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Vyberte **Nový** k přidání záznamu a zadejte následující informace.
+2. Vyberte **Nový** k přidání záznamu a zadejte následující informace.
 
     - **Název** – Zadejte název.
     - **Typ** – Vyberte **Dataverse**.
@@ -217,12 +211,18 @@ Další informace viz [Povolení virtuálních entit Microsoft Dataverse](../../
     - **Tenant** – Zadejte tenanta.
     - **Vlastní adresa URL** – Zadejte adresu URL Dataverse a za ni napište **/api/data/v9.1**.
 
-4. Vyberte **Zkontrolovat připojení** a poté v zobrazeném dialogovém okně vyberte **Kliknutím sem se připojíte k vybrané vzdálené aplikaci**.
+3. Vyberte **Zkontrolovat připojení** a poté v dialogovém okně vyberte **Kliknutím sem se připojíte k vybrané vzdálené aplikaci**.
 
     [![Kontrola připojení.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Ujistěte se, že obdržíte zprávu „Úspěch!“, která označuje, že připojení bylo úspěšně navázáno.
+4. Ujistěte se, že obdržíte zprávu „Úspěch!“, která označuje, že připojení bylo úspěšně navázáno.
 
     [![Zpráva o úspěchu.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. V RCS otevřete pracovní prostor **Správa funkcí** a zapněte následující funkce:
+
+    - Globalizační funkce
+    - Podpora datových zdrojů Dataverse elektronického vykazování
+    - Podpora datových zdrojů Dataverse daňové služby
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Importujte a nastavte konfiguraci mapování modelu Dataverse
 

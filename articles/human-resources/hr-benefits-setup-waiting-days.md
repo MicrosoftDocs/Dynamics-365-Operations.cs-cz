@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ef769ccf91d9b734d75c385a60444a4e27c0b2e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f57e33c2def962f0e74157ef199fbeee3a23e716
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687072"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336905"
 ---
 # <a name="configure-waiting-days"></a>Konfigurace dnů čekání
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dny čekání v aplikaci Microsoft Dynamics 365 Human Resources představují měsíční milník, který se používá pro plány zaměstnaneckých výhod. Den čekání 15 například představuje 15. den každého měsíce. 
 

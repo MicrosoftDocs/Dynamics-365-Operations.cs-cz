@@ -2,7 +2,7 @@
 title: Domény v Dynamics 365 Commerce
 description: Tento článek popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288442"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336643"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Koncový bod `<e-commerce tenant name>.dynamics365commerce.ms` nepodporuje vlast
 Chcete-li nastavit vlastní domény pomocí služby front door nebo CDN, máte dvě možnosti:
 
 - Nastavit službu front door, jako je Azure Front Door, pro zpracování front-endu provozu a připojení k vašemu prostředí Commerce. To poskytuje větší kontrolu nad správou domén a certifikátů a podrobnější zásady zabezpečení.
+
+> [!NOTE]
+> Pokud používáte externí CDN nebo službu front door, ujistěte se, že požadavek přichází na platformu Commerce s názvem hostitele poskytnutého Commerce, ale se záhlavím X-Forwarded-Host (XFH) \<custom-domain\>. Pokud je například váš koncový bod Commerce `xyz.dynamics365commerce.ms` a vlastní doména je `www.fabrikam.com`, hlavička hostitele předávaného požadavku by měla být `xyz.dynamics365commerce.ms` a hlavička XFH by měla být `www.fabrikam.com`.
+
 - Použít instanci Azure Front Door poskytnutou řešením Commerce. To vyžaduje koordinační akci s týmem Dynamics 365 Commerce pro ověření domény a získání certifikátů SSL pro vaši doménu výroby.
 
 Informace, jak přímo nastavit službu CDN, najdete v části [Přidání podpory pro síť pro doručování obsahu (CDN)](add-cdn-support.md).
@@ -141,14 +145,18 @@ Pro existující/aktivní domény:
 
 ## <a name="apex-domains"></a>Vrcholové domény
 
-Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové domény (kořenové domény, které neobsahují subdomény). Vrcholové domény vyžadují k rozlišení IP adresu a instance Commerce Azure Front Door existuje pouze s virtuálními koncovými body. Chcete-li použít vrcholovou doménu, máte dvě možnosti:
+Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové domény (kořenové domény, které neobsahují subdomény). Vrcholové domény vyžadují k rozlišení IP adresu a instance Commerce Azure Front Door existuje pouze s virtuálními koncovými body. Chcete-li použít vrcholovou doménu, máte následující možnosti:
 
 - **Možnost 1** – Použijte poskytovatele DNS k přesměrování vrcholové domény na doménu „www“. Například fabrikam.com přesměruje na `www.fabrikam.com`, kde `www.fabrikam.com` je záznam CNAME, který odkazuje na instanci Azure Front Door hostovanou řešením Commerce.
 
-- **Možnost 2** – Vytvořte vlastní instanci CDN / front door pro hostování vrcholové domény.
+- **Možnost 2** - Pokud váš poskytovatel DNS podporuje záznamy ALIAS, můžete doménu apex nasměrovat na koncový bod front door. To zajišťuje, že se změna IP koncovým bodem front door projeví.
+  
+- **Možnost 3** - Pokud váš poskytovatel DNS nepodporuje záznamy ALIAS, musíte si sami nastavit instanci CDN nebo front door pro hostování vrcholové domény.
 
 > [!NOTE]
 > Pokud používáte Azure Front Door, musíte také nastavit Azure DNS ve stejném předplatném. Vrcholová doména hostovaná na Azure DNS může odkazovat na vaše Azure Front Door jako aliasový záznam. Toto je jediné řešení, protože vrcholové domény musí vždy ukazovat na IP adresu.
+  
+Máte-li jakékoli dotazy týkající se vrcholových domén, kontaktujte [Podporu společnosti Microsoft](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Další prostředky
 

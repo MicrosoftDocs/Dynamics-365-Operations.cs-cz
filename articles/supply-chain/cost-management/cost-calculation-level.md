@@ -2,7 +2,7 @@
 title: Úroveň výpočtu nákladů
 description: Tento článek popisuje úroveň kusovníku, která se nazývá Úroveň výpočtu nákladů. Tato úroveň kusovníku vylučuje výrobní a dávkové objednávky ze svých výpočtů.
 author: JennySong-SH
-ms.date: 04/23/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2020-04-23
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 647ef4b13b864cfdbb7905fe7a0d340e85f6c1e6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e63a868696e36c1d4f5d19ea87bdf4d682c39f8c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850866"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334948"
 ---
 # <a name="cost-calculation-level"></a>Úroveň výpočtu nákladů
 
 [!include [banner](../includes/banner.md)]
 
 Úroveň kusovníku pojmenovaná jako **Úroveň výpočtu nákladů** vyloučí z výpočtů výrobní a dávkové objednávky. Systém používá tuto úroveň, když provádí výpočty nákladů ve verzích výpočtů nákladů. V procesech, jako je přepočet a uzavření zásob, systém místo toho používá úroveň kusovníku **Úroveň stanovení nákladů**.
+
+## <a name="turn-the-cost-calculation-level-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Úroveň výpočtu nákladů
+
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Úroveň výpočtu nákladů* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## <a name="example-scenario"></a>Příklad
 
 Následující jednoduchý scénář ukazuje rozdíly mezi úrovněmi kusovníku **Úroveň výpočtu nákladů** a **Úroveň stanovení nákladů**.
 

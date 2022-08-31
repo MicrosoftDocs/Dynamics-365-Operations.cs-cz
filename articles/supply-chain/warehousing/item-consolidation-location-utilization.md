@@ -2,7 +2,7 @@
 title: Konsolidace zboží - Využití skladového místa
 description: Tento článek poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky Konsolidace položek, aby konsolidovali položky, a proto lépe využívali skladové prostory.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219435"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336416"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidace zboží - Využití skladového místa
 
@@ -30,8 +30,8 @@ Tento článek poskytuje informace o funkcích, které usnadňují vedoucím skl
 
 Než budete moci používat funkce popsané v tomto článku, musíte je v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Zapněte obě následující funkce v pořadí, v jakém jsou uvedeny v seznamu. (Obě funkce jsou pro modul **Správa skladu**.)
 
-1. *Stav umístění skladu* (Od verze 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Další informace viz [Stav skladového místa](warehouse-location-status.md).)
-2. *Využití skladového místa pro konsolidaci zboží*
+1. *Stav skladového místa*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Další informace viz [Stav skladového místa](warehouse-location-status.md).)
+2. *Využití skladového místa pro konsolidaci zboží*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
 
 ## <a name="warehouse-location-status"></a>Stav skladového místa
 

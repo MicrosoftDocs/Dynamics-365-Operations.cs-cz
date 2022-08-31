@@ -2,7 +2,7 @@
 title: Nákupní smlouvy
 description: V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669538"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335878"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -41,7 +41,7 @@ Chcete-li zabránit použití a potvrzení nákupní smlouvy, označte stav smlo
 Podle klasifikace nákupní smlouvy můžete určit primárního zodpovědného pracovníka a sekundárního odpovědného pracovníka. Tyto hodnoty budou zděděny výslednou nákupní smlouvou. Není nutné přidávat zodpovědné pracovníky do nákupní smlouvy a mohou být upraveny přímo pro jednotlivé případy na základě nákupní smlouvy. Nemůžete určit sekundárního zodpovědného pracovníka bez primárního odpovědného pracovníka, i když nemusíte mít sekundárního zodpovědného pracovníka. Stejného pracovníka nelze určit jako primárního i sekundárního odpovědného pracovníka.
 
 > [!IMPORTANT]
-> Chcete-li použít funkci zodpovědné strany, musíte ji ve svém systému zapnout. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Odpovědná strana nákupní smlouvy* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> Chcete-li použít funkci zodpovědné strany, musíte ji ve svém systému zapnout. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Odpovědná strana nákupní smlouvy* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat řádky z více nákupních objednávek (NO), abyste splnili závazek. Existují čtyři typy závazků:

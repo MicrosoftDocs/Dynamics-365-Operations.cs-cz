@@ -2,7 +2,7 @@
 title: Pojistné doby
 description: Tento článek popisuje, jak lze použít pojistné doby s doplňkem optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854232"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335188"
 ---
 # <a name="safety-margins"></a>Pojistné doby
 
@@ -79,12 +79,9 @@ Všimněte si, že když se použije rezerva výdeje, neodpovídají souvisejíc
 
 ## <a name="set-up-safety-margins"></a>Nastavení pojistných dob
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Zapnutí pojistných dob ve správě funkcí
+### <a name="turn-safety-margins-on-or-off"></a>Vypnout či zapnout pojistných dob
 
-Než můžete použít tuto funkci s optimalizací plánování, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** _Hlavní plánování_
-- **Název funkce:** _Pojistné doby pro optimalizaci plánování_
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Marže pro optimalizaci plánování* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="define-safety-margins"></a>Definování pojistných dob
 

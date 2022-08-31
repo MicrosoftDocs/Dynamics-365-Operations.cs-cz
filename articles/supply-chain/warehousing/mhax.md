@@ -2,7 +2,7 @@
 title: Rozhraní vybavení manipulace s materiálem (MHAX)
 description: Tento článek popisuje, jak nastavit rozhraní zařízení pro manipulaci s materiálem (MHAX), abyste se mohli připojit k externím systémům pro manipulaci s materiálem (MH).
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068352"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334348"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Rozhraní vybavení manipulace s materiálem (MHAX)
 
@@ -41,12 +41,13 @@ Zde je vysvětlení interakcí, které jsou zobrazeny na předchozím obrázku:
 
 Než budete moci používat funkci MHAX, musíte zapnout její funkci i její konfigurační klíč.
 
-1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
-2. V pracovním prostoru **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** zapněte funkci s názvem *Rozhraní zařízení pro práci s materiálem*.
-3. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
-5. Rozbalte **Obchod \> Řízení skladu a dopravy** a potom zaškrtněte políčko **Rozhraní zařízení pro práci s materiálem**.
-6. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Pokud spouštíte Supply Chain Management verze 10.0.28 nebo starší, postupujte následujícím způsobem:
+    1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
+    1. V pracovním prostoru **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** zapněte funkci s názvem *Rozhraní zařízení pro práci s materiálem*. (Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
+1. Rozbalte **Obchod \> Řízení skladu a dopravy** a potom zaškrtněte políčko **Rozhraní zařízení pro práci s materiálem**.
+1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## <a name="set-mhax-parameters"></a>Nastavení parametrů MHAX
 

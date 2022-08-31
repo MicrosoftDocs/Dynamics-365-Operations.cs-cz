@@ -13,18 +13,18 @@ ms.author: filatovm
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EROperationDesigner
-ms.openlocfilehash: fa66edef7e39c72d4859a21a1474096f7bc1c1dd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a2ea132b51f2f451fbe81a9c7869bea84bf4017a
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9278789"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324012"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Návrh konfigurací ER k potlačení znaků kusovníku ve vygenerovaných souborech
 
 [!include [banner](../includes/banner.md)]
 
-Můžete navrhnout [řešení](general-electronic-reporting.md) [pro formát elektronického výkaznictví (ER)](er-quick-start1-new-solution.md) ke generování odchozích dokumentů. Chcete-li generovat dokumenty jako textové nebo XML soubory, musí řešení obsahovat [konfiguraci](general-electronic-reporting.md#Configuration) ER, která obsahuje komponentu formátu ER. Chcete-li určit [kódování znaků](/windows/win32/intl/character-sets), které představuje sadu znaků v generovaných souborech, musí formát ER obsahovat prvek formátu **Běžný\\Soubor**. Chcete-li nakonfigurovat komponentu formátu ER, musíte otevřít [rámcovou](general-electronic-reporting.md#component-versioning) verzi konfigurace ER v návrháři formátu ER a přidat prvek **Vlastní\\Soubor**. V poli **Kódování** zadejte kódování odchozích souborů generovaných za běhu pomocí této komponenty.
+Můžete navrhnout [řešení](general-electronic-reporting.md) [pro formát elektronického výkaznictví (ER)](er-quick-start1-new-solution.md) ke generování odchozích dokumentů. Chcete-li generovat dokumenty jako textové nebo XML soubory, musí řešení obsahovat [konfiguraci](general-electronic-reporting.md#Configuration) ER, která obsahuje komponentu formátu ER. Chcete-li určit [kódování znaků](/windows/win32/intl/character-sets), které představuje sadu znaků v generovaných souborech, musí formát ER obsahovat prvek formátu **Běžný\\Soubor**. Chcete-li nakonfigurovat komponentu formátu ER, musíte otevřít rámcovou verzi konfigurace ER v návrháři formátu ER a přidat prvek **Společné\\Soubor**. V poli **Kódování** zadejte kódování odchozích souborů generovaných za běhu pomocí této komponenty.
 
 > [!NOTE]
 > Pokud formát obsahuje nesprávný název kódování, dojde k chybě, když uložíte změny v nastavení formátu.

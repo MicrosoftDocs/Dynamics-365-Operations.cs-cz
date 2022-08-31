@@ -10,18 +10,26 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
-ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
+ms.openlocfilehash: 115708ce9e71c35feb1cf370ead556847e04cbd2
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "9188984"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324196"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20310"></a>Verze 2.0.31.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+-   Vylepšený výkon a stabilita.
+-   Vylepšené uživatelské rozhraní, které zrychluje a usnadňuje práci s dlouhými výběrovými seznamy. Pracovníci nyní mohou vyhledávat položku seznamu podle názvu, místo aby procházeli celým seznamem.
+-   Opraven problém, kdy nedocházelo k přepisování předem zadaných hodnot při skenování podle znaků.
 
 ## <a name="version-20300"></a>Verze 2.0.30.0
 

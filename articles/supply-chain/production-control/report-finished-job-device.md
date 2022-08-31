@@ -2,7 +2,7 @@
 title: Ohlášení jako dokončené ze zařízení úkolového lístku
 description: Tento článek popisuje, jak nakonfigurovat systém tak, aby uživatelé zařízení úkolového lístku mohli vykazovat hotové produkty z výrobní zakázky do zásob.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070462"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334618"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ohlášení jako dokončené ze zařízení úkolového lístku
 
@@ -56,13 +56,12 @@ Zařízení úkolového lístku podporuje tři scénáře pro vykazování polo�
 - **Předdefinovaná čísla dávek:** Pracovníci vyberou číslo dávky ze seznamu čísel dávek, které systém automaticky vygeneruje před uvolněním výrobního příkazu do zařízení úkolového lístku.
 - **Opravená čísla dávek:** Pracovníci nezadají ani nevyberou číslo dávky. Místo toho systém automaticky přiřadí číslo dávky pracovnímu příkazu před vydáním.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>Zapnutí funkce ve vašem systému
 
-Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala číslo dávky během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí (v tomto pořadí):
+Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala číslo dávky během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí:
 
-1. Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku
-1. Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku
+- *Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku*
+- *Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurace produktů, které vyžadují hlášení dávek
 
@@ -137,10 +136,10 @@ Zařízení úkolového lístku podporuje tři scénáře pro vykazování séri
 
 ### <a name="enable-the-feature-on-your-system"></a>Zapnutí funkce ve vašem systému
 
-Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala sériové číslo během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí (v tomto pořadí):
+Chcete-li povolit, aby vaše zařízení úkolového lístku přijímala sériové číslo během hlášení jako dokončené, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí následujících funkcí:
 
-1. Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku
-1. Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku
+- *Vylepšené uživatelské prostředí pro dialogové okno průběhu sestavy v zařízení úkolového lístku*
+- *Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurace produktů, které vyžadují hlášení sériového čísla
 

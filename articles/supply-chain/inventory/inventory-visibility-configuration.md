@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066663"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306311"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace Inventory Visibility
 
@@ -52,7 +52,7 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 | Název ve Správě funkcí | Popis |
 |---|---|
 | *OnHandReservation* | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Výchozí frekvence synchronizace je jednou za 15 minut a lze ji nastavit až na každých 5 minut. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tato volitelná funkce umožňuje plán změn na skladě a funkci Lze slíbit (ATP). Další informace najdete v tématu [Plán změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
 | *Přidělení* | Tato volitelná funkce umožňuje Viditelnosti zásob mít možnost ochrany zásob (ringfencing) a kontroly nadměrného prodeje. Další informace viz [Alokace zásob doplňku Viditelnost zásob](inventory-visibility-allocation.md). |
 | *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro procesy správy skladu (WMS). Další informace viz [Podpora Viditelnost zásob pro položky WMS](inventory-visibility-whs-support.md). |

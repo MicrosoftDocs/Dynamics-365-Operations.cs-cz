@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886095"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336925"
 ---
 # <a name="configure-the-absence-manager-role"></a>Nakonfigurujte roli správce nepřítomnosti
 
->[!Important]
->Funkce uvedené v tomto článku jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ V některých organizacích nemusí manažeři lidí spravovat dovolenou pro sv�
 ## <a name="turn-on-the-feature"></a>Zapnutí funkce
 
 1. V pracovním prostoru **Správa systému** vyberte **Správa funkcí**.
-
 2. Na kartě **Správa funkcí** povolte funkci **Správce nepřítomnosti pro správu dovolené**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definujte vlastní hierarchii
@@ -45,37 +42,26 @@ V některých organizacích nemusí manažeři lidí spravovat dovolenou pro sv�
 Funkce správce nepřítomnosti používá vlastní hierarchii, kterou je třeba nakonfigurovat.
 
 1. V pracovním prostoru **Správa organizace** vyberte **Typy hierarchie pozic**.
-
 2. Vytvořte typ hierarchie pozic nazvaný **Dovolená**.
-
 3. V pracovním prostoru **Dovolená a nepřítomnost** pod **Odkazy** vyberte **Parametry dovolené a nepřítomnosti**.
-
 4. Na kartě **Všeobecné** v rozevíracím seznamu **Hierarchie absence** vyberte typ hierarchie **Dovolená**, který jste vytvořili dříve. Toto přidružení hierarchie Dovolená musí být vyplněno pro každou právnickou osobu, kde bude použita funkce správce absencí.
 
 Poté, co je definován typ hierarchie, musí být pozici přiřazena zpráva o hierarchii pozic.
 
 1. V pracovním prostoru **Správa organizace** vyberte **Všechny pozice**.
-
 2. Vyberte pozici, do které chcete přidat hierarchii Dovolená.
-
 3. Na kartě **Vztahy** vyberte **Přidat**.
-
 4. V poli **Název hierarchie** vyberte **Dovolená**.
-
 5. V poli **Nadřízená pozice** vyberte pozici. Po výběru pozice se jméno pracovníka automaticky vyplní.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Přiřaďte uživateli roli nepřítomnosti
 
 Role Správce nepřítomnosti musí být zaměstnancům přidělena, aby jim umožnila schvalovat nebo zamítat žádosti o dovolenou.
 
-1. V pracovním prostoru **Správce systému** vyberte **Odkazy**.
-
+1. V pracovním prostoru **Správa systému** vyberte **Odkazy**.
 2. V sekci **Uživatelé** vyberte odkaz **Uživatelé**.
-
 3. V seznamu uživatelů vyberte uživatele, kterému chcete přiřadit roli správce nepřítomnosti.
-
 4. Na kartě **Role uživatele** vyberte možnost **Přiřadit role**.
-
 5. V seznamu vyberte roli **Manažer nepřítomnosti**. Pak vyberte **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Role Správce nepřítomnosti musí být zaměstnancům přidělena, aby jim umo
 6. Poté, co jste vytvořili hierarchii Dovolené, ji můžete zobrazit pomocí následujících kroků:
 
     1. V pracovním prostoru **Správa organizace** vyberte **Hierarchie pozic**.
-    
     2. V poli **Typ hierarchie** vyberte **Dovolená**.
 
 ## <a name="absence-manager-workspace"></a>Pracovní prostor manažera absencí
@@ -115,9 +100,7 @@ Manažeři nepřítomnosti mohou schválit nebo zamítnout žádosti o volno pro
 > Další informace o vytváření pracovního postupu žádosti o dovolenou najdete v tématu [Vytvoření pracovního postupu žádosti o dovolenou](hr-leave-and-absence-workflow.md).
 
 1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte kartu **Správa pracovního volna**.
-
 2. Na kartě **Žádosti o volno** vyberte žádosti o volno, se kterými chcete provést akci. V tomto seznamu můžete vybrat více záznamů.
-
 3. Pomocí akčních tlačítek v horní části mřížky můžete žádost o volno schválit, zamítnout nebo delegovat. 
 
 Alternativně může uživatel také použít dlaždici **Žádosti o volno** vlevo pro přechod na seznam všech pracovních položek žádostí o volno. 
@@ -130,9 +113,7 @@ Uživatelé v roli Správce nepřítomnosti mohou ve svém kalendáři zobrazit 
 > Správce systému musí nakonfigurovat možnosti zobrazení pro kalendář správce nepřítomnosti. Na stránce **Parametry dovolené a nepřítomnosti** na kartě **Kalendář** jsou možnosti, jak skrýt nebo zobrazit narozeniny, absence bez podrobností, dovolené a nevyřízené žádosti o dovolenou. K dispozici je také možnost filtrovat možnost zobrazení kalendáře podle typu pracovníka.
 
 1. V samoobslužném pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
-
 2. Do pole **Datum** zadejte požadované datum.
-
 3. Podle potřeby aktualizujte možnosti zobrazení.
 
 Kalendář správce nepřítomnosti zobrazuje všechny záznamy zaměstnanců, kteří se hlásí správci nepřítomnosti v hierarchii Dovolená.

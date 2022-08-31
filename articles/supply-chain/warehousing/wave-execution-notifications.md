@@ -2,7 +2,7 @@
 title: Oznámení o provedení vlny
 description: Tento článek popisuje oznámení o provedení vlny a vysvětluje, jak je nastavit.
 author: Mirzaab
-ms.date: 04/03/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: a6a554965c11eea3b4fa53fe4dbc4bac04624026
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069021"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336568"
 ---
 # <a name="wave-execution-notifications"></a>Oznámení o provedení vlny
 
@@ -32,7 +32,7 @@ K podnikovým událostem dochází při spuštění obchodních procesů. Obchod
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Oznámení o provedení vlny
 
-Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Oznámení o provedení vlny* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Oznámení o provedení vlny* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Scénář: Odeslání oznámení o provedení dávky vlny do centra akcí
 

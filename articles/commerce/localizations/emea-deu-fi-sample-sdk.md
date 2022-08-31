@@ -2,25 +2,29 @@
 title: Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Německo (starší verze)
 description: Tento článek obsahuje pokyny pro nasazení ukázky fiskální integrace pro Německo ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: d89bd0890eab650a9b9596dbcbaf231bd486efc9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 7315b6bb145ccdc5631a558af88de55660ebf877
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282100"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313848"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Německo (starší verze)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Tento článek obsahuje pokyny pro nasazení ukázkové integrace služby fiskální registrace pro Německo ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace služby fiskální registrace pro Německo](emea-deu-fi-sample.md). 
+> [!IMPORTANT]
+> Pokyny v tomto článku musíte dodržovat pouze v případě, že používáte Microsoft Dynamics 365 Commerce verze 10.0.28 nebo starší. Od verze Commerce 10.0.29 je ukázka integrace služby fiskální registrace pro Německo k dispozici v sadě pro vývoj softwaru Commerce (SDK). Další informace naleznete v tématu [Konfigurace komponent kanálů](./emea-deu-fi-sample.md#configure-channel-components).
+
+Tento článek obsahuje pokyny pro nasazení ukázkové integrace služby fiskální registrace pro Německo z Dynamics 365 Commerce Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace služby fiskální registrace pro Německo](emea-deu-fi-sample.md). 
 
 Ukázka fiskální integrace pro Německo je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tato ukázka sestává z rozšíření pro CRT (Commerce Runtime) a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
 

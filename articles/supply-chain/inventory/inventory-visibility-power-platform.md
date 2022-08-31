@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895750"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306166"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Použití aplikace Inventory Visibility
 
@@ -70,10 +70,24 @@ Chcete-li odeslat požadavek na rezervaci, musíte do těla požadavku zadat hod
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Souhrn zásob
 
-**Souhrn zásob** je přizpůsobené zobrazení pro entitu *součtu zásob na skladě*. Poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob jsou pravidelně každých 15 minut synchronizována z aplikace Viditelnost zásob. Než uvidíte data na kartě **Souhrn zásob**, musíte zapnout funkci *OnHandMostSpecificBackgroundService* na kartě **Správa funkcí** a vybrat **Aktualizovat konfiguraci**.
+Stránka **Souhrn zásob** poskytuje souhrn zásob produktů společně se všemi dimenzemi. Jedná se o přizpůsobené zobrazení pro entitu *Součet zásob na skladě*. Data souhrnu zásob jsou pravidelně synchronizována z aplikace Viditelnost zásob.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Povolte souhrn zásob a nastavte frekvenci synchronizace
+
+Chcete-li povolit stránku **Souhrn zásob** a nastavite frekvenci synchronizace, postupujte takto:
+
+1. Otevřete stránku **Konfigurace**.
+1. Otevřete kartu **Správa a nastavení funkcí**.
+1. Nastavte přepínač pro funkci **OnHandMostSpecificBackgroundService** na *Ano*.
+1. Když je funkce povolena, sekce **Konfigurace služby** se zpřístupní a obsahuje řádek pro konfiguraci funkce **OnHandMostSpecificBackgroundService**. Toto nastavení vám umožňuje zvolit frekvenci, s jakou se budou synchronizovat souhrnná data zásob. Použijte tlačítka **Nahoru** a **Dolů** ve sloupci **Hodnota** pro změnu doby mezi synchronizacemi (která může být až 5 minut). Pak vyberte **Uložit**.
+1. Vyberte **Aktualizujte konfiguraci** pro uložení všech změn.
+
+![Nastavení OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.PNG "Nastavení OnHandMostSpecificBackgroundService")
 
 > [!NOTE]
 > Funkce *OnHandMostSpecificBackgroundService* sleduje pouze změny produktu na skladě, ke kterým došlo po zapnutí funkce. Data pro produkty, které se od zapnutí této funkce nezměnily, nebudou synchronizovány z mezipaměti služby inventáře do prostředí Dataverse. Pokud stránka **Souhrn inventáře** nezobrazuje všechny dostupné informace, které očekáváte, přejděte na **Správa zásob > Pravidelné úkoly > Integrace doplňku Viditelnost zásob**, deaktivuje dávkovou úlohu a znovu ji aktivujte. Tím se provede počáteční odeslání a všechna data se synchronizují do entity *Součet zásob na skladě* během následujících 15 minut. Chcete-li tuto funkci používat, doporučujeme vám ji zapnout před vytvořením jakýchkoli změn zásob na skladě a aktivovat dávkovou úlohu **Integrace doplňku Viditelnost zásob**.
+
+### <a name="work-with-the-inventory-summary"></a>Práce se souhrnem zásob
 
 Pomocí **rozšířeného filtru**, který Dataverse nabízí, můžete vytvořit osobní zobrazení ukazující řádky, které jsou pro vás důležité. Možnosti rozšířeného filtru vám umožní vytvořit širokou škálu zobrazení, od jednoduchých po složité. Také vám umožňují přidat do filtrů seskupené a vnořené podmínky. Chcete-li se dozvědět více o tom, jak používat **rozšířený filtr**, přečtěte si téma [´´Uprava nebo vytvoření osobních zobrazení pomocí rozšířených filtrů mřížky](/powerapps/user/grid-filters-advanced).
 

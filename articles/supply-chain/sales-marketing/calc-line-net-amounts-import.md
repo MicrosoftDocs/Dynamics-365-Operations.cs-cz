@@ -2,7 +2,7 @@
 title: Přepočet čisté částky řádku při importu prodejních objednávek, nabídek a vratek
 description: Tento článek popisuje, zda a jak systém přepočítá čisté částky řádku při importu prodejních objednávek, nabídek a vratek. Vysvětluje také, jak můžete ovládat chování v různých verzích Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 06/08/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ce34a6be7bc3d14e23bdd8769aa71dc035b983b3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220532"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335548"
 ---
 # <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Přepočet čisté částky řádku při importu prodejních objednávek, nabídek a vratek
 
@@ -36,7 +36,7 @@ V těchto konkrétních scénářích je účinkem zásad hodnocení obchodních
 
 ## <a name="control-calculations-of-line-net-amounts-in-versions-10029-and-later"></a>Kontrolní výpočty řádkových čistých částek ve verzích 10.0.29 a novějších
 
-Supply Chain Management 10.0.29 obsahuje funkci, která je pojmenována *Vypočítat čistou částku řádku při importu*. Tato funkce přidává možnost s názvem **Vypočítat čistou částku řádku** ke stránce **Parametry pohledávek**. Tato možnost vám umožňuje vybrat mezi novým a starším chováním pro výpočet čisté částky řádku při importu.
+Supply Chain Management verze 10.0.29 obsahuje funkci, která je pojmenována *Vypočítat čistou částku řádku při importu*. Tato funkce přidává možnost s názvem **Vypočítat čistou částku řádku** ke stránce **Parametry pohledávek**. Tato možnost vám umožňuje vybrat mezi novým a starším chováním pro výpočet čisté částky řádku při importu.
 
 ### <a name="turn-the-calculate-line-net-amount-on-import-feature-on-or-off"></a>Zapnutí a vypnutí funkce Vypočítat čistou částku řádku při importu
 

@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59fe5ece00500f7dafab282c00d572575706f790
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894578"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323951"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
-
-> [!Important]
-> Funkce uvedené v tomto článku jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,31 +38,21 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 ## <a name="add-a-leave-type"></a>Přidání typu pracovního volna
 
-1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.
-
+1. V pracovním prostoru **Pracovní volno a absence** klikněte na kartu **Odkazy**.
 2. V části **Nastavení** vyberte **Typ pracovního volna a absence**.
-
 3. Zvolte **Nové**.
-
 4. Zadejte název typu pracovního volna v části **Typ**, vyberte workflow v okně **ID workflowu** a do pole **Popis** napište popis.
-
 5. V části **Obecné** vyberte **Žádný**, **Naplánované** nebo **Neplánované** v rozevíracím seznamu **Kategorie**.
-
 6. Vyberte kód výdělku z rozevíracího seznamu **kód výdělku**.
-
 7. V části **Požadován kód důvodu** vyberte, zda chcete požadovat kód důvodu. Chcete-li požadovat kódy důvodu, budete je pravděpodobně muset přidat. V části **Kódy důvodu** vyberte možnost **Přidat**, vyberte kód důvodu a poté zaškrtněte políčko **Povoleno** vedle něho.
-
 8. V části **Omezit přístup k vybraným rolím** vyberte, zda chcete omezit přístup. Poté vyberte role zabezpečení v části **role zabezpečení pro tento typ pracovního volna**. Role zabezpečení jsou definovány ve workflowu vybraném pod položkou **ID workflowu** dříve v tomto postupu.
-
 9. Pod položkou **Barva kalendáře** zvolte barvu, která se má pro tento typ nepřítomnosti zobrazovat v kalendáři nepřítomností. 
-
 10. V možnosti **Vztahy přerušení** zvolte, zda chcete, aby tento typ dovolené buď pozastavil jiný typ dovolené, nebo aby byl pozastaven jiným typem dovolené. Pokud je pro typ přerušení volna podán požadavek na pracovní volno, automaticky se pro tento typ dovolené vytvoří přerušení volna. 
-
-10. Zvolte **Uložit**.
+11. Zvolte možnost **Uložit**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurace pravidel typů volna
 
-1. Nastavte možnosti zaokrouhlení pro typ pracovního volna. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
+1. Nastavte možnosti zaokrouhlení pro typ **Pracovní volno a absence**. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
 
 2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, počet svátků, které spadají do pracovního dne, bude použit k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
 

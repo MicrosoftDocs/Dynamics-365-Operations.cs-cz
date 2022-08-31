@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861066"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323537"
 ---
 # <a name="create-a-working-time-calendar"></a>Vytvoření kalendáře pracovní doby
 
-
-> [!Important]
-> Funkce uvedené v tomto článku jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Nastavte nejméně jeden kalendář pracovní doby, který zobrazuje dny a hodin
 
 3. V části **Možnosti generování** vyberte pracovní dny pro organizaci a zadejte pracovní dobu. 
    - Chcete-li přidat svátek nebo uzavírku, vyberte tlačítko **Přidat** vedle **Svátky a uzávěrky**.
-   - Chcete-li přidat nepracovní čas, například obědy nebo přestávky, vyberte **Přidat** v části **MIMOPRACOVNí DOBA** a zadejte název a časový rozsah.
+   - Chcete-li přidat nepracovní čas, například obědy nebo přestávky, vyberte **Přidat** v části **Nepracovní doba** a zadejte název a časový rozsah.
 
 4. Na kartě **Dny** zvolte **Generovat** a vygenerujte dny ve svém kalendáři. Zadejte rozsah dat pro svůj kalendář a poté vyberte možnost **Generovat dny**.
 
@@ -67,7 +64,7 @@ Svátky a uzávěrky lze přidávat a měnit odděleně od kalendáře pracovní
 
 Svátky a uzavírky lze přidávat nebo lze měnit mimopracovní dobu odděleně od kalendáře pracovní doby.
 
-1. Na stránce **Správa organizace** klikněte na **NEPRACOVNÍ DOBA**.
+1. Na stránce **Správa organizace** vyberte **Mimopracovní doba**.
 
 2. Vyberte **Nový** a zadejte název a časový rozsah mimopracovní doby.
 

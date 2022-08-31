@@ -2,7 +2,7 @@
 title: Hlavní plánování s obchodními smlouvami nákupu
 description: Tento článek popisuje, jak může optimalizace plánování najít dodavatele a / nebo doby realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve smlouvách o nákupu.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873746"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335218"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873746"
 
 Tento článek popisuje, jak může optimalizace plánování najít dodavatele a / nebo doba realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve všech smlouvách o nákupu specifikovaných pro daný produkt.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Zapnutí funkce nákupu obchodních smluv pro plánování optimalizace
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce nákupu obchodních smluv pro plánování optimalizace
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Hlavní plánování*
-- **Název funkce:** *Funkce nákupu obchodních smluv pro plánování optimalizace*
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Obchodní nákupní smlouvy pro optimalizaci plánování* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Příprava systému na vyhodnocení obchodních dohod během hlavního plánování
 

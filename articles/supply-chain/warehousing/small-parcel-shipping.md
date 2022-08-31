@@ -2,7 +2,7 @@
 title: Expedice malých balíků
 description: Tento článek obsahuje informace o funkci expedice malých balíků (SPS). Tato funkce umožňuje produktu Microsoft Dynamics 365 Supply Chain Management odeslat přepravci podrobnosti o zabaleném kontejneru a poté od něj obdržet přepravní štítek, sazbu za dopravu a sledovací číslo.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219711"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336148"
 ---
 # <a name="small-parcel-shipping"></a>Expedice malých balíků
 
@@ -34,12 +34,9 @@ Vrácená sazba za přepravu se přidá k související prodejní objednávce ja
 
 Než budete moci začít používat funkce SPS, musíte zapnout funkci SPS ve Správě funkcí, přidat modul rychlosti a nastavit moduly **Řízení dopravy** a **Vedení skladu** na jeho podporu.
 
-### <a name="turn-on-the-sps-feature"></a>Zapnutí funkce SPS
+### <a name="turn-the-sps-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce SPS
 
-Než můžete použít funkci SPS, musíte ji zapnout ve svém systému. Správci mohou použít pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zkontrolovat stav této funkce a zapnout ji, je-li to potřeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Správa přepravy*
-- **Název funkce:** *Expedice malých balíků*
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Expedice malých balíků* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Nasazení a nastavení výpočtu přepravních sazeb
 

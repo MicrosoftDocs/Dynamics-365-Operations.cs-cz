@@ -2,7 +2,7 @@
 title: Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 description: Tento článek popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli zaparkovat aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218997"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336118"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 
@@ -35,9 +35,8 @@ Než budete moci nakonfigurovat obcházení pro kroky v položkách nabídky mob
 
 1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
 1. Ujistěte se, že je funkce *Pokyny pro krok aplikace Warehouse* pro váš systém zapnutá. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Obcházení aplikace Warehouse Management*.
-1. Zapněte funkci *Obcházení aplikace Warehouse Management*. Tato funkce je funkce popsaná v tomto článku.
-1. Aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
-1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
+1. Zapněte funkci *Obcházení aplikace Warehouse Management*. Tato funkce je funkce popsaná v tomto článku. Od verze Supply Chain Management 10.0.29 je ve výchozím nastavení zapnuta.
+1. Pokud funkce *Obcházení aplikace Warehouse Management* ještě nebyla zapnuta, aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Opakujte tento krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurace obcházení z přepsání specifického pro nabídku
 

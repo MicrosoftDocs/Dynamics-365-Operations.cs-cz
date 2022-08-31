@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691715"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336908"
 ---
 # <a name="configure-life-event-types"></a>Konfigurace typů životních událostí
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources používá **Typy životní události** k definování událostí, které jsou platné k aktualizaci přihlášení zaměstnaneckých výhod, jako je svatba nebo narození dítěte. Každý ID typu životní události lze přidružit pouze k jednomu typu životní události. Vytvoříte-li například **ID životní události** nazvané **Změna adresy**, která je přidružená k typu životní události **Změna adresy zaměstnance**, nelze vytvořit další ID s názvem **Změna adresy zaměstnance** a spojit je s typem události **Změna adresy zaměstnance**. Pokud typ životní události není spojen s typem plánu, typ životní události nespustí životní událost. Další informace viz [Vytvoření typů plánů](hr-benefits-setup-plan-types.md).
 

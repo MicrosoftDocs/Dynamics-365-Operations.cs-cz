@@ -2,7 +2,7 @@
 title: Plánovaný cross docking
 description: Tento článek popisuje cross docking s rozšířeným plánováním, kde je množství zásob potřebných pro objednávku, směrováno přímo z příjmu nebo tvorby do správného výstupního překladiště nebo přípravné oblasti. Veškeré zbývající zásoby z příchozího zdroje jsou směrovány na správné přípravné místo pomocí běžného procesu zaskladnění.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070282"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334558"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -37,10 +37,10 @@ V době přijetí příchozí objednávky nastavení cross dockingu automaticky
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Zapnutí funkcí Cross docking s plánováním
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapínejte následující funkce v následujícím pořadí:
+Pokud používáte Supply Chain Management verze 10.0.28 nebo starší, možná budete muset povolit plánovaný cross docking, než jej budete moci používat. Přejděte na [Správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce v následujícím pořadí:
 
-1. *Plánovaný cross docking*
-1. *Šablony cross dockingu se směrnicemi skladového místa*
+1. *Plánovaný cross docking*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. *Šablony cross dockingu se směrnicemi skladového místa*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
     > [!NOTE]
     > Tato funkce umožňuje zadat pole **Kód směrnice** v šabloně cross dockingu, podobně jako při nastavování šablon doplňování. Povolení této funkce vám zabrání v přidání kódu směrnice na řádky pracovní šablony cross dockingu pro finální řádek *Vložit*. Tím je zajištěno, že konečné umístění vložení lze určit během vytváření práce před zvážením pracovních šablon.
 
@@ -92,7 +92,7 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
 
     - **Kód směrnice:** Toto pole nechte prázdné
 
-        Tuto možnost povoluje funkce *Šablony cross dockingu se směrnicemi umístění*. Systém využívá směrnice umístění k určování nejlepšího umístění pro přesun zásob cross-docking. Můžete jej nastavit přiřazením kódu direktivy ke každé příslušné šabloně cross-dockingu. Pokud je nastaven kód šablony, systém nebude při generování práce hledat směrnice skladového místa podle kódu směrnice. Tímto způsobem můžete omezit směrnice umístění, které se používají pro konkrétní šablonu cross dockingu.
+        Tato možnost je povolena pomocí funkce *Šablony cross dockingu se směrnicemi skladového místa* (od verze Supply Chain Management verze 10.0.29 je tato funkce ve výchozím nastavení zapnuta). Systém využívá směrnice umístění k určování nejlepšího umístění pro přesun zásob cross-docking. Můžete jej nastavit přiřazením kódu direktivy ke každé příslušné šabloně cross-dockingu. Pokud je nastaven kód šablony, systém nebude při generování práce hledat směrnice skladového místa podle kódu směrnice. Tímto způsobem můžete omezit směrnice umístění, které se používají pro konkrétní šablonu cross dockingu.
 
     - **Ověření časového úseku:** *Ano*
 

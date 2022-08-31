@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885950"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306078"
 ---
 # <a name="inventory-visibility-tips"></a>Tipy ohledně doplňku Viditelnost zásob
 
@@ -35,5 +35,8 @@ Zde je několik tipů, které byste měli zvážit při nastavení a použití d
 - V současné době se [konfigurace oddílu](inventory-visibility-configuration.md#partition-configuration) skládá ze dvou základních dimenzí (`SiteId` a `LocationId`), které ukazují, jak jsou data distribuována. Operace ve stejném oddílu mohou poskytovat vyšší výkon za nižší náklady. Ve výchozím nastavení obsahuje řešení tuto konfiguraci oddílu. Z tohoto důvodu ji *nemusíte sami definovat*. Nepřizpůsobujte výchozí konfiguraci oddílu. Pokud ji odstraníte nebo změníte, pravděpodobně způsobíte neočekávanou chybu.
 - Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v [konfiguraci hierarchie indexu produktu](inventory-visibility-configuration.md#index-configuration).
 - [Konfigurace hierarchie indexu produktu](inventory-visibility-configuration.md#index-configuration) musí obsahovat alespoň jednu hierarchii indexu (například obsahující základní dimezni `Empty`), jinak dotazy selžou s chybou „Nebyla nastavena žádná hierarchie indexu.“
+- Zdroj dat `@iv` je předdefinovaný zdroj dat a fyzické míry definované v `@iv` s předponou `@` jsou předem definovaná opatření. Tyto míry jsou předdefinovanou konfigurací pro funkci alokace, takže je neměňte ani neodstraňujte, protože při používání funkce alokace pravděpodobně narazíte na neočekávané chyby.
+- K předdefinované vypočítané míře `@iv.@available_to_allocate` můžete přidat nové fyzické míry, ale nesmíte změnit její název.
+- Pokud obnovíte databázi Supply Chain Management, může obnovená databáze obsahovat data, která již nejsou konzistentní s daty dříve synchronizovanými pomocí Viditelnosti zásob v Dataverse. Tato nekonzistence dat může způsobit systémové chyby a další problémy. Proto je důležité, abyste vždy vyčistili všechna související data viditelnosti zásob z Dataverse před obnovením databáze Supply Chain Management. Informace naleznete na [Vyčistěte data viditelnosti zásob z Dataverse před obnovením databáze Supply Chain Management](inventory-visibility-setup.md#restore-environment-database)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

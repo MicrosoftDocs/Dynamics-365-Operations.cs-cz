@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852498"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306107"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Doplněk Viditelnost skladu - Přidělení zásob
 
@@ -63,12 +63,11 @@ Funkce přidělování zásob se skládá z následujících součástí:
 - Předdefinovaný zdroj dat související s přidělením, fyzické míry a vypočítané míry.
 - Přizpůsobitelné skupiny přidělení, které mají maximálně osm úrovní.
 - Sada aplikačních programovacích rozhraní (API) pro přidělování:
-
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
+  - allocate
+  - reallocate
+  - unallocate
+  - consume
+  - query
 
 Proces konfigurace funkce přidělení je složen ze dvou kroků:
 
@@ -84,23 +83,26 @@ Zdroj dat se jmenuje `@iv`.
 Zde jsou počáteční fyzické míry:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Zde jsou počáteční vypočítané míry:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Přidejte další fyzické míry do vypočítané míry K dispozici pro přidělení
 
 Chcete-li použít přidělení, musíte nastavit vypočítanou míru K dispozici pro přidělení (`@iv.@available_to_allocate`). Například máte zdroj dat `fno` a míru `onordered`, zdroj dat `pos` a míru `inbound` a chcete provést přidělení zásob na skladě ve výši součtu `fno.onordered` a `pos.inbound`. V tomto případě by `@iv.@available_to_allocate` měla ve vzorci obsahovat `pos.inbound` a `fno.onordered`. Následuje příklad:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Zdroj dat `@iv` je předdefinovaný zdroj dat a fyzické míry definované v `@iv` s předponou `@` jsou předem definovaná opatření. Tyto míry jsou předdefinovanou konfigurací pro funkci alokace, takže je neměňte ani neodstraňujte, protože při používání funkce alokace pravděpodobně narazíte na neočekávané chyby.
+>
+> K předdefinované vypočítané míře `@iv.@available_to_allocate` můžete přidat nové fyzické míry, ale nesmíte změnit její název.
 
 ### <a name="change-the-allocation-group-name"></a>Změňte název skupiny přidělení
 
@@ -136,7 +138,7 @@ Volání `Allocate` API použijte, když chcete přidělit produkt, který má k
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Například chcete přidělit množství 10 produktu *Kolo* pro lokalitu *1*, um
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Volání `Reallocate` API použijte k přesunutí určitého přiděleného mno�
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Můžete například přesunout dvě kola, která mají dimenze \[lokalita=1, um
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Volání `Consume` API použijte k zaúčtování množství spotřeby proti př
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Následně jsou tři kola prodána a jsou odebrána z fondu přidělení. Chcete
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Pokud chcete spotřebovat množství 3 a přímo rezervovat toto množství, m�
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

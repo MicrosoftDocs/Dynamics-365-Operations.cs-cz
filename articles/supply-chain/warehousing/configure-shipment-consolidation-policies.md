@@ -2,7 +2,7 @@
 title: Konfigurace zásad konsolidace dodávek
 description: Tento článek vysvětluje, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219525"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336485"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -33,10 +33,7 @@ Scénáře uvedené v tomto článku ukazují, jak nastavit výchozí a vlastní
 > [!IMPORTANT]
 > V [prvním scénáři](#scenario-1), který je popsán v tomto článku, nejprve nastavíte sklad tak, aby používal dřívější funkci konsolidace dodávek. Poté zpřístupníte zásady konsolidace dodávek. Tímto způsobem můžete vyzkoušet, jak scénář upgradu funguje. Pokud chcete použít prostředí s ukázkovými daty pro projití prvního scénáře, nezapínejte tuto funkci dříve, než provedete scénář.
 
-Než budete moci používat funkci *Zásady konsolidace dodávek*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Konsolidace dodávky*
+Chcete-li používat funkci *Zásady konsolidace dodávek*, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zásady konsolidace dodávek* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 

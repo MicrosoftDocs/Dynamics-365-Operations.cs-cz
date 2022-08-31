@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262321"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347282"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -77,10 +77,10 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Ochranná doba zablokování | Záznamy disponibility položky s nastavenou ochrannou dobou zablokování: *\#* | Tato funkce čeká na implementaci. V současnosti je ignorováno nastavení ochranné doby zablokování, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Ochranná doba zablokování | Hlavní plány s nastavenou ochrannou dobou zablokování: *\#* | Tato funkce čeká na implementaci. V současnosti je ignorováno nastavení ochranné doby zablokování, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Mezipodnikové | Hlavní plány zahrnující plánovanou navazující poptávku: *\#* | Tato funkce je nyní podporována. Další informace viz [Mezipodnikové plánování](Intercompany-planning.md) | Podporováno |
-| Kanban | Záznamy disponibility položky s plánovaným typem objednávky kanban: *\#* | Tato funkce čeká na implementaci. V současné době je disponibilita položky nastavená na Kanban ignorována, pokud je povolena optimalizace plánování. Typ kanbanové plánované objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. | 2023 nebo novější |
-| Kanban | Položky s výchozím typem objednávky kanban: *\#* | V současné době je výchozí typ objednávky nastavený na Kanban ignorován, pokud je povolena optimalizace plánování. Výchozí typ kanbanové objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. | 2023 nebo novější |
+| Kanban | Záznamy disponibility položky s plánovaným typem objednávky kanban: *\#* | Tato funkce čeká na implementaci. V současné době je disponibilita položky nastavená na Kanban ignorována, pokud je povolena optimalizace plánování. Typ kanbanové plánované objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. | Budoucí vlna |
+| Kanban | Položky s výchozím typem objednávky kanban: *\#* | V současné době je výchozí typ objednávky nastavený na Kanban ignorován, pokud je povolena optimalizace plánování. Výchozí typ kanbanové objednávky vytvoří upozornění během hlavního plánování a vytvoří se plánované nákupní objednávky, které pokrývají související poptávku. | Budoucí vlna |
 | Stav životního cyklu produktu | Stavy životního cyklu produktu neaktivní pro plánování: *\#* | Tato funkce je nyní podporována. Další informace viz [Vyloučení produktů s konkrétními stavy životního cyklu produktu](product-lifecycle-state.md) | Podporováno |
-| Výroba | Řádky kusovníku se zaokrouhlením nebo vícenásobným nastavením: *\#* | Tato funkce čeká na implementaci. V současné době je zaokrouhlení a více nastavení ignorováno na řádcích kusovníku při povolení optimalizace plánování bez ohledu na toto nastavení. | 2023 nebo novější |
+| Výroba | Řádky kusovníku se zaokrouhlením nebo vícenásobným nastavením: *\#* | Tato funkce čeká na implementaci. V současné době je zaokrouhlení a více nastavení ignorováno na řádcích kusovníku při povolení optimalizace plánování bez ohledu na toto nastavení. | Budoucí vlna|
 | Výrobní | Řádky kusovníků/receptur s měřením receptury: *\#* | Tato funkce čeká na implementaci. V současné době je měření receptury ignorováno na řádcích kusovníku a receptur při povolení optimalizace plánování bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Výrobní | Řádky kusovníků/receptur s nahrazením položky (skupiny plánu): *\#* | Tato funkce čeká na implementaci. V současné době je nahrazení položky (skupiny plánu) ignorováno na řádcích kusovníku a receptur při povolení optimalizace plánování bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Výrobní | Řádky kusovníku/receptur s negativním množstvím: *\#* | Tato funkce čeká na implementaci. Řádky kusovníku a receptury, které mají záporné množství, budou zahrnuty s množstvím 0 (nula) a při povolení optimalizace plánování bude vydána výstraha. Aktualizujte hlavní data, abyste se vyhnuli varování. | Vlna verze 2022 2 |
@@ -93,11 +93,11 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Výrobní | Verze receptur se souběžnými nebo vedlejšími produkty: *\#* | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignorují souběžné a vedlejší produkty, které jsou přidruženy k verzi receptury. | Vlna verze 2022 2 |
 | Výrobní | Verze receptury s výtěžností: *\#* | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignoruje výtěžnost, která je přidružena k verzi receptury. | Vlna verze 2022 2 |
 | Výrobní | Plány včetně pořadí: *\#* | Tato funkce čeká na implementaci. V současnosti je pořadí ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Vlna verze 2022 2 |
-| Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: *\#* | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | 2023 nebo novější |
+| Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: *\#* | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | Budoucí vlna |
 | Výrobní | Zdroje naplánované s omezenou kapacitou: *\#* | Tato funkce čeká na implementaci. Zdroje, které jsou naplánovány s omezenou kapacitou, jsou aktuálně ignorovány, pokud je povolena optimalizace plánování. Plánování je provedeno na základě výchozí doby realizace produktu. | Vlna verze 2022 2 |
 | Výrobní | Postupy používané při plánování: *\#* | Tato funkce je podporována. | Podporováno |
-| Výrobní | Rezervace řádku prodeje pomocí rozpadu: *\#* | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | 2023 nebo novější |
-| Výrobní | Plánování s rozpadem výrobních zakázek: *\#* | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | 2023 nebo novější |
+| Výrobní | Rezervace řádku prodeje pomocí rozpadu: *\#* | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | Budoucí vlna |
+| Výrobní | Plánování s rozpadem výrobních zakázek: *\#* | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | Budoucí vlna |
 | Požadavek na nabídky | Hlavní plány s povolenými požadavky na nabídku: *\#* | Tato funkce čeká na implementaci. V současné době nejsou požadavky na nabídku (RFQ) považovány za poptávku v případě, že je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Žádanky | Hlavní plány s povolenými žádankami: *\#* | Tato funkce je nyní podporována. Další informace naleznete v tématu [Nákupní žádanky](purchase-requisitions.md) | Podporováno |
 | Pojistné doby | Skupiny disponibility s pojistnou dobou: *\#* | Tato funkce je nyní podporována. Další informace viz [Pojistné doby](safety-margins.md) | Podporováno |

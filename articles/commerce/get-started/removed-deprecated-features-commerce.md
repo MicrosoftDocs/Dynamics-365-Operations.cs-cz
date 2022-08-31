@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287616"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337589"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -25,13 +25,45 @@ ms.locfileid: "9287616"
 
 Tento článek popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 
-- *Odstraněná* funkce již není k dispozici v produktu.
-- *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
+- *Odstraněná* funkce již není k dispozici v produktu.
+- *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.29
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Nastavení parametrů Commerce - Povolte úpravy ceny pro zvýšení ceny produktu
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Toto nastavení jsme měli pro kontrolu, zda funkce úpravy ceny umožňuje zvýšit cenu produktu. Když je tento parametr vypnutý, mohou organizace při použití funkce úpravy ceny nastavit pouze jednotkovou cenu produktu nižší, než je jeho základní cena a prodejní cena podle obchodní smlouvy. Toto nastavení činíme zastaralým, protože funkce úpravy ceny byla aktualizována tak, aby podporovala obousměrné úpravy (zvýšení nebo snížení). |
+| **Nahrazeno jinou funkcí?**   | Číslo |
+| **Ovlivněné oblasti produktu**         | Tvorba cen a slevy |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Toto nastavení je ve výchozím nastavení zapnuto od verze Commerce 10.0.29 a bude odstraněno v říjnu 2023. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Nastavení obchodních parametrů - Povolení přehledu cen pro maloobchod
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Toto nastavení jsme použili, abychom mohli ovládat, zda je funkce hlášení cen k dispozici pro použití ve formuláři konfigurace obchodu. Toto nastavení zamítáme, protože formulář konfigurace obchodu byl aktualizován, aby vždy poskytoval funkci hlášení cen jako standardní funkci. |
+| **Nahrazeno jinou funkcí?**   | Číslo |
+| **Ovlivněné oblasti produktu**         | Tvorba cen a slevy |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Toto nastavení bude v říjnu 2023 odstraněno. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Nastavení obchodních parametrů – Pro výpočet cen použijte dnešní datum
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Cenový modul Supply Chain Management (SCM) podporuje výpočet ceny na základě požadovaného data expedice nebo požadovaného data příjmu spolu s dnešním datem. Cenový modul Commerce podporuje pouze výpočet cen na základě dnešního data. Pro zákazníky, kteří používají funkce SCM i Commerce, jsme toto nastavení poskytli a zákazníkům doporučujeme, aby jej vždy nastavili na **Ano**, aby tyto dva cenové moduly mohly spolupracovat. Toto nastavení činíme zastaralým, protože nemění chování výpočtu a je nadbytečné. |
+| **Nahrazeno jinou funkcí?**   | Číslo |
+| **Ovlivněné oblasti produktu**         | Tvorba cen a slevy |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Toto nastavení je ve výchozím nastavení zapnuto od verze Commerce 10.0.29 a bude odstraněno v říjnu 2023. |
 
 ## <a name="feature-deprecation-effective-july-2022"></a>Oznámení o ukončení podpory funkce od července 2022
 
@@ -39,26 +71,11 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Tým Dynamics 365 Commerce analyzoval používání a zavádění funkce Commernce analytics (Preview) a bylo přijato rozhodnutí, že již nebudeme pokračovat v uvádění této funkce do obecné dostupnosti.   |
+| **Důvod pro zrušení/odstranění** | Tým Dynamics 365 Commerce analyzoval používání a zavádění funkce Commerce analytics (Preview) a bylo přijato rozhodnutí, že již nebudeme pokračovat v uvádění této funkce do obecné dostupnosti.   |
 | **Nahrazeno jinou funkcí?**   | V současné době nebude analytika Commerce (Preview) nahrazena jinou funkcí nebo řešením. Export nezpracovaných transakcí a kmenových dat z finančních a provozních aplikací do Azure Data Lake je i nadále k dispozici, jak je vysvětleno v části [Export do Data Lake ve finančních a provozních aplikacích](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partneři a zákazníci mohou využít tento datový tok k vytváření jakýchkoli zamýšlených analytických sestav pro jejich obchodní potřeby.
 | **Ovlivněné oblasti produktu**         | Analytické nástroje Commerce (Preview) |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Deaktivaci této funkce zvážíme do 30. srpna 2022.  Od tohoto data v aktuálním stavu nedojde k žádnému obnovení zpráv Power BI poskytovaných analýzou Commerce (Preview).     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.25
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-Aplikace Modern Point of Sale (MPOS) bude ve verzi Commerce 10.0.25 ukončena a nahrazena aplikací Store Commerce.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Aplikace v prodejných jsou základním kamenem nabídky omnikanálu Dynamics 365 Commerce. Neustále inovujeme, abychom poskytovali moderní a inteligentní řešení do prodejen a za účelem další modernizace našeho řešení zavádíme nové sady změn, které výrazně zlepší IT operace a uživatelská prostředí v našich stávajících aplikacích do prodejen pro systém Windows. Nová aplikace Store Commerce je technologický upgrade stávající aplikace MPOS. Poskytuje lepší výkon, spolehlivost a dlouhodobou podporu na platformě Windows a eliminuje potřebu opakovaného vytvoření balíčku aplikace s každou aktualizací. |
-| **Nahrazeno jinou funkcí?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Ovlivněné oblasti produktu**         | Modern Point of Sale |
-| **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Od verze Commerce 10.0.25 bude instalační program MPOS dodávaný prostřednictvím virtuálních počítačů LCS (VM) odstraněn v říjnu 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.21
 

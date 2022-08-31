@@ -2,7 +2,7 @@
 title: Tolerance zpoždění (záporné dny)
 description: Tento článek poskytuje informace o výpočtu tolerance zpoždění a o tom, jak ovlivňuje plánované vytváření objednávek v Optimalizaci plánování.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219960"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335368"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerance zpoždění (záporné dny)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219960"
 
 Funkce tolerance zpoždění umožňuje Optimalizaci plánování zohlednit hodnotu **Negativní dny**, která je nastavena pro skupiny pokrytí, pokrytí položky nebo hlavní plány. Používá se k prodloužení doby tolerance zpoždění, která se použije během hlavního plánování. Tímto způsobem se můžete vyhnout vytváření nových objednávek dodávek, pokud stávající nabídka bude schopna pokrýt poptávku po krátké prodlevě. Účelem této funkce je určit, zda má smysl vytvořit novou objednávku dodávky pro danou poptávku.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Zapnutá nebo vypbutí funkce tolerance zpoždění
 
 Chcete-li funkci tolerance zpoždění ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce:
 
-- *Záporné dny pro optimalizaci plánování* – Tato funkce umožňuje nastavení záporných dnů pro skupiny pokrytí a pokrytí položek.
+- *Záporné dny pro optimalizaci plánování* – Tato funkce umožňuje nastavení záporných dnů pro skupiny pokrytí a pokrytí položek. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.
 - *Automatizace dodávek na zakázku* – Tato funkce umožňuje nastavení záporných dnů pro hlavní plány. (Další informace viz [Automatizace dodávek na zakázku](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Tolerance zpoždění v Optimalizaci plánování

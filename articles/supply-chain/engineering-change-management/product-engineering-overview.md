@@ -2,7 +2,7 @@
 title: Přehled správy technických změn (obsahuje video)
 description: Tento článek poskytuje přehled správy technických změn, která vám pomůže plánovat a spravovat verzování produktu a spravovat životní cykly produktu a technických změn.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067385"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334858"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -76,16 +76,16 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Zapněte pro svůj systém další funkce správy technických změn
 
-Poté, co zapnete základní funkce správy technických změn a povolíte jejich konfigurační klíče, bude do správy funkcí přidáno několik dalších a volitelných funkcí správy technických změn. Každá z těchto funkcí je uvedena v modulu **Řízení technických změn**. Následující tabulka popisuje každou volitelnou funkci a poskytuje odkazy na další informace. Od verze Supply Chain Management verze 10.0.25 jsou všechny tyto funkce ve výchozím nastavení zapnuty, ale stále je můžete vypnout.
+Poté, co zapnete základní funkce správy technických změn a povolíte jejich konfigurační klíče, bude do správy funkcí přidáno několik dalších a volitelných funkcí správy technických změn. Každá z těchto funkcí je uvedena v modulu **Řízení technických změn**. Následující tabulka popisuje každou volitelnou funkci a poskytuje odkazy na další informace.
 
 | Název funkce ve správě funkcí | Popis | Stav funkce |
 |---|---|---|
-| Povolení správy změn u stávajících produktů | <p>Tato funkce vám umožňuje převést stávající produkty na technické produkty, abyste je mohli začít spravovat pomocí správy technických změn.</p><p>Další informace naleznete v tématu [Povolení změnového řízení u existujících produktů](change-management-existing-products.md).</p> |
-| Technická oznámení pro výrobu | <p>Když se produkt změní v technickém zpracování, může být důležité informovat výrobu o těchto změnách. Pracovníci ve výrobě tak mohou podniknout příslušná opatření, jako je náhrada součástí, výměna kusovníku nebo výměna trasy. Tato funkce vám umožňuje informovat produkci o změnách vyráběných produktů.</p><p>Další informace naleznete v tématu [Správa změn technických produktů](engineering-change-management.md).</p> |
-| Vylepšená dědičnost atributů pro Řízení technických změn | <p>Tato funkce zjednodušuje správu atributů pro hotové výrobky nebo meziprodukty. Když je tato funkce zapnutá, je snazší identifikovat všechny atributy, které patří k položce, a můžete vybrat atributy, které se mají šířit z této položky do její nadřazené položky. Tato funkce je užitečná, když je například jedna složka hotového zboží křehká, toxická nebo hořlavá, protože křehký, toxický nebo hořlavý atribut můžete snadno identifikovat a šířit do hotového zboží.</p><p>Další informace viz [Technické atributy a vyhledávání technických atributů](engineering-attributes-and-search.md).</p> |
-| Kontroly připravenosti produktu | <p>Tato funkce umožňuje nastavit kontroly připravenosti na standardní (netechnické) produkty. Pomocí kontroly připravenosti produktu zajistěte, aby byl každý produkt plně definován a aby byly nakonfigurovány všechny požadované zásady, než bude produkt zpřístupněn a použit v transakcích. Pokud tuto funkci po chvíli použijete, všechny stávající kontroly připravenosti standardních produktů budou odstraněny.</p><p>Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).</p> |
-| Spravujte změny v recepturách a jejich látkách | <p>Tato funkce vám umožní sledovat změny přísad, vedlejších produktů a doprovodných produktů.</p><p>Další informace viz [Spravujte změny v recepturách a jejich látkách](manage-formula-changes.md).</p> |
-| Generování varianty pro technické produkty | <p>Tato funkce vám umožňuje generovat varianty pro technické produkty na základě dostupných hodnot dimenzí.</p><p>Další informace viz [Generování variant pro strojírenské výrobky](engineering-variants.md).</p> |
+| Povolení správy změn u stávajících produktů | <p>Tato funkce vám umožňuje převést stávající produkty na technické produkty, abyste je mohli začít spravovat pomocí správy technických změn.</p><p>Další informace naleznete v tématu [Povolení změnového řízení u existujících produktů](change-management-existing-products.md).</p> | Ve výchozím nastavení zapnuto od verze 10.0.25. |
+| Technická oznámení pro výrobu | <p>Když se produkt změní v technickém zpracování, může být důležité informovat výrobu o těchto změnách. Pracovníci ve výrobě tak mohou podniknout příslušná opatření, jako je náhrada součástí, výměna kusovníku nebo výměna trasy. Tato funkce vám umožňuje informovat produkci o změnách vyráběných produktů.</p><p>Další informace naleznete v tématu [Správa změn technických produktů](engineering-change-management.md).</p> |  Ve výchozím nastavení zapnuto od verze 10.0.25. |
+| Vylepšená dědičnost atributů pro Řízení technických změn | <p>Tato funkce zjednodušuje správu atributů pro hotové výrobky nebo meziprodukty. Když je tato funkce zapnutá, je snazší identifikovat všechny atributy, které patří k položce, a můžete vybrat atributy, které se mají šířit z této položky do její nadřazené položky. Tato funkce je užitečná, když je například jedna složka hotového zboží křehká, toxická nebo hořlavá, protože křehký, toxický nebo hořlavý atribut můžete snadno identifikovat a šířit do hotového zboží.</p><p>Další informace viz [Technické atributy a vyhledávání technických atributů](engineering-attributes-and-search.md).</p> |  Ve výchozím nastavení zapnuto od verze 10.0.25. |
+| Kontroly připravenosti produktu | <p>Tato funkce umožňuje nastavit kontroly připravenosti na standardní (netechnické) produkty. Pomocí kontroly připravenosti produktu zajistěte, aby byl každý produkt plně definován a aby byly nakonfigurovány všechny požadované zásady, než bude produkt zpřístupněn a použit v transakcích. Pokud tuto funkci po chvíli použijete, všechny stávající kontroly připravenosti standardních produktů budou odstraněny.</p><p>Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).</p> |  Ve výchozím nastavení zapnuto od verze 10.0.25. |
+| Spravujte změny v recepturách a jejich látkách | <p>Tato funkce vám umožní sledovat změny přísad, vedlejších produktů a doprovodných produktů.</p><p>Další informace viz [Spravujte změny v recepturách a jejich látkách](manage-formula-changes.md).</p> |  Ve výchozím nastavení zapnuto od verze 10.0.25. |
+| Generování varianty pro technické produkty | <p>Tato funkce vám umožňuje generovat varianty pro technické produkty na základě dostupných hodnot dimenzí.</p><p>Další informace viz [Generování variant pro strojírenské výrobky](engineering-variants.md).</p> |  Ve výchozím nastavení zapnuto od verze 10.0.25. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

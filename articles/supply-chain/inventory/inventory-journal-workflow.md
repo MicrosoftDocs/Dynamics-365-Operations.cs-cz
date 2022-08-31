@@ -2,7 +2,7 @@
 title: Pracovní postupy schválení deníku zásob
 description: Tento článek popisuje, jak nastavit s používat pracovní postupy schválení deníků pro různé typy transakcí fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873978"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334648"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Pracovní postupy schválení deníku zásob
 
@@ -29,12 +29,9 @@ Tento článek popisuje, jak nastavit a používat pracovní postupy schválení
 > [!NOTE]
 > Pracovní postupy schvalování deníku zásob se vztahují pouze na transakce zaznamenané pomocí modulu Správa zásob. Nepracují s deníky zásob spuštěnými z modulu Řízení skladu.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Zapnutí funkce pracovních postupů schválení deníku zásob
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce pracovních postupů schválení deníku zásob
 
-Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
-
-- **Modul:** *Řízení zásob a skladu*
-- **Název funkce:** *Pracovní postup schválení deníku zásob*
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Workflow schválení deníku zásob* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Vytvoření pracovních postupů schválení deníku inventáře
 

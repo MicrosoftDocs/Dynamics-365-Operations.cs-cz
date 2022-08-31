@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219561"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313876"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 
@@ -46,6 +46,17 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Ovlivněné oblasti produktu** | Aplikace |
 | **Možnost nasazení** | Vše |
 | **Stav** | Zastaralé: Po dubnu 2023 funkce **Příkazy k převodu akcií, které mají daň z převodní ceny** již nebude podporována opravami chyb a bezpečnostními opravami. Zákazníci budou požádáni, aby používali vylepšenou funkci [Příkazy k převodu akcií pro Indii](../../finance/localizations/apac-ind-stock-transfer.md). Po říjnu 2023 nebude funkce **Příkazy k převodu akcií, které mají daň z převodní ceny** již k dispozici a zákazníci budou požádáni, aby přešli na vylepšenou funkci. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Import a export souboru pozitivních plateb z bankovního výpisu
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Důvod pro zrušení/odstranění** |Nahrazeno vylepšenou funkčností, importem bankovních výpisů a exportem souborů pozitivních plateb.| 
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Aplikace |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaráno: Funkce XSLT pro import a export souborů již nebude podporována opravami chyb a opravami zabezpečení. Zákazníci budou požádáni, aby používali vylepšené funkce: [Nastavte soubory kladných plateb pomocí elektronického výkaznictví](../../finance/accounts-payable/set-up-positive-pay-er.md) a[Nastavte pokročilý import bankovního odsouhlasení pomocí elektronického výkaznictví](../../finance/accounts-payable/import-bai2-er.md). Po září 2022 již nebude funkce XSLT dostupná a zákazníci budou požádáni, aby přešli na vylepšenou funkcionalitu.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.26
 

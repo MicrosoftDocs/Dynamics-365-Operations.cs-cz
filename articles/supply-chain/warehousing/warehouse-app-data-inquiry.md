@@ -2,7 +2,7 @@
 title: Dotazování na data pomocí obcházení mobilní aplikace Warehouse Management
 description: Tento článek popisuje, jak nakonfigurovat položky nabídky mobilního zařízení s dotazem na data a jak je používat jako součást obcházení.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220520"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336598"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Dotazování na data pomocí obcházení mobilní aplikace Warehouse Management
 
@@ -35,19 +35,19 @@ Například v toku příjmu nákupní objednávky je číslo nákupní objednáv
 Než budete moci používat funkce popsané v tomto článku, musíte provést následující postup a zapnout požadované funkce.
 
 1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**. (Další informace o tom, jak používat pracovní prostor **Správa funkcí**, naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Zapněte funkci, která je zde uvedena, následujícím způsobem:
+1. Pokud používáte Supply Chain Management verze 10.0.28 nebo starší, zapněte funkci v seznamu následujícím způsobem:
 
     - **Modul:** *Řízení skladu*
     - **Název funkce:** *pokyny ke krokům aplikace Warehouse*
 
-    Tato funkce je předpokladem pro funkci *Tok dotazu na data aplikace Warehouse Management*. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md).
+    Tato funkce je předpokladem pro funkci *Tok dotazu na data aplikace Warehouse Management*. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md).
 
 1. Zapněte funkci, která je zde uvedena, následujícím způsobem:
 
     - **Modul:** *Řízení skladu*
     - **Název funkce:** *Obcházení aplikace Warehouse Management*
 
-    Tato funkce je předpokladem pro funkci *Tok dotazu na data aplikace Warehouse Management*. Pro více informací o funkci *Obcházení aplikace Warehouse Management*, viz [Konfigurace objížděk pro kroky v položkách nabídky mobilního zařízení](warehouse-app-detours.md).
+    Tato funkce je předpokladem pro funkci *Tok dotazu na data aplikace Warehouse Management*. Od verze Supply Chain Management 10.0.29 je ve výchozím nastavení zapnuta. Pro více informací o funkci *Obcházení aplikace Warehouse Management*, viz [Konfigurace objížděk pro kroky v položkách nabídky mobilního zařízení](warehouse-app-detours.md).
 
 1. Pokud funkce *Obcházení aplikace Warehouse Management* ještě nebyla zapnuta, aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Opakujte tento krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 1. Zapněte funkci, která je zde uvedena, následujícím způsobem:

@@ -2,7 +2,7 @@
 title: Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
 description: Tento článek představuje scénář, ve kterém je více objednávek uvolněno do skladu a později konsolidováno do dodávek pomocí pracovní plochy konsolidace dodávek.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218611"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335788"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidace dodávek pomocí pracovní plochy dodávek zásilek
 
@@ -34,14 +34,11 @@ Scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součást
 
 Scénář, který je zde popsán, předpokládá, že jste již tuto funkci zapnuli a provedli cvičení v [konfiguraci zásad konsolidace dodávek](configure-shipment-consolidation-policies.md) a vytvořili zásady a další záznamy, které jsou zde popsány. Než budete pokračovat v tomto scénáři, nezapomeňte tato cvičení provést.
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Zapnutí funkce rušní konsolidace dodávek
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce ruční konsolidace dodávek
 
-Než budete moci používat funkci *Ruční konsolidace dodávek*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Chcete-li používat funkci ruční konsolidace dodávek, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Ruční konsolidace dodávky* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Ruční konsolidace dodávek*
-
-Musíte také zapnout funkci *Konsolidovat zásilku*, než budete moci vytvářet zásady. Další informace viz [Konfigurace zásad konsolidace dodávky](configure-shipment-consolidation-policies.md).
+Musíte také zapnout funkci *Konsolidovat zásilku*, než budete moci vytvářet zásady (od verze Supply Chain Management verze 10.0.29 je tato funkce povinná a nelze ji vypnout). Další informace viz [Konfigurace zásad konsolidace dodávky](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Vytvoření prodejních objednávek pro tento scénář
 

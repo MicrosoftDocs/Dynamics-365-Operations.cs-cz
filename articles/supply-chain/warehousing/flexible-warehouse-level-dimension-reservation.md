@@ -2,7 +2,7 @@
 title: Flexibilní zásada rezervace dimenze na úrovni skladu
 description: V tomto článku jsou popsány zásady rezervace zásob, které umožňují společnostem prodávat produkty sledované podle dávky a spustit jejich logistiku, protože operace s povoleným WMS rezervují konkrétní dávky pro prodejní objednávky zákazníka, a to i v případě, že hierarchie rezervací, přidružená k produktům, neumožňuje rezervaci specifických dávek.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065891"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335698"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
@@ -196,12 +196,12 @@ V tomto scénáři společnost používá řízení skladu a zpracování práce
 - Registrační značku lze zaznamenat a rezervovat, když je objednávka provedena, zpracovatelem prodeje, a nelze ji pořídit jinými požadavky. Toto chování pomáhá zaručit, že plánovaná registrační značka je expedována odběrateli.
 - Pokud registrační značka ještě není přiřazena k řádku prodejní objednávky, pracovníci skladu mohou při vyskladnění po dokončení registrace a rezervace prodejní objednávky vybrat poznávací značku.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Zapnutí flexibilní rezervace registrační značky
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Zapnutí nebo vypnutí flexibilní rezervace registrační značky
 
 Než můžete použít flexibilní rezervaci registrační značky, musíte v systému zapnout dvě funkce. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Funkce musíte zapnout v následujícím pořadí:
 
-1. **Název funkce:** *Flexibilní rezervace dimenze na úrovni skladu*
-1. **Název funkce:** *Flexibilní rezervace registrační značky dle objednávky*
+1. *Pružná rezervace dimenze na úrovni skladu*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. *Flexibilní rezervace registrační značky potvrzená objednávkou*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Na prodejní objednávce si rezervujte konkrétní registrační značku
 

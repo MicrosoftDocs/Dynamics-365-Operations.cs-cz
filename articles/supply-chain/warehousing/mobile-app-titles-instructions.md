@@ -2,7 +2,7 @@
 title: Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
 description: Tento článek popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management.
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220142"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334469"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
 
@@ -28,9 +28,9 @@ Tento článek popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý kr
 - **Zvyšte rychlost pracovníků tím, že je necháte postupovat podle jednoduchých pokynů pro každý krok úkolu.** Každý krok toku poskytuje pokyny, které umožňují pracovníkům v první linii porozumět úkolu.
 - **Poskytněte pokyny, které odpovídají vašim vlastním procesům.** Napište si vlastní pokyny, které budou odpovídat vašim obchodním a skladovým procesům. Například můžete přizpůsobit terminologii vašemu fyzickému prostoru a místním zkratkám.
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Zapněte funkci krokových pokynů aplikace Warehouse
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>Zapněte nebo vypněte funkci krokových pokynů aplikace Warehouse
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Pokyny kroku aplikace Warehouse* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Pokyny ke kroku aplikace skladu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Názvy kroků a pokyny k krokům v aplikaci
 

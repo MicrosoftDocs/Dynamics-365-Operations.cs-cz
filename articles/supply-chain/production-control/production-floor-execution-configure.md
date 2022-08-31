@@ -2,7 +2,7 @@
 title: Konfigurace rozhraní pro provádění výrobního provozu
 description: Tento článek popisuje, jak vytvořit jednu nebo více konfigurací rozhraní pro provádění výrobního provozu. Když otevřete rozhraní pro provádění výrobního provozu, automaticky načte vybranou konfiguraci a filtr úloh, které jsou specifické pro prohlížeč a zařízení. V konfiguraci nastavíte zásady, které musí být použitelné pro konkrétní použití.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220355"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336178"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -63,29 +63,32 @@ Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkce správy majetku pro rozhraní provádění výrobního provozu
 
-Tato funkce přidává kartu správy majetku do rozhraní pro spuštění výrobního provozu. Pracovníci mohou na této kartě vybrat majetek, který je připojen ke zdroji stroje, který je ve vybraném filtru seznamu úloh. U vybraného majetku stroje může pracovník zobrazit stav a stav majetek z hodnot čítače až pro čtyři vybrané čítače. Chcete-li tuto funkci použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tato funkce přidává kartu správy majetku do rozhraní pro spuštění výrobního provozu. Pracovníci mohou na této kartě vybrat majetek, který je připojen ke zdroji stroje, který je ve vybraném filtru seznamu úloh. U vybraného majetku stroje může pracovník zobrazit stav a stav majetek z hodnot čítače až pro čtyři vybrané čítače.
 
-- *Funkce správy majetku pro rozhraní provádění výrobního provozu*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta.)
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Funkce správy majetku pro rozhraní provádění výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-job-search"></a>Povolit hledání úloh
+### <a name="job-search"></a>Hledání úloh
 
-Tato funkce umožňuje přidat vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu. Chcete-li ho použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tato funkce umožňuje přidat vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu.
 
-- *Vyhledávání práce pro rozhraní ke spuštění výrobního provozu*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta.)
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Vyhledávání práce pro rozhraní ke spuštění výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivace hlášení koproduktů a vedlejších produktů
+### <a name="report-on-co-products-and-by-products"></a>Hlášení koproduktů a vedlejších produktů
 
-Tato funkce umožňuje pracovníkům používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech. Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tato funkce umožňuje pracovníkům používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech.
 
-- *Zpráva o vedlejších a souběžných produktech z rozhraní pro provádění výrobního provozu*
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zpráva o vedlejších a souběžných produktech z rozhraní pro provádění výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Zapnutí zobrazení úplných sériových čísel, čísel šarží a registračních čísel vozidel
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Zbrazení úplných sériových čísel, čísel šarží a registračních čísel vozidel
 
 Tato funkce poskytuje vylepšené prostředí k prohlížení seznamů sériových, dávkových a registračních čísel v rozhraní pro provádění výrobního provozu. Zobrazení se změní ze zobrazení karty s omezeným počtem znaků na zobrazení seznamu, ve kterém je dostatek prostoru pro zobrazení celých hodnot. Seznam také poskytuje možnost vyhledávat konkrétní čísla.
 
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud spouštíte verzi starší než 10.0.29, správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazit úplná čísla série, dávky a registrační značky vozidla v produkčním rozhraní výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
 Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazit úplná čísla série, dávky a registrační značky vozidla v produkčním rozhraní výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-registering-of-material-consumption"></a>Zapnutí registrace spotřeby materiálu
+### <a name="register-material-consumption"></a>Zaregistrovat spotřebu materiálu
 
 Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, organizace musí také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu.
 
@@ -97,7 +100,7 @@ Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *n
 > [!IMPORTANT]
 > Funkci mimo WMS můžete používat samostatně. Pokud však používáte WMS, musíte povolit obě funkce.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Povolit hlášení o položkách skutečné hmotnosti
+### <a name="report-on-catch-weight-items"></a>Vykazování položek se skutečnou hmotností
 
 Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek pro položky skutečné hmotnosti. Dávkové příkazy se vytvářejí ze vzorců, které lze definovat tak, aby měly položky skutečné hmotnosti jako položky vzorce, koprodukty a vedlejší produkty. Vzorec lze také definovat tak, aby obsahoval řádky vzorce pro přísady, které jsou definovány pro skutečnou hmotnost. Položky skutečné hmotnosti používají ke sledování inventáře dvě měrné jednotky: množství skutečné hmotnosti a množství inventáře. Například v potravinářském průmyslu lze maso v krabicích definovat jako položku skutečné hmotnosti, kde se množství skutečné hmotnosti používá ke sledování počtu krabic a množství v inventáři se používá ke sledování hmotnosti krabic.
 
@@ -105,15 +108,13 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 - *Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu*
 
-### <a name="enable-the-my-day-dialog"></a>Povolení dialogového okna „Můj den“
+### <a name="the-my-day-dialog"></a>Dialogové okno „Můj den“
 
 Dialogové ono **Můj den** poskytuje pracovníkům přehled jejich denních registracích a aktuálních zůstatcích za placenou dobu, placené přesčasy, nepřítomnost a placenou nepřítomnost.
 
-Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazení Můj den pro rozhraní pro provádění výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Zobrazení Můj den pro rozhraní pro provádění výrobního provozu*
-
-### <a name="enable-teams"></a>Povolení týmů
+### <a name="teams"></a>Týmy
 
 Když je ke stejné výrobní úloze přiděleno více pracovníků, mohou vytvořit tým. Tým může nominovat jednoho pracovníka jako pilota. Zbývající pracovníci se pak automaticky stanou asistenty tohoto pilota. Pro výsledný tým musí stav úlohy zaregistrovat pouze pilot. Časové záznamy platí pro všechny členy týmu.
 
@@ -121,7 +122,7 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 - *Produkční týmy v rozhraní pro provádění výrobního provozu*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Povolení další konfigurace v rozhraní pro provedení výrobního provozu
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Další konfigurace v rozhraní pro provádění výrobního provozu
 
 Tato funkce přidává nastavení pro následující funkce na stránce **Konfigurace provádění výrobního provozu**:
 
@@ -136,7 +137,6 @@ Informace o použití těchto nastavení jsou uvedeny dále v tomto článku.
 Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Další konfigurace v rozhraní pro provádění výrobního provozu*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 

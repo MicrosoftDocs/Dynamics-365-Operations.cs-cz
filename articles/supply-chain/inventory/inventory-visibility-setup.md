@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895692"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306047"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení Inventory Visibility
 
@@ -88,20 +88,6 @@ Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalu
 >
 > 1. Po dokončení instalace se vraťte na stránku LCS a zkuste znovu nainstalovat doplněk **Viditelnost zásob**.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalace doplňku Viditelnost zásob
-
-Chcete-li odinstalovat doplněk Viditelnost zásob, vyberte **Odinstalovat** na stránce LCS. Proces odinstalace ukončí doplněk Viditelnost zásob, zruší registraci doplňku z LCS a odstraní všechna dočasná data uložená v mezipaměti dat doplňku Viditelnost zásob. Primární data zádob, která jsou uložena ve vašem předplatném Dataverse však nejsou smazána.
-
-Chcete-li odinstalovat data zásob, která jsou uložena ve vašem předplatném Dataverse, otevřete [Power Apps](https://make.powerapps.com), vyberte **Prostředí** na navigačním panelu a vyberte prostředí Dataverse, které je spojeno s vaším prostředím LCS. Pak přejděte na **Řešení** a odstraňte následujících pět řešení v tomto pořadí:
-
-1. Ukotvení řešení pro aplikaci Viditelnost zásob v řešeních Dynamics 365
-1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
-1. Konfigurace služeb zásob
-1. Samostatná Viditelnost zásob
-1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
-
-Po odstranění těchto řešení budou odstraněna také data uložená v tabulkách.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Nastavení viditelnosti zásob v Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Nasaďte integrační balíček Viditelnost zásob
@@ -135,10 +121,45 @@ Jakmile si doplněk nainstalujete, připravte systém Supply Chain Management, a
 
 1. Pokud jste povolili volitelnou funkci *Integrace viditelnosti zásob s posunem rezervace*, otevřete kartu **Posun rezervace** a vytvořte následující nastavení:
     - **Povolit posun rezervace** - Nastavením na *Ano* povolíte tuto funkci.
-    - **Modifikátor ofsetu rezervace** - Vyberte stav transakce zásob, který bude kompenzovat rezervace provedené ve službě Viditelnost zásob. Toto nastavení určuje fázi zpracování objednávky, která spouští offsety. Fáze je sledována podle stavu transakcí zásob objednávky. Vyberte jednu z následujících možností:
+    - **Modifikátor ofsetu rezervace** - Vyberte stav transakce zásob, který bude kompenzovat rezervace provedené ve službě Viditelnost zásob. Toto nastavení určuje fázi zpracování objednávky, která spouští offsety. Fáze je sledována podle stavu transakcí zásob objednávky. Vyberte některou z následujících možností:
         - *Při objednávce* - Pro stav *Při transakci* objednávka odešle po vytvoření požadavek na vyrovnání. Ofsetové množství bude množství vytvořené objednávky.
         - *Rezervovat* - Pro stav *Rezervovat objednanou transakci* objednávka odešle požadavek na vyrovnání, pokud je rezervována, vyskladněna, zaúčtována dodacím listem nebo fakturována. Požadavek bude spuštěn pouze jednou, v prvním kroku, když nastane zmíněný proces. Ofsetové množství bude množství, ze kterého se změnil stav transakce zásob *V pořadí* na *Rezervováno objednáno* (nebo pozdější stav) na příslušném řádku objednávky.
 
 1. Přejděte do uzlu **Řízení zásob \> Periodické \> Integrace viditelnosti zásob** a povolte úlohu. Všechny události změny zásob z aplikace Supply Chain Management budou nyní odeslány do Viditelnosti zásob.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalace doplňku Viditelnost zásob
+
+Pro odinstalaci doplňku Viditelnost zásob proveďte následující:
+
+1. Přihlaste se k aplikaci Supply Chain Management.
+1. Přejděte do uzlu **Řízení zásob \> Periodické \> Integrace viditelnosti zásob** a zakažte úlohu.
+1. Přejděte na LCS a otevřete stránku pro prostředí, ze kterého chcete doplněk odinstalovat (viz také [Nainstalujte doplněk Inventory Visibility Add-in](#install-add-in)).
+1. Vyberte **Odinstalovat**.
+1. Proces odinstalace nyní ukončí doplněk Viditelnost zásob, zruší registraci doplňku z LCS a odstraní všechna dočasná data uložená v mezipaměti dat doplňku Viditelnost zásob. Primární data zádob, která byla synchronizována s vaším předplatným Dataverse jsou zde však stále uložena. Chcete-li odstranit tato data, dokončete tento postup.
+1. Otevřete [Power Apps](https://make.powerapps.com).
+1. Vyberte **Prostředí** na navigační liště
+1. Vyberte prostředí Dataverse, které je propojeno s vaším prostředím LCS.
+1. Přejděte na **Řešení** a odstraňte následující řešení v následujícím pořadí:
+    1. Ukotvit řešení pro aplikaci viditelnost zásob v řešeních Dynamics 365
+    1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
+    1. Konfigurace služeb zásob
+    1. Samostatná Viditelnost zásob
+    1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
+
+    Po odstranění těchto řešení budou odstraněna také data uložená v tabulkách.
+
+> [!NOTE]
+> Pokud po odinstalaci doplňku Viditelnost zásob obnovíte databázi Supply Chain Management a poté chcete doplněk znovu nainstalovat, ujistěte se, že jste odstranili stará data Viditelnosti zásob, která jsou uložena ve vašem předplatném Dataverse před opětovnou instalací doplňku (jak je popsáno v předchozím postupu). Předejdete tak problémům s nekonzistencí dat, ke kterým by jinak mohlo dojít.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Vyčistěte data viditelnosti zásob z Dataverse před obnovením databáze Supply Chain Management
+
+Pokud jste používali Viditelnost zásob a poté obnovili databázi Supply Chain Management, může obnovená databáze obsahovat data, která již nejsou konzistentní s daty dříve synchronizovanými pomocí Viditelnosti zásob v Dataverse. Tato nekonzistence dat může způsobit systémové chyby a další problémy. Proto je důležité, abyste vždy vyčistili všechna data viditelnosti zásob z Dataverse před obnovením databáze Supply Chain Management.
+
+Pokud potřebujete obnovit databázi Supply Chain Management, použijte následující postup:
+
+1. Odinstalujte doplněk Viditelnost zásob a odeberte všechna související data v Dataverse podle popisu v tématu [Odinstalace doplňku Viditelnost zásob](#uninstall-add-in).
+1. Obnovte databázi Supply Chain Management, například jak je popsáno v tématu [Obnova databáze k bodu v čase (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) nebo [Obnova produkční databáze k bodu v čase do prostředí sandbox](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. Pokud ji přesto chcete používat, přeinstalujte a nastavte doplněk Viditelnost zásob, jak je popsáno v [Nainstalujte doplněk Viditelnost zásob](#install-add-in) a [Nastavte integraci viditelnosti zásob](#setup-inventory-visibility-integration)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

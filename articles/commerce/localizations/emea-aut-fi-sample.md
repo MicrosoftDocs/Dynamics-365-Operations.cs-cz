@@ -2,27 +2,28 @@
 title: Ukázka integrace fiskální služby pro Rakousko
 description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 7f4f1d796028330d2d655b1e13d3e36bbef95403
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: da4deb37b260ffa2a68e2a36aef01965cbf098b2
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287558"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313794"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Ukázka integrace fiskální služby pro Rakousko
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 V tomto článku je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
 
-Pro účely splnění fiskálních požadavků na registrační pokladny v Rakousku obsahuje funkce Dynamics 365 Retail pro Rakousko vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) od [EFSTA](https://www.efsta.eu/at/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR by měla být hostitelem hardwarové stanice pro maloobchod nebo samostatný počítač, se kterým se lze propojit z hardwarové stanice. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
+Pro účely splnění fiskálních požadavků na registrační pokladny v Rakousku obsahuje funkce Dynamics 365 Retail pro Rakousko vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) od [EFSTA](https://www.efsta.eu/at/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR by měla být hostitelem hardwarové stanice pro maloobchod nebo samostatný počítač, se kterým se lze propojit z hardwarové stanice. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady Retail software development kit (SDK).
 
 Společnost Microsoft nevydává žádný hardware, software nebo dokumentaci k EFSTA. Informace o tom, jak řešení EFR získat a provozovat, vám poskytne [EFSTA](https://www.efsta.eu/at/kontakt).
 
@@ -102,6 +103,13 @@ Chcete-li použít funkci specifickou pro Rakousko, je nutné zadat následujíc
 - V profilu funkce POS každého obchodu, který se nachází v rámci Rakouska, nastavte pole **kód ISO** na **AT** (Rakousko).
 
 Zadejte také následující nastavení pro Rakousko. Po dokončení instalace musíte spustit příslušné distribuční úlohy.
+
+### <a name="enable-features-for-austria"></a>Povolit funkce pro Rakousko
+
+V pracovním prostoru **Správa funkcí** musíte povolit následující funkce:
+
+- (Rakousko) Povolit další události auditu v POS
+- (Rakousko) Povolit dodatečné informace ve výpisech na konci dne v POS
 
 ### <a name="set-up-vat-per-austrian-requirements"></a>Nastavení DPH podle rakouských požadavků
 
@@ -204,10 +212,10 @@ Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu
 
 ## <a name="set-up-fiscal-integration-for-austria"></a>Nastavení fiskální integrace pro Rakousko
 
-Ukázka integrace služby fiskální registrace pro Rakousko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení Commerce Runtime (CRT) a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
+Ukázka integrace služby fiskální registrace pro Rakousko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Commerce SDK. Ukázka rozšíření POS se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Ukázka](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) se skládá ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení Commerce Runtime (CRT) a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o tom, jak používat Commerce SDK, viz [Stáhněte si ukázky Commerce SDK a referenční balíčky z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md) a [Nastavte kanál buildu pro SDK nezávislého balení](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md). Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> Ukázka integrace služby fiskální registrace pro Rakousko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md).
 
 Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro kanály Commerce](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -223,18 +231,20 @@ Pokud chcete povolit registrační proces, postupujte pomocí následujících k
 1. Stáhněte si konfigurační soubory pro poskytovatele fiskálních dokumentů a fiskální konektor:
 
     1. Otevřete úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace (například **[vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace.
     1. Otevřete **src \> FiscalIntegration \> Efr**.
-    1. Otevřete **Configurations \> DocumentProviders** a stáhněte si konfigurační soubory poskytovatele fiskálních dokumentů: **DocumentProviderFiscalEFRSampleAustria.xml** a **DocumentProviderNonFiscalEFRSampleAustria.xml** (například [umístění souborů pro vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
-    1. Stáhněte si konfigurační soubor fiskálního konektoru v umístění **Configurations \> Connectors \> ConnectorEFRSample.xml** (například [soubor k vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Otevřete **Konfigurace \> DocumentProviders** a stáhněte si konfigurační soubory poskytovatele fiskálních dokumentů: 
 
-    > [!WARNING]
-    > Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Konfigurační soubory pro tuto ukázku fiskální integrace jsou umístěny v následujících složkách Retail SDK na vývojářském virtuálním počítači v LCS:
+        - DocumentProviderFiscalEFRSampleAustria.xml
+        - DocumentProviderNonFiscalEFRSampleAustria.xml
+
+    1. Stáhněte si konfigurační soubor fiskálního konektoru v umístění **Configurations \> Connectors \> ConnectorEFRSample.xml**.
+
+    > [!NOTE]
+    > Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Konfigurační soubory pro tuto ukázku fiskální integrace jsou umístěny v následujících složkách Retail SDK na vývojářském virtuálním počítači v LCS:
     >
     > - **Konfigurační soubor poskytovatele fiskálního dokumentu:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration
     > - **Konfigurační soubor fiskálního konektoru:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration
-    > 
-    > Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
 
 1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**. Na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.
 1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a načtěte konfigurační soubory poskytovatele fiskálního dokumentu, které jste stáhli dříve.
@@ -244,7 +254,7 @@ Pokud chcete povolit registrační proces, postupujte pomocí následujících k
 1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálního konektoru**. Vytvořte dvé nové skupiny fiskálního konektoru pro každý funkční profil konektoru, který jste vytvořili předtím.
 1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace**. Vytvořte nový proces fiskální registrace a dva kroky procesu fiskální registrace a vyberte skupiny fiskálního konektoru, které jste předtím vytvořili.
 1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**. Vyberte funkční profil, který je připojena k obchodu, kde by měl být aktivován proces registrace. Na pevné záložce **Proces fiskální registrace** vyberte proces fiskální registrace, který jste předtím vytvořili. Chcete-li povolit registraci nefiskálních událostí v POS, na záložce s náhledem **Funkce** v sekci **POS** nastavte možnost **Audit** na **Ano**.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**. Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální tiskárna. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
+1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**. Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální registrační služba. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
 1. Spusťte plán distribuce (**Retail a Commerce \> IT Retail a Commerce \> plán distribuce**) a vyberte úlohy **1070** a **1090** k přenosu dat do databáze kanálů.
 
 #### <a name="default-data-mapping"></a>Výchozí mapování dat
@@ -269,16 +279,15 @@ Následující nastavení jsou součástí konfigurace fiskálního konektoru, k
 
 ### <a name="configure-channel-components"></a>Konfigurace komponent kanálu
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md).
->
-> Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> - Ukázka integrace služby fiskální registrace pro Rakousko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md).
+> - Ukázky Commerce, které jsou nasazeny ve vašem prostředí, se automaticky neaktualizují, když na komponenty Commerce použijete aktualizace služeb nebo kvality. Musíte ručně aktualizovat požadované vzorky.
 
 #### <a name="set-up-the-development-environment"></a>Nastavení vývojového prostředí
 
 Tento postup slouží k nastavení vývojového prostředí, abyste mohli testovat a rozšířit ukázku.
 
-1. Naklonujte nebo stáhněte úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace. Další informace viz [Stažení ukázek Retail SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Naklonujte nebo stáhněte úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace. Další informace viz [Stažení ukázek Commerce SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Otevřete řešení EFR v umístění **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln** a sestavte jej.
 1. Nainstalujte rozšíření CRT:
 
@@ -330,10 +339,10 @@ Postupujte podle kroků v části [Nastavení kanálu buildu pro ukázku fiskál
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 
-Ukázka integrace služby fiskální registrace pro Rakousko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení CRT a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
+Ukázka integrace služby fiskální registrace pro Rakousko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Commerce SDK. Ukázka rozšíření POS se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení CRT a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o tom, jak používat Commerce SDK, viz [Stáhněte si ukázky Commerce SDK a referenční balíčky z GitHub a NuGet](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavte kanál buildu pro SDK nezávislého balení](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md). Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> Ukázka integrace služby fiskální registrace pro Rakousko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Rakousko (starší verze)](emea-aut-fi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu 
 

@@ -2,7 +2,7 @@
 title: Vytvoření převodních příkazů z aplikace skladu
 description: Tento článek popisuje, jak vytvářet a zpracovávat převodní příkazy z funkce mobilní aplikace Řízení skladu
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877443"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336448"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877443"
 
 Tato funkce umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z mobilní aplikace Řízení skladu. Pracovníci začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek a přidat registrační značky do převodního příkazu. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Zapnutí nebo vypnutí této funkce
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Zapnutí této funkce a její předpoklady
 
 Než budete moct tuto funkci používat, musíte funkci a její předpoklady povolit ve svém systému. Správci mohou pomocí stránky [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby.
 
 1. Zapněte následující dvě funkce (v uvedeném pořadí) v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Od verze Supply Chain Management 10.0.25 jsou obě tyto funkce ve výchozím nastavení zapnuté.
-    1. *Zpracovat události aplikace skladu*
-    1. *Vytvářet a zpracovat převodní příkazy z aplikace skladu*
-1. Pokud chcete automatizovat zpracování odchozích dodávek, musíte také povolit funkci [Potvrdit odchozí dodávky z dávkových úloh](confirm-outbound-shipments-from-batch-jobs.md).
+    1. *Zpracovat události aplikace skladu*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+    1. *Vytvářet a zpracovat převodní příkazy z aplikace skladu*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. Pokud chcete automatizovat zpracování odchozích dodávek, musíte také povolit funkci [P *otvrdit odchozí dodávky z dávkových úloh*](confirm-outbound-shipments-from-batch-jobs.md). (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Nastavení položky nabídky mobilního zařízení pro vytváření převodních příkazů
 
@@ -307,11 +307,11 @@ Ne, do převodního příkazu s událostí **Dokončení převodního příkazu*
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak najdu existující převodní příkazy k použití prostřednictvím tlačítka „Vybrat převodní příkaz“ v mobilní aplikaci Řízení skladu, pokud tento příkaz ještě nebyl vytvořen v back-endovém systému?
 
-V současné době nemůžete v této aplikaci převodní příkazy vyhledávat, ale čísla převodních příkazů můžete najít na stránce **Události aplikace skladu**. Další informace viz [Prošetřování událostí aplikace skladu](#inquire-the-warehouse-app-events).
+Pomocí této aplikace můžete pracovníkům umožnit vyhledání čísel převodních příkazů v mobilní aplikaci Warehouse Management pomocí její funkce [datový dotaz](warehouse-app-data-inquiry.md). Můžete například vytvořit položku nabídky mobilního zařízení [obcházení](warehouse-app-detours.md), která se dotazuje na data zobrazená na stránce webového klienta **Události aplikace Warehouse** (`WHSMobileDeviceQueueMessageCollection`) jako součást kroku *Vyberte objednávku - MobileDeviceQueueMessageCollectionIdentifierId*. Číslo převodního příkazu odpovídá hodnotě uvedené v poli **Identifikátor**. Viz také [Prošetřování událostí aplikace skladu](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Můžu z mobilní aplikace Řízení skladu ručně vybrat číslo převodního příkazu, které se má použít?
 
-Podporována jsou pouze automaticky generovaná čísla převodních příkazů na základě číselných řad.
+Podporována jsou pouze automaticky generovaná čísla převodních příkazů na základě číselných řad. Viz také odpověď na předchozí otázku, jak nastavit tlačítko **Vyberte převodní příkaz**. Další informace o tom, jak najít čísla převodních příkazů, viz [Prošetřování událostí aplikace skladu](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Zpracování na pozadí
 

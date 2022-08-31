@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178526"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324253"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
@@ -47,13 +47,14 @@ Při kopírování instance mějte na paměti následující tipy:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Vliv kopírování databáze aplikace Human Resources
 
+> [!Note]
+> Od srpna 2022 budou dokumenty v Microsoft Azure Blob Storage je zahrnuto při kopírování produkčního prostředí do prostředí sandbox. Všechny dokumenty a šablony, které jsou připojeny, budou zkopírovány ze zdrojového prostředí do cílového prostředí.
+
 Při kopírování databáze aplikace Human Resources dojde k následujícím událostem:
 
 - Při kopírování bude existující databáze vymazána v cílovém prostředí. Po dokončení kopírování nelze stávající databázi obnovit.
 
 - Cílové prostředí nebude k dispozici, dokud nebude proces kopírování dokončen.
-
-- Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Ve výsledku nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
 
 - Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, a dalších uživatelských účtů interní služby, nebudou k dispozici. Správce může odstranit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
 

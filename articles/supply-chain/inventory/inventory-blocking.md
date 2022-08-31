@@ -2,7 +2,7 @@
 title: Blokování zásob
 description: Tento článek poskytuje přehled blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Supply Chain Management. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857801"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334678"
 ---
 # <a name="inventory-blocking"></a>Blokování zásob
 
@@ -96,11 +96,11 @@ Když je možnost **Rezervovat objednané položky** vypnuta, očekávané pří
 
 Všimněte si rozdílu ve stavu transakce a dimenzích mezi těmito dvěma případy. Z tohoto důvodu doporučujeme zapnout možnost **Rezervovat objednané položky**.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Vypnutí funkce očekávaných příjmů z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob
 
 Aby se zjednodušily transakce zásob v případě objednávek kvality, které vzorkují zásoby blokované v důsledku stavu zásob, systém poskytuje funkci, která deaktivuje očekávané příjmy z takovýchto objednávek kvality. Protože očekávaný příjem je blokováním stavu zásob okamžitě zablokován, nedochází kvůli této změně ke snížení skladové zásoby.
 
-Ve výchozím nastavení je tato funkce vypnutá. Správci mohou funkčnost zapnout nebo vypnout vyhledáním funkce *Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Správci mohou funkci zapnout nebo vypnout vyhledáním funkce *Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 

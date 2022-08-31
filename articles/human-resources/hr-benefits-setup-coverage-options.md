@@ -14,19 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8569cabf72871396b9935a14a5637e5e645705fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9c107e31e58ba1302cd02e2e82aa405dda0fdef
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848216"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336898"
 ---
 # <a name="create-coverage-options"></a>Vytvoření možností pokrytí
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Možnosti krytí určují, kdo by měl být krytý, nebo kolik krytí je k dispozici v pojistném plánu. Například pro lékařský plán můžete mít možnost **Pouze zaměstnanec**, **Zaměstnanec + 1** a **Rodina**. U životního pojištění můžete nabídnout krytí pro **1 x plat** nebo **2 x plat**.
 

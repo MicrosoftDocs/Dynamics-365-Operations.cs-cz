@@ -2,7 +2,7 @@
 title: Porovnat sestavu úložiště cen položek
 description: Naučte se generovat sestavu porovnávacího úložiště cen položek a poté procházet a exportovat výsledek.
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6373679299b68413d75236ca8cc18ceba03e091
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846206"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334978"
 ---
 # <a name="compare-item-prices-storage-report"></a>Porovnat sestavu úložiště cen položek
 
@@ -35,12 +35,9 @@ Výsledky sestavy jsou uloženy v datové entitě **Porovnat ceny položek**, co
 
 Sestava **Porovnání úložiště cen položek** je užitečná v případech, kdy výstup obsahuje mnoho řádků. Výstup bude obsahovat například mnoho řádků v případě, že máte více než 40 000 položek, které mají v nákladové verzi pozastavenou cenu položky.
 
-## <a name="enable-compare-item-prices-storage"></a>Povolit porovnání úložiště cen položek
+## <a name="turn-the-compare-item-prices-storage-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Úložiště porovnání cen zboží
 
-Než můžete použít tuto funkci, musíte ji povolit ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
-
-- **Modul** - Správa nákladů
-- **Název funkce** – Porovnání úložiště cen položky
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Úložiště porovnání cen zboží* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="generate-a-compare-item-prices-storage-report"></a>Generovat sestavu s porovnáním cen položek
 

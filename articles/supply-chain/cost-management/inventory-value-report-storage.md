@@ -2,7 +2,7 @@
 title: Sestavy hodnot zásob
 description: Tento článek vysvětluje postup při nastavení, generování a používání sestav hodnot zásob. Tyto sestavy poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob.
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854551"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334918"
 ---
 # <a name="inventory-value-reports"></a>Sestavy hodnot zásob
 
@@ -55,7 +55,7 @@ Sestava **Úložiště sestavy hodnot zásob** je užitečná, pokud výstup obs
 
 ## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Zapnutí nebo vypnutí sestavy Úložiště sestavy hodnot zásob
 
-Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Úložiště sestavy hodnot zásob* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Úložiště sestavy hodnot zásob* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Definujte konfigurace sestavy hodnoty zásob
 

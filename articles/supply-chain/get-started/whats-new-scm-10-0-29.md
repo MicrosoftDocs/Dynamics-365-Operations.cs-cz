@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266391"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334738"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.29 (říjen 2022)
 
@@ -74,10 +74,7 @@ Tabulka také uvádí funkce, které byly dříve v Public Preview, ale změnily
 
 | Modul | Název funkce | Nový stav funkce |
 | --- | --- | --- |
-| Správa majetku | [Použít pravidla pro seskupování pracovních příkazů při provádění plánu údržby](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Povinné |
 | Správa majetku | [Funkce správy majetku pro rozhraní provádění výrobního provozu](../production-control/production-floor-execution-configure.md) | Povinné |
-| Správa majetku | [Vylepšení údržby na základě čítače](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Zapnuto ve výchozím nastavení |
-| Správa majetku | [Fakturace pracovních příkazů](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Povinné |
 | Správa nákladů | [Změnit popisek zrušení v uzávěrce a úpravě pro stornování](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Povinné |
 | Správa nákladů | Vyčistění údajů výpočtu kusovníku ve verzích výpočtu nákladů | Povinné |
 | Správa nákladů | [Úložiště porovnání cen zboží](../cost-management/compare-item-price.md) | Povinné |
@@ -102,7 +99,7 @@ Tabulka také uvádí funkce, které byly dříve v Public Preview, ale změnily
 | Řízení zásob a skladu | Použití měrné jednotky a jednotkového množství v denících zásob | Povinné |
 | Řízení zásob a skladu | Odemčení deníku zásob | Povinné |
 | Výroba | [Automatické vyskladňování materiálů s povoleným skladem pro automaticky účtované výdejky](whats-new-scm-10-0-23.md) | Obecně dostupné |
-| Výroba | Povolit zobrazování dimenzí zásob v seznamu materiálů pro operace výrobního postupu | Zapnuto ve výchozím nastavení |
+| Výroba | Povolit zobrazování dimenzí zásob v seznamu materiálů pro operace výrobního postupu | Povinné |
 | Výroba | [Umožňuje zadávat čísla dávky a sériová čísla při vykazování za dokončené v zařízení úkolového lístku](../production-control/report-finished-job-device.md) | Zapnuto ve výchozím nastavení |
 | Výroba | Vylepšený výdej množství skutečné hmotnosti produkce | Zapnuto ve výchozím nastavení |
 | Výroba | [Vyhledávání práce pro rozhraní ke spuštění výrobního provozu](../production-control/production-floor-execution-configure.md) | Povinné |
@@ -127,20 +124,19 @@ Tabulka také uvádí funkce, které byly dříve v Public Preview, ale změnily
 | Hlavní plánování | [Potvrzení plánované objednávky s filtrováním](../master-planning/planning-optimization/planned-order-firming.md) | Povinné |
 | Hlavní plánování | [Plánované výrobní zakázky pro optimalizaci plánování](../master-planning/planning-optimization/production-planning.md) | Povinné |
 | Hlavní plánování | [Obchodní nákupní smlouvy pro optimalizaci plánování](../master-planning/planning-optimization/purchase-trade-agreement.md) | Povinné |
-| Hlavní plánování | Plánování zdrojů s údržbou | Povinné |
 | Hlavní plánování | [Uložená zobrazení pro plánované objednávky](saved-views-scm.md) | Povinné |
 | Zásobování a zdroje | Částky poplatků od a do na nákupních objednávkách | Povinné |
 | Zásobování a zdroje | Deaktivace tlačítka resetování distribuce nákupní žádanky | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | [Povolit resetování pracovních postupů souvisejících se zásobováním](whats-new-scm-10-0-20.md) | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | [Omezit počet řádků nákupní objednávky na dávkovou úlohu](whats-new-scm-10-0-27.md) | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | [Sloučit finanční dimenze dodavatele s finanční dimenzí aktivního propojení dimenzí na nákupní objednávce](whats-new-scm-10-0-25.md) | Povinné |
+| Zásobování a zdroje | [Účtujte registrovaná množství produktů na skladě a zbytky neskladových produktů pro účtenky a faktury dodavatele](whats-new-scm-10-0-26.md) | Obecně dostupné |
 | Zásobování a zdroje | [Zabránit nadměrné spotřebě rezervací účelových položek rozpočtu, když je v pracovním postupu více nákupních žádanek](whats-new-scm-10-0-21.md) | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | [Odpovědná strana nákupní smlouvy](../procurement/purchase-agreements.md) | Povinné |
 | Zásobování a zdroje | [Uložená zobrazení pro nákupní objednávky](saved-views-scm.md) | Povinné |
 | Správa informací o produktech | Kusovník předzpracovává sestavy, aby nedošlo k vypršení časového limitu | Povinné |
 | Správa informací o produktech | Výchozí finanční dimenze samostatně při použití šablon položek | Povinné |
 | Správa informací o produktech | Povolit skupiny dimenzí produktů pro šablony položek | Povinné |
-| Správa informací o produktech | [Vylepšená dědičnost atributů pro Řízení technických změn](../engineering-change-management/engineering-attributes-and-search.md) | Povinné |
 | Správa informací o produktech | Vylepšení entity položka - čárový kód | Povinné |
 | Správa informací o produktech | Opětovně vygenerovat názvy variant produktů na základě názvosloví | Povinné |
 | Správa informací o produktech | [Uložená zobrazení pro uvolněné produkty](saved-views-scm.md) | Povinné |
@@ -161,27 +157,30 @@ Tabulka také uvádí funkce, které byly dříve v Public Preview, ale změnily
 | Prodej a marketing | [Potvrzení prodejní objednávky jediným kliknutím](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Povinné |
 | Správa přepravy | Povolit zrušení spárování účtů dopravného z řádků faktury za přepravu bez zaúčtovaného deníku faktur dodavatele | Zapnuto ve výchozím nastavení |
 | Správa přepravy | [Povolit vytvoření deníku faktury dodavatele při vyřazování účtu dopravného](whats-new-scm-10-0-20.md) | Zapnuto ve výchozím nastavení |
-| Správa přepravy | [Expedice malých balíků](../warehousing/small-parcel-shipping.md) | Zapnuto ve výchozím nastavení |
+| Správa přepravy | [Expedice malých balíků](../warehousing/small-parcel-shipping.md) | Povinné |
 | Správa přepravy | [Dokument s certifikátem o původu USMCA](../transportation/usmca-certification-of-origin.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | [Další zóna skladového místa](../warehousing/additional-location-zones.md) | Povinné |
 | Řízení skladu | [Zrušit práci](../warehousing/cancel-warehouse-work.md) | Povinné |
-| Řízení skladu | [Konsolidovat dodávku](../warehousing/configure-shipment-consolidation-policies.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Konsolidovat dodávku](../warehousing/configure-shipment-consolidation-policies.md) | Povinné |
 | Řízení skladu | [Vytvářet a zpracovat převodní příkazy z aplikace skladu](../warehousing/create-transfer-order-from-warehouse-app.md) | Povinné |
 | Řízení skladu | Šablony cross dockingu se směrnicemi skladového místa | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Odpojit odloženou práci od ASN](whats-new-scm-10-0-21.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Odložené operace Put](../warehousing/deferred-processing-manual-inventory-movement.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Odpojit odloženou práci od ASN](whats-new-scm-10-0-21.md) | Povinné |
+| Řízení skladu | [Odložené operace Put](../warehousing/deferred-processing-manual-inventory-movement.md) | Povinné |
 | Řízení skladu | Odložený příjem - kontejner | Zapnuto ve výchozím nastavení |
 | Řízení skladu | Zpracování odloženého příjmu - povolit funkci šablony auditu s aktivační událostí nastavenou na Předchozí | Povinné |
 | Řízení skladu | [Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob](../inventory/inventory-blocking.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | Povolit rychlé ověření pro mobilních zařízení ve skladu | Povinné |
-| Řízení skladu | [Pružná rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Flexibilní rezervace registrační značky potvrzená objednávkou](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md) | Povinné |
+| Řízení skladu | [Vylepšený analyzátor pro čárové kódy GS1](../warehousing/gs1-barcodes.md) | Obecně dostupné |
+| Řízení skladu | [Flexibilní rezervace registrační značky potvrzená objednávkou](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Povinné |
+| Řízení skladu | [Pružná rezervace dimenze na úrovni skladu](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Povinné |
 | Řízení skladu | [Využití skladového místa pro konsolidaci zboží](../warehousing/item-consolidation-location-utilization.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | Historie přijetí registrační značky | Zapnuto ve výchozím nastavení |
 | Řízení skladu | [Ruční konsolidace dodávky](../warehousing/consolidate-shipments-manual-workbench.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Služba ručního výdeje řádku převodu pro správce nebo podobné důvěryhodné uživatele](whats-new-scm-10-0-28.md) | Obecně dostupné |
 | Řízení skladu | [Rozhraní vybavení manipulace s materiálem](../warehousing/mhax.md) | Povinné |
-| Řízení skladu | [Plánovaný cross docking](../warehousing/planned-cross-docking.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Nové stránky pracovní plochy plánování vytížení](whats-new-scm-10-0-24.md) | Obecně dostupné |
+| Řízení skladu | [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md) | Povinné |
+| Řízení skladu | [Plánovaný cross docking](../warehousing/planned-cross-docking.md) | Povinné |
 | Řízení skladu | [Zpracovat události aplikace skladu](../warehousing/warehouse-app-events.md) | Povinné |
 | Řízení skladu | Vylepšení dotazu pro šablonu práce vyskladnění souběžného a vedlejšího produktu | Povinné |
 | Řízení skladu | [Zaokrouhlit množství dolů na nejbližší prodejní jednotku při uvolnění do skladu](whats-new-scm-10-0-19.md) | Povinné |
@@ -190,13 +189,14 @@ Tabulka také uvádí funkce, které byly dříve v Public Preview, ale změnily
 | Řízení skladu | [Uložené zobrazení pro zpracování vlny](saved-views-scm.md) | Povinné |
 | Řízení skladu | [Uložená zobrazení pro zpracování vytížení](saved-views-scm.md) | Povinné |
 | Řízení skladu | [Uložená zobrazení pro zpracování dodávky](saved-views-scm.md) | Povinné |
-| Řízení skladu | Podrobnosti štítku vlny dodávky | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Naskenovat čárové kódy GS1](../warehousing/gs1-barcodes.md) | Obecně dostupné |
+| Řízení skladu | Podrobnosti štítku vlny dodávky | Povinné |
 | Řízení skladu | [Umístit smíšené jednotky do slotu](whats-new-scm-10-0-21.md) | Povinné |
 | Řízení skladu | [Použijte rychlejší rozhraní API pro zavírání/opětovné otevírání kontejnerů na balicí stanici](whats-new-scm-10-0-21.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | [Ověřit šablony vybrané pro práci doplnění](whats-new-scm-10-0-20.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Propagovaná pole aplikace skladu](../warehousing/warehouse-app-promoted-fields.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Pokyny ke kroku aplikace skladu](../warehousing/mobile-app-titles-instructions.md) | Zapnuto ve výchozím nastavení |
-| Řízení skladu | [Stav skladového místa](../warehousing/warehouse-location-status.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Propagovaná pole aplikace skladu](../warehousing/warehouse-app-promoted-fields.md) | Povinné |
+| Řízení skladu | [Pokyny ke kroku aplikace skladu](../warehousing/mobile-app-titles-instructions.md) | Povinné |
+| Řízení skladu | [Stav skladového místa](../warehousing/warehouse-location-status.md) | Povinné |
 | Řízení skladu | [Obcházení aplikace Warehouse Management](../warehousing/warehouse-app-detours.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | [Podrobnosti dávkové úlohy vlny](../warehousing/wave-processing.md) | Povinné |
 | Řízení skladu | [Oznámení o provedení vlny](../warehousing/wave-execution-notifications.md) | Povinné |

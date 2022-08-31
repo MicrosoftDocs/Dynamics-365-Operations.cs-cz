@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219057"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334708"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.26. (květen 2022)
 
@@ -51,7 +51,6 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 | Správa informací o produktech | Vyčistit hodnoty atributů produktu | Tato funkce přidává pravidelnou úlohu nazvanou **Vyčistit hodnoty atributů produktu**, která vyčistí záznamy hodnot atributů produktu, které již nejsou přidruženy k žádnému produktu prostřednictvím kategorie produktu. |
 | Řízení zásob a skladu | (Rusko) Zabránit nesrovnalostem při vydávání GTD pro nákupní objednávky, které obsahují položky s povoleným WMS | Tato funkce je dostupná pouze pro ruskou lokalizaci. Zabraňuje nesrovnalostem, ke kterým dochází při vydávání ruských čísel celních prohlášení (GTD) pro importní nákupní objednávky, které obsahují položky s povolenými procesy řízení skladu (WMS). Proces vystavení GTD mění některé hodnoty dimenzí zásob v souvisejících transakcích zásob pro faktury zahrnuté ve vlastním deníku, což vede k nesrovnalostem mezi pracovními záznamy pro nákupní objednávku a transakcemi zásob pro nákup. Když je tato funkce povolena, proces vydávání GTD generuje seřizovací práce, které tyto nesrovnalosti eliminují. |
 | Řízení skladu | Vylepšený analyzátor pro čárové kódy GS1 | Tato funkce přidává vylepšený analyzátor pro data symbolů GS1. Nový parser implementuje algoritmus GS1 General Specification pro analýzu symbolů GS1 a poskytuje silnější validaci dat. Více informací získáte v části [Skenování čárových kódů GS1](../warehousing/gs1-barcodes.md). |
-| Řízení skladu | Nové stránky pracovní plochy plánování vytížení | Přidává dvě nové stránky pracovní plochy pro plánování vytížení: **Pracovní plocha pro plánování příchozího vytížení** a **Pracovní plocha pro plánování odchozího vytížení**. |
 | Řízení skladu | Aplikace řízení skladu - prázdné GTD | Tato funkce je dostupná pouze pro ruskou lokalizaci. Umožňuje pracovníkům, kteří používají mobilní aplikaci Warehouse Management, nechat v případě potřeby čísla ruských celních prohlášení (GTD) prázdná. Pokud je dimenze sledování GTD nastavena tak, aby umožňovala prázdné hodnoty, systém bude přijímat prázdné hodnoty pro GTD pro operace zásob, pokud je k dispozici inventář na skladě. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace

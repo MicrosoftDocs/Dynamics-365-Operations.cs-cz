@@ -2,7 +2,7 @@
 title: Plánování výroby
 description: Tento článek popisuje plánování výroby a vysvětluje, jak upravit plánované výrobní zakázky pomocí optimalizace plánování.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873775"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335248"
 ---
 # <a name="production-planning"></a>Plánování výroby
 
@@ -26,9 +26,9 @@ Optimalizace plánování podporuje několik produkčních scénářů. Pokud mi
 
 Následující video poskytuje krátký úvod k některým konceptům pojednávaným v tomto článku: [Dynamics 365 Supply Chain Management: Vylepšení optimalizace plánování](https://youtu.be/u1pcmZuZBTw).
 
-## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
+## <a name="turn-this-feature-on-or-off-for-your-system"></a>Zapnutí nebo vypnutí této funkce ve vašem systému
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Plánované výrobní zakázky pomocí optimalizace plánování.*.
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Plánované výrobní zakázky pro optimalizaci plánování* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="planned-production-orders"></a>Plánované výrobní zakázky
 

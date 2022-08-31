@@ -2,7 +2,7 @@
 title: Odložené zpracování ručního pohybu zásob
 description: Tento článek popisuje, jak použít odložené zpracování ručního pohybu zásob v Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219801"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336388"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odložené zpracování ručního pohybu zásob
 
@@ -32,10 +32,10 @@ Zpracování na pozadí je dosaženo použitím [Funkce zpracování událostí 
 
 Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Musíte je zapnout v tomto pořadí:
 
-1. *Blokování práce pro celou organizaci*<br>(Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
-1. *Zpracovat události aplikace skladu*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná. Proto je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
-1. *Odložené operace Put*
-1. *Odložené zpracování ruční operace přesunu zásob*<br>(Od Supply Chain Management verze 10.0.25 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
+1. *Blokování práce pro celou organizaci*<br>(Od verze Supply Chain Management 10.0.21 je tato funkce povinná a nelze ji vypnout.)
+1. *Zpracovat události aplikace skladu*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. *Odložené operace Put*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout.)
+1. *Odložené zpracování ruční operace přesunu zásob*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurace zásad zpracování pracovních postupů
 

@@ -2,7 +2,7 @@
 title: Preview verze Dynamics 365 Commerce 10.0.29 (říjen 2022)
 description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c1f85fcd8f79106a3af93489d3bef608b9840bf3
-ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
+ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9224231"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306225"
 ---
 # <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Preview verze Dynamics 365 Commerce 10.0.29 (říjen 2022)
 
@@ -38,6 +38,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Customer Service | [Aktivace Customer Service s Dynamics 365 Omnikanálem pro Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | Prvotřídní zákaznická podpora je klíčem k poskytování personalizovaného a příjemného obchodního prostředí pro spotřebitele. V současné době existuje více obchodních kontaktních bodů, jako jsou fyzické obchody, online kanály a sociální kanály. Spotřebitelé očekávají personalizovanou podporu ve všech těchto kontaktních bodech. Tato funkce vám pomůže zvýšit konverze košíku na prodej, zvýšit personalizované zapojení se spotřebiteli a zlepšit služby zákazníkům díky integraci s Dynamics 365 Omnikanál pro Customer Service. | Povoleno správci/tvůrci |
 | Elektronické obchodování | Podpora srovnávání produktů v e-shopu | Umožněte nakupujícím porovnávat produkty v široké škále kategorií, aby se sami mohli správně rozhodnout o nákupu. Tato funkce je k dispozici pro weby typu business-to-consumer (B2C) i B2B. | Konfigurátor webů | 
 | Dárkové poukazy | Podpora tabulek maloobchodních dárkových karet pro sdílení dat mezi společnostmi | Dynamics headquarters podporuje možnost povolit sdílení dat mezi společnostmi pro konkrétní tabulky v architektuře Dynamics. V této funkci Dynamics 365 Commerce nově obsahuje podporu tabulek maloobchodních dárkových karet pro sdílení dat mezi společnostmi. Dárková karta v jedné společnosti tak nyní může mít svá data duplikována do jiné společnosti v prostředí. Změny provedené v původní tabulce firemních dárkových karet budou sdíleny se zduplikovanou tabulkou firemních dárkových karet. | Vývojáři |
+| Globalizace | [Povolit funkce lokalizace Commerce pro novou sadu Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Nová funkce poskytuje možnost aktivovat funkce lokalizace Commerce z Commerce headquarters pomocí rámce nebo parametrů správy funkcí. Ukázky fiskální integrace jsou nyní součástí nového Commerce SDK a podporují nezávislé balení. Tato funkce také umožňuje přijetí aplikace Store Commerce zákazníky z celého světa.<p><p>Tato verze obsahuje funkce lokalizace Commerce a ukázky fiskální integrace pro [Rakousko](../localizations/emea-aut-fi-sample.md), [Českou republiku](../localizations/emea-cze-fi-sample.md), [Francii](../localizations/emea-fra-cash-registers.md), [Německo](../localizations/emea-deu-fi-sample.md), [Itálii](../localizations/emea-ita-fpi-sample.md), [Norsko](../localizations/emea-nor-cash-registers.md) a [Polsko](../localizations/emea-pol-fpi-sample.md). | Povoleno správci/tvůrci |
 | Výkon | Odebrání závislosti RTS pro scénáře „upravit zákazníka“ | Vysoká dostupnost a vysoký výkon jsou výchozí očekávání pro kanály v pokladním místě (POS) a elektronického obchodování. Aby bylo možné tato očekávání splnit, kanály Dynamics 365 Commerce se již nemusí spoléhat na komunikaci s Commerce headquarters v reálném čase, když jsou upravovány zákaznické informace. Schopnost asynchronně upravovat informace o zákaznících pro asynchronní a neasynchronní zákazníky může pomoci omezit volání v reálném čase do Commerce headquarters. | Povoleno správci/tvůrci |
 
 ## <a name="feature-state-changes-in-this-release"></a>Změny stavu funkcí v této verzi

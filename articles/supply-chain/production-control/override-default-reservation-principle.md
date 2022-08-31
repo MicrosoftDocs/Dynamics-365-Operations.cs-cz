@@ -2,7 +2,7 @@
 title: Přepis výchozího principu rezervace pro materiály ve výrobě
 description: Tento článek popisuje, jak nastavit výchozí zásadu rezervace pro každou skupinu modelů položek, takže pro každou položku, která je součástí vzorce kusovníku (BOM) nebo vzorce dávkové objednávky, lze automaticky použít různé zásady rezervace.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907225"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334588"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Přepis výchozího principu rezervace pro materiály ve výrobě
 
@@ -32,7 +32,7 @@ Například pokud máte suroviny nebo přísady, které vyžadují výběr, kuso
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Přepsat výchozí produkční rezervaci
 
-Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Přepsat výchozí produkční rezervaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Přepsat výchozí rezervaci výroby* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Přiřazení zásady rezervace výroby ke skupině modelů zboží
 

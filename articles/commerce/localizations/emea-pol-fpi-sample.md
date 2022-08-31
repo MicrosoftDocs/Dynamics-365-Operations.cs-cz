@@ -2,27 +2,28 @@
 title: Vzor integrace fiskální tiskárny pro Polsko
 description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2019-02-01
-ms.openlocfilehash: 1466532099820abcdf4496db80f9a34682e2ed5a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274225"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336638"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Vzor integrace fiskální tiskárny pro Polsko
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 V tomto článku je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
 
-Funkce Dynamics 365 Commerce pro Polsko zahrnuje ukázkovou integraci pokladního místa (POS) s fiskální tiskárnou. Ukázka rozšiřuje [funkce fiskální integrace](fiscal-integration-for-retail-channel.md) a podporuje protokol POSNET THERMAL HD 2.02 pro fiskální tiskárny od [Posnet Polska S.A.](https://www.posnet.com.pl) Ukázka umožňuje komunikaci s fiskální tiskárnou připojenou přes port COM pomocí nativního softwarového ovladače. Ten byl implementován a testován s použitím softwarového emulátoru, který Posnet poskytl pro fiskální tiskárnu Posnet Thermal HD FV EJ. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
+Funkce Dynamics 365 Commerce pro Polsko zahrnuje ukázkovou integraci pokladního místa (POS) s fiskální tiskárnou. Ukázka rozšiřuje [funkce fiskální integrace](fiscal-integration-for-retail-channel.md) a podporuje protokol POSNET THERMAL HD 2.02 pro fiskální tiskárny od [Posnet Polska S.A.](https://www.posnet.com.pl) Ukázka umožňuje komunikaci s fiskální tiskárnou připojenou přes port COM pomocí nativního softwarového ovladače. Ten byl implementován a testován s použitím softwarového emulátoru, který Posnet poskytl pro fiskální tiskárnu Posnet Thermal HD FV EJ. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady Retail software development kit (SDK).
 
 Společnost Microsoft nevydává žádný hardware, software nebo dokumentaci společnosti Posnet. Pro informace, jak získat fiskální tiskárnu a jak ji obsluhovat, kontaktujte společnost [Posnet Polska S.A.](https://www.posnet.com.pl)
 
@@ -97,12 +98,10 @@ Ukázka integrace fiskální tiskárny implementuje následující pravidla, kte
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>Nastavení fiskální integrace pro Polsko
 
-Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Posnet** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení Commerce Runtime (CRT) a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
+Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Commerce SDK. Ukázka rozšíření POS se nachází ve složce **src\\FiscalIntegration\\Posnet** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Ukázka](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) se skládá ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení Commerce Runtime (CRT) a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o tom, jak používat Commerce SDK, viz [Stáhněte si ukázky Commerce SDK a referenční balíčky z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md) a [Nastavte kanál buildu pro SDK nezávislého balení](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md).
->
-> Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> Ukázka integrace fiskální tiskárny pro Polsko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md).
 
 Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro kanály Commerce](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -119,18 +118,16 @@ Pokud chcete povolit registrační proces, postupujte pomocí následujících k
 1. Stáhněte si konfigurační soubory pro poskytovatele fiskálních dokumentů a fiskální konektor:
 
     1. Otevřete úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace (například **[vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace.
     1. Otevřete **src \> FiscalIntegration \> Posnet**.
-    1. Stáhněte si konfigurační soubor poskytovatele fiskálních dokumentů v umístění **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** (například [soubor pro vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
-    1. Stáhněte si konfigurační soubor konektoru v umístění **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (například [soubor pro vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Stáhněte si konfigurační soubor poskytovatele fiskálních dokumentů v umístění **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfigurace \> DocumentProviderPosnetSample.xml**.
+    1. Stáhněte si konfigurační soubor konektoru v umístění **HardwareStation \> ThermalDeviceSample \> Konfigurace \> ConnectorPosnetThermalFVEJ.xml**.
 
-    > [!WARNING]
-    > Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Konfigurační soubory pro tuto ukázku fiskální integrace jsou umístěny v následujících složkách Retail SDK na vývojářském virtuálním počítači v LCS:
+    > [!NOTE]
+    > Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Konfigurační soubory pro tuto ukázku fiskální integrace jsou umístěny v následujících složkách Retail SDK na vývojářském virtuálním počítači v LCS:
     >
     > - **Konfigurační soubor poskytovatele fiskálních dokumentů:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml
     > - **Konfigurační soubor fiskálního konektoru:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml
-    > 
-    > Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
 
 1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**. Na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.
 1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a načtěte konfigurační soubor poskytovatele fiskálního dokumentu, který jste stáhli dříve.
@@ -173,16 +170,15 @@ Následující nastavení jsou součástí konfigurace fiskálního konektoru, k
 
 ### <a name="configure-channel-components"></a>Konfigurace komponent kanálu
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md).
->
-> Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> - Ukázka integrace fiskální tiskárny pro Polsko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md).
+> - Ukázky Commerce, které jsou nasazeny ve vašem prostředí, se automaticky neaktualizují, když na komponenty Commerce použijete aktualizace služeb nebo kvality. Musíte ručně aktualizovat požadované vzorky.
 
 #### <a name="set-up-the-development-environment"></a>Nastavení vývojového prostředí
 
 Tento postup slouží k nastavení vývojového prostředí, abyste mohli testovat a rozšířit ukázku.
 
-1. Naklonujte nebo stáhněte úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace. Další informace viz [Stažení ukázek Retail SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Naklonujte nebo stáhněte úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace. Další informace viz [Stažení ukázek Commerce SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Otevřete řešení integrace fiskální tiskárny v umístění **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln** a sestavte jej.
 1. Nainstalujte rozšíření CRT:
 
@@ -220,10 +216,10 @@ Postupujte podle kroků v části [Nastavení kanálu buildu pro ukázku fiskál
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 
-Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Posnet** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení CRT a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
+Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Commerce SDK. Ukázka rozšíření POS se nachází ve složce **src\\FiscalIntegration\\Posnet** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Ukázka](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) se skládá ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení CRT a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o tom, jak používat Commerce SDK, viz [Stáhněte si ukázky Commerce SDK a referenční balíčky z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md) a [Nastavte kanál buildu pro SDK nezávislého balení](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md). Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+> [!NOTE]
+> Ukázka integrace fiskální tiskárny pro Polsko je k dispozici v Commerce SDK od verze Commerce 10.0.29. Ve verzi Commerce 10.0.28 nebo starší musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)](emea-pol-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu
 

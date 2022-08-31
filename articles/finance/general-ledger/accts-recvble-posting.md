@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874567"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324322"
 ---
 # <a name="accounts-receivable-posting"></a>Účtování pohledávek
 
 [!include [banner](../includes/banner.md)]
 
 Primární profil účtování pro modul **Pohledávky** je profil odesílání zákazníka. Tento profil účtování určuje souhrnný účet, který se použije při zaúčtování zůstatků zákazníka do hlavní knihy. Souhrnný účet je hlavní účet. Označuje se také jako obchodní účet pohledávek.
+
+Sestavu **Zákazník pro odsouhlasení hlavní knihy** lze po zaúčtování použít k odsouhlasení zůstatků zákaznických účtů a účtů hlavní knihy. Sestava používá informace, které se nacházejí v souhrnném účtu pro profil účtování zákazníka. Nepoužije souhrnný účet z účetnictví, které je pro doklad vytvořeno. Pokud po zaúčtování transakcí provedete změny v profilu účtování zákazníka nebo skupině zákazníků přiřazené k zákazníkovi, může sestava zobrazovat rozdíly mezi zůstatkem účtu zákazníka a hlavní knihy. Chcete-li zobrazit pouze řádky, které mají rozdíly, a všechny řádky, pro které jsou účty zákazníků i účet hlavní knihy nulové, vyberte parametr **Pouze rozdíly** při tisku sestavy.
 
 Další informace naleznete v tématu [Účetní profily zákazníka](../accounts-receivable/customer-posting-profiles.md).
 
