@@ -2,7 +2,7 @@
 title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109455"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357584"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -76,6 +76,19 @@ Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo
 
 > [!NOTE]
 > U formátů souborů založených na XML se ujistěte, že používáte pouze povolené znaky. Další podrobnosti o platných znacích najdete v článku [Platné znaky v XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 nepovoluje žádné řídicí znaky kromě tabulátorů a znaků CR a LF. Mezi příklady nepovolených znaků patří hranaté závorky, složené závorky a zpětná lomítka. 
+
+K importu nebo exportu dat použijte Unicode namísto specifické kódové stránky. Tak zajistíte maximálně konzistentní výsledky a eliminujete selhání úloh správy dat, protože obsahují znaky Unicode. Systémově definované formáty zdrojových dat, které používají Unicode, mají v názvu zdroje vždy řetězec **Unicode**. Formát Unicode se použije výběrem kódovací stránky ANSI s kódováním Unicode v poli **Kódová stránka** na kartě **Místní nastavení**. Vyberte jednu z následujících kódových stránek pro Unicode:
+
+| Znaková stránka | Zobrazovaný název                |
+|-----------|-----------------------------|
+| 1200      | Znaková sada Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Další podrobnosti o kódových stránkách najdete v tématu [Identifikátory kódové stránky](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Seřazení entit
 Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export. 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902017"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357634"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejné rozhraní API Inventory Visibility
 
@@ -98,16 +98,16 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
 1. Přihlaste se na portál Azure a použijte jej k vyhledání hodnot `clientId` a `clientSecret` pro vaši aplikaci Dynamics 365 Supply Chain Management.
 1. Načtěte token Azure AD (`aadToken`) odesláním požadavku HTTP s následujícími vlastnostmi:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
    - **Metoda:** `GET`
    - **Obsah těla (údaje formuláře):**
 
-     | Klíč           | Hodnota                                |
-     | ------------- | ------------------------------------ |
-     | id klienta     | ${aadAppId}                          |
-     | tajný klíč klienta | ${aadAppSecret}                      |
-     | typ grantu    | client_credentials                   |
-     | prostředek      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Klíč           | Hodnota                                            |
+     | ------------- | -------------------------------------------------|
+     | id klienta     | ${aadAppId}                                      |
+     | tajný klíč klienta | ${aadAppSecret}                                  |
+     | typ grantu    | client_credentials                               |
+     | rozsah         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
    V odpovědi byste měli obdržet token Azure AD (`aadToken`). Výsledek by měl vypadat podobně jako v následujícím příkladu.
 
@@ -116,9 +116,6 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
        "token_type": "Bearer",
        "expires_in": "3599",
        "ext_expires_in": "3599",
-       "expires_on": "1610466645",
-       "not_before": "1610462745",
-       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
        "access_token": "eyJ0eX...8WQ"
    }
    ```
@@ -131,7 +128,7 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
        "client_assertion_type": "aad_app",
        "client_assertion": "{Your_AADToken}",
        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context": "{$LCS_environment_id}",
        "context_type": "finops-env"
    }
    ```

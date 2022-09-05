@@ -2,7 +2,7 @@
 title: Místa určení elektronického výkaznictví
 description: Tento článek obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281960"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360972"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -247,6 +247,52 @@ Na pevné záložce **Všeobecné** v poli **Odeslat složku jako** vyberte jedn
 ### <a name="limitations"></a>Omezení
 
 Pokud nastavíte pole **Odeslat složku jako** na **Jednotlivé soubory** pro komponentu **Složka**, která obsahuje další vnořené komponenty **Složka**, nastavení se rekurzivně nepoužije na vnořené komponenty **Složka**.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Změna vlastnosti rozložení stránky šablony
+
+Můžete konfigurovat cíl ER pro komponentu formátu ER, která je navržena pro použití šablony ve formátu Microsoft Office (Excel nebo Word) pro generování sestav. Pokud nejste vlastníkem tohoto formátu a potřebujete změnit vlastnosti rozložení stránky šablony formátu ve verzích Finance starších než verze 10.0.29, musíte vytvořit odvozený formát a upravit vlastnosti šablony. Poté musíte zachovat konfiguraci odvozeného formátu. Ve verzi 10.0.29 a novější však můžete změnit vlastnosti rozložení stránky šablony za běhu, abyste se vyhnuli vytváření a údržbě odvozené konfigurace formátu. Chcete-li to provést, nastavte požadované vlastnosti jako součást nastavení konfigurovaného cíle ER. Když spustíte formát ER a provedete cíl ER, který je konfigurován pro použití určitých vlastností rozložení stránky, hodnoty vlastností rozložení stránky spouštěného cíle se použijí na šablonu, kterou používáte, a nahradí vlastnosti původní šablony. U komponenty stejného formátu můžete konfigurovat různá umístění a konfigurovat různé vlastnosti rozložení stránky pro používanou šablonu.
+
+Následující vlastnosti lze konfigurovat v cíli ER pro komponentu formátu, která je navržena pro použití šablony ve formátu Excel nebo Word:
+
+- Orientace stránky
+    - Na výšku
+    - Na šířku
+- Formát papíru
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Právní informace
+    - Písmeno
+    - Statement
+    - Tabloid
+- Okraje stránky
+    - Horní
+        - Hlavička
+    - Dolní
+        - Zápatí
+    - Levý
+    - Pravý
+
+> [!NOTE]
+> Orientace stránky šablony, která je konfigurována tímto způsobem, musí být stejná s [orientací stránky pro převod PDF](#select-a-page-orientation-for-pdf-conversion), pokud je konfigurován převod do PDF.
+
+Musíte vybrat jednotku délky pro nastavení okrajů stránky:
+
+- Palce
+- Centimetry
+- Milimetry
+
+![Nastavte vlastnosti rozložení stránky na cílové stránce elektronického výkaznictví.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Když je hodnota okraje určena v centimetrech s přesností na více desetinných míst, je za běhu zaokrouhlena na nejbližší hodnotu s 1 desetinnou čárkou.
+>
+> Když je hodnota okraje určena v milimetrech s přesností v desetinných místech, je za běhu pro aplikaci Excel zaokrouhlena na nejbližší celočíselnou hodnotu bez desetinné čárky.
+>
+> Když je hodnota okraje určena v milimetrech s přesností na více desetinných míst, je za běhu pro aplikaci Word zaokrouhlena na nejbližší hodnotu s 1 desetinnou čárkou.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 

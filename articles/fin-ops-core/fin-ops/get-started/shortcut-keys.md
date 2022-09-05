@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Tento článek poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci ve finančních a provozních aplikacích.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140432"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357570"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -135,10 +135,10 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Horizontální posouvání                                                                                                   | Shift + kolečko myši             |
 | Přechod na další nebo předchozí sloupec                                                                                       | Tab / Shift+Tab                 |
 | Přechod na další nebo předchozí řádek                                                                                          | Šipka nahoru nebo šipka dolů           |
-| Přesunout na další/předchozí řádek bez výběru<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote> | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
-| Zvolit/vymazat aktuální řádek<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>                    | Ctrl+Mezerník / Ctrl+kliknutí         |
-| Přidat další/předchozí řádek k vybrané sadě<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>   | Shift+Mezerník                     |
-| Přidat rozsah řádků k vybrané sadě<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote>         | Shift+kliknutí                     |
+| Přesunout na další/předchozí řádek bez výběru<br><br>**Poznámka**: Tato klávesová zkratka platí pouze pro scénáře s vícenásobným výběrem. | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
+| Zvolit/vymazat aktuální řádek<br><br>**Poznámka**: Tato klávesová zkratka platí pouze pro scénáře s vícenásobným výběrem.                   | Ctrl+Mezerník / Ctrl+kliknutí         |
+| Přidat další/předchozí řádek k vybrané sadě<br><br>**Poznámka**: Tato klávesová zkratka platí pouze pro scénáře s vícenásobným výběrem.  | Shift+Mezerník                     |
+| Přidat rozsah řádků k vybrané sadě<br><br>**Poznámka**: Tato klávesová zkratka platí pouze pro scénáře s vícenásobným výběrem.         | Shift+kliknutí                     |
 | Přechod na další/předchozí stránku dat                                                                                   | Page up / Page down             |
 | Vytvořit do spodní části mřížky nový řádek                                                                             | Šipka dolů (z posledního řádku)  |
 | Přejít k prvnímu záznamu                                                                                               | CTRL+HOME                       |
@@ -148,7 +148,7 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Přejít na další označený řádek                                                                                            | Alt+Shift+M, L                  |
 | Přejít na předchozí označený řádek                                                                                        | Alt+Shift+M, P                  |
 | Přesunuto k poslednímu označenému řádku                                                                                           | Alt+Shift+M, N                  |
-| Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
+| Spuštění výchozí akce v mřížce<br><br>**Poznámka**: Tato klávesová zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a když všechny buňky v tomto sloupci obsahují hypertextové odkazy. | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
 | Přesunutí aktuálního sloupce do další/předchozí pozice (se zaměřením v řádku záhlaví)                                   | Ctrl+Shift+Šipka vpravo / Ctrl+Shift+Šipka vlevo |
