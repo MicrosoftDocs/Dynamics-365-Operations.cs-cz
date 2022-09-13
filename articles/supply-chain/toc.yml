@@ -3409,15 +3409,13 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Kontejnery balení pro dodávku
                       href: warehousing/packing-containers.md
-                    - name: Balicí práce pro balení odchozích kontejnerů a zpracování zásilek
+                    - name: "Balicí práce pro balení odchozích kontejnerů a\_zpracování zásilek"
                       href: warehousing/packing-work.md
-                    - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
+                    - name: Nastavení opakovaného přidělení zboží při krátkodobém přerozdělení
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Zrušení práce skladu pro zpracování výjimek
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Pořadí práce řízené systémem
                       href: warehousing/system-directed-work-sequencing.md
-                    - name: Seskupování řádků vyskladnění
+                    - name: Seskupení řádků vyskladnění
                       href: warehousing/pick-line-grouping.md
                     - name: Skladový slotting
                       href: warehousing/warehouse-slotting.md
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Vizualizace odchozí úlohy
                       href: warehousing/outbound-workload-visualization.md
+                    - name: "Ruční zpracování výjimek při výdeji řádků prodeje a\_předávání"
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Zrušení práce skladu pro zpracování výjimek
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Doplnění
                   items:
                     - name: Přehled doplnění

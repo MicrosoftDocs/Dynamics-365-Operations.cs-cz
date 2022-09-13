@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (listopad)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (říjen)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (srpen)
@@ -1138,9 +1140,11 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Průzkumník zdroje účetnictví
                       href: accounts-payable/accounting-source-explorer.md
-            - name: "Dotazy a\_sestavy"
+                    - name: Dokumenty čekající na účetnictví
+                      href: general-ledger/documents-pending-accounting.md
+            - name: "Sestavy a\_dotazy"
               items:
-                - name: Zobrazení položek a transakcí deníku
+                - name: "Zobrazení položek a\_transakcí deníku"
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: Předvaha se sestavou transakčních podrobností
                   href: public-sector/general-ledger-public-sector-trial-balance.md

@@ -10,8 +10,10 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/commerce
             - name: "Co je nového a\_co se změnilo v\_aplikaci Commerce"
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
+                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Commerce"
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (listopad 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (říjen 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (červenec 2022)
@@ -702,21 +704,19 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: Definování slev specifických pro kanál
                   href: define-channel-specific-discounts.md
-                - name: Možnosti zabránění slevám pro maloobchodní produkty
-                  href: prevent-discounts.md
                 - name: Slevy založené na úhradě
                   href: tender_based_discounts.md
-                - name: Sleva expedice
+                - name: Přepravní sleva
                   href: shipping-discount.md
-                - name: Konfigurace dárku pomocí propagačních akcí k nákupu
+                - name: "Konfigurace dárku pomocí akcí k\_nákupu"
                   href: gift-with-purchase.md
-                - name: Nastavení kupónů
-                  href: retail-coupons.md
-                - name: Zobrazení slev v POS
-                  href: discounts-pos.md
+                - name: Kupóny
+                  href: coupons.md
+                - name: Nastavení cen
+                  href: price-settings.md
                 - name: Sestavy cen
                   href: price-report.md
-                - name: Vytvoření obchodní smluv specifických pro kanál
+                - name: Vytvoření obchodních smluv specifických pro kanál
                   href: tasks/base-price-trade-agreements.md
                 - name: Vytvoření obchodních smluv pomocí cenových pravidel kategorií
                   href: tasks/category-pricing-rules-trade-agreements.md
@@ -800,11 +800,13 @@
                       href: calculated-inventory-retail-channels.md
                     - name: "Operace vyhledávání zásob v\_POS"
                       href: pos-inventory-lookup-operation.md
+                    - name: "Seznam produktů s\_ohledem na inventář"
+                      href: inventory-aware-product-listing.md
                 - name: Nákupní objednávky
                   items:
                     - name: Přehled nákupních objednávek
                       href: ../supply-chain/procurement/purchase-order-overview.md?context=/dynamics365/context/commerce
-                    - name: Vytváření nákupních objednávek
+                    - name: Vytvoření nákupních objednávek
                       href: ../supply-chain/procurement/purchase-order-creation.md?context=/dynamics365/context/commerce
                     - name: Příjemka produktu proti nákupním objednávkám
                       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?context=/dynamics365/context/commerce

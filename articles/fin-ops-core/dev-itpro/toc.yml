@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Co je nového a co se změnilo v aktualizacích platformy
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v aktualizacích platformy"
+                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aktualizacích platformy"
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizace platformy pro verzi 10.0.30 (listopad 2022)
+                  href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Aktualizace platformy pro verzi 10.0.29 (říjen 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Aktualizace platformy pro verzi 10.0.28 (srpen 2022)
