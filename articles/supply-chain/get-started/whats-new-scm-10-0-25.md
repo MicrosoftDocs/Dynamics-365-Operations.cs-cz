@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219087"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403657"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.25 (duben 2022)
 
@@ -161,7 +161,7 @@ Tabulka také uvádí funkce, které byly dříve ve veřejném preview, ale zm�
 | Řízení skladu | [Umístění registrační značky místa](../warehousing/location-license-plate-positioning.md) | Povinné |
 | Řízení skladu | [Směšování dimenzí produktu na skladovém místě](../warehousing/location-product-dimension-mixing.md) | Povinné |
 | Řízení skladu | Udělat pole stavu zásob pohybu zásob mobilního zařízení upravitelným | Povinné |
-| Řízení skladu | Služba ručního výdeje řádku prodeje pro správce nebo podobné důvěryhodné uživatele | Povinné |
+| Řízení skladu | [Služba ručního výdeje řádku prodeje pro správce nebo podobné důvěryhodné uživatele](../warehousing/manual-order-line-picking-exception-handling.md) | Povinné |
 | Řízení skladu | [Zabránit použití registračních značek odeslaných převodním příkazem na jiných skladech než je cílový sklad](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Povinné |
 | Řízení skladu | Vyzvat k vyřešení nejednoznačných názvů 'Loc / LP' | Povinné |
 | Řízení skladu | [Kontrola kvality](../warehousing/quality-check.md) | Povinné |

@@ -2,7 +2,7 @@
 title: Použití nastavení zásob
 description: Tento článek se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287585"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405313"
 ---
 # <a name="apply-inventory-settings"></a>Použití nastavení zásob
 
@@ -51,12 +51,12 @@ V Commerce jsou nastavení zásob definována v **Nastavení webu \> Rozšířen
     > [!IMPORTANT] 
     > Nastavení **Úroveň zásob pro více skladů** je k dispozici od verze Commerce verze 10.0.19. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Nastavení zásob pro stránky se seznamem produktů** – Toto nastavení definuje, jak se produkty, které nejsou skladem, zobrazí v seznamech produktů, které jsou vykreslovány pomocí modulů kolekce produktů a výsledků vyhledávání. Dostupné hodnoty jsou **Zobrazit v pořadí s ostatními produkty**, **Skrýt ze seznamu produkty, které nejsou na skladě** a **Zobrazit produkty, které nejsou skladem, na konci seznamu**. Chcete-li použít toto nastavení, musíte nejprve nakonfigurovat některá nezbytná nastavení v centrále Commerce. Více informací viz [Aktivace povědomí o zásobách pro modul výsledků vyhledávání](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Nastavení zásob pro stránky se seznamem produktů** – Toto nastavení definuje, jak se produkty, které nejsou skladem, zobrazí v seznamech produktů, které jsou vykreslovány pomocí modulů kolekce produktů a výsledků vyhledávání. Dostupné hodnoty jsou **Zobrazit v pořadí s ostatními produkty**, **Skrýt ze seznamu produkty, které nejsou na skladě** a **Zobrazit produkty, které nejsou skladem, na konci seznamu**. Chcete-li použít toto nastavení, musíte nejprve nakonfigurovat některá nezbytná nastavení v centrále Commerce. Další informace viz [Zobrazení produktů s ohledem na zásoby](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > **Nastavení zásob pro stránky seznamu produktů** je k dispozici od verze Commerce verze 10.0.20. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Rozsahy zásob** - Toto nastavení definuje rozsahy zásob, pro které se zpráva zobrazuje na modulech webu. Je to použitelné, pouze pokud je vybrána hodnota **Celkem k dispozici** nebo **Fyzicky k dispozici** pro nastavení **Úroveň zásob na základě**. Dostupné hodnoty jsou **Všechno**, **Nízké a vyprodané** a **Vyprodáno**.
+- **Rozsahy zásob** - Toto nastavení definuje zprávy rozsahů zásob, které se zobrazují na modulech webu. Je to použitelné, pouze pokud je vybrána hodnota **Celkem k dispozici** nebo **Fyzicky k dispozici** pro nastavení **Úroveň zásob na základě**. Dostupné hodnoty jsou **Všechno**, **Nízké a vyprodané** a **Vyprodáno**.
 
     - Je-li vybráno **Všechno**, zobrazí se zprávy pro všechny rozsahy zásob, od skladem (zpráva „Dostupné“) po vyprodáno (zpráva „Není skladem“).
     - Je-li vybráno **Nízké a vyprodané**, zobrazí se zprávy pro všechny rozsahy zásob, kromě skladem (zpráva „Dostupné“).

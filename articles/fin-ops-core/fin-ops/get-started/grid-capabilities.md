@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Tento článek popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258940"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405458"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -178,20 +178,22 @@ Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě f
 
 Tato funkce začala být standardně povolena ve verzi 10.0.21. Má se stát povinným v říjnu 2022.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
+## <a name="developer-topics"></a>Témata pro vývojáře
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
 Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
 
 ```this.forceLegacyGrid();```
 
 Toto rozhraní API bude nakonec zastaralé, aby bylo možné odebrat starší ovládací prvek mřížky. Zůstane však k dispozici po dobu nejméně 12 měsíců od oznámení ukončení podpory. Pokud nějaké problémy vyžadují použití tohoto rozhraní API, nahlaste je společnosti Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Vynucení stránky k použití nové mřížky po předchozím odhlášení z mřížky
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Vynucení stránky k použití nové mřížky po předchozím odhlášení z mřížky
 Pokud jste se z používání nové mřížky odhlásili pro jednotlivou stránku, možná budete chtít později novou mřížku po vyřešení základních problémů znovu povolit. Chcete -li to provést, jednoduše odeberte volání na `forceLegacyGrid()`. Změna se neprojeví, dokud nenastane jedna z následujících situací:
 
 - **Opětovné nasazení prostředí**: Když je prostředí aktualizováno a znovu nasazeno, tabulka, která ukládá stránky, které se odhlásily z nové mřížky (FormControlReactGridState), se automaticky vymaže.
 - **Ruční čištění tabulky**: Pro scénáře vývoje budete muset použít SQL k vymazání tabulky FormControlReactGridState a restartování AOS. Tato kombinace akcí resetuje ukládání do mezipaměti stránek, které se odhlásily z nové mřížky.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Vývojář] Odhlášení jednotlivých mřížek z funkce Zadávání před systémem
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Vývojář] Odhlášení jednotlivých mřížek z funkce Zadávání před systémem
 Objevily se některé scénáře, které se dobře nehodí pro funkci mřížky *Zadávání před systémem*. (Například nějaký kód, který se spustí při ověření řádku, způsobí spuštění průzkumu zdroje dat a průzkum pak může poškodit neprovedené úpravy na existujících řádcích.) Pokud vaše organizace takový scénář objeví, je k dispozici rozhraní API, které umožňuje vývojáři odhlásit jednotlivou mřížku z asynchronního ověřování řádků a vrátit se ke staršímu chování.
 
 Když je asynchronní ověřování řádků v mřížce zakázáno, uživatelé nemohou vytvořit nový řádek nebo se přesunout do jiného existujícího řádku v mřížce, pokud jsou na aktuálním řádku problémy s ověřením. Jako vedlejší efekt této akce nelze vložit tabulky z Excelu do mřížek finance a provoz.
@@ -204,13 +206,18 @@ Chcete-li jednotlivou mřížku odhlásit z asynchronního ověřování řádk
 > - Toto volání by mělo být vyvoláno pouze ve výjimečných případech a nemělo by být normou pro všechny mřížky.
 > - Nedoporučujeme přepínat toto rozhraní API za běhu po načtení formuláře.
 
-## <a name="developer-size-to-available-width-columns"></a>[Vývojář] Sloupce velikosti k dostupné šířce
+### <a name="developer-size-to-available-width-columns"></a>[Vývojář] Sloupce velikosti k dostupné šířce
 Pokud vývojář nastaví vlastnost **WidthMode** na **SizeToAvailable** pro sloupce uvnitř nové mřížky mají tyto sloupce zpočátku stejnou šířku, jakou by měli, kdyby byla vlastnost nastavena na **SizeToContent**. Roztahují se však, aby uvnitř mřížky využili jakoukoli další dostupnou šířku. Pokud je vlastnost nastavena na **SizeToAvailable** pro více sloupců sdílejí všechny tyto sloupce jakoukoli další dostupnou šířku uvnitř mřížky. Pokud však uživatel ručně změní velikost jednoho z těchto sloupců, sloupec se stane statickým. Zůstane na této šířce a již se nebude natahovat, aby zabírala další dostupnou šířku mřížky.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Vývojář] Určení sloupce, který obdrží počáteční fokus při vytváření nových řádků pomocí klávesy šipka dolů
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Vývojář] Určení sloupce, který obdrží počáteční fokus při vytváření nových řádků pomocí klávesy šipka dolů
 Jak bylo diskutováno v části [Rozdíly při zadávání dat před systémem](#differences-when-entering-data-ahead-of-the-system), pokud je aktivní možnost „Psaní před systémem“ a uživatel vytvoří nový řádek pomocí klávesy **Šipka dolů**, výchozím chováním je umístit fokus do prvního sloupce v novém řádku. Toto chování se může lišit od chování ve starší mřížce, nebo když je vybráno tlačítko **Nový**.
 
 Uživatelé a organizace mohou vytvářet uložené pohledy, které jsou optimalizovány pro zadávání dat. (Můžete například změnit pořadí sloupců tak, aby první sloupec byl ten, do kterého chcete začít zadávat data.) Kromě toho od verze 10.0.29 mohou organizace toto chování upravit pomocí metody **selectedControlOnCreate()**. Tato metoda umožňuje vývojáři zadat sloupce, které obdrží počáteční fokus při vytváření nového řádku pomocí klávesy **Šipka dolů**. Toto rozhraní API jako vstup přebírá ID ovládacího prvku, které odpovídá sloupci, který by měl získat počáteční fokus.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Vývojář] Manipulace s mřížkami s rozšiřitelnými ovládacími prvky bez React
+Když se při načítání mřížky setká systém s rozšiřitelným ovládacím prvkem, který není založen na Reactu, systém místo toho vynutí vykreslení starší mřížky. Když se uživatel poprvé setká s touto situací, zobrazí se zpráva, že je potřeba stránku aktualizovat. Poté tato stránka automaticky načte starší mřížku bez dalších upozornění pro uživatele až do příští aktualizace systému. 
+
+Pro trvalé překonání této situace mohou autoři rozšiřitelných ovládacích prvků vytvořit verzi ovládacího prvku React pro použití v mřížce.  Po vyvinutí může být třída X++ pro ovládací prvek doplněna atributem **FormReactControlAttribute** k určení umístění balíčku React, který se má načíst pro daný ovládací prvek. Viz třída `SegmentedEntryControl` jako příklad.  
 
 ## <a name="known-issues"></a>Známé problémy
 Tato část udržuje seznam známých problémů pro nový ovládací prvek mřížky.
@@ -218,9 +225,12 @@ Tato část udržuje seznam známých problémů pro nový ovládací prvek mř�
 ### <a name="open-issues"></a>Otevřené problémy
 - Po aktivaci funkce **Nový ovládací prvek mřížky** budou některé stránky i nadále využívat existující ovládací prvek mřížky. To se stane v následujících situacích:
  
-    - Na stránce existuje seznam karet, který je vykreslen ve více sloupcích.
-    - Na stránce existuje seskupený seznam karet.
-    - Mřížkový sloupec s nereaktivním rozšiřitelným ovládacím prvkem.
+    - [Vyřešeno] Na stránce existuje seznam karet, který je vykreslen ve více sloupcích.
+        - Tento typ seznamu karet je podporován **novým ovládacím prvkem grid** počínaje verzí 10.0.30. Jakékoli použití forceLegacyGrid() pro tento účel lze odstranit. 
+    - [Vyřešeno] Na stránce existuje seskupený seznam karet.
+        - Seskupené seznamy karet jsou podporovány **novým ovládacím prvkem grid** počínaje verzí 10.0.30. Jakékoli použití forceLegacyGrid() pro tento účel lze odstranit. 
+    - [Vyřešeno] Sloupec mřížky s rozšiřitelným ovládacím prvkem jiným než React.
+        - Rozšiřitelné ovládací prvky mohou poskytnout verzi React ovládacího prvku, který se načte při umístění do mřížky, a upravit definici ovládacího prvku tak, aby se tento ovládací prvek načetl při použití v mřížce. Další podrobnosti naleznete v příslušné sekci pro vývojáře. 
 
     Když se uživatel poprvé setká s jednou z těchto situací, zobrazí se zpráva o aktualizaci stránky. Po zobrazení této zprávy bude stránka nadále využívat stávající mřížku pro všechny uživatele až do další aktualizace produktu. Pro budoucí aktualizaci bude zváženo lepší zacházení s těmito scénáři, aby bylo možné využít novou mřížku.
 

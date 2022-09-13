@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306047"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388533"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení Inventory Visibility
 
@@ -56,7 +56,9 @@ Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalu
 1. Na stránce prostředí přejděte dolů, dokud neuvidíte část **Doplňky prostředí** v části **Integrace Power Platform**, kde najdete název prostředí . Tam najdete název prostředí Dataverse. Potvrďte, že název prostředí Dataverse je ten, který chcete použít pro Viditelnost zásob.
 
     > [!NOTE]
-    > V současné době jsou podporována pouze prostředí Dataverse, která byla vytvořena pomocí LCS. Pokud vaše prostředí Dataverse bylo vytvořeno jiným způsobem (například pomocí centra pro správu Power Apps) a pokud je propojeno s vaším prostředím Supply Chain Management, musíte nejprve kontaktovat produktový tým Viditelnosti zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a vyřešit problém s mapováním. Pak můžete instalovat doplněk Viditelnost zásob.
+    > V současné době jsou podporována pouze prostředí Dataverse, která byla vytvořena pomocí LCS. Pokud vaše prostředí Dataverse bylo vytvořeno jiným způsobem (například pomocí centra pro správu PowerApps) a pokud je propojeno s vaším prostředím Supply Chain Management, musíte vyřešit problém s mapováním, než budete instalovat doplněk Viditelnost zásob.
+    >
+    > Je možné, že vaše prostředí s duálním zápisem je propojeno s instancí Dataverse, zatímco služba LCS nemá nastavenu integraci Power Platform. Tento nesoulad propojení může způsobit neočekávané chování. Doporučujeme, aby se údaje prostředí LCS shodovaly s tím, k čemu jste připojeni v duálním zápisu, aby stejné připojení mohly používat obchodní události, virtuální tabulky a doplňky. Voz [Neshoda propojení](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) pro informace o tom, jak vyřešit problém s mapováním. Jakmile je problém s mapováním vyřešen, můžete pokračovat v instalaci Viditelnosti zásob.
 
 1. V sekci **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
 
@@ -140,11 +142,11 @@ Pro odinstalaci doplňku Viditelnost zásob proveďte následující:
 1. Vyberte **Prostředí** na navigační liště
 1. Vyberte prostředí Dataverse, které je propojeno s vaším prostředím LCS.
 1. Přejděte na **Řešení** a odstraňte následující řešení v následujícím pořadí:
-    1. Ukotvit řešení pro aplikaci viditelnost zásob v řešeních Dynamics 365
-    1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
-    1. Konfigurace služeb zásob
-    1. Samostatná Viditelnost zásob
-    1. Řešení aplikací Viditelnost zásob Dynamics 365 FNO SCM
+    1. Viditelnost zásob Dynamics 365 – kotva
+    1. Viditelnost zásob Dynamics 365 – aplikace
+    1. Viditelnost zásob Dynamics 365 – ovládací prvky
+    1. Viditelnost zásob Dynamics 365 – moduly plug-in
+    1. Viditelnost zásob Dynamics 365 – základna
 
     Po odstranění těchto řešení budou odstraněna také data uložená v tabulkách.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334768"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403662"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.28. (srpen 2022)
 
@@ -50,7 +50,7 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 | Řízení zásob a skladu | (Indie) V případě pravidel převodních cen ignorovat umístění, když je hodnota „Z kódu skladu“ nastavena na „Vše“ | <p>Tato funkce se vztahuje pouze na indické lokalizace. Díky tomu je proces nastavování převodních cen pro položky ve skladových převodech srozumitelnější.</p><p>Převodní ceny nastavíte tak, že každou položku nakonfigurujete pomocí pravidel převodních cen. Jedním ze způsobů, jak provést tuto konfiguraci, je zahrnout řádek pravidla, kde je pole **Kód Ze skladu** nastaveno na *Vše*. Toto nastavení udává, že převodní cena definovaná řádkem by měla platit bez ohledu na sklad, ze kterého je zboží vyskladněno. Když je tato funkce povolena, pravidla převodní ceny, kde je pole **Kód Ze skladu** nastaveno na *Vše*, budou ignorovat **Umístění**. Proto bude pravidlo platit bez ohledu na umístění, které je uvedeno na převodním příkazu. Toto chování je pravděpodobně očekávané, protože umístění je v hierarchii dimenzí úložiště pod skladem.</p><p>Bez této funkce systém použije pravidla tohoto typu pouze v případě, že umístění na převodním příkazu přesně odpovídá umístění nastavenému pro pravidlo. (Pokud je pro pravidlo nastaveno prázdné umístění, systém pravidlo použije pouze na převodní příkazy, které mají pro dané umístění také prázdnou hodnotu.)</p> |
 | Řízení zásob a skladu | Vyčištění dat výkazu zásob na skladě | Tato funkce poskytuje způsob, jak vyčistit data použitá k vytváření sestav *Úložiště sestavy zásob na skladě*. |
 | Řízení výroby | Přiřaďte projektové aktivity pro řádky servisní smlouvy a servisní objednávky | Tato funkce přidá pole s názvem **Aktivita projektu** do řádků servisní smlouvy a servisní objednávky, abyste pro ně mohli nastavit aktivitu projektu. Tato funkce pomůže zabránit chybám blokování při zaúčtování deníků projektu správy služeb, které vyžadují nastavení aktivity projektu.  |
-| Řízení skladu | Služba ručního výdeje řádku převodu pro správce nebo podobné důvěryhodné uživatele | Tato funkce umožňuje správcům ručně vybírat transakce zásob, které souvisejí s převodními řádky. Tyto řádky zahrnují řádky, které již byly uvolněny do skladu. Správci by měli tento výběr provádět pouze ve výjimečných případech, například když je systém v poškozeném stavu. |
+| Řízení skladu | Služba ručního výdeje řádku převodu pro správce nebo podobné důvěryhodné uživatele | Tato funkce umožňuje správcům ručně vybírat transakce zásob, které souvisejí s převodními řádky. Tyto řádky zahrnují řádky, které již byly uvolněny do skladu. Správci by měli tento výběr provádět pouze ve výjimečných případech, například když je systém v poškozeném stavu. Více informací viz [Ruční zpracování výjimek z prodeje a vychystávání linky převodu](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 

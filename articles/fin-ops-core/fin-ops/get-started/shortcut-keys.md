@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Tento článek poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci ve finančních a provozních aplikacích.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357570"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405427"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,6 +88,8 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Otevření podokna Filtr (nebo změna aktivace mezi podoknem Filtr a hlavním formulářem, pokud je již podokno Filtr otevřeno) | Alt+M,F nebo Ctrl+F3       |
 | Zavření podokna Filtr (pokud je aktivní podokno Filtr)                                                               | Esc                      |
 | Otevření pokročilého filtrování a řazení                                                                                        | Ctrl+Shift+F3            |
+| Použít Rychlý filtr (když je zaměření v Rychlém filtru)                                                              | Enter                    |
+| Použít filtr mřížky (když je zaměření v poli filtru v záhlaví sloupce)                                             | Enter                    |
 
 ## <a name="form-shortcuts"></a>Zkratky pro formulář
 
@@ -157,12 +160,13 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
 
-| Akce                                                                   | Stiskněte tlačítko .                         |
+| Akce                                                                   | Stisknout                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otevření hypertextového odkazu                                                           | Ctrl+Enter                    |
+| Otevřít hypertextový odkaz (když je zaměření na ovládacím prvku pouze pro čtení)<br><br>**Poznámka:** Tato zkratka platí pouze tehdy, když je zapnutá funkce **Standardizovat interakci s klávesnicí pro pole se seznamem a ovládací prvky vyhledávání**                   | Enter    |
 | Zadání data relace do pole kalendářních dat                                       | D                             |
 | Zadání aktuálního data do pole kalendářních dat                                       | bil.                             |
-| Otevření vyhledávání, pole se seznamem, výběru data a dialogového okna                         | ALT+Šipka dolů                |
+| Otevření vyhledávání, pole se seznamem, výběru data a dialogového okna                         | ALT+Šipka dolů<br><br>Enter (když je zapnutá funkce **Standardizovat interakci s klávesnicí pro pole se seznamem a ovládací prvky vyhledávání**)                |
 | Zavření vyhledávání, pole se seznamem, výběru data a dialogového okna                        | Esc                           |
 | Změna zaměření na vyhledání (pokud je vyhledávání již otevřeno)                   | ALT+Šipka dolů                |
 | Otevření náhled rozšířeného ovládacího prvku                                          | ALT+Šipka nahoru                  |

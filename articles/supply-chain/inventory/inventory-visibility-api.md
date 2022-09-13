@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357634"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423588"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejné rozhraní API Inventory Visibility
 
@@ -41,6 +41,8 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Zaúčtovat | [Nastaví/přepíše množství na skladě](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Zaúčtovat | [Vytvoří jednu rezervační událost](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Zaúčtovat | [Vytvoří více rezervačních událostí](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Zaúčtovat | [Vrátí jednu rezervační událost](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Zaúčtovat | [Vrátí více rezervačních událostí](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Zaúčtovat | [Vytvoří jednu plánovanou změnu ve skladu](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Zaúčtovat | [Vytvoří více plánovaných změn ve skladu](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Zaúčtovat | [Dotaz pomocí metody POST](#query-with-post-method) |
@@ -56,7 +58,7 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 > 
 > Hromadné API může vrátit maximálně 512 záznamů pro každý požadavek.
 
-Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
 
@@ -168,9 +170,9 @@ Existují dvě rozhraní API pro vytváření událostí skladových změn:
 
 Následující tabulka sumarizuje význam každého pole v těle JSON.
 
-| ID pole | popis |
+| ID pole | Popis |
 |---|---|
-| `id` | Jedinečné ID pro konkrétní událost změny. Toto ID se používá k zajištění toho, že pokud komunikace se službou během publikování selže, stejná událost nebude v systému započítána dvakrát, pokud bude odeslána znovu. |
+| `id` | Jedinečné ID pro konkrétní událost změny. Pokud se opakované odeslání provádí kvůli selhání služby, toto ID se používá k zajištění toho, že stejná událost nebude v systému započítána dvakrát. |
 | `organizationId` | Identifikátor organizace spojené s událostí. Tato hodnota se mapuje na organizaci nebo ID datové oblasti v Supply Chain Management. |
 | `productId` | Identifikátor produktu. |
 | `quantities` | Množství, o které se musí změnit skladové množství. Pokud je například do police přidáno 10 nových knih, bude tato hodnota `quantities:{ shelf:{ received: 10 }}`. Pokud budou tři knihy odstraněny z police nebo prodány, bude tato hodnota `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ Následující tabulka sumarizuje význam každého pole v těle JSON.
 | `dimensions` | Dynamický pár klíč/hodnota. Hodnoty jsou namapovány na některé dimenze v Supply Chain Management. Můžete však také přidat vlastní dimenze (např ._Zdroj_) k označení, zda událost pochází ze Supply Chain Management nebo z externího systému. |
 
 > [!NOTE]
-> Parametry `SiteId` a `LocationId` tvoří [ konfiguraci oddílu](inventory-visibility-configuration.md#partition-configuration). Proto je musíte zadat v dimenzích, když vytváříte události změny zásob na skladě, nastavujete nebo přepisujete množství v ruce nebo vytváříte události rezervace.
+> Parametry `siteId` a `locationId` tvoří [ konfiguraci oddílu](inventory-visibility-configuration.md#partition-configuration). Proto je musíte zadat v dimenzích, když vytváříte události změny zásob na skladě, nastavujete nebo přepisujete množství v ruce nebo vytváříte události rezervace.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Vytvoření jedné události změny ve skladu
 
@@ -216,14 +218,14 @@ Následující příklad ukazuje ukázkový obsah těla. V této ukázce odešle
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Následující příklad ukazuje ukázkový obsah těla.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Následující příklad ukazuje ukázkový obsah těla.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
 
 ## <a name="create-reservation-events"></a>Vytvoření rezervačních událostí
 
-Chcete-li použít API *Reserve*, musíte otevřít funkci rezervace a dokončit konfiguraci rezervace. Další informace viz [Konfigurace rezervace (volitelná)](inventory-visibility-configuration.md#reservation-configuration).
+Chcete-li použít API *Reserve*, musíte zapnout funkci rezervace a dokončit konfiguraci rezervace. Další informace viz [Konfigurace rezervace (volitelná)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Vytvoření jedné rezervační události
 
@@ -389,7 +391,7 @@ Je možné provést rezervaci proti různým nastavením zdroje dat. Chcete -li 
 
 Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
 
-Pokud chcete zrušit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření.
+Pokud chcete vrátit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření. K dispozici je také vyhrazené nerezervované API, které dělá totéž. Rozdíl je pouze ve způsobu volání těchto dvou API. Je snazší zvrátit konkrétní událost rezervace pomocí `reservationId` s API *unreserve*. Další informace naleznete v části [_Zrušit jednu událost rezervace_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Následující příklad ukazuje ukázkový obsah těla.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+Následující příklad ukazuje úspěšnou odpověď.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Vytvoření více rezervačních událostí
 
-Toto API je hromadná verze [API pro jednu událost](#create-one-reservation-event).
+Toto API je hromadná verze [API pro jednu událost](#create-reservation-events).
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Vrácení událostí rezervace
+
+Rozhraní API *Unreserve* slouží jako operace vrácení pro události [*Rezervace*](#create-reservation-events). Poskytuje způsob, jak vrátit událost rezervace specifikovanou pomocí `reservationId` nebo snížení rezervovaného množství.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Vrátí jednu rezervační událost
+
+Když je vytvořena rezervace, `reservationId` budou zahrnuty v těle odpovědi. Musíte poskytnout stejné `reservationId` ke zrušení rezervaci a zahrnout stejné `organizationId` a `dimensions` použité se pro volání rezervačního API. Nakonec zadejte hodnotu `OffsetQty`, která představuje počet položek, které mají být uvolněny z předchozí rezervace. Rezervace může být buď zcela, nebo částečně stornována v závislosti na specifikaci `OffsetQty`. Například pokud bylo rezervováno *100* jednotek položek, můžete určit `OffsetQty: 10` ke zrušení rezervace *10* z původní rezervované částky.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Následující kód ukazuje příklad obsahu těla.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Následující kód ukazuje příklad těla úspěšné odpovědi.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> V těle odpovědi, kdy `OffsetQty` je menší nebo rovno rezervovanému množství, `processingStatus` bude „*success*“ a `totalInvalidOffsetQtyByReservId` bude *0*.
+>
+> Pokud je `OffsetQty` větší než rezervovaná částka, `processingStatus` bude „*partialSuccess*“ a `totalInvalidOffsetQtyByReservId` bude rozdíl mezi `OffsetQty` a rezervovaným množstvím.
+>
+>Například, pokud má rezervace množství *10* a `OffsetQty` má hodnotu *12*, `totalInvalidOffsetQtyByReservId` by bylo *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Vrátí více rezervačních událostí
+
+Toto API je hromadná verze [API pro jednu událost](#reverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Dotaz na zásoby na skladě
 
-Rozhraní API _Query on-hand_ (dotaz na zásoby na skladě) se používá k načítání aktuálních skladových dat vašich produktů. Toto rozhraní API aktuálně podporuje dotazování až 100 jednotlivých položek podle hodnoty `ProductID`. V každém dotazu také může být zadáno více hodnot `SiteID` a `LocationID`. Maximální limit je definován jako `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Rozhraní API *Query on-hand* (dotaz na zásoby na skladě) se používá k načítání aktuálních skladových dat vašich produktů. Toto rozhraní API aktuálně podporuje dotazování až 5000 jednotlivých položek podle hodnoty `productID`. V každém dotazu také může být zadáno více hodnot `siteID` a `locationID`. Maximální limit je definován následující rovnicí:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Dotaz pomocí metody POST
 
@@ -517,7 +629,7 @@ V těle této žádosti, `dimensionDataSource` je stále volitelný parametr. Po
 - `productId` může obsahovat jednu nebo více hodnot. Pokud je prázdné pole, budou vráceny všechny produkty.
 - `siteId` a `locationId` se ve viditelnosti skladu používají k dělení. V požadavku *Dotaz na zásoby na skladě* můžete zadat více než jednu hodnotu `siteId` a `locationId`. V aktuálním vydání musíte zadat obě hodnoty `siteId` i `locationId`.
 
-Parametr `groupByValues` by se měl řídit vaší konfigurací pro indexování. Další informace najdete v tématu [Konfigurace hierarchie indexu produktů](./inventory-visibility-configuration.md#index-configuration).
+Doporučujeme použít parametr `groupByValues` k řízení konfigurace pro indexování. Další informace najdete v tématu [Konfigurace hierarchie indexu produktů](./inventory-visibility-configuration.md#index-configuration).
 
 Parametr `returnNegative` určuje, zda výsledky obsahují záporné položky.
 
@@ -530,13 +642,13 @@ Následující příklad ukazuje ukázkový obsah těla.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Následující příklad ukazuje, jak dotazovat všechny produkty na konkrétní
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Zde je ukázka adresy URL pro metodu GET. Tento GET požadavek je přesně stejný jako ukázka POST, která byla uvedena dříve.
+Zde je ukázka adresy URL. Tento GET požadavek je přesně stejný jako ukázka POST, která byla uvedena dříve.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Lze slíbit (ATP)

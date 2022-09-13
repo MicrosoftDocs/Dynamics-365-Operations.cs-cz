@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43b9b331a8a88ac1282acc33dabe7b71bca57b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 82420ad8dae12e4a47290599a5bbd0d15a7f3c29
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124289"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423847"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Katalog kurzů pro uživatele Dynamics 365 Supply Chain Management
 
@@ -27,9 +27,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
-| Obsah | popis | Formát | Délka |
+| Obsah | Popis | Formát | Délka |
 |---------|-------------|--------|--------|
-| [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 8 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
 | [Začínáme s finančními a provozními aplikacemi](/learn/paths/get-started-finance-operations/) | Informace, jak finanční a provozní aplikace podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s finančními a provozními aplikacemi se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
 | [Začínáme s doplňkem správy majetku pro Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Správa majetku je modul pro správu majetku a úloh údržby v aplikaci Dynamics 365 Supply Chain Management. Správa majetku umožňuje efektivně spravovat a provádět úkoly související se správou a údržbou mnoha typů zařízení ve vaší firmě, například strojů, výrobních zařízení a vozidel. Správa majetku podporuje řešení napříč četnými průmyslovými odvětvími. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |

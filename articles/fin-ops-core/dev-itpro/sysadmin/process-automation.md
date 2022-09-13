@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: 1a1d152a01e0ebe6a20e2e6b31f12ed7b8deb024
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9114928"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423952"
 ---
 # <a name="process-automation"></a>Automatizace procesů
 
@@ -29,6 +29,8 @@ Automatizace procesů umožňuje jednoduše plánovat procesy, které budou spou
 ## <a name="administration"></a>Správa
 
 Centrální administrační stránka pro veškerou automatizaci procesů se nachází v modulu správy systému v nabídce **Nastavení**. Na této stránce najdete všechny automatizované procesy (řady), které jsou v systému nastaveny. Přímo z této stránky je též možné přidávat nové automatizace procesů. Po nastavení řady můžete z tohoto seznamu každou jednotlivou řadu spravovat. Můžete upravit celou řadu, smazat ji, zobrazit všechny výskyty jako seznam nebo řadu zakázat, chcete-li plánovanou práci na určitou dobu pozastavit. 
+
+Použijte kartu **Procesy na pozadí** na této stránce pro správu všech procesů na pozadí, které jsou spuštěny ve vašem prostředí. Vyberte **Upravit** k provádění změn plánu pro jakýkoli proces na pozadí. Tyto změny mohou zahrnovat časové období spánku, které způsobí, že se proces „uspí“ nebo přeruší běh na určitou dobu každý den. Vyberte **Zobrazit nejnovější výsledky** pro zobrazení výsledků provádění pro každý proces na pozadí.
 
 Všechny procesy, které jsou zakázány ve správě prvků, se po deaktivaci funkce nezobrazí. Navíc plánovací modul automatizace procesů nebude plánovat žádné události ani procesy na pozadí pro zakázanou funkci. Opětovné povolení funkce způsobí okamžité spuštění všech minulých naplánovaných událostí nebo procesů na pozadí. Proces plánování automatizace procesů se potřebuje mít spuštěnou dávkovou úlohu systému **Úloha systému dotazování na automatizaci procesů**. Úloha by neměla být nikdy měněna nebo upravována. Pokud tato dávková úloha neběží nebo je v chybovém stavu, vyberte **Inicializovat automatizaci procesů** k resetování dávkové úlohy. Tento reset zajišťuje, že všechny nové automatizace vydané v novější verzi aplikace budou inicializovány. 
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873717"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403663"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces a historie vydání modulu Optimalizace plánování
 
@@ -33,6 +33,7 @@ Protože se při aktualizaci Optimalizace plánování ve vašem prostředí nez
 
 | Změny | Podrobnosti správy funkcí | Data vydání |
 |---|---|---|
+| <p>Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 29. srpna – 3. září 2022 |
 | <p>Vylepšení obecného výkonu, kvality a stability.<p>[Centralizovaná údržba kalendáře Optimalizace plánování](../supply-chain-calendars-master-planning.md)<p>[Návrhy optimalizace plánování pro optimalizaci stávající nabídky](../action-messages.md)<p>[Podpora Optimalizace plánování u subdodávek](../../production-control/manage-subcontract-work-production.md) | Není vyžadována žádná správa funkcí. | 7. – 11. března 2022 |
 | <p>Přidána podpora priority plánování u výrobních zakázek. | K dispozici ve verzi 10.0.25 jako součást funkce *Podpora MRP řízená prioritou pro optimalizaci plánování*. | 12. – 18. listopadu 2021 |
 | <p>Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 12. – 18. listopadu 2021 |

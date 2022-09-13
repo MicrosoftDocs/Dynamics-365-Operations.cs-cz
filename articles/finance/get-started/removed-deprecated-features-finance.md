@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313876"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410443"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.30
+
+### <a name="revenue-recognition"></a>Uznání výnosů
+
+[Uznání výnosů](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Důvod pro zrušení/odstranění** |Nahrazeno vylepšenou funkčností [fakturace předplatného](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu** | Aplikace |
+| **Možnost nasazení** | Vše |
+| **Stav** | Zastaráno: Po dubnu 2023 již nebude funkce uznávání příjmů v Dynamics 365 Finance dostávat podporu s opravami chyb. Zákazníci budou požádáni, aby používali vylepšenou funkci [fakturace předplatného](../../finance/accounts-receivable/subscription-billing-summary.md). V říjnu 2023 již nebude k dispozici funkce rozpoznávání výnosů. Zákazníci budou požádáni, aby používali vylepšenou funkci fakturace předplatného.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.29
 

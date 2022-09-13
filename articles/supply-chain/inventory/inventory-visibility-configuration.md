@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306311"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423562"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace Inventory Visibility
 
@@ -303,13 +303,13 @@ Ve výchozím nastavení obsahuje řešení tuto konfiguraci oddílu. Z tohoto d
 
 Po většinu času bude dotaz na zásoby na skladě nejen na nejvyšší „celkové“ úrovni. Místo toho můžete také chtít zobrazit výsledky, které jsou agregovány na základě dimenzí skladu.
 
-Viditelnost zásob je dostatečně pružná, protože vám umožňuje nastavit _indexy_. Tyto indexy jsou založeny na dimenzi nebo kombinaci dimenzí. Index se skládá z *čísla sady*, *dimenze* a *hierarchie*, jak je definováno v následující tabulce.
+Viditelnost zásob poskytuje flexibilitu tím, že vám umožňuje nastavení _indexů_ ke zlepšení výkonu vašich dotazů. Tyto indexy jsou založeny na dimenzi nebo kombinaci dimenzí. Index se skládá z *čísla sady*, *dimenze* a *hierarchie*, jak je definováno v následující tabulce.
 
 | Jméno | popis |
 |---|---|
 | Číslo sady | Dimenze, které patří do stejné sady (indexu), budou seskupeny a bude jim přiděleno stejné číslo sady. |
 | Dimenze | Základní dimenze, na kterých je výsledek dotazu agregován. |
-| Hierarchie | Hierarchie se používá k definování podporovaných kombinací dimenzí, které lze dotazovat. Například nastavíte sadu dimenzí, která má hierarchickou posloupnost `(ColorId, SizeId, StyleId)`. V tomto případě systém podporuje dotazy na čtyři kombinace dimenzí. První kombinace je prázdná, druhá je `(ColorId)`, třetí je `(ColorId, SizeId)` a čtvrtá je `(ColorId, SizeId, StyleId)`. Ostatní kombinace nejsou podporovány. Další informace naleznete v následujícím příkladu. |
+| Hierarchie | Hierarchie vám umožňuje zvýšit výkon konkrétních kombinací dimenzí při použití v parametrech filtru a seskupení podle dotazů. Pokud například nastavíte sadu dimenzí s posloupností hierarchie `(ColorId, SizeId, StyleId)`, pak může systém rychleji zpracovávat dotazy týkající se čtyřrozměrných kombinací. První kombinace je prázdná, druhá je `(ColorId)`, třetí je `(ColorId, SizeId)` a čtvrtá je `(ColorId, SizeId, StyleId)`. Ostatní kombinace nebudou urychleny. Filtry nejsou omezeny objednávkou, ale pokud chcete zlepšit jejich výkon, musí být uvnitř těchto dimenzí. Další informace naleznete v následujícím příkladu. |
 
 Chcete-li nastavit index hierarchie produktů, postupujte následujícím způsobem.
 
@@ -319,14 +319,13 @@ Chcete-li nastavit index hierarchie produktů, postupujte následujícím způso
 1. Ve výchozím nastavení je k dispozici seznam indexů. Chcete-li upravit stávající index, vyberte **Upravit** nebo **Přidat** v části příslušného rejstříku. Chcete-li vytvořit novou sadu indexů, vyberte příkaz **Nová sada indexů**. Pro každý řádek v každé sadě indexů vyberte v poli **Dimenze** hodnotu ze seznamu základních dimenzí. Automaticky se generují hodnoty pro následující pole:
 
     - **Číslo sady** – Dimenze, které patří do stejné skupiny (indexu), budou seskupeny a bude jim přiděleno stejné číslo sady.
-    - **Hierarchie** – Hierarchie se používá k definování podporovaných kombinací dimenzí, které lze dotazovat ve skupině dimenzí (indexu). Pokud například nastavíte skupinu dimenzí, která má hierarchickou posloupnost *Styl*, *Barva* a *Velikost*, systém umí vrátit výsledek na tři skupiny dotazů. První skupina je pouze styl. Druhá skupina je kombinace stylu a barvy. A třetí skupina je kombinace stylu, barvy a velikosti. Ostatní kombinace nejsou podporovány.
+    - **Hierarchie** – Umožňuje zvýšit výkon konkrétních kombinací dimenzí při použití v parametrech filtru a seskupení podle dotazů.
 
 > [!TIP]
 > Zde je několik tipů, které je třeba mít na paměti při nastavování hierarchie indexu:
 >
 > - Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v konfiguracích indexu. Pokud je základní dimenze znovu definována v konfiguraci indexu, nebudete moci pomocí tohoto indexu dotazovat.
 > - Pokud se potřebujete dotazovat pouze na inventář, který je agregován všemi kombinacemi dimenzí, můžete nastavit jeden index, který obsahuje základní dimenzi `Empty`.
-> - Musíte mít alespoň jednu hierarchii indexu (například obsahující základní dimenzi `Empty`), jinak dotazy selžou s chybou „Nebyla nastavena žádná hierarchie indexu.“
 
 ### <a name="example"></a>Příklad
 
