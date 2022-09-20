@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
               items:
+                - name: Human Resources 10.0.30 (sloučená infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (sloučená infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sloučená infrastruktura)
@@ -478,6 +480,8 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Zjednodušené zadávání zaměstnance
               href: stream-employee-entry.md
+            - name: Přizpůsobení ovládání hlavičky
+              href: hr-worker-header-control.md
             - name: "Zadávání informací o\_pracovnících"
               href: hr-personnel-enter-worker-information.md
             - name: Pracovníci bez zaměstnání

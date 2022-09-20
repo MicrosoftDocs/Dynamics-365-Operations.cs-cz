@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (listopad 2022)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (říjen 2022)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (srpen 2022)
@@ -1719,7 +1721,29 @@
                   href: inventory/inventory-visibility-api.md
                 - name: Tipy pro Inventory Visibility
                   href: inventory/inventory-visibility-tips.md
-        - name: Inteligence IoT
+        - name: Sensor Data Intelligence
+          items:
+            - name: Domovská stránka Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Zapnutí funkce Sensor Data Intelligence pro váš systém
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: "Nasazení řešení IoT v\_Azure"
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Parametry Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: Nastavení simulovaného senzoru pro testování
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: Scénář odstávky majetku
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: Scénář údržby majetku
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: Scénář stavu stroje
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: Scénář kvality produktu
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: Scénář zpoždění výroby
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
+        - name: IoT Intelligence
           items:
             - name: Domovská stránka IoT Intelligence
               href: iot/iot-intelligence-home-page.md
@@ -1940,7 +1964,7 @@
                 - name: Řízení nákladů
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Správa výdajů
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Zásoby na skladě
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Schválení faktur
@@ -1948,11 +1972,11 @@
                 - name: Můj tým
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Přehled mobilních aplikací projektu
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: Časový záznam projektu
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: Schválení nákupní objednávky
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Prodejní objednávky
@@ -3463,7 +3487,7 @@
                       href: warehousing/small-parcel-shipping.md
                 - name: Zásady konsolidace dodávek
                   items:
-                    - name: Zásady konsolidace dodávek
+                    - name: Přehled zásad konsolidace dodávek
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurace zásad konsolidace dodávek
                       href: warehousing/configure-shipment-consolidation-policies.md

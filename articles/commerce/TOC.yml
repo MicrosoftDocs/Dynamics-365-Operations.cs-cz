@@ -730,10 +730,12 @@
               items:
                 - name: Přehled doporučení produktu
                   href: product-recommendations.md
-                - name: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
+                - name: "Povolení Azure Data Lake Storage v\_prostředí Dynamics 365 Commerce"
                   href: enable-ADLS-environment.md
                 - name: Povolení doporučení produktu
                   href: enable-product-recommendations.md
+                - name: Nastavení alternativního toku dat
+                  href: set-up-alternate-data-flow.md
                 - name: Přizpůsobená doporučení
                   items:
                     - name: Povolení přizpůsobených doporučení
@@ -2319,7 +2321,7 @@
                 - name: Řízení nákladů
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Správa výdajů
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Zásoby na skladě
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Schválení faktur
@@ -2327,11 +2329,11 @@
                 - name: Můj tým
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Přehled mobilních aplikací projektu
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
                 - name: Časový záznam projektu
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/commerce/toc.json
                 - name: Schválení nákupní objednávky
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Prodejní objednávky
