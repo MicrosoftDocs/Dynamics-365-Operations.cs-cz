@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410443"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462294"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 
@@ -45,7 +45,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano |
 | **Ovlivněné oblasti produktu** | Aplikace |
 | **Možnost nasazení** | Vše |
-| **Stav** | Zastaráno: Po dubnu 2023 již nebude funkce uznávání příjmů v Dynamics 365 Finance dostávat podporu s opravami chyb. Zákazníci budou požádáni, aby používali vylepšenou funkci [fakturace předplatného](../../finance/accounts-receivable/subscription-billing-summary.md). V říjnu 2023 již nebude k dispozici funkce rozpoznávání výnosů. Zákazníci budou požádáni, aby používali vylepšenou funkci fakturace předplatného.|
+| **Stav** | Zastaráno: Po dubnu 2023 již nebude funkce uznávání příjmů v Dynamics 365 Finance dostávat podporu s opravami chyb. Zákazníci budou požádáni, aby používali vylepšenou funkci [fakturace předplatného](../../finance/accounts-receivable/subscription-billing-summary.md). V říjnu 2023 již nebude k dispozici funkce rozpoznávání výnosů. Zákazníci budou požádáni, aby používali vylepšenou funkci fakturace předplatného. Pro funkci balíčku jako součást účtování výnosů není v tuto chvíli plánována žádná náhradní funkce.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.29
 

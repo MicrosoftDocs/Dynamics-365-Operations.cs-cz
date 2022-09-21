@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228561"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475515"
 ---
 # <a name="human-resources-home-page"></a>Domovská stránka Human Resources
 
@@ -40,7 +40,7 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Správa kompenzací](hr-compensation-overview.md)
 - [Rozvoj zaměstnanců](hr-develop-performance-management-overview.md)
 - [Vzdělávání](hr-learning-courses.md)
-- [Systém pracovního postupu]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Systém pracovního postupu](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Aplikace Human Resources propojuje informace o lidech a operacích, které vám pomohou optimalizovat náklady na pracovní síly a pečovat o vaše zaměstnance.
 
@@ -51,7 +51,8 @@ Informace o Dynamics 365 Finance naleznete v části [Domovská stránka financ�
 ## <a name="additional-resources"></a>Další prostředky
 
 ### <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
-Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources na Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### <a name="videos"></a>Videa
 

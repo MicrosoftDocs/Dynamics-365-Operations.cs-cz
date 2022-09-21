@@ -2,7 +2,7 @@
 title: Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 description: Tento článek popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli zaparkovat aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.dyn365.ops.version: 10.0.30
+ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336118"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428056"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 
@@ -35,8 +35,11 @@ Než budete moci nakonfigurovat obcházení pro kroky v položkách nabídky mob
 
 1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
 1. Ujistěte se, že je funkce *Pokyny pro krok aplikace Warehouse* pro váš systém zapnutá. Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta. Pro více informací o funkci *Pokyny pro krok aplikace Warehouse* viz [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md). Tato funkce je předpokladem pro funkci *Obcházení aplikace Warehouse Management*.
-1. Zapněte funkci *Obcházení aplikace Warehouse Management*. Tato funkce je funkce popsaná v tomto článku. Od verze Supply Chain Management 10.0.29 je ve výchozím nastavení zapnuta.
-1. Pokud funkce *Obcházení aplikace Warehouse Management* ještě nebyla zapnuta, aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Opakujte tento krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
+1. Zapněte následující funkce, které poskytují funkce popsané v tomto článku:
+    - *Obcházení aplikace Warehouse Management*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
+    - *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management*
+1. Pokud funkce *Obcházení aplikace Warehouse Management* a *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* ještě nebyly zapnuty, aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
+1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurace obcházení z přepsání specifického pro nabídku
 
@@ -147,3 +150,6 @@ V tomto postupu provedete dotaz na polohu pomocí mobilní aplikace Warehouse Ma
 1. Všimněte si, že registrační značka byla zkopírována z karty, kterou jste vybrali. Potvrďte hodnotu.
 1. Nyní můžete provést pohyb podle standardního postupu úkolů. Po dokončení práce otevřete nabídku akcí a vyberte **Zrušit**.
 1. Jste vráceni na stránku **Dotaz na lokalitu**. Všimněte si, že hodnoty se automaticky neaktualizují. Proto musíte ručně obnovit stránku, abyste viděli změny z obcházení pohybu.
+
+> [!NOTE]
+> Funkce *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* umožňuje definovat víceúrovňová obcházení (obcházení v rámci obcházení), která umožní pracovníkům přeskočit z existujícího obcházení na druhé a pak zase zpět. Tato funkce ihned podporuje dvě úrovně obcházení a v případě potřeby můžete svůj systém přizpůsobit tak, aby podporoval tři nebo více úrovní obcházení vytvořením rozšíření kódu v tabulce `WHSWorkUserSessionState`.

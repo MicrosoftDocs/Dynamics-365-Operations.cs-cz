@@ -2,7 +2,7 @@
 title: Periferní zařízení
 description: Tento článek vysvětluje pojmy související s periferními zařízeními aplikace Obchod.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880074"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459985"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -141,6 +141,9 @@ V případě periferií POS lze připojit mnoho zařízení USB a systém Window
 Modern POS podporuje UWP čtečky MSR a skenery. Proto když je Moderní POS připraven pro vstup z jednoho z těchto zařízení a bude připojeno zařízení patřící do jedné z těchto tříd zařízení, bude možno toto zařízení použít. Například pokud je k počítači s Windows 10 připojena čtečka čárových kódů plug and play a je nakonfigurován vstup čárových kódů pro Modern POS, bude čtečka čárových kódů na přihlašovací stránce aktivní. Žádné další nastavení není třeba.
 
 Do Windows se přidávají další třídy periferií POS, jako jsou třídy pro zásuvky s hotovostí a tiskárny účtenek. Podpora pro tyto nové třídy zařízení v Modern POS se očekává v brzké době.
+
+> [!NOTE] 
+> Některá zařízení USB mohou přestat reagovat nebo být nespolehlivá, pokud jsou spravována funkcí správy napájení Windows 10 s názvem [Selektivní pozastavení USB](/windows-hardware/drivers/usbcon/usb-selective-suspend). Pokud periferní zařízení USB přestane reagovat, může být nutné deaktivovat funkci selektivního pozastavení pro toto zařízení. Další informace viz [Aktivace selektivního pozastavení](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### <a name="keyboard-wedge"></a>Převodník na signál klávesnice
 

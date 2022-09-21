@@ -2,7 +2,7 @@
 title: Povolit doporučení produktu
 description: V tomto článku je vysvětleno, jak vytvořit doporučení produktu založená na strojovém učení na základě umělé inteligence (AI-ML) pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892064"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460014"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -36,8 +36,15 @@ V tomto článku je vysvětleno, jak vytvořit doporučení produktu založená 
 1. Potvrďte, že konfigurace identity Azure AD obsahuje záznam pro doporučení. Další informace o tom, jak provést tuto akci, je následující.
 1. Zajistěte, aby bylo naplánováno každodenní obnovení Azure Data Lake Storage Gen2. Další informace naleznete v tématu [Zajistěte, aby aktualizace úložiště entity byla automatizovaná](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Povolte měření RetailSale pro úložiště Entity. Další informace o tomto nastavení procesu naleznete v tématu [Práce s opatřeními](/dynamics365/ai/customer-insights/pm-measures).
+1. Ujistěte se, že vaše prostředí má nakonfigurované oblasti podávání a vaření v aktuálně podporovaných oblastech, a to následovně:
+
+    - **Podporované oblasti vaření:** EU/US/CA/AU.
+    - **Podporované oblasti podávání:** US/CA/AU. Pokud oblast podávání neodpovídá žádné ze stávajících podporovaných oblastí, služba doporučení vybere nejbližší podporovanou oblast poskytování.
 
 Po dokončení výše uvedených kroků budete připraveni povolit doporučení.
+
+> [!NOTE]
+> Existuje známý problém, kdy se po provedení následujících kroků nezobrazují doporučení. Tento problém je způsoben problémy s tokem dat v prostředí. Pokud vaše prostředí nezobrazuje výsledky doporučení, nakonfigurujte alternativní data pro službu doporučení podle kroků v části [Nastavení alternativního datového toku pro doporučení](set-up-alternate-data-flow.md). K provedení těchto kroků musíte mít oprávnění správce Azure. Pokud potřebujete pomoc, kontaktujte svého zástupce FastTrack.
 
 ## <a name="azure-ad-identity-configuration"></a>Konfigurace identity Azure AD
 
@@ -94,9 +101,11 @@ Další informace o přizpůsobených doporučení získáte v tématu [Povolen�
 
 [Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
+[Nastavení alternativního datového toku pro doporučení](set-up-alternate-data-flow.md)
+
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Povolit doporučení typu „podobný vzhled“](shop-similar-looks.md)
+[Povolení doporučení „nákupu podobného vzhledu“](shop-similar-looks.md)
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Další informace o přizpůsobených doporučení získáte v tématu [Povolen�
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
 
 
 

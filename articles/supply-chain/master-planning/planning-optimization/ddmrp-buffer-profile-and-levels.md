@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186645"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428137"
 ---
 # <a name="buffer-profile-and-levels"></a>Profil a úrovně vyrovnávacích zásob
 
@@ -77,6 +77,14 @@ Na předchozím obrázku, pokud je dnes ráno 11. června, je ADU za předchozí
 
 - **ADU (minulé)** = (29 + 11 + 23) ÷ 3 = 21
 
+Pro výpočet průměrného denního (minulého) použití se berou v úvahu následující transakce:
+
+- Transakce, které snižují množství položky (v tabulce `inventtrans`, kde je množství menší než nula)
+- Transakce se stavem *Na objednávce*, *Rezervováno objednáno*, *Vyhrazeno fyzicky*, *Vychystáno*, *Odečteno* nebo *Prodáno*
+- Transakce datované v rámci zvoleného zpětného období (průměrné denní využití za minulé období)
+- Jiné transakce než práce ve skladu, karanténa, prodejní nabídky nebo výpisy (`WHSWork`, `WHSQuarantine`, `SalesQuotation` nebo `Statement`)
+- Transakce jiné než převodní deníky, které jsou v rámci stejné dimenze pokrytí
+
 ### <a name="average-daily-usage-forward"></a>Průměrná denní spotřeba (budoucí)
 
 U nového produktu možná nemáte žádné údaje o minulé spotřebě. Proto můžete místo toho použít předpokládanou ADU do budoucna (například na základě předpokládané poptávky). Následující obrázek ukazuje, jak tento přístup funguje, když se výpočet dívá tři dny do budoucnosti (včetně dneška).
@@ -86,6 +94,11 @@ U nového produktu možná nemáte žádné údaje o minulé spotřebě. Proto m
 Na předchozím obrázku, pokud je dnes ráno 11. června, je ADU za následující tři dny (11., 12. a 13. června) 21,66.
 
 - **ADU (budoucí)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Pro výpočet průměrného denního (budoucího) použití se berou v úvahu následující transakce:
+
+- Předpokládané transakce pro položku, kde je v hlavním plánu vybrána předpověď
+- Transakce datované v rámci zvoleného budoucího období (průměrné denní využití za budoucí období)
 
 ### <a name="average-daily-usage-blended"></a>Průměrná denní spotřeba (smíšená)
 

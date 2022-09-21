@@ -2,19 +2,19 @@
 title: Domény v Dynamics 365 Commerce
 description: Tento článek popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405489"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465186"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -144,9 +144,9 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
 
 - **Možnost 1** – Použijte poskytovatele DNS k přesměrování vrcholové domény na doménu „www“. Například fabrikam.com přesměruje na `www.fabrikam.com`, kde `www.fabrikam.com` je záznam CNAME, který odkazuje na instanci Azure Front Door hostovanou řešením Commerce.
 
-- **Možnost 2** - Pokud váš poskytovatel DNS podporuje záznamy ALIAS, můžete doménu apex nasměrovat na koncový bod front door. To zajišťuje, že se změna IP koncovým bodem front door projeví.
+- **Možnost 2** – Pokud váš poskytovatel DNS podporuje záznamy ALIAS, můžete vrcholovou doménu nasměrovat na koncový bod Azure Front Door, což zajistí, že se změna IP koncovým bodem projeví. Instanci Azure Front Door musíte hostovat sami.
   
-- **Možnost 3** - Pokud váš poskytovatel DNS nepodporuje záznamy ALIAS, musíte si sami nastavit instanci CDN nebo front door pro hostování vrcholové domény.
+- **Možnost 3** – Pokud váš poskytovatel DNS nepodporuje záznamy ALIAS, musíte změnit poskytovatele DNS na Azure DNS a sami hostovat Azure DNS i instanci Azure Front Door.
 
 > [!NOTE]
 > Pokud používáte Azure Front Door, musíte také nastavit Azure DNS ve stejném předplatném. Vrcholová doména hostovaná na Azure DNS může odkazovat na vaše Azure Front Door jako aliasový záznam. Toto je jediné řešení, protože vrcholové domény musí vždy ukazovat na IP adresu.

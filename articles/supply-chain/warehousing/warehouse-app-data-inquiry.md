@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336598"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427841"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Dotazování na data pomocí obcházení mobilní aplikace Warehouse Management
 
@@ -268,6 +268,6 @@ Chcete-li otestovat nastavení nové mobilní aplikace, postupujte podle těchto
     ![Příjem nákupu pomocí vyhledávání nákupní objednávky podle dodavatele, příklad 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Příjem nákupu pomocí vyhledávání nákupní objednávky podle dodavatele, příklad 2")
 
 > [!TIP]
-> Namísto spuštění přijímacího toku vyhledáváním z položky nabídky **Příjem nákupu** můžete začít z toku dotazů (**Hlavní \> Dotázat se \> Vyhledat nákupní objednávky podle dodavatele**) a vyvolat obcházení pro spuštění požadovaného toku výběrem jedné z karet v seznamu. Chcete-li použít tento přístup, můžete definovat obcházení na stránce **Kroky pro mobilní zařízení** pro krok, který má hodnotu **ID kroku** *GenericDataInquiryList*. Protože tento tok je tok obcházení, nemůžete z něj vyvolat další obcházení. Když se tedy dostanete například na obrazovku pro zadání čísla položky, vyhledávání na ní nebude dostupné, protože systém aktuálně podporuje pouze jednu úroveň obcházení.
+> Namísto spuštění přijímacího toku vyhledáváním z položky nabídky **Příjem nákupu** můžete začít z toku dotazů (**Hlavní \> Dotázat se \> Vyhledat nákupní objednávky podle dodavatele**) a vyvolat obcházení pro spuštění požadovaného toku výběrem jedné z karet v seznamu. Chcete-li použít tento přístup, můžete definovat obcházení na stránce **Kroky pro mobilní zařízení** pro krok, který má hodnotu **ID kroku** *GenericDataInquiryList*. Za předpokladu, že je funkce [*Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management*](warehouse-app-detours.md) pro váš systém zapnutá, v případě potřeby můžete také přidat další obcházení (tato funkce přidává podporu až dvou úrovní obcházení a lze ji přizpůsobit tak, aby podporovala další úrovně).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

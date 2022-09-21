@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878896"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460541"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 
@@ -85,7 +85,14 @@ Chcete-li produkt identifikovat jako zboží dvojího užití a použít pro ně
 1. Na pevné záložce **Zahraniční obchod** nastavte **Výrobky dvojího užití** na **Ano** pro identifikaci současného produktu jako zboží dvojího užití.
 1. Nastavte pole **Kód pro dvojí použití** na kód, který se vztahuje na aktuální produkt. (Tento kód jste definovali na stránce **Kategorie dvojího užití**.)
 
-Toto nastavení je zkontrolováno při vytváření prodejní objednávky.
+> [!NOTE]
+>
+> Když systém generuje potvrzení prodeje, provádí následující kontroly dvojího použití:
+>
+> 1. Zahrnuje objednávka nějaké zboží dvojího užití?
+> 1. Pokud ano, vyžaduje země určení osvědčení o dvojím použití?
+> 1. Pokud ano, existují platné certifikáty pro každé zboží dvojího užití pro cílovou zemi a jsou tyto certifikáty platné pro potvrzené datum expedice?
+> 1. Pokud jsou odpovědi na otázky 1 a 2 „Ano“ a odpověď na otázku 3 je „Ne“, systém zobrazí varování, aby uživatele informoval, že chybí certifikáty dvojího užití pro jedno nebo více zboží dvojího užití v prodejní objednávce. Uživatel by měl pravděpodobně získat požadované certifikáty a zkusit to znovu, ale místo toho by mohl varování ignorovat a pokračovat v potvrzení prodeje, pokud si to přeje.
 
 ## <a name="set-up-dual-use-certificates"></a>Nastavení certifikátů dvojího použití
 

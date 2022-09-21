@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893171"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428029"
 ---
 # <a name="release-to-warehouse"></a>Uvolnění do skladu
 
@@ -34,7 +34,7 @@ Uvolnění do skladu je proces přípravy zásob k odeslání. Když uvolníte o
 
 *Práce* ve skladu je jakákoli skladová operace, kterou provádí pracovník skladu. Obvykle pracovní operace ve skladu sestávají z nejméně dvou po sobě jdoucích akcí: skladoví pracovníci vyskladní zásoby na skladě na jednom místě a převedou vyskladněné zásoby v jiném skladovém místě.
 
-Když jsou objednávky uvolněny do skladu, systém vytvoří *řádky nákladů* a seskupí je do zásilek. Proces konsolidace zásilek umožňuje automatizovanou konsolidaci zásilek během procesu uvolnění do skladu. - Další informace viz [Zásady konsolidace dodávek](about-shipment-consolidation-policies.md).
+Když jsou objednávky uvolněny do skladu, systém vytvoří *řádky nákladů* a seskupí je do zásilek. Proces konsolidace zásilek umožňuje automatizovanou konsolidaci zásilek během procesu uvolnění do skladu. Další informace viz [Přehled zásad konsolidace dodávky](about-shipment-consolidation-policies.md).
 
 Systém používá *vlny* k vytvoření vychystávacích prací a nákladů pro dodávku. *Šablona vlny* musí být k dispozici pro typ vlny, kterou chcete vytvořit, a pro sklad řádku objednávky. Šablony vlny typu *Expedice* – se používají k expedici položek pro prodejní objednávky a převodních příkazů.
 

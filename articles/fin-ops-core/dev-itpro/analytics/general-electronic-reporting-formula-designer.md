@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287921"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476794"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -137,7 +137,29 @@ Následující obrázek znázorňuje výraz tohoto typu. (Jako příklad použij
 > 
 > V závislosti na tomto nastavení bude generovaná zpráva pro každou platbu dlužníka – prvek XML **Ustrd** – obsahovat buď text poznámek k platbě, nebo, je-li tento text prázdný, seznam čárkami oddělených čísel faktur použitých k účtování této platby.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Ověření konfigurovaných receptur
+## <a name="assistance-in-formulas-writing"></a>Pomoc při psaní vzorců
+
+### <a name="data-sources-navigator"></a>Navigátor zdroji dat
+
+Můžete upravit vzorec, který představuje prvek zdroje strukturovaných dat. Když jste nakonfigurovali své parametry ER tak, aby prezentovaly cestu k prvku zdroje strukturovaných dat jako [relativní cestu](relative-path-data-bindings-er-models-format.md), znak zavináče (@) je [zobrazen](er-formula-language.md#relative-path) ve vzorci namísto zbývající části absolutní cesty hierarchické stromové struktury, která se používá. Tato zbývající část absolutní cesty ukazuje na nadřazený prvek upravitelného prvku. Ve Finance verze **10.0.30 a novější** na stránce **Návrhář vzorců** v podokně **Zdroje dat** můžete vybrat možnost **Přejít na @** a umístit kurzor stromu zdrojů dat na prvek, který je nadřazeným upravitelného prvku. Struktura všech sbalených vzestupných prvků se v případě potřeby automaticky a rekurzivně rozšíří. Toto rozšíření vám může pomoci rychle vizualizovat základní prvek upravitelného prvku, sledovat prvky na stejné úrovni jako upravitelný prvek ve stromu zdrojů dat a v případě potřeby použít každý z nich v upravitelném vzorci.
+
+![Pomocí možnosti „Přejít na @“ umístěte kurzor stromu zdrojů dat na prvek, který je nadřízeným upravitelného prvku na stránce Návrhář vzorců.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Volič zdrojů dat
+
+Na stránce **Návrhář vzorců** v podokně **Zdroje dat** v levém podokně vyberte prvek zdroje dat, který chcete přenést do upravitelného vzorce. Poté vyberte **Přidat zdroj dat**. Všimněte si, že vybraný prvek je přidán do textu upravitelného vzorce.
+
+> [!TIP]
+> Když použijete možnost **Přidat zdroj dat** ve výchozím editoru vzorců, vybraný prvek se vždy přidá na konec textu vzorce. Když uděláte totéž v [Pokročilém editoru vzorců](er-advanced-formula-editor.md), vybraný prvek se vloží do textu vzorce na aktuální pozici kurzoru.
+
+### <a name="built-in-functions-picker"></a>Volič vestavěných funkcí
+
+Na stránce **Návrhář vzorců** v podokně **Funkce** v pravém podokně vyberte integrovanou funkci ER, kterou chcete přenést do upravitelného vzorce. Poté vyberte **Přidat funkci**. Všimněte si, že vybraná funkce je přidána do textu upravitelného vzorce.
+
+> [!TIP]
+> Když použijete možnost **Přidat funkci** ve výchozím editoru vzorců, vybraná funkce se vždy přidá na konec textu vzorce. Když uděláte totéž v [Pokročilém editoru vzorců](er-advanced-formula-editor.md), vybraná funkce se vloží do textu vzorce na aktuální pozici kurzoru.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Ověření konfigurovaných receptur
 
 Na stránce **návrháře receptur** vyberte **Test** pro ověření, jak funguje nakonfigurovaná receptura.
 

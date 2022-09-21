@@ -2,7 +2,7 @@
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 description: Tento článek vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277843"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476847"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -243,6 +243,15 @@ Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Dalš�
 <td>
 <p>Výraz seznamu funkce ORDERBY není dotazovatelný.</p>
 <p><b>Chyba za běhu:</b> Řazení není podporováno. Chcete-li získat další podrobnosti o chybě, ověřte konfiguraci.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Zastaralý artefakt aplikace</a></td>
+<td>Integrita dat</td>
+<td>Upozornění</td>
+<td>
+<p>Prvek &lt;path&gt; je označen jako zastaralý.<br>nebo<br>Prvek &lt;path&gt; je označen jako zastaralý se zprávou &lt;text zprávy&gt;.</p>
+<p><b>Ukázka běhové chyby:</b> Třída „&lt;path&gt;“ nebyla nalezena.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ Místo přidání vnořeného pole typu **Počítané pole** do zdroje dat **Ven
 #### <a name="option-2"></a>Možnost 2
 
 Změňte výraz zdroje dat **FilteredVendors** z `ORDERBY("Query", Vendor, Vendor.AccountNum)` na `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Nedoporučujeme měnit výraz pro tabulku, která obsahuje velké množství dat (transakční tabulka), protože budou načteny všechny záznamy a řazení požadovaných záznamů bude provedeno v paměti. Tento přístup proto může způsobit špatný výkon.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Zastaralý artefakt aplikace
+
+Když navrhujete komponentu mapování modelu ER nebo komponentu formátu ER, můžete nakonfigurovat výraz ER pro volání artefaktu aplikace v ER, jako je databázová tabulka, metoda třídy atd. Ve Finance verze 10.0.30 a novější, můžete přinutit ER, aby vás varovalo, že odkazovaný artefakt aplikace je ve zdrojovém kódu označen jako zastaralý. Toto varování může být užitečné, protože obvykle jsou zastaralé artefakty nakonec odstraněny ze zdrojového kódu. Být informován o stavu artefaktu vám může zabránit v používání zastaralého artefaktu v upravitelné komponentě ER před jeho odstraněním ze zdrojového kódu, což pomáhá předcházet chybám při volání neexistujících artefaktů aplikace z komponenty ER za běhu.
+
+Aktivujte funkci **Ověřit zastaralé prvky zdrojů dat elektronického vykazování** v pracovním prostoru **Správa funkcí** pro zahájení vyhodnocování zastaralého atributu artefaktů aplikace během kontroly upravitelné komponenty ER. Zastaralý atribut je aktuálně hodnocen pro následující typy aplikačních artefaktů:
+
+- Tabulka databáze
+    - Pole tabulky
+    - Metoda tabulky
+- Třída aplikace
+    - Metoda třídy
+
+> [!NOTE]
+> Během kontroly upravitelné komponenty ER pro zdroj dat, který odkazuje na zastaralý artefakt, se zobrazí varování, pouze pokud je tento zdroj dat použit v alespoň jedné vazbě této komponenty ER.
+
+> [!TIP]
+> Když je použita třída [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) k upozornění kompilátoru, aby místo chyb vydal varovné zprávy, varování inspekce představuje varování specifikované ve zdrojovém kódu v době návrhu v pevné záložce **Podrobnosti** na stránce **Návrhář mapování modelů** nebo **Návrhář formátů**.
+
+Následující obrázek ukazuje varování o ověření, které se objeví, když je zastaralé pole `DEL_Email` tabulky aplikace `CompanyInfo` vázáno na pole datového modelu pomocí konfigurovaného zdroje dat `company`.
+
+![Zkontrolujte varování ověření na pevné záložce Podrobnosti na stránce Designer mapování modelu.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatické řešení
+
+Není k dispozici žádná možnost automatického řešení tohoto problému.
+
+### <a name="manual-resolution"></a>Ruční řešení
+
+Upravte mapování nebo formát nakonfigurovaného modelu odstraněním všech vazeb na zdroj dat, který odkazuje na zastaralý artefakt aplikace.
 
 ## <a name="additional-resources"></a>Další prostředky
 

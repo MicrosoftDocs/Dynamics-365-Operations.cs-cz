@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2022-08-23
-ms.openlocfilehash: e33a4dd8650ee2e371c51c5a19e955f2d2bdade2
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 2a65dedf2da62fcd92169077d75a0f3b7832a86d
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405543"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473726"
 ---
 # <a name="inventory-aware-product-listing"></a>Výpis produktů s ohledem na zásoby
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Tento článek popisuje, jak mohou organizace nakonfigurovat stránky se seznamem produktů na svém webu elektronického obchodování Microsoft Dynamics 365 Commerce, aby byly s ohledem na zásoby. Stránky se seznamem produktů zahrnují vstupní stránky kategorií a stránky s výsledky vyhledávání.
 

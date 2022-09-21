@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
-ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
+ms.openlocfilehash: f9d21de3e498b293394835d5cf564899338b9c18
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427069"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473982"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Inicializace Commerce Scale Unit (cloud)
 
@@ -73,6 +73,7 @@ Commerce Scale Unit je k dispozici pro nasazení v následujících regionech.
 | EMEA            | Evropa – sever        | Obecně dostupné    |  Žádné komentáře. |
 | EMEA            | Velká Británie – jih            | Obecně dostupné |    Žádné komentáře.                          |
 | EMEA            | Velká Británie – západ             | Obecně dostupné |    Žádné komentáře.                          |
+| Spojené arabské emiráty             | Spojené arabské emiráty – sever           | Omezená kapacita    | Vyžaduje proces schválení. |
 
 Kapacita nasazení v regionech s omezenou kapacitou je extrémně omezená. Požadavky na nasazení jsou vyhodnocovány případ od případu. Máte-li přesvědčivou obchodní potřebu nasazení v oblastech s omezenou kapacitou, odešlete požadavek na podporu s žádostí o přidání do pořadníku. Oblasti s omezenou kapacitou v současné době neumožňují nasazení Commerce Scale Unit. 
 

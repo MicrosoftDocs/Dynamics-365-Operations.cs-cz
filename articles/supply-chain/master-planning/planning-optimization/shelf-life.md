@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 95c905cbcc3c057dbccf2b7d6e894b1e99ddfba5
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 68a1ba2bfe90aaf0462917c405d483fa12bf8126
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337131"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428214"
 ---
 # <a name="master-planning-for-products-with-limited-shelf-life"></a>Hlavní plánování pro produkty s omezenou trvanlivostí
 
@@ -298,8 +298,6 @@ Následující obrázek znázorňuje časovou osu v tomto příkladu.
 ![Příklad 4: Jednoduché FEFO, období, dodací lhůta závisí na množství.](media/fefo-example-4.png "Příklad 4: Jednoduché FEFO, období, dodací lhůta závisí na množství")
 
 ## <a name="example-5-simple-fefo-requirement-10-negative-days"></a>Příklad 5: Jednoduché FEFO, požadavek, 10 záporných dnů
-
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 Tento příklad ukazuje, jak funguje skladovatelnost, když je k položce přidáno velké množství záporných dnů. Záporné dny představují počet dní, které jste ochotni čekat před objednáním nového doplnění položky, která má záporné množství zásob. Systém nevytváří zásobu, pokud není překročen počet záporných dnů.
 

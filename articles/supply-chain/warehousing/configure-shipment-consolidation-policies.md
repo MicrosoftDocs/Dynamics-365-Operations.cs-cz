@@ -2,7 +2,7 @@
 title: Konfigurace zásad konsolidace dodávek
 description: Tento článek vysvětluje, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336485"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427975"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -28,75 +28,49 @@ Proces konsolidace dodávek, který používá zásady konsolidace dodávek, umo
 
 Scénáře uvedené v tomto článku ukazují, jak nastavit výchozí a vlastní zásady konsolidace dodávek.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Zapnutí funkce zásad konsolidace dodávek
+> [!WARNING]
+> Pokud upgradujete systém Microsoft Dynamics 365 Supply Chain Management, kde jste používali starší funkci konsolidace zásilek, může konsolidace přestat fungovat podle očekávání, pokud se nebudete řídit zde uvedenými radami.
+>
+> U instalací Supply Chain Management, kde je funkce *Zásady konsolidace zásilek*, aktivujete konsolidaci zásilek pomocí nastavení **Konsolidovat zásilku při uvolnění do skladu** pro každý jednotlivý sklad. Tato funkce je povinná od verze 10.0.29. Když je zapnutá, nastavení **Konsolidovat zásilku při uvolnění do skladu** se skryje a funkce je nahrazena *zásadami konsolidace zásilek*, které jsou popsány v tomto článku. Každá zásada stanoví pravidla konsolidace a obsahuje dotaz pro kontrolu, kde se tato zásada použije. Při prvním zapnutí této funkce nebudou definovány žádné zásady konsolidace zásilek na stránce **Zásady konsolidace zásilek**. Pokud nejsou definovány žádné zásady, systém použije starší chování. Proto každý stávající sklad nadále respektuje své nastavení **Konsolidovat zásilku při uvolnění do skladu**, i když je toto nastavení nyní skryté. Jakmile však vytvoříte alespoň jednu zásadu konsolidace zásilek, nastavení **Konsolidovat zásilku při uvolnění do skladu** již nemá žádný vliv a funkčnost konsolidace je zcela řízena zásadami.
+>
+> Poté, co definujete alespoň jednu zásadu konsolidace zásilek, systém zkontroluje zásady konsolidace pokaždé, když je objednávka uvolněna do skladu. Systém zpracovává zásady pomocí hodnocení, které je definováno hodnotou **Posloupnost zásad** každých zásad. Použije první zásadu, pokud dotaz odpovídá nové objednávce. Pokud objednávce neodpovídají žádné dotazy, vygeneruje každý řádek objednávky samostatnou dodávku, která má jeden řádek vytížení. Proto jako záložní řešení doporučujeme vytvořit výchozí zásadu, která bude platit pro všechny sklady a skupiny podle čísla objednávky. Nastavte tuto záložní politiku co nejvyšší hodnotu **Posloupnost zásad**, aby byla zpracována jako poslední.
+>
+> Chcete-li reprodukovat starší chování, musíte vytvořit zásadu, která se neseskupuje podle čísla objednávky a která má kritéria dotazu zahrnující všechny relevantní sklady.
 
-> [!IMPORTANT]
-> V [prvním scénáři](#scenario-1), který je popsán v tomto článku, nejprve nastavíte sklad tak, aby používal dřívější funkci konsolidace dodávek. Poté zpřístupníte zásady konsolidace dodávek. Tímto způsobem můžete vyzkoušet, jak scénář upgradu funguje. Pokud chcete použít prostředí s ukázkovými daty pro projití prvního scénáře, nezapínejte tuto funkci dříve, než provedete scénář.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Zapnutí funkce zásad konsolidace dodávek
 
 Chcete-li používat funkci *Zásady konsolidace dodávek*, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.29, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zásady konsolidace dodávek* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Nastavení výchozích zásad konsolidace
 
-Každý scénář v tomto článku odkazuje na hodnoty a záznamy, které jsou součástí standardních ukázkových dat poskytovaných pro aplikaci Microsoft Dynamics 365 Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na **USMF**, než začnete.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scénář 1: Konfigurace výchozích zásad konsolidace dodávek
-
-Existují dvě situace, kdy musíte po zapnutí funkce *Zásady konsolidace dodávek* nakonfigurovat minimální počet výchozích zásad:
-
-- Upgradujete prostředí, které již obsahuje data.
-- Nastavujete úplně nové prostředí.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Upgradujte prostředí, ve kterém jsou sklady již nakonfigurovány pro konsolidaci mezi objednávkami
-
-Když spustíte tento postup, funkce *Zásady konsolidace dodávek* by měla být vypnuta, aby se simulovalo prostředí, ve kterém již byla použita základní funkce konsolidace mezi objednávkami. Poté tuto funkci zapnete pomocí správy funkcí, abyste se naučili, jak nastavit zásady konsolidace dodávek po upgradu.
-
-Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek v prostředí, ve kterém jsou již sklady nakonfigurovány pro konsolidaci mezi objednávkami.
-
-1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
-1. V seznamu vyhledejte a otevřete požadovaný záznam skladu (například sklad *24* v ukázkových datech **USMF**).
-1. V podokně akcí vyberte **Upravit**.
-1. Na záložce s náhledem **Sklad** nastavte možnost **Konsolidovat dodávku při uvolnění do skladu** na *Ano*.
-1. Opakujte kroky 2 až 4 pro všechny ostatní sklady, kde je vyžadována konsolidace.
-1. Zavřete stránku.
-1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**. Možná budete muset obnovit svůj prohlížeč, abyste mohli zobrazit novou položku **Zásad konsolidace dodávek** po zapnutí funkce.
-1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
-
-    - Zásada **CrossOrder** pro typ zásady *Prodejní objednávky* (za předpokladu, že máte alespoň jeden sklad, který je nastaven pro použití funkce dřívější konsolidace)
-    - **Výchozí** zásada pro typ zásady *Prodejní objednávky*
-    - **Výchozí** zásada pro typ zásady *Vydání transferu*
-    - Zásada **CrossOrder** pro typ zásady *Vydání transferu* (za předpokladu, že máte alespoň jeden sklad, který je nastaven pro použití funkce dřívější konsolidace)
-
-    > [!NOTE]
-    > - Obě zásady **CrossOrder** považují stejnou sadu polí za dřívější logiku, s výjimkou pole pro číslo objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je sklad, způsob dopravy dodávky a adresa.)
-    > - Obě zásady **Výchozí** považují stejnou sadu polí za dřívější logiku, včetně pole pro číslo objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je číslo objednávky, sklad, způsob dopravy dodávky a adresa.)
-
-1. Vyberte zásady **CrossOrder** pro typ zásady *Prodejní objednávky* a poté na podokně akcí vyberte **Upravit dotaz**.
-1. V dialogovém okně editoru dotazů si všimněte skladů, u kterých je možnost **Konsolidovat dodávku při uvolnění do skladu** nastavena na *Ano*. Proto jsou zahrnuty v dotazu.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Vytvoření výchozích zásad pro nové prostředí
-
-Postupujte podle těchto kroků a nastavte výchozí zásady konsolidace dodávek ve zcela novém prostředí.
+Pokud pracujete s novým systémem nebo systémem, kde jste právě zapnuli funkci *Zásady konsolidace zásilek* poprvé, postupujte podle následujících kroků a nastavte své počáteční zásady konsolidace zásilek.
 
 1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
 1. V podokně akcí vyberte možnost **Vytvořit výchozí nastavení** a vytvořte následující zásady:
 
-    - **Výchozí** zásada pro typ zásady *Prodejní objednávky*
-    - **Výchozí** zásada pro typ zásady *Vydání transferu*
+    - Zásady s názvem *Výchozí* pro typ zásady *Prodejní objednávky*.
+    - Zásady s názvem *Výchozí* pro typ zásady *Vydání převodního příkazu*.
+    - Zásady s názvem *CrossOrder* pro typ zásady *Vydání převodního příkazu*. (Tato zásada je vytvořena pouze v případě, že jste měli alespoň jeden sklad, kde je starší nastavení **Konsolidovat zásilku při uvolnění do skladu** zapnuté.)
+    - Zásady s názvem *CrossOrder* pro typ zásady *Prodejní objednávky*. (Tato zásada je vytvořena pouze v případě, že jste měli alespoň jeden sklad, kde je starší nastavení **Konsolidovat zásilku při uvolnění do skladu** zapnuté.)
 
     > [!NOTE]
-    > Obě zásady **Výchozí** považují stejnou sadu polí za dřívější logiku, včetně pole pro číslo objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je číslo objednávky, sklad, způsob dopravy dodávky a adresa.)
+    > - Obě zásady *CrossOrder* považují stejnou sadu polí za dřívější logiku. Berou však v úvahu i pole s číslem objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je sklad, způsob dopravy dodávky a adresa.)
+    > - Obě zásady *Výchozí* považují stejnou sadu polí za dřívější logiku. Berou však v úvahu i pole s číslem objednávky. (Toto pole se používá ke konsolidaci řádků do dodávek na základě faktorů, jako je číslo objednávky, sklad, způsob dopravy dodávky a adresa.)
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scénář 2: Konfigurace vlastních zásad konsolidace dodávek
+1. Když systém vygeneroval zásadu *CrossOrder* pro typ zásady *Prodejní objednávky*, vyberte ji a poté na podokně akcí vyberte **Upravit dotaz**. V editoru dotazů můžete vidět, pro který z vašich skladů bylo nastavení **Konsolidovat zásilku při uvolnění do skladu** dříve aktivováno. Proto tato zásada reprodukuje vaše předchozí nastavení pro tyto sklady.
+1. Přizpůsobte nové výchozí zásady podle potřeby přidáním nebo odebráním polí nebo úpravou dotazů. Můžete také přidat tolik nových zásad, kolik potřebujete. Příklady, které ukazují, jak přizpůsobit a nakonfigurovat zásady, naleznete v příkladu scénáře dále v tomto článku.
 
-Tento scénář ukazuje, jak nastavit vlastní zásady konsolidace dodávek. Vlastní zásady mohou podporovat složité obchodní požadavky, kde konsolidace dodávek závisí na několika podmínkách. Pro každou příkladovou zásadu dále v tomto scénáři je uveden stručný popis obchodního případu. Tyto příkladové zásady by měly být nastaveny v posloupnosti, která zajišťuje vyhodnocení dotazů v podobě pyramidy. (Jinými slovy, zásady, které mají nejvíce podmínek, by měly být vyhodnoceny jako zásady s nejvyšší prioritou.)
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Scénář: Konfigurace vlastních zásad konsolidace dodávek
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Zapněte funkci a připravte hlavní data pro tento scénář
+Tento scénář poskytuje příklad, který ukazuje, jak nastavit vlastní zásady konsolidace zásilek a poté je otestovat pomocí ukázkových dat. Vlastní zásady mohou podporovat složité obchodní požadavky, kde konsolidace dodávek závisí na několika podmínkách. Pro každou příkladovou zásadu dále v tomto scénáři je uveden stručný popis obchodního případu. Tyto příkladové zásady by měly být nastaveny v posloupnosti, která zajišťuje vyhodnocení dotazů v podobě pyramidy. (Jinými slovy, zásady, které mají nejvíce podmínek, by měly být vyhodnoceny jako zásady s nejvyšší prioritou.)
 
-Než budete moci procházet cvičeními v tomto scénáři, musíte zapnout funkci a připravit hlavní data, která jsou nezbytná pro filtrování, jak je popsáno v následujících pododdílech. (Tyto předpoklady platí také pro scénáře uvedené v části [Příkladové scénáře použití zásad konsolidace dodávek](#example-scenarios) .)
+### <a name="make-demo-data-available"></a>Zpřístupnění ukázkových dat
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Zapněte funkci a vytvořte výchozí zásady
+Tento scénář odkazuje na hodnoty a záznamy, které jsou součástí standardních [ukázkových dat](../../fin-ops-core/fin-ops/get-started/demo-data.md) poskytovaných pro Supply Chain Management. Pokud chcete při cvičení použít hodnoty, které jsou zde uvedeny, nezapomeňte pracovat v prostředí, ve kterém jsou nainstalovaná ukázková data, a nastavte právnickou osobu na *USMF*, než začnete.
 
-Použijte správu funkcí pro zapnutí funkce, pokud jste ji ještě nezapnuli, a vytvořte výchozí zásady konsolidace, které jsou popsány ve [scénáři 1](#scenario-1).
+### <a name="prepare-master-data-for-this-scenario"></a>Příprava hlavních dat pro tento scénář
+
+Než budete moci procházet cvičeními v tomto scénáři, musíte připravit hlavní data, která jsou nezbytná pro filtrování, jak je popsáno v následujících pododdílech. (Tyto předpoklady platí také pro scénáře uvedené v části [Příkladové scénáře použití zásad konsolidace dodávek](#example-scenarios) .)
 
 #### <a name="create-two-new-product-filter-codes"></a>Vytvoření dvou nových kódů filtrů produktu
 
@@ -300,7 +274,7 @@ V tomto příkladu vytvoříte zásadu *Sklady umožňující konsolidaci*, kter
 - Konsolidace s otevřenými dodávkami je vypnuta.
 - Konsolidace se provádí napříč objednávkami pomocí polí vybraných ve výchozí zásadě CrossOrder (k replikaci předchozího zaškrtávacího políčka **Konsolidovat dodávku při uvolnění do skladu**).
 
-Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které jste vytvořili ve [scénáři 1](#scenario-1). Podobné zásady však můžete vytvořit také ručně pomocí těchto kroků.
+Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které jste vytvořili v části [Nastavení úvodních zásad konsolidace](#initial-policies). Podobné zásady však můžete vytvořit také ručně pomocí těchto kroků.
 
 1. Přejděte na **Řízení skladu \> Nastavit \> Uvolnění do skladu \> Zásady konsolidace dodávek**.
 1. Nastavte pole **Typ zásady** na *Prodejní objednávky*.
@@ -345,7 +319,7 @@ Následující scénáře ilustrují, jak byste mohli použít zásady konsolida
 
 ## <a name="additional-resources"></a>Další prostředky
 
-- [Zásady konsolidace dodávek](about-shipment-consolidation-policies.md)
+- [Přehled zásad konsolidace dodávek](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

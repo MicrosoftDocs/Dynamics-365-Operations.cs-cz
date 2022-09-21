@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903500"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462267"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Generování řádků faktur při importu faktur dodavatele
 
@@ -45,7 +45,7 @@ Chcete-li povolit automatické vytváření řádků faktury, postupujte takto.
 Pro podporu funkcí, které jsou popsány v tomto článku, byla vylepšena datová entita **Záhlaví faktury dodavatele**. Byla přidána tři pole:
 
 - **HeaderOnlyImport** – Toto pole musí být nastaveno na **Ano**, aby byly generovány řádky pro hlavičky faktur.
-- **PurchIdRange** – Seznam čísel nákupních objednávek. Čísla faktur mohou být rozsahy, např **INV0001..INV0009** (kde dvě tečky oddělují začátek a konec rozsahu), nebo diskrétní hodnoty, jako např **INV0001, INV0003, INV0006**. Všechny nákupní objednávky musí patřit ke stejnému účtu dodavatele v záhlaví faktury. V opačném případě se zobrazí následující chybová zpráva: „Nepodařilo se vygenerovat řádky faktury. Nákupní objednávky mají různé účty dodavatelů.“
+- **PurchIdRange** – Seznam čísel nákupních objednávek. Čísla faktur mohou být rozsahy, např. **PO0001..PO0009** (kde dvě tečky oddělují začátek a konec rozsahu), nebo diskrétní hodnoty, jako např **PO0001, PO0003, PO0006**. Všechny nákupní objednávky musí patřit ke stejnému účtu dodavatele v záhlaví faktury. V opačném případě se zobrazí následující chybová zpráva: „Nepodařilo se vygenerovat řádky faktury. Nákupní objednávky mají různé účty dodavatelů.“
 - **PackingslipRange** – Seznam čísel dokladů produktů. Řádky faktury dodavatele lze vytvořit z účtenek produktu. Čísla dokladů produktů však obvykle nejsou na fakturách dodavatele uvedena. Do tohoto pole zadávejte čísla příjemek produktů pouze v případě, že můžete jasně identifikovat příjemky produktů pro které konkrétní faktury. Řádky faktury lze vygenerovat z účtenek produktu. Pokud je toto pole použito, nastavení pole **Vybrat výchozí množství pro automatické vytváření řádků faktur** na stránce **Parametry závazků** je ignorováno. 
 
 **Omezení**: Pokud zadáte více čísel příjemky produktů, vytvoří se několik nevyřízených faktur dodavatele se stejným číslem faktury. Před dalším zpracováním faktury je musíte konsolidovat ručně. V budoucích verzích plánujeme automatickou konsolidaci faktur, takže omezení bude odstraněno.

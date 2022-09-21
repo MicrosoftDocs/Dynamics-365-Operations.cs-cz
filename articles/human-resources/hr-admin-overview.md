@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec214ef4ebb6ecb72c1684c515df25d3c2403c14
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027127"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475631"
 ---
 # <a name="administration-overview"></a>Přehled správy
 
@@ -46,10 +46,10 @@ Tento článek poskytuje seznam témat nápovědy a dalších zdrojů pro nasta
   - [Konfigurace integrace s aplikací Dayforce](hr-admin-integration-dayforce.md)
   - [Vytvoření aplikace pro export opakujících se dat](hr-admin-integration-recurring-data-export.md)
   - Integrace s Office
-    - [Kurz integrace s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Aktualizace dat entity v aplikaci Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Vytvoření zkušeností s otevíráním v Excelu](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Řešení problémů s integrací s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Kurz integrace s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Aktualizace dat entity v aplikaci Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Vytvoření zkušeností s otevíráním v Excelu](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Řešení problémů s integrací s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Správa funkcí](hr-admin-manage-features.md)
 
@@ -100,7 +100,7 @@ Tento článek poskytuje seznam témat nápovědy a dalších zdrojů pro nasta
 ## <a name="additional-resources"></a>Další prostředky
 
 ### <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
-Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources na Microsoft Learn](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videa
 

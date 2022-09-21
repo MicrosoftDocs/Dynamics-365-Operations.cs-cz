@@ -2,7 +2,7 @@
 title: Správa úkolů
 description: Tento článek vysvětluje funkce správy úloh, které jsou k dispozici v Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897857"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445887"
 ---
 # <a name="task-management"></a>Správa úkolů
 
@@ -69,7 +69,13 @@ Na všech třech kartách mohou HR asistenti a manažeři provádět následují
 
 Úkoly můžete vytvářet jednotlivě a poté je znovu použít ve více kontrolních seznamech. Chcete-li vytvořit úkol, na stránce **Nastavení nasazování** na kartě **Úkoly** vyberte **Nový**.
 
+Vytvořenou úlohu můžete přiřadit k více kontrolním seznamům výběrem úlohy a následným výběrem **Použit na kontrolní seznamy** v nabídce.
+
 Případně můžete úkoly přidat přímo do kontrolního seznamu. Chcete-li přidat úkol do kontrolního seznamu, na stránce **Nastavení nasazování** na kartě **Kontrolní seznam** vytvořte nový kontrolní seznam, do kterého chcete úkol přidat, nebo přidejte úkol do existujícího kontrolního seznamu.
+
+Chcete-li upravit úkol v knihovně, vyberte **Upravit** v nabídce knihovny úloh. Pokud je úkol spojen s nějakými kontrolními seznamy, tyto kontrolní seznamy se zobrazí na stránce **Upravit úkol**. Pokud chcete, aby se úkoly v některém kontrolním seznamu aktualizovaly pomocí úprav, vyberte tyto kontrolní seznamy v části **Použít na kontrolní seznamy**.
+
+Chcete-li odstranit úkoly z knihovny, vyberte možnost **Odstranit**. Pokud je úkol přidružen k nějakému kontrolnímu seznamu, tato akce neodstraní úkol z tohoto kontrolního seznamu. Úloha musí být odstraněna z kontrolního seznamu v samostatné akci.
 
 > [!NOTE]
 > Pokud úkol přidáte přímo do kontrolního seznamu, nemůžete jej znovu použít v jiných kontrolních seznamech.
@@ -133,7 +139,15 @@ Komplexní úkoly mohou vyžadovat více kroků, nebo osoby provádějící úko
 
 ## <a name="setting-up-checklists"></a>Nastavení kontrolních seznamů
 
-Kontrolní seznam je skupina úkolů. Můžete vytvořit tolik kontrolních seznamů, kolik potřebujete, a stejné úkoly můžete přiřadit více kontrolním seznamům. Při vytváření kontrolního seznamu určíte vlastníka a kalendář.
+Kontrolní seznam je skupina úkolů. Můžete vytvořit tolik kontrolních seznamů, kolik potřebujete, a stejné úkoly můžete přiřadit více kontrolním seznamům.
+
+Chcete-li vytvořit nový úkol v kontrolním seznamu, vyberte **Nový** v liště nabídky **Úkoly**. Když vytváříte novou úlohu, můžete ji přidat do knihovny úloh, aby ji bylo možné sdílet ve více kontrolních seznamech. Úkol můžete přidat do knihovny pouze v případě, že je možnost **Použít úkol na knihovnu** nastavena na **Ano**. Pokud úkol přidáte do knihovny úkolů, můžete jej také přidat do jiných kontrolních seznamů současně výběrem těchto kontrolních seznamů v části **Použít na kontrolní seznamy**. Pokud nepřidáte úlohu do knihovny, bude existovat pouze v kontrolním seznamu, ve kterém ji vytvoříte.
+
+Chcete-li upravit úkol v kontrolním seznamu, vyberte **Upravit**. Pokud je úkol spojen s nějakými kontrolními seznamy, tyto kontrolní seznamy se zobrazí na stránce **Upravit úkol**. Pokud chcete, aby se úkoly v ostatních kontrolních seznamech aktualizovaly pomocí úprav, vyberte tyto kontrolní seznamy v části **Použít na kontrolní seznamy**.
+
+Chcete-li odebrat úkoly z kontrolního seznamu, vyberte **Odstranit**. Tato akce pouze odstraní úkoly z kontrolního seznamu. Neodstraní je z knihovny úloh. Chcete-li odstranit úkol z knihovny, přejděte na stránku knihovny úkolů a vyberte **Odstranit**.
+
+Při vytváření kontrolního seznamu určíte vlastníka a kalendář.
 
 Pokud je pole **Typ úkolu** pro úkol je nastaveno na **Pozice**, **Manažer** nebo **Skupina**, ale z typu zadání nelze odvodit žádného konkrétního jedince, úkol bude přidělen vlastníkovi kontrolního seznamu. Zde je několik příkladů situací, kdy budou úkoly přiřazeny vlastníkovi kontrolního seznamu:
 

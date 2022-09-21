@@ -2,7 +2,7 @@
 title: Přidání doporučení produktů do POS
 description: Tento článek popisuje používání doporučení produktů na zařízení v místě prodeje (POS).
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872792"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460049"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Přidání doporučení produktů v POS
 
@@ -37,7 +37,7 @@ Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k di
 
 1. Na stránce **Podrobnosti o produktu**:
 
-    - Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, služba doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
+    - Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, služba doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně. V závislosti na doplňcích pro službu mohou prodejci zobrazit doporučení produktů **Nakupovat podobné produkty** a **Nakupovat podobný popis**, kromě personalizovaných doporučení pro uživatele, kteří mají předchozí historii nákupů.
 
     [![Doporučení na stránce Podrobnosti produktu.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k di
 
     [![Doporučení na stránce Transakce.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurace aplikace Commerce pro povolení doporučení POS
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurace aplikace Commerce pro povolení doporučení POS 
 
-Chcete-li nastavit doporučení produktu, postupujte následujícím způsobem:
+Chcete-li nastavit doporučení produktů, potvrďte, že jste provedli proces poskytování doporučení produktů Commerce podle kroků v části [Aktivace doporučení produktů](../commerce/enable-product-recommendations.md). Ve výchozím nastavení se doporučení zobrazují na stránce **Detaily produktu** i **Detaily zákazníka** poté, co provedete kroky zřizování a data budou úspěšně vytvořena. 
 
-1. Zkontrolujte, zda byla služba aktualizována v sestavení **10.0.6.**
-2. Postupujte podle pokynů pro [povolení doporučení produktu](../commerce/enable-product-recommendations.md) pro váš podnik.
-3. Volitelné: Chcete-li zobrazit doporučení na obrazovce transakce, přejděte na **Rozvržení obrazovky**, zvolte rozložení obrazovky, spusťte **Návrhář rozvržení obrazovky**, a potom umístěte ovládací prvek **doporučení**, kam je třeba.
-4. Přejděte na **Parametry velkoobchodu**, vyberte **Strojové učení** a vyberte **Ano** v části **Povolit doporučení POS**.
-5. Doporučení na POS zobrazíte spuštěním globální konfigurační úlohy **1110**. Aby se změny návrháře rozvržení obrazovky POS projevily, spusťte úlohu konfigurace kanálu **1070**.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Přidání doporučení na obrazovku transakcí
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Řešení problémů, když máte doporučení produktu již povolena
+1. Chcete-li přidat doporučení na obrazovku transakce, postupujte podle kroků v části [Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md).
+1. Chcete-li zohlednit změny provedené v návrháři rozvržení obrazovky POS, spusťte úlohu konfigurace kanálu **1070** v Commerce headquarters.
 
-- Přejděte na **Parametry velkoobchodu** \> **Seznam doporučení** \> **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu \[9999\]**. 
-- Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také.
-- Máte-li další dotazy, vyhledejte další informace [v nejčastějších dotazech k doporučením produktu](../commerce/faq-recommendations.md).
+> [!NOTE] 
+> Pokud chcete aktivovat doporučení POS pomocí souboru RecoMock s čárkami oddělenými hodnotami (CSV), musíte nasadit soubor CSV do knihovny prostředků Microsoft Dynamics Lifecycle Services (LCS), než nakonfigurujete správce rozložení. Pokud používáte soubor RecoMock CSV, nemusíte doporučení aktivovat. Soubor CSV je k dispozici pouze pro účely ukázky. Doporučuje se pro zákazníky nebo architekty řešení, kteří chtějí napodobit vzhled seznamů doporučení pro účely ukázky, aniž by museli kupovat přídavnou skladovou jednotku (SKU).
 
 ## <a name="additional-resources"></a>Další prostředky
 

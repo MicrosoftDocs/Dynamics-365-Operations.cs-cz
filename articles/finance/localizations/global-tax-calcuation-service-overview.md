@@ -2,7 +2,7 @@
 title: Přehled výpočtu daně
 description: Tento článek vysvětluje celkový rozsah a funkce výpočtu daně.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295984"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465159"
 ---
 # <a name="tax-calculation-overview"></a>Přehled výpočtu daně
 
@@ -74,18 +74,10 @@ Doporučujeme importovat a nastavit konfiguraci výpočtu daně s verzí, která
 
 | Verze Finance nebo Supply Chain Management | Verze konfigurace daně               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Konfigurace daně - Evropa 30.12.82     |
-| 10.0.19         | Konfigurace výpočtu daně 36.38.193 |
-| 10.0.20         | Konfigurace výpočtu daně 40.43.208 |
-| 10.0.21         | Konfigurace výpočtu daně 40.48.215 |
-| 10.0.22         | Konfigurace výpočtu daně 40.48.215 |
-| 10.0.23         | Konfigurace výpočtu daně 40.50.221 |
-| 10.0.24         | Konfigurace výpočtu daně 40.50.225 |
-| 10.0.25         | Konfigurace výpočtu daně 40.50.225 |
-| 10.0.26         | Konfigurace výpočtu daně 40.54.234 |
-| 10.0.27         | Konfigurace výpočtu daně 40.54.234 |
-| 10.0.28         | Konfigurace výpočtu daně 40.54.234 |
+| 10.0.30         | Konfigurace výpočtu daně 40.55.239 |
 | 10.0.29         | Konfigurace výpočtu daně 40.55.236 |
+| 10.0.28         | Konfigurace výpočtu daně 40.54.234 |
+| 10.0.27         | Konfigurace výpočtu daně 40.54.234 |
 
 
 ## <a name="data-flow"></a>Tok dat
@@ -104,120 +96,27 @@ Zde je přehled procesu toku dat pro výpočet daně.
 
 Výpočet daně lze povolit transakcemi. 
 
-Ve verzi 10.0.21 jsou podporovány následující transakce: 
+V následující tabulce jsou uvedeny transakce podporované v odpovídající verzi.
 
-- Prodej.
-
-    - Prodejní nabídka
-    - Prodejní objednávka
-    - Potvrzení
-    - Výdejka
-    - Dodací list
-    - Prodejní faktura
-    - Dobropis
-    - Vratka
-    - Záhlaví – vedlejší náklady
-    - Řádek - vedlejší náklady
-
-- Nákup
-
-    - Nákupní objednávka
-    - Potvrzení
-    - Příjemka
-    - Příjemka produktu
-    - Nákupní faktura
-    - Záhlaví – vedlejší náklady
-    - Řádek - vedlejší náklady
-    - Dobropis
-    - Vratka
-    - Nákupní žádanka
-    - Řádek nákupní žádanky – vedlejší náklady
-    - Požadavek na nabídku
-    - Záhlaví požadavku na nabídku – vedlejší náklady
-    - Řádek požadavku na nabídku – vedlejší náklady
-
-- Zásoby
-
-    - Převodní příkaz – expedice
-    - Převodní příkaz – příjem
-
-Ve verzi 10.0.23 jsou podporovány následující transakce: 
-
-- Volná faktura
-
-Ve verzi 10.0.26 jsou podporovány následující transakce: 
-
-- Hlavní deníky
-- Deník faktur dodavatele
-
-Ve verzi 10.0.28 jsou podporovány následující transakce: 
-
-- Platební deník dodavatele
-- Deník plateb odběratele
-
-Ve verzi 10.0.29 jsou podporovány následující transakce: 
-
-
-- Periodické deníky
+| Verze | Transakce |
+|---------|--------------|
+| 10.0.29 | Periodické deníky |
+| 10.0.28 | Platební deník dodavatele<br> Deník plateb odběratele | 
+| 10.0.26 | Hlavní deníky<br> Deník faktur dodavatele |
+| 10.0.23 | Volná faktura |
+| 10.0.21| Prodej<br><ul><li>Prodejní nabídka</li><li>Prodejní objednávka</li><li>Potvrzení</li><li>Výdejka</li><li>Dodací list</li><li>Prodejní faktura</li><li>Dobropis</li><li>Vratka</li><li>Záhlaví – vedlejší náklady</li><li>Řádek - vedlejší náklady</li></ul>Nákup<br><ul><li>Nákupní objednávka</li><li>Potvrzení</li><li>Příjemka</li><li>Příjemka produktu</li><li>Nákupní faktura</li><li>Záhlaví – vedlejší náklady</li><li>Řádek - vedlejší náklady</li><li>Dobropis</li><li>Vratka</li><li>Nákupní žádanka</li><li>Řádek nákupní žádanky – vedlejší náklady</li><li>Požadavek na nabídku</li><li>Záhlaví požadavku na nabídku – vedlejší náklady</li><li>Řádek požadavku na nabídku – vedlejší náklady</li></ul>Zásoby<ul><li>Převodní příkaz – expedice</li><li>Převodní příkaz – příjem</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Podporované země/oblasti
 
-Výpočet daně lze spustit s podporovanými funkcemi lokalizace v následujících zemích/oblastech pro primární adresu právnické osoby: 
+Výpočet daně lze spustit s podporovanými funkcemi lokalizace. V následující tabulce jsou uvedeny země/oblasti pro primární adresu právnické osoby.
 
-Podporováno ve verzi 10.0.21:
-
-- Rakousko
-- Belgie
-- Dánsko
-- Estonsko
-- Finsko
-- Francie
-- Německo
-- Maďarsko
-- Island
-- Irsko
-- Itálie
-- Lotyšsko
-- Litva
-- Nizozemsko
-- Norsko
-- Polsko
-- Švédsko
-- Švýcarsko
-- Spojené království
-- Spojené státy
-
-Podporováno ve verzi 10.0.22:
-
-- Austrálie
-- Bahrajn
-- Kanada
-- Egypt
-- Hongkong
-- Kuvajt
-- Nový Zéland
-- Omán
-- Katar
-- Saúdská Arábie
-- Jižní Afrika
-- Spojené arabské emiráty
-
-Podporováno ve verzi 10.0.23:
-
-- Thajsko
-- Japonsko
-- Malajsie
-- Singapur
-
-Podporováno ve verzi 10.0.24:
-
-- Mexiko
-
-Podporováno ve verzi 10.0.26:
-
-- Čína
-- Česká republika
-- Španělsko
+| Verze | Země / oblast |
+|---------|----------------|
+| 10.0.26 | - Čína <br>- Česko<br>- Španělsko |
+| 10.0.24 | Mexiko |
+| 10.0.23 | - Thajsko <br>- Japonsko <br>- Malajsie <br>- Singapur |
+| 10.0.22 | - Austrálie<br>- Bahrajn <br>- Kanada<br>- Egypt <br>- Hongkong – zvláštní administrativní oblast <br>- Kuvajt <br>- Nový Zéland <br>- Omán <br>- Katar <br>- Saúdská Arábie <br>- Jihoafrická republika <br>- Spojené arabské emiráty |
+| 10.0.21 | - Rakousko <br>- Belgie <br>- Dánsko <br>- Estonsko <br>- Finsko <br>- Francie <br>- Německo <br>- Maďarsko <br>- Island <br>- Irsko <br>- Itálie <br>- Lotyšsko <br>- Litva <br>- Nizozemsko <br>- Norsko <br>- Polsko <br>- Švédsko <br>- Švýcarsko <br>- Spojené království <br>- Spojené státy |
 
 Pro libovolnou zemi/oblast, která není lokalizována společností Microsoft, lze také povolit a spustit výpočet daně s dalšími globálními funkcemi.
 

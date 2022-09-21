@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305216"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462350"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -40,18 +40,18 @@ Ve všech těchto aplikacích získáte přístup k nápovědě pro konkrétní 
 
 ![Podokno Nápověda.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
+## <a name="help-on-microsoft-docs"></a>Nápověda na Microsoft Docs
 
-Web docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) je výchozím zdrojem pro produktovou dokumentaci výše uvedených aplikací. Tento web nabízí následující možnosti:
+([Dokumentace Microsoft Dynamics 365](/dynamics365/)) na Microsoft Docs je výchozím zdrojem pro produktovou dokumentaci výše uvedených aplikací. Tento web nabízí následující možnosti:
 
 - **Přístup k nejaktuálnějšímu obsahu** – web poskytuje společnosti Microsoft rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Proto budete mít snadný přístup k aktuálním technickým informacím.
 - **Obsah, který napsali odborníci** - obsah na webu je otevřený příspěvkům členů komunity uvnitř i vně společnosti Microsoft.
 
-Obsah na docs.microsoft.com najdete pomocí libovolného vyhledávače. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu, například **site:docs.microsoft.com dynamics 365 "hledaný termín"**.
+Obsah na Microsoft Docs najdete pomocí libovolného vyhledávače. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu, například **site:docs.microsoft.com dynamics 365 "hledaný termín"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Získejte informace o změnách prostřednictvím kanálu RSS
 
-Chcete-li se přihlásit k odběru kanálu RSS všech aktualizací obsahu na docs.microsoft.com napříč finančními a provozními aplikacemi, použijte následující odkaz:
+Chcete-li se přihlásit k odběru kanálu RSS všech aktualizací obsahu v technické dokumentaci Microsoft napříč finančními a provozními aplikacemi, použijte následující odkaz:
 
 [Kanál RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ Do dokumentace můžete přispívat a provádět v ní úpravy. Chcete-li začí
 
 Video o tom, [Jak přispět k dokumentaci Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (viz výše), je obsaženo v kanálu Microsoft Dynamics 365 na YouTube.
 
-Více informací najdete v části [Příručka pro přispěvatele k dokumentaci](/contribute), kterou publikuje tým, který vytvořil web docs.microsoft.com.
+Více informací najdete v části [Průvodce zadáváním příspěvků do Microsoft Docs](/contribute), kterou publikuje tým, který vytvořil web Microsoft Docs.
 
 > [!NOTE]
 > V současnosti přijímáme pouze příspěvky do našeho anglického obsahu.
@@ -166,13 +166,13 @@ Můžete vytvořit nápovědu pro své uživatele pomocí vytvoření vlastních
 
 V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u názvu vyžadují přihlášení pomocí účtu, který je přidružen k plánu služby.
 
-| Lokalita | popis |
+| Web | Popis |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | Tento web hostuje nebo odkazuje na veškerou produktovou dokumentaci k Dynamics 365. |
+| [Dokumentace Microsoft Dynamics 365](/dynamics365/) | Tento web hostuje nebo odkazuje na veškerou produktovou dokumentaci k Dynamics 365. |
 | [Microsoft Learn](/learn/) | Tento web je bezplatný web výuky Microsoft eLearning. |
 | [Microsoft DynamicsSlužby  Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Tento web poskytuje cloudový pracovní prostor spolupráce, který mohou použít odběratelé a jejich partneři ke správě projektů z předprodeje k implementaci a operacím. Je užitečný ve všech fázích implementace. |
 | [Blog podpory](https://aka.ms/AXSupportBlog) | Tento web poskytuje tipy a triky publikované týmem podpory. |
-| [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Tento web hostuje obsah z předchozích verzí. |
+| [Předchozí verze](/previous-versions/dynamics/) | Tento web hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/) | Tento web hostuje blogy, fóra a videa. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Tento web obsahuje hodnocení a informace o prodeji. |
 
@@ -180,4 +180,3 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

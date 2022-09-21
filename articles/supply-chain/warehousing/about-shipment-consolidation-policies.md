@@ -1,5 +1,5 @@
 ---
-title: Zásady konsolidace dodávek
+title: Přehled zásad konsolidace dodávek
 description: Tento článek poskytuje přehled funkcí, které poskytují flexibilní konfiguraci zásad konsolidace dodávek.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903891"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427921"
 ---
-# <a name="shipment-consolidation-policies"></a>Zásady konsolidace dodávek
+# <a name="shipment-consolidation-policies-overview"></a>Přehled zásad konsolidace dodávek
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Před zavedením zásad konsolidace dodávek existovala funkce konsolidace jako 
 
 Dotazy se používají k identifikaci použitelné zásady konsolidace dodávek a poté upravitelná sada polí určuje, jak jsou řádky vytížení seskupeny na úrovni dodávky. (Tento vzorec se podobá vzorci, který následují šablony vln.) Kromě toho byla do každé zásady přidána možnost **Konsolidovat se stávajícími dodávkami**. Když je tato možnost zapnutá, postup *Uvolnění do skladu* nalezne dodávky pro konsolidaci vyhledáním mezi existujícími dodávkami, které byly vytvořeny na základě stejné zásady konsolidace. V tomto případě systém místo vytvoření nové vybere existující dodávku nebo náklad. Systém se však konsoliduje pouze se stávajícími dodávkami, které mají stav *Otevřeno*. Dodávky, které patří do uvolnění vlny se stavem *Uvolněno* nebo vyšší nebudou považovány za cíle pro konsolidace.
 
-Když jsou zpřístupněny zásady konsolidace dodávek, nastavení **Konsolidovat dodávku při uvolnění do skladu**, které bylo dříve k dispozici na stránce natavení **Sklady** je skryté. Pro usnadnění přechodu na novou funkci konsolidace dodávek vytváří funkce na stránce **Zásady konsolidace dodávek** výchozí zásadu, která automaticky zahrnuje staré nastavení pro stávající sklady. Po vytvoření této výchozí zásady nebude nastavení **Konsolidovat dodávku při uvolnění do skladu** na stránce **Sklady** již bráno v úvahu.
+Když je funkce *Zásady konsolidace dodávek* v systému zapnutá, nastavení **Konsolidovat dodávku při uvolnění do skladu**, které bylo dříve k dispozici na stránce natavení **Sklady**, je skryté. Pro usnadnění přechodu na novou funkci konsolidace dodávek vytváří funkce na stránce **Zásady konsolidace dodávek** výchozí zásadu, která automaticky zahrnuje staré nastavení pro stávající sklady. Po vytvoření této výchozí zásady nebude nastavení **Konsolidovat dodávku při uvolnění do skladu** na stránce **Sklady** již bráno v úvahu. Další informace viz [Konfigurace zásad konsolidace dodávky](configure-shipment-consolidation-policies.md).
 
 Můžete použít stránku **Uvolnění do skladu** pro ruční přepsání použitelné zásady konsolidace stejným způsobem, jakým můžete přepsat zásady plnění.
 

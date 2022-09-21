@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 35c999695ed33c4fc9731a5b8dd4d679cf55fa44
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9229867"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474062"
 ---
 # <a name="asynchronous-customer-creation-mode-faq"></a>Časté otázky k asynchronnímu režim vytváření zákazníka
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 V tomto článku jsou odpovědi na časté otázky týkající se režimu asynchronního vytváření zákazníků v Microsoft Dynamics 365 Commerce.
 
