@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347282"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542345"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -62,7 +62,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | --- | --- | --- | --- |
 | Akce | Výpočet skupin disponibility s akcemi povolen: *\#* | Tato funkce je nyní podporována. | Podporováno |
 | Základní kalendáře | Kalendáře používající základní kalendář: *\#* | Tato funkce je nyní podporována. | Podporováno | 
-| Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: *\#* | Tato funkce čeká na implementaci. V současné době jsou kódy dispozice dávky ignorovány, pokud je povolena optimalizace plánování. | Vlna verze 2022 2 |
+| Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: *\#* | Tato funkce čeká na implementaci. V současné době jsou kódy dispozice dávky ignorovány, pokud je povolena optimalizace plánování. | Vlna verze 2022 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Příslib na základě ověření dostupné kapacity (CTP) | Výchozí nastavení objednávky s datem dodání nastaveným na CTP: *\#* | V Supply Chain Management 10.0.28 a novějších proces nazvaný *CTP pro optimalizaci plánování* zpřístupní potvrzená data odeslání a přijetí po spuštění dynamického plánu. U starších verzí Supply Chain Management je starší nastavení CTP ignorováno, když je povolena optimalizace plánování. | Podporováno |
 | Kopírovat statický do dynamického plánu | Kopírování statického do dynamického plánu je povoleno na parametrech hlavního plánování. | Optimalizace plánování nekopíruje statický plán do dynamického plánu bez ohledu na toto nastavení. Obecně platí, že tento koncept je méně významný z důvodu rychlosti a úplného obnovení, které poskytuje optimalizace plánování. Pokud jsou použity dva nebo více plánů, je třeba pro každý plán spustit hlavní plánování. | Není k dispozici |
 | Potvrzení | Skupiny disponibility s nastavenou ochrannou dobou automatického potvrzení: *\#* | Ve verzi 10.0.7 a novějších je potvrzení podporováno jako samostatná dávková úloha potvrzení po dokončení hlavního plánování (za předpokladu , že ve [správě funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) byla povolena funkce *Automatické potvrzení pro optimalizaci plánování*). Všimněte si, že automatické potvrzení pro optimalizaci plánování je založeno na datu objednávky (počáteční datum), nikoli na datu požadavku (koncové datum). Toto chování zajišťuje, že k potvrzení plánovaných objednávek dojde včas, aniž by bylo nutné zahrnout dobu realizace do ochranné doby potvrzování. | Podporováno |

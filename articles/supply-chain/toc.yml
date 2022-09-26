@@ -204,11 +204,13 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain
                 - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
-        - name: Řešení potíží a nejčastější otázky
+        - name: "Řešení potíží a\_nejčastější otázky"
           href: supply-chain-management-troubleshooting.md
-        - name: Globalizace
+        - name: Globalization Studio
           items:
-            - name: Zdroje globalizace
+            - name: Přehled platformy Globalization Studio
+              href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
+            - name: Globalizační zdroje
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
             - name: Globalizační služby
               items:
@@ -1631,12 +1633,14 @@
               items:
                 - name: Skladové deníky
                   href: inventory/inventory-journals.md
-                - name: Pracovní postupy schválení skladového deníku
+                - name: Pracovní postupy schválení deníku zásob
                   href: inventory/inventory-journal-workflow.md
                 - name: Skladová místa
                   href: inventory/inventory-locations.md
                 - name: Stavy zásob
                   href: inventory/inventory-statuses.md
+                - name: "Použití dispozičního kódů dávek k\_označení dávek jako dostupných nebo nedostupných"
+                  href: inventory/batch-disposition-codes.md
                 - name: Vytvoření nového rozvržení skladu
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Udržování typů čárových kódů

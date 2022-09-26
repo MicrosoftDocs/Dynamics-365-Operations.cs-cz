@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427867"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520743"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.29 (říjen 2022)
 
@@ -35,7 +35,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Oblast funkce | Funkce | Další informace | Povolil/a |
 |---|---|---|---|
 | Zásoby a logistika | [Přidělení a rezervace položek WMS ve viditelnosti zásob](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Již brzy | Ve výchozím nastavení povoleno |
-| Zásoby a logistika | [Přednačtení přehlednější v seznamech zásob na skladě](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Již brzy | Ve výchozím nastavení povoleno |
+| Zásoby a logistika | [Přednačtení přehlednější v seznamech zásob na skladě](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Použití aplikace Inventory Visibility](../inventory/inventory-visibility-power-platform.md) | Aktivováno konfigurací služeb |
 | Automatizace dodávek na zakázku | [Automatizace dodávek na zakázku](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Automatizace dodávek na zakázku](../master-planning/make-to-order-supply-automation.md) | Správa funkcí:<br>*Automatizace dodávek na zakázku* |
 | Plánování | [Zobrazení a použití podrobných přehledů pro DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Plánování materiálových požadavků řízené poptávkou – přehled](../master-planning/planning-optimization/ddmrp-overview.md) | Správa funkcí:<br>*(Preview) DDMRP pro optimalizaci plánování* |
 | Řízení výroby | [Zpřístupnění hotového zboží fyzicky před odesláním do deníků](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Zpřístupnění hotového zboží fyzicky před odesláním do deníků](../production-control/deferred-posting.md) | Správa funkcí:<br>*(Preview) Před odesláním do deníků zpřístupněte hotové výrobky fyzicky* |

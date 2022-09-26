@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897567"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520830"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Rozdíly mezi integrovaným hlavním plánováním a optimalizací plánování
 
@@ -26,7 +26,7 @@ Výsledky optimalizace plánování se mohou lišit od výsledků z integrované
 | Funkce | Aktuální chování v optimalizaci plánování |
 |---|---|
 | Produkty se skutečnou hmotností | Produkty se skutečnou hmotností jsou považovány za obvyklé produkty.|
-| Rozšiřitelné rozměry | Rozšiřitelné rozměry jsou u plánovaných objednávek prázdné, i když je zaškrtnuto políčko **Plán pokrytí podle dimenze** na stránce **Skupiny dimenzí úložiště** nebo **Skupiny sledovacích dimenzí**. |
+| Rozšiřitelné rozměry | Optimalizace plánování nepodporuje rozšiřitelné dimenze. Pokud používáte optimalizaci plánování, rozšiřitelné dimenze jsou u plánovaných objednávek prázdné, i když je zaškrtnuto políčko **Plán pokrytí podle dimenze** na stránce **Skupiny dimenzí úložiště** nebo **Skupiny sledovacích dimenzí**. |
 | Filtrovaná výrobní spuštění | Podrobnosti viz [Plánování výroby - filtry](production-planning.md#filters). |
 | Plánování prognóz | Plánování prognóz není podporováno. Doporučujeme použít hlavní plánování, kde je k hlavnímu plánu přiřazen model prognózy. |
 | Číselné sekvence pro plánované objednávky | Posloupnosti čísel pro plánované objednávky nejsou podporovány. Plánovaná čísla objednávek jsou generována na straně služby. Plánované číslo objednávky je obvykle zobrazeno s 10 číslicemi, ale sekvence je ve skutečnosti postavena na 20 znacích, přičemž 10 číslic je přiděleno pro počet běhů plánování a dalších 10 číslic pro počet plánovaných objednávek. |
@@ -38,6 +38,7 @@ Výsledky optimalizace plánování se mohou lišit od výsledků z integrované
 | Dopravní kalendáře | Hodnota ve sloupci **Přepravní kalendář** na stránce **Způsoby dodání** je ignorována. |
 | Kód min/max pokrytí bez hodnot| Když u vestavěného plánovacího modulu použijete kód min/max pokrytí, kde nejsou nastaveny žádné minimální nebo maximální hodnoty, modul plánování považuje kód pokrytí za žádost a pro každou žádost vytvoří jednu objednávku. S optimalizací plánování systém vytvoří jednu objednávku denně, aby pokryl celou částku za daný den.  |
 | Čisté požadavky a ručně vytvořené plánované objednávky | S vestavěným plánovacím jádrem se ručně vytvořené objednávky dodávek pro položku automaticky objeví mezi čistými požadavky na tuto položku. Například při vytváření nákupní objednávky z prodejní objednávky se nákupní objednávka objeví na stránce **Čisté požadavky**, aniž by vyžadovaly jakékoli předchozí akce. Je to proto, že vestavěný plánovací modul zaznamenává transakce zásob do tabulky `inventLogTTS` a ukazuje změny dynamických plánů na stránce **Čisté požadavky**. S optimalizací plánování se však ručně vytvořené objednávky neobjeví mezi čistými požadavky položky, dokud nebude spuštěna Optimalizace plánování (s plánem, který položku zahrnuje), nebo dokud nevyberete možnost **Aktualizace \> Hlavní plánování** v podokně akcí na stránce **Čisté požadavky**, která spustí hlavní plánování pro položku. Další informace o tom, jak pracovat se stránkou **Čisté požadavky**, najdete v tématu [Čisté požadavky a informace o doložení s Optimalizací plánování](net-requirements.md). |
+| Přiřazení prostředku | Při práci s nekonečnou kapacitou přiřadí vestavěný modul hlavního plánování všechny plánované objednávky ke stejnému zdroji v dané skupině prostředků. Optimalizace plánování toto zlepšuje náhodným výběrem prostředků, takže různé výrobní zakázky mohou využívat různé prostředky. Chcete-li použít stejný prostředek pro všechny plánované objednávky, musíte tento prostředek zadat v trase. |
 
 ## <a name="additional-resources"></a>Další prostředky
 

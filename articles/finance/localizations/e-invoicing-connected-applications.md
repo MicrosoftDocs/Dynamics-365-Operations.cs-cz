@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277324"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524682"
 ---
 # <a name="connected-applications"></a>Připojené aplikace
 
@@ -35,7 +35,7 @@ Dostupnost parametrů aplikací Finance nebo Supply Chain Management v RCS je u�
 ## <a name="create-a-connected-application"></a>Vytvoření propojené aplikace
 
 1. Přihlaste se k účtu RCS.
-2. V pracovním prostoru **Funkce globalizace** v části **Prostředí** vyberte dlaždici **Elektronická fakturace**.
+2. V pracovním prostoru **Funkce globalizace** v části **Související odkazy** vyberte dlaždici **Nastavení prostředí**.
 3. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Propojené aplikace**.
 4. Zvolte **Nový** pro vytvoření propojené aplikace.
 5. Do pole **Název** zadejte název aplikace, ke které se má provést připojení.

@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Aktualizace platformy pro verzi 10.0.28 (srpen 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Aktualizace platformy pro verzi 10.0.27 (červenec 2022)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -386,9 +384,9 @@
                   items:
                     - name: Nastavení místních projektů v LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Nastavení a nasazení místních prostředí (Platform Updates 41 a novější)
+                    - name: Nastavení a nasazení místních prostředí (aktualizace platformy 41 a novější)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Nastavení a nasazení místních prostředí (Platform Updates 12 až 40)
+                    - name: Nastavení a nasazení místních prostředí (aktualizace platformy 12 až 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
@@ -510,7 +508,9 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurace samostatných vývojových prostředí
                   href: dev-tools/configure-developer-vm.md
-                - name: 'Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce'
+                - name: Zabezpečení samostatných vývojových prostředí
+                  href: dev-tools/secure-developer-vm.md
+                - name: "Časté dotazy k\_vývoji a\_vytváření virtuálních počítačů, které nepovolují přístup správce"
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Nastavení VHD ke stažení pro první použití
                   href: dev-tools/vhd-setup.md
@@ -1562,7 +1562,7 @@
               href: lcs-solutions/database-backup-lcs-solutions.md
             - name: Lokalizace a funkce týkající se předpisů
               items:
-                - name: Zdroje globalizace
+                - name: Globalizační zdroje
                   href: lcs-solutions/country-region.md
                 - name: Klasifikace lokalizačních funkcí
                   href: lcs-solutions/classify-localization-features.md

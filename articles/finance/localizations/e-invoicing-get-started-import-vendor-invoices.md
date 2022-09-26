@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283138"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524738"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Použití služby elektronické fakturace k importu faktur dodavatele
 
@@ -107,7 +107,8 @@ Dokončete kroky v následujících dvou částech a nastavte různé typy impor
 2. Vyberte **Kontextový model zákaznické faktury** a pak vyberte **Vytvořit konfiguraci** > **Odvozeno z názvu: kontextový model faktury zákazníka, Microsoft** k vytvoření odvozené konfigurace.
 3. Ve verzi **Koncept** vyberte **Návrhář** a ve stromu **Datový model** vyberte **Mapovat model na zdroj dat**.
 4. Ve stromu **Definice** vyberte **DataChannel** a poté vyberte **Návrhář**.
-5. Ve stromu **Zdroj dat** rozbalte kontejner **$Context\_Channel**. V poli **Hodnota** vyberte **Upravit** a zadejte název datového kanálu. Jedná se o název kanálu zadaný v konfiguraci datového kanálu pro funkci elektronického výkaznictví v RCS. 
+5. Ve stromu **Zdroj dat** rozbalte kontejner **$Context\_Channel**. 
+6. V poli **Hodnota** vyberte **Upravit** > **Upravit vzorec** a zadejte název datového kanálu. Jedná se o název kanálu zadaný v konfiguraci datového kanálu pro funkci elektronického výkaznictví v RCS. 
 7. Zvolte **Uložit** a zavřete stránku.
 8. Zavřete stránku.
 9. Vyberte odvozenou konfiguraci, kterou jste právě vytvořili, z pole **Kontextový model zákaznické faktury** a na záložce s náhledem **Verze** vyberte **Změnit stav** > **Dokončeno**.

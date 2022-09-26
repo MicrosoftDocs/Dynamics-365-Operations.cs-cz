@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 861cd1b2cf43552cdb040a888a933063e38d25ed
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: ebf58067754dbca0e93b5477b2fbee361355e029
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423620"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538641"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Katalog školení pro prodej a marketing pro Microsoft Partnery Dynamics 365 Supply Chain Management
 
@@ -29,15 +29,14 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 | Obsah | Popis | Formát | Délka |
 |---------|-------------|--------|--------|
-| [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
-| [Začínáme s finančními a provozními aplikacemi](/learn/paths/get-started-finance-operations/) | Informace, jak finanční a provozní aplikace podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s finančními a provozními aplikacemi se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
+| [Základy Dynamics 365 a Power Platform](/training/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
+| [Začínáme s finančními a provozními aplikacemi](/training/paths/get-started-finance-operations/) | Informace, jak finanční a provozní aplikace podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s finančními a provozními aplikacemi se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
 | [Samozřejmě MB-900T01-A: Základy produktu Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Tento kurz se seznámí s funkcí a obchodní hodnotou Dynamics 365. Kurz bude zahrnovat aplikace Dynamics 365, Power Platform, koncepty cloudu, model zabezpečení a informace o licencích. | Instruktor – osobně vedené nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
 
 ## <a name="exam"></a>Zkouška<a name="exam"></a>
 
 | Obsah  | popis  | Formát |
 |----------|--------------|--------|
-| [Základy produktu Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prokažte, že rozumíte Microsoft Dynamics 365: Power Platform; cloudové pojmy, možnosti licencování a možnosti nasazení a vydání. | Zkouška; náklady se liší podle oblasti. |
+| [Základy produktu Dynamics 365](/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prokažte, že rozumíte Microsoft Dynamics 365: Power Platform; cloudové pojmy, možnosti licencování a možnosti nasazení a vydání. | Zkouška; náklady se liší podle oblasti. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

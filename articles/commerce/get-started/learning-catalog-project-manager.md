@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6963a65481f8e7f23cc94cbeba8f40e91451e2f9
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: ef4849ee9fd62662541eef35c59d281dd9057a4c
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423792"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538890"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-commerce"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 | Obsah | Popis | Formát | Délka |
 |---------|-------------|--------|--------|
-| [Začínáme s aplikací Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)  | Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Dynamics 365 Commerce umožňuje vytvářet věrnost značce na základě individuálních oslovení zákazníků, zvýšit výnosy s lepší produktivitou zaměstnanců, optimalizovat operace s cílem snížit náklady a zvýšit efektivitu dodavatelského řetězce, a tak dosáhnout lepších obchodních výsledků. | Libovolná online školení vlastním tempem   | 2 hodin   |
-| [Začínáme s aplikací Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection je cloudové řešení určené pro elekrtonický obchod, kamenný obchod a omnikanálové obchodníky, kterým pomáhají chránit příjmy a reputaci poskytováním nástrojů a schopností ke snížení podvodů a zneužívání, snížení provozních nákladů a zvýšení míry přijetí, a zároveň chránit uživatelské účty před podvody. | Libovolná online školení vlastním tempem | 35 minut |
+| [Začínáme s aplikací Dynamics 365 Commerce](/training/paths/get-started-dynamics-365-commerce/)  | Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Dynamics 365 Commerce umožňuje vytvářet věrnost značce na základě individuálních oslovení zákazníků, zvýšit výnosy s lepší produktivitou zaměstnanců, optimalizovat operace s cílem snížit náklady a zvýšit efektivitu dodavatelského řetězce, a tak dosáhnout lepších obchodních výsledků. | Libovolná online školení vlastním tempem   | 2 hodin   |
+| [Začínáme s aplikací Dynamics 365 Fraud Protection](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection je cloudové řešení určené pro elekrtonický obchod, kamenný obchod a omnikanálové obchodníky, kterým pomáhají chránit příjmy a reputaci poskytováním nástrojů a schopností ke snížení podvodů a zneužívání, snížení provozních nákladů a zvýšení míry přijetí, a zároveň chránit uživatelské účty před podvody. | Libovolná online školení vlastním tempem | 35 minut |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

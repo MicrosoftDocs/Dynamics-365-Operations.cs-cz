@@ -2,7 +2,7 @@
 title: Aktualizace procesu
 description: Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace při změnách aplikací a platforem.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178435"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520803"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
 _**Platí pro:** Human Resources na samostatné infrastruktuře_ 
 
 > [!NOTE]
-> Od července 2022 nebude možné v samostatné infrastruktuře Human Resources zřizovat nová prostředí Human Resources a projekty Microsoft Dynamics Lifecycle Services (LCS) na něm nelze vytvářet. Zákazníci mohou nasadit prostředí Human Resources na finanční a provozní infrastrukturu. Více informací viz [Zřízení Human Resources ve finanční a provozní infrastruktuře](/hr-admin-setup-provision-fo.md).
+> Od července 2022 nebude možné v samostatné infrastruktuře Human Resources zřizovat nová prostředí Human Resources a projekty Microsoft Dynamics Lifecycle Services (LCS) na něm nelze vytvářet. Zákazníci mohou nasadit prostředí Human Resources na finanční a provozní infrastrukturu. Více informací viz [Zřízení Human Resources ve finanční a provozní infrastruktuře](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Proces aktualizace a opravy hotfix v infrastruktuře finančních a provozních aplikací se liší od procesu samostatných aktualizací a oprav hotfix pro Human Resources. Informace o procesu upgradu viz [Proces přechodu na poslední aktualizaci financí a provozu](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Další informace o hotfixech naleznete v tématu [Stažení oprav hotfix z webu Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

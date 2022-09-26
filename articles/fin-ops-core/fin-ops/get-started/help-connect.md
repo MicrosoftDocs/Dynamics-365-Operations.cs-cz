@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.form: SystemParameters
-ms.openlocfilehash: 2c45a203303181c7ea23e20f8fa1bdce1c827aa2
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 75f3cc1b76b2a38d4004c4fa3f86a528a7eebc3f
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462217"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538516"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro finanční a provozní aplikace
 
@@ -37,7 +37,7 @@ Finanční a provozní aplikace zahrnují koncepční přehledy a další témat
 
 [![Architektura nápovědy.](./media/help-architecture.png)](./media/help-architecture.png)
 
-Systém nápovědy v produktu stahuje články z Microsoft Docs a dalších připojených webů. Načítá také průvodce záznamem úloh, které jsou uloženy v modelování podnikových procesů v Microsoft Dynamics Lifecycle Services (LCS).
+Systém nápovědy v produktu stahuje články z Microsoft Learn a dalších připojených webů. Načítá také průvodce záznamem úloh, které jsou uloženy v modelování podnikových procesů v Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="adding-task-guides"></a>Přidání průvodců záznamem úloh
 
