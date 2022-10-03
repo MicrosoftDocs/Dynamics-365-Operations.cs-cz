@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387012"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589082"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Hromadné nasazení zapečetěných samoobslužných komponent Commerce
 
@@ -47,7 +47,7 @@ Následující tabulka ukazuje oddělovače, které lze použít při prováděn
 | -EnvironmentId | ID prostředí. |
 | -HardwareStationAppInsightsInstrumentationKey | Klíč instrumentace hardwarové stanice AppInsights. |
 | Nainstalovat | Parametr, který určuje, zda se má nainstalovat komponenta, kterou tento instalační program poskytuje. Tento parametr je vyžadován k provedení instalace a nemá úvodní pomlčku. |
-| -InstallOffline | U Modern POS tento parametr určuje, že by měla být nainstalována a konfigurována také offline databáze. Použijte také parametr **-SQLServerName**. V opačném případě se instalační program pokusí najít výchozí instanci, která splňuje požadavky. |
+| -InstallOffline | U Modern POS tento parametr určuje, že by měla být nainstalována a konfigurována také offline databáze. Použijte také parametr **-SQLServerName**. V opačném případě se instalační program pokusí najít výchozí instanci, která splňuje požadavky. Při použití ověřování Azure Active Directory (Azure AD) nebude POS offline fungovat, protože je vždy vyžadováno online připojení. |
 | -Port | Port, který by měl být přidružen a používán virtuálním adresářem Retail Serveru. Pokud není nastaven žádný port, použije se výchozí port 443. |
 | -Register | ID pokladny, jak je uvedeno na stránce **Pokladny** v centrále. |
 | -RetailServerAadClientId | ID klienta Azure AD, které by měl Retail Server používat při komunikaci s centrálou. |

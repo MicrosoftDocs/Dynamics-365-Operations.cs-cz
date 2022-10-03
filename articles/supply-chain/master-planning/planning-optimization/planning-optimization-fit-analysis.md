@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542345"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591843"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -94,7 +94,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Výrobní | Verze receptury s výtěžností: *\#* | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignoruje výtěžnost, která je přidružena k verzi receptury. | Vlna verze 2022 2 |
 | Výrobní | Plány včetně pořadí: *\#* | Tato funkce čeká na implementaci. V současnosti je pořadí ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: *\#* | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | Budoucí vlna |
-| Výrobní | Zdroje naplánované s omezenou kapacitou: *\#* | Tato funkce čeká na implementaci. Zdroje, které jsou naplánovány s omezenou kapacitou, jsou aktuálně ignorovány, pokud je povolena optimalizace plánování. Plánování je provedeno na základě výchozí doby realizace produktu. | Vlna verze 2022 2 |
+| Výrobní | Zdroje naplánované s omezenou kapacitou: *\#* | Tato funkce je nyní podporována.| Podporováno |
 | Výrobní | Postupy používané při plánování: *\#* | Tato funkce je podporována. | Podporováno |
 | Výrobní | Rezervace řádku prodeje pomocí rozpadu: *\#* | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | Budoucí vlna |
 | Výrobní | Plánování s rozpadem výrobních zakázek: *\#* | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | Budoucí vlna |

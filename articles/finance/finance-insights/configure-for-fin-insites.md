@@ -2,7 +2,7 @@
 title: Konfigurace Finance Insights
 description: Tento článek vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861409"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573170"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurace Finance Insights
 
@@ -39,7 +39,7 @@ Pro nasazení prostředí postupujte takto.
 1. V LCS vytvořte nebo aktualizujte prostředí Dynamics 365 Finance. Prostředí vyžaduje verzi aplikace 10.0.21 nebo novější.
 
     > [!NOTE]
-    > Prostředí musí mít vysokou dostupnost (HA) v prostředí. (Tento typ prostředí se také nazývá prostředí 2. úrovně.) Další informace najdete v tématu [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > Prostředí musí mít vysokou dostupnost (HA) v prostředí. (Tento typ prostředí se také nazývá prostředí 2. úrovně.) Další informace najdete v tématu [Plánování prostředí](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Demo data Contoso neobsahují dostatek historických dat pro adekvátní trénink predikčního modelu. 
 
@@ -51,13 +51,16 @@ Ověřte, že je dokončeno následující nastavení:
 
 - Máte přístup **Správce systému** a **Kustomizer systému** v centru pro správu Power Portal.
 - Licence Dynamics 365 Finance nebo ekvivalentní licence je použita na uživatele, který instaluje doplněk Finance insights.
+- Následující aplikace Azure AD jsou registrovány v Azure AD.
 
-Následující aplikace Azure AD jsou registrovány v Azure AD.
+    |  Aplikace                             | ID aplikace                               |
+    |------------------------------------------|--------------------------------------|
+    | Mikroslužby CDS Microsoft Dynamics ERP | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Přihláška                             | ID aplikace                               |
-|------------------------------------------|--------------------------------------|
-| Mikroslužby CDS Microsoft Dynamics ERP | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    Chcete-li ověřit, zda je aplikace registrována v Azure AD, zkontrolujte seznam **Všechny aplikace**. Další podrobnosti viz [Zobrazení podnikových aplikací](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    Pokud není aplikace registrována v Azure AD, kontaktujte podporu.
+  
 ## <a name="configure-dataverse"></a>Konfigurace služby Dataverse
 
 Ke konfiguraci Dataverse pro Finance Insights proveďte následující kroky.

@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 0f005352970ec3dadb178dfafeaf4f7e36f8c18d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279803"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573298"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
@@ -186,9 +186,9 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 
     | Daňová skupina    | Kódy daně           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. Na kartě **Daňová skupina zboží** vyberte sloupec **Daňová skupina zboží**, přidejte jej do matice jako vstupní podmínku a poté přidejte řádky pro zachování kmenových dat daňové skupiny zboží.
@@ -204,11 +204,11 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 
     Následuje příklad.
 
-    | Obchodní proces | Odeslat z | Odeslat do | Daňová skupina    |
+    | Obchodní proces | Odeslat z | Místo dodání | Daňová skupina    |
     | ---------------- | --------- | ------- | ------------ |
-    | Prodej.            | DEU       | DEU     | DEU_Domestic |
-    | Prodej.            | DEU       | FRA     | DEU_EU       |
-    | Prodej            | BEL       | BEL     | BEL_Domestic |
+    | Prodej            | DEU       | DEU     | DEU_Dom |
+    | Prodej            | DEU       | FRA     | DEU_EU       |
+    | Prodej            | BEL       | BEL     | BEL_Dom |
     | Prodej            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
