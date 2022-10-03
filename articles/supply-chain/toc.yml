@@ -1799,13 +1799,15 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Plánování výroby
                   href: master-planning/planning-optimization/production-planning.md
-                - name: Hlavní plánování pro produkty s omezenou životností
+                - name: "Hlavní plánování pro produkty s\_omezenou trvanlivostí"
                   href: master-planning/planning-optimization/shelf-life.md
-                - name: Plánování s nekonečnou kapacitou
+                - name: "Plánování s\_nekonečnou kapacitou"
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: Plánování s výběrem prostředků na základě schopností
+                - name: "Plánování a\_rozvrhování konečné kapacity"
+                  href: master-planning/planning-optimization/finite-capacity.md
+                - name: "Plánování s\_výběrem prostředků na základě schopností"
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Plánování založené na prioritách
+                - name: Plánování na základě priority
                   href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Plánování materiálových požadavků řízené poptávkou (DDMRP)
                   items:
