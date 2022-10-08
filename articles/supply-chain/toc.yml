@@ -1749,21 +1749,11 @@
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT Intelligence
           items:
-            - name: Domovská stránka IoT Intelligence
+            - name: Funkce IoT Intelligence byla nahrazena doplňkem Sensor Data Intelligence
               href: iot/iot-intelligence-home-page.md
-            - name: Nastavení zdrojů Azure
-              href: iot/iot-azure-setup.md
-            - name: Formáty schémat zpráv pro centrum IoT
-              href: iot/iot-schema-format.md
-            - name: Nastavení metrik
-              href: iot/iot-metrics-setup.md
-            - name: Nastavení scénáře
-              href: iot/iot-scenario-setup.md
-            - name: Sledování a správa
-              href: iot/iot-management.md
         - name: Hlavní plánování
           items:
-            - name: Domovská stránka Hlavní plánování
+            - name: Domovská stránka hlavního plánování
               href: master-planning/master-planning-home-page.md
             - name: Migrace na optimalizaci plánování pro hlavní plánování
               href: master-planning/new-master-planning-engine.md

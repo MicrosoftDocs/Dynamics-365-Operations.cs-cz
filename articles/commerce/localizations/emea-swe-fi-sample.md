@@ -2,19 +2,19 @@
 title: Ukázka integrace kontrolní jednotky pro Švédsko
 description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Švédsko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275059"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631255"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Ukázka integrace kontrolní jednotky pro Švédsko
 
@@ -103,7 +103,7 @@ Postupujte podle kroků pro nastavení fiskální integrace popsané v části [
 
 1. [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Také si všimněte nastaveních pro proces fiskální registrace, který je [specifický pro tuto ukázku integrace kontrolní jednotky](#set-up-the-registration-process).
 1. [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Povolit ruční provedení zápisu odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Povolení ručního provedení odložené fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurace komponent kanálu](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Nastavení procesu registrace

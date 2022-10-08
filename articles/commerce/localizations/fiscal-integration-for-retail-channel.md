@@ -2,19 +2,19 @@
 title: Přehled fiskální integrace pro kanály Commerce
 description: Tento článek obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286492"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631229"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
@@ -95,16 +95,20 @@ Tato konfigurace se používá, když je v místní síti obchodu přítomno fyz
 
 Architektura fiskální integrace poskytuje následující možnosti k řešení problémů během fiskální registrace:
 
-- **Opakovat** – Operátoři mohou tuto možnost využít, pokud lze selhání vyřešit rychle, a fiskální registraci lze znovu spustit. Tuto možnost lze například použít, pokud není fiskální zařízení připojeno, ve fiskální tiskárna došel papír nebo je ve fiskální tiskárně zaseknutý papír.
-- **Zrušit** – Tato možnost umožňuje operátorům odložit fiskální registraci aktuální transakce nebo události, pokud selže. Po odložení registrace může operátor pokračovat v práci na POS a může dokončit jakoukoli operaci, pro kterou není požadována fiskální registrace. Když nastane událost vyžadující fiskální registraci v POS (například otevření nové transakce), automaticky se zobrazí dialogové okno pro zpracování chyb, které oznamuje operátorovi, že předchozí transakce nebyla správně zaregistrována, a poskytuje možnosti zpracování chyb.
-- **Přeskočit** – Operátoři mohou tuto možnost využít, pokud lze fiskální registraci vynechat za určitých podmínek a lze pokračovat v pravidelných operacích na POS. Tuto možnost lze například použít, pokud lze obchodní transakci, u níž fiskální registrace selhala, zaregistrovat ve zvláštním papírovém deníku.
-- **Označit jako registrované** – Operátoři mohou tuto možnost použít, když byla transakce skutečně zaregistrována ve fiskálním zařízení (například byla vytištěna fiskální příjemka), ale došlo k chybě, když byla fiskální odpověď uložena do databáze kanálů.
-- **Odložit** – Operátoři mohou tuto možnost použít, když transakce nebyla zaregistrována, protože registrační služba nebyla k dispozici. 
+- **Opakovat** – Operátor může tuto možnost využít, pokud lze selhání vyřešit rychle, a fiskální registraci lze znovu spustit. Tuto možnost lze například použít, pokud není fiskální zařízení připojeno, ve fiskální tiskárna došel papír nebo je ve fiskální tiskárně zaseknutý papír.
+- **Zrušit** – Tato možnost umožňuje operátorovi odložit fiskální registraci aktuální transakce nebo události, pokud selže. Po odložení registrace může operátor pokračovat v práci na POS a může dokončit jakoukoli operaci, pro kterou není požadována fiskální registrace. Když nastane událost vyžadující fiskální registraci v POS (například otevření nové transakce), automaticky se zobrazí dialogové okno pro zpracování chyb, které oznamuje operátorovi, že předchozí transakce nebyla správně zaregistrována, a poskytuje možnosti zpracování chyb.
+- **Přeskočit** – Tuto možnost může operátor využít, když není možné dokončit fiskální registraci aktuální transakce nebo události, například když je fiskální tiskárna mimo provoz **a** fiskální registraci lze za určitých podmínek vynechat. Tuto možnost lze například použít, pokud lze obchodní transakci, u níž fiskální registrace selhala, zaregistrovat ve zvláštním papírovém deníku. Po přeskočení fiskální registrace lze pokračovat v běžném provozu na POS. 
+- **Označit jako registrované** – Operátor může tuto možnost použít, když byla aktuální transakce nebo událost skutečně zaregistrována ve fiskálním zařízení, například byla vytištěna fiskální příjemka, ale dochází k chybě při ukládání fiskální odpovědi do databáze kanálů. Po označení aktuální transakce nebo události jako registrované lze pokračovat v běžném provozu na POS.
+- **Odložit** – Operátor může tuto možnost použít, když transakce nebyla zaregistrována, protože registrační zařízení nebo služba není k dispozici **a** platí jedno z následujících:
+    - Existuje možnost záložní fiskální registrace a je možné pokračovat v procesu fiskální registrace pro aktuální transakci. Například místní [fiskální zařízení](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) může být záložní možností pro online službu fiskální registrace, když tato služba není k dispozici.
+    - Fiskální registraci lze provést později jinými prostředky, než je rámec fiskální integrace. Například odložené transakce mohou být později fiskálně registrovány v dávce [samostatnou funkcí](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    Po odložení aktuální transakce nebo události lze pokračovat v běžném provozu na POS.
 
-> [!NOTE]
-> Možnosti **Přeskočit**, **Označit jako registrované** a **Odložit** je třeba aktivovat v procesu fiskální registrace před jejich použití. Kromě toho musí být udělena odpovídající oprávnění operátorům.
+> [!WARNING]
+> Možnosti **Přeskočit**, **Označit jako registrované** a **Odložit** by měly být chápány jako nouzové možnosti a měly by se používat pouze ve výjimečných případech. Tyto možnosti řešení chyb prodiskutujte se svým právním nebo daňovým poradcem a před jejich povolením použijte dobrý úsudek. Tyto možnosti je třeba aktivovat v procesu fiskální registrace před jejich použití. Aby je operátoři nepoužívali pravidelně, musí jim být udělena odpovídající oprávnění.
 
-Možnosti **Přeskočit**, **Označit jako registrované** a **Odložit** umožňují informačním kódům zaznamenat některé konkrétní informace o selhání, jako je důvod selhání nebo odůvodnění pro přeskočení fiskální registrace nebo označení transakce jako registrované. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+[Fiskální transakce](#storing-fiscal-response-in-fiscal-transaction) je vytvořena, když jsou vybrány možnosti **Přeskočit**, **Označit jako registrované** nebo **Odložit**, ale fiskální transakce neobsahuje fiskální odpověď. To vám umožní zachytit událost selhání fiskální registrace. Tyto možnosti také umožňují informačním kódům zaznamenat některé konkrétní informace o selhání, jako je důvod selhání nebo odůvodnění pro přeskočení fiskální registrace nebo označení transakce jako registrované. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Volitelná fiskální registraci
 
@@ -112,11 +116,7 @@ Fiskální registrace může být povinná pro některé operace, ale volitelná
 
 ### <a name="manually-rerun-fiscal-registration"></a>Ruční opětovné spuštění fiskální registrace
 
-Pokud byla fiskální registrace transakce nebo události odložena po selhání (například pokud operátor zvolil **Zrušit** v dialogovém okně zpracování chyb), můžete ručně spustit fiskální registraci vyvoláním příslušné operace. Více informací naleznete v části [Povolit ruční provedení odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Možnost odložit
-
-Možnost **Odložit** umožňuje pokračovat v procesu fiskální registrace, pokud aktuální krok selže. Lze jej použít, pokud existuje možnost zálohy fiskální registrace.
+Pokud byla fiskální registrace transakce nebo události odložena po selhání (například pokud operátor zvolil **Zrušit** v dialogovém okně zpracování chyb), můžete ručně spustit fiskální registraci vyvoláním příslušné operace. Více informací naleznete v části [Povolit ruční provedení odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Kontrola stavu fiskální registrace
 
@@ -138,7 +138,7 @@ Pokud se kontrola stavu nezdaří, POS zobrazí dialogové okno kontroly stavu. 
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Ukládání fiskální odezvy ve fiskální transakci
 
-Když je fiskální registrace transakce nebo události úspěšná, v databázi kanálů se vytvoří fiskální transakce a bude propojena s původní transakcí nebo událostí. Obdobě pokud zvolíte **Přeskočit** nebo **Označit jako registrované** pro nezdařenou fiskální registrací, tyto informace se uloží ve fiskální transakci. Fiskální transakce drží fiskální odezvu fiskálního zařízení nebo služby. Pokud proces fiskální registrace sestává z několika kroků, vytvoří se fiskální transakce pro každý krok procesu, který měl za následek úspěšnou nebo neúspěšnou registraci.
+Když je fiskální registrace transakce nebo události úspěšná, v databázi kanálů se vytvoří fiskální transakce a bude propojena s původní transakcí nebo událostí. Obdobě pokud zvolíte možnost **Přeskočit**, **Označit jako registrované** nebo **Odložit** pro nezdařenou fiskální registraci, tyto informace se uloží ve fiskální transakci. Fiskální transakce drží fiskální odezvu fiskálního zařízení nebo služby. Pokud proces fiskální registrace sestává z několika kroků, vytvoří se fiskální transakce pro každý krok procesu, který měl za následek úspěšnou nebo neúspěšnou registraci.
 
 Fiskální transakce jsou přeneseny do Headquarters podle *úlohy P*, společně s maloobchodními transakcemi. Na záložce s náhledem **Fiskální transakce** stránky **Transakce obchodu** uvidíte fiskální transakce, které jsou napojeny na transakce.
 

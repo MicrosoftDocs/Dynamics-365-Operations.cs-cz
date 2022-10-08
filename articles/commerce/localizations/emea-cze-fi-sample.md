@@ -2,19 +2,19 @@
 title: Ukázka integrace fiskální služby pro Českou republiku
 description: V tomto článku je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313740"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631239"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -188,7 +188,7 @@ Postupujte podle kroků pro nastavení fiskální integrace popsané v části [
 
 1. [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Kromě toho si všimněte nastavení pro proces fiskální registrace, který je [specifický pro tuto ukázku služby fiskální registrace](#set-up-the-registration-process).
 1. [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Povolit ruční provedení zápisu odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Povolení ručního provedení odložené fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurace komponent kanálu](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Nastavení procesu registrace

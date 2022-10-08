@@ -2,19 +2,19 @@
 title: Nastavení fiskální integrace pro obchodní kanály
 description: Tento článek obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276122"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631416"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
@@ -30,9 +30,10 @@ Chcete-li povolit funkce související s funkcí fiskální integrace pro obchod
 1. Najděte a povolte následující funkce:
 
     - **Přímá fiskální integrace z registrů POS** – Tato funkce rozšiřuje rámec fiskální integrace přidáním schopnosti vytvářet fiskální konektory, které budou provozovány v místě prodeje (POS). Tento typ konektoru komunikuje s fiskálním zařízením nebo službou, která poskytuje aplikační programovací rozhraní HTTP (API) a nevyžaduje vyhrazený fyzický stroj v obchodě. Tato funkce například umožňuje fiskální integraci pro mobilní zařízení bez potřeby sdílené hardwarové stanice.
-    - **Přepsání technického profilu fiskální integrace** – Tato funkce umožňuje rozšíření konfigurace fiskální integrace a přidává možnost kontroly parametrů připojení na stránce nastavení registru POS. Když je tato funkce povolena, můžete přepsat parametry technického profilu.
+    - **Přepsání technického profilu fiskální integrace** – Tato funkce umožňuje rozšíření konfigurace fiskální integrace a přidává možnost přepsání parametrů technického profilu. Například je možné zadat připojovací řetězce fiskálních zařízení na úrovni jednotlivých registrů POS. Funkce také přidává možnost zkontrolovat parametry připojení na stránce **Nastavení** v registru POS. 
     - **Stav fiskální registrace registrů POS** – Když je tato funkce povolena, můžete zakázat proces fiskální registrace pro konkrétní registry POS. Pokud je pro registr POS zakázána fiskální registrace, nelze v tomto registru provádět prodejní transakce.
-    - **Fiskální integrace zálohování místního úložiště** – Tato funkce rozšiřuje možnosti zpracování chyb rámce fiskální integrace. Umožňuje také automatické zálohování dat fiskální registrace v případě ztráty dat, takže data v místním úložišti jsou obnovena během aktivace zařízení.
+    - **Záloha místního úložiště fiskální integrace** – Tato funkce rozšiřuje možnosti zpracování chyb rámce fiskální integrace povolením automatické zálohy dat fiskální registrace, takže data v místním úložišti lze obnovit, zatímco je aktivováno zařízení.
+    - **Odložená registrace dokumentů** – Tato funkce rozšiřuje možnosti zpracování chyb rámce fiskální integrace povolením možnosti odložení fiskální registrace v případě jejího selhání a použitím záložní fiskální registrace nebo dokončením fiskální registrace později jinými prostředky, než je rámec fiskální integrace.
 
 ## <a name="set-up-commerce-parameters"></a>Nastavení parametrů velkoobchodu
 
@@ -286,16 +287,15 @@ Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozl
     1. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální Z**.
     1. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod změn do databáze kanálů.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Povolení ručního provedení odložené daňové registrace
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Povolení ručního provedení odložené fiskální registrace
 
-Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozvržení POS.
+Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozložení POS.
 
 - Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání operací POS do rozložení POS pomocí návrháře mřížky tlačítka](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci mřížky tlačítka a aktualizaci rozložení POS.
 
     1. Výběr rozložení k aktualizaci
     1. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.
     1. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Zobrazení parametrů připojení a dalších informací v POS
 

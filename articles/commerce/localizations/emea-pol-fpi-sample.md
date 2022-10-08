@@ -2,19 +2,19 @@
 title: Vzor integrace fiskální tiskárny pro Polsko
 description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-01.
-ms.openlocfilehash: d4e99854f5e3ab9a6ae802f4f6bcde7918f72e6d
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 2f27e5fdcd2b26a0a1651f21436cb4caad501cf8
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473760"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631364"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Vzor integrace fiskální tiskárny pro Polsko
 
@@ -107,7 +107,7 @@ Postupujte podle kroků pro nastavení fiskální integrace popsané v části [
 1. [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Kromě toho si všimněte nastavení pro proces fiskální registrace, která jsou [specifická pro tuto ukázku integrace fiskální tiskárny](#set-up-the-registration-process).
 1. [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Nastavení fiskálních sestav X/ Z z POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Povolit ruční provedení zápisu odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Povolení ručního provedení odložené fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurace komponent kanálu](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Nastavení procesu registrace

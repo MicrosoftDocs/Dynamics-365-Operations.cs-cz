@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286830"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627489"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 
@@ -36,12 +36,8 @@ Rozsah zásady je aktuálně omezen na nastavení nabídek plateb, které lze po
 
 ## <a name="enable-return-policy"></a>Povolit zásady vracení
 
-Chcete-li aktivovat funkci zásad vrácení kanálů v centrále Commerce, postupujte takto.
+Ve výchozím nastavení je tato funkce zapnutá. Najdete ji v pracovním prostoru **Správa funkcí** vyhledáním řetězce **Povolit zásady vrácení kanálu** v seznamu s názvy funkcí.
 
-1. Přejděte do pracovního prostoru **Správa funkcí** v Dynamics 365 Commerce.
-1. Vyhledejte v seznamu názvů funkcí funkci **Povolit zásady vracení kanálů**.
-1. Vyberte **Povolit**.
-1. Na stránce **Harmonogram distribuce** spusťte úlohu **1110** (Globální konfigurace) k distribuci změny funkce.
 
 ## <a name="configure-return-policy"></a>Konfigurace zásad vracení
 
