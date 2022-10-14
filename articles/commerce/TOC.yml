@@ -390,10 +390,12 @@
                   href: channel-setup-retail.md
                 - name: Konfigurace maloobchodních pracovníků
                   href: tasks/worker.md
-                - name: 'Modern Point of Sale (MPOS), Cloud POS a Store Commerce'
+                - name: "Modern Point of Sale (MPOS), Cloud POS a\_Store Commerce"
                   items:
                     - name: Aplikace Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Aplikace Store Commerce pro mobilní platformy
+                      href: dev-itpro/store-commerce-mobile.md
                     - name: Migrace moderního POS do Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Průvodce implementací správy zařízení
