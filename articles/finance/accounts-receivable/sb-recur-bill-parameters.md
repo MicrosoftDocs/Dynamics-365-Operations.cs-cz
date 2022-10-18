@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903327"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643996"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametry opakované fakturace smlouvy
 
@@ -46,7 +46,8 @@ Na stránce **Parametry opakované fakturace smlouvy** nastavíte výchozí hodn
 8. V poli **Typ transakce faktury** vyberte výchozí typ transakce faktury pro nové plány fakturace.
 9. Nastavením možnosti **Vyrovnat odklad s fakturací** na **Ano** vyrovnáte odpovídající plán odkladu tak, aby používal stejná data jako plán fakturace. Nastavením této možnosti na **Ne** budete mít různá data.
 10. Pokud používáte funkci rozdělení výnosů, možnost nastavte **Automaticky vytvořit rozdělení výnosů** nastavte na **Ano**, když jsou položky přidány do plánu fakturace. Pokud je položka nastavena jako položka rozdělení výnosů, automaticky je zaškrtnuto políčko **Rozdělení výnosů** na řádku plánu fakturování. Nastavte tuto možnost na **Ne**, pokud chcete ručně zaškrtnout políčko **Rozdělení výnosů**.
-11. Nastavte pole pro vytvoření prodejní objednávky:
+11. Nastavte možnost **Rozdělení zákazníka** na **Ano** a povolte tak fakturační plán, který bude fakturován různým zákazníkům Při nastavení možnosti **Rozdělení zákazníka** na **Ano** je tato k dispozici v záhlaví plánu fakturace a řádku plánu fakturace. 
+12. Nastavte pole pro vytvoření prodejní objednávky:
 
     - Faktury lze konsolidovat podle období, zákazníka nebo položky. Jakákoli kombinace hodnot **Ano** a **Ne** lze nastavit. Faktury lze také rozdělit podle skupin položek.
     - Pro faktury jsou k dispozici následující možnosti zaúčtování:
@@ -92,6 +93,9 @@ Na stránce **Parametry opakované fakturace smlouvy** nastavíte výchozí hodn
     - **Vydat dobropis** – Vytvořte dobropis, když je plán fakturace nebo jeho řádek ukončen.
     - **Úprava kreditu** – Vytvořte úpravu kreditu pro plán fakturace, když je řádek ukončen. Úprava kreditu se objeví v budoucím fakturačním období plánu fakturace. Úprava kreditu automaticky aktualizuje částku faktury pro další fakturační období, dokud nebude dokončeno použití kreditu v plánu fakturace.
     - **Žádný kredit** – Když je plán fakturace nebo jeho řádek ukončen, nevytvoří se úprava kreditu ani dobropis. Tato možnost je dostupná, pouze když použijete možnost **Žádná úprava** k ukončení plánu fakturace.
+18. Když je možnost **Jednorázově lze ukončit s refundací** nastavena na **Ne** a plán účtování má frekvenci účtování **Jednorázově**, stav řádku plánu fakturace se změní na **Ukončeno** jakmile bude fakturován plán účtování. Tento plán fakturace nelze ukončit a nelze vystavit žádný kredit. Když je možnost **Jednorázově lze ukončit s refundací** nastavena na **Ano** a řádek plánu účtování s frekvencí účtování **Jednorázově** má stav **Aktivní** poté, co je plán účtování fakturován. Řádek plánu fakturace lze ukončit a zpracovat vrácení peněz. 
+19. Možnost **Poměrně denně** nastavená v parametrech bude standardně nastavena na stránku hromadného ukončení a záhlaví a řádek plánu účtování dialogy Ukončení. Lze jej změnit během procesu ukončení. Při nastavení na **Ano** bude případná refundovaná částka vypočítána pomocí denní sazby. Při nastavení na **Ne** se připíše na základě data ukončení a frekvence účtování. Pokud například používáte měsíční frekvenci a fakturovaná částka byla 100 USD za měsíc, částka kreditu se zvyšuje po 100 USD. Pokud je frekvence účtování jednorázová, částka kreditu je 0,00 USD. Chcete-li získat náhradu za frekvenci jednorázové fakturace, musíte mít možnost Denní poměrné rozdělení hodnotu Ano. 
+20. Možnost **Vytvořit odklad pro úvěr** nastavte na **Ano**, chcete-li vytvořit nový plán odkladu, pokud připíšete kredit na existující plán odkladu. Nechte volbu nastavenou na **Ne**, chcete-li vytvořit kredit podle stávajícího plánu odkladu.
 
 ## <a name="sequence-number-tab"></a>Karta Číselná řada
 

@@ -2,7 +2,7 @@
 title: Konfigurace možností a pravidel způsobilosti
 description: Tento článek popisuje, jak nastavit pravidla a možnosti způsobilosti ve správě výhod v aplikaci Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336915"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644077"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace možností a pravidel způsobilosti 
 
@@ -175,6 +175,7 @@ Sady jsou sada souvisejících plánů zaměstnaneckých výhod. Sady zaměstnan
    | **Skupina** | Jedinečný identifikátor svazku. |
    | **Popis** | Popis svazku. |
    | **Mistr** | Určuje, zda musí být jeden z plánů ve svazku označen jako hlavní plán. Hlavní plán musí být vybrán během otevřené registrace jako součást svazku, než může správce zaměstnaneckých výhod potvrdit volby zaměstnaneckých výhod. |
+   | **Požadováno**| Označuje, že je nutné vybrat plán, abyste mohli zkontrolovat jakýkoli jiný plán v sadě. Jako **Požadovaný** může být označen více než jeden plán. V tomto případě všechny plány označené jako **Požadované** bude nutné vybrat, abyste si mohli prohlédnout některý z plánů v sadě.|
    | **Platnost do data a času** | Datum a čas, od kterého je svazek aktivní. |
    | **Platné do** | Datum vypršení platnosti svazku. Výchozí hodnota je 12/31/2154, což znamená nikdy. |
 

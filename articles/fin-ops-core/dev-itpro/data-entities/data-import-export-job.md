@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357584"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671451"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -65,9 +65,12 @@ Můžete přidat konkrétní entity do úlohy importu nebo exportu, nebo zvolit 
 ### <a name="set-the-data-format-for-the-job"></a>Nastavení formátu dat pro úlohu
 Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo importována. Formáty definujete pomocí dlaždice **Nastavení datových zdrojů**. Formát zdrojových dat je kombinací **typ**, **formát**, **oddělovač řádků** a **oddělovač sloupců**. Existují také další atributy, ale ty jsou klíčové pro porozumění. V následující tabulce jsou uvedeny platné kombinace.
 
+> [!NOTE]
+> Formát souboru Excel není aktuálně dostupný v pracovním prostoru správy dat pro vládní komunitní cloud (GCC).
+
 | Formát souboru            | Oddělovač řádků/sloupců                       | Styl XML                 |
 |------------------------|--------------------------------------------|---------------------------|
-| Excel                  | Excel                                      | \-Není k dispozici-                     |
+| Aplikace Excel                  | Aplikace Excel                                      | \-Není k dispozici-                     |
 | XML                    | \-Není k dispozici-                                      | XML-Element XML-Attribute |
 | Oddělené, Pevná šířka | Čárka, středník, tabulátor, svislá čára, dvojtečka | \-Není k dispozici-                     |
 

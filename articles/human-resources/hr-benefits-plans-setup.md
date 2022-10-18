@@ -2,7 +2,7 @@
 title: Vytvoření plánu zaměstnaneckých výhod
 description: V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výhod v aplikaci Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336918"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643930"
 ---
 # <a name="create-a-benefit-plan"></a>Vytvoření plánu zaměstnaneckých výhod
 
@@ -42,8 +42,9 @@ V tomto článku je uveden postup při nastavení plánů zaměstnaneckých výh
    | **Program** | Určuje program, který má volitelně přiřadit plán. |
    | **Sada** | Určuje sadu, která má volitelně přiřadit plán. |
    | **Mistr** | Určuje, zda je plán hlavním plánem v sadě, ke které je přiřazen. |
+   | **Požadováno** | Označuje, že je nutné vybrat plán, abyste mohli zkontrolovat jakýkoli jiný plán v sadě. Jako **Požadovaný** může být označen více než jeden plán. V tomto případě všechny plány označené jako **Požadované** bude nutné vybrat, abyste si mohli prohlédnout některý z plánů v sadě.|
    | **Platnost do data a času** | Datum a čas začátku plánu. Výchozí hodnotou je aktuální systémové datum. |
-   | **Platný do data a času** | Datum a čas konce plánu. Výchozí hodnota je 12/31/2154, což znamená nikdy. |
+   | **Platný do data a času** | Datum a čas konce plánu. Výchozí hodnota je 12/31/2154, což znamená nikdy.  |
 
 4. Na kartě **Konfigurace** zadejte hodnoty následujících polí v závislosti na typu plánu, který vytváříte:
 

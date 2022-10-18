@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591843"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643720"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -104,7 +104,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Pojistné doby | Hlavní plány s pojistnou dobou: *\#* | Tato funkce je nyní podporována. Další informace viz [Pojistné doby](safety-margins.md) |  Podporováno |
 | Plnění rezervních zásob | Záznamy disponibility položky s hodnotou „splnit minimum“ se liší od „dnešní datum a čas pořízení“: *\#* | Optimalizace plánování vždy používá *dnešní datum a čas pořízení*. Tato změna je provedena kvůli přípravě na zjednodušené nastavení plánování v budoucnu a k zajištění výsledku s akcemi. Není-li k dispozici doba pořízení pro pojistnou zásobu, plánované objednávky, které jsou vytvořeny pro aktuální nízké zásoby na skladě, budou vždy zpožděny kvůli době realizace. Toto chování může způsobit výrazný nedostatek informací a nežádoucí plánované objednávky. Doporučeným postupem je změna nastavení tak, aby bylo použito *dnešní datum a čas pořízení*. Aktualizujte hlavní data, abyste se vyhnuli varování. | Nevztahuje se |
 | Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: *\#* | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 nebo novější |
-| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce čeká na implementaci. V současnosti není skladovatelnost brána v potaz, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Podporováno |
+| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce je nyní podporována. | Podporováno |
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -2,7 +2,7 @@
 title: Nevyfakturované výnosy
 description: Tento článek vysvětluje, jak nastavit položky a účty pro použití funkce nevyfakturovaných výnosů ve fakturaci předplatného.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879675"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644161"
 ---
 # <a name="unbilled-revenue"></a>Nevyfakturované výnosy
 
@@ -123,15 +123,15 @@ Distribuce jsou přepočítány na základě zvoleného typu přidělení (**Pro
 
 Plán účtování je zadán na tři roky a faktury jsou účtovány ročně po dobu tří let. Celá částka smlouvy je zaznamenána na účtu nevyfakturovaných výnosů, ze kterého jsou vytvářeny roční faktury. Offsetový účet je výnos nebo účet výnosů příštích období.
 
-Všimněte si, že nejvyšší fakturace a nevyfakturované příjmy nefungují společně, protože v hlavní knize mohou nastat problémy s odsouhlasením. Například na stránce **Nastavení skupiny položek** je skupina položek A nastavena tak, že je pole **Počet horních řádků** nastaveno na **2**. Na stránce **Plány fakturace** jsou přidány tři položky. Všechny tři položky patří do skupiny položek A. Při vytváření prvotního zápisu do deníku pro funkci nevyfakturované výnosy se částka za všechny tři položky zpracuje na nevyfakturovaný účet. Při vytváření faktury pro plán vyúčtování jsou zahrnuty pouze částky za dvě nejvyšší položky. Proto částka faktury neodpovídá částce, která byla zpracována na účet nevyfakturovaných výnosů, a v hlavní knize vznikají problémy s odsouhlasením.
+Nejvyšší fakturace a nevyfakturované příjmy nefungují společně, protože v hlavní knize mohou nastat problémy s odsouhlasením. Například na stránce **Nastavení skupiny položek** je skupina položek A nastavena tak, že je pole **Počet horních řádků** nastaveno na **2**. Na stránce **Plány fakturace** jsou přidány tři položky. Všechny tři položky patří do skupiny položek A. Při vytváření prvotního zápisu do deníku pro funkci nevyfakturované výnosy se částka za všechny tři položky zpracuje na nevyfakturovaný účet. Při vytváření faktury pro plán vyúčtování jsou zahrnuty pouze částky za dvě nejvyšší položky. Proto částka faktury neodpovídá částce, která byla zpracována na účet nevyfakturovaných výnosů, a v hlavní knize vznikají problémy s odsouhlasením.
 
 Pokud chcete použít nevyfakturované výnosy, ponechte stránku **Nastavení skupiny položek** prázdnou nebo nastavte všechny skupiny položek tak, aby bylo pole **Počet horních řádků** nastaveno na **0** (nula). Pokud chcete použít nejvyšší fakturaci, nejsou k dispozici žádné akce s nevyfakturovanými příjmy.
 
 ### <a name="examples"></a>Příklad
 
-Od verze 10.0.27 je při použití nevyfakturovaných výnosů zaveden nový účet. Když je zaúčtován počáteční proces **Vytvořit deníkovou položku**, kredit se provede na nový nevyfakturovaný účet pro vyrovnání výnosů. Tento účet se používá místo účtu výnosů, protože stejná hodnota musí být stornována při fakturaci podle účtového rozvrhu. Pokud se vyskytnou kurzové nebo zaokrouhlovací rozdíly, částky, které se počítají v průběhu procesu **Vygenerovat fakturu**, může být proces jiný. Toto chování zajišťuje, že čistá částka účtů je 0 (nula).
+Od verze 10.0.29 je přidán nový parametr do parametrů fakturace opakované smlouvy. Při nastavení na Ano parametr **Použít nevyfakturované protiúčty** aktivuje dva nové účty v **Nastavení nevyfakturovaných výnosů**. Účty Protiúčet nevyfakturovaných výnosů a Protiúčet nevyfakturované slevy budou dostupné a nejlépe je lze použít, když jsou plány fakturace vytvořeny v jiné měně, než je účetní měna. Použití protiúčtů zajistí, že nevyfakturované výnosy a nevyfakturované slevy budou stornovány pomocí stejných směnných kurzů jako jejich počáteční položky. Počáteční proces **Vytvořit položku deníku** je stejný jako debet k nevyfakturovaným výnosům a kredit k výnosu. Při použití slevy je počáteční zápis do deníku stejný s debetem ve prospěch slevy a kreditem ve prospěch nevyúčtované slevy. 
 
-Tento příklad ukazuje, jak použít nevyfakturované výnosy k vykázání celé částky smlouvy v rozvaze jako nevyfakturovaných výnosů. Druhá strana záznamu je kompenzace nevyfakturovaných výnosů. Když fakturujete zákazníkovi, nevyfakturované výnosy a kompenzace nevyfakturovaných výnosů se stornují. K uznání výnosů dojde buď v době fakturace, nebo podle nastaveného rozvrhu účtování s odložením.
+Tento příklad ukazuje, jak použít nevyfakturované výnosy k vykázání celé částky smlouvy v rozvaze jako nevyfakturovaných výnosů. Druhá strana záznamu je výnos nebo odložený výnos. Když fakturujete zákazníkovi, nevyfakturované výnosy se stornují. K uznání výnosů dojde buď v době fakturace, nebo podle nastaveného rozvrhu účtování s odložením.
 
 #### <a name="assumptions"></a>Předpoklady
 
@@ -151,47 +151,38 @@ Tento příklad ukazuje, jak použít nevyfakturované výnosy k vykázání cel
 
     | Položka | Počáteční datum | Datum ukončení | Částka | Frekvence fakturace | Odložená položka | Nevyfakturované výnosy | Popis |
     |---|---|---|---|---|---|---|---|
-    | Licence | 1. ledna, CY | 31. prosince CY+2 | $100.00 | Ročně | Číslo | Ano | Zákazníkovi bude každý rok fakturováno 100,00 USD. Celková částka 300,00 USD bude předem zaznamenána jako nevyfakturované výnosy v rozvaze a jako výnosy do zisku a ztráty. Každá faktura sníží nevyfakturovanou částku. |
-    | Údržba | 1. ledna, CY | 31. prosince CY+2 | $30,00 | Ročně | Ano | Ano | Zákazníkovi bude každý rok fakturováno 30,00 USD. Celková částka 90,00 USD bude předem zaznamenána jako odložený výnos v rozvaze. Každá faktura sníží nevyfakturovanou částku. Výnosy příštích období budou účtovány měsíčně po dobu 36 měsíců. |
+    | Licence | 01. ledna 2022 | 31. prosince 2024 | $100.00 | Ročně | Číslo | Ano | Zákazníkovi bude každý rok fakturováno 100,00 USD. Celková částka 300,00 USD bude předem zaznamenána jako nevyfakturované výnosy v rozvaze a jako výnosy do zisku a ztráty. Každá faktura sníží nevyfakturovanou částku. |
+    | Údržba | 01. ledna 2022 | 31. prosince 2024 | $30,00 | Ročně | Ano | Ano | Zákazníkovi bude každý rok fakturováno 30,00 USD. Celková částka 90,00 USD bude předem zaznamenána jako odložený výnos v rozvaze. Každá faktura sníží nevyfakturovanou částku. Výnosy příštích období budou účtovány měsíčně po dobu 36 měsíců. |
 
 6. Na stránce **Všechny plány fakturace** použijte proces **Vytvořit deníkovou položku** k zaúčtování hodnoty smlouvy do rozvahy jako nevyfakturovaný výnos.
 
 Jsou vytvořeny dvě deníkové položky, jedna pro každý řádek fakturačního plánu.
 
-| Účet nevyfakturovaných výnosů | Protiúčet nevyfakturovaných výnosů | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| Účet nevyfakturovaných výnosů | | $300.00 | |
-| | Protiúčet nevyfakturovaných výnosů | | $300.00 |
+| Účet | Částka Má dáti | Částka Dal |
+|---|---|---|
+| Účet nevyfakturovaných výnosů | $300.00 | |
+| Výnosový účet | | $300.00 |
 
-| Účet nevyfakturovaných výnosů | Odložené výnosy | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| Účet nevyfakturovaných výnosů | | $90.00 | |
-| |Odložené výnosy údržby | | $90.00 |
+| Účet | Částka Má dáti | Částka Dal |
+|---|---|---|
+| Účet nevyfakturovaných výnosů | $90.00 | |
+| Odložené výnosy | | $90.00 |
 
-První položka deníku se zaúčtuje na účet vyrovnání nevyfakturovaných výnosů a druhý se zaúčtuje na účet výnosů příštích období. Pokud má řádek fakturace jak nevyfakturované výnosy, tak výnosy příštích období, použije se účet výnosů příštích období, nikoli vyrovnání nevyfakturovaných výnosů. Smlouva vyžaduje, aby faktura pro zákazníka byla vytvořena na začátku každého roku. Použijte proces **Vygenerovat fakturu** k vytvoření faktury. Po vytvoření faktury se vytvoří následující položky deníku.
+Smlouva vyžaduje, aby faktura pro zákazníka byla vytvořena na začátku každého roku. Použijte proces **Vygenerovat fakturu** k vytvoření faktury. Po vytvoření faktury se zaúčtuje následující doklad faktury.
 
-| Hlavní účet | Účet nevyfakturovaných výnosů | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| Protiúčet nevyfakturovaných výnosů | | $100.00 | |
-| | Účet nevyfakturovaných výnosů | | $100.00 |
-| Pohledávky | | $100.00 | |
-| | Výnosový účet | | $100.00 |
+| Účet| Částka Má dáti | Částka Dal |
+|---|---|---|
+| Účet nevyfakturovaných výnosů | | 130,00 USD |
+| Pohledávky | 130,00 USD | |
 
-| Hlavní účet | Účet nevyfakturovaných výnosů | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| Účet odložených výnosů z údržby | | $30,00 | |
-| | Účet nevyfakturovaných výnosů | | $30,00 |
-| Pohledávky | | $30,00 | |
-| | Účet odložených výnosů z údržby | | $30,00 |
+Stejná položka deníku bude vytvořena fakturami, které budou zaúčtovány na začátku příštích dvou let. Účet nevyfakturovaných výnosů se v průběhu každého roku během procesu **Generovat fakturu** snižuje. Protiúčet nevyfakturovaných výnosů se používá k vyrovnání účtu nevyfakturovaných výnosů při použití různých směnných kurzů. 
 
-Stejná položka deníku bude vytvořena fakturami, které budou zaúčtovány na začátku příštích dvou let. Čistá částka účtu výnosů příštích období bude 0 (nula), protože nedochází k žádným rozdílům způsobeným zaokrouhlením ani kurzovým rozdílům. Výnosy příštích období musí být stornovány přesně tak, jak byly připsány v průběhu procesu **Vytvořte zápis do deníku**. Protože výnosy jsou stále odložené a budou zaúčtovány později, dojde znovu k připsání na účet odložených výnosů.
+V posledním kroku se každý měsíc vytvoří zápis do deníku pro uznání odložených výnosů z poplatků za údržbu. Položku deníku lze vytvořit pomocí stránky **Zpracování rozpoznávání**. Případně jej lze vytvořit výběrem možnosti **Uznání** pro řádky na stránce **Plán odkladu**.
 
-V posledním kroku se každý měsíc vytvoří zápis do deníku pro uznání výnosů z odložených poplatků za údržbu. Položku deníku lze vytvořit pomocí stránky **Zpracování rozpoznávání**. Případně jej lze vytvořit výběrem možnosti **Uznání** pro řádky na stránce **Plán odkladu**.
-
-| Účet odložených výnosů | Výnosový účet | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| Odložené výnosy údržby | | $2.50 | |
-| | Požadavek na údržbu | | $2.50 |
+| Hlavní účet | Částka Má dáti | Částka Dal |
+|---|---|---|
+| Odložené výnosy | $2.50 | |
+| Výnosy | | $2.50 |
 
 Tato položka deníku se vytvoří pokaždé, když se pro tuto odloženou položku spustí proces rozpoznávání (celkem 36krát).
 
@@ -269,18 +260,18 @@ Protože obě položky využívají nevyfakturované příjmy a alokaci příjm�
 
 Následující tabulka ukazuje počáteční zápis do deníku pro položky a fakturu.
 
-| Účet nevyfakturovaných výnosů | Účet odložených výnosů | Částka Má dáti | Částka Dal |
-|---|---|---|---|
-| **Typ položky 1000 deníku** | | | |
-| Na vrub účtu nevyfakturovaných výnosů (401250) | | $1,465.26 | |
-| | Účet výnosů odloženého kreditu (250600) | | $1,465.26 |
-| **Položka 0021 deníku** | | | |
-| Na vrub účtu nevyfakturovaných výnosů (401250) | | $274.74 | |
-| | Účet výnosů odloženého kreditu (250600) | | $274.74 |
-| **Faktura** | | | |
-| | Kreditní účet nevyfakturovaných výnosů | | $1,465.26 |
-| | Kreditní účet nevyfakturovaných výnosů | | $274.74 |
-| Debetní účet AR (130100) | | $1,488.16 | |
+| Hlavní účet | Částka Má dáti | Částka Dal |
+|---|---|---|
+| **Typ položky 1000 deníku** | | | 
+| Účet nevyfakturovaných výnosů (401250) | $1,465.26 | |
+| Účet odložených výnosů (250600) | | $1,465.26 |
+| **Položka 0021 deníku** | | | 
+| Účet nevyfakturovaných výnosů (401250) | $274.74 | |
+| Účet odložených výnosů (250600) | | $274.74 |
+| **Faktura** | | |
+| Účet nevyfakturovaných výnosů | | $1,465.26 |
+| Účet nevyfakturovaných výnosů | | $274.74 |
+| Účet pohledávek (130100) | $1,488.16 | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Změny řádku plánu vyúčtování, řádku detailu vyúčtování nebo rozdělení příjmů
 
