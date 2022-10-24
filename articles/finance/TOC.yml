@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.31 (leden)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Finance 10.0.30 (listopad)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (říjen)
@@ -232,6 +234,26 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Nastavení ověření párování faktur závazků
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Řešení Invoice Capture
+              items:
+                - name: Přehled řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Instalace řešení Invoice Capture
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Konfigurace řešení Invoice Capture
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Skupiny konfigurace řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Pravidla mapování řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Pracovní prostor řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Pokročilá nastavení řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Řídicí panel řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: Přijaté soubory řešení Invoice Capture
+                  href: accounts-payable/invoice-capture-rec-files.md
             - name: Automatizace faktur dodavatele
               items:
                 - name: Přehled automatizovaných procesů fakturace dodavatele
@@ -424,7 +446,7 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Opakovaná fakturace smlouvy
                   items:
-                    - name: Nastavení opakovaného účtování kontaktů
+                    - name: Nastavení opakovaného účtování smlouvy
                       href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Vytvoření plánů fakturace
                       href: accounts-receivable/sb-billing-schedules.md

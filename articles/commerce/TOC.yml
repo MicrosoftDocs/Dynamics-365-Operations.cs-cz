@@ -888,6 +888,8 @@
               href: async-customer-mode.md
             - name: Převod asynchronních zákazníků na synchronní zákazníky
               href: convert-async-to-sync.md
+            - name: Audit synchronizace zákaznických operací
+              href: audit-async-customer-operations.md
             - name: Nejčastější dotazy pro režim vytváření asynchronních zákazníků
               href: async-customer-mode-faq.md
             - name: Clienteling
@@ -1296,8 +1298,14 @@
                       href: cookie-consent-module.md
                 - name: Moduly chatu
                   items:
-                    - name: Modul chatu Commerce
+                    - name: "Přehled funkcí chatu v\_aplikaci Commerce"
+                      href: commerce-chat-overview.md
+                    - name: Commerce Chat s modulem Omnikanál pro Customer Service
                       href: commerce-chat-module.md
+                    - name: Commerce Chat s modulem Power Virtual Agents
+                      href: chat-module-pva.md
+                    - name: Parametry proaktivního chatu modulu Commerce Chat
+                      href: chat-proactive-chat-parameters.md
             - name: Hledání
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání

@@ -14,6 +14,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aktualizacích platformy"
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizace platformy pro verzi 10.0.31 (únor 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Aktualizace platformy pro verzi 10.0.30 (listopad 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Aktualizace platformy pro verzi 10.0.29 (říjen 2022)
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: Sledování změn entity
                   href: data-entities/entity-change-track.md
+                - name: Povolení sledování změn verze řádku pro entitu
+                  href: data-entities/rowversion-change-track.md
                 - name: Hledání informací o standardních datových entitách
                   href: data-entities/data-entities-report.md
                 - name: Šablony dat s více listy
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Povolení virtuálních entit Dataverse
                   href: power-platform/enable-virtual-entities.md
+                - name: Sledování změn pro virtuální tabulky v Dataverse
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Portály Power Apps s finančními a provozními aplikacemi
                   href: power-platform/power-portal-reference.md
                 - name: Nejčastější dotazy k virtuálním entitám finančních a provozních aplikací
