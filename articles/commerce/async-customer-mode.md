@@ -2,19 +2,19 @@
 title: Asynchronní režim vytváření zákazníka
 description: Tento článek popisuje režim asynchronního vytváření zákazníků v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473699"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690282"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchronní režim vytváření zákazníka
 
@@ -46,6 +46,7 @@ Aby organizace pomohly používat asynchronní režim vytváření zákazníků 
 | Aktivujte paritu mezi synchronním a asynchronním vytvářením zákazníků. | 10.0.24 a novější | <p>Přepínač funkce: **Aktivovat vylepšené vytváření asynchronního zákazníka**</p><p>Podrobnosti funkce: Schopnost zachytit další informace, jako je titul, přidružení od výchozího zákazníka a sekundární kontaktní informace (telefonní číslo a e-mailová adresa), zatímco vytváříte zákazníky asynchronně</p> |
 | Uživatelsky přívětivé chybové zprávy | 10.0.28 a novější | Tato vylepšení pomáhají zlepšit uživatelsky přívětivé chybové zprávy, pokud uživatel nemůže okamžitě upravovat informace, když probíhá synchronizace. Tato vylepšení aktivujte pomocí nastavení **Aktivovat, aby některé prvky uživatelského rozhraní nemohly být modifikovány asynchronním zákazníkem** na **Nastavení webu \> Rozšíření** v konfigurátoru webů Commerce. |
 | Schopnost asynchronně upravovat informace o zákaznících | 10.0.29 a novější | <p>Přepínač funkce: **Povolit úpravy zákazníků v asynchronním režimu**</p><p>Podrobnosti funkce: Schopnost asynchronně upravovat zákaznická data</p><p>Odpovědi na běžné otázky týkající se problémů souvisejících s asynchronní úpravou informací o zákaznících naleznete v části [Nejčastější dotazy k asynchronnímu režimu vytváření zákazníků](async-customer-mode-faq.md).</p> |
+| Schopnost synchronizace auditů operací řízení zákazníků | 10.0.31 a novější | Toto vylepšení umožňuje uživatelům kontrolovat synchronizaci operací správy zákazníků v Commerce headquarters. Umožňuje také uživatelům provádět změny, pokud jsou potřeba, a synchronizovat data. |
 
 ### <a name="feature-switch-hierarchy"></a>Hierarchie přepínání funkcí
 

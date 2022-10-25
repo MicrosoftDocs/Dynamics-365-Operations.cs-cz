@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284844"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680377"
 ---
 # <a name="reverse-journal-posting"></a>Stornování zaúčtování deníku
 
@@ -37,7 +37,7 @@ Než budete moci použít některou z funkcí popsaných v tomto článku, je t�
 Řádky deníku můžete stornovat jednotlivě. Při zaúčtování storna deníku můžete také stornovat celý finanční deník. Postup stornování deníku: 
 
 - Filtrujte zaúčtované deníky a otevřete zobrazení **Řádky** deníku.
-- Vyberte na nabídku **Stornovat** v horní části stránky.
+- Vyberte na nabídku **Stornovat celý deník** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
 - Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
 - Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 

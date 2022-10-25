@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: a23256f3e092b32e1f1d09b708a8d0ca5f403785
+ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520830"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680001"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Rozdíly mezi integrovaným hlavním plánováním a optimalizací plánování
 
@@ -34,11 +34,12 @@ Výsledky optimalizace plánování se mohou lišit od výsledků z integrované
 | Vratky | K vratkám se nepřihlíží. |
 | Plánování souvisejících funkcí | Podrobnosti viz [Plánování s nekonečnou kapacitou](infinite-capacity-planning.md#limitations). |
 | Plnění rezervních zásob | Optimalizace plánování vždy používá možnost *Dnešní datum a čas pořízení* pro pole **Zadat minimum** na stránce **Disponibilita položky**. To pomáhá předcházet nechtěným plánovaným objednávkám a dalším problémům, protože když není k dispozici čas pořízení pro pojistnou zásobu, budou plánované objednávky, které jsou vytvořeny pro aktuální nízké zásoby na skladě, vždy zpožděny kvůli době realizace. |
-| Doložení pojistné zásoby a čisté požadavky | Typ požadavku *Pojistná zásoba* není zahrnut a není zobrazen na stránce **Čisté požadavky**. Pojistná zásoba nepředstavují poptávku a není s ní spojeno datum požadavku. Místo toho nastavuje omezení, kolik zásob musí být neustále přítomno. Nicméně hodnota pole **Minimální** je stále brána do úvahy při výpočtu plánovaných objednávek během hlavního plánování. Doporučujeme zkontrolovat sloupec **Akumulované množství** na stránce **Čisté požadavky**, abyste viděli, že tato hodnota byla vzata do úvahy. |
+| Doložení pojistné zásoby a čisté požadavky | Typ požadavku *Pojistná zásoba* není zahrnut a není zobrazen na stránce **Čisté požadavky**. Pojistná zásoba nepředstavují poptávku a není s ní spojeno datum požadavku. Místo toho nastavuje omezení, kolik zásob musí být neustále přítomno. Nicméně hodnota pole **Minimální** je stále brána do úvahy při výpočtu plánovaných objednávek během hlavního plánování. Doporučujeme zkontrolovat sloupec **Akumulované množství** na stránce **Čisté požadavky**, abyste viděli, že tato hodnota byla vzata do úvahy. Protože se doložení liší, mohou být navrženy různé akce. |
 | Dopravní kalendáře | Hodnota ve sloupci **Přepravní kalendář** na stránce **Způsoby dodání** je ignorována. |
 | Kód min/max pokrytí bez hodnot| Když u vestavěného plánovacího modulu použijete kód min/max pokrytí, kde nejsou nastaveny žádné minimální nebo maximální hodnoty, modul plánování považuje kód pokrytí za žádost a pro každou žádost vytvoří jednu objednávku. S optimalizací plánování systém vytvoří jednu objednávku denně, aby pokryl celou částku za daný den.  |
 | Čisté požadavky a ručně vytvořené plánované objednávky | S vestavěným plánovacím jádrem se ručně vytvořené objednávky dodávek pro položku automaticky objeví mezi čistými požadavky na tuto položku. Například při vytváření nákupní objednávky z prodejní objednávky se nákupní objednávka objeví na stránce **Čisté požadavky**, aniž by vyžadovaly jakékoli předchozí akce. Je to proto, že vestavěný plánovací modul zaznamenává transakce zásob do tabulky `inventLogTTS` a ukazuje změny dynamických plánů na stránce **Čisté požadavky**. S optimalizací plánování se však ručně vytvořené objednávky neobjeví mezi čistými požadavky položky, dokud nebude spuštěna Optimalizace plánování (s plánem, který položku zahrnuje), nebo dokud nevyberete možnost **Aktualizace \> Hlavní plánování** v podokně akcí na stránce **Čisté požadavky**, která spustí hlavní plánování pro položku. Další informace o tom, jak pracovat se stránkou **Čisté požadavky**, najdete v tématu [Čisté požadavky a informace o doložení s Optimalizací plánování](net-requirements.md). |
 | Přiřazení prostředku | Při práci s nekonečnou kapacitou přiřadí vestavěný modul hlavního plánování všechny plánované objednávky ke stejnému zdroji v dané skupině prostředků. Optimalizace plánování toto zlepšuje náhodným výběrem prostředků, takže různé výrobní zakázky mohou využívat různé prostředky. Chcete-li použít stejný prostředek pro všechny plánované objednávky, musíte tento prostředek zadat v trase. |
+| Rozšířené datové typy (EDT) | Optimalizace plánování nepodporuje změny přesnosti EDT. Pokud například rozšíříte přesnost množství produktu ze dvou desetinných míst (výchozí) na čtyři, bude Optimalizace plánování stále používat pouze dvě desetinná místa. |
 
 ## <a name="additional-resources"></a>Další prostředky
 

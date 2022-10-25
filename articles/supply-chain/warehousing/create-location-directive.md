@@ -2,7 +2,7 @@
 title: Práce se směrnicemi skladového místa
 description: Tento článek popisuje, jak pracovat se směrnicemi skladového místa. Směrnice skladového místa jsou pravidla definovaná uživatelem, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903688"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689659"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -47,6 +47,20 @@ Než budete moci vytvořit směrnici o umístění, musíte se ujistit, že jsou
 1. Vytvoření skladových míst, typů skladových míst, profilů skladových míst a formátů skladového místa. Další informace viz [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Vytvoření pracovišť, zón a skupin zón. Další informace viz [Nastavení skladu](../../commerce/channels-setup-warehouse.md) a [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Zapnutí nebo vypnutí funkce Rozsahy směrnice umístění
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Funkce *Rozsahy směrnice umístění* vám dává větší svobodu při navrhování direktiv umístění a pomáhá redukovat nadbytečné konfigurace. Přidává možnost **Rozsahy**, která nahrazuje předchozí možnost **Více SKU**. Vzhledem k tomu, že možnost **Více SKU** lze nastavit pouze na *Ano* nebo *Ne*, možnost **Rozsahy** poskytuje nejen tato dvě nastavení (prostřednictvím hodnot *Jedna položka* a *Více položek*), ale také dvě další (pomocí hodnot *Jedna položka nebo objednávka* a *Všechny*). Další informace o těchto nastaveních viz [Pevná záložka Směrnice umístění](#location-directives-tab).
+
+Když je povolena, možnost **Rozsah** možnost nahrazuje možnost **Více SKU** a je 100% kompatibilní se stávajícími konfiguracemi.
+
+Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji nebo vypnout. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+
+- **Modul:** *Řízení skladu*
+- **Název funkce:** *Rozsahy směrnic umístění*
+
 ## <a name="work-order-types-for-location-directives"></a>Typy pracovních příkazů pro směrnice skladového místa
 
 Mnoho polí, která lze nastavit pro směrnice skladového místa, je společných pro všechny typy pracovních příkazů. Ostatní pole jsou však specifická pro konkrétní typy pracovních příkazů.
@@ -67,8 +81,8 @@ V následující tabulce jsou uvedena pole, která jsou společná pro všechny 
 | Směrnice skladového místa | Typ práce |
 | Směrnice skladového místa | Lokalita |
 | Směrnice skladového místa | Sklad |
-| Směrnice skladového místa | Kód předpisu |
-| Směrnice skladového místa | Více skladových jednotek |
+| Směrnice skladového místa | Kód směrnice |
+| Směrnice skladového místa | Rozsah *nebo* Více SKU |
 | Řádky | Pořadové číslo |
 | Řádky | Od množství |
 | Řádky | Do množství |
@@ -117,7 +131,9 @@ Podokno akcí na stránce **Směrnice skladového místa** obsahuje tlačítka, 
 
 - **Posunout nahoru** - Přesune vybranou směrnici skladového místa nahoru v pořadí. Můžete jej například přesunout ze sekvence číslo 4 do sekvence číslo 3.
 - **Posunout dolů** - Přesune vybranou směrnici skladového místa dolů v pořadí. Můžete jej například přesunout ze sekvence číslo 4 do sekvence číslo 5.
+- **Kopírovat** – Otevřete dialogové okno, ve kterém můžete vytvořit přesnou kopii aktuálního příkazu umístění.
 - **Upravit dotaz** - Otevře dialogové okno, kde můžete definovat podmínky, za kterých má být vybraná směrnice skladového místa zpracována. Můžete například chtít, aby platila pouze pro konkrétní sklad.
+- **Akceptační testy** – Otevřete stránku, na které můžete nastavit automatické testy, které určí, jak se budou vaše příkazy k umístění chovat za různých počátečních podmínek. Tímto způsobem můžete rychle ověřit své direktivy, když je vytváříte a udržujete. Další informace získáte v části [Test směrnic místa s akceptačními testy](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Záhlaví směrnic skladového místa
 
@@ -126,7 +142,7 @@ Záhlaví směrnice skladového místa obsahuje následující pole pro pořadov
 - **Pořadové číslo** - Toto pole označuje sekvenci, ve které se systém pokusí použít každou směrnice skladového místa pro vybraný typ pracovního příkazu. Nejprve se použijí nízká čísla. Pořadí můžete změnit pomocí tlačítek **Posunout nahoru** a **Posunout dolů** v podokně akcí.
 - **Název** - zadejte popisný název směrnice skladového místa. Tento název by měl pomoci identifikovat obecný účel směrnice. Například zadejte *Vychystávání zakázky odběratele ve skladu 24*.
 
-## <a name="location-directives-fasttab"></a>Pevná záložka Směrnice skladového místa
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Pevná záložka Směrnice skladového místa
 
 Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro typ pracovního příkazu, který je vybrán v poli **Typ pracovního příkazu** v podokně seznamu.
 
@@ -145,7 +161,29 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
     > [!TIP]
     > Pokud je nastaven kód směrnice, systém nebude hledat směrnice skladového místa podle pořadového čísla, když musí být generovaná práce. Místo toho bude vyhledávat podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu směrnice skladového místa pro konkrétní krok v šabloně práce, jako je například krok pro fázování materiálů.
 
-- **Více SKU** – Nastavte tuto možnost na *Ano*, chcete-li povolit použití více skladových jednotek (SKU) v jednom skladovém místě. Například pro umístění křídlových dveří musí být povoleno více SKU. Pokud povolíte více SKU, bude vaše skladové místo pro vložení uvedeno v práci dle očekávání. Skladové místo však bude schopno zpracovat pouze vložení více položek (pokud práce zahrnuje různé SKU, které je třeba vybrat a umístit). Nezvládne vložení jedné SKU. Pokud nastavíte tuto možnost na *Ne*, skladové místo bude specifikováno pouze v případě, že vložení má pouze jeden druh SKU.
+- **Rozsah** – Tuto volbu použijte k určení scénářů, na které bude direktiva umístění použita. Tato možnost nahrazuje možnost **Více SKU** a je k dispozici pouze v případě, že je funkce *Rozsahy směrnice umístění* ve vašem systému zapnutá. (Další informace viz [Zapněte nebo vypněte funkci rozsahů směrnice umístění](#scopes-feature).)
+
+    | Nastavení rozsahu | Jedna objednávka s jednou položkou | Více objednávek se stejnou položkou | Jedna objednávka s více položkami | Více objednávek s více položkami |
+    |---|---|---|---|---|
+    | Jedna položka | Ano | Ano | Číslo | Číslo |
+    | Více položek | Číslo | Číslo | Ano | Ano |
+    | Jedna položka nebo objednávka | Ano | Ano | Ano | Číslo |
+    | Vše | Ano | Ano | Ano | Ano |
+
+    Následující tabulka popisuje, kdy jsou rozsahy dostupné a zda umožňují funkci **Upravit dotaz**.
+
+    | Rozsah | Podporovaný typ práce | Podporované typy pracovních příkazů | Povolit pro úpravy dotazu |
+    |---|---|---|---|
+    | Jedna položka | Vše | Vše | Ano |
+    | Více položek | Vše | Vše | Číslo |
+    | Jedna položka nebo objednávka | Puts | Odložení vedlejšího produktu a vedlejšího produktu, odložení hotového zboží, odložení kanbanu, nákupní objednávky, objednávky kvality, doplňování, objednávky vrácení, prodejní objednávky, vydání převodu a potvrzení o převodu | Ano |
+    | Vše | Puts | Vše | Číslo |
+
+    > [!NOTE]
+    > - Chcete-li provádět vkládání jak pro více položek, tak pro jednotlivé položky, musíte zajistit, aby existovaly direktivy umístění, které pokrývají oba scénáře. Můžete například nastavit jednu nebo více směrnic umístění *Jedna položka nebo objednávka*, které pokrývají scénáře, které vyžadují jemné doladění (například prostřednictvím úprav dotazu), a poté jednu nebo více směrnic umístění *Vše* pro pokrytí zbývajících scénářů.
+    > - Ačkoli rozsahy *Jedna položka* a *Více položek* lze použít pro vkládání, tento přístup obvykle vede k redundantním konfiguracím. Zvažte použití rozsahů *Jedna položka nebo objednávka* a *Vše*, protože tento přístup vytvoří čistší nastavení.
+
+- **Více SKU** – Tuto volbu použijte k určení scénáře, na který bude direktiva umístění použita. Toto nastavení je nahrazeno nastavením **Rozsah**, pokud je funkce *Rozsahy směrnice umístění* ve vašem systému zapnutá. (Další informace viz [Zapněte nebo vypněte funkci rozsahů směrnice umístění](#scopes-feature).) Nastavte tuto možnost na *Ano*, chcete-li umožnit použití více skladových jednotek (SKU) na jednom místě. Například pro umístění křídlových dveří musí být povoleno více SKU. Pokud povolíte více SKU, bude vaše skladové místo pro vložení uvedeno v práci dle očekávání. Skladové místo však bude schopno zpracovat pouze vložení více položek (pokud práce zahrnuje různé SKU, které je třeba vybrat a umístit). Nezvládne vložení jedné SKU. Pokud nastavíte tuto možnost na *Ne*, skladové místo bude specifikováno pouze v případě, že vložení má pouze jeden druh SKU.
 
     > [!IMPORTANT]
     > Abyste mohli provádět vícepolohové i jednopolohové vnoření, musíte zadat dva řádky, které mají stejnou strukturu a nastavení, ale musíte nastavit možnost **Vícenásobná SKU** na *Ano* pro jeden řádek a *Ne* pro druhý. Pro operace vložení je proto nutné mít dvě stejné směrnice skladového místa, i když nerozlišujete mezi jednou a vícero skladovými jednotkami u ID práce. Často platí, že pokud nenastavíte obě tyto směrnice skladového místa umístění, neočekávaná umístění obchodních procesů budou pocházet z použité směrnice skladového místa. Podobné nastavení musíte použít pro směrnice skladového místa, které mají **Typ práce** *výběr*, pokud potřebujete zpracovat objednávky, které obsahují více SKU.
@@ -255,6 +293,5 @@ Po vytvoření směrnic skladového místa můžete přiřadit každý kód smě
 
 - Video: [Podrobné prozkoumání konfigurace správy skladu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Článek nápovědy [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

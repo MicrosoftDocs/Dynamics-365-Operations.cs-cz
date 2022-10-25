@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853489"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682877"
 ---
 # <a name="cost-control-workspace"></a>Pracovní prostor řízení nákladů 
 
@@ -53,7 +53,7 @@ Na pevné záložce **Filtrování dat** určete základ dat pro sestavu. Uživa
 |-------------------------------------------------------------------|-------------|
 | Hlavní kniha nákladového účetnictví                                            | **Hlavní kniha nákladového účetnictví**, na které je sestava založena. Hodnota je odvozena od pole **Jednotka řízení nákladů**. |
 | Jednotka řízení nákladů                                                 | Hodnota, kterou jste vybrali, určuje hlavní knihu nákladového účetnictví a objekty nákladů, na kterých je tato sestava založena. |
-| Hierarchie statistické dimenze, Hierarchie dimenze prvku nákladů | Záznam konfigurace pracovního prostoru **Řízení nákladů** může vykázat buď nepeněžní nebo peněžní hodnoty, nikoliv však ve stejném rozvržení. Vyberte hodnotu v poli **Hierarchie dimenze prvku nákladů** pro vykázání peněžních hodnot. Vyberte hodnotu v poli **Hierarchie statistické dimenze** pro vykázání nepeněžních hodnot. Zvolený záznam hierarchie dimenze určuje strukturu úrovně vykazování a agregace.<blockquote>[!NOTE]<br>Chcete-li zobrazit nefinanční a finanční hodnoty vedle sebe, můžete exportovat data do aplikace Microsoft Excel pro balíček obsahu Microsoft Power BI.</blockquote> |
+| Hierarchie statistické dimenze, Hierarchie dimenze prvku nákladů | Záznam konfigurace pracovního prostoru **Řízení nákladů** může vykázat buď nepeněžní nebo peněžní hodnoty, nikoliv však ve stejném rozvržení. Vyberte hodnotu v poli **Hierarchie dimenze prvku nákladů** pro vykázání peněžních hodnot. Vyberte hodnotu v poli **Hierarchie statistické dimenze** pro vykázání nepeněžních hodnot. Zvolený záznam hierarchie dimenze určuje strukturu úrovně vykazování a agregace.<blockquote>**POZNÁMKA:**<br>Chcete-li zobrazit nefinanční a finanční hodnoty vedle sebe, můžete exportovat data do aplikace Microsoft Excel pro balíček obsahu Microsoft Power BI.</blockquote> |
 | Hierarchie dimenze objektu nákladů      | Vyberte hierarchii dimenze z dimenze objektu nákladů, který vyhovuje účelu vykazování, které definujete. |
 | Původní verze rozpočtu                                           | Vyberte ID verze rozpočtu, která se chová jako původní rozpočet v rámci této sestavy. |
 | Revidovaná verze rozpočtu                                            | Vyberte ID verze rozpočtu, která se chová jako revidovaný rozpočet v rámci této sestavy. |
@@ -64,7 +64,7 @@ Výpočet režijních nákladů provádí několik kroků výpočtů na zdrojov�
 
 | Pole                  | popis |
 |------------------------|-------------|
-| Fiskální kalendářní období | Vyberte období fiskálního kalendáře, ke kterému přiřadíte ID výpočtu režijních nákladů.<blockquote>[!NOTE]<br>Fiskální období, která jsou uvedena v poli, pocházejí z fiskálního kalendáře, který je přidružen k hlavní knize nákladového účetnictví.</blockquote> |
+| Fiskální kalendářní období | Vyberte období fiskálního kalendáře, ke kterému přiřadíte ID výpočtu režijních nákladů.<blockquote>**POZNÁMKA:**<br>Fiskální období, která jsou uvedena v poli, pocházejí z fiskálního kalendáře, který je přidružen k hlavní knize nákladového účetnictví.</blockquote> |
 | Aktuální verze         | Vyberte odpovídající ID výpočtu režijních nákladů. |
 | Rozpočtová verze         | Vyberte odpovídající ID výpočtu režijních nákladů. |
 | Verze revidovaného rozpočtu | Vyberte odpovídající ID výpočtu režijních nákladů. |
@@ -77,10 +77,10 @@ Hodnoty ve vybraných sloupcích budou vynásobeny vybranými hodnotami na pevn�
 
 | Pole                | popis |
 |----------------------|-------------|
-| Aktuální období       | Je zobrazen zůstatek aktuálního fiskálního období.<blockquote>[!NOTE]<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období.</blockquote> |
-| Předchozí období      | Je zobrazen zůstatek předchozího fiskálního období. Použije se následující vzorec:<br>Aktuální fiskální období - 1<blockquote>[!NOTE]<br>Ve výchozím nastavení je předchozí období odvozeno od data relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období jako aktuální období. **Předchozí období** se pak přepočítá odpovídajícím způsobem.</blockquote> |
-| Rok do data         | Zobrazí se hodnota od začátku roku. Použije se následující vzorec:<br>YearToDate (Aktuální fiskální období)<blockquote>[!NOTE]<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období a hodnota **Od začátku roku** bude aktualizována odpovídajícím způsobem.</blockquote> |
-| Průměr od začátku roku | Zobrazí se průměr od začátku roku. Použije se následující vzorec:<br>(Od začátku roku [aktuální fiskální období]) ÷ (počet [aktuální fiskální období])<p><strong>Příklad</strong></p><ul><li>**Člen statistické dimenze:** Zaměstnanci na plný úvazek</li><li>**Aktuální datum:** 21. 3. 2017</li><li>**Období:** Fiskální období 1, Fiskální období 2, Fiskální období 3</li><li>**Hodnota:** 10, 10, 12</li></ul>V takovém případě **Průměr od začátku roku** = (10 + 10 + 12) ÷ 3 = 10,67<p>Hodnota **Průměr od začátku roku** může být vypočítána pro členy dimenze prvku nákladů a členy statistické dimenze.</p><blockquote>[!NOTE]<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období a hodnoty **Od začátku roku** a **Průměr od začátku roku** budou aktualizovány odpovídajícím způsobem.</blockquote> |
+| Aktuální období       | Je zobrazen zůstatek aktuálního fiskálního období.<blockquote>**POZNÁMKA:**<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období.</blockquote> |
+| Předchozí období      | Je zobrazen zůstatek předchozího fiskálního období. Použije se následující vzorec:<br>Aktuální fiskální období - 1<blockquote>**POZNÁMKA:**<br>Ve výchozím nastavení je předchozí období odvozeno od data relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období jako aktuální období. **Předchozí období** se pak přepočítá odpovídajícím způsobem.</blockquote> |
+| Rok do data         | Zobrazí se hodnota od začátku roku. Použije se následující vzorec:<br>YearToDate (Aktuální fiskální období)<blockquote>**POZNÁMKA:**<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období a hodnota **Od začátku roku** bude aktualizována odpovídajícím způsobem.</blockquote> |
+| Průměr od začátku roku | Zobrazí se průměr od začátku roku. Použije se následující vzorec:<br>(Od začátku roku [aktuální fiskální období]) ÷ (počet [aktuální fiskální období])<p><strong>Příklad</strong></p><ul><li>**Člen statistické dimenze:** Zaměstnanci na plný úvazek</li><li>**Aktuální datum:** 21. 3. 2017</li><li>**Období:** Fiskální období 1, Fiskální období 2, Fiskální období 3</li><li>**Hodnota:** 10, 10, 12</li></ul>V takovém případě **Průměr od začátku roku** = (10 + 10 + 12) ÷ 3 = 10,67<p>Hodnota **Průměr od začátku roku** může být vypočítána pro členy dimenze prvku nákladů a členy statistické dimenze.</p><blockquote>**POZNÁMKA:**<br>Ve výchozím nastavení je aktuální období určeno datem relace. V pracovním prostoru **Řízení nákladů** lze vybrat konkrétní fiskální období. Vybraná hodnota pak představuje aktuální období a hodnoty **Od začátku roku** a **Průměr od začátku roku** budou aktualizovány odpovídajícím způsobem.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Sloupce k zobrazení nákladů
 
@@ -88,11 +88,11 @@ Na pevné záložce **Sloupce k zobrazení nákladů** se nákladový účetní
 
 | Pole                 | popis |
 |-----------------------|-------------|
-| Pevné náklady            | Tento typ sloupce zobrazuje pevné náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>[!NOTE]<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
-| Variabilní náklady         | Tento typ sloupce zobrazuje variabilní náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>[!NOTE]<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
-| Fixní + variabilní náklady | Tento typ sloupce zobrazuje pevné a variabilní náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>[!NOTE]<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
-| Celkové náklady            | Tento typ sloupce zobrazuje celkové náklady (neklasifikované náklady, pevné náklady a variabilní náklady).<blockquote>[!NOTE]<br>Typ sloupce vždy zobrazí zůstatek.</blockquote> |
-| Neklasifikované náklady     | Tento typ sloupce zobrazí neklasifikované náklady.<blockquote>[!NOTE]<br>Tento sloupec slouží k ověření, zda byly všechny náklady správně klasifikovány podle výpočtu režijních nákladů, nebo zda musí být upraveno pravidlo chování nákladů.</blockquote> |
+| Pevné náklady            | Tento typ sloupce zobrazuje pevné náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>**POZNÁMKA:**<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
+| Variabilní náklady         | Tento typ sloupce zobrazuje variabilní náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>**POZNÁMKA:**<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
+| Fixní + variabilní náklady | Tento typ sloupce zobrazuje pevné a variabilní náklady založené na zvoleném ID výpočtu režijních nákladů.<blockquote>**POZNÁMKA:**<br>Tento typ sloupce zobrazí zůstatek pouze v případě, kdy je pro fiskální období zvolené ID výpočtu režijních nákladů.</blockquote> |
+| Celkové náklady            | Tento typ sloupce zobrazuje celkové náklady (neklasifikované náklady, pevné náklady a variabilní náklady).<blockquote>**POZNÁMKA:**<br>Typ sloupce vždy zobrazí zůstatek.</blockquote> |
+| Neklasifikované náklady     | Tento typ sloupce zobrazí neklasifikované náklady.<blockquote>**POZNÁMKA:**<br>Tento sloupec slouží k ověření, zda byly všechny náklady správně klasifikovány podle výpočtu režijních nákladů, nebo zda musí být upraveno pravidlo chování nákladů.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Sloupce k zobrazení rozpočtových nákladů
 
@@ -103,12 +103,12 @@ Na pevné záložce **Sloupce k zobrazení rozpočtových nákladů** se nákla
 
 | Pole                     | popis |
 |---------------------------|-------------|
-| Rozpočet                    | Zůstatky rozpočtu budou zobrazeny podle zvolených sloupců.<blockquote>[!NOTE]<br>Zůstatky budou založeny na verzích rozpočtu, které jsou vybrané na pevné záložce **Filtrování dat**.</blockquote> |
+| Rozpočet                    | Zůstatky rozpočtu budou zobrazeny podle zvolených sloupců.<blockquote>**POZNÁMKA:**<br>Zůstatky budou založeny na verzích rozpočtu, které jsou vybrané na pevné záložce **Filtrování dat**.</blockquote> |
 | Odchylka rozpočtu           | Vypočítejte a zobrazte rozdíl mezi skutečným a rozpočtovým zůstatkem. Použije se následující vzorec:<br>Rozpočtový zůstatek – Skutečný zůstatek |
 | Odchylka rozpočtu v %      | Vypočítejte a zobrazte rozdíl v procentech mezi skutečným a rozpočtovým zůstatkem. Použije se následující vzorec:<br>(Rozpočtový zůstatek – Skutečný zůstatek) ÷ Rozpočtový zůstatek |
-| Práh období odchylky | Nastavte prahovou hodnotu pro odchylku peněžní částky za aktuální období. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>[!NOTE]<br>Toto pole se vztahuje pouze na prvky nákladů, které představují výdaje.</blockquote> |
+| Práh období odchylky | Nastavte prahovou hodnotu pro odchylku peněžní částky za aktuální období. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>**POZNÁMKA:**<br>Toto pole se vztahuje pouze na prvky nákladů, které představují výdaje.</blockquote> |
 | Práh roku odchylky   | Nastavte prahovou hodnotu pro odchylku peněžní částky za rok. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**. |
-| Práh odchylky v %      | Nastavte prahovou hodnotu pro odchylku v procentech. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>[!NOTE]<br>Stejná procentuální prahová hodnota platí pro aktuální období a rok.</blockquote> |
+| Práh odchylky v %      | Nastavte prahovou hodnotu pro odchylku v procentech. Při přesažení prahové hodnoty se řádek zvýrazní červeně v pracovním prostoru **Řízení nákladů**.<blockquote>**POZNÁMKA:**<br>Stejná procentuální prahová hodnota platí pro aktuální období a rok.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Pracovní prostor kontroly nákladů
 

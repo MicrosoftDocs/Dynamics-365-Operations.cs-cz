@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 2d103406118be4385177b678de424df12af69c2e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9644050"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689393"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scénář údržby majetku
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Scénář *údržba majetku* umožňuje použít data senzoru k vytvoření záznamů čítačů. Záznamy počítadel sledují využití strojového majetku a používají se jako vstup pro generování plánu údržby strojového majetku.
 
@@ -115,6 +116,9 @@ Poté, co jsou data připravena, a scénář *údržba majetku* je scénář nak
 1. Přejděte na **Správa majetku \> Majetek \> Všechen majetek**.
 1. Najděte a vyberte majetek, který chcete prozkoumat. (Pokud používáte ukázková data, která jste vytvořili dříve v tomto článku, vyberte *AK-101*.)
 1. V podokně akcí na kartě **Majetek** ve skupině **Preventivní** vyberte **Čítače** a otevřete stránku pro záznamy čítače pro majetek *AK-101*.
+
+> [!NOTE]
+> Záznamy čítače jsou ve výchozím nastavení nakonfigurovány tak, aby se vkládaly každé tři hodiny, což znamená, že data senzoru budou v tomto intervalu agregována. Interval můžete změnit úpravou dotazu v komponentě Azure Stream Analytics.
 
 ### <a name="generate-maintenance-work-orders"></a>Generování pracovních příkazů údržby
 

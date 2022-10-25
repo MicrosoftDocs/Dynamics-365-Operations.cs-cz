@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 04c625b554d96f8ed28ceffef9647fe9cbf7fe2f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269397"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689453"
 ---
 # <a name="vat-declaration-germany"></a>Přiznání k DPH (Německo)
 
@@ -198,7 +198,8 @@ Pomocí těchto kroků definujte, které kódy DPH generují která pole v přiz
 
    Tento formát je vytištěn při spuštění sestavy **Vykázat DPH pro období vyrovnání**. Vytiskne se také při výběru **Tisk** na stránce **Platby DPH**.
 
-4. Na stránce **Finanční úřady** vyberte finanční úřad a poté v poli **Rozvržení sestavy** vyberte **Výchozí**.
+4. Pokud musíte nahlásit opravy, v sekci **Speciální sestava** nastavte **Zahrnout opravy** na **Ano**.
+5. Na stránce **Finanční úřady** vyberte finanční úřad a v poli **Rozvržení sestavy** vyberte **Výchozí**.
 
 Pokud konfigurujete přiznání k DPH v právnické osobě, která má [více registrací k DPH](emea-reporting-for-multiple-vat-registrations.md), postupujte následovně:
 

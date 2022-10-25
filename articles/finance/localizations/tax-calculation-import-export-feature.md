@@ -2,7 +2,7 @@
 title: Import a export výpočtu daní
 description: Tento článek poskytuje informace o funkci importu a exportu služby pro výpočet daně.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855166"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690226"
 ---
 # <a name="import-and-export-tax-calculations"></a>Import a export výpočtu daní
 
@@ -98,3 +98,21 @@ List aplikace Excel, který jste si stáhli, obsahuje strukturu mřížky **Nast
 2. V RCS na stránce funkce **Výpočet daně** na kartě **Použitelnost daňové skupiny** volbou **Přidat** vložte prázdný záznam do spodu mřížky **Nastavení použitelnosti daňové skupiny**.
 3. Kombinací kláves **Ctrl+V** vložte zkopírované řádky do mřížky.
 4. Zvolte možnost **Uložit**.
+
+## <a name="import-feature-demo-data"></a>Importujte ukázková data funkcí
+
+Chcete-li importovat ukázková data funkcí, postupujte takto.
+
+1. Přihlaste se do [RCS](https://marketing.configure.global.dynamics.com/).
+2. V pracovním prostoru **Funkce globalizace** vyberte **Funkce** a poté vyberte dlaždici **Výpočet daně**.
+3. Vyberte **Import** a poté na stránce **Importujte funkci z globálního úložiště** vyberte **Synchronizovat**. 
+4. V tabulce vyberte funi **tax-calculation-feature-demo-data** a poté vyberte **Import**.
+5. Vyberte **Zobrazení** pro kontrolu daňových kódů, skupin a pravidel použitelnosti, které jsou definovány v importované funkci.
+6. Ve Finance přepněte na **DEMF** a pak přejděte na **Daň** \> **Nastavení** \> **Konfigurace daně** \> **Parametry výpočtu daně**.
+7. Na kartě **Obecné** vyberte **Povolit službu výpočtu daně**.
+8. V poli **Název nastavení funkce** vyberte **tax-calculation-feature-demo-data**.
+9. Vyberte **Vypořádací období** a **Skupina zaúčtování hl. knihy** pro nové ukázkové daňové kódy a poté vyberte **Potvrdit**.
+10. Zvolte možnost **Uložit**.
+
+> [!NOTE]
+> Demo funkce **tax-calculation-feature-demo-data** je založena na verzi funkce **40.54.234** a určená pro ukázkovou právnickou osobu **DEMF**. Ujistěte se, že Finance a RCS jsou upgradovány na verzi 10.0.26 nebo novější.

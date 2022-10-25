@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 477b27bf77d2a3ef91a5c2d39f2dfb06d8ad4e59
-ms.sourcegitcommit: 562ea02e1f7409f18ee1cc4750a838bff4381e91
+ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429116"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689179"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10030-november-2022"></a>Verze Preview Dynamics 365 Supply Chain Management 10.0.30 (listopad 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.30. (listopad 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.30. Tato verze má číslo sestavení 10.0.1362 a je k dispozici podle následujícího plánu:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.30. Tato verze má číslo sestavení 10.0.1362 a je k dispozici podle následujícího plánu:
 
 - **Verze Preview:** září 2022
 - **Obecně dostupné vydání (automatická aktualizace):** Říjen 2022
@@ -35,7 +34,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
 | Výroba | [Monitorování zařízení pomocí funkce Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Úvodní stránka Sensor Data Intelligence](../sensor-data-intelligence/sdi-home-page.md) | Správa funkcí:<br>*(Preview) Sensor Data Intelligence* |
-| Řízení skladu | Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management <!-- KFM: Add link when RP updates --> | [Konfigurace náhradního procesu pro kroky v položkách nabídky mobilního zařízení](../warehousing/warehouse-app-detours.md) | Správa funkcí:<br>*Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* |
+| Řízení skladu | [Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Konfigurace náhradního procesu pro kroky v položkách nabídky mobilního zařízení](../warehousing/warehouse-app-detours.md) | Správa funkcí:<br>*Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze
 
@@ -52,7 +51,7 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.30 aplikací Finance a Operace (listopad 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.30 aplikací Finance a Operace (listopad 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

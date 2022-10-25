@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 62e06f2348ca3524beaaef5d8879c199db56696f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520743"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689276"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.29 (říjen 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.29 (říjen 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.29. Tato verze má číslo sestavení 10.0.1326 a je k dispozici podle následujícího plánu:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.29. Tato verze má číslo sestavení 10.0.1326 a je k dispozici podle následujícího plánu:
 
 - **Preview verze:** Srpen 2022
 - **Obecně dostupné vydání (automatická aktualizace):** Září 2022

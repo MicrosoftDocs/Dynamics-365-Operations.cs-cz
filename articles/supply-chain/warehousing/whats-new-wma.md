@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388441"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682581"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20340"></a>Verze 2.0.34.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+- Vylepšená stabilita.
+- Zlepšení výkonu.
+- Vylepšené rozvržení obrazovky, aby bylo více místa pro kartu s podrobnostmi.
+- Přidána funkce vyhledávání na stránku **Pracovní seznam**. Pracovníci nyní mohou skenovat nebo psát a vyhledávat ve všech polích a názvech na stránce.
+- Seznam dostupných připojení je nyní řazen abecedně.
+- Opraven problém, kdy se u položek, které mají více stavů zásob na stejném místě, zobrazovaly duplicitní karty.
+- Opraven problém, kdy se stránka **Velký výběrový seznam** neposunula a nezobrazila předvybranou položku.
+- Opraveny barvy vyhledávacího pole na stránce **Velký výběrový seznam**.
+- Opraven problém, kdy výchozí tlačítko definované v XML nebylo použito jako tlačítko pro odeslání.
+- Opraven problém, kdy se tlačítka v tocích vícenásobného skenování a rychlého ověření neaktualizovala při skenování nových ID.
+- Přidána podpora pro více jazyků.
 
 ## <a name="version-20320"></a>Verze 2.0.32.0
 

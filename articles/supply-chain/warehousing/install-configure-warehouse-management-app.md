@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6131d205e650c0de88b85434629ed9537c2a0b1
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 4ee87eee382263897d97512f6b01c786734a8f27
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335638"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682527"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -272,6 +272,7 @@ Pokud nemáte soubor nebo QR kód, můžete aplikaci na zařízení nakonfigurov
 
         > [!IMPORTANT]
         > Neukončujte tuto hodnotu lomítkem (/).
+        > Ujistěte se, že je certifikát HTTPS (SSL) platný.
 
     - **Tenant Active Directory** – Zadejte název domény Azure AD, kterou používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-domain-name>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. Další informace o tom, jak najít název domény Azure AD najdete v části [Vyhledání důležitých ID pro uživatele](/partner-center/find-ids-and-domain-names).
 

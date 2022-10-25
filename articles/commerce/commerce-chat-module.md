@@ -2,19 +2,19 @@
 title: Commerce chat s modulem Omnikanál pro Customer Service
 description: Tento článek popisuje Commerce Chat s modulem Omnikanál pro Customer Service v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473802"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690309"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Commerce chat s modulem Omnikanál pro Customer Service
 
@@ -82,6 +82,9 @@ Chcete-li přidat modul chatu do fragmentu záhlaví vašeho webu v nástroji Co
 1. V dialogovém okně **Vybrat moduly** vyberte fragment chatu, který jste vytvořili předtím, a pak vyberte tlačítko **OK**.
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 
+> [!NOTE]
+> Úplný seznam parametrů konfigurace chatu viz [Proaktivní parametry chatu modulu Commerce Chat](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Přidejte Commerce headquarters jako kartu aplikace pro Omnikanál pro Customer Service
 
 Můžete přidat kartu aplikace pro Commerce headquarters v Omnikanálu pro Customer Service. Živí agenti pak mohou používat uživatelské rozhraní pro prostředí agenta Omnikanálu pro Customer Service, aby měli snadný přístup k modulu Dynamics 365 Commerce Customer Service, který obsahuje kontextové informace o zákazníkovi spolu s informacemi o jeho prodejních objednávkách. Kromě toho mohou zástupci zákaznických služeb zadávat nové objednávky, iniciovat vracení zboží a ověřovat informace o stavu objednávky.
@@ -115,6 +118,9 @@ Chcete-li povolit novou kartu aplikace pro zákaznické agenty v Dynamics 365 Om
 1. Otevřete pracovní proud, který jste vytvořili pro své agenty, a poté v **Pokročilém nastavení** vyberte **Výchozí nastavení relací**.
 1. V **Kartách aplikací** vyberte **Přidat existující kartu aplikace** a poté přidejte novou kartu aplikace, kterou jste vytvořili dříve. Tento krok zajistí, že karta aplikace, která načte Commerce headquarters v modulu iFrame se objeví, když agent přijme příchozí chatovací hovor z vašeho webu elektronického obchodu.
 
+> [!NOTE]
+> Výchozí šablonu relace chatu v pracovním proudu nemůžete upravit. Proto můžete chtít vytvořit novou šablonu nebo duplikovat existující šablonu a aktualizovat ji. Další informace viz [Přiřadit šablony k pracovnímu proudu](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Přidejte kontextové proměnné v Dynamics 365 Omnikanál pro Customer Service
 
 Chcete-li přidat kontextové proměnné v Dynamics 365 Omnikanál pro Customer Service, postupujte takto.
@@ -128,3 +134,11 @@ Chcete-li přidat kontextové proměnné v Dynamics 365 Omnikanál pro Customer 
 
 > [!NOTE]
 > Pokud si chcete přečíst e-mailové adresy a jména přihlášených uživatelů z kanálu elektronického obchodu, můžete přidat **E-mail** a **Jméno** jako kontextové proměnné typu **text** navíc ke kontextové proměnné **AccountNumber**.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Přehled funkcí chatu Commerce](commerce-chat-overview.md)
+
+[Modul chatu Commerce s Power Virtual Agents](chat-module-pva.md)
+
+[Proaktivní parametry chatu modulu Commerce Chat](chat-proactive-chat-parameters.md)

@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671418"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689193"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -56,7 +56,9 @@ Před aktivací nasazení proaktivní aktualizace kvality je implementována sad
 
 - **Schéma** – Nástroje zajistí, že kvalitní sestavení aktualizací bude obsahovat pouze změny schématu, které lze použít, když je služba online. Tento přístup pomůže zachovat možnost použít aktualizaci s téměř nulovými prostoji.
 - **Zvýšená kontrola změn** – V současné době již existuje další procesní krok ke schválení změn pro zahrnutí do aktualizace kvality. Kontrola v dalším kroku bude zvýšena, aby se snížila možnost regrese. V aktualizacích kvality nejsou povoleny přerušované změny a zvýšená kontrola změn nám pomůže zajistit splnění tohoto cíle.
-- **Viditelnost** – Budeme zasílat upozornění prostřednictvím e-mailu a služeb Lifecycle Services (LCS) o nadcházejících proaktivních aktualizacích kvality. Navíc týmy podpory a vedoucí incidentů budou mít přehled o tom, kde byly aktualizace kvality proaktivně nasazeny.
+- **Viditelnost** – Budeme zasílat upozornění prostřednictvím centra pro správce, Lifecycle Services (LCS) a dalších dostupných kanálů o nadcházejících proaktivních aktualizacích kvality. Navíc týmy podpory a vedoucí incidentů budou mít přehled o tom, kde byly aktualizace kvality proaktivně nasazeny.
+ > [!NOTE]
+ > Tým Microsoft Communications vyšetřuje pokračující degradaci e-mailových nástrojů, které brání doručování e-mailových upozornění. Prosím pokračujte ve sledování Centra zpráv Microsoft 365 pro zprávy týkající se onboardingu a oznámení.
 - **Odolnost proti selhání prostřednictvím publikování testovacích verzí** – Publikování testovacích verzí bude ve všech možných případech použito ke hlídání změn kódu opravy chyby aktualizace pro zvýšení kvality nebo se použije publikování testovacích verzí existující funkce relevantní pro opravu. Pokud je po proaktivním nasazení vyžadována záloha nebo vypnutí změny, lze to provést prostřednictvím systému publikování testovacích verzí, aby se předešlo dalším selháním.
 - **Označení synchronizace sandboxu** – Méně než 20 procent zákazníků má dnes více sandboxů a jeden sandbox si ponechává nasazený tam, kde se verze shoduje s produkčním řešením, aby pomohli s řešením problémů. Pokud zákazník používá sandbox k testování novější verze, než je jeho produkční verze, bude tento sandbox dostávat aktualizace kvality na novější verzi.
 
@@ -80,10 +82,10 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 
 | Stanice | Oblasti | Dokončený plán| Připravovaný plán sandboxu
 |---|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 15. září až 18. září 2022 a 19. září až 22. září 2022 | 7. října až 10. října 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 25. září až 28. září 2022 | 7. října až 10. října 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 26. září až 29. září 2022 | 7. října až 10. října 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 28. září až 1. října 2022 | 7. října až 10. října 2022 |
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 15. září až 18. září 2022, 19. září až 22. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 25. září až 28. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 26. září až 29. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 28. září až 1. října 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.29

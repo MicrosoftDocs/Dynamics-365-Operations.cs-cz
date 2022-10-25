@@ -14,12 +14,12 @@ ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 1d26c063926b8bd2ec47e0b9871d5e1b23a0945e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 94ac5b6d70d513f307a0ee1d3ba03974f70b6931
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287850"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689359"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -259,7 +259,7 @@ Následující kódy režimu plnění jsou k dispozici ve formátu XML kontroln�
 
 ### <a name="section-b2-taxable-purchases-with-an-amount-above-10000-including-vat-and-all-vat-adjustments-made-for-vendor-bad-debts"></a>Oddíl B2: Zdanitelné nákupy s částkami nad 10 000 včetně DPH a se všemi úpravami DPH provedenými u nedobytných pohledávek dodavatelů
 
-Oddíly B2 a B2 obsahují dokumenty, které generují částky v řádcích 40 a 41 přiznání k DPH.
+Oddíly B2 a B3 obsahují dokumenty, které generují částky v řádcích 40 a 41 přiznání k DPH.
 
 Informace o úpravách částky DPH u nedobytných pohledávek dodavatelů jsou také uvedeny v řádku 34 přiznání k DPH.
 
@@ -298,7 +298,7 @@ Oddíl A5 obsahuje jeden řádek, který obsahuje následující informace pro v
 
 ### <a name="section-b3-taxable-purchases-with-an-amount-below-10000-including-vat"></a>Oddíl B3: Zdanitelné nákupy s částkou pod 10 000 včetně DPH
 
-Oddíly B2 a B2 obsahují dokumenty, které generují částky v řádcích 40 a 41 přiznání k DPH.
+Oddíly B2 a B3 obsahují dokumenty, které generují částky v řádcích 40 a 41 přiznání k DPH.
 
 Oddíl B3 obsahuje jeden řádek, který obsahuje následující informace pro všechny dokumenty obsažené v této části.
 
@@ -491,7 +491,7 @@ Před vygenerováním přiznání k DPH byste měli zadat následující nastave
 | Právnické osoby                 | <p>Na záložce s náhledem **Adresy** definujte primární adresu právnické osoby.</p><p>Na záložce s náhledem **Kontaktní informace** v polích **Telefon** a **E-mail** vyberte **Primární**.</p> |
 | Finanční úřady (**Daň \> Nepřímé daně \> DPH \> Finanční úřady**) | Vytvořte finanční úřad, kam chcete předložit daňové přiznání. Zadejte kód finančního úřadu do pole **Identifikace úřadu**. |
 | Všichni zákazníci (**Pohledávky \> Zákazníci \> Všichni zákazníci**), Všichni prodejci (**Závazky \> Dodavatelé \> Všichni dodavatelé**) | Nastavení čísel DIČ pro zákazníky a dodavatele. Další informace naleznete v tématu [Registrace DIČ dodavatele](tasks/eur-00015-registration-vendor-vat-id.md). |
-| Parametry hlavní knihy (**Hlavní kniha \> Nastavení \> Nastavení hlavní knihy \> Parametry hlavní knihy**) | <p>Na kartě **DPH** na záložce s náhledem **Možnosti daně** v poli **Mapování formátu přiznání k DPH** vyberte **Přiznání k DPH pro Excel (CZ)**.</p><p>Tento formát bude vytištěn při spuštění sestavy **Vykázat DPH pro období vyrovnání**. Formát se vytiskne také při výběru **Tisk** na stránce **Platby DPH**.</p> |
+| Parametry hlavní knihy (**Hlavní kniha \> Nastavení \> Nastavení hlavní knihy \> Parametry hlavní knihy**) | <p>Na kartě **DPH** na záložce s náhledem **Možnosti daně** v poli **Mapování formátu přiznání k DPH** vyberte **Přiznání k DPH pro Excel (CZ)**. Tento formát bude vytištěn při spuštění sestavy **Vykázat DPH pro období vyrovnání**. Formát se vytiskne také při výběru **Tisk** na stránce **Platby DPH**.</p><p>Pokud musíte nahlásit opravy, v sekci **Speciální sestava** nastavte **Zahrnout opravy** na **Ano**.</p>|
 | Parametry hlavní knihy       | Na kartě **DPH** v oddíle **Speciální sestava** nastavte volbu **Datum rejstříku DPH** na **Ano**. |
 | Parametry hlavní knihy       | <p>Na kartě **DPH** na záložce s náhledem **Výkaz DPH** definujte pro společnost následující parametry:</p><ul><li>**Stav plátce daně**</li><li>**Typ plátce daně**</li><li>**Hlavní ekonomická aktivita**</li><li>**Faktor** – zadejte poměrný koeficient, který byl použit v průběhu roku.</li></ul><p>Stejné informace o společnosti můžete nakonfigurovat v dalších polích pro elektronické zprávy.</p><p>Když spustíte přiznání, budete moci vybrat zdroj informací o společnosti v poli **Příslušnost k dani**. Pro místní pole, která jsou k dispozici pro právnickou osobu v České republice, vyberte **Česká republika**. Pro dodatečná pole pro elektronické zprávy vyberte **Výchozí**.</p> |
 

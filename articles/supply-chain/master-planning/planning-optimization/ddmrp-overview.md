@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186657"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689481"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Plánování materiálových požadavků řízené poptávkou (DDMRP) – přehled
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Společnosti po léta používají plánování materiálových požadavků (MRP) jako systém pro výpočet materiálů a komponentů, které jsou nutné k výrobě produktu. Dodavatelské řetězce se však nyní změnily. Díly mají delší dodací lhůty, protože stále častěji pocházejí ze zámoří. Mnoho společností proto hlásilo, že dochází k vyprodání zásob nebo přeplnění zásob, protože nevědí, kolik zásob mají naskladnit. Dochází také k většímu kolísání trhu (někdy nepřesně předpovídané) a zákazníci požadují produkty v krátké dodací lhůtě. Po celém světě proto existuje nedostatek v dodavatelském řetězce. Nástroje MRP navíc často dávají plánovačům k dispozici tisíce akcí. Proto je těžké vědět, na co se zaměřit. Často je řešením mnoha z těchto problémů přechod na plánování materiálových požadavků řízené poptávkou (DDMRP).
 

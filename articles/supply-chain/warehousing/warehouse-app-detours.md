@@ -4,23 +4,25 @@ description: Tento článek popisuje, jak nakonfigurovat obcházení pro položk
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428056"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689303"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Funkce, které jsou popsány v tomto článku, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
@@ -38,6 +40,7 @@ Než budete moci nakonfigurovat obcházení pro kroky v položkách nabídky mob
 1. Zapněte následující funkce, které poskytují funkce popsané v tomto článku:
     - *Obcházení aplikace Warehouse Management*<br>(Od verze Supply Chain Management 10.0.29 je tato funkce ve výchozím nastavení zapnuta.)
     - *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management*
+    - *Automatické odesílání kroků obcházení pro mobilní aplikaci Warehouse Management*
 1. Pokud funkce *Obcházení aplikace Warehouse Management* a *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* ještě nebyly zapnuty, aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
 
@@ -49,7 +52,7 @@ Následující postup použijte k nastavení obcházení od přepisu specifické
 1. Najděte kombinaci hodnot **ID kroku** a **Názvu položky nabídky**, které chcete upravit, a vyberte hodnotu ve sloupci **ID kroku**.
 1. Na stránce, která se objeví, na pevné záložce **Dostupná obcházení (položky nabídky)** můžete určit položku nabídky, která by měla fungovat jako obcházení. Dále můžete zvolit, které hodnoty polí z hlavní úlohy se mají automaticky zkopírovat do obcházení a z něj. Příklady, které ukazují, jak tato nastavení používat, naleznete ve scénářích dále v tomto článku.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Ukázkový scénář 1: Vychystávání prodeje, kde dotaz na lokalitu funguje jako obcházení
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Ukázkový scénář 1: Vychystávání prodeje, kde dotaz na lokalitu funguje jako obcházení
 
 Tento scénář ukazuje, jak nakonfigurovat dotaz na umístění jako obcházení v toku úkolu vychystávání řízeného pracovníky. Toto obcházení umožní pracovníkům vyhledat všechny registrační značky v místě, ze kterého vybírají, a vybrat registrační značku, kterou chtějí použít k dokončení výběru. Tento typ obcházení může být užitečný v případě, že je čárový kód poškozen, a proto je skenerem nečitelný. Případně může být užitečné, když se pracovník musí naučit, co je v systému skutečně k dispozici. Všimněte si, že tento scénář funguje pouze v případě, že vybíráte z míst kontrolovaných registračními značkami.
 
@@ -59,7 +62,7 @@ Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení t
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Vytvoření přepsání specifického pro nabídku a konfigurace obcházení pro scénář 1
 
-V tomto postupu nakonfigurujete obcházení pro položku nabídky **Prodejní vychystávání** v kroku registrační značky.
+V tomto postupu nakonfigurujete obcházení pro položku nabídky **Vyskladnění prodejů** v kroku registrační značky.
 
 1. Přejděte do **Řízení skladu \> Nastavení \> Mobilní zařízení \> Kroky mobilního zařízení**.
 1. Najděte pojmenované ID kroku *LicensePlateId* a vyberte ho.
@@ -74,11 +77,13 @@ V tomto postupu nakonfigurujete obcházení pro položku nabídky **Prodejní vy
 
     - **Kopírovat z prodejního vychystávání:** *Umístění*
     - **Vložit do dotazu na umístění:** *Umístění*
+    - **Automatické odeslání:** *Vybraný* (stránka bude obnovena s vloženou hodnotou *Umístění*)
 
 1. Vzhledem k tomu, že obcházení je v tomto scénáři nakonfigurováno na kroku registrační značky, bude užitečné, když pracovníci mohou vzít registrační značku z dotazu zpět do hlavního toku. Proto v část **Vzít zpět z dotazu na lokalitu** vyberte **Přidat** na panelu nástrojů pro přidání řádku do mřížky. Poté pro nový řádek nastavte následující hodnoty:
 
     - **Kopírovat z dotazu na umístění:** *Registrační značka*
     - **Vložit do prodejního vychystávání:** *Registrační značka*
+    - **Automatické odeslání:** *Vymazáno* (při návratu z obcházení s hodnotou *Registrační značka* nebude provedena automatická aktualizace)
 
 1. Vyberte **OK**.
 
@@ -112,7 +117,7 @@ Chcete-li použít specifikované ukázkové záznamy a hodnoty k procházení t
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Vytvoření přepsání specifického pro nabídku a konfigurace obcházení pro scénář 2
 
-V tomto postupu nakonfigurujete obcházení pro položku nabídky **Prodejní vychystávání** v kroku registrační značky.
+V tomto postupu nakonfigurujete obcházení pro položku nabídky **Vyskladnění prodejů** v kroku registrační značky.
 
 1. Přejděte do **Řízení skladu \> Nastavení \> Mobilní zařízení \> Kroky mobilního zařízení**.
 1. Najděte a vyberte ID kroku s názvem *LocationInquiryList*.
@@ -131,6 +136,7 @@ V tomto postupu nakonfigurujete obcházení pro položku nabídky **Prodejní vy
 
     - **Kopírovat z dotazu na umístění:** *Umístění*
     - **Vložit do pohybu:** *Loc / LP*
+    - **Automatické odeslání:** *Vymazáno* (neproběhne žádná automatická aktualizace)
 
     V tomto obcházení neočekáváte zkopírování žádných informací zpět, protože hlavním tokem byl dotaz, kde nejsou vyžadovány žádné další kroky.
 
@@ -153,3 +159,5 @@ V tomto postupu provedete dotaz na polohu pomocí mobilní aplikace Warehouse Ma
 
 > [!NOTE]
 > Funkce *Víceúrovňové obcházení pro mobilní aplikaci Warehouse Management* umožňuje definovat víceúrovňová obcházení (obcházení v rámci obcházení), která umožní pracovníkům přeskočit z existujícího obcházení na druhé a pak zase zpět. Tato funkce ihned podporuje dvě úrovně obcházení a v případě potřeby můžete svůj systém přizpůsobit tak, aby podporoval tři nebo více úrovní obcházení vytvořením rozšíření kódu v tabulce `WHSWorkUserSessionState`.
+>
+> Funkce *Automatické odeslání kroků obcházení pro mobilní aplikaci Warehouse Management* Tato funkce může pracovníkům urychlit a usnadnit provádění toků obcházení v mobilní aplikaci Warehouse Management. Umožňuje přeskočit některé kroky toku tím, že necháte aplikaci naplnit data obcházení na zadní straně a poté automaticky přejít k dalšímu kroku automatickým odesláním stránky, jak je znázorněno na [*Ukázkový scénář 1: Vychystávání prodeje, kde dotaz na lokalitu funguje jako obcházení*](#scenario-1).

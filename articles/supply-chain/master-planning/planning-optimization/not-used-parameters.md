@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c7469692aac24a5ae554973325a128c787363ba
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: db8a8e929bf75c4d1dac0c1b0a7cbc848ff291a9
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542273"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682661"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
@@ -111,10 +111,8 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
 
 - Pevná záložka **Obecné**:
 
-  - **Zahrnout zásoby na skladě** – Čekající podpora *Spotřeba zásob na skladě*.
   - **Přepsat na skladě** – Čekající podpora *Spotřeba zásob na skladě*.
   - **Spotřebovat zásob na skladě** – Čekající podpora *Spotřeba zásob na skladě*.
-  - **Zahrnout transakce zásob** – Čekající podpora *Spotřeba zásob na skladě*.
   - **Zahrnout prodejní nabídky** – Čekající podpora *Prodejní nabídky*.
   - **Zahrnout požadavky na nabídku** – Čekající podpora *Požadavky na nabídku*.
   - **Použít data trvanlivosti** – Čekající podpora *Skladovatelnost*.
@@ -190,4 +188,3 @@ Optimalizace plánování nepoužívá následující parametr na stránce **Vzo
 
   - **Možnost čisté hodnoty** – Čekající podpora *Dávkové dispoziční kódy*.
  
-<!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 

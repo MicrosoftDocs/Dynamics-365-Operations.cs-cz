@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643720"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689987"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -62,7 +62,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | --- | --- | --- | --- |
 | Akce | Výpočet skupin disponibility s akcemi povolen: *\#* | Tato funkce je nyní podporována. | Podporováno |
 | Základní kalendáře | Kalendáře používající základní kalendář: *\#* | Tato funkce je nyní podporována. | Podporováno | 
-| Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: *\#* | Tato funkce čeká na implementaci. V současné době jsou kódy dispozice dávky ignorovány, pokud je povolena optimalizace plánování. | Vlna verze 2022 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: *\#* | Tato funkce je nyní podporována. Další informace viz [Označení dávky jako K dispozici nebo Není k dispozici pomocí kódů dispozice dávky](../../inventory/batch-disposition-codes.md) | Podporováno |
 | Příslib na základě ověření dostupné kapacity (CTP) | Výchozí nastavení objednávky s datem dodání nastaveným na CTP: *\#* | V Supply Chain Management 10.0.28 a novějších proces nazvaný *CTP pro optimalizaci plánování* zpřístupní potvrzená data odeslání a přijetí po spuštění dynamického plánu. U starších verzí Supply Chain Management je starší nastavení CTP ignorováno, když je povolena optimalizace plánování. | Podporováno |
 | Kopírovat statický do dynamického plánu | Kopírování statického do dynamického plánu je povoleno na parametrech hlavního plánování. | Optimalizace plánování nekopíruje statický plán do dynamického plánu bez ohledu na toto nastavení. Obecně platí, že tento koncept je méně významný z důvodu rychlosti a úplného obnovení, které poskytuje optimalizace plánování. Pokud jsou použity dva nebo více plánů, je třeba pro každý plán spustit hlavní plánování. | Není k dispozici |
 | Potvrzení | Skupiny disponibility s nastavenou ochrannou dobou automatického potvrzení: *\#* | Ve verzi 10.0.7 a novějších je potvrzení podporováno jako samostatná dávková úloha potvrzení po dokončení hlavního plánování (za předpokladu , že ve [správě funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) byla povolena funkce *Automatické potvrzení pro optimalizaci plánování*). Všimněte si, že automatické potvrzení pro optimalizaci plánování je založeno na datu objednávky (počáteční datum), nikoli na datu požadavku (koncové datum). Toto chování zajišťuje, že k potvrzení plánovaných objednávek dojde včas, aniž by bylo nutné zahrnout dobu realizace do ochranné doby potvrzování. | Podporováno |
@@ -104,7 +104,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Pojistné doby | Hlavní plány s pojistnou dobou: *\#* | Tato funkce je nyní podporována. Další informace viz [Pojistné doby](safety-margins.md) |  Podporováno |
 | Plnění rezervních zásob | Záznamy disponibility položky s hodnotou „splnit minimum“ se liší od „dnešní datum a čas pořízení“: *\#* | Optimalizace plánování vždy používá *dnešní datum a čas pořízení*. Tato změna je provedena kvůli přípravě na zjednodušené nastavení plánování v budoucnu a k zajištění výsledku s akcemi. Není-li k dispozici doba pořízení pro pojistnou zásobu, plánované objednávky, které jsou vytvořeny pro aktuální nízké zásoby na skladě, budou vždy zpožděny kvůli době realizace. Toto chování může způsobit výrazný nedostatek informací a nežádoucí plánované objednávky. Doporučeným postupem je změna nastavení tak, aby bylo použito *dnešní datum a čas pořízení*. Aktualizujte hlavní data, abyste se vyhnuli varování. | Nevztahuje se |
 | Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: *\#* | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 nebo novější |
-| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce je nyní podporována. | Podporováno |
+| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce čeká na implementaci. | Vlna verze 2022 2 |
 
 ## <a name="additional-resources"></a>Další prostředky
 

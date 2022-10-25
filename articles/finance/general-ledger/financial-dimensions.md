@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849982"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680350"
 ---
 # <a name="financial-dimensions"></a>Finanční dimenze
 
@@ -84,7 +84,7 @@ V zájmu udržení referenční integrity dat lze finanční dimenze v řídk�
 Pokud je odpověď na některou z těchto otázek kladná, finanční dimenzi nelze odstranit.
 
 > [!NOTE]
-> Počínaje verzí Finance 10.0.27 již nebudou finanční dimenze automaticky vybírány pro nastavení finančního výkaznictví při jejich vytváření. 
+> Počínaje verzí Finance 10.0.27 již nebudou finanční dimenze automaticky vybírány pro nastavení finančního výkaznictví při jejich vytváření.
 
 ## <a name="default-dimension-values"></a>Výchozí hodnoty dimenze
 

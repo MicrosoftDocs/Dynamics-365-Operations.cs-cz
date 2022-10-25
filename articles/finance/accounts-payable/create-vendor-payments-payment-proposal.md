@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845367"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682865"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatele pomocí návrhu platby
 
@@ -111,7 +111,7 @@ Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle
 -   Pole **Kontrola dimenzí** je aktivováno bez dalšího definování dimenzí Návrh platby bude vytvořen bez ohledu na dimenzi. Vytvořená transakce nedědí žádné dimenze z aplikované položky.
 -   Pole **Kontrola dimenzí** je aktivováno a jsou povoleny další dimenze. Nyní můžete definovat, jak dimenze budou zkopírovány do deníku. Například: • vyberte zaškrtávací políčko **BusinessUnit**, chcete-li vytvořit návrh platby podle organizační jednotky pro metodu platby • vyberte zaškrtávací políčko **CostCenter**, chcete-li vytvořit návrh platby podle nákladového střediska pro metodu platby.
 
-> [[!NOTE]
+>[!NOTE]
 > Pokud ve třetí možnosti vyberete více dimenzí, dojde k vytvoření návrhu platby pro danou kombinaci dimenzí.
 
 #### <a name="bank-account-selection"></a>Výběr účtu

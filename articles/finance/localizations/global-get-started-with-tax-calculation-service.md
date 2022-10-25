@@ -2,7 +2,7 @@
 title: Začínáme s výpočtem daně
 description: Tento článek vysvětluje, jak nastavit výpočet daně.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573298"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690376"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
@@ -124,6 +124,10 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
 8. Vyberte správnou [verzi konfigurace daně](global-tax-calcuation-service-overview.md#versions) na základě vaší verze Finance a poté vyberte **Import**.
 9. V pracovním prostoru **Funkce globalizace**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
+
+    > [!NOTE]
+    > Ve verzi 10.0.26 a novějších můžete importovat ukázkovou funkci pro ukázkovou právnickou osobu **DEMF**. Další informace najdete v tématu [Import demo dat fukcí](tax-calculation-import-export-feature.md).
+
 10. Vyberte jeden z následujících typů funkce:
 
     - **Nová funkce** – Vytvořte nastavení funkce, která má prázdný obsah.
@@ -154,8 +158,8 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     - **Použitelnost DIČ dodavatele** - Pokud máte více daňových registračních čísel pro jednoho dodavatele, může Výpočet daně automaticky určit správné daňové registrační číslo. V matici na této kartě definujete pravidla, která by se měla použít k určení. Jinak budou Finance a Supply Chain Management i nadále používat u nákupních transakcí výchozí daňové registrační číslo na zdanitelných dokladech.
     - **Použitelnost kódu seznamu** - automatické určení hodnoty pole **Kód seznamu** prostřednictvím flexibilnějších a konfigurovatelnějších pravidel. V matici na této kartě definujete pravidla, která by se měla použít k určení. Jinak budou Finance a Supply Chain Management i nadále používat u zdanitelných dokladů výchozí kód.
 
-14. Na kartě **Daňové kódy** vyberte **Přidat** a zadejte daňový kód a popis.
-15. Vyberte možnost **Daňová komponenta**. Daňová komponenta je skupina metod, které byly definovány v předchozí verzi vybrané daňové konfigurace. K dispozici jsou následující daňové komponenty:
+15. Na kartě **Daňové kódy** vyberte **Přidat** a zadejte daňový kód a popis.
+16. Vyberte možnost **Daňová komponenta**. Daňová komponenta je skupina metod, které byly definovány v předchozí verzi vybrané daňové konfigurace. K dispozici jsou následující daňové komponenty:
 
     - Podle čisté částky
     - Podle hrubé částky
@@ -163,8 +167,8 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     - Podle marže
     - Daň z daně
 
-16. Zvolte **Uložit**. Na základě vybrané daňové komponenty se zpřístupní více polí.
-17. Pomocí následujících možností můžete určit povahu daňového kódu:
+17. Zvolte **Uložit**. Na základě vybrané daňové komponenty se zpřístupní více polí.
+18. Pomocí následujících možností můžete určit povahu daňového kódu:
 
     - Je osvobozeno od daně
     - Je importní DPH
@@ -179,8 +183,8 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 
     Udržujte daňové sazby a limity výše daně pro tento daňový kód.
 
-18. Opakujte kroky 14 až 17 pro všechny další povinné daňové kódy, které chcete přidat.
-19. Na kartě **Daňová skupina** vyberte sloupec **Daňová skupina**, přidejte jej do matice jako vstupní podmínku a poté přidejte řádky pro zachování kmenových dat daňové skupiny.
+19. Opakujte kroky 15 až 18 pro všechny další povinné daňové kódy, které chcete přidat.
+20. Na kartě **Daňová skupina** vyberte sloupec **Daňová skupina**, přidejte jej do matice jako vstupní podmínku a poté přidejte řádky pro zachování kmenových dat daňové skupiny.
 
     Následuje příklad.
 
@@ -191,7 +195,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. Na kartě **Daňová skupina zboží** vyberte sloupec **Daňová skupina zboží**, přidejte jej do matice jako vstupní podmínku a poté přidejte řádky pro zachování kmenových dat daňové skupiny zboží.
+21. Na kartě **Daňová skupina zboží** vyberte sloupec **Daňová skupina zboží**, přidejte jej do matice jako vstupní podmínku a poté přidejte řádky pro zachování kmenových dat daňové skupiny zboží.
 
     Následuje příklad.
 
@@ -200,7 +204,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     | Plný           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Výjimka |
     | Snížené        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. Na kartě **Použitelnost daňové skupiny** vyberte sloupce, které jsou nutné k určení správné daňové skupiny, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina daně z prodeje na řádku transakce.
+22. Na kartě **Použitelnost daňové skupiny** vyberte sloupce, které jsou nutné k určení správné daňové skupiny, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina daně z prodeje na řádku transakce.
 
     Následuje příklad.
 
@@ -214,7 +218,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     > [!NOTE]
     > Pokud je výchozí skupina daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto článku.
 
-22. Na kartě **Použitelnost daňové skupiny zboží** vyberte sloupce, které jsou nutné k určení správného daňového kódu, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina zboží** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina DPH zboží na řádku transakce.
+23. Na kartě **Použitelnost daňové skupiny zboží** vyberte sloupce, které jsou nutné k určení správného daňového kódu, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina zboží** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina DPH zboží na řádku transakce.
 
     Následuje příklad.
 
@@ -228,10 +232,10 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 
     Další informace o tom, jak se určují daňové kódy ve Výpočtu daně, viz [Logika určování skupiny DPH a skupiny DPH zboží](global-sales-tax-group-determination.md).
 
-23. Nastavte použitelnost DIČ zákazníka, DIČ dodavatele a kódů seznamu dle obchodních potřeb.
-24. Zvolte **Uložit** a pak zavřete stránku.
-25. Vyberte **Změnit stav** \> **Dokončeno**. Po změně stavu na **Dokončeno** již verzi nelze upravovat.
-26. Vyberte **Změnit stav** \> **Publikovat**. Tato verze nastavení funkce daně bude přenesena do globálního úložiště a bude viditelná pro každou právnickou osobu ve službě Finance.
+24. Nastavte použitelnost DIČ zákazníka, DIČ dodavatele a kódů seznamu dle obchodních potřeb.
+25. Zvolte **Uložit** a pak zavřete stránku.
+26. Vyberte **Změnit stav** \> **Dokončeno**. Po změně stavu na **Dokončeno** již verzi nelze upravovat.
+27. Vyberte **Změnit stav** \> **Publikovat**. Tato verze nastavení funkce daně bude přenesena do globálního úložiště a bude viditelná pro každou právnickou osobu ve službě Finance.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Nastavení výpočtu daně v Dynamics 365
 

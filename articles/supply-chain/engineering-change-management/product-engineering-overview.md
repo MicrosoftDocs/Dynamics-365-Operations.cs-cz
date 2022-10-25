@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334858"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682499"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -73,6 +73,9 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 1. Databáze musí být synchronizována, aby bylo zajištěno, že jsou konfigurační klíče správně aktualizovány, aby reagovaly na provedené změny. Proveďte jeden z následujících kroků v závislosti na typu prostředí, na kterém pracujete:
     - **Pro prostředí úrovně 1 (vývoj)**: Otevřete svůj projekt v Microsoft Visual Studio a poté vyberte **Dynamics 365 \> Synchronizovat databázi \> Synchronizovat**.
     - **Pro prostředí úrovně 2 (a vyšší)**: Databáze se automaticky synchronizuje poté, co prostředí přepnete do režimu údržby a odejdete z něj, takže tento krok můžete přeskočit.
+
+> [!NOTE]
+> Chcete-li použít správu technických změn, musí být číselná řada kusovníku i číselná řada vzorce (pokud používáte vzorce) nastaveny na *Automatický* na stránce **Číselné řady**.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Zapněte pro svůj systém další funkce správy technických změn
 

@@ -2,19 +2,19 @@
 title: Časté otázky k asynchronnímu režim vytváření zákazníka
 description: V tomto článku jsou odpovědi na časté otázky týkající se režimu asynchronního vytváření zákazníků v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 64c895fb9f3e55f7680759fa72626be6660aa67c
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474062"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690195"
 ---
 # <a name="asynchronous-customer-creation-mode-faq"></a>Časté otázky k asynchronnímu režim vytváření zákazníka
 
@@ -44,5 +44,10 @@ Data uložená v mezipaměti v Commerce Scale Unit (CSU) se nemusí po spuštěn
 
 Ujistěte se, že následující akce byly provedeny v pořadí, ve kterém jsou zde uvedeny.
 
-1. Spusťte P-úlohu CDX v Commerce headquarters, abyste zajistili, že asynchronní zákaznická data, která jsou uložena v tabulkách **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** a **RETAILASYNCCUSTOMERATTRIBUTEV2** jsou k dispozici v Commerce headquarters.
+1. Spusťte P-úlohu CDX v Commerce headquarters, abyste zajistili, že asynchronní zákaznická data jsou uložena v tabulkách **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** a **RETAILASYNCCUSTOMERATTRIBUTEV2**.
 1. Spusťte dávkovou úlohu **Synchronizovat požadavky zákazníků a kanálů** v Commerce headquarters. Po úspěšném provedení dávkové úlohy budou mít všechny záznamy, které byly úspěšně zpracovány z výše uvedených tabulek, pole **OnlineOperationCompleted** nastaveno na **1**.
+
+### <a name="how-do-i-know-which-customer-management-in-asynchronous-mode-operation-has-failed-and-how-do-i-make-changes-if-they-are-required"></a>Jak poznám, která správa zákazníků v asynchronním režimu selhala a jak mohu provést změny, pokud jsou vyžadovány?
+
+Chcete-li zobrazit všechny operace v asynchronním režimu a stav jejich synchronizace, přejděte v Commerce headquarters na **Commerce a Retail \> Zákazníci \> Stav synchronizace zákazníka**. Chcete-li provést změny, upravit konkrétní operaci, aktualizovat pole, vyberte **Uložit** a poté vyberte **Synchronizovat** pro synchronizaci změn.
+
