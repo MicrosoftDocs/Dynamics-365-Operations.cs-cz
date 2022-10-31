@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Commerce"
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (únor 2023)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (listopad 2022)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (říjen 2022)
@@ -564,10 +566,12 @@
                       href: payment-methods.md
                     - name: "Platební metody v\_kontaktních střediscích"
                       href: work-with-payments.md
-                    - name: Zpracování vrácení platby v kontaktních střediscích
+                    - name: "Zpracování refundace platby v\_kontaktních střediscích"
                       href: call-center-refund-payments.md
-                    - name: 'Nastavení, autorizace a zachycení platební karty'
+                    - name: "Nastavení, autorizace a\_zachycení platební karty"
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+                    - name: Omezení používání platebních tokenů
+                      href: dev-itpro/limit-token-usage.md
                     - name: Konfigurace nominálních hodnot hotovosti pro POS
                       href: cash-denominations.md
                     - name: Konfigurace zpracování platební karty
@@ -1236,7 +1240,9 @@
                       href: cart-icon-module.md
                     - name: Modul pokladny
                       href: add-checkout-module.md
-                    - name: Platební modul
+                    - name: Referenční kódy chyb modulu pokladny
+                      href: checkout-module-error-codes.md
+                    - name: Modul platby
                       href: payment-module.md
                     - name: Modul dodací adresy
                       href: ship-address-module.md
@@ -1586,7 +1592,7 @@
               items:
                 - name: Domovská stránka obsahu Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/commerce
-                - name: Výuka
+                - name: Vzdělávání
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/commerce
                 - name: Školení organizace
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/commerce
@@ -2982,7 +2988,7 @@
               items:
                 - name: Refundace na vratce je odmítnuta
                   href: troubleshoot/refund-declined.md
-                - name: Vratné poplatky jsou špatně vypočítány na základě vráceného množství
+                - name: Refundovatelné poplatky jsou špatně vypočítány na základě vráceného množství
                   href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Aplikace Dynamics 365 Payment Connector pro Adyen
                   items:

@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Aktualizace platformy pro verzi 10.0.29 (říjen 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Aktualizace platformy pro verzi 10.0.28 (srpen 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -1602,10 +1600,14 @@
               href: sysadmin/system-administration-home-page.md
             - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů
               href: sysadmin/legal-terms-privacy-statement.md
-            - name: Licenční kódy a sestava konfiguračních klíčů
+            - name: "Sestava licenčních kódů a\_konfiguračních klíčů"
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Sdílení dat mezi společnostmi
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: Tabulky podporované pro sdílení dat
+              href: sysadmin/drs-srs-tables.md
+            - name: Sdílení dat pro vývojáře
+              href: sysadmin/drs-srs-dev.md
             - name: Režim údržby
               href: sysadmin/maintenance-mode.md
             - name: Předkonfigurované systémové účty
@@ -1996,15 +1998,15 @@
                   href: user-interface/nested-simple-list-details-subpattern.md
                 - name: Vzor formuláře grafu sekcí
                   href: user-interface/section-chart-form-pattern.md
-                - name: Podvzor části Power BI
+                - name: Podvzor sekce Power BI
                   href: user-interface/section-powerbi-subpattern.md
                 - name: Podvzor odkazů souvisejících se sekcí
                   href: user-interface/section-related-links-subpattern.md
                 - name: Podvzor skládaného grafu sekce
                   href: user-interface/section-stacked-chart-subpattern.md
-                - name: Podvzor části seznamu s kartami
+                - name: Podvzor sekce seznamu s kartami
                   href: user-interface/section-tabbed-list-subpattern.md
-                - name: Podvzor části Dlaždice
+                - name: Podvzor sekce Dlaždice
                   href: user-interface/section-tiles-subpattern.md
                 - name: Podvzor tabulkových polí
                   href: user-interface/tabular-fields-subpattern.md

@@ -2,7 +2,7 @@
 title: Úprava a audit online objednávky a asynchronních transakcí objednávek zákazníků
 description: Tento článek popisuje, jak upravit a auditovat online objednávky a asynchronní transakce objednávek zákazníků v Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.industry: Retail
-ms.openlocfilehash: dac7ffe6d62aaea11f2f5af0476db446b091938b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dbeeff47446c1617da44f34ae56f333717f577a1
+ms.sourcegitcommit: 18b7a02c497709e8d9c7b943d82f1fcc3dafa4cd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287670"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9712101"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Úprava a audit online objednávky a asynchronních transakcí objednávek zákazníků
 
@@ -34,12 +34,13 @@ Mezi verzemi Commerce 10.0.5 a 10.0.6 byla přidána podpora pro úpravy transak
 
 ## <a name="edit-and-audit-order-transactions"></a>Úprava a audit transakcí objednávek
 
-Chcete-li upravit a auditovat transakce objednávek v Commerce Headquarters, postupujte takto.
+Pokud chcete upravit a auditovat transakce objednávek v Commerce Headquarters, postupujte následovně.
 
-1. Nainstalujte [doplněk Microsoft Dynamics Office](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. Na stránce **Parametry maloobchodu** na záložce **Objednávky zákazníků** na záložce s náhledem **Objednávka** zadejte kód blokování pro **Kód blokování pro chyby synchronizace objednávky**.
-1. Otevřete pracovní prostor **Finance obchodu**. Dlaždice **Chyby synchronizace online objednávek** a **Chyby synchronizace objednávek zákazníka** poskytují předfiltrované zobrazení stránky maloobchodních transakcí. Každé z nich zobrazuje záznamy transakcí, u kterých se nezdařila synchronizace pro odpovídající typ objednávky.
-1. Otevřete buď stránku **Chyby synchronizace online objednávek** nebo stránku **Chyby synchronizace objednávek zákazníka**. Vyberte záznam a zobrazte podrobnosti chyby synchronizace. Záložka s náhledem **Stav synchronizace** poskytuje následující podrobnosti o chybě:
+1. Nainstalujte [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
+1. Na stránce **Parametry Commerce** na kartě **Objednávky zákazníků** na záložce s náhledem **Objednávka** zadejte kód blokování pro **Kód blokování pro chyby synchronizace objednávky**.
+2. Pozastavte jiné úlohy synchronizace objednávek, které budou v rozporu s načasováním vašich úprav a auditu.
+3. Otevřete pracovní prostor **Finance obchodu**. Dlaždice **Chyby synchronizace online objednávek** a **Chyby synchronizace objednávek zákazníka** poskytují předfiltrované zobrazení stránky maloobchodních transakcí. Každé z nich zobrazuje záznamy transakcí, u kterých se nezdařila synchronizace pro odpovídající typ objednávky.
+4. Otevřete buď stránku **Chyby synchronizace online objednávek** nebo stránku **Chyby synchronizace objednávek zákazníka**. Vyberte záznam a zobrazte podrobnosti chyby synchronizace. Záložka s náhledem **Stav synchronizace** poskytuje následující podrobnosti o chybě:
 
     - Stav čekající objednávky
     - Podrobnosti chyby objednávky
@@ -66,8 +67,16 @@ Chcete-li upravit a auditovat transakce objednávek v Commerce Headquarters, pos
         - **Náklady** - Tento list obsahuje data transakce související s náklady.
 
 1. V souboru Excel v poli **Čekající stav objednávky** zadejte **Úpravy** a poté publikujte změnu. Tímto způsobem zabráníte, aby úloha **Synchronizovat objednávku**, která běží v dávkovém režimu, přeskočila tento záznam během zpracování.
-1. V souboru aplikace Excel upravte příslušná pole a poté odešlete data zpět do Commerce Headquarters pomocí funkce publikování doplňku Dynamics Excel. Po publikování dat se změny projeví v systému. Během publikování se neprovádí žádné ověření u změn, které uživatelé provedou.
-1. Úplný záznam auditu změn lze zobrazit výběrem možnosti **Zobrazit záznam auditu** v záhlaví **Maloobchodní transakce** pro změny na úrovni záhlaví a v příslušné sekci a provést záznam na příslušné stránce transakce. Například všechny změny související s řádky prodeje se zobrazí na stránce **Prodejní transakce** a všechny změny související s platbami se zobrazí na stránce **Platební transakce**. Pro změny jsou zachovány následující podrobnosti auditu:
+1. V souboru aplikace Excel upravte příslušná pole a poté odešlete data zpět do Commerce Headquarters pomocí funkce publikování doplňku Dynamics Excel. Po publikování dat se změny projeví v systému. Během publikování se neprovádí žádné ověřování změn provedených uživateli.
+    > [!NOTE]
+    > Pokud nemůžete najít pole, které potřebujete upravit, přidejte chybějící pole do listu podle následujících kroků.
+    >   1. Vyberte možnost **Design** u položky Datový konektor.
+    >   1. Vyberte ikonu tužky vedle tabulky, do které chcete přidat pole.
+    >   1. Vyberte pole v sekci **Dostupná pole** a poté vyberte možnost **Přidat**.
+    >   1. Přidejte požadovaný počet polí a poté vyberte možnost **Aktualizovat**.
+    >   1. Po dokončení aktualizace může být nutné zvolit možnost **Aktualizovat**, aby došlo k aktualizaci hodnot.
+
+3. Úplný záznam auditu změn lze zobrazit výběrem možnosti **Zobrazit záznam auditu** v záhlaví **Maloobchodní transakce**. Můžete zobrazit změny na úrovni záhlaví a v příslušné sekci a provést záznam na příslušné stránce transakce. Například všechny změny související s řádky prodeje se zobrazí na stránce **Prodejní transakce** a všechny změny související s platbami se zobrazí na stránce **Platební transakce**. Pro změny jsou zachovány následující podrobnosti auditu:
 
     - Datum a čas úpravy
     - Pole

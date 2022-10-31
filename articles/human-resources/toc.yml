@@ -10,21 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
               items:
+                - name: Human Resources 10.0.31 (sloučená infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Human Resources 10.0.30 (sloučená infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (sloučená infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sloučená infrastruktura)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (sloučená infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (sloučená infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (sloučená infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
-                - name: Co je nového v Dynamics 365 Human Resources (samostatně)
+                - name: "Co je nového v\_aplikaci Dynamics 365 Human Resources (samostatná)"
                   items:
-                    - name: Co je nového v archivech 2021 Dynamics 365 Human Resources (samostatně)
+                    - name: "Co je nového v\_aplikaci Dynamics 365 Human Resources (samostatná) – archivy 2021"
                       href: hr-admin-whats-new.md
                     - name: 29. listopadu 2021
                       href: hr-whats-new-2021-11-29.md
@@ -718,6 +714,8 @@
               href: hr-develop-create-performance-review.md
         - name: Vzdělávání
           items:
+            - name: Přehled kurzu
+              href: hr-course-overview.md
             - name: Nastavení školicích kurzů
               href: hr-learning-courses.md
             - name: Přehled dotazníků

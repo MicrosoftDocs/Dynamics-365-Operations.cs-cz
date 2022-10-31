@@ -12,7 +12,7 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (únor 2022)
+                - name: Supply Chain Management 10.0.31 (únor 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (listopad 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -849,7 +849,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/supply-chain
                 - name: Správa nákladů
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?context=/dynamics365/context/supply-chain
-                - name: Výuka
+                - name: Vzdělávání
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/supply-chain
                 - name: Školení organizace
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/supply-chain
@@ -1667,7 +1667,7 @@
                   href: inventory/tasks/change-ownership-consignment.md
                 - name: Vytvoření nové zakázky na doplnění stavu zásob dodávky
                   href: inventory/tasks/create-consignment-replenishment-order.md
-                - name: "Sledování zásob dodávky s\_použitím dodavatelské spolupráce"
+                - name: "Monitorování zásob dodávky s\_použitím dodavatelské spolupráce"
                   href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
                 - name: 'Sledování zboží a surovin ve skladu, při výrobě a prodeji'
                   href: inventory/trace-items-raw-materials-inventory-production-sales.md
@@ -1875,7 +1875,7 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Použití sledování pro rozpad
                   href: master-planning/trace-explosion.md
-                - name: Sledování běhu hlavního plánování
+                - name: Monitorování běhu hlavního plánování
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Vytvoření rozvrhu pro pracoviště
                   href: master-planning/tasks/create-schedule-site.md
@@ -3201,7 +3201,7 @@
                           href: service-management/prioritize-service-orders.md
                         - name: Zobrazení stavu servisních zakázek
                           href: service-management/view-the-status-of-service-orders.md
-                        - name: Sledování servisních aktivit
+                        - name: Monitorování servisních aktivit
                           href: service-management/monitor-service-activities.md
                         - name: Opětovné přiřazení aktivit
                           href: service-management/reassign-activities.md
@@ -3243,9 +3243,11 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: Osvědčení o původu USMCA
               href: transportation/usmca-certification-of-origin.md
+            - name: Obchodní faktury
+              href: transportation/commercial-invoice.md
             - name: Vytvoření přepravního dokladu
               href: transportation/create-bill-of-lading.md
-            - name: Plánování tras přepravy s dopravným
+            - name: "Plánování tras přepravy s\_dopravným"
               href: transportation/plan-freight-transportation-routes-multiple-stops.md
             - name: Plánování nákladů pomocí konsolidace centra
               items:
@@ -3429,12 +3431,18 @@
                       href: warehousing/create-transfer-order-from-warehouse-app.md
                     - name: Potvrzení výdeje kusů
                       href: warehousing/piece-picking-confirmation.md
-                    - name: Obalové materiály a poplatky
+                    - name: "Obalové materiály a\_poplatky"
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Kontejnery balení pro dodávku
                       href: warehousing/packing-containers.md
-                    - name: "Balicí práce pro balení odchozích kontejnerů a\_zpracování zásilek"
+                    - name: Vytisknout popisky kontejneru
+                      href: warehousing/print-container-labels.md
+                    - name: "Balicí práce pro balení odchozích kontejnerů a\_zpracování dodávek"
                       href: warehousing/packing-work.md
+                    - name: Balení kontejnerů pomocí mobilní aplikace Warehouse Management
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Příkladový scénář – Balení kontejnerů pomocí mobilní aplikace Warehouse Management
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Nastavení opakovaného přidělení zboží při krátkodobém přerozdělení
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Pořadí práce řízené systémem
@@ -3687,13 +3695,13 @@
                       href: warehousing/tasks/set-up-dispositions-codes.md
                     - name: Měrná jednotka a zásady uskladnění
                       href: warehousing/unit-measure-stocking-policies.md
-                    - name: Obsah skladu v Power BI
+                    - name: "Obsah skladu v\_Power BI"
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Systémové seskupení na otevřeném seznamu úkolů
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Rozvržení směrování dokumentu pro popisky registrační značky
+                    - name: Rozložení směrování popisku dokumentů
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Kódy QR a čárové kódy GS1
+                    - name: "Kódy QR a\_čárové kódy GS1"
                       href: warehousing/gs1-barcodes.md
                     - name: Nastavení skladu pro převodní příkazy
                       href: warehousing/transfer-orders-warehouse.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: "Upgrade procesů řízení skladu z\_aplikace Microsoft Dynamics AX 2012 na finanční a\_provozní aplikace"
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Telemetrie skladu
+              items:
+                - name: Povolení telemetrie skladu pomocí funkce Application Insights
+                  href: warehousing/application-insights-warehousing.md
+                - name: "Monitorování využití a\_výkonu mobilních zařízení"
+                  href: warehousing/application-insights-wma.md
         - name: Vývoj aplikace Supply Chain Management
           items:
             - name: Průvodce vývojem Ganttova diagramu
