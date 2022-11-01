@@ -1,6 +1,6 @@
 ---
-title: Přepočet čisté částky řádku při importu prodejních objednávek, nabídek a vratek
-description: Tento článek popisuje, zda a jak systém přepočítá čisté částky řádku při importu prodejních objednávek, nabídek a vratek. Vysvětluje také, jak můžete ovládat chování v různých verzích Microsoft Dynamics 365 Supply Chain Management.
+title: Přepočet čisté částky řádku při importu prodejních objednávek a nabídek
+description: Tento článek popisuje, zda a jak systém přepočítá čisté částky řádku při importu prodejních objednávek a nabídek. Vysvětluje také, jak můžete ovládat chování v různých verzích Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335548"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719327"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Přepočet čisté částky řádku při importu prodejních objednávek, nabídek a vratek
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Přepočet čisté částky řádku při importu prodejních objednávek a nabídek
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, zda a jak systém přepočítá čisté částky řádku při importu prodejních objednávek, nabídek a vratek. Vysvětluje také, jak můžete ovládat chování v různých verzích Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje, zda a jak systém přepočítá čisté částky řádku při importu prodejních objednávek a nabídek. Vysvětluje také, jak můžete ovládat chování v různých verzích Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Jak se při importu počítají aktualizace čistých částek řádku
 
-Supply Chain Management verze 10.0.23 obsahuje [opravu chyby 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Tato oprava chyby změnila podmínky, za kterých lze pole **Čistá částka** na řádku aktualizovat nebo přepočítat při importu aktualizací stávajících prodejních objednávek, vratek a nabídek. Ve verzi 10.0.29 můžete tuto opravu chyby nahradit zapnutím funkce *Vypočítat čistou částku řádku při importu*. Tato funkce má podobný účinek, ale poskytuje globální nastavení, které vám v případě potřeby umožní vrátit se ke starému chování. Ačkoli díky novému chování systém pracuje intuitivnějším způsobem, může přinést neočekávané výsledky ve specifických scénářích, kde jsou splněny všechny následující podmínky:
+Supply Chain Management verze 10.0.23 obsahuje [opravu chyby 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Tato oprava chyby změnila podmínky, za kterých lze pole **Čistá částka** na řádku aktualizovat nebo přepočítat při importu aktualizací stávajících prodejních objednávek a nabídek. Ve verzi 10.0.29 můžete tuto opravu chyby nahradit zapnutím funkce *Vypočítat čistou částku řádku při importu*. Tato funkce má podobný účinek, ale poskytuje globální nastavení, které vám v případě potřeby umožní vrátit se ke starému chování. Ačkoli díky novému chování systém pracuje intuitivnějším způsobem, může přinést neočekávané výsledky ve specifických scénářích, kde jsou splněny všechny následující podmínky:
 
 - Data, která aktualizují existující záznamy, se importují prostřednictvím entity *Řádky prodejní objednávky V2*, *Řádky prodejní nabídky V2* nebo *Řádky objednávky vrácení* pomocí Open Data Protocol (OData), včetně situací, kdy používáte duální zápis, import/export přes Excel a některé integrace třetích stran.
-- Zavedené [zásady hodnocení obchodních smluv](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) zavádění zásady změn, které omezují změny na pole **Čistá částka** pro řádky prodejní objednávky, řádky prodejní nabídky a řádky návratové objednávky.
+- Zavedené [zásady hodnocení obchodních smluv](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) zavádění zásady změn, které omezují změny na pole **Čistá částka** pro řádky prodejní objednávky, řádky prodejní nabídky a řádky návratové objednávky. Všimněte si, že pro řádky zpětné objednávky je pole **Čistá částka** vždy vypočítáno a nelze ho nastavit ručně.
 - Importovaná data zahrnují změny pole **Čistá částka** na řádcích nebo změny (jako je jednotková cena, množství nebo sleva), které způsobí přepočet hodnoty **Čistá částka** na řádcích pro jeden nebo více existujících řádkových záznamů.
 
 V těchto konkrétních scénářích je účinkem zásad hodnocení obchodních dohod omezení aktualizací pole **Čistá částka** na řádku. Toto omezení se označuje *zásady změn*. Kvůli této zásadě vás systém při použití uživatelského rozhraní k úpravě nebo přepočtu pole vyzve k potvrzení, zda chcete provést změnu. Když však importujete záznam, systém musí provést volbu za vás. Před verzí 10.0.23 systém vždy ponechal čistou částku řádku nezměněnou, pokud není čistá částka příchozího řádku 0 (nula). V novějších verzích však systém čistou částku vždy aktualizuje nebo přepočítává podle potřeby, pokud nemá výslovný příkaz to nedělat. Ačkoli je nové chování logičtější, může vám způsobit problémy, pokud již spouštíte procesy nebo integrace, které předpokládají starší chování. Tento článek popisuje, jak se v případě potřeby vrátit ke starému chování.

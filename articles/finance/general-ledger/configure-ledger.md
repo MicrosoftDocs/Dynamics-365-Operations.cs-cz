@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864332"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713882"
 ---
 # <a name="configure-ledgers"></a>Konfigurace hlavních knih
 
@@ -42,7 +42,7 @@ Každá právnická osoba v Dynamics 365 Finance lze nakonfigurovat pro použit�
 
 Upozorňujeme, že pokud máte více účetních struktur, můžete vybrat pouze účetní struktury, které nemají překrývající se kombinace hlavních účtů a finančních dimenzí. Například jedna z vašich účetních struktur je nakonfigurována tak, aby přidávala obchodní jednotku pro hlavní účty mezi 1000 a 1999. V jiné účetní struktuře jste přidali finanční dimenzi Oddělení pro hlavní účty, které začínají 1. V takovém případě lze ke stejné právnické osobě přidat pouze jednu z účetních struktur.
 
-Chcete-li nakonfigurovat účetní struktury pro svou hlavní knihu, na stránce **Účetní kniha** na záložce s náhledem **Účetní struktury** vyberte **Přidat**, vyberte účetní strukturu v seznamu a poté vyberte **Vybrat**. Přidání a uložení účetních struktur může trvat několik minut. Upozorňujeme, že účetní struktury, které vyberete, musí být aktivní. V opačném případě nebudou podrobnosti účetních struktur účinné u právnických osob, se kterými jsou propojeny.
+Chcete-li nakonfigurovat účetní struktury pro svou hlavní knihu, na stránce **Účetní kniha** na záložce s náhledem **Účetní struktury** vyberte **Přidat**, vyberte účetní strukturu v seznamu a poté vyberte **Vybrat**. Přidání a uložení účetních struktur bude trvat několik minut. Po uložení změněné struktury účtu do hlavní knihy začne proces synchronizace všech nezaúčtovaných transakcí. Než budete moci provést změnu struktury účtu u účetní knihy v jiné právnické osobě, musíte počkat na provedení změny pro aktuální účetní knihu v právnické osobě, kde se změna provádí. Upozorňujeme, že účetní struktury, které vyberete, musí být aktivní. V opačném případě nebudou podrobnosti účetních struktur účinné u právnických osob, se kterými jsou propojeny.
 
 Chcete-li odstranit účetní strukturu, na stránce **Hlavní kniha** na záložce s náhledem **Účetní struktury** vyberte **Odebrat**. Všimněte si, že pokud odeberete účetní strukturu z hlavní knihy, neodstraníte žádné transakce, které byly zaúčtovány pomocí konfigurace této účetní struktury.
 
@@ -70,7 +70,7 @@ Další informace o vyvažování položek najdete v části [Vyrovnané deníky
 
 Stránka **Hlavní kniha** se také používá ke kontrole a definování měn, které budou použity při zaúčtování transakcí do hlavní knihy. Musíte určit zúčtovací měnu, což je měna, která se používá ve sloupci **Zúčtovací měna** v hlavní knize ve všech dokladech. Navíc ve sloupci **Měna vykazování** můžete volitelně vybrat druhou měnu. Pokud vyberete měnu vykazování, budou všechny transakce zaznamenány v této měně ve sloupci **Měna vykazování** v hlavní knize na všech dokladech.
 
-Pokud jsou transakce zaúčtovány v jiné měně, systém automaticky převede částku transakce z měny transakcí na zúčtovací měnu a měnu vykazování na dokladu. Na stránce **Hlavní kniha** v poli **Typ směnného kurzu zúčtovací měny** vyberte typ směnného kurzu, který je nakonfigurován pro směnné kurzy, které se mají použít k převodu hodnot z měny transakce na zúčtovací měnu na dokladu. Pokud jste vybrali měnu vykazování, musíte také nastavit pole **Typ směnného kurzu měny vykazování** k zadání směnného kurzu, který se má použít pro převod hodnot z měny transakce na měnu vykazování na dokladu.
+Pokud jsou transakce zaúčtovány v jiné měně, systém automaticky převede částku transakce z měny transakce na zúčtovací měnu a měnu vykazování na dokladu. Na stránce **Hlavní kniha** v poli **Typ směnného kurzu zúčtovací měny** vyberte typ směnného kurzu, který je nakonfigurován pro směnné kurzy, které se mají použít k převodu hodnot z měny transakce na zúčtovací měnu na dokladu. Pokud jste vybrali měnu vykazování, musíte také nastavit pole **Typ směnného kurzu měny vykazování** k zadání směnného kurzu, který se má použít pro převod hodnot z měny transakce na měnu vykazování na dokladu.
 
 Pokud používáte funkci rozpočtování, můžete také nastavit pole **Typ směnného kurzu rozpočtu** k zadání směnného kurzu, který se má použít k převodu rozpočtových transakcí z jedné měny do druhé.
 

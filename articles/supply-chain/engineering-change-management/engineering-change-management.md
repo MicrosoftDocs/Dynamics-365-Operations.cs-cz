@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849583"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714729"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -141,6 +141,8 @@ Při kontrole oznámení výrobní zakázky na stránce **Technická oznámení*
 ### <a name="create-a-change-order-from-a-change-request"></a>Vytvoření změnového příkazu z požadavku na změnu
 
 Technik, který kontroluje žádost o technickou změnu, může vytvořit objednávku technické změny přímo ze stránky **Požadavky na technické změny**. V podokně akcí na kartě **Změnit požadavek** ve skupině **Pořadí technických změn** vyberte **Kopírovat odkaz a produkty**.
+
+Ujistěte se, že jste vybrali správnou společnost pro novou objednávku inženýrských změn. Pokud změnový příkaz povede ke změně samotného strojírenského produktu (nová verze, nový produkt nebo nová varianta), musí být změnový příkaz přiřazen strojírenské firmě. Pokud je potřeba pouze místní změna (**Dopad** je nastaveno na *Žádný*), pak lze změnový příkaz přiřadit místní společnosti a změny se budou vztahovat na aktuální produkt.
 
 ## <a name="engineering-change-orders"></a>Příkazy k technických změnám
 

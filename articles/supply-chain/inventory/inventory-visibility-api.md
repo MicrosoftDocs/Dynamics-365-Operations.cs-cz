@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423588"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719308"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejné rozhraní API Inventory Visibility
 
@@ -47,6 +47,7 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Zaúčtovat | [Vytvoří více plánovaných změn ve skladu](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Zaúčtovat | [Dotaz pomocí metody POST](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Získat | [Dotaz pomocí metody GET](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Zaúčtovat | [Přesný dotaz pomocí metody POST](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation/allocate | Zaúčtovat | [Vytvoří jednu událost přidělení](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/unallocate | Zaúčtovat | [Vytvoří jednu událost zrušení přidělení](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/reallocate | Zaúčtovat | [Vytvoří jednu událost změny přidělení](inventory-visibility-allocation.md#using-allocation-api) |
@@ -690,6 +691,80 @@ Zde je ukázka adresy URL. Tento GET požadavek je přesně stejný jako ukázka
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a>Přesný dotaz pomocí metody POST
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+V těle této žádosti, `dimensionDataSource` je volitelný parametr. Pokud není nastaven, s `dimensions` ve `filters` bude zacházeno jako se *základními dimenzemi*. K dispozici jsou čtyři povinná pole pro `filters`: `organizationId`, `productId`, `dimensions`, a `values`.
+
+- `organizationId` by měl obsahovat pouze jednu hodnotu, ale stále je to pole.
+- `productId` může obsahovat jednu nebo více hodnot. Pokud je prázdné pole, budou vráceny všechny produkty.
+- V poli `dimensions` jsou `siteId` a `locationId` povinné, ale mohou se objevit s dalšími prvky v libovolném pořadí.
+- `values` může obsahovat jednu nebo více různých n-tic hodnot odpovídajících `dimensions`.
+
+`dimensions` ve `filters` bude automaticky přidáno do `groupByValues`.
+
+Parametr `returnNegative` určuje, zda výsledky obsahují záporné položky.
+
+Následující příklad ukazuje ukázkový obsah těla.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+Následující příklad ukazuje, jak dotazovat všechny produkty na konkrétním pracovišti a umístění.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## <a name="available-to-promise"></a>Lze slíbit (ATP)

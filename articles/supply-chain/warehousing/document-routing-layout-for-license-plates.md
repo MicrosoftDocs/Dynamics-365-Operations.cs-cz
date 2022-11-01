@@ -1,5 +1,5 @@
 ---
-title: Rozvržení směrování dokumentu pro popisky registrační značky
+title: Rozložení směrování popisku dokumentů
 description: V tomto článku je popsán způsob použití metod formátování k tisku hodnot na štítcích.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847868"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708637"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Rozvržení směrování dokumentu pro popisky poznávací značky
+# <a name="document-routing-label-layout"></a>Rozložení směrování popisku dokumentů
 
 [!include [banner](../includes/banner.md)]
 
+Tento článek popisuje, jak vytvořit rozložení pro popisky registračních značek, kontejneru a vlny. Poskytuje také pokyny pro používání programovacího jazyka Zebra (ZPL), který se používá k vytváření rozložení.
 
-Rozvržení směrování dokumentu definuje rozvržení popisků řidičských průkazů a dat, která jsou na nich vytištěna. Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.
+Rozložení popisku směrování dokumentu definují způsob rozvržení popisků a data, která jsou na nich vytištěna. Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.
 
-V obvyklém scénáři pracovník příjmu ve skladu vytiskněte štítky registračních značek ihned po záznamu obsahu palet, které přicházejí do oblasti příjmu. Fyzické štítky se použijí na palety. Poté je lze použít k ověření v rámci procesu zaskladnění a následných operací odchozího vyskladnění.
+Informace v tomto článku platí pro všechna rozložení štítků směrování dokumentu, včetně rozložení pro [popisky registračních značek](tasks/license-plate-label-printing.md), [popisky kontejneru](print-container-labels.md) a [popisky vlny](configure-wave-label-printing.md).
 
-Můžete tisknout velmi složité štítky za předpokladu, že tiskové zařízení může interpretovat text, který mu byl odeslán. Například rozložení Zebra Programming Language (ZPL), které obsahuje čárový kód, může vypadat podobně jako v následujícím příkladu.
+Můžete tisknout velmi složité štítky za předpokladu, že tiskové zařízení může interpretovat text, který mu byl odeslán. Například rozložení ZPL, které obsahuje čárový kód, může vypadat podobně jako v následujícím příkladu.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Můžete tisknout velmi složité štítky za předpokladu, že tiskové zaříz
 ^PQ1,,,Y^XZ
 ```
 
-V rámci procesu tisku štítků bude text `$LicensePlateId$` v tomto příkladu nahrazen datovou hodnotou.
+V rámci procesu tisku štítků bude text `$LicensePlateId$` v tomto příkladu nahrazen datovou hodnotou. Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků. Mnohé z těchto nástrojů podporují `$FieldName$` formát. Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.
 
 Chcete-li zobrazit hodnoty, které budou vytištěny, přejděte na **Řízení skladu \> Dotazy a sestavy \> Štítky registračních značek**.
-
-Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků. Mnohé z těchto nástrojů podporují `$FieldName$` formát. Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Další informace o tisku štítků
 
-Další informace o nastavení a tisku štítků naleznete v tématu [Povolení tisku štítků registračních značek](tasks/license-plate-label-printing.md).
+Další informace o nastavení a tisku štítků naleznete v následujících článcích:
 
+- [Tisk popisku registrační značky](tasks/license-plate-label-printing.md)
+- [Tisk popisku kontejneru](print-container-labels.md)
+- [Tisk štítků vlny](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

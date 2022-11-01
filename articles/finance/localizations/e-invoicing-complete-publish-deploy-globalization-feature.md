@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279893"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710828"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Dokončení, publikování a nasazení funkce globalizace
 
@@ -59,8 +59,8 @@ V RCS použijte příkaz **Nasadit** k publikování verze funkce elektronické 
 2. Na kartě **Verze** na pravé straně stránky vyberte verzi funkce elektronické fakturace, kterou chcete nasadit do prostředí služby nebo připojené aplikace. Vybraná verze musí mít stav **Dokončeno** nebo **Publikováno**.
 3. Vyberte **Nasadit** a poté vyberte jednu nebo obě následující možnosti k definování cíle nasazení:
 
-    - **Připojená aplikace** – Konfigurace poskytovaná nastavením aplikace je napsána v instanci Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management, která s ní byla dříve spojena.
-    - **Prostředí služby** – Verze funkce elektronické fakturace je nasazena do prostředí služby. Elektronická fakturace je poté připravena přijímat a zpracovávat elektronické dokumenty, které odesílají aplikace Finance nebo Supply Chain Management.
+    - **Připojená aplikace** – Toto je volitelné, ale musí se použít, když chcete konfiguraci poskytovanou nastavením aplikace zapsat v instanci Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management, která s ní byla dříve spojena. Přeskočení tohoto typu nasazení vyžaduje ruční konfiguraci parametrů definovaných v nastavení aplikace Finance nebo Supply Chain Management.
+    - **Prostředí služby** – To nasadí verzi funkce elektronické fakturace do prostředí služby. Elektronická fakturace je poté připravena přijímat a zpracovávat elektronické dokumenty, které odesílají aplikace Finance nebo Supply Chain Management.
 
 > [!NOTE]
 > Obvykle změníte parametry funkce Elektronické výkaznictví (ER), která musí být nasazena do prostředí služby. Změny v připojené aplikaci budou vzácné. Nové verze byste měli nasadit do připojené aplikace pouze tehdy, když změníte odpovídající parametry vaší aplikace.

@@ -2,7 +2,7 @@
 title: Konfigurace účetních struktur
 description: Tento článek obsahuje informace o účetní struktuře a finančních dimenzích.
 author: aprilolson
-ms.date: 07/12/2022
+ms.date: 10/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
-ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
+ms.openlocfilehash: b3fbdd6e2cac61c358848a21e1126bea900e86b2
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "9141271"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713924"
 ---
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
@@ -28,7 +28,7 @@ ms.locfileid: "9141271"
 
 Účetní struktury používají hlavní účet a finanční dimenze k vytváření sady pravidel, která určuje pořadí a hodnoty používané při zadávání čísla účtu. Můžete nastavit tolik účetních struktur, kolik vaše firma potřebuje. Účetní struktury jsou přiřazeny nastavení hlavní knihy společnosti, aby bylo možné je sdílet.
 
-Při vytváření účetní struktury je maximální počet segmentů 11. Pokud potřebujete další segmenty než tento, důkladně posuďte nastavení a požadavky, protože budou mít vliv na zkušenosti uživatele. Zvažte, zda některý segment může být odvozen ve scénáři výkaznictví pomocí hierarchie namísto při zadávání dat, nebo pomocí uživatelem definovaných polí. Například pokud chcete vykazovat ve skladovém místě, ale může vypočítat umístění podle oddělení nebo nákladového střediska, nepotřebujete umístění jako finanční dimenzi. Pokud po vyhodnocení určíte, zda je potřeba více než 11 segmentů, můžete přidat další segmenty pomocí rozšířeného pravidla.
+Při vytváření účetní struktury je maximální počet segmentů 11. Pokud potřebujete více než 11 segmentů, důkladně posuďte nastavení a požadavky, protože budou mít vliv na zkušenosti uživatele. Zvažte, zda některý segment může být odvozen ve scénáři výkaznictví pomocí hierarchie namísto při zadávání dat, nebo pomocí uživatelem definovaných polí. Například pokud chcete vykazovat ve skladovém místě, ale může vypočítat umístění podle oddělení nebo nákladového střediska, nepotřebujete umístění jako finanční dimenzi. Pokud po vyhodnocení určíte, zda je potřeba více než 11 segmentů, můžete přidat další segmenty pomocí rozšířeného pravidla.
 
 Účetní struktury vyžadují hlavní účet. Hlavní účet nemusí být první segment ve struktuře, ale určuje, která účetní struktura se používá při zadání čísla účtu. Z tohoto důvodu může hodnota hlavního účtu existovat pouze v jedné struktuře přiřazené do hlavní knihy tak, aby se nepřekrývaly. Poté, co je identifikována účetní struktura, seznam povolených hodnot je filtrován tak, aby prováděly uživatele výběrem pouze platných hodnot dimenze, což snižuje možnost nesprávné položky deníku.
 
@@ -42,23 +42,23 @@ Pro ilustraci vhodného nastavení účetní struktury předpokládejme, že chc
 
 |Hlavní účet          | Obchodní jednotka    |
 |----------------------|-----------|
-|100000..399999 | *;” “|
+|100000..399999 | *;"&nbsp;"|
 
 **Struktura účtu zisků a ztrát**
 
 |Hlavní účet          | Obchodní jednotka    |Oddělení          | Nákladové středisko    | &nbsp; |
 |----------------------|------------------|--------------------|-----------|---|
-|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
+|400000..999999 | \*;"&nbsp;"| \*;"&nbsp;"| \*;"&nbsp;"| \*;"&nbsp;"|
 
 **Rozšířené pravidlo pro přidání zákazníka**
 
-Kritéria: Tam, kde je hlavní účet mezi 400000 a 499999, přidejte odběratele. Nemůže zůstat prázdná.
+Kritéria: Tam, kde je hlavní účet mezi 400000 a 499999, přidejte odběratele. Nemůže zůstat prázdné.
 
 |Zákazník         |
 |-----------------|
-|* |
+|\* |
 
-V tomto zjednodušeném příkladu jsou všechny hodnoty a prázdné hodnoty povoleny, takže se používá * a “ “.
+V tomto zjednodušeném příkladu jsou všechny hodnoty a prázdné hodnoty povoleny, takže se používá \* a „&nbsp;“.
 
 ## <a name="segments-and-allowed-values"></a>Segmenty a povolené hodnoty
 Oddíl **Segmenty** a **povolené hodnoty podrobnosti** obsahuje mřížku jako zkušenost pro zadávání pravidel, která bude následovat při ověření během zaúčtování. Můžete psát přímo do buněk v mřížce, importovat je z aplikace Excel nebo použít oddíl **podrobnosti povolené hodnoty**, která vás provede.
@@ -77,14 +77,17 @@ Zde je příklad možnosti **Struktura účtu zisků a ztrát**.
 
 Při zadávání deníku a výběru účtu v rozsahu zisků a ztrát způsobí výběr obchodní jednotky 002, že hodnoty 022 a 014 budou výchozí na ovládacím prvku účtu. K tomuto chování dojde také u stránky rozúčtování. 
 
-## <a name="more-than-7-criteria-needed"></a>Je potřeba více než 7 kritérií.
+## <a name="more-than-seven-criteria-needed"></a>Je potřeba více než sedm kritérií
 
-Pokud máte více než 7 kritérií, která jsou potřeba, můžete pokračovat v jejich přidávání na dalším řádku. Při práci v oddílu **Podrobnosti povolené hodnoty** si všimnete, že už není dostupná možnost **+ Přidat nové** kritérium pro zadání sedmého kritéria. Je to způsobeno mnoha faktory jako: 
+Pokud máte více než sedm kritérií, která jsou potřeba, můžete pokračovat v jejich přidávání na dalším řádku. Při práci v oddílu **Podrobnosti povolené hodnoty** si všimnete, že už není dostupná možnost **+ Přidat nové** kritérium pro zadání sedmého kritéria. Je to způsobeno mnoha faktory jako: 
  - Šířka sloupce 
  - Způsob uložení dat 
  - Výkon ovládacího prvku **povolená hodnota podrobnosti**
  - Použitelnost  
- 
+
+> [!NOTE]
+> Upgrade z Microsoft Dynamics AX 2012, kde je specifikováno více než sedm kritérií, není podporováno. Před dokončením upgradu na finanční a provozní aplikace je nutné jej opravit. 
+
 Chcete-li přidat další kritéria, klepněte na tlačítko **duplicitní v segmentu** a **Oddíl Povolené hodnoty**. Tím se kritéria zkopírují na nový řádek. Potom můžete přepsat nebo změnit oddíl **Podrobnosti povolené hodnoty**.
 
 ## <a name="best-practices"></a>Doporučené postupy
@@ -103,7 +106,7 @@ Při nastavování účetních struktur existují doporučené postupy, které m
 - Nestačí napsat hvězdičku pro každý segment účetní struktury a spoléhat na pokročilá pravidla. To může být obtížné pro správu a často vede k chybám uživatelů během údržby, což může způsobit neschopnost systému účtovat.
 
 ## <a name="account-structure-activation"></a>Aktivace účetní struktury
-Jakmile jste s novým nastavením nebo změnou účetní struktury spokojeni, musíte je aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny.
+Jakmile jste s novým nastavením nebo změnou účetní struktury spokojeni, musíte je aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny. Od verze aplikace 10.0.31 nová funkce s názvem **Zlepšení výkonu aktivace struktury účtu** je k dispozici ve správě funkcí. Další informace o této nové funkci aktivace struktury účtu naleznete v části [Zlepšení výkonu aktivace struktury účtu](account-structure-improvement.md). 
 
 Další informace naleznete v tématu [Plánování účtových osnov](plan-chart-of-accounts.md), [finanční dimenze](financial-dimensions.md) a [Zadání kombinací účtů a dimenzí (segmentovaná kontrola položek)](enter-account-dimension-combinations-segmented-entry-control.md).
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856186"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719284"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit
 
@@ -205,6 +205,7 @@ Následující adresy URL aplikačního programovacího rozhraní (API) můžete
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Vytvoří více změnových událostí. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Dotaz používající metodu `POST`. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Dotaz používající metodu `GET`. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Přesný dotaz používající metodu `POST`. |
 
 Další informace viz [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ V požadavku nastavte parametr `QueryATP` na *true*, pokud se chcete dotazovat n
 > [!NOTE]
 > Bez ohledu na to, zda je v těle požadavku parametr `returnNegative` nastaven na *true* nebo *false*, bude výsledek obsahovat záporné hodnoty, když se dotazujete na plánované změny na skladě a výsledky ATP. Tyto záporné hodnoty budou zahrnuty, protože pokud jsou plánovány pouze objednávky poptávky, nebo pokud jsou dodávaná množství menší než poptávaná množství, budou plánované změny na skladě záporné. Pokud by záporné hodnoty nebyly zahrnuty, výsledky by byly matoucí. Další informace o této možnosti a o tom, jak funguje u jiných typů dotazů, naleznete v části [Veřejná rozhraní API aplikace Viditelnost skladu](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Dotaz používající metodu POST
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-Následující příklad ukazuje, jak vytvořit tělo požadavku, které lze odeslat do aplikace Viditelnosti skladu metodou `POST`.
+Následující příklad ukazuje, jak vytvořit tělo požadavku dotazu na index, které lze odeslat do aplikace Viditelnosti skladu metodou `POST`.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ Následující příklad ukazuje, jak vytvořit tělo požadavku, které lze ode
 }
 ```
 
-### <a name="get-method-example"></a>Příklad metody GET
+### <a name="query-by-using-the-get-method"></a>Dotaz používající metodu GET
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Následující příklad ukazuje, jak vytvořit adresu URL požadavku jako požadavek `GET`.
+Následující příklad ukazuje, jak vytvořit adresu URL požadavku dotazu na index jako požadavek `GET`.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 Výsledek tohoto požadavku `GET` je přesně stejný jako výsledek požadavku `POST` v předchozím příkladu.
 
+### <a name="exact-query-by-using-the-post-method"></a>Přesný dotaz používající metodu POST
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+Následující příklad ukazuje, jak vytvořit tělo požadavku přesného dotazu na index, které lze odeslat do aplikace Viditelnosti skladu metodou `POST`.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Příklad výsledku dotazu
 
-Oba předchozí příklady dotazů mohou přinést následující odpověď. V tomto příkladu je systém konfigurován takto:
+Každý předchozí příklad dotazů může přinést následující odpověď. V tomto příkladu je systém konfigurován takto:
 
 - **Vypočítaná míra ATP:** *iv.onhand = pos.inbound – pos.outbound*
 - **Období plánu:** *7*

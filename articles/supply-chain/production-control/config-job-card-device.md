@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860718"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708610"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
@@ -73,7 +73,7 @@ Záložka s náhledem **Obecné** umožňuje konfigurovat každou z různých mo
 - **Skupina prostředků** – Vyberte skupinu prostředků, která bude použita jako výchozí kritérium filtru pro seznam prací zobrazovaných každému pracovníkovi. Zařízení zpočátku zobrazí pouze práce naplánované na prostředky seskupené pod vybranou skupinou prostředků. Pokud je povolena možnost **Povolit pracovníkům nastavení osobních filtrů**, pracovníci budou moci tuto hodnotu upravit, jinak bude tento filtr použit vždy, když je tato konfigurace zařízení aktivní.
 - **Prostředek** – Vyberte prostředek, který bude použit jako výchozí kritérium filtru pro seznam prací zobrazovaných každému pracovníkovi. Zařízení zpočátku zobrazí pouze práce naplánované na vybraný prostředek. Pokud je povolena možnost **Povolit pracovníkům nastavení osobních filtrů**, pracovníci budou moci tuto hodnotu upravit, jinak bude tento filtr použit vždy, když je tato konfigurace zařízení aktivní.
 - **Generovat registrační značku** – Nastavením této možnosti na **Ano** vygenerujete novou registrační značku pokaždé, když pracovník použije zařízení úkolového lístku k vykázání dokončené práce. Registrační značka vozidla je generována z číselné posloupnosti nastavené na stránce **Parametry řízení skladu**. Při nastavení na **Ne** musí pracovníci při vykazování dokončené práce uvést existující registrační značku.
-- **Tisk etikety** – Nastavte tuto možnost na **Ano** k vytištění etikety poznávací značky, když pracovník používá zařízení úkolového lístku k nahlášení dokončené práce. Konfigurace etikety je nastavena ve směrování dokumentu, jak je popsáno v [Rozvržení směrování dokumentu pro popisky registrační značky](../warehousing/document-routing-layout-for-license-plates.md).
+- **Tisk etikety** – Nastavte tuto možnost na **Ano** k vytištění etikety poznávací značky, když pracovník používá zařízení úkolového lístku k nahlášení dokončené práce. Konfigurace etikety je nastavena ve směrování dokumentu, jak je popsáno v [Rozvržení popisků směrování dokumentu](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

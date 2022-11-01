@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336538"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714690"
 ---
 # <a name="usmca-certification-of-origin"></a>Osvědčení o původu USMCA
 
@@ -57,7 +58,7 @@ Další informace o každém z těchto prvků a o tom, jak se jejich hodnoty nac
 Chcete-li u zásilky vytisknout dokument osvědčení o původu USMCA, postupujte takto:
 
 1. Proveďte některou z následujících akcí:
-    - Přejděte na **Správa přepravy > Zásilky > Všechny zásilky** a vyberte zásilku, pro kterou chcete dokument vytisknout.
+    - Přejděte na **Správa přepravy \> Plánování \> Zásilky \> Všechny zásilky** a vyberte zásilku, pro kterou chcete dokument vytisknout.
     - Otevřete stránku **Podrobnosti o zásilce** pro zásilku, pro kterou chcete dokument vytisknout (sem se můžete dostat několika způsoby, včetně stránky **Všechny zásilky**).
 1. V podokně akcí otevřete kartu **Zásilky** a ve skupině **Tisk** vyberte **Osvědčení o původu USMCA**.
 1. Otevře se dialogové okno **Osvědčení o původu**. Proveďte nastavení popsaná v následujících podsekcích a poté vyberte **OK** pro vygenerování dokumentu.
