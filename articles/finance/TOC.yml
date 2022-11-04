@@ -692,20 +692,14 @@
               items:
                 - name: Proces nastavení rozšířeného odsouhlasení banky
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Nastavení procesu importu rozšířené bankovního odsouhlasení
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Nastavení procesu importu rozšířené bankovního odsouhlasení pomocí elektronického výkaznictví
                   href: accounts-payable/import-bai2-er.md
                 - name: Nastavení pravidel párování pro odsouhlasení banky
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Rozšířené odsouhlasení bankovního výpisu MT940 Import – kroky aktualizace entity složených dat
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Přehled rozšířeného odsouhlasení banky
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Odstraňování problémů s importem souboru bankovních výpisů
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Aktualizace složité entity bankovního deníku
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Nákladové účetnictví

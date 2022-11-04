@@ -334,12 +334,16 @@
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: Často kladené dotazy k nasazení
                       href: deployment/deploymentFAQ.md
+                    - name: Migrace prostředí
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Známé problémy se samoobslužným nasazením
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Operace údržby pro nasazení
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Aktualizace prostředí
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Migrace prostředí
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Řešení potíží s prostředím nasazeným pomocí samoobslužného nasazení
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: "Plánovaná údržba v\_samoobslužných prostředích – nejčastější dotazy"
@@ -972,6 +976,8 @@
               href: lifecycle-services/lcs-user-guide.md
             - name: Zprovoznění projektu
               href: lifecycle-services/project-onboarding.md
+            - name: Manažer migrace projektu
+              href: lifecycle-services/project-migration-manager.md
             - name: Odhad předplatného
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurace zabezpečení

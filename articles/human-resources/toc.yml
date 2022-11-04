@@ -4,6 +4,18 @@
       items:
         - name: Domovská stránka Dynamics 365 Human Resources
           href: index.md
+        - name: Sloučení infrastruktury Human Resources
+          items:
+            - name: Přehled sloučení infrastruktury Human Resources
+              href: hr-infrastructure-merge.md
+            - name: Migrace zákazníků infrastruktury Human Resources
+              href: hr-cust-migration.md
+            - name: Často kladené dotazy ke sloučení infrastruktury Human Resources
+              href: hr-infrastructure-merge-faq.md
+            - name: Nejčastější dotazy ohledně migrace zákazníků v Human Resources
+              href: customer-migration.md
+            - name: Známé problémy sloučení infrastruktury Human Resources
+              href: hr-migration-issues.md
         - name: Co je nového a co se změnilo
           items:
             - name: Co je nového a co se změnilo ve finančních a provozních aplikacích
@@ -242,10 +254,6 @@
                   href: hr-admin-go-live-prepare.md
                 - name: Často kladené dotazy týkající se ostrého nasazení
                   href: hr-admin-go-live-faq.md
-                - name: Často kladené dotazy ke sloučení infrastruktury Human Resources
-                  href: hr-infrastructure-merge-faq.md
-                - name: Nejčastější dotazy ohledně migrace zákazníků v Human Resources
-                  href: customer-migration.md
                 - name: Zdroje dokumentace
                   items:
                     - name: Systém nápovědy

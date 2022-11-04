@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: Nastavení zásad pro hierarchie kategorií zásobování
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Hodnocení rizik dodávek
+              items:
+                - name: Přehled hodnocení rizik dodávek
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Konfigurace hodnocení rizik dodávek
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: "Pracovní prostor s\_akcemi pro odhalování a\_řešení rizik dodavatelů"
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: "Sestavy Power BI pro analýzu rizik a\_hodnocení výkonu"
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Příjemky a fakturace produktů
               items:
                 - name: Příjemka produktu proti nákupním objednávkám

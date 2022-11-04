@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Modernizace technologického zásobníku Commerce v obchodě (dokument white paper)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Implementace Commerce offline a řešení potíží
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Publikování katalogu online obchodu
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Obsah Retail Channel Performance Power BI
@@ -396,12 +394,16 @@
                   items:
                     - name: Aplikace Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Funkce aplikace Store Commerce
+                      href: store-commerce-capabilities.md
                     - name: Aplikace Store Commerce pro mobilní platformy
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Migrace moderního POS do Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Průvodce implementací správy zařízení
                       href: implementation-considerations-devices.md
+                    - name: Implementace Commerce offline a řešení potíží
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: Výběr mezi Store Commerce a Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Online a offline POS operace
