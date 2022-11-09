@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905885"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725470"
 ---
 # <a name="manage-folios"></a>Správa folií
 
@@ -48,9 +48,9 @@ V následující tabulce jsou popsána tlačítka, která jsou k dispozici na ka
 
 | Tlačítko | popis |
 |---|---|
-| Zaúčtovat příjemky | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky ve foliu. Pokud se používají zásilky s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování seznamu příjemek. |
-| Zaúčtovat příjemku produktu | Zaúčtuje příjemku produktu pro všechny řádky nákupní objednávky ve foliu. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost dialogové okno účtování nové příjemky produktu. |
-| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky ve foliu. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování faktury. |
+| Zaúčtovat příjemky | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky ve foliu.  |
+| Zaúčtovat příjemku produktu | Zaúčtuje příjemku produktu pro všechny řádky nákupní objednávky ve foliu. |
+| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky ve foliu.  |
 | Převodní příkaz expedice | Zaúčtuje převodní příkaz pro všechny řádky převodního příkazu, které souvisejí s aktuálním foliem v související zásilce. |
 | Přijmout převodní příkaz | Zaúčtuje příjemku převodního příkazu pro všechny řádky převodního příkazu, které souvisejí s aktuálním foliem v související zásilce. |
 | Přijmout přepravované zboží | Přijme všechny řádky objednávky, které jsou ve foliu přepravovány. |
@@ -65,7 +65,7 @@ V následující tabulce jsou popsána tlačítka, která jsou k dispozici na ka
 
 | Tlačítko | popis |
 |---|---|
-| Příjemka | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky ve foliu. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování seznamu příjemek. |
+| Příjemka | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky ve foliu.  |
 | Příjemka produktu | Zobrazí záznam o příjemce produktu, pokud je použit. |
 | Doručení položky | Zobrazí deník doručení zboží, pokud je použit. |
 | Dotaz na náklady | Otevře stránku s dotazem na náklady a zobrazí všechny náklady na cestu, včetně přepravního kontejneru, folia a nákupní objednávky. Přesné zobrazení stránky můžete upravit pomocí akce Zobrazit. Na stránce s dotazem na náklady si můžete prohlédnout kteroukoli z oblastí včetně položky a kódu typu nákladů. Odebráním těchto položek můžete stránku upravit seskupením nákladů. Tato funkce může být užitečná, pokud používáte velikosti a barvy. Dimenze, které se zobrazují na stránce, je možné změnit. Stránka **Náklady** zobrazuje pouze kódy typů nákladů, kde pole **MD** na kartě **Zaúčtování** je nastaveno na *Položka*. |

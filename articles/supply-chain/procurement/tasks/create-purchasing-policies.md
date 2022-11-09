@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8d42eaf22730f572e2733dec4318e5e4603d74
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878838"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9732692"
 ---
 # <a name="create-purchasing-policies"></a>Vytvoření zásad nákupu
 
@@ -30,29 +30,29 @@ Tento článek popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní p
 ## <a name="set-up-policy-parameters"></a>Nastavení parametrů zásad
 1. V navigačním podokně přejděte na **Moduly > Zásobování a nákup > Nastavení > Zásady > Zásady nákupu**.
 2. V podokně akcí zvolte **Parametry**.
-- Pravidla priorit zásad se aplikují na různých úrovních ve vaší organizaci. Organizační jednotky, které jsou zobrazeny, závisí na hierarchii v organizaci a na jakých úrovních v hierarchii byl přiřazena účel interní kontroly zásobování. Například vaše organizace může používat právnické osoby, nákladová střediska, oblasti a oddělení, ale je možné, že jen některé z nich mají účel hierarchie Interní kontrola zásobování. Ve výchozím stavu je k dispozici organizace typu Společnost.  
+    - Pravidla priorit zásad se aplikují na různých úrovních ve vaší organizaci. Organizační jednotky, které jsou zobrazeny, závisí na hierarchii v organizaci a na jakých úrovních v hierarchii byl přiřazena účel interní kontroly zásobování. Například vaše organizace může používat právnické osoby, nákladová střediska, oblasti a oddělení, ale je možné, že jen některé z nich mají účel hierarchie Interní kontrola zásobování. Ve výchozím stavu je k dispozici organizace typu Společnost.  
 3. Vyberte kartu **Parametry typu pravidla zásad**.
 4. Ve stromové struktuře přejděte na **Zásady nákupu >Pravidlo kontroly pro nákupní žádanku**.
-- Pořadí zpracování zásad se definuje na úrovni zásad. U některých typů zásad však můžete přepsat pořadí zpracování jednotlivých typů pravidel zásad. Například můžete definovat pořadí zpracování zásad nákupu v tomto pořadí: nákladové centrum, oddělení, společnost. V případě pravidla zásad katalogu můžete chtít upravit pořadí zpracování takto: oddělení, nákladové středisko, společnost. Pořadí zpracování zásad změníte pro pravidlo zásad katalogu. Jakmile zaměstnanec vytvoří požadavek, je určen katalog, který je zobrazen, podle zásad, které jsou přiřazeny k oddělení pracovníka a jeho nákladovému středisku a jeho společnosti.  
-- Pokud je na výběr více organizačních úrovní, pomocí šipky nahoru nebo dolů můžete nastavit pořadí priorit pro pravidlo kontroly nákupní žádanky.  
+    - Pořadí zpracování zásad se definuje na úrovni zásad. U některých typů zásad však můžete přepsat pořadí zpracování jednotlivých typů pravidel zásad. Například můžete definovat pořadí zpracování zásad nákupu v tomto pořadí: nákladové centrum, oddělení, společnost. V případě pravidla zásad katalogu můžete chtít upravit pořadí zpracování takto: oddělení, nákladové středisko, společnost. Pořadí zpracování zásad změníte pro pravidlo zásad katalogu. Jakmile zaměstnanec vytvoří požadavek, je určen katalog, který je zobrazen, podle zásad, které jsou přiřazeny k oddělení pracovníka a jeho nákladovému středisku a jeho společnosti.  
+    - Pokud je na výběr více organizačních úrovní, pomocí šipky nahoru nebo dolů můžete nastavit pořadí priorit pro pravidlo kontroly nákupní žádanky.  
 5. Zavřete stránku.
 
 ## <a name="create-a-new-policy"></a>Vytvořit nové zásady
 1. Zvolte **Nové**.
 2. Zadejte hodnotu do pole **Název**.
 3. Zadejte hodnotu do pole **Popis**.
-- Jednu zásadu nákupu lze použít pouze pro jednu organizační hierarchii. Například může mít jednu hierarchii nazývanou „Geografické“ a jednu „Oddělení“, a používat pro každou jiné zásady nákupu.  
-- Vyberte organizaci, pro kterou chcete použít zásady.  
+    - Jednu zásadu nákupu lze použít pouze pro jednu organizační hierarchii. Například může mít jednu hierarchii nazývanou „Geografické“ a jednu „Oddělení“, a používat pro každou jiné zásady nákupu.  
+    - Vyberte organizaci, pro kterou chcete použít zásady.  
 4. Výběrem šipky přidejte vybranou organizaci.
-- Tento proces je možné zopakovat a přidat tak další organizace.  
+    - Tento proces je možné zopakovat a přidat tak další organizace.  
 
 ## <a name="add-a-policy-rule"></a>Přidání pravidla zásad
 1. V seznamu **Typ pravidla zásad** vyberte **pravidlo Účel žádanky**.
-- Vytvoříte pravidlo, které nastaví výchozí účel žádanky jako Spotřeba, ale umožní výběr možnosti Doplnění.  
+    - Vytvoříte pravidlo, které nastaví výchozí účel žádanky jako Spotřeba, ale umožní výběr možnosti Doplnění.  
 2. Vyberte **Vytvořit pravidlo zásad**.
 3. Vyberte možnost **Ano** v poli **Povolit ruční přepsání**.
 4. Vyberte **Zavřít**.
-- Nyní můžete nastavit jiná pravidla zásad pro zásady nákupu. Všimněte si, že typ pravidel zásad nemůže mít překrývající se pravidla, která jsou aktivní současně v rámci jedné zásady zásobování.  
+    - Nyní můžete nastavit jiná pravidla zásad pro zásady nákupu. Všimněte si, že typ pravidel zásad nemůže mít překrývající se pravidla, která jsou aktivní současně v rámci jedné zásady zásobování.  
 
 
 

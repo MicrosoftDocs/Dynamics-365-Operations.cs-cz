@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906146"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725434"
 ---
 # <a name="manage-shipping-containers"></a>Správa přepravních kontejnerů
 
@@ -40,9 +40,9 @@ V následující tabulce jsou popsána tlačítka, která jsou k dispozici na ka
 
 | Tlačítko | Popisy |
 |---|---|
-| Zaúčtovat příjemky | Zaúčtuje seznam příjemek nebo zobrazí seznamy příjemek produktů pro všechny řádky nákupní objednávky v přepravním kontejneru. Pokud se používají zásilky s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování seznamu příjemek. |
+| Zaúčtovat příjemky | Zaúčtuje seznam příjemek nebo zobrazí seznamy příjemek produktů pro všechny řádky nákupní objednávky v přepravním kontejneru.  |
 | Zaúčtovat příjemku produktu | Zaúčtuje příjemku produktu pro všechny řádky nákupní objednávky v přepravním kontejneru. |
-| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky v přepravním kontejneru. Pokud se používají dodávky s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování faktury. |
+| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky v přepravním kontejneru.  |
 | Převodní příkaz expedice | Zaúčtuje dodávku převodního příkazu pro všechny řádky nákupní objednávky v přepravním kontejneru. V dialogovém okně se zobrazí pouze ty řádky v přepravním kontejneru, které mají typ převodní příkaz. |
 | Přijmout převodní příkaz | Zaúčtuje příjemku převodního příkazu pro všechny řádky nákupní objednávky v přepravním kontejneru. Dialogové okno pro příjem představuje nejjednodušší způsob přijímání zboží v přepravním kontejneru nebo cestě a je jednou ze tří dostupných možností. Můžete také přijímat prostřednictvím deníků doručení nebo zpracování na mobilním zařízení. |
 | Vytvořit deník doručení | Deník doručení můžete generovat pro organizace pomocí pokročilých skladových funkcí. K dispozici jsou možnosti _Inicializovat množství_ (doporučeno) a buď _Vytvořit z přepravovaného zboží_, nebo _Vytvořit z nákupních objednávek_. Poslední dvě možnosti závisejí na tom, zda se používá zpracování přepravovaného zboží. |
@@ -56,7 +56,7 @@ V následující tabulce jsou popsána tlačítka, která jsou k dispozici na ka
 
 | Tlačítko | Popisy |
 |---|---|
-| Příjemka | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky v přepravním kontejneru. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování seznamu příjemek. |
+| Příjemka | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky v přepravním kontejneru.  |
 | Příjem produktu | Zobrazí záznam o příjemce produktu, pokud je použit. Proces přijetí produktu bude použit pouze v případě, kdy zboží nepoužívá funkci přepravovaného zboží. |
 | Doručení položky | Zobrazí deník doručení zboží pro přepravní kontejner, pokud se tento deník používá. |
 | Úseky | Úseky se používají k identifikaci samostatných částí cesty. Při sledování zásilky pomohou doby realizace, které lze přidružit ke každému úseku. Další informace najdete v tématu [Nastavení cesty s více úseky](multi-leg-journey-setup.md). |

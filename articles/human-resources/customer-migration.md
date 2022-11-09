@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151076"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734351"
 ---
 # <a name="human-resources-customer-migration"></a>Zákaznická migrace Human Resources
 
@@ -40,7 +40,7 @@ Zákazníci, kteří používají jiné aplikace ve finanční a provozní infra
 Přechod pro jednotlivé společnosti bude záviset na aktuální konfiguraci společnosti a připravenosti k přechodu na finanční a provozní infrastrukturu. Doporučujeme, aby zákazníci spolupracovali se svým partnerem Microsoft a určili nejlepší cestu vpřed.
 
 - Organizace, které používají modul **Human Resources** v Dynamics 365 Finance, budou moci aktivovat nové funkce z Dynamics 365 Human Resources jako součást pravidelného procesu aktualizace jedné verze. Nové funkce by měly být obecně dostupné od ledna 2022.
-- Organizace, které používají Dynamics 365 Human Resources, budou mít přístup k nástrojům, které mohou použít k dokončení sloučení infrastruktury. Společnost Microsoft bude na přechodu spolupracovat se zákazníky, aby zabránila jakémukoli přerušení služby. Zákazníci budou mít na provedení přechodu 12 až 18 měsíců, počínaje okamžikem, kdy budou k dispozici nástroje pro migraci.
+- Organizace, které používají Dynamics 365 Human Resources, budou mít přístup k nástrojům, které mohou použít k dokončení sloučení infrastruktury. Společnost Microsoft bude na přechodu spolupracovat se zákazníky, aby zabránila jakémukoli přerušení služby. Zákazníci budou mít na provedení přechodu 12 měsíců, počínaje okamžikem, kdy budou k dispozici nástroje pro migraci.
 - Organizace, které využívají Dynamics 365 Human Resources i modul **Human Resources**, mohou přesunout samostatnou infrastrukturu Human Resources do finanční a provozní infrastruktury. Další možností je použít slučovací nástroj k převedení prostředí do jednoho prostředí. Neexistuje žádný požadavek ani časový rámec pro sloučení těchto dvou prostředí.
 
 Pro aktuální informace pravidelně kontrolujte [plány vydání](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ Microsoft stále definuje, jaké nástroje a zdroje budou dostupné z FastTrack,
 
 ## <a name="licensing-impact"></a>Dopad licencování
 
-Další informace o ovlivnění licencí viz [Časté dotazy o sloučení infrastruktury Dynamics 365 Human Resources](hr-infrastructure-merge-faq.md#licensing-impact).
+Další informace o ovlivnění licencí viz [Sloučení infrastruktury Dynamics 365 Human Resources](hr-infrastructure-merge.md#licensing).

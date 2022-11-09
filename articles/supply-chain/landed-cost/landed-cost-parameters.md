@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871971"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725514"
 ---
 # <a name="landed-cost-parameters-setup"></a>Nastavení parametrů nákladů za doručení
 
@@ -125,14 +125,11 @@ Nastavení na této kartě stanoví výchozí dimenze pro každou určenou strá
 
 Karta **Číselné řady** na stránce **Parametry nákladů za doručení** uvádí každý typ posloupnosti referenčních čísel, který modul Náklady za doručení vyžaduje, ale který není sdílen mezi právnickými osobami. U každé reference v seznamu vyberte kód číselné řady.
 
-> [!NOTE]
-> V konfiguraci s více společnostmi musí být pro každou společnost (právnickou osobu) vytvořeny různé číselné řady.
 
 ## <a name="shared-number-sequences-tab"></a>Karta Sdílené číselné řady
 
 Karta **Sdílené číselné řady** na stránce **Parametry nákladů za doručení** uvádí každý typ posloupnosti referenčních čísel, který je sdílen mezi právnickými osobami v modulu Náklady za doručení. Aktuálně je v seznamu pouze jedna číselná sekvence. Tato číselná řada se používá pro ID cesty.
 
-Na stránce **Všechny cesty** mohou uživatelé zobrazit všechny cesty napříč všemi právnickými osobami. Chcete-li však upravit a zpracovat cestu, musí být uživatelé v právnické osobě vybraného záznamu.
 
 ## <a name="feature-visibility-tab"></a>Karta viditelnosti prvku
 

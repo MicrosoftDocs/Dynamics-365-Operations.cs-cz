@@ -2,19 +2,19 @@
 title: Referenční kódy chyb modulu pokladny
 description: Tento článek popisuje referenční kódy chyb pokladního modulu, které se zobrazují v chybových zprávách pro uživatele v Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709653"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728238"
 ---
 # <a name="checkout-module-error-reference-codes"></a>Referenční kódy chyb modulu pokladny
 
@@ -31,9 +31,13 @@ V závislosti na chybě, ke které došlo, obsahuje tabulka v tomto článku ná
 - Informace ke zvážení v prostředí nebo konfiguracích platebních konektorů
 - Informace, na které lze odkazovat v případě podpory, pokud je vyžadována další pomoc
 
+## <a name="prerequisites"></a>Předpoklady
+
+Chcete-li povolit referenční kódy chyb modulu pokladny uvedené níže, přejděte v nástroji pro tvorbu webu pro váš web na adresu **Nastavení webu \> Rozšíření** a v části **Košík a pokladna** vyberte **Povolit rozšířené zasílání zpráv o chybách online kanálu**. 
+
 ## <a name="checkout-module-error-reference-codes"></a>Referenční kódy chyb modulu pokladny
 
-V následující tabulce získáte další informace o odkazech na chybové kódy, které poskytují zákazníci nebo se zobrazují v internetovém obchodě.
+V následující tabulce získáte další informace o odkazech na chybové kódy, které poskytují zákazníci nebo se zobrazují v internetovém obchodě. Posuňte se doprava pro zobrazení sloupce **Popis chyby**.
 
 | Kód chyby | Kód chyby korelovaný dynamicky | Popis chyby |
 | ---------- | ------------------------------ | ----------------- |

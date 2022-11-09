@@ -13,11 +13,11 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 38ef8c51d52de6b8f748330d0697e860d75233bf
-ms.sourcegitcommit: 43cf54d057eccd07a71bb48e2fcf858d043a9669
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2022
+ms.lasthandoff: 11/01/2022
 ms.locfileid: "9620891"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Povolení režimu ladění ve službě výpočtu daně
@@ -27,7 +27,7 @@ ms.locfileid: "9620891"
 Tento článek vysvětluje, jak povolit režim ladění ve službě Výpočet daně za účelem prošetření problémů.
 
 1. Přidejte **&debug=vs%2CconfirmExit&** k adrese URL Application Object Server (AOS) a poté stránku obnovte.
-2. Když vyberete **Prodejní daň** pro výpočet daně z prodeje, textový soubor s názvem **TaxServiceTroubleshootingLog.txt** bude zachycen na serveru v cestě **C:\AXWeb_SMBShare\temporary-file\\{%session%}\\**. Soubor **TaxServiceTroubleshootingLog.txt** obsahuje **TaxableDocument** a parametr výpočtu. Tyto výsledky jsou vráceny z daňové služby a informací o výjimce pro odstraňování problémů.
+2. Když vyberete **Daň z prodeje** pro výpočet daně z prodeje, otevře se textový soubor s názvem **TaxServiceTroubleshootingLog.txt**. Soubor **TaxServiceTroubleshootingLog.txt** obsahuje **TaxableDocument** a parametr výpočtu. Tyto výsledky jsou vráceny z daňové služby a informací o výjimce pro odstraňování problémů.
 
 ## <a name="sample"></a>Ukázka
 

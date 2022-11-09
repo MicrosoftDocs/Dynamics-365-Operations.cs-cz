@@ -2,7 +2,7 @@
 title: Přehled šablon a rozvržení
 description: Tento článek popisuje šablony a rozvržení v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277926"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733377"
 ---
 # <a name="templates-and-layouts-overview"></a>Přehled šablon a rozvržení
 
@@ -66,7 +66,13 @@ V následujícím příkladu je ukázáno, jak lze konfigurovat základní šabl
 
 Důležitým počátečním krokem pro správce webů a obchodních značek je určení správné rovnováhy mezi omezeními a pružností pro podřízené rozložení a autory stránek. Při použití šablon je tato rovnováha zcela konfigurovatelná. Ovlivňuje, zda jsou prvky stránky centrálně aktualizovány (uzamčeny v šabloně) nebo vlevo na úrovně jednotlivých podřízených úrovní, které jsou v hierarchii stránek nižší.
 
-Chcete-li začít používat šablony, [pracujte se šablonami](work-with-templates.md).
+### <a name="relationship-between-template-defaults-and-page-content"></a>Vztah mezi výchozími hodnotami šablony a obsahem stránky
+
+Primární funkcí šablony je zefektivnit tvorbu modulu při vytváření stránky. I když jsou výchozí nastavení modulů v šabloně nastavena nebo dokonce uzamčena, neexistuje žádné další datové spojení mezi konfiguracemi modulů stránky a výchozími nastaveními šablony, s výjimkou případů, kdy je stránka upravena. Šablony řídí autorské prostředí pro strukturu stránky a po vytvoření stránky již nejsou výchozí šablony spojeny s lokalizovatelným obsahem na této stránce. Jinými slovy, výchozí nastavení modulu nastavené v šabloně řídí autorské prostředí podřízených stránek. Po vytvoření a úpravě stránek nemají kontrolu nad jejich obsahem.
+
+Jediná výjimka z dříve popsaného chování nastane, když je do šablony přidán [fragment](work-with-fragments.md). Pomocí fragmentů lze kdykoli dynamicky přidávat nebo upravovat lokalizovatelný obsah na všech podřízených stránkách šablony nebo rozvržení, a to i po vytvoření mnoha stránek z dané šablony. Nejlepší je používat fragmenty v šablonách a rozloženích vždy, když má být lokalizovatelný obsah dynamicky přidáván, odebírán nebo upravován na všech podřízených stránkách. Fragmenty by se měly používat například pro záhlaví, zápatí, společná metadata/skripty nebo jakýkoli jiný obsah, který musí být centrálně upravitelný a stejný na všech podřízených stránkách. Fragmenty umožňují používat šablony a rozvržení k řízení obsahu všech podřízených stránek.
+
+Chcete-li začít používat šablony, získáte informace v části [Práce se šablonami](work-with-templates.md).
 
 ## <a name="layouts"></a>Rozložení
 

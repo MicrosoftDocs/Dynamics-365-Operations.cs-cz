@@ -2,7 +2,7 @@
 title: Online a offline operace pokladního místa (POS)
 description: Tento článek obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Dynamics 365 Commerce. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272842"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728269"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -101,7 +101,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 212  | Informace o kartě vozového parku                                   | Tato operace není podporována.                                                                                                                                                                                | Nelze použít | Nelze použít     | Nelze použít | Nelze použít    | Nelze použít  |
 | 213  | Platba dobropisem                                   | Přijměte dobropis (doklad) vystavený obchodem.                                                                                                                                                          | Ano            | Ano                | Číslo             | Číslo                | Číslo              |
 | 214  | Platba dárkovým poukazem                                     | Přijměte dárkový poukaz vydaný v obchodě.                                                                                                                                                                      | Ano            | Ano                | Číslo             | Číslo                | Číslo              |
-| 215  | Proplatit dárkový poukaz                                | Tato operace není podporována.                                                                                                                                                                                | Ano            | Ano                | Číslo             | Číslo                | Číslo              |
+| 215  | Proplatit dárkový poukaz                                | Kreditní transakce s plnou částkou zbývajícího zůstatku dárkové karty, pokud je v rámci nakonfigurovaného limitu pro výběr.                                                                                                                                                                              | Ano            | Ano                | Číslo             | Číslo                | Číslo              |
 | 216  | Platba kartou přesně                                    | Tato operace není podporována.                                                                                                                                                                                | Nelze použít | Nelze použít     | Nelze použít | Nelze použít    | Nelze použít  |
 | 217  | Platba šekem přesně                                   | Tato operace není podporována.                                                                                                                                                                                | Nelze použít | Nelze použít     | Nelze použít | Nelze použít    | Nelze použít  |
 | 218  | Platba z účtu zákazníka přesně                        | Tato operace není podporována.                                                                                                                                                                                | Nelze použít | Nelze použít     | Nelze použít | Nelze použít    | Nelze použít  |

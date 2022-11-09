@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905856"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725462"
 ---
 # <a name="manage-voyages"></a>Správa cest
 
@@ -29,7 +29,8 @@ Cesta obvykle představuje plavidlo. V závislosti na vašich zvycích a postupe
 Stránka **Všechny cesty** poskytuje podrobnosti o cestě, informace o dodání a kalkulaci nákladů, a informace o položkách, nákupních objednávkách a převodních příkazech. Chcete-li otevřít stránku **Všechny cesty** přejděte na **Náklady za doručení \> Cesty \> Všechny cesty**. Tato stránka zobrazuje seznam všech aktuálních cest. Pomocí tlačítek v podokně akcí můžete vytvářet či odstraňovat cesty a pracovat s nimi. Výběrem libovolné cesty v seznamu zobrazte její podrobnosti.
 
 > [!NOTE]
-> Přepravní kontejnery a folia jsou spojeny s cestou. Řádky nákupu jsou spojeny s přepravním kontejnerem. Pokud jsou přepravní kontejnery a folia vypnuty, lze je také přímo propojit s cestou. Kromě toho jsou zde zadané náklady rozděleny na všechny připojené řádky nákupu.
+> Přepravní kontejnery a folia jsou spojeny s cestou. Řádky nákupu jsou spojeny s přepravním kontejnerem. Kromě toho jsou zde zadané náklady rozděleny na všechny připojené řádky nákupu.
+> Nákupní objednávka projektu není podporována v nákladech za doručení.
 
 ## <a name="action-pane"></a>Podokno akcí
 

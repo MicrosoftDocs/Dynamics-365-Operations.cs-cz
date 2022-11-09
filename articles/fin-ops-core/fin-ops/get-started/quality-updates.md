@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689193"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731603"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -40,13 +40,13 @@ Již bylo nasazeno několik vylepšení, která umožňují proaktivní doručov
 
 - **Aktualizace téměř nulových prostojů** – Chcete-li prosazovat častější prostředí, je nezbytné, aby byl snížen dopad na dostupnost prostředí, aby byly zachovány smlouvy o úrovni služeb Dynamics 365 (SLA). Aktualizace s téměř nulovými prostoji byla původně zavedena, aby pomohla zlepšit měsíční opravy operačního systému pomocí převzetí služeb při selhání clusteru k aktivaci aktualizované bitové kopie s minimálním narušením. Mechanismus aplikace aktualizací se vylepšuje, aby byl ještě méně rušivý, a bude pokrývat jak záplatování operačního systému, tak nasazení kvalitních aktualizací.
 
-    U interaktivních uživatelů může být aktivní relace přerušena a opakování přejde do nyní aktualizovaného prostředí. Se zavedením [plánování dávek na základě priority](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), který je nyní k dispozici na základě přihlášení, se plánování dávek a zpracování obnoví a obnoví ihned po aktualizaci. Předtím, než se zákazníci začnou podílet na proaktivní distribuci aktualizací kvality pro svá produkční prostředí, bude pro zákazníky k dispozici prioritní plánování dávek.
+U interaktivních uživatelů může být aktivní relace přerušena a opakování přejde do nyní aktualizovaného prostředí. Se zavedením [plánování dávek na základě priority](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) se plánování dávek a zpracování obnoví a obnoví ihned po aktualizaci. Předtím, než se zákazníci začnou podílet na proaktivní distribuci aktualizací kvality pro svá produkční prostředí, bude pro zákazníky k dispozici prioritní plánování dávek.
 
 - **Temné hodiny** – Temné hodiny jsou definovány pro každou oblast Azure a během období temné hodiny dojde k téměř nulovým aktualizacím prostojů.
 
 ## <a name="the-proactive-update-process"></a>Proaktivní proces aktualizace
 
-Nasazení proaktivních aktualizací kvality se bude řídit procesem bezpečného nasazení (SDP). Specifika SDP se budou vyvíjet, ale aktualizace kvality budou zpočátku nasazovány do prostředí sandbox. Proces bude zahájen v prostředích, která se rozhodnou pro včasné nasazení. Jak se procento úspěšně nasazených sandboxů zvyšuje, začne nasazení do produkčních prostředí. Proces bude opět zahájen v prostředích, která se rozhodnou pro včasné nasazení. Naslouchací systémy budou monitorovat systémovou telemetrii a incidenty na Livesite a v případě zjištění jakékoli regrese zastaví zavádění konkrétní verze. Pokud budou zákazníci chtít, budou si stále moci stáhnout aktualizace kvality před proaktivním nasazením.
+Nasazení proaktivních aktualizací kvality se bude řídit procesem bezpečného nasazení (SDP). Specifika SDP se budou vyvíjet, ale aktualizace kvality budou zpočátku nasazovány do prostředí sandbox. Jak se procento úspěšně nasazených sandboxů zvyšuje, začne nasazení do produkčních prostředí. Naslouchací systémy budou monitorovat systémovou telemetrii a incidenty na Livesite a v případě zjištění jakékoli regrese zastaví zavádění konkrétní verze. Pokud budou zákazníci chtít, budou si stále moci stáhnout aktualizace kvality před proaktivním nasazením.
 
 Aktuální data správy vydání ukazují, že méně než 3 procenta regresí jsou zavedena v aktualizacích kvality. Se zvýšeným zaměřením na eliminaci regrese a vylepšenou SDP bude potenciální dopad regresí dramaticky nižší než zvýšení kvality, kterého se dosáhne rychlejším zavedením oprav u zákazníků v širokém měřítku.
 
@@ -92,13 +92,13 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 **Verze aplikace: 10.0.1326.70**
 **Odpovídající nejnovější článek znalostní báze: 748926**
 
-| Stanice | Oblasti | Připravovaný plán sandboxu
-|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 |
-| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno |
+| Stanice | Oblasti | Dokončený plán | Připravovaný plán sandboxu|
+|---|---|---|---|
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 | 2. listopadu až 5. listopadu 2022 |
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 | 2. listopadu až 5. listopadu 2022 |
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 | 2. listopadu až 5. listopadu 2022 |
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 | 2. listopadu až 5. listopadu 2022 |
+| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 > [!IMPORTANT] 
 > Pět dní předem společnost Microsoft aktualizuje předchozí plán a odešle e-mailová upozornění do sady prostředí, která mají naplánováno přijímat tyto aktualizace kvality. Předchozí plán platí pouze pro prostředí, která byla upozorněna na nadcházející aktualizaci. Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

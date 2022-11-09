@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3723b40209ee1f8fb0ef77cb1ad52d123ff2a02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0624c251646110644a8a72658a6dd6f8d319c57f
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869455"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734287"
 ---
 # <a name="recall-order-operation-in-pos"></a>Operace odvolání objednávky v POS
 
@@ -65,5 +65,11 @@ Na panelu aplikace může uživatel vybrat některou operaci. V závislosti na s
 ## <a name="add-notifications-to-the-recall-order-operation"></a>Přidání oznámení k operaci zrušení objednávky
 
 Ve verzi 10.0.18 a novější můžete nakonfigurovat oznámení POS a živá upozornění na dlaždice pro operaci **Zrušení objednávky**, pokud je to požadováno. Další informace viz [Zobrazit oznámení o objednávce v prodejním místě (POS)](notifications-pos.md).  
+
+> [!NOTE]
+> Chcete-li povolit funkci vyhledávání objednávek, ujistěte se, že je klíč **Nabídka** je povolen v části **Konfigurace licence** > **Konfigurační klíče**.
+>
+> ![Musí být povolena konfigurace licenčního klíče nabídek](./media/Quotations_License_Key_Configuration.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
