@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Popisovače jazyka a národního prostředí v rámci produktu a nápovědy
                   href: help/language-locale.md
-                - name: 'Rozšíření, přizpůsobení a spolupráce na nápovědě'
+                - name: "Rozšíření a\_spolupráce na nápovědě"
                   href: help/contributor-guide.md
             - name: Regionální služby finančních a provozních aplikací
               items:
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: Správa přístupu k síťovým tiskárnám napříč právnickými osobami
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Monitorování a telemetrie pomocí Application Insights
+              items:
+                - name: Přehled
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: Zabezpečení
               items:
                 - name: Zabezpečení na základě rolí
