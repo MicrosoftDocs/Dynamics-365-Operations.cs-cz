@@ -541,7 +541,11 @@
                     - name: Nábor uchazečů o práci
                       href: hr-personnel-recruit.md
         - name: Správa úkolů
-          href: hr-task-mgmt.md
+          items:
+            - name: Přehled
+              href: hr-task-mgmt.md
+            - name: Upgrade správy úloh
+              href: hr-task-update.md
         - name: "Pracovní volno a\_absence"
           items:
             - name: Přehled
@@ -822,7 +826,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
             - name: Správa přizpůsobení poskytovaných pracovníkům
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Rozvoj lidských zdrojů
+    - name: Vývoj Human Resources
       items:
         - name: Přehled
           href: hr-developer-overview.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Vlastní pole
           href: hr-developer-custom-fields.md
+        - name: Vývoj a přizpůsobení
+          items:
+            - name: Výčet základu pohlaví
+              href: enum-exten.md
         - name: Nastavení integrace dat
           items:
             - name: Volba technologie integrace dat
