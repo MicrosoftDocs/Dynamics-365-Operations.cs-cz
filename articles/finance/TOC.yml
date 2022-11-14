@@ -450,6 +450,8 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopírování plánu fakturace
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: "Rozdělení zákazníků s\_plány fakturace"
+                      href: accounts-receivable/sb-customer-split.md
                     - name: Funkce plánů fakturace
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Vyúčtování po milnících
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Pracovní prostor uzavření finančního období
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Optimalizace uzávěrky na konci roku
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Roční uzávěrka
                   href: general-ledger/year-end-close.md
                 - name: Uzavření fiskálního roku
