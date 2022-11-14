@@ -384,7 +384,7 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
         - name: Distribuovaná hybridní topologie
           items:
-            - name: Funkce jednotky škálování je momentálně pozastavena pro nové zákazníky
+            - name: Funkce jednotky škálování je momentálně pozastavena pro Supply Chain Management
               href: cloud-edge/cloud-edge-landing-page.md
         - name: Správa majetku
           items:
@@ -1753,36 +1753,54 @@
           items:
             - name: Domovská stránka hlavního plánování
               href: master-planning/master-planning-home-page.md
-            - name: Migrace na optimalizaci plánování pro hlavní plánování
-              href: master-planning/new-master-planning-engine.md
-            - name: Optimalizace plánování
+            - name: "Začínáme s\_hlavním plánováním"
+              href: master-planning/planning-optimization/get-started.md
+            - name: Architektura systému hlavního plánování
+              href: master-planning/master-planning-architecture.md
+            - name: Správa hlavního plánování
               items:
-                - name: Přehled optimalizace plánování
-                  href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: "Začínáme s\_optimalizací plánování"
-                  href: master-planning/planning-optimization/get-started.md
                 - name: "Proces vydání optimalizace plánování a\_historie vydání"
                   href: master-planning/planning-optimization/release-process.md
-                - name: Analýza přizpůsobení pro optimalizaci plánování
-                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Rozdíly mezi integrovaným hlavním plánováním a optimalizací plánování
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-                - name: 'Parametry, které optimalizace plánování nepoužívá'
-                  href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Plán dodávek
-                  href: master-planning/supply-schedule.md
-                - name: Použití filtrů na plán
-                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Řešení potíží s optimalizací plánování
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Vyřešení chyby modulu plánování „Nebyla nalezena dostatečná kapacita“
+                  href: master-planning/not-enough-capacity-error-resolution.md
+                - name: Zrušení plánovací úlohy
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Rozšiřitelnost optimalizace plánování
+                  href: master-planning/planning-optimization/extensibility.md
+                - name: Zobrazení historie pánů a plánovacích protokolů
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Parametry data a času používané optimalizací plánování
+                  href: master-planning/planning-optimization/date-time-used.md
+            - name: Konfigurace hlavního plánování
+              items:
+                - name: Zpoždění
+                  href: master-planning/delays.md
+                - name: Použití sledování pro rozpad
+                  href: master-planning/trace-explosion.md
+                - name: Automatizace dodávek na zakázku
+                  href: master-planning/make-to-order-supply-automation.md
+                - name: Záporné dny a dynamické záporné dny
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Kalendáře a hlavní plánování
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Vytvoření rozvrhu pro pracoviště
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Vytvoření plánu pro pracoviště
+                  href: master-planning/tasks/create-plan-site.md
                 - name: "Hlavní plánování s\_prognózami poptávky"
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: "Hlavní plánování s\_prognózami dodávek"
                   href: master-planning/planning-optimization/supply-forecast.md
+                - name: Plán dodávek
+                  href: master-planning/supply-schedule.md
+                - name: Spuštění plánování pro podmnožinu položek
+                  href: master-planning/planning-optimization/plan-filters.md
                 - name: Hlavní plánování s obchodními smlouvami nákupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Plánování na základě nabídek a vyžádání nabídek
                   href: master-planning/planning-optimization/quotation-planning.md
-                - name: Parametry data a času používané optimalizací plánování
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Tolerance zpoždění (záporné dny)
@@ -1799,55 +1817,21 @@
                   href: master-planning/planning-optimization/finite-capacity.md
                 - name: "Plánování s\_výběrem prostředků na základě schopností"
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Plánování na základě priority
-                  href: master-planning/planning-optimization/priority-based-planning.md
-                - name: Plánování materiálových požadavků řízené poptávkou (DDMRP)
-                  items:
-                    - name: Přehled DDMRP
-                      href: master-planning/planning-optimization/ddmrp-overview.md
-                    - name: Zapněte pro svůj systém funkci DDMRP
-                      href: master-planning/planning-optimization/ddmrp-enable.md
-                    - name: Umístění zásob
-                      href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-                    - name: Profil a úrovně vyrovnávací paměti
-                      href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-                    - name: Řízené plánování požadavků
-                      href: master-planning/planning-optimization/ddmrp-planning.md
-                    - name: Vizuální a společné provedení
-                      href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-                - name: Značení zásob s optimalizací plánování
+                - name: Označení zásob
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Vyloučení produktů s určitými stavy životního cyklu produktu
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: "Metody doplnění a\_modifikace množství"
-                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Ochranné doby disponibility
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: "Čisté požadavky a\_informace o\_doložení u\_optimalizace plánování"
+                - name: "Čisté požadavky a\_informace pro doložení"
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: Schválení plánovaných objednávek
-                  href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Potvrdit plánované objednávky
-                  href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Zjednodušené plánované objednávky
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Plánování se záporným množstvím na skladě
                   href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Zobrazení historie pánů a plánovacích protokolů
-                  href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Zrušení plánovací úlohy
-                  href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Zprávy akce
-                  href: master-planning/action-messages.md
                 - name: Výpočet dat dodání prodejní objednávky pomocí CTP
                   href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-                - name: Řešení potíží s optimalizací plánování
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Rozšiřitelnost optimalizace plánování
-                  href: master-planning/planning-optimization/extensibility.md
-            - name: Hlavní plány
+            - name: Nastavení hlavních plánů
               items:
                 - name: Přehled hlavních plánů
                   href: master-planning/master-plans.md
@@ -1855,74 +1839,60 @@
                   href: master-planning/master-planning-setup.md
                 - name: Průvodce nastavením hlavního plánování
                   href: master-planning/master-planning-setup-wizard.md
+                - name: "Vygenerování plánu s\_omezeními"
+                  href: master-planning/tasks/constrained-plan.md
+            - name: Nastavení strategií doplnění
+              items:
                 - name: Nastavení disponibility
                   href: master-planning/coverage-settings.md
                 - name: Definování pravidel disponibility pro položky
                   href: master-planning/tasks/define-coverage-rules-items.md
-                - name: "Vygenerování plánu s\_omezeními"
-                  href: master-planning/tasks/constrained-plan.md
-                - name: Vytvoření materiálového plánu pro vedlejší produkty
-                  href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Spravovat plánované objednávky
-                  href: master-planning/maintain-planned-orders.md
+                - name: Získávání produktů a materiálů od více dodavatelů
+                  href: master-planning/source-from-multiple-vendors.md
+                - name: Plánování na základě priority
+                  href: master-planning/planning-optimization/priority-based-planning.md
+                - name: "Metody doplnění a\_modifikace množství"
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+            - name: Hlavní plány a funkce více pracovišť
+              items:
+                - name: Přehled hlavního plánování a funkce více pracovišť
+                  href: master-planning/master-plan-multisite-functionality.md
+                - name: 'Hlavní plánování pro disponibilitu pracoviště, povinný sklad'
+                  href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                - name: 'Hlavní plánování pro disponibilitu pracoviště, sklad není povinný'
+                  href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                - name: Určení verze kusovníku
+                  href: master-planning/master-plan-bom-version-determined.md
+                - name: Rozpad verze kusovníku
+                  href: master-planning/master-plan-explosion-bom-version.md
+            - name: Pojistná zásoba
+              items:
                 - name: Splnění rezervních zásob položek
                   href: master-planning/safety-stock-replenishment.md
                 - name: Použití deníku pojistných zásob pro aktualizaci minimální disponibility pro položky
                   href: master-planning/safety-stock-journal.md
-                - name: Zpoždění
-                  href: master-planning/delays.md
-                - name: Zrušení hlavní plánovací úlohy
-                  href: master-planning/cancel-master-planning-job.md
-                - name: Použití sledování pro rozpad
-                  href: master-planning/trace-explosion.md
-                - name: Monitorování běhu hlavního plánování
-                  href: master-planning/tasks/monitor-master-planning-run.md
-                - name: Vytvoření rozvrhu pro pracoviště
-                  href: master-planning/tasks/create-schedule-site.md
-                - name: Vytvoření plánu pro pracoviště
-                  href: master-planning/tasks/create-plan-site.md
-                - name: Kalendáře a hlavní plánování
-                  href: master-planning/supply-chain-calendars-master-planning.md
-                - name: Vyřešení chyby modulu plánování „Nebyla nalezena dostatečná kapacita“
-                  href: master-planning/not-enough-capacity-error-resolution.md
-                - name: Vylepšení výkonu hlavního plánování
-                  href: master-planning/master-planning-performance.md
-                - name: Zlepšení výkonu modulu plánování
-                  href: master-planning/scheduling-engine-performance.md
-                - name: Hlavní plány a funkce více pracovišť
-                  items:
-                    - name: Přehled hlavního plánování a funkce více pracovišť
-                      href: master-planning/master-plan-multisite-functionality.md
-                    - name: 'Hlavní plánování pro disponibilitu pracoviště, povinný sklad'
-                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-                    - name: 'Hlavní plánování pro disponibilitu pracoviště, sklad není povinný'
-                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-                    - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-                    - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                    - name: Určení verze kusovníku
-                      href: master-planning/master-plan-bom-version-determined.md
-                    - name: Rozpad verze kusovníku
-                      href: master-planning/master-plan-explosion-bom-version.md
-                - name: Záporné dny a dynamické záporné dny
-                  href: master-planning/more-about-dynamic-negative-days.md
-                - name: Vytvoření mezipodnikového plánu
-                  href: master-planning/tasks/create-intercompany-plan.md
-                - name: Zobrazení výstupní plánované mezipodnikové poptávky
-                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: "Čisté požadavky a\_informace o\_doložení u\_integrovaného hlavního plánování"
-                  href: master-planning/net-requirements-built-in-master-planning.md
-                - name: Automatizace dodávek na zakázku
-                  href: master-planning/make-to-order-supply-automation.md
+            - name: Řízení plánovaných objednávek
+              items:
+                - name: Spravovat plánované objednávky
+                  href: master-planning/maintain-planned-orders.md
+                - name: 'Prohlížení, správa a schvalování plánovaných objednávek'
+                  href: master-planning/planning-optimization/approved-planned-order.md
+                - name: Potvrdit plánované objednávky
+                  href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Zjednodušené plánované objednávky
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
+                - name: Zprávy akce
+                  href: master-planning/action-messages.md
             - name: Prognózování
               items:
-                - name: "Prognóza poptávky a\_nabídky"
-                  items:
-                    - name: Prognózy zásob
-                      href: master-planning/inventory-forecast.md
-                    - name: 'Průvodce: Ruční úprava prognózy poptávky'
-                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognózy zásob
+                  href: master-planning/inventory-forecast.md
+                - name: 'Průvodce: Ruční úprava prognózy poptávky'
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
                 - name: Prognóza poptávky
                   items:
                     - name: Přehled prognózy poptávky
@@ -1943,10 +1913,50 @@
                       href: master-planning/monitor-forecast-accuracy.md
                     - name: 'Průvodce: Vytvoření základní prognózy'
                       href: master-planning/tasks/create-baseline-forecast.md
-                - name: Hlavní plánování s prognózou
-                  items:
-                    - name: Redukční klíče prognózy
-                      href: master-planning/reduction-keys.md
+                - name: Redukční klíče prognózy
+                  href: master-planning/reduction-keys.md
+            - name: Plánování materiálových požadavků řízené poptávkou (DDMRP)
+              items:
+                - name: Přehled DDMRP
+                  href: master-planning/planning-optimization/ddmrp-overview.md
+                - name: Zapněte pro svůj systém funkci DDMRP
+                  href: master-planning/planning-optimization/ddmrp-enable.md
+                - name: Umístění zásob
+                  href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+                - name: Profil a úrovně vyrovnávací paměti
+                  href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+                - name: Řízené plánování požadavků
+                  href: master-planning/planning-optimization/ddmrp-planning.md
+                - name: Vizuální a společné provedení
+                  href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+            - name: Zastaralý modul plánování
+              items:
+                - name: Přehled zastaralého modulu plánování
+                  href: master-planning/deprecated-master-planning-overview.md
+                - name: Migrace na optimalizaci plánování pro hlavní plánování
+                  href: master-planning/new-master-planning-engine.md
+                - name: 'Parametry, které optimalizace plánování nepoužívá'
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Rozdíly mezi optimalizací plánování a zastaralým modulem hlavního plánování
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: Analýza přizpůsobení pro optimalizaci plánování
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Vylepšení výkonu hlavního plánování
+                  href: master-planning/master-planning-performance.md
+                - name: Zlepšení výkonu modulu plánování
+                  href: master-planning/scheduling-engine-performance.md
+                - name: Vytvoření mezipodnikového plánu
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Zobrazení výstupní plánované mezipodnikové poptávky
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Monitorování spuštění hlavního plánování
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: "Čisté požadavky a\_informace o\_doložení u\_zastaralého modulu plánování"
+                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Vytvoření materiálového plánu pro vedlejší produkty
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Zrušení úlohy vytvořené pomocí zastaralého modulu hlavního plánování
+                  href: master-planning/cancel-master-planning-job.md
         - name: Mobilní aplikace
           items:
             - name: Domovská stránka mobilní aplikace
