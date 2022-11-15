@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690074"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740134"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Hlavní plánování s prognózami dodávek
 
@@ -168,13 +168,13 @@ Když spustíte hlavní plán, který je nastaven k použití metody snížení 
 
 Nyní upravíte plánovanou nákupní objednávku, která byla vytvořena po posledním spuštění plánování, a změníte množství na *15 ea*. Pak schválíte objednávku. Až příště spustíte hlavní plán, vytvoří plánovanou nákupní objednávku pro dodavatele *US-101*, site *1*, sklad *11*, množství *10 ea* a datum *10/10/22*. Tentokrát bude množství sníženo tak, aby odráželo množství existující schválené objednávky z předchozího běhu plánování.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Rozdíly mezi Optimalizací plánování a integrovaným plánovacím modulem
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Rozdíly mezi Optimalizací plánování a zastaralým hlavním plánovacím modulem
 
-Prognózy dodávek fungují trochu odlišně na základě toho, který modul plánování používáte (nebo integrovaný plánovací modul nebo Optimalizace plánování). Tato část popisuje rozdíly.
+Prognózy dodávek fungují trochu odlišně na základě toho, který modul plánování používáte (Optimalizace plánování nebo zastaralý modul hlavního plánování). Tato část popisuje rozdíly.
 
 ### <a name="vendor-groups"></a>Skupiny dodavatelů
 
-Když přidáte řádek prognózy, můžete určit dodavatele a skupinu dodavatelů. Ve vestavěném modulu plánování jsou vytvořené plánované objednávky seskupeny podle kombinace hodnot dodavatele a skupiny dodavatelů. V Optimalizaci plánování jsou plánované objednávky seskupeny podle dodavatele.
+Když přidáte řádek prognózy, můžete určit dodavatele a skupinu dodavatelů. V zastaralém modulu hlavního plánování jsou vytvořené plánované objednávky seskupeny podle kombinace hodnot dodavatele a skupiny dodavatelů. V Optimalizaci plánování jsou plánované objednávky seskupeny podle dodavatele.
 
 Následující tabulka uvádí některé příklady řádků prognózy dodávek pro položku.
 
@@ -186,7 +186,7 @@ Následující tabulka uvádí některé příklady řádků prognózy dodávek 
 
 Prodejce *VendorA* je výchozí dodavatel pro skupinu dodavatelů *VendorGroupA*. Jedná se také o výchozího dodavatele pro položku.
 
-Vestavěný plánovací modul vytvoří následující objednávky:
+Zastaralý hlavní plánovací modul vytvoří následující objednávky:
 
 - Plánovaná nákupní objednávka pro dodavatele *VendorA*, skupinu prodejců *VendorGroupA* a množství *11*
 - Plánovaná nákupní objednávka pro dodavatele *VendorA* a množství *7*
@@ -197,7 +197,7 @@ Optimalizace plánování vytvoří pouze jednu objednávku:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Redukce obecných prognóz o konkrétnější prognózy
 
-Ve vestavěném modulu hlavního plánování je výsledek nepředvídatelný, pokud některé prognózy mají dodavatele, ale jiné ne.
+V zastaralém modulu hlavního plánování je výsledek nepředvídatelný, pokud některé prognózy mají dodavatele, ale jiné ne.
 
 V Optimalizaci plánování jsou obecné prognózy vždy redukovány o konkrétnější prognózy, jak ukazuje následující příklad.
 
@@ -218,15 +218,15 @@ Obecná prognóza (pro 15,00 kusů) je redukována o specifičtější prognózy
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Respektování výchozího nastavení objednávky při generování plánovaných objednávek
 
-Každá položka může mít výchozí nastavení objednávky, jako je minimální množství nákupní objednávky. Vestavěný plánovací modul ignoruje tato nastavení, a proto převádí prognózy do plánovaných objednávek, které mají stejné množství. Optimalizace plánování respektuje tato nastavení, když jsou plánované objednávky generovány z prognóz dodávek. 
+Každá položka může mít výchozí nastavení objednávky, jako je minimální množství nákupní objednávky. Zastaralý hlavní plánovací modul ignoruje tato nastavení, a proto převádí prognózy do plánovaných objednávek, které mají stejné množství. Optimalizace plánování respektuje tato nastavení, když jsou plánované objednávky generovány z prognóz dodávek. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Agregace plánovaných objednávek v důsledku redukce o schválené zakázky
 
-Vestavěný modul hlavního plánování předpokládá, že pouze jedna objednávka sníží stávající prognózu dodávek. Pokud tedy několik objednávek odpovídá řádku prognózy dodávek, sníží ji pouze první objednávka. V Optimalizaci plánování se všechny objednávky, které odpovídají linii prognózy dodávek, sníží.
+Zastaralý modul hlavního plánování předpokládá, že pouze jedna objednávka sníží stávající prognózu dodávek. Pokud tedy několik objednávek odpovídá řádku prognózy dodávek, sníží ji pouze první objednávka. V Optimalizaci plánování se všechny objednávky, které odpovídají linii prognózy dodávek, sníží.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Snížení prognóz pouze odpovídajícími dodavateli
 
-Když vestavěný modul hlavního plánování redukuje prognózu o existující uvolněné nákupní objednávky, nezajistí, že se dodavatel na nákupní objednávce shoduje s dodavatelem z prognózy. Optimalizace plánování snižuje prognózy pouze u nákupních objednávek, které mají odpovídající hodnotu v poli dodavatele.
+Když zastaralý modul hlavního plánování redukuje prognózu o existující uvolněné nákupní objednávky, nezajistí, že se dodavatel na nákupní objednávce shoduje s dodavatelem z prognózy. Optimalizace plánování snižuje prognózy pouze u nákupních objednávek, které mají odpovídající hodnotu v poli dodavatele.
 
 U převodních a výrobních objednávek je pole dodavatele vždy ignorováno, protože pro tyto typy zakázek není relevantní.
 
@@ -234,4 +234,4 @@ U převodních a výrobních objednávek je pole dodavatele vždy ignorováno, p
 
 Pokud je výchozí typ objednávky pro položku *Převod*, prognózy lze snížit pouze o existující plánované převodní příkazy. U výrobních zakázek a nákupních zakázek však prognózu dodávek snižují pouze uvolněné objednávky.
 
-Vestavěný plánovací modul snižuje pro všechny stavy převodních příkazů, zatímco Optimalizace plánování snižuje prognózy pouze o převodní příkazy, které jsou ve stavu *Uvolněno*.
+Zastaralý hlavní plánovací modul snižuje pro všechny stavy převodních příkazů, zatímco Optimalizace plánování snižuje prognózy pouze o převodní příkazy, které jsou ve stavu *Uvolněno*.

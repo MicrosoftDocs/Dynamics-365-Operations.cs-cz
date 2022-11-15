@@ -2,7 +2,7 @@
 title: Stanovení platebních podmínek odběratele
 description: Tento postup definuje platební slevu a nastavení data splatnosti.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065701"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752769"
 ---
 # <a name="establish-customer-payment-terms"></a>Stanovení platebních podmínek odběratele
 
@@ -34,7 +34,11 @@ Tento postup definuje platební slevu a nastavení data splatnosti. Tento průvo
 6. Do pole **Den v měsíci** zadejte datum a čas. Datum by mělo být zadáno jako číslo, jako například „10“ a nikoli „10.“. 
 7. Klikněte na možnost **Uložit**.
 8. Zavřete stránku.
-9. Přejděte na **Podokno navigace > Moduly > Pohledávky > Nastavení plateb > Platební podmínky**.
+9. Přejděte na **Podokno navigace > Moduly > Pohledávky > Nastavení plateb > Platební podmínky**. 
+
+>[!NOTE] 
+>Pokud pro **Platební podmínky** nastavena **Hotovost**, pole **Platba v hotovosti** na stránce **Platební podmínky** musí být **Ne**.
+
 10. Klepněte na možnost **Nový**. **Podmínky platby** lze použít pro definování způsobu výpočtu dat splatnosti. Nastavení data platební slevy je definováno na samostatné stránce. 
 11. V poli **Platební podmínky** zadejte ID.
 12. Zadejte popis do pole **Popis**.

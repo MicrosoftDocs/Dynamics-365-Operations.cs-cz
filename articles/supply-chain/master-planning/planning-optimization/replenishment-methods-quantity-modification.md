@@ -1,6 +1,6 @@
 ---
 title: Metody doplnění a modifikace množství
-description: Tento článek obsahuje informace o metodách doplnění v Optimalizaci plánování Vysvětluje také, jak vícenásobné množství objednávky pro produkt ovlivňuje výsledek.
+description: Tento článek obsahuje informace o metodách doplnění. Vysvětluje také, jak vícenásobné množství objednávky pro produkt ovlivňuje výsledek.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873688"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739749"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Metody doplnění a modifikace množství
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek obsahuje informace o metodách doplnění v Optimalizaci plánování Vysvětluje také, jak vícenásobné množství objednávky pro produkt ovlivňuje výsledek.
+Tento článek obsahuje informace o metodách doplnění. Vysvětluje také, jak vícenásobné množství objednávky pro produkt ovlivňuje výsledek.
 
 Metody doplňování jsou také známé jako metody pokrytí a metody stanovení velikosti šarže.
 
 ## <a name="coverage-codes"></a>Kódy pokrytí
 
-Optimalizaci plánování lze nakonfigurovat tak, aby používalo různé metody doplnění. Metody doplňování jsou techniky, které systém používá k výpočtu požadavků na produkt. Metody doplňování jsou definovány kódy pokrytí, které můžete nastavit buď pro skupinu pokrytí, nebo pro produkt.
+Hlavní plánování lze nakonfigurovat tak, aby používalo různé metody doplnění. Metody doplňování jsou techniky, které systém používá k výpočtu požadavků na produkt. Metody doplňování jsou definovány kódy pokrytí, které můžete nastavit buď pro skupinu pokrytí, nebo pro produkt.
 
-V optimalizaci plánování lze použít následující kódy pokrytí:
+Lze použít následující kódy pokrytí:
 
 - **Období** - metoda doplnění kombinuje všechny požadavky na období do jedné objednávky pro daný produkt. Zakázka bude naplánována pro první den období a její množství bude plnit čisté požadavky během stanoveného období. Toto období začíná první poptávkou produktu a pokrývá určenou délku v čase. Další období bude začínat následujícími požadavky produktu. Kód pokrytí *Období* se často používá pro nepředvídatelné čerpání zásob, produkty ovlivněné sezónou nebo produkty s vysokou cenou. Následující obrázek znázorňuje příklad.
 
@@ -64,13 +64,13 @@ Na stránce **Výchozí nastavení objednávky** s vydaným produktem můžete n
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Příklady doplňování, které používají min./max. kód pokrytí
 
-Pokud nezadáte hodnotu v poli **Násobek** pro produkt na stránce **Výchozí nastavení objednávky**  a pokud používáte *Min./Max.* metodu doplnění, Optimalizace plánování doplní zásoby až na určitou úroveň, když je předpokládaná úroveň po ruce pod určitou prahovou hodnotou.
+Pokud nezadáte hodnotu v poli **Násobek** pro produkt na stránce **Výchozí nastavení objednávky**  a pokud používáte *Min./Max.* metodu doplnění, hlavní plánování doplní zásoby až na určitou úroveň, když je předpokládaná úroveň po ruce pod určitou prahovou hodnotou.
 
 Pokud pro produkt definujete více množství, zobrazí se *Min./Max.* metoda doplňování mění své chování a bere v úvahu hodnotu **Násobek**.
 
-Jinými slovy, Optimalizace plánování bude i nadále doplňovat inventář až na definovanou maximální úroveň, pokud je předpokládaná úroveň po ruce menší než definovaná minimální úroveň. Množství doplňování však musí být násobkem hodnoty **Násobek**.
+Jinými slovy, hlavní plánování bude i nadále doplňovat inventář až na definovanou maximální úroveň, pokud je předpokládaná úroveň po ruce menší než definovaná minimální úroveň. Množství doplňování však musí být násobkem hodnoty **Násobek**.
 
-Pokud množství doplňování (rozdíl mezi maximální úrovní a předpokládanou úrovní po ruce) není násobkem definovaného vícenásobného množství, Optimalizace plánování použije první možnou hodnotu, která spolu s předpokládanou úrovní na straně bude pod maximální úroveň. Pokud je součet nižší než minimální úroveň, použije optimalizace plánování první hodnotu, která bude spolu s předpovězenou hodnotou vyšší než maximální úroveň.
+Pokud množství doplňování (rozdíl mezi maximální úrovní a předpokládanou úrovní po ruce) není násobkem definovaného vícenásobného množství, hlavní plánování použije první možnou hodnotu, která spolu s předpokládanou úrovní na straně bude pod maximální úroveň. Pokud je součet nižší než minimální úroveň, použije hlavní plánování první hodnotu, která bude spolu s předpovězenou hodnotou vyšší než maximální úroveň.
 
 Následující podkapitoly poskytují několik příkladů, které ukazují, jak množství vícenásobné objednávky produktu ovlivňuje výsledek *Min./Max.* metodu doplnění.
 

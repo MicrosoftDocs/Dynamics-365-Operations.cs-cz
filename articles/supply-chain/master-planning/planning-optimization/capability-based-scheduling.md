@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335398"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739891"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Plánování s výběrem prostředků na základě schopností
 
@@ -43,7 +43,7 @@ Chcete-li přiřadit schopnosti k provoznímu prostředku, použijte záložku *
 - **Platný** – Zadejte první datum, kdy se použije přiřazení prostředku nebo schopnosti. Během plánování systém nebude používat prostředek nebo schopnost, které mají přiřazení schopnosti s prošlou platností, i když tento prostředek jinak splňuje požadavky.
 - **Vypršení platnosti** – Zadejte poslední datum, kdy se použije přiřazení prostředku nebo schopnosti. Během plánování systém nebude používat prostředek nebo schopnost, které mají přiřazení schopnosti s prošlou platností, i když tento prostředek jinak splňuje požadavky.
 - **Úroveň** – Určete úroveň způsobilosti, kterou musí prostředek pro danou schopnost mít. Když poté zadáte hodnotu **Minimální potřebná úroveň** pro požadavek na prostředek nebo schopnost, plánovací modul bere během výběru prostředku bere do úvahy úroveň způsobilosti. Systém vybere pouze prostředky, které mají požadovanou schopnost na úrovni, která se rovná nebo je větší než minimální úroveň zadaná v požadavku na prostředek.
-- **Priorita** – Toto pole zatím Optimalizace plánování nepoužívá. Pokud však používáte vestavěný plánovací modul, můžete pole **Priorita** použít v přiřazení prostředku nebo schopnosti k definování priority prostředku. Pokud je poté vybraná *Priorita* v poli **Výběr primárního prostředku** na stránce **Parametry plánování**, systém během plánování jako první vybere prostředek, který má nejvyšší prioritu (tj. nejnižší číselnou hodnotu v poli **Priorita**).
+- **Priorita** – Toto pole zatím Optimalizace plánování nepoužívá. Pokud však používáte vestavěný zastaralý modul hlavního plánování, můžete pole **Priorita** použít v přiřazení prostředku nebo schopnosti k definování priority prostředku. Pokud je poté vybraná *Priorita* v poli **Výběr primárního prostředku** na stránce **Parametry plánování**, systém během plánování jako první vybere prostředek, který má nejvyšší prioritu (tj. nejnižší číselnou hodnotu v poli **Priorita**).
 
 ## <a name="example"></a>Příklad
 

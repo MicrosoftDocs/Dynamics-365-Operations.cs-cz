@@ -2,7 +2,7 @@
 title: Modul pokladny
 description: Tento článek popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280467"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746218"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tento článek popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 
@@ -104,6 +105,8 @@ Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlast
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Vytvořte šablonu která používá nový fragment pokladny.
 1. Vytvořte stránku pokladny, která používá novou šablonu.
+
+> [POZNÁMKA] Při použití autorizace jednorázové platby, jak je popsáno v sekci [Vylepšené platby v pokladně obchodu](./dev-itpro/enhanced-sca.md), v části **Informace o pokladně** stránky pokladny potvrďte, že kontejner sekce pokladny je umístěn jako poslední. Tím je zajištěno, že všechny požadované informace jsou shromážděny na stránce pokladny před dokončením poslední platby a dokončením objednávky. 
 
 ## <a name="additional-resources"></a>Další prostředky
 

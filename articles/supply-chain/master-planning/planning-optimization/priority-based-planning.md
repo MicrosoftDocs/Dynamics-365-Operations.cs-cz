@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335278"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740585"
 ---
 # <a name="priority-based-planning"></a>Plánování na základě priority
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management. Tato funkce přidává podporu pro plánování řízené poptávkou, což je jeden z kroků [plánování materiálových požadavků řízené poptávkou (DDMRP)](ddmrp-overview.md). Plánování na základě priority umožňuje nástroji Optimalizace plánování generovat plánované objednávky, které jsou řízeny prioritami plánování namísto dat požadavků.
+Tento článek popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management. Tato funkce přidává podporu pro plánování řízené poptávkou, což je jeden z kroků [plánování materiálových požadavků řízené poptávkou (DDMRP)](ddmrp-overview.md). Plánování na základě priority umožňuje systému generovat plánované objednávky, které jsou řízeny prioritami plánování namísto dat požadavků.
 
 Plánování na základě priority vám umožňuje upřednostňovat objednávky na doplnění, abyste zajistili, že naléhavá poptávka bude upřednostněna před méně důležitou poptávkou. Například objednávka na doplnění vyčerpaných zásob bude mít přednost před standardní objednávkou na doplnění zásob. Systém dokáže automaticky rozdělit větší objednávky na samostatné menší objednávky, kde jsou řádky objednávek seskupeny podle priority. Poté může nejprve zpracovat všechny objednávky s vysokou prioritou.
 
@@ -37,11 +37,11 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Kde a jak jsou přiřazeny priority plánování
 
-Informace *Priority plánování* o nabídce a poptávce jsou základem plánování založeného na prioritách. Priorita plánování definuje důležitost řádku poptávky nebo nabídky. Optimalizace plánování jej používá, když je pole **Kód disponibility** nastaveno na *Priorita*.
+Informace *Priority plánování* o nabídce a poptávce jsou základem plánování založeného na prioritách. Priorita plánování definuje důležitost řádku poptávky nebo nabídky. Hlavní plánování jej používá, když je pole **Kód disponibility** nastaveno na *Priorita*.
 
 Priorita plánování je obvykle číslo mezi 0 (nulou) a 100, kde 0 představuje nejvyšší důležitost. Je zobrazena a nastavena v poli **Priorita plánování**. Toto pole naleznete na následujících stránkách: **Řádky prognózy poptávky**, **Podrobnosti prodejní objednávky**, **Podrobnosti nákupní objednávky**, **Podrobnosti převodního příkazu** a **Podrobnosti plánované objednávky**.
 
-Když je pole **Kód disponibility** pro příslušnou položku nebo skupinu pokrytí nastaveno na *Prioritu*, Optimalizace plánování vyvažuje nabídku a poptávku pomocí přístupu řízeného poptávkou, protože vypočítá prioritu plánování a pro každý uvolněný produkt zvažuje hodnoty, které jsou nastaveny v polích **Minimální**, **Bod přiobjednání** a **Maximum** na stránce **Disponibilita položky**.
+Když je pole **Kód disponibility** pro příslušnou položku nebo skupinu pokrytí nastaveno na *Prioritu*, hlavní plánování vyvažuje nabídku a poptávku pomocí přístupu řízeného poptávkou, protože vypočítá prioritu plánování a pro každý uvolněný produkt zvažuje hodnoty, které jsou nastaveny v polích **Minimální**, **Bod přiobjednání** a **Maximum** na stránce **Disponibilita položky**.
 
 > [!NOTE]
 > Hodnota *Priorita* je pro pole **Kód disponibility** k dispozici pouze v případě, že je povolena Optimalizace plánování.

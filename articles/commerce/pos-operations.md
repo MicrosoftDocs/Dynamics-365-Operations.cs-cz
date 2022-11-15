@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728269"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736874"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -42,6 +42,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 
 > [!NOTE]
 > Následující operace se vztahují na nejnovější verzi aplikace Commerce. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
+> Další podrobnosti týkající se funkcí a konfigurace offline naleznete v části [Implementace offline obchodu a odstraňování problémů](dev-itpro/implementation-considerations-offline.md) článek.
 
 | ID   | Operace                                         | Popis                                                                                                                                                                                                    | Uživatelské operace    | Obrazovka transakce | Uvítací obrazovka | K dispozici offline? | Specifické pro národní prostředí |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |

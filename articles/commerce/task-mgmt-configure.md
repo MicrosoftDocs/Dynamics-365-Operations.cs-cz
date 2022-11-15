@@ -2,23 +2,23 @@
 title: Konfigurace správy úkolů
 description: Tento článek popisuje, jak konfigurovat funkce správy úkolů v aplikaci Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282754"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746055"
 ---
 # <a name="configure-task-management"></a>Konfigurace správy úkolů
 
@@ -80,7 +80,11 @@ Následující obrázek znázorňuje operaci **Správa úkolů** na stránce **O
 
 ![Operace správy úkolů na stránce Operace POS.](media/HQ-POS-Tasks-Notifications.png)
 
-Další informace o konfiguraci oznámení POS naleznete v tématu [Zobrazení oznámení objednávek v pokladním místě (POS)](notifications-pos.md).
+Další informace o konfiguraci oznámení POS naleznete v článku [Zobrazení oznámení objednávek v pokladním místě (POS)](notifications-pos.md).
+
+> [!NOTE]
+> Když uložíte změny, zobrazí se následující varování: **Parametr operace nebude povolen návrháři mřížky tlačítek pro ID operace rovnající se nebo menší než 4000. Pokud vytváříte vlastní operaci a chcete předat parametr z návrháře mřížky tlačítek, použijte ID operace větší než 4000.** Vyberte **Zavřít** a zavřete dialog.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Konfigurace dlaždice Úkoly na domovské stránce aplikace POS
 

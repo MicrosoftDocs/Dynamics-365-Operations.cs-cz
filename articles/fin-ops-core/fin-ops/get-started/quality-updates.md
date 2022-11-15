@@ -2,7 +2,7 @@
 title: Proaktivní aktualizace kvality
 description: Tento článek poskytuje informace o proaktivním doručování aktualizací kvality.
 author: rashmansur
-ms.date: 09/12/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
-ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
+ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
+ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "9731603"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9752291"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -25,6 +25,19 @@ ms.locfileid: "9731603"
 Během posledních několika let společnost Microsoft neustále pracuje na tom, co nazýváme [One Version](../../dev-itpro/lifecycle-services/oneversion-overview.md). Premisa One Version je jednoduchá: čím blíže k tomu, abychom měli všichni zákazníci stejnou verzi softwaru, tím vyšší kvalitu můžeme dodat. Problémy najdeme a opravíme jednou a tato řešení dostaneme rychleji do rukou více zákazníků.
 
 Tento předpoklad potvrzují i výsledky: nižší počet incidentů napříč našimi produkty. Když zákazníci nepoužívají stejnou verzi, neustále vidíme, že se jich týkají problémy, pro které je již k dispozici řešení. Již jsme dosáhli velkého pokroku s Dynamics 365 Finance, Dynamics 365 Supply Chain, Dynamics 365 Project Operations a Dynamics 365 Commerce a díky nedávnému technickému pokroku je nyní možné udělat další krok. Následující informace vysvětlují, co budeme dělat, co jsme již udělali, abychom připravili půdu, a jak a kdy zavedeme nové schopnosti bez přerušení.
+
+## <a name="what-you-need-to-know"></a>Co potřebujete vědět
+
+- Proaktivní aktualizace kvality jsou aplikovány na měsíční bázi.
+- Společnost Microsoft použije proaktivní aktualizace kvality pro všechna sandboxová prostředí, ve kterých je spuštěna aktualizace služby, která byla [ve službě](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), když byly vytvořeny proaktivní aktualizace kvality.
+- Výjimky pro proaktivní aktualizace kvality budou povoleny pro zákazníky, kteří jsou regulováni americkým Úřadem pro kontrolu potravin a léčiv (FDA).
+- Microsoft určuje, jak budou spravovány proaktivní aktualizace kvality pro regulovaná prostředí a pro suverénní a vládní cloudové zákazníky.
+- Oznámení, která se týkají proaktivních aktualizací kvality, jsou zveřejňována v [Centru zpráv Microsoft 365](https://admin.microsoft.com/AdminPortal/) a na banneru zákazníkova projektu Microsoft Dynamics Lifecycle Services.
+- Pět dní před tím, než je na prostředí aplikována proaktivní aktualizace kvality, jsou zákazníci upozorněni, že k aktualizaci dojde.
+- Zákazníci nemohou zrušit nebo odložit proaktivní aktualizace kvality.
+- Proaktivní aktualizace kvality se instalují během [plánovaného okna údržby](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) dle regionu.
+- Aktualizace kvality jsou navrženy tak, aby měly nízké riziko problémů nebo regresí, a to je podporováno daty společnosti Microsoft.
+- Společnost Microsoft doporučuje cílené testování na konkrétní problémy nebo konkrétní opravy hotfix související s proaktivní aktualizací kvality.
 
 ## <a name="focus-on-quality-updates"></a>Zaměřte se na aktualizace kvality
 
@@ -40,7 +53,7 @@ Již bylo nasazeno několik vylepšení, která umožňují proaktivní doručov
 
 - **Aktualizace téměř nulových prostojů** – Chcete-li prosazovat častější prostředí, je nezbytné, aby byl snížen dopad na dostupnost prostředí, aby byly zachovány smlouvy o úrovni služeb Dynamics 365 (SLA). Aktualizace s téměř nulovými prostoji byla původně zavedena, aby pomohla zlepšit měsíční opravy operačního systému pomocí převzetí služeb při selhání clusteru k aktivaci aktualizované bitové kopie s minimálním narušením. Mechanismus aplikace aktualizací se vylepšuje, aby byl ještě méně rušivý, a bude pokrývat jak záplatování operačního systému, tak nasazení kvalitních aktualizací.
 
-U interaktivních uživatelů může být aktivní relace přerušena a opakování přejde do nyní aktualizovaného prostředí. Se zavedením [plánování dávek na základě priority](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) se plánování dávek a zpracování obnoví a obnoví ihned po aktualizaci. Předtím, než se zákazníci začnou podílet na proaktivní distribuci aktualizací kvality pro svá produkční prostředí, bude pro zákazníky k dispozici prioritní plánování dávek.
+    U interaktivních uživatelů může být aktivní relace přerušena a opakování přejde do nyní aktualizovaného prostředí. Se zavedením [plánování dávek na základě priority](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) se plánování dávek a zpracování obnoví a obnoví ihned po aktualizaci. Předtím, než se zákazníci začnou podílet na proaktivní distribuci aktualizací kvality pro svá produkční prostředí, bude pro zákazníky k dispozici prioritní plánování dávek.
 
 - **Temné hodiny** – Temné hodiny jsou definovány pro každou oblast Azure a během období temné hodiny dojde k téměř nulovým aktualizacím prostojů.
 
@@ -56,9 +69,11 @@ Před aktivací nasazení proaktivní aktualizace kvality je implementována sad
 
 - **Schéma** – Nástroje zajistí, že kvalitní sestavení aktualizací bude obsahovat pouze změny schématu, které lze použít, když je služba online. Tento přístup pomůže zachovat možnost použít aktualizaci s téměř nulovými prostoji.
 - **Zvýšená kontrola změn** – V současné době již existuje další procesní krok ke schválení změn pro zahrnutí do aktualizace kvality. Kontrola v dalším kroku bude zvýšena, aby se snížila možnost regrese. V aktualizacích kvality nejsou povoleny přerušované změny a zvýšená kontrola změn nám pomůže zajistit splnění tohoto cíle.
-- **Viditelnost** – Budeme zasílat upozornění prostřednictvím centra pro správce, Lifecycle Services (LCS) a dalších dostupných kanálů o nadcházejících proaktivních aktualizacích kvality. Navíc týmy podpory a vedoucí incidentů budou mít přehled o tom, kde byly aktualizace kvality proaktivně nasazeny.
- > [!NOTE]
- > Tým Microsoft Communications vyšetřuje pokračující degradaci e-mailových nástrojů, které brání doručování e-mailových upozornění. Prosím pokračujte ve sledování Centra zpráv Microsoft 365 pro zprávy týkající se onboardingu a oznámení.
+- **Viditelnost** – upozornění jsou posílána prostřednictvím centra pro správce, Lifecycle Services a dalších dostupných kanálů o nadcházejících proaktivních aktualizacích kvality. Navíc týmy podpory a vedoucí incidentů budou mít přehled o tom, kde byly aktualizace kvality proaktivně nasazeny.
+
+    > [!NOTE]
+    > Tým Microsoft Communications vyšetřuje pokračující degradaci e-mailových nástrojů, které brání doručování e-mailových upozornění. Prosím pokračujte ve sledování Centra zpráv Microsoft 365 pro zprávy týkající se onboardingu a oznámení.
+
 - **Odolnost proti selhání prostřednictvím publikování testovacích verzí** – Publikování testovacích verzí bude ve všech možných případech použito ke hlídání změn kódu opravy chyby aktualizace pro zvýšení kvality nebo se použije publikování testovacích verzí existující funkce relevantní pro opravu. Pokud je po proaktivním nasazení vyžadována záloha nebo vypnutí změny, lze to provést prostřednictvím systému publikování testovacích verzí, aby se předešlo dalším selháním.
 - **Označení synchronizace sandboxu** – Méně než 20 procent zákazníků má dnes více sandboxů a jeden sandbox si ponechává nasazený tam, kde se verze shoduje s produkčním řešením, aby pomohli s řešením problémů. Pokud zákazník používá sandbox k testování novější verze, než je jeho produkční verze, bude tento sandbox dostávat aktualizace kvality na novější verzi.
 
@@ -77,7 +92,7 @@ V současné době se aktualizace kvality zaměřují pouze na izolované prosto
 Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ### <a name="proactive-quality-update-release-10028"></a>Proaktivní aktualizace kvality, verze: 10.0.28
-**Verze aplikace: 10.0.1265.89**
+**Verze aplikace: 10.0.1265.89**  
 **Odpovídající nejnovější článek znalostní báze: 745340**
 
 | Stanice | Oblasti | Dokončený plán| Připravovaný plán sandboxu
@@ -89,19 +104,31 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.29
-**Verze aplikace: 10.0.1326.70**
+**Verze aplikace: 10.0.1326.70**  
 **Odpovídající nejnovější článek znalostní báze: 748926**
 
 | Stanice | Oblasti | Dokončený plán | Připravovaný plán sandboxu|
 |---|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 | 2. listopadu až 5. listopadu 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 | 2. listopadu až 5. listopadu 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 | 2. listopadu až 5. listopadu 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 | 2. listopadu až 5. listopadu 2022 |
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
+### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.30
+**Verze aplikace: bude určeno**
+**Odpovídající nejnovější článek znalostní báze: bude určeno**
+
+| Stanice | Oblasti | Připravovaný plán sandboxu |
+|---|---|---|
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 1. prosince až 4. prosince 2022 |
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 2. prosince až 5. prosince 2022 |
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, severní Evropa, východ USA, SAE střed | 3. prosince až 6. prosince 2022 |
+| Stanice 4 | Západní Evropa, střední USA, západní USA | 4. prosince až 7. prosince 2022 |
+| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno |
+
 > [!IMPORTANT] 
-> Pět dní předem společnost Microsoft aktualizuje předchozí plán a odešle e-mailová upozornění do sady prostředí, která mají naplánováno přijímat tyto aktualizace kvality. Předchozí plán platí pouze pro prostředí, která byla upozorněna na nadcházející aktualizaci. Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+> Pět dní předem společnost Microsoft aktualizuje předchozí plán a odešle upozornění do sady prostředí, která mají naplánováno přijímat tyto aktualizace kvality. Předchozí plán platí pouze pro prostředí, která byla upozorněna na nadcházející aktualizaci. Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > Pro každou skupinu regionů, popř. *stanice*, kde je aktuálně naplánováno vydání aktualizace kvality, plán ukazuje rozmezí čtyř dnů. Aktualizace kvality začnou pouze v prostředích sandbox. Poté, jak se procento úspěšně nasazených sandboxů zvýší, začne nasazení do produkčních prostředí se zasílanými oznámeními pro zákazníky o pokroku.
 > 
@@ -124,13 +151,13 @@ Následující kroky jsou dočasným řešením, protože nadále pracujeme na p
 
 Použijte KB #745340 pro vydání aktualizace kvality 10.0.28 a související verzi aplikace 10.0.1265.89.
 
-1. V LCS otevřete stránku **Podrobnosti prostředí** pro váš sandbox. 
+1. V Lifecycle Services otevřete stránku **Podrobnosti prostředí** pro váš sandbox. 
 2. V části **Dostupné aktualizace** vyberte možnost **Zobrazit aktualizaci** a uvidíte nejnovější sestavení aktualizace kvality. 
 3. Exportujte sestavení do souboru CSV nebo Microsoft Excel.
 4. V exportovaném souboru seřaďte informace podle času (nejstarší jako první) a poté vyhledejte číslo KB 745340 ve sloupci **ID aktualizace**. Nyní byste měli vidět rozdílový seznam znalostní báze.
  
- > [!NOTE]
- > Export do souboru CSV nebo Excel musí proběhnout před aktualizací prostředí. V opačném případě můžete použít prostředí s podobnou konfigurací, které nemá nainstalovanou aktualizaci, a postupujte podle výše uvedených kroků.
+> [!NOTE]
+> Export do souboru CSV nebo Excel musí proběhnout před aktualizací prostředí. V opačném případě můžete použít prostředí s podobnou konfigurací, které nemá nainstalovanou aktualizaci, a postupujte podle výše uvedených kroků.
 
 [![Příklad prostředí s aktualizací kvality.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
@@ -139,8 +166,8 @@ Kritický problém nebo regrese je jedna nebo více událostí, které obvykle z
 
 Pokud je ovlivněno prostředí jednoho zákazníka, obraťte se na podporu společnosti Microsoft a otevřete lístek. Na základě odůvodnění zastavíme zavádění aktualizace kvality do všech ostatních prostředí v tomto projektu, dokud nebude problém opraven.
 
-## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Mohou zákazníci stále ručně používat aktualizace oprav hotfix z LCS?
-Ano. Aby byla zajištěna trvalá rovnost s tím, jak opravy hotfix fungují, lze aktualizace oprav hotfix stále aplikovat na zákaznická prostředí v LCS. Je však důležité si uvědomit, že opravy hotfix, které jsou nasazeny jako součást aktualizace kvality, procházejí před nasazením aktualizace standardním SDP. Tím se snižuje riziko regresí kvůli vyšší kvalitě. Pro zvýšení spolehlivosti doporučujeme zvolit kvalitní aktualizaci před ručním použitím oprav hotfix.
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lifecycle-services"></a>Mohou zákazníci stále ručně používat aktualizace oprav hotfix z Lifecycle Services?
+Ano. Aby byla zajištěna trvalá rovnost s tím, jak opravy hotfix fungují, lze aktualizace oprav hotfix stále aplikovat na zákaznická prostředí v Lifecycle Services. Je však důležité si uvědomit, že opravy hotfix, které jsou nasazeny jako součást aktualizace kvality, procházejí před nasazením aktualizace standardním SDP. Tím se snižuje riziko regresí kvůli vyšší kvalitě. Pro zvýšení spolehlivosti doporučujeme zvolit kvalitní aktualizaci před ručním použitím oprav hotfix.
 
 ## <a name="can-customers-proactively-install-a-quality-update-build-ahead-of-the-schedule"></a>Mohou si zákazníci proaktivně sami nainstalovat aktualizaci kvality ještě před plánem?
 Ano. Aktualizaci kvality můžete nainstalovat proaktivně. Společnost Microsoft aktualizaci přeskočí, pokud je aktuální verze sestavení prostředí stejná nebo vyšší než příslušná aktualizace kvality.
@@ -149,7 +176,7 @@ Ano. Aktualizaci kvality můžete nainstalovat proaktivně. Společnost Microsof
 - Aktualizace kvality se na produkční prostředí nepoužijí, pokud je do týdne od plánovaného provedení aktualizace kvality naplánována nadcházející aktualizace služby.
 - Pokud má prostředí sandbox stejnou nebo vyšší verzi sestavení než nadcházející aktualizace kvality, bude přeskočeno.
 - Pokud má produkční prostředí stejnou nebo vyšší verzi sestavení než nadcházející aktualizace kvality, bude přeskočeno.
-- Pokud má sandbox stejnou nebo vyšší verzi sestavení kvůli aktualizaci kvality nebo ruční aktualizaci produkce, produkce stále získá plánovanou verzi měsíční aktualizace služby. Pokud nechcete, aby se plánované produkční prostředí aktualizovalo na verzi aktualizace služby, můžete aktualizaci služby z LCS pozastavit. 
+- Pokud má sandbox stejnou nebo vyšší verzi sestavení kvůli aktualizaci kvality nebo ruční aktualizaci produkce, produkce stále získá plánovanou verzi měsíční aktualizace služby. Pokud nechcete, aby se plánované produkční prostředí aktualizovalo na verzi aktualizace služby, můžete aktualizaci služby z Lifecycle Services pozastavit. 
 - Doporučujeme vám použít nejnovější sestavení aktualizace kvality k otestování změn pro nadcházející aktualizaci služby pro lepší stabilitu a výsledky.
 
 ## <a name="if-an-environment-has-an-upcoming-scheduled-action-and-a-scheduled-quality-update-in-the-same-maintenance-window-will-it-still-receive-the-quality-update"></a>Pokud má prostředí nadcházející naplánovanou akci a plánovanou aktualizaci kvality ve stejném okně údržby, bude stále dostávat aktualizaci kvality?
@@ -164,11 +191,11 @@ Plán pro zákazníky podléhající validaci a regulaci FDA se stále vyvíjí.
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Jaké verze aktualizací služeb jsou podporovány pro tyto aktualizace kvality?
 Zákazníci se všemi podporovanými verzemi aktualizací služeb mají nárok na aktualizace kvality. 
 
-## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>Nasazení finančních a provozních aplikací s maloobchodními komponentami obvykle vyžadují další práci kromě nutnosti znovu nasadit MPOS. Jak tyto aktualizace kvality ovlivní RetailSDK? 
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retail-sdk"></a>Nasazení finančních a provozních aplikací s maloobchodními komponentami obvykle vyžadují další práci kromě nutnosti znovu nasadit MPOS. Jak tyto aktualizace kvality ovlivní Retail SDK? 
 Vzhledem k tomu, že povaha samotné opravy hotfix se nemění v datové části aktualizací kvality, neočekáváme žádný další dopad konkrétně související s maloobchodními komponentami.
 
 ## <a name="is-there-any-impact-to-cloud-hosted-environments-che"></a>Má to nějaký dopad na prostředí hostovaná v cloudu (CHE)? 
-Prostředí CHE jsou mimo rozsah aktualizací kvality, protože jsou mimo působnost společnosti Microsoft
+Prostředí CHE jsou mimo rozsah aktualizací kvality, protože jsou mimo působnost společnosti Microsoft.
 
 ## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Existují nějaké problémy s integrací s Microsoft Dataverse? 
 Nejsou známy žádné problémy integrace aktualizací kvality s Dataverse.

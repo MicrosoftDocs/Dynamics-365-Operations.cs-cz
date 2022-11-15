@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218795"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739863"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management - hlavní plánování |
 | **Možnost nasazení**              | Pouze cloud. Všimněte si, že optimalizace plánování není podporována u místních nasazení. |
-| **Stav**                         | Zastaralé. Do 1. dubna 2022 nebudou scénáře výroby dále podporovány v integrovaném modulu hlavního plánování Supply Chain Management. K tomuto datu Microsoft zastaví veškerý aktivní vývoj výrobních scénářů pro vestavěný plánovací modul, nevydá žádné nové funkce a bude vydávat pouze opravy kritických chyb. Po tomto datu musí všechny společnosti, které vyžadují podporu pro výrobní scénáře, používat pro své výpočty hlavního plánování aplikace Optimalizace plánování. Očekává se, že Optimalizace plánování bude plně podporovat výrobní scénáře do října 2022. Další informace naleznete v tématu [Dokumentace optimalizace plánování](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Společnosti s místním nasazením Supply Chain Management mohou i nadále používat vestavěný hlavní plánovací modul pro scénáře výroby po dubnu 2022. Nebudou však poskytována žádná další vylepšení funkcí. |
+| **Stav**                         | Zastaralé. Do 1. dubna 2022 nebudou scénáře výroby dále podporovány v integrovaném modulu hlavního plánování Supply Chain Management. K tomuto datu Microsoft zastaví veškerý aktivní vývoj výrobních scénářů pro vestavěný plánovací modul, nevydá žádné nové funkce a bude vydávat pouze opravy kritických chyb. Po tomto datu musí všechny společnosti, které vyžadují podporu pro výrobní scénáře, používat pro své výpočty hlavního plánování aplikace Optimalizace plánování. Očekává se, že Optimalizace plánování bude plně podporovat výrobní scénáře do října 2022. Další informace najdete v tématu [Přehled zastaralého hlavního plánování](../master-planning/deprecated-master-planning-overview.md).<br><br>Společnosti s místním nasazením Supply Chain Management mohou i nadále používat vestavěný hlavní plánovací modul pro scénáře výroby po dubnu 2022. Nebudou však poskytována žádná další vylepšení funkcí. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Odebrané nebo zastaralé funkce ve verzi Supply Chain Management 10.0.11
 
@@ -101,7 +101,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano, optimalizace plánování nahradí předdefinovaný hlavní modul plánování Supply Chain Management. |
 | **Ovlivněné oblasti produktu**         | Supply Chain Management - hlavní plánování |
 | **Možnost nasazení**              | Pouze cloud. Všimněte si, že optimalizace plánování není podporována u místních nasazení. |
-| **Stav**                         | Zastaralé. Do 1 dubna 2021 nebudou scénáře distribuce dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U distribučních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace naleznete v tématu [Dokumentace optimalizace plánování](../master-planning/planning-optimization/planning-optimization-overview.md). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře distribuce po dubnu 2021. Nebudou však poskytována žádná další vylepšení funkcí. |
+| **Stav**                         | Zastaralé. Do 1 dubna 2021 nebudou scénáře distribuce dále podporovány v integrovaném modulu hlavního plánování Dynamics 365 Supply Chain Management. U distribučních scénářů musí zákazníci pro výpočet hlavního plánování použít Optimalizaci plánování. Další informace najdete v tématu [Přehled zastaralého hlavního plánování](../master-planning/deprecated-master-planning-overview.md). Zákazníci s místním nasazením Dynamics 365 Supply Chain Management mohou i nadále používat hlavní plánovací modul Supply Chain Management pro scénáře distribuce po dubnu 2021. Nebudou však poskytována žádná další vylepšení funkcí. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Předchozí oznámení o odebraných nebo zastaralých funkcích
 

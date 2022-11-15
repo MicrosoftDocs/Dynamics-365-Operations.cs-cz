@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689686"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740079"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Plánování s omezenou kapacitou
 
@@ -28,9 +28,8 @@ Plánování s omezenou kapacitou je přístup, kterýv vám pomůže pochopit, 
 
 Plánování s omezenou kapacitou vytváří realističtější plán výrobních procesů než plánování bez omezení. Pokud není dostatečná kapacita prostředků, datum dodání bude posunuto a úloha bude naplánována až na dobu s dostatečnou kapacitou.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Optimalizace plánování s omezenou kapacitou
-
-Pokud používáte optimalizaci plánování, nebo integrovaný plánovací modul, plánování s omezenou kapacitou funguje téměř stejně. Optimalizace plánování však nepoužívá parametr **kritické ochranné doby**. Když používáte optimalizaci plánování, kritické prostředky jsou vždy naplánovány pomocí stejné ochranné doby jako nekritické prostředky (jak je označeno ochrannou dobou konečné kapacity).
+> [!NOTE]
+> Pokud používáte optimalizaci plánování, nebo zastaralý hlavní plánovací modul, plánování s omezenou kapacitou funguje téměř stejně. Optimalizace plánování však nepoužívá parametr **kritické ochranné doby**. Když používáte optimalizaci plánování, kritické prostředky jsou vždy naplánovány pomocí stejné ochranné doby jako nekritické prostředky (jak je označeno ochrannou dobou konečné kapacity).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Nastavení funkce omezené kapacity
 

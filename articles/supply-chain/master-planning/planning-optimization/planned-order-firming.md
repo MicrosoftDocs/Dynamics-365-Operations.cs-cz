@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335338"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740515"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -33,7 +33,7 @@ Tento článek podrobně popisuje každou metodu.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Povolte funkce popsané v tomto článku
 
-Většina funkcí plánované objednávky je k dispozici ve všech standardních instalacích Microsoft Dynamics 365 Supply Chain Management které používají optimalizace plánování. Než však budete moci používat funkce, které jsou popsány v tomto článku, musí být ve Správci funkcí zapnuté.
+Většina funkcí plánované objednávky je k dispozici ve všech standardních instalacích Microsoft Dynamics 365 Supply Chain Management. Než však budete moci používat funkce, které jsou popsány v tomto článku, musí být ve Správci funkcí zapnuté.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Zapnutí nebo vypnutí paralelizovaného potvrzení plánovaných objednávek
 
@@ -91,7 +91,7 @@ Chcete-li ručně zpracovat plánované objednávky, vyhledejte a vyberte pláno
 
 ## <a name="auto-firm-planned-orders"></a>Automaticky potvrdit plánované objednávky
 
-Automatické potvrzení umožňuje potvrdit plánované objednávky v rámci procesu hlavního plánování. Můžete definovat výchozí časové zpoždění pro skupiny pokrytí, jednotlivé položky a kombinace položek a hlavních plánů. Poté se během běhů hlavního plánování plánované objednávky automaticky zpracují, pokud je datum objednávky ve stanovené ochranné době pro potvrzení. Plánované objednávky, které jsou generovány Optimalizací plánování a integrovanou operací plánování, zpracovávají datum objednávky (tj. počáteční datum) odlišně.
+Automatické potvrzení umožňuje potvrdit plánované objednávky v rámci procesu hlavního plánování. Můžete definovat výchozí časové zpoždění pro skupiny pokrytí, jednotlivé položky a kombinace položek a hlavních plánů. Poté se během běhů hlavního plánování plánované objednávky automaticky zpracují, pokud je datum objednávky ve stanovené ochranné době pro potvrzení. Plánované objednávky, které jsou generovány Optimalizací plánování a zastaralý modul hlavního plánování, zpracovávají datum objednávky (tj. počáteční datum) odlišně.
 
 > [!NOTE]
 > K automatickému potvrzení plánovaných nákupních objednáevk může dojít pouze tehdy, pokud je položka přidružena k dodavateli.
@@ -99,13 +99,13 @@ Automatické potvrzení umožňuje potvrdit plánované objednávky v rámci pro
 > Odvozené objednávky (nákupní objednávky dílčí smlouvy) které jsou potvrzeny budou zobrazovat stav *Probíhá kontrola*, když je povoleno sledování změn případů.
 
 > [!IMPORTANT]
-> Předtím, než lze funkci popsanou v této části použít s Optimalizací plánování, vlastnost [*Automatické potvrzení pro optimalizaci plánování*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto článku. Automatické potvrzování lze vždy použít s vestavěným hlavním plánovacím modulem.
+> Předtím, než lze funkci popsanou v této části použít s Optimalizací plánování, vlastnost [*Automatické potvrzení pro optimalizaci plánování*](#enable-features) musí být ve vašem systému zapnuta, jak je popsáno na začátku tohoto článku. Automatické potvrzování lze vždy použít se zastaralým hlavním plánovacím modulem.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatické potvrzování s Optimalizací plánování vs. vestavěný plánovací modul
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatické potvrzování s Optimalizací plánování vs. zastaralý hlavní plánovací modul
 
-Optimalizaci plánování i integrovaný plánovací modul lze použít k automatickému potvrzování plánovaných objednávek. Existují však některé důležité rozdíly. Pokud například optimalizace plánování použije datum objednávky (tj. počáteční datum) k určení, které plánované objednávky mají být potvrzeny, použije předdefinovaný modul plánování datum požadavku (tj. koncové datum). Rozdíly jsou shrnuty v následující tabulce.
+Optimalizaci plánování i zastaralý hlavní plánovací modul lze použít k automatickému potvrzování plánovaných objednávek. Existují však některé důležité rozdíly. Pokud například optimalizace plánování použije datum objednávky (tj. počáteční datum) k určení, které plánované objednávky mají být potvrzeny, použije zastaralý modul hlavního plánování datum požadavku (tj. koncové datum). Rozdíly jsou shrnuty v následující tabulce.
 
-| Funkce | Optimalizace plánování | Integrovaný plánovací modul |
+| Funkce | Optimalizace plánování | Zastaralý hlavní plánovací modul |
 |---|---|---|
 | **Základ data** | Automatické potvrzení je založeno na datu objednávky (počáteční datum). | Automatické potvrzení je založeno na datu požadavku (koncové datum). |
 | **Doba realizace** | Vzhledem k tomu, že datum objednávky (počáteční datum) aktivuje potvrzení, nemusíte považovat dobu realizace za součást ochranné doby potvrzení. | Chcete-li zajistit, aby byly příkazy potvrzeny včas, musí být ochranná doba potvrzení delší než doba realizace. |

@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287504"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751909"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Nastavení a správa obrázků pro Modern POS (MPOS)
 
@@ -160,7 +160,7 @@ Pro všechny entity s výjimkou produktů, je možné přepsat adresu URL obráz
     [![Stránka s galerií obrázků katalogu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> V současné době galerie nezobrazuje náhledy obrázků pro šablony médií adres URL obrázků. Pro entity katalogu, pracovníka, odběratele a kategorie, pokud uživatel explicitně poskytne adresy URL prostřednictvím této stránky, doporučujeme naznačit, který obrázek bude výchozí obrázek, protože klienti Commerce Scale Unit zobrazují pouze jeden obrázek pro katalog, odběratele, pracovníka a kategorii. Pokud uživatel nezadá výchozí obrázek, systém určí výchozí obrázek a odešlete jej volajícímu velkoobchodních služeb (MPOS nebo obchodní stránky).
+> Na POS se vykreslí pouze veřejně a anonymně přístupné obrázky. POS podporuje vykreslování obrázků, které jsou externě hostovány, s požadavkem, aby se obrázky vracely jako vložený oktetový proud do požadavků GET bez záhlaví. Se zásadami anonymního přístupu, speciálně pro obrázky hostované SharePoint, které vyžadují, aby hlavičky požadavků obsahovaly hlavičky hostitele i uživatelského agenta, bude vrácena odpověď "Zakázáno". Proto správa obrázků pomocí SharePoint jako hostitele v současné době není podporována automaticky. Stránka galerie **Obrázky katalogu** nezobrazuje náhledy obrázků pro šablony médií adres URL obrázků. Protože klienti Commerce Scale Unit (CSU) zobrazují pouze jeden obrázek na entitu katalogu, odběratele, pracovníka a kategorii, pokud explicitně poskytnete adresu URL pomocí této stránky pro entity katalogu, pracovníka, odběratele a kategorie, doporučujeme naznačit, který obrázek bude výchozí obrázek. Pokud nezadáte výchozí obrázek, systém určí výchozí obrázek a odešle jej volajícímu velkoobchodních služeb (MPOS nebo obchodní stránky).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Přepsání adresy URL obrázku pro obrázky produktů v katalogu ze stránky náhledu
 

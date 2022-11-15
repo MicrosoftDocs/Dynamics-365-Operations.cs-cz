@@ -1,6 +1,6 @@
 ---
-title: Začínáme s optimalizací plánování
-description: Tento článek vysvětluje, jak používat funkci Optimalizace plánování.
+title: Začínáme s hlavním plánováním
+description: Tento článek vysvětluje, jak používat funkci hlavního plánování v Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295921"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740322"
 ---
-# <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
+# <a name="get-started-with-master-planning"></a>Začínáme s hlavním plánováním
 
 [!include [banner](../../includes/banner.md)]
 
-Tak jak bylo [dříve oznámeno](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), optimalizace plánování nahradí stávající integrovaný hlavní plánovací modul.
-
-Pokud aktuálně používáte integrovaný hlavní plánovací modul, měli byste nyní začít plánovat migraci na optimalizaci plánování. Je důležité začít ihned, protože vaše operace by jinak mohly být ovlivněny ukončením podpory (ačkoli vynucení není aktuálně naplánováno). Důrazně vám doporučujeme dokončit migraci, jakmile Optimalizace plánování bude podporovat funkce, které požadujete, abyste mohli začít využívat řadu vylepšení výkonu a další nové možnosti, které nová služba poskytuje.
-
-Funkce Optimalizace plánování aktuálně nepodporuje všechny funkce, které jsou k dispozici v modulu plánování integrovaném v aplikaci Supply Chain Management. Proto je důležité, abyste vyhodnotili, zda sada funkcí, která je aktuálně k dispozici v optimalizaci plánování, bude vyhovovat vašim požadavkům. Funkce Optimalizace plánování není ve výchozím nastavení ve službě Dynamics Lifecycle Services (LCS) zapnutá, takže si ji můžete před zapnutím vyhodnotit.
-
-> [!NOTE]
-> Pokud váš hlavní plánovací proces nezahrnuje produkci (hlavní plánování generovalo plánované výrobní zakázky) a vyžadujete vestavěný hlavní plánovací stroj verze vyšší než 10.0.15, musíte požádat o výjimku z migrace na optimalizaci plánování. Počínaje verzí 10.0.16 se v prostředích zobrazí chyba při spuštění integrovaného hlavního plánování bez generování plánovaných výrobních zakázek. Optimalizace plánování by se měla použít pro všechna nová nasazení, která během generování plánování negenerují plánované výrobní zakázky. Vlastníci stávajících prostředí, na nichž běží vestavěný hlavní plánovací modul bez generování plánovaných výrobních zakázek, obdrží e-mail s podrobnostmi o procesu výjimky. Doporučujeme, abyste při hodnocení a plánování migrace na optimalizaci plánování spolupracovali s partnerem.
-
-Než zapnete optimalizaci plánování, důrazně doporučujeme, abyste vyhodnotili výsledky analýzy podle optimalizace plánování. Další informace naleznete v tématu [Analýza shody optimalizace plánování](planning-optimization-fit-analysis.md)
+Hlavní plánování v Supply Chain Management zajišťuje externí služba nazvaná Doplněk optimalizace plánování pro Dynamics 365 Supply Chain Management. Toto téma vysvětluje, jak získat a nastavit tuto službu.
 
 ## <a name="availability"></a>Dostupnost
 
@@ -108,31 +99,15 @@ Stav připojení označuje aktuální stav spojení mezi Supply Chain Management
 Nastavení možnosti **Použít optimalizaci plánování** určuje, který plánovací modul se použije pro hlavní plánování:
 
 - **Ano** – optimalizace plánování se používá pro hlavní plánování.
-- **Ne** – pro hlavní plánování se používá integrovaný modul Supply Chain Management
+- **Ne** – pro hlavní plánování se používá zastaralý modul hlavního plánování.
 
-Toto nastavení platí pro všechny právnické osoby (společnosti). Optimalizaci plánování není možné použít u některých právnických osob a integrované hlavní plánování u jiných právnických osob.
+Toto nastavení platí pro všechny právnické osoby (společnosti). Optimalizaci plánování není možné použít u některých právnických osob a zastaralý modul hlavního plánování u jiných právnických osob.
 
 > [!NOTE]
-> Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro předdefinovaný modul plánování Supply Chain Management, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano**, tyto úlohy se nezdaří.
+> Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro zastaralý modul hlavního plánování, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano**, tyto úlohy se nezdaří.
 
 ### <a name="integration-with-the-setup"></a>Integrace s nastavením
 
 Je-li zapnuta optimalizace plánování, hlavní plánování se provede pomocí doplňku optimalizace plánování. V tomto případě budou ovlivněny výsledky a funkce hlavního plánování.
 
-## <a name="additional-resources"></a>Další prostředky
-
-[Podmínky a ustanovení pro náhled](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Přehled optimalizace plánování](planning-optimization-overview.md)
-
-[Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-
-[Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
-
-[Použití filtrů v plánu](plan-filters.md)
-
-[Zrušení úlohy plánování](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

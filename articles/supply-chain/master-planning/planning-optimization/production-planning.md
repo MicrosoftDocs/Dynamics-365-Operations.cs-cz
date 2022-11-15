@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335248"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740542"
 ---
 # <a name="production-planning"></a>Plánování výroby
 
 [!include [banner](../../includes/banner.md)]
-
-Optimalizace plánování podporuje několik produkčních scénářů. Pokud migrujete ze stávajícího integrovaného hlavního plánovacího modulu, je důležité si uvědomit nějaké změněné chování.
 
 Následující video poskytuje krátký úvod k některým konceptům pojednávaným v tomto článku: [Dynamics 365 Supply Chain Management: Vylepšení optimalizace plánování](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Plánované výrobní zakázky zahrnují ID trasy, které je požadováno pro pl
 
 - **Plánovaná výrobní zakázka** - Dodací lhůta je založena na statické dodací době z uvolněného produktu.
 - **Pevná výrobní zakázka** - Dodací lhůta je založena na plánování, které využívá informace o trase a související omezení zdrojů.
-
-Další informace o očekávané dostupnosti funkcí najdete v části [Analýza přizpůsobení optimalizace plánování](planning-optimization-fit-analysis.md).
-
-Pokud jste závislí na produkčních funkcích, které pro optimalizaci plánování ještě nejsou k dispozici, můžete nadále používat integrovaný hlavní plánovací stroj. Není nutná žádná výjimka.
 
 ## <a name="delays"></a>Zpoždění
 
@@ -76,15 +70,15 @@ Stránku **Exploze** můžete použít pro analýzu poptávky, která je požado
 
 ## <a name="filters"></a><a name="filters"></a>Filtry
 
-Abyste zajistili, že optimalizace plánování obsahuje informace, které potřebuje k výpočtu správného výsledku, musíte zahrnout všechny produkty, které mají jakýkoli vztah k produktům, do celé struktury kusovníku plánované objednávky. U scénářů plánování, které zahrnují produkci, proto doporučujeme vyhnout se filtrovaným běhům hlavního plánování.
+Abyste zajistili, že hlavní plánování obsahuje informace, které potřebuje k výpočtu správného výsledku, musíte zahrnout všechny produkty, které mají jakýkoli vztah k produktům, do celé struktury kusovníku plánované objednávky. U scénářů plánování, které zahrnují produkci, proto doporučujeme vyhnout se filtrovaným běhům hlavního plánování.
 
-I když jsou závislé podřízené položky automaticky detekovány a zahrnuty do hlavních běhů plánování, když je použit integrovaný hlavní plánovací stroj, Optimalizace plánování aktuálně tuto akci neprovede.
+I když jsou závislé podřízené položky automaticky detekovány a zahrnuty do hlavních běhů plánování, když je použit zastaralý hlavní plánovací modul, Optimalizace plánování aktuálně tuto akci neprovede.
 
 Například pokud se k výrobě produktu B použije také jeden šroub ze struktury kusovníku produktu A, musí být do filtru zahrnuty všechny produkty ve struktuře kusovníku produktů A a B. Protože může být složité zajistit, aby všechny produkty byly součástí filtru, doporučujeme, abyste se vyhnuli filtrovaným hlavním plánovacím běhům, když jsou zahrnuty výrobní zakázky. Jinak hlavní plánování poskytne nežádoucí výsledky.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Důvody, proč se vyhnout filtrovaným spuštěním hlavního plánování
 
-Když spustíte filtrované hlavní plánování pro produkt, optimalizace plánování (na rozdíl od integrovaného hlavního plánovacího modulu) nerozpozná všechny dílčí produkty a suroviny ve struktuře kusovníku daného produktu, a proto je nezahrne do běhu hlavního plánování. Přestože optimalizace plánování identifikuje první úroveň ve struktuře kusovníku produktu, nenačte z databáze žádné nastavení produktu (například výchozí typ objednávky nebo pokrytí položky).
+Když spustíte filtrované hlavní plánování pro produkt, optimalizace plánování (na rozdíl od zastaralého hlavního plánovacího modulu) nerozpozná všechny dílčí produkty a suroviny ve struktuře kusovníku daného produktu, a proto je nezahrne do běhu hlavního plánování. Přestože optimalizace plánování identifikuje první úroveň ve struktuře kusovníku produktu, nenačte z databáze žádné nastavení produktu (například výchozí typ objednávky nebo pokrytí položky).
 
 V optimalizaci plánování se předem načtou data běhu a použijí se filtry. To znamená, že pokud dílčí produkt nebo surovina obsažená v konkrétním produktu není součástí filtru, informace o něm nebudou pro běh zachyceny. Pokud je dílčí produkt nebo surovina také zahrnuta v jiném produktu, pak filtrovaný běh zahrnující pouze původní produkt a jeho komponenty by odstranil stávající plánovanou poptávku, která byla vytvořena pro tento jiný produkt.
 

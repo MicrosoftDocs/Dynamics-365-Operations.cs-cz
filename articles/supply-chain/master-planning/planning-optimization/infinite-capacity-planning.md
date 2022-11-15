@@ -1,6 +1,6 @@
 ---
 title: Plánování s nekonečnou kapacitou
-description: Tento článek poskytuje informace o plánování nekonečné kapacity pro optimalizaci plánování. Také popisuje aktuální omezení funkcí.
+description: Tento článek obsahuje informace o plánování s nekonečnou kapacitou. Také popisuje aktuální omezení funkcí.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7249734e5d2644145a36276dbc818a40b5962805
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335308"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739998"
 ---
-# <a name="scheduling-with-infinite-capacity"></a>Plánování s nekonečnou kapacitou
+# <a name="scheduling-with-infinite-capacity"></a>Plánování s nekonečnou kapacitou
 
 [!include [banner](../../includes/banner.md)]
 
-Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* zavádí plánování založené na informacích o trase. Umožňuje vám naplánovat úlohy na základě široké škály nastavení tras. Plánování pro optimalizaci plánování pokrývá často používané nastavení trasy, včetně sekvence provozu trasy nebo požadavků na prostředky operace trasy.
+Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* zavádí plánování založené na informacích o trase. Umožňuje vám naplánovat úlohy na základě široké škály nastavení tras. Plánování pokrývá často používané nastavení trasy, včetně sekvence provozu trasy nebo požadavků na prostředky operace trasy.
 
 ## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce plánování s nekonečnou kapacitou
 
@@ -32,7 +32,7 @@ Další informace o této funkci naleznete v části [Plánování s výběrem z
 
 ## <a name="added-functionality"></a>Přidaná funkce
 
-Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* umožňuje plánování úloh založené na informacích o trase. Nastavení trasy lze proto použít k plánování produkčních procesů. Ačkoli tato funkce má některá omezení, která integrované hlavní plánování nemá, podporuje nejběžnější funkce, které jsou vyžadovány pro výrobní scénáře.
+Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* umožňuje plánování úloh založené na informacích o trase. Nastavení trasy lze proto použít k plánování produkčních procesů. Ačkoli tato funkce má některá omezení, která zastaralý modul hlavního plánování nemá, podporuje nejběžnější funkce, které jsou vyžadovány pro výrobní scénáře.
 
 Funkce zohledňuje *jednoduché trasy* i *sítě tras*. Pomocí pole **Další** na operaci trasy můžete nastavit složité trasy, které mají více počátečních bodů a více operací, které běží paralelně. Systém při plánování vezme v úvahu složité struktury tras tohoto typu.
 
@@ -52,15 +52,13 @@ Během procesu plánování systém rovněž zohledňuje *požadavky na zdroje*,
 
 Tato funkce také podporuje provozní vlastnosti **Čas nastavení** a **Čas běhu**. Když nastavíte tyto vlastnosti na operaci trasy, proces plánování vytvoří příslušné úlohy nastavení a zpracování.
 
-Stručně řečeno, plánování optimalizace plánování podporuje nejčastěji používané scénáře. Můžete vytvořit trasu, přidat primární a sekundární operace, definovat další operace, přidat požadavky na prostředky a přidat čas nastavení a čas běhu. Systém poté zohlední tyto informace během plánování.
+Stručně řečeno, plánování podporuje nejčastěji používané scénáře. Můžete vytvořit trasu, přidat primární a sekundární operace, definovat další operace, přidat požadavky na prostředky a přidat čas nastavení a čas běhu. Systém poté zohlední tyto informace během plánování.
 
 ## <a name="limitations"></a>Omezení
 
-Následující omezení platí, když používáte plánování pro optimalizaci plánování:
+Následující omezení platí, když používáte funkci *Plánování s nekonečnou kapacitou pro optimalizaci plánování*:
 
 - Tato funkce podporuje pouze nekonečnou kapacitu.
 - Funkce nepodporuje funkci načítání prostředků.
 - Funkce nezohledňuje odpad trasy.
 - Tato funkce podporuje *Doba trvání* pouze jako výběr primárního zdroje.
-
-Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* se neustále vylepšuje. Microsoft očekává zavedení podpory pro další nastavení plánování v budoucích verzích.

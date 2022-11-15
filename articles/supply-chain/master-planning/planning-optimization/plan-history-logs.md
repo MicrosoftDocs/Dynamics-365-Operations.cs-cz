@@ -1,6 +1,6 @@
 ---
 title: Zobrazení historie plánu a protokolů plánování
-description: Tento článek vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování.
+description: Tento článek vysvětluje, jak zobrazit historii plánování úloh.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863933"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740924"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Zobrazení historie plánu a protokolů plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování v aplikaci Microsoft Dynamics 365 Supply Chain Management.
+Tento článek vysvětluje, jak zobrazit historii plánování úloh v Microsoft Dynamics 365 Supply Chain Management.
 
 Chcete-li zobrazit historii plánu, otevřete plán tak, že přejdete na **Hlavní plánování** \> **Nastavení** \> **Plány** \> **Hlavní plány** a vyberete **Historie**. V rámci historie jsou uvedeny všechny úlohy pro vybraný plán. Seznam obsahuje dokončené a aktivní úlohy.
 
@@ -47,14 +47,6 @@ Chcete-li zobrazit chyby automatického spouštění a další varování nebo c
     - Pokud používáte starší formulář: V podokně akcí na kartě **Dávková úloha** vyberte **Protokol**.
 
 1. Vyberte **Podrobnosti zprávy**, chcete-li otevřít podokno **Podrobnosti zprávy**, kde můžete zobrazit všechna varování a chyby, které byly zachyceny během zpracování.
-
-## <a name="related-resources"></a>Související prostředky
-
-- [Přehled optimalizace plánování](planning-optimization-overview.md)
-- [Začínáme s optimalizací plánování](get-started.md)
-- [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-- [Použití filtrů v plánu](plan-filters.md)
-- [Zrušení úlohy plánování](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

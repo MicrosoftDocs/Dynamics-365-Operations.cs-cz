@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889512"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739722"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Řešení potíží s optimalizací plánování 
 
@@ -37,13 +37,13 @@ Optimalizace plánování vyžaduje povolenou službu Lifecycle Services (LCS), 
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Když je povolena optimalizace plánování, plánování dávkových úloh se nezdaří
 
-Pokud povolíte optimalizaci plánování, vestavěný modul hlavního plánování se automaticky deaktivuje. Dávkové úlohy hlavního plánování, které byly vytvořeny pro vestavěný plánovací modul Supply Chain Management, selžou, pokud jsou spuštěny při povolené optimalizaci plánování. Může se zobrazit chybová zpráva, například *Tato operace spustila hlavní plánování, které není podporováno, když je povolena optimalizace plánování*.
+Pokud povolíte optimalizaci plánování, zastaralý modul hlavního plánování se automaticky deaktivuje. Dávkové úlohy hlavního plánování, které byly vytvořeny pro zastaralý hlavní plánovací modul, selžou, pokud jsou spuštěny při povolené optimalizaci plánování. Může se zobrazit chybová zpráva, například *Tato operace spustila hlavní plánování, které není podporováno, když je povolena optimalizace plánování*.
 
-**Oprava**: Zrušte všechny dávkové úlohy hlavního plánování, které byly vytvořeny pro vestavěný plánovací modul Supply Chain Management.
+**Oprava**: Zrušte všechny dávkové úlohy hlavního plánování, které byly vytvořeny pro zastaralý hlavní plánovací modul.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Výsledky optimalizace plánování se liší od předchozích výsledků
 
-Optimalizace plánování se v některých oblastech liší od vestavěného hlavního plánování. To může být také způsobeno chystanými funkcemi.
+Optimalizace plánování se v některých oblastech liší od zastaralého modulu hlavního plánování. To může být také způsobeno chystanými funkcemi.
 
 **Oprava**: Spusťte analýzu přizpůsobení optimalizace plánování a poté analyzujte výsledky a porozumění dopadu s odkazem na související dokumentaci. Další informace naleznete v tématu [Analýza shody optimalizace plánování](planning-optimization-fit-analysis.md)
 
@@ -63,9 +63,8 @@ Souvisí to s čekající funkcí, která je plánována jako součást podpory 
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Začínáme s optimalizací plánování](get-started.md)
-
-[Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
+- [Začínáme s hlavním plánováním](get-started.md)
+- [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

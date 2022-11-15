@@ -2,19 +2,19 @@
 title: Domény v Dynamics 365 Commerce
 description: Tento článek popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465186"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750673"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -95,6 +95,12 @@ Například bylo zřízeno prostředí „xyz“ a v konfigurátoru webů byly v
 
 Pokud není řetězec dotazu na doménu zadán v prostředí s více doménami, použije Commerce první doménu, kterou jste zadali. Například pokud byla cesta „fabrikam“ poprvé zadána během nastavení webu, adresu URL `https://xyz.dynamics365commerce.ms` lze použít pro přístup k publikovanému obsahu webu pro `www.fabrikam.com`.
 
+Můžete také přidat vlastní domény. Chcete-li tak učinit, na stránce Správa Commerce pro daný projekt v podnadpisu **E-commerce** vyberte **+ Přidat vlastní doménu**. Posuvník zobrazuje existující vlastní domény a poskytuje možnost přidat novou vlastní doménu.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Aktualizujte, která jednotka Commerce Scale Unit se používá
+
+Jednotka Commerce Scale Unit (CSU) používaná Commerce je obvykle vybrána při prvotním vytvoření prostředí. Commerce vám umožňuje změnit, kterou instanci CSU vaše prostředí používá, což vám umožní lépe udržovat vaši architekturu pomocí samoobslužných funkcí a snížit potřebu kontaktovat podporu. Chcete-li aktualizovat instanci CSU, přejděte na stránku Řízení Commerce pro projekt ve vašem prostředí a vyberte **Aktualizujte jednotku měřítka**. Použijte posuvník **Nová jednotka Commerce Scale Unit** a vyberte novou instanci CSU ze seznamu CSU dostupných pro vaše prostředí.
+
 ## <a name="traffic-forwarding-in-production"></a>Přesměrování provozu ve výrobě
 
 Můžete simulovat více domén pomocí parametrů řetězce dotazu na doménu na samotném koncovém bodě commerce.dynamics.com. Ale pokud potřebujete začít fungovat ve výrobě, musíte přesměrovat provoz pro vlastní doménu na koncový bod `<e-commerce tenant name>.dynamics365commerce.ms`.
@@ -103,9 +109,9 @@ Koncový bod `<e-commerce tenant name>.dynamics365commerce.ms` nepodporuje vlast
 
 Chcete-li nastavit vlastní domény pomocí služby front door nebo CDN, máte dvě možnosti:
 
-- Nastavit službu front door, jako je Azure Front Door, pro zpracování front-endu provozu a připojení k vašemu prostředí Commerce. To poskytuje větší kontrolu nad správou domén a certifikátů a podrobnější zásady zabezpečení.
+- Nastavte službu front door, jako je Azure Front Door, abyste zvládli provoz na front-endu a připojili se k prostředí Commerce, které poskytuje větší kontrolu nad správou domén a certifikátů a podrobnější zásady zabezpečení.
 
-- Použít instanci Azure Front Door poskytnutou řešením Commerce. To vyžaduje koordinační akci s týmem Dynamics 365 Commerce pro ověření domény a získání certifikátů SSL pro vaši doménu výroby.
+- Použijte instanci Azure Frond Door dodávanou s Commerce, která vyžaduje koordinační akci s týmem Dynamics 365 Commerce pro ověření domény a získání certifikátů SSL pro vaši doménu výroby.
 
 > [!NOTE]
 > Pokud používáte externí CDN nebo službu front door, ujistěte se, že požadavek přichází na platformu Commerce s názvem hostitele poskytnutého Commerce, ale se záhlavím X-Forwarded-Host (XFH) \<custom-domain\>. Pokud je například váš koncový bod Commerce `xyz.dynamics365commerce.ms` a vlastní doména je `www.fabrikam.com`, hlavička hostitele předávaného požadavku by měla být `xyz.dynamics365commerce.ms` a hlavička XFH by měla být `www.fabrikam.com`.
@@ -115,7 +121,7 @@ Informace, jak přímo nastavit službu CDN, najdete v části [Přidání podpo
 Chcete-li použít instanci Azure Front Door poskytnutou řešením Commerce, musíte vytvořit požadavek na službu pomoci s instalací CDN od týmu pro zprovoznění řešení Commerce. 
 
 - Budete muset zadat název vaší společnosti, doménu výroby, ID prostředí a název klienta elektronického obchodu výroby. 
-- Budete muset potvrdit, zda se jedná o existující doménu (použitou se pro aktuálně aktivní web) nebo o novou doménu. 
+- Budete muset potvrdit, zda požadavek služby je pro existující doménu (použitou se pro aktuálně aktivní web) nebo o novou doménu. 
 - U nové domény lze ověření domény a certifikátu SSL dosáhnout v jediném kroku. 
 - Pro doménu obsluhující existující webovou stránku je k vytvoření ověření domény a certifikátu SSL vyžadován vícestupňový proces. Tento proces má smlouvu o rozsahu služeb (SLA) na 7 dní pro zprovoznění domény, protože zahrnuje několik postupných kroků.
 

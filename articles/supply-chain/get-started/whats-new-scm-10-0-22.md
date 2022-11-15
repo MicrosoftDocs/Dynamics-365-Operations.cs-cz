@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124783"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740403"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22. (listopad 2021)
 
@@ -53,7 +53,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující články ná
 |---|---|
 | Správa technických změn | [Přehled správy technických změn](../engineering-change-management/product-engineering-overview.md) nyní uvádí všechny související volitelné funkce dostupné ve správě funkcí |
 | Hlavní plánování | [Nastavení prognózy poptávky](../master-planning/demand-forecasting-setup.md) |
-| Hlavní plánování | [Čisté požadavky a informace o doložení u optimalizace plánování](../master-planning/planning-optimization/net-requirements.md) |
+| Hlavní plánování | [Čisté požadavky a informace o doložení](../master-planning/planning-optimization/net-requirements.md) |
 | Řízení skladu | [Uvolnit do skladu](../warehousing/release-to-warehouse-process.md) poskytuje podrobný přehled procesu úplného uvolnění do skladu |
 
 ## <a name="additional-resources"></a>Další prostředky
