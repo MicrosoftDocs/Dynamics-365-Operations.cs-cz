@@ -1,6 +1,6 @@
 ---
 title: Pojistné doby
-description: Tento článek popisuje, jak lze použít pojistné doby s doplňkem optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jak fungují bezpečnostní rezervy během hlavního plánování.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335188"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740434"
 ---
 # <a name="safety-margins"></a>Pojistné doby
 
 [!include [banner](../../includes/banner.md)]
 
-Tento článek popisuje, jak lze použít pojistné doby s doplňkem optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje, jak fungují bezpečnostní rezervy během hlavního plánování.
 
 ## <a name="safety-margins-overview"></a>Přehled pojistných dob
 
@@ -165,12 +165,5 @@ Všechny tři typy pojistných dob jsou zahrnuty, když systém určuje, zda je 
 Například položka má dobu realizace jeden den a rezervu příjmu tři dny. Nákupní objednávka pro tuto položku je nastavena tak, že je dnes vyžadována. V tomto případě se zpoždění počítá jako *doba realizace* + *rezerva příjmu* = čtyři dny. Proto pokud je dnes 14. srpna, čtyři dny zpoždění způsobí doručení 18. srpna. Následující obrázek znázorňuje tento příklad.
 
 ![Příklad výpočtu zpoždění.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Další prostředky
-
-[Začínáme s optimalizací plánování](get-started.md)
-
-[Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

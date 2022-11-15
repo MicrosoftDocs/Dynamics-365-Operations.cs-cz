@@ -1,6 +1,6 @@
 ---
 title: Hlavní plánování s prognózami poptávky
-description: Tento článek vysvětluje, jak zahrnout prognózy poptávky během hlavního plánování pomocí Optimalizace plánování.
+description: Tento článek vysvětluje, jak zahrnout prognózy poptávky během hlavního plánování.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878983"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739776"
 ---
-# <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
+# <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
 
 [!include [banner](../../includes/banner.md)]
 
-Můžete použít prognózu poptávky společně s optimalizací plánování, abyste zohlednili očekávanou poptávku ve svém hlavním plánování. Prognózu poptávky můžete ručně vytvořit, importovat nebo vygenerovat pomocí funkce prognózy poptávky v Microsoft Dynamics 365 Supply Chain Management. Další informace o prognóze poptávky najdete v části [Přehled prognózy poptávky](../introduction-demand-forecasting.md).
+Můžete použít prognózu poptávky společně s očekávanou poptávkou ve svém hlavním plánování. Prognózu poptávky můžete ručně vytvořit, importovat nebo vygenerovat pomocí funkce prognózy poptávky v Microsoft Dynamics 365 Supply Chain Management. Další informace o prognóze poptávky najdete v části [Přehled prognózy poptávky](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Samostatné plánování prognóz není optimalizací plánování podporováno. Proto nastavení **Aktuální plán prognózy** na stránce **Hlavní parametry plánování** nemá žádný účinek, když používáte optimalizaci plánování.
@@ -50,7 +50,7 @@ Chcete-li nakonfigurovat hlavní plán tak, aby obsahoval prognózu poptávky, p
     - **Časové období prognózy** - Pokud nastavíte možnost **Plán prognózy** na *Ano*, zadejte počet dní (od dnešního data), kdy má být použita prognóza poptávky.
 
     > [!IMPORTANT]
-    > Nastavení **Plán prognózy** ještě není v rámci optimalizace plánování podporováno.
+    > Nastavení **Plán prognózy** není v rámci optimalizace plánování podporováno.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Nastavení skupiny pokrytí tak, aby zahrnovala prognózu poptávky
 

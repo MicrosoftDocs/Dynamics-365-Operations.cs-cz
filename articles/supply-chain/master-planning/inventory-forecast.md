@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16e806de9014e76404ee2807ec9132ae836e300f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844518"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739971"
 ---
 # <a name="inventory-forecasts"></a>Prognózy zásob
 
@@ -395,7 +395,7 @@ Chcete-li nastavit hlavní plán tak, aby obsahoval prognózu zásob, postupujte
     - **Časové období prognózy** - Pokud nastavíte možnost **Plán prognózy** na *Ano*, zadejte počet dní (od dnešního data), kdy má být použita prognóza poptávky.
 
     > [!IMPORTANT]
-    > Možnost **Plán prognózy** ještě není v rámci optimalizace plánování podporováno.
+    > Možnost **Plán prognózy** není v rámci optimalizace plánování podporována.
 
 ### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Spustit hlavní plán tak, aby zahrnoval prognózu zásob
 

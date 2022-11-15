@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689987"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750700"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Výsledek analýzy přizpůsobení pro optimalizaci plánování byste měli analyzovat jako součást procesu migrace. Všimněte si, že se rozsah optimalizace plánování nerovná aktuální integrované hlavní plánovací funkce. Doporučujeme, abyste spolupracovali se svým partnerem a v rámci přípravy na migraci si přečetli dokumentaci. 
+Výsledek analýzy přizpůsobení pro optimalizaci plánování byste měli analyzovat jako součást procesu migrace. Všimněte si, že se rozsah optimalizace plánování nerovná funkce zastaralého modulu hlavního plánování. Doporučujeme, abyste spolupracovali se svým partnerem a v rámci přípravy na migraci si přečetli dokumentaci.
 
-Analýza přizpůsobení optimalizace plánování vám může ukázat, kde se může výsledek lišit mezi integrovaným hlavním plánovacím modulem a optimalizací plánování. Tato analýza probíhá na základě vašeho aktuálního nastavení a dat. 
+Analýza přizpůsobení optimalizace plánování vám může ukázat, kde se může výsledek lišit mezi zastaralým hlavním plánovacím modulem a optimalizací plánování. Tato analýza probíhá na základě vašeho aktuálního nastavení a dat. 
 
 Chcete-li si zobrazit výsledek analýzy přizpůsobení pro optimalizaci plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Analýza přizpůsobení pro optimalizaci plánování** a potom vyberte **Spustit analýzu**. Pokud analýza nalezne nějaké nekonzistence, budou uvedeny na stejné stránce. (Provádění analýzy může trvat několik minut.)
 
@@ -64,7 +64,6 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Základní kalendáře | Kalendáře používající základní kalendář: *\#* | Tato funkce je nyní podporována. | Podporováno | 
 | Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: *\#* | Tato funkce je nyní podporována. Další informace viz [Označení dávky jako K dispozici nebo Není k dispozici pomocí kódů dispozice dávky](../../inventory/batch-disposition-codes.md) | Podporováno |
 | Příslib na základě ověření dostupné kapacity (CTP) | Výchozí nastavení objednávky s datem dodání nastaveným na CTP: *\#* | V Supply Chain Management 10.0.28 a novějších proces nazvaný *CTP pro optimalizaci plánování* zpřístupní potvrzená data odeslání a přijetí po spuštění dynamického plánu. U starších verzí Supply Chain Management je starší nastavení CTP ignorováno, když je povolena optimalizace plánování. | Podporováno |
-| Kopírovat statický do dynamického plánu | Kopírování statického do dynamického plánu je povoleno na parametrech hlavního plánování. | Optimalizace plánování nekopíruje statický plán do dynamického plánu bez ohledu na toto nastavení. Obecně platí, že tento koncept je méně významný z důvodu rychlosti a úplného obnovení, které poskytuje optimalizace plánování. Pokud jsou použity dva nebo více plánů, je třeba pro každý plán spustit hlavní plánování. | Není k dispozici |
 | Potvrzení | Skupiny disponibility s nastavenou ochrannou dobou automatického potvrzení: *\#* | Ve verzi 10.0.7 a novějších je potvrzení podporováno jako samostatná dávková úloha potvrzení po dokončení hlavního plánování (za předpokladu , že ve [správě funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) byla povolena funkce *Automatické potvrzení pro optimalizaci plánování*). Všimněte si, že automatické potvrzení pro optimalizaci plánování je založeno na datu objednávky (počáteční datum), nikoli na datu požadavku (koncové datum). Toto chování zajišťuje, že k potvrzení plánovaných objednávek dojde včas, aniž by bylo nutné zahrnout dobu realizace do ochranné doby potvrzování. | Podporováno |
 | Potvrzení | Záznamy disponibility položky s nastaveným automatickým potvrzením: *\#* | Ve verzi 10.0.7 a novějších je automatické potvrzení podporováno jako samostatná dávková úloha potvrzení po dokončení hlavního plánování (za předpokladu, že ve [správě funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) byla povolena funkce *Automatické potvrzení pro optimalizaci plánování*). Všimněte si, že automatické potvrzení pro optimalizaci plánování je založeno na datu objednávky (počáteční datum), nikoli na datu požadavku (koncové datum). Toto chování zajišťuje, že k potvrzení plánovaných objednávek dojde včas, aniž by bylo nutné zahrnout dobu realizace do ochranné doby potvrzování. | Podporováno |
 | Potvrzení | Hlavní plány s nastaveným automatickým potvrzením: *\#* | Ve verzi 10.0.7 a novějších je automatické potvrzení podporováno jako samostatná dávková úloha potvrzení po dokončení hlavního plánování (za předpokladu, že ve [správě funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) byla povolena funkce *Automatické potvrzení pro optimalizaci plánování*). Všimněte si, že automatické potvrzení pro optimalizaci plánování je založeno na datu objednávky (počáteční datum), nikoli na datu požadavku (koncové datum). Toto chování zajišťuje, že k potvrzení plánovaných objednávek dojde včas, aniž by bylo nutné zahrnout dobu realizace do ochranné doby potvrzování. | Podporováno |
@@ -93,34 +92,27 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Výrobní | Verze receptur se souběžnými nebo vedlejšími produkty: *\#* | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignorují souběžné a vedlejší produkty, které jsou přidruženy k verzi receptury. | Vlna verze 2022 2 |
 | Výrobní | Verze receptury s výtěžností: *\#* | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignoruje výtěžnost, která je přidružena k verzi receptury. | Vlna verze 2022 2 |
 | Výrobní | Plány včetně pořadí: *\#* | Tato funkce čeká na implementaci. V současnosti je pořadí ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | Vlna verze 2022 2 |
-| Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: *\#* | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | Budoucí vlna |
+| Výrobní | Nezahájené uvolněné výrobní zakázky, kde je naplánované zahájení dříve než dnes: *\#* | Tato funkce čeká na implementaci. V současné době, pokud dojde ke zpoždění výrobní zakázky, bude hlavní plánování předpokládat, že bude dokončena dnes. To je relevantní pro uvolněné výrobní zakázky, kde je datum dodání v minulosti, ale ještě nebylo dokončeno. | Vlna verze 2022 2 |
 | Výrobní | Zdroje naplánované s omezenou kapacitou: *\#* | Tato funkce je nyní podporována.| Podporováno |
 | Výrobní | Postupy používané při plánování: *\#* | Tato funkce je podporována. | Podporováno |
-| Výrobní | Rezervace řádku prodeje pomocí rozpadu: *\#* | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | Budoucí vlna |
-| Výrobní | Plánování s rozpadem výrobních zakázek: *\#* | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | Budoucí vlna |
+| Výrobní | Rezervace řádku prodeje pomocí rozpadu: *\#* | Rezervace řádku prodeje, která používá rozpad, není podporována, pokud je povolena optimalizace plánování. | Vlna verze 2022 2 |
+| Výrobní | Plánování s rozpadem výrobních zakázek: *\#* | Plánování, které používá rozpad výrobních zakázek, není podporováno, pokud je povolena optimalizace plánování. Výrobní zakázky lze plánovat individuálně. | Vlna verze 2022 2 |
 | Požadavek na nabídky | Hlavní plány s povolenými požadavky na nabídku: *\#* | Tato funkce čeká na implementaci. V současné době nejsou požadavky na nabídku (RFQ) považovány za poptávku v případě, že je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 |
 | Žádanky | Hlavní plány s povolenými žádankami: *\#* | Tato funkce je nyní podporována. Další informace naleznete v tématu [Nákupní žádanky](purchase-requisitions.md) | Podporováno |
 | Pojistné doby | Skupiny disponibility s pojistnou dobou: *\#* | Tato funkce je nyní podporována. Další informace viz [Pojistné doby](safety-margins.md) | Podporováno |
 | Pojistné doby | Hlavní plány s pojistnou dobou: *\#* | Tato funkce je nyní podporována. Další informace viz [Pojistné doby](safety-margins.md) |  Podporováno |
-| Plnění rezervních zásob | Záznamy disponibility položky s hodnotou „splnit minimum“ se liší od „dnešní datum a čas pořízení“: *\#* | Optimalizace plánování vždy používá *dnešní datum a čas pořízení*. Tato změna je provedena kvůli přípravě na zjednodušené nastavení plánování v budoucnu a k zajištění výsledku s akcemi. Není-li k dispozici doba pořízení pro pojistnou zásobu, plánované objednávky, které jsou vytvořeny pro aktuální nízké zásoby na skladě, budou vždy zpožděny kvůli době realizace. Toto chování může způsobit výrazný nedostatek informací a nežádoucí plánované objednávky. Doporučeným postupem je změna nastavení tak, aby bylo použito *dnešní datum a čas pořízení*. Aktualizujte hlavní data, abyste se vyhnuli varování. | Nevztahuje se |
-| Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: *\#* | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 nebo novější |
-| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce čeká na implementaci. | Vlna verze 2022 2 |
+| Prodejní nabídky | Hlavní plány s povolenými prodejními nabídkami: *\#* | Tato funkce čeká na implementaci. V současné době nejsou nabídky brány v potaz, pokud je povolena optimalizace plánování. Budou ignorovány bez ohledu na toto nastavení. | Vlna verze 2022 2 |
+| Skladovatelnost | Hlavní plány s povolenou skladovatelností: *\#* | Tato funkce je nyní podporována. | Podporováno |
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled optimalizace plánování](planning-optimization-overview.md)
-
-[Začínáme s optimalizací plánování](get-started.md)
-
-[Rozdíly mezi klasickým hlavním plánováním a optimalizací plánování](planning-optimization-differences-with-built-in.md)
-
-[Parametry, které optimalizace plánování nepoužívá](not-used-parameters.md)
-
-[Zobrazení historie pánů a plánovacích protokolů](plan-history-logs.md)
-
-[Použití filtrů v plánu](plan-filters.md)
-
-[Zrušení úlohy plánování](cancel-planning-job.md)
+- [Architektura systému hlavního plánování](../master-planning-architecture.md)
+- [Začínáme s hlavním plánováním](get-started.md)
+- [Rozdíly mezi klasickým hlavním plánováním a optimalizací plánování](planning-optimization-differences-with-built-in.md)
+- [Parametry, které optimalizace plánování nepoužívá](not-used-parameters.md)
+- [Zobrazení historie pánů a plánovacích protokolů](plan-history-logs.md)
+- [Spusťte plánování pro podmnožinu položek](plan-filters.md)
+- [Zrušení úlohy plánování](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733441"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752683"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Známé problémy při slučování infrastruktury Dynamics 365 Human Resources
 
@@ -44,10 +44,3 @@ Před provedením migrace jsou vyžadovány následující typy prostředí:
 
 Stávající aplikace Lidské zdroje v Teams se aktuálně přesouvá do řešení Microsoft Power Platform. Další informace viz [Aplikace Human Resources v Teams](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Licence
-
-V licencování nejsou žádné změny Dynamics 365 Human Resources v následujících oblastech: 
-
-- **Minimální počet požadavků na zakoupení licence**
-- **Licence na produkční prostředí a prostředí sandbox** – Máte-li stávající samostatné licence pro lidské zdroje, které zahrnují jedno produkční prostředí a jedno prostředí sandbox, bude stejný počet licencí k dispozici pro finanční a provozní infrastrukturu.
-- **Další licence sandboxu** – Pokud jste zakoupili další licence sandbox pro samostatnou aplikaci Human Resources, bude stejný počet licencí k dispozici pro prostředí sandbox na finanční a provozní infrastruktuře. 

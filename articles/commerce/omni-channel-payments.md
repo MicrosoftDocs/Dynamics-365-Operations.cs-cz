@@ -2,7 +2,7 @@
 title: Přehled omnikanálových plateb
 description: Tento článek poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881702"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746118"
 ---
 # <a name="omni-channel-payments-overview"></a>Přehled omnikanálových plateb
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tento článek poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Commerce. Obsahuje obsáhlý seznam podporovaných scénářů, informace o funkcích, nastavení a řešení problémů a popis některých typických problémů.
 
@@ -169,9 +170,9 @@ Pokud chcete spustit tento scénář, postupujte takto:
 6. Do vyhledávacího panelu zadejte **Seattle** a pak vyberte obchod v **Seattlu** pro výdej. 
 7. Kliknutím na **OK** přijměte aktuální datum jako datum výdeje.
 9. Vyberte **Platba kartou** pro zahájení platby.
-10. Uhraďte kartou částku, která je splatná jako záloha. 
+10. Uhraďte kartou částku, která je splatná jako záloha.
 11. Dokončete zálohovou platbu na platebním terminálu. 
-12. Po zaplacení vkladu vyberte možnost pro použití stejné karty pro plnění a čekání na dokončení objednávky. 
+12. Po zaplacení vkladu vyberte možnost pro použití stejné karty pro plnění a čekání na dokončení objednávky. Pokud je zaplaceno 100% zálohy (od kroku 10 výše), prostředky jsou okamžitě zachyceny na kartě a autorizační token nebude k dispozici při fakturaci, protože prostředky již byly zachyceny a sledovány jako zaplacené.
 13. Spusťte POS pro obchod Seattle.
 14. V POS na úvodní stránce vyberte operaci **Objednávky k výdeji** a zobrazte objednávky pro výdej v obchodě. 
 15. Vyberte jeden nebo více řádků z objednávky, která byla vytvořena v referenčním výkladní skříni, a poté vyberte **vyzvednout**.
@@ -198,7 +199,7 @@ Pokud chcete spustit tento scénář, postupujte takto:
 8. Vyberte **Platba kartou** pro zahájení platby.
 9. Uhraďte kartou částku, která je splatná jako záloha. 
 10. Dokončete zálohovou platbu na platebním terminálu. 
-11. Po zaplacení vkladu vyberte možnost pro použití stejné karty pro plnění a čekání na dokončení objednávky.
+11. Po zaplacení vkladu vyberte možnost pro použití stejné karty pro plnění a čekání na dokončení objednávky. Pokud je zaplaceno 100% zálohy (od kroku 9 výše), prostředky jsou okamžitě zachyceny na kartě a autorizační token nebude k dispozici při fakturaci, protože prostředky již byly zachyceny a sledovány jako zaplacené.
 
 Pokud je objednávka vyzvednuta, zabalena a fakturována v kanceláři, budou se údaje o platbě poskytované v POS používat k zaznamenání finančních prostředků pro zboží, které je dodáno zákazníkovi. 
 
