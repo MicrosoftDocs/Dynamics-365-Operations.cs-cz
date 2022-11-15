@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885892"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740897"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametry data a času, které používá optimalizace plánování
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885892"
 
 Tento článek poskytuje informace o parametrech data a času, které optimalizace plánování používá během své činnosti.
 
-Zatímco vestavěný modul hlavního plánování používá data transakcí ve všech výpočtech, optimalizace plánování pracuje s hodnotami data a času, které jsou převedeny na data. Tento rozdíl v chování může vést k situacím, kdy například prognózované transakce, které jsou vytvořeny o půlnoci dne, kdy je spuštěno hlavní plánování, nejsou zahrnuty, protože optimalizace plánování se domnívá, že byly vytvořeny před aktuálním datem.
+Zatímco zastaralý modul hlavního plánování používá data transakcí ve všech výpočtech, optimalizace plánování pracuje s hodnotami data a času, které jsou převedeny na data. Tento rozdíl v chování může vést k situacím, kdy například prognózované transakce, které jsou vytvořeny o půlnoci dne, kdy je spuštěno hlavní plánování, nejsou zahrnuty, protože optimalizace plánování se domnívá, že byly vytvořeny před aktuálním datem.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametry pro výdejní a poptávkové transakce
 
