@@ -1,6 +1,6 @@
 ---
 title: Výpočet dat dodání prodejní objednávky pomocí CTP
-description: Funkce Příslib na základě ověření dostupné kapacity (CTP) vám umožňuje poskytnout zákazníkům realistická data, kdy můžete slíbit konkrétní zboží. Tento článek popisuje, jak nastavit a používat CTP pro každý plánovací modul (optimalizace plánování a vestavěný modul).
+description: Funkce Příslib na základě ověření dostupné kapacity (CTP) vám umožňuje poskytnout zákazníkům realistická data, kdy můžete slíbit konkrétní zboží. Tento článek popisuje, jak nastavit a používat CTP pro každý plánovací modul (optimalizace plánování a zastaralý modul hlavního plánování).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714853"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741196"
 ---
 # <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Výpočet dat dodání prodejní objednávky pomocí CTP
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Funkce Příslib na základě ověření dostupné kapacity (CTP) vám umožňuje poskytnout zákazníkům realistická data, kdy můžete slíbit konkrétní zboží. Pro každý prodejní řádek můžete zadat datum, které zohledňuje existující skladové zásoby, výrobní kapacitu a přepravní časy.
 
 CTP rozšiřuje funkci [dostupné k přislíbení](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) s ohledem na informace o kapacitě. Zatímco ATP bere v úvahu pouze dostupnost materiálu a předpokládá nekonečné kapacitní zdroje, CTP zvažuje dostupnost materiálů i kapacity. Poskytuje tedy realističtější obrázek o tom, zda lze poptávku uspokojit v daném časovém rámci.
 
-CTP se chová trochu odlišně na základě toho, který modul plánování používáte (optimalizace plánování, nebo integrovaný modul). Tento článek popisuje, jak jednotlivé moduly. CTP pro optimalizaci plánování aktuálně podporuje pouze podmnožinu scénářů CTP, které jsou podporovány vestavěným modulem.
+CTP se chová trochu odlišně na základě toho, který modul plánování používáte (optimalizace plánování, nebo zastaralý modul hlavního plánování). Tento článek popisuje, jak jednotlivé moduly. CTP pro optimalizaci plánování aktuálně podporuje pouze podmnožinu scénářů CTP, které jsou podporovány zastaralým modulem hlavního plánování.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Zapnutí CTP pro optimalizaci plánování
 
-CTP pro integrovaný hlavní plánovací modul je vždy dostupné. Pokud však chcete používat CTP pro optimalizaci plánování, musí být pro váš systém zapnuto. Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+CTP pro zastaralý hlavní plánovací modul je vždy dostupné. Pokud však chcete používat CTP pro optimalizaci plánování, musí být pro váš systém zapnuto. Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Hlavní plánování*
 - **Název funkce:** *(Preview) CTP pro optimalizaci plánování*
@@ -47,9 +48,9 @@ Výpočet CTP, který bere v úvahu materiály i zdroje, může ukazovat větš�
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>Jak se CTP liší v závislosti na hlavním nástroji plánování, který používáte
 
-Následující tabulka shrnuje rozdíly mezi CTP pro optimalizaci plánování a CTP pro vestavěný modul hlavního plánování.
+Následující tabulka shrnuje rozdíly mezi CTP pro optimalizaci plánování a CTP pro zastaralý modul hlavního plánování.
 
-| Prvek | Optimalizace plánování | Integrovaný hlavní plánovací modul |
+| Prvek | Optimalizace plánování | Zastaralý hlavní plánovací modul |
 |---|---|---|
 | Nastavení **Kontrola termínu dodání** pro objednávky, řádky objednávek a produkty | *CTP pro optimalizaci plánování* | *CTP* |
 | Čas výpočtu | Výpočet se spouští spuštěním dynamického plánu jako naplánované úlohy. | Výpočet se okamžitě spustí pokaždé, když zadáte nebo aktualizujete řádek prodejní objednávky. |
@@ -70,8 +71,8 @@ Výchozí metoda kontroly data dodání bude použita na všechny nové řádky 
     - *Doba realizace prodeje* – doba realizace prodeje je doba mezi vytvořením prodejní objednávky a expedici položek. Výpočet data dodání je založen na výchozím počtu dnů a nezohledňuje skladovou dostupnost, známou poptávku ani plánovanou dodávku.
     - *ATP* – ATP je množství položky, které je k dispozici a může být odběrateli slíbeno k určitému datu. Výpočet množství ATP zahrnuje nepotvrzené zásoby, doby realizace, plánované příjmy a výdeje.
     - *ATP + rezerva výdeje* – datum expedice odpovídá datu ATP navýšenému o rezervu výdeje pro položku. Rezerva výdeje je doba potřebná k přípravě položek na expedici.
-    - *CTP* – Použít výpočet CTP, který poskytuje vestavěný modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data dodání *CTP* není povolena, a pokud je vybrána, způsobí při spuštění výpočtu chybu.
-    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Tato možnost nemá žádný efekt, pokud používáte integrovaný hlavní plánovací modul.
+    - *CTP* – Použít výpočet CTP, který poskytuje zastaralý modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data dodání *CTP* není povolena, a pokud je vybrána, způsobí při spuštění výpočtu chybu.
+    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Tato možnost nemá žádný efekt, pokud používáte zastaralý hlavní plánovací modul.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Nastavení přepsání kontroly data dodání pro jednotlivé produkty
 
@@ -85,7 +86,7 @@ Můžete přiřadit přepsání pro konkrétní produkty, kde chcete použít ji
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a>Plánování CTP pro výpočty optimalizace plánování
 
-Když používáte CTP pro optimalizaci plánování, musíte spustit dynamický plán, který spustí systém, aby provedl výpočty CTP, a poté nastavte potvrzená data odeslání a přijetí pro všechny relevantní objednávky. Plán musí obsahovat všechny položky, pro které jsou vyžadována potvrzená data odeslání a přijetí. (Když použijete CTP pro vestavěný plánovací modul, výpočty CTP se okamžitě provedou lokálně. Proto nemusíte spouštět dynamický plán, abyste viděli výsledky CTP.)
+Když používáte CTP pro optimalizaci plánování, musíte spustit dynamický plán, který spustí systém, aby provedl výpočty CTP, a poté nastavte potvrzená data odeslání a přijetí pro všechny relevantní objednávky. Plán musí obsahovat všechny položky, pro které jsou vyžadována potvrzená data odeslání a přijetí. (Když použijete CTP pro zastaralý hlavní plánovací modul, výpočty CTP se okamžitě provedou lokálně. Proto nemusíte spouštět dynamický plán, abyste viděli výsledky CTP.)
 
 Abyste zajistili, že data budou pro všechny uživatele k dispozici včas, doporučujeme nastavit dávkové úlohy pro spouštění příslušných plánů na opakovaném základě. Například dávková úloha, která je nastavena tak, aby spouštěla dynamický plán každých 30 minut, nastaví potvrzené odeslání a data příjmu každých 30 minut. Proto uživatelé, kteří zadávají a importují objednávky, budou muset čekat maximálně 30 minut, než obdrží potvrzenou zásilku a obdrží data.
 
@@ -98,17 +99,17 @@ Chcete-li nastavit dávkovou úlohu pro spouštění dynamického plánu podle p
 1. Zvolte **OK** pro uložení plánu.
 1. Vyberte **OK**, dávková úloha se vytvoří a dialogové okno se zavře.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>Použít CTP pro integrované hlavní plánování
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>Použijte CTP pro zastaralý modul hlavního plánování
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Vytvoření nové objednávky pomocí CTP pro integrované hlavní plánování
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Vytvoření nové objednávky pomocí CTP pro zastaralý modul hlavního plánování
 
 Pokaždé, když přidáte novou prodejní objednávku nebo řádek objednávky, systém k ní přiřadí výchozí metodu řízení data dodání. Hlavička objednávky vždy začíná globální výchozí metodou. Pokud je k objednané položce přiřazeno přepsání, nový řádek objednávky toto přepsání použije. Jinak bude nový řádek objednávky také používat globální výchozí metodu. Proto byste měli nastavit výchozí metody, aby odpovídaly metodě řízení data doručení, kterou používáte nejčastěji. Po vytvoření objednávky můžete podle potřeby přepsat výchozí metodu na úrovni záhlaví objednávky nebo řádku objednávky. Více informací viz [Nastavení výchozí metody kontroly data dodání](#default-methods) a [Změna existujících prodejních objednávek tak, aby používaly CTP](#change-orders).
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Zobrazení potvrzených dat dodání, když používáte CTP pro integrované hlavní plánování
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Zobrazení potvrzených dat dodání, když používáte CTP pro zastaralý modul hlavního plánování
 
-Pokud používáte vestavěný modul hlavního plánování, výpočty CTP se aplikují na objednávky a řádky objednávek, kde pole **Kontrola data dodání** je nastaveno na *CTP*.
+Pokud používáte zastaralý modul hlavního plánování, výpočty CTP se aplikují na objednávky a řádky objednávek, kde pole **Kontrola data dodání** je nastaveno na *CTP*.
 
-Pro prodejní řádky které používají CTP pro vestavěné hlavní plánování, systém automaticky nastaví pole **Potvrzené datum expedice** a **Potvrzené datum přijetí** pokaždé, když uložíte prodejní řádek. Pokud později provedete relevantní změnu na prodejním řádku (například změnou jejího množství nebo místa), data se okamžitě přepočítají.
+Pro prodejní řádky které používají CTP pro zastaralý modul hlavního plánování, systém automaticky nastaví pole **Potvrzené datum expedice** a **Potvrzené datum přijetí** pokaždé, když uložíte prodejní řádek. Pokud později provedete relevantní změnu na prodejním řádku (například změnou jejího množství nebo místa), data se okamžitě přepočítají.
 
 - Chcete-li zobrazit potvrzená data dodání pro řádek prodejní objednávky, otevřete prodejní objednávku a vyberte prodejní řádek. Poté na záložce s náhledem **Údaje řádku** na kartě **Doručení** zkontrolujte hodnoty **Potvrzené datum expedice** a **Potvrzené datum příjmu**.
 - Chcete-li zobrazit potvrzená data dodání pro celou objednávku, otevřete prodejní objednávku a vyberte zobrazení **Záhlaví**. Poté na záložce s náhledem **Doručení** zkontrolujte hodnoty **Potvrzené datum** expedice a **Potvrzené datum příjmu**.
@@ -155,8 +156,8 @@ Chcete-li změnit objednávku tak, aby používala CTP na úrovni záhlaví obje
 1. Vyberte **Záhlaví**, aby se otevřely údaje záhlaví na stránce **Údaje prodejní objednávky**.
 1. Na pevné záložce **Dodání** nastavte pole **Kontrola data dodání** na jednu z následujících hodnot v závislosti na plánovacím modulu, který používáte:
 
-    - *CTP* – Použít výpočet CTP, který poskytuje vestavěný modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data doručení *CTP* není povolena. Pokud tedy vyberete tuto hodnotu, dojde při výpočtu k chybě.
-    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Toto nastavení nemá žádný efekt, pokud používáte integrovaný hlavní plánovací modul.
+    - *CTP* – Použít výpočet CTP, který poskytuje zastaralý modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data doručení *CTP* není povolena. Pokud tedy vyberete tuto hodnotu, dojde při výpočtu k chybě.
+    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Toto nastavení nemá žádný efekt, pokud používáte zastaralý hlavní plánovací modul.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Výběrem **OK** použijte změny.
@@ -165,15 +166,15 @@ Chcete-li změnit objednávku tak, aby používala CTP na úrovni záhlaví obje
 
 Pokud jste vytvořili řádek objednávky pomocí jiné metody řízení data dodání, můžete kdykoli přejít na CTP. Změny, které provedete na úrovni řádku, neovlivní žádné další řádky. Mohou však způsobit, že se celková data dodání objednávky posunou dopředu nebo dozadu, v závislosti na tom, jak se změní každý aktualizovaný výpočet řádku. <!-- KFM: Confirm this intro at next revision -->
 
-Chcete-li změnit objednávku tak, aby používala CTP pro integrované hlavní plánování na úrovni řádku, postupujte takto.
+Chcete-li změnit objednávku tak, aby používala CTP pro zastaralý modul hlavního plánování na úrovni řádku, postupujte takto.
 
 1. Přejděte na **Pohledávky \> Objednávky \> Všechny prodejní objednávky**.
 1. Otevřete prodejní objednávku, kterou chcete nastavit, nebo vytvořte novou.
 1. Na stránce **Údaje prodejní objednávky** na pevné záložce **Řádek prodejní objednávky** vyberte řádek prodejní objednávky, který chcete nastavit.
 1. Na pevné záložce **Údaje řádku** na kartě **Dodání** nastavte pole **Kontrola data dodání** na jednu z následujících hodnot v závislosti na plánovacím modulu, který používáte:
 
-    - *CTP* – Použít výpočet CTP, který poskytuje vestavěný modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data doručení *CTP* není povolena. Pokud tedy vyberete tuto hodnotu, dojde při výpočtu k chybě.
-    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Toto nastavení nemá žádný efekt, pokud používáte integrovaný hlavní plánovací modul.
+    - *CTP* – Použít výpočet CTP, který poskytuje zastaralý modul hlavního plánování. Pokud používáte optimalizaci plánování, metoda kontroly data doručení *CTP* není povolena. Pokud tedy vyberete tuto hodnotu, dojde při výpočtu k chybě.
+    - *CTP pro optimalizaci plánování* – Použijte výpočet CTP, který poskytuje Optimalizace plánování. Toto nastavení nemá žádný efekt, pokud používáte zastaralý hlavní plánovací modul.
 
     Zobrazí se dialogové okno **Dostupné termíny odeslání a příjmu** s dostupnými daty odeslání a příjmu. Toto dialogové okno funguje pro řádky objednávky stejně jako pro záhlaví objednávky, jak je popsáno v předchozí části.
 
