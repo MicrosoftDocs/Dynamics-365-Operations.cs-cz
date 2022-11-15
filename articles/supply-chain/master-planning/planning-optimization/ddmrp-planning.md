@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689151"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740295"
 ---
 # <a name="demand-driven-planning"></a>Plánování řízené poptávkou
 
@@ -55,4 +55,4 @@ Pokud nyní spustíte hlavní plánování, vygeneruje plánovanou objednávku, 
 Tento příklad vytvoří plánovanou nákupní objednávku pro množství 130, které se rovná maximální úrovni mínus čistý tok. Plánované objednávce je přiřazena priorita 53,07 na základě jejího procenta z maximálního množství. Protože tyto hodnoty byly nalezeny 20. června, systém vytvoří plánovanou objednávku s datem 20. června plus oddělenou dodací lhůtu pro položku (v tomto příkladu pět pracovních dnů). Proto, protože pět pracovních dnů je jeden týden ode dneška, je plánovaná objednávka datována 27. června.
 
 > [!NOTE]
-> Optimalizace plánování počítá pouze oddělené položky pomocí DDMRP. Všechny ostatní položky jsou vypočteny pomocí standardního plánování požadavků na materiál (MRP).
+> Hlavní plánování počítá pouze oddělené položky pomocí DDMRP. Všechny ostatní položky jsou vypočteny pomocí standardního plánování požadavků na materiál (MRP).

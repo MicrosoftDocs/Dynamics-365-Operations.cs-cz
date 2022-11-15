@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069779"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748706"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -146,9 +146,6 @@ Pokud je dávkový příkaz vytvořen z verze vzorce, kde je možnost **Variace 
 V tomto případě může pracovník specifikovat koprodukt a množství, které se má hlásit, výběrem **Variace koproduktů** v dialogovém okně hlášení pokroku. Pracovník si pak může vybrat ze všech uvolněných produktů, které jsou definovány jako koprodukty.
 
 ### <a name="reporting-catch-weight-items"></a>Vykazování položek se skutečnou hmotností
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek, které jsou vytvořeny pro položky skutečné hmotnosti. Dávkové příkazy se vytvářejí ze vzorců, které lze definovat tak, aby měly položky skutečné hmotnosti jako položky vzorce, koprodukty a vedlejší produkty. Vzorec lze také definovat tak, aby obsahoval řádky vzorce pro přísady, které jsou definovány pro skutečnou hmotnost. Položky skutečné hmotnosti používají ke sledování inventáře dvě měrné jednotky: množství skutečné hmotnosti a množství inventáře. Například v potravinářském průmyslu lze maso v krabicích definovat jako položku skutečné hmotnosti, kde se množství skutečné hmotnosti používá ke sledování počtu krabic a množství v inventáři se používá ke sledování hmotnosti krabic.
 

@@ -1,6 +1,6 @@
 ---
-title: Čisté požadavky a informace o doložení s integrovaným hlavním plánováním
-description: Tento článek poskytuje informace o vypočítaných čistých požadavcích a informacích o doložení v integrovaném hlavním plánování.
+title: Čisté požadavky a informace o doložení se zastaralým modulem hlavního plánování
+description: Tento článek poskytuje informace o vypočítaných čistých požadavcích a informacích o doložení v zastaralém modulu hlavního plánování.
 author: t-benebo
 ms.date: 04/20/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 08a25af0d7ea15b4bc426dfc54b9b960762e11f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd11cf039704afc520cfa24185aa2e7842af9a00
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846062"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740268"
 ---
-# <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Čisté požadavky a informace o doložení s integrovaným hlavním plánováním
+# <a name="net-requirements-and-pegging-information-with-the-deprecated-master-planning-engine"></a>Čisté požadavky a informace o doložení se zastaralým modulem hlavního plánování
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,8 +26,8 @@ Když spustíte hlavní plánování, je důležité, abyste porozuměli jeho v�
 
 Stránka **Čisté požadavky** zobrazuje čisté požadavky, které jsou pro produkt vypočítány během hlavního plánování. Ukazuje také nastavení disponibility, která byla použita za běhu hlavního plánování, rozpis součtů požadavků podle typu transakce a informace o doložení.
 
-Stránka **Čisté požadavky** se chová trochu odlišně na základě toho, zda používáte Optimalizaci plánování nebo integrovaný hlavní plánovací modul. Další informace o tomto rozdílu viz [Rozdíly mezi vestavěným hlavním plánováním a Optimalizací plánování](planning-optimization/planning-optimization-differences-with-built-in.md).
+Stránka **Čisté požadavky** se chová trochu odlišně na základě toho, zda používáte Optimalizaci plánování nebo zastaralý hlavní plánovací modul. Další informace o tomto rozdílu viz [Rozdíly mezi Optimalizací plánování a zastaralým modulem hlavního plánování](planning-optimization/planning-optimization-differences-with-built-in.md).
 
-Další informace o tom, jak pracovat s touto stránkou, najdete v tématu [Čisté požadavky a informace o doložení s Optimalizací plánování](planning-optimization/net-requirements.md).
+Další informace o tom, jak pracovat s touto stránkou, najdete v tématu [Čisté požadavky a informace o doložení](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

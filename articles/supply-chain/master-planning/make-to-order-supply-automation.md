@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220526"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740187"
 ---
 # <a name="make-to-order-supply-automation"></a>Automatizace dodávek na zakázku
 
@@ -32,12 +32,6 @@ Funkce *Automatizace dodávek na zakázku* několik vylepšení do Microsoft Dyn
 - Vylepšovat tok mezipodnikových informací. Nákupní objednávky jsou aktualizovány tak, aby obsahovaly pole pro způsob dodání, dodací podmínky a externí číslo položky. Tato změna zajišťuje, že do dodavatelské společnosti se dostanou podrobné informace o poptávce.
 
 Tento článek popisuje, jak nastavit a používat jednotlivá vylepšení.
-
-> [!NOTE]
-> Všechna vylepšení popsaná v tomto článku platí pro systémy, které používají integrované hlavní plánování. Následující dvě vylepšení jsou také podporována doplňkem Optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management:
->
-> - Tolerance zpoždění u hlavních plánů
-> - Kontrola nad sekvencí doložení, která se používá během hlavního plánování
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Zapnutí funkce automatizace dodávek na zakázku
 
@@ -73,7 +67,7 @@ Chcete-li otevřít stránku **Vytížení kapacity**, abyste mohli zkontrolovat
 
 Tyto možnosti jsou také dostupné v poli **Aktualizovat značení** na kartě **Standardní aktualizace** stránky **Parametry hlavního plánování**, kde definujete výchozí výběr pro dialogové okno **Potvrzování**.
 
-Další informace naleznete v tématu [Označování zásob s optimalizací plánování](planning-optimization/marking.md).
+Další informace naleznete v tématu [Značení zásob](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Nastavení tolerance zpoždění (záporné dny) na úrovni hlavního plánu
 

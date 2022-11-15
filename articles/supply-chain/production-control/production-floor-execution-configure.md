@@ -2,7 +2,7 @@
 title: Konfigurace rozhraní pro provádění výrobního provozu
 description: Tento článek popisuje, jak vytvořit jednu nebo více konfigurací rozhraní pro provádění výrobního provozu. Když otevřete rozhraní pro provádění výrobního provozu, automaticky načte vybranou konfiguraci a filtr úloh, které jsou specifické pro prohlížeč a zařízení. V konfiguraci nastavíte zásady, které musí být použitelné pro konkrétní použití.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708717"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748679"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -85,17 +85,19 @@ Tato funkce poskytuje vylepšené prostředí k prohlížení seznamů sériový
 
 Pokud chcete použít tuto funkci, musíte ji zapnout ve svém systému. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.29 je tato funkce povinná a nelze ji vypnout. Pokud spouštíte verzi starší než 10.0.29, správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazit úplná čísla série, dávky a registrační značky vozidla v produkčním rozhraní výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-
 Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazit úplná čísla série, dávky a registrační značky vozidla v produkčním rozhraní výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="register-material-consumption"></a>Zaregistrovat spotřebu materiálu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, organizace musí také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu.
 
 Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *nemají* povoleno používat procesy řízení skladu (WMS). Druhý podporuje položky, které *mají* povoleno používat WMS. Chcete-li použít tuto funkci, zapněte jednu nebo obě z následujících funkcí v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí), v závislosti na tom, zda máte položky, které jsou povoleny pro WMS:
 
 - *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*
-- *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
+- *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
 
 > [!IMPORTANT]
 > Funkci mimo WMS můžete používat samostatně. Pokud však používáte WMS, musíte povolit obě funkce.
@@ -138,6 +140,25 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 - *Další konfigurace v rozhraní pro provádění výrobního provozu*
 
+### <a name="enable-the-my-jobs-tab"></a>Povolte kartu Moje úlohy
+
+Karta **Moje úlohy** umožňuje pracovníkům snadno zobrazit všechny nezahájené a nedokončené úlohy, které jsou jim specificky přiřazeny. Je to užitečné ve společnostech, kde jsou úkoly někdy nebo vždy přiděleny konkrétním pracovníkům (lidské zdroje) namísto jiných typů zdrojů (jako jsou stroje).
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Karta Moje úlohy v rozhraní pro provádění výrobního provozu*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Povolení používání numerické klávesnice na přihlašovací stránce
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Tato stránka umožní správcům přidat ovládací prvek číselné klávesnice na přihlašovací stránku pro rozhraní provádění výrobního provozu. Pracovníci se pak mohou přihlásit pomocí numerické klávesnice a zadat své identifikační číslo nebo osobní číslo.
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Povolení používání numerické klávesnice na přihlašovací stránce*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 
 Chcete-li vytvořit a udržovat konfigurace provedení výrobního provozu, přejděte na **Řízení výroby \> Nastavení \> Provádění výroby \> Konfigurace provádění výrobního provozu**. Na stránce **Konfigurace provádění výrobního provozu** se nachází seznam existujících konfigurací. Na této stránce můžete provést následující akce:
@@ -161,6 +182,7 @@ Na záložce s náhledem **Obecné** jsou k dispozici následující nastavení:
 - **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne*, pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Rozhraní se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano*, pracovníci zůstanou přihlášení k rozhraní provedení výrobního provozu. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco rozhraní provedení výrobního provozu nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
 - **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne*, místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano*, pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano*, kde pracovníci často zůstávají přihlášeni delší dobu.
 - **Jeden pracovník** – Nastavte tuto možnost na *Ano*, pouze pokud jeden pracovník používá každé rozhraní provedení výrobního provozu, kde je tato konfigurace aktivní. Pokud je tato možnost nastavena na *Ano*, možnost **Zamknout zaměstnance** je automaticky nastavena na *Ano*. Tohle nastavení navíc odebere požadavek (a schopnost) pracovníka přihlásit se pomocí ID znaku (nebo jiného podobného ID). Místo toho se pracovník přihlásí do Microsoft Dynamics 365 Supply Chain Management pomocí systémového uživatelského účtu propojeného s účtem *časově registrovaný pracovník* (z tabulky *pracovníci*) a současně se přihlásí k rozhraní provedení výrobního provozu jako tento pracovník.
+- **Povolit numerickou klávesnici** – Nastavte tuto možnost na *Ano* pro přidání numerické klávesnice na přihlašovací obrazovku, která umožňuje pracovníkům zadat své identifikační číslo nebo osobní číslo pomocí numerické klávesnice na dotykové obrazovce. Tuto možnost nastavte na *Ne*, chcete-li skrýt číselnou klávesnici.
 - **Povolit uzamčení dotykové obrazovky** – Nastavte tuto možnost na *Ano*, aby pracovníci mohli zamknout dotykovou obrazovku rozhraní provedení výrobního provozu, aby ji mohli dezinfikovat. Když je tato možnost nastavena na *Ano*, na přihlašovací stránku je přidáno tlačítko **Zamknout obrazovku kvůli dezinfekci**. Když pracovník vybere toto tlačítko, dotykový displej se dočasně zamkne, aby se zabránilo neúmyslnému zadání. Zobrazí se také odpočítávání. Pracovník může nyní bezpečně vyčistit zařízení a obrazovku. Po skončení odpočítávání se dotykový displej automaticky odemkne.
 - **Doba trvání uzamčení obrazovky** – Když je možnost **Povolit uzamčení dotykové obrazovky** nastavena na *Ano*, použijte tuto možnost pro zadání počtu sekund, po které by měla být dotyková obrazovka uzamčena pro dezinfekci. Doba trvání musí být mezi 5 a 120 sekundami.
 - **Generovat registrační značku** – Nastavením této možnosti na *Ano* vygenerujete novou registrační značku pokaždé, když pracovník použije rozhraní provedení výrobního provozu k vykázání dokončené práce. Registrační značka vozidla je generována z číselné posloupnosti nastavené na stránce **Parametry řízení skladu**. Při nastavení této možnosti na *Ne* musí pracovníci při vykazování dokončené práce uvést existující registrační značku.

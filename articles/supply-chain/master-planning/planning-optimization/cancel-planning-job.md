@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900934"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741169"
 ---
 # <a name="cancel-a-planning-job"></a>Zrušení plánovací úlohy
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900934"
 
 V aplikaci Microsoft Dynamics 365 Supply Chain Management můžete zrušit aktivní plánovací úlohy, která používá funkci optimalizace plánování. Pokud v dialogovém okně vyberete možnost **Zrušit**, když je úloha optimalizace plánování spuštěna přímo z uživatelského rozhraní (ne na pozadí), nebude úloha optimalizace plánování stornována. I v případě, že se zobrazí upozornění typu "Operace byla zrušena", budete přesto potřebovat následující postup pro zrušení úlohy plánování s optimalizací plánování.
 
-
-Chcete-li zrušit aktivní plánovací úlohu, postupujte podle následujících kroků. 
+Chcete-li zrušit aktivní plánovací úlohu, postupujte podle následujících kroků.
 
 > [!NOTE]
 > Lze zrušit pouze aktivní úlohy.
@@ -45,18 +44,6 @@ Stav úlohy bude **Probíhá zrušení**, dokud služba optimalizace plánován�
 
 > [!NOTE]
 > Chcete-li zobrazit změny stavu, je nutné aktualizovat stránku výběrem tlačítka **Aktualizovat**.
-
-## <a name="additional-resources"></a>Další zdroje
-
-[Přehled optimalizace plánování](planning-optimization-overview.md)
-
-[Začínáme s optimalizací plánování](get-started.md)
-
-[Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-
-[Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
-
-[Použití filtrů v plánu](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335368"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740461"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerance zpoždění (záporné dny)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ Systém spojuje výpočet tolerance zpoždění s *nejbližším datem doplněn�
 Tento vzorec zajišťuje, že hlavní plánování nevytváří nové objednávky dodávek, pokud existuje dostatečná zásoba během doby realizace produktu.
 
 > [!NOTE]
-> Výpočet tolerance zpoždění v Optimalizaci plánování vždy používá výpočet dynamických záporných dnů z integrovaného hlavního plánování. Nastavení **Použít dynamické záporné dny** na stránce **Parametry hlavního plánování** nemá na toto chování žádný vliv.
+> Výpočet tolerance zpoždění v Optimalizaci plánování vždy používá výpočet dynamických záporných dnů ze zastaralého modulu hlavního plánování. Nastavení **Použít dynamické záporné dny** na stránce **Parametry hlavního plánování** nemá na toto chování žádný vliv.
 
 Pokud stávající nabídka implikuje zpoždění poptávky, které je menší nebo rovné vypočítané toleranci zpoždění, Optimalizace plánování spojí stávající nabídku s poptávkou. V některých případech je lepší odložit poptávku, než skončit s nadměrnou dodávkou.
 

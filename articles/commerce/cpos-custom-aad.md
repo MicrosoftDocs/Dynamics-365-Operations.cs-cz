@@ -2,22 +2,19 @@
 title: Konfigurace CPOS tak, aby používal vlastní aplikaci Azure AD
 description: Tento článek vysvětluje, jak nakonfigurovat Cloud POS (CPOS), aby používal vlastní aplikaci Azure Active Directory (Azure AD).
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222963"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746253"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>Konfigurace CPOS tak, aby používal vlastní aplikaci Azure AD
 
@@ -52,6 +49,9 @@ Chcete-li vytvořit a nakonfigurovat vlastní aplikaci maloobchodního serveru v
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Nastavení vlastní aplikace CPOS v Azure AD
 
+> [!IMPORTANT]
+> Pokud upgradujete stávající vlastní aplikaci CPOS Azure AD, která byla vytvořena před verzí Commerce 10.0.21, postupujte podle kroků v [Upgradujte stávající vlastní aplikaci CPOS Azure AD vytvořenou před komerční verzí 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Chcete-li vytvořit a nakonfigurovat vlastní aplikaci CPOS v Azure AD, postupujte následovně.
 
 1. Přihlaste se do [centra pro správu Azure Active Directory](https://aad.portal.azure.com) pomocí uživatelského účtu Azure AD. Uživatelský účet nemusí mít oprávnění správce.
@@ -68,12 +68,25 @@ Chcete-li vytvořit a nakonfigurovat vlastní aplikaci CPOS v Azure AD, postupuj
 1. V části **Manifest** nastavte parametry **oauth2AllowIdTokenImplicitFlow** a **oauth2AllowImplicitFlow** na **true** a poté vyberte **Uložit**.
 1. V části **Konfigurace tokenu** postupujte takto a přidejte dvě deklarace identity:
 
-    - Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **ID** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
-    - Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **Přístup** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
+    1. Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **ID** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
+    1. Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **Přístup** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
 
 1. V části **Oprávnění API** vyberte **Přidat oprávnění**.
 1. Na kartě **API, která používá moje organizace** vyhledejte aplikaci maloobchodního serveru, které jste vytvořili v části [Nastavení vlastní aplikace maloobchodního serveru v Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Poté vyberte **Přidat oprávnění**.
 1. V části **Přehled** si poznamenejte hodnotu v poli **ID aplikace (klienta)**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Upgradujte stávající vlastní aplikaci CPOS Azure AD vytvořenou před verzí Commerce 10.0.21
+
+Chcete-li upgradovat stávající vlastní aplikaci CPOS Azure AD vytvořenou před verzí Commerce 10.0.21, postupujte následovně. 
+
+1. V portálu Azure otevřete vlastní aplikaci CPOS Azure AD.
+1. Vyberte kartu **Ověřování**.
+1. Zkopírujte a uložte původní URI přesměrování z typu **Web** pro pozdější použití a poté jej odstraňte.
+1. Vyberte **Přidat platformu** a poté vyberte **Jednostránková aplikace (SPA)**.
+1. Přidejte původní URI webového přesměrování zkopírované výše do platformy SPA.
+1. V části **Konfigurace tokenu** postupujte takto a přidejte dvě deklarace identity:
+    1. Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **ID** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
+    1. Vyberte **Přidat volitelnou deklaraci identity**. Nastavte pole **Typ tokenu** a **Přístup** a poté vyberte deklaraci identity **sid**. Vyberte **přidat**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Aktualizace konfiguračního souboru CPOS
 
