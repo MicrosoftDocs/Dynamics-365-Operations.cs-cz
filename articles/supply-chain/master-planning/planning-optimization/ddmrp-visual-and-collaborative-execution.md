@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689769"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740816"
 ---
 # <a name="visual-and-collaborative-execution"></a>Vizuální a společné provádění
 
@@ -34,7 +34,7 @@ V Microsoft Dynamics 365 Supply Chain Management můžete vizuálně sledovat, j
 1. Vyberte uvolněnou položku, která je nastavena jako bod oddělení. (Další informace naleznete v tématu [Umístění zásob](ddmrp-inventory-positioning.md).)
 1. V podokně akcí na kartě **Plánování** vyberte **Disponibilita položky**.
 1. Na stránce **Disponibilita položky** vyberte záznam disponibility položky, který vytvoří bod oddělení. (Tento záznam zobrazí název skupiny disponibility, která je nastavena tak, aby vytvořila body oddělení.)
-1. Vyberte kartu **Na skladě**. Tato karta obsahuje graf, který ukazuje, jak se množství na skladě měnilo v průběhu času, spolu s hodnotou na skladě, která byla zaznamenána za určité období pokaždé, když je spuštěna optimalizace plánování. Karta také obsahuje tabulku, která ukazuje, do které z následujících kategorií spadá každá zaznamenaná úroveň:
+1. Vyberte kartu **Na skladě**. Tato karta obsahuje graf, který ukazuje, jak se množství na skladě měnilo v průběhu času, spolu s hodnotou na skladě, která byla zaznamenána za určité období pokaždé, když je spuštěno hlavní plánování. Karta také obsahuje tabulku, která ukazuje, do které z následujících kategorií spadá každá zaznamenaná úroveň:
 
     - **Kriticky nízké** – Méně než polovina minima za dané období.
     - **Nízký** – Mezi polovinou minima a minimem.

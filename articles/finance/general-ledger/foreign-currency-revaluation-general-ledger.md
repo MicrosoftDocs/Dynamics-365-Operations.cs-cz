@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904521"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752796"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
@@ -64,7 +64,9 @@ Proces přecenění lze spustit pro jednu nebo více právnických osob. Vyhled�
 
 Přecenění lze spustit pro jednu nebo více cizích měn. Vyhledávání bude obsahovat všechny měny, které byly zaúčtovány v rozsahu data relevantním pro daný typ hlavního účtu právnické osoby, které jsou vybrány k přecenění (rozvaha nebo zisk a ztráta). Zúčtovací měna bude zařazena do seznamu, ale nic nebude oceněno, pokud je vybrána zúčtovací měna. 
 
-Nastavte **Náhled před zaúčtováním** na **Ano**, pokud chcete zkontrolovat výsledek přecenění hlavní knihy. Náhled v hlavní knize se liší od simulace v přecenění cizí měny pohledávek a závazků. Simulace v AR a AP je sestava, ale hlavní kniha má náhled, který lze zaúčtovat, aniž by bylo nutné znovu spustit proces přecenění. Náhled výsledků lze exportovat do aplikace Microsoft Excel, chcete-li uchovat historii způsobu výpočtu částek. Nelze použít dávkové zpracování, pokud chcete zobrazit výsledky přecenění. Z náhledu má uživatel možnost zaúčtovat výsledky všech právnických osob pomocí tlačítka **Zaúčtovat**. Pokud existuje problém s výsledky pro právnickou osobu, uživatel má možnost zaúčtovat dílčí sadu právnických osob pomocí tlačítka **Vybrat právnické osoby k zaúčtování**. 
+Nastavte **Náhled před zaúčtováním** na **Ano**, pokud chcete zkontrolovat výsledek přecenění hlavní knihy. Náhled v hlavní knize se liší od simulace v přecenění cizí měny pohledávek a závazků. Simulace v AR a AP je sestava, ale hlavní kniha má náhled, který lze zaúčtovat, aniž by bylo nutné znovu spustit proces přecenění. Náhled výsledků lze exportovat do aplikace Microsoft Excel, chcete-li uchovat historii způsobu výpočtu částek. Nelze použít dávkové zpracování, pokud chcete zobrazit výsledky přecenění. Z náhledu má uživatel možnost zaúčtovat výsledky všech právnických osob pomocí tlačítka **Zaúčtovat**. Pokud existuje problém s výsledky pro právnickou osobu, uživatel má možnost zaúčtovat dílčí sadu právnických osob pomocí tlačítka **Vybrat právnické osoby k zaúčtování**.
+
+Pokud byste chtěli vyloučit úpravy, které byly zaúčtovány pomocí **Deníku úprav měny vykazování** z procesu přecenění, nastavte **Vyloučit úpravy vykazovací měny** na **Ano**. Ve výchozím nastavení jsou do přecenění zahrnuty úpravy vykazované měny. 
 
 Po dokončení procesu přecenění cizí měny bude vytvořen záznam, který bude sledovat historii každé spuštění.  Bude vytvořen samostatný záznam pro každou právnickou osobu a účtovací vrstvu.
 

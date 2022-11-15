@@ -1,6 +1,6 @@
 ---
-title: Čisté požadavky a informace o doložení s Optimalizací plánování
-description: Tento článek poskytuje informace o vypočítaných čistých požadavcích a informacích o doložení v Optimalizaci plánování.
+title: Čisté požadavky a informace o doložení
+description: Tento článek poskytuje informace o vypočítaných čistých požadavcích a informacích o doložení.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888521"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748431"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Čisté požadavky a informace o doložení s Optimalizací plánování
+# <a name="net-requirements-and-pegging-information"></a>Čisté požadavky a informace o doložení
 
 [!include [banner](../../includes/banner.md)]
 
-Když spustíte hlavní plánování v Optimalizaci plánování, je důležité, abyste porozuměli jeho výstupu, jak stávající nabídka pokrývá poptávku a proč byla vytvořena konkrétní nabídka. Na stránce **Čisté požadavky** můžete lépe porozumět vypočítaným požadavkům, které vytváří hlavní plánování.
+Když spustíte hlavní plánování, je důležité, abyste porozuměli jeho výstupu, jak stávající nabídka pokrývá poptávku a proč byla vytvořena konkrétní nabídka. Na stránce **Čisté požadavky** můžete lépe porozumět vypočítaným požadavkům, které vytváří hlavní plánování.
 
-Stránka **Čisté požadavky** zobrazuje čisté požadavky, které pro produkt vypočítá Optimalizace plánování. Ukazuje také nastavení disponibility, která byla použita za běhu hlavního plánování, rozpis součtů požadavků podle typu transakce a informace o doložení.
+Stránka **Čisté požadavky** zobrazuje čisté požadavky, které pro produkt vypočítá hlavní plánování. Ukazuje také nastavení disponibility, která byla použita za běhu hlavního plánování, rozpis součtů požadavků podle typu transakce a informace o doložení.
 
 ## <a name="open-the-net-requirements-page"></a>Otevření stránky Čisté požadavky
 
@@ -64,8 +64,8 @@ Dolní část stránky obsahuje následující karty:
 V podokně akcí jsou k dispozici následující příkazy:
 
 - **Aktualizovat \> Hlavní plánování** – Spustit hlavní plánování přímo ze stránky **Čisté požadavky**.
-- **Aktualizovat \> Plánování prognóz** – Spustit plánování prognózy přímo ze stránky **Čisté požadavky**. Optimalizace plánování zatím tuto operaci nepodporuje.
-- **Aktualizovat \> Plánování kontinuity** - Spustit plánování kontinuity přímo ze stránky **Čisté požadavky**. Optimalizace plánování zatím tuto operaci nepodporuje.
+- **Aktualizovat \> Plánování prognóz** – Spustit plánování prognózy přímo ze stránky **Čisté požadavky**. Optimalizace plánování tuto operaci nepodporuje.
+- **Aktualizovat \> Plánování kontinuity** - Spustit plánování kontinuity přímo ze stránky **Čisté požadavky**. Optimalizace plánování tuto operaci nepodporuje.
 
 ## <a name="example-scenario"></a>Příklad
 
@@ -133,8 +133,6 @@ Dále otevřete stránku **Čisté požadavky** pro produkt *1000* a zkontrolujt
     ![Informace doložení o prodejní objednávce](media/pegging-planned-purchase-order.png "Informace doložení o prodejní objednávce")
 
 > [!NOTE]
-> Protože Optimalizace plánování zatím některé funkce nepodporuje, nejsou typy požadavků *Pojistná zásoba* a *Dávka s ukončenou životností* součástí stránky **Čisté požadavky**. Další informace naleznete v tématu [Analýza shody optimalizace plánování](planning-optimization-fit-analysis.md)
->
-> Pokud používáte integrovaný hlavní plánovací modul, jsou podporovány dávkově řízené produkty. U dávkově řízených produktů je inventář, jehož platnost vypršela, zobrazen na stránce **Čisté požadavky**, ale není doložen o požadavky poptávky. Řádky zásob s vypršenou platností tohoto typu jsou zobrazeny jako řádky požadavků *Dávka s ukončenou životností* na stránce **Čisté požadavky**.
+> Požadavek *Pojistná zásoba* není zahrnut na stránce **Čisté požadavky**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
