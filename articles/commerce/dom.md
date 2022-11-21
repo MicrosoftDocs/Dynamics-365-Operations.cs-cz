@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878505"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764172"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -68,9 +68,9 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
         > [!NOTE]
         > Zjednodušený řešitel je poskytnut proto, aby maloobchodníci mohli vyzkoušet funkci distribuované správy objednávek bez nasazení speciální licence. Organizace by neměly používat zjednodušeného řešitele v provozních prostředích.
         >
-        > Řešitel výroby zlepšuje výkon (například počet objednávek a řádků objednávek, které lze zpracovat při jednom spuštění) a konvergenci výsledků (jelikož dávka objednávek nemusí v některých scénářích vytěžit nejlepší výsledky). Řešitele výroby vyžadují některá pravidla, například **Částečné objednávky** nebo **Maximální počet míst**.
+        > Řešitel výroby zlepšuje výkon (například počet objednávek a řádků objednávek, které lze zpracovat při jednom spuštění) a konvergenci výsledků (jelikož dávka objednávek nemusí v některých scénářích vytěžit nejlepší výsledky). Pravidlo **Dílčí objednávky** vyžaduje Řešitele výroby.
 
-6. Přejděte zpět na **Retail a Commerce \> Distribuovaná správa objednávek \> Nastavení \> Parametry distribuované správy objednávek**.
+6. Přejděte zpět na **Maloobchod a obchod \> Distribuovaná správa objednávek \> Nastavení \> Parametry DOM**.
 7. Na kartě **Číselné řady** přiřaďte požadované číselné řady různým entitám distribuované správy objednávek.
 
     > [!NOTE]

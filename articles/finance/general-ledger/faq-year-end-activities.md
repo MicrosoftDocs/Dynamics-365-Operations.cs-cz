@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
-ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
+ms.openlocfilehash: a25f20c320b905a2cdd3091e76e3c5e73f1a845a
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9751924"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752741"
 ---
 # <a name="year-end-activities-faq"></a>Časté dotazy k aktivitám na konci roku 
 
@@ -94,6 +94,23 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
  
 - Modul: Hlavní kniha
 - Název funkce: Vylepšení výkonu opětovného vytváření sad finančních dimenzí
+
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2022"></a>Závazky: Jaké proběhly změny na podporu vykazování formulářem 1099 na konci roku 2022?
+
+#### <a name="update-to-all-1099-forms"></a>Aktualizace všech formulářů 1099
+Ve všech formulářích 1099 byly pro zdaňovací období 2022 provedeny následující změny:
+
+  - V roce 2021 byl na formulářích 1099 stanoven rok. Od roku 2022 se rok vyplňuje podle sestavy. 
+
+#### <a name="1099-misc"></a>1099-MISC
+Ve formuláři 1099-MISC byly pro zdaňovací období 2022 provedeny následující úpravy:
+
+ - Pole 13: Nyní označuje požadavek na vyplnění zákona o dodržování daňových předpisů u zahraničních účtů (FATCA). 
+ - Pole 14: Nyní se používá pro vykazování nadměrných plateb tzv. zlatého padáku. 
+ - Pole 15: Nyní se používá pro vykazování plateb v rámci nekvalifikovaných plánů odloženého odměňování (NQDC). 
+ - Pole 16: Nyní se používá pro hlášení státem sražených daní.
+ - Pole 17: Nyní se používá k uvedení čísla státu plátce.
+ - Pole 18: Nyní se používá pro vykazování státních příjmů. 
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Závazky: Jaké proběhly změny na podporu vykazování formulářem 1099 na konci roku 2021?
 

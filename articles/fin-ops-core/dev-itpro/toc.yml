@@ -1652,6 +1652,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Přiřazení uživatelů k rolím zabezpečení
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Skupiny zabezpečení služby Active Directory
+                  href: sysadmin/active-directory-security-group.md
                 - name: Import nebo export přizpůsobené konfigurace zabezpečení pomocí správy dat
                   href: sysadmin/import-export-customized-security.md
                 - name: Diagnostika zabezpečení pro záznamy úkolů

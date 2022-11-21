@@ -590,6 +590,8 @@
                           href: dev-itpro/adyen-connector-faq.md
                         - name: "Konfigurace služby Google Pay s\_terminálem Adyen"
                           href: dev-itpro/google-pay-adyen.md
+                        - name: "Nastavení služby Apple Pay s\_terminálem Adyenem"
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: "Odstranění potíží s\_aplikací Dynamics 365 Payment Connector pro Adyen"
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: "Uložení online platebních nástrojů s\_konektorem Adyen"
@@ -598,10 +600,12 @@
                       href: adyen_redirect.md
                     - name: Vyhrazené platební terminály a výzvy pro tiskárnu a zásuvku s hotovostí
                       href: pos-multi-hws.md
-                    - name: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
+                    - name: "Snadný offline přepínač pro operace dárkového poukazu a\_dobropisu"
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Nastavení scénářů plateb faktur
                       href: payinvoice.md
+                    - name: "Zálohy v\_aplikaci Dynamics 365 Commerce"
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Zabránění duplicitním platbám
                       href: duplicate-payment-protection.md
                     - name: Přehled omnikanálových plateb

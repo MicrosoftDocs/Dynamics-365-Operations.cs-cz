@@ -1188,9 +1188,11 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Sledování mezi vypořádáním hlavní knihy a uzávěrkou na konci roku
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatizace vyrovnání hlavní knihy
+                  href: general-ledger/auto-settle.md
                 - name: Přecenění cizí měny pro hlavní knihu
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Účetní zůstatky hlavní knihy
+                - name: Zůstatky na účtu hlavní knihy
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Zpracování deníku přidělení hlavní knihy
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
