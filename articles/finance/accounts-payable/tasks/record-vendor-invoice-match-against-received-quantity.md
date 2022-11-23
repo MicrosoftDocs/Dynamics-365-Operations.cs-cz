@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109911"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778673"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Zaznamenání faktury dodavatele a spárování s přijatým množstvím
 
@@ -32,7 +32,7 @@ Tato procedura používá ukázkovou společnost USMF. Manažer závazků nebo o
 
 
 ## <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
-1. Přejděte na Všechny nákupní objednávky.
+1. Přejděte na **Všechny nákupní objednávky**.
 2. Klepněte na možnost **Nový**.
 3. V poli **Účet dodavatele** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 4. Zadejte hodnotu do pole **Účet dodavatele**.

@@ -2,23 +2,23 @@
 title: Import dat pobočky ze souborů
 description: Tento článek vysvětluje, jak připravit data z externích systémů tak, aby je bylo možné importovat do Microsoft Dynamics 365 Finance.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 10/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 494f6396d5e6fab6fef9404ad473566b02b1b9ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846763"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780089"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Import dat pobočky ze souborů
 
@@ -32,27 +32,27 @@ Tento článek vysvětluje, jak připravit data z externích systémů tak, aby 
 3. Exportujte data do souboru podle pokynů v postupu „Proces importu / exportu dat“ v [Přehledu úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md). Tento postup můžete použít ke konsolidaci dat z jiné instance Dynamics 365 Finance nebo z Dynamics 365 Business Central. Pokud importujete data z externích systémů, musí být data ve formátu popsaném v [Exportu dat dceřiné společnosti do souborů](export-subsidiary-data-to-file.md).
 4. Přejděte na **Konsolidace \> Online konsolidace**. Na stránce **Konsolidace s importem** na kartě **Kritéria** zadejte podrobnosti sestavy nebo importu nastavením následujících polí.
 
-    | Pole                                 | Hodnota pro sestavu | Hodnota pro import |
-    |---------------------------------------|----------------------|----------------------|
-    | popis                           | Nelze použít | Zadejte popis identifikující import. |
-    | Hlavní účet                          | Definujte rozsah účtů, které by měl přehled obsahovat. Pokud nedefinujete rozsah, budou zahrnuty všechny účty. | Definujte rozsah účtů, které by měl import obsahovat. Pokud nedefinujete rozsah, budou zahrnuty všechny účty. |
-    | Období konsolidace                  | Definujte rozsah dat, která chcete konsolidovat. | Definujte rozsah dat, která chcete konsolidovat. |
-    | Zahrnout skutečné částky                | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné hodnoty. | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné hodnoty. |
-    | Zahrnout rozpočtové částky                | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. |
-    | Znovu sestavte zůstatky během konsolidace | Tuto možnost nastavte na **Ano**, pokud by proces opětovného sestavení měl zcela vyčistit zůstatek a nové záznamy a znovu vytvořit zůstatek od počátku. | Tuto možnost nastavte na **Ano**, pokud by proces opětovného sestavení měl zcela vyčistit zůstatek a nové záznamy a znovu vytvořit zůstatek od počátku. |
-    | Rozpočtové modely                         | Nelze použít | Pokud jste se rozhodli importovat částky rozpočtu, zadejte rozpočtové modely, které chcete konsolidovat. |
-    | Typ rozpočtové sazby                      | Nelze použít | Zadejte typ směnného kurzu rozpočtu. |
+| Pole                                 | Hodnota pro sestavu | Hodnota pro import |
+|---------------------------------------|----------------------|----------------------|
+| **popis**                      | Nelze použít | Zadejte popis identifikující import. |
+| **Hlavní účet**    | Definujte rozsah účtů, které by měl přehled obsahovat. Pokud nedefinujete rozsah, budou zahrnuty všechny účty. | Definujte rozsah účtů, které by měl import obsahovat. Pokud nedefinujete rozsah, budou zahrnuty všechny účty. |
+    | **Období konsolidace**                  | Definujte rozsah dat, která chcete konsolidovat. | Definujte rozsah dat, která chcete konsolidovat. |
+    | **Zahrnout skutečné částky**                | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné hodnoty. | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné hodnoty. |
+| **Zahrnout rozpočtové částky** | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. |
+| **Znovu sestavte zůstatky během konsolidace** | Tuto možnost nastavte na **Ano**, pokud by proces opětovného sestavení měl zcela vyčistit zůstatek a nové záznamy a znovu vytvořit zůstatek od počátku. | Tuto možnost nastavte na **Ano**, pokud by proces opětovného sestavení měl zcela vyčistit zůstatek a nové záznamy a znovu vytvořit zůstatek od počátku. |
+| **Rozpočtové modely**                         | Nelze použít | Pokud jste se rozhodli importovat částky rozpočtu, zadejte rozpočtové modely, které chcete konsolidovat. |
+    | **Typ rozpočtové sazby**                      | Nelze použít | Zadejte typ směnného kurzu rozpočtu. |
 
 6. Pokud máte různé účetní měny, použijte pole na kartě **Převod měn** pro konfiguraci převodu, který se provádí během konsolidace.
 
     | Pole                      | popis |
     |----------------------------|-------------|
-    | Zdrojová právnická osoba        | Vyberte právnickou osobu, ze které importujete. |
-    | Zúčtovací měna zdroje | Tato výchozí měna je měna přidružená ke zdrojové právnické osobě, kterou jste vybrali v poli **Zdrojová právnická osoba**. |
-    | Účty od do       | Definujte rozsah účtů, které se mají importovat ze zdrojové právnické osoby. |
-    | Typ směnného kurzu         | Vyberte typ směnného kurzu. Typy směnných kurzů jsou přiřazeny při vytváření hlavního účtu. Další informace naleznete v tématu [Vytvoření hlavního účtu](tasks/create-main-account.md). |
-    | Použít směnný kurz z   | Zadejte datum pro použití směnného kurzu platného k tomuto datu. Případně zadejte hodnotu, která by měla být použita jako směnný kurz. |
-    | Směnný kurz              | Výchozí hodnota závisí na typu směnného kurzu, který jste vybrali v poli **Typ směnného kurzu**. Pokud jste zadali uživatelem definovaný směnný kurz, můžete definovat kurz. |
+ | **Zdrojová právnická osoba**        | Vyberte právnickou osobu, ze které importujete. |
+ | **Zúčtovací měna zdroje** | Tato výchozí měna je měna přidružená ke zdrojové právnické osobě, kterou jste vybrali v poli **Zdrojová právnická osoba**. |
+ | **Účty od** a **Do**       | Definujte rozsah účtů, které se mají importovat ze zdrojové právnické osoby. |
+    | **Typ směnného kurzu**         | Vyberte typ směnného kurzu. Typy směnných kurzů jsou přiřazeny při vytváření hlavního účtu. Další informace naleznete v tématu [Vytvoření hlavního účtu](tasks/create-main-account.md). |
+| **Použít směnný kurz z**   | Zadejte datum pro použití směnného kurzu platného k tomuto datu. Případně zadejte hodnotu, která by měla být použita jako směnný kurz. |
+| **Směnný kurz**  | Výchozí hodnota závisí na typu směnného kurzu, který jste vybrali v poli **Typ směnného kurzu**. Pokud jste zadali uživatelem definovaný směnný kurz, můžete definovat kurz. |
 
 7. Nastavte možnost **Spustit na pozadí** na **Ano**, chcete-li umožnit spuštění procesu importu na pozadí.
 8. Nastavte možnost **Dávkové zpracování** na **Ano**, chcete-li spustit konsolidaci jako dávkovou úlohu v konkrétní čas. Chcete-li konsolidaci spustit okamžitě, vyberte **OK**. 

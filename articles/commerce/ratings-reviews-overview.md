@@ -2,24 +2,19 @@
 title: Přehled hodnocení a recenzí
 description: Tento článek se týká hodnocení a recenzí v aplikaci Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268993"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785128"
 ---
 # <a name="ratings-and-reviews-overview"></a>Přehled hodnocení a recenzí
 
@@ -43,7 +38,12 @@ Následující ilustrace znázorňuje, jak funguje řešení hodnocení a recenz
 
 Řešení hodnocení a recenze také poskytuje šablonu Business Intelligence (BI), která obsahuje sadu metrik, která poskytuje přehledy hodnocení a recenzí. Data hodnocení a recenze lze exportovat pro další analýzu.
 
-## <a name="additional-resources"></a>Další zdroje
+Následující video poskytuje přehled funkcí hodnocení a recenzí v Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Připojení k používání hodnocení a recenzí](opt-in-ratings-reviews.md)
 

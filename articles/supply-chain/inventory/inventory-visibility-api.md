@@ -2,7 +2,7 @@
 title: Veřejné rozhraní API Inventory Visibility
 description: Tento článek popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
-ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
+ms.openlocfilehash: 8b0b8ca261237fbb2190f2a94cc11b816ae05af5
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9719308"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762827"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejné rozhraní API Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-
 
 Tento článek popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
 
@@ -36,38 +35,38 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 
 | Cesta | Metoda | popis |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Zaúčtovat | [Vytvoří jednu událost změny ve skladu](#create-one-onhand-change-event) |
+| /api/environment/{environmentId}/onhand | Zaúčtovat | [Vytvoří jednu událost změny ve skladu](#create-one-onhand-change-event)|
 | /api/environment/{environmentId}/onhand/bulk | Zaúčtovat | [Vytvoří více změnových událostí](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Zaúčtovat | [Nastaví/přepíše množství na skladě](#set-onhand-quantities) |
-| /api/environment/{environmentId}/onhand/reserve | Zaúčtovat | [Vytvoří jednu rezervační událost](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Zaúčtovat | [Vytvoří více rezervačních událostí](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Zaúčtovat | [Vrátí jednu rezervační událost](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Zaúčtovat | [Vrátí více rezervačních událostí](#reverse-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/reserve | Zaúčtovat | [Vytvoření jedné události předběžné rezervace](#create-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/reserve/bulk | Zaúčtovat | [Vytvoří více událostí předběžné rezervace](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Zaúčtovat | [Vrátí jednu událost předběžné rezervace](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Zaúčtovat | [Vrátí více událostí předběžné rezervace](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Zaúčtovat | [Vytvoří jednu plánovanou změnu ve skladu](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Zaúčtovat | [Vytvoří více plánovaných změn ve skladu](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Zaúčtovat | [Dotaz pomocí metody POST](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Zaúčtovat | [Vytvoří více změn ve skladu s daty](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/indexquery | Zaúčtovat | [Dotaz pomocí metody POST](#query-with-post-method) (doporučeno) |
 | /api/environment/{environmentId}/onhand | Získat | [Dotaz pomocí metody GET](#query-with-get-method) |
 | /api/environment/{environmentId}/onhand/exactquery | Zaúčtovat | [Přesný dotaz pomocí metody POST](#exact-query-with-post-method) |
-| /api/environment/{environmentId}/allocation/allocate | Zaúčtovat | [Vytvoří jednu událost přidělení](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/unallocate | Zaúčtovat | [Vytvoří jednu událost zrušení přidělení](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/reallocate | Zaúčtovat | [Vytvoří jednu událost změny přidělení](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/consume | Zaúčtovat | [Vytvoří jednu událost spotřeby](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/query | Zaúčtovat | [Dotaz na výsledek přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/allocate | Zaúčtovat | [Vytvoří jednu událost přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/unallocate | Zaúčtovat | [Vytvoří jednu událost zrušení přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/reallocate | Zaúčtovat | [Vytvoří jednu událost změny přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/consume | Zaúčtovat | [Vytvoří jednu událost spotřeby](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/query | Zaúčtovat | [Dotaz na výsledek přidělení](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
-> Součástí cesty {environmentId} je ID prostředí v Microsoft Dynamics Lifecycle Services (LCS).
+> Součástí cesty {environmentId} je ID prostředí v Microsoft Dynamics Lifecycle Services.
 > 
 > Hromadné API může vrátit maximálně 512 záznamů pro každý požadavek.
 
 Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
+## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a><a name = "endpoint-lcs"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
 
 Mikroslužba Viditelnost zásob je nasazena v prostředí Microsoft Azure Service Fabric, ve více geografických oblastech a více regionech. V současné době neexistuje centrální koncový bod, který by mohl automaticky přesměrovat váš požadavek na odpovídající geografickou oblast a region. Proto musíte tyto informace sestavit do adresy URL pomocí následujícího vzorce:
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-Krátký název regionu najdete v prostředí Microsoft Dynamics Lifecycle Services (LCS). V následující tabulce jsou uvedeny regiony, které jsou aktuálně k dispozici.
+Krátký název regionu najdete v prostředí Lifecycle Services. V následující tabulce jsou uvedeny regiony, které jsou aktuálně k dispozici.
 
 | Oblast Azure        | Krátký název oblasti |
 | ------------------- | ----------------- |
@@ -83,16 +82,26 @@ Krátký název regionu najdete v prostředí Microsoft Dynamics Lifecycle Servi
 | Velká Británie – západ             | wuk               |
 | Východní Japonsko          | ejp               |
 | Západní Japonsko          | wjp               |
-| Jižní Brazílie        | sbr               |
-| Střed USA – jih    | scus              |
+| Centrální Indie       | cin               |
+| Indie – jih         | sin               |
+| Švýcarsko - sever   | nch               |
+| Švýcarsko – západ    | wch               |
+| Francie – jih        | sfr               |
+| Východní Asie           | eas               |
+| Jihovýchodní Asie     | seas              |
+| Spojené arabské emiráty – sever           | nae               |
+| Norsko – východ         | eno               |
+| Norsko – západ         | wno               |
+| Jižní Afrika – západ   | wza               |
+| Jižní Afrika – sever  | nza               |
 
-Číslo ostrova je místo, kde je vaše prostředí LCS nasazeno v prostředí Service Fabric. V současné době neexistuje žádný způsob, jak tyto informace získat na straně uživatele.
+Číslo ostrova je místo, kde je vaše prostředí Lifecycle Services nasazeno v prostředí Service Fabric. V současné době neexistuje žádný způsob, jak tyto informace získat na straně uživatele.
 
 Společnost Microsoft vytvořila uživatelské rozhraní (UI) v Power Apps, abyste mohli získat úplný koncový bod mikroslužby. Více informací najdete v části [Vyhledání koncového bodu služby](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Ověřování
 
-Token zabezpečení platformy se používá k volání veřejného API Viditelnosti zásob. Proto musíte token _token Azure Active Directory (Azure AD)_ vygenerovat pomocí aplikace Azure AD. Poté musíte token Azure AD použít k získání _přístupového tokenu_ od služby zabezpečení.
+Token zabezpečení platformy se používá k volání veřejného API Viditelnosti zásob. Proto musíte *token Azure Active Directory (Azure AD)* vygenerovat pomocí vaší aplikace Azure AD. Poté musíte token Azure AD použít k získání *přístupového tokenu* od služby zabezpečení.
 
 Společnost Microsoft poskytuje integrovanou kolekci pro získání tokenů *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -101,63 +110,63 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
 1. Přihlaste se na portál Azure a použijte jej k vyhledání hodnot `clientId` a `clientSecret` pro vaši aplikaci Dynamics 365 Supply Chain Management.
 1. Načtěte token Azure AD (`aadToken`) odesláním požadavku HTTP s následujícími vlastnostmi:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
-   - **Metoda:** `GET`
-   - **Obsah těla (údaje formuláře):**
+    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
+    - **Metoda:** `GET`
+    - **Obsah těla (údaje formuláře):**
 
-     | Klíč           | Hodnota                                            |
-     | ------------- | -------------------------------------------------|
-     | id klienta     | ${aadAppId}                                      |
-     | tajný klíč klienta | ${aadAppSecret}                                  |
-     | typ grantu    | client_credentials                               |
-     | rozsah         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
+        | Klíč           | Hodnota                                            |
+        | ------------- | -------------------------------------------------|
+        | id klienta     | ${aadAppId}                                      |
+        | tajný klíč klienta | ${aadAppSecret}                                  |
+        | typ grantu    | client_credentials                               |
+        | rozsah         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
-   V odpovědi byste měli obdržet token Azure AD (`aadToken`). Výsledek by měl vypadat podobně jako v následujícím příkladu.
+    V odpovědi byste měli obdržet token Azure AD (`aadToken`). Výsledek by měl vypadat podobně jako v následujícím příkladu.
 
-   ```json
-   {
-       "token_type": "Bearer",
-       "expires_in": "3599",
-       "ext_expires_in": "3599",
-       "access_token": "eyJ0eX...8WQ"
-   }
-   ```
+    ```json
+    {
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "access_token": "eyJ0eX...8WQ"
+    }
+    ```
 
 1. Formulujte požadavek JSON (JavaScript Object Notation), který se podobá následujícímu příkladu.
 
-   ```json
-   {
-       "grant_type": "client_credentials",
-       "client_assertion_type": "aad_app",
-       "client_assertion": "{Your_AADToken}",
-       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "{$LCS_environment_id}",
-       "context_type": "finops-env"
-   }
-   ```
+    ```json
+    {
+        "grant_type": "client_credentials",
+        "client_assertion_type": "aad_app",
+        "client_assertion": "{Your_AADToken}",
+        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "{$LCS_environment_id}",
+        "context_type": "finops-env"
+    }
+    ```
 
-   Mějte na paměti následující body:
+    Mějte na paměti následující body:
 
-   - Hodnotou `client_assertion` musí být token Azure AD (`aadToken`), který jste obdrželi v předchozím kroku.
-   - Hodnota `context` musí být ID prostředí LCS, do kterého chcete doplněk nasadit.
-   - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
+    - Hodnotou `client_assertion` musí být token Azure AD (`aadToken`), který jste obdrželi v předchozím kroku.
+    - Hodnota `context` musí být ID prostředí Lifecycle Services, do kterého chcete doplněk nasadit.
+    - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
 
 1. Načtěte přístupový token (`access_token`) odesláním požadavku HTTP s následujícími vlastnostmi:
 
-   - **URL:** `https://securityservice.operations365.dynamics.com/token`
-   - **Metoda:** `POST`
-   - **Záhlaví HTTP:** Včetně verze API. (Klíč je`Api-Version` a hodnota je`1.0` .)
-   - **Obsah těla:** Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
+    - **URL:** `https://securityservice.operations365.dynamics.com/token`
+    - **Metoda:** `POST`
+    - **Záhlaví HTTP:** Včetně verze API. (Klíč je`Api-Version` a hodnota je`1.0` .)
+    - **Obsah těla:** Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
 
-   V odpovědi byste měli obdržet přístupový token (`access_token`). Tento token musíte použít jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
+    V odpovědi byste měli obdržet přístupový token (`access_token`). Tento token musíte použít jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
 
-   ```json
-   {
-       "access_token": "{Returned_Token}",
-       "token_type": "bearer",
-       "expires_in": 3600
-   }
-   ```
+    ```json
+    {
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 3600
+    }
+    ```
 
 > [!IMPORTANT]
 > Když použijete kolekci požadavků *Postman* k volání veřejných rozhraní API viditelnosti zásob, musíte pro každý požadavek přidat token nositele. Token nositele najdete takto: vyberte kartu **Autorizace** pod adresou URL požadavku, vyberte typ **Token nositele** a zkopírujte přístupový token, který byl načten v posledním kroku. V dalších částech tohoto článku použijete `$access_token` jako token, který byl načten v posledním kroku.
@@ -178,10 +187,12 @@ Následující tabulka sumarizuje význam každého pole v těle JSON.
 | `productId` | Identifikátor produktu. |
 | `quantities` | Množství, o které se musí změnit skladové množství. Pokud je například do police přidáno 10 nových knih, bude tato hodnota `quantities:{ shelf:{ received: 10 }}`. Pokud budou tři knihy odstraněny z police nebo prodány, bude tato hodnota `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | Zdroj dat dimenzí použitých v události změny publikování změny a dotazu. Pokud zadáte zdroj dat, můžete použít vlastní dimenze ze zadaného zdroje dat. Viditelnost zásob může konfiguraci dimenze použít k mapování vlastních dimenzí na obecné výchozí dimenze. Pokud není zadána hodnota `dimensionDataSource`, můžete ve svých dotazech použít pouze obecné [základní dimenze](inventory-visibility-configuration.md#data-source-configuration-dimension). |
-| `dimensions` | Dynamický pár klíč/hodnota. Hodnoty jsou namapovány na některé dimenze v Supply Chain Management. Můžete však také přidat vlastní dimenze (např ._Zdroj_) k označení, zda událost pochází ze Supply Chain Management nebo z externího systému. |
+| `dimensions` | Dynamický pár klíč/hodnota. Hodnoty jsou namapovány na některé dimenze v Supply Chain Management. Můžete však také přidat vlastní dimenze (např .*Zdroj*) k označení, zda událost pochází ze Supply Chain Management nebo z externího systému. |
 
 > [!NOTE]
 > Parametry `siteId` a `locationId` tvoří [ konfiguraci oddílu](inventory-visibility-configuration.md#partition-configuration). Proto je musíte zadat v dimenzích, když vytváříte události změny zásob na skladě, nastavujete nebo přepisujete množství v ruce nebo vytváříte události rezervace.
+
+Následující podčásti poskytují příklady, které ukazují, jak tato rozhraní API používat.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Vytvoření jedné události změny ve skladu
 
@@ -214,17 +225,17 @@ Body:
     }
 ```
 
-Následující příklad ukazuje ukázkový obsah těla. V této ukázce odešlete událost změny pro produkt *T-shirt* (tričko). Tato událost je ze systému pokladního místa (POS) a zákazník vrátil červené tričko zpět do vašeho obchodu. Tato událost zvýší množství produktu *T-shirt* o 1.
+Následující příklad ukazuje ukázkový obsah těla. V tomto příkladu má společnost systém POS (pokladní místo), který zpracovává transakce v obchodě, a tedy změny zásob. Zákazník vrátil do vašeho obchodu červené tričko. Pro tuto změnu zaúčtujete jednu událost změny pro produkt *Tričko*. Tato událost zvýší množství produktu *T-shirt* o 1.
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
+    "id": "Test201",
+    "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "posMachineId": "0001",
         "colorId": "red"
     },
@@ -240,12 +251,12 @@ Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "id": "Test202",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "colorId": "red"
     },
     "quantities": {
@@ -258,7 +269,14 @@ Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Vytvoření více změnových událostí
 
-Toto API může vytvářet více záznamů současně. Jediné rozdíly mezi tímto API a [API pro jednu událost](#create-one-onhand-change-event) jsou hodnoty `Path` a `Body`. U tohoto API obsahuje `Body` pole záznamů. Maximální počet záznamů je 512, což znamená, že rozhraní API pro hromadné změny může podporovat až 512 událostí změn najednou.
+Toto rozhraní API může vytvářet události změn, stejně jako [rozhraní API pro jednu událost](#create-one-onhand-change-event). Jediný rozdíl je, že toto rozhraní API může vytvářet více záznamů současně. Proto se hodnoty `Path` a `Body` liší. U tohoto API obsahuje `Body` pole záznamů. Maximální počet záznamů je 512. Rozhraní API pro hromadné změny množství na skladě proto může podporovat až 512 událostí změn najednou. 
+
+Například POS v maloobchodě zpracoval následující dvě transakce:
+
+- Jedna vratka jednoho červeného trička
+- Jedna prodejní transakce tří černých triček
+
+V tomto případě můžete zahrnout obě aktualizace zásob do jednoho volání API.
 
 ```txt
 Path:
@@ -295,26 +313,27 @@ Následující příklad ukazuje ukázkový obsah těla.
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_1",
+        "id": "Test203",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "posSite1",
-            "posLocationId": "posLocation1",
+            "SiteId": "Site1",
+            "LocationId": "11",
             "posMachineId&quot;: &quot;0001"
+            "colorId&quot;: &quot;red"
         },
         "quantities": {
             "pos": { "inbound": 1 }
         }
     },
     {
-        "id": "654321",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_2",
+        "id": "Test204",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensions": {
-            "siteId": "iv_postman_site",
-            "locationId": "iv_postman_location",
+            "siteId": "1",
+            "locationId": "11",
             "colorId&quot;: &quot;black"
         },
         "quantities": {
@@ -326,7 +345,7 @@ Následující příklad ukazuje ukázkový obsah těla.
 
 ## <a name="setoverride-on-hand-quantities"></a><a name="set-onhand-quantities"></a>Nastavení/přepis množství na skladě
 
-API _Set on-hand_ přepíše aktuální data pro zadaný produkt.
+API *Set on-hand* přepíše aktuální data pro zadaný produkt. Tato funkce se obvykle používá k aktualizaci počítání zásob. Například během denního počítání zásob může obchod zjistit, že skutečné zásoby červených triček na skladě jsou 100. Proto musí být příchozí množství POS aktualizováno na 100 bez ohledu na to, jaké bylo předchozí množství. Toto rozhraní API můžete použít k přepsání stávající hodnoty.
 
 ```txt
 Path:
@@ -364,18 +383,19 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
+        "id": "Test204",
+        "organizationId": "usmf",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "iv_postman_site",
-            "posLocationId": "iv_postman_location",
+            "SiteId": "1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": {
-                "inbound": 1
+                "inbound": 100
             }
         }
     }
@@ -384,7 +404,7 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
 
 ## <a name="create-reservation-events"></a>Vytvoření rezervačních událostí
 
-Chcete-li použít API *Reserve*, musíte zapnout funkci rezervace a dokončit konfiguraci rezervace. Další informace viz [Konfigurace rezervace (volitelná)](inventory-visibility-configuration.md#reservation-configuration).
+Chcete-li použít API *Reserve*, musíte zapnout funkci rezervace a dokončit konfiguraci rezervace. Další informace (včetně datového toku a ukázkového scénáře) viz [Konfigurace rezervace (volitelné)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Vytvoření jedné rezervační události
 
@@ -392,7 +412,7 @@ Je možné provést rezervaci proti různým nastavením zdroje dat. Chcete -li 
 
 Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
 
-Pokud chcete vrátit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření. K dispozici je také vyhrazené nerezervované API, které dělá totéž. Rozdíl je pouze ve způsobu volání těchto dvou API. Je snazší zvrátit konkrétní událost rezervace pomocí `reservationId` s API *unreserve*. Další informace naleznete v části [_Zrušit jednu událost rezervace_](#reverse-reservation-events).
+Pokud chcete vrátit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření. K dispozici je také vyhrazené nerezervované API, které dělá totéž. Rozdíl je pouze ve způsobu volání těchto dvou API. Je snazší zvrátit konkrétní událost rezervace pomocí `reservationId` s API *unreserve*. Další informace naleznete v části [Zrušit jednu událost rezervace](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -593,7 +613,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Dotaz na zásoby na skladě
 
-Rozhraní API *Query on-hand* (dotaz na zásoby na skladě) se používá k načítání aktuálních skladových dat vašich produktů. Toto rozhraní API aktuálně podporuje dotazování až 5000 jednotlivých položek podle hodnoty `productID`. V každém dotazu také může být zadáno více hodnot `siteID` a `locationID`. Maximální limit je definován následující rovnicí:
+Rozhraní API *Query on-hand* (dotaz na zásoby na skladě) se používá k načítání aktuálních skladových dat vašich produktů. Toto rozhraní API můžete použít, kdykoli potřebujete znát skladové zásoby, například když chcete zkontrolovat stav zásob produktů na webu elektronického obchodu nebo když chcete zkontrolovat dostupnost produktu v různých regionech nebo v okolních obchodech a skladech. Toto rozhraní API aktuálně podporuje dotazování až 5000 jednotlivých položek podle hodnoty `productID`. V každém dotazu také může být zadáno více hodnot `siteID` a `locationID`. Maximální limit je definován následující rovnicí:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -637,16 +657,16 @@ Parametr `returnNegative` určuje, zda výsledky obsahují záporné položky.
 > [!NOTE]
 > Pokud jste povolili časový plán změn ve skladu a funkce Lze slíbit, váš dotaz může také zahrnovat logický parametr `QueryATP`, který řídí, zda výsledky dotazu obsahují informace funkce Lze slíbit. Další informace a příklady najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
 
-Následující příklad ukazuje ukázkový obsah těla.
+Následující příklad ukazuje ukázkový obsah těla. Ukazuje, že můžete dotazovat na zásoby na skladě z více míst (skladů).
 
 ```json
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "organizationId": ["usmf"],
+        "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "locationId": ["11","12","13"],
         "colorId": ["red"]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -659,10 +679,10 @@ Následující příklad ukazuje, jak dotazovat všechny produkty na konkrétní
 ```json
 {
     "filters": {
-        "organizationId": ["SCM_IV"],
+        "organizationId": ["usmf"],
         "productId": [],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "siteId": ["1"],
+        "locationId": ["11"],
     },
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
@@ -692,6 +712,22 @@ Zde je ukázka adresy URL. Tento GET požadavek je přesně stejný jako ukázka
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
+
+## <a name="on-hand-exact-query"></a><a name="exact-query-with-post-method"></a>Přesný dotaz na zásoby na skladě
+
+Přesné dotazy na zásoby na skladě se podobají běžným dotazům na zásoby na skladě, ale umožňují vám určit hierarchii mapování mezi webem a umístěním. Například máte následující dvě lokality:
+
+- Lokalita 1, která je mapována na umístění A
+- Lokalita 2, která je mapována na umístění B
+
+Pro běžný dotaz na zásoby na skladě, pokud zadáte `"siteId": ["1","2"]` a `"locationId": ["A","B"]`, Viditelnost inventáře se automaticky dotáže na výsledek pro následující lokality a umístění:
+
+- Lokalita 1, umístění A
+- Lokalita 1, umístění B
+- Lokalita 2, umístění A
+- Lokalita 2, umístění B
+
+Jak vidíte, běžný dotaz na zásoby na skladě nerozpozná, že umístění A existuje pouze na lokalitě 1 a umístění B existuje pouze na lokalitě 2. Proto vytváří nadbytečné dotazy. Chcete-li se přizpůsobit tomuto hierarchickému mapování, můžete použít přesný dotaz a určit mapování umístění v těle dotazu. V tomto případě zadáte dotaz a obdržíte výsledky pouze pro web 1, umístění A a web 2, umístění B.
 
 ### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a>Přesný dotaz pomocí metody POST
 

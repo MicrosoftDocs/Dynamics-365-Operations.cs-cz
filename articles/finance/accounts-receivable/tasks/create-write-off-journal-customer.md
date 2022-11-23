@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713664"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775292"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Vytvoření odpisového deníku pro odběratele
 
@@ -48,9 +48,9 @@ Tento průvodce úkolem znázorňuje, jak nastavit parametry pro odpisy a potom 
 7. Přejděte na **Navigační podokno > Moduly > Hlavní kniha > Položky deníku > Hlavní deníky**.
 8. Vyberte číslo dávky deníku pro deník, který obsahuje váš odpis. Je vytvořen jeden řádek pro storno zůstatku odběratele. Jeden nebo více řádků jsou vytvořeny pro zaúčtování odpisů na účet odpisu.  
 9. Zavřete stránku.
-10. Zavřete stránku.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Odpisové transakce z inkasního formuláře.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Odpisové transakce z inkasní stránky
 1. Přejděte do nabídky **Kredit a inkasa > Inkasa > Splatné zůstatky**.
 2. Vyberte jméno odběratele, který obsahuje transakce, které chcete odepsat. Vyberte například Cave Wholesales (US-004).
 3. Označte řádek pro první transakci.
@@ -63,7 +63,7 @@ Tento průvodce úkolem znázorňuje, jak nastavit parametry pro odpisy a potom 
 10. Přejděte do nabídky **Hlavní kniha > Položky deníku > Hlavní deníky**.
 11. Vyberte číslo dávky deníku pro deník, který obsahuje váš odpis. Je vytvořen jeden řádek pro storno zůstatku odběratele. Jeden nebo více řádků jsou vytvořeny pro zaúčtování odpisů na účet odpisu.  
 12. Zavřete stránku.
-13. Zavřete stránku.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Odepsání faktury ze stránky Otevřené faktury odběratelů
 1. Přejděte na **Navigační podokno > Moduly > Pohledávky > Faktury > Otevřené faktury odběratele**.

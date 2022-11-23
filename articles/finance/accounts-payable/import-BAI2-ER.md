@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752713"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759593"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Nastavte pokročilý import bankovního odsouhlasení pomocí elektronického výkaznictví
 
@@ -34,9 +34,12 @@ Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické ban
 2. Na dlaždici pro poskytovatele konfigurace **Microsoft** vyberte **Úložiště**.
 3. Vyberte **Globální** a potom vyberte **Otevřít**.
 4. Pokud je nutné vytvořit připojení k úložišti, vyberte v dialogovém okně modrý odkaz.
-5. V seznamu konfigurace najděte **Rozšířený model bankovního výpisu odsouhlasení \> formát ABR BAI2**..
+5. V seznamu konfigurace najděte **Rozšířený model bankovního výpisu odsouhlasení \> formát ABR BAI2**.
 6. Vyberte formát **BAI2**.
 7. Na pevné záložce **Verze** zvolte nejnovější verzi a poté zvolte **Importovat**.
+
+>[!NOTE]
+>**Model bankovního výpisu BAI2** bude později učiněn zastaralým. 
 
 ## <a name="set-up-the-bank-statement-format"></a>Nastavte formát bankovních výpisů
 

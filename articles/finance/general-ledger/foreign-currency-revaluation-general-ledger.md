@@ -2,25 +2,25 @@
 title: Přecenění cizí měny pro hlavní knihu
 description: Tento článek obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
 author: kweekley
-ms.date: 06/20/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 96ae50e339c63687a4c8114d3c965123fd5e37ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752796"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779981"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
@@ -38,27 +38,27 @@ Po spuštění procesu přecenění budou zůstatky na jednotlivých hlavních �
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Příprava na spuštění přecenění cizí měny
 Před spuštěním procesu přecenění je nutné provést následující nastavení.
 
--   Na stránce **Hlavní účet** proveďte toto:
--   Pokud má být hlavní účet přeceněn v hlavní knize, vyberte možnost **Přecenění cizí měny**. Pokud by neměl být hlavní účet přeceněn (například konkrétní pohledávky a závazky, pokud jsou přeceněny ve vedlejších knihách), zrušte zaškrtnutí tohoto políčka.
--   Pokud je označen hlavní účet pro přecenění, zadejte **typ směnného kurzu**. Tento typ směnného kurzu se použije pro přecenění hlavního účtu. Po finanční vykazování je k dispozici samostatné pole **Typ směnného kurzu finančního výkaznictví**. Tato dvě pole nejsou synchronizována, což umožňuje použití různých typů směnných kurzů pro přecenění a vykazování.
+Na stránce **Hlavní účet** proveďte toto:
+ - Pokud má být hlavní účet přeceněn v hlavní knize, vyberte možnost **Přecenění cizí měny**. Pokud by neměl být hlavní účet přeceněn (například konkrétní pohledávky a závazky, pokud jsou přeceněny ve vedlejších knihách), zrušte zaškrtnutí tohoto políčka.
+ - Pokud je označen hlavní účet pro přecenění, zadejte **typ směnného kurzu**. Tento typ směnného kurzu se použije pro přecenění hlavního účtu. Po finanční vykazování je k dispozici samostatné pole **Typ směnného kurzu finančního výkaznictví**. Tato dvě pole nejsou synchronizována, což umožňuje použití různých typů směnných kurzů pro přecenění a vykazování.
 
--   Na stránce **Hlavní kniha** udělejte toto:
--   Určete **Typ směnného kurzu**. Pokud není definován typ směnného kurzu pro hlavní účet, použije se tento typ směnného kurzu při přecenění cizí měny.
--   Zadejte účty pro realizovaný zisk, realizovanou ztrátu, nerealizovaný zisk a nerealizovanou ztrátu k přecenění měny. Účty pro realizovaný zisk a realizovanou ztrátu se používají při vypořádávání transakcí pohledávek a závazků a účty pro nerealizovaný zisk a nerealizovanou ztrátu se používají pro přecenění otevřených transakcí a hlavních účtů hlavní knihy.
+Na stránce **Hlavní kniha** udělejte toto:
+ - Určete **Typ směnného kurzu**. Pokud není definován typ směnného kurzu pro hlavní účet, použije se tento typ směnného kurzu při přecenění cizí měny.
+ - Zadejte účty pro realizovaný zisk, realizovanou ztrátu, nerealizovaný zisk a nerealizovanou ztrátu k přecenění měny. Účty pro realizovaný zisk a realizovanou ztrátu se používají při vypořádávání transakcí pohledávek a závazků a účty pro nerealizovaný zisk a nerealizovanou ztrátu se používají pro přecenění otevřených transakcí a hlavních účtů hlavní knihy.
 
--   Na stránce **Účty přecenění měny** udělejte toto:
--   Vyberte různé účty přecenění měny pro každou měnu a společnosti. Pokud nejsou definovány žádné účty, budou použity účty ze stránky **Hlavní kniha**.
+Na stránce **Účty přecenění měny** udělejte toto:
+ - Vyberte různé účty přecenění měny pro každou měnu a společnosti. Pokud nejsou definovány žádné účty, budou použity účty ze stránky **Hlavní kniha**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Zpracování přecenění cizí měny
 Po dokončení nastavení použijte stránku **Přecenění cizí měny** k přecenění transakcí a zůstatků na hlavních účtech. Proces můžete spustit v reálném čase nebo naplánovat jeho spuštění použitím dávky. 
 
 Na stránce **Přecenění cizí měny** se zobrazí historie pro každý proces přecenění včetně údaje, kdy byl proces spuštěn, jaká kritéria byla definována, odkazu na doklad vytvořený pro přecenění a záznam, pokud předchozí přecenění byla stornována. Spusťte proces přecenění klepnutím na tlačítko **Přecenění cizí měny**. 
 
-Hodnoty **Od data** a **Do data** definují interval dat pro výpočet zůstatku cizí měny, který bude přeceněný. Při přeceňování účtů zisků a ztrát jsou přeceněny všechny transakce (součet) provedené v časovém intervalu. Pokud přeceňujete rozvahové účty, počáteční datum je ignorováno. Místo toho je určen zůstatek k přecenění od začátku fiskálního roku dosud. 
+Hodnoty **Od data** a **Do data** definují interval dat pro výpočet zůstatku cizí měny, který bude přeceněný. Při přeceňování účtů zisků a ztrát jsou přeceněny všechny transakce (součet) provedené v časovém intervalu. Pokud přeceňujete rozvahové účty, **Datum od** je ignorováno. Místo toho je určen zůstatek k přecenění od začátku fiskálního roku **dosud**. 
 
 Pole **Datum sazby** lze použít k definování data, pro které by měl být výchozí směnný kurz. Například můžete přecenit zůstatky mezi rozsahem dat z 1. na 31. ledna, ale pomocí směnného kurzu definovaného pro 1. únor. 
 
-Vyberte hlavní účty k přecenění: všechny, rozvahový účet nebo účet zisků a ztrát. Pouze hlavní účty označené pro přecenění (na hlavní stránce účtu) budou přeceněny. Pokud chcete dále omezit rozsah hlavních účtů, použijte kartu Záznamy **k zahrnutí** pro definování rozsahu hlavních účtů nebo jednotlivých hlavních účtů. 
+Vyberte hlavní účty k přecenění: všechny, rozvahový účet nebo účet zisků a ztrát. Pouze hlavní účty označené pro přecenění (na stránce **Hlavní účet**) budou přeceněny. Pokud chcete dále omezit rozsah hlavních účtů, použijte kartu **Záznamy k zahrnutí** pro definování rozsahu hlavních účtů nebo jednotlivých hlavních účtů. 
 
 Proces přecenění lze spustit pro jednu nebo více právnických osob. Vyhledávání se zobrazí pouze pro právnické osoby, ke kterým máte přístup. Vyberte právnické osoby, u kterých chcete spustit proces přecenění. 
 
@@ -68,7 +68,7 @@ Nastavte **Náhled před zaúčtováním** na **Ano**, pokud chcete zkontrolovat
 
 Pokud byste chtěli vyloučit úpravy, které byly zaúčtovány pomocí **Deníku úprav měny vykazování** z procesu přecenění, nastavte **Vyloučit úpravy vykazovací měny** na **Ano**. Ve výchozím nastavení jsou do přecenění zahrnuty úpravy vykazované měny. 
 
-Po dokončení procesu přecenění cizí měny bude vytvořen záznam, který bude sledovat historii každé spuštění.  Bude vytvořen samostatný záznam pro každou právnickou osobu a účtovací vrstvu.
+Po dokončení procesu přecenění cizí měny bude vytvořen záznam, který bude sledovat historii každé spuštění. Bude vytvořen samostatný záznam pro každou právnickou osobu a účtovací vrstvu.
 
 ## <a name="calculate-unrealized-gainloss"></a>Výpočet nerealizovaných zisků/ztrát
 Transakce nerealizovaných zisků/ztrát jsou vytvořeny odlišně mezi přeceněním hlavní knihy a procese přecenění pohledávek a závazků. V pohledávkách a závazcích jsou předchozí přecenění zcela stornována (za předpokladu, že není dosud vyrovnána transakce) a je vytvořena nová transakce přecenění pro nerealizované zisky/ztráty podle nového směnného kurzu. Je to proto, že přeceňujeme každou jednotlivou transakce pohledávek a závazků. V hlavní knize nejsou stornována předchozí přecenění. Namísto toho je vytvořena transakce pro rozdíl mezi zůstatkem hlavního účtu, včetně všech předchozích částek přecenění a novou hodnotou na základě směnného kurzu pro datum sazby. 
@@ -82,8 +82,8 @@ Transakce nerealizovaných zisků/ztrát jsou vytvořeny odlišně mezi přecen�
 Hlavní účet je přeceněn dne 31. ledna  Nerealizovaný zisk nebo ztráta se vypočte takto:
 
 | Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
+|--------------------|---------------------------|----------------------------------|------------------------------------|-----------------------------|
+| 500 EUR            | 1000 USD                  | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
 
 Bude vytvořena následující účetní položka.
 
@@ -95,8 +95,8 @@ Bude vytvořena následující účetní položka.
 Žádné nové transakce nejsou zaúčtovány v měsíci únoru.  Hlavní účet je přeceněn dne 28. února.
 
 | Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | Zisk 416,67 (1250 – 833.33) |
+|---------------------------------------|-----------------------------------|-------------------------------|--------------------|-----------------------------|
+| 500 EUR                 | 833,33 USD (1000 - 166,67)       | 250.0000              | 1250 USD (500 x 2,5)               | Zisk 416,67 (1250 – 833.33) |
 
 Bude vytvořena následující účetní položka.
 

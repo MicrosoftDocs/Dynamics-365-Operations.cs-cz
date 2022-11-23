@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715490"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780470"
 ---
 # <a name="correct-a-free-text-invoice"></a>Oprava faktury s volným textem
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715490"
 
 Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.
 
-Pokud chcete upravit volnou fakturu, která již byla zaúčtována, otevřete ji. Na stránce **Faktura** vyberte možnost **Zrušit** a poté vyberte možnost **Správná faktura**. Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu. Můžete upravit opravenou fakturu a zaúčtovat ji. 
+Oprava faktury s volným textem, která byla zaúčtována: 
+1. Otevřete zaúčtovanou fakturu s volným textem. 
+2. Na stránce **Faktura** vyberte možnost **Zrušit** a poté vyberte možnost **Správná faktura**. 
+3. Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu.
+4. Můžete upravit opravenou fakturu a zaúčtovat ji. 
 
 Po zaúčtování opravené faktury se vytvoří zrušení faktury pro kreditní částku, která se rovná původní částce faktury. Kombinovaný zůstatek původní faktury a zrušení faktury je tedy 0 (nula). Zrušení faktury je vyrovnáno oproti původní faktuře. 
 

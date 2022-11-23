@@ -2,7 +2,7 @@
 title: Podpora Viditelnosti zásob u položek WMS
 description: Tento článek popisuje podporu Viditelnosti zásob u položek, které jsou povoleny ve skladových procesech (položky WMS).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066603"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762732"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Podpora Viditelnosti zásob u položek WMS
 
@@ -45,17 +45,17 @@ Když použijete funkci Rozšířené WMS pro Viditelnost zásob, všechny výsl
 
 ## <a name="when-to-use-the-feature"></a>Kdy použít tuto funkci
 
-Doporučujeme použít funkci Rozšířené WMS pro Viditelnost inventáře ve scénářích, kde jsou splněny všechny následující podmínky:
+Doporučujeme použít funkci WMS pro Viditelnost inventáře ve scénářích, kde jsou splněny všechny následující podmínky:
 
 - Synchronizujete data Supply Chain Management s Viditelností zásob.
 - Používáte WMS v Supply Chain Management.
-- Uživatelé provádějí rezervace pro položky WMS na jiných úrovních, než je úroveň skladu (například proto, že používáte práci ve skladu).
+- Uživatelé provádějí rezervace pro položky WMS pod úrovní skladu (například na úrovni registrační značky, protože zpracováváte práci ve skladu).
 
 V jiných scénářích budou výsledky dotazů na aktuální zásoby na skladě stejné, bez ohledu na to, zda je povolena funkce Rozšířené WMS pro Viditelnost zásob. Výkon aplikace bude navíc lepší, pokud tuto funkci v těchto scénářích nepovolíte, protože snížíte počet výpočtů a režii.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>Povolení funkce Rozšířené WMS pro Viditelnost zásob
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>Povolení funkce WMS pro Viditelnost zásob
 
-Chcete-li povolit funkci Rozšířené WMS pro Viditelnost zásob, postupujte takto.
+Chcete-li povolit funkci WMS pro Viditelnost zásob, postupujte takto.
 
 1. Přihlaste se do prostředí Supply Chain Management jako správce.
 1. Otevřete pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce v tomto pořadí:
@@ -65,7 +65,7 @@ Chcete-li povolit funkci Rozšířené WMS pro Viditelnost zásob, postupujte ta
 
 1. Přejděte do nabídky **Řízení zásob \> Nastavení \> Parametry integrace Viditelnosti zásob**.
 1. Na kartě **Povolit položky WMS** nastavte možnost **Povolit položky WMS** na *Ano*.
-1. Přihlaste se do Power Apps.
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
 1. Otevřete stránku **Konfigurace** a potom na kartě **Správa funkcí** zapněte funkci *Rozšířené WHS*.
 1. V Supply Chain Management přejděte do uzlu **Řízení zásob \> Periodické úlohy \> Integrace Viditelnosti zásob**.
 1. V podokně akcí vyberte **Zakázat**, chcete-li dočasně zakázat Viditelnost zásob.
@@ -82,21 +82,24 @@ Výsledky z dotazů na položky WMS jsou v podstatě stejné jako výsledky pro 
 - `ReservOrdered`
 - `ReservPhysical`
 
-Všechny ostatní fyzické míry se počítají tak, jak jsou, když je vypnutá funkce Rozšířené WMS pro Viditelnost zásob.
+Všechny ostatní fyzické míry se počítají tak, jak jsou, když je vypnutá funkce WMS pro Viditelnost zásob.
 
 Podrobné informace o tom, jak fungují výpočty množství na skladě WMS u položek WMS, najdete v článku [Rezervace ve správě skladu](https://www.microsoft.com/download/details.aspx?id=43284).
 
-Datové entity exportované do Dataverse zatím nemohou aktualizovat množství u položek WMS. Množství, která jsou zobrazena v datových entitách, jsou správná jak u ne-WMS položek, tak u množství, která nejsou ovlivněna logikou WMS (tj. `AvailPhysical`,`AvailOrdered`,`ReservPhysical` a `ReservOrdered` ve zdroji dat `fno`).
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>Zobrazení seznamu a datová entita pro položky WMS
 
-Změny množství položek WMS, které jsou uloženy ve zdroji dat Supply Chain Management, jsou zakázány. Pokud jde o další funkce Viditelnosti zásob, toto omezení je vynuceno, aby se zabránilo konfliktům.
+Stránka **Předběžné načtení souhrnu viditelnosti zásob** obsahuje zobrazení entity *Výsledky předběžného načtení indexového dotazu na zásoby na skladě*. Na rozdíl od entity *Souhrn zásob* poskytuje entita *Výsledky předběžného načtení indexového dotazu na zásoby na skladě* seznam zásob produktů na skladě spolu s vybranými dimenzemi. Viditelnost zásob synchronizuje předem načtená souhrnná data každých 15 minut.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>Předběžná rezervace položek WMS ve Viditelnosti zásob
+Pokud používáte viditelnost zásob s položkami WMS a chcete zobrazit seznam položek WMS, doporučujeme zapnout funkci *Předem načíst souhrn viditelnosti zásob* (viz také [Předem načíst zjednodušený dotaz na skladové zásoby](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). Odpovídající datová entita v Dataverse ukládá výsledek předběžného načtení dotazu, který se aktualizuje každých 15 minut. Název datové entity je `Onhand Index Query Preload Result`.
 
-Obecně platí, že [předběžné rezervace](inventory-visibility-reservations.md) položek WMS jsou podporovány. Do výpočtů předběžných rezervací můžete zahrnout fyzické míry související s WMS. 
+> [!IMPORTANT]
+> Entita Dataverse je jen ke čtení. Data můžete zobrazit a exportovat v entitách Viditelnost zásob, ale **nemůžete je upravit**.
 
-Známým omezením je nemožnost použít výpočet *k dispozici pro rezervaci* u položek WMS. Pokud tedy existuje rezervace nad aktuálními dimenzemi, kde dochází k předběžné rezervaci, výpočet *k dispozici pro rezervaci* je nesprávný. Předběžné rezervace nebudou ovlivněny, když je v [rozhraní API pro předběžné rezervace](inventory-visibility-api.md#create-one-reservation-event) zakázána možnost **ifCheckAvailForReserv**.
+Změny množství položek WMS, které jsou uloženy ve zdroji dat Supply Chain Management (`fno`), jsou zakázány. Toto chování odpovídá chování ostatních funkcí viditelnosti zásob. Toto omezení je vynuceno, aby se zabránilo konfliktům.
 
-Toto omezení platí také pro funkce a přizpůsobení, které jsou založeny na předběžných rezervacích (jako je alokace).
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>Kompatibilita položek WMS pro další funkce ve viditelnosti zásob
+
+Jsou podporovány [předběžné rezervace](inventory-visibility-reservations.md) a [alokace zásob](inventory-visibility-allocation.md) položek WMS. Do výpočtů předběžných rezervací a alokací můžete zahrnout fyzické míry související s WMS.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Výpočet množství, která lze slíbit
 

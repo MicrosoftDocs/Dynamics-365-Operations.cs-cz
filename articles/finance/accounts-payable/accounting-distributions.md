@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
-ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
+ms.openlocfilehash: 4330c86ee9ae35ce0f2c7bb85db533a39eafac46
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588946"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779574"
 ---
 # <a name="accounting-distributions"></a>Rozúčtování
 
@@ -51,7 +51,7 @@ Obecné možnosti rozúčtování poskytují následující možnosti zpracován
     -   Můžete zobrazit účetní stav aktuálního dokumentu v položce **Odkaz**. Stav se týká celého dokumentu a určuje, zda je dokument nedokončený nebo dokončený.
 -   **Zobrazit distribuce** – zobrazení rozúčtování pro všechny řádky a peněžní částky v dokumentu. V tomto zobrazení nelze rozúčtování upravit.
 
-Ve verzi 10.0.13 byla přidána funkce, která ověřuje distribuční tabulku účetnictví, aby bylo zajištěno, že jsou nová pole správně nastavena. Tato funkce se nazývá **Povolit další ověření dat pro dokumenty pomocí rámce účetnictví zdrojových dokumentů**. Tato funkce bude standardně zapnuta ve verzi 10.0.29. 
+Byla přidána funkce, která ověřuje distribuční tabulku účetnictví, aby bylo zajištěno, že jsou nová pole správně nastavena. Tato funkce se nazývá **Povolit další ověření dat pro dokumenty pomocí rámce účetnictví zdrojových dokumentů**. Tato funkce byla standardně zapnuta ve verzi 10.0.29. 
 
 Více informací naleznete v části [Rozúčtování a záznamy v dílčí hlavní knize pro faktury dodavatele](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 

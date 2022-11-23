@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712279"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778404"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Rozúčtování a položky dílčí hlavní knihy pro volné faktury
 
@@ -30,9 +30,9 @@ Rozúčtování slouží k definování, jak budou zaúčtovány částky, např
 
 ## <a name="accounting-distributions"></a>Rozúčtování
 
-Na stránce Volné faktury můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.
+Na stránce **Volné faktury** můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.
 
--   **Distribuovat částky**—Zobrazení a změna rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.
+-   **Distribuovat částky**—Zobrazení a změna rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce **Transakce DPH** nebo na stránce **Transakce nákladů**.
     -   Změna částek v záhlaví volných faktur, například náklady nebo měnové zaokrouhlení částky.
     -   Změna částek na řádcích volné faktury.
 -   **Zobrazit distribuce** – Zobrazení rozúčtování pro všechny řádky v dokumentu. V tomto zobrazení nelze měnit rozúčtování.
@@ -89,7 +89,7 @@ Při vkládání volné faktury budou jednotlivé částky rozděleny následuj�
 </tr>
 <tr class="odd">
 <td>Částka slevy na volné faktuře</td>
-<td>Pole Hlavní účet pro slevy odběratele na stránce strany Platební slevy.</td>
+<td>Pole Hlavní účet pro slevy zákazníka na stránce strany Platební slevy.</td>
 <td><ol>
 <li>Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</li>
 <li>Pokud hlavní účet není účtem přidělení, použijte výchozí šablonu finanční dimenze na řádku volné faktury.</li>
@@ -120,7 +120,7 @@ Při vkládání volné faktury budou jednotlivé částky rozděleny následuj�
 </table>
 
 ## <a name="distributing-taxes"></a>Distribuce daní
-Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování. Při výpočtu DPH je třeba ve formuláři Volná faktura provést jeden z následujících úkolů:
+Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování. Při výpočtu DPH je třeba na stránce **Volná faktura** provést jeden z následujících úkolů:
 -   Zobrazit DPH.
 -   Zobrazit celkový součet faktury.
 -   Zobrazit cashflow.

@@ -2,23 +2,23 @@
 title: Vyrovnání postdatovaného šeku od odběratele
 description: Postdatovaný šek můžete vyrovnat poté, co byl schválen bankou.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 896d19eb9bc53cc4987d7a500f221cca06aa11db
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9e61ac6d6785dd0383d5e5dcaca4cc55bf6deb52
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725366"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780008"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Vyrovnání postdatovaného šeku od odběratele
 
@@ -40,17 +40,17 @@ Role tohoto průvodce úkolem je Pokladník.
 
 Tato procedura používá ukázkovou společnost USMF.
 
-1. Přejděte do nabídky Kredit a inkasa > Dotazy a sestavy > Platby > Postdatované šeky odběratele.
-2. Klikněte na možnost Vyrovnat.
-3. Klikněte na možnost Vyrovnat položky clearingu.
+1. Přejděte do nabídky **Kredit a inkasa > Dotazy a sestavy > Platby > Postdatované šeky odběratele**.
+2. Klikněte na možnost **Vyrovnat**.
+3. Klikněte na možnost **Vyrovnat položky clearingu**.
     * Vyrovnejte účet odběratele pro transakci šeku.  
 4. Zavřete stránku.
-5. Přejděte do nabídky Hlavní kniha > Položky deníku > Hlavní deníky.
-6. Vyberte možnost v poli Zobrazit.
-7. Zaškrtněte políčko Zobrazit pouze uživatelem vytvořené položky nebo jeho zaškrtnutí zrušte.
+5. Přejděte do nabídky **Hlavní kniha > Položky deníku > Hlavní deníky**.
+6. Vyberte možnost v poli **Zobrazit**.
+7. Zaškrtněte políčko **Zobrazit pouze uživatelem vytvořené položky** nebo jeho zaškrtnutí zrušte.
 8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-9. Klikněte na možnost Řádky.
-10. Klikněte na možnost Doklad.
+9. Klikněte na možnost **Řádky**.
+10. Klikněte na možnost **Doklad**.
 11. Zavřete stránku.
 
 

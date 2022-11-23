@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887970"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775161"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Nastavení a zpracování překlenovacích plateb
 
 [!include [banner](../includes/banner.md)]
 
-Překlenovací platba je platba, která se zaúčtuje do hlavní knihy ve dvou krocích. Obvykle se tento přístup používá, když je nastaven způsob platby **Banka** a transakce musíte zaúčtovat na bankovní účet až poté, co byla transakce zúčtována bankou. Můžete jej však použít i pro účet hlavní knihy. V tomto případě systém při zpracování překlenovacího zaúčtování přesune částku z jednoho hlavního účtu na jiný hlavní účet.
+Překlenovací platba je platba, která se zaúčtuje do hlavní knihy ve dvou krocích. Obvykle se tento přístup používá, když je nastaven způsob platby **Banka** a transakce musíte zaúčtovat na bankovní účet až poté, co byla transakce zúčtována bankou. Můžete jej však použít i pro účet hlavní knihy. V tomto případě při zpracování překlenovacího zaúčtování bude částka přesunuta z jednoho hlavního účtu na jiný hlavní účet.
 
 Překlenovací platby můžete vytvořit ze závazků nebo pohledávek. Ačkoli tento článek vysvětluje, jak nakonfigurovat překlenovací účtování pro pohledávky, kroky pro transakce závazků jsou podobné.
 

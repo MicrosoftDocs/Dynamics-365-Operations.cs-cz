@@ -2,7 +2,7 @@
 title: Přecenění měny v konsolidační společnosti
 description: Tento článek popisuje, jak přecenit měnu v konsolidační společnosti.
 author: aprilolson
-ms.date: 10/02/2018
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c05ef0d4d05d5113d3b858dafe49ee9c1c7211d9
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888997"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779655"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Přecenění měny v konsolidační společnosti
 
@@ -39,20 +39,20 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 ## <a name="original-transactions"></a>Původní transakce
 ### <a name="cash-receipt-transactions-in-usmf"></a>Transakce příjmů v hotovosti v USMF
 
-| Datum       | Účet hlavní knihy               | Měna | Částka |
+| Datum       | Účet hlavní knihy               | Měna | Množství |
 |------------|------------------------------|----------|--------|
-| 11. 10. 2015 | 110110 – Hotovost                | USD      | 500    |
-| 11. 10. 2015 | 130100 – Pohledávky | USD      | -500   |
+| 11. 10. 2020 | 110110 – Hotovost                | USD      | 500    |
+| 11. 10. 2020 | 130100 – Pohledávky | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Směnné kurzy
 
-| Z měny | Do měny | Počáteční datum | Směnný kurz |
+| Z měny | Na měnu | Počáteční datum | Směnný kurz |
 |---------------|-------------|------------|---------------|
-| EUR           | USD         | 1. 10. 2015  | 200           |
-| EUR           | USD         | 1. 11. 2015  | 150           |
-| EUR           | USD         | 1. 12. 2012  | 100           |
+| EUR           | USD         | 1. 10. 2020  | 200           |
+| EUR           | USD         | 1. 11. 2020  | 150           |
+| EUR           | USD         | 1. 12. 2017  | 100           |
 
-## <a name="perform-the-consolidation-for-october-2015"></a>Provedení konsolidace pro říjen roku 2015
+## <a name="perform-the-consolidation-for-october-2020"></a>Provedení konsolidace pro říjen roku 2020
 ### <a name="balances-in-the-consolidation-company"></a>Zůstatky v konsolidované společnosti
 
 | Účet hlavní knihy | Měna | Částka | Výpočet    |
@@ -60,7 +60,7 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 | 110110         | EUR      | 250    | 500 USD × 50 %  |
 | 130100         | EUR      | -250   | -500 USD × 50 % |
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a>Provedení přecenění měny pro účty od 1. října 2015 do 30. listopadu 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-november-30-2020"></a>Provedení přecenění měny pro účty od 1. října 2020 do 30. listopadu 2020
 ### <a name="balances-in-the-consolidation-company"></a>Zůstatky v konsolidované společnosti
 
 | Účet hlavní knihy | Měna | Částka  | Výpočet                        |
@@ -72,7 +72,7 @@ Při konsolidaci dat z jedné zúčtovací měny na jinou musíte spustit přece
 
 Zobrazí se další transakce pro částky v měně vykazování.
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a>Provedení přecenění měny pro účty od 1. října 2015 do 31. prosince 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-december-31-2020"></a>Provedení přecenění měny pro účty od 1. října 2020 do 31. prosince 2020
 ### <a name="balances-in-the-consolidation-company"></a>Zůstatky v konsolidované společnosti
 
 | Účet hlavní knihy | Měna | Částka  | Výpočet                                          |

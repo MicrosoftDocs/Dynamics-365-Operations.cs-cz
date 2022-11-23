@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878153"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780465"
 ---
 # <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
@@ -27,8 +27,8 @@ Tento článek vysvětluje, jak vytvořit volné faktury. Pro proceduru použijt
 
 ## <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
-1. Přejděte na **Pohledávky (nebo Prodejní registr) \> Faktury \> Všechny volné faktury**.
-2. Zvolte **Nové**.
+1. Přejděte na **Pohledávky \> Faktury \> Všechny volné faktury**.
+2. Vyberte možnost **Nový**.
 3. V poli **Účet odběratele** vyberte hodnotu.
 
     * Ve výchozím nastavení se jako účet faktury použije účet, který je zvolen jako účet odběratele.

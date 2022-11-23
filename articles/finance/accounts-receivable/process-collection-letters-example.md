@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9022051ce1c99da7ff62e30583a20656c77d89f9
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908147"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778666"
 ---
 # <a name="process-collection-letters-example"></a>Příklad zpracování upomínek
 
@@ -32,11 +32,11 @@ Po dokončení postupujte následovně.
 
 1. Přejděte do **Kredit a výběr \> Upomínka \> Nastavit sekvenci upomínky** a nastavte sekvenci upomínky, jak je znázorněno v následující tabulce, která je přiřazena k profilu odesílání zákazníků.
 
-|     Kód upomínky      |     popis                           |     Měna      |     Hlavní účet        |     Poplatek v měně     |     Minimum přes        |     Blok dní      |
-|---------------------------------  |---------------------------------------    |-----------------  |-----------------------    |-------------------------- |-----------------------    |---------------------  |
-|     Upomínka 1         |     Druhé oznámení s poplatkem        |     USD           |                           |     0,00                  |     0,00                  |     2                 |
-|     Upomínka 2         |     Druhé oznámení s poplatkem        |     USC           |     403150                |     20.00                 |     10.00                 |     3                 |
-|     Kolekce                    |     Poslední oznámení s poplatkem         |     USD           |     403150                |     50.00                 |     100.00                |     15                |
+|   Kód upomínky      |     popis       |     Měna      |     Hlavní účet        |     Poplatek v měně       |   Minimum přes  |   Blok dní        |
+|-----------------------------  |--------------------   |-----------------  |-----------------------    |--------------------   |-----------------------    |------------------ |
+|  Upomínka č.1          |     První oznámení |     USD          |                   |     0,00              |     0,00                  |     2                 |
+|  Upomínka č.2          |     Druhé oznámení s poplatkem      |     USD      |     403150         |     20.00         |     10.00     |     3                 |
+|  Kolekce                   |     Poslední oznámení s poplatkem       |     USD           |     403150    |     50.00         |     100.00                |     15            |
 
 Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vypadaly na stránce **Upomínky**. 
 

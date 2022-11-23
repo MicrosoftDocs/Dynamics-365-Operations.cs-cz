@@ -1,35 +1,37 @@
 ---
 title: Plnění objednávek obchodu
-description: Tento článek poskytuje přehled plnění objednávky obchodu.
+description: Tento článek poskytuje přehled plnění objednávky obchodu v Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854971"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785065"
 ---
 # <a name="store-order-fulfillment"></a>Plnění objednávek obchodu
 
 [!include [banner](includes/banner.md)]
+
+Tento článek poskytuje přehled plnění objednávky obchodu v Microsoft Dynamics 365 Commerce.
 
 Mnoho maloobchodních prodejců by chtělo optimalizovat plnění objednávky tak, že povolí plnění objednávky obchodům. Plnění objednávek na úrovni obchodu může pomoci zmírnit scénáře přeplnění pro konkrétní obchod, nebo může být zapotřebí z logistického hlediska v případech, kdy má obchod dodatečnou kapacitu nebo je umístěn v těsnější vzdálenosti od zákazníka. Aby se vyhovělo této potřebě, je na pokladním místě k dispozici sjednocená operace plnění objednávky.
 
 Objednávky pro plnění v konkrétním obchodě mají sklad obchodu označený v záhlaví nebo řádcích objednávky.
 
 Operace plnění objednávky na pokladním místě poskytuje jediný pracovní prostor v pokladním místě, který lze použít pro zpracování objednávek. To obsahuje vše, od přijetí objednávky až po její označení jako vyexpedované nebo inicializování vyzvednutí v obchodě.
+
+Následující video poskytuje přehled a ukázku funkcí plnění obchodu v Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Přístup k jednotnému plnění objednávky v pokladním místě
 

@@ -2,25 +2,25 @@
 title: Pracovní prostor uzavření finančního období
 description: V tomto článku je přehled pracovního prostoru Uzavření finančního období a příslušné konfigurace.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865705"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780035"
 ---
 # <a name="financial-period-close-workspace"></a>Pracovní prostor uzavření finančního období
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865705"
 
 V tomto článku je přehled pracovního prostoru **Uzávěrka finančního období** a příslušné konfigurace.
 
-Pracovní prostor uzavření finančního období
+## <a name="financial-period-close-workspace"></a>Pracovní prostor uzavření finančního období
 
 Pracovní prostor **Uzavření finančního období** umožňuje sledování procesů finanční uzávěrky různých společností, oblastí a lidí. V závislosti na zobrazení pracovního prostoru **Uzavření finančního období** se zobrazí buď všechny úkoly a stavy pro uzavření plánu nebo pouze úkoly, které vám byly přiřazeny. 
 
@@ -101,7 +101,7 @@ Přiřaďte kalendář, který je vhodný pro plán uzávěrky, k určení praco
 
 Je nutné definovat také společnosti, které budou přidruženy k plánu uzávěrky. Pokud jsou šablony úlohy jsou přiřazeny k více společnostem, pro každou společnost, která je v plánu uzávěrky, bude vytvořen plán uzávěrky, který bude přiřazen k úkolu šablony. 
 
-Po dokončení plánu uzávěrky pro něho vyberte možnost **Uzavřeno**. Historie úloh bude stále k dispozici ze stránky se seznamem **Všechny úkoly uzavření finančního období**, ale plán uzávěrky bude odebrán z pracovního prostoru. Po označení plánu uzávěrky jako **Uzavřeno** nebudete moci přidat upravit nebo zrušit úlohy v tomto plánu.
+Po dokončení plánu uzávěrky vyberte možnost **Uzavřeno**. Historie úloh bude stále k dispozici ze stránky se seznamem **Všechny úkoly uzavření finančního období**, ale plán uzávěrky bude odebrán z pracovního prostoru. Po označení plánu uzávěrky jako **Uzavřeno** nebudete moci přidat upravit nebo zrušit úlohy v tomto plánu.
 
 
 

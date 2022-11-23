@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733435"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760355"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Migrace zákazníků Dynamics 365 Human Resources
 
@@ -38,13 +38,12 @@ Migrace zákazníků je migrování metodou "lift-and-shift" (přesunutí) datab
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Záloha prostředí Dataverse (Sandbox)
 
-1. Volitelné, ale doporučené: Doporučujeme: Obnovte stávající sandboxové prostředí Human Resources pomocí kopie provozního prostředí Human Resources.
-2. [Vytvořte nové prostředí Dataverse](/power-platform/admin/create-environment#create-an-environment-with-a-database) pomocí centra pro správu Power Platform.
+ - Volitelné, ale doporučené: Doporučujeme: Obnovte stávající sandboxové prostředí Human Resources pomocí kopie provozního prostředí Human Resources.
+ - Vytvořte nové prostředí Dataverse pomocí centra pro správu Power Platform.
+ - Zkopírujte existující prostředí Dataverse, které je propojeno se samostatnou aplikací Human Resources, s prostředím, které jste vytvořili v předchozím kroku.
 
-    > [!NOTE]
-    > Když přidáváte databázi, ujistěte se, že je možnost **Povolit aplikace Dynamics 365** nastavena na **Ano**.
-
-3. [Zkopírujte existující prostředí Dataverse](/power-platform/admin/copy-environment), které je propojeno se samostatnou aplikací Human Resources, s prostředím, které jste vytvořili v předchozím kroku.
+> [!NOTE]
+> Když přidáváte databázi, ujistěte se, že je možnost **Povolit aplikace Dynamics 365** nastavena na **Ano**. Podrobné informace viz [Příprava prostředí Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Kapacita Dataverse
 
@@ -89,9 +88,9 @@ Po vytvoření nového projektu Lifecycle Services a dokončení procesu registr
 #### <a name="prepare-a-power-platform-environment"></a>Příprava prostředí Power Platform
 
 > [!NOTE]
-> Tento krok je použitelný pouze pro migraci sandboxového prostředí. Když migrujete provozní prostředí, stávající prostředí centra pro správu Power Platform, které je připojeno k provoznímu prostředí, bude přeneseno dále.
+> Tento krok je použitelný pouze pro migraci sandboxového prostředí. Když migrujete provozní prostředí, stávající prostředí centra pro správu Power Platform, které je připojeno k provoznímu prostředí, bude přeneseno dále. Když přidáváte databázi, ujistěte se, že je tlačítko **Povolit aplikace Dynamics 365** nastaveno na **Ano**. 
 
-- V centru pro správu Power Platform [vytvořte prostředí Power Platform](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) k použití pro migraci sandboxu nebo vybrat existující prostředí.
+- V centru pro správu Power Platform [vytvořte prostředí s databází](/power-platform/admin/create-environment#create-an-environment-with-a-database) k použití pro migraci sandboxu nebo vybrat existující prostředí.
 - [Zkopírujte prostředí](/power-platform/admin/copy-environment) pro obnovení prostředí Power Platform, které se používá pro mapování.
 
 #### <a name="migrate-the-sandbox-environment"></a>Migrace sandboxového prostředí

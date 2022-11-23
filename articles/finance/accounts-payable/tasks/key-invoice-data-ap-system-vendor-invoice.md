@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716796"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775154"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Zadání dat faktur do systému závazků pomocí faktury dodavatele
 
@@ -68,7 +68,10 @@ Tento průvodce záznamem úloh vám pomůže vytvořit fakturu dodavatele z n�
 17. Zadejte číslo do pole **Jednotková cena**. Když nyní odpovídá jednotková cena, stav se aktualizuje na Úspěch. Pokud zásady umožňují nesrovnalosti nebo pokud párování plní pouze funkci upozornění, lze fakturu přesto zaúčtovat.  
 18. Zavřete stránku.
 19. Klikněte na možnost **Zaúčtovat**.
-20. Zavřete formulář. Všimněte si, že nákupní objednávka již není uvedena jako přijatá a nefakturovaná.  
+20. Zavřete stránku. 
+
+>[!Note] 
+>Nákupní objednávka již není uvedena jako přijatá a nefakturovaná.  
 
 
 

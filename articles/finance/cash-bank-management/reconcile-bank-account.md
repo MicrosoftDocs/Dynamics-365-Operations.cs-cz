@@ -2,24 +2,24 @@
 title: Odsouhlasení bankovního účtu
 description: Tento článek popisuje způsob odsouhlasení bankovního účtu.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151244"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779520"
 ---
 # <a name="reconcile-a-bank-account"></a>Odsouhlasení bankovního účtu
 
@@ -29,27 +29,27 @@ Když obdržíte bankovní výpis, měli byste pravidelně odsouhlasit bankovní
 
 V případě, že se některá z plateb šeků nebo vkladových složenek uvedených na výpisu nachází ve stavu **Čekající zrušení**, nemůžete výpis z bankovního účtu odsouhlasit. Pokud kontrolor zaúčtuje nebo zamítne stornování šeku nebo zrušení platby vkladové složenky, platby se již nenachází ve stavu **Čekající zrušení** a bankovní účet je možné odsouhlasit.
 
-1.  Přejděte na **Pokladna a banka** \> **Bankovní účty** \> **Bankovní účty**. Vyberte bankovní účet, který chcete odsouhlasit s bankovním výpisem, a vyberte **Odsouhlasit** > **Odsouhlasení účtu**.
+1. Přejděte na **Pokladna a banka** \> **Bankovní účty** \> **Bankovní účty**. Vyberte bankovní účet, který chcete odsouhlasit s bankovním výpisem, a vyberte **Odsouhlasit** > **Odsouhlasení účtu**.
 
-2.  Zadejte informace do polí **Datum bankovního výpisu** a **Bankovní výpis**. Do pole **Konečný zůstatek** můžete zadat zůstatek bankovního účtu, jak je zobrazen ve výpisu z bankovního účtu.
+2. Zadejte informace do polí **Datum bankovního výpisu** a **Bankovní výpis**. Do pole **Konečný zůstatek** můžete zadat zůstatek bankovního účtu, jak je zobrazen ve výpisu z bankovního účtu.
 
-3.  Výběrem možnosti **Transakce** otevřete stránku **Odsouhlasení účtu**.
+3. Výběrem možnosti **Transakce** otevřete stránku **Odsouhlasení účtu**.
 
-4.  Pro každou transakci zahrnutou na výpisu z bankovního účtu zaškrtněte pole **Proplaceno**, pokud částka v aplikaci Dynamics 365 Finance odpovídá částce na výpisu z bankovního účtu. Můžete také zadat nebo změnit hodnotu v poli **Typ bankovní transakce**. Toto pole je důležité pro statistiky bankovních transakcí a některé zprávy.
+4. Pro každou transakci zahrnutou na výpisu z bankovního účtu zaškrtněte pole **Proplaceno**, pokud částka v aplikaci Dynamics 365 Finance odpovídá částce na výpisu z bankovního účtu. Můžete také zadat nebo změnit hodnotu v poli **Typ bankovní transakce**. Toto pole je důležité pro statistiky bankovních transakcí a některé zprávy.
     
 
-    > [!NOTE]
-    > <P>Políčko <STRONG>Proplaceno</STRONG> nezaškrtávejte pro transakce, které se nenachází na výpisu z bankovního účtu. Tyto transakce se budou zobrazovat na této stránce, dokud nebudou odsouhlaseny s budoucím výpisem z bankovního účtu.</P>
-    > <P>V případě, že se transakce nachází ve stavu <STRONG>Čekající zrušen</STRONG>, zaškrtávací políčko <STRONG>Proplaceno</STRONG> není k dispozici. Transakce se v tomto stavu mohou nacházet v případě, že nastavení aplikace Finance vyžaduje odeslání stornování nebo zrušení ke kontrole před zaúčtováním. Poté, co kontrolor zaúčtuje nebo zamítne stornování nebo zrušení, platby se již nenachází ve stavu <STRONG>Čekající zrušení</STRONG> a bankovní účet je možné odsouhlasit s bankovním výpisem.</P>
+>[!NOTE]
+>Políčko **Proplaceno** nezaškrtávejte pro transakce, které se nenachází na výpisu z bankovního účtu. Tyto transakce se budou zobrazovat na této stránce, dokud nebudou odsouhlaseny s budoucím výpisem z bankovního účtu.
+>V případě, že se transakce nachází ve stavu **Čekající zrušen**, zaškrtávací políčko **Proplaceno** není k dispozici. Transakce se v tomto stavu mohou nacházet v případě, že nastavení aplikace Finance vyžaduje odeslání stornování nebo zrušení ke kontrole před zaúčtováním. Poté, co kontrolor zaúčtuje nebo zamítne stornování nebo zrušení, platby se již nenachází ve stavu **Čekající zrušení** a bankovní účet je možné odsouhlasit s bankovním výpisem.
 
-    
-    Chcete-li zaškrtnout políčko **Proplaceno** u intervalu šeků, které jsou všechny zobrazeny v bankovním výpisu, vyberte **Označit interval šeků** a potom určete interval.
+
+Chcete-li zaškrtnout políčko **Proplaceno** u intervalu šeků, které jsou všechny zobrazeny v bankovním výpisu, vyberte **Označit interval šeků** a potom určete interval.
 
 5.  Pokud částka pro transakci bankovního účtu neodpovídá částce transakce v bankovním výpisu, zadejte částku opravy do pole **Částka opravy**.
     
 
-    > [!NOTE]
-    > <P>Pokud je fiskální období transakce, která má být opravena, uzavřeno, nelze pole <STRONG>Částka opravy</STRONG> použít. Místo toho je nutné vytvořit řádek s datem transakce v otevřeném fiskálním období opravy. V tomto případě je nutné přidat finanční dimenze použité v původní transakci a také hlavní protiúčet.</P>
+> [!NOTE]
+> Pokud je fiskální období transakce, která má být opravena, uzavřeno, nelze pole **Částka opravy** použít. Místo toho je nutné vytvořit řádek s datem transakce v otevřeném fiskálním období opravy. V tomto případě je nutné přidat finanční dimenze použité v původní transakci a také hlavní protiúčet.
 
 
 

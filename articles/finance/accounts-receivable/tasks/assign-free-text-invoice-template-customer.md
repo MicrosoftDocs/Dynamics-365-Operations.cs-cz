@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e8330e26f1450dac27bb837bb56f8bbffefc9bc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 49074c11659ae30fd2decdb93b4721441edff2c5
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712195"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780471"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Přiřazení šablony volné faktury odběrateli
 
@@ -36,15 +36,16 @@ Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odb�
 8. Klikněte na odkaz na vybraném řádku v seznamu.
 9. Do pole **Počáteční datum fakturace** zadejte datum, kdy bude vygenerována první faktura.
 10. V části **Konec opakování** zadejte koncové datum opakování.  
-    * Vyberte jednu z následujících možností: Bez koncového data – faktury budou generovány neomezeně dlouho, dokud šablony nebude odebrána z účtu odběratele.
-    * Koncové datum fakturace – Vyberte tuto možnost a zadejte poslední datum, kdy lze fakturu generovat.  
+    Vyberte jednu z následujících možností: 
+    - **Bez koncového data** – faktury budou generovány neomezeně dlouho, dokud šablony nebude odebrána z účtu odběratele.
+    - **Koncové datum fakturace** – Vyberte tuto možnost a zadejte poslední datum, kdy lze fakturu generovat.  
 11. Do pole **Maximální kumulativní částka** zadejte maximální kumulativní částku, po jejímž uplynutí se generování faktury zastaví. Zadejte maximální kumulativní částku, které lze dosáhnout pomocí vybrané šablony. Například zadáte-li 1 000,00 a necháte vygenerovat měsíční faktury vždy pro 100,00, faktury zastaví generování po vygenerování desáté faktury.  
 12. V části **Generováníe opakované faktury pomocí výchozích hodnot z** zvolte buď šablonu volné faktury nebo účtu odběratele. Vyberte, zda chcete při vytvoření faktury k určení výchozích hodnot pro jazyk, účetní profil, skupinu DPH, skupinu DPH položky, kód seznamu, zemi/oblast pro dodávku, měnu, platební podmínky, způsob platby, specifikaci plateb, platební kalendář, platební slevu, finanční dimenze a převodní poukázku žira využít šablonu volné faktury nebo účet odběratele.  
 13. V poli **Způsob opakování** vyberte způsob opakování.
-    + Denně – Vyberte tuto možnost a zadejte počet dní do pole Za. Například pokud zadáte 15, faktura bude pro tohoto odběratele vygenerována každých 15 dnů.
-    + Týdně – Vyberte tuto možnost a zadejte počet týdnů do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva týdny.
-    + Měsíčně – Vyberte tuto možnost a zadejte počet měsíců do pole Za. Například pokud zadáte 6, faktura bude pro tohoto odběratele vygenerována každých šest měsíců.
-    + Ročně – Vyberte tuto možnost a zadejte počet roků do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva roky.  
+    - **Denně** – Vyberte tuto možnost a zadejte počet dní do pole Za. Například pokud zadáte 15, faktura bude pro tohoto odběratele vygenerována každých 15 dnů.
+    - **Týdně** – Vyberte tuto možnost a zadejte počet týdnů do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva týdny.
+    - **Měsíčně** – Vyberte tuto možnost a zadejte počet měsíců do pole Za. Například pokud zadáte 6, faktura bude pro tohoto odběratele vygenerována každých šest měsíců.
+    - **Ročně** – Vyberte tuto možnost a zadejte počet roků do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva roky.  
 14. Do pole **Za** zadejte číslo.
 
 

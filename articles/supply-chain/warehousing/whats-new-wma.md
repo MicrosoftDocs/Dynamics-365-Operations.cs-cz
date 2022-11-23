@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702188"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764232"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20370"></a>Verze 2.0.37.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+- Přidáno uživatelské nastavení, které umožňuje pracovníkům vybrat si, kde aplikace zobrazí fotografie produktů (na kartách i v záhlaví kroků, pouze v záhlavích kroků nebo vůbec). 
+- Vylepšené rozvržení obrazovky karty s podrobnostmi zmenšením velikosti banneru kroků a číselníku pro zadávání množství, což ponechává více prostoru pro další obsah. 
+- Vylepšené uživatelské rozhraní při běhu na zařízení Honeywell Thor. 
+- Vylepšený režim celé obrazovky (platí pouze pro zařízení s hardwarovou klávesnicí). 
+- Vylepšené výsledky při řazení karet s podrobnostmi a vlastních stránek podle priority nebo podpriority (DataPriority nebo DisplaySubPriority). 
+- Přidána podpora pro více jazyků. 
+- Vylepšená stabilita. 
+- Vylepšeno několik obrázků a ikon. 
 
 ## <a name="version-20350"></a>Verze 2.0.35.0
 

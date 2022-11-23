@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7ef93b81ce37128f7ff400eb4034ffea01756038
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068983"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779846"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Převod dílčí hlavní knihy do hlavní knihy
 
@@ -35,7 +35,7 @@ Pro převod dávek dílčí hlavní knihy jsou k dispozici následující možno
 - **Asynchronní** – Převod účetních položek dílčí hlavní knihy do hlavní knihy je naplánován okamžitě. Doklad hlavní knihy bude zaznamenán, jakmile zdroje budou moci zpracovat tento požadavek na serveru.
 - **Plánovaná dávka** - Účetní položky podřízené účetní knihy, které je třeba převést, se přidají do fronty zpracování v hlavní knize. Položky ve frontě budou zpracovány v pořadí, v jakém byly přijaty. Každý doklad hlavní knihy aktualizuje účty v naplánovaném čase, jakmile zdroje budou moci zpracovat tuto dávkovou úlohu na serveru.
 
-Ve verzi 10.0.8 byla provedena vylepšení pro zvýšení výkonu možnosti **Asynchrnonní**. Tato funkce je povolena pod názvem funkce **Optimalizace výkonu převodu z dílčí knihy do hlavní knihy**.
+Byla provedena vylepšení pro zvýšení výkonu možnosti **Asynchrnonní**. Tato funkce je povolena pod názvem funkce **Optimalizace výkonu převodu z dílčí knihy do hlavní knihy**.
 
 Funkce pro asynchronní přenos dávek podřízené knihy pomáhá zlepšit přenos dat z podřízené knihy do hlavní knihy. Díky seskupení sad menších transakcí a přenosu transakcí ve skupinách funkčnost zpracovává transakce efektivněji. Když jsou transakce seskupeny, prostředky dávkového serveru jsou využívány efektivněji.
 

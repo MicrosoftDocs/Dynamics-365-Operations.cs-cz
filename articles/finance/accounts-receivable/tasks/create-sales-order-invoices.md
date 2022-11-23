@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910251"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778377"
 ---
 # <a name="create-sales-order-invoices"></a>Vytváření faktur prodejních objednávek
 
@@ -32,12 +32,12 @@ Tento článek popisuje zásady fakturace prodejní objednávky, včetně slouč
 2. Vyberte ze seznamu prodejní objednávku. 
 3. V **Podokně akcí** klikněte na **Faktura > Generovat > Faktura**. Všimněte si, že tato prodejní objednávka má přidruženo více dodacích listů. Zde se zobrazí pouze slovo *více* namísto čísla dodacího listu.  
 4. Rozbalte sekci **Parametry**.
-    - Zaúčtování musí být pro zaúčtování faktury nastaveno na hodnotu Ano. Lze také vypnout zaúčtování fakturu pouze vytisknout. Stejného výsledku však lze dosáhnout pomocí vytvoření faktury proforma namísto faktury.  
+    - Zaúčtování musí být pro zaúčtování faktury nastaveno na hodnotu **Ano**. Lze také vypnout zaúčtování fakturu pouze vytisknout. Stejného výsledku však lze dosáhnout pomocí vytvoření faktury proforma namísto faktury.  
     - Tato možnost se využívá pro dávkové úlohy. Dotaz se spustí při spuštění dávkové úlohy.
-5. V poli **Tisk** vyberte možnost Po.
+5. V poli **Tisk** vyberte možnost **Po**.
 6. Vyberte možnost **Ano** pro **Tisk faktury**. Správu tisku umožňuje vytisknout více kopií faktury a také odesílat faktury prostřednictvím e-mailu jako soubor PDF.  
-7. Vyberte možnost Souhrn v poli **Tisk nákladů**.
-8. V poli **Zkontrolovat limit** úvěru vyberte 'Zůstatek'.
+7. Vyberte možnost **Souhrn** v poli **Tisk nákladů**.
+8. V poli **Zkontrolovat limit** úvěru vyberte **Zůstatek**.
 9. Klepněte na možnost **Zrušit**.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Sloučení objednávek do jedné faktury
@@ -46,8 +46,8 @@ Tento článek popisuje zásady fakturace prodejní objednávky, včetně slouč
 3. Vyberte více otevřených prodejních objednávek od stejného odběratele.
 4. V **Podokně akcí** klikněte na **Faktura > Generovat > Faktura**.
 5. Rozbalte sekci **Parametry**.
-6. V poli **Množství** vyberte možnost „Vše“. Existují dvě faktury, které jsou uvedeny v přehledu. Nyní je sloučíme do jedné faktury.  
-7. V poli **Souhrnná aktualizace pro** vyberte Účet faktury.
+6. V poli **Množství** vyberte možnost **Vše**. Existují dvě faktury, které jsou uvedeny v přehledu. Nyní je sloučíme do jedné faktury.  
+7. V poli **Souhrnná aktualizace pro** vyberte **Účet faktury**.
 8. Klikněte na **Uspořádat** pro sloučení prodejních objednávky do jedné faktury. Dvě prodejních objednávky jsou nyní sloučeny do jedné faktury.   
 9. Klepněte na možnost **Zrušit**.
 10. Klepněte na tlačítko **Ano**.
