@@ -2,26 +2,19 @@
 title: Operace příchozích zásob v POS
 description: Tento článek popisuje možnosti příchozí skladové operace v pokladním místě (POS).
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.9
-ms.custom: ''
-ms.assetid: ''
-ms.search.industry: Retail
-ms.search.form: ''
-ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 7999c8409c71c7ccf9c1d44bd86ddca6f5e8f6ff
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288345"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785011"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operace příchozích zásob v POS
 
@@ -31,6 +24,11 @@ V Microsoft Dynamics 365 Commerce verze 10.0.10 a novějších nahrazují pří
 
 > [!NOTE]
 > Ve verzi Commerce 10.0.10 a novějších budou jakékoli nové funkce aplikace POS související s příjmem skladových zásob podle nákupních objednávek a převodních příkazů přidány do operace POS **Příchozí operace**. Pokud právě používáte operace výdeje a příjmu v aplikaci POS, doporučujeme, abyste vytvořili strategii pro přechod od těchto operací k novým příchozím a odchozím operacím. Ačkoli operace výdeje a příjmu nebudou z produktu odebrány, po verzi 10.0.9 do nich nebude nic investováno z hlediska funkčního nebo výkonnostního výhledu.
+
+Následující video poskytuje přehled obchodních procesů a možností skladových zásob v Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Předpoklad: Konfigurace asynchronní architektury dokumentu
 

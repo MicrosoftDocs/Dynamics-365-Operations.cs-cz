@@ -2,23 +2,23 @@
 title: Export dat dceřiných společností do souborů
 description: Tento článek vysvětluje, jak připravit export dat z aplikace Microsoft Dynamics 365 Finance a poté je importovat do konsolidované právnické osoby.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876146"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779954"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Export dat dceřiných společností do souborů
 
@@ -32,14 +32,14 @@ Stránka **Export** (**Správa systému \> Pracovní prostory \> Import/export**
 
     | Pole                             | popis |
     |-----------------------------------|-------|
-    | Hlavní účet                      | Určete účty, které chcete konsolidovat. Chcete-li zahrnout všechny účty, nechte toto pole prázdné. |
-    | Použití konsolidačního účtu         | Pokud jste zadali konsolidační účty, nastavte tuto možnost na **Ano**. |
-    | Vybrat konsolidační účet z | Vyberte **Hlavní účet** nebo **Skupina konsolidačních účtů**. |
-    | Skupina konsolidačních účtů       | Vyberte skupinu konsolidačních účtů pro konsolidační účet, který jste vybrali. |
-    | Období konsolidace              | Pro konsolidaci zadejte data „od“ a „do“. |
-    | Zahrnout skutečné částky            | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné částky. |
-    | Zahrnout rozpočtové částky            | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. |
-    | Rozpočtové modely                     | Zadejte rozpočtový model, který chcete zahrnout. |
+    | **Hlavní účet**                      | Určete účty, které chcete konsolidovat. Chcete-li zahrnout všechny účty, nechte toto pole prázdné. |
+    | **Použití konsolidačního účtu**         | Pokud jste zadali konsolidační účty, nastavte tuto možnost na **Ano**. |
+    | **Vybrat konsolidační účet z** | Vyberte **Hlavní účet** nebo **Skupina konsolidačních účtů**. |
+    | **Skupina konsolidačních účtů**       | Vyberte skupinu konsolidačních účtů pro konsolidační účet, který jste vybrali. |
+    | **Období konsolidace**              | Pro konsolidaci zadejte data „od“ a „do“. |
+    | **Zahrnout skutečné částky**            | Tuto možnost nastavte na **Ano**, chcete-li zahrnout skutečné částky. |
+    | **Zahrnout rozpočtové částky**            | Tuto možnost nastavte na **Ano**, chcete-li zahrnout částky rozpočtu do konsolidací. |
+    | **Rozpočtové modely**                     | Zadejte rozpočtový model, který chcete zahrnout. |
 
 3. Na kartě **Finanční dimenze** upřesněte podrobnosti konsolidace:
 
