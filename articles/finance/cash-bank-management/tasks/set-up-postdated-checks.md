@@ -2,23 +2,23 @@
 title: Nastavení postdatovaných šeků
 description: Tento článek vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e045648230aba7965ed68fbc499f73e077caceed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e7172dd56113de23d841fe59ed9785471e90ed1f
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870300"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779602"
 ---
 # <a name="set-up-postdated-checks"></a>Nastavení postdatovaných šeků
 
@@ -32,33 +32,33 @@ Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společn
 
 
 ## <a name="set-up-postdated-checks"></a>Nastavení postdatovaných šeků
-1. Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.
-2. Klikněte na kartu Postdatované šeky.
-3. Zaškrtněte políčko Povolit postdatované šeky nebo jeho zaškrtnutí zrušte.
-4. Zaškrtněte políčko Zaúčtovat položky deníku pro postdatované šeky nebo jeho zaškrtnutí zrušte.
-5. V poli Clearingový účet pro vydané šeky zadejte požadované hodnoty.
-6. V poli Clearingový účet pro přijaté šeky zadejte požadované hodnoty.
-7. V poli Hlavní deník pro položky clearingu zadejte hodnotu.
-8. V poli Přenést postdatované šeky do tohoto deníku plateb dodavatelů zadejte hodnotu.
-9. Zadejte požadované hodnoty do pole Clearingový účet srážkové daně.
-10. Klikněte na položku Uložit.
+1. Přejděte do nabídky **Pokladna a banka > Nastavení > Parametry pokladny a banky**.
+2. Klikněte na kartu **Postdatované šeky**.
+3. Zaškrtněte políčko **Povolit postdatované šeky** nebo jeho zaškrtnutí zrušte.
+4. Zaškrtněte políčko **Zaúčtovat položky deníku pro postdatované šeky** nebo jeho zaškrtnutí zrušte.
+5. V poli **Clearingový účet pro vydané šeky** zadejte požadované hodnoty.
+6. V poli **Clearingový účet pro přijaté šeky** zadejte požadované hodnoty.
+7. V poli **Hlavní deník pro položky clearingu** zadejte hodnotu.
+8. V poli **Přenést postdatované šeky do tohoto deníku plateb dodavatelů** zadejte hodnotu.
+9. Zadejte požadované hodnoty do pole **Clearingový účet srážkové daně**.
+10. Klikněte na tlačítko **Uložit**.
 11. Zavřete stránku.
-12. Přejděte do nabídky Závazky > Nastavení platby > Metody platby.
-13. Klikněte na položku Nová.
-14. V poli Způsob platby zadejte hodnotu.
-15. Zvolením možnosti Clearingové zaúčtování postdatovaných šeků určete, že je částka šeku zaúčtována na clearingový účet.
-16. V poli Typ účtu vyberte „Banka“.
+12. Přejděte do nabídky **Závazky > Nastavení platby > Metody platby**.
+13. Klepněte na možnost **Nový**.
+14. V poli **Způsob platby** zadejte hodnotu.
+15. Zvolením možnosti **Clearingové zaúčtování postdatovaných šeků** určete, že je částka šeku zaúčtována na clearingový účet.
+16. V poli **Typ účtu** vyberte **Banka**.
     * Pole pro protiúčet způsobu platby bude prázdné.  
-17. Zadejte požadované hodnoty do pole Platební účet.
+17. Zadejte požadované hodnoty do pole **Platební účet**.
     * Vyberte bankovní účet, který se používá k odečtu částky faktury.  
-18. Klikněte na tlačítko Uložit.
+18. Klikněte na tlačítko **Uložit**.
 19. Zavřete stránku.
 > [!NOTE]
 > Abyste mohli odeslat šek po datu splatnosti na bankovní účet, když je datum relace větší nebo rovno datu splatnosti, musíte povolit funkci **Ověření data splatnosti zaúčtování deníku plateb s postdatovanými šeky na bankovní účet**. Tato funkce umožňuje účtovat deníky plateb pro dodavatele nebo zákazníky s postdatovanými šeky, když je datum relace větší nebo rovno datu splatnosti.
 > 
 > Při nastavování **Způsobu platby** (**Závazky> Nastavení platby > Způsoby platby**) nevyplňujte **Překlenovací účet**. V tomto případě je offsetový účet vyplněn bankovním účtem, který je nastaven ve **Způsobu platby**.
 >  
-> Pokud je funkce povolena a datum relace je menší než datum splatnosti, zobrazí se při zaúčtování deníku plateb následující chybová zpráva: „Datum splatnosti musí být menší nebo rovno datu relace, pokud je typ offsetového účtu Banka“. Pokud tato funkce není povolena, můžete zaúčtovat deník plateb s postdatovaným šekem, když je datum relace menší než datum splatnosti.
+> Pokud je funkce povolena a datum relace je menší než datum splatnosti, zobrazí se při zaúčtování deníku plateb následující chybová zpráva: **Datum splatnosti musí být menší nebo rovno datu relace, pokud je typ offsetového účtu Banka**. Pokud tato funkce není povolena, můžete zaúčtovat deník plateb s postdatovaným šekem, když je datum relace menší než datum splatnosti.
 > Tato funkce je k dispozici ve verzi 10.0.21 a novější.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752291"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775399"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -112,7 +112,7 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 | Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
 | Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
 | Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 a 2. listopadu až 5. listopadu 2022 | 15. listopadu až 18. listopadu 2022 |
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.30

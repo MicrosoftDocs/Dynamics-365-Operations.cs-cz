@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405427"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757160"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -50,7 +50,7 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Zavření karty v podokně akcí nebo nabídce        | Esc                              |
 | Simulace klepnutí pravým tlačítkem                          | Shift+F10                        |
 | Otevření místní nabídky    | Ctrl+F10                         |
-| Stisk výchozího tlačítka ve formuláři nebo dialogovém okně | Alt+Enter                        |
+| Stisk výchozího tlačítka na stránce nebo dialogovém okně | Alt+Enter                        |
 | Klepnutí na tlačítko nebo dlaždici                          | Enter nebo Mezerník                   |
 | Zobrazení obnovených informací pro dlaždici s počtem       | ALT+Šipka nahoru                     |
 | Zobrazit aktuálně dostupné klávesové zkratky              | Alt+Shift+K                      |
@@ -85,36 +85,36 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Otevření filtrování mřížky pro aktuální sloupec                                                                          | Ctrl+G                   |
 | Zavření filtrování mřížky pro aktuální sloupec                                                                         | Esc                      |
-| Otevření podokna Filtr (nebo změna aktivace mezi podoknem Filtr a hlavním formulářem, pokud je již podokno Filtr otevřeno) | Alt+M,F nebo Ctrl+F3       |
+| Otevření podokna Filtr (nebo změna aktivace mezi podoknem Filtr a hlavní stránkou, pokud je již podokno Filtr otevřeno) | Alt+M,F nebo Ctrl+F3       |
 | Zavření podokna Filtr (pokud je aktivní podokno Filtr)                                                               | Esc                      |
 | Otevření pokročilého filtrování a řazení                                                                                        | Ctrl+Shift+F3            |
 | Použít Rychlý filtr (když je zaměření v Rychlém filtru)                                                              | Enter                    |
 | Použít filtr mřížky (když je zaměření v poli filtru v záhlaví sloupce)                                             | Enter                    |
 
-## <a name="form-shortcuts"></a>Zkratky pro formulář
+## <a name="page-shortcuts"></a>Zkratky pro stránku
 
-| Akce                                    | Stisknout             |
+| Akce                                    | Stiskněte tlačítko .             |
 |-----------------------------------------------|-------------------|
 | Vytvořit nový záznam                           | Alt+N             |
 | Odstranění záznamu                               | Alt+Del nebo Alt+F9 |
 | Uložení záznamu                                   | Alt+S nebo Ctrl+S   |
 | Vrácení (obnovení)                              | Ctrl+Shift+F5     |
 | Aktualizace dat                                  | Shift+F5          |
-| Přesunutí na viditelné první pole ve formuláři   | Alt+Shift+F       |
+| Přesunutí na viditelné první pole na stránce   | Alt+Shift+F       |
 | Přepnutí režimu úprav                              | F2                |
-| Připojení dokumentu                             | Ctrl+Shift+A      |
+| Připojit dokument                             | Ctrl+Shift+A      |
 | Export do aplikace Excel                               | Ctrl+Shift+E      |
 | Přechod na předchozí záznam (mimo mřížku)  | Ctrl+šipka nahoru     |
 | Přechod na další záznam (mimo mřížku)      | Ctrl+šipka dolů   |
 | Přechod na první záznam (mimo mřížku)     | CTRL+HOME         |
 | Přechod na poslední záznam (mimo mřížku)      | CTRL+END          |
-| Zavření formuláře (kliknutí Zpět)                   | Esc               |
-| Zavření formuláře bez explicitního uložení             | Shift+Esc         |
-| Zavření formuláře a odstranění neuložených změn | Alt+Shift+Q       |
+| Zavřete stránku (vyberte tlačítko Zpět)<br><br>**Poznámka:** Pokud je otevřené vyskakovací okno (popisek, výběr data, rozevírací seznam atd.), první použití klávesy Esc toto vyskakovací okno zavře.       | Esc               |
+| Zavření stránky bez explicitního uložení             | Shift+Esc         |
+| Zavření stránky a zrušení všech neuložených změn | Alt+Shift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Zkratky pro formulář navigace
+## <a name="page-navigation-shortcuts"></a>Zkratky pro navigaci na stránce
 
-| Akce                                          | Stisknout                                        |
+| Akce                                          | Stiskněte tlačítko .                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | Přechod na další nebo předchozí pole                     | Tab / Shift+Tab                              |
 | Přechod na další nebo předchozí kartu                       | Alt+Shift+Šipka vpravo a Alt+Shift+Šipka vlevo |
@@ -192,13 +192,13 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Otevřete podokno nápovědy.                                                            | Ctrl+?                     |
 | Otevřít analyzátor sledování                                                         | Alt+Shift+T                |
 | Přechod k navigačnímu podoknu                                                   | Alt+F1                     |
-| Přidat/odstranit formulář jako oblíbený (se zaměřením na formulář v navigačním podokně)   | Shift+F                    |
+| Přidání/odebrání stránky jako oblíbené (se zaměřením na stránku v navigačním podokně)   | Shift+F                    |
 | Přesunutí do standardního podokna akcí                                              | Alt+M,A nebo Ctrl+F6         |
 | Přesun do podokna filtru (může zahrnovat jeho otevření)                        | Alt+M,F nebo Ctrl+F3         |
 | Přesun zaměření na obsah stránky (se zaměřením v podokně filtru)                | Alt+M,M nebo Ctrl+F3         |
-| Přesun do navigačního seznamu na formuláři s podrobnostmi (může zahrnovat jeho otevření)    | Alt+M,S nebo Ctrl+F8         |
+| Přesun do seznamu navigace (může zahrnovat jeho otevření)    | Alt+M,S nebo Ctrl+F8         |
 | Přesun zaměření na obsah stránky (se zaměřením v navigačním seznamu)            | Alt+M,M nebo Ctrl+F8         |
-| Zavření seznamu navigace ve formuláři Podrobnosti (pokud je aktivní seznam navigace) | Esc                        |
+| Zavření seznamu navigace (pokud je aktivní seznam navigace) | Esc                        |
 | Přesun na obsah hlavní stránky (se zaměřením v jiném podokně)                    | Alt+M,M                    |
 | Přesun do okna s fakty (může zahrnovat jeho otevření)                       | Alt+M,B nebo Ctrl+F2         |
 | Přejít na další popisek funkce                                              | Alt+M,C                    |

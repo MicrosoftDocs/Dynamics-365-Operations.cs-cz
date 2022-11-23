@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-ms.openlocfilehash: ee11647f6f700042e11133181de919e13f16c018
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: a8da366b1e770ea649603ae85d4acc5e377ed9fb
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715957"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780459"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Úplné vyrovnání částečných a konečných plateb před datem slevy
 
@@ -35,20 +35,20 @@ Fabrikam prodává zboží zákazníkovi 4028. Fabrikam nabízí platební slevu
 
 | Doklad   | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek  | Měna |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10010 | Faktura          | 25. 6. 2015 | 10010   | 1 000,00                             |                                       | 1 000,00 | USD      |
+| FTI-10010 | Faktura          | 25. 6. 2020 | 10010   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 Na stránce **Odběratel** nebo **Transakce odběratele** Arnie může otevřít stránku **Vyrovnat transakce** a zobrazit tak data a částky platebních slev, které jsou k dispozici pro fakturu. Datum splatnosti je 25. července a platební sleva ve výši 10,00 je k dispozici, je-li faktura zaplacena do 9. července.
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2015 | 25. 7. 2015 | 10010   | 1 000,00                       | USD      | 990,00           |
+| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2020 | 25. 7. 2020 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce** pro označenou fakturu.
 
 |    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 10,00     |
+| Dat. plat. slevy           | 9. 7. 2020 |
+| Částka platební slevy         | 10.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 10,00     |
@@ -57,8 +57,8 @@ Arnie klepne na kartu **Platební sleva** a zobrazí tak částku slevy.
 
 | Datum platební slevy | Částka platební slevy | Částka v měně transakce |
 |--------------------|----------------------|--------------------------------|
-| 7/9/2015           | 10,00                | 990,00                         |
-| 25. 7. 2015          | 0,00                 | 1 000,00                       |
+| 9. 7. 2020           | 10.00                | 990.00                         |
+| 25. 7. 2020          | 0,00                 | 1,000.00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Částečná platba za použití stránky Zadat platby odběratele
 Zákazník 4028 odešle platbu za 500,00 1. června. Při zadávání této platby Arnold neklikne na **Řádky**. Místo toho zaznamená platbu vytvořením nového deníku plateb a opětovným otevřením stránky **Zadat platby odběratele**. Arnie zadá informace o platbě a označí fakturu, kterou zadal. Když Arnie zadá **500,00** jako částku, zadá také **500,00** v poli **Částka k úhradě** v mřížce. Vzhledem k tomu, že společnost Fabrikam umožňuje platební slevy pro částečné platby, Arnie zjistí, že bude využita také částečná platební sleva 5,05. Výpočet pro tuto slevu je 500,00 ÷ 0,99 × 0,01 = 5,05. (V tomto výpočtu je 500,00 vyděleno číslem 0,99, protože existuje 1% sleva. Z toho vyplývá, že odběratel zaplatí 99 % faktury. Výsledek je vynásoben procentem slevy, což je 1 procento, neboli 0,01. Pokud zákazník přebírá plnou slevu ve výši 10,00, částka, která musí být vyrovnána, bude 990,00.) V mřížce v dolní části stránky **Zadat platby odběratele** se zobrazí informace o slevě.
@@ -72,14 +72,14 @@ Místo otevření stránky **Zadat platby odběratele** v deníku plateb Arnie m
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2015 | 25. 7. 2015 | 10010   | 1 000,00                       | USD      | 500,00           |
+| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2020 | 25. 7. 2020 | 10010   | 1,000.00                       | USD      | 500.00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
 |        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 10,00     |
+| Dat. plat. slevy           | 9. 7. 2020 |
+| Částka platební slevy         | 10.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 5,05      |
@@ -88,14 +88,14 @@ Pokud si zákazník přeje vyrovnat přesně polovinu faktury, odešle platbu na
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2015 | 25. 7. 2015 | 10010   | 1 000,00                       | USD      | 495,00           |
+| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2020 | 25. 7. 2020 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
 |     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 10,00     |
+| Dat. plat. slevy           | 9. 7. 2020 |
+| Částka platební slevy         | 10.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 5,00      |
@@ -104,9 +104,9 @@ Arnie zavře stránku **Vyrovnat transakce**. Řádky plateb pro 495,00 se vytvo
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 25. 6. 2015 | 10010   | 1 000,00                             |                                       | 500,00  | USD      |
-| ARP-10010  |  Platba         | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| SLEV-10010 |  Platební sleva   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 25. 6. 2020 | 10010   | 1,000.00                             |                                       | 500.00  | USD      |
+| ARP-10010  |  Platba         | 1. 7. 2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| SLEV-10010 |  Platební sleva   | 1. 7. 2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Platba zbývající částky
 Odběratel 4028 zaplatí zbývající částku 495,00 dne 8. července, tedy v rámci období platební slevy. Arnie vytvoří deník plateb 8. července a označí transakci pro vyrovnání. Zjistí, že je částka, kterou je nutné vyrovnat, je 495,00. Hodnota v poli **Odhadovaná platební sleva** je **5,00**, protože sleva 5,00 nebyla dříve využita.
@@ -120,14 +120,14 @@ Informace o označených transakcích se zobrazí v mřížce na stránce **Vyro
 
 | Označit     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka v měně transakce | Měna | Částka k vyrovnání |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2015 | 25. 7. 2015 | 10010   | 1 000,00                       | USD      | 495,00           |
+| Vybrané | Normální            | FTI-10010 | 4028    | 25. 6. 2020 | 25. 7. 2020 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/09/2015 |
-| Částka platební slevy         | 10,00     |
+| Dat. plat. slevy           | 9. 7. 2020 |
+| Částka platební slevy         | 10.00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 5,00      |
 | Částka platební slevy k přijetí | 5,00      |
@@ -136,11 +136,11 @@ Arnie zaúčtuje deník a zkontroluje transakce odběratele na stránce **Transa
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Faktura          | 25. 6. 2015 | 10010   | 1 000,00                             |                                       | 0,00    | USD      |
-| ARP-10010  | Platba          | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| SLEV-10010 | Platební sleva    | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
-| ARP-10011  | Platba          | 7/8/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| SLEV-10011 | Platební sleva    | 7/8/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI-10010  | Faktura          | 25. 6. 2020 | 10010   | 1,000.00                             |                                       | 0,00    | USD      |
+| ARP-10010  | Platba          | 1. 7. 2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| SLEV-10010 | Platební sleva    | 1. 7. 2020  |         |                                      | 5.00                                  | 0,00    | USD      |
+| ARP-10011  | Platba          | 8. 7. 2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| SLEV-10011 | Platební sleva    | 8. 7. 2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 
 

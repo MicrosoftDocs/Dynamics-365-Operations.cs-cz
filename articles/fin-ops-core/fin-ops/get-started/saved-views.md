@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220325"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757214"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -107,7 +107,7 @@ Případně můžete při vytváření nového zobrazení (pomocí akce **Uloži
 
 Dialogové okno **Spravovat moje zobrazení** poskytuje základní funkce pro správu osobních zobrazení a pořadí zobrazení v selektoru zobrazení. Chcete-li otevřít tuto stránku, výběrem názvu zobrazení otevřete rozevírací nabídku selektoru zobrazení, vyberte **Více** a poté vyberte možnost **Spravovat moje zobrazení**.
 
-**Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, sekce **Moje zobrazení** v dialogovém okně **Spravovat má zobrazení** se zobrazí dostupná zobrazení stránky v sekcích. Jakákoli zobrazení, která jsou specifická pro aktuální právnickou osobu, jsou uvedena v jejich vlastní sekci. Sekce **Globální zobrazení** je vždy zobrazena, takže můžete spravovat zobrazení, která jsou pro stránku k dispozici u všech právnických osob. 
+Pokud je zapnutá funkce **Vylepšená podpora právnických osob** pro uložená zobrazení, v sekci **Moje zobrazení** v dialogovém okně **Spravovat má zobrazení** se zobrazí dostupná zobrazení stránky v sekcích. Jakákoli zobrazení, která jsou specifická pro aktuální právnickou osobu, jsou uvedena v jejich vlastní sekci. Sekce **Globální zobrazení** je vždy zobrazena, takže můžete spravovat zobrazení, která jsou pro stránku k dispozici u všech právnických osob. 
 
 Chcete-li zobrazit seznam dostupných zobrazení pro tuto stránku, je k dispozici následující soubor akcí.
 
@@ -138,9 +138,9 @@ Zobrazení publikujete takto.
 
 1. Vytvořte a uložte osobní kopii zobrazení, kterou chcete publikovat. 
 2. V zobrazení, které je aktuálně načteno, vyberte název zobrazení pro otevření rozevírací nabídky selektoru zobrazení. 
-3. Vyberte tlačítko **Další** a potom **Publikovat**. Otevře se dialogové okno Publikovat.
+3. Vyberte tlačítko **Další** a potom **Publikovat**. Otevře se dialogové okno **Publikovat**.
 4. Zadejte název zobrazení. Jméno, které zadáte, se zobrazí uživatelům, kteří toto zobrazení obdrží, v jejich selektorech zobrazení. Názvy publikovaných zobrazení pro stránku musí být jedinečné. Na stránce nejsou povoleny žádné duplicitní názvy, a to ani v případě, že se seznam rolí nebo právnických osob, na něž jsou zobrazení aplikována, liší.
-5. **Aktualizace 10.0.17 nebo novější:** Pokud je zapnutá funkce **(Náhled) Podpora překladů pro organizační zobrazení**, můžete přidat překlady pro název vašeho zobrazení v tolika jazycích, kolik vyžaduje vaše organizace, výběrem tlačítka **Překlady** vedle pole **Název**. Název zobrazení se poté ukáže uživatelům v jejich aktuálním jazyce. Můžete také nastavit výchozí jazyk a určit překlad, který se zobrazí uživatelům, kteří používají jazyky, pro které není definován žádný překlad.
+5. Pokud je zapnutá funkce **Podpora překladů pro organizační zobrazení**, můžete přidat překlady pro název vašeho zobrazení v tolika jazycích, kolik vyžaduje vaše organizace, výběrem tlačítka **Překlady** vedle pole **Název**. Název zobrazení se poté ukáže uživatelům v jejich aktuálním jazyce. Můžete také nastavit výchozí jazyk a určit překlad, který se zobrazí uživatelům, kteří používají jazyky, pro které není definován žádný překlad.
 5. Volitelné: Zadejte popis zobrazení, aby uživatelé, kteří obdrží toto zobrazení, lépe porozuměli jeho účelu. 
 6. Určete, zda má být zobrazení publikováno jako výchozí zobrazení pro vybrané uživatele. Když zobrazení nastavíte jako výchozí, zobrazí se uživatelům při dalším otevření cílové stránky. Jednotné globální výchozí zobrazení každého cílového uživatele se změní. Po publikování však uživatelé mohou změnit své výchozí zobrazení.
 
@@ -150,9 +150,10 @@ Zobrazení publikujete takto.
     > - Pokud publikujete zobrazení jako výchozí zobrazení pro některé nebo všechny právnické osoby, dojde k následujícímu chování:
     >
     >    - Pokud je zapnutá pouze základní funkce **Uložená zobrazení**, změní se u každého cíleného uživatele jednotné globální výchozí zobrazení. 
-    >    - **Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení** a publikujete pohled na podmnožinu právnických osob, výchozí zobrazení pro tyto právnické osoby se změní pro každého cíleného uživatele.
+    >    - ** Pokud je zapnutá funkce **Vylepšená podpora právnických osob** pro uložená zobrazení a publikujete pohled na podmnožinu právnických osob, výchozí zobrazení pro tyto právnické osoby se změní pro každého cíleného uživatele.
     >
     > - Pokud má uživatel role, ve kterých je jako výchozí zobrazení publikováno více zobrazení, použije se jako výchozí zobrazení uživatele poslední publikované zobrazení. 
+    > - Publikování nebude fungovat pro přiřazení rolí pomocí skupin AAD. 
 
 8. Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno. 
 9. Zjistěte, zda chcete publikovat zobrazení do podřízených rolí každé vybrané role zabezpečení. Pokud tak učiníte, zaškrtněte políčko **Zahrnout podřízené role** v řádku pro příslušné role zabezpečení. Toto políčko není k dispozici pro role, které nemají podřízené role.
@@ -162,7 +163,7 @@ Zobrazení publikujete takto.
     > Při publikování zobrazení konkrétní právnické osobě, ale ne jako výchozí zobrazení vezměte v potaz následující chování:
     >
     > - Pokud je zapnutá pouze základní funkce **Uložená zobrazení**, volič zobrazení uživatele na stránce zpočátku zobrazuje zobrazení pouze pro zadané právnické osoby. Po prvním načtení zobrazení ji však volič zobrazení stránky vždy zobrazí bez ohledu na právnickou osobu.
-    > - **Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, volič zobrazení vždy zobrazí pouze zobrazení pro konkrétní právnické osoby.
+    > - Pokud je zapnutá funkce **Vylepšená podpora právnických osob** pro uložená zobrazení, volič zobrazení vždy zobrazí pouze zobrazení pro konkrétní právnické osoby.
 
 11. Zvolte **Publikovat**.
 
@@ -259,7 +260,7 @@ U stránek s vybranými velkými zobrazeními (přizpůsobení a dotazy lze ukl�
 Při publikování zobrazení konkrétní právnické osobě, ale ne jako výchozí zobrazení se projeví následující chování:
 
 - Pokud je zapnutá pouze základní funkce **Uložená zobrazení**, volič zobrazení uživatele na stránce zpočátku zobrazuje zobrazení pouze pro zadané právnické osoby. Po prvním načtení zobrazení ji však volič zobrazení stránky vždy zobrazí bez ohledu na právnickou osobu. K tomuto chování dochází, protože uživatelé po načtení získají vlastní osobní kopii publikovaného zobrazení a osobní zobrazení jsou globální.
-- **Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, volič zobrazení vždy zobrazí pouze zobrazení pro konkrétní právnické osoby. K tomuto chování dochází, protože funkce umožňuje propojení zobrazení (včetně osobních pohledů) s konkrétními právnickými osobami.
+- Pokud je zapnutá funkce **Vylepšená podpora právnických osob** pro uložená zobrazení, volič zobrazení vždy zobrazí pouze zobrazení pro konkrétní právnické osoby. K tomuto chování dochází, protože funkce umožňuje propojení zobrazení (včetně osobních pohledů) s konkrétními právnickými osobami.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

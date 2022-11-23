@@ -2,25 +2,25 @@
 title: Roční uzávěrka
 description: Tento článek popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883206"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779736"
 ---
 # <a name="year-end-close"></a>Roční uzávěrka
 
