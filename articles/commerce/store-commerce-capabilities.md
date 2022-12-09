@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725631"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788505"
 ---
 # <a name="store-commerce-app-capabilities"></a>Funkce aplikace Store Commerce
 
@@ -41,7 +41,7 @@ Tento článek poskytuje přehled podpory pro aplikace Store Commerce.
 
 | Schopnost | Popis | Dokumentace | Doplňkový obsah |
 |---|---|---|---|
-| Více provedení | Aplikace Store Commerce je podporována na různých typech zařízení, jako jsou počítače, tablety a mobilní zařízení. Responzivní uživatelské rozhraní (UI) umožňuje rozložení automatickou změnu velikosti a přizpůsobení velikosti obrazovky. | [Vizuální konfigurace](pos-screen-layouts.md) | |
+| Více provedení | Aplikace Store Commerce je podporována na různých typech zařízení, jako jsou počítače, tablety a mobilní zařízení. Responzivní uživatelské rozhraní (UI) umožňuje rozložení automatickou změnu velikosti a přizpůsobení velikosti obrazovky. | [Vizuální konfigurace](pos-screen-layouts.md) |  |
 | Mezi platformami | Aplikace Store Commerce je podporována na webových platformách a v platformě Windows, iOS a Android. | [Platformy](dev-itpro/hybridapp.md) | |
 | Značka | Návrhář obrazovky vám umožňuje přizpůsobit rozvržení obrazovky tak, aby vyhovovala vašim obchodním požadavkům. Kromě toho lze motivy, rozložení, barvy a obrázky vytvářet na základě rolí zaměstnanců a poté je lze sdílet mezi uživateli pro konzistenci značky a snadné použití. | [Vizuální konfigurace](pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topologie | V závislosti na dostupnosti sítě jsou podporovány různé topologie v obchodě. | <p>[Topologie](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infografika](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Tento článek poskytuje přehled podpory pro aplikace Store Commerce.
 | Hledání produktu | Vyhledávejte produkty podle názvu a upřesněte vyhledávání pomocí atributů produktu, jako je značka, cena a materiál. Tato funkce je založena na Azure Cognitive Search. | [Hledání využívající cloud](cloud-powered-search-overview.md) | |
 | Strnka Podrobnosti o produktu | Bohaté stránky s podrobnostmi o produktu mohou obsahovat obrázky, popis, atributy produktu a doporučené produkty. Doporučení využívají službu doporučení. | | |
 | Porovnání produktů | Porovnejte více produktů a pomozte zákazníkům vybrat si jeden a přidat jej do transakce. | | |
-| Nekonečná ulička | Snadno vyhledávejte zásoby v jiných obchodech a vytvářejte objednávky. | [Vyhledávání zásob](pos-inventory-lookup-operation.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Nekonečná ulička | Snadno vyhledávejte zásoby v jiných obchodech a vytvářejte objednávky. | [Vyhledávání zásob](pos-inventory-lookup-operation.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Doporučení | Používejte upsell a cross-sell produktů pomocí služby doporučení. Tato služba využívá patentovanou technologii k navrhování doporučení na základě nákupních trendů a charakteristik, jako jsou nově příchozí, podobný vzhled a nejprodávanější. Tato doporučení jsou k dispozici na stránkách s podrobnostmi o produktu, stránky **Podrobnosti o zákazníkovi** a stránky **Transakce**. | [Doporučení](product-recommendations.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Vztah s odběratelem
@@ -88,12 +88,12 @@ Tento článek poskytuje přehled podpory pro aplikace Store Commerce.
 | Atributy odběratele | Rámec atributů zákazníků umožňuje získat další data související se zákazníky na základě obchodních požadavků. | [Atributy](dev-itpro/customer-attributes.md) | |
 | Stránka podrobností o zákazníkovi | Bohatá stránka s podrobnostmi o zákaznících poskytuje vícekanálový pohled na interakce zákazníka napříč všemi kanály. Tyto interakce zahrnují nákupy, seznamy přání a věrnostní body. | | |
 | Vyhledávání zákazníka využívající cloud | Vyhledávejte zákazníky podle jména, telefonního čísla, e-mailové adresy, věrnostní karty, adresy a tak dále. | [Hledání využívající cloud](pos-search-improvements.md#customer-search) | |
-| Věrnost a odměny | Zákazníci se mohou zapojit do věrnostních programů a získávat a uplatňovat věrnostní body napříč kanály. | [Loajalita](set-up-customer-loyalty-program.md) | |
-| Clienteling | Spravujte klíčové zákazníky pomocí knihy klientů a sledujte aktivity a poznámky v profilu zákazníka. Integrace Dynamics 365 Customer Insights umožňuje zaměstnancům získat podněty ohledně další nejlepší akce pro každého zákazníka. | [Clienteling](clienteling-overview.md#activities-and-notes) | |
+| Věrnost a odměny | Zákazníci se mohou zapojit do věrnostních programů a získávat a uplatňovat věrnostní body napříč kanály. | [Loajalita](set-up-customer-loyalty-program.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Clienteling | Spravujte klíčové zákazníky pomocí knihy klientů a sledujte aktivity a poznámky v profilu zákazníka. Integrace Dynamics 365 Customer Insights umožňuje zaměstnancům získat podněty ohledně další nejlepší akce pro každého zákazníka. | [Clienteling](clienteling-overview.md#activities-and-notes) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Tvorba cen a slevy
 
-| Schopnost | Popis | Dokumentace | Doplňkový obsah |
+| Schopnost | popis | Dokumentace | Doplňkový obsah |
 |---|---|---|---|
 | Obchodní dohody | Cenoví manažeři mohou používat obchodní dohody k definování speciálních cen na základě dlouhodobých obchodů pro konkrétní zákazníky. | [Ceny](price-management.md)| [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
 | Prodejní smlouvy | Cenoví manažeři mohou používat prodejní smlouvy k definování smluvních cen v obchodních scénářích mezi podniky (B2B). | [Ceny](price-management.md) | |
@@ -132,25 +132,25 @@ Tento článek poskytuje přehled podpory pro aplikace Store Commerce.
 | Atributy objednávky | Rámec atributů objednávky umožňuje získat další informace související se zákazníky na základě obchodních požadavků. | [Atributy](dev-itpro/order-attributes.md) | |
 | Přímá dodávka | Položky mohou být označeny pro přímé doručení prodejcem na adresu zákazníka. Přímé doručení je též známa jako rozvážka. | [Přímá dodávka](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Nabídka | Zaměstnanci obchodu mohou vytvářet nabídky pro zákazníky a mohou specifikovat speciální cenu, manuální slevy a datum platnosti nabídky. | [Nabídka](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Plnění | Obchody mohou vybírat, balit a odesílat objednávky. K balíkům, které jsou připraveny k odeslání, lze přidat dodací list. | [Plnění](order-fulfillment-overview.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Distribuovaná správa objednávek | Aplikace Store Commerce podporuje inteligentní optimalizaci plnění objednávek, kde lze obchodní strategie konfigurovat na základě povahy podnikání, typu zákazníka, původu objednávky a způsobu doručení objednávky. | [DOM](dom.md) | |
+| Plnění | Obchody mohou vybírat, balit a odesílat objednávky. K balíkům, které jsou připraveny k odeslání, lze přidat dodací list. | [Plnění](order-fulfillment-overview.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[Video](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Distribuovaná správa objednávek | Aplikace Store Commerce podporuje inteligentní optimalizaci plnění objednávek, kde lze obchodní strategie konfigurovat na základě povahy podnikání, typu zákazníka, původu objednávky a způsobu doručení objednávky. | [DOM](dom.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>Řízení zásob
 
-| Schopnost | Popis | Dokumentace | Doplňkový obsah |
+| Schopnost | popis | Dokumentace | Doplňkový obsah |
 |---|---|---|---|
 | Buyer's push | Zefektivněte distribuci dostupného inventáře z distribučního centra do více obchodů nebo skladů. | [Buyer's push](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Cross-docking | Zjednodušte distribuci zásob na příchozích objednávkách do více obchodů nebo skladů. | [Cross docking](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Příchozí zásoby | Příjem zásob od dodavatele prostřednictvím nákupní objednávky nebo z jiného skladu prostřednictvím převodního příkazu. Vytvořte příchozí nákupní objednávku nebo požadavek převodní objednávky. | [Příchozí](pos-inbound-inventory-operation.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Odchozí zásoby | Odešlete zásoby do jiného skladu prostřednictvím převodního příkazu a vytvořte požadavek na odchozí převodní příkaz. | [Odchozí](pos-outbound-inventory-operation.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Vyhledávání zásob | Kontrolujte skladové zásoby produktů v obchodech a skladech a kontrolujte zásoby dostupné k příslibu (ATP) v budoucích datech. | [Vyhledávání zásob](pos-inventory-lookup-operation.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Úprava zásob | Upravte zásoby do nebo ze skladu v obchodě tak, aby splňovaly specifické obchodní požadavky bez použití prodeje, příjmu nebo přepočítávání. | [Úprava zásob](work-with-store-inventory.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Počty na skladě | Počítejte fyzické zásoby a upravte inventář systémového účetnictví tak, aby tomu odpovídal. | [Inventura](work-with-store-inventory.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Přesun zásob | Přesouvejte inventář mezi místy v obchodě. | [Přesun](work-with-store-inventory.md) | [Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Příchozí zásoby | Příjem zásob od dodavatele prostřednictvím nákupní objednávky nebo z jiného skladu prostřednictvím převodního příkazu. Vytvořte příchozí nákupní objednávku nebo požadavek převodní objednávky. | [Příchozí](pos-inbound-inventory-operation.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Odchozí zásoby | Odešlete zásoby do jiného skladu prostřednictvím převodního příkazu a vytvořte požadavek na odchozí převodní příkaz. | [Odchozí](pos-outbound-inventory-operation.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Vyhledávání zásob | Kontrolujte skladové zásoby produktů v obchodech a skladech a kontrolujte zásoby dostupné k příslibu (ATP) v budoucích datech. | [Vyhledávání zásob](pos-inventory-lookup-operation.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Úprava zásob | Upravte zásoby do nebo ze skladu v obchodě tak, aby splňovaly specifické obchodní požadavky bez použití prodeje, příjmu nebo přepočítávání. | [Úprava zásob](work-with-store-inventory.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Počty na skladě | Počítejte fyzické zásoby a upravte inventář systémového účetnictví tak, aby tomu odpovídal. | [Inventura](work-with-store-inventory.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Přesun zásob | Přesouvejte inventář mezi místy v obchodě. | [Přesun](work-with-store-inventory.md) | <p>[Technické přednášky](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Finance
 
-| Schopnost | Popis | Dokumentace | Doplňkový obsah |
+| Schopnost | popis | Dokumentace | Doplňkový obsah |
 |---|---|---|---|
 | Řízení hotovosti | Aplikace Store Commerce podporuje správu hotovosti a dalších specifikovaných nabídek v obchodě. Kromě toho lze povolit odsouhlasení směn v obchodě pro pokročilé možnosti správy hotovosti. | [Hotovost](cash-mgmt.md) | |
 | Finanční výkazy a odsouhlasení | Hotovostní a transakční transakce pro obchod se zaznamenávají v Commerce headquarters prostřednictvím procesů účtování výpisů. | [Výkazy](retail-statements.md) | |

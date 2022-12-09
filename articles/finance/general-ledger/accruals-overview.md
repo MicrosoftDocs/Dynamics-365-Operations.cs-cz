@@ -2,7 +2,7 @@
 title: Přehled časově rozlišených položek
 description: V tomto článku jsou popsána časová rozlišení a jsou zde také informace o způsobu jejich nastavení a vytvoření transakcí.
 author: aprilolson
-ms.date: 01/11/2018
+ms.date: 11/21/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 022d6574895d3263ce1e21a2f04985c418f45b61
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904694"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799381"
 ---
 # <a name="accruals-overview"></a>Přehled časově rozlišených položek
 
@@ -41,7 +41,9 @@ Schémata časově rozlišených položek se používají k nastavení odložen�
 Po určení účtů, které chcete použít, můžete určit, jak se číslo dokladu vytváří při vytvoření transakcí časového rozlišení. Můžete také určit, jak často k transakcím dochází, kolikrát se transakce vytváří a kdy se transakce zaúčtovávají. Po vytvoření schématu časového rozlišení ho můžete použít v některých denících pomocí funkce časového rozlišení hlavní knihy.
 
 ## <a name="ledger-accruals"></a>Časové rozlišení hlavní knihy
-Jakmile vstoupíte do deníku, můžete kliknout na volbu **Časové rozlišení hlavní knihy** v nabídce **Funkce**. Až poté vyberte schéma časového rozlišení, se zobrazí základní částka v deníku, která se rozloží v období podle určení schématu časového rozlišení. Například pokud provádíte platbu pojištění pro zaměstnance na celý rok v lednu a částka je na 12 000, je nutné rozpoznat tyto náklady každý měsíce. Můžete vybrat počáteční datum. Můžete také určit, zda je částka, která je časově rozlišená, založená na účtu nebo protiúčtu. Po provedení výběru klikněte na možnost **Transakce** pro zobrazení všech transakcí, které byly vytvořeny na základě schématu časového rozlišení. Například pokud rozložíte 12 000 ve výdajích pojištění na rok, zobrazí se 1 000 pro každý měsíc. Po zaúčtování deníku můžete zobrazit transakce použitím stránky dotazu **Transakce dokladu**. Pokud schéma časového rozlišení nelze použít (například když se jedná o fakturu prodejní objednávky nebo fakturu nákupní objednávky), můžete připsat předplacenou částku a odepsat částku výdajů. Můžete vybrat **Protiúčet**, když nasazujete schéma časového rozlišení.
+Jakmile vstoupíte do deníku, můžete kliknout na volbu **Časové rozlišení hlavní knihy** v nabídce **Funkce**. Až poté vyberte schéma časového rozlišení, se zobrazí základní částka v deníku, která se rozloží v období podle určení schématu časového rozlišení. 
+
+Například pokud provádíte platbu pojištění pro zaměstnance na celý rok v lednu a částka je na 12 000, je nutné rozpoznat tyto náklady každý měsíce. Můžete vybrat počáteční datum. Můžete také určit, zda je částka, která je časově rozlišená, založená na účtu nebo protiúčtu. Po provedení výběru klikněte na možnost **Transakce** pro zobrazení všech transakcí, které byly vytvořeny na základě schématu časového rozlišení. Například pokud rozložíte 12 000 ve výdajích pojištění na rok, zobrazí se 1 000 pro každý měsíc. Po zaúčtování deníku můžete zobrazit transakce použitím stránky dotazu **Transakce dokladu**. Pokud schéma časového rozlišení nelze použít (například když se jedná o fakturu prodejní objednávky nebo fakturu nákupní objednávky), můžete připsat předplacenou částku a odepsat částku výdajů. Můžete vybrat **Protiúčet**, když nasazujete schéma časového rozlišení.
 
 
 Další informace naleznete v tématu [Vytvoření schémat časového rozlišení](tasks/create-accrual-schemes.md) a [Vytvoření transakcí časového rozlišení hlavní knihy](tasks/create-ledger-accrual-transactions.md).

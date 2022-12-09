@@ -2,7 +2,7 @@
 title: Účetní profil dodavatele
 description: Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272971"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799592"
 ---
 # <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
@@ -94,7 +94,7 @@ Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, 
 </tr>
 <tr class="even">
 <td><strong>Doručení</strong></td>
-<td>Vyberte účet hlavní knihy, do kterého jsou zaúčtovány informace o neschválených fakturách dodavatele. Informace jsou zaznamenány do deníku registrů faktur. Uživatel například zadá zcela základní informace o fakturách dodavatele, když byly přijaty do registru faktur. Když je registr faktur zaúčtován, transakce jsou zaúčtovány na účet, který je zadán zde, a do pole <strong>Protiúčet</strong>. Když jsou faktury schváleny, dluh je přenesen z účtu doručení do souhrnného účtu dodavatele.</td>
+<td>Vyberte účet hlavní knihy, do kterého jsou zaúčtovány informace o neschválených fakturách dodavatele. Informace jsou zaznamenány do <strong>deníku registrů faktur</strong>. Uživatel například zadá zcela základní informace o fakturách dodavatele, když byly přijaty do registru faktur. Když je registr faktur zaúčtován, transakce jsou zaúčtovány na účet, který je zadán zde, a do pole <strong>Protiúčet</strong>. Když jsou faktury schváleny, dluh je přenesen z účtu doručení do souhrnného účtu dodavatele.</td>
 </tr>
 <tr class="odd">
 <td><strong>Protiúčet</strong></td>
@@ -110,10 +110,10 @@ Pro transakce s vybraným účetním profilem určete, zda transakce budou vyrov
 
 Zadání následujících hodnot pro nastavení účetního profilu
 
-| Pole          | Popis                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pole          | Popis             |
+|----------------|--------------------------------------------------------------------------|
 | **Vyrovnání** | Tuto možnost vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li toto políčko zaškrtnuto, je nutné vyrovnat transakce ručně s použitím stránky **Vyrovnat otevřené transakce**. |
-| Tlačítko **Zrušit**     | Tuto možnost vyberte, chcete-li mít možnost zrušit transakce, které mají tento účetní profil.                                                                                                               |
+| Tlačítko **Zrušit**     | Tuto možnost vyberte, chcete-li mít možnost zrušit transakce, které mají tento účetní profil.                              |
 | **Zavřít**      | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.                                       |
 
 

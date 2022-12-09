@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
-ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "9775399"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805307"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -105,19 +105,19 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.29
 **Verze aplikace: 10.0.1326.70**  
-**Odpovídající nejnovější článek znalostní báze: 748926**
+**Odpovídající nejnovější článek znalostní báze: 750332**
 
 | Stanice | Oblasti | Dokončený plán | Připravovaný plán sandboxu|
 |---|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022 a 2. listopadu až 5. listopadu 2022 | 13. listopadu až 16. listopadu 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022 a 2. listopadu až 5. listopadu 2022 | 15. listopadu až 18. listopadu 2022 |
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022, 2. listopadu až 5. listopadu 2022, 15. listopadu až 18. listopadu 2022 | 5. prosince až 8. prosince|
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.30
-**Verze aplikace: bude určeno**
-**Odpovídající nejnovější článek znalostní báze: bude určeno**
+**Verze aplikace: 10.0.1362.77**
+**Odpovídající nejnovější článek znalostní báze: 767597**
 
 | Stanice | Oblasti | Připravovaný plán sandboxu |
 |---|---|---|
@@ -147,14 +147,14 @@ Společnost Microsoft se snaží udržet kanál vydání dostatečně efektivní
 Ne. Hlavním cílem kvalitních aktualizací je zajistit, aby se pro naše zákazníky neustále zlepšovaly základy, jako je zabezpečení, soukromí, spolehlivost, dostupnost a výkon. Zpožděním nebo pozastavením aktualizace bude ohrožena bezpečnost, dostupnost a spolehlivost.
 
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>Jak mohu zjistit, která sada změn šla do datové části aktualizace kvality?
-Následující kroky jsou dočasným řešením, protože nadále pracujeme na poskytování lepšího řešení pro identifikaci seznamu změn, které jdou do datové části aktualizace kvality. 
+Podle níže uvedených kroků identifikujte seznam změn, které jdou do datové části aktualizace kvality. 
 
-Použijte KB #745340 pro vydání aktualizace kvality 10.0.28 a související verzi aplikace 10.0.1265.89.
+Použijte vydání aktualizace kvality 10.0.28 a související verzi aplikace 10.0.1265.89.
 
 1. V Lifecycle Services otevřete stránku **Podrobnosti prostředí** pro váš sandbox. 
 2. V části **Dostupné aktualizace** vyberte možnost **Zobrazit aktualizaci** a uvidíte nejnovější sestavení aktualizace kvality. 
 3. Exportujte sestavení do souboru CSV nebo Microsoft Excel.
-4. V exportovaném souboru seřaďte informace podle času (nejstarší jako první) a poté vyhledejte číslo KB 745340 ve sloupci **ID aktualizace**. Nyní byste měli vidět rozdílový seznam znalostní báze.
+4. V exportovaném souboru filtrujte a vyberte **Verze sestavení**, která je menší nebo rovna číslu sestavení 10.0.1265.89. Nyní byste měli vidět rozdílovou datovou část.
  
 > [!NOTE]
 > Export do souboru CSV nebo Excel musí proběhnout před aktualizací prostředí. V opačném případě můžete použít prostředí s podobnou konfigurací, které nemá nainstalovanou aktualizaci, a postupujte podle výše uvedených kroků.
@@ -185,8 +185,8 @@ Pokud dojde k nějakému sporu s předem naplánovanou akcí, například PITR (
 ## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Lze prostředí vrátit do předchozího stavu, pokud se po použití aktualizace kvality vyskytnou problémy?
 Po použití aktualizace kvality nedochází za žádných okolností k žádnému vrácení. Pro řešení problémů jsou k dispozici pouze možnosti předávání oprav.
 
-## <a name="what-about-fda-regulation-and-gpx"></a>A co regulace FDA a GPX?
-Plán pro zákazníky podléhající validaci a regulaci FDA se stále vyvíjí. Brzy očekávejte další aktualizace v tomto prostoru. Prozatím jsou všichni tito zákazníci vyjmuti z aktualizací kvality. Chcete-li zajistit, aby se zákazník musel řídit předpisy FDA, navštivte [Nabídku GPX Microsoft Azure](/azure/compliance/offerings/offering-gxp).
+## <a name="what-about-fda-regulation-and-gxp"></a>A co regulace FDA a GxP?
+Plán pro zákazníky podléhající validaci a regulaci FDA se stále vyvíjí. Brzy očekávejte další aktualizace v tomto prostoru. Prozatím jsou všichni tito zákazníci vyjmuti z aktualizací kvality. Chcete-li zajistit, aby se zákazník musel řídit předpisy FDA, navštivte [Nabídku GxP Microsoft Azure](/azure/compliance/offerings/offering-gxp).
 
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Jaké verze aktualizací služeb jsou podporovány pro tyto aktualizace kvality?
 Zákazníci se všemi podporovanými verzemi aktualizací služeb mají nárok na aktualizace kvality. 

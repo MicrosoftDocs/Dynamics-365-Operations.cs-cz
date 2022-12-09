@@ -1011,7 +1011,23 @@
                 - name: Hromadné odeslání přesměrování URL adresy
                   href: upload-bulk-redirects.md
                 - name: Nastavení klienta B2C v Commerce
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: Nastavení klienta B2C
+                      href: set-up-B2C-tenant.md
+                    - name: "Vytvoření nebo propojení s\_existujícím klientem B2C Azure AD"
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Vytvoření aplikace B2C
+                      href: create-b2c-app.md
+                    - name: Vytvoření zásad toku uživatele
+                      href: create-user-flow-policies.md
+                    - name: Přidání poskytovatelů identity sociálních sítí
+                      href: add-social-identity-providers.md
+                    - name: Aktualizace Commerce headquarters pomocí informací B2C Azure AD
+                      href: update-hq-aad-b2c-info.md
+                    - name: "Konfigurace klienta B2C v\_nástroji pro tvorbu stránek"
+                      href: config-b2c-tenant-site-builder.md
+                    - name: "Doplňkové informace o\_B2C"
+                      href: additional-b2c-info.md
                 - name: Nastavení vlastních stránek pro přihlášení uživatelů
                   href: custom-pages-user-logins.md
                 - name: Povolení automatického propojení záznamů identity s účty zákazníků
@@ -1570,6 +1586,8 @@
               items:
                 - name: Generování QR kódů a jejich tisk na příjemkách pro Saúdskou Arábii
                   href: localizations/emea-sau-qr-code.md
+                - name: "Generování a\_odesílání zjednodušených elektronických faktur pro Saúdskou Arábii"
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Švédsko
               items:
                 - name: Funkce registrační pokladny
@@ -2984,11 +3002,11 @@
                   href: troubleshoot/store-commerce-extensions.md
             - name: Zpracování objednávky
               items:
-                - name: Chyba „Typ platby musí být kreditní karta“
+                - name: Chyba „Typ platby musí být platební karta“
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Daně na online objednávkách jsou nesprávně vypočítány
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Chyba synchronizace objednávky související s výchozí platební službou
+                - name: Problémy se synchronizací asynchronních objednávek
                   href: troubleshoot/synchronization-error.md
             - name: Zpracování plateb
               items:

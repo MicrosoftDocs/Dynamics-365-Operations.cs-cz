@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869829"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805280"
 ---
 # <a name="request-a-leave-of-absence"></a>Žádost o pracovní volno
 
@@ -51,6 +51,22 @@ Můžete podat žádost o pracovní volno a zobrazit stav svých žádostí o vo
 1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.
 
 2. Chcete-li zobrazit své žádosti o pracovní volno, vyberte **Zobrazit pracovní volno**.
+
+## <a name="update-a-leave-of-absence-request"></a>Aktualizace žádosti o pracovní volno
+
+1. V pracovním prostoru **Samoobsluha pro zaměstnance** na dlaždici **Pracovní volno** vyberte **Více (…)**.
+2. Vyberte požadavek na pracovní volno, který chcete aktualizovat, a poté vyberte **Aktualizovat pracovní volno**.
+3. V poli **Datum ukončení** aktualizujte hodnotu podle potřeby, abyste prodloužili nebo zkrátili pracovní volno.
+4. Pokud je datum ukončení potvrzeno, nastavte možnost **Potvrdit datum ukončení** na **Ano**.
+5. Poté, co je možnost **Potvrdit datum ukončení** nastavena na **Ano**, můžete nahrát oznámení o návratu do práce. Poté zaškrtnutím políčka potvrďte, že bylo nahráno oznámení o návratu do práce.
+6. K aktualizaci žádosti o pracovní volno vyberte **Odeslat**.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Zrušení žádosti o pracovní volno
+
+1. V pracovním prostoru **Samoobsluha pro zaměstnance** na dlaždici **Pracovní volno** vyberte **Více (…)**.
+2. Vyberte požadavek na pracovní volno, který chcete zrušit, a poté vyberte **Aktualizovat pracovní volno**.
+3. Nastavte možnost **Zrušit pracovní volno** na **Ano**.
+4. Ke zrušení žádosti o pracovní volno vyberte **Odeslat**.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Import požadavků na dovolenou z jiných systémů nebo starších systémů
 

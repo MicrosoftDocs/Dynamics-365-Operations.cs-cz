@@ -1,8 +1,8 @@
 ---
 title: Intrastat - přehled
 description: Tento článek obsahuje informace o vykazování Intrastat pro obchodování se zbožím a v některých případech mezi zeměmi/oblastmi Evropské unie (EU).
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom:
 - "28581"
 - intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 762de8a098c61bc0d717c038d6ca0ff6d649bff3
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894773"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815700"
 ---
 # <a name="intrastat-overview"></a>Intrastat - přehled
 
@@ -387,6 +387,28 @@ V tomto příkladu musí společnost v Německu nakoupit 10 jednotek zboží od 
 5. Zkontrolujte kartu **Všeobecné** pro nákupní objednávku. Všimněte si, že pole **Množství dalších jednotek** a **Další jednotka** v části **Jednotka** jsou nastavena automaticky.
 
    ![Podrobnosti o nákupní objednávce na kartě Obecné na stránce Intrastat](media/intrastat_overview_6.png)
+   
+## <a name="list-of-countryregion-specific-articles"></a>Seznam článků specifických pro zemi/oblast
+V následující tabulce jsou uvedeny dostupné články intrastatu pro jednotlivé země/oblasti.
+
+| Země/oblast          | Odkaz      |
+|------------------|-----------|
+| Rakousko          |[Rakouský Intrastat](emea-aut-intrastat.md)| 
+| Belgie          |[Belgický Intrastat](emea-bel-intrastat.md)|
+| Česká republika   |[Český Intrastat](emea-cze-intrastat.md)|
+| Dánsko          |[Dánský Intrastat](emea-dnk-intrastat.md)|
+| Estonsko          |[Estonský Intrastat](emea-est-intrastat.md)|
+| Finsko          |[Intrastat pro Finsko](emea-fin-intrastat.md)|
+| Francie           |[Francouzský Intrastat](emea-fra-intrastat.md)|
+| Německo          |[Německý Intrastat](emea-deu-intrastat.md)|
+| Maďarsko          |[Maďarský Intrastat](emea-hun-intrastat.md)|
+| Itálie            |[Italský Intrastat](emea-ita-intrastat.md)|
+| Lotyšsko           |[Lotyšský Intrastat](emea-lva-intrastat.md)|
+| Litva        |[Intrastat pro Litvu](emea-ltu-intrastat.md)|
+| Nizozemsko      |[Nizozemský Intrastat](emea-nl-intrastat.md)|
+| Polsko           |[Intrastat - Polsko](emea-pol-intrastat.md)|
+| Španělsko            |[Intrastat – Španělsko](emea-esp-intrastat.md)|
+| Švédsko           |[Švédský Intrastat](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Přerušit pracovní volno
+title: Pozastavení pracovního volna
 description: U zaměstnance v aplikaci Dynamics 365 Human Resources můžete pozastavit pracovní volno.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 93b530aeef6fd14b56ac846e3bb0ad4080d67587
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c8262fb34175f6f9326d6be82c922b2170fc5a7
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895895"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805253"
 ---
 # <a name="suspend-leave"></a>Přerušit pracovní volno
 
 >[!Important]
 >Funkce uvedené v tomto článku jsou aktuálně dostupné pro zákazníky používající samostatnou verzi aplikace Dynamics 365 Human Resources. Některé nebo všechny funkce budou dostupné jako součást budoucího vydání na infrastruktury Finance po vydání Finance 10.0.26.
 
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Můžete pozastavit pracovní volno pro zaměstnance, abyste zastavili zpracování časového rozlišení pracovního volna u vybraných typů pracovního volna. 
+Můžete pozastavit pracovní volno pro zaměstnance, abyste zastavili zpracování časového rozlišení pracovního volna u vybraných typů pracovního volna.
 
 ## <a name="suspend-leave-and-absence-for-an-employee"></a>Pozastavit pracovní volno a absenci pro zaměstnance
 
@@ -44,6 +43,9 @@ Můžete pozastavit pracovní volno pro zaměstnance, abyste zastavili zpracová
 5. Volitelně můžete přidat **Komentář** k přerušení. 
 
 Pokud jsou časové rozlišení zpracovávány i v době, kdy je pracovní volno zaměstnance přerušeno, nebude pro typy přerušeného volna provedeno žádné časové rozlišení.
+
+> [!NOTE]
+> Žádosti o pracovní volno pozastaví žádosti o volno, ale žádosti o volno nepozastaví žádosti o pracovní volno.
 
 ## <a name="see-also"></a>Viz také
 

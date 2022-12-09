@@ -2,21 +2,21 @@
 title: Sestavy hodnot zásob
 description: Tento článek vysvětluje postup při nastavení, generování a používání sestav hodnot zásob. Tyto sestavy poskytují podrobnosti o fyzických a finančních množstvích a částkách vašich zásob.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334918"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806399"
 ---
 # <a name="inventory-value-reports"></a>Sestavy hodnot zásob
 
@@ -129,7 +129,7 @@ Na stránce **Sestavy hodnot zásob** nastavte obsah, který je zahrnut do různ
     - **Přímý outsourcing** – Nastavte tuto možnost na *Ano*, chcete-li zobrazit náklady na přímý outsourcing u NV. Tyto informace se hodí pro zadávání subdodávek.
     - **Úroveň detailů** – Vyberte možnost zobrazení pro sestavu:
 
-        - *Transakce* – Zobrazení všech relevantních transakcí v sestavě. Pamatujte, že při prohlížení sestav obsahujících velký objem transakcí můžete zaznamenat problémy s výkonem. Pokud tedy chcete použít tuto možnost zobrazení, doporučujeme použít sestavu **Úložiště sestavy hodnot zásob**.
+        - *Transakce* – Zobrazení všech relevantních transakcí v sestavě. Při prohlížení sestav obsahujících velký objem transakcí můžete zaznamenat problémy s výkonem. Pokud tedy chcete použít tuto možnost zobrazení, doporučujeme použít sestavu **Úložiště sestavy hodnot zásob**.
         - *Součty* – Zobrazit celkový výsledek.
 
     - **Zahrnout počáteční zůstatek** – Nastavte tuto možnost na *Ano*, chcete-li zobrazit počáteční zůstatek. Tato možnost je dostupná pouze v případě, kdy je pole **Úroveň detailů** nastaveno na *Transakce*.
@@ -172,7 +172,7 @@ Po vygenerování sestavy ji můžete kdykoli zobrazit a prozkoumat následujíc
     - Pro filtrování sestavy podle libovolné hodnoty v několika dostupných sloupcích vyberte pole **Filtr**.
     - Pomocí nabídky Zobrazení (nad polem **Filtr**) uložte a načtěte oblíbené kombinace možností řazení a filtrování.
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Export sestavy Úložiště sestavy hodnot zásob
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Export sestavy Úložiště sestavy hodnot zásob
 
 Každá generovaná sestava je uložena v datové entitě **Hodnota zásob**. Pomocí standardních funkcí Supply Chain Management můžete exportovat data z této entity do libovolného podporovaného formátu dat, včetně formátu CSV nebo Excel.
 
@@ -188,7 +188,7 @@ Následující příklad ukazuje, jak exportovat sestavu **Úložiště sestavy 
     - **Formát cílových dat** – vyberte formát, do kterého mají být exportována data.
 
 1. Volbou **Přidat** přidejte nový řádek a volbou **Zavřít** zavřete dialogové okno.
-1. Obvykle se exportuje vždy jedna sestava. Při exportu jedné sestavy nastavte filtr pro řádek, který jste právě přidali do dialogového okna **Dotaz**. Tímto způsobem můžete definovat, která sestava z entity **Hodnota zásob** bude zahrnuta do exportu. Pomocí těchto kroků nastavíte následující možnosti filtru pro export jedné sestavy:
+1. Obvykle exportujete vždy jednu sestavu. Při exportu jedné sestavy nastavte filtr pro řádek, který jste právě přidali do dialogového okna **Dotaz**. Tímto způsobem můžete definovat, která sestava z entity **Hodnota zásob** bude zahrnuta do exportu. Pomocí těchto kroků nastavíte následující možnosti filtru pro export jedné sestavy:
 
     1. Na kartě **Rozsah** vyberte možnost **Přidat** a přidejte řádek.
     2. Pole **Tabulka** nastavte na *Hodnota zásob*.
@@ -203,6 +203,34 @@ Následující příklad ukazuje, jak exportovat sestavu **Úložiště sestavy 
 1. Na otevřené stránce **Souhrn spuštění** můžete zobrazit stav úlohy exportu a seznam exportovaných entit. V části **Stav zpracování entity** vyberte v seznamu entitu **Hodnota zásob** a poté volbou **Stáhnout soubor** stáhněte data, který byla exportována z této entity.
 
 Další informace o tom, jak používat správu dat k exportu dat, naleznete v tématu [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Odstranění uložených sestav hodnot zásob
+
+Se zvyšujícím se počtem uložených sestav hodnot zásob mohou časem začít zabírat příliš mnoho místa ve vaší databázi. Tato situace může ovlivnit výkon systému a způsobit vyšší náklady na ukládání dat. Pravděpodobně proto budete muset čas od času sestavy vyčistit odstraněním starších sestav.
+
+> [!IMPORTANT]
+> Než odstraníte jakoukoli z dříve vygenerovaných sestav hodnoty inventáře, důrazně doporučujeme, abyste nejprve [vyexportovali sestavy](#export-stored-report) a uložili je externě, protože je možné, že je nebudete moci znovu vygenerovat později. Toto omezení existuje, protože když generujete sestavu o hodnotě zásob, systém funguje zpětně ode dneška a zpracovává každý záznam transakce zásob v opačném pořadí. Pokud se při generování sestavy pokusíte ohlédnout příliš daleko do minulosti, objem transakcí ke zpracování může být nakonec tak velký, že systému vyprší časový limit, než bude moci dokončit generování sestavy. Vzdálenost do minulosti, pro kterou můžete generovat nové sestavy, závisí na počtu transakcí zásob, které máte v systému za příslušné časové období.
+
+### <a name="delete-one-report-at-a-time"></a>Odstraňování sestav po jedné
+
+Chcete-li odstranit jednu uloženou sestavu, postupujte podle těchto kroků.
+
+1. [Exportujte sestavu](#export-stored-report), kterou plánujete odstranit, a uložte ji na externí místo pro budoucí použití.
+1. Přejděte na **Správa zásob \> Dotazy a sestavy \> Úložiště sestavy hodnot zásob**.
+1. V podokně seznamu vyberte sestava k odstranění.
+1. V podokně Akce zvolte **Odstranit**.
+1. Varovná zpráva vám připomene zálohovat vygenerované sestavy. Vyberte **Ano**, pokud jste připraveni odstranění provést.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Odstranění více sestav současně
+
+Chcete-li odstranit více uložených sestav současně, postupujte podle těchto kroků.
+
+1. [Exportujte všechny sestavy](#export-stored-report), kterou plánujete odstranit, a uložte je na externí místo pro budoucí použití.
+1. Přejděte do nabídky **Správa nákladů \> Účetnictví zásob \> Vymazání \> Vymazání sestavy hodnot zásob**.
+1. V dialogovém okně **Vymazání dat sestavy hodnoty zásob** v poli **Odstranit sestavu hodnot zásob provedenou před** vyberte datum, před kterým by měly být odstraněny všechny zprávy o hodnotě zásob.
+1. Na záložce s náhledem **Záznamy, které mají být zahrnuty** můžete nastavit další podmínky filtru k omezení sady sestav, které budou odstraněny. Výběrem možnosti **Filtr** zobrazíte se standardní dialogové okno editoru dotazu, kde můžete definovat vlastnosti sestav, které se mají odstranit.
+1. Na záložce s náhledem **Spustit na pozadí** můžete určit, kdy a jak často se mají sestavy odstraňovat. Pole fungují stejně jako u jiných typů [prací na pozadí](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) v Supply Chain Management. Tuto úlohu však obvykle spustíte ručně pokaždé, když je to potřeba.
+1. Výběrem tlačítka **OK** se zadané sestavy odstraní.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Generování standardní sestavy hodnot zásob
 

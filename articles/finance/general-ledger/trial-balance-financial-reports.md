@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a202dac3880717e9498212ca34570101188f48ce
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b26d2ec261720499fc309a5fb850de2cb796bd8b
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725198"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802600"
 ---
 # <a name="trial-balance-financial-reports"></a>Finanční sestavy předvah
 
@@ -32,8 +32,8 @@ Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavebn�
 
 Ve finančním vykazování existují tři sestavy předvah.
 
-| Výchozí sestava                                 | Jak funguje                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Výchozí sestava                                 | Jak funguje                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
 | Podrobná předvaha – výchozí               | Obsahuje informace o zůstatku na všech účtech, včetně zůstatků má dáti a dal a jejich čisté hodnoty, spolu s datem transakce, dokladu a popisem deníku.                  |
 | Souhrnná předvaha – výchozí                | Obsahuje informace o zůstatku pro všechny účty a zahrnuje počáteční a závěrkové zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem.                                        |
 | Souhrnná roční předvaha – výchozí | Obsahuje informace o zůstatku pro všechny účty a zahrnuje počáteční a závěrkové zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem pro aktuální a minulý rok. |

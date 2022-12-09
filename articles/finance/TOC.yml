@@ -1604,9 +1604,11 @@
                           href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
-                        - name: Začínáme s elektronickou fakturací pro Polsko
+                        - name: "Začínáme s\_elektronickou fakturací pro Polsko"
                           href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
+                        - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii – první fáze"
+                          href: localizations/e-invoicing-sa-get-started-phase-one.md
+                        - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii – druhá fáze"
                           href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: Onboarding elektronické fakturace v Saúdské Arábii
                           href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance

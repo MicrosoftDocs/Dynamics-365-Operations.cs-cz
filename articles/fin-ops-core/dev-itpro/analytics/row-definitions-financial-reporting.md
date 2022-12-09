@@ -2,7 +2,7 @@
 title: Definice řádku v návrháři finanční sestavy
 description: Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274686"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802438"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Definice řádku v návrháři finanční sestavy
 
@@ -30,11 +30,11 @@ Definice řádku je součástí sestavy nebo stavebního bloku, který určuje o
 
 ## <a name="create-a-row-definition"></a>Vytvoření definice řádků
 
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Definice řádku**.
 2. V nabídce **Soubor** klikněte na tlačítko **Nový** a klikněte na možnost **Definice řádku**. Další informace o obsahu každé buňky naleznete v tématu [Úprava buněk definice řádku](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="open-a-row-definition"></a>Otevření definice řádku
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice řádku**.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Definice řádku**.
 2. Definici řádku otevřete kliknutím dvakrát na její název.
 3. Chcete-li zobrazit stavební bloky, které jsou přidruženy k definici řádku, klikněte pravým tlačítkem myši na definici řádku a poté vyberte možnost **Přidružení**.
 
@@ -71,7 +71,7 @@ Dimenze je protnutím dat a hodnot. Můžete seskupit data a hodnoty v návrhá�
 
 Chcete-li přidat dimenze do definice řádku, proveďte následující kroky.
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. V nabídce **Upravit** klikněte na tlačítko **Vložit řádky z dimenzí**.
 3. V dialogovém okně **Vložit řádky z dimenzí** vyberte v řádku **Dimenze** buňku dimenze, která má být převedena do definice řádku, a klikněte na tlačítko **Všechny &&&**.
 4. Chcete-li omezit definici řádku na určitý rozsah hodnot dimenzí, zadejte počáteční hodnotu dimenze do buňky **Počátek rozsahu dimenzí** a poté zadejte konečnou hodnotu dimenze do buňky **Konec rozsahu dimenzí**. Chcete-li zahrnout všechny hodnoty pro zvolenou dimenzi, ponechte tyto buňky prázdné.
@@ -94,7 +94,7 @@ Pokud máte rozvahu, ve které jsou částky zaokrouhleny, součty mohou překra
 
 Chcete-li upravit zaokrouhlování v rozvaze, proveďte následující kroky.
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. V nabídce **Úpravy** klikněte na příkaz **Vyrovnání rozdílů po zaokrouhlení**.
 3. V dialogovém okně **Vyrovnání rozdílů po zaokrouhlení** zadejte následující hodnoty:
 
@@ -124,7 +124,7 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 <td><strong>Vytvoření stylu písma</strong></td>
 <td>
 <ol>
-<li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
+<li>V Report Designer v nabídce <strong>Formát</strong> klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
 <li>V dialogovém okně <strong>Styly a formátování</strong> klikněte na položku <strong>Nový</strong> a pak zadejte jedinečný název pro nový styl.</li>
 <li>Vyberte požadované možnosti písma a pak klikněte na tlačítko <strong>OK</strong>.</li>
 </ol>
@@ -134,7 +134,7 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 <td><strong>Úprava stylu písma</strong></td>
 <td>
 <ol>
-<li>V Návrháři sestav v nabídce <strong>Formát </strong>klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
+<li>V Report Designer v nabídce <strong>Formát</strong> klikněte na tlačítko <strong>Styly a formátování</strong>.</li>
 <li>V dialogovém okně <strong>Styly a formátování</strong> vyberte styl písma, který chcete upravit, a klikněte na položku <strong>Upravit</strong>.</li>
 <li>Vyberte požadované možnosti písma a pak klikněte na tlačítko <strong>OK</strong>.</li>
 </ol>
@@ -144,7 +144,7 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 <td><strong>Použití stylu písma</strong></td>
 <td>
 <ol>
-<li>V návrháři sestav v definici či definici sloupce nebo v záhlavích a zápatích vyberte jednu nebo více buněk.</li>
+<li>V Report Designer v definici či definici sloupce nebo v záhlavích a zápatích vyberte jednu nebo více buněk.</li>
 <li>V seznamu <strong>Styl</strong> na panelu nástrojů vyberte styl písma.</li>
 </ol>
 </td>
@@ -156,9 +156,9 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 
 Formátování určené v definici řádku přepíše formátování určené v definici sloupce a definici sestavy. Pomocí ovládacích prvků na panelu nástrojů formátování můžete upravit formát textu. Tyto ovládací prvky jsou standardní ovládací prvky systému Microsoft Windows.
 
-1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. Vyberte buňky k formátování. Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.
-3. Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Například pro odsazení řádku vyberte řádek a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](media/indent.gif "Zvětšit odsazení") na panelu nástrojů.
+3. Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Například pro odsazení řádku vyberte řádek a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení.](media/indent.gif "Zvětšit odsazení") na panelu nástrojů.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Úprava sloupců během návrhu sestav
 
@@ -166,19 +166,19 @@ K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, 
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Změna šířky sloupce v podokně náhledu
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. V nabídce **Formát** klikněte na příkaz **Šířka sloupce**.
 3. V dialogovém okně **Šířka sloupce** zadejte hodnotu a klikněte na tlačítko **OK**. Případně můžete také přetáhnout pravý okraj buňky záhlaví sloupce a změnit tak šířku sloupce.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Skrytí sloupců v podokně náhledu
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. Vyberte sloupec nebo sloupce, které chcete minimalizovat.
 3. Klikněte pravým tlačítkem myši a poté klikněte na položku **Skrýt**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Zobrazení všech skrytých sloupců v podokně náhledu
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. Klikněte pravým tlačítkem myši na minimalizovaný sloupec, který chcete zobrazit, a klikněte na tlačítko **Zobrazit**.
 
 

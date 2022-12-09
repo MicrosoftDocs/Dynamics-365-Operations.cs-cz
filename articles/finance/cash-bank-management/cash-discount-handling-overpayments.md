@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715517"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804131"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Platební slevy u přeplatků
 
@@ -53,7 +53,9 @@ Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je p
 | Platba       | -95,00 | 0,00    |
 | Platební sleva | -10,50 | 0,00    |
 
-Pro platby a vyrovnání jsou generovány následující účetní položky. **Platba**
+Pro platby a vyrovnání jsou generovány následující účetní položky.
+
+**Platba**
 
 | Účet             | Částka Má dáti | Částka kreditu |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Odběratel odešle platbu za 95,00 v rámci období platební slevy. Platba je p
 | Platba       | -95,00 | -0,50   |
 | Platební sleva | -10,50 | 0,00    |
 
-Částka přeplatku ve výši 0,50 zůstane jako otevřený zůstatek platby a lze ji vyrovnat podle další faktury. Pro platby a vyrovnání jsou generovány následující účetní položky. **Platba**
+Částka přeplatku ve výši 0,50 zůstane jako otevřený zůstatek platby a lze ji vyrovnat podle další faktury. Pro platby a vyrovnání jsou generovány následující účetní položky. 
+
+**Platba**
 
 | Účet             | Částka Má dáti | Částka kreditu |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Odběratel odešle platbu za 95,00 v rámci data platební slevy. Platba je pot�
 | Platba       | -95,00 | -0,00   |
 | Platební sleva | -10,00 | 0,00    |
 
-Částka platební slevy se sníží z 10,50 na 10,00. Platba a faktura je považována za vyrovnanou. **Platba**
+Částka platební slevy se sníží z 10,50 na 10,00. Platba a faktura je považována za vyrovnanou. 
+
+**Platba**
 
 | Účet             | Částka Má dáti | Částka kreditu |
 |---------------------|--------------|---------------|

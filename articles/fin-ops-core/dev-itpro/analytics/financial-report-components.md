@@ -2,7 +2,7 @@
 title: Součásti finančních sestav
 description: Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách.
 author: aprilolson
-ms.date: 10/27/2017
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: af5cd63c2dbd531b4c8097b6149d7e67fe112259
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280024"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802708"
 ---
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
@@ -28,7 +28,7 @@ ms.locfileid: "9280024"
 
 Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Článek vysvětluje, jak uspořádat a uzamknout stavební bloky.
 
-Konstrukční filozofie za návrhářem finančních sestav je rozdělit informace na nejmenší součásti nebo stavební bloky a potom zkombinovat a spárovat součásti podle potřeby. Proto je formátování sestavy odděleno od finančních dat, a návrh sestavy můžete změnit bez úpravy finančních dat v systému Microsoft Dynamics ERP. Pomocí tohoto přístupu stavebních bloků můžete kombinovat text, částky a výpočty a vytvářet tak sestavy, jaké potřebujete. Navíc tato flexibilita podporuje tvořivost, protože usnadňuje zobrazování operací různými způsoby. Jednotlivé stavební bloky definice sestavy jsou podobné trojrozměrné tabulce, ale s ještě lepší využitelností. Definice sestavy určuje definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro použití v sestavě. Také obsahuje informace o umístění pro uložení vygenerovaných sestav a o jejich formátování.
+Konstrukční filozofie za návrhářem finančních sestav je rozdělit informace na nejmenší součásti nebo stavební bloky a potom zkombinovat a spárovat součásti podle potřeby. Proto je formátování sestavy odděleno od finančních dat, a návrh sestavy můžete změnit bez úpravy finančních dat v systému Microsoft Dynamics 365 Finance. Pomocí tohoto přístupu stavebních bloků můžete kombinovat text, částky a výpočty a vytvářet tak sestavy, jaké potřebujete. Navíc tato flexibilita podporuje tvořivost, protože usnadňuje zobrazování operací různými způsoby. Jednotlivé stavební bloky definice sestavy jsou podobné trojrozměrné tabulce, ale s ještě lepší využitelností. Definice sestavy určuje definici řádku, definici sloupce a volitelně definici stromu výkaznictví pro použití v sestavě. Také obsahuje informace o umístění pro uložení vygenerovaných sestav a o jejich formátování.
 
 ## <a name="building-blocks-of-a-report"></a>Stavební bloky sestavy
 
@@ -42,22 +42,22 @@ Konstrukční filozofie za návrhářem finančních sestav je rozdělit informa
 Pokud začínáte s navrhováním sestav, je vhodné použít průvodce sestavou k rychlému vytvoření definice sestavy, kterou lze později upravit. Pokud máte zkušenosti s návrhem sestav a potřebujete větší flexibilitu pro návrh sestavy, můžete kombinovat nové a existující stavební bloky k vytvoření nové definice sestavy. Nemusíte plně rozumět všem dostupným možnostem definice sestavy k tvorbě kvalitních sestav. Jakmile se seznámíte s návrhem sestav, můžete své definice sestavy rozšířit a využít pokročilejší funkce. Po vytvoření základní zprávy můžete přizpůsobit definici sestavy a také všechny stavební bloky v definici sestavy.
 
 ## <a name="organize-the-building-blocks"></a>Uspořádání stavebních bloků
-Použijte složky k organizaci svých stavebních bloků v Návrháři sestav. Všechny složky jsou specifické pro typ stavebních bloků, které obsahují. Například všechny složek, které obsahují definice řádku, se nacházejí v podokně **Definice řádku** v Návrháři sestav.
+Použijte složky k organizaci svých stavebních bloků v Návrháři sestav. Všechny složky jsou specifické pro typ stavebních bloků, které obsahují. Například všechny složek, které obsahují definice řádku, se nacházejí v podokně **Definice řádku** v Report Designer.
 
 ### <a name="create-a-folder"></a>Vytvoření složky
 
-1. V Návrháři sestav vyberte typ stavebního bloku k uspořádání v navigačním podokně. Chcete-li například seřadit definici řádku, klikněte na položku **Definice řádku**.
+1. V Report Designer vyberte typ stavebního bloku k uspořádání v navigačním podokně. Chcete-li například seřadit definici řádku, klikněte na položku **Definice řádku**.
 2. V navigačním podokně vyberte existující složku, ve které bude vytvořena nová složka, a potom proveďte některé z následujících akcí:
 
     - Klikněte pravým tlačítkem myši na nadřazenou složku a klikněte na **Nová složka**.
     - Vyberte nadřazenou složku, klikněte na možnost **Soubor** a vyberte možnost **Nová složka**.
 
-3. Když se objeví nová složka, zadejte název nové složky a stiskněte klávesu Enter.
+3. Když se objeví nová složka, zadejte název nové složky a stiskněte klávesu **Enter**.
 
 ## <a name="lock-a-building-block"></a> Uzamknutí stavebního bloku
 Můžete vytvořit heslo pro ochranu a uzamknutí stavebního bloku. Takový krok přidá úroveň zabezpečení pro součást sestavy bez zabezpečení celého systému. Heslo může ochránit informace ve stavebním bloku, které jsou důležité pro proces vykazování na konci měsíce. Uživatel v jakékoli roli může zamknout stavební blok. Chráněná součást je však vždy k dispozici ostatním uživatelům ve formě pouze ke čtení. Uživatelé mohou uzamčenou součást otevřít, upravit a uložit pod novým názvem. Uživatel s rolí správce má vždy přístup k zobrazení a změně uzamčeného stavebního bloku.
 
-1. V Návrháři sestav otevřete součást sestavy, kterou chcete uzamknout, například definici řádku, definici sloupce, definici sestavy nebo definici stromu výkaznictví.
+1. V Report Designer otevřete součást sestavy, kterou chcete uzamknout, například definici řádku, definici sloupce, definici sestavy nebo definici stromu výkaznictví.
 2. V nabídce **Nástroje** klepněte na tlačítko **Zamknout/Odemknout**. Můžete také kliknout na ikonu **Zamknout/Odemknout** (ikona zámku) na panelu nástrojů.
 3. V dialogovém okně **Zamknout** zadejte a potvrďte heslo a potom klepněte na tlačítko **OK**. Ikona zámku na panelu nástrojů se zvýrazní, když je otevřený stavební blok uzamčen.
 
@@ -71,7 +71,7 @@ Stavební bloky jsou definice řádků, definice sloupců, definice stromu výka
 
 Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině stavebních bloků. Můžete také exportovat nebo importovat skupinu stavebních bloků.
 
-1. V Návrháři sestav klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
+1. V Report Designer klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte stavební blok k zobrazení.
 3. Kliknutím na tlačítko **Zobrazení** otevřete dialogové okno **Zobrazení skupiny stavebních bloků** a zobrazíte obsah skupiny stavebních bloků.
 4. Kliknutím na tlačítko **Zavřít** zavřete dialogová okna.
@@ -80,7 +80,7 @@ Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině 
 
 Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
 
-1. V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
+1. V Report Designer klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete vyexportovat, a pak klikněte na položku **Export**.
 3. V dialogovém okně **Export** vyberte definice sestavy k exportu:
 
@@ -99,7 +99,7 @@ Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavebn
 
 Skupinu stavebních bloků můžete importovat do existující skupiny stavebních bloků. Všechny importované skupiny stavebních bloků si zachovají původní styly písem a odkazy na společnost a budou zahrnovat odpovídající sady dimenzí.
 
-1. V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
+1. V Report Designer klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte stavební blok, do kterého chcete skupinu stavebních bloků naimportovat, a pak klikněte na položku **Import**.
 3. V dialogovém okně **Otevřít** vyberte skupinu stavebních bloků, kterou chcete naimportovat, a pak klikněte na položku **Otevřít**.
 4. V dialogovém okně **Import** vyberte definice sestavy k importu:
@@ -116,12 +116,12 @@ Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uži
 > [!NOTE]
 > Pro vrácení stavebních bloků se změnami pomocí dialogového okna **Rezervované položky** je zapotřebí role správce.
 
-1. V Návrháři sestav v nabídce **Nástroje** klikněte na tlačítko **Rezervované položky**.
+1. V Report Designer v nabídce **Nástroje** klikněte na tlačítko **Rezervované položky**.
 2. V dialogovém okně **Rezervované položky** vyberte možnost **Zobrazit položky od všech uživatelů**. Seznam se aktualizuje a zobrazí se v něm všechny rezervované stavební bloky spolu s informacemi o uživatelích, kteří je rezervovali.
 3. Vyberte stavební blok a klikněte na položku **Zrušit rezervaci**.
 4. Kliknutím na tlačítko **Ano** potvrďte, že se má stavební blok vrátit se změnami.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715822"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804256"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 
@@ -65,12 +65,13 @@ Zálohové faktury se při obchodování používají běžně. Dodavatel vystav
 
 Souhrnný účet započtených závazků je definován v profilu **Zaúčtování dodavatele**. Chcete-li definovat výchozí profil zaúčtování, klikněte na **Závazky \> Nastavení \> Parametry závazků \> karta Hlavní kniha a DPH \> Profil zaúčtování se zálohovou fakturou dodavatele**.
 
-**Zásady aplikace zálohy** vyjadřují, zda systém automaticky použije vypořádané zálohové faktury na konečnou fakturu, která byla vytvořena ručně. Faktury vytvořené pomocí datové entity nebudou odkazovat na **Zásady aplikace zálohy**. Na faktury, které byly vytvořeny pomocí datové entity, budete muset ručně použít vypořádané zálohové faktury. Chcete-li definovat zásady, přejděte na **Závazky \> Nastavení \> Parametry závazků \> karta Hlavní kniha a DPH \> Zásady aplikace zálohy**. Když je pole **Zásady aplikace zálohy** nastaveno na **Automatické**, bude zálohová faktura automaticky označena k vypořádání s konečnou fakturou. Pokud je pole nastaveno na hodnotu **Oznámení**, zobrazí se při vytvoření konečné faktury vizuální indikace, že je k dispozici zálohová faktura, kterou lze na konečnou fakturu použít.
+**Zásady aplikace zálohy** vyjadřují, zda se automaticky použijí vypořádané zálohové faktury na konečnou fakturu, která byla vytvořena ručně. Faktury vytvořené pomocí datové entity nebudou odkazovat na **Zásady aplikace zálohy**. Na faktury, které byly vytvořeny pomocí datové entity, budete muset ručně použít vypořádané zálohové faktury. Chcete-li definovat zásady, přejděte na **Závazky \> Nastavení \> Parametry závazků \> karta Hlavní kniha a DPH \> Zásady aplikace zálohy**. Když je pole **Zásady aplikace zálohy** nastaveno na **Automatické**, bude zálohová faktura automaticky označena k vypořádání s konečnou fakturou. Pokud je pole nastaveno na hodnotu **Oznámení**, zobrazí se při vytvoření konečné faktury vizuální indikace, že je k dispozici zálohová faktura, kterou lze na konečnou fakturu použít.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Vytvoření nákupní objednávky, která obsahuje informace o zálohové faktuře
 Když vám dodavatel řekne, že vyžaduje platbu předem za zboží a služby obsažené v nákupní objednávce, musíte definovat hodnotu zálohové platby pro příslušnou nákupní objednávku. Přejděte do nabídky **Závazky \> Běžné \> Nákupní objednávky \> Všechny nákupní objednávky** a najděte nákupní objednávku dodavatele. V podokně akcí vyberte kartu **Nákup** a poté vyberte možnost **Záloha**. Zadejte informace o záloze, včetně popisu, hodnoty zálohy, zda je záloha pevnou částkou nebo procentuální hodnotou, a ID kategorie zálohy. 
 
-Upozorňujeme, že definice více záloh na nákupní objednávce není povolena. Pokud potřebujete na objednávce povolit více záloh, zaúčtujte platby pomocí deníku plateb namísto zálohové faktury.
+> [!Note] 
+> Definice více záloh na nákupní objednávce není povolena. Pokud potřebujete na objednávce povolit více záloh, zaúčtujte platby pomocí deníku plateb namísto zálohové faktury.
 
 Zálohu lze z nákupní objednávky odebrat, pokud jste již nezúčtovali platbu na zaúčtovanou zálohovou fakturu nebo nezaúčtovali standardní fakturu. Chcete-li z objednávky odebrat informace o záloze, přejděte do nabídky **Závazky \> Běžné \> Nákupní objednávky \> Všechny nákupní objednávky** a najděte nákupní objednávku dodavatele. V podokně akcí vyberte kartu **Nákup** a poté vyberte možnost **Odebrat zálohu**.
 

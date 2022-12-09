@@ -2,7 +2,7 @@
 title: Nastavení parametrů správy úvěru
 description: V tomto článku jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876347"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799538"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
@@ -73,7 +73,7 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 
 - Ve správě úvěru je limit úvěru odběratele zobrazen v měně odběratele. Je nutné definovat typ směnného kurzu pro limit úvěru v měně odběratele. V poli **Typ směnného kurzu limitu úvěru** vyberte typ směnného kurzu, který má být použit k převodu primárního limitu úvěru na limit úvěru odběratele.
 - Chcete-li uživatelům zabránit v úpravách limitů úvěru na stránce **Odběratel**, nastavte možnost **Povolit ruční úpravy limitů úvěru** na **Ne**. Je-li tato možnost nastavena na **Ne**, změny limitu úvěru odběratele lze provést pouze zaúčtováním transakcí úprav limitu úvěru.
-- Nastavte možnost **Obejít rezervace zásob** na **Ano**, aby byly ignorovány rezervace zásob při kontrole pravidel blokování správy kreditu. V tomto případě systém zkontroluje kompletní množství řádku a povolí období odkladu kontrolních bodů bez ohledu na rezervované množství zásob.
+- Nastavte možnost **Obejít rezervace zásob** na **Ano**, aby byly ignorovány rezervace zásob při kontrole pravidel blokování správy kreditu. V tomto případě se zkontroluje množství řádku a povolí období odkladu kontrolních bodů bez ohledu na rezervované množství zásob.
 - Když je povolena správa kreditu, nastavení pole **Zpráva při překročení limitu úvěru** se použije pouze pro zpracování volných faktur. Přestože se zprávy nadále přidávají do prodejních objednávek, když zákazníci překročí svůj limit úvěru, přítomnost těchto zpráv neblokuje potvrzení, tisk výdejek a dodacích listů, ani zaúčtování faktur.
 
     Správa kreditu je ve výchozím nastavení povolena, ale můžete ji zakázat. Pokud je povolena, pomocí pravidel blokování správy kreditu a kontrolních bodů můžete zjistit, kdy zákazníci překročí svůj limit úvěru. Pokud je zakázána, zprávy přidávané do prodejních objednávek na základě nastavení pole **Zpráva při překročení limitu úvěru** vám pomohou zjistit, kdy zákazníci překročí svůj limit úvěru.

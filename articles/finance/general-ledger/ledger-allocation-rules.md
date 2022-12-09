@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901277"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787546"
 ---
 # <a name="ledger-allocation-rules"></a>Pravidla přidělení hlavní knihy
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901277"
 
 Tento článek obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít.
 
-Pravidla přidělení hlavní knihy se používají k automatickému výpočtu a generování deníků přidělení a účetních položek pro přidělování zůstatků hlavní knihy nebo pevných částek. Metody přidělení mohou být proměnné nebo pevné. Pro pravidla přidělení hlavní knihy můžete použít následující metody přidělení:
+Pravidla přidělení hlavní knihy se používají k automatickému výpočtu a generování deníků přidělení a účetních položek pro přidělování zůstatků hlavní knihy nebo pevných částek. Metody přidělení mohou být proměnné nebo pevné. Přidělení je založeno na hodnotě měny transakce. Například účetní položky zisků/ztrát v cizí měně jsou zaúčtovány za účelem úpravy částek účetní a vykazovací měny. Tyto položky nepodléhají pravidlům přidělování, protože jejich hodnota měny transakce je 0,00. Pro pravidla přidělení hlavní knihy můžete použít následující metody přidělení:
 
 -   **Základ** – tato proměnná metody se používá, když přidělení závisí na skutečném zůstatku hlavní knihy na základě kritérií filtru. Příklad: Výdaje společnosti na reklamu lze přidělit úměrně podle prodeje jednotlivých oddělení vzhledem k celkovému prodeji oddělení.
 -   **Pevné procento** a **Pevná váha** – pro tyto metody je procentuální hodnota nebo váha přidělení definována přímo pro pravidlo. Například výdaje na reklamu lze alokovat tak, aby oddělení A přijalo 70 procent výdajů na reklamu a oddělení B 30 procent.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872261"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806368"
 ---
 # <a name="recruiting-request"></a>Požadavek na nábor
 
@@ -68,7 +68,7 @@ Popisuje požadavek na nábor pro práci.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Popisuje požadavek na nábor pro práci.
 | **Stav**<br>mshr_status<br>Sada možností *RecruitingRequestStatus* | Čtení/zápis<br>Povinná<br> | Označuje stav žádosti na nábor. |
 | **Popis**<br>mshr_description<br>*Řetězec* | Čtení/zápis<br>Povinná | Popisuje žádost. |
 | **ID místa žádosti o nábor**<br>mshr_recruitingrequestlocationid<br>*Řetězec* | Čtení/zápis<br>Volitelné | Uživatelsky čitelný jedinečný identifikátor místa výkonu práce přidruženého k této žádosti. |
-| **Hodnota ID místa náboru**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Jen pro čtení<br>Volitelné<br>Cizí klíč: mshr_hcmrecruitingrequestlocationentityid entity mshr_hcmrecruitingrequestlocationentity | Systémem generovaná hodnota GUID k identifikaci místa náboru vybraného pro žádost o nábor. |
+| **Hodnota ID místa náboru**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Jen pro čtení<br>Volitelné<br>Cizí klíč: mshr_hcmrecruitingrequestlocationentityid entity mshr_hcmrecruitingrequestlocationentity | Systémem generovaná hodnota GUID k identifikaci místa náboru vybraného pro žádost o nábor. |
 | **Komentáře**<br>mshr_comments<br>*Řetězec* | Čtení/zápis<br>Volitelné | Komentáře k žádosti určené pro náborové manažery a náboráře. |
 | **ID úlohy**<br>mshr_jobid<br>*Řetězec* | Jeden zápis<br>Povinná |   Uživatelsky čitelný, jedinečný identifikátor práce sdílené všemi pozicemi přidruženým k této žádosti. |
 | **Hodnota ID práce**<br>_mshr_fk_job_id_value<br>*GUID* | Jen pro čtení<br>Povinná<br>Cizí klíč: mshr_hcmjobentityid entity mshr_hcmjobentity | Systémem generovaný, jedinečný identifikátor práce sdílené všemi pozicemi přidruženým k žádosti o nábor. |

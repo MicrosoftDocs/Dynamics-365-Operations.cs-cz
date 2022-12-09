@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: 1c125369a5b2134759bf3650175276acf42b69e0
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135532"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802816"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
@@ -51,12 +51,12 @@ Následující příklady jsou platné kódy řádků:
 
 ### <a name="change-a-row-code-in-a-row-definition"></a>Změna kódu řádku v definici řádku
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. V odpovídajícím řádku zadejte novou hodnotu do buňky ve sloupci **Kód řádku**.
 
 ### <a name="reset-numeric-row-codes"></a>Reset číselných kódů řádků
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. V nabídce **Upravit** klikněte na tlačítko **Přečíslovat řádky**.
 3. V dialogovém okně **Přečíslovat řádky** zadejte nové hodnoty pro počáteční kód řádku a přírůstek kódu řádku. Můžete obnovit číselné kódy řádků na rovnoměrně rozložené hodnoty. Návrhář sestav však přečísluje pouze kódy řádků začínající číslicemi (například 130 nebo 246). Nepřečísluje kódy řádků, které začínají písmeny (například INCOME\_93 nebo TP0693)
 
@@ -71,19 +71,19 @@ Buňky s popisem poskytují popis finančních dat v řádku sestavy, napřík
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Přidání popisu pro řádek v sestavě
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. Vyberte buňku **Popis** a poté zadejte název řádku sestavy.
 3. Použijte formátování.
 
 ### <a name="add-additional-text-from-a-reporting-tree-in-the-description"></a>Přidání dalšího textu z organizačního stromu do popisu
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. Zadejte kód doplňkového textu a jakýkoli další text do příslušné buňky **Popis**.
 3. Použijte formátování.
 
 ### <a name="limit-the-additional-text-to-a-specific-reporting-unit"></a>Omezení dalšího textu na konkrétní organizační jednotku
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. Vyhledejte řádek, ve kterém má být vytvořen doplňkový text, a pak dvakrát klikněte na buňku ve sloupci **Související vzorce/řádky/jednotky**.
 3. V dialogovém okně **Výběr jednotky výkaznictví** v poli **Strom výkaznictví** vyberte strom výkaznictví.
 4. V poli **Vyberte jednotku výkaznictví pro omezení** rozbalte nebo sbalte strom výkaznictví a vyberte jednotku výkaznictví.
@@ -96,14 +96,14 @@ Buňka **Kód formátu** nabízí výběr předem naformátovaných voleb pro ob
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Přidání kódu formátu k řádku sestavy
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2. Dvakrát klikněte na buňku **Kód formátu**.
 3. Vyberte kód formátu ze seznamu. Následující tabulka popisuje kódy formátů a jejich akce.
 
     | Kód formátu                   | Interpretace kódu formátu | Akce |
     |-------------------------------|-----------------------------------|--------|
     | (Žádné)                        |                                   | Vymaže buňku **Kód formátu**. |
-    | TOT                           | Celkem                             | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**. |
+    | TOT                           | Součet                             | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Součty obsahují jednoduché operátory, například **+** nebo **-**. |
     | CAL                           | Výpočet                       | Identifikuje řádek, který používá matematické operátory ve sloupci **Související vzorce/řádky/jednotky**. Výpočty obsahují složité operátory, například **+**, **-**, **\**_, _*/**, a příkazy **IF/THEN/ELSE**. |
     | DES                           | popis                       | Identifikuje řádek záhlaví nebo prázdný řádek v sestavě. |
     | LFT RGT CEN                   | Vlevo Na střed Vpravo                 | Zarovná text popisu řádku na stránce sestavy bez ohledu na jeho umístění v definici sloupce. |
@@ -149,7 +149,7 @@ Při vytváření vzorce součtového řádku je nutné pomocí kódů řádků 
 
 ### <a name="create-a-row-total"></a>Vytvoření součtového řádku
 
-1. V Návrháři sestav klikněte na položku **Definice řádků** a otevřete definici řádků, kterou chcete změnit.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. Dvakrát klikněte na buňku **Kód formátu** v definici řádku a vyberte možnost **TOT**.
 3. V buňce **Související vzorce/řádky/jednotky** zadejte vzorec součtu.
 
@@ -160,9 +160,9 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 > [!NOTE]
 > Poznámka: Můžete také potlačit tisk řádků podrobných částek, pokud zrušíte zaškrtnutí políčka pro zobrazení řádků bez částek. Tato možnost se nachází na kartě **Nastavení** v definici sestavy. Ve výchozím nastavení jsou v sestavách potlačeny účty podrobností transakcí s nulovým zůstatkem nebo bez jakékoli aktivity v daném období. Zobrazit tyto účty podrobností transakcí můžete zaškrtnutím políčka **Zobrazit řádky bez částek** na kartě **Nastavení** definice sestavy.
 
-### <a name="relate-a-format-row-to-an-amount-row"></a>Spojení řádku formátu s řádkem částky
+### <a name="relate-a-format-row-to-an-amount-row"></a>Vztažení řádku formátu k řádku částky
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom vyberte definici řádku ke změně.
 2. Do řádku formátování v buňce **Související vzorce/řádky/jednotky** zadejte kód řádku částky k potlačení.
 
     > [!NOTE]
@@ -192,13 +192,13 @@ Typ sloupce **CALC** v definici sloupce udává, že se jedná o sloupec, pro 
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Výběr základního řádku v definici řádku pro výpočet sloupce
 
-1. V Návrháři sestav, klikněte na tlačítko **Definice sloupce** a potom otevřete definici sloupce pro výkaz zisků.
+1. V Report Designer, klikněte na tlačítko **Definice sloupce** a potom otevřete definici sloupce pro výkaz zisků.
 2. Přidejte nový sloupec do definice sloupce a nastavte typ sloupce na možnost **CALC**.
 3. V buňce **Vzorec** nového sloupce zadejte vzorec **X/BASEROW**, kde **X** je typ sloupce **FD** pro zobrazení v procentech.
 4. Dvakrát klikněte na buňku **Přepsání formátu/měny**.
 5. V dialogovém okně **Přepsání formátu** v seznamu **Kategorie formátu** vyberte možnost **Procento** a klikněte na tlačítko **OK**.
 6. V nabídce **Soubor** klikněte na tlačítko **Uložit jako** a uložte definici sloupce pod novým názvem. Připojte kód **CBR** k aktuálnímu názvu souboru (například **CUR\_YTD\_CBR**). Tato definice sloupce je vaše definice sloupce základního řádku.
-7. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně použitím výpočtu základního řádku.
+7. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně použitím výpočtu základního řádku.
 8. Vložte nový řádek nad místo, kde by měl začínat výpočet využívající základní řádek.
 9. Dvakrát klikněte na buňku **Kód formátu** v definici řádku a vyberte možnost **CBR**.
 10. V buňce **Související vzorce/řádky/jednotky** zadejte číslo kódu řádku pro základní řádek.
@@ -227,7 +227,7 @@ Kódy řazení slouží k seřazení účtů a hodnot, k seřazení sestavy o
 
 ### <a name="select-a-sorting-code"></a>Volba kódu řazení
 
-1. V Návrháři sestav klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
+1. V Report Designer klikněte na tlačítko **Definice řádku** a potom otevřete definici řádku ke změně.
 2. Dvakrát klikněte na buňku **Kód formátu** a vyberte kód třídění.
 3. V buňce **Související vzorce/řádky/jednotky** stanovte rozmezí kódů řádků ke třídění. Při zadávání rozsahu zadejte kód prvního řádku, dvojtečku (:) a poté kód posledního řádku. Zadáním například hodnoty **160:490** určete rozmezí od řádku 160 po řádek 490.
 4. V buňce **Omezení sloupce** zadejte písmeno sloupce sestavy k použití pro řazení.
@@ -239,21 +239,21 @@ Kódy řazení slouží k seřazení účtů a hodnot, k seřazení sestavy o
 
 V následujícím příkladu budou hodnoty ve sloupci D sestavy seřazeny ve vzestupném pořadí řádků 160 až 490. V následujícím příkladu budou absolutní hodnoty ve sloupci G sestavy seřazeny v sestupném pořadí řádků 610 až 940.
 
-| Kód řádku | Popis                                         | Kód formátu | Související vzorce/řádky/jednotky | Normální rozvaha | Omezení sloupce | Odkaz na finanční dimenze |
-|----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
-| 100      | Seřazeno vzestupně podle měsíční odchylky       | DES         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Prodej                                               |             |                             | C              |                    | 4100                         |
-| 190      | Prodejní vratky                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Příjem z úroků                                     |             |                             | C              |                    | 7000                         |
-| 520      |                                                     | DES         |                             |                |                    |                              |
-| 550      | Seřazeno sestupně podle absolutní odchylky od začátku roku | DES         |                             |                |                    |                              |
-| 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Prodej.                                               |             |                             | o              |                    | 4100                         |
-| 640      | Prodejní vratky                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Příjem z úroků                                     |             |                             | o              |                    | 7000                         |
+| Kód řádku | popis                             | Kód formátu | Související vzorce/řádky/jednotky | Normální rozvaha | Omezení sloupce | Odkaz na finanční dimenze |
+|----------|-----------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
+| 100      | Seřazeno vzestupně podle měsíční odchylky       | DES         |                |                |                    |                              |
+| 130      |                                        | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Prodej                                   |             |                             | C              |                    | 4100                         |
+| 190      | Prodejní vratky                        |             |                             |                |                    | 4110                         |
+|          | ...                             |             |                             |                |                    |                              |
+| 490      | Příjem z úroků              |             |                             | C              |                    | 7000                         |
+| 520      |                                     | DES         |                             |                |                    |                              |
+| 550      | Seřazeno sestupně podle absolutní odchylky od začátku roku | DES         |             |                |                    |                              |
+| 580      |                              | ASORTDESC   | 610:940                     |                | G                  |                              |
+| 610      | Prodej.                     |             |                             | o              |                    | 4100                         |
+| 640      | Prodejní vratky                |             |                             |                |                    | 4110                         |
+|          | ...                       |             |                             |                |                    |                              |
+| 940      | Příjem z úroků               |             |                             | o              |                    | 7000                         |
 
 
 ## <a name="specify-a-format-override-cell"></a>Určení buňky přepsání formátu
@@ -266,7 +266,7 @@ Buňka **Přepsání formátu** určuje formátování použité pro řádek př
 
 ### <a name="override-cell-formatting"></a>Přepsání formátování buňky
 
-1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. V řádku pro přepsání formátu dvakrát klikněte na buňku ve sloupci **Přepsání formátu**.
 3. V dialogovém okně **Přepsání formátu** vyberte možnosti formátování pro použití v daném řádku v sestavě.
 4. Klepněte na tlačítko **OK**.
@@ -327,7 +327,7 @@ Typ by měl představovat jak kladnou, tak i zápornou hodnotu. Obvykle zadáte 
 | 0,00 %;(0,00 %)                  | 123456,00 % | (123456,00%) | 0,00 %   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Určit obvyklé saldo buňky
-Buňka **Normální zůstatek** v definici řádku řídí znaménka částek v řádku. Chcete-li obrátit znaménko řádku nebo pokud je normální zůstatek účtu na straně Dal, zadejte **C** do buňky **Normální zůstatek** pro daný řádek. Aplikace Návrhář sestav obrátí znaménka na všech rozvahových účtech na straně Dal v daném řádku. Když návrhář sestav převádí tyto účty, odstraní charakteristiky Má dáti / Dal ze všech částek a tím pádem zjednoduší sčítání. Chcete-li například vypočítat čistý příjem, odečtete výdaje od příjmů. Obvykle nejsou sečtené a vypočtené řádky ovlivněny kódem **C**. Ovládací prvek tisku **XCR** v definici sloupce obrátí znaménko jakéhokoli řádku obsahujícího hodnotu **C** ve sloupci **Normální zůstatek**. Toto formátování je zvláště důležité, pokud chcete zobrazit všechny nepříznivé odchylky jako záporné částky. Pokud má sečtené nebo vypočtené číslo nesprávné znaménko, zadáním hodnoty **C** do buňky **Normální zůstatek** pro řádek obrátíte znaménko.
+Buňka **Normální zůstatek** v definici řádku řídí znaménka částek v řádku. Chcete-li obrátit znaménko řádku nebo pokud je normální zůstatek účtu na straně Dal, zadejte **C** do buňky **Normální zůstatek** pro daný řádek. Aplikace Návrhář sestav obrátí znaménka na všech rozvahových účtech na straně Dal v daném řádku. Když Report Designer převádí tyto účty, odstraní charakteristiky Má dáti / Dal ze všech částek a tím pádem zjednoduší sčítání. Chcete-li například vypočítat čistý příjem, odečtete výdaje od příjmů. Obvykle nejsou sečtené a vypočtené řádky ovlivněny kódem **C**. Ovládací prvek tisku **XCR** v definici sloupce obrátí znaménko jakéhokoli řádku obsahujícího hodnotu **C** ve sloupci **Normální zůstatek**. Toto formátování je zvláště důležité, pokud chcete zobrazit všechny nepříznivé odchylky jako záporné částky. Pokud má sečtené nebo vypočtené číslo nesprávné znaménko, zadáním hodnoty **C** do buňky **Normální zůstatek** pro řádek obrátíte znaménko.
 
 ## <a name="specify-a-row-modifier-cell"></a>Určení modifikátoru řádku buňky
 Obsah buňky **Modifikátor řádku** v definici řádku přepíše fiskální roky, období a další informace, které jsou určeny v definici sloupce pro daný řádek. Vybraný modifikátor platí pro všechny účty v tomto řádku. Každý řádek je možné upravit pomocí jednoho nebo více následujících typů modifikátorů:
@@ -338,7 +338,7 @@ Obsah buňky **Modifikátor řádku** v definici řádku přepíše fiskální r
 
 ### <a name="override-a-column-definition"></a>Přepsání definice sloupce
 
-1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. V řádku, ve kterém chcete přepsat definici sloupce, klikněte dvakrát na buňku **Modifikátor řádku**.
 3. V dialogovém okně **Modifikátor řádku** vyberte jednu z možností v poli **Modifikátor účtu**. Popis možností najdete v tématu „Modifikátory účtů“.
 4. V poli **Modifikátory kódu knihy** vyberte kód knihy pro použití v tomto řádku.
@@ -386,7 +386,7 @@ Některé účetní systémy podporují atributy účtů a transakcí ve finan�
 Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, která mají být zahrnuta v každém řádku sestavy. Tato buňka obsahuje hodnoty dimenze. Otevřete dialogové okno **Dimenze** kliknutím dvakrát na buňku **Odkaz na finanční dimenze**.
 
 > [!NOTE]
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Chcete-li zadat informace pro řádek, který již je v definici řádků, přidejte tyto informace do buňky **Odkaz na finanční dimenze**. Chcete-li přidat nové řádky, které odkazují na finanční data, použijte dialogové okno **Vložit řádky z** pro vytvoření nových řádků v definici sestavy. Název sloupce se změní podle toho, jak je nakonfigurován, jak je znázorněno v následující tabulce.
+> Report Designer však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics 365 Finance, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Chcete-li zadat informace pro řádek, který již je v definici řádků, přidejte tyto informace do buňky **Odkaz na finanční dimenze**. Chcete-li přidat nové řádky, které odkazují na finanční data, použijte dialogové okno **Vložit řádky z** pro vytvoření nových řádků v definici sestavy. Název sloupce se změní podle toho, jak je nakonfigurován, jak je znázorněno v následující tabulce.
 
 | Vybraný typ odkazu       | Popis sloupce Odkaz se změní na tento |
 |----------------------------------|----------------------------------------------------|
@@ -395,7 +395,7 @@ Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, kter�
 
 ### <a name="specify-a-dimension-or-range"></a>Zadání dimenze nebo rozsahu
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. Dvakrát klikněte na některou buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V dialogovém okně **Dimenze** dvakrát klikněte na buňku pod názvem dimenze.
 4. V dialogovém okně pro dimenzi vyberte položku **Jednotlivec nebo rozsah**.
@@ -408,7 +408,7 @@ Ve výchozím nastavení návrhář sestav netiskne řádky, které nemají odpo
 
 ### <a name="modify-zero-balance-settings"></a>Upravit nastavení nulových zůstatků
 
-1. V Návrháři sestav otevřete definici sestavy, kterou chcete změnit.
+1. V Report Designer otevřete definici sestavy, kterou chcete změnit.
 2. Na kartě **Nastavení** v části **Další formátování** vyberte možnosti pro definici řádku, která se používá v definici sestavy.
 3. Chcete-li uložit změny, klikněte v nabídce **Soubor** na tlačítko **Uložit**.
 
@@ -423,32 +423,32 @@ Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** mů�
 Můžete zadat rozsah hodnot segmentů nebo dimenzí. Výhodou zadání rozsahu je, že nemusíte aktualizovat definici řádku pokaždé, když je přidána nová hodnota segmentu nebo hodnota dimenze do finančních dat. Například rozsah **+Účet=\[6100:6900\]** získá hodnoty z účtů 6100 až 6900 do částky řádku. Když rozsah zahrnuje zástupný znak (?), nebude návrhář sestav hodnotit rozsah znak po znaku. Místo toho určí dolní a horní konec rozsahu a potom zahrne koncové hodnoty a veškeré hodnoty mezi nimi.
 
 > [!NOTE]
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
+> Report Designer však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics 365 Finance, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Rozsahy s více segmenty nebo dimenzemi
 
 Při zadání rozsahu kombinací více hodnot dimenzí se provádí porovnání rozsahu na základě ..\\financial-dimensions\\dimension-by-dimension basis. Porovnání rozsahu nelze provést po znacích nebo částečných segmentech. Například rozsah **+Účet=\[5000:6000\], Oddělení=\[1000:2000\], Nákladové středisko=\[00\]** zahrnuje pouze účty, které odpovídají každému segmentu. V tomto případě první dimenze musí být v rozmezí od 5000 až 6000, druhá dimenze musí být v rozmezí 1000 až 2000 a poslední dimenze musí být 00. Například **+ účet =\[5100\], oddělení =\[1100\], nákladové středisko =\[01\]** není zahrnuto v sestavě, protože poslední segment je mimo zadaný rozsah. Pokud hodnota segmentu zahrnuje mezery, vložte ji do hranatých závorek (\[ \]). Následující hodnoty jsou platné pro čtyřmístný segment: **\[ 234\], \[123 \], \[1 34\]**. Hodnoty dimenze mají být zadávány do hranatých závorek (\[ \]) a návrhář sestav tyto závorky přidá za vás. Pokud rozsah segmentu více nebo více dimenzí obsahuje zástupné znaky (? nebo \*), bude určen horní a dolní konec celého násobného segmentu a potom budou zahrnuty koncové hodnoty a veškeré hodnoty mezi nimi. Pokud máte velký rozsah, například celý rozsah účtů od 40000 do 99999, zadejte platný počáteční účet a koncový účet, kdykoli je to možné.
 
 > [!NOTE] 
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
+> Report Designer však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics 365 Finance, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Sčítání nebo odečítání z jiných účtů v definici řádku
 Chcete-li přičítat nebo odečítat peněžní částky jednoho účtu od peněžních částek jiného účtu, můžete použít znaménko plus (+) a znaménko minus (-) v buňce **Odkaz na finanční dimenze**. Následující tabulka zobrazuje přípustné formáty pro přičítání odkazů k finančním datům a pro jejich odečítání.
 
-| Operace                                                                               | Použijte tento formát                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Součet dvou plně kvalifikovaných účtů                                                       | +Divize=\[000\], Účet=\[1205\], Oddělení=\[00\]+Divize=\[100\], Účet=\[1205\], Oddělení=\[00\] |
-| Součet dvou hodnot segmentů                                                                 | +Účet=\[1205\]+Účet=\[1210\]                                                                           |
-| Součet hodnot segmentů obsahujících zástupné znaky.                                    | +Účet=\[120?+Účet=\[11??\]                                                                             |
-| Součet rozsahu plně kvalifikovaných účtů                                                | +Divize=\[000:100\], Účet=\[1205\], Oddělení=\[00\]                                                   |
-| Součet rozsahu hodnot segmentů                                                          | +Účet=\[1200:1205\]                                                                                       |
-| Součet rozsahu hodnot segmentů obsahujících zástupné znaky.                         | +Účet=\[120?:130?\]                                                                                       |
+| Operace                                            | Použijte tento formát                                                                                              |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Součet dvou plně kvalifikovaných účtů      | +Divize=\[000\], Účet=\[1205\], Oddělení=\[00\]+Divize=\[100\], Účet=\[1205\], Oddělení=\[00\] |
+| Součet dvou hodnot segmentů                    | +Účet=\[1205\]+Účet=\[1210\]                                                                           |
+| Součet hodnot segmentů obsahujících zástupné znaky.  | +Účet=\[120?+Účet=\[11??\]                                                                     |
+| Součet rozsahu plně kvalifikovaných účtů              | +Divize=\[000:100\], Účet=\[1205\], Oddělení=\[00\]                                           |
+| Součet rozsahu hodnot segmentů                | +Účet=\[1200:1205\]                                                                                       |
+| Součet rozsahu hodnot segmentů obsahujících zástupné znaky.         | +Účet=\[120?:130?\]                                                           |
 | Odečtení jednoho plně kvalifikovaného účtu od jiného plně kvalifikovaného účtu              | +Divize=\[000\], Účet=\[1205\], Oddělení=\[00\]-Divize=\[100\], Účet=\[1205\], Oddělení=\[00\] |
-| Odečtení jedné hodnoty segmentu od jiné hodnoty segmentu.                                  | +Účet=\[1205\]-Účet=\[1210\]                                                                           |
-| Odečtení hodnoty segmentu, která obsahuje zástupný znak, od jiné hodnoty segmentu. | +Účet=\[1200\]-Účet=\[11??\]                                                                           |
-| Odečtení rozsahu plně kvalifikovaných účtů                                           | -Divize=\[000:100\], Účet=\[1200:1205\], Oddělení=\[00:01\]                                           |
-| Odečtení rozsahu hodnot segmentů                                                     | -Účet=\[1200:1205\]                                                                                       |
-| Odečtení rozsahu hodnot segmentů obsahujících zástupné znaky.                    | -Účet=\[120?:130?\]                                                                                       |
+| Odečtení jedné hodnoty segmentu od jiné hodnoty segmentu.          | +Účet=\[1205\]-Účet=\[1210\]                                                               |
+| Odečtení hodnoty segmentu, která obsahuje zástupný znak, od jiné hodnoty segmentu. | +Účet=\[1200\]-Účet=\[11??\]                                        |
+| Odečtení rozsahu plně kvalifikovaných účtů                               | -Divize=\[000:100\], Účet=\[1200:1205\], Oddělení=\[00:01\]                   |
+| Odečtení rozsahu hodnot segmentů                   | -Účet=\[1200:1205\]                                                                                       |
+| Odečtení rozsahu hodnot segmentů obsahujících zástupné znaky.                    | -Účet=\[120?:130?\]                                               |
 
 Ačkoli můžete upravovat účty přímo, můžete použít také dialogové okno **Dimenze** k aplikaci správného formátování na vaše odkazy na finanční údaje. Všechny hodnoty mohou obsahovat zástupné znaky (? nebo \*). Návrhář sestav však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }.
 
@@ -457,7 +457,7 @@ Ačkoli můžete upravovat účty přímo, můžete použít také dialogové ok
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Přičítání nebo odečítání účtů od jiných účtů
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Report Designer otevřete definici řádku k úpravě.
 2. V odpovídajícím řádku klikněte dvakrát na buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V prvním řádku dialogového okna **Dimenze** proveďte tyto kroky:
 
@@ -485,7 +485,7 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 
 ### <a name="create-a-set-of-dimension-values"></a>Vytvoření sady hodnot dimenze
 
-1. V Návrháři sestav otevřete definici řádku, sloupce nebo stromu k úpravě.
+1. V Report Designer otevřete definici řádku, sloupce nebo stromu k úpravě.
 2. V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
 3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ sady hodnot dimenze k vytvoření a klikněte na tlačítko **Nová**.
 4. V dialogovém okně **Nová** zadejte název a popis sady.
@@ -497,7 +497,7 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 
 ### <a name="update-a-set-of-dimension-values"></a>Aktualizace sady hodnot dimenze
 
-1. V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku, sloupce nebo stromu k úpravě.
 2. V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
 3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
 4. V seznamu vyberte sadu hodnot dimenze k aktualizaci a poté klikněte na tlačítko **Upravit**.
@@ -511,7 +511,7 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 
 ### <a name="copy-a-dimension-set"></a>Kopírování sady dimenzí
 
-1. V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku, sloupce nebo stromu k úpravě.
 2. V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
 3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
 4. V seznamu vyberte sadu ke zkopírování a poté klikněte na tlačítko **Uložit jako**.
@@ -519,7 +519,7 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 
 ### <a name="delete-a-dimension-set"></a>Odstranění sady dimenzí
 
-1. V Návrháři sestav otevřete definici řádků, sloupců nebo stromu, kterou chcete změnit.
+1. V Report Designer otevřete definici řádku, sloupce nebo stromu k úpravě.
 2. V nabídce **Upravit** klikněte na tlačítko **Správa sad hodnot dimenzí**.
 3. V dialogovém okně **Správa sad hodnot dimenzí** v poli **Dimenze** vyberte typ dimenze.
 4. Vyberte sadu, kterou chcete odstranit, a klikněte na příkaz **Odstranit**. Kliknutím na tlačítko **Ano** se tato sada hodnot dimenze trvale odstraní.

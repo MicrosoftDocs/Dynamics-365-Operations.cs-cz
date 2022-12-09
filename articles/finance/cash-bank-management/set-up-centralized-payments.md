@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715633"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804040"
 ---
 # <a name="set-up-centralized-payments"></a>Nastavení centralizovaných plateb
 
@@ -34,7 +34,10 @@ Postupujte podle těchto kroků k přípravě zpracování plateb v jedné práv
 -   Nastavte mezipodnikové účetnictví.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Nastavit organizační hierarchii pro centralizované platby
-Musíte nastavit organizační hierarchii pro centralizované platby. Stejná organizační hierarchie slouží také ke zpracování centralizovaných plateb dodavatelů a centralizovaných plateb odběratelů. **Poznámka:** u centralizovaných plateb na struktuře hierarchie nezáleží. Každý právní subjekt v hierarchii bude moci zpracovat platby jménem každého dalšího právního subjektu v hierarchii. Na stránce **Organizační hierarchie** můžete vytvořit novou organizační hierarchii. V poli **Účel** je nutné vybrat **Centralizované platby**. 
+Musíte nastavit organizační hierarchii pro centralizované platby. Stejná organizační hierarchie slouží také ke zpracování centralizovaných plateb dodavatelů a centralizovaných plateb odběratelů. 
+
+>[!Note] 
+>U centralizovaných plateb na struktuře hierarchie nezáleží. Každý právní subjekt v hierarchii bude moci zpracovat platby jménem každého dalšího právního subjektu v hierarchii. Na stránce **Organizační hierarchie** můžete vytvořit novou organizační hierarchii. V poli **Účel** je nutné vybrat **Centralizované platby**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Nastavení mezipodnikového účtu pro centralizované platby
 Pokud jsou platební transakce u aktuální právnické osoby vyrovnány oproti fakturám u jiných právnických osob, budou pro každou právnickou osobu vytvořeny odpovídající kreditní a debetní transakce. Je nutné zadat právnickou osobu, ve které jsou zaúčtovány odpovídající platební slevy a částky realizovaného zisku nebo ztráty. Před zahájením práce rozhodněte, kterou právnickou osobu budete používat ke zpracování plateb dodavatelů a odběratelů. Jestliže jedna právnická osoba zpracovává platby dodavatelů, ale jiná právnická osoba zpracovává platby odběratelů, budete muset do každé právnické osoby přepínat. Na stránce **Mezipodnikové účetnictví** můžete vybrat záznam mezipodnikového vztahu pro právnickou osobu, jejímž jménem budete zpracovávat platby. 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780465"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788533"
 ---
 # <a name="create-a-free-text-invoice"></a>Vytvořit volnou fakturu
 
@@ -69,6 +69,8 @@ Tento článek vysvětluje, jak vytvořit volné faktury. Pro proceduru použijt
     * Můžete změnit časování tisku faktury. Výběrem **Aktuální** vytisknete jednotlivé faktury při aktualizaci. Výběrem **Po** vytisknete všechny faktury po aktualizaci.
     * Pokud chcete změnit ověření limitu úvěru odběratele před zaúčtováním faktury, změňte hodnoty v **typ limitu úvěru** pole.
     * Na kartě **Aktualizace** ve stránce **Parametry pohledávek** (**Pohledávky > Nastavení > Parametry pohledávek**) můžete zastavit účtování volných faktur, když nastane chyba. Výběrem možnosti **Ano** u parametru **Zastavit účtování volných faktur při první chybě** zastavíte účtování volných faktur, když dojde k chybě. Pokud účtujete v dávce, chyba zastaví proces účtování a stav dávky bude nastaven na **Chyba**. Pokud tato možnost není vybrána, proces zaúčtování přeskočí fakturu s chybou zaúčtování a bude pokračovat v zaúčtování dalších faktur. Pokud účtujete v dávce, chyba účtování nezabrání v zaúčtování dalších faktur. Stav dávky bude **Skončeno**. Podrobná zpráva o procesu zaúčtování bude k dispozici ke kontrole v historii dávkové úlohy.
+    * V Microsoft Dynamics 365 Finance 10.0.30 zlepšuje funkce **Vylepšení účtování volných faktur pro výpočet součtů** výkon účtování tím, že umožňuje efektivnější provoz. Když je tato funkce zapnutá, účtování uloží vypočítané součty, místo toho, aby se součty během procesu účtování několikrát přepočítávaly. 
+    * V Microsoft Dynamics 365 Finance 10.0.31 zlepšuje funkce **Vylepšení procesu hromadného zaúčtování volných faktur** výkon účtování tím, že umožňuje efektivnější provoz. Když je tato funkce zapnutá, účtování používá vzor, který sám spravuje pracovní zátěž dávkového účtování přes pevný počet vláken, namísto přiřazování pevného počtu dokumentů v neomezeném počtu vláken.
     * Volbou možnosti **Ano** vytisknete fakturu.
     * Volbou možnosti **Ano** zaúčtujete fakturu. Fakturu můžete vytisknout bez jejího zaúčtování.
 

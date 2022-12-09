@@ -15,30 +15,30 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db95720d56cc538f2d702137889467a9892d99c
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b75637bfb38c13591223ff11be36d958b3972d4f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715174"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804122"
 ---
 # <a name="cash-discounts"></a>Platební slevy
 
 [!include [banner](../includes/banner.md)]
 
-Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.  Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy. 
+Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky. Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy. 
 
 ## <a name="cash-discounts"></a>Platební slevy
 
-Na stránce Platební slevy lze vytvořit platební slevy pro odběratele nebo dodavatele. Pomocí pole Další kód slevy lze definovat také řadu platebních slev, které budou postupně následovat vždy, když vyprší platnost předchozí platební slevy. Další informace naleznete v části „Příklad: Řada platebních slev“ dále v tomto článku. Pokud jsou faktura, transakce akreditivu (platba nebo dobropis) nebo obě tyto možnosti zadány v jiné měně než v zúčtovací měně právnické osoby, platební sleva se vypočítá pomocí směnného kurzu na základě data platby nebo dobropisu. Pokud jsou faktura a platební doklad zadány v jiných právnických osobách a zúčtovací měny se pro právnické osoby liší, směnný kurz je převzat z právnické osoby faktury k datu dokumentu akreditivu. Další informace naleznete v části „Příklad: Směnné kurzy pro platební slevy“ dále v tomto článku.
+Na stránce **Platební slevy** lze vytvořit platební slevy pro odběratele nebo dodavatele. Pomocí pole **Další kód slevy** lze definovat také řadu platebních slev, které budou postupně následovat vždy, když vyprší platnost předchozí platební slevy. Další informace naleznete v části „Příklad: Řada platebních slev“ dále v tomto článku. Pokud jsou faktura, transakce akreditivu (platba nebo dobropis) nebo obě tyto možnosti zadány v jiné měně než v zúčtovací měně právnické osoby, platební sleva se vypočítá pomocí směnného kurzu na základě data platby nebo dobropisu. Pokud jsou faktura a platební doklad zadány v jiných právnických osobách a zúčtovací měny se pro právnické osoby liší, směnný kurz je převzat z právnické osoby faktury k datu dokumentu akreditivu. Další informace naleznete v části „Příklad: Směnné kurzy pro platební slevy“ dále v tomto článku.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Výchozí objednávka hlavního účtu platební slevy
 
 Pokud je faktura uhrazena v termínu opravňujícím k platební slevě, zaúčtuje se platební sleva automaticky na hlavní účet platebních slev podle následující výchozí priority:
-1.  Hlavní účet určený v poli Alternativní účet pro slevu na odběratelově stránce Vyrovnat otevřené transakce a dodavatelově stránce Vyrovnat otevřené transakce.
-2.  Hlavní účet určený v poli Platební sleva odběratele nebo Platební sleva dodavatele účetní skupiny hlavní knihy, která je přiřazena ke kódu DPH na faktuře. Na stránce Skupiny zaúčtování hlavní knihy nastavte účetní skupiny hlavní knihy a na stránce Kódy DPH je přiřaďte ke kódům DPH.
-3.  Hlavní účtovací účet na stránce Platební slevy buď v poli Hlavní účet slev odběratele, nebo v poli Hlavní účet slev dodavatele pro kód platební slevy, který je na uhrazené faktuře.
-4.  Hlavní účet pro platební slevy, který je definován na stránce Účty pro automatické transakce.
+1.  Hlavní účet určený v poli **Alternativní účet pro slevu** na odběratelově stránce **Vyrovnat otevřené transakce** a dodavatelově stránce **Vyrovnat otevřené transakce**.
+2.  Hlavní účet určený v poli **Platební sleva odběratele** nebo **Platební sleva dodavatele** účetní skupiny hlavní knihy, která je přiřazena ke kódu DPH na faktuře. Na stránce **Skupiny zaúčtování hlavní knihy** nastavte účetní skupiny hlavní knihy a na stránce **Kódy DPH** je přiřaďte ke kódům DPH.
+3.  Hlavní účtovací účet na stránce **Platební slevy** buď v poli **Hlavní účet slev odběratele**, nebo v poli **Hlavní účet slev dodavatele** pro kód platební slevy, který je na uhrazené faktuře.
+4.  Hlavní účet pro platební slevy, který je definován na stránce **Účty pro automatické transakce**.
 
 ## <a name="example-series-of-cash-discounts"></a> Příklad: Řada platebních slev
 vytvořte tři kódy platební slevy následujícím způsobem:
@@ -46,7 +46,7 @@ vytvořte tři kódy platební slevy následujícím způsobem:
 -   Kód 10D5% – platební sleva 5 % při uhrazení částky do 10 dní.
 -   Kód 14D2% – platební sleva 2 % při uhrazení částky do 14 dní.
 
-V poli Další kód slevy:
+V poli **Další kód slevy**:
 -   Pro kód 5D10%, vyberte 10D5%.
 -   Pro kód 10D5%, vyberte 14D2%.
 -   Pro kód 14D2% ponechte pole Další kód slevy prázdné.
@@ -61,7 +61,7 @@ Zúčtovací měna vaší právnické osoby je EUR a pro USD jsou zadány násle
 Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. února. Částka v zúčtovací měně faktury činí 1100 EUR. Platba za 980 USD je vyrovnána s fakturou 1. března. Částka platební slevy je 20 USD. Částka v zúčtovací měně u dané platby činí 784 EUR. Částka v zúčtovací měně u platební slevy je vypočítána pomocí směnného kurzu ke dni 1. března: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. 
+> Je-li na stránce **Parametry pohledávek** nebo na stránce **Parametry závazků** zvolena možnost **Vypočítat platební slevy pro částečné platby**, použije se směnný kurz platný k datu jednotlivých částečných plateb. 
 
 
 

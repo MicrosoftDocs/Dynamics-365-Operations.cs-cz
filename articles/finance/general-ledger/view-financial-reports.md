@@ -2,7 +2,7 @@
 title: Zobrazit finanční sestavy
 description: Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Microsoft Dynamics 365 Finance. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907885"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802384"
 ---
 # <a name="view-financial-reports"></a>Zobrazit finanční sestavy
 
@@ -31,7 +31,7 @@ Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy. Obsahuje 
 ## <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
 ## <a name="open-a-financial-report"></a>Otevření finanční sestavy
-Chcete-li otevřít sestavu, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2015, je sestava generována pro 31. července 2015. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
+Chcete-li otevřít sestavu, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2020, je sestava generována pro 31. července 2020. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
 
 ## <a name="drill-down-on-a-financial-report"></a>Procházení finanční sestavy
 Finanční sestavy mohou zahrnout více úrovní podrobností. První úroveň, která se při otevření finanční sestavy zobrazí, je finanční. Chcete-li přejít na úroveň účtu, vyberte data, na která se má přejít. Chcete-li například zobrazit podrobnosti o účtu pro prodej, vyberte data prodeje, která chcete prozkoumat. Na úrovni účtu lze přejít k zobrazení transakcí, které tvoří zůstatek účtu. Transakce lze zobrazit dvěma způsoby: transakce sestavy a transakce dokladu.
@@ -46,12 +46,12 @@ V sestavě **Skutečnost versus rozpočet** můžete použít filtry atributů a
 
 -   Chcete-li v sestavě použít filtry atributů, vyberte možnost **Přidat filtr atributu**. Vyberte atribut, zadejte hodnotu atributu a klikněte na tlačítko **OK**. Vyberete-li například atribut **Kategorie účtů**, zadejte hodnotu atributu **PRODEJE**. Chcete-li filtr atributu odebrat, klikněte na tlačítko **Vymazat**.
 -   Chcete-li v sestavě použít filtry dimenzí, vyberte možnost **Přidat filtr dimenze**. Vyberte dimenzi a poté zadejte ID dimenze nebo vyberte dimenzi ze seznamu. Chcete-li filtr dimenze odebrat, klikněte na tlačítko **Vymazat**.
--   Chcete-li změnit scénář na sestavu **Skutečnost versus rozpočet**, vyberte nový scénář a klikněte na tlačítko **OK**. Pokud je vybraný scénář pro jiný fiskální rok, nebudou vráceny žádné výsledky. Pokud je například sestava generována pro fiskální rok 2015 a aktuální scénář je pro fiskální rok 2015 a vybraný nový scénář je pro fiskální rok 2016, nebudou vráceny žádné výsledky. Pokud je zapotřebí nový scénář pro jiný fiskální rok, vytvořte novou verzi sestavy pro fiskální rok související se scénářem.
+-   Chcete-li změnit scénář na sestavu **Skutečnost versus rozpočet**, vyberte nový scénář a klikněte na tlačítko **OK**. Pokud je vybraný scénář pro jiný fiskální rok, nebudou vráceny žádné výsledky. Pokud je například sestava generována pro fiskální rok 2015 a aktuální scénář je pro fiskální rok 2020 a vybraný nový scénář je pro fiskální rok 2016, nebudou vráceny žádné výsledky. Pokud je zapotřebí nový scénář pro jiný fiskální rok, vytvořte novou verzi sestavy pro fiskální rok související se scénářem.
 
 Po kliknutí na tlačítko **OK** se vybrané možnosti použijí pro sestavu. Pokud se rozhodnete, že nechcete použít vybrané možnosti, klikněte na tlačítko **Storno**.
 
 ## <a name="update-a-financial-report"></a>Aktualizace finanční sestavy
-Finanční sestavu můžete obnovit (aktualizovat), aby zobrazovala aktuální data pro období a rok, pro které byla generována. Například při aktualizaci finanční sestavy, která byla vytvořena pro říjen 2015, sestava odráží všechny nové transakce, které byly zaúčtovány k říjnu 2015. Chcete-li aktualizovat finanční sestavu, v podokně akcí klikněte na tlačítko **Aktualizovat**. Aktualizovaná sestava je k dispozici pouze osobě, která ji aktualizovala. Aby se stejná data zobrazila i ostatním, je třeba sestavu publikovat.
+Finanční sestavu můžete obnovit (aktualizovat), aby zobrazovala aktuální data pro období a rok, pro které byla generována. Například při aktualizaci finanční sestavy, která byla vytvořena pro říjen 2020, sestava odráží všechny nové transakce, které byly zaúčtovány k říjnu 2020. Chcete-li aktualizovat finanční sestavu, v podokně akcí klikněte na tlačítko **Aktualizovat**. Aktualizovaná sestava je k dispozici pouze osobě, která ji aktualizovala. Aby se stejná data zobrazila i ostatním, je třeba sestavu publikovat.
 
 ## <a name="publish-a-financial-report"></a>Publikování finanční sestavy
 Po dokončení aktualizace finanční sestavy ji můžete publikovat. Ostatní uživatelé v rámci organizace ji pak budou moci zobrazit. Chcete-li sestavu publikovat, v podokně akcí klikněte na tlačítko **Publikovat**.

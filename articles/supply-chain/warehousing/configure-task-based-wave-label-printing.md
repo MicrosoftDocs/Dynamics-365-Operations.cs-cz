@@ -2,7 +2,7 @@
 title: Naplánujte tisk vlnových štítků během vlny
 description: Tento článek popisuje, jak nastavit a používat funkce pro tisk štítků vln založených na úlohách.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889450"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822355"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Naplánujte tisk vlnových štítků během vlny
 
@@ -32,7 +32,6 @@ Když používáte funkci *Tisk štítků vln na základě úkolů*, systém nej
 
 Chcete-li používat funkce popsané v tomto článku, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkce v následujícím pořadí:
 
-1. *Tisk štítků vln* - Tato funkce je vyžadována k povolení metody vlnového procesu pro tisk štítků vln.
 1. *Blokování práce v celé organizaci* - Tato funkce se vyžaduje pro ruční i automatickou konfiguraci plánovaného vytváření práce. (Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
 1. *Tisk štítků vln na základě úlohy* - Tato funkce je nutná k rozdělení tisku štítků vln na samostatný rozsah transakcí.
 

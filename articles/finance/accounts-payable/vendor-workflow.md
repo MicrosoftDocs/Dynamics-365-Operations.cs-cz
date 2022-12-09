@@ -2,7 +2,7 @@
 title: Workflow dodavatele
 description: Upravte informace o dodavateli a použijte k jejich schválení workflow.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735660"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799457"
 ---
 # <a name="vendor-workflow"></a>Workflow dodavatele
 
@@ -46,7 +46,7 @@ Než budete funkci workflow moci používat, musíte ji povolit.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Změna informace o dodavateli a odeslání změn do workflow
 
-Při změně pole, které je povoleno pro workflow, se zobrazí stránka **Navrhované změny**. Tato stránka zobrazí původní hodnotu pole a novou hodnotu, kterou jste zadali. Pole, které jste změnili, se vrátí na původní hodnotu. Stavová zpráva také informuje o tom, že vaše změny nebyly odeslány. 
+Při změně pole, které je povoleno pro workflow, se zobrazí stránka **Navrhované změny**. Tato stránka zobrazí původní hodnotu pole a novou hodnotu, kterou jste zadali. Pole, které jste změnili, se vrátí na původní hodnotu. Stavová zpráva informuje o tom, že vaše změny nebyly odeslány. 
 
 Vždy, když změníte pole, které je povoleno pro workflow, bude toto pole přidáno do seznamu na stránce **Navrhované změny**. Chcete-li zrušit navrženou hodnotu pro pole, použijte tlačítko **Zahodit** vedle pole v seznamu. Chcete-li zahodit všechny změny, použijte tlačítko **Zahodit všechny změny** v dolní části stránky. Vyberte **OK** a stránku zavřete.
 

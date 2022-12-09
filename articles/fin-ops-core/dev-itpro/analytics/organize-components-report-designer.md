@@ -2,7 +2,7 @@
 title: Uspořádání součástí sestavy v návrháři sestav
 description: Tento článek popisuje způsob uspořádání existujících sestav, stavebních bloků a objektů v návrháři sestav.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135872"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802681"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Uspořádání součástí zprávy v návrháři sestavy
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135872"
 
 Poté, co jste navrhli stavební bloky a vygenerovali sestavy, je užitečné uspořádat tyto objekty a usnadnit uživatelům jejich vyhledání. Tento článek popisuje způsob uspořádání existujících sestav, stavebních bloků a objektů v návrháři sestav.
 
-Můžete přejmenovat složky, sestavy, stavební bloky a jiné objekty v návrháři sestavy k usnadnění uspořádání souborů. V závislosti na typu objekt, jehož název měníte, může být nutné aktualizovat přidružení tohoto objektu.
+Můžete přejmenovat složky, sestavy, stavební bloky a jiné objekty v Report Designer k usnadnění uspořádání souborů. V závislosti na typu objekt, jehož název měníte, může být nutné aktualizovat přidružení tohoto objektu.
 
-## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Návrháři sestav
-V Návrháři sestav můžete přejmenovat složky, definice sestav, definice řádků, definice sloupců a definice organizačních stromů.
+## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Report Designer
+V Report Designer můžete přejmenovat složky, definice sestav, definice řádků, definice sloupců a definice organizačních stromů.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Návrháři sestav
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Přejmenování složky nebo stavebního bloku v Report Designer
 
-1. V Návrháři sestav vyhledejte složku nebo objekt, který chcete přejmenovat, s použitím navigačního podokna.
+1. V Report Designer vyhledejte složku nebo objekt, který chcete přejmenovat, s použitím navigačního podokna.
 2. Klikněte pravým tlačítkem myši na objekt a poté klikněte na možnost **Přejmenovat**. Pole **Název** v podokně navigace se zpřístupní.
-3. Zadejte nový název a stiskněte klávesu Enter.
+3. Zadejte nový název a stiskněte klávesu **Enter**.
 4. Pokud je stavební blok definicí řádku, definicí sloupce nebo definicí stromu výkaznictví, je nutné aktualizovat další stavební bloky, které jsou k němu přidružené. Klikněte pravým tlačítkem myši na stavební blok, který jste přejmenovali v kroku 3, vyberte položku **Přidružení** a poté vyberte položku v seznamu k aktualizaci.
 5. Opakujte krok 4, dokud nebudou aktualizovány všechny přidružené položky.
 
@@ -46,8 +46,8 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 
 ### <a name="create-a-report-group"></a>Vytvoření skupiny sestav
 
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
-2. V nabídce **Soubor** klepněte na **Nový** &gt; **Definice skupiny sestav** a otevřete tak novou skupinu sestav v okně prohlížeče. Případně klikněte na tlačítko **Skupina sestav** ![Skupina sestav](media/report-group.gif "Skupina sestav") na panelu nástrojů.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
+2. V nabídce **Soubor** klepněte na **Nový** &gt; **Definice skupiny sestav** a otevřete tak novou skupinu sestav v okně prohlížeče. Případně klikněte na tlačítko **Skupina sestav** ![Skupina sestav.](media/report-group.gif "Skupina sestav") na panelu nástrojů.
 3. Klikněte na kartu **Skupina sestav**. Abyste přepsali informací v jednotlivých definicích sestavy pro generování této sestavy, zaškrtněte políčko **Přepsat nastavení společnosti, podrobností a data z jednotlivých definic sestavy**. Název společnosti, úroveň podrobností, nastavení předběžných údajů a datum jsou vyplněny automaticky, ale přesto můžete provést aktualizaci.
 4. Zaškrtněte políčko **Zahrnout všechny měny vykazování**, pokud chcete vygenerovat více sestav zobrazujících tyto měny. Více zobrazení pak bude k dispozici po kliknutí na tlačítko **Měna** ve Webovém prohlížeči při zobrazení sestavy.
 5. V poli **Sestavy ve skupině** kliknutím na tlačítko **Přidat** vyberte sestavy, které chcete zahrnout do skupiny sestav. Chcete-li vybrat více sestav v dialogovém okně **Přidat**, podržte klávesu Ctrl při výběru sestav. Po dokončení výběru sestav klepněte na tlačítko **OK**.
@@ -55,22 +55,22 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 
 ### <a name="modify-a-report-group"></a>Úprava skupiny sestav
 
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2. Klikněte dvakrát na skupinu zásad, kterou chcete upravit.
 3. Klikněte na kartu **Skupina sestav** a proveďte požadované změny.
 4. V nabídce **Soubor** klikněte na příkaz **Uložit** pro uložení změněné skupiny sestav. Případně klikněte na tlačítko **Uložit** ![Uložit](media/save.gif "Uložit") na panelu nástrojů.
 
-> Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
+> [NOTE] Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
 
 ### <a name="generate-a-report-group-report"></a>Vygenerování sestavy skupiny sestav
 
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2. Otevřete skupinu sestav k vygenerování.
-3. Klikněte na tlačítko **Generovat sestavu** ![Generovat sestavu](media/generate-report.gif "Generovat sestavu") pro generování sestav.
+3. Klikněte na tlačítko **Generovat sestavu** ![Generovat sestavu.](media/generate-report.gif "Generovat sestavu") pro generování sestav.
 
 ### <a name="delete-a-report-group"></a>Odstranění skupiny sestav
 
-1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
+1. V Report Designer v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2. Klikněte pravým tlačítkem myši na skupinu sestav, kterou chcete odstranit, a vyberte možnost **Odstranit**.
 3. Když se zobrazí potvrzující zpráva, klepněte na tlačítko **Ano**.
 
@@ -81,7 +81,7 @@ Následující tabulka popisuje ovládací prvky na kartě **Skupina sestav**.
 <thead>
 <tr>
 <th>Ovládací prvek</th>
-<th>Popis</th>
+<th>popis</th>
 </tr>
 </thead>
 <tbody>
@@ -113,7 +113,7 @@ Následující tabulka popisuje ovládací prvky na kartě **Skupina sestav**.
 </tr>
 <tr>
 <td>Zahrnout všechny měny vykazování</td>
-<td>Pokud jsou ve vašem systému Microsoft Dynamics ERP definovány další měny vykazování, budou uvedeny zde. Označením tohoto pole vygenerujete další sestavy ve vybraných měnách. Chcete-li tyto sestavy zobrazit v nástroji Web Viewer, klikněte na tlačítko <strong>Měna</strong> a pak vyberte měnu.</td>
+<td>Pokud jsou ve vašem systému Microsoft Dynamics 365 Finance definovány další měny vykazování, budou uvedeny zde. Označením tohoto pole vygenerujete další sestavy ve vybraných měnách. Chcete-li tyto sestavy zobrazit v nástroji Web Viewer, klikněte na tlačítko <strong>Měna</strong> a pak vyberte měnu.</td>
 </tr>
 <tr>
 <td>Informace o datu nejsou uloženy s definicí sestavy</td>

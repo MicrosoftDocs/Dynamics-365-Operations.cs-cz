@@ -2,7 +2,7 @@
 title: Uložená zobrazení
 description: V tomto článku je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757214"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799484"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -55,7 +55,7 @@ Výběr zobrazení obsahuje dvě varianty velikosti:
  
 Vyberte-li název zobrazení, otevře se výběr zobrazení a zobrazí se seznam dostupných zobrazení pro tuto stránku.
 
-**Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, volič zobrazení zobrazuje dostupná zobrazení ve dvou sekcích. První část zobrazuje všechna zobrazení, která jsou specifická pro aktuální právnickou osobu, a druhá ukazuje pohledy, které jsou k dispozici všem právnickým osobám. První část je viditelná pouze v případě, že pro stránku existují pohledy specifické pro právnické osoby.
+Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, volič zobrazení zobrazuje dostupná zobrazení ve dvou sekcích. První část zobrazuje všechna zobrazení, která jsou specifická pro aktuální právnickou osobu, a druhá ukazuje pohledy, které jsou k dispozici všem právnickým osobám. První část je viditelná pouze v případě, že pro stránku existují pohledy specifické pro právnické osoby.
 
 - **Standardní zobrazení**: **Standardní** zobrazení je zobrazení stránky bez explicitního přizpůsobení, které jste použili.
 - **Osobní zobrazení** - Zobrazení bez zámků představují vaše osobní zobrazení. Jedná se o zobrazení, která jste vytvořili, nebo která vám dal správce.
@@ -81,7 +81,7 @@ Chcete-li tyto změny uložit, postupujte podle následujících kroků.
     1. Zvolte **Uložit jako**. 
     2. V podokně **Uložit zobrazení jako** zadejte název a volitelně popis pohledu.
     3. Pokud chcete, aby toto zobrazení bylo vaším výchozím zobrazením, vyberte **Připnout jako výchozí**. Další informace o výchozích zobrazeních naleznete v následující sekci [Změna výchozího zobrazení](#changing-the-default-view). 
-    4. **Verze 10.0.21 nebo novější:** Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, můžete si vybrat, zda chcete, aby bylo toto zobrazení dostupné pro všechny právnické osoby nebo jen pro jejich podmnožinu.
+    4. Pokud je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, můžete si vybrat, zda chcete, aby bylo toto zobrazení dostupné pro všechny právnické osoby nebo jen pro jejich podmnožinu.
     5. Zvolte možnost **Uložit**.
 
 ## <a name="changing-the-default-view"></a>Změna výchozího zobrazení
@@ -90,7 +90,7 @@ Výchozí zobrazení je zobrazení, které se systém pokusí otevřít, když p
 
 > [!NOTE]
 > - V základní funkci **Uložená zobrazení** existuje jediné, globální výchozí zobrazení napříč právnickými osobami. Pokud změníte výchozí zobrazení, otevře se toto zobrazení ve výchozím nastavení bez ohledu na právnickou osobu, ve které se právě nacházíte.
-> - **Verze 10.0.21 nebo novější:** Když je zapnutá funkce **Vylepšená podpora právnických osob pro uložená zobrazení**, každá právnická osoba může mít své vlastní výchozí zobrazení na stránku.
+> - Když je zapnutá funkce **Vylepšená podpora právnických osob** pro uložená zobrazení, každá právnická osoba může mít své vlastní výchozí zobrazení na stránku.
 
 Pokud chcete změnit výchozí zobrazení stránky, postupujte takto:
 
@@ -101,7 +101,7 @@ Pokud chcete změnit výchozí zobrazení stránky, postupujte takto:
 Případně můžete při vytváření nového zobrazení (pomocí akce **Uložit jako**) nastavit toto nové zobrazení jako výchozí nastavením možnosti **Připnout jako výchozí** před uložením zobrazení.
 
 > [!WARNING]
-> V některých případech se dotaz přidružený k výchozímu zobrazení nespustí, dokud neuložíte stránku. Pokud například otevřete stránku skrze dlaždici, dotaz dlaždice se spustí bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud dále otevřete stránku, jejíž **standardní** zobrazení již má definovaný dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. V takovém případě obdržíte při načtení zobrazení informační zprávu. Pokud přepnete zobrazení po načtení stránky, mělo by být dotaz na zobrazení možné spustit podle očekávání. Počínaje verzí 10.0.10 bude informační zpráva, kterou obdržíte, obsahovat vloženou akci, která umožní přímé načtení dotazu výchozího zobrazení.
+> V některých případech se dotaz přidružený k výchozímu zobrazení nespustí, dokud neuložíte stránku. Pokud například otevřete stránku skrze dlaždici, dotaz dlaždice se spustí bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud dále otevřete stránku, jejíž **standardní** zobrazení již má definovaný dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. V tomto případu dostanete informační zprávu, když je zobrazení načteno s vloženou akcí, která umožní přímé načtení dotazu výchozího zobrazení. Pokud přepnete zobrazení po načtení stránky, mělo by být dotaz na zobrazení možné spustit podle očekávání. 
 
 ## <a name="managing-personal-views"></a>Správa osobních zobrazení
 

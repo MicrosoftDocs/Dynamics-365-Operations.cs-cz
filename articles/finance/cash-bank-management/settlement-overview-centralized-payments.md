@@ -2,7 +2,7 @@
 title: Mezipodnikové účetnictví pro centralizované platby
 description: Tento článek popisuje vyrovnání pro centralizované platby v aplikaci Microsoft Dynamics 365 Finance.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151155"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804219"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Mezipodnikové účetnictví pro centralizované platby
 
@@ -84,11 +84,11 @@ Platební slevy generované během procesu vyrovnání mezi společnostmi jsou �
 
 Tolerance přeplatků nebo nedoplatků a haléřových rozdílů jsou u přeplatků určovány na základě právnické osoby platby a u nedoplatků jsou určovány na základě právnické osoby faktury. Používaný účet je určen nastavením v poli **Správa platební slevy** na stránce **Parametry pohledávek** pro odběratele a **Správa platební slevy** na stránce **Parametry závazků** pro dodavatele.
 
--   Pokud má nastavení správy platební slevy hodnotu Specifické, nebo pokud má toto nastavení hodnotu Nespecifické a odpovídající platební sleva je zaúčtována pro jinou právnickou osobu než přeplatek, bude použit automatický účet pro platební slevu odběratele, platební slevu dodavatele nebo haléřový rozdíl v účtovací měně. Tyto účty můžete specifikovat tyto účty na stránce **Účty pro automatické transakce**.
--   Pokud má nastavení správy platební slevy hodnotu Neurčeno a platební sleva je zaúčtována pro stejnou právnickou osobu jako přeplatek (právnická osoba platby je shodná s právnickou osobou faktury), dojde k úpravě účtu platební slevy. Pokud došlo například k vyrovnání faktury s částkou 100,00 a s možnou platební slevou 3,00 pomocí platby ve výši 98,00, dojde k úpravě účtu platební slevy o částku 1,00. Čistá částka slevy je 2.00.
--   Pokud má nastavení správy platební slevy hodnotu Neurčeno, dojde k zaúčtování platební slevy pro stejnou právnickou osobu jako přeplatek, přeplatek nebo nedoplatek je vyrovnán s více fakturami s platebními slevami a účet platební slevy je pro poslední fakturu upraven.
+-   Pokud má nastavení správy platební slevy hodnotu **Specifické**, nebo pokud má toto nastavení hodnotu **Nespecifické** a odpovídající platební sleva je zaúčtována pro jinou právnickou osobu než přeplatek, bude použit automatický účet pro platební slevu odběratele, platební slevu dodavatele nebo haléřový rozdíl v účtovací měně. Tyto účty můžete specifikovat tyto účty na stránce **Účty pro automatické transakce**.
+-   Pokud má nastavení správy platební slevy hodnotu **Nespecifické** a platební sleva je zaúčtována pro stejnou právnickou osobu jako přeplatek (právnická osoba platby je shodná s právnickou osobou faktury), dojde k úpravě účtu platební slevy. Pokud došlo například k vyrovnání faktury s částkou 100,00 a s možnou platební slevou 3,00 pomocí platby ve výši 98,00, dojde k úpravě účtu platební slevy o částku 1,00. Čistá částka slevy je 2.00.
+-   Pokud má nastavení správy platební slevy hodnotu **Nespecifické**, dojde k zaúčtování platební slevy pro stejnou právnickou osobu jako přeplatek, přeplatek nebo nedoplatek je vyrovnán s více fakturami s platebními slevami a účet platební slevy je pro poslední fakturu upraven.
 
-Pokud má výběr správy platební slevy hodnotu Neurčeno, dojde k použití pravidel vyrovnání neurčené platby pouze v následujících situacích:
+Pokud má výběr správy platební slevy hodnotu **Nespecifické**, dojde k použití pravidel vyrovnání neurčené platby pouze v následujících situacích:
 -   Existuje přeplatek.
 -   Přeplatek je vyrovnán jednou nebo více fakturami s platební slevou.
 -   Platební sleva je zaúčtována pro stejnou právnickou osobu jako přeplatek.

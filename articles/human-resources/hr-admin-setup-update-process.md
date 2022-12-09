@@ -2,7 +2,7 @@
 title: Aktualizace procesu
 description: Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace při změnách aplikací a platforem.
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 197b3c5717494ab3c80a57cda337a9021293bf73
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520803"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819289"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
@@ -41,7 +41,7 @@ Aktualizace jsou vydávány v pravidelných intervalech pro všechna prostředí
 
 Aktualizace aplikace Human Resources se automaticky použijí na všechna prostředí. Aplikace Human Resources poskytuje dva typy vydání:
 
-- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Více informací o vydáních platformy získáte v části [Co je nového nebo co se změnilo v aktualizacích platformy](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Aktualizace služeb**: Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Kromě aktualizací založených na výjimkách dochází k pravidelným aktualizacím služeb po aktualizacích obecné dostupnosti (GA) platformy Dynamics 365 Finance. Více informací o vydáních platformy získáte v části [Co je nového nebo co se změnilo v aktualizacích platformy](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Aktualizace řešení Dataverse**: Tyto aktualizace se uskutečňují podle potřeby, přibližně jednou za šest týdnů. Zahrnují nové entity a změny existujících entit ve službě Dataverse. Tyto aktualizace jsou vydávány pro stejné regiony jako čtrnáctidenní aktualizace a jejich replikace do všech datacenter trvá přibližně šest týdnů. Aktualizace řešení mohou nebo nemusí být vydávány současně s čtrnáctidenními aktualizacemi služeb.
 
@@ -55,15 +55,6 @@ V případě potřeby poskytuje aplikace Human Resources následující typy op
 - **Nouzová oprava**: opravy hotfix prováděné preventivně a v reakci na problém, které jsou svojí povahou samostatné, mohou zahrnovat pouze změny konfigurace nebo změny kódu pro odstranění aktuálních problémů a mohou být prováděny odděleně od vydání čtrnáctidenní aktualizace služby
 
 Vydání jsou kontrolována, testována a ověřována v interním prostředí. Po schválení jsou sestavení nasazena do výroby.
-
-## <a name="release-cadence-exceptions-in-2021"></a>Uvolnit výjimky frekvence v 2021
-
-Kvůli svátkům je plán vydání pro listopad a prosinec 2021 následující:
-
-- Vydání v listopadu: 1. listopadu – 14. listopadu
-- Vydání v prosinci: 29. listopadu – 12. prosince
- 
-Kadence dvoutýdenního vydání bude obnovena jako obvykle 10. ledna 2022.
 
 ## <a name="communications"></a>Sdělení
 

@@ -2,7 +2,7 @@
 title: Zobrazení a navržení finančních sestav
 description: Tento článek obsahuje cvičení, která vás provedou zobrazením a vytvářením finančních sestav pro aplikaci Microsoft Dynamics 365 Finance.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273418"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799511"
 ---
 # <a name="view-and-design-financial-reports"></a>Zobrazení a návrh finančních sestav
 
@@ -51,35 +51,35 @@ Pro toto cvičení budete generovat a prohlížet existující výchozí sestavu
     > [!NOTE]
     > Zobrazí se výzva ke stažení návrháře sestav na jedno kliknutí a přihlášení. Přihlaste se pomocí vlastních přihlašovacích údajů.
 
-7. Změňte základní rok na 2012 a vyberte **Generovat**. Po vygenerování sestavy v návrháři sestav se sestava otevře na nové kartě prohlížeče. Sestavu můžete procházet buď na nové kartě prohlížeče, nebo můžete přejít do na svou původní kartu prohlížeče a otevřít sestavu tam pomocí volby ze seznamu **Finanční sestavy**.
+7. Změňte základní rok na 2021 a vyberte **Generovat**. Po vygenerování sestavy v návrháři sestav se sestava otevře na nové kartě prohlížeče. Sestavu můžete procházet buď na nové kartě prohlížeče, nebo můžete přejít do na svou původní kartu prohlížeče a otevřít sestavu tam pomocí volby ze seznamu **Finanční sestavy**.
 8. V otevřené sestavě vyberte jednu z částek k procházení podrobností o účtu pro sestavu.
 9. V podrobnostech účtu vyberte účet s daty a **procházejte na úroveň sestavy transakcí**. Na úrovni sestavy transakcí se zobrazí vlastnosti (atributy), které jsou zahrnuty do návrhu této sestavy. V závislosti na transakci a účtu mohou být zobrazeny jen některé nebo všechny atributy.
 10. Zavřete úroveň transakce sestavy.
-11. Vyberte stejný nebo jiný účet a **otevřete transakce dokladu**. Transakce dokladu jsou filtrovány do kombinace období, roku a účtu + dimenze vybraného účtu. Z transakcí dokladu můžete zvolit prohlížení dalších informací o transakci.
-12. Zavřete transakce dokladu. V rámci finanční sestavy můžete zobrazit data pro jiné období a rok, nebo s jinými použitými atributy a dimenzemi. Tato operace se provádí pomocí volby **Možnosti sestavy**.
+11. Vyberte stejný nebo jiný účet a **otevřete transakce dokladu**. Transakce dokladu jsou filtrovány do kombinace období, roku a účtu + dimenze vybraného účtu. V části **Transakce dokladu** můžete zvolit prohlížení dalších informací o transakci.
+12. Zavřete **Transakce dokladu**. V rámci finanční sestavy můžete zobrazit data pro jiné období a rok, nebo s jinými použitými atributy a dimenzemi. Tato operace se provádí pomocí volby **Možnosti sestavy**.
 13. Vyberte volbu **Možnosti sestavy**.
 14. Vyberte možnost **Přidat filtr dimenze** a zvolte možnost **Obchodní jednotka**.
-15. Do pole zadejte „001” a stiskněte tlačítko **OK**. Sestava nyní zobrazí pouze data obchodní jednotky 001. To je přizpůsobené zobrazení sestavy není k dispozici pro ostatní
+15. Zadejte **001** a klikněte na tlačítko **OK**. Sestava nyní zobrazí pouze data obchodní jednotky 001. To je přizpůsobené zobrazení sestavy není k dispozici pro ostatní
 16. Zavřete filtrovanou sestavu. Finanční sestavy lze zobrazit v libovolné měně, která je přidána do aplikace.
 17. Vyberte možnost **Měna**, poté možnost **EUR**. Sestava se nyní zobrazuje v měně euro. Všechny kódy měn nebo symboly měny zahrnuté v návrhu sestavy se nyní zobrazí v použité měně. Není-li definován žádný symbol měny pro měnu, nebude symbol měny zobrazen.
 18. Zavřít sestavu **Podrobnosti hlavní knihy**.
 19. Zavřete **Návrháře sestav**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Cvičení 2: Přidání dalších účetních vlastností do návrhu sestavy
-V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktualizovat definici řádku k zahrnutí do všech účtů i definici sloupce, která má obsahovat atributy účtu. Po dokončení aktualizace budete vygenerovat sestavu nově vytvořené sestavy a prohlížet sestavu. Začneme ze seznamu Finanční výkazy.
+V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktualizovat definici řádku k zahrnutí do všech účtů i definici sloupce, která má obsahovat atributy účtu. Po dokončení aktualizace budete vygenerovat sestavu nově vytvořené sestavy a prohlížet sestavu. Začneme ze seznamu **Finanční výkazy**.
 
-1. Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
+1. Přejděte do části **Finanční sestavy** pod částí **Dotazy a sestavy** v hlavní knize.
 2. Vyberte řádek sestavy s názvem **Souhrnná předvaha – výchozí**.
 3. Vyberte možnost **Upravit**. **Souhrnná předvaha – výchozí** bude otevřena v Návrháři sestav.
-4. Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy Podrobná předvaha s atributy.
+4. Vyberte nabídku **Soubor**, poté **Uložit jako** a zadejte název sestavy **Podrobná předvaha s atributy**.
 
     > [!NOTE]
-    > Při každém vytvoření nové sestavy v Návrháři sestav se seznam finančních sestav aktualizuje.
+    > Při každém vytvoření nové sestavy v Report Designer se seznam **Finanční sestavy** aktualizuje.
 
 5. Z definice sestavy vyberte ikonu definice řádku a otevřete možnost **Předvaha – výchozí definice řádku**.
 6. Uložit definici řádku jako **Podrobná předvaha s atributy**.
 7. S kurzorem na řádku 50 vyberte možnost **Upravit**, poté **Vložit řádky z dimenzí**. Příkaz Vložit řádky z dimenzí umožňuje vybrat dimenze, které mají být v definici řádku. U tohoto cvičení vytvoříme definici řádku pomocí hlavního účtu.
-8. Ujistěte se, že **hlavní účet** obsahuje všechny ampersandy (&), a klikněte na tlačítko **OK**. Definice řádku nyní obsahuje všechny hlavní účty pro výchozí právnickou osobu USMF.
+8. Ujistěte se, že **hlavní účet** obsahuje všechny ampersandy (&amp;), a klikněte na tlačítko **OK**. Definice řádku nyní obsahuje všechny hlavní účty pro výchozí právnickou osobu USMF.
 9. Přejděte k řádku 11110 a odstraňte řádek 11110.
 10. V řádku 11080 vyberte **---(podtržítko částek)**.
 11. V řádku 11140 zadejte **součet všech účtů** ve sloupci B.
@@ -107,7 +107,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete aktual
 26. Zavřete **Návrháře sestav**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Cvičení 3: Vytvoření multidimenzionální sestavy pomocí stromu výkaznictví
-V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte strom výkaznictví a budete přidávat do definice sestavy, abyste vytvořili výpis nákladového střediska / divizních příjmů. Po dokončení aktualizace budete generovat výpis nákladového střediska / divizních příjmů a prohlížet sestavu pomocí stromu výkaznictví. Začneme ze seznamu Finanční výkazy.
+V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte strom výkaznictví a budete přidávat do definice sestavy, abyste vytvořili **výpis nákladového střediska / divizních příjmů**. Po dokončení aktualizace budete generovat **výpis nákladového střediska / divizních příjmů** a prohlížet sestavu pomocí stromu výkaznictví. Začneme ze seznamu **Finanční výkazy**.
 
 1. Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
 2. Vyberte řádek sestavy s názvem **Výkaz příjmu – výchozí**.
@@ -116,8 +116,8 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 5. V nabídce **Upravit** klikněte na příkaz **Vložit organizační jednotky z dimenzí**.
 6. Zrušte zaškrtnutí políček pro všechny dimenze s výjimkou **Nákladového střediska**.
 7. Klikněte na pole **Od dimenze** pro dimenzi nákladového střediska, zapište **007** a stiskněte klávesu tabulátor. Do pole **Do dimenze** zapište **018**.
-8. **Uložte** výsledný strom pod názvem **Nákladová střediska podle divizí.** Nyní, když byl vytvořen strom výkaznictví, upravte strom výkaznictví, aby obsahoval tři nové kumulativní jednotky: Marketing, Operace a Maloobchod.
-9. V nabídce **Okno** klikněte na tlačítko **Nákladová střediska podle divizí**. (Pokud byl strom výkaznictví uzavřen, vyberte ho z Definic stromu výkaznictví v navigačním podokně.)
+8. **Uložte** výsledný strom pod názvem **Nákladová střediska podle divizí**. Nyní, když byl vytvořen strom výkaznictví, upravte strom výkaznictví, aby obsahoval tři nové kumulativní jednotky: Marketing, Operace a Maloobchod.
+9. V nabídce **Okno** klikněte na tlačítko **Nákladová střediska podle divizí**. (Pokud byl strom výkaznictví uzavřen, vyberte ho z části **Definice stromu výkaznictví** v navigačním podokně.)
 10. Klikněte na jednotku číslo dvě, **Veletrhy**, a klikněte na ikonu **Vložit jednotku výkaznictví**.
 11. Poklepejte na sloupec entity pro prázdném řádku a vyberte **USMF**.
 12. Zapište **Marketing** do sloupců B a C.
@@ -131,13 +131,13 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 20. Zvolte možnost **Snížit úroveň jednotky výkaznictví**. Všimněte si, že se jednotka nyní zobrazí jako podřízená **Marketingu**.
 21. Klikněte na jednotku čtyři, **Marketingová kampaň** a klikněte na ni pravým tlačítkem myši.
 22. Zvolte možnost **Snížit úroveň jednotky výkaznictví**.
-23. Klikněte na možnost **Servisní operace** v grafickém zobrazení. Stiskněte a podržte levé tlačítko myši při přetažení jednotky do **Operací**. Uvolněte levé tlačítko myši a upusťte jednotku do kumulativní skupiny Operace. Zopakujte pro položky **Výroba, Řízení kvality, Logistika, Zásobování a Správa**.
+23. Klikněte na možnost **Servisní operace** v grafickém zobrazení. Stiskněte a podržte levé tlačítko myši při přetažení jednotky do **Operací**. Uvolněte levé tlačítko myši a upusťte jednotku do kumulativní skupiny Operace. Zopakujte pro položky **Výroba**, **Řízení kvality**, **Logistika**, **Zásobování** a **Správa**.
 24. Nastavte položky **Prodejna**, **Super**, **Market** a **Online** jako podřízené položky **Maloobchod** snížením úrovně nebo přetažením.
 25. Uložte výslednou reorganizaci. Nyní když máme vytvořený a uspořádaný strom výkaznictví, můžeme jej přidat k definici sestavy.
 26. V nabídce **Okno** klikněte na příkaz **Výkaz příjmu – výchozí** a otevřete definice sestavy.
 27. Klikněte na šipku rozevíracího seznamu **Typ stromu** a vyberte **Strom výkaznictví**.
 28. Kliknutím na šipku rozevíracího seznamu stromu vyberte **Nákladová střediska podle divizí**.
-29. Změňte základní rok na **2012**, **uložte** změny a **generujte** sestavu. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
+29. Změňte základní rok na **2021**, **uložte** změny a **generujte** sestavu. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 30. Vyberte rozevírací seznam **Strom výkaznictví** a zobrazte jednotky vykazování. Rovněž je možné procházet podrobnosti řádku zprávy a zobrazit všechny zůstatky všech jednotek stromu výkaznictví.
 31. Zavřete **Výkaz příjmu – výchozí**.
 32. Zavřete **Návrháře sestav**.
@@ -145,11 +145,11 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Vytvoříte s
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Cvičení 4: Vytvoření konsolidované sestavy pomocí organizační hierarchie
 V tomto cvičení budete upravovat existující výchozí sestavu. Budete přidávat organizační hierarchii v definici sestavy, abyste vytvořili výkaz konsolidovaných příjmů a rozvahu. Po dokončení aktualizace budete generovat výpis konsolidovanou sestavu a prohlížet sestavu pomocí stromu výkaznictví. Začneme ze seznamu Finanční výkazy.
 
-1. Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
+1. Přejděte do části **Finanční sestavy** pod částí **Dotazy a sestavy** v hlavní knize.
 2. Vyberte řádek sestavy s názvem **Rozvaha a výkaz příjmů vedle sebe – výchozí**.
 3. Vyberte možnost **Upravit**. **Rozvaha a výkaz příjmů vedle sebe – výchozí** se otevře v návrháři sestav.
 4. Vyberte nabídku **Soubor** &gt; **Uložit jako** a zadejte název sestavy **Konsolidovaná rozvaha a výkaz příjmů vedle sebe**.
-5. Změňte základní rok na 2012.
+5. Změňte základní rok na 2021.
 6. Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Organizační hierarchie**.
 7. Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Contoso Holdings**.
 8. Uložte změny a generujte sestavu. Pokud se zobrazí dotaz, vyberte všechny jednotky sestavy. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
@@ -162,16 +162,16 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete přid�
 15. Zavřete **Návrháře sestav**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Cvičení 5: Vytvoření sestavy oddělení vedle sebe
-V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu oddělení vedle sebe. Použijete existující definici řádku, ale vytvoříte novou definici sestavy a novou definici sloupce, která používá filtry dimenzí. Začneme ze seznamu Finanční výkazy.
+V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu oddělení vedle sebe. Použijete existující definici řádku, ale vytvoříte novou definici sestavy a novou definici sloupce, která používá filtry dimenzí. Začneme ze seznamu **Finanční výkazy**.
 
-1. Přejděte do části **Finanční sestavy** pod částí Dotazy a sestavy v hlavní knize.
+1. Přejděte do části **Finanční sestavy** pod částí **Dotazy a sestavy** v hlavní knize.
 2. Vyberte možnost **Nový**. Otevře se návrhář sestav s prázdnou definicí sestavy. Váš první úkol bude vytvoření definice sloupců.
 3. Kliknutím na nabídku **Soubor**, pak **Nový** a pak **Definice sloupce** vytvoříte novou definici sloupce .
 4. Ve **sloupci A** vyberte **DESC** jako typ sloupce.
 5. Ve **sloupci B** vyberte **FD** jako typ sloupce.
 6. Dvakrát klikněte na pole **Filtr dimenze**.
 7. V okně **Dimenze** dvakrát klikněte na sloupec **Oddělení**.
-8. V části Jednotlivec nebo rozsah dialogového okna klikněte **elipsu** pole **Od**, abyste zobrazili seznam oddělení.
+8. V části **Jednotlivec nebo rozsah** dialogového okna klikněte na **tři tečky** u pole **Od**, abyste zobrazili seznam oddělení.
 9. Vyberte oddělení **022**, **Prodej a marketing** a klikněte na tlačítko **OK**.
 10. Zopakujte kroky 5 až 8 pro oddělení 23–25.
 11. Na řádku **Záhlaví 2** pro každý sloupec FD zadejte následující popisy oddělení:
@@ -185,7 +185,7 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 13. V nabídce **Okno** klikněte na příkaz **Nová definice sestavy** a otevřete definice sestavy.
 14. Vyberte **Výkaz příjmu – výchozí** jako definici řádků a **Oddělení vedle sebe** jako definici sloupců.
 15. Uložte definici sestavy jako **Výkaz příjmu oddělení vedle sebe**.
-16. Změňte základní rok na **2012.**
+16. Změňte základní rok na **2021.**
 17. Nastavte úroveň podrobností na **Finanční, účetní a transakční**.
 18. **Uložte** provedené změny a **generujte**. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 

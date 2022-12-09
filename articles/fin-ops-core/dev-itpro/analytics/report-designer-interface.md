@@ -1,8 +1,8 @@
 ---
 title: Rozhraní Návrháře sestav
-description: Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků.
+description: Tento článek vysvětluje, jak navigovat v Report Designer, a jak používat různé možnosti podle specifických požadavků.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274720"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802735"
 ---
 # <a name="report-designer-interface"></a>Rozhraní Návrháře sestav
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků.
+Tento článek vysvětluje, jak navigovat v Report Designer, a jak používat různé možnosti podle specifických požadavků.
 
-## <a name="report-designer-menu-commands"></a>Příkazy nabídky Návrháře sestav
+## <a name="report-designer-menu-commands"></a>Příkazy nabídky Report Designer
 
 V následujících tabulkách jsou popsány příkazy a možnosti nabídky, které lze použít při návrhu finančních sestav. Některé příkazy a možnosti nabídky jsou k dispozici pouze za zvláštních okolností. Například příkazy pro zvýšení a snížení úrovně organizační jednotky jsou dostupné pouze pokud upravujete definice organizačního stromu.
 
@@ -46,7 +46,7 @@ Nabídka **Soubor** je k dispozici všem uživatelům a obsahuje následující 
 | Uložit jako                           | Uloží aktuální definici řádků, definici sloupců, definici organizačního stromu nebo definici sestavy pod novým názvem. |
 | Vlastnosti                        | Otevře dialogové okno **Vlastnosti**, ve kterém můžete změnit název a popis sestavy. |
 | Generovat                          | Vygeneruje aktuální sestavu. Tento příkaz je dostupný z definice sestavy. |
-| Zobrazení sestavy                       | Otevře nejnovější verzi vygenerované sestavy. Tento příkaz je k dispozici z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
+| Zobrazit sestavu                       | Otevře nejnovější verzi vygenerované sestavy. Tento příkaz je k dispozici z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
 | Poslední definice sestav         | Zobrazí seznam zpráv, které byly nedávno vytvořeny nebo změněny. Zprávu pak můžete vybrat ze seznamu. |
 | Poslední definice řádků            | Zobrazí seznam definicí řádků, které byly nedávno vytvořeny nebo změněny. Definici řádku pak můžete vybrat ze seznamu. |
 | Poslední definice sloupců         | Zobrazí seznam definicí sloupců, které byly nedávno vytvořeny nebo změněny. Definici sloupce pak můžete vybrat ze seznamu. |
@@ -70,14 +70,14 @@ Nabídka **Upravit** je k dispozici pro uživatele, kteří mají role **Návrh�
 | Vložit řádky z dimenzí            | Otevře dialogové okno **Vložit řádky z dimenzí**, kde můžete vybrat hodnoty dimenze, které mají být zahrnuty v definici řádku. Tento příkaz je dostupný z definice řádků. |
 | Přečíslovat řádky                          | Přečísluje všechny číselné kódy řádků. Tento příkaz je dostupný z definice řádků. |
 | Odkazy na řádky                              | Otevře dialogové okno **Odkazy řádků**, kde můžete určit zdroje pro datové odkazy v definicích řádků a definicích stromů výkaznictví. Tento příkaz je dostupný z definice řádků. |
-| Vyrovnání rozdílů po zaokrouhlení                    | Otevře dialogové okno **Vyrovnání rozdílů po zaokrouhlení**, kde můžete zadat parametry pro zaokrouhlování. Tento příkaz je dostupný z definice řádků. |
+| Úprava zaokrouhlení                    | Otevře dialogové okno **Vyrovnání rozdílů po zaokrouhlení**, kde můžete zadat parametry pro zaokrouhlování. Tento příkaz je dostupný z definice řádků. |
 | Spravovat sady dimenzí                  | Otevře dialogové okno **Sady dimenzí**, ve kterém můžete vytvořit a upravit sady dimenzí. Tento příkaz je dostupný z definice řádků nebo z definice organizačního stromu. |
 | Vložit řádek                             | Vloží prázdný řádek do definice řádků nebo prázdný řádek záhlaví do definice sloupců. Tento příkaz je dostupný z definice řádků nebo sloupců. |
 | Odstranit řádek                             | Odstraní vybraný řádek z definice řádků nebo vybraný řádek záhlaví z definice sloupců. Tento příkaz je dostupný z definice řádků nebo sloupců. |
 | Vložit sloupec                          | Vloží prázdný sloupec do definice sloupců. Tento příkaz je dostupný z definice sloupců. |
 | Odstranit sloupec                          | Odstraní vybraný sloupec z definice sloupců. Tento příkaz je dostupný z definice sloupců. |
 | Vložit organizační jednotky z dimenzí | Otevře dialogové okno **Vložit jednotky výkaznictví z dimenzí**, kde můžete vybrat hodnoty dimenze, které mají být zahrnuty v definici stromu výkaznictví. Tento příkaz je dostupný z definice organizačního stromu. |
-| Importovat hierarchie sad dimenzí         | Otevře dialogové okno **Hierarchie sady dimenzí**, kde můžete importovat hierarchii sady dimenzí z finančních dat. Tento příkaz je k dispozici z definice stromu výkaznictví pro systém ve složce. .\\financial-dimensions\\systém založený na dimenzích. |
+| Importovat hierarchii sad dimenzí         | Otevře dialogové okno **Hierarchie sady dimenzí**, kde můžete importovat hierarchii sady dimenzí z finančních dat. Tento příkaz je k dispozici z definice stromu výkaznictví pro systém ve složce. .\\financial-dimensions\\systém založený na dimenzích. |
 | Vložit organizační jednotku                  | Vložte prázdný řádek do definice stromu výkaznictví. Tento příkaz je dostupný z definice organizačního stromu. |
 | Odstranit organizační jednotku                  | Odstraní vybranou organizační jednotku z definice organizačního stromu. Tento příkaz je dostupný z definice organizačního stromu. |
 
@@ -89,14 +89,14 @@ Nabídka **Zobrazení** je k dispozici všem uživatelům a obsahuje následují
 |-----------------|------------------------------------------------------------------------|
 | Navigační podokno | Zobrazí nebo skryje navigační podokno.                                      |
 | Panely nástrojů        | Umožňuje vybrat panely nástrojů, které jsou viditelné.                                  |
-| Stavový řádek      | Zobrazí nebo skryje informace o stavu v okně **Návrhář sestav**. |
+| Stavový řádek      | Zobrazí nebo skryje informace o stavu v okně **Report Designer**. |
 | Uvítací stránka    | Otevře **uvítací stránku**.                                             |
 
 ### <a name="format-menu"></a>Nabídka Formát
 
 Nabídka **Formát** je k dispozici pro uživatele, kteří mají role **Návrhář** nebo **Správce**. Tato nabídka zahrnuje následující příkazy.
 
-| Příkaz               | Popis |
+| Command               | popis |
 |-----------------------|-------------|
 | Styly a formátování | Otevře dialogové okno **Styly a formátování**, ve kterém můžete vytvářet a upravovat styl textu v definicích řádků a definicích sloupců. Tento příkaz je dostupný z definice řádků nebo sloupců. |
 | Šířka sloupce          | Otevře dialogové okno **Šířka sloupce**, kde můžete nastavit šířku vybraného sloupce. Tento příkaz je dostupný z definice řádků, definice sloupců nebo definice organizačního stromu. |
@@ -162,7 +162,7 @@ Nabídka **Nápověda** je k dispozici všem uživatelům a obsahuje následují
 | Nápověda    | Otevřete stránku článku s nápovědou pro finanční výkaznictví. |
 |         |                                                                          |
 
-## <a name="report-designer-toolbar-buttons"></a>Tlačítka panelu nástrojů Návrháře sestav
+## <a name="report-designer-toolbar-buttons"></a>Tlačítka panelu nástrojů Report Designer
 Následující tabulky popisují tlačítka na panelu nástrojů, která lze použít při navrhování sestav. Některá tlačítka na panelu nástrojů jsou dostupná pouze za určitých okolností. Například tlačítka pro zvýšení a snížení úrovně organizační jednotky jsou dostupná pouze pokud upravujete definice organizačního stromu.
 
 ### <a name="standard-toolbar"></a>Panel nástrojů Standardní
@@ -194,18 +194,18 @@ Tento panel nástrojů poskytuje rychlý přístup k příkazům pro práci se 
 
 Panel nástrojů formátování nabízí snadný přístup k příkazům stylů. Tento panel nástrojů obsahuje následující tlačítka.
 
-| Tlačítko                                                                                                       | popis                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Tlačítko Styl písma.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Použije na aktuální text vybraný styl písma.      |
-| [![Tlačítko Písmo.](./media/fonttype.png)](./media/fonttype.png)                                                 | Nastaví u aktuálního textu vybrané písmo.              |
+| Tlačítko                                                                                                       | popis                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Tlačítko Styl písma.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Použije na aktuální text vybraný styl písma.   |
+| [![Tlačítko Písmo.](./media/fonttype.png)](./media/fonttype.png)                                                 | Nastaví u aktuálního textu vybrané písmo.           |
 | [![Tlačítko Velikost písma.](./media/fontsize.png)](./media/fontsize.png)                                            | Nastaví u aktuálního textu vybranou velikost písma (v bodech). |
-| [![Tlačítko Tučné.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Nastaví aktuální text jako tučný.                             |
-| [![Tlačítko Kurzíva.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Nastaví aktuální text jako kurzívu.                           |
-| [![Tlačítko Podtržené.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podtrhne aktuální text.                             |
-| [![Tlačítko Zmenšit odsazení.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmenší odsazení aktuálního textu.                |
-| [![Tlačítko Zvětšit odsazení.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zvětší odsazení aktuálního textu.                |
-| [![Tlačítko Barva pozadí.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Změní barvu pozadí aktuální buňky.        |
-| [![Tlačítko Barva písma.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Změní barvu aktuálního textu.                   |
+| [![Tlačítko Tučné.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Nastaví aktuální text jako tučný.                          |
+| [![Tlačítko Kurzíva.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Nastaví aktuální text jako kurzívu.                        |
+| [![Tlačítko Podtržené.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podtrhne aktuální text.                          |
+| [![Tlačítko Zmenšit odsazení.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmenší odsazení aktuálního textu.             |
+| [![Tlačítko Zvětšit odsazení.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zvětší odsazení aktuálního textu.             |
+| [![Tlačítko Barva pozadí.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Změní barvu pozadí aktuální buňky.     |
+| [![Tlačítko Barva písma.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Změní barvu aktuálního textu.                |
 
 ### <a name="report-designer-toolbar"></a>Panel nástrojů návrháře sestav
 
@@ -213,9 +213,9 @@ Panel nástrojů návrháře sestav poskytuje rychlý přístup k příkazům na
 
 | Tlačítko                                                                                              | popis |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Tlačítko Definice sestavy.](./media/reportc130389.png)](./media/reportc130389.png)                 | Zobrazí definici sestavy uvedenou v nabídce **Okno**. |
-| [![Tlačítko Definice řádku.](./media/rowc130389.png)](./media/rowc130389.png)                          | Zobrazí definici řádků, která je přiřazena k definici aktivní sestavy. |
-| [![Tlačítko Definice sloupce.](./media/columnc130389.png)](./media/columnc130389.png)                 | Zobrazí definici sloupců, která je přiřazena k definici aktivní sestavy. |
+| [![Tlačítko Definice sestavy.](./media/reportc130389.png)](./media/reportc130389.png)            | Zobrazí definici sestavy uvedenou v nabídce **Okno**. |
+| [![Tlačítko Definice řádku.](./media/rowc130389.png)](./media/rowc130389.png)             | Zobrazí definici řádků, která je přiřazena k definici aktivní sestavy. |
+| [![Tlačítko Definice sloupce.](./media/columnc130389.png)](./media/columnc130389.png)  | Zobrazí definici sloupců, která je přiřazena k definici aktivní sestavy. |
 | [![Tlačítko Definice stromu výkaznictví.](./media/treec130389.png)](./media/treec130389.png)             | Zobrazí definici organizačního stromu, která je přiřazena k definici aktivní sestavy. |
 | [![Tlačítko Report Viewer.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Spustí Prohlížeč sestav s nejnovější verzí vygenerované sestavy. Toto tlačítko je dostupné z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
 | [![Tlačítko Generovat sestavu.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Vygeneruje sestavu z definice aktivní sestavy. Toto tlačítko je dostupné z definice sestavy. |

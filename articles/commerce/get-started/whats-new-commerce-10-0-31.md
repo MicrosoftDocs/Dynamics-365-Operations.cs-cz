@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709853"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787519"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Verze Preview aplikace Dynamics 365 Commerce 10.0.31 (únor 2023)
 
@@ -38,6 +38,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tento článek m�
 | Platby | [Aktivace Apple Pay u Dynamics 365 Connector pro Adyen](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | Zákazníci elektronického obchodu mohou používat Apple Pay na stránkách košíku a pokladny, když používají podporovaná zařízení nebo prohlížeče. | Přihlášení vývojáře |
 | Platby  |  Commerce nově obsahuje možnost omezit interakci uživatelů s opakujícími se platebními tokeny v uživatelském rozhraní Commerce headquarters. Platební formuláře, jako např. stránka **Prodejní objednávka call centra**, již nebude zobrazovat dříve používaný token opakované platby zákazníka pro použití v nové transakci. Pouze určené zadání „karta v evidenci“ vstup na obrazovku **Zákaznické platby** Commerce nebo po dohodě se zákazníkem při platbě prostřednictvím prodejní objednávky se zobrazí uživatelům call centra nebo Commerce headquarters při zpracování platby za novou transakci. | [Omezení používání platebních tokenů](../dev-itpro/limit-token-usage.md)  |  Správa funkcí<p>*Omezení použití platebního tokenu na kontext objednávky*  |
 | POS | [Vytvoření nákupních objednávek z POS](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Vylepšená operace příchozích skladových zásob v aplikaci pokladního místa (POS) umožňuje uživatelům vytvářet, upravovat a potvrzovat požadavky na nákupní objednávky. |  Správa funkcí<p>*Možnost vytvořit požadavek na nákupní objednávku v POS*   |
+| K dispozici jsou další jazyky | K dispozici jsou další čtyři jazyky | V seznamu preferovaných jazyků jsou pro uživatele k dispozici čtyři nové jazyky: korejština, portugalština (Portugalsko), vietnamština a čínština (tradiční). Chcete-li vybrat tuto možnost, přejděte na **Uživatelské možnosti \> Předvolby \> Předvolby jazyka a země/oblasti**. | Lokalizované předvolby |  
 
 
 

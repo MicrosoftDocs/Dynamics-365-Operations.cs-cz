@@ -2,7 +2,7 @@
 title: Účetní profily odběratele
 description: Tento článek popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891688"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799565"
 ---
 # <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
@@ -58,15 +58,15 @@ Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil,
 </thead>
 <tbody>
 <tr>
-<td>Účetní profil</td>
+<td><strong>Účetní profil</strong></td>
 <td>Zadejte kód účetního profilu. Můžete například vytvořit dva účetní profily a získat jeden účet pro rozvahy odběratele v národní měně a jiný účet pro rozvahy v měně cizí. Jeden účet byste měli nazvat "národní" a druhý "cizí".</td>
 </tr>
 <tr>
-<td>Popis</td>
+<td><strong>Popis</strong></td>
 <td>Zadejte popis účetního profilu. Používá se jen k lepší identifikace účetního profilu při jeho zobrazení na této stránce.</td>
 </tr>
 <tr>
-<td>Kód účtu</td>
+<td><strong>Kód účtu</strong></td>
 <td>Uveďte, zda účetní profil platí pro jednotlivého odběratele, skupinu odběratelů nebo všechny odběratele:
 <ul>
 <li><b>Tabulka</b> – Účetní profil platí pro jednoho odběratele. Vyberte účet odběratele v poli <b>Číslo účtu/skupiny</b>.</li>
@@ -76,33 +76,33 @@ Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil,
 </td>
 </tr>
 <tr>
-<td>Číslo účtu/skupiny</td>
+<td><strong>Číslo účtu/skupiny</strong></td>
 <td>Pokud vyberete možnost <b>Tabulka</b> v poli <b>Kód účtu</b>, zvolte číslo účtu odběratele přiřazeného k účetnímu profilu. Pokud je vybrána možnost <b>Skupina</b>, vyberte skupinu odběratelů. Pokud je vybrána možnost <b>Vše</b>, ponechte toto pole prázdné.</td>
 </tr>
 <tr>
-<td>Součtový účet</td>
+<td><strong>Součtový účet</strong></td>
 <td>Vyberte účet hlavní knihy, který se má použít jako obchodní účet pohledávek odběratelů přiřazených k danému účetnímu profilu. Tento účet je účtem pro typ účtování <b>Rovnováha odběratele</b>.</td>
 </tr>
 <tr>
-<td>Účet likvidity pro platby</td>
-<td>Vyberte účet hlavní knihy likvidity použitý pro prognózy cash-flow. Toto pole se zobrazí pouze v případě, že jsou prognózy cashflow povoleny.</td>
+<td><strong>Účet likvidity pro platby</strong></td>
+<td>Vyberte účet <strong>hlavní knihy likvidity</strong> použitý pro prognózy cash-flow. Toto pole se zobrazí pouze v případě, že jsou prognózy cashflow povoleny.</td>
 </tr>
 <tr>
-<td>Zálohy DPH</td>
+<td><strong>Zálohy DPH</strong></td>
 <td><p>Vyberte účet pro zálohové platby daně z prodeje.</p>
 <p><strong>Poznámka:</strong> Na stránce <b>Parametry pohledávek</b> určete účetní profil, který má být použit při označení platby jako zálohy.</p>
 </td>
 </tr>
 <tr>
-<td>Závazky pro účet slevy</td>
+<td><strong>Závazky pro účet slevy</strong></td>
 <td>Vyberte účet hlavní knihy pro závazky slevy.</td>
 </tr>
 <tr>
-<td>Posloupnost upomínek</td>
+<td><strong>Posloupnost upomínek</strong></td>
 <td>Vyberte identifikátor posloupnosti upomínek, který má být použit pro odběratele, kterým je přiřazen účetní profil.</td>
 </tr>
 <tr>
-<td>Kód úroku</td>
+<td><strong>Kód úroku</strong></td>
 <td>Vyberte kód úroku, který má být použit pro výpočet úroku pro odběratele, kterým je přiřazen účetní profil.</td>
 </tr>
 </tbody>

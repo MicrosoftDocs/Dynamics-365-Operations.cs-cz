@@ -1,26 +1,21 @@
 ---
 title: Distribuovaná správa objednávek (DOM)
-description: Tento článek popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
+description: Tento článek popisuje funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: cfb89544580141ed397d27886f51fd0f1ac138d2
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764172"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785173"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -32,11 +27,16 @@ Distribuovaná správa objednávek je omnikanálové řešení, které optimaliz
 
 Optimalizace probíhá na úrovni dávek i jednotlivých objednávek, přičemž obojí využívá smíšené celočíselné programování (MIP) a modely prediktivní analýzy. Maloobchodníci tak mohou definovat pravidla vyvažující řadu možných konfliktních bodů při plnění objednávky. V moderní dodavatelské síti, kde jsou produkty distribuovány přes více kanálů, musí být organizace schopna flexibilně řešit změny objednávek, problémy s dostupností dodavatelů nebo prudké nárůsty poptávky. Distribuovaná správa objednávek pomáhá maximalizovat plnění objednávek a hledat správné zdroje pro dodání produktů na základě obchodních omezení a cílů. Pokud chcete například minimalizovat náklady, objednávku odbaví nejbližší zdroje. Při optimalizaci plnění objednávek se bere v úvahu vzdálenost mezi místem distribuce a místem doručení, definované nákladové faktory, jako jsou cíle optimalizace, a pravidla definovaná jako omezení, například zásoby v distribučních uzlech. Distribuovaná správa objednávek umožňuje podnikům definovat různé profily aplikující různé optimalizační strategie dle typu podnikání nebo spotřebitelského segmentu. 
 
-Následující příklad ilustruje životní cyklus prodejní objednávky v systému distribuované správy objednávek.
+Následující příklad ilustruje životní cyklus prodejní objednávky v systému distribuované správy objednávek.
 
-![Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek](./media/flow.png "Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek")
+![Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek](./media/flow.png "Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek")
 
-## <a name="set-up-dom"></a>Nastavení distribuované správy objednávek
+Následující video poskytuje přehled funkcí distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
+## <a name="set-up-dom"></a>Nastavit distribuovanou správu objednávek
 
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
 2. Na kartě **Konfigurační klíče** rozbalte uzel **Commerce** a poté vyberte zaškrtávací políčko **Distribuovaná správa objednávek**.

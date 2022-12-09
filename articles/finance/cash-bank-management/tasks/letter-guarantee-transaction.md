@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779927"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803957"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Transakce záruční listiny
 
@@ -43,7 +43,7 @@ Tato procedura používá ukázkovou společnost USMF.
 1. Přejděte na **Pohledávky > Objednávky > Všechny prodejní objednávky**.
 2. Klepněte na možnost **Nový**.
 3. V poli **Účet odběratele** zadejte nebo vyberte hodnotu.
-4. Rozbalte sekci Obecné.
+4. Rozbalte sekci **Obecné**.
 5. V poli **Lokalita** zadejte nebo vyberte hodnotu.
 6. Klikněte na odkaz na vybraném řádku v seznamu.
 7. V poli **Sklad** zadejte nebo vyberte hodnotu.
@@ -52,9 +52,12 @@ Tato procedura používá ukázkovou společnost USMF.
 10. Klikněte na tlačítko **OK**.
 11. V poli **Číslo položky** zadejte nebo vyberte hodnotu.
 12. Zadejte číslo do pole **Jednotková cena**.
-13. Rozbalte sekci Podrobnosti řádku.
-14. Klikněte na záložku Dodání.
-    * Poznámka: Vyberte Řízení data dodání = Žádné.  
+13. Rozbalte sekci **Podrobnosti řádku**.
+14. Klikněte na záložku **Dodání**.
+
+>[!Note] 
+>Vyberte **Řízení data dodání** = **Žádné**  
+
 15. Zadejte datum do pole **Požadované datum expedice**.
 16. Zadejte datum do pole **Potvrzené datum expedice**.
 
@@ -83,7 +86,7 @@ Tato procedura používá ukázkovou společnost USMF.
 2. Zadejte hodnotu do pole **Číslo banky**.
     * Ověřte hodnoty ve vypočtených polích **Marže** a **Výdaje**.  
 3. Klikněte na tlačítko **OK**.
-4. Rozbalte sekci Akce.
+4. Rozbalte sekci **Akce**.
     * Ověřte záznam „Přijmout z banky“.  
 5. Klepnutím přejdete na odkaz v poli **Číslo dávky deníku**.
 6. Klikněte na možnost **Řádky**.
@@ -102,7 +105,7 @@ Tato procedura používá ukázkovou společnost USMF.
 9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 10. Kliknutím na **Dát příjemci** otevřete dialogové okno.
 11. Klikněte na tlačítko **OK**.
-12. Rozbalte sekci Akce.
+12. Rozbalte sekci **Akce**.
     * Ověřte záznam „Dát příjemci“.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Zpracovat příkaz záruční listina_Zvýšit hodnotu
@@ -118,7 +121,7 @@ Tato procedura používá ukázkovou společnost USMF.
 10. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 11. Kliknutím na možnost **Zvýšit hodnotu** otevřete dialogové okno.
 12. Klikněte na tlačítko **OK**.
-13. Rozbalte sekci Akce.
+13. Rozbalte sekci **Akce**.
     * Ověřte záznam „Zvýšit hodnotu“.  
 14. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 15. Klepnutím přejdete na odkaz v poli **Číslo dávky deníku**.
@@ -137,7 +140,7 @@ Tato procedura používá ukázkovou společnost USMF.
 9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 10. Otevřete dialogové okno kliknutím na možnost **Likvidovat**.
 11. Klikněte na tlačítko **OK**.
-12. Rozbalte sekci Akce.
+12. Rozbalte sekci **Akce**.
     * Ověřte záznam „Likvidovat“.  
 13. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 14. Klepnutím přejdete na odkaz v poli **Číslo dávky deníku**.

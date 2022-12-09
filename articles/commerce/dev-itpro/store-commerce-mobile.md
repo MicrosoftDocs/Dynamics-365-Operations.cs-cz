@@ -2,32 +2,33 @@
 title: Aplikace Store Commerce pro mobilní platformy
 description: Tento článek popisuje, jak začít používat aplikaci Microsoft Dynamics 365 Commerce Store Commerce pro Android a iOS.
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9642334"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815776"
 ---
 # <a name="store-commerce-app-for-mobile-platforms"></a>Aplikace Store Commerce pro mobilní platformy
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tento článek popisuje, jak začít používat aplikace Microsoft Dynamics 365 Commerce Store Commerce pro Android a iOS.
 
-Mobilní aplikace Dynamics 365 Commerce pro Android a iOS zrychlují a zjednodušují proces nasazení plnohodnotných mobilních pokladních míst (POS) pro vaše maloobchodní prostředí. Mobilní aplikace Store Commerce poskytují všechny schopnosti a výhody [aplikace Store Commerce pro Windows](store-commerce.md) na telefonech a tabletech. Mobilní aplikace Store Commerce lze nainstalovat přímo z obchodů s aplikacemi Apple a Google Play a pro jejich nasazení nebo aktualizaci není nutné, aby vývojář vytvořil nový balíček aplikace. 
+Mobilní aplikace Dynamics 365 Commerce pro Android a iOS zrychlují a zjednodušují proces nasazení plnohodnotných mobilních pokladních míst (POS) pro vaše maloobchodní prostředí. Mobilní aplikace Store Commerce poskytují téměř všechny možnosti a výhody [aplikace Store Commerce pro Windows](store-commerce.md) a fungují dobře na široké škále telefonů a tabletů iOS a Android. Mobilní aplikace Store Commerce lze nainstalovat přímo z obchodů s aplikacemi Apple a Google Play a pro jejich nasazení nebo aktualizaci není nutné, aby vývojář vytvořil nový balíček aplikace. 
 
 Mobilní aplikace Store Commerce si zachovávají plnou funkční paritu se současnými hybridními aplikacemi pro maloobchod. Store Commerce pro iOS navíc zahrnuje podporu pro vyhrazenou hardwarovou stanici, takže zařízení iOS mohou komunikovat se síťovými platebními terminály, tiskárnami účtenek a pokladními zásuvkami bez nutnosti nasazení sdílené hardwarové stanice. 
 
 > [!IMPORTANT]
-> Aplikace Store Commerce pro Windows, Android a iOS jsou další generací POS aplikací pro Dynamics 365 Commerce. Aktuální Modern POS (MPOS) aplikace a [maloobchodní hybridní aplikace](hybridapp.md) pro mobilní zařízení budou v říjnu 2023 označeny za zastaralé. Společnost Microsoft doporučuje, abyste pro všechna nová nasazení POS používali Store Commerce nebo Cloud POS (CPOS). Stávající zákazníci by měli plánovat migraci z maloobchodní hybridní aplikace na Store Commerce. Další informace o plánu ukončení podpory pro MPOS a maloobchodní hybridní aplikace naleznete v části [Modernizace technologického zásobníku Dynamics 365 Commerce v obchodě](https://www.microsoft.com/download/details.aspx?id=103896). 
+> Aplikace Store Commerce pro Windows, Android a iOS jsou další generací POS aplikací pro Dynamics 365 Commerce. Aplikace Store Commerce nabízejí četná vylepšení oproti svým předchůdcům, přičemž si zachovávají plnou funkčnost a paritu funkcí. Společnost Microsoft ukončí podporu MPOS a hybridní aplikace Android a iOS Retail POS koncem roku 2023 a doporučuje, abyste pro všechna nová nasazení POS používali Store Commerce nebo Cloud POS (CPOS). Stávající zákazníci by měli plánovat migraci z maloobchodní hybridní aplikace na Store Commerce. Další informace najdete v části [Migrace moderního POS do Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## <a name="app-architecture"></a>Architektura aplikace
 
@@ -51,7 +52,7 @@ Mobilní aplikace Store Commerce vyžadují Dynamics 365 Commerce, konkrétně C
 Mobilní aplikace Store Commerce můžete nainstalovat přímo z obchodu Google Play nebo Apple App Store. 
 
 - [Aplikace Store Commerce pro Android](https://aka.ms/storecommerceandroid)
-- Aplikace Store Commerce pro iOS (brzy k dispozici)
+- [Aplikace Store Commerce pro iOS](https://aka.ms/storecommerceios)
 
 Balíčky aplikací Android (.apk) a Apple (.ipa) lze také stáhnout z knihovny sdíleného majetku v Microsoft Dynamics Lifecycle Services. 
 

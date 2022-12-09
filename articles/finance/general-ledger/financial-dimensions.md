@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680350"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799619"
 ---
 # <a name="financial-dimensions"></a>Finanční dimenze
 
@@ -136,6 +136,12 @@ Segmenty odvozených dimenzí a hodnoty můžete nastavit pomocí entit.
 - Entita hodnoty odvozených dimenzí umožňuje importovat hodnoty, které by měly být odvozeny pro každou řídicí dimenzi.
 
 Při použití entitu pro import dat, pokud entita importuje dimenze, se použijí pravidla odvozené dimenze během importu, pokud entita konkrétně nepřepíše tyto dimenze.
+
+## <a name="financial-dimension-service"></a>Služba finančních dimenzí
+
+Doplněk služby Finanční dimenze je k dispozici ve vašem prostředí Microsoft Dynamics Lifecycle Services. Poskytuje lepší výkon, když používáte rámec správy dat k importu deníku, který má velký počet řádků. Chcete-li službu používat, musíte ji zapnout na stránce **Parametry služby finanční dimenze**. V současné době služba funguje pouze na importovaných denících, které mají 500 řádků nebo více. Navíc aktuálně dokáže zpracovávat pouze obecné deníky, kde je na řádcích deníku nastaven typ účtu **Hlavní kniha**. Další typy účtů na řádcích deníku, například **Zákazník**, **Dodavatel** a **Banka**, aktuálně nejsou podporovány. Tato služba nebude vyvolána, když jsou v systému nastaveny odvozené dimenze.
+
+Služba finanční dimenze poskytuje zlepšený výkon při importu deníků pomocí nové služby, která běží paralelně s importem dat. Spouští se pouze na datech hlavního účtu a finanční dimenze v deníku a generuje kombinace dimenzí, které jsou specifikovány v poli Řetězec účtu hlavní knihy na řádcích deníku. Zpracování převádí tento řetězec na úložiště strukturovaných dat, které rámec finanční dimenze používá ve zbytku produktu pro ověřování, souhrnné hlášení a dotazy. Další informace o souhrnném vykazování dat finančních dimenzí naleznete v části [Sady finančních dimenzí](financial-dimension-sets.md).
 
 Další informace naleznete v následujících tématech:
 

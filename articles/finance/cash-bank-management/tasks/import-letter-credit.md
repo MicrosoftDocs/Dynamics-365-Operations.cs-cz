@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779431"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803984"
 ---
 # <a name="import-letter-of-credit"></a>Import akreditivu
 
@@ -42,7 +42,10 @@ Tato procedura používá ukázkovou společnost USMF.
 10. Klikněte na odkaz na vybraném řádku v seznamu.
 11. Zadejte datum do pole **Datum účtování**.
 12. Zadejte datum do pole **Datum dodání**.
-    * Poznámka: Pole **Typ bankovního dokumentu** musí být **Akreditiv**.  
+
+>[!Note] 
+>Pole **Typ bankovního dokumentu** musí být **Akreditiv**.  
+
 13. Klikněte na tlačítko **OK**.
 14. V poli **Číslo položky** zadejte nebo vyberte hodnotu.
 15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
@@ -97,7 +100,7 @@ Tato procedura používá ukázkovou společnost USMF.
 1. V podokně akcí klikněte na možnost **Přijmout**.
 2. Klikněte na **Příjemka produktu**.
 3. Zadejte hodnotu do pole **PurchParmTable_Num**.
-    * Vyberte číslo dodávky vytvořené s odkazem na akreditiv.  
+    * Vyberte **číslo dodávky** vytvořené s odkazem na akreditiv.  
 4. Klikněte na odkaz na vybraném řádku v seznamu.
 5. Zadejte datum do pole **Příjemka produktu**.
 6. Klikněte na tlačítko **OK**.
@@ -108,7 +111,7 @@ Tato procedura používá ukázkovou společnost USMF.
 1. Přejděte na **Pokladna a banka > Akreditivy > Importovat akreditiv a kolekci importu**.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Ověřte stav importního akreditivu.     
+    * Ověřte **stav importního akreditivu**.     
 4. Zavřete stránku.
 5. Zavřete stránku.
 
@@ -152,7 +155,7 @@ Tato procedura používá ukázkovou společnost USMF.
 6. Do pole **Datum** zadejte datum.
 7. Zadejte požadované hodnoty do pole **Účet**.
 8. Klikněte na možnost **Vyrovnat transakce**.
-9. Rozbalte část Součty.
+9. Rozbalte část **Součty**.
 10. Vyberte možnost v poli **Zobrazit**.
     * Ověřte, aby byla aktualizovány pole **Číslo bankovního dokumentu** a **Číslo dodávky**.  
 11. Vyberte políčko **Označit**.
@@ -167,12 +170,12 @@ Tato procedura používá ukázkovou společnost USMF.
 1. Přejděte na **Pokladna a banka > Akreditivy > Importovat akreditiv a kolekci importu**.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Ověřte stav importního akreditivu.   
+    * Ověřte **stav importního akreditivu**.   
 4. Zavřete stránku.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Ověření limitu bankovního zařízení a sestavu využití
 1. Přejděte na **Pokladna a banka > Dotazy a sestavy > Akreditivy a záruční listiny > Sestava zařízení banky a využití**.
-2. Rozbalte oddíl Záznamy k zahrnutí.
+2. Rozbalte oddíl **Záznamy k zahrnutí**.
 3. Klikněte na tlačítko **Filtr**.
     * Definujte pole **Kritéria** pomocí požadovaného bankovního účtu.  
 4. V poli **Kritéria** zadejte nebo vyberte hodnotu.

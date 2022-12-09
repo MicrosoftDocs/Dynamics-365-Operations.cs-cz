@@ -2,7 +2,7 @@
 title: Definice sestavy v návrháři finanční sestavy
 description: Tento článek obsahuje informace o definicích sestavy.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.form: FinancialReports
-ms.openlocfilehash: e1095502e6dafbe217f51658ac65292c422a0002
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2ffef335c694af56486ccd7738818c4edda49b9e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291791"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802525"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Definice sestavy v návrháři finanční sestavy
 
@@ -37,7 +37,7 @@ Definice sestavy představuje součást sestavy (nebo stavební blok), který vy
 V závislosti na tom, jak jsou data v systému Microsoft Dynamics ERP uložena, však v sestavách nemusejí být dostupné podrobnosti transakcí.
 
 ## <a name="create-a-report-definition"></a>Vytvoření definice sestavy
-1. V Návrháři sestav v nabídce **Soubor** klikněte na tlačítko **Nový** a vyberte možnost **Definice sestavy**.
+1. V Report Designer v nabídce **Soubor** klikněte na tlačítko **Nový** a vyberte možnost **Definice sestavy**.
 2. Zadejte příslušné informace na kartách **Sestava**, **Výstup a distribuce**, **Záhlaví a zápatí** a **Nastavení**.
 
 ## <a name="contents-of-a-report-definition"></a>Obsah definice sestavy

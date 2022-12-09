@@ -2,7 +2,7 @@
 title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: e35c5fed886ebf9a453c22b3e04ca9ffe50b6d70
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9323951"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805197"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
+
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,19 +43,25 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 1. V pracovním prostoru **Pracovní volno a absence** klikněte na kartu **Odkazy**.
 2. V části **Nastavení** vyberte **Typ pracovního volna a absence**.
 3. Zvolte **Nové**.
-4. Zadejte název typu pracovního volna v části **Typ**, vyberte workflow v okně **ID workflowu** a do pole **Popis** napište popis.
+4. Zadejte název typu pracovního volna v části **Typ**, do pole **Popis** napište popis a vyberte pracovní postup v okně **ID pracovního postupu**. Na základě typu pracovního volna vyberte typ požadavku v poli **Typ požadavku**. Vyberte například **Volno** nebo **Dovolená**.
 5. V části **Obecné** vyberte **Žádný**, **Naplánované** nebo **Neplánované** v rozevíracím seznamu **Kategorie**.
 6. Vyberte kód výdělku z rozevíracího seznamu **kód výdělku**.
 7. V části **Požadován kód důvodu** vyberte, zda chcete požadovat kód důvodu. Chcete-li požadovat kódy důvodu, budete je pravděpodobně muset přidat. V části **Kódy důvodu** vyberte možnost **Přidat**, vyberte kód důvodu a poté zaškrtněte políčko **Povoleno** vedle něho.
-8. V části **Omezit přístup k vybraným rolím** vyberte, zda chcete omezit přístup. Poté vyberte role zabezpečení v části **role zabezpečení pro tento typ pracovního volna**. Role zabezpečení jsou definovány ve workflowu vybraném pod položkou **ID workflowu** dříve v tomto postupu.
-9. Pod položkou **Barva kalendáře** zvolte barvu, která se má pro tento typ nepřítomnosti zobrazovat v kalendáři nepřítomností. 
-10. V možnosti **Vztahy přerušení** zvolte, zda chcete, aby tento typ dovolené buď pozastavil jiný typ dovolené, nebo aby byl pozastaven jiným typem dovolené. Pokud je pro typ přerušení volna podán požadavek na pracovní volno, automaticky se pro tento typ dovolené vytvoří přerušení volna. 
-11. Zvolte možnost **Uložit**.
+8. Je-li typ požadavku **Dovolená**, postupujte následovně:
+
+      1. V části **S otevřeným koncem** vyberte, zda by uživatelé měli mít možnost vytvářet pracovní volna s otevřeným koncem.
+      2. Pokud je možnost **S otevřeným koncem** aktivována, můžete vybrat, zda pracovníci musí po návratu z dovolené odeslat oznámení o návratu do práce.
+      3. Pokud pracovníci musí odeslat oznámení o návratu do práce, můžete zapnout **Zapnout oznámení o návratu do práce**. Pokud je zapnuta možnost **Zapnout oznámení o návratu do práce** , položka **Vyžaduje se příloha** je automaticky aktivována a nelze ji deaktivovat.
+
+9. Pokud by uživatelé měli nahrávat dokumenty při vytváření nebo aktualizaci žádostí o pracovní volno, můžete povolit **Vyžaduje se příloha**.
+10. V části **Omezit přístup k vybraným rolím** vyberte, zda chcete omezit přístup. Poté vyberte role zabezpečení v části **Role zabezpečení pro tento typ pracovního volna**. Role zabezpečení jsou definovány v pracovním postupu vybraném pod položkou **ID pracovního postupu** dříve v tomto postupu.
+11. Pod položkou **Barva kalendáře** zvolte barvu, která se má pro tento typ nepřítomnosti zobrazovat v kalendáři nepřítomností.
+11. V možnosti **Vztahy přerušení** zvolte, zda chcete, aby tento typ dovolené buď pozastavil jiný typ dovolené, nebo aby byl pozastaven jiným typem dovolené. Pokud je pro typ přerušení volna podán požadavek na pracovní volno, automaticky se pro tento typ dovolené vytvoří přerušení volna.
+12. Zvolte možnost **Uložit**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurace pravidel typů volna
 
 1. Nastavte možnosti zaokrouhlení pro typ **Pracovní volno a absence**. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
-
 2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, počet svátků, které spadají do pracovního dne, bude použit k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
 
    Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md).
@@ -69,7 +77,7 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 1. Na stránce **Dovolená a nepřítomnost** na kartě **Odkazy** v **Nastavení** vyberte **Typy dovolené a nepřítomnosti**.
 
-2. V seznamu vyberte typ dovolené a nepřítomnosti. Pak v sekci **Všeobecné** použijte pole **Je vyžadována příloha** pro určení, zda musí být příloha nahrána, když zaměstnanec odešle nový požadavek na dovolenou pro vybraný typ dovolené. 
+2. V seznamu vyberte **Typ dovolené a nepřítomnosti**. V sekci **Všeobecné** použijte pole **Je vyžadována příloha** pro určení, zda musí být příloha nahrána, když zaměstnanec odešle nový požadavek na dovolenou pro vybraný typ dovolené. 
 
 Zaměstnanci budou povinni nahrát přílohu, když předloží novou žádost o dovolenou, která má typ dovolené, kde je povoleno pole **Je vyžadována příloha**. Chcete-li zobrazit přílohu, která byla nahrána jako součást žádosti o dovolenou, mohou schvalovatelé žádosti o dovolenou použít možnost **Přílohy** pro pracovní položky, které jsou jim přiřazeny. Pokud k žádosti o dovolenou přistupujete pomocí aplikace Human Resources v Microsoft Teams, možnost **Zobrazit podrobnosti** pro žádost o dovolenou lze použít k zobrazení jejích podrobností a všech příloh.
 

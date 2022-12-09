@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151337"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803903"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
 
@@ -37,7 +37,10 @@ Můžete odeslat bankovní výpis, který obsahuje informace pro jeden účet ne
 -   Chcete-li importovat jeden soubor bankovního příkazu pro jeden účet, nastavte možnost **Importovat výpis pro více bankovních účtů se všemi právnickými osobami** na **Ne** a vyberte bankovní účet, který je spojen s výpisem. Kliknutím na tlačítko **Procházet** vyberte přiřazený soubor bankovního výpisu a klepněte na tlačítko **Odeslat**.
 -   Chcete-li importovat jeden soubor bankovního výpisu pro více účtů, nastavte možnost **Importovat výpis pro více bankovních účtů se všemi právnickými osobami** na **Ano**. Kliknutím na tlačítko **Procházet** vyberte přiřazený soubor bankovního výpisu a klepněte na tlačítko **Odeslat**.
 
-Pokud některý výpis v elektronickém souboru nelze přiřadit k bankovnímu účtu nebo pokud je přiřazen více bankovním účtům pomocí identifikačních polí, nebude importován. Lze však stále importovat jiné výpisy v souboru. Uživatel obdrží zprávu, že se import bankovních výpisů pro konkrétní bankovní účty nezdařil. Mějte prosím na paměti, že uživatel, který importuje soubor s bankovním výpisem, musí mít přístup k právnické osobě, aby mohl importovat výpisy z bankovních účtů této právnické osoby. 
+Pokud některý výpis v elektronickém souboru nelze přiřadit k bankovnímu účtu nebo pokud je přiřazen více bankovním účtům pomocí identifikačních polí, nebude importován. Lze však stále importovat jiné výpisy v souboru. Uživatel obdrží zprávu, že se import bankovních výpisů pro konkrétní bankovní účty nezdařil. 
+
+>[!Note] 
+>Uživatel, který importuje soubor s bankovním výpisem, musí mít přístup k právnické osobě, aby mohl importovat výpisy z bankovních účtů této právnické osoby. 
 
 Více souborů výpisu lze také uložit do aplikace Finance v jediném procesu, a to pomocí souboru zip. Chcete-li importovat více souborů bankovního výpisu pro více účtů, zkombinujte všechny soubory bankovních výpisů do jednoho souboru zip. V dialogovém okně **Importovat bankovní výpisy** nastavte **Importovat výpis pro více bankovních účtů ve všech právnických osobách** na **Ano**. Kliknutím na tlačítko **Procházet** vyberte soubor zip obsahující soubory bankovního výpisu a klepněte na tlačítko **Odeslat**. Proces importu rozpozná soubor .zip a nahraje každý zahrnutý výpis, bez ohledu na bankovní účet právnické osoby.
 

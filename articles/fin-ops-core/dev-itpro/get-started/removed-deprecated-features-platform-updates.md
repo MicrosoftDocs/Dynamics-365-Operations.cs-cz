@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 6283e07b87dc169d3cbaa71a371839ab9b2d6150
+ms.sourcegitcommit: ee13b854cbd52a3aa33e2449a296aed775862594
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785092"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "9799029"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
@@ -71,10 +71,10 @@ Jako součást pracovního úsilí [platformy One Dynamics One](/dynamics365-rel
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Abychom vyhověli našim aktuálním bezpečnostním protokolům, odstraňujeme následující seznam šifrovacích sad.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Nahrazeno jinou funkcí?**   | Od 31. ledna 2023 mohou zákazníci využívat pouze naše [standardní šifrovací sady](/power-platform/admin/server-cipher-tls-requirements). Tato změna ovlivní vaše klienty a servery, které komunikují s našimi servery, například může mít dopad na vaše integrace třetích stran, které nejsou v souladu s našimi standardními šifrovacími sadami. |
+| **Nahrazeno jinou funkcí?**   | Od ledna 2023 mohou zákazníci využívat pouze naše [standardní šifrovací sady](/power-platform/admin/server-cipher-tls-requirements). Tato změna ovlivní vaše klienty a servery, které komunikují s našimi servery, například může mít dopad na vaše integrace třetích stran, které nejsou v souladu s našimi standardními šifrovacími sadami. |
 | **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace |
 | **Možnost nasazení**              | Nasazení v cloudu |
-| **Stav**                         | Zastaralé. Zákazníci musí upgradovat své servery do 31. ledna 2023. Další informace o konfiguraci pořadí šifrovací sady TLS viz [Správa Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Stav**                         | Zastaralé. Zákazníci musí upgradovat své servery do ledna 2023. Další informace o konfiguraci pořadí šifrovací sady TLS viz [Správa Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Oznámení o ukončení podpory funkce od června 2022

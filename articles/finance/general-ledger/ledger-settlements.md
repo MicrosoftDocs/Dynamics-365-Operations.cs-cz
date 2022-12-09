@@ -2,7 +2,7 @@
 title: Vyrovnání hlavní knihy
 description: Tento článek vysvětluje, jak používat stránku Vyrovnání hlavní knihy k vyrovnání transakcí hlavní knihy a stornování vyrovnání.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902480"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800624"
 ---
 # <a name="ledger-settlements"></a>Vyrovnání hlavní knihy
 
@@ -33,7 +33,7 @@ Vypořádané transakce mohou být vyloučeny z dotazů a sestav. Tímto způsob
 
 ## <a name="ledger-settlement-features"></a>Funkce vyrovnání hlavní knihy
 V Microsoft Dynamics 365 Finance verze 10.0.21 byla možnost **Povolit pokročilá vyrovnání hlavní knihy** ze stránky **Parametry hlavní knihy** odstraněna. Pokročilé vyrovnání hlavní knihy je nyní vždy povoleno.
-Ve verzi Finance 10.0.25 byla představena funkce **Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku**. Tato funkce mění základní funkčnost vyrovnání hlavní knihy i uzavření hlavní knihy na konci roku. Před povolením této funkce v pracovním prostoru **Správa funkcí** si pročtěte téma [Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku](awareness-between-ledger-settlement-year-end-close.md).
+Ve verzi Finance 10.0.25 byla představena funkce **Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku**. Tato funkce mění základní funkčnost vyrovnání hlavní knihy i uzavření hlavní knihy na konci roku. Před zapnutím této funkce v pracovním prostoru **Správa funkcí** si pročtěte téma [Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku](awareness-between-ledger-settlement-year-end-close.md).
 
 ## <a name="set-up-ledger-settlement"></a>Nastavení vypořádání hlavní knihy
 Musíte vybrat hlavní účty, pro které chcete provést vyrovnání hlavní knihy. Tyto hlavní účty lze vybrat dvěma způsoby.
@@ -90,7 +90,12 @@ Omylem provedené vyrovnání lze stornovat.
     > [!IMPORTANT]
     > Všechny transakce, které mají stejné ID vypořádání, budou stornovány, i když nejsou označeny. Například byly označeny a vypořádány čtyři řádky. Všechny čtyři řádky mají stejné ID vypořádání. Pokud označíte jeden z těchto čtyř řádků a poté vyberete **Stornovat označené transakce**, všechny čtyři řádky budou stornovány.
 
+## <a name="unmark-for-selected-users"></a>Zrušit označení pro vybrané uživatele
+Výběrem možnosti **Zrušit označení pro vybrané uživatele** zrušíte označení transakcí zúčtovaných v hlavní knize pro všechny právnické osoby podle ID uživatele. To například umožní účetnímu manažerovi zrušit označení transakcí pro uživatele, který odešel na dovolenou před dokončením vyúčtování, nebo pro uživatele, který opustil organizaci. Tato akce umožní označení těchto transakcí pro vyrovnání jiným uživatelem.
 
+
+## <a name="unmark-all-transactions"></a>Zrušit označení všech transakcí
+Výběrem možnosti **Zrušit označení všech transakcí** zrušíte označení všech transakcí zúčtovaných v hlavní knize pro všechny uživatele a všechny právnické osoby. Tato akce je k dispozici pro roli správce.
 
 
 

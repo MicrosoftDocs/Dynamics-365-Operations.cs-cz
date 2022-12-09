@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 0987ae1e9cfbb1e2d2a957a5fd1ad82257292c0a
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779873"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804094"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Nastavení zařízení banky a zaúčtování profilů pro záruční listiny
 
@@ -56,10 +56,10 @@ Tento úkol používá ukázkovou společnost USMF.
 8. V poli **Typ zařízení** zadejte název typu bankovního zařízení, který se vztahuje se k zařízení smlouvy bankovního zařízení.
 9. Zadejte hodnotu do pole **Popis**.
 10. V poli **Skupina zařízení** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-12. Klikněte na odkaz na vybraném řádku v seznamu.
-13. Vyberte možnost v poli **Druh zařízení.
-14. Klikněte na tlačítko **Uložit**.
+11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+12. Klikněte na odkaz na vybraném řádku v seznamu.
+13. Vyberte možnost v poli **Druh zařízení**.
+14. Klikněte na možnost **Uložit**.
 15. Zavřete stránku.
 
 ## <a name="bank-posting-profile"></a>Účetní profil banky
