@@ -2,7 +2,7 @@
 title: Konfigurace cílů ER závislých na akci
 description: Tento článek vysvětluje, jak konfigurovat cíle závislé na akcích formátu elektronického výkaznictví (ER), který je nakonfigurován pro generování odchozích dokumentů.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286240"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843790"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
@@ -32,7 +32,7 @@ V Microsoft Dynamics 365 Finance **verze 10.0.17 a novější** lze spustit for
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Zpřístupnění cílů ER závislých na akcích
 
-Chcete-li konfigurovat cíle ER závislé na akci v aktuální instanci Finance a povolit [nové](er-apis-app10-0-17.md) rozhraní ER API, otevřete pracovní prostor [Správa funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) a zapněte funkci **Konfigurovat konkrétní cíle ER, které se mají použít pro různé akce PM**. Chcete-li použít nakonfigurované cíle ER pro [konkrétní](#reports-list-wave1) sestavy za běhu, povolte funkci **Směrovat výstup sestav PM na základě cílů ER, které jsou specifické pro konkrétní akci uživatele (vlna 1)**.
+Chcete-li konfigurovat cíle ER závislé na akci v aktuální instanci Finance a povolit [nové](er-apis-app10-0-17.md) rozhraní ER API, otevřete pracovní prostor [Správa funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) a zapněte funkci **Konfigurovat konkrétní cíle ER, které se mají použít pro různé akce PM**. Chcete-li použít nakonfigurované cíle ER pro konkrétní sestavy za běhu, povolte **funkci Směrovat výstup sestav PM na základě cílů ER, které jsou specifické pro konkrétní akci uživatele (vlna 1)**.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
@@ -89,6 +89,51 @@ Následující obrázek ukazuje příklad dialogového okna **Cíle formátu ele
 > [!NOTE]
 > Pokud jste nakonfigurovali cíle ER pro několik komponent běžícího formátu ER, bude nabídnuta možnost samostatně pro každou nakonfigurovanou komponentu formátu ER.
 
+Pokud lze jako šablony zpráv pro vybraný dokument použít několik formátů ER, všechny cíle ER pro všechny použitelné šablony zpráv ER se zobrazí v dialogovém okně a jsou dostupné pro ruční úpravu za běhu.
+
+Pokud pro vybraný dokument nejsou použitelné žádné šablony sestav [SQL Server Reporting Services (SSRS)](SSRS-report.md), standardní výběr cílů správy tisku je dynamicky skrytý.
+
+Od Finance verze **10.0.31** můžete ručně změnit přiřazené cíle ER za běhu pro následující obchodní dokumenty:
+
+- Výpis z účtu odběratele
+- Oznámení úroků
+- Upomínka
+- Poradenství ohledně plateb zákazníkům
+- Poradenství ohledně plateb dodavatelům
+
+Chcete-li aktivovat možnost změny cílů ER za běhu, povolte funkci **Povolit úpravu cílů ER za běhu** v pracovním prostoru [Správa funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+
+> [!IMPORTANT]
+> U sestav **Poradenství ohledně plateb zákazníkům** a **Poradenství ohledně plateb dodavatelům** je možnost pro ruční změnu cílů ER k dispozici pouze v případě, že je povoleno nasazení testovací verze **ForcePrintJobSettings**.
+
+[![Úprava cílů ER za běhu.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Když je možnost **Použít cíl správy tisku** nastavena na **Ano**, systém použije výchozí cíle ER, které jsou nakonfigurovány pro konkrétní sestavy ER. Všechny ruční změny provedené v dialogovém okně jsou ignorovány. Nastavte možnost **Použít cíl správy tisku** jako **Ne**, chcete-li zpracovat dokumenty do cílů ER definovaných v dialogovém okně bezprostředně před spuštěním sestav.
+
+Následující obchodní dokumenty nepředpokládají explicitní výběr akce uživatelem, když jsou spuštěny:
+
+- Výpis z účtu odběratele
+- Oznámení úroků
+- Upomínka
+- Poradenství ohledně plateb zákazníkům
+- Poradenství ohledně plateb dodavatelům
+
+Následující logika se používá k určení, která akce se použije při zpracování předchozích sestav:
+
+- Pokud je povoleno nasazení testovací verze **ForcePrintJobSettings**:
+
+    - Pokud je možnost **Použít cíl správy tisku** nastavena jako **Ano**, použije se akce **Tisknout**.
+    - Pokud je možnost **Použít cíl správy tisku** nastavena jako **Ne**, použije se akce **Zobrazit**.
+
+- Pokud není povoleno nasazení testovací verze **ForcePrintJobSettings**:
+
+    - Pokud je možnost **Použít cíl správy tisku** jako **Ano**, akce **Tisknout** se použije na sestavy **Poradenství ohledně plateb zákazníkům** a **Poradenství ohledně plateb dodavatelům**.
+    - Pokud je možnost **Použít cíl správy tisku** nastavena jako **Ne**, použije se vždy výchozí šablona sestavy SSRS pro sestavy **Poradenství ohledně plateb zákazníkům** a **Poradenství ohledně plateb dodavatelům** bez ohledu na nakonfigurovaná nastavení ER.
+    - Akce **Tisknout** se vždy použije pro sestavy **Výpis z účtu zákazníka**, **Oznámení úroků** a **Upomínka**.
+
+Pro předchozí logiku lze akce **Tisknout** nebo **Zobrazit** použít ke konfiguraci cílů sestav ER závislých na akci. Za běhu jsou v dialogovém okně filtrovány pouze cíle ER, které jsou nakonfigurovány pro konkrétní akci.
+
 ## <a name="verify-the-provided-user-action"></a>Ověření poskytnuté akce uživatele
 
 Když provedete konkrétní akci uživatele, můžete ověřit, která akce uživatele, pokud existuje, je poskytována pro spuštěný formát ER. Toto ověření je důležité, když musíte nakonfigurovat cíle ER závislé na akci, ale nejste si jisti, jaký kód akce uživatele, pokud existuje, je poskytnut. Například když začnete účtovat volnou textovou fakturu a nastavíte možnost **Tisk faktury** na **Ano** v poli **Zaúčtovat volnou textovou fakturu**, můžete nastavit možnost **Použít cíl správy tisku** na **Ano** nebo **Ne**.
@@ -104,20 +149,6 @@ Pomocí těchto kroků ověřte poskytnutý kód akce uživatele.
 7. Zkontrolujte položky protokolu, které musí obsahovat záznam, který představuje poskytnutý kód akce uživatele, pokud byla poskytnuta nějaká akce pro spuštění formátu ER.
 
     ![Stránka s protokoly běhu elektronického výkaznictví, která obsahuje informace o kódu akce uživatele, který byl poskytnut pro filtrovaný běh formátu ER.](./media/er-destination-action-dependent-03.png)
-
-## <a name=""></a><a name="reports-list-wave1">Seznam obchodních dokumentů (vlna 1)</a>
-
-Následující seznam obchodních dokumentů je řízen funkcí **Směrovat výstup zpráv PM na základě cílů ER, které jsou specifické pro konkrétní akci uživatele (vlna 1)**:
-
-- Faktura odběratele (volná textová faktura)
-- Faktura zákazníka (prodejní faktura)
-- Nákupní objednávka
-- Nákupní žádanka nákupní objednávky
-- Prodejní objednávka – potvrzení
-- Upomínka
-- Oznámení úroků
-- Poradenství ohledně plateb dodavatelům
-- Požadavek na nabídku
 
 ## <a name="additional-resources"></a>Další prostředky
 

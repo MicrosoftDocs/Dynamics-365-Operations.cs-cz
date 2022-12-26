@@ -2,7 +2,7 @@
 title: Finanční konsolidace online
 description: Tento článek popisuje online finanční konsolidace v hlavní knize.
 author: aprilolson
-ms.date: 07/09/2018
+ms.date: 12/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5843ac78adf32e738d9882c7f4e9e04a79200700
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848542"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838249"
 ---
 # <a name="online-financial-consolidations"></a>Finanční konsolidace online
 
@@ -45,6 +45,19 @@ Zde je vysvětlení různých polí na této kartě:
 - **Období konsolidace** – Použijte pole v této části k definování období konsolidace.
 
     - **Od** a **Do** – Určete rozmezí dat pro konsolidaci. Ponecháte-li tato pole prázdná, konsolidace bude zpracována za všechna období, která jsou definována v kalendáři hlavní knihy společnosti. Nedoporučujeme ponechat tato pole prázdná.
+    - **Vybrat konsolidační částku z** – Toto pole použijte k určení, zda se k aktualizaci částek zúčtovací měny konsolidační společnosti použijí částky zúčtovací měny nebo částky měny vykazování ze zdrojových společností.
+
+        - Volbou **Zúčtovací měna** použijete částky zúčtovací měny ze zdrojových společností k aktualizaci částek zúčtovací měny v konsolidační společnosti. Když je tato hodnota vybrána, použijte pole **Konsolidace zúčtovací měny** k definování způsobu výpočtu zúčtovacích měn v konsolidační společnosti.
+        - Volbou **Měna vykazování** použijete částky měny vykazování ze zdrojových společností k výpočtu částek zúčtovací měny v konsolidační společnosti.
+
+            - Pokud je měna vykazování ze zdrojové společnosti stejná jako zúčtovací měna konsolidační společnosti, částky měny vykazování se zkopírují ze zdrojové společnosti do konsolidační společnosti.
+            - Pokud se měna vykazování ze zdrojové společnosti liší od zúčtovací měny konsolidační společnosti, hodnoty se převedou pomocí informací o směně, které jsou definovány na kartě **Převod měn** této stránku pro výpočet konsolidačních hodnot společnosti.
+
+    - **Konsolidace zúčtovací měny** – Toto pole je dostupné pouze v případě, že pole **Vybrat konsolidační částku z** je nastaveno na **Zúčtovací měna**. Použijte jej k určení, zda jsou částky zúčtovací měny ze zdrojových společností převáděny prostřednictvím směnných kurzů nebo zkopírovány do konsolidační společnosti. Vyberte **Použít převod měny**, chcete-li k výpočtu zůstatků konsolidačního účetnictví použít informace o směnném kurzu definované na kartě **Převod měn**. Vyberte **Použít částku v zúčtovací měně**, chcete-li zkopírovat částky zúčtovací měny ze zdrojových společností do konsolidační společnosti.
+
+        - Pokud je zúčtovací měna ze zdrojové společnosti stejná jako zúčtovací měna konsolidační společnosti, částky měny se zkopírují ze zdrojové společnosti do konsolidační společnosti.
+        - Pokud se zúčtovací měna ze zdrojové společnosti liší od zúčtovací měny konsolidační společnosti, hodnoty se převedou pomocí informací o směně, které jsou definovány na kartě **Převod měn** pro výpočet konsolidačních hodnot společnosti.
+
     - **Zahrnout skutečné částky** – Nastavte tuto možnost na **Ano** pro konsolidaci vašich skutečných dat.
     - **Zahrnout rozpočtové částky** – Nastavte tuto možnost na **Ano** pro konsolidaci dat z registru rozpočtu.
     - **Znovu vytvořit zůstatky během procesu konsolidace** – Nedoporučujeme nastavit tuto možnost na **Ano**. Místo toho znovu sestavte zůstatky jako samostatnou dávkovou úlohu.
@@ -80,9 +93,9 @@ Na kartě **Eliminace** máte tři možnosti pro zpracování eliminací:
 Další informace o eliminacích naleznete v tématu [Pravidla eliminace](./elimination-rules.md).
 
 ## <a name="currency-translation"></a>Převod měny
-Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnného kurzu a sazbu. V poli **Použít směnný kurz z** jsou k dispozici tři možnosti:
+Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnného kurzu a sazbu. Je-li konsolidační společnost přiřazena k jiným hlavním účtům než zdrojová společnost, musí být hlavní účet konsolidační společnosti uveden v polích **Od data** a **Do data**, nikoli hlavní účty zdrojové společnosti. Pro každý řádek právnické osoby a hlavních účtů jsou v poli **Použít směnný kurz z** k dispozici tři možnosti:
 
-- **Datum konsolidace** – Datum konsolidace se použije k získání směnného kurzu. Tento kurz je ekvivalentem místního kurzu nebo kurzu na konci měsíce. Zobrazí se náhled kurzu, ale nelze ho upravovat.
+- **Datum konsolidace** – Datum, které je definováno v poli **Do data období konsolidace** na kartě **Kritéria** pro konsolidaci se použije k získání směnného kurzu. Tento kurz je ekvivalentem místního kurzu nebo kurzu na konci měsíce. Zobrazí se náhled kurzu, ale nelze ho upravovat.
 - **Datum transakce** – Datum každé transakce se použije k výběru směnného kurzu. Tato možnost se nejčastěji používá pro dlouhodobý majetek a obvykle se označuje jako historický kurz. Nelze zobrazit náhled kurzu, protože existuje mnoho kurzů pro různé transakce v rozsahu účtu.
 - **Sazba definovaná uživatelem** – Když vyberete tuto možnost, můžete zadat směnný kurz, který chcete. Tato možnost může být užitečná pro průměrné směnné kurzy, nebo pokud konsolidujete proti pevnému směnnému kurzu.
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643787"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854072"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v Dynamics 365 Finance
 
@@ -124,21 +124,20 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formát elektronického výkaznictví **Přiznání k DPH (AT)** v sekci **Model přiznání k DPH**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (AT)** a **Přiznání k DPH pro Excel (AT)**. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Přiznání ELSTER pro Německo (design založený na kódech vykazování)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>Přiznání ELSTER pro Německo (návrh na základě kódů vykazování), položka a stránka nabídky \"Protokol elektronického daňového přiznání\", položka a stránka nabídky \"Nastavení elektronického daňového přiznání\", rozložení sestavy pro Německo (TaxReport_DE), formát SSRS
 
 [Výkaz DPH](../localizations/emea-de-vat-declaration.md)</br>
 [Nastavení elektronického daňového přiznání pro Německo](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[Elektronický přenos přiznání k DPH (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Německo](../localizations/emea-deu-vat-declaration-germany.md) |
 | **Nahrazeno jinou funkcí?**   | Ano |
 | **Ovlivněné oblasti produktu**         | Přihláška |
-| **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formát elektronického výkaznictví **Elster (DE)** a **Model Elster**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (DE)** a **Přiznání k DPH pro Excel (DE)**. |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 přestaneme podporovat formát elektronického výkaznictví **Elster (DE)** a **Model Elster**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (DE)** a **Přiznání k DPH pro Excel (DE)**. Také již nebudeme podporovat položku a stránku nabídky **Daň** \> **Přiznání** \> **DPH** \> **Protokol elektronického daňového přiznání**, položku a stránku nabídky **Daň** \> **Nastavení** \> **DPH** \> **Nastavení elektronického daňového přiznání** , položka a stránka nabídky **Daň** \> **Nastavení** \> **DPH** \> **Nastavení elektronického daňového přiznání** a rozložení sestavy pro Německo (TaxReport\_DE), formát SSRS (SQL Server Reporting Services). Proces vykazování DPH v Německu je podporován funkcí [Elektronické zprávy](../general-ledger/electronic-messaging.md). Další informace viz [Přiznání k DPH pro Německo](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Přiznání OB pro Nizozemsko (design založený na kódech vykazování)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>Prohlášení OB pro Nizozemsko (provedení na základě kódů vykazování), položka a stránka nabídky \"Elektronické prohlášení OB\", rozložení sestavy pro Nizozemsko (TaxReport_NL), formát SSRS
 
 [Přiznání OB](../localizations/emea-nl-vat-declaration.md)
 
@@ -147,8 +146,8 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Nizozemsko](../localizations/emea-nl-vat-declaration-netherlands.md) |
 | **Nahrazeno jinou funkcí?**   | Ano |
 | **Ovlivněné oblasti produktu**         | Přihláška |
-| **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formáty elektronického výkaznictví **Přiznání OB (NL)** a **Model přiznání OB**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (NL)** a **Přiznání k DPH pro Excel (NL)**. |
+| **Možnost nasazení**              | Všechna |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 přestaneme podporovat formáty elektronického výkaznictví **Přiznání OB (NL)** a **Model přiznání OB**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (NL)** a **Přiznání k DPH pro Excel (NL)**. Také již nebudeme podporovat položku a stránku nabídky **Daň** \> **Přiznání** \> **DPH** \> **Elektronické prohlášení OB** a rozložení sestavy pro Nizozemsko (TaxReport_NL), formát SSRS. Proces vykazování DPH v Nizozemsku je podporován funkcí [Elektronické zprávy](../general-ledger/electronic-messaging.md). Další informace viz [Přiznání k DPH pro Nizozemsko](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.20
 

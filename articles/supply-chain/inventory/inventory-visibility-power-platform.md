@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762693"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831767"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Použití aplikace Inventory Visibility
 
@@ -106,7 +106,7 @@ Chcete-li povolit stránku **Souhrn zásob** a nastavite frekvenci synchronizace
 
 1. Otevřete stránku **Konfigurace**.
 1. Otevřete kartu **Správa a nastavení funkcí**.
-1. Nastavte přepínač pro funkci **OnHandMostSpecificBackgroundService** na *Ano*.
+1. Nastavte přepínač pro funkci *OnHandMostSpecificBackgroundService* na *Ano*.
 1. Když je funkce povolena, sekce **Konfigurace služby** se zpřístupní a obsahuje řádek pro konfiguraci funkce **OnHandMostSpecificBackgroundService**. Toto nastavení vám umožňuje zvolit frekvenci, s jakou se budou synchronizovat souhrnná data zásob. Použijte tlačítka **Nahoru** a **Dolů** ve sloupci **Hodnota** pro změnu doby mezi synchronizacemi (která může být až 5 minut). Pak vyberte **Uložit**.
 
     ![Nastavení OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.png "Nastavení OnHandMostSpecificBackgroundService")
@@ -125,10 +125,10 @@ Supply Chain Management uchovává velké množství informací o vašich aktuá
 
 Stránka **Předběžné načtení souhrnu viditelnosti zásob** obsahuje zobrazení entity *Výsledky předběžného načtení indexového dotazu na zásoby na skladě*. Na rozdíl od entity *Souhrn zásob* poskytuje entita *Výsledky předběžného načtení indexového dotazu na zásoby na skladě* seznam zásob produktů na skladě spolu s vybranými dimenzemi. Viditelnost zásob synchronizuje předem načtená souhrnná data každých 15 minut.
 
-Chcete-li zobrazit data na kartě **Předběžné načtení souhrnu viditelnosti zásob**, musíte zapnout funkci *OnHandIndexQueryPreloadBackgroundService* na kartě **Správa funkcí** na stránce **Konfigurace** a poté vyberte **Aktualizovat konfiguraci** (viz také [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md)).
+Chcete-li zobrazit data na kartě **Předem načíst souhrn viditelnosti zásob**, musíte zapnout a nakonfigurovat funkci *OnHandIndexQueryPreloadBackgroundService*. Pokyny naleznete v části [Zapnutí a konfigurace předem načtených dotazů na zásoby na skladě](inventory-visibility-configuration.md#query-preload-configuration).
 
 > [!NOTE]
-> Stejně jako u funkce *OnhandMostSpecificBackgroudService* sleduje funkce *OnHandIndexQueryPreloadBackgroundService* pouze změny zásob na skladě, ke kterým došlo po jejím zapnutí. Data pro produkty, které se od zapnutí této funkce nezměnily, nebudou synchronizovány z mezipaměti služby inventáře do prostředí Dataverse. Pokud stránka **Souhrn inventáře** nezobrazuje všechny dostupné informace, které očekáváte, přejděte na **Správa zásob > Pravidelné úkoly > Integrace doplňku Viditelnost zásob**, deaktivuje dávkovou úlohu a znovu ji aktivujte. Tím se provede počáteční odeslání a všechna data se synchronizují do entity *Výsledky předběžného načtení indexového dotazu na zásoby na skladě* během následujících 15 minut. Chcete-li tuto funkci používat, doporučujeme vám ji zapnout před vytvořením jakýchkoli změn zásob na skladě a aktivovat dávkovou úlohu **Integrace doplňku Viditelnost zásob**.
+> Stejně jako u funkce *OnHandMostSpecificBackgroundService* sleduje funkce *OnHandIndexQueryPreloadBackgroundService* pouze změny zásob na skladě, ke kterým došlo po jejím zapnutí. Data pro produkty, které se od zapnutí této funkce nezměnily, nebudou synchronizovány z mezipaměti služby inventáře do prostředí Dataverse. Pokud stránka **Souhrn inventáře** nezobrazuje všechny dostupné informace, které očekáváte, přejděte na **Správa zásob > Pravidelné úkoly > Integrace doplňku Viditelnost zásob**, deaktivuje dávkovou úlohu a znovu ji aktivujte. Tím se provede počáteční odeslání a všechna data se synchronizují do entity *Výsledky předběžného načtení indexového dotazu na zásoby na skladě* během následujících 15 minut. Chcete-li tuto funkci používat, doporučujeme vám ji zapnout před vytvořením jakýchkoli změn zásob na skladě a aktivovat dávkovou úlohu **Integrace doplňku Viditelnost zásob**.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtrujte a procházejte souhrny zásob
 

@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: "Co je nového v\_aplikaci Dynamics 365 Human Resources (samostatná)"
                   items:
+                    - name: "Co je nového v\_aplikaci Dynamics 365 Human Resources (samostatná) – prosinec 2022"
+                      href: hr-whats-new-2022-12-12.md
                     - name: "Co je nového v\_aplikaci Dynamics 365 Human Resources (samostatná) – archivy 2021"
                       href: hr-admin-whats-new.md
                     - name: 29. listopadu 2021
@@ -110,9 +112,11 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: "Nejčastější dotazy k\_virtuálním tabulkám Human Resources"
                   href: hr-admin-virtual-entity-faq.md
-                - name: Konfigurace integrace s aplikací Finance
+                - name: "Konfigurace integrace s\_Dataverse"
+                  href: hr-dataverse-integration.md
+                - name: "Konfigurace integrace s\_aplikací Finance"
                   href: hr-admin-integration-finance.md
-                - name: Konfigurace integrace s aplikací Dayforce
+                - name: "Konfigurace integrace s\_aplikací Dayforce"
                   href: hr-admin-integration-dayforce.md
                 - name: Vytvoření aplikace pro export opakujících se dat
                   href: hr-admin-integration-recurring-data-export.md
@@ -530,7 +534,7 @@
                       href: ../human-resources/hr-personnel-set-up-positions.md
                     - name: Přijetí kandidátů prostřednictvím náboru
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                    - name: Najmutí existujícího zaměstnance prostřednictvím náboru
+                    - name: Přijetí existujícího zaměstnance prostřednictvím náboru
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                     - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
                       href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md

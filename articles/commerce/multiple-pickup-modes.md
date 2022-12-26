@@ -2,7 +2,7 @@
 title: Povolení více způsobů vyzvednutí/doručení objednávek zákazníků
 description: Tento článek vysvětluje funkci v Microsoft Dynamics 365 Commerce, která umožňuje vytvářet objednávky zákazníků k vyzvednutí v obchodě.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858901"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831577"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Povolení více způsobů vyzvednutí/doručení objednávek zákazníků
 
 [!include [banner](includes/banner.md)]
 
 
-V Microsoft Dynamics 365 Commerce verze 10.0.16 a novějších mohou organizace definovat více způsobů doručení, které si kupující nebo prodejní partneři mohou vybrat, když vytvoří objednávku, která bude vyzvednuta v obchodě. Tímto způsobem mohou organizace svým nakupujícím poskytnout více možností vyzvednutí. Například mnoho maloobchodníků nyní nabízí nakupujícím možnost vyzvednutí v obchodě nebo pouliční vyzvednutí objednávky. Commerce podporuje konfiguraci těchto různých způsobů vyzvednutí/doručení. Uživatelé je pak mohou využít, když vytvářejí objednávky zákazníků v jakémkoli podporovaném kanálu Commerce (elektronický obchod, kontaktní středisko nebo obchod).
+V Microsoft Dynamics 365 Commerce mohou organizace definovat více způsobů doručení, které si kupující nebo prodejní partneři mohou vybrat, když vytvoří objednávku, která bude vyzvednuta v obchodě. Tímto způsobem mohou organizace svým nakupujícím poskytnout více možností vyzvednutí. Například mnoho maloobchodníků nyní nabízí nakupujícím možnost vyzvednutí v obchodě nebo pouliční vyzvednutí objednávky. Commerce podporuje konfiguraci těchto různých způsobů vyzvednutí/doručení. Uživatelé je pak mohou využít, když vytvářejí objednávky zákazníků v jakémkoli podporovaném kanálu Commerce (elektronický obchod, kontaktní středisko nebo obchod).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Povolení a konfigurace způsobů vyzvednutí/doručení
 
-Chcete-li tuto funkci použít, zapněte **Podpora více způsobů vyzvednutí/doručení** v pracovním prostoru **Správa funkcí** v centrále Commerce. Po zapnutí této funkce je nutná další konfigurace.
+Funkce **Podpora více způsobů vyzvednutí/doručení** v pracovním prostoru **Správa funkcí** v centrále Commerce Headquarters je nyní povinná a měla by být v prostředí povolena.
 
-V Commerce verze 10.0.15 a dřívějších mohou organizace definovat pouze jeden způsob doručení jako určený režim vyzvednutí/doručení. Tato definice se provádí na stránce **Parametry Commerce**. Ve verzi 10.0.16 a novější, když zapnete **Podpora více způsobů vyzvednutí/doručení**, způsob doručení, který byl dříve definován jako způsob vyzvednutí/doručení na stránce **Parametry Commerce** se automaticky zkopíruje do nové konfigurace pro způsoby vyzvednutí/doručení.
+Pokud jste dříve definovali způsob vyzvednutí na stránce **Parametry Commerce**, zobrazí se tento způsob v aktuální konfiguraci způsobů vyzvednutí.
 
 ![Způsoby vyzvednutí/doručení na stránce Parametry Commerce.](media/multiplepickupparameter.png)
 
-Po zapnutí funkce **Podpora více způsobů vyzvednutí/doručení** můžete definovat více způsobů vyzvednutí v mřížce **Způsob vyzvednutí dodávky** na záložce s náhledem **Způsoby doručení** na kartě **Objednávky zákazníků** na stránce **Parametry Commerce**.
+V mřížce **Způsob vyzvednutí dodávky** v nabídce **Parametry Commerce** >  karta **Zákaznické objednávky** > pevná záložka **Způsoby doručení** můžete definovat více způsobů doručení.  
 
 Pole **Způsob doručení vyvezením** a **Elektronický způsob doručení** a možnost **U expedice objednávek zobrazit pouze možnosti způsobu dopravce** byly přemístěny na tuto kartu s náhledem.
 
@@ -47,8 +47,6 @@ Poté, co definujete další způsoby vyzvednutí/doručení, přidejte je do m�
 > [!NOTE]
 > Kromě stávajícího způsobu vyzvednutí/doručení, který je zkopírován do mřížky **Způsob vyzvednutí dodávky**, když zapnete **Podpora více způsobů vyzvednutí**, pro každou další konfiguraci způsobu vyzvednutí/doručení, kterou vytvoříte, byste měli nakonfigurovat nové způsoby doručení. Když přidáte způsoby doručení do mřížky **Způsob vyzvednutí dodávky**, Commerce ověří, zda se používají již nějaké aktivní otevřené řádky prodeje. Pokud jsou nalezeny otevřené řádky prodeje, zobrazí se chybová zpráva. Způsoby doručení se nepovažují za způsoby vyzvednutí/doručení, dokud nejsou uzavřeny všechny otevřené řádky prodeje, které je používají (buď fakturované, nebo zrušené).
 
-> [!IMPORTANT]
-> Poté, co definujete více než jeden způsob vyzvednutí/doručení na stránce **Parametry Commerce**, bude funkce **Podpora více způsobů vyzvednutí/doručení** povinnou a již ji nelze vypnout. Pokud musíte tuto funkci vypnout, odeberte všechny způsoby vyzvednutí/doručení kromě jednoho z mřížky **Způsob vyzvednutí dodávky**. Pokud je definován pouze jeden režim vyzvednutí/doručení, funkce již není považována za povinnou a lze ji vypnout.
 
 ### <a name="e-commerce-site-configurations"></a>Konfigurace webu elektronického obchodu
 

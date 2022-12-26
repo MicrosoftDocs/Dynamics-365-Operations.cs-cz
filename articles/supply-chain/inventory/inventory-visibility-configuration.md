@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765703"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850016"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace Inventory Visibility
 
@@ -32,6 +32,7 @@ Než začnete pracovat s Viditelností zásob, musíte dokončit následující 
 - [Konfigurace oddílu](#partition-configuration)
 - [Konfigurace hierarchie indexu produktů](#index-configuration)
 - [Konfigurace rezervace (volitelná)](#reservation-configuration)
+- [Konfigurace předběžného načtení dotazu (volitelné)](#query-preload-configuration)
 - [Ukázka výchozí konfigurace](#default-configuration-sample)
 
 ## <a name="prerequisites"></a>Předpoklady
@@ -52,10 +53,13 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 |---|---|
 | *OnHandReservation* | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Výchozí frekvence synchronizace je jednou za 15 minut a lze ji nastavit až na každých 5 minut. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Tato funkce umožňuje předem načíst dotazy na viditelnost zásob na skladu a sestavit seznamy zásob na skladě s předem vybranými dimenzemi. Výchozí frekvence synchronizace je jednou za 15 minut. Více informací viz [Přednačtení zjednodušeného dotaz na zásoby na skladě](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Tato funkce pravidelně načítá a ukládá sadu souhrnných údajů o zásobách na základě předem nakonfigurovaných dimenzí. Poskytuje souhrn zásob, který obsahuje pouze dimenze, které jsou relevantní pro vaše každodenní podnikání a které jsou kompatibilní s položkami povolenými pro procesy řízení skladu (WMS). Další informace naleznete v části [Zapnutí a konfigurace předem načtených dotazů na zásoby na skladě](#query-preload-configuration) a [Přednačtení přehlednějšího dotazu na zásoby na skladě](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Tato volitelná funkce umožňuje plán změn na skladě a funkci Lze slíbit (ATP). Další informace najdete v tématu [Plán změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
 | *Přidělení* | Tato volitelná funkce umožňuje Viditelnosti zásob mít možnost ochrany zásob (ringfencing) a kontroly nadměrného prodeje. Další informace viz [Alokace zásob doplňku Viditelnost zásob](inventory-visibility-allocation.md). |
 | *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro procesy správy skladu (WMS). Další informace viz [Podpora Viditelnost zásob pro položky WMS](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> Doporučujeme použít buď funkci *OnHandIndexQueryPreloadBackgroundService* nebo *OnHandMostSpecificBackgroundService*, nikoli obě. Povolení obou funkcí ovlivní výkon.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
 
@@ -178,6 +182,15 @@ Pokud je zdrojem dat Supply Chain Management, nemusíte znovu vytvářet výchoz
 1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
 1. Otevřete stránku **Konfigurace**.
 1. Na kartě **Zdroj dat** vyberte zdroj dat, do kterého chcete přidat fyzické míry (například zdroj dat `ecommerce`). Poté v části **Fyzikální míry** vyberte **Přidat** a zadejte název míry (např. `Returned`, pokud chcete zaznamenat vrácená množství v tomto zdroji dat do viditelnosti zásob). Uložte změny.
+
+### <a name="extended-dimensions"></a>Rozšířené dimenze
+
+Zákazníci, kteří chtějí ve zdroji dat používat externí zdroje dat, mohou využít výhody rozšiřitelnosti, kterou nabízí Dynamics 365, vytvořením [rozšíření třídy](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) pro třády `InventOnHandChangeEventDimensionSet` a `InventInventoryDataServiceBatchJobTask`.
+
+Po vytvoření rozšíření nezapomeňte provést synchronizaci s databází, aby se vlastní pole přidala do tabulky `InventSum`. Poté se můžete podívat do sekce Dimenze dříve v tomto článku a namapovat vlastní dimenze na kteroukoli z osmi rozšířených dimenzí v `BaseDimensions` v zásobách.
+
+> [!NOTE] 
+> Další podrobnosti o vytváření rozšíření naleznete v části [Domovská stránka pro rozšiřitelnost](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Vypočtené míry
 
@@ -496,6 +509,30 @@ Platná posloupnost dimenzí by měla striktně dodržovat hierarchii rezervací
 ## <a name="available-to-promise-configuration-optional"></a>Konfigurace funkce Lze slíbit (volitelné)
 
 Viditelnost zásob vám umožní naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit (ATP). ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití tohoto výpočtu může výrazně zvýšit vaši schopnost plnění objednávky. Chcete-li tuto funkci používat, musíte ji povolit na kartě **Správa funkcí** a poté ji nastavit na kartě **Nastavení ATP**. Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Zapnutí a konfigurace předem načtených dotazů na zásoby na skladě (volitelné)
+
+Viditelnost zásob může pravidelně načíst a uložit sadu souhrnných údajů o zásobách na základě předem nakonfigurovaných dimenzí. Přináší to následující výhody:
+
+- Přehlednější zobrazení, které ukazuje souhrn zásob pouze s dimenzemi, které jsou relevantní pro vaši každodenní činnost.
+- Souhrn zásob, který je kompatibilní s položkami povolenými pro procesy řízení skladu (WMS).
+
+Další informace, jak s touto funkcí pracovat po jejím nastavení, najdete v části [Přednačtení přehlednějšího dotazu na zásoby na skladě](inventory-visibility-power-platform.md#preload-streamlined-onhand-query).
+
+> [!IMPORTANT]
+> Doporučujeme použít buď funkci *OnHandIndexQueryPreloadBackgroundService* nebo *OnHandMostSpecificBackgroundService*, nikoli obě. Povolení obou funkcí ovlivní výkon.
+
+Pro nastavení funkce postupujte následujícím způsobem:
+
+1. Přihlaste se do Power aplikace Viditelnost zásob.
+1. Přejděte do nabídky **Konfigurace \> Správa funkcí a nastavení**.
+1. Pokud je již funkce *OnHandIndexQueryPreloadBackgroundService* povolena, doporučujeme ji prozatím vypnout, protože dokončení procesu čištění může trvat velmi dlouho. Zapnete ji znovu později v tomto postupu.
+1. Otevřete kartu **Nastavení přednačtení**.
+1. V části **Krok 1: Vyčištění úložiště pro přednačtení** vyberte **Vyčistit**, čímž databázi vyčistíte a připravíte pro přijetí nových nastavení skupiny.
+1. V části **Krok 2: Nastavení seskupení podle hodnot** zadejte do pole **Seskupit výsledky podle** seznam názvů polí oddělených čárkami, podle kterých se mají seskupit výsledky dotazu. Jakmile budete mít data v databázi úložiště pro přednačtení, nebudete moci toto nastavení změnit, dokud databázi nevyčistíte, jak je popsáno v předchozím kroku.
+1. Přejděte do nabídky **Konfigurace \> Správa funkcí a nastavení**.
+1. Zapněte funkci *OnHandIndexQueryPreloadBackgroundService*.
+1. Vyberte příkaz **Aktualizovat konfiguraci** v pravém horním rohu stránky **Konfigurace**, abyste změny potvrdili
 
 ## <a name="complete-and-update-the-configuration"></a>Dokončení a aktualizace konfigurace
 

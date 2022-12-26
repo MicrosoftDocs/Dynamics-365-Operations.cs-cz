@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Release 10.0.11
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
-ms.openlocfilehash: 7509092d353d75cefbbd97393d45c078530a21bd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 61bc5e3f36bd2ae6e38ed0f511d70a7ae62e045c
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291347"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9832024"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace
 
@@ -28,7 +28,7 @@ ms.locfileid: "9291347"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Když [konfigurujete](tasks/er-format-configuration-2016-11.md) řešení elektronického výkaznictví (ER) ke generování odchozích dokumentů, definujete metody, které se používají k získání dat mimo aplikaci a jejich zadání do generovaného výstupu. Aby byla podpora životního cyklu řešení ER efektivnější, mělo by vaše řešení sestávat z datového modelu a jeho komponent mapování, a také z formátu ER a jeho komponent mapování, tak, aby mapování modelu bylo specifické pro aplikaci, zatímco ostatní komponenty zůstaly pro aplikaci agnostické. Proto může několik komponent ER ovlivnit proces zadávání dat do generovaného výstupu.
+Když [konfigurujete](tasks/er-format-configuration-2016-11.md) řešení elektronického výkaznictví (ER) ke generování odchozích dokumentů, definujete metody, které se používají k získání dat mimo aplikaci a jejich zadání do generovaného výstupu. Aby byla podpora životního cyklu řešení ER efektivnější, mělo by vaše řešení sestávat z datového modelu a jeho komponent mapování a také z formátu ER a jeho komponent mapování, tak, aby mapování modelu bylo specifické pro aplikaci, zatímco ostatní komponenty zůstaly pro aplikaci agnostické. Proto může několik komponent ER ovlivnit proces zadávání dat do generovaného výstupu.
 
 Někdy vypadají data generovaného výstupu odlišně od stejných dat v aplikační databázi. V těchto případech budete chtít určit, která komponenta ER je zodpovědná za transformaci dat. Funkce ladicího programu zdroje dat ER významně snižuje čas a náklady, které jsou zahrnuty v tomto šetření. Můžete přerušit provádění formátu ER a otevřít rozhraní ladicího programu zdroje dat. Zde můžete procházet dostupné zdroje dat a vybrat individuální zdroj dat pro provedení. Toto ruční provedení simuluje spuštění zdroje dat během skutečného spuštění formátu ER. Výsledek je uveden na stránce, kde můžete analyzovat přijatá data.
 

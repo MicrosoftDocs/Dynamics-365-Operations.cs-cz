@@ -1422,6 +1422,8 @@
               href: set-up-rfm-analysis.md
             - name: "Nastavení Microsoft Clarity v\_aplikaci Dynamics 365 Commerce"
               href: set-up-clarity.md
+            - name: Nastavení Operational Insights
+              href: dev-itpro/operational-insights.md
         - name: Globalization Studio
           items:
             - name: Přehled platformy Globalization Studio
@@ -3054,9 +3056,15 @@
                   href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: Řešení potíží s SDK
               items:
-                - name: Nastavení vývojářského prostředí elektronického obchodování pro ladění proti virtuálnímu počítači Retail Server úrovně 1
+                - name: "Nastavení vývojářského prostředí elektronického obchodování pro ladění proti virtuálnímu počítači Retail Server úrovně\_1"
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Vývoj a správa finančních a provozních aplikací
+            - name: Finance obchodu
+              items:
+                - name: "Problémy s\_odsouhlasením dat v\_sestavě Z"
+                  href: troubleshoot/z-report-issues.md
+                - name: Chyby při zaúčtování výkazu způsobené nedostupnými zásobami nebo konflikty při aktualizaci
+                  href: troubleshoot/inventory-errors-posting.md
+    - name: "Vývoj a\_správa finančních a\_provozních aplikací"
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

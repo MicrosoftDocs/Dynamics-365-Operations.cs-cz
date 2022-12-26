@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276447"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831549"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Výběr mezi Store Commerce a Cloud POS
 
@@ -71,7 +71,7 @@ Kromě platformy a provedení musí prodejci také zvolit možnost nasazení v o
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce pro Windows | Cloud nebo RSSU       | Ano               | Ano               |
 | Store Commerce pro Android | Cloud nebo RSSU       | Číslo                | Ano               |
-| Store Commerce pro iOS     | Cloud nebo RSSU       | Číslo                | Číslo                |
+| Store Commerce pro iOS     | Cloud nebo RSSU       | Číslo                | Ano               |
 | Cloud POS                  | Cloud nebo RSSU       | Číslo                | Číslo                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Prodejci musí také přihlížet k tomu, jak POS bude přistupovat k zařízen�
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce pro Windows | Ano            | Ano                 | Ano                |
 | Store Commerce pro Android | Číslo             | Ano                 | Ano                |
-| Store Commerce pro iOS     | Číslo             | Číslo                  | Ano                |
+| Store Commerce pro iOS     | Číslo             | Ano                 | Ano                |
 | Cloud POS                  | Číslo             | Číslo                  | Ano                |
 
 Další informace o hardwarových stanicích viz [Konfigurace a instalace hardwarové stanice Retail](retail-hardware-station-configuration-installation.md).

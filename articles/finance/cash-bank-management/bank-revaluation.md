@@ -2,23 +2,23 @@
 title: Přecenění cizí měny banky
 description: Tento článek obsahuje přehled procesu bankovního přecenění cizí měny. Obsahuje informace o nastavení, spuštění procesu, výpočtu proces a stornování transakcí přecenění.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151424"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887252"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Přecenění cizí měny banky
 
@@ -39,17 +39,8 @@ Před spuštěním procesu přecenění je nutné provést následující nastav
 - Na stránce **Hlavní kniha** zadejte typ směnného kurzu. Pokud není definován typ směnného kurzu pro hlavní účet, použije se tento typ směnného kurzu při přecenění cizí měny.
 - Na stránce **Hlavní kniha** zadejte účty pro realizovaný zisk, realizovanou ztrátu, nerealizovaný zisk a nerealizovanou ztrátu k přecenění měny. Účty Realizovaných zisků a ztrát se používají při vyrovnání transakcí pohledávek a závazků. Účet nerealizovaných zisků a nerealizovaných ztrát slouží k vyřazení otevřených transakcí a hlavních účtů hlavní knihy.
 - Na stránce **Účty přecenění měny** vyberte různé účty pro přecenění měny pro jednotlivé měny a společnosti. Pokud nejsou definovány žádné účty, budou použity účty ze stránky **Hlavní kniha**.
+- Na stránce **Parametry řízení hotovosti a banky** na kartě **Číselné řady** přidejte číselnou řadu pro přecenění cizí měny.
 
-## <a name="enable-foreign-currency-revaluation"></a>Povolit přecenění cizí měny
-
-Než budete moci zpracovávat přecenění cizí měny, je potřeba zapnout bankovní funkci přecenění cizí měny.
-
-1. Přejděte do nabídky **Pokladna a banka \> Nastavení \> Parametry pokladny a banky**.
-2. Na kartě **Obecné** v části **Přecenění cizí měny** nastavte možnost **Povolit bankovní přecenění** na **Ano** pro zapnutí funkce pro současnou právnickou osobu. 
-3. Na kartě **číselné řady** přidejte číselnou řadu pro přecenění cizí měny.
-4. Aktualizujte prohlížeč a potívejte se na **přecenění cizí měny** v části **pravidelné úlohy** na stránce oblasti.
-
-Je nutné aktivovat funkci pro každou právnickou osobu, která bude používat přecenění cizí měny. Pokud jste přiřazeni k roli správce systému nebo roli správce funkcí, můžete eliminovat tento krok povolením funkce s názvem **Povolit bankovní přecenění bez parametru** v pracovním prostoru **Správa funkcí**.
 
 > [!NOTE]
 > Používá-li vaší právnická osoba ruský, polský nebo a maďarský kód země nebo oblasti, již lze přecenění cizí měny banky provést. Nebudete moci používat přecenění cizí měny, které používají jiné země nebo oblasti.

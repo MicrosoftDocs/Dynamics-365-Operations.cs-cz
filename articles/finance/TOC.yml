@@ -1164,17 +1164,19 @@
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: Předvaha se sestavou transakčních podrobností
                   href: public-sector/general-ledger-public-sector-trial-balance.md
-                - name: Výpis z hlavní knihy podle hlavního účtu
+                - name: "Výpis z\_hlavní knihy podle hlavního účtu"
                   href: general-ledger/general-ledger-statement-by-main-account.md
                 - name: Elektronická sestava Soubor standardního auditu pro daň (SAF-T)
                   href: general-ledger/standard-audit-file.md
+                - name: Dotaz na vyrovnání hlavní knihy
+                  href: general-ledger/ledger-settlement-inquiry.md
             - name: Závěrka období
               items:
                 - name: Uzávěrka hlavní knihy na konci období
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Pracovní prostor uzavření finančního období
                   href: general-ledger/financial-period-close-workspace.md
-                - name: Optimalizace uzávěrky na konci roku
+                - name: Optimalizace roční uzávěrky
                   href: general-ledger/optimize-year-end-close.md
                 - name: Roční uzávěrka
                   href: general-ledger/year-end-close.md
@@ -1186,8 +1188,20 @@
                   href: general-ledger/faq-year-end-activities.md
                 - name: Vyrovnání hlavní knihy
                   href: general-ledger/ledger-settlements.md
-                - name: Sledování mezi vypořádáním hlavní knihy a uzávěrkou na konci roku
-                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: "Sledování mezi vyrovnáním hlavní knihy a\_roční uzávěrkou"
+                  items:
+                    - name: "Sledování mezi vyrovnáním hlavní knihy a\_roční uzávěrkou"
+                      href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                    - name: Příprava na sledování mezi hlavními knihami před roční uzávěrkou
+                      href: general-ledger/ledger-settle-yec.md
+                    - name: Příprava na sledování mezi hlavními knihami po roční uzávěrce
+                      href: general-ledger/ledger-settle-yec-after.md
+                    - name: "Sledování mezi funkcí vyrovnání hlavní knihy a\_měnou vykazování je nevyrovnané"
+                      href: general-ledger/reporting-currency-yec.md
+                    - name: "Sledování mezi funkcí vyrovnání hlavní knihy před roční uzávěrkou pomocí okna s\_dotazem"
+                      href: general-ledger/ledger-settlement-yec-inquiry-before.md
+                    - name: "Sledování mezi funkcí vyrovnání hlavní knihy po roční uzávěrce pomocí okna s\_dotazem"
+                      href: general-ledger/ledger-settlement-yec-inquiry-after.md
                 - name: Automatizace vyrovnání hlavní knihy
                   href: general-ledger/auto-settle.md
                 - name: Přecenění cizí měny pro hlavní knihu

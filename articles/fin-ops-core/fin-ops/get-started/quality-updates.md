@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805307"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887123"
 ---
 # <a name="proactive-quality-updates"></a>Proaktivní aktualizace kvality
 
@@ -28,16 +28,24 @@ Tento předpoklad potvrzují i výsledky: nižší počet incidentů napříč n
 
 ## <a name="what-you-need-to-know"></a>Co potřebujete vědět
 
-- Proaktivní aktualizace kvality jsou aplikovány na měsíční bázi.
-- Společnost Microsoft použije proaktivní aktualizace kvality pro všechna sandboxová prostředí, ve kterých je spuštěna aktualizace služby, která byla [ve službě](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), když byly vytvořeny proaktivní aktualizace kvality.
-- Výjimky pro proaktivní aktualizace kvality budou povoleny pro zákazníky, kteří jsou regulováni americkým Úřadem pro kontrolu potravin a léčiv (FDA).
+- Proaktivní aktualizace kvality (PQU) jsou aplikovány na měsíční bázi.
+- Výjimky pro proaktivní aktualizace kvality jsou povoleny pouze pro zákazníky, kteří jsou regulováni americkým Úřadem pro kontrolu potravin a léčiv (FDA).
+- Proaktivní aktualizace kvality nikdy nesníží úroveň prostředí ani automaticky neupgradují z jedné verze aktualizace služby na druhou. 
 - Microsoft určuje, jak budou spravovány proaktivní aktualizace kvality pro regulovaná prostředí a pro suverénní a vládní cloudové zákazníky.
-- Oznámení, která se týkají proaktivních aktualizací kvality, jsou zveřejňována v [Centru zpráv Microsoft 365](https://admin.microsoft.com/AdminPortal/) a na banneru zákazníkova projektu Microsoft Dynamics Lifecycle Services.
+- Oznámení související s proaktivními aktualizacemi kvality jsou zveřejňována v [Centru zpráv Microsoft 365](https://admin.microsoft.com/AdminPortal/).
 - Pět dní před tím, než je na prostředí aplikována proaktivní aktualizace kvality, jsou zákazníci upozorněni, že k aktualizaci dojde.
 - Zákazníci nemohou zrušit nebo odložit proaktivní aktualizace kvality.
 - Proaktivní aktualizace kvality se instalují během [plánovaného okna údržby](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) dle regionu.
 - Aktualizace kvality jsou navrženy tak, aby měly nízké riziko problémů nebo regresí, a to je podporováno daty společnosti Microsoft.
 - Společnost Microsoft doporučuje cílené testování na konkrétní problémy nebo konkrétní opravy hotfix související s proaktivní aktualizací kvality.
+- VŠECHNYA prostředí sandbox, kromě těch, která mají z regulačních důvodů časově omezenou výjimku, budou zavedena do 7. ledna 2023.
+- Provozní onboarding proaktivních aktualizací kvality začne 21. ledna 2023. 
+- Provozní onboarding bude zahájen pouze u projektů Lifecycle Services, které mají integrovaná prostředí sandbox a zatím jsou jim proaktivní aktualizace kvality doručovány v pravidelném rytmu pro všechny podporované verze aktualizací služeb. To platí pouze pro zákaznická prostředí, kterým nebyly poskytnuty žádné výjimky z regulačních nebo jiných právních důvodů.
+- Úplný plán proaktivních aktualizací kvality pro prostředí sandbox a provozní prostředí v průběhu roku 2023 naleznete níže.
+- U každé aktualizace služby probíhá nebo je plánováno zahájení alespoň jedné série vydání proaktivních aktualizací kvality. Jakmile jsou vaše prostředí zapojena do procesu proaktivních aktualizací kvality a přejdete na novější verzi aktualizace služby, můžete obdržet předem naplánované proaktivní aktualizace kvality pro všechna z nich. Pokud plánujete upgradovat na novější verzi aktualizace služby, prohlédněte si plán, kde zjistíte, kdy jsou naplánovány proaktivní aktualizace kvality pro danou aktualizaci služby. 
+
+> [!Note]
+> Prostředí sandbox standardního testu výkonu (tier4) nebo prémiového testu výkonu (tier5) a provozní prostředí obdrží proaktivní aktualizace služby o víkendech. 
 
 ## <a name="focus-on-quality-updates"></a>Zaměřte se na aktualizace kvality
 
@@ -75,33 +83,22 @@ Před aktivací nasazení proaktivní aktualizace kvality je implementována sad
     > Tým Microsoft Communications vyšetřuje pokračující degradaci e-mailových nástrojů, které brání doručování e-mailových upozornění. Prosím pokračujte ve sledování Centra zpráv Microsoft 365 pro zprávy týkající se onboardingu a oznámení.
 
 - **Odolnost proti selhání prostřednictvím publikování testovacích verzí** – Publikování testovacích verzí bude ve všech možných případech použito ke hlídání změn kódu opravy chyby aktualizace pro zvýšení kvality nebo se použije publikování testovacích verzí existující funkce relevantní pro opravu. Pokud je po proaktivním nasazení vyžadována záloha nebo vypnutí změny, lze to provést prostřednictvím systému publikování testovacích verzí, aby se předešlo dalším selháním.
-- **Označení synchronizace sandboxu** – Méně než 20 procent zákazníků má dnes více sandboxů a jeden sandbox si ponechává nasazený tam, kde se verze shoduje s produkčním řešením, aby pomohli s řešením problémů. Pokud zákazník používá sandbox k testování novější verze, než je jeho produkční verze, bude tento sandbox dostávat aktualizace kvality na novější verzi.
+- **Označení synchronizace s prostředím sandbox** – Postupná aktualizace na izolované prostředí sandbox dle výběru spolu s provozním prostředím není v současné době podporována. Všechna prostředí sandboxy úrovně 2 a 3 obdrží proaktivní aktualizace nejméně 7 dní před provozním prostředím v projektu Lifecycle Services. Opět to platí pouze pro zákaznická prostředí, kterým nejsou poskytnuty žádné výjimky z regulačních nebo jiných právních důvodů.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Jaký je plán zavádění aktualizací kvality?
 
-Očekává se, že distribuce proaktivních aktualizací kvality pro prostředí sandbox začne pro zákazníky veřejného cloudu Azure koncem září nebo října 2022. Zkušební prostředí také začnou dostávat proaktivní nasazení aktualizací v té době. V září bude každému zákazníkovi zasláno upozornění, které ho informuje o očekávaném plánu pro jeho prostředí. Výjimky z proaktivního aktualizovaného distribučního procesu budou povoleny pouze pro zákazníky regulované FDA. Stále pracujeme na tom, jak budou spravována regulovaná prostředí a suverénní a vládní cloudoví zákazníci.
+Očekává se, že distribuce proaktivních aktualizací kvality pro prostředí sandbox začne pro zákazníky veřejného cloudu Azure v září 2022. Do 1. ledna 2023 dokončíme onboarding 99 % prostředí sandbox do proaktivních aktualizací kvality.
 
-Během příštích šesti měsíců budeme postupně zvyšovat procento sandboxových prostředí, která obdrží proaktivní aktualizace, dokud nebudou zahrnuta všechna určená prostředí a postoupíme k aktualizaci produkčních prostředí. Během tohoto období budeme monitorovat, abychom zajistili, že proces nasazení bude bezproblémový a že dosáhneme cíle nerušivého užitečného zatížení.
+Výjimky z proaktivního aktualizovaného distribučního procesu jsou povoleny pouze pro zákazníky regulované FDA. Stále pracujeme na tom, jak budou spravována regulovaná prostředí a suverénní a vládní cloudoví zákazníci. 
 
-Protože zákazníci budou pravidelně dostávat menší užitečné zatížení, očekáváme, že se proces udržování aktuálního stavu zjednoduší. Frekvenci zavádění aktualizací upravíme, jakmile prokážeme schopnost spustit proces bez přerušení. Tento proces již efektivně funguje na naší platformě a aplikacích Dataverse a přináší očekávaná zlepšení kvality služeb. Těšíme se, že uděláme stejný krok vpřed pro finanční a provozní aplikace.
+Protože zákazníci budou pravidelně dostávat menší užitečné zatížení, očekáváme, že se proces udržování aktuálního stavu zjednoduší. Frekvenci zavádění aktualizací upravíme, jakmile prokážeme schopnost spustit proces bez přerušení. Tento proces již efektivně funguje na naší platformě a aplikacích Dataverse a přináší očekávaná zlepšení kvality služeb. Stejný krok vpřed učiníme pro pro finanční a provozní aplikace.
+
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Kdy začnou aktualizace kvality pro produkční prostředí?
-V současné době se aktualizace kvality zaměřují pouze na izolované prostory. Tento prostor aktualizujeme od počátečního data provozního prostředí, až budeme mít konkrétnější data a metriky počínaje proaktivními aktualizacemi prostředí sandbox a konče měřením připravenosti provozu.
+Během prvních několika měsíců roku 2023, počínaje 15. lednem, začneme s onboardingem provozních prostředí na proaktivní aktualizace a postupně budeme zvyšovat procento provozních prostředí, která získávají proaktivní aktualizace. Zaměříme se pouze na provozní prostředí v projektu Lifecycle Services, který již má integrovaná prostředí sandbox, aby bylo možné přijímat proaktivní aktualizace. Před aktualizací budou zákazníci s integrovaným provozním prostředím informováni prostřednictvím centra zpráv nebo banneru Lifecycle Services. Úplný plán proaktivních aktualizací kvality pro prostředí sandbox a provozní prostředí v průběhu roku 2023 naleznete níže.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Jaký je plán aktualizací proaktivní kvality sandboxu?
 Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Proaktivní aktualizace kvality, verze: 10.0.28
-**Verze aplikace: 10.0.1265.89**  
-**Odpovídající nejnovější článek znalostní báze: 745340**
-
-| Stanice | Oblasti | Dokončený plán| Připravovaný plán sandboxu
-|---|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 15. září až 18. září 2022, 19. září až 22. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 25. září až 28. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 26. září až 29. září 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 28. září až 1. října 2022 a 7. října až 10. října 2022 | 25. října až 28. října 2022 |
-| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.29
 **Verze aplikace: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 
 | Stanice | Oblasti | Dokončený plán | Připravovaný plán sandboxu|
 |---|---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022 | 5. prosince až 8. prosince|
-| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022, 2. listopadu až 5. listopadu 2022, 15. listopadu až 18. listopadu 2022 | 5. prosince až 8. prosince|
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 14. října až 17. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022, 5. prosince až 8. prosince 2022 | 2. ledna až 5. ledna 2023 |
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 15. října až 18. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022, 5. prosince až 8. prosince 2022 | 2. ledna až 5. ledna 2023 |
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, západní Evropa, východ USA, SAE střed | 16. října až 19. října 2022, 2. listopadu až 5. listopadu 2022, 13. listopadu až 16. listopadu 2022, 5. prosince až 8. prosince 2022 | 2. ledna až 5. ledna 2023 |
+| Stanice 4 | Severní Evropa, střední USA, západní USA | 17. října až 20. října 2022, 2. listopadu až 5. listopadu 2022, 15. listopadu až 18. listopadu 2022, 5. prosince až 8. prosince 2022 | 2. ledna až 5. ledna 2023 |
 | Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktivní aktualizace kvality, verze: 10.0.30
 **Verze aplikace: 10.0.1362.77**
 **Odpovídající nejnovější článek znalostní báze: 767597**
 
-| Stanice | Oblasti | Připravovaný plán sandboxu |
+| Stanice | Oblasti | Dokončený plán | Připravovaný plán sandboxu |
+|---|---|---|---|
+| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 1. prosince až 4. prosince 2022 |  13. prosince až 16. prosince 2022 | 
+| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 2. prosince až 5. prosince 2022 |  13. prosince až 16. prosince 2022 | 
+| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, severní Evropa, východ USA, SAE střed | 3. prosince až 6. prosince 2022 |  13. prosince až 16. prosince 2022 | 
+| Stanice 4 | Západní Evropa, střední USA, západní USA | 4. prosince až 7. prosince 2022 |  13. prosince až 16. prosince 2022 | 
+| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno | Neplánováno |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Harmonogram kalendářního roku 2023 proaktivních aktualizací kvality
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Mapování stanic na oblasti
+
+| Stanice | Oblasti |
+|---|---|
+| Stanice 1 | Bude určeno |
+| Stanice 2 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ |
+| Stanice 3 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie |
+| Stanice 4 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, severní Evropa, východ USA, SAE střed |
+| Stanice 5 | Západní Evropa, střední USA, západní USA |
+| Stanice 6 | DoD, Government Community Cloud, Čína |
+
+
+> [!IMPORTANT]
+> Toto je plán vysoké úrovně na rok 2023. Pro konkrétnější harmonogram se podívejte na ukázku níže pro leden 10.0.30 Release-2. Přesný plán a verze aplikací budou aktualizovány 7 dní před zahájením série aktualizací kvality.
+
+> [!Note]
+> Aktualizaci pro sérii 10.0.30 Release-2 obdrží pouze integrovaná provozní prostředí, integrovaná prostředí obdrží explicitní sdělení.
+
+| Série aktualizací kvality | Vydání | Doba trvání série |
 |---|---|---|
-| Stanice 1 | Kanada střed, Kanada východ, Francie střed, Indie střed, Norsko východ, Švýcarsko západ | 1. prosince až 4. prosince 2022 |
-| Stanice 2 | Francie jih, Indie jih, Norsko západ, Švýcarsko sever, Jižní Afrika sever, Austrálie východ, Spojené království jih, SAE sever, Japonsko východ, Austrálie jihovýchod, jihovýchodní Asie | 2. prosince až 5. prosince 2022 |
-| Stanice 3 | Východní Asie, Spojené království západ, Japonsko západ, Brazílie jih, severní Evropa, východ USA, SAE střed | 3. prosince až 6. prosince 2022 |
-| Stanice 4 | Západní Evropa, střední USA, západní USA | 4. prosince až 7. prosince 2022 |
-| Stanice 5 | DoD, Government Community Cloud, Čína | Neplánováno |
+| 10.0.30 Release-2 | 16. prosince 2022 | 2. ledna až 29. ledna 2023 |
+| 10.0.30 Release-3 | 13. ledna 2023 | 30. ledna až 25. února 2023 |
+| 10.0.30 Release-4 | 24. února 2023 | 6. března až 8. dubna 2023 |
+| 10.0.31 Release-1 | 3. února 2023 | 13. února 2023 až 18. března 2023|
+| 10.0.31 Release-2 | 3. března 2023 | 13. března 2023 až 15. dubna 2023|
+| 10.0.31 Release-3 | 14. dubna 2023 | 24. dubna 2023 až 27. května 2023|
+| 10.0.32 Release-1 | 31. března 2023 | 10. dubna 2023 až 13. května 2023|
+| 10.0.32 Release-2 | 28. dubna 2023 | 8. května 2023 až 10. června 2023|
+| 10.0.32 Release-3 | 26. května 2023 | 5. června 2023 až 8. července 2023|
+| 10.0.33 Release-1 | 28. dubna 2023 | 8. května 2023 až 10. června 2023|
+| 10.0.33 Release-2 | 26. května 2023 | 5. června 2023 až 8. července 2023|
+| 10.0.33 Release-3 | 14. července 2023 | 24. července 2023 až 26. srpna 2023|
+| 10.0.34 Release-1 | 23. června 2023 | 3. července 2023 až 5. srpna 2023|
+| 10.0.34 Release-2 | 21. července 2023 | 31. července 2023 až 2. září 2023|
+| 10.0.34 Release-3 | 1. září 2023 | 11. září 2023 až 14. října 2023|
+| 10.0.35 Release-1 | 28. července 2023 | 7. srpna 2023 až 9. září 2023|
+| 10.0.35 Release-2 | 25. srpna 2023 | 4. září 2023 až 7. října 2023|
+| 10.0.35 Release-3 | 20. října 2023 | 30. října 2023 až 16. prosince 2023|
+| 10.0.36 Release-1 | 29. září 2023 | 9. října 2023 až 11. listopadu 2023|
+| 10.0.36 Release-2 | 27. října 2023 | 6. listopadu 2023 až 16. prosince 2023|
+| 10.0.36 Release-3 | 12. ledna 2024 | 22. ledna 2023 až 24. února 2024|
+| 10.0.37 Release-1 | 3. listopadu 2023 | 13. listopadu 2023 až 6. ledna 2024|
+| 10.0.37 Release-2 | 30. prosince 2023 | 8. ledna 2024 až 10. února 2024|
+| 10.0.37 Release-3 | 27. ledna 2024 | 5. února 2024 až 9. března 2024|
+| 10.0.37 Release-4 | 23. února 2024 | 4. března 2024 až 6. dubna 2024|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Proaktivní aktualizace kvality pro plán série 10.0.30 Release-2
+**Verze aplikace: 10.0.1362.99**
+
+| Stanice | Připravovaný plán sandboxu | nadcházející provozní plán |
+|---|---|---|
+| Stanice 1 | Není k dispozici | Není k dispozici |
+| Stanice 2 | 2. ledna až 5. ledna 2023 | 21. ledna až 22. ledna 2023 |
+| Stanice 3 | 3. ledna až 6. ledna 2023 | 28. ledna až 29. ledna 2023 |
+| Stanice 4 | 9. ledna až 12. ledna 2023 | Není k dispozici |
+| Stanice 5 | 16. ledna až 19. ledna 2023 | Není k dispozici |
+| Stanice 6 | Není k dispozici | Není k dispozici |
 
 > [!IMPORTANT] 
 > Pět dní předem společnost Microsoft aktualizuje předchozí plán a odešle upozornění do sady prostředí, která mají naplánováno přijímat tyto aktualizace kvality. Předchozí plán platí pouze pro prostředí, která byla upozorněna na nadcházející aktualizaci. Informace o nočních hodinách pro každý region najdete v článku [Jaká jsou plánovaná okna údržby podle regionů?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
@@ -138,7 +195,7 @@ Informace o nočních hodinách pro každý region najdete v článku [Jaká jso
 Neexistují žádné zvláštní plány mimo noční hodiny, kde existuje instance finančních a provozních aplikací, protože plánujeme zavádět aktualizace kvality minimálně rušivým způsobem s [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
 
 ## <a name="what-is-the-current-rollout-cadence-for-proactive-quality-updates"></a>Jaký je aktuální plán zavádění proaktivních aktualizací kvality?
-Proaktivní aktualizace kvality (PQU) jsou v současné době nasazovány jednou měsíčně pro každou podporovanou verzi aktualizace služby. Pro vybraná prostředí sandbox je nabízena pouze jedna aktualizace za měsíc, pokud zákazníci nepřejdou na novou verzi aktualizace služby. V takovém případě mohou získat předem naplánované PQU jako součást stávajícího tréninku pro aktualizaci nové služby. Po dokončení celosvětového zavedení v roce 2023 se frekvence těchto aktualizací zvýší. Vždy, když dojde ke změně frekvence vydání, budete informováni alespoň jeden měsíc předem.
+Proaktivní aktualizace kvality (PQU) jsou v současné době nasazovány jednou měsíčně pro každou podporovanou verzi aktualizace služby. Pro vybraná prostředí sandbox je nabízena pouze jedna aktualizace za měsíc, pokud zákazníci nepřejdou na novou verzi aktualizace služby. V takovém případě mohou získat předem naplánované proaktivní aktualizace kvality jako součást stávající série pro novou aktualizaci služby. Po dokončení celosvětového zavedení v roce 2023 se frekvence těchto aktualizací zvýší. Vždy, když dojde ke změně frekvence vydání, budete informováni alespoň jeden měsíc předem.
 
 ## <a name="how-will-microsoft-ensure-the-quality-of-these-updates"></a>Jak společnost Microsoft zajistí kvalitu těchto aktualizací?
 Společnost Microsoft se snaží udržet kanál vydání dostatečně efektivní, aby poskytoval malé užitečné zatížení a udržoval nízké náklady na ověřování. Každá oprava v aktualizaci kvality prochází přísným a bezpečným procesem nasazení, který pomáhá zlepšit kvalitu a spolehlivost, a tím snížit dopad na zákazníky. Nasazení proběhne nejprve ve fázích v prostředí sandbox, poté bude následovat produkce. Nasazení nanečisto umožňují správné sledování, aby se zjistilo, zda je další nasazení bezpečné. Zavádění zastavíme, pokud budou zjištěny problémy s každou nasazenou skupinou zákazníků, a zajistíme, aby každý krok zavádění měl dostatek času na to, aby se problémy objevily. U každé nadcházející aktualizace kvality poskytneme přehled o plánu prostřednictvím aktualizací veřejné dokumentace a e-mailů, aby zákazníci mohli plánovat dopředu.
@@ -149,7 +206,7 @@ Ne. Hlavním cílem kvalitních aktualizací je zajistit, aby se pro naše záka
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>Jak mohu zjistit, která sada změn šla do datové části aktualizace kvality?
 Podle níže uvedených kroků identifikujte seznam změn, které jdou do datové části aktualizace kvality. 
 
-Použijte vydání aktualizace kvality 10.0.28 a související verzi aplikace 10.0.1265.89.
+Použijte sérii aktualizace kvality 10.0.28 a související verzi aplikace 10.0.1265.89.
 
 1. V Lifecycle Services otevřete stránku **Podrobnosti prostředí** pro váš sandbox. 
 2. V části **Dostupné aktualizace** vyberte možnost **Zobrazit aktualizaci** a uvidíte nejnovější sestavení aktualizace kvality. 

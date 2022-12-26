@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: 0949b9d7a4b181605d43956932b4fc095940bd64
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 896847cee696e221b2114f7f28a0b56e73fc911b
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780358"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838222"
 ---
 # <a name="set-up-apple-pay-with-adyen-in-dynamics-365-commerce"></a>Nastavení služby Apple Pay s terminálem Adyen v Dynamics 365 Commerce
 
@@ -102,13 +102,6 @@ Chcete-li nakonfigurovat internetový obchod Commerce pro používání Apple Pa
 
 1. Po zadání informací o obchodníkovi spusťte plánovanou úlohu distribuce konfiguraci kanálu **1070**.
 
-## <a name="configure-commerce-pos-for-apple-pay"></a>Konfigurace POS Commerce na Apple Pay
-
-Konfigurace POS využívá konfigurace pole **Služba EFT** hardwarového profilu pro Dynamics 365 Payment Connector for Adyen. V Commerce headquarters nakonfigurujte službu elektronického převodu prostředků (EFT) pro konektor Dynamics 365 Payment Connector pro Adyen, jak je popsáno v tématu [Nastavení sekce hardwarového profilu Dynamics 365 POS](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Ujistěte se, že přidáte **ApplePay** do seznamu typů platidel v poli **Podporované typy platidel**. Pro oddělení typů platidel v seznamu použijte středníky (;).
-
-Mapování zpracovatele pro konektor Adyen zachycuje typy karet peněženky, které Apple Pay používá na terminálu POS.
 
 ### <a name="configure-content-security-policies-in-site-builder"></a>Konfigurace zásad zabezpečení obsahu v nástroji pro tvorbu webu
 
@@ -138,6 +131,14 @@ Nastavení pro modul **Apple Pay** jsou zabudována do modulu a propojují se s 
 Tlačítko platby **Apple Pay** se zobrazuje pouze na podporovaných zařízeních Apple Pay (iPhony, iPady a prohlížeče Safari, které podporují Apple Pay). Pokud uživatel nepoužívá jedno z těchto zařízení, tlačítko platby **Apple Pay** je skryto.
 
 Když uživatel vybere tlačítko platby **Apple Pay**, zobrazí se dialogové okno **Apple Pay**. Tam se uživatel může ověřit proti svému zařízení nebo prohlížeči Apple Pay. Dialogové okno **Apple Pay** zobrazuje souhrn částky objednávky a platební metodu, kterou uživatel nakonfiguroval pro svou Apple Wallet. Uživatel si může tyto údaje prohlédnout a poté vybrat **Zaplatit** pro provedení platby. Po dokončení platby je uživatel přesměrován na stránku webu **Objednávka byla provedena**, která zobrazuje podrobné shrnutí objednávky pro dokončenou transakci.
+
+## <a name="configure-commerce-pos-for-apple-pay"></a>Konfigurace POS Commerce na Apple Pay
+
+Konfigurace POS využívá konfigurace pole **Služba EFT** hardwarového profilu pro Dynamics 365 Payment Connector for Adyen. V Commerce headquarters nakonfigurujte službu elektronického převodu prostředků (EFT) pro konektor Dynamics 365 Payment Connector pro Adyen, jak je popsáno v tématu [Nastavení sekce hardwarového profilu Dynamics 365 POS](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Ujistěte se, že přidáte **ApplePay** do seznamu typů platidel v poli **Podporované typy platidel**. Pro oddělení typů platidel v seznamu použijte středníky (;).
+
+Mapování zpracovatele pro konektor Adyen zachycuje typy karet peněženky, které Apple Pay používá na terminálu POS.
 
 ## <a name="additional-resources"></a>Další prostředky
 

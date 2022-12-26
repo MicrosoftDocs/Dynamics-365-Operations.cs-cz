@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802708"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831603"
 ---
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
@@ -65,7 +65,7 @@ Abyste odemkli uzamčený stavební blok, otevřete stavební blok a poté klikn
 
 ## <a name="building-block-groups"></a>Skupiny stavebních bloků
 
-Stavební bloky jsou definice řádků, definice sloupců, definice stromu výkaznictví a definice sestav, které vytvoříte pro sestavy. Skupiny stavebních bloků jsou kolekce definicí a sad dimenzí.
+Stavební bloky jsou definice řádků, definice sloupců, definice stromu výkaznictví a definice sestav, které vytvoříte pro sestavy. Skupiny stavebních bloků jsou kolekce definicí a sad hodnot dimenzí.
 
 ### <a name="view-a-building-block-group"></a>Zobrazení skupiny stavebních bloků
 
@@ -78,17 +78,17 @@ Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině 
 
 ### <a name="export-a-building-block-group"></a>Export skupiny stavebních bloků
 
-Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
+Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi. Report Designer zahrnuje odkazované styly písem a sady hodnot dimenzí společně se skupinou stavebních bloků.
 
 1. V Report Designer klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete vyexportovat, a pak klikněte na položku **Export**.
 3. V dialogovém okně **Export** vyberte definice sestavy k exportu:
 
     - Pokud chcete exportovat všechny definice sestavy a přidružené stavební bloky, klikněte na tlačítko **Vybrat vše**.
-    - Pokud chcete exportovat konkrétní sestavy, řádky, sloupce, stromy či sady dimenzí, klikněte na příslušnou kartu a vyberte položky k exportu. Když stisknete a podržíte klávesu Ctrl, můžete vybrat na kartě více položek.
+    - Pokud chcete exportovat konkrétní sestavy, řádky, sloupce, stromy či sady hodnot dimenzí, klikněte na příslušnou kartu a vyberte položky k exportu. Když stisknete a podržíte klávesu Ctrl, můžete vybrat na kartě více položek.
 
     > [!NOTE]
-    > Když pro export vyberete sestavy, vyberou se také přidružené řádky, sloupce, stromy a sady dimenzí.
+    > Když pro export vyberete sestavy, vyberou se také přidružené řádky, sloupce, stromy a sady hodnot dimenzí.
 
 4. Po dokončení výběru položek pro export klikněte na tlačítko **Exportovat**.
 5. V dialogovém okně **Uložit jako** vyberte umístění pro export skupiny stavebních bloků.
@@ -97,7 +97,7 @@ Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavebn
 
 ### <a name="import-a-building-block-group"></a> Import skupiny stavebních bloků
 
-Skupinu stavebních bloků můžete importovat do existující skupiny stavebních bloků. Všechny importované skupiny stavebních bloků si zachovají původní styly písem a odkazy na společnost a budou zahrnovat odpovídající sady dimenzí.
+Skupinu stavebních bloků můžete importovat do existující skupiny stavebních bloků. Všechny importované skupiny stavebních bloků si zachovají původní styly písem a odkazy na společnost a budou zahrnovat odpovídající sady hodnot dimenzí.
 
 1. V Report Designer klikněte v nabídce **Společnost** na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte stavební blok, do kterého chcete skupinu stavebních bloků naimportovat, a pak klikněte na položku **Import**.
@@ -105,7 +105,7 @@ Skupinu stavebních bloků můžete importovat do existující skupiny stavební
 4. V dialogovém okně **Import** vyberte definice sestavy k importu:
 
     - Pokud chcete importovat všechny definice sestavy a podpůrné stavební bloky, klikněte na tlačítko **Vybrat vše**.
-    - Chcete-li importovat konkrétní sestavy, řádky, sloupce, stromy či sady dimenzí, vyberte sestavy, řádky, sloupce, stromy a sady dimenzí k importu.
+    - Chcete-li importovat konkrétní sestavy, řádky, sloupce, stromy či sady hodnot dimenzí, vyberte sestavy, řádky, sloupce, stromy a sady hodnot dimenzí k importu.
 
 5. Po dokončení výběru položek pro import klikněte na tlačítko **Importovat**.
 

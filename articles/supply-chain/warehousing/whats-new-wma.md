@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764232"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843673"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20390"></a>Verze 2.0.39.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+- Zvýšená stabilita. 
+- Pole na stránce **Vlastní** již nejsou automaticky řazena podle nastavení priority a dílčí priority.  
+- Aplikace nyní používá nastavení priority a dílčí priority pro každé pole k identifikaci primárního pole pro stránku. Primární pole je zobrazeno v záhlaví kroku. 
+- Opraven problém, kdy se softwarová klávesnice neskryla v systému Android.
+- Opraven problém, kdy číselník množství ukazoval nesprávnou správnou hodnotu při otevření v toku *pohyb*. 
+- Opraven problém, kdy hodnota číselníku množství pouze pro čtení nebyla správně vycentrována. 
+- Opraven problém, kdy se webové stránky neotevřely ze stránky **O aplikaci**. 
+- Barevný motiv *Automaticky* má nyní svůj výchozí vzhled (světlý nebo tmavý) na základě globálního motivu nastaveného v operačním systému mobilního zařízení.
 
 ## <a name="version-20370"></a>Verze 2.0.37.0
 

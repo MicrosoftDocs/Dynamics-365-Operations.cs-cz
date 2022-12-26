@@ -2,7 +2,7 @@
 title: Migrace zákazníků Dynamics 365 Human Resources do finanční a provozní infrastruktury
 description: Tento článek popisuje migraci zákazníků Microsoft Dynamics 365 Human Resources do finanční a provozní infrastruktury.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760355"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831713"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Migrace zákazníků Dynamics 365 Human Resources
 
@@ -43,7 +43,7 @@ Migrace zákazníků je migrování metodou "lift-and-shift" (přesunutí) datab
  - Zkopírujte existující prostředí Dataverse, které je propojeno se samostatnou aplikací Human Resources, s prostředím, které jste vytvořili v předchozím kroku.
 
 > [!NOTE]
-> Když přidáváte databázi, ujistěte se, že je možnost **Povolit aplikace Dynamics 365** nastavena na **Ano**. Podrobné informace viz [Příprava prostředí Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment)
+> Když přidáváte databázi, ujistěte se, že je možnost **Povolit aplikace Dynamics 365** nastavena na **Ano**. Podrobné informace viz [Příprava prostředí Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### <a name="dataverse-capacity"></a>Kapacita Dataverse
 
@@ -158,6 +158,7 @@ Po dokončení migrace a ověření sandboxového prostředí proveďte migraci 
 
 - Měl by být vyplněn odhad předplatného.
 - Uvedení do provozu [posouzení připravenosti](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) by měla být dokončena.
+- Uživatel iniciující migraci provozu v Lifecycle Services musí mít roli správce systému v Power Platform. 
 
 #### <a name="migrate-the-production-environment"></a>Migrace provozního prostředí
 

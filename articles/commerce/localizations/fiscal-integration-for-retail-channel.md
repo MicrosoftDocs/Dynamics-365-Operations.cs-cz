@@ -2,19 +2,19 @@
 title: Přehled fiskální integrace pro kanály Commerce
 description: Tento článek obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631229"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831851"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
@@ -172,19 +172,17 @@ Následující ukázky fiskální integrace jsou v současné době k dispozici 
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Německo](./emea-deu-fi-sample.md)
 - [Vzor integrace fiskální tiskárny pro Rusko](./rus-fpi-sample.md)
+- [Ukázka digitálního podpisu pro Norsko](./emea-nor-cash-registers.md)
 
 Následující funkce fiskální integrace je také implementována pomocí rámce fiskální integrace, ale je k dispozici ihned a není součástí Commerce SDK:
 
 - [Fiskální registrace pro Brazílii](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digitální podpis pro Francii](./emea-fra-cash-registers.md)
 
-Následující funkce fiskální integrace je k dispozici také v sadě Commerce SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
-
-- [Digitální podpis pro Norsko](./emea-nor-cash-registers.md)
-
 Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Commerce SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
 
 - [Ukázka integrace kontrolní jednotky pro Švédsko (starší)](./retail-sdk-control-unit-sample.md)
 - [Digitální podpis pro Francii (starší)](./emea-fra-deployment.md)
+- [Digitální podpis pro Norsko (starší)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

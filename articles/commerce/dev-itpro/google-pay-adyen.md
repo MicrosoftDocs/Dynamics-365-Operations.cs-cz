@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115024"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838384"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Konfigurace Google Pay s Adyen
 
@@ -90,11 +90,6 @@ Chcete-li nakonfigurovat internetový obchod Commerce pro používání Google P
 
 1. Po dokončení nastavení vlastností konektoru spusťte úlohu distribučního plánu **1070 (konfigurace kanálu**).
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurace POS Commerce na Google Pay
-
-Konfigurace POS využívá nastavení pole **Služba EFT** hardwarového profilu pro Dynamics 365 Payment Connector for Adyen. Informace o tom, jak nakonfigurovat službu elektronického převodu prostředků (EFT) pro Dynamics 365 Payment Connector pro Adyen v Commerce headquarters, naleznete v tématu [Nastavení sekce hardwarového profilu Dynamics 365 POS](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Mapování zpracovatele pro konektor Adyen zachycuje typy karet peněženky, které Google Pay používá na terminálu POS.
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>Použití modulu pro expresní platby přes Google Pay
 
@@ -223,6 +218,12 @@ Pořadí, ve kterém se způsoby doručení zobrazují v modulu expresní platby
 Modul pokladny také používá modul možností doručení, když jsou způsoby doručení vykresleny během placení. Další informace naleznete v části [Modul možností doručení](../delivery-options-module.md).
 
 Způsoby doručení se zobrazí, když jsou přidány do seznamu **Způsoby doručení** v internetovém obchodě.
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurace POS Commerce na Google Pay
+
+Konfigurace POS využívá nastavení pole **Služba EFT** hardwarového profilu pro Dynamics 365 Payment Connector for Adyen. Informace, jak nakonfigurovat službu elektronického převodu prostředků (EFT) pro Dynamics 365 Payment Connector pro Adyen v Commerce headquarters, naleznete v tématu [Nastavení hardwarového profilu Dynamics 365 POS](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Mapování zpracovatele pro konektor Adyen zachycuje typy karet peněženky, které Google Pay používá na terminálu POS.
 
 ## <a name="additional-resources"></a>Další prostředky
 

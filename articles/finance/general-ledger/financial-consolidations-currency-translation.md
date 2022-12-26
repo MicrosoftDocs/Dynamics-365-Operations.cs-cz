@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846850"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831826"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -64,7 +64,7 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje konsolidace 
 - Konsolidace, které obsahují více měn vykazování
 
 ## <a name="legal-entity-setup"></a>Nastavení právnické osoby
-Před zpracováním konsolidace je nutné nakonfigurovat právnickou osobu. Konsolidaci lze spustit tolikrát, kolikrát budete potřebovat, a všechna data budou převedena z měny účetnictví zdrojové společnosti na měnu, která je definována pro konsolidační společnost. Proto pro následující organizační strukturu, pokud musíte převést všechny severoamerické společnosti nejprve na americké dolary (USD) a poté na eura (EUR), měnu mateřské společnosti, musíte mít alespoň dvě konsolidační společnosti.
+Před zpracováním konsolidace je nutné nakonfigurovat právnickou osobu. Konsolidaci lze spustit tolikrát, kolikrát budete potřebovat, a všechna data budou převedena ze zúčtovací měny nebo měny vykazování zdrojové společnosti na měnu, která je definována pro konsolidační společnost. Proto pro následující organizační strukturu, pokud musíte převést všechny severoamerické společnosti nejprve na americké dolary (USD) a poté na eura (EUR), měnu mateřské společnosti, musíte mít alespoň dvě konsolidační společnosti.
 
 ![Organizační struktura.](./media/organizational-structure.png "Organizační struktura")
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405458"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852366"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -225,6 +225,7 @@ Tato část udržuje seznam známých problémů pro nový ovládací prvek mř�
 ### <a name="open-issues"></a>Otevřené problémy
 - Po aktivaci funkce **Nový ovládací prvek mřížky** budou některé stránky i nadále využívat existující ovládací prvek mřížky. To se stane v následujících situacích:
  
+    - [Vyřešeno] Problém 762533: Neočekávaná chyba klienta při výběru řádku v seznamu karet.
     - [Vyřešeno] Na stránce existuje seznam karet, který je vykreslen ve více sloupcích.
         - Tento typ seznamu karet je podporován **novým ovládacím prvkem grid** počínaje verzí 10.0.30. Jakékoli použití forceLegacyGrid() pro tento účel lze odstranit. 
     - [Vyřešeno] Na stránce existuje seskupený seznam karet.

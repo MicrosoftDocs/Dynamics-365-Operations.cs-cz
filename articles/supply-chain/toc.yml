@@ -1809,6 +1809,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Plánování výroby
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Nastavení odpadu pro výpočet požadavků na suroviny
+                  href: master-planning/scrap-calculations.md
                 - name: "Hlavní plánování pro produkty s\_omezenou trvanlivostí"
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: "Plánování s\_nekonečnou kapacitou"
@@ -2355,11 +2357,11 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Vytvoření uvolněného produktu pro jednu společnost
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Použití datové entity
+                - name: Datové entity projektu
                   href: pim/data-entities.md
                 - name: Stav životního cyklu produktu
                   items:
-                    - name: Přehled životního cyklu produktu
+                    - name: Přehled stavu životního cyklu produktu
                       href: pim/product-lifecycle.md
                     - name: Vytvoření nového stavu životního cyklu produktu
                       href: pim/tasks/new-product-lifecycle-state.md
@@ -3381,7 +3383,7 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Sestavy nákladů na doručení
               href: landed-cost/landed-cost-reports.md
-            - name: Entity dat nákladů za doručení
+            - name: Datové entity nákladů za doručení
               items:
                 - name: Přehled entit nákladů na doručení
                   href: landed-cost\landed-cost-entities-overview.md
